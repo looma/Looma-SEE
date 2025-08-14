@@ -1,0 +1,409 @@
+[
+  {
+    "_id": "see_2081_science_practice_5_generated",
+    "title": "SEE 2081 Science Practice Test 5 (Generated Questions)",
+    "titleNepali": "SEE २०८१ विज्ञान अभ्यास परीक्षा ५ (उत्पन्न प्रश्नहरू)",
+    "subject": "science",
+    "year": 2081,
+    "totalMarks": 75,
+    "duration": 180,
+    "sections": ["A", "B", "C", "D"],
+    "isActive": true,
+    "createdAt": { "$date": "2025-08-10T19:30:18.000Z" },
+    "updatedAt": { "$date": "2025-08-10T19:30:18.000Z" }
+  },
+  {
+    "_id": { "$oid": "687d809a2f3df9d071c52114" },
+    "testId": "see_2081_science_practice_5_generated",
+    "questions": {
+      "groupA": [
+        {
+          "id": "1",
+          "type": "multiple_choice",
+          "questionNepali": "तलका मध्ये कुन नवीकरणीय ऊर्जाको स्रोत हो?",
+          "questionEnglish": "Which of the following is a renewable source of energy?",
+          "options": [
+            {"id": "i", "nepali": "कोइला (Coal)", "english": "Coal"},
+            {"id": "ii", "nepali": "पेट्रोलियम (Petroleum)", "english": "Petroleum"},
+            {"id": "iii", "nepali": "प्राकृतिक ग्यास (Natural Gas)", "english": "Natural Gas"},
+            {"id": "iv", "nepali": "सौर्य ऊर्जा (Solar Energy)", "english": "Solar Energy"}
+          ],
+          "correctAnswer": "iv", "marks": 1,
+          "explanation": "Solar energy is a renewable resource because the sun's energy is practically inexhaustible. Coal, petroleum, and natural gas are fossil fuels, which are non-renewable."
+        },
+        {
+          "id": "2",
+          "type": "multiple_choice",
+          "questionNepali": "कुन तत्वको कमीले गलगण्ड (Goitre) रोग लाग्छ?",
+          "questionEnglish": "Deficiency of which element causes Goitre?",
+          "options": [
+            {"id": "i", "nepali": "फलाम (Iron)", "english": "Iron"},
+            {"id": "ii", "nepali": "आयोडिन (Iodine)", "english": "Iodine"},
+            {"id": "iii", "nepali": "क्याल्सियम (Calcium)", "english": "Calcium"},
+            {"id": "iv", "nepali": "पोटासियम (Potassium)", "english": "Potassium"}
+          ],
+          "correctAnswer": "ii", "marks": 1,
+          "explanation": "Iodine is an essential component of the hormones produced by the thyroid gland. A deficiency of iodine causes the thyroid gland to swell, resulting in a goitre."
+        },
+        {
+          "id": "3",
+          "type": "multiple_choice",
+          "questionNepali": "प्रतिध्वनि (echo) सुन्नको लागि, ध्वनि स्रोत र परावर्तक सतह बिच न्यूनतम दूरी कति हुनुपर्छ?",
+          "questionEnglish": "To hear an echo, what should be the minimum distance between the source of sound and the reflecting surface?",
+          "options": [
+            {"id": "i", "nepali": "10 m", "english": "10 m"},
+            {"id": "ii", "nepali": "17 m", "english": "17 m"},
+            {"id": "iii", "nepali": "25 m", "english": "25 m"},
+            {"id": "iv", "nepali": "34 m", "english": "34 m"}
+          ],
+          "correctAnswer": "ii", "marks": 1,
+          "explanation": "The sensation of sound persists in our brain for about 0.1 seconds. For an echo to be heard distinctly, the reflected sound must reach the ear after this time interval. The minimum distance required for this is approximately 17 meters."
+        },
+        {
+          "id": "4",
+          "type": "multiple_choice",
+          "questionNepali": "तलका मध्ये कुन एक यौन संचारित रोग (STD) हो?",
+          "questionEnglish": "Which of the following is a Sexually Transmitted Disease (STD)?",
+          "options": [
+            {"id": "i", "nepali": "दादुरा (Measles)", "english": "Measles"},
+            {"id": "ii", "nepali": "सिफिलिस (Syphilis)", "english": "Syphilis"},
+            {"id": "iii", "nepali": "हैजा (Cholera)", "english": "Cholera"},
+            {"id": "iv", "nepali": "टाइफाइड (Typhoid)", "english": "Typhoid"}
+          ],
+          "correctAnswer": "ii", "marks": 1,
+          "explanation": "Syphilis is a bacterial infection that is primarily spread through sexual contact. The other diseases are transmitted through other means like air, water, or contaminated food."
+        },
+        {
+          "id": "5",
+          "type": "multiple_choice",
+          "questionNepali": "पृथ्वीको वायुमण्डल नभएको भए आकाशको रङ कस्तो देखिन्थ्यो?",
+          "questionEnglish": "What would be the color of the sky if the Earth had no atmosphere?",
+          "options": [
+            {"id": "i", "nepali": "नीलो (Blue)", "english": "Blue"},
+            {"id": "ii", "nepali": "सेतो (White)", "english": "White"},
+            {"id": "iii", "nepali": "कालो (Black)", "english": "Black"},
+            {"id": "iv", "nepali": "रातो (Red)", "english": "Red"}
+          ],
+          "correctAnswer": "iii", "marks": 1,
+          "explanation": "The blue color of the sky is due to the scattering of sunlight by the atmosphere. Without an atmosphere, there would be no scattering, and the sky would appear black, just as it does from the moon."
+        },
+        {
+          "id": "6",
+          "type": "multiple_choice",
+          "questionNepali": "2Na + Cl₂ → 2NaCl कुन प्रकारको रासायनिक प्रतिक्रिया हो?",
+          "questionEnglish": "2Na + Cl₂ → 2NaCl is which type of chemical reaction?",
+          "options": [
+            {"id": "i", "nepali": "विभाजन (Decomposition)", "english": "Decomposition"},
+            {"id": "ii", "nepali": "विस्थापन (Displacement)", "english": "Displacement"},
+            {"id": "iii", "nepali": "संयोजन (Combination)", "english": "Combination"},
+            {"id": "iv", "nepali": "निराकरण (Neutralization)", "english": "Neutralization"}
+          ],
+          "correctAnswer": "iii", "marks": 1,
+          "explanation": "This is a combination (or synthesis) reaction because two or more reactants (Na and Cl₂) combine to form a single product (NaCl)."
+        },
+        {
+          "id": "7",
+          "type": "multiple_choice",
+          "questionNepali": "जीन कहाँ पाइन्छ?",
+          "questionEnglish": "Where are genes located?",
+          "options": [
+            {"id": "i", "nepali": "साइटोप्लाज्ममा (In the cytoplasm)", "english": "In the cytoplasm"},
+            {"id": "ii", "nepali": "माइटोकोन्ड्रियामा (In the mitochondria)", "english": "In the mitochondria"},
+            {"id": "iii", "nepali": "क्रोमोजोममा (On the chromosomes)", "english": "On the chromosomes"},
+            {"id": "iv", "nepali": "राइबोजोममा (In the ribosomes)", "english": "In the ribosomes"}
+          ],
+          "correctAnswer": "iii", "marks": 1,
+          "explanation": "Genes, which are segments of DNA, are located on the chromosomes within the nucleus of a cell."
+        },
+        {
+          "id": "8",
+          "type": "multiple_choice",
+          "questionNepali": "तलका मध्ये कुनले विद्युत चुम्बकको शक्ति बढाउँदैन?",
+          "questionEnglish": "Which of the following does NOT increase the strength of an electromagnet?",
+          "options": [
+            {"id": "i", "nepali": "फन्काको संख्या बढाउँदा (Increasing the number of turns)", "english": "Increasing the number of turns"},
+            {"id": "ii", "nepali": "करेन्टको मात्रा बढाउँदा (Increasing the amount of current)", "english": "Increasing the amount of current"},
+            {"id": "iii", "nepali": "तारको लम्बाइ घटाउँदा (Decreasing the length of the wire)", "english": "Decreasing the length of the wire"},
+            {"id": "iv", "nepali": "नरम फलामको कोर राख्दा (Inserting a soft iron core)", "english": "Inserting a soft iron core"}
+          ],
+          "correctAnswer": "iii", "marks": 1,
+          "explanation": "The strength of an electromagnet is increased by increasing the number of turns, increasing the current, and using a soft iron core. Decreasing the length of the wire for the same number of turns is not a primary factor for increasing strength."
+        },
+        {
+          "id": "9",
+          "type": "multiple_choice",
+          "questionNepali": "प्रकाश संश्लेषण प्रक्रियाको लागि कुन कच्चा पदार्थ आवश्यक पर्दैन?",
+          "questionEnglish": "Which raw material is NOT required for the process of photosynthesis?",
+          "options": [
+            {"id": "i", "nepali": "कार्बन डाइअक्साइड (Carbon dioxide)", "english": "Carbon dioxide"},
+            {"id": "ii", "nepali": "पानी (Water)", "english": "Water"},
+            {"id": "iii", "nepali": "सूर्यको प्रकाश (Sunlight)", "english": "Sunlight"},
+            {"id": "iv", "nepali": "अक्सिजन (Oxygen)", "english": "Oxygen"}
+          ],
+          "correctAnswer": "iv", "marks": 1,
+          "explanation": "Carbon dioxide, water, and sunlight are the essential raw materials for photosynthesis. Oxygen is a product of this process, not a reactant."
+        },
+        {
+          "id": "10",
+          "type": "multiple_choice",
+          "questionNepali": "ब्युटेन (Butane) को आणविक सूत्र के हो?",
+          "questionEnglish": "What is the molecular formula for Butane?",
+          "options": [
+            {"id": "i", "nepali": "C₄H₈", "english": "C₄H₈"},
+            {"id": "ii", "nepali": "C₄H₁₀", "english": "C₄H₁₀"},
+            {"id": "iii", "nepali": "C₄H₆", "english": "C₄H₆"},
+            {"id": "iv", "nepali": "C₃H₈", "english": "C₃H₈"}
+          ],
+          "correctAnswer": "ii", "marks": 1,
+          "explanation": "Butane is an alkane with 4 carbon atoms. Using the general formula for alkanes (CₙH₂ₙ₊₂), for n=4, the formula is C₄H₂(₄)₊₂ = C₄H₁₀."
+        }
+      ],
+      "groupB": [
+        {
+          "id": "11",
+          "type": "short_answer",
+          "questionNepali": "विद्युतीय प्रतिरोधको SI एकाइ लेख्नुहोस्।",
+          "questionEnglish": "Write the SI unit of electrical resistance.",
+          "marks": 1,
+          "sampleAnswer": "The SI unit of electrical resistance is the Ohm (Ω)."
+        },
+        {
+          "id": "12",
+          "type": "short_answer",
+          "questionNepali": "हाइड्रोपोनिक्स (Hydroponics) के हो?",
+          "questionEnglish": "What is hydroponics?",
+          "marks": 1,
+          "sampleAnswer": "Hydroponics is a method of growing plants without soil, using mineral nutrient solutions dissolved in a water solvent."
+        },
+        {
+          "id": "13",
+          "type": "short_answer",
+          "questionNepali": "RNA को पूरा रूप लेख्नुहोस्।",
+          "questionEnglish": "Write the full form of RNA.",
+          "marks": 1,
+          "sampleAnswer": "The full form of RNA is Ribonucleic Acid."
+        },
+        {
+          "id": "14",
+          "type": "short_answer",
+          "questionNepali": "एक प्रकाश वर्ष (light year) के को एकाइ हो?",
+          "questionEnglish": "A light year is the unit of what?",
+          "marks": 1,
+          "sampleAnswer": "A light year is a unit of astronomical distance."
+        },
+        {
+          "id": "15",
+          "type": "short_answer",
+          "questionNepali": "धातुहरूको एउटा भौतिक गुण लेख्नुहोस्।",
+          "questionEnglish": "Write one physical property of metals.",
+          "marks": 1,
+          "sampleAnswer": "One physical property of metals is that they are good conductors of heat and electricity. (Other answers: They are lustrous, malleable, ductile)."
+        },
+        {
+          "id": "16",
+          "type": "short_answer",
+          "questionNepali": "एउटा उभयचर (amphibian) जनावरको नाम लेख्नुहोस्।",
+          "questionEnglish": "Write the name of an amphibian animal.",
+          "marks": 1,
+          "sampleAnswer": "An example of an amphibian is a frog (भ्यागुता) or a salamander."
+        },
+        {
+          "id": "17",
+          "type": "short_answer",
+          "questionNepali": "निर्वातमा प्रकाशको गति कति हुन्छ?",
+          "questionEnglish": "What is the speed of light in a vacuum?",
+          "marks": 1,
+          "sampleAnswer": "The speed of light in a vacuum is approximately 3 x 10⁸ m/s."
+        },
+        {
+          "id": "18",
+          "type": "short_answer",
+          "questionNepali": "मानव शरीरमा पित्त (bile) कहाँ उत्पादन हुन्छ?",
+          "questionEnglish": "Where is bile produced in the human body?",
+          "marks": 1,
+          "sampleAnswer": "Bile is produced in the liver (कलेजो)."
+        },
+        {
+          "id": "19",
+          "type": "short_answer",
+          "questionNepali": "साबुनको रासायनिक नाम के हो?",
+          "questionEnglish": "What is the chemical name for soap?",
+          "marks": 1,
+          "sampleAnswer": "Chemically, soap is the sodium or potassium salt of a long-chain fatty acid (e.g., Sodium Stearate)."
+        }
+      ],
+      "groupC": [
+        {
+          "id": "20",
+          "type": "long_answer",
+          "questionNepali": "बायो-फ्युल (Bio-fuel) भनेको के हो? यसका दुई फाइदाहरू लेख्नुहोस्।",
+          "questionEnglish": "What is bio-fuel? Write its two advantages.",
+          "marks": 2,
+          "sampleAnswer": "**Bio-fuel:** Bio-fuel is any fuel that is derived directly from biomass—that is, organic matter from plants or animals, such as agricultural crops, algae, or animal dung.\n**Advantages:**\n1. **Renewable:** Bio-fuels are derived from renewable resources, unlike fossil fuels which are finite.\n2. **Reduced Greenhouse Gas Emissions:** When burned, many bio-fuels release less net carbon dioxide into the atmosphere compared to fossil fuels, as the carbon they release was recently absorbed from the atmosphere by the plants."
+        },
+        {
+          "id": "21",
+          "type": "long_answer",
+          "questionNepali": "न्युटनको चालसम्बन्धी दोस्रो नियम लेख्नुहोस् र F=ma सम्बन्ध प्रमाणित गर्नुहोस्।",
+          "questionEnglish": "State Newton's second law of motion and derive the relation F=ma.",
+          "marks": 2,
+          "sampleAnswer": "**Newton's Second Law of Motion:** The law states that the rate of change of momentum of an object is directly proportional to the unbalanced force applied to it and takes place in the direction of the force.\n**Derivation:**\nLet a body of mass 'm' be moving with initial velocity 'u'. Let a force 'F' be applied for time 't' so that its final velocity is 'v'.\nInitial momentum = mu. Final momentum = mv.\nChange in momentum = mv - mu = m(v-u).\nRate of change of momentum = m(v-u)/t.\nAccording to the law, F ∝ m(v-u)/t. Since acceleration a = (v-u)/t, we have F ∝ ma. \nBy choosing a suitable unit for force, the constant of proportionality becomes 1. Thus, F = ma."
+        },
+        {
+          "id": "22",
+          "type": "long_answer",
+          "questionNepali": "एन्डोक्राइन र एक्जोक्राइन ग्रन्थि बिच दुई भिन्नता लेख्नुहोस्।",
+          "questionEnglish": "Write two differences between endocrine and exocrine glands.",
+          "marks": 2,
+          "sampleAnswer": "1. **Presence of Ducts:** Endocrine glands are ductless glands; they release their secretions (hormones) directly into the bloodstream. Exocrine glands have ducts through which they release their secretions (like enzymes, sweat, saliva) onto a surface or into a cavity.\n2. **Type of Secretion:** Endocrine glands secrete hormones that act on distant target organs. Exocrine glands secrete substances like enzymes, mucus, sweat, and saliva for specific local functions."
+        },
+        {
+          "id": "23",
+          "type": "long_answer",
+          "questionNepali": "500 ग्राम तौल भएको ढुङ्गालाई 100°C बाट 20°C सम्म चिस्याउँदा कति ताप शक्ति गुमाउँछ? (ढुङ्गाको विशिष्ट तापधारण क्षमता = 800 J/kg°C)",
+          "questionEnglish": "How much heat energy is lost when a 500 g stone is cooled from 100°C to 20°C? (Specific heat capacity of stone = 800 J/kg°C)",
+          "marks": 2,
+          "sampleAnswer": "Mass (m) = 500 g = 0.5 kg.\nChange in temperature (dT) = 100°C - 20°C = 80°C.\nSpecific heat capacity (s) = 800 J/kg°C.\nHeat Lost (Q) = m * s * dT = 0.5 * 800 * 80 = 32,000 Joules."
+        },
+        {
+          "id": "24",
+          "type": "long_answer",
+          "questionNepali": "ओजोन तह विनाशका दुई प्रमुख कारणहरू लेख्नुहोस्।",
+          "questionEnglish": "Write two main causes of ozone layer depletion.",
+          "marks": 2,
+          "sampleAnswer": "1. **Chlorofluorocarbons (CFCs):** The primary cause is the release of man-made chemicals called chlorofluorocarbons (CFCs), which were widely used in refrigerants, aerosol sprays, and solvents. In the stratosphere, UV radiation breaks down CFCs, releasing chlorine atoms that catalytically destroy ozone molecules.\n2. **Halons and other ODS:** Other ozone-depleting substances (ODS) like halons (used in fire extinguishers) and methyl bromide (a pesticide) also release bromine and other reactive chemicals that contribute to ozone destruction."
+        },
+        {
+          "id": "25",
+          "type": "long_answer",
+          "questionNepali": "'सर्पलाई सरीसृप (Reptile) वर्गमा राखिन्छ।' दुई कारणसहित पुष्टि गर्नुहोस्।",
+          "questionEnglish": "'A snake is classified under class Reptilia.' Justify with two reasons.",
+          "marks": 2,
+          "sampleAnswer": "A snake is classified as a reptile for the following reasons:\n1. **Scaly Skin:** Its body is covered with dry, horny scales, which is a defining characteristic of reptiles. This prevents water loss and provides protection.\n2. **Cold-Blooded (Poikilothermic):** Like other reptiles, snakes are cold-blooded, meaning their body temperature varies with the surrounding environmental temperature."
+        },
+        {
+          "id": "26",
+          "type": "long_answer",
+          "questionNepali": "किटनाशक औषधीको प्रयोग गर्दा अपनाउनुपर्ने दुईओटा सावधानीहरू लेख्नुहोस्।",
+          "questionEnglish": "Write any two precautions to be taken while using insecticides.",
+          "marks": 2,
+          "sampleAnswer": "1. **Use Protective Gear:** Always wear protective clothing, including gloves, masks, and goggles, to prevent direct contact with the skin, eyes, and respiratory system.\n2. **Follow Instructions and Proper Disposal:** Read and strictly follow the manufacturer's instructions regarding dosage and application. Dispose of empty containers safely and do not wash equipment in or near water sources to prevent contamination."
+        },
+        {
+          "id": "27",
+          "type": "long_answer",
+          "questionNepali": "2A को करेन्ट 2 मिनेटसम्म एउटा तारमा प्रवाह हुँदा कति चार्ज (charge) बग्छ?",
+          "questionEnglish": "How much charge flows through a wire when a current of 2A flows for 2 minutes?",
+          "marks": 2,
+          "sampleAnswer": "Current (I) = 2 A.\nTime (t) = 2 minutes = 2 * 60 = 120 seconds.\nCharge (Q) = I * t = 2 A * 120 s = 240 Coulombs."
+        },
+        {
+          "id": "28",
+          "type": "long_answer",
+          "questionNepali": "अनलाइन सामाजिक सञ्जाल प्रयोग गर्दा हुने दुईओटा सकारात्मक प्रभावहरू लेख्नुहोस्।",
+          "questionEnglish": "Write any two positive effects of using online social media.",
+          "marks": 2,
+          "sampleAnswer": "1. **Connectivity and Communication:** Social media allows people to connect and stay in touch with friends and family across geographical boundaries, fostering relationships and a sense of community.\n2. **Information Dissemination:** It serves as a rapid platform for spreading news, raising awareness about social issues, and organizing events or movements for social causes."
+        },
+        {
+          "id": "29",
+          "type": "long_answer",
+          "questionNepali": "एउटा वस्तुलाई पानीमा डुबाउँदा पानीले त्यस वस्तुलाई माथितिर धकेल्न लगाउने बललाई के भनिन्छ? यो बल कुन दुई कुरामा निर्भर गर्छ?",
+          "questionEnglish": "Name the force applied by water in an upward direction to the body immersed in it. On which two factors does this force depend?",
+          "marks": 2,
+          "sampleAnswer": "**Force:** The upward force is called Upthrust or Buoyant Force.\n**Factors:** This force depends on:\n1. The volume of the object submerged in the fluid.\n2. The density of the fluid."
+        },
+        {
+          "id": "30",
+          "type": "long_answer",
+          "questionNepali": "युनिभर्सल डोनर (universal donor) र युनिभर्सल रिसिपियन्ट (universal recipient) कुन-कुन रक्त समूहलाई भनिन्छ?",
+          "questionEnglish": "Which blood groups are called the universal donor and the universal recipient?",
+          "marks": 2,
+          "sampleAnswer": "**Universal Donor:** Blood group O-negative (O-) is considered the universal donor because its red blood cells lack A, B, and Rh antigens, making them safe to transfuse to any other blood group in emergencies.\n**Universal Recipient:** Blood group AB-positive (AB+) is considered the universal recipient because its plasma lacks both anti-A and anti-B antibodies, allowing it to receive red blood cells from any other blood group."
+        },
+        {
+          "id": "31",
+          "type": "long_answer",
+          "questionNepali": "हाइड्रोकार्बनलाई किन प्राङ्गारिक यौगिक भनिन्छ? एक उदाहरण दिनुहोस्।",
+          "questionEnglish": "Why are hydrocarbons called organic compounds? Give one example.",
+          "marks": 2,
+          "sampleAnswer": "**Reason:** Hydrocarbons are called organic compounds because they are composed primarily of carbon and hydrogen atoms. Carbon is the fundamental element of life, and historically, organic compounds were believed to originate only from living organisms.\n**Example:** Methane (CH₄) is the simplest hydrocarbon."
+        },
+        {
+          "id": "32",
+          "type": "long_answer",
+          "questionNepali": "विद्युत चुम्बकको कुनै दुई उपयोगिता लेख्नुहोस्।",
+          "questionEnglish": "Write any two uses of an electromagnet.",
+          "marks": 2,
+          "sampleAnswer": "1. **In Electric Bells and Relays:** Electromagnets are used to operate the hammer in electric bells and to switch circuits in relays.\n2. **In Lifting Heavy Objects:** Large, powerful electromagnets are used in cranes in scrapyards to lift and move heavy iron and steel objects."
+        },
+        {
+          "id": "33",
+          "type": "long_answer",
+          "questionNepali": "प्रकाशको आवर्तनका दुई नियमहरू लेख्नुहोस्।",
+          "questionEnglish": "Write the two laws of refraction of light.",
+          "marks": 2,
+          "sampleAnswer": "1. **First Law:** The incident ray, the refracted ray, and the normal to the interface at the point of incidence, all lie in the same plane.\n2. **Second Law (Snell's Law):** The ratio of the sine of the angle of incidence (i) to the sine of the angle of refraction (r) is a constant for a given pair of media. This constant is called the refractive index (μ). (sin i / sin r = constant)."
+        }
+      ],
+      "groupD": [
+        {
+          "id": "34",
+          "type": "essay",
+          "questionNepali": "मानव मुटुको कार्यप्रणालीलाई 'दोहोरो रक्तसञ्चार' किन भनिन्छ? पल्मोनरी र सिस्टमिक रक्तसञ्चारलाई छोटकरीमा व्याख्या गर्नुहोस्।",
+          "questionEnglish": "Why is the working mechanism of the human heart called 'double circulation'? Briefly explain pulmonary and systemic circulation.",
+          "marks": 4,
+          "sampleAnswer": "**Double Circulation:**\nThe circulation in the human heart is called double circulation because the blood passes through the heart twice for each complete circuit of the body. The heart acts as a double pump, with the right side handling deoxygenated blood and the left side handling oxygenated blood in two separate circuits.\n\n**Pulmonary Circulation:**\nThis is the circuit that carries deoxygenated blood from the heart to the lungs and brings oxygenated blood back to the heart.\n1.  Deoxygenated blood from the body enters the right atrium and is pumped into the right ventricle.\n2.  The right ventricle pumps this deoxygenated blood into the pulmonary artery, which carries it to the lungs.\n3.  In the lungs, the blood releases carbon dioxide and picks up oxygen.\n4.  This newly oxygenated blood returns to the left atrium of the heart via the pulmonary vein.\n\n**Systemic Circulation:**\nThis is the circuit that carries oxygenated blood from the heart to the rest of the body and returns deoxygenated blood back to the heart.\n1.  Oxygenated blood from the lungs enters the left atrium and is pumped into the left ventricle.\n2.  The powerful left ventricle pumps this oxygenated blood into the aorta.\n3.  The aorta branches into smaller arteries, supplying oxygen and nutrients to all body tissues.\n4.  Deoxygenated blood, now carrying waste products, is collected by veins and returns to the right atrium of the heart through the vena cava, completing the circuit."
+        },
+        {
+          "id": "35",
+          "type": "essay",
+          "questionNepali": "एउटा ट्रान्सफर्मरको प्राइमरी क्वाइलमा 400 फन्का र सेकेन्डरी क्वाइलमा 2000 फन्का छन्। यदि प्राइमरी क्वाइलमा 220 V को AC पठाउँदा 1 A को करेन्ट प्रवाह हुन्छ भने, (i) यो कुन प्रकारको ट्रान्सफर्मर हो? (ii) सेकेन्डरी भोल्टेज कति हुन्छ? (iii) सेकेन्डरी करेन्ट कति हुन्छ? (iv) यस प्रकारको ट्रान्सफर्मरको एउटा उपयोग लेख्नुहोस्।",
+          "questionEnglish": "A transformer has 400 turns in the primary coil and 2000 turns in the secondary coil. If 220 V AC is supplied to the primary coil and a current of 1 A flows, find: (i) What type of transformer is this? (ii) What is the secondary voltage? (iii) What is the secondary current? (iv) Write one use of this type of transformer.",
+          "marks": 4,
+          "sampleAnswer": "**(i) Type of Transformer:**\nSince the number of turns in the secondary coil (Ns = 2000) is greater than the number of turns in the primary coil (Np = 400), this is a **Step-up transformer**.\n\n**(ii) Secondary Voltage (Vs):**\nUsing the formula Vs / Vp = Ns / Np:\nVs / 220 V = 2000 / 400\nVs / 220 V = 5\nVs = 5 * 220 V = **1100 V**\n\n**(iii) Secondary Current (Is):**\nAssuming an ideal transformer, the power in the primary coil equals the power in the secondary coil (Vp * Ip = Vs * Is).\n220 V * 1 A = 1100 V * Is\n220 = 1100 * Is\nIs = 220 / 1100 = **0.2 A**\n\n**(iv) Use of a Step-up Transformer:**\nStep-up transformers are used at power stations to increase the voltage for efficient long-distance transmission of electricity."
+        },
+        {
+          "id": "36",
+          "type": "essay",
+          "questionNepali": "सोडियम (Na, Atomic No. 11) र क्लोरिन (Cl, Atomic No. 17) को उपसेलको आधारमा इलेक्ट्रोनिक विन्यास लेख्नुहोस्। तिनीहरूको पिरियडिक तालिकाको समूह र पिरियड उल्लेख गर्नुहोस्। तिनीहरूबीच रासायनिक प्रतिक्रिया हुँदा बन्ने सन्तुलित रासायनिक समीकरण लेख्नुहोस्।",
+          "questionEnglish": "Write the electronic configuration of Sodium (Na, Atomic No. 11) and Chlorine (Cl, Atomic No. 17) on the basis of sub-shells. Mention their group and period in the periodic table. Write the balanced chemical equation for the reaction between them.",
+          "marks": 4,
+          "sampleAnswer": "**Sodium (Na):**\n* **Electronic Configuration:** 1s², 2s²2p⁶, 3s¹\n* **Group:** Since the last electron is in the 's' subshell and there is 1 valence electron, it belongs to **Group IA**.\n* **Period:** The highest principal quantum number is 3, so it is in **Period 3**.\n\n**Chlorine (Cl):**\n* **Electronic Configuration:** 1s², 2s²2p⁶, 3s²3p⁵\n* **Group:** It is a p-block element. Group number = 10 + (electrons in s + p of valence shell) = 10 + (2 + 5) = **Group 17 (or VIIA)**.\n* **Period:** The highest principal quantum number is 3, so it is in **Period 3**.\n\n**Balanced Chemical Equation:**\nSodium, a metal, reacts with Chlorine, a non-metal, to form the ionic compound Sodium Chloride.\n2Na + Cl₂ → 2NaCl"
+        },
+        {
+          "id": "37",
+          "type": "essay",
+          "questionNepali": "कारण दिनुहोस्: (i) चन्द्रमामा वस्तुको तौल पृथ्वीमा भन्दा कम हुन्छ। (ii) हामीले चन्द्रमाको एउटा पाटो मात्र देख्न सक्छौँ। (iii) ताराहरू चम्किन्छन्। (iv) गर्मीमा भन्दा जाडोमा ध्वनि टाढासम्म सुनिन्छ।",
+          "questionEnglish": "Give reasons: (i) The weight of an object on the Moon is less than on the Earth. (ii) We can only see one side of the Moon. (iii) Stars twinkle. (iv) Sound is heard farther in winter than in summer.",
+          "marks": 4,
+          "sampleAnswer": "**(i) Weight on the Moon is less:** The weight of an object (W=mg) depends on the acceleration due to gravity (g). The Moon has significantly less mass and a smaller radius than the Earth, resulting in a much weaker gravitational pull (about 1/6th of Earth's). Therefore, the value of 'g' on the Moon is less, and the object's weight is consequently less.\n\n**(ii) We see only one side of the Moon:** This is due to 'synchronous rotation' or 'tidal locking'. The Moon rotates on its axis in exactly the same amount of time it takes to revolve once around the Earth. As a result, the same hemisphere of the Moon constantly faces the Earth.\n\n**(iii) Stars twinkle:** Stars appear to twinkle because their light has to travel through the Earth's turbulent atmosphere. The constantly moving layers of air have varying densities and temperatures, which cause the starlight to refract or bend multiple times before it reaches our eyes. This continuous bending makes the star's apparent position and brightness fluctuate, which we perceive as twinkling.\n\n**(iv) Sound travels farther in winter:** In winter, the air near the ground is colder and denser than the air above it. Sound travels slower in colder, denser air. This difference in speed causes the sound waves to refract or bend downwards towards the ground, allowing them to travel a greater distance along the surface before dissipating."
+        },
+        {
+          "id": "38",
+          "type": "essay",
+          "questionNepali": "कुनै वस्तुको पिण्ड 10 kg छ र यो 5 m/s को वेगले गुडिरहेको छ। (i) यसको संवेग (momentum) कति हुन्छ? (ii) यसको गति शक्ति (kinetic energy) कति हुन्छ? (iii) यदि यसलाई 2 सेकेन्डमा रोक्नको लागि कति बल लगाउनुपर्छ?",
+          "questionEnglish": "An object of mass 10 kg is moving with a velocity of 5 m/s. (i) What is its momentum? (ii) What is its kinetic energy? (iii) How much force is required to stop it in 2 seconds?",
+          "marks": 4,
+          "sampleAnswer": "**Given:**\nMass (m) = 10 kg\nInitial velocity (u) = 5 m/s\n\n**(i) Momentum (p):**\nMomentum = mass × velocity\np = 10 kg × 5 m/s = **50 kg m/s**\n\n**(ii) Kinetic Energy (KE):**\nKinetic Energy = ½ * m * v²\nKE = ½ * 10 kg * (5 m/s)²\nKE = 5 * 25 = **125 Joules**\n\n**(iii) Force required to stop:**\nTo stop the object, its final velocity (v) must be 0 m/s. Time (t) = 2 s.\nFirst, calculate the acceleration (deceleration):\na = (v - u) / t = (0 - 5) / 2 = -2.5 m/s²\nNow, calculate the force (F) using F = ma:\nF = 10 kg × (-2.5 m/s²)\nF = **-25 N**\nThe negative sign indicates the force is applied in the opposite direction of motion. So, a force of 25 N is required."
+        },
+        {
+          "id": "39",
+          "type": "essay",
+          "questionNepali": "पानीको असाधारण प्रसारको व्याख्या गर्नुहोस्। यसले जलचरहरूलाई कसरी फाइदा पुऱ्याएको छ, वर्णन गर्नुहोस्।",
+          "questionEnglish": "Explain the anomalous expansion of water. Describe how it benefits aquatic animals.",
+          "marks": 4,
+          "sampleAnswer": "**Anomalous Expansion of Water:**\nMost substances contract continuously when cooled. Water, however, behaves unusually. It contracts as it cools until it reaches a temperature of 4°C. Upon further cooling from 4°C to 0°C, it starts to expand instead of contracting. This unusual expansion of water when cooled between 4°C and 0°C is known as the anomalous expansion of water. Because of this, water has its maximum density at 4°C, and ice at 0°C is less dense than the water at 4°C.\n\n**Benefit to Aquatic Animals:**\nThis unique property is crucial for the survival of aquatic life in cold climates.\n1.  As the temperature of a lake or pond drops during winter, the surface water cools, becomes denser, and sinks. This process continues until all the water in the lake reaches 4°C.\n2.  As the surface water cools further below 4°C, it becomes less dense due to anomalous expansion. Therefore, this colder water (at 3°C, 2°C, 1°C) remains on top.\n3.  At 0°C, the surface water freezes into ice, which is even less dense, so it floats on the surface.\n4.  This top layer of ice acts as an insulator, preventing the heat from the water below from escaping into the cold atmosphere. This ensures that the water at the bottom of the lake remains at 4°C, allowing fish and other aquatic animals to survive in the liquid water below the ice."
+        },
+        {
+          "id": "40",
+          "type": "essay",
+          "questionNepali": "डिजिटल आरोग्यता (Digital Wellbeing) हासिल गर्ने कुनै चार तरिकाहरू उल्लेख गर्नुहोस्।",
+          "questionEnglish": "Mention any four ways of gaining digital wellbeing.",
+          "marks": 4,
+          "sampleAnswer": "Digital wellbeing refers to maintaining a healthy relationship with technology. Here are four ways to achieve it:\n\n1.  **Monitor and Manage Screen Time:** Use built-in tools on smartphones and computers to track how much time you spend on different apps and websites. Set daily time limits for specific applications, especially social media and games, to prevent excessive use.\n\n2.  **Establish 'No-Tech' Zones and Times:** Designate certain times of the day (e.g., during meals, an hour before bed) or certain physical areas (e.g., the bedroom) as technology-free zones. This helps in being more present in the real world and improves sleep quality.\n\n3.  **Curate Your Digital Content:** Actively manage what you see online. Unfollow accounts or mute conversations that cause stress, anxiety, or negativity. Prioritize content that is informative, positive, and aligns with your goals and hobbies.\n\n4.  **Practice Digital Detoxing:** Regularly schedule periods of time, from a few hours to a full day or weekend, to completely disconnect from all digital devices. This allows your mind to rest and reset, reduces digital fatigue, and encourages engagement in offline activities."
+        }
+      ]
+    }
+  }
+]

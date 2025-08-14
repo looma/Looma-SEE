@@ -1,0 +1,409 @@
+[
+  {
+    "_id": "see_2081_science_practice_4_generated",
+    "title": "SEE 2081 Science Practice Test 4 (Generated Questions)",
+    "titleNepali": "SEE २०८१ विज्ञान अभ्यास परीक्षा ४ (उत्पन्न प्रश्नहरू)",
+    "subject": "science",
+    "year": 2081,
+    "totalMarks": 75,
+    "duration": 180,
+    "sections": ["A", "B", "C", "D"],
+    "isActive": true,
+    "createdAt": { "$date": "2025-08-10T19:30:17.000Z" },
+    "updatedAt": { "$date": "2025-08-10T19:30:17.000Z" }
+  },
+  {
+    "_id": { "$oid": "687d809a2f3df9d071c52112" },
+    "testId": "see_2081_science_practice_4_generated",
+    "questions": {
+      "groupA": [
+        {
+          "id": "1",
+          "type": "multiple_choice",
+          "questionNepali": "गति शक्ति (Kinetic Energy) को सूत्र कुन हो?",
+          "questionEnglish": "What is the formula for Kinetic Energy?",
+          "options": [
+            {"id": "i", "nepali": "mgh", "english": "mgh"},
+            {"id": "ii", "nepali": "ma", "english": "ma"},
+            {"id": "iii", "nepali": "½mv²", "english": "½mv²"},
+            {"id": "iv", "nepali": "W/t", "english": "W/t"}
+          ],
+          "correctAnswer": "iii", "marks": 1,
+          "explanation": "Kinetic energy (KE) is the energy of motion, calculated as KE = ½ * mass * velocity²."
+        },
+        {
+          "id": "2",
+          "type": "multiple_choice",
+          "questionNepali": "कुन ग्यासलाई 'लाफिङ ग्यास' पनि भनिन्छ?",
+          "questionEnglish": "Which gas is also known as 'laughing gas'?",
+          "options": [
+            {"id": "i", "nepali": "नाइट्रोजन डाइअक्साइड (NO₂)", "english": "Nitrogen Dioxide (NO₂)"},
+            {"id": "ii", "nepali": "नाइट्रस अक्साइड (N₂O)", "english": "Nitrous Oxide (N₂O)"},
+            {"id": "iii", "nepali": "कार्बन मोनोअक्साइड (CO)", "english": "Carbon Monoxide (CO)"},
+            {"id": "iv", "nepali": "सल्फर डाइअक्साइड (SO₂)", "english": "Sulphur Dioxide (SO₂)"}
+          ],
+          "correctAnswer": "ii", "marks": 1,
+          "explanation": "Nitrous oxide (N₂O) is commonly known as laughing gas due to the euphoric effects of inhaling it."
+        },
+        {
+          "id": "3",
+          "type": "multiple_choice",
+          "questionNepali": "मानव शरीरमा रगतलाई फिल्टर गर्ने मुख्य अंग कुन हो?",
+          "questionEnglish": "Which is the main organ responsible for filtering blood in the human body?",
+          "options": [
+            {"id": "i", "nepali": "कलेजो (Liver)", "english": "Liver"},
+            {"id": "ii", "nepali": "फोक्सो (Lungs)", "english": "Lungs"},
+            {"id": "iii", "nepali": "मुटु (Heart)", "english": "Heart"},
+            {"id": "iv", "nepali": "मिर्गौला (Kidney)", "english": "Kidney"}
+          ],
+          "correctAnswer": "iv", "marks": 1,
+          "explanation": "The kidneys are the primary organs of the urinary system that filter waste products from the blood and produce urine."
+        },
+        {
+          "id": "4",
+          "type": "multiple_choice",
+          "questionNepali": "तलका मध्ये कुन एकाइ चापको होइन?",
+          "questionEnglish": "Which of the following is NOT a unit of pressure?",
+          "options": [
+            {"id": "i", "nepali": "पास्कल (Pascal)", "english": "Pascal"},
+            {"id": "ii", "nepali": "बार (Bar)", "english": "Bar"},
+            {"id": "iii", "nepali": "एटिएम (atm)", "english": "atm"},
+            {"id": "iv", "nepali": "जुल (Joule)", "english": "Joule"}
+          ],
+          "correctAnswer": "iv", "marks": 1,
+          "explanation": "Pascal, Bar, and atm (atmosphere) are all units of pressure. Joule is the SI unit of energy or work."
+        },
+        {
+          "id": "5",
+          "type": "multiple_choice",
+          "questionNepali": "मेन्डेलको प्रयोगमा, F₁ वंशमा कुन गुण देखिन्छ?",
+          "questionEnglish": "In Mendel's experiments, which trait appears in the F₁ generation?",
+          "options": [
+            {"id": "i", "nepali": "प्रवल गुण (Dominant trait)", "english": "Dominant trait"},
+            {"id": "ii", "nepali": "लुप्त गुण (Recessive trait)", "english": "Recessive trait"},
+            {"id": "iii", "nepali": "दुवै (Both)", "english": "Both"},
+            {"id": "iv", "nepali": "कुनै पनि होइन (None)", "english": "None"}
+          ],
+          "correctAnswer": "i", "marks": 1,
+          "explanation": "When two purebred organisms with contrasting traits are crossed, only the dominant trait is expressed in the F₁ generation."
+        },
+        {
+          "id": "6",
+          "type": "multiple_choice",
+          "questionNepali": "100°C तापक्रम केल्भिन स्केलमा कति हुन्छ?",
+          "questionEnglish": "What is the temperature of 100°C on the Kelvin scale?",
+          "options": [
+            {"id": "i", "nepali": "100 K", "english": "100 K"},
+            {"id": "ii", "nepali": "273 K", "english": "273 K"},
+            {"id": "iii", "nepali": "373 K", "english": "373 K"},
+            {"id": "iv", "nepali": "0 K", "english": "0 K"}
+          ],
+          "correctAnswer": "iii", "marks": 1,
+          "explanation": "To convert from Celsius to Kelvin, you add 273.15 (or approximately 273). So, 100°C + 273 = 373 K."
+        },
+        {
+          "id": "7",
+          "type": "multiple_choice",
+          "questionNepali": "तलका मध्ये कुन भाइरसले गर्दा लाग्ने रोग हो?",
+          "questionEnglish": "Which of the following is a disease caused by a virus?",
+          "options": [
+            {"id": "i", "nepali": "टाइफाइड (Typhoid)", "english": "Typhoid"},
+            {"id": "ii", "nepali": "दादुरा (Measles)", "english": "Measles"},
+            {"id": "iii", "nepali": "हैजा (Cholera)", "english": "Cholera"},
+            {"id": "iv", "nepali": "क्षयरोग (Tuberculosis)", "english": "Tuberculosis"}
+          ],
+          "correctAnswer": "ii", "marks": 1,
+          "explanation": "Measles is a highly contagious disease caused by a virus. Typhoid, Cholera, and Tuberculosis are caused by bacteria."
+        },
+        {
+          "id": "8",
+          "type": "multiple_choice",
+          "questionNepali": "सबैभन्दा प्रतिक्रियाशील धातु कुन हो?",
+          "questionEnglish": "Which is the most reactive metal?",
+          "options": [
+            {"id": "i", "nepali": "पोटासियम (Potassium)", "english": "Potassium"},
+            {"id": "ii", "nepali": "सोडियम (Sodium)", "english": "Sodium"},
+            {"id": "iii", "nepali": "क्याल्सियम (Calcium)", "english": "Calcium"},
+            {"id": "iv", "nepali": "सुन (Gold)", "english": "Gold"}
+          ],
+          "correctAnswer": "i", "marks": 1,
+          "explanation": "Based on the reactivity series, Potassium (K) is the most reactive metal among the given options."
+        },
+        {
+          "id": "9",
+          "type": "multiple_choice",
+          "questionNepali": "जब प्रकाशको किरण सघन माध्यमबाट विरल माध्यममा जान्छ, यो...",
+          "questionEnglish": "When a ray of light passes from a denser medium to a rarer medium, it...",
+          "options": [
+            {"id": "i", "nepali": "नर्मलतिर बाङ्गिन्छ (Bends towards the normal)", "english": "Bends towards the normal"},
+            {"id": "ii", "nepali": "नर्मलबाट टाढा बाङ्गिन्छ (Bends away from the normal)", "english": "Bends away from the normal"},
+            {"id": "iii", "nepali": "सिधा जान्छ (Passes undeviated)", "english": "Passes undeviated"},
+            {"id": "iv", "nepali": "परावर्तन हुन्छ (Gets reflected)", "english": "Gets reflected"}
+          ],
+          "correctAnswer": "ii", "marks": 1,
+          "explanation": "When light enters a rarer (less optically dense) medium, its speed increases, causing it to bend away from the normal."
+        },
+        {
+          "id": "10",
+          "type": "multiple_choice",
+          "questionNepali": "तलका मध्ये कुन तत्वले कोठाको तापक्रममा तरल अवस्थामा पाइन्छ?",
+          "questionEnglish": "Which of the following elements is a liquid at room temperature?",
+          "options": [
+            {"id": "i", "nepali": "सोडियम (Sodium)", "english": "Sodium"},
+            {"id": "ii", "nepali": "ब्रोमिन (Bromine)", "english": "Bromine"},
+            {"id": "iii", "nepali": "आयोडिन (Iodine)", "english": "Iodine"},
+            {"id": "iv", "nepali": "क्याल्सियम (Calcium)", "english": "Calcium"}
+          ],
+          "correctAnswer": "ii", "marks": 1,
+          "explanation": "Bromine is a non-metal that exists as a reddish-brown liquid at room temperature. Mercury is a metal that is also liquid at room temperature."
+        }
+      ],
+      "groupB": [
+        {
+          "id": "11",
+          "type": "short_answer",
+          "questionNepali": "संवेग संरक्षणको नियम लेख्नुहोस्।",
+          "questionEnglish": "State the law of conservation of momentum.",
+          "marks": 1,
+          "sampleAnswer": "The law of conservation of momentum states that if no external force acts on a system, the total momentum of the system remains constant."
+        },
+        {
+          "id": "12",
+          "type": "short_answer",
+          "questionNepali": "एउटा मोनोहाइड्रिक अल्कोहलको नाम लेख्नुहोस्।",
+          "questionEnglish": "Write the name of a monohydric alcohol.",
+          "marks": 1,
+          "sampleAnswer": "A monohydric alcohol is Methanol (CH₃OH) or Ethanol (C₂H₅OH)."
+        },
+        {
+          "id": "13",
+          "type": "short_answer",
+          "questionNepali": "मानव शरीरमा थाइरोइड ग्रन्थि कहाँ अवस्थित हुन्छ?",
+          "questionEnglish": "Where is the thyroid gland located in the human body?",
+          "marks": 1,
+          "sampleAnswer": "The thyroid gland is located in the neck, in front of the trachea (windpipe)."
+        },
+        {
+          "id": "14",
+          "type": "short_answer",
+          "questionNepali": "'बिग ब्याङ्ग सिद्धान्त' के सँग सम्बन्धित छ?",
+          "questionEnglish": "What is the 'Big Bang Theory' related to?",
+          "marks": 1,
+          "sampleAnswer": "The Big Bang Theory is related to the origin and evolution of the universe."
+        },
+        {
+          "id": "15",
+          "type": "short_answer",
+          "questionNepali": "ग्याल्भेनाइजेसनमा फलाममा कुन धातुको लेप लगाइन्छ?",
+          "questionEnglish": "Which metal is used to coat iron in the process of galvanization?",
+          "marks": 1,
+          "sampleAnswer": "Zinc (Zn) is used to coat iron during galvanization to protect it from rusting."
+        },
+        {
+          "id": "16",
+          "type": "short_answer",
+          "questionNepali": "कुनै पनि खाद्य श्रृंखलाको सुरुवात कहाँबाट हुन्छ?",
+          "questionEnglish": "What is the starting point of any food chain?",
+          "marks": 1,
+          "sampleAnswer": "Any food chain starts with a producer (usually a green plant) that produces its own food."
+        },
+        {
+          "id": "17",
+          "type": "short_answer",
+          "questionNepali": "1 भोल्टको परिभाषा दिनुहोस्।",
+          "questionEnglish": "Define 1 Volt.",
+          "marks": 1,
+          "sampleAnswer": "One volt is defined as the potential difference between two points when one joule of work is done to move a charge of one coulomb from one point to the other."
+        },
+        {
+          "id": "18",
+          "type": "short_answer",
+          "questionNepali": "विभाजन प्रतिक्रियाको एउटा उदाहरण दिनुहोस्।",
+          "questionEnglish": "Give one example of a decomposition reaction.",
+          "marks": 1,
+          "sampleAnswer": "An example of a decomposition reaction is the breakdown of calcium carbonate upon heating: CaCO₃ → CaO + CO₂."
+        },
+        {
+          "id": "19",
+          "type": "short_answer",
+          "questionNepali": "DNA को पूरा रूप लेख्नुहोस्।",
+          "questionEnglish": "Write the full form of DNA.",
+          "marks": 1,
+          "sampleAnswer": "The full form of DNA is Deoxyribonucleic Acid."
+        }
+      ],
+      "groupC": [
+        {
+          "id": "20",
+          "type": "long_answer",
+          "questionNepali": "पिण्ड (mass) र तौल (weight) बिच दुईओटा भिन्नता लेख्नुहोस्।",
+          "questionEnglish": "Write two differences between mass and weight.",
+          "marks": 2,
+          "sampleAnswer": "1. **Definition:** Mass is the amount of matter contained in a body and is a scalar quantity. Weight is the gravitational force exerted on a body by the Earth and is a vector quantity (acting towards the center of the Earth).\n2. **Constancy:** The mass of a body is constant everywhere. The weight of a body varies from place to place depending on the value of acceleration due to gravity (g)."
+        },
+        {
+          "id": "21",
+          "type": "long_answer",
+          "questionNepali": "कन्डक्टर (Conductor) र इन्सुलेटर (Insulator) बिच दुई भिन्नता लेख्नुहोस्।",
+          "questionEnglish": "Write two differences between a conductor and an insulator.",
+          "marks": 2,
+          "sampleAnswer": "1. **Flow of Electricity:** Conductors are materials that allow electric current to pass through them easily (e.g., copper, silver). Insulators are materials that do not allow electric current to pass through them (e.g., rubber, plastic).\n2. **Presence of Free Electrons:** Conductors have a large number of free electrons that can move through the material to carry charge. Insulators have very few or no free electrons as they are tightly bound to their atoms."
+        },
+        {
+          "id": "22",
+          "type": "long_answer",
+          "questionNepali": "यौनिक र अयौनिक प्रजनन बिच दुई भिन्नता लेख्नुहोस्।",
+          "questionEnglish": "Write two differences between sexual and asexual reproduction.",
+          "marks": 2,
+          "sampleAnswer": "1. **Number of Parents:** Sexual reproduction involves two parents (male and female) and the fusion of their gametes. Asexual reproduction involves only one parent.\n2. **Genetic Variation:** Sexual reproduction produces offspring that are genetically different from the parents, leading to variation. Asexual reproduction produces offspring that are genetically identical to the parent (clones)."
+        },
+        {
+          "id": "23",
+          "type": "long_answer",
+          "questionNepali": "न्युटनको चालसम्बन्धी तेस्रो नियम लेख्नुहोस् र एउटा उदाहरण दिनुहोस्।",
+          "questionEnglish": "State Newton's third law of motion and give one example.",
+          "marks": 2,
+          "sampleAnswer": "**Newton's Third Law of Motion:** The law states that for every action, there is an equal and opposite reaction.\n**Example:** When a person swims, they push the water backward with their hands (action). In response, the water pushes the swimmer forward with an equal and opposite force (reaction), causing them to move."
+        },
+        {
+          "id": "24",
+          "type": "long_answer",
+          "questionNepali": "वन विनाशका कुनै दुईवटा मानवीय कारणहरू लेख्नुहोस्।",
+          "questionEnglish": "Write any two human-made causes of deforestation.",
+          "marks": 2,
+          "sampleAnswer": "1. **Agriculture Expansion:** Clearing forests to make space for farming and livestock grazing to meet the demands of a growing population.\n2. **Urbanization and Infrastructure Development:** Cutting down forests to build cities, roads, dams, and other infrastructure projects."
+        },
+        {
+          "id": "25",
+          "type": "long_answer",
+          "questionNepali": "एउटा मानिसले 200 N को बल लगाएर एउटा बाकसलाई 5 मिटर धकेल्छ भने, उसले कति कार्य गर्यो?",
+          "questionEnglish": "If a person pushes a box for 5 meters by applying a force of 200 N, how much work did he do?",
+          "marks": 2,
+          "sampleAnswer": "Work Done (W) = Force (F) × Distance (d)\nW = 200 N × 5 m\nW = 1000 Joules."
+        },
+        {
+          "id": "26",
+          "type": "long_answer",
+          "questionNepali": "किन आकाशको रङ नीलो देखिन्छ? व्याख्या गर्नुहोस्।",
+          "questionEnglish": "Why does the sky appear blue? Explain.",
+          "marks": 2,
+          "sampleAnswer": "The sky appears blue due to a phenomenon called Rayleigh scattering. When sunlight enters the Earth's atmosphere, the tiny gas molecules and dust particles in the air scatter the shorter-wavelength blue and violet light more effectively than the longer-wavelength red and yellow light. Our eyes are more sensitive to blue light than violet, so we perceive the sky as blue."
+        },
+        {
+          "id": "27",
+          "type": "long_answer",
+          "questionNepali": "ग्लाइसेरोलको कुनै दुई उपयोगिताहरू लेख्नुहोस्।",
+          "questionEnglish": "Write any two uses of glycerol.",
+          "marks": 2,
+          "sampleAnswer": "1. **In Cosmetics:** Glycerol is used as a moisturizer (humectant) in soaps, lotions, and creams to prevent skin from drying out.\n2. **As a Sweetener:** It is used as a sugar substitute in some food products and as a solvent for flavors and food coloring."
+        },
+        {
+          "id": "28",
+          "type": "long_answer",
+          "questionNepali": "सोडियम र पोटासियममा कुन तत्व बढी सक्रिय हुन्छ, किन?",
+          "questionEnglish": "Which element is more reactive between sodium and potassium, and why?",
+          "marks": 2,
+          "sampleAnswer": "**More Reactive Element:** Potassium (K) is more reactive than Sodium (Na).\n**Reason:** Both are in Group 1, but Potassium is in Period 4 while Sodium is in Period 3. Potassium has more electron shells, so its single valence electron is farther from the nucleus and less strongly attracted. This makes it easier for Potassium to lose this electron, making it more reactive."
+        },
+        {
+          "id": "29",
+          "type": "long_answer",
+          "questionNepali": "बायोग्यासका कुनै दुई फाइदाहरू लेख्नुहोस्।",
+          "questionEnglish": "Write any two advantages of biogas.",
+          "marks": 2,
+          "sampleAnswer": "1. **Renewable and Eco-friendly:** Biogas is a renewable source of energy produced from organic waste. It burns cleanly without smoke, reducing air pollution and reliance on fossil fuels.\n2. **Waste Management and Fertilizer Production:** Biogas plants provide an effective way to manage organic waste (like animal dung and agricultural waste), and the slurry left after gas production is a nutrient-rich organic fertilizer."
+        },
+        {
+          "id": "30",
+          "type": "long_answer",
+          "questionNepali": "तापक्रम र तापमा दुई भिन्नता लेख्नुहोस्।",
+          "questionEnglish": "Write two differences between heat and temperature.",
+          "marks": 2,
+          "sampleAnswer": "1. **Definition:** Heat is the total kinetic energy of the molecules in a substance (a form of energy). Temperature is the measure of the average kinetic energy of the molecules and indicates the degree of hotness or coldness.\n2. **Unit:** The SI unit of heat is the Joule (J). The SI unit of temperature is the Kelvin (K) (or degrees Celsius)."
+        },
+        {
+          "id": "31",
+          "type": "long_answer",
+          "questionNepali": "कारण दिनुहोस्: प्रेसर कुकरमा खाना छिटो पाक्छ।",
+          "questionEnglish": "Give reason: Food cooks faster in a pressure cooker.",
+          "marks": 2,
+          "sampleAnswer": "In a pressure cooker, the steam produced from boiling water is trapped inside, which increases the pressure above the water's surface. This increased pressure raises the boiling point of water above 100°C. Since the food is cooked at a higher temperature, the chemical reactions involved in cooking happen faster, significantly reducing the cooking time."
+        },
+        {
+          "id": "32",
+          "type": "long_answer",
+          "questionNepali": "भ्यागुतालाई किन उभयचर (Amphibian) भनिन्छ?",
+          "questionEnglish": "Why is a frog called an amphibian?",
+          "marks": 2,
+          "sampleAnswer": "A frog is called an amphibian because it leads a dual life. It spends part of its life cycle in water (as a tadpole, respiring through gills) and the adult part of its life on land (respiring through lungs and moist skin), but it must return to water to reproduce."
+        },
+        {
+          "id": "33",
+          "type": "long_answer",
+          "questionNepali": "गुरूत्वाकर्षण अचर (G) र गुरूत्व प्रवेग (g) मा कुनै दुई फरक लेख्नुहोस्।",
+          "questionEnglish": "Write any two differences between gravitational constant (G) and acceleration due to gravity (g).",
+          "marks": 2,
+          "sampleAnswer": "1. **Definition and Nature:** G is the universal gravitational constant, representing the force between two unit masses separated by a unit distance; its value is constant everywhere in the universe. 'g' is the acceleration produced in a freely falling body due to gravity; its value changes from place to place.\n2. **Units:** The SI unit of G is Nm²/kg². The SI unit of 'g' is m/s²."
+        }
+      ],
+      "groupD": [
+        {
+          "id": "34",
+          "type": "essay",
+          "questionNepali": "आर्किमिडिजको सिद्धान्त लेख्नुहोस्। कुनै वस्तु तरल पदार्थमा डुब्छ, तैरिन्छ वा आंशिक रूपमा डुबेर तैरिन्छ भन्ने कुरा कसरी निर्धारण हुन्छ, व्याख्या गर्नुहोस्।",
+          "questionEnglish": "State Archimedes' principle. Explain how it is determined whether an object sinks, floats, or floats partially submerged in a liquid.",
+          "marks": 4,
+          "sampleAnswer": "**Archimedes' Principle:**\nArchimedes' principle states that when a body is wholly or partially immersed in a fluid, it experiences an upward buoyant force (upthrust) that is equal to the weight of the fluid displaced by it.\n\n**Conditions for Floating and Sinking:**\nThe behavior of an object in a fluid depends on the comparison between its weight (W) and the buoyant force (U) acting on it.\n\n1.  **Object Sinks:** An object will sink if its weight (W) is greater than the maximum upthrust (U) the fluid can exert on it. The maximum upthrust occurs when the object is fully submerged. This condition also means the density of the object is greater than the density of the fluid.\n    * Condition: **W > U**\n\n2.  **Object Floats on the Surface:** An object will float on the surface of the fluid if its weight (W) is less than the maximum upthrust (U) available when fully submerged. The object will sink only until the upthrust becomes exactly equal to its weight, leaving part of it above the fluid surface.\n    * Condition: **W < U**\n\n3.  **Object Floats Fully Submerged:** An object will float while being fully submerged within the fluid (remaining suspended at any depth) if its weight (W) is exactly equal to the maximum upthrust (U) when it is fully submerged. This condition means the density of the object is equal to the density of the fluid.\n    * Condition: **W = U**"
+        },
+        {
+          "id": "35",
+          "type": "essay",
+          "questionNepali": "मानव रगतका मुख्य तीन प्रकारका रक्तकोषहरूको नाम लेख्नुहोस् र प्रत्येकको एक-एक मुख्य कार्य उल्लेख गर्नुहोस्।",
+          "questionEnglish": "Write the names of the three main types of blood cells in human blood and mention one main function of each.",
+          "marks": 4,
+          "sampleAnswer": "The three main types of blood cells found in human blood are Red Blood Cells, White Blood Cells, and Platelets.\n\n1.  **Red Blood Cells (RBCs) / Erythrocytes (राता रक्तकोष):**\n    * **Function:** Their primary function is to transport oxygen from the lungs to all the cells of the body. This is achieved by the iron-containing protein called hemoglobin, which binds to oxygen and also gives blood its red color. They also carry some carbon dioxide back to the lungs.\n\n2.  **White Blood Cells (WBCs) / Leucocytes (सेता रक्तकोष):**\n    * **Function:** They are the main components of the body's immune system. Their function is to identify and destroy foreign invaders like bacteria, viruses, fungi, and parasites, thereby protecting the body from diseases and infections. Some WBCs produce antibodies, while others engulf pathogens directly.\n\n3.  **Platelets / Thrombocytes (प्लेटलेट्स):**\n    * **Function:** Platelets play a crucial role in hemostasis, which is the process of stopping bleeding. When a blood vessel is injured, platelets gather at the site, stick together to form a temporary plug, and release chemicals that initiate the complex process of blood clotting."
+        },
+        {
+          "id": "36",
+          "type": "essay",
+          "questionNepali": "ओहमको नियम के हो? यदि 10 Ω र 15 Ω का दुई प्रतिरोधकहरूलाई श्रेणीबद्ध (series) र समानान्तर (parallel) जडानमा 50 V को स्रोतसँग जोडिएको छ भने, प्रत्येक अवस्थामा समतुल्य प्रतिरोध र करेन्ट निकाल्नुहोस्।",
+          "questionEnglish": "What is Ohm's Law? If two resistors of 10 Ω and 15 Ω are connected in series and then in parallel to a 50 V source, find the equivalent resistance and the total current in each case.",
+          "marks": 4,
+          "sampleAnswer": "**Ohm's Law:** Ohm's law states that at a constant temperature, the electric current flowing through a conductor is directly proportional to the potential difference across its ends.\n\n**Case 1: Series Connection**\n* **Equivalent Resistance (Rs):** In series, the equivalent resistance is the sum of individual resistances.\n    Rs = R₁ + R₂ = 10 Ω + 15 Ω = **25 Ω**\n* **Total Current (Is):** Using Ohm's Law (V = IR),\n    Is = V / Rs = 50 V / 25 Ω = **2 A**\n\n**Case 2: Parallel Connection**\n* **Equivalent Resistance (Rp):** In parallel, the reciprocal of the equivalent resistance is the sum of the reciprocals of individual resistances.\n    1/Rp = 1/R₁ + 1/R₂ = 1/10 + 1/15\n    1/Rp = (3 + 2) / 30 = 5 / 30 = 1 / 6\n    Rp = **6 Ω**\n* **Total Current (Ip):** Using Ohm's Law,\n    Ip = V / Rp = 50 V / 6 Ω ≈ **8.33 A**"
+        },
+        {
+          "id": "37",
+          "type": "essay",
+          "questionNepali": "कारण दिनुहोस्: (i) सोडियमलाई मट्टितेलमा डुबाएर राखिन्छ। (ii) फलामको काँटी कपर सल्फेटको घोलमा राख्दा घोलको नीलो रङ हराउँदै जान्छ। (iii) हीरा धेरै चम्किन्छ। (iv) जाडोमा पानीको पाइप फुट्छ।",
+          "questionEnglish": "Give reasons: (i) Sodium is kept immersed in kerosene. (ii) The blue color of copper sulphate solution fades when an iron nail is dipped in it. (iii) Diamond shines brightly. (iv) Water pipes burst in winter.",
+          "marks": 4,
+          "sampleAnswer": "**(i) Sodium is kept in kerosene:** Sodium is a highly reactive alkali metal. It reacts vigorously with both oxygen and moisture present in the air, which can cause it to catch fire. It is kept in kerosene because kerosene is an organic liquid with which sodium does not react, and it prevents the metal from coming into contact with air and water.\n\n**(ii) Blue color of copper sulphate fades:** Iron is more reactive than copper according to the reactivity series. When an iron nail is placed in a blue copper sulphate (CuSO₄) solution, the more reactive iron displaces the copper from the solution, forming a pale green solution of iron sulphate (FeSO₄) and depositing reddish-brown copper on the nail. As the blue copper ions are removed from the solution, the blue color fades.\n\n**(iii) Diamond shines brightly:** Diamond shines due to its high refractive index and the phenomenon of total internal reflection. Light entering a properly cut diamond undergoes multiple total internal reflections from its inner faces before emerging. This traps the light for a moment and causes it to disperse into its constituent colors, giving diamond its characteristic sparkle.\n\n**(iv) Water pipes burst in winter:** This is due to the anomalous expansion of water. As water cools, it contracts until 4°C, but upon further cooling to 0°C and freezing, it expands in volume by about 9%. When water inside a pipe freezes, this expansion exerts an immense pressure on the walls of the pipe, causing it to burst."
+        },
+        {
+          "id": "38",
+          "type": "essay",
+          "questionNepali": "खाद्य संरक्षण भनेको के हो? घरमा खानालाई सुरक्षित राख्ने कुनै तीनवटा परम्परागत विधिहरू वर्णन गर्नुहोस्।",
+          "questionEnglish": "What is food preservation? Describe any three traditional methods of preserving food at home.",
+          "marks": 4,
+          "sampleAnswer": "**Food Preservation:** Food preservation is the process of treating and handling food in a way to stop or greatly slow down spoilage (loss of quality, edibility, or nutritional value) caused by the growth of microorganisms.\n\n**Three Traditional Methods:**\n1.  **Drying/Dehydration (सुकाउने):** This is one of the oldest methods. It involves removing water or moisture from food, as microorganisms need water to grow. In Nepal, vegetables (like gundruk), fruits, and meat are often preserved by drying them in the sun. The lack of moisture inhibits the growth of bacteria, yeasts, and molds.\n2.  **Pickling (अचार बनाउने):** This method involves preserving food in an edible antimicrobial liquid. This is typically done using vinegar (which is acidic) or brine (a strong salt solution). The high acidity or high salt concentration creates an environment where most spoilage-causing microbes cannot survive. Vegetables like mango, radish, and lime are commonly pickled.\n3.  **Use of Oil and Spices:** Storing food completely submerged in oil creates an anaerobic environment, cutting off the oxygen supply required by many spoilage microorganisms. Many spices, like turmeric and mustard, also have natural antimicrobial properties that help in preservation. This method is often combined with pickling."
+        },
+        {
+          "id": "39",
+          "type": "essay",
+          "questionNepali": "एक विद्यार्थीको चस्मामा प्रयोग भएको लेन्सको सामर्थ्य -4D छ। (i) उक्त लेन्सको केन्द्रीकरण दूरी पत्ता लगाउनुहोस्। (ii) लेन्सको प्रकार लेख्नुहोस्। (iii) उक्त दृष्टि कमजोरी हुनुको एउटा कारण उल्लेख गर्नुहोस्। (iv) यस कमजोरीलाई के भनिन्छ?",
+          "questionEnglish": "A lens used by a student in spectacles has a power of -4D. (i) Find its focal length. (ii) Write the type of lens. (iii) Mention one cause of this defect of vision. (iv) What is this defect called?",
+          "marks": 4,
+          "sampleAnswer": "**(i) Focal Length:**\nPower (P) = 1 / Focal length (f, in meters)\nf = 1 / P = 1 / -4 D = -0.25 m\nTo convert to centimeters: f = -0.25 * 100 = **-25 cm**.\n\n**(ii) Type of Lens:**\nSince the power and focal length are negative, the lens is a **Concave lens (कन्केभ लेन्स)**.\n\n**(iii) Cause of the Defect:**\nOne cause of this defect is that the **eyeball is too long** from front to back, causing light from distant objects to focus in front of the retina. (Another cause: The converging power of the eye lens is too high).\n\n**(iv) Name of the Defect:**\nThis defect of vision is called **Myopia or Short-sightedness (नजिकको दृष्टि कमजोरी)**."
+        },
+        {
+          "id": "40",
+          "type": "essay",
+          "questionNepali": "मानव पाचन प्रणालीमा कलेजो (liver) र प्यान्क्रियाज (pancreas) को भूमिका के हो? प्रत्येकको दुई-दुई कार्यहरू लेख्नुहोस्।",
+          "questionEnglish": "What is the role of the liver and pancreas in the human digestive system? Write two functions of each.",
+          "marks": 4,
+          "sampleAnswer": "**Role of the Liver (कलेजो):**\nThe liver is a vital accessory organ of digestion. Its main roles are producing bile and processing nutrients.\n1.  **Production of Bile:** The liver produces bile, which is stored in the gallbladder and released into the small intestine. Bile emulsifies fats, breaking down large fat globules into smaller droplets, which increases the surface area for lipase enzymes to act upon and digest the fat.\n2.  **Metabolism of Nutrients:** After absorption from the small intestine, nutrient-rich blood goes to the liver for processing. The liver metabolizes carbohydrates (storing glucose as glycogen), proteins, and fats. It also detoxifies harmful substances absorbed from the food.\n\n**Role of the Pancreas (प्यान्क्रियाज):**\nThe pancreas has both exocrine and endocrine functions, but its digestive role is exocrine.\n1.  **Production of Pancreatic Juice:** The pancreas produces pancreatic juice, which contains a variety of powerful digestive enzymes. These include amylase (to digest carbohydrates), lipase (to digest fats), and proteases like trypsin and chymotrypsin (to digest proteins).\n2.  **Neutralization of Stomach Acid:** Pancreatic juice is alkaline because it contains bicarbonate ions. When it is secreted into the duodenum, it neutralizes the acidic chyme coming from the stomach, creating the optimal alkaline environment required for the pancreatic and intestinal enzymes to function effectively."
+        }
+      ]
+    }
+  }
+]

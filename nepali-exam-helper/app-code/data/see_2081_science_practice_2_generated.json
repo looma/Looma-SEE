@@ -1,0 +1,409 @@
+[
+  {
+    "_id": "see_2081_science_practice_2_generated",
+    "title": "SEE 2081 Science Practice Test 2 (Generated Questions)",
+    "titleNepali": "SEE २०८१ विज्ञान अभ्यास परीक्षा २ (उत्पन्न प्रश्नहरू)",
+    "subject": "science",
+    "year": 2081,
+    "totalMarks": 75,
+    "duration": 180,
+    "sections": ["A", "B", "C", "D"],
+    "isActive": true,
+    "createdAt": { "$date": "2025-08-10T19:30:15.000Z" },
+    "updatedAt": { "$date": "2025-08-10T19:30:15.000Z" }
+  },
+  {
+    "_id": { "$oid": "687d809a2f3df9d071c52110" },
+    "testId": "see_2081_science_practice_2_generated",
+    "questions": {
+      "groupA": [
+        {
+          "id": "1",
+          "type": "multiple_choice",
+          "questionNepali": "1 किलोवाट-घण्टा (1 kWh) कति जुल बराबर हुन्छ?",
+          "questionEnglish": "1 kilowatt-hour (1 kWh) is equal to how many joules?",
+          "options": [
+            {"id": "i", "nepali": "3.6 x 10³ J", "english": "3.6 x 10³ J"},
+            {"id": "ii", "nepali": "3.6 x 10⁶ J", "english": "3.6 x 10⁶ J"},
+            {"id": "iii", "nepali": "3600 J", "english": "3600 J"},
+            {"id": "iv", "nepali": "1000 J", "english": "1000 J"}
+          ],
+          "correctAnswer": "ii", "marks": 1,
+          "explanation": "1 kWh = 1000 Watt × 3600 seconds = 3,600,000 Joules = 3.6 x 10⁶ J."
+        },
+        {
+          "id": "2",
+          "type": "multiple_choice",
+          "questionNepali": "कुन जीव फाइलम पोरिफेरा अन्तर्गत पर्दछ?",
+          "questionEnglish": "Which organism belongs to Phylum Porifera?",
+          "options": [
+            {"id": "i", "nepali": "हाइड्रा (Hydra)", "english": "Hydra"},
+            {"id": "ii", "nepali": "जेलीफिस (Jellyfish)", "english": "Jellyfish"},
+            {"id": "iii", "nepali": "स्पन्ज (Sponge)", "english": "Sponge"},
+            {"id": "iv", "nepali": "गड्यौला (Earthworm)", "english": "Earthworm"}
+          ],
+          "correctAnswer": "iii", "marks": 1,
+          "explanation": "Sponges are members of Phylum Porifera, characterized by their porous bodies. Hydra and Jellyfish are in Coelenterata, and Earthworm is in Annelida."
+        },
+        {
+          "id": "3",
+          "type": "multiple_choice",
+          "questionNepali": "साबुन बनाउने प्रक्रियालाई के भनिन्छ?",
+          "questionEnglish": "What is the process of making soap called?",
+          "options": [
+            {"id": "i", "nepali": "इस्टेरिफिकेसन (Esterification)", "english": "Esterification"},
+            {"id": "ii", "nepali": "स्यापोनिफिकेसन (Saponification)", "english": "Saponification"},
+            {"id": "iii", "nepali": "निराकरण (Neutralization)", "english": "Neutralization"},
+            {"id": "iv", "nepali": "पोलिमराइजेसन (Polymerization)", "english": "Polymerization"}
+          ],
+          "correctAnswer": "ii", "marks": 1,
+          "explanation": "Saponification is the hydrolysis of an ester (like fat or oil) with a base (like NaOH) to produce alcohol and the salt of a carboxylic acid, which is soap."
+        },
+        {
+          "id": "4",
+          "type": "multiple_choice",
+          "questionNepali": "मानव मुटुको कुन कोठाबाट एओर्टा सुरु हुन्छ?",
+          "questionEnglish": "From which chamber of the human heart does the aorta originate?",
+          "options": [
+            {"id": "i", "nepali": "दायाँ अरिकल (Right Atrium)", "english": "Right Atrium"},
+            {"id": "ii", "nepali": "दायाँ भेन्ट्रिकल (Right Ventricle)", "english": "Right Ventricle"},
+            {"id": "iii", "nepali": "बायाँ अरिकल (Left Atrium)", "english": "Left Atrium"},
+            {"id": "iv", "nepali": "बायाँ भेन्ट्रिकल (Left Ventricle)", "english": "Left Ventricle"}
+          ],
+          "correctAnswer": "iv", "marks": 1,
+          "explanation": "The aorta, the largest artery, originates from the left ventricle, from where it pumps oxygenated blood to the rest of the body."
+        },
+        {
+          "id": "5",
+          "type": "multiple_choice",
+          "questionNepali": "यदि कुनै लेन्सको सामर्थ्य -2.5 D छ भने, त्यसको केन्द्रीकरण दूरी कति हुन्छ?",
+          "questionEnglish": "If the power of a lens is -2.5 D, what is its focal length?",
+          "options": [
+            {"id": "i", "nepali": "-40 cm", "english": "-40 cm"},
+            {"id": "ii", "nepali": "+40 cm", "english": "+40 cm"},
+            {"id": "iii", "nepali": "-2.5 m", "english": "-2.5 m"},
+            {"id": "iv", "nepali": "+2.5 m", "english": "+2.5 m"}
+          ],
+          "correctAnswer": "i", "marks": 1,
+          "explanation": "Focal length (f) = 1 / Power (P). f = 1 / -2.5 D = -0.4 meters. To convert to cm, multiply by 100: -0.4 * 100 = -40 cm. The negative sign indicates it is a concave lens."
+        },
+        {
+          "id": "6",
+          "type": "multiple_choice",
+          "questionNepali": "हेमाटाइट कुन धातुको मुख्य धाउ हो?",
+          "questionEnglish": "Haematite is the main ore of which metal?",
+          "options": [
+            {"id": "i", "nepali": "आल्मुनियम (Aluminum)", "english": "Aluminum"},
+            {"id": "ii", "nepali": "तामा (Copper)", "english": "Copper"},
+            {"id": "iii", "nepali": "फलाम (Iron)", "english": "Iron"},
+            {"id": "iv", "nepali": "चाँदी (Silver)", "english": "Silver"}
+          ],
+          "correctAnswer": "iii", "marks": 1,
+          "explanation": "Haematite (Fe₂O₃) is one of the primary ores from which iron is extracted."
+        },
+        {
+          "id": "7",
+          "type": "multiple_choice",
+          "questionNepali": "कुन कोष विभाजनले शरीरमा वृद्धि र मर्मतमा मद्दत गर्छ?",
+          "questionEnglish": "Which cell division helps in growth and repair in the body?",
+          "options": [
+            {"id": "i", "nepali": "माइटोसिस (Mitosis)", "english": "Mitosis"},
+            {"id": "ii", "nepali": "मियोसिस (Meiosis)", "english": "Meiosis"},
+            {"id": "iii", "nepali": "एमाइटोसिस (Amitosis)", "english": "Amitosis"},
+            {"id": "iv", "nepali": "फर्टिलाइजेसन (Fertilization)", "english": "Fertilization"}
+          ],
+          "correctAnswer": "i", "marks": 1,
+          "explanation": "Mitosis is the process of cell division that results in two identical daughter cells from a single parent cell and is responsible for growth, repair, and asexual reproduction."
+        },
+        {
+          "id": "8",
+          "type": "multiple_choice",
+          "questionNepali": "ध्वनिको गति सबैभन्दा बढी कुन माध्यममा हुन्छ?",
+          "questionEnglish": "In which medium is the speed of sound the fastest?",
+          "options": [
+            {"id": "i", "nepali": "शून्य (Vacuum)", "english": "Vacuum"},
+            {"id": "ii", "nepali": "हावा (Air)", "english": "Air"},
+            {"id": "iii", "nepali": "पानी (Water)", "english": "Water"},
+            {"id": "iv", "nepali": "फलाम (Iron)", "english": "Iron"}
+          ],
+          "correctAnswer": "iv", "marks": 1,
+          "explanation": "Sound travels fastest through solids, like iron, because the particles are packed closely together, allowing vibrations to pass quickly from one particle to the next. Sound cannot travel in a vacuum."
+        },
+        {
+          "id": "9",
+          "type": "multiple_choice",
+          "questionNepali": "इथानोलको IUPAC नाम के हो?",
+          "questionEnglish": "What is the IUPAC name for Ethanol?",
+          "options": [
+            {"id": "i", "nepali": "मिथेनल (Methanal)", "english": "Methanal"},
+            {"id": "ii", "nepali": "इथानोइक एसिड (Ethanoic acid)", "english": "Ethanoic acid"},
+            {"id": "iii", "nepali": "इथानोल (Ethanol)", "english": "Ethanol"},
+            {"id": "iv", "nepali": "इथेन (Ethane)", "english": "Ethane"}
+          ],
+          "correctAnswer": "iii", "marks": 1,
+          "explanation": "The common name is ethyl alcohol, and the systematic IUPAC name is Ethanol, indicating a two-carbon chain (eth-) with an alcohol functional group (-ol)."
+        },
+        {
+          "id": "10",
+          "type": "multiple_choice",
+          "questionNepali": "पृथ्वीको वायुमण्डलमा सबैभन्दा प्रचुर मात्रामा पाइने ग्यास कुन हो?",
+          "questionEnglish": "Which is the most abundant gas in the Earth's atmosphere?",
+          "options": [
+            {"id": "i", "nepali": "अक्सिजन (Oxygen)", "english": "Oxygen"},
+            {"id": "ii", "nepali": "कार्बन डाइअक्साइड (Carbon Dioxide)", "english": "Carbon Dioxide"},
+            {"id": "iii", "nepali": "नाइट्रोजन (Nitrogen)", "english": "Nitrogen"},
+            {"id": "iv", "nepali": "आर्गन (Argon)", "english": "Argon"}
+          ],
+          "correctAnswer": "iii", "marks": 1,
+          "explanation": "Nitrogen (N₂) makes up approximately 78% of the Earth's atmosphere by volume."
+        }
+      ],
+      "groupB": [
+        {
+          "id": "11",
+          "type": "short_answer",
+          "questionNepali": "विद्युतीय फ्युजको एक कार्य लेख्नुहोस्।",
+          "questionEnglish": "Write one function of an electric fuse.",
+          "marks": 1,
+          "sampleAnswer": "The main function of an electric fuse is to protect an electrical circuit from damage caused by excessive current (overload or short circuit) by interrupting the flow of electricity."
+        },
+        {
+          "id": "12",
+          "type": "short_answer",
+          "questionNepali": "जीवाश्म (Fossil) भनेको के हो?",
+          "questionEnglish": "What is a fossil?",
+          "marks": 1,
+          "sampleAnswer": "A fossil is the preserved remains, impression, or trace of a once-living organism from a past geological age."
+        },
+        {
+          "id": "13",
+          "type": "short_answer",
+          "questionNepali": "रासायनिक प्रतिक्रियाको दरलाई असर गर्ने एउटा कारक लेख्नुहोस्।",
+          "questionEnglish": "Write one factor that affects the rate of a chemical reaction.",
+          "marks": 1,
+          "sampleAnswer": "One factor that affects the rate of a chemical reaction is temperature. (Other valid answers: concentration, pressure, surface area, presence of a catalyst)."
+        },
+        {
+          "id": "14",
+          "type": "short_answer",
+          "questionNepali": "मानिसमा लिङ्ग निर्धारण गर्ने क्रोमोजोम कुन हो?",
+          "questionEnglish": "Which chromosome determines the sex in humans?",
+          "marks": 1,
+          "sampleAnswer": "The sex chromosome from the male gamete (sperm), which can be either X or Y, determines the sex of the offspring."
+        },
+        {
+          "id": "15",
+          "type": "short_answer",
+          "questionNepali": "कुनै वस्तुको तौल पृथ्वीको सतहमा 60 N छ भने त्यसको पिण्ड कति हुन्छ? (g=10 m/s²)",
+          "questionEnglish": "If the weight of an object on the Earth's surface is 60 N, what is its mass? (g=10 m/s²)",
+          "marks": 1,
+          "sampleAnswer": "Weight (W) = mass (m) × g. So, m = W / g = 60 N / 10 m/s² = 6 kg."
+        },
+        {
+          "id": "16",
+          "type": "short_answer",
+          "questionNepali": "एउटा प्राकृतिक खाद्य परिरक्षकको नाम लेख्नुहोस्।",
+          "questionEnglish": "Write the name of one natural food preservative.",
+          "marks": 1,
+          "sampleAnswer": "A common natural food preservative is salt (नुन). (Other valid answers: sugar, vinegar, oil)."
+        },
+        {
+          "id": "17",
+          "type": "short_answer",
+          "questionNepali": "पास्कलको नियममा आधारित एउटा उपकरणको नाम लेख्नुहोस्।",
+          "questionEnglish": "Write the name of a device based on Pascal's law.",
+          "marks": 1,
+          "sampleAnswer": "A device based on Pascal's law is the hydraulic lift (or hydraulic press, hydraulic brakes)."
+        },
+        {
+          "id": "18",
+          "type": "short_answer",
+          "questionNepali": "उत्पादक (Producer) भनेको के हो?",
+          "questionEnglish": "What is a producer?",
+          "marks": 1,
+          "sampleAnswer": "A producer is an organism, typically a green plant or alga, that produces its own food through photosynthesis and forms the base of a food chain."
+        },
+        {
+          "id": "19",
+          "type": "short_answer",
+          "questionNepali": "एउटा अल्केन र एउटा अल्किनबिचको मुख्य भिन्नता के हो?",
+          "questionEnglish": "What is the main difference between an alkane and an alkene?",
+          "marks": 1,
+          "sampleAnswer": "The main difference is that alkanes are saturated hydrocarbons containing only single carbon-carbon bonds, while alkenes are unsaturated hydrocarbons containing at least one carbon-carbon double bond."
+        }
+      ],
+      "groupC": [
+        {
+          "id": "20",
+          "type": "long_answer",
+          "questionNepali": "विद्युतीय जेनेरेटर (Dynamo) र विद्युतीय मोटर बिच दुईओटा भिन्नता लेख्नुहोस्।",
+          "questionEnglish": "Write two differences between an electric generator (Dynamo) and an electric motor.",
+          "marks": 2,
+          "sampleAnswer": "1. **Energy Conversion:** An electric generator converts mechanical energy into electrical energy. An electric motor does the opposite; it converts electrical energy into mechanical energy.\n2. **Working Principle:** A generator works on the principle of electromagnetic induction (a current is induced in a coil when it rotates in a magnetic field). A motor works on the motor effect (a current-carrying coil in a magnetic field experiences a force and rotates)."
+        },
+        {
+          "id": "21",
+          "type": "long_answer",
+          "questionNepali": "अम्ल वर्षा (Acid Rain) का दुईवटा प्रमुख कारणहरू लेख्नुहोस्।",
+          "questionEnglish": "Write two major causes of acid rain.",
+          "marks": 2,
+          "sampleAnswer": "1. **Sulphur Dioxide (SO₂):** Burning of fossil fuels (like coal and oil) in power plants and industries releases large amounts of sulphur dioxide into the atmosphere.\n2. **Nitrogen Oxides (NOx):** Exhaust fumes from vehicles and industrial processes release nitrogen oxides. These gases react with water, oxygen, and other chemicals in the atmosphere to form sulphuric and nitric acids, which fall to the ground as acid rain."
+        },
+        {
+          "id": "22",
+          "type": "long_answer",
+          "questionNepali": "रातो रक्तकोष र सेतो रक्तकोष बिच दुई भिन्नता लेख्नुहोस्।",
+          "questionEnglish": "Write two differences between Red Blood Cells and White Blood Cells.",
+          "marks": 2,
+          "sampleAnswer": "1. **Function:** The primary function of Red Blood Cells (RBCs) is to transport oxygen using the protein hemoglobin. The primary function of White Blood Cells (WBCs) is to provide immunity and defend the body against pathogens.\n2. **Structure:** Mature RBCs are biconcave discs and lack a nucleus. WBCs are typically larger, have an irregular shape, and possess a nucleus."
+        },
+        {
+          "id": "23",
+          "type": "long_answer",
+          "questionNepali": "विस्थापन (Displacement) र दोहोरो विस्थापन (Double Displacement) प्रतिक्रिया बिच एक उदाहरणसहित फरक छुट्याउनुहोस्।",
+          "questionEnglish": "Differentiate between a displacement and a double displacement reaction with one example each.",
+          "marks": 2,
+          "sampleAnswer": "**Displacement Reaction:** A more reactive element displaces a less reactive element from its compound. Example: Zn + CuSO₄ → ZnSO₄ + Cu.\n**Double Displacement Reaction:** Two compounds react by exchanging their ions to form two new compounds. Example: AgNO₃ + NaCl → AgCl + NaNO₃."
+        },
+        {
+          "id": "24",
+          "type": "long_answer",
+          "questionNepali": "मौरीपालनका कुनै दुईवटा फाइदाहरू लेख्नुहोस्।",
+          "questionEnglish": "Write any two advantages of bee-keeping.",
+          "marks": 2,
+          "sampleAnswer": "1. **Production of Honey and Wax:** Bee-keeping provides valuable products like honey, which is a nutritious food, and beeswax, which has various uses in cosmetics, candles, and polishes.\n2. **Pollination of Crops:** Bees are excellent pollinators. Keeping bees near farms significantly increases the pollination of crops, leading to higher yields of fruits and seeds."
+        },
+        {
+          "id": "25",
+          "type": "long_answer",
+          "questionNepali": "कुनै वस्तुलाई पृथ्वीको ध्रुवबाट भूमध्यरेखातिर लैजाँदा त्यसको तौल घट्छ, किन?",
+          "questionEnglish": "The weight of an object decreases when it is taken from the pole to the equator of the Earth, why?",
+          "marks": 2,
+          "sampleAnswer": "The weight of an object decreases for two main reasons:\n1. **Earth's Shape:** The Earth is not a perfect sphere; it is slightly flattened at the poles and bulges at the equator. This means the equatorial radius is greater than the polar radius. Since gravity (and thus weight) is inversely proportional to the square of the distance from the center, the object is farther from the center at the equator, resulting in less gravitational pull and lower weight.\n2. **Earth's Rotation:** The rotation of the Earth produces a centrifugal force that acts outward, opposing the force of gravity. This effect is maximum at the equator and zero at the poles. This outward force slightly reduces the net downward force (weight) at the equator."
+        },
+        {
+          "id": "26",
+          "type": "long_answer",
+          "questionNepali": "किन डिजिटल सञ्चार एनालग सञ्चारभन्दा राम्रो मानिन्छ? दुई कारण दिनुहोस्।",
+          "questionEnglish": "Why is digital communication considered better than analog communication? Give two reasons.",
+          "marks": 2,
+          "sampleAnswer": "1. **Less Prone to Noise:** Digital signals, which exist as discrete values (0s and 1s), are more resistant to noise and interference during transmission. Any small distortion can usually be corrected, resulting in a clearer, higher-quality signal.\n2. **Easier Data Processing and Storage:** Digital data can be easily stored, processed, compressed, and encrypted by computers and other digital devices, which is very difficult to do with continuous analog signals."
+        },
+        {
+          "id": "27",
+          "type": "long_answer",
+          "questionNepali": "संतृप्त र असंतृप्त हाइड्रोकार्बन बिच दुई भिन्नता लेख्नुहोस्।",
+          "questionEnglish": "Write two differences between saturated and unsaturated hydrocarbons.",
+          "marks": 2,
+          "sampleAnswer": "1. **Bond Type:** Saturated hydrocarbons (alkanes) contain only single bonds between carbon atoms. Unsaturated hydrocarbons (alkenes and alkynes) contain at least one double or triple bond between carbon atoms.\n2. **Chemical Reactivity:** Unsaturated hydrocarbons are generally more reactive than saturated ones because the double or triple bonds can be broken to add other atoms (addition reactions). Saturated hydrocarbons primarily undergo substitution reactions."
+        },
+        {
+          "id": "28",
+          "type": "long_answer",
+          "questionNepali": "पानीको विशिष्ट तापधारण क्षमता उच्च हुनुको दुईवटा फाइदाहरू के-के हुन्?",
+          "questionEnglish": "What are two advantages of the high specific heat capacity of water?",
+          "marks": 2,
+          "sampleAnswer": "1. **Climate Regulation:** Large bodies of water like oceans can absorb a vast amount of heat from the sun without a significant rise in temperature. This helps in moderating the climate of nearby coastal areas, keeping them cooler in summer and warmer in winter.\n2. **Cooling Agent:** Due to its ability to absorb a lot of heat with only a small temperature change, water is an excellent cooling agent. It is used in car radiators and industrial processes to prevent engines and machinery from overheating."
+        },
+        {
+          "id": "29",
+          "type": "long_answer",
+          "questionNepali": "जेनेटिक इन्जिनियरिङका कुनै दुई उपयोगिताहरू लेख्नुहोस्।",
+          "questionEnglish": "Write any two applications of genetic engineering.",
+          "marks": 2,
+          "sampleAnswer": "1. **Agriculture:** It is used to create genetically modified (GM) crops that are resistant to pests, diseases, or herbicides, or have improved nutritional value (e.g., Golden Rice).\n2. **Medicine:** It is used to produce vital medicines like insulin, human growth hormone, and vaccines using genetically modified bacteria. It is also the basis for gene therapy to treat genetic disorders."
+        },
+        {
+          "id": "30",
+          "type": "long_answer",
+          "questionNepali": "तारामण्डल (constellation) र तारापुञ्ज (galaxy) बिच दुई भिन्नता लेख्नुहोस्।",
+          "questionEnglish": "Write two differences between a constellation and a galaxy.",
+          "marks": 2,
+          "sampleAnswer": "1. **Composition and Structure:** A galaxy is a massive, gravitationally bound system consisting of billions of stars, gas, dust, and dark matter. A constellation is just an apparent pattern of a few stars as seen from Earth; these stars are often not close to each other in reality and are not gravitationally bound.\n2. **Scale:** Galaxies are immense structures, spanning thousands of light-years. Constellations are patterns in our line of sight within our own galaxy, the Milky Way, and have no physical size as a group."
+        },
+        {
+          "id": "31",
+          "type": "long_answer",
+          "questionNepali": "एउटा वस्तुको हावामा तौल 25 N र पानीमा 20 N छ। उक्त वस्तुमा लाग्ने उर्ध्वचाप र त्यसले विस्थापित गरेको पानीको तौल कति हुन्छ?",
+          "questionEnglish": "An object weighs 25 N in air and 20 N in water. What is the upthrust acting on the object and the weight of the water displaced by it?",
+          "marks": 2,
+          "sampleAnswer": "**Upthrust:** Upthrust = Weight in air - Weight in water = 25 N - 20 N = 5 N.\n**Weight of displaced water:** According to Archimedes' principle, the weight of the water displaced is equal to the upthrust. Therefore, the weight of the water displaced is also 5 N."
+        },
+        {
+          "id": "32",
+          "type": "long_answer",
+          "questionNepali": "समूह IA का तत्वहरूलाई किन अल्काली धातु भनिन्छ?",
+          "questionEnglish": "Why are the elements of Group IA called alkali metals?",
+          "marks": 2,
+          "sampleAnswer": "The elements of Group IA are called alkali metals because they are highly reactive metals that react vigorously with water to form strong alkalis (soluble bases), such as Sodium Hydroxide (NaOH), and liberate hydrogen gas."
+        },
+        {
+          "id": "33",
+          "type": "long_answer",
+          "questionNepali": "शुक्रकीट (sperm) र अण्डा (ovum) बिच दुई भिन्नता लेख्नुहोस्।",
+          "questionEnglish": "Write two differences between a sperm and an ovum.",
+          "marks": 2,
+          "sampleAnswer": "1. **Size and Motility:** A sperm is microscopic, has a head, middle piece, and tail, and is motile (can move). An ovum (egg cell) is much larger, spherical, and non-motile.\n2. **Production and Number:** Sperms are produced continuously in vast numbers in the testes of a male. Ova are produced in limited numbers in the ovaries of a female, typically one per menstrual cycle."
+        }
+      ],
+      "groupD": [
+        {
+          "id": "34",
+          "type": "essay",
+          "questionNepali": "मेन्डेलको आनुवंशिकतासम्बन्धी पृथकीकरणको नियम (Law of Segregation) लेख्नुहोस्। एक मोनोहाइब्रिड क्रसको उदाहरण दिएर यस नियमलाई व्याख्या गर्नुहोस्।",
+          "questionEnglish": "State Mendel's Law of Segregation. Explain this law with the help of a monohybrid cross example.",
+          "marks": 4,
+          "sampleAnswer": "**Mendel's Law of Segregation:**\nThis law states that during the formation of gametes (eggs or sperm), the two alleles for a heritable character separate or segregate from each other, so that each gamete ends up with only one allele for that character.\n\n**Explanation with a Monohybrid Cross:**\nLet's consider a cross between a pure tall pea plant (TT) and a pure dwarf pea plant (tt). 'T' is the allele for tallness and 't' is for dwarfness.\n\n1.  **Parental (P) Generation:** The tall plant has the genotype TT, and the dwarf plant has tt.\n\n2.  **Gamete Formation (P):** According to the law of segregation, the alleles separate. The tall plant (TT) produces only gametes with the 'T' allele. The dwarf plant (tt) produces only gametes with the 't' allele.\n\n3.  **First (F₁) Generation:** When these gametes fuse, all offspring have the genotype Tt. Phenotypically, all are tall because 'T' is dominant.\n\n4.  **Gamete Formation (F₁):** Now, when the F₁ plant (Tt) forms gametes, the law of segregation applies again. The two alleles, 'T' and 't', separate from each other. Thus, the F₁ plant produces two types of gametes in equal proportions: 50% with the 'T' allele and 50% with the 't' allele.\n\n5.  **Second (F₂) Generation:** The random fusion of these gametes during self-pollination results in offspring with genotypes TT, Tt, and tt in a 1:2:1 ratio. This demonstrates that the alleles were segregated into separate gametes and did not blend, allowing the recessive trait (dwarfness) to reappear in the F₂ generation."
+        },
+        {
+          "id": "35",
+          "type": "essay",
+          "questionNepali": "उच्च रक्तचाप (Hypertension) हुनुका दुई कारण र यसका रोकथामका दुई उपायहरू लेख्नुहोस्।",
+          "questionEnglish": "Write any two causes of high blood pressure (Hypertension) and two preventive measures of it.",
+          "marks": 4,
+          "sampleAnswer": "**Causes of High Blood Pressure:**\n1.  **Lifestyle Factors:** A diet high in salt (sodium), saturated fats, and cholesterol can lead to hypertension. Other lifestyle factors include lack of physical activity, excessive alcohol consumption, and smoking, which can damage blood vessels.\n2.  **Underlying Health Conditions:** Certain health problems like kidney disease, thyroid problems, and diabetes can cause secondary hypertension. Obesity also significantly increases the risk as the heart has to pump harder to supply blood to the excess tissue.\n\n**Preventive Measures:**\n1.  **Adopt a Healthy Diet:** Reduce salt intake and consume a balanced diet rich in fruits, vegetables, whole grains, and lean proteins (like the DASH diet). This helps in naturally lowering blood pressure and maintaining a healthy weight.\n2.  **Regular Physical Exercise:** Engaging in at least 30 minutes of moderate-intensity aerobic exercise (like brisk walking, jogging, or swimming) most days of the week helps strengthen the heart, improve blood circulation, and maintain a healthy weight, all of which contribute to lowering blood pressure."
+        },
+        {
+          "id": "36",
+          "type": "essay",
+          "questionNepali": "धातु र अधातु बिच भौतिक गुणधर्मका आधारमा चारवटा भिन्नता लेख्नुहोस्।",
+          "questionEnglish": "Write four differences between metals and non-metals on the basis of their physical properties.",
+          "marks": 4,
+          "sampleAnswer": "1. **Lustre:** Metals generally have a shiny or lustrous appearance when freshly cut or polished. Non-metals are typically dull and do not have a lustre (exceptions: iodine, graphite).\n2. **Conductivity:** Metals are good conductors of both heat and electricity due to the presence of free-moving electrons. Non-metals are generally poor conductors of heat and electricity (exception: graphite).\n3. **Malleability and Ductility:** Metals are malleable (can be beaten into thin sheets) and ductile (can be drawn into thin wires). Non-metals are brittle and will break or shatter if hammered or stretched.\n4. **Physical State and Density:** Most metals are solid at room temperature (exception: mercury) and usually have a high density. Non-metals can exist as solids, liquids, or gases at room temperature and generally have a low density."
+        },
+        {
+          "id": "37",
+          "type": "essay",
+          "questionNepali": "8 kg पिण्ड भएको पानीको तापक्रम 25°C बाट 45°C सम्म पुऱ्याउन कति ताप चाहिन्छ? यदि त्यति नै ताप 4 kg मट्टितेललाई दिइयो भने त्यसको तापक्रम कतिले वृद्धि हुन्छ? (पानीको विशिष्ट तापधारण क्षमता 4200 J/kg°C र मट्टितेलको 2100 J/kg°C छ)",
+          "questionEnglish": "How much heat is required to raise the temperature of 8 kg of water from 25°C to 45°C? If the same amount of heat is given to 4 kg of kerosene, by how much will its temperature rise? (Specific heat capacity of water = 4200 J/kg°C and kerosene = 2100 J/kg°C)",
+          "marks": 4,
+          "sampleAnswer": "**Part 1: Heat required for water**\nGiven:\nMass of water (m_w) = 8 kg\nInitial temperature (T₁) = 25°C\nFinal temperature (T₂) = 45°C\nChange in temperature (dT_w) = T₂ - T₁ = 45 - 25 = 20°C\nSpecific heat capacity of water (s_w) = 4200 J/kg°C\n\nHeat required (Q) = m_w * s_w * dT_w\nQ = 8 * 4200 * 20\nQ = **672,000 J**\n\n**Part 2: Temperature rise of kerosene**\nGiven:\nHeat supplied (Q) = 672,000 J (same as above)\nMass of kerosene (m_k) = 4 kg\nSpecific heat capacity of kerosene (s_k) = 2100 J/kg°C\nChange in temperature (dT_k) = ?\n\nUsing the formula Q = m_k * s_k * dT_k:\n672,000 = 4 * 2100 * dT_k\n672,000 = 8400 * dT_k\ndT_k = 672,000 / 8400\ndT_k = **80°C**\n\nThe temperature of the kerosene will rise by 80°C."
+        },
+        {
+          "id": "38",
+          "type": "essay",
+          "questionNepali": "पारिस्थितिक पिरामिड भनेको के हो? संख्याको पिरामिड (Pyramid of Numbers) लाई घाँसे मैदानको पारिस्थितिक प्रणालीको उदाहरण दिएर वर्णन गर्नुहोस्।",
+          "questionEnglish": "What is an ecological pyramid? Describe the pyramid of numbers with an example from a grassland ecosystem.",
+          "marks": 4,
+          "sampleAnswer": "**Ecological Pyramid:**\nAn ecological pyramid is a graphical representation designed to show the biomass or bio-productivity at each trophic level in a given ecosystem. It illustrates the relationship between different organisms in a food chain, with producers at the base and successive trophic levels of consumers forming the apex.\n\n**Pyramid of Numbers in a Grassland Ecosystem:**\nThe pyramid of numbers shows the total number of individual organisms at each trophic level in an ecosystem.\n\n* **Base (Producers):** In a grassland ecosystem, the base of the pyramid is formed by the producers, which are grasses and other small plants. Their number is the largest in the ecosystem, forming a broad base for the pyramid.\n\n* **Primary Consumers:** The next trophic level consists of primary consumers (herbivores) that feed on the grass, such as grasshoppers, rabbits, and deer. The total number of these herbivores is less than the number of grass plants.\n\n* **Secondary Consumers:** Above the primary consumers are the secondary consumers (carnivores) that feed on the herbivores, such as frogs, lizards, or foxes. Their total number is less than the number of herbivores.\n\n* **Tertiary Consumers (Apex):** At the top of the pyramid are the tertiary consumers, like hawks or snakes, which feed on the secondary consumers. Their population is the smallest.\n\nThis arrangement results in an upright pyramid, where the number of individuals decreases at each successive trophic level, from a large number of producers at the bottom to a few top consumers at the apex."
+        },
+        {
+          "id": "39",
+          "type": "essay",
+          "questionNepali": "अनलाइन सुरक्षाका लागि अपनाउनुपर्ने कुनै चारवटा महत्त्वपूर्ण उपायहरू लेख्नुहोस्।",
+          "questionEnglish": "Write any four important measures to be taken for online safety.",
+          "marks": 4,
+          "sampleAnswer": "1.  **Use Strong and Unique Passwords:** Create complex passwords for different online accounts using a mix of uppercase and lowercase letters, numbers, and symbols. Avoid using easily guessable information like birthdays or names. Using a password manager can help manage unique passwords securely.\n2.  **Enable Two-Factor Authentication (2FA):** Activate 2FA wherever possible. This adds an extra layer of security by requiring a second form of verification (like a code sent to your phone) in addition to your password, making it much harder for unauthorized users to access your accounts.\n3.  **Be Wary of Phishing and Scams:** Be cautious of unsolicited emails, messages, or links, especially those that ask for personal information or create a sense of urgency. Verify the sender's identity before clicking on links or downloading attachments to avoid malware and phishing attacks.\n4.  **Manage Privacy Settings and Limit Personal Information:** Regularly review and adjust the privacy settings on your social media and other online accounts to control who can see your information. Avoid sharing sensitive personal details like your full address, phone number, or financial information publicly."
+        },
+        {
+          "id": "40",
+          "type": "essay",
+          "questionNepali": "प्रयोगशालामा एमोनिया ग्यास बनाउने विधिको सन्तुलित रासायनिक समीकरण लेख्नुहोस्। यस प्रक्रियामा लाइम टावरको काम के हो? एमोनियाका दुई उपयोगिता लेख्नुहोस्।",
+          "questionEnglish": "Write the balanced chemical equation for the laboratory preparation of ammonia gas. What is the function of the lime tower in this process? Write two uses of ammonia.",
+          "marks": 4,
+          "sampleAnswer": "**Balanced Chemical Equation:**\nAmmonia gas is prepared in the laboratory by heating a mixture of an ammonium salt (like ammonium chloride, NH₄Cl) with a strong base (like calcium hydroxide, Ca(OH)₂).\n2NH₄Cl(s) + Ca(OH)₂(s) --(Heat)--> CaCl₂(s) + 2H₂O(l) + 2NH₃(g)\n\n**Function of the Lime Tower:**\nThe ammonia gas produced in the reaction is moist. It is passed through a drying tower containing lumps of quicklime (calcium oxide, CaO). The function of the lime tower is to dry the ammonia gas. Quicklime is used because it is a basic oxide and does not react with ammonia, which is a basic gas. Drying agents like concentrated H₂SO₄ or anhydrous CaCl₂ cannot be used as they react with ammonia.\n\n**Uses of Ammonia:**\n1.  **Manufacturing Fertilizers:** A major use of ammonia is in the production of nitrogenous fertilizers, such as ammonium nitrate, ammonium sulphate, and urea, which are essential for agriculture.\n2.  **As a Refrigerant:** Ammonia has a high latent heat of vaporization, making it an efficient refrigerant. It is widely used in large-scale industrial refrigeration and cold storage plants."
+        }
+      ]
+    }
+  }
+]

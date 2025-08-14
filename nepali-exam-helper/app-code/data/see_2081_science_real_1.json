@@ -1,0 +1,409 @@
+[
+  {
+    "_id": "see_2081_science_real_1",
+    "title": "SEE 2081 Science Real 1 (Actual Questions)",
+    "titleNepali": "SEE २०८१ विज्ञान वास्तविक परीक्षा १ (वास्तविक प्रश्नहरू)",
+    "subject": "science",
+    "year": 2081,
+    "totalMarks": 75,
+    "duration": 180,
+    "sections": ["A", "B", "C", "D"],
+    "isActive": true,
+    "createdAt": { "$date": "2025-08-10T19:41:00.000Z" },
+    "updatedAt": { "$date": "2025-08-10T19:41:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "687d809a2f3df9d071c52115" },
+    "testId": "see_2081_science_real_1",
+    "questions": {
+      "groupA": [
+        {
+          "id": "1",
+          "type": "multiple_choice",
+          "questionNepali": "तलका मध्ये कुनचाहिँ तत्त्जन्य एकाइ हो ?",
+          "questionEnglish": "Which one of the following is a derived unit?",
+          "options": [
+            {"id": "i", "nepali": "क्याण्डेला (Candela)", "english": "Candela"},
+            {"id": "ii", "nepali": "एम्पियर (Ampere)", "english": "Ampere"},
+            {"id": "iii", "nepali": "न्युटन (Newton)", "english": "Newton"},
+            {"id": "iv", "nepali": "मोल (Mole)", "english": "Mole"}
+          ],
+          "correctAnswer": "iii", "marks": 1,
+          "explanation": "Newton (unit of force) is a derived unit (kg·m/s²). Candela, Ampere, and Mole are fundamental units."
+        },
+        {
+          "id": "2",
+          "type": "multiple_choice",
+          "questionNepali": "सिअर्चिनलाई इकाइनोडर्माटा फाइलममा राखिनुको कारण के हो ?",
+          "questionEnglish": "What is the reason for keeping sea-urchin in phylum echinodermata?",
+          "options": [
+            {"id": "i", "nepali": "शरीर, टाउको, छाती र पेटमा विभाजित भएकोले", "english": "Due to body being divided into head, thorax and abdomen"},
+            {"id": "ii", "nepali": "ट्युव फिटको सहायताले चाल देखाउने भएकोले", "english": "Due to locomotion with the help of tube-feet"},
+            {"id": "iii", "nepali": "शरीर टेपजस्तै पातलो, लामो र चेप्टो भएकोले", "english": "Due to body being flat and thin like a tape"},
+            {"id": "iv", "nepali": "यिनीहरू ओसिलो माटो र पानीमा पाइने भएकोले", "english": "Due to them being found in moist soil and water"}
+          ],
+          "correctAnswer": "ii", "marks": 1,
+          "explanation": "A key characteristic of Phylum Echinodermata is the presence of a water vascular system with tube feet used for locomotion."
+        },
+        {
+          "id": "3",
+          "type": "multiple_choice",
+          "questionNepali": "रगतमा एक्कासी सेता रक्तकोषको कमि भएमा कुन रोग लाग्छ ?",
+          "questionEnglish": "Which disease is caused due to the sudden deficiency of white blood cells in blood?",
+          "options": [
+            {"id": "i", "nepali": "ल्युकोपेनिया (leukopenia)", "english": "leukopenia"},
+            {"id": "ii", "nepali": "हेमोफिलिया (haemophilia)", "english": "haemophilia"},
+            {"id": "iii", "nepali": "रक्तअल्पता (anemia)", "english": "anemia"},
+            {"id": "iv", "nepali": "ल्युकेमिया (leukemia)", "english": "leukemia"}
+          ],
+          "correctAnswer": "i", "marks": 1,
+          "explanation": "Leukopenia is the medical term for a low white blood cell count. Leukemia is cancer characterized by an abnormal increase in white blood cells."
+        },
+        {
+          "id": "4",
+          "type": "multiple_choice",
+          "questionNepali": "नाइट्रिक एसिड र सोडियम हाइड्रोअक्साइड बिच रासायनिक प्रतिक्रिया हुँदा तलकामध्ये के उत्पादन हुन्छ?",
+          "questionEnglish": "What are the products obtained in a reaction between nitric acid and sodium hydroxide?",
+          "options": [
+            {"id": "i", "nepali": "NaNO₃ + H₂", "english": "NaNO₃ + H₂"},
+            {"id": "ii", "nepali": "NaCl + H₂O", "english": "NaCl + H₂O"},
+            {"id": "iii", "nepali": "NaNO₃ + H₂O", "english": "NaNO₃ + H₂O"},
+            {"id": "iv", "nepali": "NaNO₂ + O₂", "english": "NaNO₂ + O₂"}
+          ],
+          "correctAnswer": "iii", "marks": 1,
+          "explanation": "This is a neutralization reaction between an acid (Nitric Acid, HNO₃) and a base (Sodium Hydroxide, NaOH), which produces a salt (Sodium Nitrate, NaNO₃) and water (H₂O)."
+        },
+        {
+          "id": "5",
+          "type": "multiple_choice",
+          "questionNepali": "कार्वोजिन भन्नाले के जनाउँछ ?",
+          "questionEnglish": "What does carbogen indicate?",
+          "options": [
+            {"id": "i", "nepali": "कार्बनडाइअक्साइड र नाइट्रोजनको मिश्रण", "english": "Mixture of carbon dioxide and nitrogen"},
+            {"id": "ii", "nepali": "कार्बनडाइअक्साइड र हाइड्रोजनको मिश्रण", "english": "Mixture of carbon dioxide and hydrogen"},
+            {"id": "iii", "nepali": "कार्बनडाइअक्साइड र पानीको मिश्रण", "english": "Mixture of carbondioxide and water"},
+            {"id": "iv", "nepali": "कार्बनडाइअक्साइड र अक्सिजनको मिश्रण", "english": "Mixture of carbondioxide and oxygen"}
+          ],
+          "correctAnswer": "iv", "marks": 1,
+          "explanation": "Carbogen is a mixture of carbon dioxide and oxygen, used medically as a respiratory stimulant."
+        },
+        {
+          "id": "6",
+          "type": "multiple_choice",
+          "questionNepali": "मानिसको छालाको कोषमा क्रोमोजोमको सङख्या कति हुन्छ ?",
+          "questionEnglish": "What is the number of chromosome in human skin cell?",
+          "options": [
+            {"id": "i", "nepali": "40", "english": "40"},
+            {"id": "ii", "nepali": "42", "english": "42"},
+            {"id": "iii", "nepali": "44", "english": "44"},
+            {"id": "iv", "nepali": "46", "english": "46"}
+          ],
+          "correctAnswer": "iv", "marks": 1,
+          "explanation": "Human somatic cells (like skin cells) are diploid, containing 46 chromosomes organized into 23 pairs."
+        },
+        {
+          "id": "7",
+          "type": "multiple_choice",
+          "questionNepali": "20 m/s को गतिमा आकाशतिर फालिएको ढुङ्गा कति समयसम्म हावामा रहन्छ ?",
+          "questionEnglish": "For how long does a stone remain in air when it is thrown upward with an initial velocity of 20 m/s?",
+          "options": [
+            {"id": "i", "nepali": "2 s", "english": "2 s"},
+            {"id": "ii", "nepali": "4 s", "english": "4 s"},
+            {"id": "iii", "nepali": "10 s", "english": "10 s"},
+            {"id": "iv", "nepali": "20 s", "english": "20 s"}
+          ],
+          "correctAnswer": "ii", "marks": 1,
+          "explanation": "Time to reach max height (t_up) = u/g ≈ 20/10 = 2s. Total time in air = t_up + t_down = 2s + 2s = 4s. (Assuming g ≈ 10 m/s² for simplicity)."
+        },
+        {
+          "id": "8",
+          "type": "multiple_choice",
+          "questionNepali": "तलका मध्ये तामाको धाउ कुन हो ?",
+          "questionEnglish": "Which of the following is an ore of copper?",
+          "options": [
+            {"id": "i", "nepali": "चाल्कोपाइराइट (CuFeS₂)", "english": "Chalcopyrite (CuFeS₂)"},
+            {"id": "ii", "nepali": "अर्जेन्टाइट (Ag₂S)", "english": "Argentite (Ag₂S)"},
+            {"id": "iii", "nepali": "हेमाटाइट (Fe₂O₃)", "english": "Haematite (Fe₂O₃)"},
+            {"id": "iv", "nepali": "बक्साइट (Al₂O₃)", "english": "Bauxite (Al₂O₃)"}
+          ],
+          "correctAnswer": "i", "marks": 1,
+          "explanation": "Chalcopyrite is the primary ore of copper. Haematite is an ore of iron, Argentite is an ore of silver, and Bauxite is an ore of aluminum."
+        },
+        {
+          "id": "9",
+          "type": "multiple_choice",
+          "questionNepali": "ब्रम्हाण्डमा रहेका खगोलीय पिण्डहरू कुन बलको कारण आफ्नो स्थानमा रहेका छन् ?",
+          "questionEnglish": "Due to which force do celestial bodies in the universe remain in their position?",
+          "options": [
+            {"id": "i", "nepali": "न्युक्लीयर वल", "english": "nuclear force"},
+            {"id": "ii", "nepali": "गुरुत्वाकर्षण वल", "english": "gravitational force"},
+            {"id": "iii", "nepali": "चुम्वकीय वल", "english": "magnetic Force"},
+            {"id": "iv", "nepali": "विद्युत चुम्बकीय बल", "english": "electro-magnetic force"}
+          ],
+          "correctAnswer": "ii", "marks": 1,
+          "explanation": "Gravitational force is the fundamental force of attraction between all objects with mass, responsible for holding planets, stars, and galaxies together."
+        },
+        {
+          "id": "10",
+          "type": "multiple_choice",
+          "questionNepali": "तल दिइएको रासायनिक प्रतिक्रिया कुन प्रकारको हो ? Zn + 2HCl → ZnCl₂ + H₂",
+          "questionEnglish": "Which type of chemical reaction is given below? Zn + 2HCl → ZnCl₂ + H₂",
+          "options": [
+            {"id": "i", "nepali": "संयोजन (Combination)", "english": "Combination"},
+            {"id": "ii", "nepali": "विभाजन (Decomposition)", "english": "Decomposition"},
+            {"id": "iii", "nepali": "विस्थापन (Displacement)", "english": "Displacement"},
+            {"id": "iv", "nepali": "निराकरण (Neutralization)", "english": "Neutralization"}
+          ],
+          "correctAnswer": "iii", "marks": 1,
+          "explanation": "This is a single displacement reaction where a more reactive element (Zinc) displaces a less reactive element (Hydrogen) from its compound (HCl)."
+        }
+      ],
+      "groupB": [
+        {
+          "id": "11",
+          "type": "short_answer",
+          "questionNepali": "अनलाइन रेप्युटेसन भनेको के हो ?",
+          "questionEnglish": "What is online reputation?",
+          "marks": 1,
+          "sampleAnswer": "Online reputation is the collective public perception of an individual or organization based on their digital presence and activities on the internet, including social media posts, reviews, news articles, and other online content."
+        },
+        {
+          "id": "12",
+          "type": "short_answer",
+          "questionNepali": "शुद्ध रगत मुटुमा ल्याउने रक्तनलीको नाम के हो ?",
+          "questionEnglish": "What is the name of the blood vessel that brings pure blood to the heart?",
+          "marks": 1,
+          "sampleAnswer": "The pulmonary vein (पल्मोनरी भेन) is the blood vessel that carries oxygenated (pure) blood from the lungs to the left atrium of the heart."
+        },
+        {
+          "id": "13",
+          "type": "short_answer",
+          "questionNepali": "चुम्बकीय क्षेत्र भनेको के हो ?",
+          "questionEnglish": "What is magnetic field?",
+          "marks": 1,
+          "sampleAnswer": "A magnetic field is the region of space around a magnet, electric current, or moving charge within which the force of magnetism acts."
+        },
+        {
+          "id": "14",
+          "type": "short_answer",
+          "questionNepali": "संयोजन प्रतिक्रियाको एउटा उदाहरण दिनुहोस् ।",
+          "questionEnglish": "Give an example of a combination reaction.",
+          "marks": 1,
+          "sampleAnswer": "A combination reaction is one where two or more reactants combine to form a single product. A common example is the reaction of carbon with oxygen to form carbon dioxide: C + O₂ → CO₂."
+        },
+        {
+          "id": "15",
+          "type": "short_answer",
+          "questionNepali": "कार्बनडाइअक्साइड ग्यासलाई पानीमा घोल्दा बन्ने अम्लको आणविक सूत्र लेख्नुहोस् ।",
+          "questionEnglish": "Write the molecular formula of the acid formed when carbon dioxide gas is dissolved in water.",
+          "marks": 1,
+          "sampleAnswer": "When carbon dioxide (CO₂) dissolves in water (H₂O), it forms carbonic acid, a weak acid with the molecular formula H₂CO₃."
+        },
+        {
+          "id": "16",
+          "type": "short_answer",
+          "questionNepali": "रिठामा कुन तत्त्व हुन्छ जसले रिठामा फिंज पैदा गर्दछ ?",
+          "questionEnglish": "Which substance acts as a foaming agent in Reetha?",
+          "marks": 1,
+          "sampleAnswer": "The foaming agent in Reetha (soapnut) is a natural surfactant compound called saponin (स्यापोनिन). It is not an element but a complex organic molecule."
+        },
+        {
+          "id": "17",
+          "type": "short_answer",
+          "questionNepali": "प्रकृतिमा सुन शुद्ध अवस्थामा पाइन्छ, किन ?",
+          "questionEnglish": "Why is gold found in a pure state in nature?",
+          "marks": 1,
+          "sampleAnswer": "Gold is found in its pure or native state in nature because it is a very unreactive (noble) metal. It does not easily react with oxygen, water, or other elements to form compounds."
+        },
+        {
+          "id": "18",
+          "type": "short_answer",
+          "questionNepali": "साबुनभन्दा डिटर्जेन्ट वातावरणमैत्री मानिदैन, किन? एउटा कारण दिनुहोस् ।",
+          "questionEnglish": "Why is detergent considered less eco-friendly than soap? Give one reason.",
+          "marks": 1,
+          "sampleAnswer": "One major reason is that many synthetic detergents are non-biodegradable, meaning they cannot be broken down by microorganisms and thus persist in water bodies, causing long-term pollution. Another reason is that many contain phosphates, which cause eutrophication."
+        },
+        {
+          "id": "19",
+          "type": "short_answer",
+          "questionNepali": "हब्बलको नियमअनुसार ताराको गति के कुरामा निर्भर हुन्छ ?",
+          "questionEnglish": "According to Hubble's law, on what factor does the speed of a galaxy depend?",
+          "marks": 1,
+          "sampleAnswer": "According to Hubble's law (v = H₀d), the recessional speed (v) of a distant galaxy is directly proportional to its distance (d) from the observer."
+        }
+      ],
+      "groupC": [
+        {
+          "id": "20",
+          "type": "long_answer",
+          "questionNepali": "भाले र कर्मी मौरी बिच कुनै दुईओटा फरकहरू लेख्नुहोस् ।",
+          "questionEnglish": "Write any two differences between a drone bee and a worker bee.",
+          "marks": 2,
+          "sampleAnswer": "1. **Function:** The sole function of a drone (male) bee is to mate with the queen. In contrast, worker (female) bees perform all other tasks in the hive, such as collecting food, building combs, and defending the colony.\n2. **Origin/Genetics:** Drones develop from unfertilized eggs through parthenogenesis and are haploid. Worker bees develop from fertilized eggs and are diploid."
+        },
+        {
+          "id": "21",
+          "type": "long_answer",
+          "questionNepali": "खुला हर्ट सर्जरी कसरी गरिन्छ? छोटकरीमा लेख्नुहोस्।",
+          "questionEnglish": "How is open-heart surgery done? Describe in brief.",
+          "marks": 2,
+          "sampleAnswer": "Open-heart surgery is a procedure where the patient's chest is opened to perform surgery on the heart muscles, valves, or arteries. During the operation, the patient is connected to a heart-lung bypass machine, which temporarily takes over the function of the heart and lungs, circulating and oxygenating the blood so the surgeon can operate on a still, bloodless heart."
+        },
+        {
+          "id": "22",
+          "type": "long_answer",
+          "questionNepali": "वस्तु तौलविहीन हुने कुनै दुई अवस्थाहरु लेख्नुहोस् ।",
+          "questionEnglish": "Write any two conditions for an object to be in a state of weightlessness.",
+          "marks": 2,
+          "sampleAnswer": "1. **During Free Fall:** An object experiences weightlessness when it is falling freely under the force of gravity alone, for example, an astronaut in an orbiting satellite.\n2. **At the Center of a Planet:** If an object could be placed at the exact center of a planet like Earth, the gravitational force from all directions would cancel out, resulting in a net force of zero and a state of weightlessness."
+        },
+        {
+          "id": "23",
+          "type": "long_answer",
+          "questionNepali": "गुरुत्व प्रवेग (g) र गुरुत्वाकर्षण अचर (G) मा कुनै दुईओटा फरक लेख्नुहोस् ।",
+          "questionEnglish": "Write any two differences between acceleration due to gravity (g) and the gravitational constant (G).",
+          "marks": 2,
+          "sampleAnswer": "1. **Value:** The value of 'g' varies depending on location (e.g., altitude, depth). The value of 'G' is a universal constant and is the same everywhere in the universe (6.67 x 10⁻¹¹ Nm²/kg²).\n2. **Unit:** The SI unit of 'g' is meters per second squared (m/s²), as it is an acceleration. The SI unit of 'G' is Newton-meter squared per kilogram squared (Nm²/kg²)."
+        },
+        {
+          "id": "24",
+          "type": "long_answer",
+          "questionNepali": "किटनाशक औषधीको प्रयोग गर्दा अपनाउनुपर्ने दुईओटा सावधानीहरू लेख्नुहोस् ।",
+          "questionEnglish": "Write any two precautions to be taken while using insecticides.",
+          "marks": 2,
+          "sampleAnswer": "1. **Use Protective Gear:** Always wear protective clothing, including gloves, masks, and goggles, to avoid direct contact with the skin, inhalation, or ingestion of the harmful chemicals.\n2. **Proper Disposal:** Do not dispose of empty insecticide containers or leftover chemicals in or near water sources. They should be disposed of according to the manufacturer's instructions to prevent environmental contamination."
+        },
+        {
+          "id": "25",
+          "type": "long_answer",
+          "questionNepali": "प्रकाशको पूर्ण आन्तरिक परावर्तन हुन आवश्यक दुई अवस्थाहरू लेख्नुहोस् ।",
+          "questionEnglish": "Write any two necessary conditions for total internal reflection of light.",
+          "marks": 2,
+          "sampleAnswer": "1. **Medium of Travel:** The ray of light must be traveling from a denser optical medium to a rarer optical medium (e.g., from water to air, or from glass to water).\n2. **Angle of Incidence:** The angle of incidence in the denser medium must be greater than the critical angle for that pair of media."
+        },
+        {
+          "id": "26",
+          "type": "long_answer",
+          "questionNepali": "अल्काइनको सदस्यमध्ये कार्वन र हाइड्रोजनको सङ्ख्या बराबर हुने यौगिकको नाम र संरचनात्मक सूत्र लेख्नुहोस् ।",
+          "questionEnglish": "Write the name and structural formula of the member of the alkyne series which contains an equal number of carbon and hydrogen atoms.",
+          "marks": 2,
+          "sampleAnswer": "**Name:** The compound is Ethyne (also known as acetylene).\n**Structural Formula:** H−C≡C−H. It has 2 carbon atoms and 2 hydrogen atoms."
+        },
+        {
+          "id": "27",
+          "type": "long_answer",
+          "questionNepali": "आधारभूत एकाइको परिभाषा लेखी एउटा उदाहरण दिनुहोस् ।",
+          "questionEnglish": "Define fundamental unit and give one example.",
+          "marks": 2,
+          "sampleAnswer": "A fundamental unit is a basic unit of measurement for a physical quantity that is defined independently and from which other units (derived units) are formed. They form the foundation of a system of units.\nExample: One example of a fundamental unit is the meter (m), the SI unit for length."
+        },
+        {
+          "id": "28",
+          "type": "long_answer",
+          "questionNepali": "मेन्डलले आफ्‌नो प्रयोगका लागि केराउको बिरुवालाई किन रोजे ? कुनै दुईओटा कारणहरू दिनुहोस् ।",
+          "questionEnglish": "Why did Mendel choose the pea plant for his experiment? Give any two reasons.",
+          "marks": 2,
+          "sampleAnswer": "1. **Short Life Cycle:** Pea plants grow quickly and have a short life cycle, which allowed Mendel to study multiple generations in a relatively short amount of time.\n2. **Distinct Contrasting Traits:** They exhibit several easily observable and distinct traits that come in two contrasting forms (e.g., flower color: purple or white; seed shape: round or wrinkled)."
+        },
+        {
+          "id": "29",
+          "type": "long_answer",
+          "questionNepali": "धेरै चिसो स्थानमा रहेका पानीका पाइपहरू हिउदमा फुट्छन् । यसका कुनै दुई कारणहरू लेख्नुहोस् ।",
+          "questionEnglish": "Water pipes burst in very cold places in winter. Write any two reasons for this.",
+          "marks": 2,
+          "sampleAnswer": "1. **Anomalous Expansion of Water:** Unlike most substances that contract upon cooling, water expands when it freezes into ice at 0°C, increasing its volume by about 9%.\n2. **Exertion of Immense Pressure:** When the water inside a confined pipe freezes and expands, it exerts an enormous pressure on the inner walls of the pipe, causing it to crack and burst."
+        },
+        {
+          "id": "30",
+          "type": "long_answer",
+          "questionNepali": "खनिज र धाउमा कुनै दुईओटा फरक लेख्नुहोस् ।",
+          "questionEnglish": "Write any two differences between mineral and ore.",
+          "marks": 2,
+          "sampleAnswer": "1. **Definition:** A mineral is a naturally occurring chemical compound, while an ore is a specific type of mineral or rock from which a metal can be extracted profitably.\n2. **Scope:** All ores are minerals, but not all minerals are ores. A mineral is only called an ore if the concentration of the desired metal is high enough to make its extraction economically viable."
+        },
+        {
+          "id": "31",
+          "type": "long_answer",
+          "questionNepali": "डिटरजेन्ट प्रयोग गर्नु वातावरणीय दृष्टिकोणले हानिकारक हुनुका कुनै दुईओटा कारणहरू लेख्नुहोस् ।",
+          "questionEnglish": "The use of detergent is harmful from an environmental perspective. Give any two reasons for this.",
+          "marks": 2,
+          "sampleAnswer": "1. **Non-Biodegradability:** Many synthetic detergents are non-biodegradable. This means they are not easily broken down by microorganisms and persist in water bodies for a long time, leading to water pollution.\n2. **Eutrophication:** Many detergents contain phosphate compounds, which act as fertilizers for algae in water. This causes excessive algal growth (algal blooms) that depletes dissolved oxygen in the water, harming aquatic life."
+        },
+        {
+          "id": "32",
+          "type": "long_answer",
+          "questionNepali": "जलवायु परिवर्तनका कुनै दुइओटा असरहरू लेख्नुहोस् ।",
+          "questionEnglish": "Mention any two effects of climate change.",
+          "marks": 2,
+          "sampleAnswer": "1. **Global Temperature Rise:** An increase in the Earth's average surface temperature, leading to more frequent and intense heatwaves and the melting of glaciers and polar ice caps.\n2. **Sea Level Rise:** The melting of ice sheets and the thermal expansion of seawater contributes to a rise in global sea levels, threatening coastal communities."
+        },
+        {
+          "id": "33",
+          "type": "long_answer",
+          "questionNepali": "स्वतन्त्र चर र आश्रित चर विच दुईओटा फरक लेख्नुहोस् ।",
+          "questionEnglish": "Write two differences between independent and dependent variables.",
+          "marks": 2,
+          "sampleAnswer": "1. **Role in Experiment:** The independent variable is the factor that an experimenter intentionally changes or manipulates. The dependent variable is the factor that is measured or observed to see how it is affected by the change.\n2. **Cause and Effect:** The independent variable is considered the 'cause'. The dependent variable is the 'effect'; its value depends on the value of the independent variable."
+        }
+      ],
+      "groupD": [
+        {
+          "id": "34",
+          "type": "essay",
+          "questionNepali": "आधुनिक पेरियोडिक तालिकाको s ब्लक र p ब्लक तत्त्वहरूको कुनै दुई दुई ओटा विशेषताहरू लेख्नुहोस् ।",
+          "questionEnglish": "Write any two characteristics each of s-block and p-block elements of the modern periodic table.",
+          "marks": 4,
+          "sampleAnswer": "**Characteristics of s-block Elements:**\n1.  **Electronic Configuration:** Their valence (outermost) electron enters the 's' subshell. They have either 1 or 2 valence electrons.\n2.  **Chemical Properties:** They are highly reactive metals with low ionization energies. They readily lose their valence electrons to form positive ions and form ionic compounds.\n\n**Characteristics of p-block Elements:**\n1.  **Electronic Configuration:** Their valence electron enters the 'p' subshell. These elements are found in Groups 13 to 18 of the periodic table.\n2.  **Diversity of Elements:** This block is unique as it contains all three types of elements: metals (like Aluminium), non-metals (like Oxygen), and metalloids (like Silicon)."
+        },
+        {
+          "id": "35",
+          "type": "essay",
+          "questionNepali": "शक्ति संरक्षणको सिद्धान्त लेख्नुहोस्। स्वतन्त्र रूपमा खसिरहेको वस्तुको मामलामा यो कसरी प्रमाणित हुन्छ, व्याख्या गर्नुहोस्।",
+          "questionEnglish": "State the principle of conservation of energy. Explain how it is verified in the case of a freely falling body.",
+          "marks": 4,
+          "sampleAnswer": "**Principle of Conservation of Energy:** This principle states that energy can neither be created nor be destroyed; it can only be transformed from one form to another. The total energy in an isolated system remains constant.\n\n**Verification for a Freely Falling Body:**\nConsider a body of mass 'm' at a height 'h' (position A). \n1.  **At Position A (at height h):** Kinetic Energy (KE) = 0. Potential Energy (PE) = mgh. Total Energy (TE) = KE + PE = **mgh**.\n2.  **At Position B (after falling a distance x):** Height = h - x. From v² = u² + 2as, v² = 2gx. So KE = ½m(2gx) = mgx. PE = mg(h-x) = mgh - mgx. TE = KE + PE = mgx + mgh - mgx = **mgh**.\n3.  **At Position C (just before hitting the ground):** Height = 0. So, PE = 0. From v² = u² + 2as, v² = 2gh. KE = ½m(2gh) = mgh. TE = KE + PE = mgh + 0 = **mgh**.\nSince the total energy at all points is the same (mgh), the principle is verified. The potential energy is converted into kinetic energy during the fall."
+        },
+        {
+          "id": "36",
+          "type": "essay",
+          "questionNepali": "डिजिटल प्रविधिका कुनै दुईओटा सकारात्मक र दुईओटा नकारात्मक प्रभावहरू लेख्नुहोस् ।",
+          "questionEnglish": "Write any two positive and any two negative effects of digital technology in daily life.",
+          "marks": 4,
+          "sampleAnswer": "Digital technology has profoundly impacted daily life, bringing both significant benefits and notable drawbacks.\n\n**Positive Effects:**\n1.  **Enhanced Communication and Connectivity:** Digital technology allows for instant communication with people anywhere in the world through platforms like email, social media, and video calls. This has strengthened personal relationships across distances and enabled global collaboration.\n2.  **Access to Information and Education:** The internet provides immediate access to a vast repository of information on virtually any topic. This facilitates learning, research, and self-improvement through online courses, tutorials, and digital libraries.\n\n**Negative Effects:**\n1.  **Health Issues:** Excessive screen time can lead to physical health problems like eye strain, and a sedentary lifestyle. It can also impact mental health, causing issues like anxiety, depression, and sleep disturbances.\n2.  **Privacy and Security Concerns:** Vast amounts of personal data are collected online, raising concerns about privacy, data breaches, and misuse of information for surveillance or commercial purposes."
+        },
+        {
+          "id": "37",
+          "type": "essay",
+          "questionNepali": "हृदयघात हुनाको कुनै दुईओटा कारणहरू र दुईओटा रोकथामका उपायहरू लेख्नुहोस् ।",
+          "questionEnglish": "Write any two causes and two preventive measures of a heart attack.",
+          "marks": 4,
+          "sampleAnswer": "A heart attack (myocardial infarction) occurs when blood flow to the heart muscle is blocked.\n\n**Causes of Heart Attack:**\n1.  **Coronary Artery Disease (Atherosclerosis):** This is the most common cause, involving the buildup of fatty plaques in the coronary arteries. These plaques can rupture and form a blood clot, blocking blood flow.\n2.  **High Blood Pressure (Hypertension):** Uncontrolled high blood pressure can damage arteries, making them more susceptible to atherosclerosis. It also forces the heart to work harder.\n\n**Preventive Measures for Heart Attack:**\n1.  **Healthy Diet:** Adopting a balanced diet low in saturated fats, trans fats, cholesterol, and sodium is crucial. A diet rich in fruits, vegetables, and whole grains helps manage blood pressure and cholesterol.\n2.  **Regular Physical Activity:** Engaging in regular aerobic exercise (like brisk walking or swimming) strengthens the heart, improves circulation, and helps control weight, blood pressure, and cholesterol levels."
+        },
+        {
+          "id": "38",
+          "type": "essay",
+          "questionNepali": "प्रयोगशालामा कार्बन डाइअक्साइड ग्यास बनाउने प्रक्रियाको सन्तुलित रासायनिक समीकरण लेख्नुहोस्। यस ग्यासको दुईवटा उपयोगहरू र यसलाई परीक्षण गर्ने तरिका उल्लेख गर्नुहोस्।",
+          "questionEnglish": "Write the balanced chemical equation for the laboratory preparation of carbon dioxide gas. Mention two uses and the test for this gas.",
+          "marks": 4,
+          "sampleAnswer": "**Balanced Chemical Equation:**\nCarbon dioxide is prepared by reacting calcium carbonate with dilute hydrochloric acid:\nCaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g)\n\n**Uses of Carbon Dioxide:**\n1.  **In Fire Extinguishers:** It is used in fire extinguishers as it is non-combustible and heavier than air, displacing oxygen.\n2.  **In Photosynthesis and Beverages:** It is essential for photosynthesis in plants and is used to make carbonated (fizzy) drinks.\n\n**Test for Carbon Dioxide:**\nThe standard test is to pass the gas through limewater (calcium hydroxide solution). If carbon dioxide is present, the limewater will turn milky or cloudy due to the formation of a white precipitate of calcium carbonate."
+        },
+        {
+          "id": "39",
+          "type": "essay",
+          "questionNepali": "न्युटनको गुरुत्वाकर्षण सम्बन्धी विश्वव्यापी नियम लेख्नुहोस् र F = Gm₁m₂/d² सम्बन्धलाई व्याख्या गर्नुहोस्।",
+          "questionEnglish": "State Newton's Universal law of gravitation and explain the relation F = Gm₁m₂/d².",
+          "marks": 4,
+          "sampleAnswer": "**Newton's Universal Law of Gravitation:**\nThis law states that every particle in the universe attracts every other particle with a force that is directly proportional to the product of their masses and inversely proportional to the square of the distance between their centers.\n\n**Explanation of the Formula:**\nLet us consider two bodies with masses m₁ and m₂ separated by a distance 'd'.\n1. The gravitational force (F) is directly proportional to the product of the masses: F ∝ m₁m₂.\n2. The force (F) is inversely proportional to the square of the distance: F ∝ 1/d².\nCombining these, we get: F ∝ (m₁m₂)/d².\nTo make this an equation, we introduce the Universal Gravitational Constant, G.\nTherefore, **F = G(m₁m₂)/d²**, where G is a constant of proportionality."
+        },
+        {
+          "id": "40",
+          "type": "essay",
+          "questionNepali": "आनुवंशिकतामा क्रोमोजोम र जीनको भूमिकालाई व्याख्या गर्नुहोस्।",
+          "questionEnglish": "Explain the role of chromosomes and genes in heredity.",
+          "marks": 4,
+          "sampleAnswer": "Heredity is the passing of traits from parents to offspring, a process governed by chromosomes and genes.\n\n**Role of Chromosomes:**\nChromosomes, located in the cell nucleus, are thread-like structures made of DNA and proteins. They act as the carriers of genetic information. Humans have 23 pairs of chromosomes, inheriting one of each pair from each parent. Chromosomes ensure that genetic information is accurately organized and distributed during cell division and reproduction.\n\n**Role of Genes:**\nA gene is a specific segment of DNA on a chromosome. It is the fundamental unit of heredity. Each gene contains the instructions (code) to produce a specific protein. These proteins determine the specific traits of an organism, such as eye color, height, or blood type. Different versions of a gene, called alleles, are inherited from parents, and their combination determines the final expressed trait."
+        }
+      ]
+    }
+  }
+]

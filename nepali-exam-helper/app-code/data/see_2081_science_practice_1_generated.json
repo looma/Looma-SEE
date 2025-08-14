@@ -1,0 +1,410 @@
+[
+  {
+    "_id": "see_2081_science_practice_1_generated",
+    "title": "SEE 2081 Science Practice Test 1 (Generated Questions)",
+    "titleNepali": "SEE २०८१ विज्ञान अभ्यास परीक्षा १ (उत्पन्न प्रश्नहरू)"
+    "subject": "science",
+    "year": 2081,
+    "totalMarks": 75,
+    "duration": 180,
+    "sections": ["A", "B", "C", "D"],
+    "isActive": true,
+    "createdAt": { "$date": "2025-08-10T19:25:11.000Z" },
+    "updatedAt": { "$date": "2025-08-10T19:25:11.000Z" }
+  },
+  {
+    "_id": { "$oid": "687d809a2f3df9d071c52109" },
+    "testId": "see_2081_science_practice_1_generated",
+    "questions": {
+      "groupA": [
+        {
+          "id": "1",
+          "type": "multiple_choice",
+          "questionNepali": "कुन रक्तनलीले शरीरका विभिन्न भागबाट अशुद्ध रगत मुटुमा ल्याउँछ?",
+          "questionEnglish": "Which blood vessel brings impure blood from different parts of the body to the heart?",
+          "options": [
+            {"id": "i", "nepali": "एओर्टा (Aorta)", "english": "Aorta"},
+            {"id": "ii", "nepali": "पल्मोनरी धमनी (Pulmonary Artery)", "english": "Pulmonary Artery"},
+            {"id": "iii", "nepali": "भेना काभा (Vena Cava)", "english": "Vena Cava"},
+            {"id": "iv", "nepali": "पल्मोनरी शिरा (Pulmonary Vein)", "english": "Pulmonary Vein"}
+          ],
+          "correctAnswer": "iii", "marks": 1,
+          "explanation": "The Vena Cava (Superior and Inferior) are the large veins that collect deoxygenated (impure) blood from the body and return it to the right atrium of the heart. The pulmonary vein carries pure blood."
+        },
+        {
+          "id": "2",
+          "type": "multiple_choice",
+          "questionNepali": "आधुनिक पेरियोडिक नियमअनुसार, तत्वहरूको गुणधर्म के को पेरियोडिक कार्य हो?",
+          "questionEnglish": "According to the modern periodic law, the properties of elements are a periodic function of their?",
+          "options": [
+            {"id": "i", "nepali": "पारमाणविक भार (Atomic Mass)", "english": "Atomic Mass"},
+            {"id": "ii", "nepali": "पारमाणविक संख्या (Atomic Number)", "english": "Atomic Number"},
+            {"id": "iii", "nepali": "संयुज्यता (Valency)", "english": "Valency"},
+            {"id": "iv", "nepali": "घनत्व (Density)", "english": "Density"}
+          ],
+          "correctAnswer": "ii", "marks": 1,
+          "explanation": "The modern periodic law states that the physical and chemical properties of the elements are periodic functions of their atomic numbers."
+        },
+        {
+          "id": "3",
+          "type": "multiple_choice",
+          "questionNepali": "एउटा मेसिनले 10 सेकेन्डमा 500 जुल कार्य गर्छ भने त्यसको सामर्थ्य कति हुन्छ?",
+          "questionEnglish": "If a machine does 500 Joules of work in 10 seconds, what is its power?",
+          "options": [
+            {"id": "i", "nepali": "5000 W", "english": "5000 W"},
+            {"id": "ii", "nepali": "5 W", "english": "5 W"},
+            {"id": "iii", "nepali": "50 W", "english": "50 W"},
+            {"id": "iv", "nepali": "0.02 W", "english": "0.02 W"}
+          ],
+          "correctAnswer": "iii", "marks": 1,
+          "explanation": "Power is the rate of doing work. Power (P) = Work Done (W) / Time (t). So, P = 500 J / 10 s = 50 W."
+        },
+        {
+          "id": "4",
+          "type": "multiple_choice",
+          "questionNepali": "मानव शरीरमा इन्सुलिन हर्मोन उत्पादन गर्ने ग्रन्थि कुन हो?",
+          "questionEnglish": "Which gland produces the hormone insulin in the human body?",
+          "options": [
+            {"id": "i", "nepali": "पिट्युटरी (Pituitary)", "english": "Pituitary"},
+            {"id": "ii", "nepali": "थाइरोइड (Thyroid)", "english": "Thyroid"},
+            {"id": "iii", "nepali": "एड्रिनल (Adrenal)", "english": "Adrenal"},
+            {"id": "iv", "nepali": "प्यान्क्रियाज (Pancreas)", "english": "Pancreas"}
+          ],
+          "correctAnswer": "iv", "marks": 1,
+          "explanation": "The pancreas is an endocrine gland that produces insulin, a hormone essential for regulating blood sugar levels."
+        },
+        {
+          "id": "5",
+          "type": "multiple_choice",
+          "questionNepali": "तलका मध्ये कुन हरितगृह ग्यास होइन?",
+          "questionEnglish": "Which of the following is not a greenhouse gas?",
+          "options": [
+            {"id": "i", "nepali": "कार्बन डाइअक्साइड (Carbon Dioxide)", "english": "Carbon Dioxide"},
+            {"id": "ii", "nepali": "मिथेन (Methane)", "english": "Methane"},
+            {"id": "iii", "nepali": "नाइट्रोजन (Nitrogen)", "english": "Nitrogen"},
+            {"id": "iv", "nepali": "जल वाष्प (Water Vapour)", "english": "Water Vapour"}
+          ],
+          "correctAnswer": "iii", "marks": 1,
+          "explanation": "Carbon dioxide, methane, and water vapour are all potent greenhouse gases that trap heat. Nitrogen (N₂), which makes up about 78% of the atmosphere, is not considered a significant greenhouse gas."
+        },
+        {
+          "id": "6",
+          "type": "multiple_choice",
+          "questionNepali": "मायोपिया (short-sightedness) भएको व्यक्तिले कुन प्रकारको लेन्स प्रयोग गर्नुपर्छ?",
+          "questionEnglish": "A person with myopia (short-sightedness) should use which type of lens?",
+          "options": [
+            {"id": "i", "nepali": "कन्केभ लेन्स (Concave lens)", "english": "Concave lens"},
+            {"id": "ii", "nepali": "कन्भेक्स लेन्स (Convex lens)", "english": "Convex lens"},
+            {"id": "iii", "nepali": "बाइफोकल लेन्स (Bifocal lens)", "english": "Bifocal lens"},
+            {"id": "iv", "nepali": "प्लेन ग्लास (Plane glass)", "english": "Plane glass"}
+          ],
+          "correctAnswer": "i", "marks": 1,
+          "explanation": "Myopia occurs when the eye focuses images in front of the retina instead of on the retina. A concave lens is a diverging lens that spreads out light rays, effectively moving the focal point backward onto the retina."
+        },
+        {
+          "id": "7",
+          "type": "multiple_choice",
+          "questionNepali": "फाइलम एनेलिडाको विशेषता कुन हो?",
+          "questionEnglish": "Which is a characteristic of Phylum Annelida?",
+          "options": [
+            {"id": "i", "nepali": "जोर्नीयुक्त खुट्टाहरू (Jointed appendages)", "english": "Jointed appendages"},
+            {"id": "ii", "nepali": "शरीरमा छिद्रहरू (Pores on the body)", "english": "Pores on the body"},
+            {"id": "iii", "nepali": "खण्डीकृत शरीर (Segmented body)", "english": "Segmented body"},
+            {"id": "iv", "nepali": "काँटेदार छाला (Spiny skin)", "english": "Spiny skin"}
+          ],
+          "correctAnswer": "iii", "marks": 1,
+          "explanation": "A key characteristic of Phylum Annelida (e.g., earthworms, leeches) is having a body that is metamerically segmented, meaning it is divided into a series of repeating segments."
+        },
+        {
+          "id": "8",
+          "type": "multiple_choice",
+          "questionNepali": "प्रोपेन (C₃H₈) को आणविक भार कति हुन्छ? (C=12, H=1)",
+          "questionEnglish": "What is the molecular mass of Propane (C₃H₈)? (C=12, H=1)",
+          "options": [
+            {"id": "i", "nepali": "40 amu", "english": "40 amu"},
+            {"id": "ii", "nepali": "42 amu", "english": "42 amu"},
+            {"id": "iii", "nepali": "28 amu", "english": "28 amu"},
+            {"id": "iv", "nepali": "44 amu", "english": "44 amu"}
+          ],
+          "correctAnswer": "iv", "marks": 1,
+          "explanation": "The molecular mass of Propane (C₃H₈) is calculated as: (3 * Atomic mass of C) + (8 * Atomic mass of H) = (3 * 12) + (8 * 1) = 36 + 8 = 44 amu."
+        },
+        {
+          "id": "9",
+          "type": "multiple_choice",
+          "questionNepali": "यदि कुनै वस्तुको पिण्ड र अर्धव्यास पृथ्वीको भन्दा आधा छ भने, त्यस वस्तुमा गुरुत्व प्रवेग 'g' को मान कति हुन्छ? (g on Earth = 9.8 m/s²)",
+          "questionEnglish": "If a celestial body has half the mass and half the radius of Earth, what will be the value of 'g' on it? (g on Earth = 9.8 m/s²)",
+          "options": [
+            {"id": "i", "nepali": "19.6 m/s²", "english": "19.6 m/s²"},
+            {"id": "ii", "nepali": "4.9 m/s²", "english": "4.9 m/s²"},
+            {"id": "iii", "nepali": "9.8 m/s²", "english": "9.8 m/s²"},
+            {"id": "iv", "nepali": "2.45 m/s²", "english": "2.45 m/s²"}
+          ],
+          "correctAnswer": "i", "marks": 1,
+          "explanation": "g = GM/R². Let g' be the new acceleration due to gravity. g' = G(M/2) / (R/2)² = G(M/2) / (R²/4) = 2(GM/R²) = 2g. So, g' = 2 * 9.8 = 19.6 m/s²."
+        },
+        {
+          "id": "10",
+          "type": "multiple_choice",
+          "questionNepali": "विद्युतको सबैभन्दा राम्रो सुचालक धातु कुन हो?",
+          "questionEnglish": "Which metal is the best conductor of electricity?",
+          "options": [
+            {"id": "i", "nepali": "सुन (Gold)", "english": "Gold"},
+            {"id": "ii", "nepali": "चाँदी (Silver)", "english": "Silver"},
+            {"id": "iii", "nepali": "तामा (Copper)", "english": "Copper"},
+            {"id": "iv", "nepali": "आल्मुनियम (Aluminum)", "english": "Aluminum"}
+          ],
+          "correctAnswer": "ii", "marks": 1,
+          "explanation": "Silver has the highest electrical conductivity of all metals, but due to its high cost, copper is more commonly used for electrical wiring."
+        }
+      ],
+      "groupB": [
+        {
+          "id": "11",
+          "type": "short_answer",
+          "questionNepali": "जडत्व (Inertia) को परिभाषा दिनुहोस्।",
+          "questionEnglish": "Define Inertia.",
+          "marks": 1,
+          "sampleAnswer": "Inertia is the property of an object to resist any change in its state of rest or of uniform motion in a straight line."
+        },
+        {
+          "id": "12",
+          "type": "short_answer",
+          "questionNepali": "मानव शरीरको रगतमा प्लेटलेट्सको मुख्य कार्य के हो?",
+          "questionEnglish": "What is the main function of platelets in human blood?",
+          "marks": 1,
+          "sampleAnswer": "The main function of platelets (thrombocytes) is to help in the clotting of blood at the site of an injury to prevent excessive bleeding."
+        },
+        {
+          "id": "13",
+          "type": "short_answer",
+          "questionNepali": "ओजोन तहको एउटा महत्त्व लेख्नुहोस्।",
+          "questionEnglish": "Write one importance of the ozone layer.",
+          "marks": 1,
+          "sampleAnswer": "The ozone layer protects life on Earth by absorbing the majority of the Sun's harmful ultraviolet (UV) radiation."
+        },
+        {
+          "id": "14",
+          "type": "short_answer",
+          "questionNepali": "न्यूनीकरण विभाजन (Reduction Division) कुन कोष विभाजनलाई भनिन्छ?",
+          "questionEnglish": "Which cell division is known as Reduction Division?",
+          "marks": 1,
+          "sampleAnswer": "Meiosis cell division (मियोसिस कोष विभाजन) is known as reduction division because it reduces the number of chromosomes in the parent cell by half to produce four gamete cells."
+        },
+        {
+          "id": "15",
+          "type": "short_answer",
+          "questionNepali": "एउटा मिश्रित धातु (alloy) को उदाहरण दिनुहोस्।",
+          "questionEnglish": "Give one example of an alloy.",
+          "marks": 1,
+          "sampleAnswer": "An example of an alloy is Brass (पित्तल), which is a mixture of copper and zinc. Another example is Bronze (काँस), made of copper and tin."
+        },
+        {
+          "id": "16",
+          "type": "short_answer",
+          "questionNepali": "प्रकाश संश्लेषण प्रक्रियामा कुन ग्यास उत्सर्जन हुन्छ?",
+          "questionEnglish": "Which gas is released during the process of photosynthesis?",
+          "marks": 1,
+          "sampleAnswer": "Oxygen (O₂) gas is released as a byproduct during photosynthesis."
+        },
+        {
+          "id": "17",
+          "type": "short_answer",
+          "questionNepali": "2000 Kg को गाडी 5 m/s² को प्रवेगमा गुडिरहेको छ भने त्यसमा कति बल लागेको होला?",
+          "questionEnglish": "How much force is acting on a 2000 Kg vehicle moving with an acceleration of 5 m/s²?",
+          "marks": 1,
+          "sampleAnswer": "Using Newton's second law, Force = mass × acceleration = 2000 kg × 5 m/s² = 10,000 N."
+        },
+        {
+          "id": "18",
+          "type": "short_answer",
+          "questionNepali": "एउटा सकारात्मक उत्प्रेरक (positive catalyst) को कार्य के हो?",
+          "questionEnglish": "What is the function of a positive catalyst?",
+          "marks": 1,
+          "sampleAnswer": "A positive catalyst increases the rate of a chemical reaction by providing an alternative reaction pathway with lower activation energy."
+        },
+        {
+          "id": "19",
+          "type": "short_answer",
+          "questionNepali": "मानव शरीरको सबैभन्दा ठूलो धमनीको नाम के हो?",
+          "questionEnglish": "What is the name of the largest artery in the human body?",
+          "marks": 1,
+          "sampleAnswer": "The largest artery in the human body is the Aorta (एओर्टा)."
+        }
+      ],
+      "groupC": [
+        {
+          "id": "20",
+          "type": "long_answer",
+          "questionNepali": "चाल (speed) र वेग (velocity) बिच दुईओटा भिन्नता लेख्नुहोस्।",
+          "questionEnglish": "Write any two differences between speed and velocity.",
+          "marks": 2,
+          "sampleAnswer": "1. **Definition:** Speed is the rate of change of distance (a scalar quantity), whereas velocity is the rate of change of displacement (a vector quantity).\n2. **Direction:** Speed only has magnitude (e.g., 50 km/h), while velocity has both magnitude and direction (e.g., 50 km/h due East)."
+        },
+        {
+          "id": "21",
+          "type": "long_answer",
+          "questionNepali": "धमनी (artery) र शिरा (vein) बिच कुनै दुई भिन्नताहरू लेख्नुहोस्।",
+          "questionEnglish": "Write any two differences between an artery and a vein.",
+          "marks": 2,
+          "sampleAnswer": "1. **Function:** Arteries carry blood away from the heart to different parts of the body, while veins carry blood from different parts of the body towards the heart.\n2. **Wall Structure:** Arteries have thick, muscular, and elastic walls to withstand high pressure, whereas veins have thinner, less muscular walls as the blood pressure within them is lower. Veins also have valves to prevent the backflow of blood, which arteries do not."
+        },
+        {
+          "id": "22",
+          "type": "long_answer",
+          "questionNepali": "प्रयोगशालामा एमोनिया ग्यासलाई हावाको तल्लो विस्थापन विधिबाट किन संकलन गरिन्छ? दुई कारण दिनुहोस्।",
+          "questionEnglish": "Why is ammonia gas collected by the downward displacement of air in the laboratory? Give two reasons.",
+          "marks": 2,
+          "sampleAnswer": "1. **Less Dense than Air:** Ammonia gas is lighter (less dense) than air. Therefore, when collected in an inverted gas jar, it rises and displaces the heavier air downwards.\n2. **Highly Soluble in Water:** Ammonia is extremely soluble in water, so it cannot be collected over water as it would dissolve."
+        },
+        {
+          "id": "23",
+          "type": "long_answer",
+          "questionNepali": "बलियो अम्ल र कमजोर अम्ल बिच दुईवटा भिन्नता लेख्नुहोस्।",
+          "questionEnglish": "Write two differences between a strong acid and a weak acid.",
+          "marks": 2,
+          "sampleAnswer": "1. **Degree of Ionization:** Strong acids ionize completely or almost completely in an aqueous solution, releasing a high concentration of H+ ions. Weak acids ionize only partially, resulting in a lower concentration of H+ ions.\n2. **Conductivity:** Due to the higher concentration of free ions, a solution of a strong acid is a much better conductor of electricity than a solution of a weak acid of the same concentration."
+        },
+        {
+          "id": "24",
+          "type": "long_answer",
+          "questionNepali": "गुरुत्व प्रवेग 'g' को मान उचाइअनुसार फरक पर्नुका दुई कारणहरू के के हुन्?",
+          "questionEnglish": "What are two reasons for the variation of acceleration due to gravity 'g' with altitude?",
+          "marks": 2,
+          "sampleAnswer": "1. **Distance from Earth's Center:** According to the formula g = GM/d², 'g' is inversely proportional to the square of the distance (d) from the center of the Earth. As altitude increases, this distance increases, causing the value of 'g' to decrease.\n2. **Effect of Air Resistance:** While the fundamental value of 'g' changes with distance, the apparent acceleration of a falling body is also affected by air resistance, which increases with velocity and can vary with air density at different altitudes."
+        },
+        {
+          "id": "25",
+          "type": "long_answer",
+          "questionNepali": "नवीकरणीय र अनवीकरणीय ऊर्जाका स्रोतहरू बिच दुई भिन्नता उदाहरणसहित लेख्नुहोस्।",
+          "questionEnglish": "Write two differences between renewable and non-renewable sources of energy with examples.",
+          "marks": 2,
+          "sampleAnswer": "1. **Replenishment:** Renewable energy sources can be replenished naturally within a human lifespan (e.g., solar, wind energy). Non-renewable energy sources are finite and cannot be replenished within a human lifespan, as they take millions of years to form (e.g., fossil fuels like coal, petroleum).\n2. **Environmental Impact:** Renewable energy sources are generally cleaner and have a lower environmental impact, producing few or no greenhouse gases. Non-renewable energy sources, when burned, release significant amounts of greenhouse gases and other pollutants, contributing to climate change and air pollution."
+        },
+        {
+          "id": "26",
+          "type": "long_answer",
+          "questionNepali": "रानी मौरी र कर्मी मौरीका कुनै एक-एक मुख्य कार्य लेख्नुहोस्।",
+          "questionEnglish": "Write any one main function of a queen bee and a worker bee.",
+          "marks": 2,
+          "sampleAnswer": "**Function of Queen Bee:** The primary function of the queen bee is to lay eggs (both fertilized and unfertilized), ensuring the continuity and growth of the colony.\n**Function of Worker Bee:** A main function of a worker bee is to forage for nectar and pollen to feed the colony. (Other valid answers: building the hive, cleaning cells, defending the colony)."
+        },
+        {
+          "id": "27",
+          "type": "long_answer",
+          "questionNepali": "2 kg पानीको तापक्रम 20°C बाट 50°C सम्म बढाउन कति ताप शक्ति चाहिन्छ? (पानीको विशिष्ट तापधारण क्षमता = 4200 J/kg°C)",
+          "questionEnglish": "How much heat energy is required to raise the temperature of 2 kg of water from 20°C to 50°C? (Specific heat capacity of water = 4200 J/kg°C)",
+          "marks": 2,
+          "sampleAnswer": "Here, Mass (m) = 2 kg, Change in temperature (dT) = 50°C - 20°C = 30°C, Specific heat capacity (s) = 4200 J/kg°C. \nHeat energy (Q) = m * s * dT = 2 * 4200 * 30 = 252,000 Joules."
+        },
+        {
+          "id": "28",
+          "type": "long_answer",
+          "questionNepali": "विद्युतीय मोटर (DC Motor) को कार्य सिद्धान्त लेख्नुहोस्।",
+          "questionEnglish": "Write the working principle of an electric motor (DC Motor).",
+          "marks": 2,
+          "sampleAnswer": "The working principle of a DC motor is based on the motor effect. It states that when a current-carrying conductor (the coil) is placed in a magnetic field, it experiences a mechanical force. This force causes the coil to rotate, converting electrical energy into mechanical rotational energy."
+        },
+        {
+          "id": "29",
+          "type": "long_answer",
+          "questionNepali": "समस्थानिक (Isotopes) भनेको के हो? हाइड्रोजनका कुनै दुई समस्थानिकको नाम लेख्नुहोस्।",
+          "questionEnglish": "What are isotopes? Write the names of any two isotopes of Hydrogen.",
+          "marks": 2,
+          "sampleAnswer": "**Isotopes:** Isotopes are atoms of the same element that have the same number of protons (and thus the same atomic number) but different numbers of neutrons, resulting in different mass numbers.\n**Isotopes of Hydrogen:** Any two of the following: Protium (¹H), Deuterium (²H), Tritium (³H)."
+        },
+        {
+          "id": "30",
+          "type": "long_answer",
+          "questionNepali": "कृत्रिम गर्भाधानका कुनै दुई फाइदाहरू लेख्नुहोस्।",
+          "questionEnglish": "Write any two advantages of artificial insemination.",
+          "marks": 2,
+          "sampleAnswer": "1. **Genetic Improvement:** It allows for the widespread use of semen from genetically superior males to improve desirable traits (like milk yield or meat quality) in a large number of offspring.\n2. **Overcoming Breeding Barriers:** It helps overcome physical or geographical barriers to mating and allows for the insemination of females even if the male is deceased, as semen can be frozen and stored for long periods."
+        },
+        {
+          "id": "31",
+          "type": "long_answer",
+          "questionNepali": "10 Ω प्रतिरोध भएको तारमा 2 A को करेन्ट 5 सेकेन्डसम्म प्रवाह हुँदा कति ताप शक्ति उत्पादन हुन्छ?",
+          "questionEnglish": "How much heat energy is produced when a current of 2 A flows through a wire of resistance 10 Ω for 5 seconds?",
+          "marks": 2,
+          "sampleAnswer": "According to Joule's law of heating, Heat (H) = I²Rt.\nHere, I = 2 A, R = 10 Ω, t = 5 s.\nH = (2)² * 10 * 5 = 4 * 10 * 5 = 200 Joules."
+        },
+        {
+          "id": "32",
+          "type": "long_answer",
+          "questionNepali": "युरिया मल बनाउन प्रयोग हुने दुई ग्यासहरू कुन-कुन हुन्?",
+          "questionEnglish": "Which two gases are used to manufacture urea fertilizer?",
+          "marks": 2,
+          "sampleAnswer": "The two primary gases used in the Haber-Bosch process and subsequent urea synthesis are Ammonia (NH₃) and Carbon Dioxide (CO₂)."
+        },
+        {
+          "id": "33",
+          "type": "long_answer",
+          "questionNepali": "तौलविहीनताका कुनै दुई अवस्थाहरू लेख्नुहोस्।",
+          "questionEnglish": "Write any two conditions for an object to be weightlessness.",
+          "marks": 2,
+          "sampleAnswer": "1. **During Free Fall:** An object is in a state of weightlessness when it is falling freely under the influence of gravity alone, such as an object inside a freely falling elevator or an orbiting satellite.\n2. **At the Center of the Earth:** Hypothetically, if an object could be placed at the center of the Earth, the gravitational pull from all surrounding mass would cancel out, resulting in a net force of zero and a state of weightlessness."
+        }
+      ],
+      "groupD": [
+        {
+          "id": "34",
+          "type": "essay",
+          "questionNepali": "ओमको नियम लेख्नुहोस् र V=IR सम्बन्ध प्रमाणित गर्नुहोस्। यस नियमका दुई सिमितताहरू पनि लेख्नुहोस्।",
+          "questionEnglish": "State Ohm's Law and verify the relation V=IR. Also, write two limitations of this law.",
+          "marks": 4,
+          "sampleAnswer": "**Ohm's Law:** Ohm's law states that, at a constant temperature, the electric current flowing through a conductor is directly proportional to the potential difference across its ends.\n\n**Verification:**\nIf 'V' is the potential difference and 'I' is the current, then according to the law:\nV ∝ I (at constant temperature)\nTo convert the proportionality into an equation, we introduce a constant, 'R', which is called the resistance of the conductor.\nTherefore, V = I × R or V = IR. This verifies the relationship.\n\n**Limitations of Ohm's Law:**\n1. **Constant Temperature Required:** Ohm's law is only valid as long as the temperature and other physical conditions of the conductor remain constant. If the temperature increases, the resistance changes, and the law no longer holds true.\n2. **Not Applicable to all Conductors:** The law is not universally applicable. It does not apply to non-ohmic conductors such as semiconductors (like diodes, transistors), electrolytes, or gases."
+        },
+        {
+          "id": "35",
+          "type": "essay",
+          "questionNepali": "मानव शरीरमा प्रोटिनको पाचन प्रक्रिया पेट र सानो आन्द्रामा कसरी हुन्छ, वर्णन गर्नुहोस्।",
+          "questionEnglish": "Describe the process of protein digestion in the human stomach and small intestine.",
+          "marks": 4,
+          "sampleAnswer": "Protein digestion is a chemical process that begins in the stomach and is completed in the small intestine.\n\n**In the Stomach:**\nWhen food containing protein enters the stomach, the gastric glands are stimulated to release gastric juice. Gastric juice contains inactive pepsinogen and hydrochloric acid (HCl).\n1.  **Activation:** Hydrochloric acid creates a highly acidic environment (pH 1.5-3.5) which kills most bacteria and activates pepsinogen into its active form, pepsin.\n2.  **Digestion:** Pepsin is a protease enzyme that begins the breakdown of large, complex protein molecules into smaller polypeptide chains and proteoses.\n\n**In the Small Intestine:**\nThe partially digested food (chyme) moves from the stomach into the duodenum (the first part of the small intestine). Here, two main secretions continue protein digestion:\n1.  **Pancreatic Juice:** The pancreas releases pancreatic juice containing inactive proteases: trypsinogen and chymotrypsinogen. In the duodenum, an enzyme called enterokinase activates trypsinogen into trypsin. Trypsin then digests proteins further and also activates chymotrypsinogen into chymotrypsin. Both trypsin and chymotrypsin break down the polypeptides into smaller peptides.\n2.  **Intestinal Juice (Succus Entericus):** The walls of the small intestine secrete intestinal juice containing enzymes called peptidases (like erepsin). These enzymes complete the final step of digestion by breaking down the small peptides into their individual building blocks, amino acids. These amino acids are then small enough to be absorbed through the intestinal walls into the bloodstream."
+        },
+        {
+          "id": "36",
+          "type": "essay",
+          "questionNepali": "पारिस्थितिक प्रणालीमा जैविक र अजैविक तत्वहरूबीचको अन्तरसम्बन्धलाई दुई उदाहरणसहित व्याख्या गर्नुहोस्।",
+          "questionEnglish": "Explain the interrelationship between biotic and abiotic factors in an ecosystem with two examples.",
+          "marks": 4,
+          "sampleAnswer": "In an ecosystem, biotic (living) and abiotic (non-living) factors are deeply interconnected and interdependent. Biotic components rely on abiotic factors for survival, and in turn, influence the state of these abiotic factors.\n\n**Example 1: Plants and Abiotic Factors**\nA plant (biotic factor) depends on several abiotic factors for its survival. It requires sunlight (abiotic) for photosynthesis, water (abiotic) from the soil for metabolic processes, carbon dioxide (abiotic) from the air, and nutrients (abiotic, e.g., nitrogen, phosphorus) from the soil. In turn, the plant affects the abiotic environment. Through photosynthesis, it releases oxygen, changing the composition of the atmosphere. Its roots help hold the soil together, preventing erosion, and upon death, its decomposition returns organic matter and nutrients to the soil.\n\n**Example 2: Animals and Water**\nAnimals (biotic factor) need water (abiotic factor) for drinking, regulating body temperature, and as a habitat (for aquatic animals). The availability of water in an area directly determines the types and number of animals that can survive there. In turn, animals can affect water bodies. For instance, animals like beavers build dams, which significantly alters the flow of rivers and creates new pond ecosystems. Waste products from animals can also add nutrients like nitrogen to water sources, affecting water quality."
+        },
+        {
+          "id": "37",
+          "type": "essay",
+          "questionNepali": "एक स्टेप-अप ट्रान्सफर्मरको प्राइमरी क्वाइलमा 200 फन्का र सेकेन्डरी क्वाइलमा 1000 फन्का छन्। यदि प्राइमरी भोल्टेज 220 V छ भने, सेकेन्डरी भोल्टेज गणना गर्नुहोस्। यसको रूपान्तरण अनुपात के हो र यसको एउटा उपयोग लेख्नुहोस्।",
+          "questionEnglish": "A step-up transformer has 200 turns in the primary coil and 1000 turns in the secondary coil. If the primary voltage is 220 V, calculate the secondary voltage. What is its transformation ratio and write one use of it.",
+          "marks": 4,
+          "sampleAnswer": "**Given:**\nPrimary turns (Np) = 200\nSecondary turns (Ns) = 1000\nPrimary voltage (Vp) = 220 V\nSecondary voltage (Vs) = ?\n\n**Calculation of Secondary Voltage:**\nWe use the transformer formula: Vs / Vp = Ns / Np\nVs / 220 = 1000 / 200\nVs / 220 = 5\nVs = 5 * 220\nVs = 1100 V\nSo, the secondary voltage is **1100 V**.\n\n**Transformation Ratio (K):**\nThe transformation ratio is K = Ns / Np = 1000 / 200 = **5**.\n\n**Use of a Step-up Transformer:**\nA primary use of a step-up transformer is at power stations. They are used to increase the voltage of the generated electricity to very high levels before transmitting it over long distances. This reduces power loss (as heat) in the transmission lines."
+        },
+        {
+          "id": "38",
+          "type": "essay",
+          "questionNepali": "शक्ति संरक्षणको सिद्धान्त लेख्नुहोस्। स्वतन्त्र रूपमा खसिरहेको वस्तुको मामलामा यो कसरी प्रमाणित हुन्छ, व्याख्या गर्नुहोस्।",
+          "questionEnglish": "State the principle of conservation of energy. Explain how it is verified in the case of a freely falling body.",
+          "marks": 4,
+          "sampleAnswer": "**Principle of Conservation of Energy:** This principle states that energy can neither be created nor be destroyed; it can only be transformed from one form to another. The total energy in an isolated system remains constant.\n\n**Verification for a Freely Falling Body:**\nConsider a body of mass 'm' at a height 'h' above the ground (position A). It is allowed to fall freely. We will analyze its energy at three points: A (at the top), B (in the middle of its fall), and C (just before hitting the ground).\n\n1.  **At Position A (at height h):**\n    * Velocity (v) = 0. So, Kinetic Energy (KE) = ½mv² = 0.\n    * Potential Energy (PE) = mgh.\n    * Total Energy (TE) = KE + PE = 0 + mgh = **mgh**.\n\n2.  **At Position B (after falling a distance x):**\n    * Height from ground = h - x.\n    * From v² = u² + 2as, here v² = 0² + 2gx = 2gx.\n    * KE = ½mv² = ½m(2gx) = mgx.\n    * PE = mg(h-x) = mgh - mgx.\n    * TE = KE + PE = mgx + (mgh - mgx) = **mgh**.\n\n3.  **At Position C (just before hitting the ground):**\n    * Height = 0. So, PE = mgh = 0.\n    * From v² = u² + 2as, here v² = 0² + 2gh = 2gh.\n    * KE = ½mv² = ½m(2gh) = mgh.\n    * TE = KE + PE = mgh + 0 = **mgh**.\n\nSince the total energy at positions A, B, and C is the same (mgh), the principle of conservation of energy is verified for a freely falling body. The potential energy at the top is completely converted into kinetic energy at the bottom."
+        },
+        {
+          "id": "39",
+          "type": "essay",
+          "questionNepali": "प्रयोगशालामा कार्बन डाइअक्साइड ग्यास बनाउने प्रक्रियाको सन्तुलित रासायनिक समीकरण लेख्नुहोस्। यस ग्यासको दुईवटा उपयोगहरू र यसलाई परीक्षण गर्ने तरिका उल्लेख गर्नुहोस्।",
+          "questionEnglish": "Write the balanced chemical equation for the laboratory preparation of carbon dioxide gas. Mention two uses and the test for this gas.",
+          "marks": 4,
+          "sampleAnswer": "**Laboratory Preparation of Carbon Dioxide:**\nCarbon dioxide gas is prepared in the laboratory by the reaction of dilute hydrochloric acid (HCl) with calcium carbonate (CaCO₃), commonly in the form of marble chips.\n\n**Balanced Chemical Equation:**\nCaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g)\n\n**Uses of Carbon Dioxide:**\n1.  **In Fire Extinguishers:** Since CO₂ is a non-combustible gas and is denser than air, it is used in fire extinguishers to cut off the oxygen supply and put out fires.\n2.  **In Photosynthesis and Beverages:** Plants use CO₂ for photosynthesis. It is also used to make carbonated beverages (soft drinks) by dissolving it in water under pressure.\n\n**Test for Carbon Dioxide:**\nThe test for CO₂ gas is to pass it through limewater (a solution of calcium hydroxide, Ca(OH)₂). If carbon dioxide is present, the clear limewater will turn milky or cloudy due to the formation of a white precipitate of calcium carbonate (CaCO₃)."
+        },
+        {
+          "id": "40",
+          "type": "essay",
+          "questionNepali": "आनुवंशिकतामा क्रोमोजोम र जीनको भूमिकालाई व्याख्या गर्नुहोस्।",
+          "questionEnglish": "Explain the role of chromosomes and genes in heredity.",
+          "marks": 4,
+          "sampleAnswer": "Heredity is the passing of traits from parents to their offspring. This process is fundamentally controlled by chromosomes and genes located within the nucleus of our cells.\n\n**Role of Chromosomes:**\nChromosomes are thread-like structures made of protein and a single molecule of DNA. They act as the primary carriers or vehicles of genetic information. Humans have 46 chromosomes in each somatic cell, arranged in 23 pairs. One chromosome from each pair is inherited from each parent. Chromosomes ensure that the vast amount of genetic information in DNA is organized, managed, and accurately distributed to new cells during cell division (mitosis) and to offspring during reproduction (meiosis).\n\n**Role of Genes:**\nA gene is a specific segment of the DNA molecule on a chromosome. It is the basic physical and functional unit of heredity. Each gene contains the instructions, in the form of a chemical code, to synthesize a specific protein or functional RNA molecule. These proteins then determine the specific traits or characteristics of an organism, such as eye color, height, blood type, and susceptibility to certain diseases. Different versions of the same gene are called alleles. The combination of alleles inherited from both parents determines the final expressed trait in the offspring. Therefore, genes are the actual 'blueprints' for traits, while chromosomes are the 'books' that carry these blueprints."
+        }
+      ]
+    }
+  }
+]
+

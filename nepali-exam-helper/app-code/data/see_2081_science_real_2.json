@@ -1,0 +1,409 @@
+[
+  {
+    "_id": "see_2081_science_real_2",
+    "title": "SEE 2081 Science Real 2 (Actual Questions)",
+    "titleNepali": "SEE २०८१ विज्ञान वास्तविक परीक्षा २ (वास्तविक प्रश्नहरू)",
+    "subject": "science",
+    "year": 2081,
+    "totalMarks": 75,
+    "duration": 180,
+    "sections": ["A", "B", "C", "D"],
+    "isActive": true,
+    "createdAt": { "$date": "2025-08-10T19:55:00.000Z" },
+    "updatedAt": { "$date": "2025-08-10T19:55:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "687d809a2f3df9d071c52116" },
+    "testId": "see_2081_science_real_2",
+    "questions": {
+      "groupA": [
+        {
+          "id": "1",
+          "type": "multiple_choice",
+          "questionNepali": "पेट र छाला सम्बन्धी रोगहरूको उपचार गर्न निम्न मध्ये कुन विरुवालाई परम्परागत रूपमा प्रयोग गरिन्छ ?",
+          "questionEnglish": "Which of the following plant is traditionally used for curing stomach and skin diseases?",
+          "options": [
+            {"id": "i", "nepali": "घ्युकुमारी (Aloe-vera)", "english": "Aloe-vera"},
+            {"id": "ii", "nepali": "यार्सागुम्वा (Yarsagumba)", "english": "Yarsagumba"},
+            {"id": "iii", "nepali": "बोजो (Bojo)", "english": "Bojo"},
+            {"id": "iv", "nepali": "तुलसी (Tulasi)", "english": "Tulasi"}
+          ],
+          "correctAnswer": "i", "marks": 1,
+          "explanation": "Aloe vera is widely used in traditional medicine for its soothing properties, particularly for skin conditions like burns and for digestive issues."
+        },
+        {
+          "id": "2",
+          "type": "multiple_choice",
+          "questionNepali": "तलको रासायनिक समिकरणमा 'Y' को संयुज्यता कति हुन्छ ? 2Y + 6HCl → 2YCl₃ + 3H₂",
+          "questionEnglish": "What is the valency of 'Y' in the following chemical equation? 2Y + 6HCl → 2YCl₃ + 3H₂",
+          "options": [
+            {"id": "i", "nepali": "1", "english": "1"},
+            {"id": "ii", "nepali": "2", "english": "2"},
+            {"id": "iii", "nepali": "3", "english": "3"},
+            {"id": "iv", "nepali": "4", "english": "4"}
+          ],
+          "correctAnswer": "iii", "marks": 1,
+          "explanation": "In the product YCl₃, chlorine (Cl) has a valency of 1. Since there are three chlorine atoms bonded to one Y atom, the valency of Y must be 3."
+        },
+        {
+          "id": "3",
+          "type": "multiple_choice",
+          "questionNepali": "कपडा धुन सावुनभन्दा डिटर्जेन्ट राम्रो मानिन्छ, किन ?",
+          "questionEnglish": "Why is detergent considered better than soap for washing clothes?",
+          "options": [
+            {"id": "i", "nepali": "डिटर्जेन्टहरू कडा र नरम दुवै पानीमा राम्रोसँग काम गर्छन, जवकी सावुनहरू कडा पानीमा कम प्रभावकारी हुन्छन् ।", "english": "Detergents work well in both hard and soft water, whereas soap is less effective in hard water."},
+            {"id": "ii", "nepali": "डिटर्जेन्टहरू बायोडिग्रेडेवल हुन्छन् जवकी साबुन हुँदैनन् ।", "english": "Detergents are biodegradable, whereas soap is not."},
+            {"id": "iii", "nepali": "सावुन भन्दा डिटर्जेन्ट सस्तो र उत्पादन गर्न सजिलो हुन्छ ।", "english": "Detergents are cheaper and easier to manufacture than soaps."},
+            {"id": "iv", "nepali": "डिटर्जेन्टहरूले साबुनभन्दा कम प्रदुषण उत्पादन गर्दछ ।", "english": "Detergents produce less pollution than soaps."}
+          ],
+          "correctAnswer": "i", "marks": 1,
+          "explanation": "The primary advantage of detergents is that their molecules do not form insoluble precipitates (scum) with the calcium and magnesium ions present in hard water, unlike soap."
+        },
+        {
+          "id": "4",
+          "type": "multiple_choice",
+          "questionNepali": "दिइएको मध्ये डाइहाइड्रिक अल्कोहल कुन हो?",
+          "questionEnglish": "Which of the following is a di-hydric alcohol?",
+          "options": [
+            {"id": "i", "nepali": "इथानोल (Ethanol)", "english": "Ethanol"},
+            {"id": "ii", "nepali": "इथिलिन ग्लाइकोल (Ethylene glycol)", "english": "Ethylene glycol"},
+            {"id": "iii", "nepali": "मिथानोल (Methanol)", "english": "Methanol"},
+            {"id": "iv", "nepali": "ग्लिसेरोल (Glycerol)", "english": "Glycerol"}
+          ],
+          "correctAnswer": "ii", "marks": 1,
+          "explanation": "A dihydric alcohol contains two hydroxyl (-OH) groups. Ethylene glycol (Ethane-1,2-diol) is a dihydric alcohol. Ethanol and Methanol are monohydric, and Glycerol is trihydric."
+        },
+        {
+          "id": "5",
+          "type": "multiple_choice",
+          "questionNepali": "तलका मध्ये अडियो फाइल फर्मेट कुन हो ?",
+          "questionEnglish": "Which of the following is an audio file format?",
+          "options": [
+            {"id": "i", "nepali": "SVI", "english": "SVI"},
+            {"id": "ii", "nepali": "WAV", "english": "WAV"},
+            {"id": "iii", "nepali": "MOV", "english": "MOV"},
+            {"id": "iv", "nepali": "3GP", "english": "3GP"}
+          ],
+          "correctAnswer": "ii", "marks": 1,
+          "explanation": "WAV (Waveform Audio File Format) is a standard audio file format. MOV, SVI, and 3GP are video file formats."
+        },
+        {
+          "id": "6",
+          "type": "multiple_choice",
+          "questionNepali": "हिरामा प्रकाशको वेग कति हुन्छ ?",
+          "questionEnglish": "What is the speed of light in diamond?",
+          "options": [
+            {"id": "i", "nepali": "2.5 x 10⁸ m/s", "english": "2.5 x 10⁸ m/s"},
+            {"id": "ii", "nepali": "1.24 x 10⁸ m/s", "english": "1.24 x 10⁸ m/s"},
+            {"id": "iii", "nepali": "2.25 x 10⁸ m/s", "english": "2.25 x 10⁸ m/s"},
+            {"id": "iv", "nepali": "3 x 10⁸ m/s", "english": "3 x 10⁸ m/s"}
+          ],
+          "correctAnswer": "ii", "marks": 1,
+          "explanation": "The speed of light in a vacuum is approximately 3 x 10⁸ m/s. In diamond, a very dense medium, it slows down significantly to about 1.24 x 10⁸ m/s."
+        },
+        {
+          "id": "7",
+          "type": "multiple_choice",
+          "questionNepali": "रक्तदान गर्नुअघि व्यक्तिको रक्त समूह थाहा पाउनु किन महत्त्वपूर्ण छ ?",
+          "questionEnglish": "Why is it important to know a person's blood type before blood transfusion?",
+          "options": [
+            {"id": "i", "nepali": "व्यक्तिको समग्र स्वास्थ्य थाहा पाउन", "english": "To know person's overall health"},
+            {"id": "ii", "nepali": "सम्भावित वंशाणुगत डिसअर्डर पहिचान गर्न", "english": "To identify possible genetic disorder"},
+            {"id": "iii", "nepali": "व्यक्तिको सम्भावित मृत्युको खतराबाट रोक्न", "english": "To prevent the possible fatal risk of the person"},
+            {"id": "iv", "nepali": "व्यक्तिको रक्तचाप निर्धारण गर्न", "english": "To determine person's blood pressure"}
+          ],
+          "correctAnswer": "iii", "marks": 1,
+          "explanation": "Transfusing incompatible blood types can cause a severe, life-threatening immune reaction called an acute hemolytic transfusion reaction."
+        },
+        {
+          "id": "8",
+          "type": "multiple_choice",
+          "questionNepali": "एक बाइटमा कति बिट हुन्छ ?",
+          "questionEnglish": "How many bits are there in 1 byte?",
+          "options": [
+            {"id": "i", "nepali": "2", "english": "2"},
+            {"id": "ii", "nepali": "4", "english": "4"},
+            {"id": "iii", "nepali": "6", "english": "6"},
+            {"id": "iv", "nepali": "8", "english": "8"}
+          ],
+          "correctAnswer": "iv", "marks": 1,
+          "explanation": "A byte is a standard unit of digital information that consists of eight bits."
+        },
+        {
+          "id": "9",
+          "type": "multiple_choice",
+          "questionNepali": "रासायनिक प्रतिक्रियाको दरमा तापको प्रभाव तलका मध्ये कुन हो?",
+          "questionEnglish": "Which of the following is the effect of heat on the rate of chemical reaction?",
+          "options": [
+            {"id": "i", "nepali": "ताप बढाउँदा कणहरूको गति शक्ति बढ्छ र कणहरू छिटो सम्पर्कमा आउँछन् ।", "english": "The kinetic energy of particles increases when heat increases and particles come in contact faster."},
+            {"id": "ii", "nepali": "ताप बढाउँदा रासायनिक सक्रियता घट्छ ।", "english": "The chemical reactivity decreases when heat increases."},
+            {"id": "iii", "nepali": "ताप र रासायनिक प्रतिक्रियाको दरमा कुनै सम्बन्ध छैन ।", "english": "There is no relationship between heat and chemical reactivity."},
+            {"id": "iv", "nepali": "ताप बढ्दा पदार्थको गाढापन बढ्छ त्यसैले प्रतिक्रियाको दर बढ्छ ।", "english": "Rate of chemical reaction increases because the concentration of matter increases when heat increases."}
+          ],
+          "correctAnswer": "i", "marks": 1,
+          "explanation": "Increasing the temperature increases the kinetic energy of reactant particles, causing them to move faster and collide more frequently and with more energy, thus increasing the reaction rate."
+        },
+        {
+          "id": "10",
+          "type": "multiple_choice",
+          "questionNepali": "तलका मध्ये कोषमा कोषभित्ता हुने जगतहरू कुन कुन हुन् ?",
+          "questionEnglish": "Which of the following kingdoms have cell walls in their cells?",
+          "options": [
+            {"id": "i", "nepali": "मोनेरा, फन्जाइ, एनिमलिया", "english": "Monera, Fungi, Animalia"},
+            {"id": "ii", "nepali": "प्लान्टी, प्रोटिस्टा, एनिमलिया", "english": "Plantae, Protista, Animalia"},
+            {"id": "iii", "nepali": "फन्जाइ, प्लान्टी, एनिमलिया", "english": "Fungi, Plantae, Animalia"},
+            {"id": "iv", "nepali": "फन्जाइ, प्लान्टी, मोनेरा", "english": "Fungi, Plantae, Monera"}
+          ],
+          "correctAnswer": "iv", "marks": 1,
+          "explanation": "Cells of organisms in Kingdom Monera (peptidoglycan), Fungi (chitin), and Plantae (cellulose) have cell walls. Animalia cells do not have cell walls."
+        }
+      ],
+      "groupB": [
+        {
+          "id": "11",
+          "type": "short_answer",
+          "questionNepali": "विभिन्न तापक्रममा नुनको घुलनशीलता मापन गरिएको प्रयोगमा आश्रित चर कुन हो ?",
+          "questionEnglish": "Which is the dependent variable in the experiment where the solubility of salt is measured at different temperatures?",
+          "marks": 1,
+          "sampleAnswer": "In this experiment, the solubility of the salt is the dependent variable because it is the value that is measured and is expected to change in response to the independent variable, which is the temperature."
+        },
+        {
+          "id": "12",
+          "type": "short_answer",
+          "questionNepali": "तरल पदार्थको उर्ध्वचाप र यसको घनत्व विचको सम्बन्ध लेख्नुहोस् ।",
+          "questionEnglish": "Write the relation between up-thrust and the density of a liquid.",
+          "marks": 1,
+          "sampleAnswer": "Up-thrust is directly proportional to the density of the liquid. A denser liquid will exert a greater up-thrust on an immersed object of the same volume."
+        },
+        {
+          "id": "13",
+          "type": "short_answer",
+          "questionNepali": "तामाको एउटा धाउको नाम लेख्नुहोस् ।",
+          "questionEnglish": "Write the name of an ore of copper.",
+          "marks": 1,
+          "sampleAnswer": "A common ore of copper is Chalcopyrite (CuFeS₂), also known as Copper Pyrite."
+        },
+        {
+          "id": "14",
+          "type": "short_answer",
+          "questionNepali": "मुटुबाट शरीरको विभिन्न भागमा रगत लैजाने रक्तनलीलाई के भनिन्छ ?",
+          "questionEnglish": "What is the name of the blood vessel that carries blood from the heart to different parts of the body?",
+          "marks": 1,
+          "sampleAnswer": "An artery (धमनी) is the type of blood vessel that carries blood away from the heart to the rest of the body. The main artery leaving the heart is the Aorta."
+        },
+        {
+          "id": "15",
+          "type": "short_answer",
+          "questionNepali": "नकारात्मक उत्प्रेरकले रासायनिक प्रतिक्रियाको दरमा कस्तो परिवर्तन गर्छ ?",
+          "questionEnglish": "What change does a negative catalyst cause in the rate of a chemical reaction?",
+          "marks": 1,
+          "sampleAnswer": "A negative catalyst, also known as an inhibitor, decreases the rate of a chemical reaction without being consumed in the process."
+        },
+        {
+          "id": "16",
+          "type": "short_answer",
+          "questionNepali": "बलको एकाइमा संलग्न आधारभूत एकाईहरू लेख्नुहोस् ।",
+          "questionEnglish": "Write the fundamental units included in the unit of force.",
+          "marks": 1,
+          "sampleAnswer": "The unit of force, the Newton (N), is a derived unit. It is composed of the fundamental units: Kilogram (kg) for mass, Meter (m) for length, and Second (s) for time. (N = kg·m/s²)."
+        },
+        {
+          "id": "17",
+          "type": "short_answer",
+          "questionNepali": "आर्किमिडिजको सिद्धान्त लेख्नुहोस् ।",
+          "questionEnglish": "State Archimedes' principle.",
+          "marks": 1,
+          "sampleAnswer": "Archimedes' principle states that when a body is wholly or partially immersed in a fluid, it experiences an upward buoyant force (upthrust) that is equal in magnitude to the weight of the fluid displaced by the body."
+        },
+        {
+          "id": "18",
+          "type": "short_answer",
+          "questionNepali": "धाउको परिभाषा दिनुहोस् ।",
+          "questionEnglish": "Define ore.",
+          "marks": 1,
+          "sampleAnswer": "An ore is a naturally occurring rock or mineral from which a metal or valuable mineral can be extracted profitably and conveniently."
+        },
+        {
+          "id": "19",
+          "type": "short_answer",
+          "questionNepali": "हाइड्रोकार्वनलाई किन प्राङ्गारिक यौगिक भनिन्छ ?",
+          "questionEnglish": "Why are hydrocarbons called organic compounds?",
+          "marks": 1,
+          "sampleAnswer": "Hydrocarbons are called organic compounds because they are primarily composed of carbon and hydrogen atoms. Historically, organic compounds were thought to originate only from living organisms, and carbon is the fundamental element of life."
+        }
+      ],
+      "groupC": [
+        {
+          "id": "20",
+          "type": "long_answer",
+          "questionNepali": "एकाईगत विश्लेषण गरी तल दिइएको समीकरणको मान्यता परीक्षण गर्नुहोस् । v² = u² + 2as",
+          "questionEnglish": "Test the validity of the equation v² = u² + 2as by unit-wise analysis.",
+          "marks": 2,
+          "sampleAnswer": "To test the validity, we check if the units on both sides of the equation are the same. Here, v = final velocity, u = initial velocity, a = acceleration, s = displacement.\nUnit of LHS = Unit of v² = (m/s)² = m²/s².\nUnit of RHS Term 1 = Unit of u² = (m/s)² = m²/s².\nUnit of RHS Term 2 = Unit of 2as = Unit of a × Unit of s = (m/s²) × (m) = m²/s².\nSince the units of the LHS (m²/s²) are the same as the units of each term on the RHS (m²/s²), the equation is dimensionally correct."
+        },
+        {
+          "id": "21",
+          "type": "long_answer",
+          "questionNepali": "बन्द ब्रम्हाण्ड र खुल्ला ब्रम्हाण्डविच पाइने दुईओटा भिन्नता लेख्नुहोस् ।",
+          "questionEnglish": "Write any two differences between a closed universe and an open universe.",
+          "marks": 2,
+          "sampleAnswer": "1. **Density and Fate:** A closed universe has an average density greater than the critical density, and its gravity is strong enough to eventually halt expansion and cause it to collapse. An open universe has a density less than the critical density, and it will continue to expand forever.\n2. **Geometry of Space:** A closed universe is theorized to have a positive curvature, analogous to the surface of a sphere (finite but without boundaries). An open universe is theorized to have a negative curvature, analogous to the surface of a saddle (infinite)."
+        },
+        {
+          "id": "22",
+          "type": "long_answer",
+          "questionNepali": "सामर्थ्यको आधारभूत एकाईहरु kgm²/s³ हुन्छ भनी प्रमाणित गर्नुहोस् ।",
+          "questionEnglish": "Prove that the fundamental units of power are kgm²/s³.",
+          "marks": 2,
+          "sampleAnswer": "Power = Work Done / Time.\nWork Done = Force × Displacement.\nForce = Mass × Acceleration.\nSubstituting these, we get: Power = (Mass × Acceleration × Displacement) / Time.\nNow, let's write the fundamental units for each quantity:\nUnit of Power = (kg × m/s² × m) / s = (kg·m²/s²) / s = kg·m²/s³.\nHence, proved."
+        },
+        {
+          "id": "23",
+          "type": "long_answer",
+          "questionNepali": "पंक्षी वर्गको कुनै दुई मुख्य विशेषताहरू लेख्नुहोस् ।",
+          "questionEnglish": "Write any two main features of class Aves.",
+          "marks": 2,
+          "sampleAnswer": "1. **Presence of Feathers and Beak:** Their bodies are covered with feathers, and their jaws are modified into a beak without teeth.\n2. **Warm-blooded and Four-chambered Heart:** They are homeothermic (warm-blooded) animals, meaning they can maintain a constant body temperature. They possess a four-chambered heart for efficient oxygen circulation."
+        },
+        {
+          "id": "24",
+          "type": "long_answer",
+          "questionNepali": "इनभिट्रो फर्टिलाइजेसन (IVF) भनेको के हो? छोटकरीमा व्याख्या गर्नुहोस् ।",
+          "questionEnglish": "What is In-Vitro Fertilization (IVF)? Explain briefly.",
+          "marks": 2,
+          "sampleAnswer": "In-Vitro Fertilization (IVF) is an assisted reproductive technology where fertilization occurs outside the body. In this process, an egg is retrieved from the female's ovaries and fertilized with sperm in a laboratory dish ('in vitro'). After fertilization, the resulting embryo is allowed to grow for a few days before being transferred into the female's uterus to continue its development."
+        },
+        {
+          "id": "25",
+          "type": "long_answer",
+          "questionNepali": "बेसार र घोडटाप्रेको एक एक ओटा उपयोग लेख्नुहोस् ।",
+          "questionEnglish": "Write one use each of Turmeric and Asiatic Pennywort.",
+          "marks": 2,
+          "sampleAnswer": "**Use of Turmeric (बेसार):** It is widely used as an antiseptic to treat cuts and wounds and as an anti-inflammatory agent to reduce swelling.\n**Use of Asiatic Pennywort (घोडटाप्रे):** It is traditionally used to improve memory and cognitive function, and to treat nervous disorders."
+        },
+        {
+          "id": "26",
+          "type": "long_answer",
+          "questionNepali": "गुरुत्वप्रवेगको मान पृथ्वीको भू-मध्यरेखीय खण्डमा भन्दा ध्रुवीय खण्डमा बढी हुन्छ, किन?",
+          "questionEnglish": "The value of acceleration due to gravity is more in the polar region than the equatorial region, why?",
+          "marks": 2,
+          "sampleAnswer": "This is due to two reasons:\n1. **Shape of the Earth:** The Earth is not a perfect sphere; it is slightly flattened at the poles and bulged at the equator. This means the polar radius is shorter than the equatorial radius. Since 'g' is inversely proportional to the square of the radius (g ∝ 1/R²), the smaller radius at the poles results in a higher value of 'g'.\n2. **Rotation of the Earth:** The Earth's rotation creates a centrifugal force that acts outwards, opposing gravity. This force is maximum at the equator and zero at the poles. Therefore, the effective value of 'g' is slightly reduced at the equator compared to the poles."
+        },
+        {
+          "id": "27",
+          "type": "long_answer",
+          "questionNepali": "विकर A मा 30°C तापक्रम भएको फिका HCl र विकर B मा 20°C तापक्रम भएको फिका HCl राखिएको छ। दुवैमा समान साइजका चुनढुङ्गाका टुक्राहरू राखियो भने कुन चाँहिमा चाँडो रासायनिक प्रतिक्रिया हुन्छ, किन?",
+          "questionEnglish": "Beaker A contains dil. HCl at 30°C and beaker B contains dil. HCl at 20°C. If lime stones of the same size are placed in both beakers, in which beaker will the reaction take place faster? Why?",
+          "marks": 2,
+          "sampleAnswer": "The reaction will take place faster in **Beaker A**.\n**Reason:** The rate of a chemical reaction generally increases with an increase in temperature. The higher temperature (30°C) in Beaker A gives the reactant particles more kinetic energy, causing them to collide more frequently and with greater force, which leads to a faster reaction rate compared to the lower temperature (20°C) in Beaker B."
+        },
+        {
+          "id": "28",
+          "type": "long_answer",
+          "questionNepali": "एकजना विद्यार्थीले मिथेन र अर्कोले प्रोपेनको मोडल बनाएका थिए। शिक्षकले दुवै मोडलका छेउको हाइड्रोजन निकालेर दुवैलाई आपसमा जोडिदिनु भयो। अब कुन हाइड्रोकार्बन तयार भयो? यसको संरचना सूत्र पनि बनाउनुहोस्।",
+          "questionEnglish": "A student made a model of methane and another student made a model of propane. Their teacher removed one hydrogen atom from the terminals of each model and joined them together. Now which hydrocarbon is formed? Write its structural formula too.",
+          "marks": 2,
+          "sampleAnswer": "**Hydrocarbon formed:** Butane (C₄H₁₀)\n**Explanation:** Methane (CH₄) becomes a methyl group (-CH₃) and Propane (C₃H₈) becomes a propyl group (-C₃H₇). When joined, the total number of carbon atoms is 1 + 3 = 4, forming butane.\n**Structural Formula:**\n  H   H   H   H\n  |   |   |   |\nH-C - C - C - C-H\n  |   |   |   |\n  H   H   H   H"
+        },
+        {
+          "id": "29",
+          "type": "long_answer",
+          "questionNepali": "प्लाज्मामा पाइने तीनओटा प्रोटिनको नाम लेख्नुहोस्। रगत जम्न सहयोग गर्ने प्रोटिन हटाएपछिको प्लाज्मालाई के भनिन्छ?",
+          "questionEnglish": "Write the name of three proteins found in plasma. What is the plasma called after the removal of the protein which helps in the clotting of blood?",
+          "marks": 2,
+          "sampleAnswer": "**Three proteins in plasma:** Albumin, Globulin, and Fibrinogen.\n**Plasma after removing clotting protein:** When fibrinogen (the protein that helps in blood clotting) is removed from plasma, the remaining fluid is called **Serum**."
+        },
+        {
+          "id": "30",
+          "type": "long_answer",
+          "questionNepali": "सोडियम र पोटासियममा कुन तत्व बढी सक्रिय हुन्छ, किन? क्लोरिनको उपसेलको इलेक्ट्रोन विन्यास लेख्नुहोस् र यसको पिरियोडिक तालिकाको समूह उल्लेख गर्नुहोस्।",
+          "questionEnglish": "Which element is more reactive between sodium and potassium, why? Write the electronic configuration of chlorine on the basis of sub-shell and write its group in the periodic table.",
+          "marks": 2,
+          "sampleAnswer": "**More reactive element:** Potassium (K) is more reactive than Sodium (Na).\n**Reason:** Both are in Group 1, but Potassium is in a lower period. It has more electron shells, so its outermost electron is further from the nucleus and less tightly held, making it easier to lose and thus more reactive.\n**Electronic configuration of Chlorine (Cl):** 1s² 2s² 2p⁶ 3s² 3p⁵\n**Group of Chlorine:** Group 17 (or VIIA)"
+        },
+        {
+          "id": "31",
+          "type": "long_answer",
+          "questionNepali": "स्थानीय भैंसीसँग उन्नत जातका राँगाहरूको क्रस ब्रीडिङ्ग गराउँदा हुने दुईओटा फाइदा र दुईओटा बेफाइदाहरू लेख्नुहोस् ।",
+          "questionEnglish": "Write two advantages and two disadvantages of cross-breeding local buffaloes with high-quality male buffaloes (ranga).",
+          "marks": 2,
+          "sampleAnswer": "**Advantages:**\n1. **Improved Productivity:** The offspring often exhibit hybrid vigor, leading to increased milk production or better meat quality compared to the local breed.\n2. **Enhanced Disease Resistance:** It can combine the high productivity of the improved breed with the superior disease resistance and adaptability to the local environment of the local buffalo.\n\n**Disadvantages:**\n1. **Reduced Adaptability:** The hybrid offspring may not be as well-adapted to the local climate, feed, and diseases as the pure local breed.\n2. **Loss of Native Breed:** Continuous and unplanned cross-breeding can lead to the dilution and eventual loss of the valuable genetic traits of the local, indigenous buffalo breed."
+        },
+        {
+          "id": "32",
+          "type": "long_answer",
+          "questionNepali": "उच्च रक्तचाप हुनुका दुई कारणहरू र यसका रोकथामका दुई उपायहरू लेख्नुहोस् ।",
+          "questionEnglish": "Write any two causes of high blood pressure and two preventive measures of it.",
+          "marks": 2,
+          "sampleAnswer": "**Causes of High Blood Pressure:**\n1. **Lifestyle Factors:** A diet high in salt, fat, and cholesterol, along with a lack of physical activity, smoking, and excessive alcohol consumption, can lead to hypertension.\n2. **Underlying Health Conditions:** Conditions like kidney disease, diabetes, and obesity can contribute to or cause high blood pressure.\n\n**Preventive Measures:**\n1. **Dietary Changes:** Reduce salt intake, eat a balanced diet rich in fruits, vegetables, and whole grains, and limit the consumption of processed foods.\n2. **Regular Exercise:** Engage in regular physical activity, such as brisk walking or cycling, for at least 30 minutes on most days of the week to maintain a healthy weight and strengthen the cardiovascular system."
+        },
+        {
+          "id": "33",
+          "type": "long_answer",
+          "questionNepali": "8 kg पिण्ड भएको पानीको तापक्रम 30°C बाट तताएर 48°C सम्म पुऱ्याउन कति ताप चाहिन्छ? (पानीको विशिष्ट तापधारण क्षमता 4200 J/kg°C)",
+          "questionEnglish": "Find the amount of heat needed to increase the temperature of 8 kg of water from 30°C to 48°C. (The specific heat capacity of water is 4200 J/kg°C)",
+          "marks": 2,
+          "sampleAnswer": "Here,\nMass (m) = 8 kg\nInitial Temperature (t₁) = 30°C\nFinal Temperature (t₂) = 48°C\nChange in Temperature (dt) = t₂ - t₁ = 48 - 30 = 18°C\nSpecific Heat Capacity (s) = 4200 J/kg°C\nHeat required (Q) = m × s × dt = 8 × 4200 × 18 = 604,800 Joules."
+        }
+      ],
+      "groupD": [
+        {
+          "id": "34",
+          "type": "essay",
+          "questionNepali": "मेन्डेलको आनुवंशिकतासम्बन्धी पृथकीकरणको नियम (Law of Segregation) लेख्नुहोस्। एक मोनोहाइब्रिड क्रसको उदाहरण दिएर यस नियमलाई व्याख्या गर्नुहोस्।",
+          "questionEnglish": "State Mendel's Law of Segregation. Explain this law with the help of a monohybrid cross example.",
+          "marks": 4,
+          "sampleAnswer": "**Mendel's Law of Segregation:**\nThis law states that during the formation of gametes (eggs or sperm), the two alleles for a heritable character separate or segregate from each other, so that each gamete ends up with only one allele for that character.\n\n**Explanation with a Monohybrid Cross:**\nLet's consider a cross between a pure tall pea plant (TT) and a pure dwarf pea plant (tt). 'T' is the allele for tallness and 't' is for dwarfness.\n\n1.  **Parental (P) Generation:** The tall plant has the genotype TT, and the dwarf plant has tt.\n\n2.  **Gamete Formation (P):** According to the law of segregation, the alleles separate. The tall plant (TT) produces only gametes with the 'T' allele. The dwarf plant (tt) produces only gametes with the 't' allele.\n\n3.  **First (F₁) Generation:** When these gametes fuse, all offspring have the genotype Tt. Phenotypically, all are tall because 'T' is dominant.\n\n4.  **Gamete Formation (F₁):** Now, when the F₁ plant (Tt) forms gametes, the law of segregation applies again. The two alleles, 'T' and 't', separate from each other. Thus, the F₁ plant produces two types of gametes in equal proportions: 50% with the 'T' allele and 50% with the 't' allele.\n\n5.  **Second (F₂) Generation:** The random fusion of these gametes during self-pollination results in offspring with genotypes TT, Tt, and tt in a 1:2:1 ratio. This demonstrates that the alleles were segregated into separate gametes and did not blend, allowing the recessive trait (dwarfness) to reappear in the F₂ generation."
+        },
+        {
+          "id": "35",
+          "type": "essay",
+          "questionNepali": "उच्च रक्तचाप (Hypertension) हुनुका दुई कारण र यसका रोकथामका दुई उपायहरू लेख्नुहोस्।",
+          "questionEnglish": "Write any two causes of high blood pressure (Hypertension) and two preventive measures of it.",
+          "marks": 4,
+          "sampleAnswer": "**Causes of High Blood Pressure:**\n1.  **Lifestyle Factors:** A diet high in salt (sodium), saturated fats, and cholesterol can lead to hypertension. Other lifestyle factors include lack of physical activity, excessive alcohol consumption, and smoking, which can damage blood vessels.\n2.  **Underlying Health Conditions:** Certain health problems like kidney disease, thyroid problems, and diabetes can cause secondary hypertension. Obesity also significantly increases the risk as the heart has to pump harder to supply blood to the excess tissue.\n\n**Preventive Measures:**\n1.  **Adopt a Healthy Diet:** Reduce salt intake and consume a balanced diet rich in fruits, vegetables, whole grains, and lean proteins (like the DASH diet). This helps in naturally lowering blood pressure and maintaining a healthy weight.\n2.  **Regular Physical Exercise:** Engaging in at least 30 minutes of moderate-intensity aerobic exercise (like brisk walking, jogging, or swimming) most days of the week helps strengthen the heart, improve blood circulation, and maintain a healthy weight, all of which contribute to lowering blood pressure."
+        },
+        {
+          "id": "36",
+          "type": "essay",
+          "questionNepali": "धातु र अधातु बिच भौतिक गुणधर्मका आधारमा चारवटा भिन्नता लेख्नुहोस्।",
+          "questionEnglish": "Write four differences between metals and non-metals on the basis of their physical properties.",
+          "marks": 4,
+          "sampleAnswer": "1. **Lustre:** Metals generally have a shiny or lustrous appearance when freshly cut or polished. Non-metals are typically dull and do not have a lustre (exceptions: iodine, graphite).\n2. **Conductivity:** Metals are good conductors of both heat and electricity due to the presence of free-moving electrons. Non-metals are generally poor conductors of heat and electricity (exception: graphite).\n3. **Malleability and Ductility:** Metals are malleable (can be beaten into thin sheets) and ductile (can be drawn into thin wires). Non-metals are brittle and will break or shatter if hammered or stretched.\n4. **Physical State and Density:** Most metals are solid at room temperature (exception: mercury) and usually have a high density. Non-metals can exist as solids, liquids, or gases at room temperature and generally have a low density."
+        },
+        {
+          "id": "37",
+          "type": "essay",
+          "questionNepali": "8 kg पिण्ड भएको पानीको तापक्रम 25°C बाट 45°C सम्म पुऱ्याउन कति ताप चाहिन्छ? यदि त्यति नै ताप 4 kg मट्टितेललाई दिइयो भने त्यसको तापक्रम कतिले वृद्धि हुन्छ? (पानीको विशिष्ट तापधारण क्षमता 4200 J/kg°C र मट्टितेलको 2100 J/kg°C छ)",
+          "questionEnglish": "How much heat is required to raise the temperature of 8 kg of water from 25°C to 45°C? If the same amount of heat is given to 4 kg of kerosene, by how much will its temperature rise? (Specific heat capacity of water = 4200 J/kg°C and kerosene = 2100 J/kg°C)",
+          "marks": 4,
+          "sampleAnswer": "**Part 1: Heat required for water**\nGiven:\nMass of water (m_w) = 8 kg\nInitial temperature (T₁) = 25°C\nFinal temperature (T₂) = 45°C\nChange in temperature (dT_w) = T₂ - T₁ = 45 - 25 = 20°C\nSpecific heat capacity of water (s_w) = 4200 J/kg°C\n\nHeat required (Q) = m_w * s_w * dT_w\nQ = 8 * 4200 * 20\nQ = **672,000 J**\n\n**Part 2: Temperature rise of kerosene**\nGiven:\nHeat supplied (Q) = 672,000 J (same as above)\nMass of kerosene (m_k) = 4 kg\nSpecific heat capacity of kerosene (s_k) = 2100 J/kg°C\nChange in temperature (dT_k) = ?\n\nUsing the formula Q = m_k * s_k * dT_k:\n672,000 = 4 * 2100 * dT_k\n672,000 = 8400 * dT_k\ndT_k = 672,000 / 8400\ndT_k = **80°C**\n\nThe temperature of the kerosene will rise by 80°C."
+        },
+        {
+          "id": "38",
+          "type": "essay",
+          "questionNepali": "पारिस्थितिक पिरामिड भनेको के हो? संख्याको पिरामिड (Pyramid of Numbers) लाई घाँसे मैदानको पारिस्थितिक प्रणालीको उदाहरण दिएर वर्णन गर्नुहोस्।",
+          "questionEnglish": "What is an ecological pyramid? Describe the pyramid of numbers with an example from a grassland ecosystem.",
+          "marks": 4,
+          "sampleAnswer": "**Ecological Pyramid:**\nAn ecological pyramid is a graphical representation designed to show the biomass or bio-productivity at each trophic level in a given ecosystem. It illustrates the relationship between different organisms in a food chain, with producers at the base and successive trophic levels of consumers forming the apex.\n\n**Pyramid of Numbers in a Grassland Ecosystem:**\nThe pyramid of numbers shows the total number of individual organisms at each trophic level in an ecosystem.\n\n* **Base (Producers):** In a grassland ecosystem, the base of the pyramid is formed by the producers, which are grasses and other small plants. Their number is the largest in the ecosystem, forming a broad base for the pyramid.\n\n* **Primary Consumers:** The next trophic level consists of primary consumers (herbivores) that feed on the grass, such as grasshoppers, rabbits, and deer. The total number of these herbivores is less than the number of grass plants.\n\n* **Secondary Consumers:** Above the primary consumers are the secondary consumers (carnivores) that feed on the herbivores, such as frogs, lizards, or foxes. Their total number is less than the number of herbivores.\n\n* **Tertiary Consumers (Apex):** At the top of the pyramid are the tertiary consumers, like hawks or snakes, which feed on the secondary consumers. Their population is the smallest.\n\nThis arrangement results in an upright pyramid, where the number of individuals decreases at each successive trophic level, from a large number of producers at the bottom to a few top consumers at the apex."
+        },
+        {
+          "id": "39",
+          "type": "essay",
+          "questionNepali": "अनलाइन सुरक्षाका लागि अपनाउनुपर्ने कुनै चारवटा महत्त्वपूर्ण उपायहरू लेख्नुहोस्।",
+          "questionEnglish": "Write any four important measures to be taken for online safety.",
+          "marks": 4,
+          "sampleAnswer": "1.  **Use Strong and Unique Passwords:** Create complex passwords for different online accounts using a mix of uppercase and lowercase letters, numbers, and symbols. Avoid using easily guessable information like birthdays or names. Using a password manager can help manage unique passwords securely.\n2.  **Enable Two-Factor Authentication (2FA):** Activate 2FA wherever possible. This adds an extra layer of security by requiring a second form of verification (like a code sent to your phone) in addition to your password, making it much harder for unauthorized users to access your accounts.\n3.  **Be Wary of Phishing and Scams:** Be cautious of unsolicited emails, messages, or links, especially those that ask for personal information or create a sense of urgency. Verify the sender's identity before clicking on links or downloading attachments to avoid malware and phishing attacks.\n4.  **Manage Privacy Settings and Limit Personal Information:** Regularly review and adjust the privacy settings on your social media and other online accounts to control who can see your information. Avoid sharing sensitive personal details like your full address, phone number, or financial information publicly."
+        },
+        {
+          "id": "40",
+          "type": "essay",
+          "questionNepali": "प्रयोगशालामा एमोनिया ग्यास बनाउने विधिको सन्तुलित रासायनिक समीकरण लेख्नुहोस्। यस प्रक्रियामा लाइम टावरको काम के हो? एमोनियाका दुई उपयोगिता लेख्नुहोस्।",
+          "questionEnglish": "Write the balanced chemical equation for the laboratory preparation of ammonia gas. What is the function of the lime tower in this process? Write two uses of ammonia.",
+          "marks": 4,
+          "sampleAnswer": "**Balanced Chemical Equation:**\nAmmonia gas is prepared in the laboratory by heating a mixture of an ammonium salt (like ammonium chloride, NH₄Cl) with a strong base (like calcium hydroxide, Ca(OH)₂).\n2NH₄Cl(s) + Ca(OH)₂(s) --(Heat)--> CaCl₂(s) + 2H₂O(l) + 2NH₃(g)\n\n**Function of the Lime Tower:**\nThe ammonia gas produced in the reaction is moist. It is passed through a drying tower containing lumps of quicklime (calcium oxide, CaO). The function of the lime tower is to dry the ammonia gas. Quicklime is used because it is a basic oxide and does not react with ammonia, which is a basic gas. Drying agents like concentrated H₂SO₄ or anhydrous CaCl₂ cannot be used as they react with ammonia.\n\n**Uses of Ammonia:**\n1.  **Manufacturing Fertilizers:** A major use of ammonia is in the production of nitrogenous fertilizers, such as ammonium nitrate, ammonium sulphate, and urea, which are essential for agriculture.\n2.  **As a Refrigerant:** Ammonia has a high latent heat of vaporization, making it an efficient refrigerant. It is widely used in large-scale industrial refrigeration and cold storage plants."
+        }
+      ]
+    }
+  }
+]
