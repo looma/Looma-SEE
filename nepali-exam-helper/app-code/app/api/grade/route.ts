@@ -6,7 +6,12 @@ export async function POST(req: Request) {
   try {
     const { question, answer, marks, sampleAnswer } = await req.json()
 
-    console.log("🤖 AI Grading Request:", { question: question?.slice(0, 50), answer: answer?.slice(0, 50), marks })
+    console.log("🤖 AI Grading Request:", {
+      question: question?.slice(0, 50) + "...",
+      answer: answer?.slice(0, 50) + "...",
+      marks,
+      answerLength: answer?.length,
+    })
 
     if (!question || typeof answer !== "string" || typeof marks !== "number") {
       console.error("❌ Missing required fields:", { question: !!question, answer: typeof answer, marks: typeof marks })
@@ -22,9 +27,6 @@ export async function POST(req: Request) {
     // Only use environment variables - no hardcoded fallbacks
     const apiKey = config.openaiApiKey
 
-    console.log("🔑 API Key Status:")
-    console.log("  From environment:", apiKey ? `${apiKey.slice(0, 7)}...${apiKey.slice(-4)}` : "MISSING")
-
     if (!apiKey) {
       console.error("❌ No API key found in environment variables")
       return new Response(
@@ -36,123 +38,171 @@ export async function POST(req: Request) {
       )
     }
 
-    // Enhanced prompt for partial credit grading
-    const systemPrompt = `You are an expert SEE Science examiner who awards partial credit fairly. 
+    // Simplified, more reliable prompt
+    const systemPrompt = `You are a SEE Science examiner. Grade the student's answer and provide brief feedback.
 
-Key principles:
-- Award partial marks when students show partial understanding
-- If a question has multiple parts, award marks for each part they get right
-- Don't give all-or-nothing scores unless the answer is completely wrong or completely right
-- Be specific about what they got right and what they missed
-- Keep feedback to 2-3 sentences maximum
-- Focus on constructive guidance
-
-You must respond with valid JSON in this exact format:
+IMPORTANT: You must respond with ONLY valid JSON in this exact format:
 {"score": <number>, "feedback": "<string>"}
 
-The score must be an integer between 0 and ${marks}.`
+Rules:
+- Score must be integer between 0 and ${marks}
+- Award partial credit when appropriate
+- Keep feedback to 1-2 sentences maximum
+- Be constructive and specific`
 
-    const userPrompt = sampleAnswer
-      ? `Grade the student's answer by comparing it to the sample correct answer. Award PARTIAL CREDIT based on how much of the answer is correct.
+    const userPrompt = `Grade this answer (${marks} marks total):
 
-Question (${marks} marks): ${question}
-Sample correct answer: ${sampleAnswer}
-Student's answer: ${answer}
+Question: ${question}
+${sampleAnswer ? `Expected answer: ${sampleAnswer}` : ""}
+Student answer: ${answer}
 
-Grading Instructions:
-- This question is worth ${marks} marks total
-- Award partial credit based on how many key points/concepts the student got correct
-- If the sample answer has multiple parts/points, award proportional marks for each part they got right
-- For example: If worth 3 marks and has 3 key points, award 1 mark per correct point
-- If worth 2 marks and student gets half the concept right, award 1 mark
-- Consider both Nepali and English answers
-- Be fair but maintain academic standards
-- Focus on constructive guidance
+Respond with JSON only: {"score": <0-${marks}>, "feedback": "<brief feedback>"}`
 
-Respond with JSON: {"score": <0-${marks}>, "feedback": "<your feedback>"}`
-      : `Grade the student's answer for this SEE Science question. Award PARTIAL CREDIT based on correctness.
+    console.log("🤖 Making OpenAI API call with improved settings...")
 
-Question (${marks} marks): ${question}
-Student's answer: ${answer}
+    // Retry logic for better reliability
+    let attempts = 0
+    const maxAttempts = 2
+    let lastError = null
 
-Grading Instructions:
-- This question is worth ${marks} marks total
-- Award partial credit - don't just give 0 or full marks
-- Consider how much of the expected answer the student provided
-- Award proportional marks based on completeness and accuracy
-- Consider both Nepali and English answers
-- Be fair but maintain academic standards
+    while (attempts < maxAttempts) {
+      attempts++
+      console.log(`🔄 Attempt ${attempts}/${maxAttempts}`)
 
-Respond with JSON: {"score": <0-${marks}>, "feedback": "<your feedback>"}`
+      try {
+        const openaiResponse = await fetch("https://api.openai.com/v1/chat/completions", {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${apiKey}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            model: "gpt-4o",
+            messages: [
+              { role: "system", content: systemPrompt },
+              { role: "user", content: userPrompt },
+            ],
+            temperature: 0.1, // Lower temperature for more consistent responses
+            max_tokens: 1000, // Increased token limit
+            top_p: 0.9,
+            frequency_penalty: 0,
+            presence_penalty: 0,
+          }),
+        })
 
-    console.log("🤖 Making OpenAI API call...")
+        if (!openaiResponse.ok) {
+          const errorText = await openaiResponse.text()
+          console.error(`❌ OpenAI API call failed (attempt ${attempts}):`, openaiResponse.status, errorText)
+          lastError = `OpenAI API failed: ${openaiResponse.status} - ${errorText}`
 
-    // Direct API call to OpenAI
-    const openaiResponse = await fetch("https://api.openai.com/v1/chat/completions", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        model: "gpt-4o",
-        messages: [
-          { role: "system", content: systemPrompt },
-          { role: "user", content: userPrompt },
-        ],
-        temperature: 0.3,
-        max_tokens: 500,
-      }),
-    })
+          // If it's a rate limit, wait and retry
+          if (openaiResponse.status === 429 && attempts < maxAttempts) {
+            console.log("⏳ Rate limited, waiting 2 seconds before retry...")
+            await new Promise((resolve) => setTimeout(resolve, 2000))
+            continue
+          }
 
-    if (!openaiResponse.ok) {
-      const errorText = await openaiResponse.text()
-      console.error("❌ OpenAI API call failed:", openaiResponse.status, errorText)
-      return new Response(
-        JSON.stringify({
-          error: `OpenAI API failed: ${openaiResponse.status} - ${errorText}`,
-          code: "OPENAI_API_ERROR",
-        }),
-        { status: openaiResponse.status, headers: { "Content-Type": "application/json" } },
-      )
-    }
+          // If it's the last attempt or non-retryable error, throw
+          if (attempts === maxAttempts) {
+            throw new Error(lastError)
+          }
+          continue
+        }
 
-    const openaiData = await openaiResponse.json()
-    console.log("✅ OpenAI API call successful!")
+        const openaiData = await openaiResponse.json()
+        console.log("✅ OpenAI API call successful!")
 
-    // Parse the response
-    const aiResponse = openaiData.choices[0].message.content
-    console.log("🤖 AI Response:", aiResponse)
+        // Parse the response with better error handling
+        const aiResponse = openaiData.choices?.[0]?.message?.content
+        console.log("🤖 Raw AI Response:", aiResponse)
 
-    let parsedResponse
-    try {
-      parsedResponse = JSON.parse(aiResponse)
-    } catch (parseError) {
-      console.error("❌ Failed to parse AI response as JSON:", aiResponse)
-      // Fallback: try to extract score and feedback manually
-      const scoreMatch = aiResponse.match(/score["\s]*:\s*(\d+)/i)
-      const feedbackMatch = aiResponse.match(/feedback["\s]*:\s*["']([^"']+)["']/i)
+        if (!aiResponse) {
+          throw new Error("Empty response from OpenAI")
+        }
 
-      parsedResponse = {
-        score: scoreMatch ? Number.parseInt(scoreMatch[1]) : 0,
-        feedback: feedbackMatch ? feedbackMatch[1] : "Unable to parse AI feedback",
+        // Try to parse JSON with multiple strategies
+        let parsedResponse
+
+        try {
+          // Strategy 1: Direct JSON parse
+          parsedResponse = JSON.parse(aiResponse.trim())
+          console.log("✅ JSON parsed successfully (direct)")
+        } catch (parseError) {
+          console.log("⚠️ Direct JSON parse failed, trying extraction...")
+
+          // Strategy 2: Extract JSON from response
+          const jsonMatch = aiResponse.match(/\{[^}]*"score"[^}]*"feedback"[^}]*\}/i)
+          if (jsonMatch) {
+            try {
+              parsedResponse = JSON.parse(jsonMatch[0])
+              console.log("✅ JSON parsed successfully (extracted)")
+            } catch (extractError) {
+              console.log("❌ Extracted JSON also failed to parse")
+              throw extractError
+            }
+          } else {
+            // Strategy 3: Manual extraction as fallback
+            console.log("⚠️ No JSON found, attempting manual extraction...")
+            const scoreMatch = aiResponse.match(/(?:score|Score)["\s]*:?\s*(\d+)/i)
+            const feedbackMatch = aiResponse.match(/(?:feedback|Feedback)["\s]*:?\s*["']?([^"'\n]+)["']?/i)
+
+            parsedResponse = {
+              score: scoreMatch ? Number.parseInt(scoreMatch[1]) : 0,
+              feedback: feedbackMatch ? feedbackMatch[1].trim() : "Unable to parse feedback from AI response",
+            }
+            console.log("⚠️ Used manual extraction:", parsedResponse)
+          }
+        }
+
+        // Validate and sanitize the response
+        if (typeof parsedResponse.score !== "number" || isNaN(parsedResponse.score)) {
+          parsedResponse.score = 0
+        }
+        parsedResponse.score = Math.max(0, Math.min(marks, Math.floor(parsedResponse.score)))
+
+        if (typeof parsedResponse.feedback !== "string" || !parsedResponse.feedback.trim()) {
+          parsedResponse.feedback = "AI feedback unavailable"
+        }
+
+        // Trim feedback to reasonable length
+        if (parsedResponse.feedback.length > 200) {
+          parsedResponse.feedback = parsedResponse.feedback.substring(0, 197) + "..."
+        }
+
+        console.log("✅ Final grading result:", {
+          score: parsedResponse.score,
+          feedbackLength: parsedResponse.feedback.length,
+          attempt: attempts,
+        })
+
+        return new Response(JSON.stringify(parsedResponse), {
+          headers: { "Content-Type": "application/json" },
+        })
+      } catch (error) {
+        console.error(`❌ Attempt ${attempts} failed:`, error.message)
+        lastError = error.message
+
+        if (attempts < maxAttempts) {
+          console.log("🔄 Retrying...")
+          await new Promise((resolve) => setTimeout(resolve, 1000))
+          continue
+        }
       }
     }
 
-    // Validate the response
-    if (typeof parsedResponse.score !== "number" || parsedResponse.score < 0 || parsedResponse.score > marks) {
-      parsedResponse.score = Math.max(0, Math.min(marks, Math.floor(parsedResponse.score || 0)))
-    }
-
-    if (typeof parsedResponse.feedback !== "string") {
-      parsedResponse.feedback = "AI feedback unavailable"
-    }
-
-    console.log("✅ AI grading successful:", {
-      score: parsedResponse.score,
-      feedbackLength: parsedResponse.feedback.length,
-    })
-    return new Response(JSON.stringify(parsedResponse), { headers: { "Content-Type": "application/json" } })
+    // If we get here, all attempts failed
+    console.error("❌ All grading attempts failed:", lastError)
+    return new Response(
+      JSON.stringify({
+        error: `AI grading failed after ${maxAttempts} attempts: ${lastError}`,
+        code: "AI_ERROR",
+        details: lastError,
+      }),
+      {
+        status: 502,
+        headers: { "Content-Type": "application/json" },
+      },
+    )
   } catch (error) {
     console.error("❌ AI grading error details:", {
       message: error.message,
