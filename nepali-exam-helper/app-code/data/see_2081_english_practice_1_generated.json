@@ -1,0 +1,564 @@
+[
+  {
+    "_id": "see_2081_english_practice_1_generated",
+    "title": "SEE 2081 English Practice Test 1 (Generated Questions)",
+    "titleNepali": "SEE २०८१ अंग्रेजी अभ्यास परीक्षा १ (उत्पन्न प्रश्नहरू)",
+    "subject": "english",
+    "year": 2081,
+    "totalMarks": 75,
+    "duration": 180,
+    "instructionsEnglish": "Candidates are required to answer the questions in their own words as far as practicable. Figures in the margin indicate the full marks. Attempt all the questions.",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-30T19:10:55.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-30T19:10:55.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "687d809a2f3df9d071c52110"
+    },
+    "testId": "see_2081_english_practice_1_generated",
+    "questions": [
+      {
+        "questionNumber": 1,
+        "type": "reading_comprehension",
+        "title": "Read the poem and write 'TRUE' for true and 'FALSE' for the false statements.",
+        "marks": 5,
+        "passage": {
+          "title": "The Voice of the Rain",
+          "author": "Walt Whitman",
+          "content": "And who art thou? said I to the soft-falling shower,\nWhich, strange to tell, gave me an answer, as here translated:\nI am the Poem of Earth, said the voice of the rain,\nEternal I rise impalpable out of the land and the bottomless sea,\nUpward to heaven, whence, vaguely form'd, altogether changed, and yet the same,\nI descend to lave the droughts, atomies, dust-layers of the globe,\nAnd all that in them without me were seeds only, latent, unborn;\nAnd forever, by day and night, I give back life to my own origin,\nand make pure and beautify it;\n(For song, issuing from its birth-place, after fulfilment, wandering,\nReck'd or unreck'd, duly with love returns.)"
+        },
+        "subQuestions": [
+          {
+            "id": "i",
+            "type": "true_false",
+            "questionEnglish": "The poet is having a conversation with a heavy downpour.",
+            "correctAnswer": "FALSE",
+            "explanation": "Explanation (English): The poem says \"soft-falling shower,\" which means a light rain, not a heavy downpour.\nব্যাখ্যা (Nepali Explanation): कवितामा \"soft-falling shower\" भनिएको छ, जसको अर्थ भारी वर्षा होइन, हल्का वर्षा हो।",
+            "marks": 1
+          },
+          {
+            "id": "ii",
+            "type": "true_false",
+            "questionEnglish": "The rain calls itself the \"Poem of Earth.\"",
+            "correctAnswer": "TRUE",
+            "explanation": "Explanation (English): The third line explicitly states, \"I am the Poem of Earth, said the voice of the rain\".\nব্যাখ্যা (Nepali Explanation): तेस्रो पङ्क्तिमा स्पष्ट रूपमा भनिएको छ, \"I am the Poem of Earth, said the voice of the rain\"।",
+            "marks": 1
+          },
+          {
+            "id": "iii",
+            "type": "true_false",
+            "questionEnglish": "The rain rises from the heaven and the sky.",
+            "correctAnswer": "FALSE",
+            "explanation": "Explanation (English): The poem states that the rain rises \"out of the land and the bottomless sea\". It rises *upward to* heaven, but does not start there.\nব্যাখ্যা (Nepali Explanation): कवितामा भनिएको छ कि पानी \"out of the land and the bottomless sea\" बाट उठ्छ। यो स्वर्ग *तिर* उठ्छ, तर त्यहाँबाट सुरु हुँदैन।",
+            "marks": 1
+          },
+          {
+            "id": "iv",
+            "type": "true_false",
+            "questionEnglish": "Without rain, seeds would remain hidden and undeveloped.",
+            "correctAnswer": "TRUE",
+            "explanation": "Explanation (English): The line \"And all that in them without me were seeds only, latent, unborn\" means that without the rain, seeds are dormant (latent) and not yet grown (unborn).\nব্যাখ্যা (Nepali Explanation): \"And all that in them without me were seeds only, latent, unborn\" पङ्क्तिले बताउँछ कि पानी बिना, बीउहरू निष्क्रिय (latent) र अंकुरित नभएका (unborn) हुन्छन्।",
+            "marks": 1
+          },
+          {
+            "id": "v",
+            "type": "true_false",
+            "questionEnglish": "The rain helps to make the earth dirty and impure.",
+            "correctAnswer": "FALSE",
+            "explanation": "Explanation (English): The rain states that it gives \"back life to my own origin, and make pure and beautify it\".\nব্যাখ্যা (Nepali Explanation): पानीले भन्छ कि यसले \"back life to my own origin, and make pure and beautify it\" दिन्छ।",
+            "marks": 1
+          }
+        ]
+      },
+      {
+        "questionNumber": 2,
+        "type": "reading_comprehension",
+        "title": "Read the text and do the tasks.",
+        "marks": 10,
+        "passage": {
+          "content": "There's nothing like the feeling of challenging yourself and winning, of taking a risk and having it succeed. That goes with so many things, and one of them is food. You have to challenge yourself with food when you travel. This is what it's all about, experiencing the way other people do things, trusting that they know what they are doing. The food stuff that seems so strange to you is actually so delicious to many others. It doesn't always work out. Sometimes the fermented horse milk in Mongolia that sounds so bad really is so bad. However if you take a chance on the following dishes, you won't be disappointed.\n\nHaggis, Scotland\nOddly enough, when you take all of the parts of a sheep that no one else wants the heart, the liver and the lungs - grind it up. And, mix it with mutton fat, oatmeal and spices. Then pack it in a sheep's stomach and boil it for a few hours. It tastes ... really good.\n\nJellyfish, China\nThis dish can appear challenging to those of us who only associate jellyfish with the scar nature of some species of them. There's also a rubbery texture to jellyfish that some find a little challenging. However, the Chinese know what they're doing with these things. They mix jellyfish into salads, pair it with chicken, stir it through sesame oil... it's all tasty, and it's all low-fat.\n\nCrickets, Thailand\nYou hear, occasionally, that insects are the protein source of the future, and to that I say: no problem. In northern Thailand, deep-fried crickets are a staple, and they're delicious. They're nutty and crunchy, perfect with salt. I still struggle, however, with the larger insects. Anything that requires more than one bite is a bridge too far for this guy."
+        },
+        "subSections": [
+          {
+            "id": "A",
+            "type": "matching",
+            "title": "Match the food items in Column 'A' with their country of origin in Column 'B'.",
+            "marks": 5,
+            "columns": {
+              "A": [
+                {"id": "i", "text": "Haggis"},
+                {"id": "ii", "text": "Crickets"},
+                {"id": "iii", "text": "Jellyfish"},
+                {"id": "iv", "text": "Fermented horse milk"},
+                {"id": "v", "text": "Snails"}
+              ],
+              "B": [
+                {"id": "a", "text": "China"},
+                {"id": "b", "text": "Mongolia"},
+                {"id": "c", "text": "Scotland"},
+                {"id": "d", "text": "France"},
+                {"id": "e", "text": "Thailand"}
+              ]
+            },
+            "correctAnswer": [
+              {"A": "i", "B": "c"},
+              {"A": "ii", "B": "e"},
+              {"A": "iii", "B": "a"},
+              {"A": "iv", "B": "b"},
+              {"A": "v", "B": "d"}
+            ],
+            "explanation": "Explanation (English): The text explicitly mentions Haggis from Scotland, Crickets from Thailand, Jellyfish from China, fermented horse milk from Mongolia, and Snails from France.\nব্যাখ্যা (Nepali Explanation): पाठमा स्पष्ट रूपमा स्कटल्याण्डको ह्यागिस, थाइल्याण्डको क्रिकेट्स, चीनको जेलिफिस, मंगोलियाको फर्मेन्टेड घोडाको दूध, र फ्रान्सको स्नेल्स उल्लेख गरिएको छ।"
+          },
+          {
+            "id": "B",
+            "type": "short_answer",
+            "title": "Answer the following questions.",
+            "marks": 5,
+            "subQuestions": [
+              {
+                "id": "i",
+                "questionEnglish": "Why does the author believe one should try strange food while travelling?",
+                "correctAnswer": "The author believes one should try strange food to experience the way other people do things.",
+                "explanation": "Explanation (English): The text says, \"This is what it's all about, experiencing the way other people do things, trusting that they know what they are doing\".\nব্যাখ্যা (Nepali Explanation): पाठमा भनिएको छ, \"This is what it's all about, experiencing the way other people do things, trusting that they know what they are doing\"।",
+                "marks": 1
+              },
+              {
+                "id": "ii",
+                "questionEnglish": "What parts of a sheep are used to make haggis?",
+                "correctAnswer": "The heart, liver, and lungs of a sheep are used to make haggis.",
+                "explanation": "Explanation (English): The text lists \"the heart, the liver and the lungs\" as the parts used in haggis.\nব্যাখ্যা (Nepali Explanation): पाठमा ह्यागिसमा प्रयोग हुने अंगहरू \"the heart, the liver and the lungs\" भनेर सूचीकृत गरिएको छ।",
+                "marks": 1
+              },
+              {
+                "id": "iii",
+                "questionEnglish": "What two things make eating jellyfish a challenge for some people?",
+                "correctAnswer": "The scary nature of some jellyfish species and its rubbery texture make it challenging for some people.",
+                "explanation": "Explanation (English): The text mentions that people \"associate jellyfish with the scar nature of some species\" and that there's a \"rubbery texture to jellyfish that some find a little challenging\".\nব্যাখ্যা (Nepali Explanation): पाठमा उल्लेख छ कि मानिसहरू \"associate jellyfish with the scar nature of some species\" र यसको \"rubbery texture to jellyfish that some find a little challenging\" हुन्छ।",
+                "marks": 1
+              },
+              {
+                "id": "iv",
+                "questionEnglish": "How are crickets served in northern Thailand?",
+                "correctAnswer": "Crickets are served deep-fried with salt in northern Thailand.",
+                "explanation": "Explanation (English): The text states, \"In northern Thailand, deep-fried crickets are a staple...perfect with salt\".\nব্যাখ্যা (Nepali Explanation): पाठमा भनिएको छ, \"In northern Thailand, deep-fried crickets are a staple...perfect with salt\"।",
+                "marks": 1
+              },
+              {
+                "id": "v",
+                "questionEnglish": "What kind of insects does the author struggle to eat?",
+                "correctAnswer": "The author struggles to eat larger insects that require more than one bite.",
+                "explanation": "Explanation (English): The author states, \"I still struggle, however, with the larger insects. Anything that requires more than one bite is a bridge too far for this guy\".\nব্যাখ্যা (Nepali Explanation): लेखकले भनेका छन्, \"I still struggle, however, with the larger insects. Anything that requires more than one bite is a bridge too far for this guy\"।",
+                "marks": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "questionNumber": 3,
+        "type": "reading_comprehension",
+        "title": "Read the following advertisement and do the tasks.",
+        "marks": 10,
+        "passage": {
+            "title": "VACANCY ANNOUNCEMENT",
+            "content": "A well-established Travel & Tours company in Pokhara is looking for dynamic, motivated, and skilled professionals for the following posts.\n\n1. Digital Marketing Assistant - 1 (Pokhara Office)\n- Qualifications: At least a Bachelor's degree in Management, Marketing, or a related field.\n- Skills: Good communication skills in English and Nepali, excellent computer skills (MS Office, Social Media Management), creative and willing to work in a team.\n- Experience: Previous experience in a similar role will be an advantage but is not mandatory.\n\n2. Trekking Guide - 4\n- Qualifications: High School Graduate. Must have a government-certified Trekking Guide license.\n- Skills: Fluent in English, physically fit, and able to work in remote areas for extended periods.\n- Experience: At least 2 years of experience leading treks in the Annapurna region.\n\n*Note: For the post of Trekking Guide, candidates with first-aid training will have an added advantage.*\n\nIf you meet the above criteria, please apply with your CV, a cover letter, and a recent photograph to the following email address by 20th March, 2025.\n\nEmail: hrmanager.travels@email.com\n\n(Only short-listed candidates will be called for an interview.)\n\nHimalayan Adventures Pvt. Ltd.\nLakeside, Pokhara, Nepal"
+        },
+        "subSections": [
+          {
+            "id": "A",
+            "type": "true_false",
+            "title": "Write 'TRUE' for true and 'FALSE' for the false statements.",
+            "marks": 5,
+            "subQuestions": [
+              {
+                "id": "i",
+                "questionEnglish": "The advertisement is for a job in a bank.",
+                "correctAnswer": "FALSE",
+                "explanation": "Explanation (English): The advertisement is for a \"Travel & Tours company,\" not a bank.\nব্যাখ্যা (Nepali Explanation): विज्ञापन \"Travel & Tours company\" को लागि हो, बैंकको लागि होइन।",
+                "marks": 1
+              },
+              {
+                "id": "ii",
+                "questionEnglish": "There is one vacancy for a Digital Marketing Assistant.",
+                "correctAnswer": "TRUE",
+                "explanation": "Explanation (English): The advertisement lists \"Digital Marketing Assistant - 1\".\nব্যাখ্যা (Nepali Explanation): विज्ञापनमा \"Digital Marketing Assistant - 1\" उल्लेख छ।",
+                "marks": 1
+              },
+              {
+                "id": "iii",
+                "questionEnglish": "Experience is compulsory for the post of Digital Marketing Assistant.",
+                "correctAnswer": "FALSE",
+                "explanation": "Explanation (English): For the Digital Marketing Assistant, the ad says experience \"is not mandatory.\"\nব্যাখ্যা (Nepali Explanation): डिजिटल मार्केटिङ असिस्टेन्टको लागि, विज्ञापनमा अनुभव \"is not mandatory\" भनिएको छ।",
+                "marks": 1
+              },
+              {
+                "id": "iv",
+                "questionEnglish": "All applicants will be called for an interview.",
+                "correctAnswer": "FALSE",
+                "explanation": "Explanation (English): The ad states, \"Only short-listed candidates will be called for an interview.\"\nব্যাখ্যা (Nepali Explanation): विज्ञापनमा भनिएको छ, \"Only short-listed candidates will be called for an interview\"।",
+                "marks": 1
+              },
+              {
+                "id": "v",
+                "questionEnglish": "The deadline for the application is in April 2025.",
+                "correctAnswer": "FALSE",
+                "explanation": "Explanation (English): The deadline is \"20th March, 2025.\"\nব্যাখ্যা (Nepali Explanation): आवेदनको अन्तिम मिति \"20th March, 2025\" हो।",
+                "marks": 1
+              }
+            ]
+          },
+          {
+            "id": "B",
+            "type": "short_answer",
+            "title": "Answer the following questions.",
+            "marks": 5,
+            "subQuestions": [
+              {
+                "id": "i",
+                "questionEnglish": "How many posts are advertised in total?",
+                "correctAnswer": "Five posts are advertised in total (1 Digital Marketing Assistant and 4 Trekking Guides).",
+                "explanation": "Explanation (English): The ad lists 1 position for Digital Marketing Assistant and 4 for Trekking Guide, making a total of 5.\nব্যাখ্যা (Nepali Explanation): विज्ञापनमा १ डिजिटल मार्केटिङ असिस्टेन्ट र ४ ट्रेकिङ गाइडको पद छ, जसको कुल संख्या ५ हुन्छ।",
+                "marks": 1
+              },
+              {
+                "id": "ii",
+                "questionEnglish": "What academic qualification is required for the post of Trekking Guide?",
+                "correctAnswer": "A High School Graduate qualification is required for the post of Trekking Guide.",
+                "explanation": "Explanation (English): Under the Trekking Guide section, it specifies \"High School Graduate.\"\nব্যাখ্যা (Nepali Explanation): ट्रेकिङ गाइड खण्डमा, \"High School Graduate\" उल्लेख छ।",
+                "marks": 1
+              },
+              {
+                "id": "iii",
+                "questionEnglish": "What special skill will be an advantage for a Trekking Guide?",
+                "correctAnswer": "First-aid training will be an added advantage for a Trekking Guide.",
+                "explanation": "Explanation (English): The note says, \"candidates with first-aid training will have an added advantage.\"\nব্যাখ্যা (Nepali Explanation): नोटमा भनिएको छ, \"candidates with first-aid training will have an added advantage\"।",
+                "marks": 1
+              },
+              {
+                "id": "iv",
+                "questionEnglish": "What documents should be submitted with the application?",
+                "correctAnswer": "A CV, a cover letter, and a recent photograph should be submitted.",
+                "explanation": "Explanation (English): The ad instructs applicants to \"apply with your CV, a cover letter, and a recent photograph.\"\nব্যাখ্যা (Nepali Explanation): विज्ञापनले आवेदकहरूलाई \"apply with your CV, a cover letter, and a recent photograph\" सहित आवेदन दिन निर्देशन दिएको छ।",
+                "marks": 1
+              },
+              {
+                "id": "v",
+                "questionEnglish": "Where is the office of the employer located?",
+                "correctAnswer": "The employer's office is located in Lakeside, Pokhara, Nepal.",
+                "explanation": "Explanation (English): The address at the bottom of the ad is \"Himalayan Adventures Pvt. Ltd., Lakeside, Pokhara, Nepal.\"\nব্যাখ্যা (Nepali Explanation): विज्ञापनको तल दिइएको ठेगाना \"Himalayan Adventures Pvt. Ltd., Lakeside, Pokhara, Nepal\" हो।",
+                "marks": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "questionNumber": 4,
+        "type": "reading_comprehension",
+        "title": "Read the article given below and do the tasks.",
+        "marks": 15,
+        "passage": {
+            "title": "Cyber Security: Basic Internet Safety Tips",
+            "content": "When you want to make your home secure, you lock the door. When you want to prevent your bike from being stolen, you use a bike lock. But what do you do to protect your identity online?\n\nModern life is fundamentally intertwined with the internet. Nearly every daily task now has the opportunity for online integration, and almost everyone owns multiple devices, including laptops, phones, and tablets. The more accounts and devices you have online, the greater the potential is for criminals to access your personal information and take advantage of you.\n\nOnline safety is important no matter your age, but there are particular concerns for vulnerable groups like children and teenagers. Here are some tips to guide you as you evaluate your online habits and make small changes to ensure your privacy and security.\n\nProtect your Personal Information with Strong Passwords\nWhile creating a new password, pay attention to strong password requirements. Use different user IDs for different accounts. Make the password more complicated by combining letters, numbers, and special characters. Change your passwords quite often. Don't share your passwords with other people. Prevent \"auto-login\", and uncheck \"Keep me signed in\" and \"Remember my password\" options on public computers.\n\nBe Careful about WiFi\nDo not trust public wifi security. Avoid connecting to unsecured public wifi networks. Surf only through secure websites. Logout immediately after you have completed your online transaction. Make sure your own wifi networks are protected with strong passwords. Change your wifi password frequently."
+        },
+        "subSections": [
+          {
+            "id": "A",
+            "type": "true_false",
+            "title": "Write 'TRUE' for true and 'FALSE' for the false statements.",
+            "marks": 5,
+            "subQuestions": [
+              {
+                "id": "i",
+                "questionEnglish": "Online safety is only important for children and teenagers.",
+                "correctAnswer": "FALSE",
+                "explanation": "Explanation (English): The text states, \"Online safety is important no matter your age\", although it does mention particular concerns for vulnerable groups.\nব্যাখ্যা (Nepali Explanation): पाठमा भनिएको छ, \"Online safety is important no matter your age\", यद्यपि यसले कमजोर समूहहरूका लागि विशेष चिन्ताहरू उल्लेख गरेको छ।",
+                "marks": 1
+              },
+              {
+                "id": "ii",
+                "questionEnglish": "It is a good idea to use the same password for all your accounts.",
+                "correctAnswer": "FALSE",
+                "explanation": "Explanation (English): The text advises to \"Use different user IDs or password combinations for different accounts\".\nব্যাখ্যা (Nepali Explanation): पाठले \"Use different user IDs or password combinations for different accounts\" को सल्लाह दिन्छ।",
+                "marks": 1
+              },
+              {
+                "id": "iii",
+                "questionEnglish": "You should always log out after completing an online transaction on public WiFi.",
+                "correctAnswer": "TRUE",
+                "explanation": "Explanation (English): A specific instruction is to \"Logout immediately after you have completed your online transaction\".\nব্যাখ্যা (Nepali Explanation): एउटा विशेष निर्देशन हो, \"Logout immediately after you have completed your online transaction\"।",
+                "marks": 1
+              },
+              {
+                "id": "iv",
+                "questionEnglish": "Combining letters, numbers, and special characters makes a password weaker.",
+                "correctAnswer": "FALSE",
+                "explanation": "Explanation (English): The text says to \"Make the password more complicated by combining letters, numbers, and special characters\".\nব্যাখ্যা (Nepali Explanation): पाठमा \"Make the password more complicated by combining letters, numbers, and special characters\" भनिएको छ।",
+                "marks": 1
+              },
+              {
+                "id": "v",
+                "questionEnglish": "Public WiFi networks are always secure and trustworthy.",
+                "correctAnswer": "FALSE",
+                "explanation": "Explanation (English): The text explicitly warns, \"Do not trust public wifi security. Avoid connecting to unsecured public wifi networks\".\nব্যাখ্যা (Nepali Explanation): पाठमा स्पष्ट रूपमा चेतावनी दिइएको छ, \"Do not trust public wifi security. Avoid connecting to unsecured public wifi networks\"।",
+                "marks": 1
+              }
+            ]
+          },
+          {
+            "id": "B",
+            "type": "matching",
+            "title": "Match the beginnings in column 'A' with their correct endings in column 'B'.",
+            "marks": 5,
+            "columns": {
+              "A": [
+                {"id": "i", "text": "To make your home secure,"},
+                {"id": "ii", "text": "The more online accounts you have,"},
+                {"id": "iii", "text": "A strong password combines"},
+                {"id": "iv", "text": "The particular concern for children"},
+                {"id": "v", "text": "To protect your own WiFi network,"}
+              ],
+              "B": [
+                {"id": "a", "text": "you should change it frequently."},
+                {"id": "b", "text": "makes them more vulnerable."},
+                {"id": "c", "text": "you lock the door."},
+                {"id": "d", "text": "letters, numbers, and special characters."},
+                {"id": "e", "text": "the greater the risk to your data."},
+                {"id": "f", "text": "you should share it with friends."}
+              ]
+            },
+            "correctAnswer": [
+              {"A": "i", "B": "c"},
+              {"A": "ii", "B": "e"},
+              {"A": "iii", "B": "d"},
+              {"A": "iv", "B": "b"},
+              {"A": "v", "B": "a"}
+            ],
+            "explanation": "Explanation (English): These pairings are directly supported by the text: (i) \"When you want to make your home secure, you lock the door\". (ii) \"The more accounts and devices you have online, the greater the potential is for criminals\". (iii) \"...combining letters, numbers, and special characters\". (iv) \"...particular concerns for certain vulnerable groups like children\". (v) \"Change your wifi password frequently\".\nব্যাখ্যা (Nepali Explanation): यी जोडीहरू पाठद्वारा प्रत्यक्ष रूपमा समर्थित छन्: (i) \"When you want to make your home secure, you lock the door\"। (ii) \"The more accounts and devices you have online, the greater the potential is for criminals\"। (iii) \"...combining letters, numbers, and special characters\"। (iv) \"...particular concerns for certain vulnerable groups like children\"। (v) \"Change your wifi password frequently\"।"
+          },
+          {
+            "id": "C",
+            "type": "short_answer",
+            "title": "Answer the following questions.",
+            "marks": 5,
+            "subQuestions": [
+              {
+                "id": "i",
+                "questionEnglish": "What is the modern equivalent of using a bike lock for online safety?",
+                "correctAnswer": "Using a strong password to protect your online identity is the modern equivalent.",
+                "explanation": "Explanation (English): The text introduces the topic by comparing physical locks (door lock, bike lock) to the methods needed to protect one's online identity, the main method discussed being strong passwords.\nব্যাখ্যা (Nepali Explanation): पाठले भौतिक ताला (ढोकाको ताला, बाइकको ताला) लाई अनलाइन पहिचान सुरक्षित गर्न आवश्यक विधिहरूसँग तुलना गरेर विषय प्रस्तुत गर्दछ, जसमा मुख्य विधि बलियो पासवर्ड हो।",
+                "marks": 1
+              },
+              {
+                "id": "ii",
+                "questionEnglish": "Why is it not a good idea to check the \"Remember my password\" option on a public computer?",
+                "correctAnswer": "It is not a good idea because it allows others who use the computer after you to access your account.",
+                "explanation": "Explanation (English): The text advises to \"Prevent \"auto-login\", uncheck \"Keep me signed in\" and \"Remember my password\" options\", implying that leaving these checked is a security risk on shared devices.\nব্যাখ্যা (Nepali Explanation): पाठले \"Prevent \"auto-login\", uncheck \"Keep me signed in\" and \"Remember my password\" options\" को सल्लाह दिन्छ, जसले साझा उपकरणहरूमा यी विकल्पहरूलाई चेक गर्नु सुरक्षा जोखिम हो भन्ने संकेत गर्दछ।",
+                "marks": 1
+              },
+              {
+                "id": "iii",
+                "questionEnglish": "Name two vulnerable groups mentioned in the text regarding online safety.",
+                "correctAnswer": "Children and teenagers are two vulnerable groups mentioned.",
+                "explanation": "Explanation (English): The text states there are \"particular concerns for certain vulnerable groups like children, teenagers and senior citizens\".\nব্যাখ্যা (Nepali Explanation): पाठमा भनिएको छ कि \"particular concerns for certain vulnerable groups like children, teenagers and senior citizens\" छन्।",
+                "marks": 1
+              },
+              {
+                "id": "iv",
+                "questionEnglish": "How can you make your own WiFi network at home more secure?",
+                "correctAnswer": "You can make it more secure by protecting it with a strong password and changing the password frequently.",
+                "explanation": "Explanation (English): The text advises to \"Make sure your own wifi networks are protected with strong passwords. Change your wifi password frequently\".\nব্যাখ্যা (Nepali Explanation): पाठले \"Make sure your own wifi networks are protected with strong passwords. Change your wifi password frequently\" को सल्लाह दिन्छ।",
+                "marks": 1
+              },
+              {
+                "id": "v",
+                "questionEnglish": "What does the phrase \"intertwined with the internet\" mean?",
+                "correctAnswer": "It means that modern life is closely connected with and dependent on the internet.",
+                "explanation": "Explanation (English): The text says \"Modern life is fundamentally intertwined with the internet. Nearly every daily task now has the opportunity for online integration...\" which shows this close connection.\nব্যাখ্যা (Nepali Explanation): पाठमा भनिएको छ \"Modern life is fundamentally intertwined with the internet. Nearly every daily task now has the opportunity for online integration...\" जसले यो घनिष्ठ सम्बन्ध देखाउँछ।",
+                "marks": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "questionNumber": 5,
+        "type": "free_writing",
+        "title": "Write a set of rules and regulations to be followed by visitors in a museum.",
+        "marks": 5,
+        "wordCount": 100,
+        "clues": [
+          "maintain silence",
+          "no food or drinks",
+          "do not touch the artifacts",
+          "photography without flash",
+          "stay with the group",
+          "no running or shouting"
+        ],
+        "sampleAnswer": {
+          "title": "Rules and Regulations for Museum Visitors",
+          "content": "To ensure a pleasant experience for everyone and to preserve our valuable collection, all visitors are required to follow these rules. Firstly, please maintain silence inside the museum halls. Food and drinks are strictly prohibited to prevent damage to the artifacts. Visitors must not touch any of the exhibits, as oils from skin can cause harm. Photography is allowed, but please ensure your flash is turned off. For those on a guided tour, please stay with your group at all times. Finally, running and shouting are not permitted within the museum premises. Thank you for your cooperation."
+        }
+      },
+      {
+        "questionNumber": 6,
+        "type": "free_writing",
+        "title": "Your friend has passed the SEE exam with an outstanding GPA. Write a letter of congratulation to him/her in about 100 words.",
+        "marks": 5,
+        "wordCount": 100,
+        "clues": [
+          "great news",
+          "heard from a mutual friend",
+          "result of hard work and dedication",
+          "proud of you",
+          "party",
+          "wishes for future studies"
+        ],
+        "sampleAnswer": {
+          "content": "Bhanu-10, Tanahun\n30th August, 2025\n\nDear Sameer,\n\nI was so thrilled to hear the great news about your SEE result from our friend Anish. I want to extend my warmest congratulations to you for achieving an outstanding GPA!\n\nI know how hard you worked for this, and your dedication has truly paid off. This excellent result is a testament to your perseverance. All your friends and family must be incredibly proud of you, and I certainly am.\n\nI hope we can all celebrate together soon! I wish you all the very best for your future studies. I am sure you will continue to achieve great things.\n\nYour loving friend,\nRamesh"
+        }
+      },
+      {
+        "questionNumber": 7,
+        "type": "free_writing",
+        "title": "Prepare a dialogue between two friends discussing their plans for the upcoming weekend. Write it in at least six exchanges and in about 150 words.",
+        "marks": 6,
+        "wordCount": 150,
+        "sampleAnswer": {
+          "content": "Asmita: Hi, Rohan! Any plans for the weekend? The weather forecast says it will be sunny.\n\nRohan: Hi, Asmita! That's great to hear. I was thinking of going for a short hike to Nagarkot. The clear skies would be perfect for viewing the mountains. What about you?\n\nAsmita: A hike sounds wonderful, but I was planning to visit the book fair at Bhrikuti Mandap. I have been waiting for it all year. There are supposed to be some great discounts.\n\nRohan: Oh, that's right! I completely forgot about the book fair. That sounds tempting too. Do you plan on going on Saturday or Sunday?\n\nAsmita: I'm going on Saturday morning to avoid the crowd. Maybe you could join me at the book fair on Saturday, and we could plan the hike for another time?\n\nRohan: That's a great idea! I would love to. Let's meet at the main gate around 11 AM on Saturday then. I will give you a call in the morning."
+        }
+      },
+      {
+        "questionNumber": 8,
+        "type": "free_writing",
+        "title": "Some people believe that practical, skill-based education is more important than theoretical, academic knowledge for success in today's world. Write an essay in about 200 words expressing your views on this issue.",
+        "marks": 8,
+        "wordCount": 200,
+        "sampleAnswer": {
+            "title": "Skill-Based Education vs. Academic Knowledge",
+            "content": "In the modern world, the debate over the importance of practical, skill-based education versus theoretical, academic knowledge is more relevant than ever. While both are crucial for a well-rounded individual, I believe that for ensuring employment and success, skill-based education holds a significant edge.\n\nAcademic knowledge provides a strong foundation and helps develop critical thinking. It explains the 'why' behind concepts. For instance, a physics textbook explains the principles of electricity. However, it is the skill-based training that teaches an electrician how to actually wire a house safely and efficiently. This practical application of knowledge is what employers often seek. In fields like information technology, culinary arts, or mechanics, hands-on skills are not just an advantage; they are a necessity.\n\nFurthermore, skill-based education empowers individuals to become self-reliant. A person with plumbing or graphic design skills can start their own business, creating opportunities for themselves and others. In contrast, a purely academic degree might not directly translate into a job without further vocational training.\n\nIn conclusion, while theoretical knowledge is valuable for intellectual growth, practical, skill-based education is the key to unlocking real-world opportunities and achieving professional success. A balanced educational system that integrates both aspects is, therefore, the ideal path forward for preparing students for the challenges of today's world."
+        }
+      },
+      {
+        "questionNumber": 9,
+        "type": "grammar",
+        "title": "Reproduce the following sentences as instructed in the brackets.",
+        "marks": 6,
+        "subQuestions": [
+          {
+            "id": "i",
+            "type": "reproduce",
+            "questionEnglish": "Let's go for a walk, .............? (Add a correct question tag.)",
+            "correctAnswer": "Let's go for a walk, shall we?",
+            "explanation": "Explanation (English): The tag question for a suggestion starting with \"Let's\" is always \"shall we?\".\nব্যাখ্যা (Nepali Explanation): \"Let's\" बाट सुरु हुने सुझावको लागि ट्याग प्रश्न सधैं \"shall we?\" हुन्छ।",
+            "marks": 1
+          },
+          {
+            "id": "ii",
+            "type": "reproduce",
+            "questionEnglish": "By this time next year, she .......... (complete) her Bachelor's degree. (Use the correct form of the verb 'complete' to complete the sentence.)",
+            "correctAnswer": "By this time next year, she will have completed her Bachelor's degree.",
+            "explanation": "Explanation (English): The phrase \"By this time next year\" indicates an action that will be finished before a specific time in the future, which requires the Future Perfect tense ($will + have + past participle$).\nব্যাখ্যা (Nepali Explanation): \"By this time next year\" वाक्यांशले भविष्यमा निश्चित समयभन्दा पहिले सकिने कार्यलाई जनाउँछ, जसका लागि Future Perfect tense ($will + have + past participle$) को आवश्यकता पर्दछ।",
+            "marks": 1
+          },
+          {
+            "id": "iii",
+            "type": "reproduce",
+            "questionEnglish": "My mother said to me, \"Don't waste your time playing games.\" (Change into indirect speech.)",
+            "correctAnswer": "My mother forbade/advised/told me not to waste my time playing games.",
+            "explanation": "Explanation (English): For an imperative sentence (a command or advice) in reported speech, we use a reporting verb like 'told', 'advised', or 'forbade' followed by '(not) + to-infinitive'. 'Your' changes to 'my'.\nব্যাখ্যা (Nepali Explanation): रिपोर्टेड स्पीचमा आज्ञार्थक वाक्य (आदेश वा सल्लाह) को लागि, हामी 'told', 'advised', वा 'forbade' जस्ता रिपोर्टिङ क्रियापद प्रयोग गर्छौं र त्यसपछि '(not) + to-infinitive' प्रयोग हुन्छ। 'Your' लाई 'my' मा परिवर्तन गरिन्छ।",
+            "marks": 1
+          },
+          {
+            "id": "iv",
+            "type": "reproduce",
+            "questionEnglish": "The mechanic is repairing my car. (Change into passive voice.)",
+            "correctAnswer": "My car is being repaired by the mechanic.",
+            "explanation": "Explanation (English): The sentence is in the Present Continuous tense (is + V-ing). The passive form is `object + is/am/are + being + V3 + by + subject`.\nব্যাখ্যা (Nepali Explanation): वाक्य Present Continuous tense (is + V-ing) मा छ। यसको passive form `object + is/am/are + being + V3 + by + subject` हो।",
+            "marks": 1
+          },
+          {
+            "id": "v",
+            "type": "reproduce",
+            "questionEnglish": "He has some money in his pocket. (Change into negative.)",
+            "correctAnswer": "He doesn't have any money in his pocket. / He has no money in his pocket.",
+            "explanation": "Explanation (English): The verb 'has' here is a main verb. To make it negative, we use the auxiliary 'does not' (doesn't) + 'have'. 'Some' changes to 'any' in negative sentences.\nব্যাখ্যা (Nepali Explanation): यहाँ 'has' क्रिया मुख्य क्रिया हो। यसलाई नकारात्मक बनाउन, हामी सहायक क्रिया 'does not' (doesn't) + 'have' प्रयोग गर्छौं। नकारात्मक वाक्यमा 'some' लाई 'any' मा परिवर्तन गरिन्छ।",
+            "marks": 1
+          },
+          {
+            "id": "vi",
+            "type": "reproduce",
+            "questionEnglish": "The children were playing <strong>in the garden</strong>. (Change into a 'Where' question.)",
+            "correctAnswer": "Where were the children playing?",
+            "explanation": "Explanation (English): The underlined part \"in the garden\" answers the question 'Where?'. We form the question by putting the WH-word (Where) at the beginning, followed by the auxiliary verb (were), the subject (the children), and the main verb (playing).\nব্যাখ্যা (Nepali Explanation): रेखांकित भाग \"in the garden\" ले 'कहाँ?' प्रश्नको उत्तर दिन्छ। हामी प्रश्न बनाउन WH-शब्द (Where) लाई सुरुमा राख्छौं, त्यसपछि सहायक क्रिया (were), कर्ता (the children), र मुख्य क्रिया (playing) राख्छौं।",
+            "marks": 1
+          }
+        ]
+      },
+      {
+        "questionNumber": 10,
+        "type": "cloze_test",
+        "title": "Choose and copy the correct answers from the brackets to complete the given text. (Rewriting the text is not compulsory.)",
+        "marks": 5,
+        "passage": "Last year, my family and I went to (a) _____ (a/an/the/no article) Gosaikunda Lake for a trek. It is one of (b) _____ (most popular/the most popular/more popular/popular) trekking destinations in Nepal. We (c) _____ (walked/were walking/had walked/had been walking) for six hours when it started to rain heavily. If it had not rained, we (d) _____ (will reach/would reach/would have reached/will have reached) the next village that day. (e) _____ (Although/Because/Despite/In spite of) the rain, we enjoyed the journey a lot. The local people, (f) _____ (who/which/whose/whom) we met on the way, were very friendly. My father made me (g) _____ (to carry/carry/carrying/carried) my own backpack to teach me responsibility. The guide asked us, \"(h) _____ (if we were/were we/are you/if you are) feeling tired?\" Everyone was exhausted, (i) _____ (wasn't it/weren't they/wasn't he/didn't they)? I will never forget that trip. It is a memory (j) _____ (that/where/when/who) I will cherish forever.",
+        "gaps": [
+          {
+            "id": "a", 
+            "correctAnswer": "no article",
+            "explanation": "Explanation (English): Before a proper noun (Gosaikunda Lake), an article is generally not used.\nব্যাখ্যা (Nepali Explanation): कुनै खास ठाउँ वा तालको नाम (Gosaikunda Lake) अगाडि सामान्यतया article प्रयोग हुँदैन।"
+          },
+          {
+            "id": "b", 
+            "correctAnswer": "the most popular",
+            "explanation": "Explanation (English): The phrase \"one of\" is followed by a superlative adjective, which requires \"the\".\nব্যাখ্যা (Nepali Explanation): \"one of\" पछि superlative adjective आउँछ, जसको अगाडि \"the\" लाग्छ।"
+          },
+          {
+            "id": "c", 
+            "correctAnswer": "had been walking",
+            "explanation": "Explanation (English): The Past Perfect Continuous tense is used to show an action that was happening for a duration before another past action interrupted it (started to rain).\nব্যাখ্যা (Nepali Explanation): विगतमा कुनै कार्य सुरु हुनुभन्दा अगाडि केही समयदेखि चलिरहेको अर्को कार्यलाई जनाउन Past Perfect Continuous tense प्रयोग गरिन्छ।"
+          },
+          {
+            "id": "d", 
+            "correctAnswer": "would have reached",
+            "explanation": "Explanation (English): This is a Type III conditional sentence (If + past perfect, ... would have + V3), used for unreal past conditions.\nব্যাখ্যা (Nepali Explanation): यो Type III conditional वाक्य (If + past perfect, ... would have + V3) हो, जुन विगतको असम्भव अवस्थाको लागि प्रयोग हुन्छ।"
+          },
+          {
+            "id": "e", 
+            "correctAnswer": "Despite",
+            "explanation": "Explanation (English): \"Despite\" is followed by a noun phrase (\"the rain\"). \"Although\" would be followed by a clause.\nব্যাখ্যা (Nepali Explanation): \"Despite\" पछि noun phrase (\"the rain\") आउँछ। \"Although\" पछि clause आउँछ।"
+          },
+          {
+            "id": "f", 
+            "correctAnswer": "whom",
+            "explanation": "Explanation (English): \"Whom\" is used as the object of the verb \"met\" to refer to people.\nব্যাখ্যা (Nepali Explanation): \"Whom\" लाई मानिसहरूलाई जनाउन क्रिया \"met\" को object को रूपमा प्रयोग गरिन्छ।"
+          },
+          {
+            "id": "g", 
+            "correctAnswer": "carry",
+            "explanation": "Explanation (English): The causative verb \"make\" is followed by a bare infinitive (verb without 'to').\nব্যাখ্যা (Nepali Explanation): \"make\" causative verb पछि bare infinitive (verb without 'to') प्रयोग हुन्छ।"
+          },
+          {
+            "id": "h", 
+            "correctAnswer": "if we were",
+            "explanation": "Explanation (English): This is a reported question. The original question \"Are you feeling tired?\" becomes an \"if\" clause with statement word order (subject + verb).\nব্যাখ্যা (Nepali Explanation): यो reported question हो। \"Are you feeling tired?\" प्रश्न \"if\" clause मा बदलिन्छ र शब्द क्रम statement जस्तो (subject + verb) हुन्छ।"
+          },
+          {
+            "id": "i", 
+            "correctAnswer": "weren't they",
+            "explanation": "Explanation (English): The subject is \"Everyone\" which is treated as plural (\"they\") for the tag question when it refers to a group of people. The statement is positive, so the tag is negative.\nব্যাখ্যা (Nepali Explanation): \"Everyone\" ले मानिसहरूको समूहलाई जनाउँदा, ट्याग प्रश्नमा यसलाई बहुवचन (\"they\") मानिन्छ। वाक्य सकारात्मक भएकोले, ट्याग नकारात्मक हुन्छ।"
+          },
+          {
+            "id": "j", 
+            "correctAnswer": "that",
+            "explanation": "Explanation (English): \"That\" is a relative pronoun used to introduce a defining clause about a thing (\"a memory\").\nব্যাখ্যা (Nepali Explanation): \"That\" एक relative pronoun हो जुन कुनै वस्तु (\"a memory\") को बारेमा defining clause सुरु गर्न प्रयोग गरिन्छ।"
+          }
+        ]
+      }
+    ]
+  }
+]

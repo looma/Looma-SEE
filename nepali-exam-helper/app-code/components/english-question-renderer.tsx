@@ -1,0 +1,526 @@
+"use client"
+
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
+import { Label } from "@/components/ui/label"
+import { Textarea } from "@/components/ui/textarea"
+import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
+import { CheckCircle2, Circle, FileText, BookOpen, PenTool, MessageSquare, Eye, EyeOff } from "lucide-react"
+import { useState } from "react"
+import type { EnglishQuestion } from "@/lib/use-questions"
+
+interface EnglishQuestionRendererProps {
+  question: EnglishQuestion
+  answers: Record<string, any>
+  onAnswerChange: (questionId: string, subQuestionId: string, answer: any) => void
+  language?: "english" | "nepali"
+}
+
+export function EnglishQuestionRenderer({
+  question,
+  answers,
+  onAnswerChange,
+  language = "english",
+}: EnglishQuestionRendererProps) {
+  const [showExplanations, setShowExplanations] = useState(false)
+
+  const getQuestionIcon = (type: string) => {
+    switch (type) {
+      case "reading_comprehension":
+        return <BookOpen className="h-5 w-5" />
+      case "free_writing":
+        return <PenTool className="h-5 w-5" />
+      case "grammar":
+        return <MessageSquare className="h-5 w-5" />
+      case "cloze_test":
+        return <FileText className="h-5 w-5" />
+      default:
+        return <FileText className="h-5 w-5" />
+    }
+  }
+
+  const getQuestionColor = (type: string) => {
+    switch (type) {
+      case "reading_comprehension":
+        return "from-blue-500 to-blue-600"
+      case "free_writing":
+        return "from-green-500 to-green-600"
+      case "grammar":
+        return "from-purple-500 to-purple-600"
+      case "cloze_test":
+        return "from-orange-500 to-orange-600"
+      default:
+        return "from-slate-500 to-slate-600"
+    }
+  }
+
+  const parseExplanation = (explanation?: string) => {
+    if (!explanation) return { english: "", nepali: "" }
+
+    const parts = explanation.split("\nব্যাখ্যা (Nepali Explanation): ")
+    const english = parts[0]?.replace("Explanation (English): ", "") || ""
+    const nepali = parts[1] || ""
+
+    return { english, nepali }
+  }
+
+  const renderExplanation = (explanation?: string) => {
+    if (!explanation || !showExplanations) return null
+
+    const { english, nepali } = parseExplanation(explanation)
+
+    return (
+      <div className="mt-3 p-3 bg-blue-50 rounded-lg border border-blue-200">
+        <div className="text-sm">
+          {english && (
+            <div className="mb-2">
+              <span className="font-medium text-blue-800">English:</span>
+              <p className="text-blue-700 mt-1">{english}</p>
+            </div>
+          )}
+          {nepali && (
+            <div>
+              <span className="font-medium text-blue-800">नेपाली:</span>
+              <p className="text-blue-700 mt-1">{nepali}</p>
+            </div>
+          )}
+        </div>
+      </div>
+    )
+  }
+
+  const renderTrueFalseQuestions = (subQuestions: any[], parentId?: string) => {
+    return (
+      <div className="space-y-4">
+        {subQuestions.map((subQ, index) => {
+          const questionId = parentId ? `${parentId}_${subQ.id}` : subQ.id
+          const currentAnswer = parentId ? answers[question.id]?.[parentId]?.[subQ.id] : answers[question.id]?.[subQ.id]
+
+          return (
+            <Card key={subQ.id} className="border-slate-200">
+              <CardContent className="p-4">
+                <div className="flex items-start gap-3">
+                  <div className="flex-shrink-0 mt-1">
+                    {currentAnswer ? (
+                      <CheckCircle2 className="h-5 w-5 text-green-500" />
+                    ) : (
+                      <Circle className="h-5 w-5 text-slate-400" />
+                    )}
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex justify-between items-start mb-3">
+                      <p className="font-medium text-slate-800">
+                        ({subQ.id}) {subQ.questionEnglish}
+                      </p>
+                      <Badge variant="outline" className="ml-2">
+                        {subQ.marks} mark{subQ.marks !== 1 ? "s" : ""}
+                      </Badge>
+                    </div>
+
+                    <RadioGroup
+                      value={currentAnswer || ""}
+                      onValueChange={(value) => {
+                        if (parentId) {
+                          const currentSection = answers[question.id]?.[parentId] || {}
+                          onAnswerChange(question.id, parentId, {
+                            ...currentSection,
+                            [subQ.id]: value,
+                          })
+                        } else {
+                          onAnswerChange(question.id, subQ.id, value)
+                        }
+                      }}
+                      className="flex gap-6"
+                    >
+                      <div
+                        className="flex items-center space-x-2 cursor-pointer p-2 rounded hover:bg-green-50 transition-colors"
+                        onClick={() => {
+                          const value = "TRUE"
+                          if (parentId) {
+                            const currentSection = answers[question.id]?.[parentId] || {}
+                            onAnswerChange(question.id, parentId, {
+                              ...currentSection,
+                              [subQ.id]: value,
+                            })
+                          } else {
+                            onAnswerChange(question.id, subQ.id, value)
+                          }
+                        }}
+                      >
+                        <RadioGroupItem value="TRUE" id={`${questionId}_true`} />
+                        <Label htmlFor={`${questionId}_true`} className="font-medium text-green-700 cursor-pointer">
+                          TRUE
+                        </Label>
+                      </div>
+                      <div
+                        className="flex items-center space-x-2 cursor-pointer p-2 rounded hover:bg-red-50 transition-colors"
+                        onClick={() => {
+                          const value = "FALSE"
+                          if (parentId) {
+                            const currentSection = answers[question.id]?.[parentId] || {}
+                            onAnswerChange(question.id, parentId, {
+                              ...currentSection,
+                              [subQ.id]: value,
+                            })
+                          } else {
+                            onAnswerChange(question.id, subQ.id, value)
+                          }
+                        }}
+                      >
+                        <RadioGroupItem value="FALSE" id={`${questionId}_false`} />
+                        <Label htmlFor={`${questionId}_false`} className="font-medium text-red-700 cursor-pointer">
+                          FALSE
+                        </Label>
+                      </div>
+                    </RadioGroup>
+
+                    {renderExplanation(subQ.explanation)}
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          )
+        })}
+      </div>
+    )
+  }
+
+  const renderShortAnswerQuestions = (subQuestions: any[], parentId?: string) => {
+    return (
+      <div className="space-y-4">
+        {subQuestions.map((subQ, index) => {
+          const currentAnswer = parentId
+            ? answers[question.id]?.[parentId]?.[subQ.id] || ""
+            : answers[question.id]?.[subQ.id] || ""
+
+          return (
+            <Card key={subQ.id} className="border-slate-200">
+              <CardContent className="p-4">
+                <div className="flex items-start gap-3">
+                  <div className="flex-shrink-0 mt-1">
+                    {currentAnswer.trim() ? (
+                      <CheckCircle2 className="h-5 w-5 text-green-500" />
+                    ) : (
+                      <Circle className="h-5 w-5 text-slate-400" />
+                    )}
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex justify-between items-start mb-3">
+                      <p className="font-medium text-slate-800">
+                        ({subQ.id}) {subQ.questionEnglish}
+                      </p>
+                      <Badge variant="outline" className="ml-2">
+                        {subQ.marks} mark{subQ.marks !== 1 ? "s" : ""}
+                      </Badge>
+                    </div>
+
+                    <Textarea
+                      value={currentAnswer}
+                      onChange={(e) => {
+                        if (parentId) {
+                          const currentSection = answers[question.id]?.[parentId] || {}
+                          onAnswerChange(question.id, parentId, {
+                            ...currentSection,
+                            [subQ.id]: e.target.value,
+                          })
+                        } else {
+                          onAnswerChange(question.id, subQ.id, e.target.value)
+                        }
+                      }}
+                      placeholder="Write your answer here..."
+                      className="min-h-[80px] resize-none"
+                      rows={3}
+                    />
+
+                    {renderExplanation(subQ.explanation)}
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          )
+        })}
+      </div>
+    )
+  }
+
+  const renderMatchingQuestion = (section: any) => {
+    const currentAnswers = answers[question.id]?.[section.id] || {}
+
+    return (
+      <div className="space-y-4">
+        <p className="text-sm text-slate-600 mb-4">{section.title}</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <h4 className="font-semibold text-slate-800 mb-3">Column A</h4>
+            <div className="space-y-2">
+              {section.columns.A.map((item: any) => (
+                <div key={item.id} className="p-3 bg-slate-50 rounded-lg">
+                  <span className="font-medium">({item.id})</span> {item.text}
+                </div>
+              ))}
+            </div>
+          </div>
+          <div>
+            <h4 className="font-semibold text-slate-800 mb-3">Column B</h4>
+            <div className="space-y-2">
+              {section.columns.B.map((item: any) => (
+                <div key={item.id} className="p-3 bg-slate-50 rounded-lg">
+                  <span className="font-medium">({item.id})</span> {item.text}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-6">
+          <h4 className="font-semibold text-slate-800 mb-3">Your Matches:</h4>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {section.columns.A.map((item: any) => (
+              <div key={item.id} className="flex items-center gap-3">
+                <span className="font-medium">({item.id})</span>
+                <span>=</span>
+                <RadioGroup
+                  value={currentAnswers[item.id] || ""}
+                  onValueChange={(value) => {
+                    const newAnswers = { ...currentAnswers, [item.id]: value }
+                    onAnswerChange(question.id, section.id, newAnswers)
+                  }}
+                  className="flex gap-2"
+                >
+                  {section.columns.B.map((bItem: any) => (
+                    <div key={bItem.id} className="flex items-center space-x-1">
+                      <RadioGroupItem value={bItem.id} id={`${item.id}-${bItem.id}`} />
+                      <Label htmlFor={`${item.id}-${bItem.id}`} className="text-sm">
+                        ({bItem.id})
+                      </Label>
+                    </div>
+                  ))}
+                </RadioGroup>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {renderExplanation(section.explanation)}
+      </div>
+    )
+  }
+
+  const renderReadingComprehension = () => {
+    return (
+      <div className="space-y-6">
+        {/* Passage */}
+        {question.passage && (
+          <Card className="bg-slate-50 border-slate-200">
+            <CardContent className="p-6">
+              {question.passage.title && (
+                <h3 className="text-xl font-bold text-slate-800 mb-2">{question.passage.title}</h3>
+              )}
+              {question.passage.author && <p className="text-sm text-slate-600 mb-4">by {question.passage.author}</p>}
+              <div className="prose prose-slate max-w-none">
+                <p className="whitespace-pre-line leading-relaxed">{question.passage.content}</p>
+              </div>
+            </CardContent>
+          </Card>
+        )}
+
+        {/* Sub-questions */}
+        {question.subQuestions && renderTrueFalseQuestions(question.subQuestions)}
+
+        {/* Sub-sections */}
+        {question.subSections?.map((section, index) => (
+          <div key={section.id} className="space-y-4">
+            <h4 className="text-lg font-semibold text-slate-800">
+              {section.id}. {section.title}
+            </h4>
+            {section.type === "true_false" &&
+              section.subQuestions &&
+              renderTrueFalseQuestions(section.subQuestions, section.id)}
+            {section.type === "short_answer" &&
+              section.subQuestions &&
+              renderShortAnswerQuestions(section.subQuestions, section.id)}
+            {section.type === "matching" && renderMatchingQuestion(section)}
+          </div>
+        ))}
+      </div>
+    )
+  }
+
+  const renderFreeWriting = () => {
+    const currentAnswer = answers[question.id]?.content || ""
+
+    return (
+      <div className="space-y-6">
+        {question.clues && (
+          <Card className="bg-blue-50 border-blue-200">
+            <CardContent className="p-4">
+              <h4 className="font-semibold text-blue-800 mb-2">Clues to help you:</h4>
+              <div className="flex flex-wrap gap-2">
+                {question.clues.map((clue, index) => (
+                  <Badge key={index} variant="secondary" className="bg-blue-100 text-blue-800">
+                    {clue}
+                  </Badge>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+        )}
+
+        <div>
+          <Label htmlFor={`writing-${question.id}`} className="text-base font-medium text-slate-800">
+            Your Answer:
+          </Label>
+          {question.wordCount && (
+            <p className="text-sm text-slate-600 mb-2">Write approximately {question.wordCount} words.</p>
+          )}
+          <Textarea
+            id={`writing-${question.id}`}
+            value={currentAnswer}
+            onChange={(e) => onAnswerChange(question.id, "content", e.target.value)}
+            placeholder="Write your answer here..."
+            className="min-h-[200px] resize-none"
+            rows={10}
+          />
+          <div className="flex justify-between items-center mt-2 text-xs text-slate-500">
+            <span>Write clearly and organize your thoughts</span>
+            <span className={currentAnswer.length > 50 ? "text-green-600" : "text-slate-400"}>
+              {currentAnswer.length} characters
+            </span>
+          </div>
+        </div>
+
+        {question.sampleAnswer && showExplanations && (
+          <Card className="bg-green-50 border-green-200">
+            <CardContent className="p-4">
+              <h4 className="font-semibold text-green-800 mb-2">Sample Answer:</h4>
+              <div className="text-sm whitespace-pre-line text-green-700">
+                {typeof question.sampleAnswer === "string" ? question.sampleAnswer : question.sampleAnswer.content}
+              </div>
+            </CardContent>
+          </Card>
+        )}
+      </div>
+    )
+  }
+
+  const renderGrammar = () => {
+    return (
+      <div className="space-y-4">
+        {question.subQuestions?.map((subQ, index) => {
+          const currentAnswer = answers[question.id]?.[subQ.id] || ""
+          return (
+            <Card key={subQ.id} className="border-slate-200">
+              <CardContent className="p-4">
+                <div className="flex items-start gap-3">
+                  <div className="flex-shrink-0 mt-1">
+                    {currentAnswer.trim() ? (
+                      <CheckCircle2 className="h-5 w-5 text-green-500" />
+                    ) : (
+                      <Circle className="h-5 w-5 text-slate-400" />
+                    )}
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex justify-between items-start mb-3">
+                      <p className="font-medium text-slate-800">
+                        ({subQ.id}) {subQ.questionEnglish}
+                      </p>
+                      <Badge variant="outline" className="ml-2">
+                        {subQ.marks} mark{subQ.marks !== 1 ? "s" : ""}
+                      </Badge>
+                    </div>
+                    <Textarea
+                      value={currentAnswer}
+                      onChange={(e) => onAnswerChange(question.id, subQ.id, e.target.value)}
+                      placeholder="Write the corrected sentence here..."
+                      className="min-h-[60px] resize-none"
+                      rows={2}
+                    />
+
+                    {renderExplanation(subQ.explanation)}
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          )
+        })}
+      </div>
+    )
+  }
+
+  const renderClozeTest = () => {
+    return (
+      <div className="space-y-6">
+        <Card className="bg-slate-50 border-slate-200">
+          <CardContent className="p-6">
+            <div className="prose prose-slate max-w-none">
+              <p className="whitespace-pre-line leading-relaxed">{question.passage}</p>
+            </div>
+          </CardContent>
+        </Card>
+
+        <div className="space-y-4">
+          <h4 className="font-semibold text-slate-800">Fill in the blanks:</h4>
+          {question.gaps?.map((gap, index) => {
+            const currentAnswer = answers[question.id]?.[gap.id] || ""
+            return (
+              <Card key={gap.id} className="border-slate-200">
+                <CardContent className="p-4">
+                  <div className="flex items-center gap-3 mb-2">
+                    <span className="font-medium text-slate-800">({gap.id})</span>
+                    <Textarea
+                      value={currentAnswer}
+                      onChange={(e) => onAnswerChange(question.id, gap.id, e.target.value)}
+                      placeholder="Your answer..."
+                      className="min-h-[40px] resize-none flex-1"
+                      rows={1}
+                    />
+                  </div>
+
+                  {renderExplanation(gap.explanation)}
+                </CardContent>
+              </Card>
+            )
+          })}
+        </div>
+      </div>
+    )
+  }
+
+  return (
+    <Card className="bg-white/90 backdrop-blur-sm shadow-lg border border-white/20 mb-6">
+      <CardHeader className={`bg-gradient-to-r ${getQuestionColor(question.type)} text-white p-4 sm:p-6`}>
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            {getQuestionIcon(question.type)}
+            <div>
+              <CardTitle className="text-lg sm:text-xl font-bold">Question {question.questionNumber}</CardTitle>
+              <p className="text-white/90 text-sm sm:text-base">{question.title}</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-2">
+            <Button
+              variant="secondary"
+              size="sm"
+              onClick={() => setShowExplanations(!showExplanations)}
+              className="bg-white/20 text-white border-white/30 hover:bg-white/30"
+            >
+              {showExplanations ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+              <span className="ml-1 hidden sm:inline">{showExplanations ? "Hide" : "Show"} Help</span>
+            </Button>
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+              {question.marks} marks
+            </Badge>
+          </div>
+        </div>
+      </CardHeader>
+
+      <CardContent className="p-4 sm:p-6">
+        {question.type === "reading_comprehension" && renderReadingComprehension()}
+        {question.type === "free_writing" && renderFreeWriting()}
+        {question.type === "grammar" && renderGrammar()}
+        {question.type === "cloze_test" && renderClozeTest()}
+      </CardContent>
+    </Card>
+  )
+}

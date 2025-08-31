@@ -1,0 +1,538 @@
+[
+  {
+    "_id": "see_2081_english_practice_2_generated",
+    "title": "SEE 2081 English Practice Test 2 (Generated Questions)",
+    "titleNepali": "SEE २०८१ अंग्रेजी अभ्यास परीक्षा २ (उत्पन्न प्रश्नहरू)",
+    "subject": "english",
+    "year": 2081,
+    "totalMarks": 75,
+    "duration": 180,
+    "instructionsEnglish": "Candidates are required to answer the questions in their own words as far as practicable. Figures in the margin indicate the full marks. Attempt all the questions.",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-30T19:22:10.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-30T19:22:10.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "687d809a2f3df9d071c52111"
+    },
+    "testId": "see_2081_english_practice_2_generated",
+    "questions": [
+      {
+        "questionNumber": 1,
+        "type": "reading_comprehension",
+        "title": "Read the poem and write 'TRUE' for true and 'FALSE' for the false statements.",
+        "marks": 5,
+        "passage": {
+          "title": "If—",
+          "content": "If you can keep your head when all about you\n    Are losing theirs and blaming it on you,\nIf you can trust yourself when all men doubt you,\n    But make allowance for their doubting too;\nIf you can wait and not be tired by waiting,\n    Or being lied about, don’t deal in lies,\nOr being hated, don’t give way to hating,\n    And yet don’t look too good, nor talk too wise:\n\nIf you can dream—and not make dreams your master;\n    If you can think—and not make thoughts your aim;\nIf you can meet with Triumph and Disaster\n    And treat those two impostors just the same..."
+        },
+        "subQuestions": [
+          {
+            "id": "i",
+            "type": "true_false",
+            "questionEnglish": "The poem suggests that one should get angry when others are losing their calm.",
+            "correctAnswer": "FALSE",
+            "explanation": "Explanation (English): The poem advises the opposite: \"If you can keep your head when all about you / Are losing theirs...\" which means to stay calm.\nব্যাখ্যা (Nepali Explanation): कविताले उल्टो सल्लाह दिन्छ: \"If you can keep your head when all about you / Are losing theirs...\" जसको अर्थ शान्त रहनु हो।",
+            "marks": 1
+          },
+          {
+            "id": "ii",
+            "type": "true_false",
+            "questionEnglish": "According to the poet, it is important to trust yourself even when others doubt you.",
+            "correctAnswer": "TRUE",
+            "explanation": "Explanation (English): The line \"If you can trust yourself when all men doubt you\" directly supports this statement.\nব্যাখ্যা (Nepali Explanation): \"If you can trust yourself when all men doubt you\" भन्ने पङ्क्तिले यो कथनलाई सीधै समर्थन गर्दछ।",
+            "marks": 1
+          },
+          {
+            "id": "iii",
+            "type": "true_false",
+            "questionEnglish": "The poet recommends telling lies if others lie about you.",
+            "correctAnswer": "FALSE",
+            "explanation": "Explanation (English): The poem advises, \"Or being lied about, don’t deal in lies,\" meaning one should not lie in return.\nব্যাখ্যা (Nepali Explanation): कविताले सल्लाह दिन्छ, \"Or being lied about, don’t deal in lies,\" जसको अर्थ बदलामा झूटो बोल्नु हुँदैन भन्ने हो।",
+            "marks": 1
+          },
+          {
+            "id": "iv",
+            "type": "true_false",
+            "questionEnglish": "One should allow dreams to become their master.",
+            "correctAnswer": "FALSE",
+            "explanation": "Explanation (English): The poem says, \"If you can dream—and not make dreams your master,\" which means one should control their dreams, not be controlled by them.\nব্যাখ্যা (Nepali Explanation): कवितामा भनिएको छ, \"If you can dream—and not make dreams your master,\" जसको अर्थ सपनालाई नियन्त्रणमा राख्नुपर्छ, सपनाबाट नियन्त्रित हुनुहुँदैन भन्ने हो।",
+            "marks": 1
+          },
+          {
+            "id": "v",
+            "type": "true_false",
+            "questionEnglish": "Triumph and Disaster should be treated equally.",
+            "correctAnswer": "TRUE",
+            "explanation": "Explanation (English): The poem suggests one should \"meet with Triumph and Disaster / And treat those two impostors just the same,\" indicating they should be handled with the same balanced attitude.\nব্যাখ্যা (Nepali Explanation): कविताले सुझाव दिन्छ कि \"meet with Triumph and Disaster / And treat those two impostors just the same,\" जसले संकेत गर्दछ कि तिनीहरूलाई उस्तै सन्तुलित दृष्टिकोणले हेर्नुपर्छ।",
+            "marks": 1
+          }
+        ]
+      },
+      {
+        "questionNumber": 2,
+        "type": "reading_comprehension",
+        "title": "Read the text and do the tasks.",
+        "marks": 10,
+        "passage": {
+          "title": "Walt Disney: An Example of Struggle and Success",
+          "content": "Walt Disney is known as an extraordinarily successful and creative person whose visions as an animator, filmmaker, and theme park developer changed the entertainment world. Yet, dig a little deeper into Disney's background, and you will discover that his road to success was paved by an unhappy childhood along with countless business failures and setbacks.\n\nBorn in Chicago in 1901 and raised in Missouri, Disney was the fourth son among five siblings. His father, Elias, was a domineering figure who was allegedly abusive. To escape from his stressful circumstances, Young Disney found solace in drawing. When Disney was 16, he dropped out of school to join the Army but was rejected for being underage. Instead, he joined the Red Cross and was sent to France for a year to drive an ambulance.\n\nWhen he returned home, Disney became an apprentice at a Kansas City commercial art studio. He and his older brother, Roy, launched their own cartoon business, Laugh-O-Gram Studios, in 1920, but the company went bankrupt a couple of years later. With the loss of his first business, Disney packed his bags, and with just forty dollars to his name, took off to Los Angeles to try his hand at acting. But he failed at that, too."
+        },
+        "subSections": [
+          {
+            "id": "A",
+            "type": "matching",
+            "title": "Match the words in Column 'A' with their meanings in Column 'B'.",
+            "marks": 5,
+            "columns": {
+              "A": [
+                {"id": "i", "text": "Domineering"},
+                {"id": "ii", "text": "Solace"},
+                {"id": "iii", "text": "Apprentice"},
+                {"id": "iv", "text": "Bankrupt"},
+                {"id": "v", "text": "Setback"}
+              ],
+              "B": [
+                {"id": "a", "text": "A difficulty or problem that delays or prevents something"},
+                {"id": "b", "text": "A person learning a trade from a skilled employer"},
+                {"id": "c", "text": "Trying to control other people without considering their feelings"},
+                {"id": "d", "text": "To be successful in a particular field"},
+                {"id": "e", "text": "Unable to pay what you owe"},
+                {"id": "f", "text": "Comfort or consolation in a time of distress"}
+              ]
+            },
+            "correctAnswer": [
+              {"A": "i", "B": "c"},
+              {"A": "ii", "B": "f"},
+              {"A": "iii", "B": "b"},
+              {"A": "iv", "B": "e"},
+              {"A": "v", "B": "a"}
+            ],
+            "explanation": "Explanation (English): The meanings match the context in the text: 'Domineering' describes his father's controlling nature. 'Solace' refers to the comfort he found in drawing. 'Apprentice' was his first job after returning home. 'Bankrupt' describes the failure of his first company. 'Setback' is a general term for the many failures he faced.\nব্যাখ্যা (Nepali Explanation): अर्थहरू पाठको सन्दर्भसँग मेल खान्छन्: 'Domineering' ले उसको बुबाको नियन्त्रण गर्ने स्वभावको वर्णन गर्दछ। 'Solace' ले चित्रकलामा पाएको सान्त्वनालाई जनाउँछ। 'Apprentice' घर फर्केपछिको उसको पहिलो काम थियो। 'Bankrupt' ले उसको पहिलो कम्पनीको असफलताको वर्णन गर्दछ। 'Setback' उसले सामना गरेका धेरै असफलताहरूको लागि एक सामान्य शब्द हो।"
+          },
+          {
+            "id": "B",
+            "type": "short_answer",
+            "title": "Answer the following questions.",
+            "marks": 5,
+            "subQuestions": [
+              {
+                "id": "i",
+                "questionEnglish": "What fields was Walt Disney successful in?",
+                "correctAnswer": "Walt Disney was successful as an animator, filmmaker, and theme park developer.",
+                "explanation": "Explanation (English): The first paragraph of the text lists his successful roles as \"animator, filmmaker, and theme park developer\".\nব্যাখ্যা (Nepali Explanation): पाठको पहिलो अनुच्छेदले उनको सफल भूमिकाहरूलाई \"animator, filmmaker, and theme park developer\" को रूपमा सूचीबद्ध गर्दछ।",
+                "marks": 1
+              },
+              {
+                "id": "ii",
+                "questionEnglish": "How did young Disney cope with his stressful childhood?",
+                "correctAnswer": "He found solace (comfort) in drawing to cope with his stressful childhood.",
+                "explanation": "Explanation (English): The text states, \"To escape from his stressful circumstances, Young Disney found solace in drawing.\"\nব্যাখ্যা (Nepali Explanation): पाठमा भनिएको छ, \"To escape from his stressful circumstances, Young Disney found solace in drawing.\"",
+                "marks": 1
+              },
+              {
+                "id": "iii",
+                "questionEnglish": "Why was Disney rejected from the Army at age 16?",
+                "correctAnswer": "He was rejected for being underage.",
+                "explanation": "Explanation (English): The text mentions that \"he dropped out of school to join the Army but was rejected for being underage.\"\nব্যাখ্যা (Nepali Explanation): पाठमा उल्लेख छ कि \"he dropped out of school to join the Army but was rejected for being underage.\"",
+                "marks": 1
+              },
+              {
+                "id": "iv",
+                "questionEnglish": "What was the name of Disney's first cartoon business?",
+                "correctAnswer": "The name of his first cartoon business was Laugh-O-Gram Studios.",
+                "explanation": "Explanation (English): The passage says, \"he and his older brother, Roy, launched their own cartoon business, Laugh-O-Gram Studios, in 1920\".\nব্যাখ্যা (Nepali Explanation): अनुच्छेदमा भनिएको छ, \"he and his older brother, Roy, launched their own cartoon business, Laugh-O-Gram Studios, in 1920\"।",
+                "marks": 1
+              },
+              {
+                "id": "v",
+                "questionEnglish": "What did Disney try to do after his first business failed?",
+                "correctAnswer": "He went to Los Angeles to try his hand at acting.",
+                "explanation": "Explanation (English): After his business went bankrupt, the text states he \"took off to Los Angeles to try his hand at acting.\"\nব্যাখ্যা (Nepali Explanation): उसको व्यवसाय टाट पल्टिएपछि, पाठमा भनिएको छ कि ऊ \"took off to Los Angeles to try his hand at acting.\"",
+                "marks": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "questionNumber": 3,
+        "type": "reading_comprehension",
+        "title": "Read the following notice and do the tasks.",
+        "marks": 10,
+        "passage": {
+            "title": "Chitwan National Park\nRules and Regulations for the Visitors",
+            "content": "1. An entry fee of NRs. 1500/- (Foreigners), NRs. 750/- (SAARC), and NRs. 100/- (Nepali) per person has to be paid at the Park's Entrance Gate.\n2. Flora and Fauna of the park are fully protected and must not be disturbed at any cost.\n3. Do not purchase illegal animal or plant products. The purchase of illegal animal or plant product may bring you to the legal prosecution.\n4. The visitors of the park must respect the religious and cultural sites all around the park.\n5. The visitors are required to place the trash in the rubbish bins and should care about the cleanliness.\n6. The visitors are strictly prohibited to walk within the park between sunset and sunrise."
+        },
+        "subSections": [
+          {
+            "id": "A",
+            "type": "true_false",
+            "title": "Write 'TRUE' for true and 'FALSE' for the false statements.",
+            "marks": 5,
+            "subQuestions": [
+              {
+                "id": "i",
+                "questionEnglish": "The entry fee is the same for all visitors.",
+                "correctAnswer": "FALSE",
+                "explanation": "Explanation (English): The notice clearly lists different fees for Foreigners, SAARC nationals, and Nepalis.\nব্যাখ্যা (Nepali Explanation): सूचनामा विदेशी, सार्क नागरिक र नेपालीका लागि फरक-फरक शुल्क स्पष्ट रूपमा उल्लेख गरिएको छ।",
+                "marks": 1
+              },
+              {
+                "id": "ii",
+                "questionEnglish": "It is okay to disturb the plants and animals in the park.",
+                "correctAnswer": "FALSE",
+                "explanation": "Explanation (English): Rule 2 states that the flora and fauna \"must not be disturbed at any cost.\"\nব্যাখ্যা (Nepali Explanation): नियम २ मा उल्लेख छ कि वनस्पति र जीवजन्तुलाई \"must not be disturbed at any cost.\"",
+                "marks": 1
+              },
+              {
+                "id": "iii",
+                "questionEnglish": "Visitors should throw their trash anywhere in the park.",
+                "correctAnswer": "FALSE",
+                "explanation": "Explanation (English): Rule 5 requires visitors to \"place the trash in the rubbish bins\".\nব্যাখ্যা (Nepali Explanation): नियम ५ अनुसार आगन्तुकहरूले \"place the trash in the rubbish bins\" गर्नुपर्छ।",
+                "marks": 1
+              },
+              {
+                "id": "iv",
+                "questionEnglish": "Walking in the park at night is strictly forbidden.",
+                "correctAnswer": "TRUE",
+                "explanation": "Explanation (English): Rule 6 says visitors are \"strictly prohibited to walk within the park between sunset and sunrise.\"\nব্যাখ্যা (Nepali Explanation): नियम ६ मा भनिएको छ कि आगन्तुकहरूलाई \"strictly prohibited to walk within the park between sunset and sunrise.\"",
+                "marks": 1
+              },
+              {
+                "id": "v",
+                "questionEnglish": "Buying illegal animal products is allowed in the park.",
+                "correctAnswer": "FALSE",
+                "explanation": "Explanation (English): Rule 3 clearly states, \"Do not purchase illegal animal or plant products.\"\nব্যাখ্যা (Nepali Explanation): नियम ३ मा स्पष्ट रूपमा भनिएको छ, \"Do not purchase illegal animal or plant products.\"",
+                "marks": 1
+              }
+            ]
+          },
+          {
+            "id": "B",
+            "type": "short_answer",
+            "title": "Answer the following questions.",
+            "marks": 5,
+            "subQuestions": [
+              {
+                "id": "i",
+                "questionEnglish": "How much is the entry fee for a citizen of a SAARC country?",
+                "correctAnswer": "The entry fee for a citizen of a SAARC country is NRs. 750/-.",
+                "explanation": "Explanation (English): The first rule specifies the fee for SAARC citizens as \"NRs. 750/- (SAARC)\".\nব্যাখ্যা (Nepali Explanation): पहिलो नियमले सार्क नागरिकका लागि शुल्क \"NRs. 750/- (SAARC)\" भनेर तोकेको छ।",
+                "marks": 1
+              },
+              {
+                "id": "ii",
+                "questionEnglish": "What does 'Flora and Fauna' mean?",
+                "correctAnswer": "'Flora and Fauna' refers to the plants (flora) and animals (fauna) of a particular region.",
+                "explanation": "Explanation (English): This is a standard biological term. Rule 2 uses it to refer to the plants and animals of the park that must be protected.\nব্যাখ্যা (Nepali Explanation): यो एक मानक जैविक शब्द हो। नियम २ ले यसलाई पार्कका वनस्पति र जनावरहरूलाई जनाउन प्रयोग गर्दछ, जसलाई संरक्षण गर्नुपर्छ।",
+                "marks": 1
+              },
+              {
+                "id": "iii",
+                "questionEnglish": "What might happen if someone buys illegal plant products?",
+                "correctAnswer": "They may face legal prosecution.",
+                "explanation": "Explanation (English): Rule 3 warns that the purchase of such products \"may bring you to the legal prosecution.\"\nব্যাখ্যা (Nepali Explanation): नियम ३ ले चेतावनी दिन्छ कि यस्ता उत्पादनहरूको खरिदले \"may bring you to the legal prosecution.\"",
+                "marks": 1
+              },
+              {
+                "id": "iv",
+                "questionEnglish": "According to the notice, how should visitors treat religious and cultural sites?",
+                "correctAnswer": "Visitors must respect the religious and cultural sites.",
+                "explanation": "Explanation (English): Rule 4 states that \"The visitors of the park must respect the religious and cultural sites\".\nব্যাখ্যা (Nepali Explanation): नियम ४ मा भनिएको छ कि \"The visitors of the park must respect the religious and cultural sites\"।",
+                "marks": 1
+              },
+              {
+                "id": "v",
+                "questionEnglish": "During which time is walking inside the park not allowed?",
+                "correctAnswer": "Walking inside the park is not allowed between sunset and sunrise.",
+                "explanation": "Explanation (English): Rule 6 prohibits walking \"between sunset and sunrise.\"\nব্যাখ্যা (Nepali Explanation): नियम ६ ले \"between sunset and sunrise\" हिँड्न निषेध गर्दछ।",
+                "marks": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "questionNumber": 4,
+        "type": "reading_comprehension",
+        "title": "Read the text given below and do the tasks.",
+        "marks": 15,
+        "passage": {
+            "title": "A Century of World Population Trends: 1950 to 2050",
+            "content": "Today, the world's population is more than three times larger than it was in the mid-twentieth century. The global population is estimated to double again in about 70 years, rising to over 10 billion by 2059.\n\nSince 1950, the pace of population growth has slowed by more than half owing to reduced levels of fertility. In 2020, the rate of population growth fell below one percent per year and it is projected to continue to slow. The global population could grow to around 8.5 billion in 2030, and 9.7 billion in 2050.\n\nThe world's two most populous regions in 2022 were Eastern and South-Eastern Asia (2.3 billion people) and Central and Southern Asia (2.1 billion people). China and India accounted for the largest populations in these regions, with more than 1.4 billion each in 2022. Between 2022 and 2050, the population of sub-Saharan Africa is expected to almost double, surpassing two billion inhabitants by the late 2040s.\n\nMore than half of the projected increase in the global population between 2022 and 2050 is expected to be concentrated in just eight countries: The Democratic Republic of the Congo, Egypt, Ethiopia, India, Nigeria, Pakistan, the Philippines and the United Republic of Tanzania. India is projected to surpass China as the world's most populous country in 2023."
+        },
+        "subSections": [
+          {
+            "id": "A",
+            "type": "matching",
+            "title": "Match the words in Column 'A' with their correct meanings in Column 'B'.",
+            "marks": 5,
+            "columns": {
+              "A": [
+                {"id": "i", "text": "Surpassing"},
+                {"id": "ii", "text": "Fertility"},
+                {"id": "iii", "text": "Projected"},
+                {"id": "iv", "text": "Populous"},
+                {"id": "v", "text": "Concentrated"}
+              ],
+              "B": [
+                {"id": "a", "text": "Having a large population"},
+                {"id": "b", "text": "Gathered all in one place"},
+                {"id": "c", "text": "The ability to have children"},
+                {"id": "d", "text": "Going beyond; exceeding"},
+                {"id": "e", "text": "Estimated or forecast for the future"},
+                {"id": "f", "text": "A period of one hundred years"}
+              ]
+            },
+            "correctAnswer": [
+                {"A": "i", "B": "d"},
+                {"A": "ii", "B": "c"},
+                {"A": "iii", "B": "e"},
+                {"A": "iv", "B": "a"},
+                {"A": "v", "B": "b"}
+            ],
+            "explanation": "Explanation (English): These words are used in the text with these meanings: 'Surpassing' refers to population numbers exceeding others. 'Fertility' is mentioned as a factor in population growth rate. 'Projected' is used for future population estimates. 'Populous' describes regions with large populations. 'Concentrated' refers to where population growth will occur.\nব্যাখ্যা (Nepali Explanation): यी शब्दहरू पाठमा यी अर्थहरूका साथ प्रयोग गरिएका छन्: 'Surpassing' ले जनसंख्याको संख्या अरूलाई उछिनेको जनाउँछ। 'Fertility' लाई जनसंख्या वृद्धि दरको एक कारकको रूपमा उल्लेख गरिएको छ। 'Projected' भविष्यको जनसंख्या अनुमानका लागि प्रयोग गरिन्छ। 'Populous' ले ठूलो जनसंख्या भएका क्षेत्रहरूको वर्णन गर्दछ। 'Concentrated' ले जनसंख्या वृद्धि कहाँ हुनेछ भनेर जनाउँछ।"
+          },
+          {
+            "id": "B",
+            "type": "fill_in_the_blanks",
+            "title": "Fill in the blanks with correct information from the text.",
+            "marks": 5,
+            "subQuestions": [
+              { "id": "i", "questionEnglish": "The world's population is more than ______ times larger than in the mid-twentieth century.", "correctAnswer": "three", "marks": 1 },
+              { "id": "ii", "questionEnglish": "The pace of population growth has slowed down mainly due to reduced levels of ______.", "correctAnswer": "fertility", "marks": 1 },
+              { "id": "iii", "questionEnglish": "By 2050, the global population is projected to reach ______.", "correctAnswer": "9.7 billion", "marks": 1 },
+              { "id": "iv", "questionEnglish": "The two most populous regions in 2022 were Eastern and South-Eastern Asia and ______.", "correctAnswer": "Central and Southern Asia", "marks": 1 },
+              { "id": "v", "questionEnglish": "______ is expected to become the world's most populous country in 2023.", "correctAnswer": "India", "marks": 1 }
+            ]
+          },
+          {
+            "id": "C",
+            "type": "short_answer",
+            "title": "Answer the following questions.",
+            "marks": 5,
+            "subQuestions": [
+              {
+                "id": "i",
+                "questionEnglish": "When did the world's population growth rate fall below one percent per year for the first time since 1950?",
+                "correctAnswer": "The world's population growth rate fell below one percent per year in 2020.",
+                "explanation": "Explanation (English): The text states, \"In 2020, and for the first time since 1950, the rate of population growth fell below one percent per year\".\nব্যাখ্যা (Nepali Explanation): पाठमा भनिएको छ, \"In 2020, and for the first time since 1950, the rate of population growth fell below one percent per year\"।",
+                "marks": 1
+              },
+              {
+                "id": "ii",
+                "questionEnglish": "Which two countries had populations of more than 1.4 billion each in 2022?",
+                "correctAnswer": "China and India had populations of more than 1.4 billion each in 2022.",
+                "explanation": "Explanation (English): The text says, \"China and India accounted for the largest populations in these regions, with more than 1.4 billion each in 2022.\"\nব্যাখ্যা (Nepali Explanation): पाठमा भनिएको छ, \"China and India accounted for the largest populations in these regions, with more than 1.4 billion each in 2022.\"",
+                "marks": 1
+              },
+              {
+                "id": "iii",
+                "questionEnglish": "Which region's population is expected to almost double between 2022 and 2050?",
+                "correctAnswer": "The population of sub-Saharan Africa is expected to almost double.",
+                "explanation": "Explanation (English): The text clearly states, \"Between 2022 and 2050, the population of sub-Saharan Africa is expected to almost double\".\nব্যাখ্যা (Nepali Explanation): पाठमा स्पष्ट रूपमा भनिएको छ, \"Between 2022 and 2050, the population of sub-Saharan Africa is expected to almost double\"।",
+                "marks": 1
+              },
+              {
+                "id": "iv",
+                "questionEnglish": "Name any two of the eight countries where more than half of the population increase is expected by 2050.",
+                "correctAnswer": "Any two of the following: The Democratic Republic of the Congo, Egypt, Ethiopia, India, Nigeria, Pakistan, the Philippines, the United Republic of Tanzania.",
+                "explanation": "Explanation (English): The text lists eight countries that will account for more than half of the projected population increase.\nব্যাখ্যা (Nepali Explanation): पाठले आठ देशहरूको सूची दिन्छ जुन अनुमानित जनसंख्या वृद्धिको आधाभन्दा बढीको लागि जिम्मेवार हुनेछन्।",
+                "marks": 1
+              },
+              {
+                "id": "v",
+                "questionEnglish": "What is the main idea of this text?",
+                "correctAnswer": "The main idea is to describe the trends of world population growth from 1950 and project them up to 2050, highlighting regional differences and key contributing factors.",
+                "explanation": "Explanation (English): The text discusses past growth, current slowdowns, and future projections for the world's population, focusing on specific regions and countries, which is the overall theme.\nব্যাখ্যা (Nepali Explanation): पाठले विश्वको जनसंख्याको विगतको वृद्धि, वर्तमानको सुस्तता र भविष्यका अनुमानहरूबारे छलफल गर्दछ, जसमा विशेष क्षेत्र र देशहरूमा ध्यान केन्द्रित गरिएको छ, जुन समग्र विषय हो।",
+                "marks": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "questionNumber": 5,
+        "type": "free_writing",
+        "title": "Write a set of rules and regulations for the school library in about 100 words.",
+        "marks": 5,
+        "wordCount": 100,
+        "clues": [
+            "Maintain silence",
+            "Return books on time",
+            "No food or drinks",
+            "Handle books with care",
+            "Keep library card safe",
+            "Do not tear pages"
+        ],
+        "sampleAnswer": {
+          "title": "School Library Rules",
+          "content": "All students must follow the library rules to ensure a peaceful environment for everyone. Please maintain complete silence at all times. Books must be returned on or before the due date to avoid a fine. Eating and drinking are strictly forbidden inside the library. Handle all books and library property with care; do not write in them or tear pages. You are responsible for your library card, so keep it safe and do not lend it to others. Misplaced or damaged books must be reported to the librarian immediately. Your cooperation will help us maintain our valuable collection."
+        }
+      },
+      {
+        "questionNumber": 6,
+        "type": "free_writing",
+        "title": "Develop a readable story in about 100 words with the help of the given clues.",
+        "marks": 5,
+        "wordCount": 100,
+        "clues": [
+            "A thirsty crow...",
+            "sees a pitcher...",
+            "water at the bottom...",
+            "thinks of a plan...",
+            "drops pebbles...",
+            "water rises...",
+            "drinks and flies away...",
+            "moral"
+        ],
+        "sampleAnswer": {
+          "title": "The Thirsty Crow",
+          "content": "Once on a hot summer day, a thirsty crow was flying in search of water. After a long time, he saw a pitcher on the ground. He flew down to it with hope, but to his dismay, the water level was at the bottom, and his beak could not reach it. He thought for a moment and came up with a clever plan. He started picking up small pebbles one by one and dropping them into the pitcher. Slowly, the water level began to rise. After dropping many pebbles, the water rose high enough for him to drink. He drank the water happily and flew away. \n\nMoral: Where there is a will, there is a way."
+        }
+      },
+      {
+        "questionNumber": 7,
+        "type": "free_writing",
+        "title": "Write a dialogue between a doctor and a patient who is suffering from a common cold, in at least six exchanges.",
+        "marks": 6,
+        "wordCount": 150,
+        "sampleAnswer": {
+          "content": "Patient: Good morning, doctor. \n\nDoctor: Good morning. Please have a seat. What seems to be the problem?\n\nPatient: I have been feeling unwell for the last two days. I have a running nose, a sore throat, and I keep sneezing.\n\nDoctor: Do you have a fever or a headache as well?\n\nPatient: Yes, I have a slight fever and a bad headache. My whole body is aching.\n\nDoctor: It sounds like you have a common cold. Don't worry, it's a viral infection and should get better in a few days. I will prescribe some medicine for the fever and pain. Make sure to drink plenty of warm water and get a lot of rest.\n\nPatient: Thank you, doctor. I will follow your advice."
+        }
+      },
+      {
+        "questionNumber": 8,
+        "type": "free_writing",
+        "title": "Write an essay in about 200 words on the topic 'The Importance of Hobbies and Interests in a Student's Life'.",
+        "marks": 8,
+        "wordCount": 200,
+        "sampleAnswer": {
+            "title": "The Importance of Hobbies and Interests in a Student's Life",
+            "content": "In the busy and competitive life of a student, academics often take center stage, leaving little time for other activities. However, cultivating hobbies and interests outside of schoolwork is crucial for holistic development and overall well-being. Hobbies are not just pastimes; they are essential tools for growth.\n\nFirstly, hobbies are an excellent way to relieve stress. Engaging in an activity one loves, whether it is painting, playing a musical instrument, or gardening, can be a great escape from academic pressure. This mental break helps students to refresh their minds and return to their studies with renewed focus and energy. Secondly, hobbies help in discovering and nurturing hidden talents. A student might discover a passion for photography or writing, which could even turn into a future career.\n\nMoreover, hobbies teach valuable life skills. Team sports, for instance, teach cooperation, leadership, and discipline. Pursuing interests like coding or debating enhances problem-solving and communication skills. These are skills that are not always taught in a traditional classroom but are vital for success in life.\n\nIn conclusion, encouraging students to have hobbies is as important as focusing on their academic performance. These interests contribute to their mental health, skill development, and personal happiness, shaping them into well-rounded and successful individuals."
+        }
+      },
+      {
+        "questionNumber": 9,
+        "type": "grammar",
+        "title": "Reproduce the following sentences as instructed in the brackets.",
+        "marks": 6,
+        "subQuestions": [
+          {
+            "id": "i",
+            "type": "reproduce",
+            "questionEnglish": "She seldom speaks in class, .............? (Add a correct question tag.)",
+            "correctAnswer": "She seldom speaks in class, does she?",
+            "explanation": "Explanation (English): 'Seldom' is a negative adverb, so the statement is considered negative. Therefore, the question tag must be positive. The verb is 'speaks' (simple present), so the auxiliary is 'does'.\nব্যাখ্যা (Nepali Explanation): 'Seldom' एक नकारात्मक क्रियाविशेषण हो, त्यसैले वाक्यलाई नकारात्मक मानिन्छ। तसर्थ, प्रश्न ट्याग सकारात्मक हुनुपर्छ। क्रिया 'speaks' (simple present) भएकोले, सहायक क्रिया 'does' हुन्छ।",
+            "marks": 1
+          },
+          {
+            "id": "ii",
+            "type": "reproduce",
+            "questionEnglish": "If I were a bird, I __________ (fly) in the sky. (Use the correct form of the verb 'fly' to complete the sentence.)",
+            "correctAnswer": "If I were a bird, I would fly in the sky.",
+            "explanation": "Explanation (English): This is a Type II conditional sentence, used for hypothetical or unreal situations in the present. The structure is 'If + simple past, ... would + bare infinitive'.\nব্যাখ্যা (Nepali Explanation): यो Type II conditional वाक्य हो, जुन वर्तमानको काल्पनिक वा असम्भव अवस्थाहरूको लागि प्रयोग गरिन्छ। यसको संरचना 'If + simple past, ... would + bare infinitive' हुन्छ।",
+            "marks": 1
+          },
+          {
+            "id": "iii",
+            "type": "reproduce",
+            "questionEnglish": "The teacher said, \"What is your name?\" (Change into indirect speech.)",
+            "correctAnswer": "The teacher asked what my name was.",
+            "explanation": "Explanation (English): In reporting a WH-question, the reporting verb becomes 'asked', the conjunction is the WH-word itself ('what'), and the sentence structure changes from interrogative to statement form (subject + verb). 'is' changes to 'was'.\nব্যাখ্যা (Nepali Explanation): WH-प्रश्नलाई रिपोर्ट गर्दा, रिपोर्टिङ क्रिया 'asked' हुन्छ, संयोजन WH-शब्द ('what') आफैं हुन्छ, र वाक्यको संरचना प्रश्नवाचकबाट सामान्य कथन (subject + verb) मा परिवर्तन हुन्छ। 'is' 'was' मा बदलिन्छ।",
+            "marks": 1
+          },
+          {
+            "id": "iv",
+            "type": "reproduce",
+            "questionEnglish": "Someone has stolen my pen. (Change into passive voice.)",
+            "correctAnswer": "My pen has been stolen.",
+            "explanation": "Explanation (English): The sentence is in Present Perfect tense (has + V3). The passive form is 'object + has/have + been + V3'. The agent 'by someone' is usually omitted because it is unknown or unimportant.\nব্যাখ্যা (Nepali Explanation): वाक्य Present Perfect tense (has + V3) मा छ। यसको passive form 'object + has/have + been + V3' हो। 'by someone' लाई सामान्यतया हटाइन्छ किनभने यो अज्ञात वा महत्वहीन छ।",
+            "marks": 1
+          },
+          {
+            "id": "v",
+            "type": "reproduce",
+            "questionEnglish": "My father made me clean the room. (Change into passive voice.)",
+            "correctAnswer": "I was made to clean the room by my father.",
+            "explanation": "Explanation (English): When the causative verb 'make' is used in the passive voice, it is followed by a to-infinitive ('to clean'), unlike in the active voice where it takes a bare infinitive ('clean').\nব্যাখ্যা (Nepali Explanation): जब causative verb 'make' लाई passive voice मा प्रयोग गरिन्छ, त्यसपछि to-infinitive ('to clean') आउँछ, जबकि active voice मा bare infinitive ('clean') प्रयोग हुन्छ।",
+            "marks": 1
+          },
+          {
+            "id": "vi",
+            "type": "reproduce",
+            "questionEnglish": "He went to the market <strong>to buy vegetables</strong>. (Change into a 'Why' question.)",
+            "correctAnswer": "Why did he go to the market?",
+            "explanation": "Explanation (English): The phrase 'to buy vegetables' explains the purpose or reason, answering the question 'Why?'. To form the question, use 'Why' followed by the auxiliary 'did' (because the verb is 'went'), the subject 'he', and the base form of the verb 'go'.\nব্যাখ্যা (Nepali Explanation): 'to buy vegetables' वाक्यांशले उद्देश्य वा कारण बताउँछ, जसले 'किन?' प्रश्नको उत्तर दिन्छ। प्रश्न बनाउन, 'Why' पछि सहायक क्रिया 'did' ('went' को कारणले), कर्ता 'he', र क्रियाको मूल रूप 'go' प्रयोग गर्नुहोस्।",
+            "marks": 1
+          }
+        ]
+      },
+      {
+        "questionNumber": 10,
+        "type": "cloze_test",
+        "title": "Choose and copy the correct answers from the brackets to complete the given text. (Rewriting the text is not compulsory.)",
+        "marks": 5,
+        "passage": "There was once (a) _____ (a/an/the/no article) very clever fox who was walking through the forest. He came to a vineyard (b) _____ (where/which/who/when) some delicious grapes were hanging high on a vine. The fox, (c) _____ (who/which/whom/whose) was very thirsty, tried to reach them but could not. He jumped again and again, (d) _____ (but/so/because/although) he failed every time. At last, he gave up and walked away. He said to himself, \"I am sure the grapes (e) _____ (are/is/was/were) sour.\" A little bird heard this, (f) _____ (didn't it/wasn't it/doesn't it/did it)? The fox didn't get the grapes (g) _____ (because/because of/in spite of/due) his best efforts. If he had tried a different method, he (h) _____ (may succeed/might succeed/might have succeeded/will succeed). People often (i) _____ (blames/blame/is blaming/blamed) the circumstances for their failures. This story makes us (j) _____ (to think/think/thinking/thought) about our own attitudes.",
+        "gaps": [
+          {
+            "id": "a", 
+            "correctAnswer": "a",
+            "explanation": "Explanation (English): 'a' is used before a singular countable noun ('fox') that is being introduced for the first time.\nব্যাখ্যা (Nepali Explanation): पहिलो पटक प्रस्तुत गरिएको एकवचन गणनीय संज्ञा ('fox') को अगाडि 'a' प्रयोग गरिन्छ।"
+          },
+          {
+            "id": "b", 
+            "correctAnswer": "where",
+            "explanation": "Explanation (English): 'where' is a relative adverb used to refer to a place (a vineyard).\nব্যাখ্যা (Nepali Explanation): 'where' एक relative adverb हो जुन कुनै ठाउँ (a vineyard) लाई जनाउन प्रयोग गरिन्छ।"
+          },
+          {
+            "id": "c", 
+            "correctAnswer": "who",
+            "explanation": "Explanation (English): 'who' is a relative pronoun used as the subject for a person or an animal that is personified (the fox).\nব্যাখ্যা (Nepali Explanation): 'who' एक relative pronoun हो जुन व्यक्ति वा मानवीकरण गरिएको जनावर (the fox) को लागि कर्ताको रूपमा प्रयोग गरिन्छ।"
+          },
+          {
+            "id": "d", 
+            "correctAnswer": "but",
+            "explanation": "Explanation (English): 'but' is a conjunction used to show contrast between the effort (jumping) and the result (failing).\nব্যাখ্যা (Nepali Explanation): 'but' एक संयोजन हो जुन प्रयास (jumping) र परिणाम (failing) बिचको भिन्नता देखाउन प्रयोग गरिन्छ।"
+          },
+          {
+            "id": "e", 
+            "correctAnswer": "are",
+            "explanation": "Explanation (English): This is reported speech, but the fox is stating a general belief as if it's true now, so the present tense 'are' (plural for grapes) is appropriate.\nব্যাখ্যা (Nepali Explanation): यो reported speech हो, तर स्यालले एक सामान्य विश्वासलाई अहिले सत्य भएझैं बताइरहेको छ, त्यसैले वर्तमान काल 'are' (grapes को लागि बहुवचन) उपयुक्त छ।"
+          },
+          {
+            "id": "f", 
+            "correctAnswer": "didn't it",
+            "explanation": "Explanation (English): The subject is 'A little bird' (it) and the verb is 'heard' (simple past, positive). The tag question uses 'did' and is negative.\nব্যাখ্যা (Nepali Explanation): कर्ता 'A little bird' (it) हो र क्रिया 'heard' (simple past, positive) हो। ट्याग प्रश्नमा 'did' प्रयोग हुन्छ र नकारात्मक हुन्छ।"
+          },
+          {
+            "id": "g", 
+            "correctAnswer": "in spite of",
+            "explanation": "Explanation (English): 'in spite of' (or despite) is used before a noun phrase ('his best efforts') to show contrast.\nব্যাখ্যা (Nepali Explanation): भिन्नता देखाउन noun phrase ('his best efforts') को अगाडि 'in spite of' (वा despite) प्रयोग गरिन्छ।"
+          },
+          {
+            "id": "h", 
+            "correctAnswer": "might have succeeded",
+            "explanation": "Explanation (English): This is a Type III conditional sentence (If + past perfect...), expressing an unreal possibility in the past. The result clause uses 'might have + V3'.\nব্যাখ্যা (Nepali Explanation): यो Type III conditional वाक्य हो (If + past perfect...), जसले विगतको एक असम्भव सम्भावनालाई व्यक्त गर्दछ। परिणाम खण्डमा 'might have + V3' प्रयोग हुन्छ।"
+          },
+          {
+            "id": "i", 
+            "correctAnswer": "blame",
+            "explanation": "Explanation (English): The subject 'People' is plural, so it takes the plural verb form 'blame' in the simple present tense.\nব্যাখ্যা (Nepali Explanation): कर्ता 'People' बहुवचन हो, त्यसैले simple present tense मा यसले बहुवचन क्रिया 'blame' लिन्छ।"
+          },
+          {
+            "id": "j", 
+            "correctAnswer": "think",
+            "explanation": "Explanation (English): The causative verb 'makes' is followed by a bare infinitive (verb without 'to').\nব্যাখ্যা (Nepali Explanation): causative verb 'makes' पछि bare infinitive (verb without 'to') प्रयोग हुन्छ।"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -9,399 +9,409 @@
     "duration": 180,
     "sections": ["A", "B", "C", "D"],
     "isActive": true,
-    "createdAt": { "$date": "2025-08-10T19:30:18.000Z" },
-    "updatedAt": { "$date": "2025-08-10T19:30:18.000Z" }
+    "createdAt": { "$date": "2025-08-30T18:15:16.000Z" },
+    "updatedAt": { "$date": "2025-08-30T18:15:16.000Z" }
   },
   {
-    "_id": { "$oid": "687d809a2f3df9d071c52114" },
+    "_id": { "$oid": "687d809a2f3df9d071c5210d" },
     "testId": "see_2081_science_practice_5_generated",
     "questions": {
       "groupA": [
         {
-          "id": "1",
+          "id": "a",
           "type": "multiple_choice",
-          "questionNepali": "तलका मध्ये कुन नवीकरणीय ऊर्जाको स्रोत हो?",
-          "questionEnglish": "Which of the following is a renewable source of energy?",
+          "questionNepali": " कम्प्युटर मेमोरीको क्षमता नाप्ने एकाइ कुन हो?",
+          "questionEnglish": "Which unit is used for measuring the capacity of computer memory?",
           "options": [
-            {"id": "i", "nepali": "कोइला (Coal)", "english": "Coal"},
-            {"id": "ii", "nepali": "पेट्रोलियम (Petroleum)", "english": "Petroleum"},
-            {"id": "iii", "nepali": "प्राकृतिक ग्यास (Natural Gas)", "english": "Natural Gas"},
-            {"id": "iv", "nepali": "सौर्य ऊर्जा (Solar Energy)", "english": "Solar Energy"}
+            {"id": "i", "nepali": "हर्ज (Hertz)", "english": "Hertz"},
+            {"id": "ii", "nepali": "बाइट (Byte)", "english": "Byte"},
+            {"id": "iii", "nepali": "बिट्स प्रति सेकेन्ड (Bits per second)", "english": "Bits per second"},
+            {"id": "iv", "nepali": "पास्कल (Pascal)", "english": "Pascal"}
           ],
-          "correctAnswer": "iv", "marks": 1,
-          "explanation": "Solar energy is a renewable resource because the sun's energy is practically inexhaustible. Coal, petroleum, and natural gas are fossil fuels, which are non-renewable."
+          "correctAnswer": "ii",
+          "marks": 1,
+          "explanation": "व्याख्या (Nepali Explanation): कम्प्युटरको मेमोरी क्षमता बाइट (Byte) र यसका गुणकहरू जस्तै किलोबाइट (KB), मेगाबाइट (MB), गिगाबाइट (GB) मा मापिन्छ। हर्ज (Hertz) फ्रिक्वेन्सीको एकाइ हो।\n\nEnglish Explanation: The storage capacity of computer memory is measured in Bytes and its multiples like Kilobytes (KB), Megabytes (MB), and Gigabytes (GB). Hertz is the unit of frequency."
         },
         {
-          "id": "2",
+          "id": "b",
           "type": "multiple_choice",
-          "questionNepali": "कुन तत्वको कमीले गलगण्ड (Goitre) रोग लाग्छ?",
-          "questionEnglish": "Deficiency of which element causes Goitre?",
+          "questionNepali": "फूल फुल्ने, गुच्छे जरा हुने र हाँगा नहुने विरुवा दिइएकामध्ये कुन हो?",
+          "questionEnglish": "Which one of the following is a plant that bears flowers, has fibrous roots, and no branches?",
           "options": [
-            {"id": "i", "nepali": "फलाम (Iron)", "english": "Iron"},
-            {"id": "ii", "nepali": "आयोडिन (Iodine)", "english": "Iodine"},
-            {"id": "iii", "nepali": "क्याल्सियम (Calcium)", "english": "Calcium"},
-            {"id": "iv", "nepali": "पोटासियम (Potassium)", "english": "Potassium"}
+            {"id": "i", "nepali": "उनिउँ (Fern)", "english": "Fern"},
+            {"id": "ii", "nepali": "मकै (Maize)", "english": "Maize"},
+            {"id": "iii", "nepali": "तोरी (Mustard)", "english": "Mustard"},
+            {"id": "iv", "nepali": "साइकस (Cycas)", "english": "Cycas"}
           ],
-          "correctAnswer": "ii", "marks": 1,
-          "explanation": "Iodine is an essential component of the hormones produced by the thyroid gland. A deficiency of iodine causes the thyroid gland to swell, resulting in a goitre."
+          "correctAnswer": "ii",
+          "marks": 1,
+          "explanation": "व्याख्या (Nepali Explanation): मकै एक मोनोकोट बिरुवा हो जसमा फूल फुल्छ, गुच्छे (fibrous) जरा हुन्छ, र सामान्यतया हाँगा हुँदैन। उनिउँ र साइकसमा फूल फुल्दैन, र तोरी (डाइकोट) मा मूल (tap) जरा हुन्छ।\n\nEnglish Explanation: Maize is a monocot plant that bears flowers, has fibrous roots, and typically has no branches. Fern and Cycas do not bear flowers, and mustard (a dicot) has a tap root system."
         },
         {
-          "id": "3",
+          "id": "c",
           "type": "multiple_choice",
-          "questionNepali": "प्रतिध्वनि (echo) सुन्नको लागि, ध्वनि स्रोत र परावर्तक सतह बिच न्यूनतम दूरी कति हुनुपर्छ?",
-          "questionEnglish": "To hear an echo, what should be the minimum distance between the source of sound and the reflecting surface?",
+          "questionNepali": "विकास क्रमको आधारमा कुन क्रम सही छ?",
+          "questionEnglish": "Which order is correct in terms of evolution?",
           "options": [
-            {"id": "i", "nepali": "10 m", "english": "10 m"},
-            {"id": "ii", "nepali": "17 m", "english": "17 m"},
-            {"id": "iii", "nepali": "25 m", "english": "25 m"},
-            {"id": "iv", "nepali": "34 m", "english": "34 m"}
+            {"id": "i", "nepali": "गड्यौला, जेलिफिस, भ्यागुता, माछा (Earthworm, Jellyfish, Frog, Fish)", "english": "Earthworm, Jellyfish, Frog, Fish"},
+            {"id": "ii", "nepali": "जेलिफिस, गड्यौला, माछा, भ्यागुता (Jellyfish, Earthworm, Fish, Frog)", "english": "Jellyfish, Earthworm, Fish, Frog"},
+            {"id": "iii", "nepali": "माछा, भ्यागुता, जेलिफिस, गड्यौला (Fish, Frog, Jellyfish, Earthworm)", "english": "Fish, Frog, Jellyfish, Earthworm"},
+            {"id": "iv", "nepali": "भ्यागुता, माछा, गड्यौला, जेलिफिस (Frog, Fish, Earthworm, Jellyfish)", "english": "Frog, Fish, Earthworm, Jellyfish"}
           ],
-          "correctAnswer": "ii", "marks": 1,
-          "explanation": "The sensation of sound persists in our brain for about 0.1 seconds. For an echo to be heard distinctly, the reflected sound must reach the ear after this time interval. The minimum distance required for this is approximately 17 meters."
+          "correctAnswer": "ii",
+          "marks": 1,
+          "explanation": "व्याख्या (Nepali Explanation): विकास क्रममा, सरल जीवहरू पहिले विकसित भए। जेलिफिस (सिलेन्टरेटा) गड्यौला (एनिलिडा) भन्दा सरल छ। माछा (पिसेस) भ्यागुता (एम्फिबिया) भन्दा पहिले विकसित भयो। त्यसैले सही क्रम जेलिफिस, गड्यौला, माछा, र भ्यागुता हो।\n\nEnglish Explanation: In evolution, simpler organisms evolved first. Jellyfish (Coelenterata) is simpler than Earthworm (Annelida). Fish (Pisces) evolved before Frogs (Amphibia). Therefore, the correct order is Jellyfish, Earthworm, Fish, Frog."
         },
         {
-          "id": "4",
+          "id": "d",
           "type": "multiple_choice",
-          "questionNepali": "तलका मध्ये कुन एक यौन संचारित रोग (STD) हो?",
-          "questionEnglish": "Which of the following is a Sexually Transmitted Disease (STD)?",
+          "questionNepali": "ज्वालामुखी विस्फोटन (A) र जीवावशेष इन्धनको अत्यधिक प्रयोग (B) जलवायु परिवर्तनका दुई कारणहरू हुन्। यिनीहरूका बारेमा कुन विकल्प सही छ?",
+          "questionEnglish": "Volcanic eruption (A) and overuse of fossil fuels (B) are two causes of climate change. Which of the following alternatives is correct about them?",
           "options": [
-            {"id": "i", "nepali": "दादुरा (Measles)", "english": "Measles"},
-            {"id": "ii", "nepali": "सिफिलिस (Syphilis)", "english": "Syphilis"},
-            {"id": "iii", "nepali": "हैजा (Cholera)", "english": "Cholera"},
-            {"id": "iv", "nepali": "टाइफाइड (Typhoid)", "english": "Typhoid"}
+            {"id": "i", "nepali": "A प्राकृतिक कारण हो, B मानवीय कारण हो। (A is a natural cause, B is a human cause)", "english": "A is a natural cause, B is a human cause"},
+            {"id": "ii", "nepali": "A मानवीय कारण हो, B प्राकृतिक कारण हो। (A is a human cause, B is a natural cause)", "english": "A is a human cause, B is a natural cause"},
+            {"id": "iii", "nepali": "दुवै मानवीय कारण हुन्। (Both are human causes)", "english": "Both are human causes"},
+            {"id": "iv", "nepali": "दुवै प्राकृतिक कारण हुन्। (Both are natural causes)", "english": "Both are natural causes"}
           ],
-          "correctAnswer": "ii", "marks": 1,
-          "explanation": "Syphilis is a bacterial infection that is primarily spread through sexual contact. The other diseases are transmitted through other means like air, water, or contaminated food."
+          "correctAnswer": "i",
+          "marks": 1,
+          "explanation": "व्याख्या (Nepali Explanation): ज्वालामुखी विस्फोटन एक प्राकृतिक प्रक्रिया हो। जीवावशेष इन्धनको अत्यधिक प्रयोग मानव गतिविधि हो। दुवैले हरितगृह ग्यास उत्सर्जन गरी जलवायु परिवर्तनमा योगदान पुऱ्याउँछन्।\n\nEnglish Explanation: Volcanic eruption is a natural phenomenon. The overuse of fossil fuels is a human activity. Both contribute to climate change by releasing greenhouse gases."
         },
         {
-          "id": "5",
+          "id": "e",
           "type": "multiple_choice",
-          "questionNepali": "पृथ्वीको वायुमण्डल नभएको भए आकाशको रङ कस्तो देखिन्थ्यो?",
-          "questionEnglish": "What would be the color of the sky if the Earth had no atmosphere?",
+          "questionNepali": "यदि पृथ्वीको पिण्डलाई यथावत् राखी अर्धव्यासलाई आधा गरियो भने गुरुत्व प्रवेग 'g' को मानमा कस्तो परिवर्तन आउँछ?",
+          "questionEnglish": "If the radius of the Earth is halved while keeping the mass constant, how will the value of acceleration due to gravity 'g' change?",
           "options": [
-            {"id": "i", "nepali": "नीलो (Blue)", "english": "Blue"},
-            {"id": "ii", "nepali": "सेतो (White)", "english": "White"},
-            {"id": "iii", "nepali": "कालो (Black)", "english": "Black"},
-            {"id": "iv", "nepali": "रातो (Red)", "english": "Red"}
+            {"id": "i", "nepali": "आधा हुन्छ (Becomes half)", "english": "Becomes half"},
+            {"id": "ii", "nepali": "उस्तै रहन्छ (Remains the same)", "english": "Remains the same"},
+            {"id": "iii", "nepali": "दुई गुणाले बढ्छ (Increases by 2 times)", "english": "Increases by 2 times"},
+            {"id": "iv", "nepali": "चार गुणाले बढ्छ (Increases by 4 times)", "english": "Increases by 4 times"}
           ],
-          "correctAnswer": "iii", "marks": 1,
-          "explanation": "The blue color of the sky is due to the scattering of sunlight by the atmosphere. Without an atmosphere, there would be no scattering, and the sky would appear black, just as it does from the moon."
+          "correctAnswer": "iv",
+          "marks": 1,
+          "explanation": "व्याख्या (Nepali Explanation): गुरुत्व प्रवेग (g) को सूत्र g = GM/R² हो, जहाँ g अर्धव्यासको वर्गसँग व्युत्क्रमानुपातिक हुन्छ (g ∝ 1/R²)। यदि अर्धव्यास आधा (R/2) भयो भने, g' = GM/(R/2)² = GM/(R²/4) = 4(GM/R²) = 4g हुन्छ। तसर्थ, 'g' को मान चार गुणाले बढ्छ।\n\nEnglish Explanation: The formula for acceleration due to gravity (g) is g = GM/R², where g is inversely proportional to the square of the radius (g ∝ 1/R²). If the radius is halved (R/2), the new acceleration g' = GM/(R/2)² = GM/(R²/4) = 4(GM/R²) = 4g. Thus, the value of 'g' increases by 4 times."
         },
         {
-          "id": "6",
+          "id": "f",
           "type": "multiple_choice",
-          "questionNepali": "2Na + Cl₂ → 2NaCl कुन प्रकारको रासायनिक प्रतिक्रिया हो?",
-          "questionEnglish": "2Na + Cl₂ → 2NaCl is which type of chemical reaction?",
+          "questionNepali": "एउटा हाइड्रोलिक मेसिनको सानो पिस्टनको क्षेत्रफल 2 cm² र ठूलो पिस्टनको क्षेत्रफल 10 cm² छ। यदि सानो पिस्टनमा 30 N बल लगाइयो भने ठूलो पिस्टनमा कति तौल सन्तुलन गर्न सकिन्छ?",
+          "questionEnglish": "In a hydraulic machine, the area of the small piston is 2 cm² and the large piston is 10 cm². If a 30 N force is applied to the small piston, how much weight can be balanced on the large piston?",
           "options": [
-            {"id": "i", "nepali": "विभाजन (Decomposition)", "english": "Decomposition"},
+            {"id": "i", "nepali": "6 N", "english": "6 N"},
+            {"id": "ii", "nepali": "60 N", "english": "60 N"},
+            {"id": "iii", "nepali": "150 N", "english": "150 N"},
+            {"id": "iv", "nepali": "300 N", "english": "300 N"}
+          ],
+          "correctAnswer": "iii",
+          "marks": 1,
+          "explanation": "व्याख्या (Nepali Explanation): पास्कलको नियमअनुसार, F₁/A₁ = F₂/A₂। यहाँ, F₁ = 30 N, A₁ = 2 cm², र A₂ = 10 cm² छ। F₂ = F₁ × (A₂/A₁) = 30 N × (10 cm² / 2 cm²) = 30 N × 5 = 150 N।\n\nEnglish Explanation: According to Pascal's law, F₁/A₁ = F₂/A₂. Here, F₁ = 30 N, A₁ = 2 cm², and A₂ = 10 cm². F₂ = F₁ × (A₂/A₁) = 30 N × (10 cm² / 2 cm²) = 30 N × 5 = 150 N."
+        },
+        {
+          "id": "g",
+          "type": "multiple_choice",
+          "questionNepali": "प्रकाशको किरण हावाबाट काँचमा प्रवेश गरी फेरि हावामा निस्कँदा कुन अवस्था सही हुन्छ? (i=आपतित कोण, r=आवर्तित कोण, e=निर्गत कोण)",
+          "questionEnglish": "Which situation is correct when a ray of light enters glass from air and emerges back into the air? (i=angle of incidence, r=angle of refraction, e=emergent angle)",
+          "options": [
+            {"id": "i", "nepali": "i = e < r", "english": "i = e < r"},
+            {"id": "ii", "nepali": "i = e > r", "english": "i = e > r"},
+            {"id": "iii", "nepali": "i > e > r", "english": "i > e > r"},
+            {"id": "iv", "nepali": "i < r < e", "english": "i < r < e"}
+          ],
+          "correctAnswer": "ii",
+          "marks": 1,
+          "explanation": "व्याख्या (Nepali Explanation): जब प्रकाशको किरण हावा (विरल माध्यम) बाट काँच (सघन माध्यम) मा जान्छ, यो नर्मलतिर झुक्छ, त्यसैले i > r हुन्छ। जब यो काँचबाट फेरि हावामा निस्कन्छ, यो नर्मलबाट टाढा जान्छ र आपतित किरणसँग समानान्तर हुन्छ, जसले गर्दा i = e हुन्छ। तसर्थ, सही सम्बन्ध i = e > r हो।\n\nEnglish Explanation: When a light ray travels from air (rarer medium) to glass (denser medium), it bends towards the normal, so i > r. When it emerges from the glass back into the air, it bends away from the normal and becomes parallel to the incident ray, making i = e. Therefore, the correct relation is i = e > r."
+        },
+        {
+          "id": "h",
+          "type": "multiple_choice",
+          "questionNepali": "ब्रह्माण्डमा रहेका खगोलीय पिण्डहरू कुन बलको कारणले आफ्नो स्थानमा रहेका छन्?",
+          "questionEnglish": "Due to which force do celestial bodies in the universe remain in their position?",
+          "options": [
+            {"id": "i", "nepali": "न्युक्लियर बल (Nuclear force)", "english": "Nuclear force"},
+            {"id": "ii", "nepali": "गुरुत्वाकर्षण बल (Gravitational force)", "english": "Gravitational force"},
+            {"id": "iii", "nepali": "चुम्बकीय बल (Magnetic force)", "english": "Magnetic force"},
+            {"id": "iv", "nepali": "विद्युत चुम्बकीय बल (Electromagnetic force)", "english": "Electromagnetic force"}
+          ],
+          "correctAnswer": "ii",
+          "marks": 1,
+          "explanation": "व्याख्या (Nepali Explanation): ब्रह्माण्डमा रहेका सबै खगोलीय पिण्डहरू, जस्तै ग्रह, तारा र आकाशगङ्गाहरू, एकअर्कालाई गुरुत्वाकर्षण बलले आकर्षित गर्छन्, जसले गर्दा तिनीहरू सन्तुलित अवस्थामा रहन्छन्।\n\nEnglish Explanation: All celestial bodies in the universe, such as planets, stars, and galaxies, attract each other with gravitational force, which keeps them in a balanced state."
+        },
+        {
+          "id": "i",
+          "type": "multiple_choice",
+          "questionNepali": "तल दिइएको रासायनिक प्रतिक्रिया कुन प्रकारको हो? Zn + 2HCl → ZnCl₂ + H₂",
+          "questionEnglish": "What type of chemical reaction is given below? Zn + 2HCl → ZnCl₂ + H₂",
+          "options": [
+            {"id": "i", "nepali": "संयोजन (Combination)", "english": "Combination"},
             {"id": "ii", "nepali": "विस्थापन (Displacement)", "english": "Displacement"},
-            {"id": "iii", "nepali": "संयोजन (Combination)", "english": "Combination"},
+            {"id": "iii", "nepali": "विभाजन (Decomposition)", "english": "Decomposition"},
             {"id": "iv", "nepali": "निराकरण (Neutralization)", "english": "Neutralization"}
           ],
-          "correctAnswer": "iii", "marks": 1,
-          "explanation": "This is a combination (or synthesis) reaction because two or more reactants (Na and Cl₂) combine to form a single product (NaCl)."
+          "correctAnswer": "ii",
+          "marks": 1,
+          "explanation": "व्याख्या (Nepali Explanation): यो एक एकल विस्थापन प्रतिक्रिया हो किनभने बढी प्रतिक्रियाशील तत्व जिंक (Zn) ले हाइड्रोक्लोरिक एसिड (HCl) बाट कम प्रतिक्रियाशील तत्व हाइड्रोजन (H) लाई विस्थापित गरेको छ।\n\nEnglish Explanation: This is a single displacement reaction because a more reactive element, Zinc (Zn), has displaced a less reactive element, Hydrogen (H), from hydrochloric acid (HCl)."
         },
         {
-          "id": "7",
+          "id": "j",
           "type": "multiple_choice",
-          "questionNepali": "जीन कहाँ पाइन्छ?",
-          "questionEnglish": "Where are genes located?",
+          "questionNepali": "फलफूल व्यवसायीले फलफूल पकाउनका लागि प्रयोग गर्ने सेतो धुलो पाउडर कुन हो?",
+          "questionEnglish": "Which white powder is used by fruit sellers to ripen fruits?",
           "options": [
-            {"id": "i", "nepali": "साइटोप्लाज्ममा (In the cytoplasm)", "english": "In the cytoplasm"},
-            {"id": "ii", "nepali": "माइटोकोन्ड्रियामा (In the mitochondria)", "english": "In the mitochondria"},
-            {"id": "iii", "nepali": "क्रोमोजोममा (On the chromosomes)", "english": "On the chromosomes"},
-            {"id": "iv", "nepali": "राइबोजोममा (In the ribosomes)", "english": "In the ribosomes"}
+            {"id": "i", "nepali": "सोडियम सल्फेट (Sodium Sulphate)", "english": "Sodium Sulphate"},
+            {"id": "ii", "nepali": "क्याल्सियम कार्बोनेट (Calcium Carbonate)", "english": "Calcium Carbonate"},
+            {"id": "iii", "nepali": "क्याल्सियम कार्बाइड (Calcium Carbide)", "english": "Calcium Carbide"},
+            {"id": "iv", "nepali": "सोडियम कार्बोनेट (Sodium Carbonate)", "english": "Sodium Carbonate"}
           ],
-          "correctAnswer": "iii", "marks": 1,
-          "explanation": "Genes, which are segments of DNA, are located on the chromosomes within the nucleus of a cell."
-        },
-        {
-          "id": "8",
-          "type": "multiple_choice",
-          "questionNepali": "तलका मध्ये कुनले विद्युत चुम्बकको शक्ति बढाउँदैन?",
-          "questionEnglish": "Which of the following does NOT increase the strength of an electromagnet?",
-          "options": [
-            {"id": "i", "nepali": "फन्काको संख्या बढाउँदा (Increasing the number of turns)", "english": "Increasing the number of turns"},
-            {"id": "ii", "nepali": "करेन्टको मात्रा बढाउँदा (Increasing the amount of current)", "english": "Increasing the amount of current"},
-            {"id": "iii", "nepali": "तारको लम्बाइ घटाउँदा (Decreasing the length of the wire)", "english": "Decreasing the length of the wire"},
-            {"id": "iv", "nepali": "नरम फलामको कोर राख्दा (Inserting a soft iron core)", "english": "Inserting a soft iron core"}
-          ],
-          "correctAnswer": "iii", "marks": 1,
-          "explanation": "The strength of an electromagnet is increased by increasing the number of turns, increasing the current, and using a soft iron core. Decreasing the length of the wire for the same number of turns is not a primary factor for increasing strength."
-        },
-        {
-          "id": "9",
-          "type": "multiple_choice",
-          "questionNepali": "प्रकाश संश्लेषण प्रक्रियाको लागि कुन कच्चा पदार्थ आवश्यक पर्दैन?",
-          "questionEnglish": "Which raw material is NOT required for the process of photosynthesis?",
-          "options": [
-            {"id": "i", "nepali": "कार्बन डाइअक्साइड (Carbon dioxide)", "english": "Carbon dioxide"},
-            {"id": "ii", "nepali": "पानी (Water)", "english": "Water"},
-            {"id": "iii", "nepali": "सूर्यको प्रकाश (Sunlight)", "english": "Sunlight"},
-            {"id": "iv", "nepali": "अक्सिजन (Oxygen)", "english": "Oxygen"}
-          ],
-          "correctAnswer": "iv", "marks": 1,
-          "explanation": "Carbon dioxide, water, and sunlight are the essential raw materials for photosynthesis. Oxygen is a product of this process, not a reactant."
-        },
-        {
-          "id": "10",
-          "type": "multiple_choice",
-          "questionNepali": "ब्युटेन (Butane) को आणविक सूत्र के हो?",
-          "questionEnglish": "What is the molecular formula for Butane?",
-          "options": [
-            {"id": "i", "nepali": "C₄H₈", "english": "C₄H₈"},
-            {"id": "ii", "nepali": "C₄H₁₀", "english": "C₄H₁₀"},
-            {"id": "iii", "nepali": "C₄H₆", "english": "C₄H₆"},
-            {"id": "iv", "nepali": "C₃H₈", "english": "C₃H₈"}
-          ],
-          "correctAnswer": "ii", "marks": 1,
-          "explanation": "Butane is an alkane with 4 carbon atoms. Using the general formula for alkanes (CₙH₂ₙ₊₂), for n=4, the formula is C₄H₂(₄)₊₂ = C₄H₁₀."
+          "correctAnswer": "iii",
+          "marks": 1,
+          "explanation": "व्याख्या (Nepali Explanation): फलफूल पकाउनका लागि क्याल्सियम कार्बाइड (CaC₂) प्रयोग गरिन्छ। यसले आर्द्रतासँग प्रतिक्रिया गरेर एसिटिलिन ग्यास (C₂H₂) उत्पादन गर्छ, जसले फलफूललाई कृत्रिम रूपमा पकाउँछ।\n\nEnglish Explanation: Calcium carbide (CaC₂) is used for ripening fruits. It reacts with moisture to produce acetylene gas (C₂H₂), which artificially ripens the fruit."
         }
       ],
       "groupB": [
         {
-          "id": "11",
+          "id": "a",
           "type": "short_answer",
-          "questionNepali": "विद्युतीय प्रतिरोधको SI एकाइ लेख्नुहोस्।",
-          "questionEnglish": "Write the SI unit of electrical resistance.",
+          "questionNepali": "आधारभूत एकाइ र तत्जन्य एकाइबिच कुनै एक भिन्नता लेख्नुहोस्।",
+          "questionEnglish": "Write one difference between a fundamental unit and a derived unit.",
           "marks": 1,
-          "sampleAnswer": "The SI unit of electrical resistance is the Ohm (Ω)."
+          "sampleAnswer": "नेपालीमा (In Nepali): आधारभूत एकाइहरू अन्य एकाइहरूमा निर्भर हुँदैनन्, जबकि तत्जन्य एकाइहरू आधारभूत एकाइहरूबाट बनेका हुन्छन्।\n\nIn English: Fundamental units do not depend on other units, whereas derived units are composed of fundamental units."
         },
         {
-          "id": "12",
+          "id": "b",
           "type": "short_answer",
-          "questionNepali": "हाइड्रोपोनिक्स (Hydroponics) के हो?",
-          "questionEnglish": "What is hydroponics?",
+          "questionNepali": "कुनै वस्तुलाई पानीमा डुबाउँदा पानीले त्यस वस्तुलाई माथितिर धकेल्ने बललाई के भनिन्छ?",
+          "questionEnglish": "What is the name of the upward force applied by water to a body immersed in it?",
           "marks": 1,
-          "sampleAnswer": "Hydroponics is a method of growing plants without soil, using mineral nutrient solutions dissolved in a water solvent."
+          "sampleAnswer": "नेपालीमा (In Nepali): कुनै वस्तुलाई पानीमा डुबाउँदा पानीले त्यस वस्तुलाई माथितिर धकेल्ने बललाई उर्ध्वचाप (upthrust) भनिन्छ।\n\nIn English: The upward force applied by water to a body immersed in it is called upthrust."
         },
         {
-          "id": "13",
+          "id": "c",
           "type": "short_answer",
-          "questionNepali": "RNA को पूरा रूप लेख्नुहोस्।",
-          "questionEnglish": "Write the full form of RNA.",
+          "questionNepali": "प्रकाशको किरण हावाबाट काँचमा जाँदा नर्मलतिर किन बाङ्गिन्छ?",
+          "questionEnglish": "Why does a ray of light bend towards the normal while refracting from air to glass?",
           "marks": 1,
-          "sampleAnswer": "The full form of RNA is Ribonucleic Acid."
+          "sampleAnswer": "नेपालीमा (In Nepali): हावाभन्दा काँच सघन माध्यम भएकोले काँचमा प्रकाशको गति कम हुन्छ, जसले गर्दा प्रकाशको किरण नर्मलतिर बाङ्गिन्छ।\n\nIn English: Since glass is a denser medium than air, the speed of light decreases in glass, which causes the light ray to bend towards the normal."
         },
         {
-          "id": "14",
+          "id": "d",
           "type": "short_answer",
-          "questionNepali": "एक प्रकाश वर्ष (light year) के को एकाइ हो?",
-          "questionEnglish": "A light year is the unit of what?",
+          "questionNepali": "दिइएको चित्र प्रकाशको कुन प्रक्रियासँग सम्बन्धित छ?",
+          "questionEnglish": "To which phenomenon of light is the given figure related? (Figure shows a magnet moving into a coil connected to a galvanometer)",
           "marks": 1,
-          "sampleAnswer": "A light year is a unit of astronomical distance."
+          "sampleAnswer": "नेपालीमा (In Nepali): दिइएको चित्र विद्युत चुम्बकीय उपपादन (electromagnetic induction) सँग सम्बन्धित छ।\n\nIn English: The given figure is related to electromagnetic induction."
         },
         {
-          "id": "15",
+          "id": "e",
           "type": "short_answer",
-          "questionNepali": "धातुहरूको एउटा भौतिक गुण लेख्नुहोस्।",
-          "questionEnglish": "Write one physical property of metals.",
+          "questionNepali": "धाराविद्युत प्रवाह भएको क्वाइललाई चुम्बकीय क्षेत्रमा राख्दा तार किन कम्पन हुन्छ?",
+          "questionEnglish": "Why does a current-carrying coil vibrate when placed in a magnetic field?",
           "marks": 1,
-          "sampleAnswer": "One physical property of metals is that they are good conductors of heat and electricity. (Other answers: They are lustrous, malleable, ductile)."
+          "sampleAnswer": "नेपालीमा (In Nepali): मोटर असर (motor effect) को कारणले तार कम्पन हुन्छ, जहाँ स्थायी चुम्बक र करेन्टले उत्पन्न गरेको चुम्बकीय क्षेत्रबीच अन्तरक्रिया भई बल उत्पन्न हुन्छ।\n\nIn English: The wire vibrates due to the motor effect, where the interaction between the magnetic field of the permanent magnet and the magnetic field produced by the current generates a force."
         },
         {
-          "id": "16",
+          "id": "f",
           "type": "short_answer",
-          "questionNepali": "एउटा उभयचर (amphibian) जनावरको नाम लेख्नुहोस्।",
-          "questionEnglish": "Write the name of an amphibian animal.",
+          "questionNepali": "बन्द ब्रह्माण्ड हुनको लागि आवश्यक पर्ने एउटा अवस्था लेख्नुहोस्।",
+          "questionEnglish": "Write one condition required for a closed universe.",
           "marks": 1,
-          "sampleAnswer": "An example of an amphibian is a frog (भ्यागुता) or a salamander."
+          "sampleAnswer": "नेपालीमा (In Nepali): बन्द ब्रह्माण्ड हुनको लागि, ब्रह्माण्डको औसत घनत्व चरम घनत्वभन्दा बढी हुनुपर्छ।\n\nIn English: For a closed universe to occur, the average density of the universe must be greater than the critical density."
         },
         {
-          "id": "17",
+          "id": "g",
           "type": "short_answer",
-          "questionNepali": "निर्वातमा प्रकाशको गति कति हुन्छ?",
-          "questionEnglish": "What is the speed of light in a vacuum?",
+          "questionNepali": "धाउको परिभाषा दिनुहोस्।",
+          "questionEnglish": "Define ore.",
           "marks": 1,
-          "sampleAnswer": "The speed of light in a vacuum is approximately 3 x 10⁸ m/s."
+          "sampleAnswer": "नेपालीमा (In Nepali): जुन खनिजबाट सजिलै र कम लागतमा ठूलो मात्रामा धातु निकाल्न सकिन्छ, त्यसलाई धाउ (ore) भनिन्छ।\n\nIn English: An ore is a mineral from which a metal can be extracted easily and economically in a large amount."
         },
         {
-          "id": "18",
+          "id": "h",
           "type": "short_answer",
-          "questionNepali": "मानव शरीरमा पित्त (bile) कहाँ उत्पादन हुन्छ?",
-          "questionEnglish": "Where is bile produced in the human body?",
+          "questionNepali": "फलामको धाउबाट शुद्ध फलाम प्रशोधन गर्दा कुन संकेंद्रण विधि अपनाइन्छ?",
+          "questionEnglish": "Which concentration method is applied during the purification of iron from its ore?",
           "marks": 1,
-          "sampleAnswer": "Bile is produced in the liver (कलेजो)."
+          "sampleAnswer": "नेपालीमा (In Nepali): फलामको धाउलाई प्रशोधन गर्दा चुम्बकीय पृथकीकरण (magnetic separation) विधि अपनाइन्छ, किनभने फलाम चुम्बकीय पदार्थ हो।\n\nIn English: Magnetic separation method is applied to purify iron from its ore because iron is a magnetic substance."
         },
         {
-          "id": "19",
+          "id": "i",
           "type": "short_answer",
-          "questionNepali": "साबुनको रासायनिक नाम के हो?",
-          "questionEnglish": "What is the chemical name for soap?",
+          "questionNepali": "हाइड्रोकार्बनलाई किन प्राङ्गारिक यौगिक भनिन्छ?",
+          "questionEnglish": "Why are hydrocarbons called organic compounds?",
           "marks": 1,
-          "sampleAnswer": "Chemically, soap is the sodium or potassium salt of a long-chain fatty acid (e.g., Sodium Stearate)."
+          "sampleAnswer": "नेपालीमा (In Nepali): हाइड्रोकार्बनहरू जीवित स्रोतहरू (वनस्पति र जनावर) बाट प्राप्त हुने हुनाले र यिनीहरू कार्बनका मुख्य यौगिकहरू भएकाले यिनीहरूलाई प्राङ्गारिक यौगिक भनिन्छ।\n\nIn English: Hydrocarbons are called organic compounds because they are derived from living sources (plants and animals) and are primary compounds of carbon."
         }
       ],
       "groupC": [
         {
-          "id": "20",
+          "id": "3",
           "type": "long_answer",
-          "questionNepali": "बायो-फ्युल (Bio-fuel) भनेको के हो? यसका दुई फाइदाहरू लेख्नुहोस्।",
-          "questionEnglish": "What is bio-fuel? Write its two advantages.",
+          "questionNepali": "उज्यालो कोठा र अँध्यारो कोठामा विरुवाको वृद्धिमा के फरक पर्छ भनी गरिएको अवलोकनमा एउटा स्वतन्त्र र एउटा आश्रित चर लेख्नुहोस्।",
+          "questionEnglish": "Name one dependent and one independent variable of an observation on the growth rate of plants in a lighted room versus a dark room.",
           "marks": 2,
-          "sampleAnswer": "**Bio-fuel:** Bio-fuel is any fuel that is derived directly from biomass—that is, organic matter from plants or animals, such as agricultural crops, algae, or animal dung.\n**Advantages:**\n1. **Renewable:** Bio-fuels are derived from renewable resources, unlike fossil fuels which are finite.\n2. **Reduced Greenhouse Gas Emissions:** When burned, many bio-fuels release less net carbon dioxide into the atmosphere compared to fossil fuels, as the carbon they release was recently absorbed from the atmosphere by the plants."
+          "sampleAnswer": "नेपालीमा (In Nepali):\n* **स्वतन्त्र चर:** प्रकाशको मात्रा (उज्यालो वा अँध्यारो कोठा)।\n* **आश्रित चर:** विरुवाको वृद्धि (जस्तै, उचाइ)।\n\nIn English:\n* **Independent Variable:** The amount of light (lighted or dark room).\n* **Dependent Variable:** The growth of the plant (e.g., its height)."
         },
         {
-          "id": "21",
+          "id": "4",
           "type": "long_answer",
-          "questionNepali": "न्युटनको चालसम्बन्धी दोस्रो नियम लेख्नुहोस् र F=ma सम्बन्ध प्रमाणित गर्नुहोस्।",
-          "questionEnglish": "State Newton's second law of motion and derive the relation F=ma.",
+          "questionNepali": "चिप्लेकिरा (slug) र सिक्युकम्बर (sea cucumber) को फाइलम लेख्नुहोस्।",
+          "questionEnglish": "Write the Phylum of slug and sea cucumber.",
           "marks": 2,
-          "sampleAnswer": "**Newton's Second Law of Motion:** The law states that the rate of change of momentum of an object is directly proportional to the unbalanced force applied to it and takes place in the direction of the force.\n**Derivation:**\nLet a body of mass 'm' be moving with initial velocity 'u'. Let a force 'F' be applied for time 't' so that its final velocity is 'v'.\nInitial momentum = mu. Final momentum = mv.\nChange in momentum = mv - mu = m(v-u).\nRate of change of momentum = m(v-u)/t.\nAccording to the law, F ∝ m(v-u)/t. Since acceleration a = (v-u)/t, we have F ∝ ma. \nBy choosing a suitable unit for force, the constant of proportionality becomes 1. Thus, F = ma."
+          "sampleAnswer": "नेपालीमा (In Nepali):\n* **चिप्लेकिरा (Slug):** फाइलम मोलस्का (Mollusca)\n* **सिक्युकम्बर (Sea cucumber):** फाइलम इकाइनोडर्माटा (Echinodermata)\n\nIn English:\n* **Slug:** Phylum Mollusca\n* **Sea cucumber:** Phylum Echinodermata"
         },
         {
-          "id": "22",
+          "id": "5",
           "type": "long_answer",
-          "questionNepali": "एन्डोक्राइन र एक्जोक्राइन ग्रन्थि बिच दुई भिन्नता लेख्नुहोस्।",
-          "questionEnglish": "Write two differences between endocrine and exocrine glands.",
+          "questionNepali": "मौरी पालनबाट कृषकलाई हुने कुनै दुई फाइदाहरू लेख्नुहोस्।",
+          "questionEnglish": "Write any two advantages of bee-keeping for farmers.",
           "marks": 2,
-          "sampleAnswer": "1. **Presence of Ducts:** Endocrine glands are ductless glands; they release their secretions (hormones) directly into the bloodstream. Exocrine glands have ducts through which they release their secretions (like enzymes, sweat, saliva) onto a surface or into a cavity.\n2. **Type of Secretion:** Endocrine glands secrete hormones that act on distant target organs. Exocrine glands secrete substances like enzymes, mucus, sweat, and saliva for specific local functions."
+          "sampleAnswer": "नेपालीमा (In Nepali):\n१. **मह उत्पादन:** कृषकहरूले मह बेचेर अतिरिक्त आम्दानी गर्न सक्छन्।\n२. **परागसेचन:** मौरीले बालीनालीमा परागसेचन प्रक्रियामा मद्दत गर्छ, जसले गर्दा उत्पादन बढ्छ।\n\nIn English:\n1. **Honey Production:** Farmers can earn extra income by selling honey.\n2. **Pollination:** Bees help in the pollination of crops, which increases agricultural yield."
         },
         {
-          "id": "23",
+          "id": "6",
           "type": "long_answer",
-          "questionNepali": "500 ग्राम तौल भएको ढुङ्गालाई 100°C बाट 20°C सम्म चिस्याउँदा कति ताप शक्ति गुमाउँछ? (ढुङ्गाको विशिष्ट तापधारण क्षमता = 800 J/kg°C)",
-          "questionEnglish": "How much heat energy is lost when a 500 g stone is cooled from 100°C to 20°C? (Specific heat capacity of stone = 800 J/kg°C)",
+          "questionNepali": "मियोसिस कोष विभाजनलाई न्यूनीकरण विभाजन भनिन्छ, किन? डिप्लोइड कोष भनेको के हो?",
+          "questionEnglish": "Why is meiosis cell division called reduction division? What is a diploid cell?",
           "marks": 2,
-          "sampleAnswer": "Mass (m) = 500 g = 0.5 kg.\nChange in temperature (dT) = 100°C - 20°C = 80°C.\nSpecific heat capacity (s) = 800 J/kg°C.\nHeat Lost (Q) = m * s * dT = 0.5 * 800 * 80 = 32,000 Joules."
+          "sampleAnswer": "नेपालीमा (In Nepali):\nमियोसिस कोष विभाजनमा मातृ कोष (parent cell) बाट बन्ने चारवटा सन्तति कोषहरू (daughter cells) मा क्रोमोजोमको सङ्ख्या आधा हुने भएकाले यसलाई न्यूनीकरण विभाजन भनिन्छ। डिप्लोइड कोष भनेको दुई सेट क्रोमोजोम (2n) भएको कोष हो।\n\nIn English:\nMeiosis is called reduction division because the number of chromosomes in the four daughter cells produced is halved compared to the parent cell. A diploid cell is a cell that contains two sets of chromosomes (2n)."
         },
         {
-          "id": "24",
+          "id": "7",
           "type": "long_answer",
-          "questionNepali": "ओजोन तह विनाशका दुई प्रमुख कारणहरू लेख्नुहोस्।",
-          "questionEnglish": "Write two main causes of ozone layer depletion.",
+          "questionNepali": "इनभिट्रो फर्टिलाइजेसन (IVF) भनेको के हो? छोटकरीमा व्याख्या गर्नुहोस्।",
+          "questionEnglish": "What is In-Vitro Fertilization (IVF)? Explain briefly about it.",
           "marks": 2,
-          "sampleAnswer": "1. **Chlorofluorocarbons (CFCs):** The primary cause is the release of man-made chemicals called chlorofluorocarbons (CFCs), which were widely used in refrigerants, aerosol sprays, and solvents. In the stratosphere, UV radiation breaks down CFCs, releasing chlorine atoms that catalytically destroy ozone molecules.\n2. **Halons and other ODS:** Other ozone-depleting substances (ODS) like halons (used in fire extinguishers) and methyl bromide (a pesticide) also release bromine and other reactive chemicals that contribute to ozone destruction."
+          "sampleAnswer": "नेपालीमा (In Nepali):\nइनभिट्रो फर्टिलाइजेसन (IVF) एक सहायक प्रजनन प्रविधि हो जसमा महिलाको डिम्बाशयबाट डिम्ब निकालेर प्रयोगशालामा पुरुषको शुक्रकीटसँग निषेचित गराइन्छ। बनेको भ्रूणलाई केही दिनपछि महिलाको पाठेघरमा प्रत्यारोपण गरिन्छ।\n\nIn English:\nIn-Vitro Fertilization (IVF) is an assisted reproductive technology in which an egg is removed from a woman's ovaries and fertilized with a man's sperm in a laboratory. The resulting embryo is then transferred into the woman's uterus after a few days."
         },
         {
-          "id": "25",
+          "id": "8",
           "type": "long_answer",
-          "questionNepali": "'सर्पलाई सरीसृप (Reptile) वर्गमा राखिन्छ।' दुई कारणसहित पुष्टि गर्नुहोस्।",
-          "questionEnglish": "'A snake is classified under class Reptilia.' Justify with two reasons.",
+          "questionNepali": "बेसार र घोडटाप्रेको एक-एक ओटा उपयोग लेख्नुहोस्।",
+          "questionEnglish": "Write one use each of Turmeric and Asiatic Pennywort.",
           "marks": 2,
-          "sampleAnswer": "A snake is classified as a reptile for the following reasons:\n1. **Scaly Skin:** Its body is covered with dry, horny scales, which is a defining characteristic of reptiles. This prevents water loss and provides protection.\n2. **Cold-Blooded (Poikilothermic):** Like other reptiles, snakes are cold-blooded, meaning their body temperature varies with the surrounding environmental temperature."
+          "sampleAnswer": "नेपालीमा (In Nepali):\n* **बेसार (Turmeric):** यसमा एन्टिसेप्टिक गुण हुन्छ र यसलाई घाउ निको पार्न प्रयोग गरिन्छ।\n* **घोडटाप्रे (Asiatic Pennywort):** यसले स्मरणशक्ति बढाउन मद्दत गर्छ र यसलाई मानसिक तनाव कम गर्न प्रयोग गरिन्छ।\n\nIn English:\n* **Turmeric:** It has antiseptic properties and is used for healing wounds.\n* **Asiatic Pennywort:** It helps improve memory and is used to relieve mental stress."
         },
         {
-          "id": "26",
+          "id": "9",
           "type": "long_answer",
-          "questionNepali": "किटनाशक औषधीको प्रयोग गर्दा अपनाउनुपर्ने दुईओटा सावधानीहरू लेख्नुहोस्।",
+          "questionNepali": "निम्न लक्षणहरू देखिने रोगको नाम लेख्नुहोस्: (i) टाउको दुख्ने, नाथ्रो फुट्ने, पसिना आउने (ii) धेरै भोक र तिर्खा लाग्ने, छिनछिनमा पिसाब लाग्ने",
+          "questionEnglish": "Write the name of diseases which have the following symptoms: (i) Headache, nose bleeding, sweating (ii) Excess appetite and thirst, frequent urination",
+          "marks": 2,
+          "sampleAnswer": "नेपालीमा (In Nepali):\n(i) उच्च रक्तचाप (High Blood Pressure)\n(ii) मधुमेह (Diabetes)\n\nIn English:\n(i) High Blood Pressure\n(ii) Diabetes"
+        },
+        {
+          "id": "10",
+          "type": "long_answer",
+          "questionNepali": "गुरुत्वप्रवेगको मान पृथ्वीको भू-मध्यरेखीय खण्डमा भन्दा ध्रुवीय खण्डमा बढी हुन्छ, किन?",
+          "questionEnglish": "The value of acceleration due to gravity is more in the polar region than the equatorial region, why?",
+          "marks": 2,
+          "sampleAnswer": "नेपालीमा (In Nepali):\nपृथ्वी ध्रुवमा चेप्टो र भूमध्यरेखामा फुकेको हुनाले ध्रुवीय अर्धव्यास कम हुन्छ। गुरुत्व प्रवेग (g) अर्धव्यासको वर्गसँग व्युत्क्रमानुपातिक (g ∝ 1/R²) हुने भएकाले, अर्धव्यास कम भएको ध्रुवीय क्षेत्रमा 'g' को मान बढी हुन्छ।\n\nIn English:\nSince the Earth is flattened at the poles and bulged at the equator, the polar radius is smaller. As the acceleration due to gravity (g) is inversely proportional to the square of the radius (g ∝ 1/R²), the value of 'g' is greater in the polar region where the radius is smaller."
+        },
+        {
+          "id": "11",
+          "type": "long_answer",
+          "questionNepali": "गुरुत्व प्रवेग (g) र गुरुत्वाकर्षण अचर (G) मा कुनै दुईओटा फरक लेख्नुहोस्।",
+          "questionEnglish": "Write any two differences between acceleration due to gravity (g) and gravitational constant (G).",
+          "marks": 2,
+          "sampleAnswer": "नेपालीमा (In Nepali):\n१. 'g' को मान स्थानअनुसार परिवर्तन हुन्छ, जबकि 'G' को मान ब्रह्माण्डमा जताततै स्थिर रहन्छ।\n२. 'g' को SI एकाइ m/s² हो, जबकि 'G' को SI एकाइ N m²/kg² हो।\n\nIn English:\n1. The value of 'g' varies from place to place, whereas the value of 'G' is constant throughout the universe.\n2. The SI unit of 'g' is m/s², whereas the SI unit of 'G' is N m²/kg²."
+        },
+        {
+          "id": "12",
+          "type": "long_answer",
+          "questionNepali": "चित्रमा देखाइएको ट्रान्सफर्मर कुन प्रकारको हो? यदि प्राइमरी क्वाइलमा 1000 फन्का र सेकेन्डरी क्वाइलमा 50 फन्का छन् र A मा 220 V भोल्टेज पठाइयो भने B मा कति भोल्टेज उत्पन्न हुन्छ?",
+          "questionEnglish": "What type of transformer is shown in the figure? If there are 1000 turns in the primary coil and 50 in the secondary, and 220 V is supplied to A, what voltage is produced at B?",
+          "marks": 2,
+          "sampleAnswer": "नेपालीमा (In Nepali):\nयो स्टेप-डाउन ट्रान्सफर्मर हो।\nगणना:\nNp = 1000, Ns = 50, Vp = 220 V, Vs = ?\nVs/Vp = Ns/Np\nVs/220 = 50/1000\nVs = (50 × 220) / 1000 = 11 V\n\nIn English:\nThis is a step-down transformer.\nCalculation:\nNp = 1000, Ns = 50, Vp = 220 V, Vs = ?\nVs/Vp = Ns/Np\nVs/220 = 50/1000\nVs = (50 × 220) / 1000 = 11 V"
+        },
+        {
+          "id": "13",
+          "type": "long_answer",
+          "questionNepali": "विद्युत चुम्बक प्रयोग भएको एउटा उपकरणको नाम लेखी त्यसको एउटा उपयोगिता पनि लेख्नुहोस्।",
+          "questionEnglish": "Name an instrument in which an electromagnet is used, and write one of its uses.",
+          "marks": 2,
+          "sampleAnswer": "नेपालीमा (In Nepali):\n* **उपकरण:** विद्युत घण्टी (Electric Bell)\n* **उपयोगिता:** यसले विद्युत ऊर्जालाई ध्वनि ऊर्जामा परिणत गरी सचेत गराउने वा बोलाउने काम गर्छ।\n\nIn English:\n* **Instrument:** Electric Bell\n* **Use:** It converts electrical energy into sound energy to alert or call someone."
+        },
+        {
+          "id": "14",
+          "type": "long_answer",
+          "questionNepali": "बिकर A मा ३०°C तापक्रम भएको फिक्का HCl र बिकर B मा २०°C तापक्रम भएको फिक्का HCl राखिएको छ। दुवैमा समान साइजका चुनढुङ्गाका टुक्राहरू राख्दा कुनमा चाँडो रासायनिक प्रतिक्रिया हुन्छ, किन?",
+          "questionEnglish": "Beaker A contains dilute HCl at 30°C and beaker B contains dilute HCl at 20°C. If limestone pieces of the same size are placed in both beakers, in which beaker will the reaction be faster? Why?",
+          "marks": 2,
+          "sampleAnswer": "नेपालीमा (In Nepali):\nबिकर A मा प्रतिक्रिया चाँडो हुन्छ। किनभने तापक्रम बढी हुँदा अणुहरूको गति शक्ति बढ्छ, जसले गर्दा तिनीहरूबीचको ठक्करको दर बढ्छ र रासायनिक प्रतिक्रियाको दर पनि बढ्छ।\n\nIn English:\nThe reaction will be faster in beaker A. This is because at a higher temperature, the kinetic energy of the molecules increases, leading to a higher rate of collision between them and thus a faster rate of chemical reaction."
+        },
+        {
+          "id": "15",
+          "type": "long_answer",
+          "questionNepali": "एक विद्यार्थीले मिथेन र अर्कोले प्रोपेनको मोडल बनाए। शिक्षकले दुवै मोडलका छेउको हाइड्रोजन निकालेर दुवैलाई आपसमा जोडिदिनुभयो। अब कुन हाइड्रोकार्बन तयार भयो? यसको संरचना सूत्र पनि बनाउनुहोस्।",
+          "questionEnglish": "A student made a model of methane and another student made a model of propane. Their teacher removed one hydrogen atom from the end of each model and joined them together. Which hydrocarbon is formed now? Write its structural formula too.",
+          "marks": 2,
+          "sampleAnswer": "नेपालीमा (In Nepali):\nब्युटेन (Butane) तयार भयो।\nसंरचना सूत्र:\n    H   H   H   H\n    |   |   |   |\nH - C - C - C - C - H\n    |   |   |   |\n    H   H   H   H\n\nIn English:\nButane is formed.\nStructural Formula:\n    H   H   H   H\n    |   |   |   |\nH - C - C - C - C - H\n    |   |   |   |\n    H   H   H   H"
+        },
+        {
+          "id": "16",
+          "type": "long_answer",
+          "questionNepali": "कीटनाशक औषधीको प्रयोग गर्दा अपनाउनुपर्ने दुईओटा सावधानीहरू लेख्नुहोस्।",
           "questionEnglish": "Write any two precautions to be taken while using insecticides.",
           "marks": 2,
-          "sampleAnswer": "1. **Use Protective Gear:** Always wear protective clothing, including gloves, masks, and goggles, to prevent direct contact with the skin, eyes, and respiratory system.\n2. **Follow Instructions and Proper Disposal:** Read and strictly follow the manufacturer's instructions regarding dosage and application. Dispose of empty containers safely and do not wash equipment in or near water sources to prevent contamination."
-        },
-        {
-          "id": "27",
-          "type": "long_answer",
-          "questionNepali": "2A को करेन्ट 2 मिनेटसम्म एउटा तारमा प्रवाह हुँदा कति चार्ज (charge) बग्छ?",
-          "questionEnglish": "How much charge flows through a wire when a current of 2A flows for 2 minutes?",
-          "marks": 2,
-          "sampleAnswer": "Current (I) = 2 A.\nTime (t) = 2 minutes = 2 * 60 = 120 seconds.\nCharge (Q) = I * t = 2 A * 120 s = 240 Coulombs."
-        },
-        {
-          "id": "28",
-          "type": "long_answer",
-          "questionNepali": "अनलाइन सामाजिक सञ्जाल प्रयोग गर्दा हुने दुईओटा सकारात्मक प्रभावहरू लेख्नुहोस्।",
-          "questionEnglish": "Write any two positive effects of using online social media.",
-          "marks": 2,
-          "sampleAnswer": "1. **Connectivity and Communication:** Social media allows people to connect and stay in touch with friends and family across geographical boundaries, fostering relationships and a sense of community.\n2. **Information Dissemination:** It serves as a rapid platform for spreading news, raising awareness about social issues, and organizing events or movements for social causes."
-        },
-        {
-          "id": "29",
-          "type": "long_answer",
-          "questionNepali": "एउटा वस्तुलाई पानीमा डुबाउँदा पानीले त्यस वस्तुलाई माथितिर धकेल्न लगाउने बललाई के भनिन्छ? यो बल कुन दुई कुरामा निर्भर गर्छ?",
-          "questionEnglish": "Name the force applied by water in an upward direction to the body immersed in it. On which two factors does this force depend?",
-          "marks": 2,
-          "sampleAnswer": "**Force:** The upward force is called Upthrust or Buoyant Force.\n**Factors:** This force depends on:\n1. The volume of the object submerged in the fluid.\n2. The density of the fluid."
-        },
-        {
-          "id": "30",
-          "type": "long_answer",
-          "questionNepali": "युनिभर्सल डोनर (universal donor) र युनिभर्सल रिसिपियन्ट (universal recipient) कुन-कुन रक्त समूहलाई भनिन्छ?",
-          "questionEnglish": "Which blood groups are called the universal donor and the universal recipient?",
-          "marks": 2,
-          "sampleAnswer": "**Universal Donor:** Blood group O-negative (O-) is considered the universal donor because its red blood cells lack A, B, and Rh antigens, making them safe to transfuse to any other blood group in emergencies.\n**Universal Recipient:** Blood group AB-positive (AB+) is considered the universal recipient because its plasma lacks both anti-A and anti-B antibodies, allowing it to receive red blood cells from any other blood group."
-        },
-        {
-          "id": "31",
-          "type": "long_answer",
-          "questionNepali": "हाइड्रोकार्बनलाई किन प्राङ्गारिक यौगिक भनिन्छ? एक उदाहरण दिनुहोस्।",
-          "questionEnglish": "Why are hydrocarbons called organic compounds? Give one example.",
-          "marks": 2,
-          "sampleAnswer": "**Reason:** Hydrocarbons are called organic compounds because they are composed primarily of carbon and hydrogen atoms. Carbon is the fundamental element of life, and historically, organic compounds were believed to originate only from living organisms.\n**Example:** Methane (CH₄) is the simplest hydrocarbon."
-        },
-        {
-          "id": "32",
-          "type": "long_answer",
-          "questionNepali": "विद्युत चुम्बकको कुनै दुई उपयोगिता लेख्नुहोस्।",
-          "questionEnglish": "Write any two uses of an electromagnet.",
-          "marks": 2,
-          "sampleAnswer": "1. **In Electric Bells and Relays:** Electromagnets are used to operate the hammer in electric bells and to switch circuits in relays.\n2. **In Lifting Heavy Objects:** Large, powerful electromagnets are used in cranes in scrapyards to lift and move heavy iron and steel objects."
-        },
-        {
-          "id": "33",
-          "type": "long_answer",
-          "questionNepali": "प्रकाशको आवर्तनका दुई नियमहरू लेख्नुहोस्।",
-          "questionEnglish": "Write the two laws of refraction of light.",
-          "marks": 2,
-          "sampleAnswer": "1. **First Law:** The incident ray, the refracted ray, and the normal to the interface at the point of incidence, all lie in the same plane.\n2. **Second Law (Snell's Law):** The ratio of the sine of the angle of incidence (i) to the sine of the angle of refraction (r) is a constant for a given pair of media. This constant is called the refractive index (μ). (sin i / sin r = constant)."
+          "sampleAnswer": "नेपालीमा (In Nepali):\n१. कीटनाशक छर्किँदा शरीर पूरै ढाक्ने कपडा, मास्क, पन्जा र चस्मा लगाउनुपर्छ।\n२. कीटनाशक छर्किसकेपछि तुरुन्तै साबुन पानीले हातखुट्टा र शरीर राम्ररी धुनुपर्छ।\n\nIn English:\n1. Wear protective clothing that covers the whole body, including a mask, gloves, and goggles, when spraying pesticides.\n2. Wash hands, feet, and body thoroughly with soap and water immediately after spraying pesticides."
         }
       ],
       "groupD": [
         {
-          "id": "34",
+          "id": "17",
           "type": "essay",
-          "questionNepali": "मानव मुटुको कार्यप्रणालीलाई 'दोहोरो रक्तसञ्चार' किन भनिन्छ? पल्मोनरी र सिस्टमिक रक्तसञ्चारलाई छोटकरीमा व्याख्या गर्नुहोस्।",
-          "questionEnglish": "Why is the working mechanism of the human heart called 'double circulation'? Briefly explain pulmonary and systemic circulation.",
+          "questionNepali": "अनलाइनमा बसेर सामाजिक सञ्जाल प्रयोग गर्दा हुने दुईओटा सकारात्मक र दुईओटा नकारात्मक प्रभावहरू लेख्नुहोस्।",
+          "questionEnglish": "Write any two positive and two negative effects of using online social media.",
           "marks": 4,
-          "sampleAnswer": "**Double Circulation:**\nThe circulation in the human heart is called double circulation because the blood passes through the heart twice for each complete circuit of the body. The heart acts as a double pump, with the right side handling deoxygenated blood and the left side handling oxygenated blood in two separate circuits.\n\n**Pulmonary Circulation:**\nThis is the circuit that carries deoxygenated blood from the heart to the lungs and brings oxygenated blood back to the heart.\n1.  Deoxygenated blood from the body enters the right atrium and is pumped into the right ventricle.\n2.  The right ventricle pumps this deoxygenated blood into the pulmonary artery, which carries it to the lungs.\n3.  In the lungs, the blood releases carbon dioxide and picks up oxygen.\n4.  This newly oxygenated blood returns to the left atrium of the heart via the pulmonary vein.\n\n**Systemic Circulation:**\nThis is the circuit that carries oxygenated blood from the heart to the rest of the body and returns deoxygenated blood back to the heart.\n1.  Oxygenated blood from the lungs enters the left atrium and is pumped into the left ventricle.\n2.  The powerful left ventricle pumps this oxygenated blood into the aorta.\n3.  The aorta branches into smaller arteries, supplying oxygen and nutrients to all body tissues.\n4.  Deoxygenated blood, now carrying waste products, is collected by veins and returns to the right atrium of the heart through the vena cava, completing the circuit."
+          "sampleAnswer": "नेपालीमा (In Nepali):\n**सकारात्मक प्रभावहरू:**\n१. **सञ्चार र सम्बन्ध:** टाढा रहेका साथीभाइ र परिवारसँग सजिलै सम्पर्कमा रहन सकिन्छ, जसले सम्बन्ध बलियो बनाउँछ।\n२. **सूचना र जागरूकता:** सामाजिक सञ्जालले विश्वभरका समाचार, घटना र सामाजिक मुद्दाहरूबारे छिटो जानकारी प्रदान गर्छ, जसले जागरूकता बढाउँछ।\n\n**नकारात्मक प्रभावहरू:**\n१. **मानसिक स्वास्थ्यमा असर:** अरूको जीवनसँग आफ्नो तुलना, साइबरबुलिङ र अनलाइन दुर्व्यवहारले चिन्ता, डिप्रेसन र आत्मसम्मानमा कमी ल्याउन सक्छ।\n२. **गलत सूचनाको प्रसार:** सामाजिक सञ्जालमा गलत समाचार र अफवाहहरू छिट्टै फैलिन्छन्, जसले समाजमा भ्रम र नकारात्मकता सिर्जना गर्न सक्छ।\n\nIn English:\n**Positive Effects:**\n1. **Communication and Connection:** It allows easy contact with friends and family who are far away, strengthening relationships.\n2. **Information and Awareness:** Social media provides quick information about news, events, and social issues worldwide, increasing awareness.\n\n**Negative Effects:**\n1. **Impact on Mental Health:** Comparison with others' lives, cyberbullying, and online harassment can lead to anxiety, depression, and low self-esteem.\n2. **Spread of Misinformation:** False news and rumors spread rapidly on social media, which can create confusion and negativity in society."
         },
         {
-          "id": "35",
+          "id": "18",
           "type": "essay",
-          "questionNepali": "एउटा ट्रान्सफर्मरको प्राइमरी क्वाइलमा 400 फन्का र सेकेन्डरी क्वाइलमा 2000 फन्का छन्। यदि प्राइमरी क्वाइलमा 220 V को AC पठाउँदा 1 A को करेन्ट प्रवाह हुन्छ भने, (i) यो कुन प्रकारको ट्रान्सफर्मर हो? (ii) सेकेन्डरी भोल्टेज कति हुन्छ? (iii) सेकेन्डरी करेन्ट कति हुन्छ? (iv) यस प्रकारको ट्रान्सफर्मरको एउटा उपयोग लेख्नुहोस्।",
-          "questionEnglish": "A transformer has 400 turns in the primary coil and 2000 turns in the secondary coil. If 220 V AC is supplied to the primary coil and a current of 1 A flows, find: (i) What type of transformer is this? (ii) What is the secondary voltage? (iii) What is the secondary current? (iv) Write one use of this type of transformer.",
+          "questionNepali": "के बाबु आमा दुवै कालो हुँदा पनि गोरो सन्तान जन्मन सक्छ? मेन्डलको सिद्धान्तको आधारमा कसरी यो सम्भव भयो? चार्टमा देखाइ कारणसहित व्याख्या गर्नुहोस्।",
+          "questionEnglish": "Can a white-skinned child be born even though both parents are black-skinned? Based on Mendel's principles, how is this possible? Explain with a chart and reason.",
           "marks": 4,
-          "sampleAnswer": "**(i) Type of Transformer:**\nSince the number of turns in the secondary coil (Ns = 2000) is greater than the number of turns in the primary coil (Np = 400), this is a **Step-up transformer**.\n\n**(ii) Secondary Voltage (Vs):**\nUsing the formula Vs / Vp = Ns / Np:\nVs / 220 V = 2000 / 400\nVs / 220 V = 5\nVs = 5 * 220 V = **1100 V**\n\n**(iii) Secondary Current (Is):**\nAssuming an ideal transformer, the power in the primary coil equals the power in the secondary coil (Vp * Ip = Vs * Is).\n220 V * 1 A = 1100 V * Is\n220 = 1100 * Is\nIs = 220 / 1100 = **0.2 A**\n\n**(iv) Use of a Step-up Transformer:**\nStep-up transformers are used at power stations to increase the voltage for efficient long-distance transmission of electricity."
+          "sampleAnswer": "नेपालीमा (In Nepali):\nहो, दुवै बाबु आमा कालो हुँदा पनि गोरो सन्तान जन्मन सक्छ। यो तब सम्भव हुन्छ जब दुवै अभिभावक ठिमाहा (hybrid) कालो (Bb) हुन्छन्, जहाँ कालो रङ्गको जीन (B) प्रबल र गोरो रङ्गको जीन (b) लुप्त हुन्छ।\n\n**कारण:** मेन्डलको ग्यामेटको शुद्धताको नियमअनुसार, ग्यामेट बन्ने क्रममा जीनहरू छुट्टिन्छन्। यदि दुवै अभिभावकबाट लुप्त जीन (b) भएको ग्यामेटहरू मिल्न गएमा, सन्तानको जिनोटाइप (bb) हुन्छ, जसले गर्दा गोरो सन्तान जन्मिन्छ।\n\n**चार्ट:**\n* **अभिभावक (Parents):** ठिमाहा कालो (Bb) × ठिमाहा कालो (Bb)\n* **ग्यामेटहरू (Gametes):** (B), (b) × (B), (b)\n* **दोस्रो वंश (F₂ Generation):**\n  * BB (शुद्ध कालो)\n  * Bb (ठिमाहा कालो)\n  * Bb (ठिमाहा कालो)\n  * bb (शुद्ध गोरो)\nयसबाट २५% सम्भावना गोरो सन्तान जन्मिने देखिन्छ।\n\nIn English:\nYes, a white-skinned child can be born to two black-skinned parents. This is possible if both parents are hybrid black (Bb), where the gene for black skin (B) is dominant and the gene for white skin (b) is recessive.\n\n**Reason:** According to Mendel's Law of Segregation, genes separate during gamete formation. If gametes containing the recessive gene (b) from both parents fuse, the offspring will have the genotype (bb), resulting in a white-skinned child.\n\n**Chart:**\n* **Parents:** Hybrid Black (Bb) × Hybrid Black (Bb)\n* **Gametes:** (B), (b) × (B), (b)\n* **F₂ Generation:**\n  * BB (Pure Black)\n  * Bb (Hybrid Black)\n  * Bb (Hybrid Black)\n  * bb (Pure White)\nThis shows there is a 25% probability of having a white-skinned child."
         },
         {
-          "id": "36",
+          "id": "19",
           "type": "essay",
-          "questionNepali": "सोडियम (Na, Atomic No. 11) र क्लोरिन (Cl, Atomic No. 17) को उपसेलको आधारमा इलेक्ट्रोनिक विन्यास लेख्नुहोस्। तिनीहरूको पिरियडिक तालिकाको समूह र पिरियड उल्लेख गर्नुहोस्। तिनीहरूबीच रासायनिक प्रतिक्रिया हुँदा बन्ने सन्तुलित रासायनिक समीकरण लेख्नुहोस्।",
-          "questionEnglish": "Write the electronic configuration of Sodium (Na, Atomic No. 11) and Chlorine (Cl, Atomic No. 17) on the basis of sub-shells. Mention their group and period in the periodic table. Write the balanced chemical equation for the reaction between them.",
+          "questionNepali": "८०°C तापक्रम भएको 1 kg को फलामको डल्लोलाई २०°C तापक्रमसम्म चिस्याउँदा कति तापशक्ति गुमाउँछ? (फलामको विशिष्ट तापधारण क्षमता = 460 J/kg°C)। पानीलाई ०°C देखि १०°C सम्म तताउँदा तापक्रम र पानीको आयतनको सम्बन्ध ग्राफमा देखाउनुहोस्।",
+          "questionEnglish": "An iron ball of mass 1 kg at 80°C is cooled to 20°C. How much heat energy is lost by the iron ball? (Specific heat capacity of iron = 460 J/kg°C). Draw a graph that shows the relationship between temperature and volume when water is heated from 0°C to 10°C.",
           "marks": 4,
-          "sampleAnswer": "**Sodium (Na):**\n* **Electronic Configuration:** 1s², 2s²2p⁶, 3s¹\n* **Group:** Since the last electron is in the 's' subshell and there is 1 valence electron, it belongs to **Group IA**.\n* **Period:** The highest principal quantum number is 3, so it is in **Period 3**.\n\n**Chlorine (Cl):**\n* **Electronic Configuration:** 1s², 2s²2p⁶, 3s²3p⁵\n* **Group:** It is a p-block element. Group number = 10 + (electrons in s + p of valence shell) = 10 + (2 + 5) = **Group 17 (or VIIA)**.\n* **Period:** The highest principal quantum number is 3, so it is in **Period 3**.\n\n**Balanced Chemical Equation:**\nSodium, a metal, reacts with Chlorine, a non-metal, to form the ionic compound Sodium Chloride.\n2Na + Cl₂ → 2NaCl"
+          "sampleAnswer": "नेपालीमा (In Nepali):\n**गणना:**\nयहाँ, पिण्ड (m) = 1 kg\nविशिष्ट ताप धारण क्षमता (s) = 460 J/kg°C\nतापक्रममा परिवर्तन (dT) = 80°C - 20°C = 60°C\nगुमेको ताप शक्ति (Q) = m × s × dT\nQ = 1 × 460 × 60 = 27600 J\n\n**ग्राफ:**\n(विद्यार्थीले एउटा ग्राफ कोर्नुपर्छ जसको x-अक्षमा तापक्रम (°C) र y-अक्षमा आयतन (Volume) हुन्छ। ग्राफले ०°C बाट ४°C सम्म आयतन घट्दै गएको र त्यसपछि ४°C बाट १०°C सम्म बढ्दै गएको देखाउनुपर्छ, जहाँ ४°C मा आयतन न्यूनतम हुन्छ।)\n\nIn English:\n**Calculation:**\nGiven, Mass (m) = 1 kg\nSpecific heat capacity (s) = 460 J/kg°C\nChange in temperature (dT) = 80°C - 20°C = 60°C\nHeat energy lost (Q) = m × s × dT\nQ = 1 × 460 × 60 = 27600 J\n\n**Graph:**\n(The student should draw a graph with Temperature (°C) on the x-axis and Volume on the y-axis. The graph should show the volume decreasing from 0°C to 4°C, and then increasing from 4°C to 10°C, with the minimum volume at 4°C.)"
         },
         {
-          "id": "37",
+          "id": "20",
           "type": "essay",
-          "questionNepali": "कारण दिनुहोस्: (i) चन्द्रमामा वस्तुको तौल पृथ्वीमा भन्दा कम हुन्छ। (ii) हामीले चन्द्रमाको एउटा पाटो मात्र देख्न सक्छौँ। (iii) ताराहरू चम्किन्छन्। (iv) गर्मीमा भन्दा जाडोमा ध्वनि टाढासम्म सुनिन्छ।",
-          "questionEnglish": "Give reasons: (i) The weight of an object on the Moon is less than on the Earth. (ii) We can only see one side of the Moon. (iii) Stars twinkle. (iv) Sound is heard farther in winter than in summer.",
+          "questionNepali": "काँच र हिरामा, हिरा बढी चम्किनुका दुईओटा कारणहरू लेख्नुहोस्। सेतो प्रकाशलाई प्रिज्मबाट पठाउँदा सात अलग-अलग रङमा विच्छेदन हुने प्रक्रियाको चित्र बनाउनुहोस् र रङहरूको नाम क्रमसँग लेख्नुहोस्।",
+          "questionEnglish": "Between glass and diamond, write two reasons why diamond shines more. Draw a diagram to show the splitting of white light into seven colors when it passes through a prism, and label the colors in the correct order.",
           "marks": 4,
-          "sampleAnswer": "**(i) Weight on the Moon is less:** The weight of an object (W=mg) depends on the acceleration due to gravity (g). The Moon has significantly less mass and a smaller radius than the Earth, resulting in a much weaker gravitational pull (about 1/6th of Earth's). Therefore, the value of 'g' on the Moon is less, and the object's weight is consequently less.\n\n**(ii) We see only one side of the Moon:** This is due to 'synchronous rotation' or 'tidal locking'. The Moon rotates on its axis in exactly the same amount of time it takes to revolve once around the Earth. As a result, the same hemisphere of the Moon constantly faces the Earth.\n\n**(iii) Stars twinkle:** Stars appear to twinkle because their light has to travel through the Earth's turbulent atmosphere. The constantly moving layers of air have varying densities and temperatures, which cause the starlight to refract or bend multiple times before it reaches our eyes. This continuous bending makes the star's apparent position and brightness fluctuate, which we perceive as twinkling.\n\n**(iv) Sound travels farther in winter:** In winter, the air near the ground is colder and denser than the air above it. Sound travels slower in colder, denser air. This difference in speed causes the sound waves to refract or bend downwards towards the ground, allowing them to travel a greater distance along the surface before dissipating."
+          "sampleAnswer": "नेपालीमा (In Nepali):\n**हिरा बढी चम्किनुका कारणहरू:**\n१. **उच्च आवर्तनांक (High Refractive Index):** हिराको आवर्तनांक (≈2.42) काँचको (≈1.5) भन्दा धेरै बढी हुन्छ, जसले गर्दा प्रकाश बढी बाङ्गिन्छ।\n२. **कम क्रिटिकल कोण (Low Critical Angle):** हिराको क्रिटिकल कोण (≈24°) धेरै कम हुन्छ। यसले गर्दा भित्र पसेको प्रकाश सजिलै बाहिर निस्कन पाउँदैन र पटक-पटक पूर्ण आन्तरिक परावर्तन हुन्छ, जसले गर्दा यो चम्किलो देखिन्छ।\n\n**चित्र:**\n(विद्यार्थीले एउटा प्रिज्मको चित्र कोरेर त्यसमा सेतो प्रकाश प्रवेश गराई सातवटा रङमा छुट्टिएको देखाउनुपर्छ। रङहरूको क्रम तलबाट माथितिर बैजनी, आकासे, नीलो, हरियो, पहेँलो, सुन्तला र रातो (VIBGYOR) हुनुपर्छ।)\n\nIn English:\n**Reasons why diamond shines more:**\n1. **High Refractive Index:** Diamond has a much higher refractive index (≈2.42) than glass (≈1.5), which causes light to bend more significantly.\n2. **Low Critical Angle:** The critical angle of diamond is very low (≈24°). This means that light entering the diamond does not easily escape and undergoes multiple total internal reflections, making it sparkle.\n\n**Diagram:**\n(The student should draw a diagram of a prism, showing a ray of white light entering and dispersing into seven colors. The order of colors from bottom to top must be Violet, Indigo, Blue, Green, Yellow, Orange, and Red (VIBGYOR).)"
         },
         {
-          "id": "38",
+          "id": "21",
           "type": "essay",
-          "questionNepali": "कुनै वस्तुको पिण्ड 10 kg छ र यो 5 m/s को वेगले गुडिरहेको छ। (i) यसको संवेग (momentum) कति हुन्छ? (ii) यसको गति शक्ति (kinetic energy) कति हुन्छ? (iii) यदि यसलाई 2 सेकेन्डमा रोक्नको लागि कति बल लगाउनुपर्छ?",
-          "questionEnglish": "An object of mass 10 kg is moving with a velocity of 5 m/s. (i) What is its momentum? (ii) What is its kinetic energy? (iii) How much force is required to stop it in 2 seconds?",
+          "questionNepali": "प्लाज्मामा पाइने तीनओटा प्रोटिनको नाम लेख्नुहोस्। रगत जम्न सहयोग गर्ने प्रोटिन हटाएपछिको प्लाज्मालाई के भनिन्छ?",
+          "questionEnglish": "Write the names of three proteins found in plasma. What is the plasma called after the removal of the protein that helps in the clotting of blood?",
           "marks": 4,
-          "sampleAnswer": "**Given:**\nMass (m) = 10 kg\nInitial velocity (u) = 5 m/s\n\n**(i) Momentum (p):**\nMomentum = mass × velocity\np = 10 kg × 5 m/s = **50 kg m/s**\n\n**(ii) Kinetic Energy (KE):**\nKinetic Energy = ½ * m * v²\nKE = ½ * 10 kg * (5 m/s)²\nKE = 5 * 25 = **125 Joules**\n\n**(iii) Force required to stop:**\nTo stop the object, its final velocity (v) must be 0 m/s. Time (t) = 2 s.\nFirst, calculate the acceleration (deceleration):\na = (v - u) / t = (0 - 5) / 2 = -2.5 m/s²\nNow, calculate the force (F) using F = ma:\nF = 10 kg × (-2.5 m/s²)\nF = **-25 N**\nThe negative sign indicates the force is applied in the opposite direction of motion. So, a force of 25 N is required."
+          "sampleAnswer": "नेपालीमा (In Nepali):\n**प्लाज्मामा पाइने तीन प्रोटिनहरू हुन्:**\n१. **एल्बुमिन (Albumin):** यसले रगतको पानीको मात्रा नियन्त्रण गर्छ।\n२. **ग्लोबुलिन (Globulin):** यसले शरीरको प्रतिरक्षा प्रणालीमा मद्दत गर्छ।\n३. **फाइब्रिनोजेन (Fibrinogen):** यसले रगत जमाउन मद्दत गर्छ।\n\nरगत जम्न सहयोग गर्ने प्रोटिन (फाइब्रिनोजेन) हटाएपछिको प्लाज्मालाई **सिरम (Serum)** भनिन्छ।\n\nIn English:\n**Three proteins found in plasma are:**\n1. **Albumin:** It regulates the amount of water in the blood.\n2. **Globulin:** It helps in the body's immune system.\n3. **Fibrinogen:** It helps in the clotting of blood.\n\nThe plasma after the removal of the clotting protein (fibrinogen) is called **Serum**."
         },
         {
-          "id": "39",
+          "id": "22",
           "type": "essay",
-          "questionNepali": "पानीको असाधारण प्रसारको व्याख्या गर्नुहोस्। यसले जलचरहरूलाई कसरी फाइदा पुऱ्याएको छ, वर्णन गर्नुहोस्।",
-          "questionEnglish": "Explain the anomalous expansion of water. Describe how it benefits aquatic animals.",
+          "questionNepali": "सोडियम र पोटासियममा कुन तत्व बढी सक्रिय हुन्छ, किन? क्लोरिनको उपसेलको आधारमा इलेक्ट्रोन विन्यास लेख्नुहोस् र यसको पिरियोडिक तालिकाको समूह उल्लेख गर्नुहोस्।",
+          "questionEnglish": "Which element is more reactive between sodium and potassium, why? Write the electronic configuration of chlorine on the basis of sub-shell and write its group in the periodic table.",
           "marks": 4,
-          "sampleAnswer": "**Anomalous Expansion of Water:**\nMost substances contract continuously when cooled. Water, however, behaves unusually. It contracts as it cools until it reaches a temperature of 4°C. Upon further cooling from 4°C to 0°C, it starts to expand instead of contracting. This unusual expansion of water when cooled between 4°C and 0°C is known as the anomalous expansion of water. Because of this, water has its maximum density at 4°C, and ice at 0°C is less dense than the water at 4°C.\n\n**Benefit to Aquatic Animals:**\nThis unique property is crucial for the survival of aquatic life in cold climates.\n1.  As the temperature of a lake or pond drops during winter, the surface water cools, becomes denser, and sinks. This process continues until all the water in the lake reaches 4°C.\n2.  As the surface water cools further below 4°C, it becomes less dense due to anomalous expansion. Therefore, this colder water (at 3°C, 2°C, 1°C) remains on top.\n3.  At 0°C, the surface water freezes into ice, which is even less dense, so it floats on the surface.\n4.  This top layer of ice acts as an insulator, preventing the heat from the water below from escaping into the cold atmosphere. This ensures that the water at the bottom of the lake remains at 4°C, allowing fish and other aquatic animals to survive in the liquid water below the ice."
+          "sampleAnswer": "नेपालीमा (In Nepali):\n**पोटासियम (K)** सोडियम (Na) भन्दा बढी सक्रिय हुन्छ।\n**कारण:** पोटासियमको परमाणु आकार सोडियमको भन्दा ठूलो हुन्छ। ठूलो आकारको कारणले, भ्यालेन्स इलेक्ट्रोन र न्युक्लियसबीचको आकर्षण बल कम हुन्छ, जसले गर्दा पोटासियमले आफ्नो भ्यालेन्स इलेक्ट्रोन सोडियमभन्दा सजिलै गुमाउन सक्छ, त्यसैले यो बढी प्रतिक्रियाशील हुन्छ।\n\n**क्लोरिन (Cl) को इलेक्ट्रोन विन्यास:** 1s², 2s²2p⁶, 3s²3p⁵\n**समूह:** VIIA (वा 17)\n\nIn English:\n**Potassium (K)** is more reactive than sodium (Na).\n**Reason:** Potassium has a larger atomic size than sodium. Due to its larger size, the force of attraction between the nucleus and the valence electron is weaker, which allows potassium to lose its valence electron more easily than sodium, making it more reactive.\n\n**Electronic configuration of Chlorine (Cl):** 1s², 2s²2p⁶, 3s²3p⁵\n**Group:** VIIA (or 17)"
         },
         {
-          "id": "40",
+          "id": "23",
           "type": "essay",
-          "questionNepali": "डिजिटल आरोग्यता (Digital Wellbeing) हासिल गर्ने कुनै चार तरिकाहरू उल्लेख गर्नुहोस्।",
-          "questionEnglish": "Mention any four ways of gaining digital wellbeing.",
+          "questionNepali": "प्रयोगशालामा एमोनिया ग्यास बनाउने विधिको सफा चित्र बनाई कुनै एउटा भागको नामाकरण गर्नुहोस्। यस प्रक्रियामा प्रयोग हुने लाइम टावरको काम के हो?",
+          "questionEnglish": "Draw a neat diagram of the apparatus used to prepare ammonia gas in the laboratory and label any one part. What is the function of the lime tower in this process?",
           "marks": 4,
-          "sampleAnswer": "Digital wellbeing refers to maintaining a healthy relationship with technology. Here are four ways to achieve it:\n\n1.  **Monitor and Manage Screen Time:** Use built-in tools on smartphones and computers to track how much time you spend on different apps and websites. Set daily time limits for specific applications, especially social media and games, to prevent excessive use.\n\n2.  **Establish 'No-Tech' Zones and Times:** Designate certain times of the day (e.g., during meals, an hour before bed) or certain physical areas (e.g., the bedroom) as technology-free zones. This helps in being more present in the real world and improves sleep quality.\n\n3.  **Curate Your Digital Content:** Actively manage what you see online. Unfollow accounts or mute conversations that cause stress, anxiety, or negativity. Prioritize content that is informative, positive, and aligns with your goals and hobbies.\n\n4.  **Practice Digital Detoxing:** Regularly schedule periods of time, from a few hours to a full day or weekend, to completely disconnect from all digital devices. This allows your mind to rest and reset, reduces digital fatigue, and encourages engagement in offline activities."
+          "sampleAnswer": "नेपालीमा (In Nepali):\n(विद्यार्थीले प्रयोगशालामा एमोनिया ग्यास बनाउने उपकरणको सफा चित्र बनाउनुपर्छ, जसमा स्ट्यान्डमा राखिएको हार्ड ग्लास टेस्ट ट्युब, लाइम टावर र घोप्टो ग्यास जार देखाइएको हुनुपर्छ। कुनै एक भाग, जस्तै 'लाइम टावर' वा 'हार्ड ग्लास टेस्ट ट्युब' नामाकरण गर्नुपर्छ।)\n\n**लाइम टावरको काम:**\nलाइम टावरमा क्याल्सियम अक्साइड (CaO) राखिएको हुन्छ। यसको मुख्य काम प्रतिक्रियाबाट उत्पन्न भएको एमोनिया ग्यासमा रहेको चिस्यान (moisture) लाई सोसेर सुक्खा एमोनिया ग्यास बनाउनु हो।\n\nIn English:\n(The student should draw a neat diagram of the apparatus for the laboratory preparation of ammonia gas, showing a hard glass test tube on a stand, a lime tower, and an inverted gas jar. Any one part, such as 'Lime tower' or 'Hard glass test tube', should be labeled.)\n\n**Function of the Lime Tower:**\nThe lime tower contains calcium oxide (CaO). Its main function is to dry the ammonia gas produced from the reaction by absorbing any moisture present in it."
         }
       ]
     }

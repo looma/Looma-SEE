@@ -1,0 +1,550 @@
+[
+  {
+    "_id": "see_2081_english_practice_5_generated",
+    "title": "SEE 2081 English Practice Test 5 (Generated Questions)",
+    "titleNepali": "SEE २०८१ अंग्रेजी अभ्यास परीक्षा ५ (उत्पन्न प्रश्नहरू)",
+    "subject": "english",
+    "year": 2081,
+    "totalMarks": 75,
+    "duration": 180,
+    "instructionsEnglish": "Candidates are required to answer the questions in their own words as far as practicable. Figures in the margin indicate the full marks. Attempt all the questions.",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-31T02:49:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-31T02:49:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "687d809a2f3df9d071c52114"
+    },
+    "testId": "see_2081_english_practice_5_generated",
+    "questions": [
+      {
+        "questionNumber": 1,
+        "type": "reading_comprehension",
+        "title": "Read the poem and answer the questions that follow.",
+        "marks": 5,
+        "passage": {
+          "title": "Composed upon Westminster Bridge, September 3, 1802",
+          "content": "Earth has not anything to show more fair:\nDull would he be of soul who could pass by\nA sight so touching in its majesty:\nThis City now doth, like a garment, wear\nThe beauty of the morning; silent, bare,\nShips, towers, domes, theatres, and temples lie\nOpen unto the fields, and to the sky;\nAll bright and glittering in the smokeless air."
+        },
+        "subQuestions": [
+          {
+            "id": "a",
+            "type": "short_answer",
+            "questionEnglish": "According to the poet, what does the Earth have to show?",
+            "correctAnswer": "The Earth has the fairest sight, which is the view of the city in the morning, to show.",
+            "explanation": "Explanation (English): The first line states, \"Earth has not anything to show more fair,\" which refers to the beautiful sight of the city from the bridge.\nব্যাখ্যা (Nepali Explanation): पहिलो पङ्क्तिमा भनिएको छ, \"Earth has not anything to show more fair,\" जसले पुलबाट देखिने शहरको सुन्दर दृश्यलाई जनाउँछ।",
+            "marks": 1
+          },
+          {
+            "id": "b",
+            "type": "short_answer",
+            "questionEnglish": "Who would be considered to have a dull soul?",
+            "correctAnswer": "A person who could pass by such a majestic sight without noticing it would be considered to have a dull soul.",
+            "explanation": "Explanation (English): The poet says, \"Dull would he be of soul who could pass by / A sight so touching in its majesty\".\nব্যাখ্যা (Nepali Explanation): कविले भनेका छन्, \"Dull would he be of soul who could pass by / A sight so touching in its majesty\"।",
+            "marks": 1
+          },
+          {
+            "id": "c",
+            "type": "short_answer",
+            "questionEnglish": "What is the city wearing like a garment?",
+            "correctAnswer": "The city is wearing the beauty of the morning like a garment.",
+            "explanation": "Explanation (English): The poem uses a simile: \"This City now doth, like a garment, wear / The beauty of the morning\".\nব্যাখ্যা (Nepali Explanation): कविताले उपमा प्रयोग गर्दछ: \"This City now doth, like a garment, wear / The beauty of the morning\"।",
+            "marks": 1
+          },
+          {
+            "id": "d",
+            "type": "short_answer",
+            "questionEnglish": "List any two man-made structures mentioned in the poem.",
+            "correctAnswer": "Any two of the following: Ships, towers, domes, theatres, temples.",
+            "explanation": "Explanation (English): The sixth line lists several man-made structures visible from the bridge.\nব্যাখ্যা (Nepali Explanation): छैटौं पङ्क्तिले पुलबाट देखिने धेरै मानव निर्मित संरचनाहरूको सूची दिन्छ।",
+            "marks": 1
+          },
+          {
+            "id": "e",
+            "type": "short_answer",
+            "questionEnglish": "What makes the air special on this morning?",
+            "correctAnswer": "The air is smokeless, which allows everything to look bright and glittering.",
+            "explanation": "Explanation (English): The last line describes the scene as \"All bright and glittering in the smokeless air.\"\nব্যাখ্যা (Nepali Explanation): अन्तिम पङ्क्तिले दृश्यलाई \"All bright and glittering in the smokeless air\" भनेर वर्णन गर्दछ।",
+            "marks": 1
+          }
+        ]
+      },
+      {
+        "questionNumber": 2,
+        "type": "reading_comprehension",
+        "title": "Read the text and do the tasks that follow.",
+        "marks": 10,
+        "passage": {
+          "title": "A Letter from a Patient",
+          "content": "Dear health care worker,\nI recently experienced a parent's worst nightmare. One evening my nine-week old baby developed an extremely high fever. We rushed to our local community hospital and were admitted through the emergency department to the pediatric unit. We were discharged three days later. Thanks to the skilled doctors and nurses who cared for our precious little one.\nWhile our infant's care and health outcomes were fantastic, our experience was less than satisfactory. During my hospital stay, many staff took the opportunity to bad-mouth their colleagues to me when we were alone. The emergency nurses complained about the doctors' orders and the delay in response of the pediatric nurses. The pediatric nurses complained about the emergency room nurses' inability to get an intravenous line. The pediatrician complained about orders made by the emergency doctor.\nAt every opportunity the parent in me wanted to scream at the top of my lungs \"Can everyone stop complaining about each other and look after my sick baby?\" From my vantage point, it seemed that everyone was so focused on their own needs and skills that they appeared completely insensible that there was a sick baby that needed their help."
+        },
+        "subSections": [
+          {
+            "id": "A",
+            "type": "true_false",
+            "title": "Write 'TRUE' for true and 'FALSE' for the false statements.",
+            "marks": 5,
+            "subQuestions": [
+              {
+                "id": "i",
+                "questionEnglish": "The writer's baby was admitted to the hospital for three weeks.",
+                "correctAnswer": "FALSE",
+                "explanation": "Explanation (English): The text states, \"We were discharged three days later,\" not three weeks.\nব্যাখ্যা (Nepali Explanation): पाठमा भनिएको छ, \"We were discharged three days later,\" तीन हप्ता होइन।",
+                "marks": 1
+              },
+              {
+                "id": "ii",
+                "questionEnglish": "The medical treatment given to the baby was excellent.",
+                "correctAnswer": "TRUE",
+                "explanation": "Explanation (English): The writer says, \"our infant's care and health outcomes were fantastic.\"\nব্যাখ্যা (Nepali Explanation): लेखकले भन्छिन्, \"our infant's care and health outcomes were fantastic.\"",
+                "marks": 1
+              },
+              {
+                "id": "iii",
+                "questionEnglish": "The hospital staff had a harmonious and cooperative relationship with each other.",
+                "correctAnswer": "FALSE",
+                "explanation": "Explanation (English): The text describes how different staff members complained about each other, indicating a lack of harmony.\nব্যাখ্যা (Nepali Explanation): पाठले विभिन्न कर्मचारीहरूले एकअर्काको बारेमा कसरी गुनासो गरे भनेर वर्णन गर्दछ, जसले सद्भावको कमीलाई संकेत गर्दछ।",
+                "marks": 1
+              },
+              {
+                "id": "iv",
+                "questionEnglish": "The pediatric nurses praised the emergency room nurses for their skills.",
+                "correctAnswer": "FALSE",
+                "explanation": "Explanation (English): The text says the pediatric nurses \"complained about the emergency room nurses' inability to get an intravenous line.\"\nব্যাখ্যা (Nepali Explanation): पाठमा भनिएको छ कि बाल चिकित्सा नर्सहरूले \"complained about the emergency room nurses' inability to get an intravenous line.\"",
+                "marks": 1
+              },
+              {
+                "id": "v",
+                "questionEnglish": "The writer felt that the staff were more focused on their own issues than on her sick baby.",
+                "correctAnswer": "TRUE",
+                "explanation": "Explanation (English): The writer states, \"...everyone was so focused on their own needs and skills that they appeared completely insensible that there was a sick baby that needed their help.\"\nব্যাখ্যা (Nepali Explanation): लेखकले भन्छिन्, \"...everyone was so focused on their own needs and skills that they appeared completely insensible that there was a sick baby that needed their help.\"",
+                "marks": 1
+              }
+            ]
+          },
+          {
+            "id": "B",
+            "type": "short_answer",
+            "title": "Answer the following questions.",
+            "marks": 5,
+            "subQuestions": [
+              {
+                "id": "i",
+                "questionEnglish": "What health problem did the writer's baby have?",
+                "correctAnswer": "The baby had an extremely high fever.",
+                "explanation": "Explanation (English): The second sentence says, \"...my nine-week old baby developed an extremely high fever.\"\nব্যাখ্যা (Nepali Explanation): दोस्रो वाक्यमा भनिएको छ, \"...my nine-week old baby developed an extremely high fever.\"",
+                "marks": 1
+              },
+              {
+                "id": "ii",
+                "questionEnglish": "Which hospital unit was the baby admitted to?",
+                "correctAnswer": "The baby was admitted to the pediatric unit.",
+                "explanation": "Explanation (English): The writer states they were admitted \"to the pediatric unit.\"\nব্যাখ্যা (Nepali Explanation): लेखकले भन्छिन् कि उनीहरू \"to the pediatric unit\" मा भर्ना भएका थिए।",
+                "marks": 1
+              },
+              {
+                "id": "iii",
+                "questionEnglish": "What was the writer's main complaint about her experience?",
+                "correctAnswer": "Her main complaint was that the staff kept bad-mouthing their colleagues to her.",
+                "explanation": "Explanation (English): The writer says, \"many staff took the opportunity to bad-mouth their colleagues to me when we were alone,\" which was the 'less than satisfactory' part of her experience.\nব্যাখ্যা (Nepali Explanation): लेखकले भन्छिन्, \"many staff took the opportunity to bad-mouth their colleagues to me when we were alone,\" जुन उनको अनुभवको 'less than satisfactory' भाग थियो।",
+                "marks": 1
+              },
+              {
+                "id": "iv",
+                "questionEnglish": "What did the emergency nurses complain about?",
+                "correctAnswer": "They complained about the doctors' orders and the slow response of the pediatric nurses.",
+                "explanation": "Explanation (English): The text mentions, \"The emergency nurses complained about the doctors' orders and the delay in response of the pediatric nurses.\"\nব্যাখ্যা (Nepali Explanation): पाठमा उल्लेख छ, \"The emergency nurses complained about the doctors' orders and the delay in response of the pediatric nurses.\"",
+                "marks": 1
+              },
+              {
+                "id": "v",
+                "questionEnglish": "What did the writer want to scream at the hospital staff?",
+                "correctAnswer": "She wanted to scream, \"Can everyone stop complaining about each other and look after my sick baby?\"",
+                "explanation": "Explanation (English): This is quoted directly from the text as the thought of the writer.\nব্যাখ্যা (Nepali Explanation): यो पाठबाट लेखकको विचारको रूपमा सीधै उद्धृत गरिएको छ।",
+                "marks": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "questionNumber": 3,
+        "type": "reading_comprehension",
+        "title": "Read the following menu and do the tasks.",
+        "marks": 10,
+        "passage": {
+            "title": "Sherpa Kitchen - Lunch Menu\n(Available from 12:00 PM to 3:00 PM)",
+            "content": "**Appetizers**\n1. Vegetable Samosa (2 pcs) - NRs. 150\n   (Crispy pastry filled with spiced potatoes and peas)\n2. Chicken Momo (Steamed, 8 pcs) - NRs. 250\n3. Paneer Pakoda (6 pcs) - NRs. 220\n\n**Main Courses**\n4. Thukpa (Vegetable or Chicken) - NRs. 300\n   (Hearty noodle soup with fresh vegetables or chicken)\n5. Traditional Dal Bhat Tarkari (Veg) - NRs. 450\n6. Traditional Dal Bhat Tarkari (Chicken) - NRs. 550\n   (Served with rice, lentil soup, vegetable curry, pickle, and papad)\n\n**Breads**\n7. Plain Naan - NRs. 80\n8. Garlic Naan - NRs. 100\n\n**Drinks**\n9. Lassi (Sweet/Salty) - NRs. 150\n10. Mineral Water - NRs. 50\n\n*Note: All prices are exclusive of 10% service charge and 13% VAT.*"
+        },
+        "subSections": [
+          {
+            "id": "A",
+            "type": "fill_in_the_blanks",
+            "title": "Fill in the gaps with appropriate words/phrases from the menu.",
+            "marks": 5,
+            "subQuestions": [
+              {"id": "i", "questionEnglish": "The lunch menu is available for a duration of ______ hours.", "correctAnswer": "three", "marks": 1},
+              {"id": "ii", "questionEnglish": "A plate of steamed chicken momo contains ______ pieces.", "correctAnswer": "eight/8", "marks": 1},
+              {"id": "iii", "questionEnglish": "Thukpa is a type of ______ soup.", "correctAnswer": "noodle", "marks": 1},
+              {"id": "iv", "questionEnglish": "The chicken Dal Bhat Tarkari is ______ more expensive than the vegetable one.", "correctAnswer": "NRs. 100", "marks": 1},
+              {"id": "v", "questionEnglish": "Besides the menu price, customers have to pay an additional ______ percent in total.", "correctAnswer": "23", "marks": 1}
+            ],
+            "explanation": "Explanation (English): (i) 12 PM to 3 PM is 3 hours. (ii) The menu says (Steamed, 8 pcs). (iii) The description for Thukpa is 'Hearty noodle soup'. (iv) Chicken is 550, Veg is 450, the difference is 100. (v) 10% service charge + 13% VAT = 23%.\nব্যাখ্যা (Nepali Explanation): (i) १२ बजे देखि ३ बजे सम्म ३ घण्टा हुन्छ। (ii) मेनुमा (Steamed, 8 pcs) भनिएको छ। (iii) थुक्पाको वर्णन 'Hearty noodle soup' हो। (iv) चिकन ५५०, भेज ४५०, फरक १०० हो। (v) १०% सेवा शुल्क + १३% VAT = २३%।"
+          },
+          {
+            "id": "B",
+            "type": "short_answer",
+            "title": "Answer the following questions.",
+            "marks": 5,
+            "subQuestions": [
+              {
+                "id": "i",
+                "questionEnglish": "What is inside a Vegetable Samosa?",
+                "correctAnswer": "A Vegetable Samosa is filled with spiced potatoes and peas.",
+                "explanation": "Explanation (English): The description for Vegetable Samosa says, \"(Crispy pastry filled with spiced potatoes and peas)\".\nব্যাখ্যা (Nepali Explanation): Vegetable Samosa को वर्णनमा भनिएको छ, \"(Crispy pastry filled with spiced potatoes and peas)\" ।",
+                "marks": 1
+              },
+              {
+                "id": "ii",
+                "questionEnglish": "What is the cheapest item on the menu?",
+                "correctAnswer": "The cheapest item is Mineral Water.",
+                "explanation": "Explanation (English): Mineral water is listed at NRs. 50, which is the lowest price on the menu.\nব্যাখ্যা (Nepali Explanation): मिनरल वाटर NRs. 50 मा सूचीबद्ध छ, जुन मेनुमा सबैभन्दा कम मूल्य हो।",
+                "marks": 1
+              },
+              {
+                "id": "iii",
+                "questionEnglish": "What is served along with Dal Bhat Tarkari?",
+                "correctAnswer": "It is served with rice, lentil soup, vegetable curry, pickle, and papad.",
+                "explanation": "Explanation (English): The description under Dal Bhat Tarkari lists all these accompanying items.\nব্যাখ্যা (Nepali Explanation): दाल भात तरकारी अन्तर्गतको वर्णनमा यी सबै साथमा आउने परिकारहरू सूचीबद्ध छन्।",
+                "marks": 1
+              },
+              {
+                "id": "iv",
+                "questionEnglish": "How many types of Lassi are available?",
+                "correctAnswer": "Two types of Lassi are available (Sweet/Salty).",
+                "explanation": "Explanation (English): The menu item for Lassi is written as \"Lassi (Sweet/Salty)\", indicating two varieties.\nব্যাখ্যা (Nepali Explanation): लस्सीको मेनु आइटम \"Lassi (Sweet/Salty)\" भनेर लेखिएको छ, जसले दुई प्रकारका olduğunu देखाउँछ।",
+                "marks": 1
+              },
+              {
+                "id": "v",
+                "questionEnglish": "If a customer orders one plate of Veg Samosa, what will be the total amount they have to pay including all charges?",
+                "correctAnswer": "The total amount will be NRs. 184.5.",
+                "explanation": "Explanation (English): The price is NRs. 150. The extra charge is 23% (10% + 13%). 23% of 150 is 34.5. So, the total is 150 + 34.5 = 184.5.\nব্যাখ্যা (Nepali Explanation): मूल्य NRs. 150 हो। अतिरिक्त शुल्क २३% (१०% + १३%) हो। १५० को २३% ३४.५ हुन्छ। त्यसैले, कुल १५० + ३४.५ = १८४.५ हुन्छ।",
+                "marks": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "questionNumber": 4,
+        "type": "reading_comprehension",
+        "title": "Read the text given below and do the tasks.",
+        "marks": 15,
+        "passage": {
+            "title": "Popularity of Different Sports in the World",
+            "content": "Sports are popular for a number of reasons. Keeping healthy, for example, is often cited as a reason for participating in sports. Others will tell you that they do sports for recreational purposes. Sports are even more popular with people who do not necessarily participate in them, but love being spectators. Here is a brief discussion of some of the most popular sports in the world.\n\nFootball, better known as soccer in the US and Canada, is the most popular sport in the world, with an estimated four billion fans. One reason for football's popularity is that unlike other sports that require expensive equipment, all you need to play football is a ball and your foot. Hence, anyone, rich or poor, can enjoy the sport. It is played all over the world, but is particularly popular in Europe, Central and South America, and Africa.\n\nCricket boasts a fan base of 2.5 billion. The game is most popular in the UK and some other countries, notably India, Pakistan and Australia. Like baseball, it involves two teams, a bat, a large field, and scoring runs.\n\nHockey, both on ice and in a field, boasts a following of two billion people. Field hockey is mainly played in Europe, Africa, Asia, and Australia, whereas ice hockey is particularly popular in Canada, the US, and Northern Europe.\n\nInvented by James Naismith, a Canadian teaching at a school in the US in the late 19th century, basketball is now played worldwide, and has an estimated following of 825 million. Like football, it is particularly popular because not much equipment is needed besides two baskets and a ball, and so is an accessible sport regardless of class."
+        },
+        "subSections": [
+          {
+            "id": "A",
+            "type": "true_false",
+            "title": "Write 'TRUE' for true and 'FALSE' for the false statements.",
+            "marks": 5,
+            "subQuestions": [
+              {
+                "id": "i",
+                "questionEnglish": "Recreation is one of the reasons for the popularity of sports.",
+                "correctAnswer": "TRUE",
+                "explanation": "Explanation (English): The text says, \"Others will tell you that they do sports for recreational purposes.\"\nব্যাখ্যা (Nepali Explanation): पाठमा भनिएको छ, \"Others will tell you that they do sports for recreational purposes.\"",
+                "marks": 1
+              },
+              {
+                "id": "ii",
+                "questionEnglish": "Football is also known as soccer in India and Pakistan.",
+                "correctAnswer": "FALSE",
+                "explanation": "Explanation (English): The text states that football is known as soccer \"in the US and Canada\", not India and Pakistan.\nব্যাখ্যা (Nepali Explanation): पाठमा भनिएको छ कि फुटबललाई \"in the US and Canada\" मा सकर भनिन्छ, भारत र पाकिस्तानमा होइन।",
+                "marks": 1
+              },
+              {
+                "id": "iii",
+                "questionEnglish": "Cricket and baseball both use a bat and involve scoring runs.",
+                "correctAnswer": "TRUE",
+                "explanation": "Explanation (English): The text says about cricket, \"Like baseball, it involves two teams, a bat, a large field, and scoring runs.\"\nব্যাখ্যা (Nepali Explanation): पाठले क्रिकेटको बारेमा भन्छ, \"Like baseball, it involves two teams, a bat, a large field, and scoring runs.\"",
+                "marks": 1
+              },
+              {
+                "id": "iv",
+                "questionEnglish": "Field hockey and ice hockey are popular in the same regions.",
+                "correctAnswer": "FALSE",
+                "explanation": "Explanation (English): The text specifies different regions of popularity for field hockey (Europe, Africa, Asia, Australia) and ice hockey (Canada, US, Northern Europe).\nব্যাখ্যা (Nepali Explanation): पाठले फिल्ड हक्की (युरोप, अफ्रिका, एसिया, अष्ट्रेलिया) र आइस हक्की (क्यानाडा, अमेरिका, उत्तरी युरोप) को लागि फरक-फरक लोकप्रियताका क्षेत्रहरू निर्दिष्ट गर्दछ।",
+                "marks": 1
+              },
+              {
+                "id": "v",
+                "questionEnglish": "Basketball was invented in the 20th century.",
+                "correctAnswer": "FALSE",
+                "explanation": "Explanation (English): The text says it was invented \"in the late 19th century\".\nব্যাখ্যা (Nepali Explanation): पाठमा भनिएको छ कि यो \"in the late 19th century\" मा आविष्कार भएको थियो।",
+                "marks": 1
+              }
+            ]
+          },
+          {
+            "id": "B",
+            "type": "matching",
+            "title": "Match the sports in Column 'A' with their estimated number of fans in Column 'B'.",
+            "marks": 5,
+            "columns": {
+                "A": [
+                    {"id": "i", "text": "Football"},
+                    {"id": "ii", "text": "Cricket"},
+                    {"id": "iii", "text": "Hockey"},
+                    {"id": "iv", "text": "Basketball"},
+                    {"id": "v", "text": "Tennis"}
+                ],
+                "B": [
+                    {"id": "a", "text": "Two billion"},
+                    {"id": "b", "text": "One billion"},
+                    {"id": "c", "text": "Four billion"},
+                    {"id": "d", "text": "825 million"},
+                    {"id": "e", "text": "2.5 billion"},
+                    {"id": "f", "text": "500 million"}
+                ]
+            },
+            "correctAnswer": [
+                {"A": "i", "B": "c"},
+                {"A": "ii", "B": "e"},
+                {"A": "iii", "B": "a"},
+                {"A": "iv", "B": "d"},
+                {"A": "v", "B": "b"}
+            ],
+            "explanation": "Explanation (English): The text mentions the following fan counts: Football (four billion), Cricket (2.5 billion), Hockey (two billion), and Basketball (825 million). Tennis is not in this specific passage, but its fan count is 1 billion in the full textbook version, making it the correct match for (b).\nব্যাখ্যা (Nepali Explanation): पाठमा निम्न फ्यान गणनाहरू उल्लेख छन्: फुटबल (चार अर्ब), क्रिकेट (२.५ अर्ब), हक्की (दुई अर्ब), र बास्केटबल (८२५ मिलियन)। टेनिस यस विशिष्ट अनुच्छेदमा छैन, तर पूर्ण पाठ्यपुस्तक संस्करणमा यसको फ्यान गणना १ अर्ब छ, जसले यसलाई (b) को लागि सही मिलान बनाउँछ।"
+          },
+          {
+            "id": "C",
+            "type": "short_answer",
+            "title": "Answer the following questions.",
+            "marks": 5,
+            "subQuestions": [
+              {
+                "id": "i",
+                "questionEnglish": "What are the two main reasons people participate in sports?",
+                "correctAnswer": "The two main reasons are keeping healthy and for recreational purposes.",
+                "explanation": "Explanation (English): The first paragraph lists \"Keeping healthy\" and \"recreational purposes\" as reasons for participation.\nব্যাখ্যা (Nepali Explanation): पहिलो अनुच्छेदले सहभागिताका कारणहरू \"Keeping healthy\" र \"recreational purposes\" लाई सूचीबद्ध गर्दछ।",
+                "marks": 1
+              },
+              {
+                "id": "ii",
+                "questionEnglish": "What makes football an accessible sport for everyone?",
+                "correctAnswer": "It is accessible because it does not require expensive equipment; only a ball and one's foot are needed.",
+                "explanation": "Explanation (English): The text explains football's popularity by stating, \"all you need to play football is a ball and your foot.\"\nব্যাখ্যা (Nepali Explanation): पाठले फुटबलको लोकप्रियताको व्याख्या गर्दै भन्छ, \"all you need to play football is a ball and your foot.\"",
+                "marks": 1
+              },
+              {
+                "id": "iii",
+                "questionEnglish": "In which countries is cricket most popular?",
+                "correctAnswer": "Cricket is most popular in the UK, India, Pakistan, and Australia.",
+                "explanation": "Explanation (English): The passage says cricket is most popular \"in the UK and some other countries, notably India, Pakistan and Australia.\"\nব্যাখ্যা (Nepali Explanation): अनुच्छेदमा भनिएको छ कि क्रिकेट \"in the UK and some other countries, notably India, Pakistan and Australia\" मा सबैभन्दा लोकप्रिय छ।",
+                "marks": 1
+              },
+              {
+                "id": "iv",
+                "questionEnglish": "Who invented basketball?",
+                "correctAnswer": "James Naismith invented basketball.",
+                "explanation": "Explanation (English): The text clearly states, \"Invented by James Naismith...\".\nব্যাখ্যা (Nepali Explanation): पाठमा स्पष्ट रूपमा भनिएको छ, \"Invented by James Naismith...\"।",
+                "marks": 1
+              },
+              {
+                "id": "v",
+                "questionEnglish": "Which two sports are popular because they require little equipment?",
+                "correctAnswer": "Football and basketball are popular because they require little equipment.",
+                "explanation": "Explanation (English): The text states this for football (\"all you need... is a ball and your foot\") and for basketball (\"not much equipment is needed besides two baskets and a ball\").\nব্যাখ্যা (Nepali Explanation): पाठले यो फुटबलको लागि (\"all you need... is a ball and your foot\") र बास्केटबलको लागि (\"not much equipment is needed besides two baskets and a ball\") बताउँछ।",
+                "marks": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "questionNumber": 5,
+        "type": "free_writing",
+        "title": "Write a message of condolence to be published in a newspaper on the demise of a respected teacher from your school.",
+        "marks": 5,
+        "wordCount": 100,
+        "clues": [
+            "Heartfelt Condolences",
+            "Name of the teacher, age",
+            "Date of demise",
+            "Deeply saddened",
+            "Dedicated and inspiring teacher",
+            "Irreparable loss to the school community",
+            "Pray for eternal peace",
+            "Extend condolences to the bereaved family"
+        ],
+        "sampleAnswer": {
+          "title": "HEARTFELT CONDOLENCES",
+          "content": "We are deeply saddened by the sudden and untimely demise of our beloved English teacher, Mr. Ram Sharma, at the age of 52 on 29th August, 2025.\n\nHe was a dedicated, kind, and inspiring teacher who served our institution for over 20 years. His passing is an irreparable loss to the entire school community. We will always remember his valuable contributions and guidance.\n\nWe extend our heartfelt condolences to his bereaved family and friends during this difficult time. May his departed soul rest in eternal peace.\n\nStudents and Staff\nJanata Secondary School, Butwal"
+        }
+      },
+      {
+        "questionNumber": 6,
+        "type": "free_writing",
+        "title": "Write a set of instructions on how to make a cup of tea.",
+        "marks": 5,
+        "wordCount": 100,
+        "clues": [
+            "First, boil water...",
+            "Then, add tea leaves...",
+            "Next, pour milk...",
+            "Add sugar to taste...",
+            "After that, strain the tea...",
+            "Finally, serve hot."
+        ],
+        "sampleAnswer": {
+          "title": "How to Make a Cup of Tea",
+          "content": "Making a perfect cup of tea is simple if you follow these steps. First, pour one cup of water into a saucepan and bring it to a boil. Then, add one teaspoon of tea leaves to the boiling water and let it simmer for a minute. Next, pour half a cup of milk into the saucepan and let it boil again. After that, add sugar according to your taste and stir well. Finally, turn off the heat, strain the tea into a cup using a strainer, and serve it hot. Enjoy your refreshing cup of tea!"
+        }
+      },
+      {
+        "questionNumber": 7,
+        "type": "free_writing",
+        "title": "Write two paragraphs expressing your views on the statement 'Travel is the best form of education'.",
+        "marks": 6,
+        "wordCount": 150,
+        "sampleAnswer": {
+          "content": "The old saying 'Travel is the best form of education' holds profound truth, as traveling offers invaluable lessons that cannot be found within the pages of a textbook. When we travel, we step out of our comfort zones and immerse ourselves in new cultures, traditions, and ways of life. This direct experience fosters a deeper understanding and appreciation for the diversity of our world. We learn about history not from dates and facts, but by walking through ancient ruins and historical sites. Geography becomes real when we navigate new landscapes, from bustling cities to serene mountains.\n\nFurthermore, traveling teaches essential life skills such as problem-solving, adaptability, and communication. Dealing with unexpected situations, like a missed flight or a language barrier, builds resilience and confidence. Interacting with local people provides insights into different perspectives and breaks down stereotypes. These experiences contribute to personal growth, making us more open-minded, independent, and aware global citizens. Therefore, traveling is indeed a powerful and enriching educational tool that complements and enhances formal learning."
+        }
+      },
+      {
+        "questionNumber": 8,
+        "type": "free_writing",
+        "title": "Write a letter to the editor of a national daily newspaper drawing attention to the problem of unmanaged garbage in your locality and suggesting some solutions.",
+        "marks": 8,
+        "wordCount": 200,
+        "sampleAnswer": {
+            "content": "Koteshwor, Kathmandu\n30th August, 2025\n\nThe Editor,\nThe Rising Nepal,\nDharmapath, Kathmandu\n\nSubject: Regarding the problem of unmanaged garbage.\n\nDear Sir,\n\nThrough the columns of your esteemed newspaper, I would like to draw the attention of the concerned authorities to the serious issue of unmanaged garbage in our locality, Koteshwor.\n\nFor the past several months, heaps of garbage have been accumulating on the roadsides and in open spaces. The waste collection is irregular, and the bins provided are overflowing. This is not only creating an unsightly and unpleasant environment but is also posing a grave health hazard to the residents. The foul smell pollutes the air, and the garbage piles have become breeding grounds for mosquitoes and other disease-carrying pests. With the monsoon approaching, we fear the outbreak of diseases like cholera and dengue.\n\nTo address this problem, the municipality must ensure regular and timely collection of waste. Additionally, launching an awareness campaign about waste segregation at the source—separating wet and dry waste—would be highly effective. The authorities could also introduce a system of composting biodegradable waste at the community level. Placing more dustbins at various points is also necessary.\n\nI hope the authorities will take immediate action to resolve this issue and ensure a clean and healthy environment for the residents.\n\nYours truly,\n(Your Name)\nA concerned citizen"
+        }
+      },
+      {
+        "questionNumber": 9,
+        "type": "grammar",
+        "title": "Reproduce the following sentences as instructed in the brackets.",
+        "marks": 6,
+        "subQuestions": [
+          {
+            "id": "i",
+            "type": "reproduce",
+            "questionEnglish": "She has to finish her work on time, .............? (Add a correct question tag.)",
+            "correctAnswer": "She has to finish her work on time, doesn't she?",
+            "explanation": "Explanation (English): In the statement 'has to', 'has' functions as a main verb in the simple present tense. The auxiliary verb for the tag is 'does'. Since the statement is positive, the tag is negative.\nব্যাখ্যা (Nepali Explanation): 'has to' वाक्यमा, 'has' simple present tense मा मुख्य क्रियाको रूपमा कार्य गर्दछ। ट्यागको लागि सहायक क्रिया 'does' हो। वाक्य सकारात्मक भएकोले, ट्याग नकारात्मक हुन्छ।",
+            "marks": 1
+          },
+          {
+            "id": "ii",
+            "type": "reproduce",
+            "questionEnglish": "He said, \"I will call you tomorrow.\" (Change into indirect speech.)",
+            "correctAnswer": "He said that he would call me the next day/the following day.",
+            "explanation": "Explanation (English): In reported speech, 'will' changes to 'would', 'I' changes to 'he', 'you' changes to 'me', and 'tomorrow' changes to 'the next day' or 'the following day'.\nব্যাখ্যা (Nepali Explanation): रिपोर्टेड स्पीचमा, 'will' 'would' मा, 'I' 'he' मा, 'you' 'me' मा, र 'tomorrow' 'the next day' वा 'the following day' मा परिवर्तन हुन्छ।",
+            "marks": 1
+          },
+          {
+            "id": "iii",
+            "type": "reproduce",
+            "questionEnglish": "My sister painted this beautiful picture. (Change into passive voice.)",
+            "correctAnswer": "This beautiful picture was painted by my sister.",
+            "explanation": "Explanation (English): The sentence is in the simple past tense. The passive form is 'object + was/were + V3 + by + subject'.\nব্যাখ্যা (Nepali Explanation): वाक्य simple past tense मा छ। यसको passive form 'object + was/were + V3 + by + subject' हो।",
+            "marks": 1
+          },
+          {
+            "id": "iv",
+            "type": "reproduce",
+            "questionEnglish": "As soon as the bell rang, the students rushed out. (Change into a negative sentence without changing the meaning.)",
+            "correctAnswer": "No sooner had the bell rung than the students rushed out.",
+            "explanation": "Explanation (English): 'As soon as' can be replaced with 'No sooner...than'. The structure requires inversion: 'No sooner + had + subject + V3 + than + subject + simple past'.\nব্যাখ্যা (Nepali Explanation): 'As soon as' लाई 'No sooner...than' ले प्रतिस्थापन गर्न सकिन्छ। संरचनामा inversion आवश्यक छ: 'No sooner + had + subject + V3 + than + subject + simple past' ।",
+            "marks": 1
+          },
+          {
+            "id": "v",
+            "type": "reproduce",
+            "questionEnglish": "She is a very intelligent student. (Change into an exclamatory sentence.)",
+            "correctAnswer": "What an intelligent student she is!",
+            "explanation": "Explanation (English): To make an exclamatory sentence starting with 'What', the structure is 'What + a/an + adjective + noun + subject + verb!'.\nব্যাখ্যা (Nepali Explanation): 'What' बाट सुरु हुने exclamatory वाक्य बनाउन, संरचना 'What + a/an + adjective + noun + subject + verb!' हुन्छ।",
+            "marks": 1
+          },
+          {
+            "id": "vi",
+            "type": "reproduce",
+            "questionEnglish": "The boy <strong>whose father is a doctor</strong> won the prize. (Change into a 'Which' question.)",
+            "correctAnswer": "Which boy won the prize?",
+            "explanation": "Explanation (English): The underlined clause identifies a specific boy. The question 'Which boy...?' asks for this specific identification.\nব্যাখ্যা (Nepali Explanation): रेखांकित खण्डले एक विशेष केटालाई चिनाउँछ। 'Which boy...?' प्रश्नले यो विशेष पहिचानको लागि सोध्छ।",
+            "marks": 1
+          }
+        ]
+      },
+      {
+        "questionNumber": 10,
+        "type": "cloze_test",
+        "title": "Choose and copy the correct answers from the brackets to complete the given text. (Rewriting the text is not compulsory.)",
+        "marks": 5,
+        "passage": "Nepal is a country rich (a) _____ (in/of/with/at) cultural diversity. Many different festivals (b) _____ (celebrate/is celebrated/are celebrated/celebrates) throughout the year. Dashain is the biggest festival, (c) _____ (isn't it/is it/doesn't it/does it)? People return to their homes (d) _____ (so that/in order/because/to) they can celebrate with their families. A friend of mine, (e) _____ (who/which/whose/whom) lives in America, comes to Nepal every year for Dashain. He told me that he (f) _____ (has missed/had missed/was missing/missed) the festival very much when he was a student there. Last year, I got him (g) _____ (to try/try/tried/trying) Sel Roti for the first time. If he comes this year, I (h) _____ (will take/would take/would have taken/take) him to my village. (i) _____ (Despite/Although/Because of/However) being a small country, Nepal has so much to offer. The variety of cultures makes the country (j) _____ (uniquely/unique/more unique/most unique) and beautiful.",
+        "gaps": [
+          {
+            "id": "a", 
+            "correctAnswer": "in",
+            "explanation": "Explanation (English): The adjective 'rich' is followed by the preposition 'in' when talking about possessing a quality or resource in abundance.\nব্যাখ্যা (Nepali Explanation): विशेषण 'rich' पछि preposition 'in' को प्रयोग हुन्छ जब कुनै गुण वा स्रोत प्रचुर मात्रामा भएको कुरा गरिन्छ।"
+          },
+          {
+            "id": "b", 
+            "correctAnswer": "are celebrated",
+            "explanation": "Explanation (English): This is a passive voice construction in the simple present tense. The subject 'festivals' (plural) is acted upon.\nব্যাখ্যা (Nepali Explanation): यो simple present tense मा passive voice को संरचना हो। कर्ता 'festivals' (बहुवचन) माथि कार्य गरिएको छ।"
+          },
+          {
+            "id": "c", 
+            "correctAnswer": "isn't it",
+            "explanation": "Explanation (English): The subject of the statement is 'Dashain' (it) and the verb is 'is' (positive). The tag is therefore negative.\nব্যাখ্যা (Nepali Explanation): वाक्यको कर्ता 'Dashain' (it) हो र क्रिया 'is' (positive) हो। त्यसैले ट्याग नकारात्मक हुन्छ।"
+          },
+          {
+            "id": "d", 
+            "correctAnswer": "so that",
+            "explanation": "Explanation (English): 'so that' is used to express the purpose or reason for an action.\nব্যাখ্যা (Nepali Explanation): 'so that' लाई कुनै कार्यको उद्देश्य वा कारण व्यक्त गर्न प्रयोग गरिन्छ।"
+          },
+          {
+            "id": "e", 
+            "correctAnswer": "who",
+            "explanation": "Explanation (English): 'who' is a relative pronoun used as the subject to refer to a person ('A friend of mine').\nব্যাখ্যা (Nepali Explanation): 'who' एक relative pronoun हो जुन व्यक्ति ('A friend of mine') लाई जनाउन कर्ताको रूपमा प्रयोग गरिन्छ।"
+          },
+          {
+            "id": "f", 
+            "correctAnswer": "had missed",
+            "explanation": "Explanation (English): This is reported speech. The original statement was likely in the simple past ('I missed') or present perfect ('I have missed'), which changes to past perfect in indirect speech.\nব্যাখ্যা (Nepali Explanation): यो रिपोर्टेड स्पीच हो। मूल वाक्य सम्भवतः simple past ('I missed') वा present perfect ('I have missed') मा थियो, जुन अप्रत्यक्ष कथनमा past perfect मा परिवर्तन हुन्छ।"
+          },
+          {
+            "id": "g", 
+            "correctAnswer": "to try",
+            "explanation": "Explanation (English): The causative verb 'get' is followed by an object ('him') and a to-infinitive.\nব্যাখ্যা (Nepali Explanation): causative verb 'get' पछि object ('him') र to-infinitive आउँछ।"
+          },
+          {
+            "id": "h", 
+            "correctAnswer": "will take",
+            "explanation": "Explanation (English): This is a Type I conditional sentence, expressing a real possibility in the future. The structure is 'If + simple present, ... simple future'.\nব্যাখ্যা (Nepali Explanation): यो Type I conditional वाक्य हो, जसले भविष्यमा एक वास्तविक सम्भावना व्यक्त गर्दछ। संरचना 'If + simple present, ... simple future' हो।"
+          },
+          {
+            "id": "i", 
+            "correctAnswer": "Despite",
+            "explanation": "Explanation (English): 'Despite' is used before a noun phrase ('being a small country') to show contrast.\nব্যাখ্যা (Nepali Explanation): भिन्नता देखाउन noun phrase ('being a small country') को अगाडि 'Despite' प्रयोग गरिन्छ।"
+          },
+          {
+            "id": "j", 
+            "correctAnswer": "unique",
+            "explanation": "Explanation (English): The verb 'makes' is followed by an object ('the country') and an adjective ('unique') that describes the object.\nব্যাখ্যা (Nepali Explanation): क्रिया 'makes' पछि object ('the country') र वस्तुको वर्णन गर्ने विशेषण ('unique') आउँछ।"
+          }
+        ]
+      }
+    ]
+  }
+]

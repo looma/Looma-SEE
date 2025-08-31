@@ -9,7 +9,7 @@ export interface GroupAQuestion {
   options: { id: string; nepali: string; english: string }[]
   correctAnswer: string
   marks: number
-  explanation?: string // Add explanation field
+  explanation?: string
 }
 
 export interface FreeResponseQuestion {
@@ -17,7 +17,22 @@ export interface FreeResponseQuestion {
   nepali: string
   english: string
   marks: number
-  sampleAnswer?: string // Add sampleAnswer field
+  sampleAnswer?: string
+}
+
+export interface EnglishQuestion {
+  id: string
+  questionNumber: number
+  type: string
+  title: string
+  marks: number
+  passage?: any
+  subQuestions?: any[]
+  subSections?: any[]
+  wordCount?: number
+  clues?: string[]
+  sampleAnswer?: any
+  gaps?: any[]
 }
 
 interface QuestionsData {
@@ -25,6 +40,7 @@ interface QuestionsData {
   groupB: FreeResponseQuestion[]
   groupC: FreeResponseQuestion[]
   groupD: FreeResponseQuestion[]
+  englishQuestions: EnglishQuestion[]
 }
 
 export function useQuestions(testId = "see_2080_science") {

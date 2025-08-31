@@ -1,6 +1,12 @@
 export interface StudentProgress {
   studentId: string
   testId: string
+  answers: {
+    groupA: Record<string, string>
+    groupB: Record<string, string>
+    groupC: Record<string, string>
+    groupD: Record<string, string>
+  }
   answersA: Record<string, string>
   answersB: Record<string, string>
   answersC: Record<string, string>
@@ -38,7 +44,15 @@ export function saveStudentProgress(studentId: string, progress: Omit<StudentPro
   }
 
   try {
-    const progressWithTimestamp = { ...progress, lastUpdated: new Date().toISOString() }
+    const progressWithTimestamp = {
+      ...progress,
+      lastUpdated: new Date().toISOString(),
+      // Ensure backward compatibility with old format
+      answersA: progress.answers?.groupA || progress.answersA || {},
+      answersB: progress.answers?.groupB || progress.answersB || {},
+      answersC: progress.answers?.groupC || progress.answersC || {},
+      answersD: progress.answers?.groupD || progress.answersD || {},
+    }
     const storageKey = `${STORAGE_KEY_PREFIX}${studentId}_${progress.testId}`
 
     console.log(`💾 Saving to localStorage key: ${storageKey}`)

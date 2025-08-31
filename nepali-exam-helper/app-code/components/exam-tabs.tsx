@@ -3,12 +3,10 @@
 import { useState, useEffect } from "react"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Button } from "@/components/ui/button"
-import { Progress } from "@/components/ui/progress"
-import { Badge } from "@/components/ui/badge"
-import { Loader2, CheckCircle, Clock, Trophy, ArrowRight, AlertCircle, Save } from "lucide-react"
-import { GroupA } from "@/components/group-a"
-import { FreeResponseGroup } from "@/components/free-response-group"
-import { ResultsCard, type Result } from "@/components/results-card"
+import { Loader2, Trophy, Save } from "lucide-react"
+import { GroupA } from "./group-a"
+import { FreeResponseGroup } from "./free-response-group"
+import { EnglishQuestionRenderer } from "./english-question-renderer"
 import { useQuestions } from "@/lib/use-questions"
 import { loadStudentProgress, saveStudentProgress, saveAttemptHistory } from "@/lib/storage"
 
@@ -16,95 +14,61 @@ interface ExamTabsProps {
   studentId: string
   testId: string
   onProgressUpdate: () => void
+  onShowResults: (results: any) => void
+  onBackToTestSelection: () => void
 }
 
-export function ExamTabs({ studentId, testId, onProgressUpdate }: ExamTabsProps) {
+export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, onBackToTestSelection }: ExamTabsProps) {
   const { questions, loading, error } = useQuestions(testId)
-  const [answersA, setAnswersA] = useState<Record<string, string>>({})
-  const [answersB, setAnswersB] = useState<Record<string, string>>({})
-  const [answersC, setAnswersC] = useState<Record<string, string>>({})
-  const [answersD, setAnswersD] = useState<Record<string, string>>({})
-  const [results, setResults] = useState<Result | null>(null)
+  const [answers, setAnswers] = useState<Record<string, any>>({})
   const [isSubmitting, setIsSubmitting] = useState(false)
-  const [activeTab, setActiveTab] = useState("group-a")
   const [lastSaved, setLastSaved] = useState<Date | null>(null)
   const [isClient, setIsClient] = useState(false)
+  const [showSubmitWarning, setShowSubmitWarning] = useState(false)
+  const [currentTab, setCurrentTab] = useState("")
 
-  // Ensure we're on the client side
+  const getFirstAvailableSection = () => {
+    if (!questions) return "groupA"
+    if (questions.groupA.length > 0) return "groupA"
+    if (questions.groupB.length > 0) return "groupB"
+    if (questions.groupC.length > 0) return "groupC"
+    if (questions.groupD.length > 0) return "groupD"
+    return "groupA"
+  }
+
   useEffect(() => {
     setIsClient(true)
   }, [])
 
-  // Load progress when component mounts or testId changes (only on client)
-  useEffect(() => {
-    if (!isClient || !studentId || !testId) {
-      console.log("Skipping progress load - not ready yet")
-      return
-    }
-
-    console.log(`🔄 Loading progress for ${studentId}_${testId}`)
-    const storageKey = `${studentId}_${testId}`
-
-    try {
-      const progress = loadStudentProgress(storageKey)
-
-      if (progress) {
-        console.log("✅ Found existing progress:", {
-          answersA: Object.keys(progress.answersA || {}).length,
-          answersB: Object.keys(progress.answersB || {}).length,
-          answersC: Object.keys(progress.answersC || {}).length,
-          answersD: Object.keys(progress.answersD || {}).length,
-          currentTab: progress.currentTab,
-          lastUpdated: progress.lastUpdated,
-        })
-
-        // Set all answers at once to avoid triggering multiple saves
-        setAnswersA(progress.answersA || {})
-        setAnswersB(progress.answersB || {})
-        setAnswersC(progress.answersC || {})
-        setAnswersD(progress.answersD || {})
-        setActiveTab(progress.currentTab || "group-a")
-        setLastSaved(new Date(progress.lastUpdated))
-
-        console.log("✅ Progress loaded successfully")
-      } else {
-        console.log("ℹ️  No existing progress found, starting fresh")
-        // Only reset if we don't already have answers loaded
-        if (
-          Object.keys(answersA).length === 0 &&
-          Object.keys(answersB).length === 0 &&
-          Object.keys(answersC).length === 0 &&
-          Object.keys(answersD).length === 0
-        ) {
-          setAnswersA({})
-          setAnswersB({})
-          setAnswersC({})
-          setAnswersD({})
-          setActiveTab("group-a")
-          setLastSaved(null)
-        }
-      }
-      setResults(null)
-    } catch (error) {
-      console.error("❌ Error loading progress:", error)
-    }
-  }, [isClient, studentId, testId]) // Remove answer dependencies
-
-  // Save progress whenever answers change (but not on initial load)
+  // Load progress when component mounts
   useEffect(() => {
     if (!isClient || !studentId || !testId) return
 
-    // Don't save if we're still loading initial state
-    const hasAnyAnswers =
-      Object.keys(answersA).length > 0 ||
-      Object.keys(answersB).length > 0 ||
-      Object.keys(answersC).length > 0 ||
-      Object.keys(answersD).length > 0
+    const storageKey = `${studentId}_${testId}`
+    const progress = loadStudentProgress(storageKey)
 
-    if (!hasAnyAnswers && !lastSaved) {
-      console.log("⏭️  Skipping save - no answers yet and no previous save")
-      return
+    if (progress) {
+      setAnswers(progress.answers || {})
+      setLastSaved(new Date(progress.lastUpdated))
+      // Always set to first available section, don't rely on stored currentTab for retakes
+      setCurrentTab(getFirstAvailableSection())
+    } else {
+      // No progress found, set to first available section
+      setCurrentTab(getFirstAvailableSection())
     }
+  }, [isClient, studentId, testId, questions])
+
+  // Set initial tab when questions load (backup)
+  useEffect(() => {
+    if (questions && !currentTab) {
+      const firstSection = getFirstAvailableSection()
+      setCurrentTab(firstSection)
+    }
+  }, [questions, currentTab])
+
+  // Save progress when answers change
+  useEffect(() => {
+    if (!isClient || !studentId || !testId) return
 
     const storageKey = `${studentId}_${testId}`
     const existingProgress = loadStudentProgress(storageKey)
@@ -112,223 +76,442 @@ export function ExamTabs({ studentId, testId, onProgressUpdate }: ExamTabsProps)
     const progressData = {
       studentId,
       testId,
-      answersA,
-      answersB,
-      answersC,
-      answersD,
-      currentTab: activeTab,
+      answers,
+      currentTab,
       attempts: existingProgress?.attempts || [],
     }
-
-    console.log("💾 Saving progress:", {
-      key: storageKey,
-      answersA: Object.keys(answersA).length,
-      answersB: Object.keys(answersB).length,
-      answersC: Object.keys(answersC).length,
-      answersD: Object.keys(answersD).length,
-      currentTab: activeTab,
-    })
 
     saveStudentProgress(studentId, progressData)
     setLastSaved(new Date())
     onProgressUpdate()
-  }, [isClient, answersA, answersB, answersC, answersD, activeTab, studentId, testId, onProgressUpdate])
+  }, [answers, studentId, testId, onProgressUpdate, isClient, currentTab])
 
-  if (!testId) {
-    return (
-      <div className="bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-white/20 text-center">
-        <AlertCircle className="h-16 w-16 text-yellow-500 mx-auto mb-4" />
-        <h3 className="text-2xl font-bold text-slate-800 mb-2">No Test Selected</h3>
-        <h4 className="text-xl font-medium text-slate-700 mb-4">कुनै परीक्षा छानिएको छैन</h4>
-        <p className="text-slate-600">Please select a practice test from the dropdown above.</p>
-      </div>
-    )
+  const handleAnswerChange = (questionId: string, subQuestionId: string, answer: any) => {
+    setAnswers((prev) => ({
+      ...prev,
+      [questionId]: {
+        ...prev[questionId],
+        [subQuestionId]: answer,
+      },
+    }))
   }
 
-  const isEmptyTest =
-    questions &&
-    questions.groupA.length === 0 &&
-    questions.groupB.length === 0 &&
-    questions.groupC.length === 0 &&
-    questions.groupD.length === 0
-
-  const progressA = questions?.groupA.length ? (Object.keys(answersA).length / questions.groupA.length) * 100 : 0
-  const progressB = questions?.groupB.length
-    ? (Object.keys(answersB).filter((k) => answersB[k]?.trim()).length / questions.groupB.length) * 100
-    : 0
-  const progressC = questions?.groupC.length
-    ? (Object.keys(answersC).filter((k) => answersC[k]?.trim()).length / questions.groupC.length) * 100
-    : 0
-  const progressD = questions?.groupD.length
-    ? (Object.keys(answersD).filter((k) => answersD[k]?.trim()).length / questions.groupD.length) * 100
-    : 0
-
-  const totalAnswered =
-    Object.keys(answersA).length +
-    Object.keys(answersB).filter((k) => answersB[k]?.trim()).length +
-    Object.keys(answersC).filter((k) => answersC[k]?.trim()).length +
-    Object.keys(answersD).filter((k) => answersD[k]?.trim()).length
-
-  const totalQuestions =
-    (questions?.groupA?.length || 0) +
-    (questions?.groupB?.length || 0) +
-    (questions?.groupC?.length || 0) +
-    (questions?.groupD?.length || 0)
-
-  const overallProgress = totalQuestions ? (totalAnswered / totalQuestions) * 100 : 0
-
-  const handleAnswerAChange = (id: string, answer: string) => setAnswersA((prev) => ({ ...prev, [id]: answer }))
+  const handleGroupAAnswerChange = (id: string, answer: string) => {
+    setAnswers((prev) => ({
+      ...prev,
+      groupA: {
+        ...prev.groupA,
+        [id]: answer,
+      },
+    }))
+  }
 
   const handleFreeResponseChange = (group: "B" | "C" | "D", id: string, answer: string) => {
-    const setter = group === "B" ? setAnswersB : group === "C" ? setAnswersC : setAnswersD
-    setter((prev) => ({ ...prev, [id]: answer }))
+    setAnswers((prev) => ({
+      ...prev,
+      [`group${group}`]: {
+        ...prev[`group${group}`],
+        [id]: answer,
+      },
+    }))
   }
 
-  const resetAllAnswers = () => {
-    setAnswersA({})
-    setAnswersB({})
-    setAnswersC({})
-    setAnswersD({})
-    setResults(null)
-    setActiveTab("group-a")
+  const formatSavedTime = (date: Date) => {
+    return date.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", hour12: true })
+  }
 
-    if (isClient) {
-      const storageKey = `${studentId}_${testId}`
-      const progress = loadStudentProgress(storageKey)
-      if (progress) {
-        saveStudentProgress(studentId, {
-          ...progress,
-          testId,
-          answersA: {},
-          answersB: {},
-          answersC: {},
-          answersD: {},
-          currentTab: "group-a",
+  const calculateOverallProgress = () => {
+    if (!questions) return 0
+
+    let totalQuestions = 0
+    let answeredQuestions = 0
+
+    if (questions.englishQuestions && questions.englishQuestions.length > 0) {
+      totalQuestions = questions.englishQuestions.length
+      answeredQuestions = questions.englishQuestions.filter((q) => {
+        const answer = answers[q.id]
+        if (!answer) return false
+        if (typeof answer === "object" && !Array.isArray(answer)) {
+          return Object.values(answer).some((val) => val !== undefined && val !== null && val !== "")
+        }
+        return answer !== undefined && answer !== null && answer !== ""
+      }).length
+    } else {
+      // Science test format
+      totalQuestions =
+        questions.groupA.length + questions.groupB.length + questions.groupC.length + questions.groupD.length
+
+      // Count Group A answers
+      const groupAAnswered = questions.groupA.filter((q) => answers.groupA?.[q.id]).length
+
+      // Count Group B answers
+      const groupBAnswered = questions.groupB.filter((q) => {
+        const answer = answers.groupB?.[q.id]
+        return answer && answer.trim().length > 0
+      }).length
+
+      // Count Group C answers
+      const groupCAnswered = questions.groupC.filter((q) => {
+        const answer = answers.groupC?.[q.id]
+        return answer && answer.trim().length > 0
+      }).length
+
+      // Count Group D answers
+      const groupDAnswered = questions.groupD.filter((q) => {
+        const answer = answers.groupD?.[q.id]
+        return answer && answer.trim().length > 0
+      }).length
+
+      answeredQuestions = groupAAnswered + groupBAnswered + groupCAnswered + groupDAnswered
+    }
+
+    return totalQuestions > 0 ? Math.round((answeredQuestions / totalQuestions) * 100) : 0
+  }
+
+  const getIncompleteQuestions = () => {
+    if (!questions) return { incomplete: 0, total: 0 }
+
+    let totalQuestions = 0
+    let incompleteQuestions = 0
+
+    if (questions.englishQuestions && questions.englishQuestions.length > 0) {
+      totalQuestions = questions.englishQuestions.length
+      incompleteQuestions = questions.englishQuestions.filter((q) => {
+        const answer = answers[q.id]
+        if (!answer) return true
+        if (typeof answer === "object" && !Array.isArray(answer)) {
+          return !Object.values(answer).some((val) => val !== undefined && val !== null && val !== "")
+        }
+        return answer === undefined || answer === null || answer === ""
+      }).length
+    } else {
+      // Science test format
+      totalQuestions =
+        questions.groupA.length + questions.groupB.length + questions.groupC.length + questions.groupD.length
+
+      // Count Group A incomplete answers
+      const groupAIncomplete = questions.groupA.filter((q) => !answers.groupA?.[q.id]).length
+
+      // Count Group B incomplete answers
+      const groupBIncomplete = questions.groupB.filter((q) => {
+        const answer = answers.groupB?.[q.id]
+        return !answer || answer.trim().length === 0
+      }).length
+
+      // Count Group C incomplete answers
+      const groupCIncomplete = questions.groupC.filter((q) => {
+        const answer = answers.groupC?.[q.id]
+        return !answer || answer.trim().length === 0
+      }).length
+
+      // Count Group D incomplete answers
+      const groupDIncomplete = questions.groupD.filter((q) => {
+        const answer = answers.groupD?.[q.id]
+        return !answer || answer.trim().length === 0
+      }).length
+
+      incompleteQuestions = groupAIncomplete + groupBIncomplete + groupCIncomplete + groupDIncomplete
+    }
+
+    return { incomplete: incompleteQuestions, total: totalQuestions }
+  }
+
+  const handleSubmit = () => {
+    const { incomplete, total } = getIncompleteQuestions()
+
+    if (incomplete > 0) {
+      setShowSubmitWarning(true)
+    } else {
+      // All questions answered, proceed with submission
+      submitTest()
+    }
+  }
+
+  const submitTest = async () => {
+    setIsSubmitting(true)
+    try {
+      console.log("🚀 Starting test submission with AI grading...")
+
+      if (!questions) {
+        throw new Error("No questions available")
+      }
+
+      // Prepare results object
+      const results: any = {
+        scoreA: 0,
+        feedbackB: [],
+        feedbackC: [],
+        feedbackD: [],
+        answersA: answers.groupA || {},
+      }
+
+      // Grade Group A (Multiple Choice) - instant scoring
+      if (questions.groupA && questions.groupA.length > 0) {
+        results.scoreA = questions.groupA.reduce((score, question) => {
+          const userAnswer = answers.groupA?.[question.id]
+          return userAnswer === question.correctAnswer ? score + question.marks : score
+        }, 0)
+      }
+
+      // Grade Groups B, C, D with AI
+      const gradingPromises: Promise<any>[] = []
+
+      // Grade Group B
+      if (questions.groupB && questions.groupB.length > 0) {
+        questions.groupB.forEach((question) => {
+          const userAnswer = answers.groupB?.[question.id] || ""
+          if (userAnswer.trim()) {
+            gradingPromises.push(
+              fetch("/api/grade", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                  question: question.english,
+                  answer: userAnswer,
+                  marks: question.marks,
+                  sampleAnswer: question.sampleAnswer,
+                }),
+              })
+                .then((res) => res.json())
+                .then((result) => ({
+                  id: question.id,
+                  score: result.score || 0,
+                  feedback: result.feedback || "No feedback available",
+                  question: question.english,
+                  studentAnswer: userAnswer,
+                  group: "B",
+                }))
+                .catch(() => ({
+                  id: question.id,
+                  score: 0,
+                  feedback: "AI grading failed",
+                  question: question.english,
+                  studentAnswer: userAnswer,
+                  group: "B",
+                })),
+            )
+          } else {
+            results.feedbackB.push({
+              id: question.id,
+              score: 0,
+              feedback: "No answer provided",
+              question: question.english,
+              studentAnswer: "",
+            })
+          }
         })
-        onProgressUpdate()
+      }
+
+      // Grade Group C
+      if (questions.groupC && questions.groupC.length > 0) {
+        questions.groupC.forEach((question) => {
+          const userAnswer = answers.groupC?.[question.id] || ""
+          if (userAnswer.trim()) {
+            gradingPromises.push(
+              fetch("/api/grade", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                  question: question.english,
+                  answer: userAnswer,
+                  marks: question.marks,
+                  sampleAnswer: question.sampleAnswer,
+                }),
+              })
+                .then((res) => res.json())
+                .then((result) => ({
+                  id: question.id,
+                  score: result.score || 0,
+                  feedback: result.feedback || "No feedback available",
+                  question: question.english,
+                  studentAnswer: userAnswer,
+                  group: "C",
+                }))
+                .catch(() => ({
+                  id: question.id,
+                  score: 0,
+                  feedback: "AI grading failed",
+                  question: question.english,
+                  studentAnswer: userAnswer,
+                  group: "C",
+                })),
+            )
+          } else {
+            results.feedbackC.push({
+              id: question.id,
+              score: 0,
+              feedback: "No answer provided",
+              question: question.english,
+              studentAnswer: "",
+            })
+          }
+        })
+      }
+
+      // Grade Group D
+      if (questions.groupD && questions.groupD.length > 0) {
+        questions.groupD.forEach((question) => {
+          const userAnswer = answers.groupD?.[question.id] || ""
+          if (userAnswer.trim()) {
+            gradingPromises.push(
+              fetch("/api/grade", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                  question: question.english,
+                  answer: userAnswer,
+                  marks: question.marks,
+                  sampleAnswer: question.sampleAnswer,
+                }),
+              })
+                .then((res) => res.json())
+                .then((result) => ({
+                  id: question.id,
+                  score: result.score || 0,
+                  feedback: result.feedback || "No feedback available",
+                  question: question.english,
+                  studentAnswer: userAnswer,
+                  group: "D",
+                }))
+                .catch(() => ({
+                  id: question.id,
+                  score: 0,
+                  feedback: "AI grading failed",
+                  question: question.english,
+                  studentAnswer: userAnswer,
+                  group: "D",
+                })),
+            )
+          } else {
+            results.feedbackD.push({
+              id: question.id,
+              score: 0,
+              feedback: "No answer provided",
+              question: question.english,
+              studentAnswer: "",
+            })
+          }
+        })
+      }
+
+      // Wait for all AI grading to complete
+      if (gradingPromises.length > 0) {
+        console.log(`⏳ Waiting for ${gradingPromises.length} AI grading requests...`)
+        const gradingResults = await Promise.all(gradingPromises)
+
+        // Sort results by group
+        gradingResults.forEach((result) => {
+          if (result.group === "B") results.feedbackB.push(result)
+          if (result.group === "C") results.feedbackC.push(result)
+          if (result.group === "D") results.feedbackD.push(result)
+        })
+      }
+
+      console.log("✅ All grading completed, showing results...")
+
+      // Save attempt to history
+      const totalScore =
+        results.scoreA +
+        results.feedbackB.reduce((sum: number, f: any) => sum + f.score, 0) +
+        results.feedbackC.reduce((sum: number, f: any) => sum + f.score, 0) +
+        results.feedbackD.reduce((sum: number, f: any) => sum + f.score, 0)
+
+      const maxScore =
+        (questions.groupA?.reduce((sum, q) => sum + q.marks, 0) || 0) +
+        (questions.groupB?.reduce((sum, q) => sum + q.marks, 0) || 0) +
+        (questions.groupC?.reduce((sum, q) => sum + q.marks, 0) || 0) +
+        (questions.groupD?.reduce((sum, q) => sum + q.marks, 0) || 0)
+
+      const percentage = Math.round((totalScore / maxScore) * 100)
+      const grade =
+        percentage >= 90
+          ? "A+"
+          : percentage >= 80
+            ? "A"
+            : percentage >= 70
+              ? "B+"
+              : percentage >= 60
+                ? "B"
+                : percentage >= 50
+                  ? "C+"
+                  : percentage >= 40
+                    ? "C"
+                    : percentage >= 32
+                      ? "D"
+                      : "E"
+
+      // Save attempt history
+      if (isClient) {
+        saveAttemptHistory(studentId, testId, {
+          scoreA: results.scoreA,
+          scoreB: results.feedbackB.reduce((sum: number, f: any) => sum + f.score, 0),
+          scoreC: results.feedbackC.reduce((sum: number, f: any) => sum + f.score, 0),
+          scoreD: results.feedbackD.reduce((sum: number, f: any) => sum + f.score, 0),
+          totalScore,
+          maxScore,
+          percentage,
+          grade,
+        })
+      }
+
+      // Show results on new page
+      onShowResults(results)
+    } catch (error) {
+      console.error("❌ Submission failed:", error)
+      alert(`Failed to submit test: ${error.message}. Please try again.`)
+    } finally {
+      setIsSubmitting(false)
+      setShowSubmitWarning(false)
+    }
+  }
+
+  const getAvailableSections = () => {
+    if (!questions) return []
+    const sections = []
+    if (questions.groupA.length > 0) sections.push("groupA")
+    if (questions.groupB.length > 0) sections.push("groupB")
+    if (questions.groupC.length > 0) sections.push("groupC")
+    if (questions.groupD.length > 0) sections.push("groupD")
+    return sections
+  }
+
+  const handleNextSection = () => {
+    const sections = getAvailableSections()
+    const currentIndex = sections.indexOf(currentTab)
+
+    if (currentIndex < sections.length - 1) {
+      const nextSection = sections[currentIndex + 1]
+      setCurrentTab(nextSection)
+
+      // Trigger the tab change in the UI
+      const tabTrigger = document.querySelector(`[value="${nextSection}"]`) as HTMLElement
+      if (tabTrigger) {
+        tabTrigger.click()
       }
     }
   }
 
-  const goToNextSection = () => {
-    const order = ["group-a", "group-b", "group-c", "group-d"]
-    const idx = order.indexOf(activeTab)
-    if (idx < order.length - 1) setActiveTab(order[idx + 1])
+  const isLastSection = () => {
+    const sections = getAvailableSections()
+    return currentTab === sections[sections.length - 1]
   }
 
-  const formatSavedTime = (date: Date) => {
-    const timeString = date.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", hour12: true })
-    return `${timeString}`
-  }
-
-  const handleSubmit = async () => {
-    if (isEmptyTest) return
-    setIsSubmitting(true)
-    setResults(null)
-
-    // Grade Group A
-    let scoreA = 0
-    questions?.groupA?.forEach((q) => {
-      if (answersA[q.id] === q.correctAnswer) scoreA += q.marks
-    })
-
-    // Prepare free-response grading payloads with sample answers
-    const free = [
-      ...Object.entries(answersB).map(([id, ans]) => ({
-        id,
-        ans,
-        group: "B" as const,
-        q: questions?.groupB.find((x) => x.id === id),
-      })),
-      ...Object.entries(answersC).map(([id, ans]) => ({
-        id,
-        ans,
-        group: "C" as const,
-        q: questions?.groupC.find((x) => x.id === id),
-      })),
-      ...Object.entries(answersD).map(([id, ans]) => ({
-        id,
-        ans,
-        group: "D" as const,
-        q: questions?.groupD.find((x) => x.id === id),
-      })),
-    ].filter((it) => it.ans.trim() !== "" && it.q)
-
-    const graded = await Promise.all(
-      free.map(async ({ id, ans, q }) => {
-        try {
-          const res = await fetch("/api/grade", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-              question: q!.english,
-              answer: ans,
-              marks: q!.marks,
-              sampleAnswer: (q as any).sampleAnswer, // Pass the sample answer for comparison
-            }),
-          })
-          if (!res.ok) throw new Error("Grading failed")
-          const data = await res.json()
-          return { id, ...data, question: q!.english, studentAnswer: ans }
-        } catch {
-          return { id, score: 0, feedback: "Error grading this answer.", question: q!.english, studentAnswer: ans }
-        }
-      }),
+  if (!testId) {
+    return (
+      <div className="bg-white/90 backdrop-blur-sm rounded-xl p-6 sm:p-8 shadow-lg border border-white/20 text-center mx-3 sm:mx-0">
+        <Trophy className="h-12 w-12 sm:h-16 sm:w-16 text-yellow-500 mx-auto mb-4" />
+        <h3 className="text-xl sm:text-2xl font-bold text-slate-800 mb-2">No Test Selected</h3>
+        <p className="text-slate-600 text-sm sm:text-base">Please select a practice test from the dropdown above.</p>
+      </div>
     )
-
-    const feedbackB = graded.filter((r) => questions?.groupB?.some((q) => q.id === r.id))
-    const feedbackC = graded.filter((r) => questions?.groupC?.some((q) => q.id === r.id))
-    const feedbackD = graded.filter((r) => questions?.groupD?.some((q) => q.id === r.id))
-
-    const sB = feedbackB.reduce((a, r) => a + r.score, 0)
-    const sC = feedbackC.reduce((a, r) => a + r.score, 0)
-    const sD = feedbackD.reduce((a, r) => a + r.score, 0)
-    const total = scoreA + sB + sC + sD
-
-    const maxA = questions?.groupA?.reduce((a, q) => a + q.marks, 0) || 0
-    const maxB = questions?.groupB?.reduce((a, q) => a + q.marks, 0) || 0
-    const maxC = questions?.groupC?.reduce((a, q) => a + q.marks, 0) || 0
-    const maxD = questions?.groupD?.reduce((a, q) => a + q.marks, 0) || 0
-    const maxTotal = maxA + maxB + maxC + maxD
-    const pct = maxTotal ? Math.round((total / maxTotal) * 100) : 0
-    const grade = (p: number) =>
-      p >= 90
-        ? "A+"
-        : p >= 80
-          ? "A"
-          : p >= 70
-            ? "B+"
-            : p >= 60
-              ? "B"
-              : p >= 50
-                ? "C+"
-                : p >= 40
-                  ? "C"
-                  : p >= 32
-                    ? "D"
-                    : "E"
-
-    saveAttemptHistory(studentId, testId, {
-      scoreA,
-      scoreB: sB,
-      scoreC: sC,
-      scoreD: sD,
-      totalScore: total,
-      maxScore: maxTotal,
-      percentage: pct,
-      grade: grade(pct),
-    })
-
-    setResults({ scoreA, feedbackB, feedbackC, feedbackD, answersA })
-    setIsSubmitting(false)
   }
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center p-8">
+      <div className="flex items-center justify-center p-6 sm:p-8">
         <div className="text-center">
           <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-yellow-600 mx-auto mb-4"></div>
-          <p>Loading questions... / प्रश्नहरू लोड गर्दै...</p>
+          <p className="text-sm sm:text-base">Loading questions...</p>
         </div>
       </div>
     )
@@ -336,44 +519,173 @@ export function ExamTabs({ studentId, testId, onProgressUpdate }: ExamTabsProps)
 
   if (error) {
     return (
-      <div className="text-center p-8 text-red-600">
-        <p>Error loading questions: {error}</p>
-        <p>प्रश्नहरू लोड गर्न समस्या भयो</p>
+      <div className="text-center p-6 sm:p-8 text-red-600 mx-3 sm:mx-0">
+        <p className="text-sm sm:text-base">Error loading questions: {error}</p>
       </div>
     )
   }
 
-  if (!questions) return <div>No questions available</div>
+  if (!questions) return <div className="text-center p-6">No questions available</div>
 
-  if (isEmptyTest) {
+  const isEnglishTest = questions.englishQuestions && questions.englishQuestions.length > 0
+  const isEmpty =
+    !isEnglishTest &&
+    questions.groupA.length === 0 &&
+    questions.groupB.length === 0 &&
+    questions.groupC.length === 0 &&
+    questions.groupD.length === 0
+
+  if (isEmpty) {
     return (
-      <div>
-        <div className="bg-white/90 backdrop-blur-sm rounded-xl p-8 shadow-lg border border-white/20 text-center">
-          <AlertCircle className="h-16 w-16 text-yellow-500 mx-auto mb-4" />
-          <h3 className="text-2xl font-bold text-slate-800 mb-2">Test Coming Soon</h3>
-          <h4 className="text-xl font-medium text-slate-700 mb-4">परीक्षा छिट्टै आउँदैछ</h4>
-          <p className="text-slate-600">This practice test is being prepared.</p>
+      <div className="mx-3 sm:mx-0">
+        <div className="bg-white/90 backdrop-blur-sm rounded-xl p-6 sm:p-8 shadow-lg border border-white/20 text-center">
+          <Trophy className="h-12 w-12 sm:h-16 sm:w-16 text-yellow-500 mx-auto mb-4" />
+          <h3 className="text-xl sm:text-2xl font-bold text-slate-800 mb-2">Test Coming Soon</h3>
+          <p className="text-slate-600 text-sm sm:text-base">This practice test is being prepared.</p>
         </div>
       </div>
     )
   }
 
-  if (results) {
-    return <ResultsCard results={results} onRetake={resetAllAnswers} studentId={studentId} testId={testId} />
+  // English test interface
+  if (isEnglishTest) {
+    return (
+      <div className="px-3 sm:px-0">
+        {/* Progress Header */}
+        <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4 sm:p-6 shadow-lg border border-white/20 mb-4 sm:mb-6">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-3 sm:gap-0">
+            <div className="flex items-center gap-2">
+              <h3 className="font-semibold text-slate-800 text-sm sm:text-base">English Test Progress</h3>
+              <span className="text-xs text-slate-600">{calculateOverallProgress()}% Complete</span>
+            </div>
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
+              {lastSaved && (
+                <div className="flex items-center gap-1 text-xs text-green-600">
+                  <Save className="h-3 w-3" />
+                  <span>Saved {formatSavedTime(lastSaved)}</span>
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* Overall Progress Bar */}
+          <div className="w-full bg-slate-200 rounded-full h-3 overflow-hidden">
+            <div
+              className="h-full bg-gradient-to-r from-yellow-500 to-amber-500 transition-all duration-500 ease-out"
+              style={{ width: `${calculateOverallProgress()}%` }}
+            />
+          </div>
+          <div className="flex justify-between items-center mt-2 text-xs text-slate-600">
+            <span>
+              {
+                questions.englishQuestions.filter((q) => {
+                  const answer = answers[q.id]
+                  if (!answer) return false
+                  if (typeof answer === "object" && !Array.isArray(answer)) {
+                    return Object.values(answer).some((val) => val !== undefined && val !== null && val !== "")
+                  }
+                  return answer !== undefined && answer !== null && answer !== ""
+                }).length
+              }{" "}
+              of ${questions.englishQuestions.length} questions answered
+            </span>
+            <span className="font-medium">{calculateOverallProgress()}%</span>
+          </div>
+        </div>
+
+        {/* Questions */}
+        <div className="space-y-6">
+          {questions.englishQuestions.map((question) => (
+            <EnglishQuestionRenderer
+              key={question.id}
+              question={question}
+              answers={answers}
+              onAnswerChange={handleAnswerChange}
+            />
+          ))}
+        </div>
+
+        {/* Submit Button */}
+        <div className="mt-6 sm:mt-8 flex justify-center px-3 sm:px-0">
+          <Button
+            onClick={handleSubmit}
+            disabled={isSubmitting}
+            size="lg"
+            className="bg-gradient-to-r from-yellow-600 to-amber-600 text-white px-6 sm:px-8 py-4 sm:py-3 rounded-xl disabled:opacity-50 w-full sm:w-auto min-h-[56px] text-sm sm:text-base"
+          >
+            {isSubmitting ? (
+              <>
+                <Loader2 className="mr-2 h-4 w-4 sm:h-5 sm:w-5 animate-spin" /> Submitting...
+              </>
+            ) : (
+              <>
+                <Trophy className="mr-2 h-4 w-4 sm:h-5 sm:w-5" /> Submit Test ({(() => {
+                  const answered = questions.englishQuestions.filter((q) => {
+                    const answer = answers[q.id]
+                    if (!answer) return false
+                    if (typeof answer === "object" && !Array.isArray(answer)) {
+                      return Object.values(answer).some((val) => val !== undefined && val !== null && val !== "")
+                    }
+                    return answer !== undefined && answer !== null && answer !== ""
+                  }).length
+                  return `${answered}/${questions.englishQuestions.length}`
+                })()})
+              </>
+            )}
+          </Button>
+        </div>
+
+        {/* Submit Warning Dialog */}
+        {showSubmitWarning && (
+          <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+            <div className="bg-white rounded-xl p-6 max-w-md w-full shadow-2xl">
+              <div className="text-center">
+                <Trophy className="h-12 w-12 text-amber-500 mx-auto mb-4" />
+                <h3 className="text-xl font-bold text-slate-800 mb-2">Incomplete Test</h3>
+                <p className="text-slate-600 mb-4">
+                  You have {getIncompleteQuestions().incomplete} unanswered questions out of{" "}
+                  {getIncompleteQuestions().total} total questions.
+                </p>
+                <p className="text-sm text-slate-500 mb-6">
+                  Are you sure you want to submit your test now? You can still go back and answer more questions.
+                </p>
+                <div className="flex gap-3">
+                  <Button onClick={() => setShowSubmitWarning(false)} variant="outline" className="flex-1">
+                    Go Back
+                  </Button>
+                  <Button
+                    onClick={submitTest}
+                    disabled={isSubmitting}
+                    className="flex-1 bg-amber-600 hover:bg-amber-700"
+                  >
+                    {isSubmitting ? (
+                      <>
+                        <Loader2 className="mr-2 h-4 w-4 animate-spin" /> Submitting...
+                      </>
+                    ) : (
+                      "Submit Anyway"
+                    )}
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+    )
   }
 
+  // Traditional science test interface with tabs
   return (
-    <div>
-      <div className="bg-white/90 backdrop-blur-sm rounded-xl p-6 shadow-lg border border-white/20 mb-6">
-        <div className="flex items-center justify-between mb-4">
+    <div className="px-3 sm:px-0">
+      {/* Progress Header */}
+      <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4 sm:p-6 shadow-lg border border-white/20 mb-4 sm:mb-6">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-3 sm:gap-0">
           <div className="flex items-center gap-2">
-            <Clock className="h-5 w-5 text-yellow-600" />
-            <h3 className="font-semibold text-slate-800">Overall Progress / समग्र प्रगति</h3>
+            <h3 className="font-semibold text-slate-800 text-sm sm:text-base">Overall Progress</h3>
+            <span className="text-xs text-slate-600">{calculateOverallProgress()}% Complete</span>
           </div>
-          <div className="flex items-center gap-4">
-            <Badge variant="secondary" className="bg-yellow-100 text-yellow-800">
-              {totalAnswered}/{totalQuestions} answered
-            </Badge>
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
             {lastSaved && (
               <div className="flex items-center gap-1 text-xs text-green-600">
                 <Save className="h-3 w-3" />
@@ -382,165 +694,177 @@ export function ExamTabs({ studentId, testId, onProgressUpdate }: ExamTabsProps)
             )}
           </div>
         </div>
-        <Progress value={overallProgress} className="h-3 mb-2" />
-        <p className="text-sm text-slate-600">{Math.round(overallProgress)}% complete</p>
+
+        {/* Overall Progress Bar */}
+        <div className="w-full bg-slate-200 rounded-full h-3 overflow-hidden">
+          <div
+            className="h-full bg-gradient-to-r from-yellow-500 to-amber-500 transition-all duration-500 ease-out"
+            style={{ width: `${calculateOverallProgress()}%` }}
+          />
+        </div>
+        <div className="flex justify-between items-center mt-2 text-xs text-slate-600">
+          <span>
+            {(() => {
+              const groupAAnswered = questions.groupA.filter((q) => answers.groupA?.[q.id]).length
+              const groupBAnswered = questions.groupB.filter((q) => answers.groupB?.[q.id]?.trim()).length
+              const groupCAnswered = questions.groupC.filter((q) => answers.groupC?.[q.id]?.trim()).length
+              const groupDAnswered = questions.groupD.filter((q) => answers.groupD?.[q.id]?.trim()).length
+              const totalAnswered = groupAAnswered + groupBAnswered + groupCAnswered + groupDAnswered
+              const totalQuestions =
+                questions.groupA.length + questions.groupB.length + questions.groupC.length + questions.groupD.length
+              return `${totalAnswered} of ${totalQuestions} questions answered`
+            })()}
+          </span>
+          <span className="font-medium">{calculateOverallProgress()}%</span>
+        </div>
       </div>
 
-      <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-        <TabsList className="w-full grid grid-cols-2 sm:grid-cols-4 gap-1 bg-transparent rounded-none p-0 mb-0">
-          <TabsTrigger
-            value="group-a"
-            className="relative flex items-center justify-center px-3 py-3 rounded-t-lg leading-none text-sm sm:text-base
-             data-[state=active]:text-white data-[state=active]:shadow-none data-[state=active]:border-b-0
-             data-[state=active]:bg-gradient-to-r data-[state=active]:from-yellow-500 data-[state=active]:to-amber-500
-             data-[state=inactive]:bg-white data-[state=inactive]:border data-[state=inactive]:border-gray-200
-             data-[state=inactive]:text-gray-600 data-[state=inactive]:hover:bg-gray-50"
-          >
-            <span className="whitespace-nowrap">Group 'A' / समूह 'क'</span>
-            {progressA === 100 && (
-              <CheckCircle className="absolute -top-1 -right-1 h-4 w-4 text-green-500 bg-white rounded-full shadow" />
-            )}
-          </TabsTrigger>
-
-          <TabsTrigger
-            value="group-b"
-            className="relative flex items-center justify-center px-3 py-3 rounded-t-lg leading-none text-sm sm:text-base
-             data-[state=active]:text-white data-[state=active]:shadow-none data-[state=active]:border-b-0
-             data-[state=active]:bg-gradient-to-r data-[state=active]:from-green-500 data-[state=active]:to-green-600
-             data-[state=inactive]:bg-white data-[state=inactive]:border data-[state=inactive]:border-gray-200
-             data-[state=inactive]:text-gray-600 data-[state=inactive]:hover:bg-gray-50"
-          >
-            <span className="whitespace-nowrap">Group 'B' / समूह 'ख'</span>
-            {progressB === 100 && (
-              <CheckCircle className="absolute -top-1 -right-1 h-4 w-4 text-green-500 bg-white rounded-full shadow" />
-            )}
-          </TabsTrigger>
-
-          <TabsTrigger
-            value="group-c"
-            className="relative flex items-center justify-center px-3 py-3 rounded-t-lg leading-none text-sm sm:text-base
-             data-[state=active]:text-white data-[state=active]:shadow-none data-[state=active]:border-b-0
-             data-[state=active]:bg-gradient-to-r data-[state=active]:from-purple-500 data-[state=active]:to-purple-600
-             data-[state=inactive]:bg-white data-[state=inactive]:border data-[state=inactive]:border-gray-200
-             data-[state=inactive]:text-gray-600 data-[state=inactive]:hover:bg-gray-50"
-          >
-            <span className="whitespace-nowrap">Group 'C' / समूह 'ग'</span>
-            {progressC === 100 && (
-              <CheckCircle className="absolute -top-1 -right-1 h-4 w-4 text-green-500 bg-white rounded-full shadow" />
-            )}
-          </TabsTrigger>
-
-          <TabsTrigger
-            value="group-d"
-            className="relative flex items-center justify-center px-3 py-3 rounded-t-lg leading-none text-sm sm:text-base
-             data-[state=active]:text-white data-[state=active]:shadow-none data-[state=active]:border-b-0
-             data-[state=active]:bg-gradient-to-r data-[state=active]:from-orange-500 data-[state=active]:to-orange-600
-             data-[state=inactive]:bg-white data-[state=inactive]:border data-[state=inactive]:border-gray-200
-             data-[state=inactive]:text-gray-600 data-[state=inactive]:hover:bg-gray-50"
-          >
-            <span className="whitespace-nowrap">Group 'D' / समूह 'घ'</span>
-            {progressD === 100 && (
-              <CheckCircle className="absolute -top-1 -right-1 h-4 w-4 text-green-500 bg-white rounded-full shadow" />
-            )}
-          </TabsTrigger>
+      <Tabs value={currentTab} onValueChange={setCurrentTab} className="w-full">
+        <TabsList className="grid w-full grid-cols-4 mb-6">
+          {questions.groupA.length > 0 && (
+            <TabsTrigger value="groupA" className="text-xs sm:text-sm">
+              Group A ({questions.groupA.length})
+            </TabsTrigger>
+          )}
+          {questions.groupB.length > 0 && (
+            <TabsTrigger value="groupB" className="text-xs sm:text-sm">
+              Group B ({questions.groupB.length})
+            </TabsTrigger>
+          )}
+          {questions.groupC.length > 0 && (
+            <TabsTrigger value="groupC" className="text-xs sm:text-sm">
+              Group C ({questions.groupC.length})
+            </TabsTrigger>
+          )}
+          {questions.groupD.length > 0 && (
+            <TabsTrigger value="groupD" className="text-xs sm:text-sm">
+              Group D ({questions.groupD.length})
+            </TabsTrigger>
+          )}
         </TabsList>
 
-        <TabsContent value="group-a" className="pt-0 mt-0">
-          <div className="rounded-t-none">
+        {questions.groupA.length > 0 && (
+          <TabsContent value="groupA">
             <GroupA
               questions={questions.groupA}
-              answers={answersA}
-              onAnswerChange={handleAnswerAChange}
-              progress={progressA}
+              answers={answers.groupA || {}}
+              onAnswerChange={handleGroupAAnswerChange}
+              progress={0}
             />
-            {progressA === 100 && questions.groupB.length > 0 && (
-              <div className="mt-6 flex justify-end">
-                <Button
-                  onClick={goToNextSection}
-                  size="lg"
-                  className="bg-gradient-to-r from-yellow-600 to-green-600 text-white"
-                >
-                  Next Section: Group B / अर्को खण्ड: समूह ख <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </div>
-            )}
-          </div>
-        </TabsContent>
-        <TabsContent value="group-b" className="pt-0 mt-0">
-          <div className="rounded-t-none">
+          </TabsContent>
+        )}
+
+        {questions.groupB.length > 0 && (
+          <TabsContent value="groupB">
             <FreeResponseGroup
               group="B"
               questions={questions.groupB}
-              answers={answersB}
+              answers={answers.groupB || {}}
               onAnswerChange={handleFreeResponseChange}
-              progress={progressB}
+              progress={0}
             />
-            {progressB === 100 && questions.groupC.length > 0 && (
-              <div className="mt-6 flex justify-end">
-                <Button
-                  onClick={goToNextSection}
-                  size="lg"
-                  className="bg-gradient-to-r from-green-600 to-purple-600 text-white"
-                >
-                  Next Section: Group C / अर्को खण्ड: समूह ग <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </div>
-            )}
-          </div>
-        </TabsContent>
-        <TabsContent value="group-c" className="pt-0 mt-0">
-          <div className="rounded-t-none">
+          </TabsContent>
+        )}
+
+        {questions.groupC.length > 0 && (
+          <TabsContent value="groupC">
             <FreeResponseGroup
               group="C"
               questions={questions.groupC}
-              answers={answersC}
+              answers={answers.groupC || {}}
               onAnswerChange={handleFreeResponseChange}
-              progress={progressC}
+              progress={0}
             />
-            {progressC === 100 && questions.groupD.length > 0 && (
-              <div className="mt-6 flex justify-end">
-                <Button
-                  onClick={goToNextSection}
-                  size="lg"
-                  className="bg-gradient-to-r from-purple-600 to-orange-600 text-white"
-                >
-                  Next Section: Group D / अर्को खण्ड: समूह घ <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </div>
-            )}
-          </div>
-        </TabsContent>
-        <TabsContent value="group-d" className="pt-0 mt-0">
-          <div className="rounded-t-none">
+          </TabsContent>
+        )}
+
+        {questions.groupD.length > 0 && (
+          <TabsContent value="groupD">
             <FreeResponseGroup
               group="D"
               questions={questions.groupD}
-              answers={answersD}
+              answers={answers.groupD || {}}
               onAnswerChange={handleFreeResponseChange}
-              progress={progressD}
+              progress={0}
             />
-          </div>
-        </TabsContent>
-
-        <div className="mt-8 flex justify-center">
-          <Button
-            onClick={handleSubmit}
-            disabled={isSubmitting || totalAnswered === 0}
-            size="lg"
-            className="bg-gradient-to-r from-yellow-600 to-amber-600 text-white px-8 py-3 rounded-xl disabled:opacity-50"
-          >
-            {isSubmitting ? (
-              <>
-                <Loader2 className="mr-2 h-5 w-5 animate-spin" /> Grading... / मूल्याङ्कन गर्दै...
-              </>
-            ) : (
-              <>
-                <Trophy className="mr-2 h-5 w-5" /> Submit & See Results / पेश गर्नुहोस् र परिणाम हेर्नुहोस्
-              </>
-            )}
-          </Button>
-        </div>
+          </TabsContent>
+        )}
       </Tabs>
+
+      {/* Submit/Next Section Button */}
+      <div className="mt-6 sm:mt-8 flex justify-center gap-3 px-3 sm:px-0">
+        <Button
+          onClick={handleSubmit}
+          disabled={isSubmitting}
+          size="lg"
+          className="bg-gradient-to-r from-yellow-600 to-amber-600 text-white px-6 sm:px-8 py-4 sm:py-3 rounded-xl disabled:opacity-50 w-full sm:w-auto min-h-[56px] text-sm sm:text-base"
+        >
+          {isSubmitting ? (
+            <>
+              <Loader2 className="mr-2 h-4 w-4 sm:h-5 sm:w-5 animate-spin" />
+              {isLastSection() ? "Submitting..." : "Grading..."}
+            </>
+          ) : (
+            <>
+              <Trophy className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+              {isLastSection() ? "Submit Test" : "Submit & Grade"} ({(() => {
+                const groupAAnswered = questions.groupA.filter((q) => answers.groupA?.[q.id]).length
+                const groupBAnswered = questions.groupB.filter((q) => answers.groupB?.[q.id]?.trim()).length
+                const groupCAnswered = questions.groupC.filter((q) => answers.groupC?.[q.id]?.trim()).length
+                const groupDAnswered = questions.groupD.filter((q) => answers.groupD?.[q.id]?.trim()).length
+                const totalAnswered = groupAAnswered + groupBAnswered + groupCAnswered + groupDAnswered
+                const totalQuestions =
+                  questions.groupA.length + questions.groupB.length + questions.groupC.length + questions.groupD.length
+                return `${totalAnswered}/${totalQuestions}`
+              })()})
+            </>
+          )}
+        </Button>
+
+        {!isLastSection() && (
+          <Button
+            onClick={handleNextSection}
+            size="lg"
+            variant="outline"
+            className="bg-blue-600 hover:bg-blue-700 text-white border-blue-600 hover:border-blue-700 px-6 sm:px-8 py-4 sm:py-3 rounded-xl w-full sm:w-auto min-h-[56px] text-sm sm:text-base"
+          >
+            Next Section →
+          </Button>
+        )}
+      </div>
+
+      {/* Submit Warning Dialog */}
+      {showSubmitWarning && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-xl p-6 max-w-md w-full shadow-2xl">
+            <div className="text-center">
+              <Trophy className="h-12 w-12 text-amber-500 mx-auto mb-4" />
+              <h3 className="text-xl font-bold text-slate-800 mb-2">Incomplete Test</h3>
+              <p className="text-slate-600 mb-4">
+                You have {getIncompleteQuestions().incomplete} unanswered questions out of{" "}
+                {getIncompleteQuestions().total} total questions.
+              </p>
+              <p className="text-sm text-slate-500 mb-6">
+                Are you sure you want to submit your test now? You can still go back and answer more questions.
+              </p>
+              <div className="flex gap-3">
+                <Button onClick={() => setShowSubmitWarning(false)} variant="outline" className="flex-1">
+                  Go Back
+                </Button>
+                <Button onClick={submitTest} disabled={isSubmitting} className="flex-1 bg-amber-600 hover:bg-amber-700">
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="mr-2 h-4 w-4 animate-spin" /> Submitting...
+                    </>
+                  ) : (
+                    "Submit Anyway"
+                  )}
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }

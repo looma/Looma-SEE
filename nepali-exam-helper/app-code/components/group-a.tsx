@@ -1,70 +1,170 @@
 "use client"
 
+import { useState } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Label } from "@/components/ui/label"
-import { Progress } from "@/components/ui/progress"
 import { Badge } from "@/components/ui/badge"
-
-export interface GroupAQuestion {
-  id: string
-  nepali: string
-  english: string
-  options: { id: string; nepali: string; english: string }[]
-  correctAnswer: string
-  marks: number
-}
+import { Button } from "@/components/ui/button"
+import { Progress } from "@/components/ui/progress"
+import { CheckCircle2, Circle, Eye, EyeOff, Lightbulb } from "lucide-react"
+import type { GroupAQuestion } from "@/lib/use-questions"
 
 interface GroupAProps {
   questions: GroupAQuestion[]
   answers: Record<string, string>
-  onAnswerChange: (questionId: string, answer: string) => void
+  onAnswerChange: (id: string, answer: string) => void
   progress: number
+  language?: "english" | "nepali"
 }
 
-export function GroupA({ questions, answers, onAnswerChange, progress }: GroupAProps) {
-  return (
-    <Card className="bg-white/90 backdrop-blur-sm shadow-xl border border-white/20 overflow-hidden rounded-t-none border-t-0">
-      <CardHeader className="bg-gradient-to-r from-yellow-500 to-amber-500 text-white">
-        <div className="flex items-center justify-between">
-          <div>
-            <CardTitle className="text-xl">Group 'A' - Multiple Choice Questions (10 Marks)</CardTitle>
-            <p className="text-yellow-100 mt-1">समूह 'क' - बहुविकल्पीय प्रश्नहरू (१० अंक)</p>
+export function GroupA({ questions, answers, onAnswerChange, progress, language = "english" }: GroupAProps) {
+  const [showExplanations, setShowExplanations] = useState(false)
+
+  const parseExplanation = (explanation?: string) => {
+    if (!explanation) return { english: "", nepali: "" }
+
+    const parts = explanation.split("\nब्याख्या (Nepali Explanation): ")
+    const english = parts[0]?.replace("Explanation (English): ", "") || ""
+    const nepali = parts[1] || ""
+
+    return { english, nepali }
+  }
+
+  const renderExplanation = (explanation?: string) => {
+    if (!explanation || !showExplanations) return null
+
+    // Clean up the explanation text by removing "English:" prefix if it exists
+    let cleanExplanation = explanation.trim()
+    if (cleanExplanation.startsWith("English:")) {
+      cleanExplanation = cleanExplanation.replace(/^English:\s*/, "")
+    }
+    if (cleanExplanation.startsWith("Explanation (English):")) {
+      cleanExplanation = cleanExplanation.replace(/^Explanation $$English$$:\s*/, "")
+    }
+
+    return (
+      <div className="mt-3 p-3 bg-blue-50 rounded-lg border border-blue-200">
+        <div className="text-sm">
+          <div className="flex items-start gap-2 mb-2">
+            <Lightbulb className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
+            <span className="font-medium text-blue-800">Explanation / व्याख्या:</span>
           </div>
-          <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
-            {Object.keys(answers).length}/{questions.length}
-          </Badge>
+          <div className="ml-6">
+            <p className="text-blue-700 whitespace-pre-line leading-relaxed">{cleanExplanation}</p>
+          </div>
         </div>
-        <Progress value={progress} className="mt-3 bg-yellow-400" />
-      </CardHeader>
-      <CardContent className="space-y-8 p-6">
-        {questions.map((q, index) => (
-          <div
-            key={q.id}
-            className="group hover:bg-yellow-50/50 rounded-lg p-4 transition-all duration-300 border border-transparent hover:border-yellow-200"
-          >
-            <div className="mb-4">
-              <p className="font-semibold mb-2 text-slate-800 leading-relaxed">
-                {index + 1}. {q.nepali}
-              </p>
-              <p className="text-sm text-slate-600 italic leading-relaxed">{q.english}</p>
+      </div>
+    )
+  }
+
+  const answeredCount = Object.keys(answers).length
+  const progressPercentage = questions.length > 0 ? (answeredCount / questions.length) * 100 : 0
+
+  if (questions.length === 0) {
+    return (
+      <Card className="bg-white/90 backdrop-blur-sm shadow-lg border border-white/20">
+        <CardContent className="flex items-center justify-center py-8">
+          <p className="text-slate-600">No Group A questions available</p>
+        </CardContent>
+      </Card>
+    )
+  }
+
+  return (
+    <div className="space-y-6">
+      {/* Header */}
+      <Card className="bg-gradient-to-r from-blue-500 to-blue-600 text-white shadow-lg border border-white/20">
+        <CardHeader className="pb-4">
+          <div className="flex items-center justify-between">
+            <div>
+              <CardTitle className="text-xl font-bold">Group A - Multiple Choice</CardTitle>
+              <p className="text-blue-100 mt-1">Choose the best answer for each question</p>
             </div>
-            <RadioGroup value={answers[q.id]} onValueChange={(value) => onAnswerChange(q.id, value)}>
-              {q.options.map((opt) => (
-                <div key={opt.id} className="flex items-start space-x-3 mb-3 p-2 rounded-md hover:bg-white/80">
-                  <RadioGroupItem value={opt.id} id={`${q.id}-${opt.id}`} className="mt-1" />
-                  <Label htmlFor={`${q.id}-${opt.id}`} className="cursor-pointer flex-1">
-                    <div className="font-medium text-slate-800">
-                      ({opt.id}) {opt.nepali}
-                    </div>
-                    <div className="text-sm text-slate-600 italic mt-1">{opt.english}</div>
-                  </Label>
-                </div>
-              ))}
-            </RadioGroup>
+            <div className="flex items-center gap-3">
+              <Button
+                variant="secondary"
+                size="sm"
+                onClick={() => setShowExplanations(!showExplanations)}
+                className="bg-white/20 text-white border-white/30 hover:bg-white/30"
+              >
+                {showExplanations ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+                <span className="ml-1 hidden sm:inline">{showExplanations ? "Hide" : "Show"} Help</span>
+              </Button>
+              <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+                {answeredCount}/{questions.length}
+              </Badge>
+            </div>
           </div>
-        ))}
-      </CardContent>
-    </Card>
+          <div className="mt-4">
+            <Progress value={progressPercentage} className="h-2 bg-blue-400/30" />
+            <p className="text-xs text-blue-100 mt-1">{Math.round(progressPercentage)}% complete</p>
+          </div>
+        </CardHeader>
+      </Card>
+
+      {/* Questions */}
+      <div className="space-y-4">
+        {questions.map((question, index) => {
+          const isAnswered = answers[question.id] !== undefined
+          const selectedAnswer = answers[question.id]
+
+          return (
+            <Card key={question.id} className="bg-white/90 backdrop-blur-sm shadow-lg border border-white/20">
+              <CardHeader className="pb-4">
+                <div className="flex items-start justify-between">
+                  <div className="flex items-start gap-3">
+                    <div className="flex-shrink-0 mt-1">
+                      {isAnswered ? (
+                        <CheckCircle2 className="h-5 w-5 text-green-500" />
+                      ) : (
+                        <Circle className="h-5 w-5 text-slate-400" />
+                      )}
+                    </div>
+                    <div className="flex-1">
+                      <CardTitle className="text-base font-semibold text-slate-800">Question {index + 1}</CardTitle>
+                      <p className="text-slate-700 mt-2 leading-relaxed">
+                        {language === "nepali" ? question.nepali : question.english}
+                      </p>
+                    </div>
+                  </div>
+                  <Badge variant="outline" className="ml-3">
+                    {question.marks} mark{question.marks !== 1 ? "s" : ""}
+                  </Badge>
+                </div>
+              </CardHeader>
+
+              <CardContent className="pt-0">
+                <RadioGroup
+                  value={selectedAnswer || ""}
+                  onValueChange={(value) => onAnswerChange(question.id, value)}
+                  className="space-y-3"
+                >
+                  {question.options.map((option) => (
+                    <div
+                      key={option.id}
+                      className={`flex items-center space-x-3 p-3 rounded-lg border transition-colors cursor-pointer ${
+                        selectedAnswer === option.id
+                          ? "bg-blue-50 border-blue-200"
+                          : "bg-slate-50 border-slate-200 hover:bg-slate-100"
+                      }`}
+                      onClick={() => onAnswerChange(question.id, option.id)}
+                    >
+                      <RadioGroupItem value={option.id} id={`${question.id}-${option.id}`} />
+                      <Label htmlFor={`${question.id}-${option.id}`} className="flex-1 text-sm leading-relaxed">
+                        <span className="font-medium mr-2">({option.id})</span>
+                        {language === "nepali" ? option.nepali : option.english}
+                      </Label>
+                    </div>
+                  ))}
+                </RadioGroup>
+
+                {renderExplanation(question.explanation)}
+              </CardContent>
+            </Card>
+          )
+        })}
+      </div>
+    </div>
   )
 }

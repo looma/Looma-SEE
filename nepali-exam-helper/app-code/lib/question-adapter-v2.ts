@@ -1,4 +1,4 @@
-// Enhanced adapter to handle both science and English questions with bilingual support
+// Enhanced adapter to handle both science and English questions
 interface DatabaseQuestion {
   _id?: string
   questionId?: string
@@ -24,13 +24,10 @@ interface DatabaseQuestion {
   isActive?: boolean
   // English-specific fields
   questionEnglish?: string
-  questionNepali?: string
   wordCount?: number
   clues?: string[]
   sampleAnswer?: any
   gaps?: any[]
-  explanation?: string
-  explanationNepali?: string
 }
 
 export interface GroupAQuestion {
@@ -40,8 +37,6 @@ export interface GroupAQuestion {
   options: { id: string; nepali: string; english: string }[]
   correctAnswer: string
   marks: number
-  explanation?: string
-  explanationNepali?: string
 }
 
 export interface FreeResponseQuestion {
@@ -49,9 +44,6 @@ export interface FreeResponseQuestion {
   nepali: string
   english: string
   marks: number
-  sampleAnswer?: string
-  explanation?: string
-  explanationNepali?: string
 }
 
 export interface EnglishQuestion {
@@ -67,8 +59,6 @@ export interface EnglishQuestion {
   clues?: string[]
   sampleAnswer?: any
   gaps?: any[]
-  explanation?: string
-  explanationNepali?: string
 }
 
 export function adaptDatabaseQuestions(dbQuestions: Record<string, DatabaseQuestion[]>) {
@@ -96,8 +86,6 @@ export function adaptDatabaseQuestions(dbQuestions: Record<string, DatabaseQuest
       clues: q.clues,
       sampleAnswer: q.sampleAnswer,
       gaps: q.gaps,
-      explanation: q.explanation,
-      explanationNepali: q.explanationNepali,
     }))
   }
 
@@ -106,32 +94,27 @@ export function adaptDatabaseQuestions(dbQuestions: Record<string, DatabaseQuest
     if (groupKey === "englishQuestions") return // Skip, already handled above
 
     questions.forEach((q) => {
-      if (groupKey === "groupA" || groupKey === "A") {
+      if (groupKey === "A") {
         adapted.groupA.push({
-          id: q.id || q.questionNumber?.toString() || q.questionId || q._id || Math.random().toString(),
-          nepali: q.questionNepali || q.question?.nepali || "",
-          english: q.questionEnglish || q.question?.english || "",
+          id: q.questionNumber?.toString() || q.questionId || q._id || Math.random().toString(),
+          nepali: q.question?.nepali || q.questionEnglish || "",
+          english: q.question?.english || q.questionEnglish || "",
           options: q.options || [],
           correctAnswer: q.correctAnswer || "",
           marks: q.marks,
-          explanation: q.explanation,
-          explanationNepali: q.explanationNepali,
         })
       } else {
         // Groups B, C, D are free response
         const freeResponseQuestion: FreeResponseQuestion = {
-          id: q.id || q.questionNumber?.toString() || q.questionId || q._id || Math.random().toString(),
-          nepali: q.questionNepali || q.question?.nepali || "",
-          english: q.questionEnglish || q.question?.english || "",
+          id: q.questionNumber?.toString() || q.questionId || q._id || Math.random().toString(),
+          nepali: q.question?.nepali || q.questionEnglish || "",
+          english: q.question?.english || q.questionEnglish || "",
           marks: q.marks,
-          sampleAnswer: q.sampleAnswer,
-          explanation: q.explanation,
-          explanationNepali: q.explanationNepali,
         }
 
-        if (groupKey === "groupB" || groupKey === "B") adapted.groupB.push(freeResponseQuestion)
-        if (groupKey === "groupC" || groupKey === "C") adapted.groupC.push(freeResponseQuestion)
-        if (groupKey === "groupD" || groupKey === "D") adapted.groupD.push(freeResponseQuestion)
+        if (groupKey === "B") adapted.groupB.push(freeResponseQuestion)
+        if (groupKey === "C") adapted.groupC.push(freeResponseQuestion)
+        if (groupKey === "D") adapted.groupD.push(freeResponseQuestion)
       }
     })
   })

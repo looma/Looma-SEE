@@ -5,6 +5,7 @@ import { ExamTabs } from "@/components/exam-tabs"
 import { StudentLogin } from "@/components/student-login"
 import { StudentHeader } from "@/components/student-header"
 import { TestSelectionScreen } from "@/components/test-selection-screen"
+import { ResultsCard } from "@/components/results-card"
 import { loadStudentProgress, saveStudentProgress } from "@/lib/storage"
 
 export default function SeePrepPage() {
@@ -12,6 +13,8 @@ export default function SeePrepPage() {
   const [currentTestId, setCurrentTestId] = useState<string | null>(null)
   const [currentTestTitle, setCurrentTestTitle] = useState<string | null>(null)
   const [showTestSelection, setShowTestSelection] = useState(false)
+  const [showResults, setShowResults] = useState(false)
+  const [testResults, setTestResults] = useState<any>(null)
   const [isClient, setIsClient] = useState(false)
 
   // Ensure we're on the client side before accessing localStorage
@@ -72,6 +75,7 @@ export default function SeePrepPage() {
       localStorage.setItem("see_last_test_id", testId)
     }
     setShowTestSelection(false)
+    setShowResults(false) // Hide results when selecting a new test
 
     if (currentStudentId) {
       const existingProgress = loadStudentProgress(`${currentStudentId}_${testId}`)
@@ -92,6 +96,7 @@ export default function SeePrepPage() {
 
   const handleChangeTest = () => {
     setShowTestSelection(true)
+    setShowResults(false)
     setCurrentTestId(null)
     setCurrentTestTitle(null)
   }
@@ -101,10 +106,42 @@ export default function SeePrepPage() {
     setCurrentTestId(null)
     setCurrentTestTitle(null)
     setShowTestSelection(false)
+    setShowResults(false)
+    setTestResults(null)
     if (isClient) {
       localStorage.removeItem("see_last_student_id")
       localStorage.removeItem("see_last_test_id")
     }
+  }
+
+  const handleShowResults = (results: any) => {
+    setTestResults(results)
+    setShowResults(true)
+  }
+
+  const handleRetakeTest = () => {
+    setShowResults(false)
+    setTestResults(null)
+    // Clear answers but keep the same test
+    if (currentStudentId && currentTestId) {
+      saveStudentProgress(currentStudentId, {
+        studentId: currentStudentId,
+        testId: currentTestId,
+        answers: {}, // Clear all answers for retake
+        answersA: {},
+        answersB: {},
+        answersC: {},
+        answersD: {},
+        currentTab: "groupA", // Reset to first section
+        attempts: loadStudentProgress(`${currentStudentId}_${currentTestId}`)?.attempts || [],
+      })
+    }
+  }
+
+  const handleEditAnswers = () => {
+    setShowResults(false)
+    setTestResults(null)
+    // Keep existing answers and go back to test
   }
 
   const updateLastSaved = useCallback(() => {
@@ -120,6 +157,20 @@ export default function SeePrepPage() {
   if (showTestSelection) {
     return (
       <TestSelectionScreen studentId={currentStudentId} onTestSelect={handleTestSelect} onSwitchUser={handleLogout} />
+    )
+  }
+
+  // Show results screen
+  if (showResults && testResults) {
+    return (
+      <ResultsCard
+        results={testResults}
+        onRetake={handleRetakeTest}
+        onEditAnswers={handleEditAnswers}
+        onBackToTestSelection={handleChangeTest}
+        studentId={currentStudentId}
+        testId={currentTestId || ""}
+      />
     )
   }
 
@@ -154,7 +205,13 @@ export default function SeePrepPage() {
             currentTestTitle={currentTestTitle || undefined}
           />
 
-          <ExamTabs studentId={currentStudentId} testId={currentTestId || ""} onProgressUpdate={updateLastSaved} />
+          <ExamTabs
+            studentId={currentStudentId}
+            testId={currentTestId || ""}
+            onProgressUpdate={updateLastSaved}
+            onShowResults={handleShowResults}
+            onBackToTestSelection={handleChangeTest}
+          />
         </div>
       </div>
     </div>

@@ -30,29 +30,29 @@ export function StudentLogin({ onLogin }: StudentLoginProps) {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-yellow-50 via-orange-50 to-amber-50 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-yellow-50 via-orange-50 to-amber-50 flex items-center justify-center p-3 sm:p-4">
       {/* Background Effects */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-yellow-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-amber-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-        <div className="absolute top-40 left-40 w-80 h-80 bg-orange-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+        <div className="absolute -top-40 -right-40 w-60 h-60 sm:w-80 sm:h-80 bg-yellow-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+        <div className="absolute -bottom-40 -left-40 w-60 h-60 sm:w-80 sm:h-80 bg-amber-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+        <div className="absolute top-40 left-40 w-60 h-60 sm:w-80 sm:h-80 bg-orange-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
       </div>
 
-      <Card className="w-full max-w-md bg-white/90 backdrop-blur-sm shadow-2xl border border-white/20 relative z-10">
-        <CardHeader className="text-center bg-gradient-to-r from-yellow-500 to-amber-500 text-white rounded-t-lg">
-          <div className="flex items-center justify-center gap-3 mb-2">
-            <img src="/looma-logo.png" alt="Looma" className="h-8 w-auto" />
-            <CardTitle className="text-2xl font-bold">SEE Exam Practice</CardTitle>
+      <Card className="w-full max-w-sm sm:max-w-md bg-white/90 backdrop-blur-sm shadow-2xl border border-white/20 relative z-10">
+        <CardHeader className="text-center bg-gradient-to-r from-yellow-500 to-amber-500 text-white rounded-t-lg p-4 sm:p-6">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 mb-2">
+            <img src="/looma-logo.png" alt="Looma" className="h-6 sm:h-8 w-auto" />
+            <CardTitle className="text-xl sm:text-2xl font-bold">SEE Exam Practice</CardTitle>
           </div>
-          <p className="text-yellow-100">SEE परीक्षा अभ्यास</p>
-          <p className="text-sm text-yellow-200 mt-2">Enter your Student ID to start or continue</p>
+          <p className="text-yellow-100 text-sm sm:text-base">SEE परीक्षा अभ्यास</p>
+          <p className="text-xs sm:text-sm text-yellow-200 mt-2">Enter your Student ID to start or continue</p>
           <p className="text-xs text-yellow-200">सुरु गर्न वा जारी राख्न विद्यार्थी ID प्रविष्ट गर्नुहोस्</p>
         </CardHeader>
-        <CardContent className="p-6">
-          <form onSubmit={handleSubmit} className="space-y-6">
+        <CardContent className="p-4 sm:p-6">
+          <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
             <div className="space-y-3">
-              <Label htmlFor="studentId" className="flex items-center gap-2 text-lg font-semibold">
-                <Key className="h-5 w-5" />
+              <Label htmlFor="studentId" className="flex items-center gap-2 text-base sm:text-lg font-semibold">
+                <Key className="h-4 w-4 sm:h-5 sm:w-5" />
                 Student ID / विद्यार्थी ID
                 <TooltipProvider>
                   <Tooltip>
@@ -70,7 +70,7 @@ export function StudentLogin({ onLogin }: StudentLoginProps) {
                   </Tooltip>
                 </TooltipProvider>
               </Label>
-              <div className="flex gap-2">
+              <div className="flex flex-col sm:flex-row gap-2">
                 <Input
                   id="studentId"
                   type="text"
@@ -78,13 +78,13 @@ export function StudentLogin({ onLogin }: StudentLoginProps) {
                   value={studentId}
                   onChange={(e) => setStudentId(e.target.value)}
                   required
-                  className="border-2 focus:border-yellow-400 flex-1 text-lg py-3"
+                  className="border-2 focus:border-yellow-400 flex-1 text-base sm:text-lg py-3 sm:py-3 min-h-[48px]"
                 />
                 <Button
                   type="button"
                   variant="outline"
                   onClick={() => setStudentId(generateSampleId())}
-                  className="px-4 bg-transparent border-yellow-300 hover:bg-yellow-50"
+                  className="px-3 sm:px-4 bg-transparent border-yellow-300 hover:bg-yellow-50 min-h-[48px] text-sm sm:text-base"
                   title="Generate a random ID"
                 >
                   Generate
@@ -94,7 +94,7 @@ export function StudentLogin({ onLogin }: StudentLoginProps) {
 
             <Button
               type="submit"
-              className="w-full bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-white py-4 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              className="w-full bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-white py-4 sm:py-4 text-base sm:text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 min-h-[56px]"
               disabled={!studentId.trim()}
             >
               Start Practice / अभ्यास सुरु गर्नुहोस्

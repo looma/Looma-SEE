@@ -1,0 +1,565 @@
+[
+  {
+    "_id": "see_2081_english_practice_4_generated",
+    "title": "SEE 2081 English Practice Test 4 (Generated Questions)",
+    "titleNepali": "SEE २०८१ अंग्रेजी अभ्यास परीक्षा ४ (उत्पन्न प्रश्नहरू)",
+    "subject": "english",
+    "year": 2081,
+    "totalMarks": 75,
+    "duration": 180,
+    "instructionsEnglish": "Candidates are required to answer the questions in their own words as far as practicable. Figures in the margin indicate the full marks. Attempt all the questions.",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-08-30T19:45:20.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-08-30T19:45:20.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "687d809a2f3df9d071c52113"
+    },
+    "testId": "see_2081_english_practice_4_generated",
+    "questions": [
+      {
+        "questionNumber": 1,
+        "type": "reading_comprehension",
+        "title": "Read the poem and write 'TRUE' for true and 'FALSE' for the false statements.",
+        "marks": 5,
+        "passage": {
+          "title": "Leave this Chanting and Singing",
+          "content": "Leave this chanting and singing and telling of beads!\nWhom dost thou worship in this lonely dark corner of a temple with doors all shut?\nOpen thine eyes and see thy God is not before thee!\nHe is there where the tiller is tilling the hard ground\nand where the pathmaker is breaking stones.\nHe is with them in sun and in shower,\nand his garment is covered with dust.\nPut off thy holy mantle and even like him come down on the dusty soil!"
+        },
+        "subQuestions": [
+          {
+            "id": "i",
+            "type": "true_false",
+            "questionEnglish": "The poet encourages worshipping in a dark corner of a temple.",
+            "correctAnswer": "FALSE",
+            "explanation": "Explanation (English): The poet asks the worshipper to \"Leave this chanting and singing... in this lonely dark corner of a temple,\" suggesting they should stop this form of worship.\nব্যাখ্যা (Nepali Explanation): कविले उपासकलाई \"Leave this chanting and singing... in this lonely dark corner of a temple\" भन्दै यो प्रकारको पूजा छोड्न आग्रह गरेका छन्।",
+            "marks": 1
+          },
+          {
+            "id": "ii",
+            "type": "true_false",
+            "questionEnglish": "According to the poem, God can be found among hardworking laborers.",
+            "correctAnswer": "TRUE",
+            "explanation": "Explanation (English): The poem states that God is \"where the tiller is tilling the hard ground and where the pathmaker is breaking stones.\"\nব্যাখ্যা (Nepali Explanation): कवितामा भनिएको छ कि भगवान \"where the tiller is tilling the hard ground and where the pathmaker is breaking stones\" मा हुनुहुन्छ।",
+            "marks": 1
+          },
+          {
+            "id": "iii",
+            "type": "true_false",
+            "questionEnglish": "The poet describes God's garment as clean and holy.",
+            "correctAnswer": "FALSE",
+            "explanation": "Explanation (English): The poem says God's garment is \"covered with dust,\" which implies it is not clean.\nব্যাখ্যা (Nepali Explanation): कवितामा भनिएको छ कि भगवानको वस्त्र \"covered with dust\" छ, जसको अर्थ यो सफा छैन भन्ने हो।",
+            "marks": 1
+          },
+          {
+            "id": "iv",
+            "type": "true_false",
+            "questionEnglish": "The speaker advises the worshipper to take off their holy clothes and work on the dusty soil.",
+            "correctAnswer": "TRUE",
+            "explanation": "Explanation (English): The last line of the stanza says, \"Put off thy holy mantle and even like him come down on the dusty soil!\"\nব্যাখ্যা (Nepali Explanation): श्लोकको अन्तिम पङ्क्तिमा भनिएको छ, \"Put off thy holy mantle and even like him come down on the dusty soil!\"",
+            "marks": 1
+          },
+          {
+            "id": "v",
+            "type": "true_false",
+            "questionEnglish": "The poem suggests that God is only present during sunny weather.",
+            "correctAnswer": "FALSE",
+            "explanation": "Explanation (English): The poem says God is with the laborers \"in sun and in shower,\" meaning in both good and bad weather.\nব্যাখ্যা (Nepali Explanation): कवितामा भनिएको छ कि भगवान श्रमिकहरूसँग \"in sun and in shower\" मा हुनुहुन्छ, अर्थात् राम्रो र नराम्रो दुवै मौसममा।",
+            "marks": 1
+          }
+        ]
+      },
+      {
+        "questionNumber": 2,
+        "type": "reading_comprehension",
+        "title": "Read the text and do the tasks.",
+        "marks": 10,
+        "passage": {
+          "title": "Wisdom of Little Girls",
+          "content": "Two little girls from different houses happened to meet in a lane between two homesteads, where the dirty water after running through the farm-yards had formed a large puddle. One girl was very small, the other a little bigger. Their mothers had dressed them both in new frocks. The little one wore a blue frock, the other a yellow print, and both had red kerchiefs on their heads. They had just come from church when they met, and first they showed each other their finery, and then they began to play.\nSoon the fancy took them to splash about in the water, and the smaller one was going to step into the puddle, shoes and all, when the elder checked her: 'Don't go in so, Malasha,' said she, 'your mother will scold you. I will take off my shoes and stockings, and you take off yours.' They did so; and then, picking up their skirts, began walking towards each other through the puddle. The water came up to Malasha's ankles, and she said: 'It is deep, Akoulya, I am afraid!'"
+        },
+        "subSections": [
+          {
+            "id": "A",
+            "type": "matching",
+            "title": "Match the items in Column 'A' with their descriptions in Column 'B'.",
+            "marks": 5,
+            "columns": {
+              "A": [
+                {"id": "i", "text": "Puddle"},
+                {"id": "ii", "text": "Frocks"},
+                {"id": "iii", "text": "Kerchiefs"},
+                {"id": "iv", "text": "Akoulya"},
+                {"id": "v", "text": "Malasha"}
+              ],
+              "B": [
+                {"id": "a", "text": "The smaller girl"},
+                {"id": "b", "text": "Formed by dirty water in the lane"},
+                {"id": "c", "text": "The bigger girl"},
+                {"id": "d", "text": "Worn by the girls on their heads"},
+                {"id": "e", "text": "New clothes worn by the girls"},
+                {"id": "f", "text": "A piece of cake"}
+              ]
+            },
+            "correctAnswer": [
+              {"A": "i", "B": "b"},
+              {"A": "ii", "B": "e"},
+              {"A": "iii", "B": "d"},
+              {"A": "iv", "B": "c"},
+              {"A": "v", "B": "a"}
+            ],
+            "explanation": "Explanation (English): The puddle was formed by water in the lane. Frocks are the new dresses the girls wore. Kerchiefs were on their heads. The text identifies Akoulya as the elder (bigger) girl and Malasha as the smaller one.\nব্যাখ্যা (Nepali Explanation): पोखरी गल्लीमा पानीले बनेको थियो। फ्रकहरू केटीहरूले लगाएका नयाँ लुगाहरू हुन्। रुमालहरू उनीहरूको टाउकोमा थिए। पाठले अकोल्यालाई जेठी (ठूली) केटी र मलाशालाई कान्छी केटीको रूपमा चिनाउँछ।"
+          },
+          {
+            "id": "B",
+            "type": "short_answer",
+            "title": "Answer the following questions.",
+            "marks": 5,
+            "subQuestions": [
+              {
+                "id": "i",
+                "questionEnglish": "Where did the two little girls meet?",
+                "correctAnswer": "They met in a lane between two homesteads.",
+                "explanation": "Explanation (English): The first sentence states they \"happened to meet in a lane between two homesteads\".\nব্যাখ্যা (Nepali Explanation): पहिलो वाक्यमा भनिएको छ कि उनीहरू \"happened to meet in a lane between two homesteads\"।",
+                "marks": 1
+              },
+              {
+                "id": "ii",
+                "questionEnglish": "What had formed a large puddle in the lane?",
+                "correctAnswer": "Dirty water that had run through the farm-yards had formed a large puddle.",
+                "explanation": "Explanation (English): The text explains that \"the dirty water after running through the farm-yards had formed a large puddle.\"\nব্যাখ্যা (Nepali Explanation): पाठले व्याख्या गर्दछ कि \"the dirty water after running through the farm-yards had formed a large puddle.\"",
+                "marks": 1
+              },
+              {
+                "id": "iii",
+                "questionEnglish": "What were the colors of the girls' frocks?",
+                "correctAnswer": "One wore a blue frock and the other wore a yellow print frock.",
+                "explanation": "Explanation (English): The passage describes, \"The little one wore a blue frock, the other a yellow print\".\nব্যাখ্যা (Nepali Explanation): अनुच्छेदले वर्णन गर्दछ, \"The little one wore a blue frock, the other a yellow print\"।",
+                "marks": 1
+              },
+              {
+                "id": "iv",
+                "questionEnglish": "What did Akoulya advise Malasha to do before stepping into the puddle?",
+                "correctAnswer": "She advised Malasha to take off her shoes and stockings.",
+                "explanation": "Explanation (English): Akoulya tells Malasha, \"I will take off my shoes and stockings, and you take off yours.\"\nব্যাখ্যা (Nepali Explanation): अकोल्याले मलाशालाई भन्छिन्, \"I will take off my shoes and stockings, and you take off yours.\"",
+                "marks": 1
+              },
+              {
+                "id": "v",
+                "questionEnglish": "Why was Malasha afraid to walk in the puddle?",
+                "correctAnswer": "She was afraid because the water was deep, coming up to her ankles.",
+                "explanation": "Explanation (English): Malasha says, \"It is deep, Akoulya, I am afraid!\" after the water came up to her ankles.\nব্যাখ্যা (Nepali Explanation): मलाशा भन्छिन्, \"It is deep, Akoulya, I am afraid!\" जब पानी उनको गोलीगाँठोसम्म आयो।",
+                "marks": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "questionNumber": 3,
+        "type": "reading_comprehension",
+        "title": "Read the following advertisement and do the tasks.",
+        "marks": 10,
+        "passage": {
+            "title": "CAREER OPPORTUNITY",
+            "content": "Tech Innovate Pvt. Ltd., a leading software development company in Nepal, invites applications from young, energetic, and result-oriented Nepali citizens for the following position.\n\nPosition: Junior Software Developer\nNumber of Vacancies: 5\nLocation: Head Office, Lalitpur\n\nRequired Qualifications and Skills:\n- Must have a Bachelor's Degree in Computer Engineering, Computer Science, or a related field from a recognized university.\n- Strong knowledge of programming languages like Java or Python.\n- Good problem-solving and analytical skills.\n- Excellent teamwork and communication skills.\n- Age should not exceed 28 years as of the application deadline.\n\nExperience:\n- Fresh graduates are encouraged to apply. However, candidates with 1-2 years of experience will be given preference.\n\nTo Apply:\nInterested candidates who meet the above requirements are requested to send their updated resume and a cover letter to hr@techinnovate.com.np by 25th April, 2025. Please mention the position you are applying for in the subject line of the email.\n\n(Only shortlisted candidates will be contacted for a written test and an interview. Canvassing at any stage will lead to automatic disqualification.)"
+        },
+        "subSections": [
+          {
+            "id": "A",
+            "type": "true_false",
+            "title": "Write 'TRUE' for true and 'FALSE' for the false statements.",
+            "marks": 5,
+            "subQuestions": [
+              {
+                "id": "i",
+                "questionEnglish": "The vacancy is for the post of Senior Software Developer.",
+                "correctAnswer": "FALSE",
+                "explanation": "Explanation (English): The advertisement is for the position of \"Junior Software Developer\".\nব্যাখ্যা (Nepali Explanation): विज्ञापन \"Junior Software Developer\" को पदको लागि हो।",
+                "marks": 1
+              },
+              {
+                "id": "ii",
+                "questionEnglish": "The company is located in Kathmandu.",
+                "correctAnswer": "FALSE",
+                "explanation": "Explanation (English): The location is mentioned as \"Head Office, Lalitpur\".\nব্যাখ্যা (Nepali Explanation): स्थान \"Head Office, Lalitpur\" भनेर उल्लेख गरिएको छ।",
+                "marks": 1
+              },
+              {
+                "id": "iii",
+                "questionEnglish": "Applicants must be older than 28 years.",
+                "correctAnswer": "FALSE",
+                "explanation": "Explanation (English): The requirement is that the age \"should not exceed 28 years\".\nব্যাখ্যা (Nepali Explanation): आवश्यकता यो हो कि उमेर \"should not exceed 28 years\"।",
+                "marks": 1
+              },
+              {
+                "id": "iv",
+                "questionEnglish": "Candidates with no experience are not allowed to apply.",
+                "correctAnswer": "FALSE",
+                "explanation": "Explanation (English): The ad states, \"Fresh graduates are encouraged to apply.\"\nব্যাখ্যা (Nepali Explanation): विज्ञापनमा भनिएको छ, \"Fresh graduates are encouraged to apply.\"",
+                "marks": 1
+              },
+              {
+                "id": "v",
+                "questionEnglish": "All applicants will have to face a written test and an interview.",
+                "correctAnswer": "FALSE",
+                "explanation": "Explanation (English): The notice says, \"Only shortlisted candidates will be contacted for a written test and an interview.\"\nব্যাখ্যা (Nepali Explanation): सूचनामा भनिएको छ, \"Only shortlisted candidates will be contacted for a written test and an interview.\"",
+                "marks": 1
+              }
+            ]
+          },
+          {
+            "id": "B",
+            "type": "short_answer",
+            "title": "Answer the following questions.",
+            "marks": 5,
+            "subQuestions": [
+              {
+                "id": "i",
+                "questionEnglish": "What kind of company is Tech Innovate Pvt. Ltd.?",
+                "correctAnswer": "It is a leading software development company.",
+                "explanation": "Explanation (English): The first line describes it as \"a leading software development company in Nepal\".\nব্যাখ্যা (Nepali Explanation): पहिलो पङ्क्तिले यसलाई \"a leading software development company in Nepal\" भनेर वर्णन गर्दछ।",
+                "marks": 1
+              },
+              {
+                "id": "ii",
+                "questionEnglish": "How many vacancies are there for the post?",
+                "correctAnswer": "There are 5 vacancies for the post.",
+                "explanation": "Explanation (English): The ad specifies \"Number of Vacancies: 5\".\nব্যাখ্যা (Nepali Explanation): विज्ञापनले \"Number of Vacancies: 5\" निर्दिष्ट गर्दछ।",
+                "marks": 1
+              },
+              {
+                "id": "iii",
+                "questionEnglish": "Name two programming languages mentioned in the skills requirement.",
+                "correctAnswer": "Java and Python are the two programming languages mentioned.",
+                "explanation": "Explanation (English): The required skills include \"Strong knowledge of programming languages like Java or Python.\"\nব্যাখ্যা (Nepali Explanation): आवश्यक सीपहरूमा \"Strong knowledge of programming languages like Java or Python\" समावेश छ।",
+                "marks": 1
+              },
+              {
+                "id": "iv",
+                "questionEnglish": "What is the deadline for submitting the application?",
+                "correctAnswer": "The deadline is 25th April, 2025.",
+                "explanation": "Explanation (English): The text states the deadline is \"by 25th April, 2025.\"\nব্যাখ্যা (Nepali Explanation): पाठमा अन्तिम मिति \"by 25th April, 2025\" उल्लेख छ।",
+                "marks": 1
+              },
+              {
+                "id": "v",
+                "questionEnglish": "What happens if a candidate tries to influence the selection process?",
+                "correctAnswer": "It will lead to automatic disqualification.",
+                "explanation": "Explanation (English): The last paragraph warns that \"Canvassing at any stage will lead to automatic disqualification.\"\nব্যাখ্যা (Nepali Explanation): अन्तिम अनुच्छेदले चेतावनी दिन्छ कि \"Canvassing at any stage will lead to automatic disqualification.\"",
+                "marks": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "questionNumber": 4,
+        "type": "reading_comprehension",
+        "title": "Read the text given below and do the tasks.",
+        "marks": 15,
+        "passage": {
+            "title": "Hachi: A Dog's Tale",
+            "content": "\"Hachi: A Dog's Story\" is a heartwarming and inspiring family drama that tells the story of a dog's unwavering loyalty and devotion. When college professor, Parker Wilson (Richard Gere), discovers a rather unlikely commuter wandering around the train station, he takes the lost Akita puppy home with him. Parker and his new canine friend, Hachi, soon form a bond that cannot be broken. Hachi follows Parker to the train station every day and returns to the station every evening to greet his beloved master after work. On one very sad day, Parker leaves for work and becomes deathly ill, never to return to the station again. Even after Parker passes away, Hachi faithfully returns to the station everyday for the next nine years, until his death, to wait for his beloved master.\n\nThis film is an American adaptation of a true story set in 1925 Japan about a professor and his devoted dog. Today, a bronze statue of Hachi stands in the Shibuya Station in Japan in honour of his faithfulness and loyalty.\n\nDirector, Lasse Hallström's choice of musical score, soft piano music, enhances the film's pathos beautifully. His creative use of black and white shots shows the audience Hachi's perspective of the world around him. Richard Gere's interaction with the adorable Hachi is a joy to watch and will put a smile on your face."
+        },
+        "subSections": [
+          {
+            "id": "A",
+            "type": "true_false",
+            "title": "Write 'TRUE' for true and 'FALSE' for the false statements.",
+            "marks": 5,
+            "subQuestions": [
+              {
+                "id": "i",
+                "questionEnglish": "Parker Wilson found a cat at the train station.",
+                "correctAnswer": "FALSE",
+                "explanation": "Explanation (English): The text says he discovers a \"lost Akita puppy\".\nব্যাখ্যা (Nepali Explanation): पाठमा भनिएको छ कि उनले एक \"lost Akita puppy\" फेला पारे।",
+                "marks": 1
+              },
+              {
+                "id": "ii",
+                "questionEnglish": "Hachi waited for his master at the station for nine years after his death.",
+                "correctAnswer": "TRUE",
+                "explanation": "Explanation (English): The text states, \"Hachi faithfully returns to the station everyday for the next nine years, until his death, to wait for his beloved master.\"\nব্যাখ্যা (Nepali Explanation): पाठमा भनिएको छ, \"Hachi faithfully returns to the station everyday for the next nine years, until his death, to wait for his beloved master.\"",
+                "marks": 1
+              },
+              {
+                "id": "iii",
+                "questionEnglish": "The movie is based on a fictional story.",
+                "correctAnswer": "FALSE",
+                "explanation": "Explanation (English): The text describes the film as an \"adaptation of a true story set in 1925 Japan\".\nব্যাখ্যা (Nepali Explanation): पाठले फिल्मलाई \"adaptation of a true story set in 1925 Japan\" को रूपमा वर्णन गर्दछ।",
+                "marks": 1
+              },
+              {
+                "id": "iv",
+                "questionEnglish": "A statue of Parker Wilson stands in Shibuya Station.",
+                "correctAnswer": "FALSE",
+                "explanation": "Explanation (English): The statue is of Hachi, not Parker Wilson. \"...a bronze statue of Hachi stands in the Shibuya Station\".\nব্যাখ্যা (Nepali Explanation): मूर्ति पार्कर विल्सनको होइन, हाचीको हो। \"...a bronze statue of Hachi stands in the Shibuya Station\"।",
+                "marks": 1
+              },
+              {
+                "id": "v",
+                "questionEnglish": "The director used black and white shots to show the world from the dog's perspective.",
+                "correctAnswer": "TRUE",
+                "explanation": "Explanation (English): The text says, \"His creative use of black and white shots shows the audience Hachi's perspective of the world around him.\"\nব্যাখ্যা (Nepali Explanation): पाठमा भनिएको छ, \"His creative use of black and white shots shows the audience Hachi's perspective of the world around him.\"",
+                "marks": 1
+              }
+            ]
+          },
+          {
+            "id": "B",
+            "type": "matching",
+            "title": "Match the words in Column 'A' with their meanings in Column 'B'.",
+            "marks": 5,
+            "columns": {
+                "A": [
+                    {"id": "i", "text": "Unwavering"},
+                    {"id": "ii", "text": "Devotion"},
+                    {"id": "iii", "text": "Commuter"},
+                    {"id": "iv", "text": "Adaptation"},
+                    {"id": "v", "text": "Pathos"}
+                ],
+                "B": [
+                    {"id": "a", "text": "A quality that evokes pity or sadness"},
+                    {"id": "b", "text": "A person who travels some distance to work regularly"},
+                    {"id": "c", "text": "Steady or resolute; not changing"},
+                    {"id": "d", "text": "A person who writes movie scripts"},
+                    {"id": "e", "text": "A version of a work changed for a new medium"},
+                    {"id": "f", "text": "Love, loyalty, or enthusiasm for a person or activity"}
+                ]
+            },
+            "correctAnswer": [
+                {"A": "i", "B": "c"},
+                {"A": "ii", "B": "f"},
+                {"A": "iii", "B": "b"},
+                {"A": "iv", "B": "e"},
+                {"A": "v", "B": "a"}
+            ],
+            "explanation": "Explanation (English): The words from the text are matched with their standard dictionary definitions, all of which fit the context of the movie review.\nব্যাখ্যা (Nepali Explanation): पाठका शब्दहरूलाई तिनीहरूको मानक शब्दकोश परिभाषाहरूसँग मिलाइएको छ, जुन सबै फिल्म समीक्षाको सन्दर्भमा उपयुक्त छन्।"
+          },
+          {
+            "id": "C",
+            "type": "short_answer",
+            "title": "Answer the following questions.",
+            "marks": 5,
+            "subQuestions": [
+              {
+                "id": "i",
+                "questionEnglish": "What is the genre of the film 'Hachi: A Dog's Story'?",
+                "correctAnswer": "The genre is family drama.",
+                "explanation": "Explanation (English): The review begins by describing the film as a \"heartwarming and inspiring family drama\".\nব্যাখ্যা (Nepali Explanation): समीक्षाले फिल्मलाई \"heartwarming and inspiring family drama\" को रूपमा वर्णन गरेर सुरु गर्छ।",
+                "marks": 1
+              },
+              {
+                "id": "ii",
+                "questionEnglish": "What kind of dog was Hachi?",
+                "correctAnswer": "Hachi was an Akita puppy.",
+                "explanation": "Explanation (English): The text mentions that Parker takes the \"lost Akita puppy home with him.\"\nব্যাখ্যা (Nepali Explanation): पाठमा उल्लेख छ कि पार्करले \"lost Akita puppy home with him\"।",
+                "marks": 1
+              },
+              {
+                "id": "iii",
+                "questionEnglish": "What was Hachi's daily routine?",
+                "correctAnswer": "Hachi would follow his master to the train station every day and return in the evening to greet him.",
+                "explanation": "Explanation (English): The passage describes that \"Hachi follows Parker to the train station every day and returns to the station every evening to greet his beloved master\".\nব্যাখ্যা (Nepali Explanation): अनुच्छेदले वर्णन गर्दछ कि \"Hachi follows Parker to the train station every day and returns to the station every evening to greet his beloved master\"।",
+                "marks": 1
+              },
+              {
+                "id": "iv",
+                "questionEnglish": "Why is there a statue of Hachi in Japan?",
+                "correctAnswer": "There is a statue in honour of his faithfulness and loyalty.",
+                "explanation": "Explanation (English): The text says, \"a bronze statue of Hachi stands in the Shibuya Station in Japan in honour of his faithfulness and loyalty.\"\nব্যাখ্যা (Nepali Explanation): पाठमा भनिएको छ, \"a bronze statue of Hachi stands in the Shibuya Station in Japan in honour of his faithfulness and loyalty.\"",
+                "marks": 1
+              },
+              {
+                "id": "v",
+                "questionEnglish": "How did the director enhance the film's emotional quality?",
+                "correctAnswer": "He used soft piano music as the musical score to enhance the film's pathos.",
+                "explanation": "Explanation (English): The review mentions, \"Director, Lasse Hallström's choice of musical score, soft piano music, enhances the film's pathos beautifully.\"\nব্যাখ্যা (Nepali Explanation): समीक्षामा उल्लेख छ, \"Director, Lasse Hallström's choice of musical score, soft piano music, enhances the film's pathos beautifully.\"",
+                "marks": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "questionNumber": 5,
+        "type": "free_writing",
+        "title": "Write a notice for the school notice board about an upcoming Inter-House Debate Competition.",
+        "marks": 5,
+        "wordCount": 100,
+        "clues": [
+            "Event: Inter-House Debate Competition",
+            "Date and Time",
+            "Venue: School Auditorium",
+            "Topic: 'Social Media does more harm than good'",
+            "Participants: Two students from each house (Classes 9 & 10)",
+            "Contact person for registration"
+        ],
+        "sampleAnswer": {
+          "title": "NOTICE\nInter-House Debate Competition",
+          "content": "This is to inform all students of Classes 9 and 10 that the school is organizing an Inter-House Debate Competition on 10th May, 2025, at 11:00 AM in the School Auditorium. The topic for the debate is 'Social Media does more harm than good'.\n\nEach house can nominate two participants. Interested students are requested to register their names with the undersigned by 5th May, 2025. Your active participation is highly encouraged to make this event a grand success.\n\nSita Sharma\n(Head of Literary Club)"
+        }
+      },
+      {
+        "questionNumber": 6,
+        "type": "free_writing",
+        "title": "Write a letter to your friend describing a festival that is celebrated in your community.",
+        "marks": 5,
+        "wordCount": 100,
+        "clues": [
+            "Name of the festival (e.g., Tihar)",
+            "When it is celebrated",
+            "Major activities (e.g., cleaning houses, lighting lamps, worshipping Laxmi, Bhai Tika)",
+            "Special foods",
+            "Why you like it",
+            "Invite your friend to join next year"
+        ],
+        "sampleAnswer": {
+          "content": "Ghorahi, Dang\n15th November, 2025\n\nDear Hari,\n\nI hope this letter finds you well. I am writing to you today to tell you about my favorite festival, Tihar, which we just celebrated.\n\nTihar, the festival of lights, is a five-day celebration. We clean and decorate our houses with colourful lights and marigold garlands. On the third day, we worship Laxmi, the goddess of wealth. The most special day for me is the last day, Bhai Tika, when sisters put tika on their brothers' foreheads and pray for their long life. We also enjoy delicious foods like Sel Roti and Anarsa.\n\nI love this festival because it brings our family together and fills our home with joy and light. I wish you could have been here. I would like to invite you to celebrate Tihar with us next year.\n\nYour loving friend,\nKrishna"
+        }
+      },
+      {
+        "questionNumber": 7,
+        "type": "free_writing",
+        "title": "Your younger brother spends too much time on his smartphone. Write a dialogue in at least six exchanges where you are advising him on the negative effects of its overuse.",
+        "marks": 6,
+        "wordCount": 150,
+        "sampleAnswer": {
+          "content": "Me: Ramesh, you've been on your phone for hours. You should take a break.\n\nRamesh: Just a little longer, Didi. I'm watching some interesting videos.\n\nMe: I know it's interesting, but staring at the screen for so long is bad for your eyes. It can cause headaches and eye strain.\n\nRamesh: Really? I did have a headache yesterday. I thought it was because of the heat.\n\nMe: It's likely the phone. Also, spending too much time on it means you're not going out to play. Physical activity is very important for your health. You need to balance your screen time with other activities.\n\nRamesh: You're right, Didi. I haven't played football with my friends all week. I will go out now. Thanks for the advice."
+        }
+      },
+      {
+        "questionNumber": 8,
+        "type": "free_writing",
+        "title": "Write a newspaper article in about 200 words on the 'Challenges of Artificial Intelligence (AI)'.",
+        "marks": 8,
+        "wordCount": 200,
+        "sampleAnswer": {
+            "title": "The Double-Edged Sword: Navigating the Challenges of AI",
+            "content": "Artificial Intelligence (AI) is rapidly transforming our world, from automating tasks to revolutionizing healthcare. While the benefits are immense, the advancement of AI also brings significant challenges that society must address to ensure a responsible and equitable future.\n\nOne of the most pressing concerns is job displacement. As AI systems become more capable, many jobs, particularly those involving repetitive tasks, are at risk of being automated. This could lead to widespread unemployment and economic inequality if we do not prepare our workforce for new roles that require uniquely human skills like creativity and critical thinking.\n\nAnother significant challenge is the issue of bias and ethics. AI systems learn from the data they are trained on. If this data reflects existing societal biases, the AI can perpetuate and even amplify them, leading to unfair outcomes in areas like hiring or loan applications. Ensuring fairness and transparency in AI algorithms is a complex but crucial task.\n\nFurthermore, the misuse of AI poses a serious threat. From autonomous weapons to sophisticated cyber-attacks and the spread of misinformation through deepfakes, the potential for harm is substantial. Establishing strong regulations and international agreements is essential to mitigate these risks.\n\nIn conclusion, while we embrace the potential of AI, we must also proactively address its challenges. Investing in education, promoting ethical AI development, and creating robust regulations are necessary steps to ensure that this powerful technology benefits all of humanity."
+        }
+      },
+      {
+        "questionNumber": 9,
+        "type": "grammar",
+        "title": "Reproduce the following sentences as instructed in the brackets.",
+        "marks": 6,
+        "subQuestions": [
+          {
+            "id": "i",
+            "type": "reproduce",
+            "questionEnglish": "I am a student, .............? (Add a correct question tag.)",
+            "correctAnswer": "I am a student, aren't I?",
+            "explanation": "Explanation (English): The question tag for 'I am' is an exception and is 'aren't I?'.\nব্যাখ্যা (Nepali Explanation): 'I am' को लागि प्रश्न ट्याग एक अपवाद हो र 'aren't I?' हुन्छ।",
+            "marks": 1
+          },
+          {
+            "id": "ii",
+            "type": "reproduce",
+            "questionEnglish": "He said to me, \"Please help me.\" (Change into indirect speech.)",
+            "correctAnswer": "He requested me to help him.",
+            "explanation": "Explanation (English): For a request in reported speech, the reporting verb becomes 'requested' and the imperative is changed to a to-infinitive. 'me' changes to 'him'.\nব্যাখ্যা (Nepali Explanation): रिपोर्टेड स्पीचमा अनुरोधको लागि, रिपोर्टिङ क्रिया 'requested' हुन्छ र आज्ञार्थकलाई to-infinitive मा परिवर्तन गरिन्छ। 'me' 'him' मा परिवर्तन हुन्छ।",
+            "marks": 1
+          },
+          {
+            "id": "iii",
+            "type": "reproduce",
+            "questionEnglish": "By the time we arrived, the movie __________ (start). (Use the correct form of the verb 'start'.)",
+            "correctAnswer": "By the time we arrived, the movie had started.",
+            "explanation": "Explanation (English): The Past Perfect tense ('had started') is used to describe an action that was completed before another action in the past ('arrived').\nব্যাখ্যা (Nepali Explanation): विगतमा अर्को कार्य ('arrived') हुनुभन्दा पहिले नै सम्पन्न भइसकेको कार्यको वर्णन गर्न Past Perfect tense ('had started') प्रयोग गरिन्छ।",
+            "marks": 1
+          },
+          {
+            "id": "iv",
+            "type": "reproduce",
+            "questionEnglish": "The children are flying kites. (Change into passive voice.)",
+            "correctAnswer": "Kites are being flown by the children.",
+            "explanation": "Explanation (English): The sentence is in Present Continuous tense. The passive form is 'object + are + being + V3 + by + subject'.\nব্যাখ্যা (Nepali Explanation): वाक्य Present Continuous tense मा छ। यसको passive form 'object + are + being + V3 + by + subject' हो।",
+            "marks": 1
+          },
+          {
+            "id": "v",
+            "type": "reproduce",
+            "questionEnglish": "Everybody likes him. (Change into negative.)",
+            "correctAnswer": "Nobody dislikes him.",
+            "explanation": "Explanation (English): To make the sentence negative while keeping the meaning, 'Everybody' can be changed to its opposite 'Nobody' and the verb 'likes' to its opposite 'dislikes'. Another option 'Everybody doesn't like him' changes the meaning.\nব্যাখ্যা (Nepali Explanation): अर्थलाई कायम राख्दै वाक्यलाई नकारात्मक बनाउन, 'Everybody' लाई यसको विपरीत 'Nobody' र क्रिया 'likes' लाई यसको विपरीत 'dislikes' मा परिवर्तन गर्न सकिन्छ। 'Everybody doesn't like him' ले अर्थ परिवर्तन गर्दछ।",
+            "marks": 1
+          },
+          {
+            "id": "vi",
+            "type": "reproduce",
+            "questionEnglish": "She goes to school <strong>by bus</strong>. (Change into a 'How' question.)",
+            "correctAnswer": "How does she go to school?",
+            "explanation": "Explanation (English): The phrase 'by bus' explains the manner of travel, answering 'How?'. To form the question, use 'How' followed by the auxiliary 'does', the subject 'she', and the base form of the verb 'go'.\nব্যাখ্যা (Nepali Explanation): 'by bus' वाक्यांशले यात्राको तरिका बताउँछ, जसले 'कसरी?' प्रश्नको उत्तर दिन्छ। प्रश्न बनाउन, 'How' पछि सहायक क्रिया 'does', कर्ता 'she', र क्रियाको मूल रूप 'go' प्रयोग गर्नुहोस्।",
+            "marks": 1
+          }
+        ]
+      },
+      {
+        "questionNumber": 10,
+        "type": "cloze_test",
+        "title": "Choose and copy the correct answers from the brackets to complete the given text. (Rewriting the text is not compulsory.)",
+        "marks": 5,
+        "passage": "Health and wellness are important aspects of our lives. A healthy diet is essential (a) _____ (for/to/at/in) maintaining good health. We should eat plenty of fruits and vegetables, (b) _____ (shouldn't we/should we/do we/don't we)? My doctor advised me (c) _____ (to avoid/avoid/avoiding/to avoiding) junk food. He told me that if I followed a healthy lifestyle, I (d) _____ (will feel/would feel/will have felt/felt) much better. It is a fact that a balanced diet (e) _____ (is given/given/gives/give) us the energy we need. Many people, (f) _____ (who/which/whose/whom) suffer from lifestyle diseases, often have poor eating habits. I got my brother (g) _____ (to start/start/started/starting) exercising with me. He was made (h) _____ (join/to join/joining/joined) the gym by our parents. Now, he enjoys (i) _____ (go/goes/to go/going) to the gym every day. (j) _____ (Although/Despite/Because/However) it was difficult at first, he is now much healthier.",
+        "gaps": [
+          {
+            "id": "a", 
+            "correctAnswer": "for",
+            "explanation": "Explanation (English): The preposition 'for' is used to show purpose, as in 'essential for maintaining'.\nব্যাখ্যা (Nepali Explanation): 'for' preposition लाई उद्देश्य देखाउन प्रयोग गरिन्छ, जस्तै 'essential for maintaining' मा।"
+          },
+          {
+            "id": "b", 
+            "correctAnswer": "shouldn't we",
+            "explanation": "Explanation (English): The statement uses 'should' and is positive, so the tag question uses 'shouldn't' and the pronoun 'we'.\nব্যাখ্যা (Nepali Explanation): वाक्यमा 'should' प्रयोग भएको छ र यो सकारात्मक छ, त्यसैले ट्याग प्रश्नमा 'shouldn't' र सर्वनाम 'we' प्रयोग हुन्छ।"
+          },
+          {
+            "id": "c", 
+            "correctAnswer": "to avoid",
+            "explanation": "Explanation (English): The verb 'advised' is followed by an object ('me') and a to-infinitive.\nব্যাখ্যা (Nepali Explanation): क्रिया 'advised' पछि object ('me') र to-infinitive आउँछ।"
+          },
+          {
+            "id": "d", 
+            "correctAnswer": "would feel",
+            "explanation": "Explanation (English): This is a reported Type I conditional. In indirect speech, 'will' in the main clause changes to 'would'.\nব্যাখ্যা (Nepali Explanation): यो रिपोर्टेड Type I conditional हो। अप्रत्यक्ष कथनमा, मुख्य खण्डको 'will' 'would' मा परिवर्तन हुन्छ।"
+          },
+          {
+            "id": "e", 
+            "correctAnswer": "gives",
+            "explanation": "Explanation (English): The subject 'a balanced diet' is singular, so it takes the singular verb form 'gives' in the simple present tense.\nব্যাখ্যা (Nepali Explanation): कर्ता 'a balanced diet' एकवचन हो, त्यसैले simple present tense मा यसले एकवचन क्रिया 'gives' लिन्छ।"
+          },
+          {
+            "id": "f", 
+            "correctAnswer": "who",
+            "explanation": "Explanation (English): 'who' is a relative pronoun used as the subject to refer to people ('Many people').\nব্যাখ্যা (Nepali Explanation): 'who' एक relative pronoun हो जुन व्यक्तिहरू ('Many people') लाई जनाउन कर्ताको रूपमा प्रयोग गरिन्छ।"
+          },
+          {
+            "id": "g", 
+            "correctAnswer": "to start",
+            "explanation": "Explanation (English): The causative verb 'get' is followed by an object ('my brother') and a to-infinitive.\nব্যাখ্যা (Nepali Explanation): causative verb 'get' पछि object ('my brother') र to-infinitive आउँछ।"
+          },
+          {
+            "id": "h", 
+            "correctAnswer": "to join",
+            "explanation": "Explanation (English): When the causative verb 'make' is used in the passive voice ('was made'), it is followed by a to-infinitive.\nব্যাখ্যা (Nepali Explanation): जब causative verb 'make' लाई passive voice ('was made') मा प्रयोग गरिन्छ, त्यसपछि to-infinitive आउँछ।"
+          },
+          {
+            "id": "i", 
+            "correctAnswer": "going",
+            "explanation": "Explanation (English): The verb 'enjoys' is followed by a gerund ('going').\nব্যাখ্যা (Nepali Explanation): क्रिया 'enjoys' पछि gerund ('going') आउँछ।"
+          },
+          {
+            "id": "j", 
+            "correctAnswer": "Although",
+            "explanation": "Explanation (English): 'Although' is a conjunction used to show contrast between two clauses.\nব্যাখ্যা (Nepali Explanation): 'Although' एक संयोजन हो जुन दुई खण्डहरू बिचको भिन्नता देखाउन प्रयोग गरिन्छ।"
+          }
+        ]
+      }
+    ]
+  }
+]
