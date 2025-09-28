@@ -1,8 +1,8 @@
 [
   {
-    "_id": "see_2081_english_practice_4_generated",
-    "title": "SEE 2081 English Practice Test 4 (Generated Questions)",
-    "titleNepali": "SEE २०८१ अंग्रेजी अभ्यास परीक्षा ४ (उत्पन्न प्रश्नहरू)",
+    "_id": "see_2081_english_practice_4_generated_verified",
+    "title": "SEE 2081 English Practice Test 4",
+    "titleNepali": "SEE २०८१ अंग्रेजी अभ्यास परीक्षा ४",
     "subject": "english",
     "year": 2081,
     "totalMarks": 75,
@@ -10,67 +10,70 @@
     "instructionsEnglish": "Candidates are required to answer the questions in their own words as far as practicable. Figures in the margin indicate the full marks. Attempt all the questions.",
     "isActive": true,
     "createdAt": {
-      "$date": "2025-08-30T19:45:20.000Z"
+      "$date": "2025-09-07T15:10:00.000Z"
     },
     "updatedAt": {
-      "$date": "2025-08-30T19:45:20.000Z"
+      "$date": "2025-09-07T15:10:00.000Z"
     }
   },
   {
     "_id": {
-      "$oid": "687d809a2f3df9d071c52113"
+      "$oid": "687d809a2f3df9d071c52115"
     },
-    "testId": "see_2081_english_practice_4_generated",
+    "testId": "see_2081_english_practice_4_generated_verified",
     "questions": [
       {
         "questionNumber": 1,
         "type": "reading_comprehension",
-        "title": "Read the poem and write 'TRUE' for true and 'FALSE' for the false statements.",
+        "title": "Read the poem and do the tasks.",
         "marks": 5,
         "passage": {
-          "title": "Leave this Chanting and Singing",
-          "content": "Leave this chanting and singing and telling of beads!\nWhom dost thou worship in this lonely dark corner of a temple with doors all shut?\nOpen thine eyes and see thy God is not before thee!\nHe is there where the tiller is tilling the hard ground\nand where the pathmaker is breaking stones.\nHe is with them in sun and in shower,\nand his garment is covered with dust.\nPut off thy holy mantle and even like him come down on the dusty soil!"
+          "title": "The Voice of the Rain",
+          "author": "Walt Whitman",
+          "content": "And who art thou? said I to the soft-falling shower,\nWhich, strange to tell, gave me an answer, as here translated:\nI am the Poem of Earth, said the voice of the rain,\nEternal I rise impalpable out of the land and the bottomless sea,\nUpward to heaven, whence, vaguely form'd, altogether changed, and yet the same.\nI descend to lave the droughts, atomies, dust-layers of the globe,\nAnd all that in them without me were seeds only, latent, unborn:\nAnd forever, by day and night, I give back life to my own origin,\nand make pure and beautify it:\n(For song, issuing from its birth-place, after fulfilment, wandering,\nReck'd or unreck'd, duly with love returns.)"
         },
-        "subQuestions": [
+        "subSections": [
           {
-            "id": "i",
-            "type": "true_false",
-            "questionEnglish": "The poet encourages worshipping in a dark corner of a temple.",
-            "correctAnswer": "FALSE",
-            "explanation": "Explanation (English): The poet asks the worshipper to \"Leave this chanting and singing... in this lonely dark corner of a temple,\" suggesting they should stop this form of worship.\nব্যাখ্যা (Nepali Explanation): कविले उपासकलाई \"Leave this chanting and singing... in this lonely dark corner of a temple\" भन्दै यो प्रकारको पूजा छोड्न आग्रह गरेका छन्।",
-            "marks": 1
-          },
-          {
-            "id": "ii",
-            "type": "true_false",
-            "questionEnglish": "According to the poem, God can be found among hardworking laborers.",
-            "correctAnswer": "TRUE",
-            "explanation": "Explanation (English): The poem states that God is \"where the tiller is tilling the hard ground and where the pathmaker is breaking stones.\"\nব্যাখ্যা (Nepali Explanation): कवितामा भनिएको छ कि भगवान \"where the tiller is tilling the hard ground and where the pathmaker is breaking stones\" मा हुनुहुन्छ।",
-            "marks": 1
-          },
-          {
-            "id": "iii",
-            "type": "true_false",
-            "questionEnglish": "The poet describes God's garment as clean and holy.",
-            "correctAnswer": "FALSE",
-            "explanation": "Explanation (English): The poem says God's garment is \"covered with dust,\" which implies it is not clean.\nব্যাখ্যা (Nepali Explanation): कवितामा भनिएको छ कि भगवानको वस्त्र \"covered with dust\" छ, जसको अर्थ यो सफा छैन भन्ने हो।",
-            "marks": 1
-          },
-          {
-            "id": "iv",
-            "type": "true_false",
-            "questionEnglish": "The speaker advises the worshipper to take off their holy clothes and work on the dusty soil.",
-            "correctAnswer": "TRUE",
-            "explanation": "Explanation (English): The last line of the stanza says, \"Put off thy holy mantle and even like him come down on the dusty soil!\"\nব্যাখ্যা (Nepali Explanation): श्लोकको अन्तिम पङ्क्तिमा भनिएको छ, \"Put off thy holy mantle and even like him come down on the dusty soil!\"",
-            "marks": 1
-          },
-          {
-            "id": "v",
-            "type": "true_false",
-            "questionEnglish": "The poem suggests that God is only present during sunny weather.",
-            "correctAnswer": "FALSE",
-            "explanation": "Explanation (English): The poem says God is with the laborers \"in sun and in shower,\" meaning in both good and bad weather.\nব্যাখ্যা (Nepali Explanation): कवितामा भनिएको छ कि भगवान श्रमिकहरूसँग \"in sun and in shower\" मा हुनुहुन्छ, अर्थात् राम्रो र नराम्रो दुवै मौसममा।",
-            "marks": 1
+            "id": "A",
+            "type": "short_answer",
+            "title": "Answer the following questions.",
+            "subQuestions": [
+              {
+                "id": "i",
+                "questionEnglish": "Who are the two speakers in the poem?",
+                "correctAnswer": "The two speakers are the poet and the rain.",
+                "explanationNepali": "कविता कवि र वर्षा बीचको कुराकानी हो, जहाँ कविले प्रश्न सोध्छन् (\"And who art thou?\") र वर्षाले उत्तर दिन्छ (\"I am the Poem of Earth...\")।",
+                "explanationEnglish": "The poem is a conversation between the poet and the rain, where the poet asks a question (\"And who art thou?\") and the rain gives an answer (\"I am the Poem of Earth...\"). Citations: chapter 5, page 77."
+              },
+              {
+                "id": "ii",
+                "questionEnglish": "How does the rain rise from the earth?",
+                "correctAnswer": "The rain rises eternally and impalpably (in the form of vapour) from the land and the sea.",
+                "explanationNepali": "कविताले भन्छ, \"Eternal I rise impalpable out of the land and the bottomless sea,\" जसको अर्थ हो कि वर्षा वाष्पको रूपमा भूमि र समुद्रबाट निरन्तर र अदृश्य रूपमा माथि उठ्छ।",
+                "explanationEnglish": "The poem states, \"Eternal I rise impalpable out of the land and the bottomless sea,\" which means the rain rises continuously and invisibly as vapour from the land and sea. Citations: chapter 5, page 77."
+              },
+              {
+                "id": "iii",
+                "questionEnglish": "What is the function of the rain?",
+                "correctAnswer": "The function of the rain is to wash away droughts and dust and to give life to unborn seeds.",
+                "explanationNepali": "कविता अनुसार, वर्षाले खडेरी र धुलोलाई पखाल्छ (\"lave the droughts, atomies, dust-layers\") र नजन्मेका बीउहरूलाई जीवन दिन्छ (\"all that in them without me were seeds only, latent, unborn\").",
+                "explanationEnglish": "According to the poem, the rain washes away drought and dust (\"lave the droughts, atomies, dust-layers\") and gives life to seeds that were latent and unborn. Citations: chapter 5, page 77."
+              },
+              {
+                "id": "iv",
+                "questionEnglish": "How is the rain similar to a song?",
+                "correctAnswer": "It is similar to a song because, like a song that returns to its origin with love, the rain also returns to its origin (the Earth) to beautify it.",
+                "explanationNepali": "कविताको अन्तिम दुई पङ्क्तिले गीत र वर्षाको तुलना गर्दछ, दुवै आफ्नो उद्गम स्थलमा प्रेमका साथ फर्किन्छन्।",
+                "explanationEnglish": "The last two lines of the poem compare the rain to a song, stating that both return to their place of origin with love. Citations: chapter 5, page 77."
+              },
+              {
+                "id": "v",
+                "questionEnglish": "What does the phrase 'altogether changed, and yet the same' mean?",
+                "correctAnswer": "It means that the rain changes its form from water to vapour and cloud, but its essence or core nature as water remains the same.",
+                "explanationNepali": "यस वाक्यांशको अर्थ हो कि वर्षाले पानीबाट वाष्प र बादलमा आफ्नो रूप परिवर्तन गर्दछ, तर पानीको रूपमा यसको मूल सार उस्तै रहन्छ।",
+                "explanationEnglish": "The phrase means that the rain changes its form from water to vapour and cloud, but its fundamental essence as water remains the same. Citations: chapter 5, page 77."
+              }
+            ]
           }
         ]
       },
@@ -80,40 +83,52 @@
         "title": "Read the text and do the tasks.",
         "marks": 10,
         "passage": {
-          "title": "Wisdom of Little Girls",
-          "content": "Two little girls from different houses happened to meet in a lane between two homesteads, where the dirty water after running through the farm-yards had formed a large puddle. One girl was very small, the other a little bigger. Their mothers had dressed them both in new frocks. The little one wore a blue frock, the other a yellow print, and both had red kerchiefs on their heads. They had just come from church when they met, and first they showed each other their finery, and then they began to play.\nSoon the fancy took them to splash about in the water, and the smaller one was going to step into the puddle, shoes and all, when the elder checked her: 'Don't go in so, Malasha,' said she, 'your mother will scold you. I will take off my shoes and stockings, and you take off yours.' They did so; and then, picking up their skirts, began walking towards each other through the puddle. The water came up to Malasha's ankles, and she said: 'It is deep, Akoulya, I am afraid!'"
+          "title": "How Driverless Cars will Change our World",
+          "content": "It's a late night in the Metro area of Phoenix, Arizona. Under the artificial glare of street lamps, a car can be seen slowly approaching. A green and blue 'W' glows from the windscreen, giving off just enough light to see inside - to a completely empty driver seat. This is a Waymo One robotaxi, hailed just 10 minutes ago using an app.\n\nThe promise of driverless technology has long been enticing. It has the potential to transform our experience of commuting, take people out of high-risk working environments and streamline our industries. It's key to helping us build the cities of the future, where our reliance on cars is redefined, lowering carbon emissions. And it could make our travel safer. The World Health Organization estimates that more than 1.3 million people die each year as a result of road traffic crashes.\n\nBut in order for driverless technology to become mainstream, much still needs to change. 'Driverless vehicles should be a very calm and serene way of getting from A to B. But not every human driver around it will be behaving in that way,' says David Hynd, a chief scientist. 'It's got to be able to cope with human drivers speeding, for instance, or breaking the rules of the road.' And that's not the only challenge. There's regulation, rethinking the Highway Code, public perception, and the big question of ultimate liability for road accidents."
         },
         "subSections": [
           {
             "id": "A",
-            "type": "matching",
-            "title": "Match the items in Column 'A' with their descriptions in Column 'B'.",
+            "type": "fill_in_the_blanks",
+            "title": "Fill in the blanks with the correct information from the text.",
             "marks": 5,
-            "columns": {
-              "A": [
-                {"id": "i", "text": "Puddle"},
-                {"id": "ii", "text": "Frocks"},
-                {"id": "iii", "text": "Kerchiefs"},
-                {"id": "iv", "text": "Akoulya"},
-                {"id": "v", "text": "Malasha"}
-              ],
-              "B": [
-                {"id": "a", "text": "The smaller girl"},
-                {"id": "b", "text": "Formed by dirty water in the lane"},
-                {"id": "c", "text": "The bigger girl"},
-                {"id": "d", "text": "Worn by the girls on their heads"},
-                {"id": "e", "text": "New clothes worn by the girls"},
-                {"id": "f", "text": "A piece of cake"}
-              ]
-            },
-            "correctAnswer": [
-              {"A": "i", "B": "b"},
-              {"A": "ii", "B": "e"},
-              {"A": "iii", "B": "d"},
-              {"A": "iv", "B": "c"},
-              {"A": "v", "B": "a"}
-            ],
-            "explanation": "Explanation (English): The puddle was formed by water in the lane. Frocks are the new dresses the girls wore. Kerchiefs were on their heads. The text identifies Akoulya as the elder (bigger) girl and Malasha as the smaller one.\nব্যাখ্যা (Nepali Explanation): पोखरी गल्लीमा पानीले बनेको थियो। फ्रकहरू केटीहरूले लगाएका नयाँ लुगाहरू हुन्। रुमालहरू उनीहरूको टाउकोमा थिए। पाठले अकोल्यालाई जेठी (ठूली) केटी र मलाशालाई कान्छी केटीको रूपमा चिनाउँछ।"
+            "subQuestions": [
+              {
+                "id": "i",
+                "questionEnglish": "A Waymo One robotaxi can be hailed using an __________.",
+                "correctAnswer": "app",
+                "explanationNepali": "पाठमा उल्लेख छ कि वेमो वन रोबोट्याक्सीलाई \"hailed just 10 minutes ago using an app\" अर्थात् एउटा एप प्रयोग गरेर बोलाइएको थियो।",
+                "explanationEnglish": "The text mentions that the Waymo One robotaxi was \"hailed just 10 minutes ago using an app.\" Citations: chapter 1, page 2."
+              },
+              {
+                "id": "ii",
+                "questionEnglish": "Driverless technology can help in lowering __________ emissions.",
+                "correctAnswer": "carbon",
+                "explanationNepali": "पाठले बताउँछ कि चालकविहीन प्रविधिले \"lowering carbon emissions\" अर्थात् कार्बन उत्सर्जन घटाउन मद्दत गर्न सक्छ।",
+                "explanationEnglish": "The text states that driverless technology can help in \"lowering carbon emissions.\" Citations: chapter 1, page 2."
+              },
+              {
+                "id": "iii",
+                "questionEnglish": "According to the WHO, over 1.3 million people die annually in __________.",
+                "correctAnswer": "road traffic crashes",
+                "explanationNepali": "विश्व स्वास्थ्य संगठनको अनुमान अनुसार, \"more than 1.3 million people die each year as a result of road traffic crashes.\" ",
+                "explanationEnglish": "The World Health Organization estimates that \"more than 1.3 million people die each year as a result of road traffic crashes.\" Citations: chapter 1, page 2."
+              },
+              {
+                "id": "iv",
+                "questionEnglish": "One challenge for driverless cars is coping with human drivers who break the __________.",
+                "correctAnswer": "rules of the road",
+                "explanationNepali": "पाठले उल्लेख गर्दछ कि चालकविहीन कारहरूले \"human drivers ... breaking the rules of the road\" को सामना गर्न सक्षम हुनुपर्छ।",
+                "explanationEnglish": "The text notes that driverless cars must be able to cope with \"human drivers ... breaking the rules of the road.\" Citations: chapter 1, page 3."
+              },
+              {
+                "id": "v",
+                "questionEnglish": "The question of ultimate __________ for accidents is a major challenge.",
+                "correctAnswer": "liability",
+                "explanationNepali": "पाठले \"the big question of ultimate liability for road accidents\" लाई एउटा ठूलो चुनौतीको रूपमा उल्लेख गरेको छ।",
+                "explanationEnglish": "The text mentions \"the big question of ultimate liability for road accidents\" as a major challenge. Citations: chapter 1, page 3."
+              }
+            ]
           },
           {
             "id": "B",
@@ -123,38 +138,38 @@
             "subQuestions": [
               {
                 "id": "i",
-                "questionEnglish": "Where did the two little girls meet?",
-                "correctAnswer": "They met in a lane between two homesteads.",
-                "explanation": "Explanation (English): The first sentence states they \"happened to meet in a lane between two homesteads\".\nব্যাখ্যা (Nepali Explanation): पहिलो वाक्यमा भनिएको छ कि उनीहरू \"happened to meet in a lane between two homesteads\"।",
-                "marks": 1
+                "questionEnglish": "What is a unique feature of the Waymo One robotaxi mentioned in the first paragraph?",
+                "correctAnswer": "Its unique feature is having a completely empty driver seat.",
+                "explanationNepali": "पहिलो अनुच्छेदले ट्याक्सीको भित्र \"a completely empty driver seat\" भएको वर्णन गर्दछ।",
+                "explanationEnglish": "The first paragraph describes the taxi as having \"a completely empty driver seat\" inside. Citations: chapter 1, page 2."
               },
               {
                 "id": "ii",
-                "questionEnglish": "What had formed a large puddle in the lane?",
-                "correctAnswer": "Dirty water that had run through the farm-yards had formed a large puddle.",
-                "explanation": "Explanation (English): The text explains that \"the dirty water after running through the farm-yards had formed a large puddle.\"\nব্যাখ্যা (Nepali Explanation): पाठले व्याख्या गर्दछ कि \"the dirty water after running through the farm-yards had formed a large puddle.\"",
-                "marks": 1
+                "questionEnglish": "List two potential benefits of driverless technology.",
+                "correctAnswer": "Two potential benefits are making travel safer and lowering carbon emissions.",
+                "explanationNepali": "पाठले चालकविहीन प्रविधिका धेरै फाइदाहरू उल्लेख गरेको छ, जसमा \"lowering carbon emissions\" र \"make our travel safer\" समावेश छन्।",
+                "explanationEnglish": "The text mentions several benefits of driverless technology, including \"lowering carbon emissions\" and that it could \"make our travel safer.\" Citations: chapter 1, page 2."
               },
               {
                 "id": "iii",
-                "questionEnglish": "What were the colors of the girls' frocks?",
-                "correctAnswer": "One wore a blue frock and the other wore a yellow print frock.",
-                "explanation": "Explanation (English): The passage describes, \"The little one wore a blue frock, the other a yellow print\".\nব্যাখ্যা (Nepali Explanation): अनुच्छेदले वर्णन गर्दछ, \"The little one wore a blue frock, the other a yellow print\"।",
-                "marks": 1
+                "questionEnglish": "According to David Hynd, how should a journey in a driverless vehicle feel?",
+                "correctAnswer": "It should be a very calm and serene way of getting from A to B.",
+                "explanationNepali": "डेभिड हाइन्डका अनुसार, चालकविहीन गाडीमा यात्रा \"a very calm and serene way of getting from A to B\" हुनुपर्छ।",
+                "explanationEnglish": "According to David Hynd, a journey in a driverless vehicle should be \"a very calm and serene way of getting from A to B.\" Citations: chapter 1, page 2."
               },
               {
                 "id": "iv",
-                "questionEnglish": "What did Akoulya advise Malasha to do before stepping into the puddle?",
-                "correctAnswer": "She advised Malasha to take off her shoes and stockings.",
-                "explanation": "Explanation (English): Akoulya tells Malasha, \"I will take off my shoes and stockings, and you take off yours.\"\nব্যাখ্যা (Nepali Explanation): अकोल्याले मलाशालाई भन्छिन्, \"I will take off my shoes and stockings, and you take off yours.\"",
-                "marks": 1
+                "questionEnglish": "Besides dealing with human drivers, name two other challenges for driverless technology.",
+                "correctAnswer": "Two other challenges are regulation and public perception.",
+                "explanationNepali": "पाठले चालकविहीन प्रविधिका लागि \"regulation\" र \"public perception\" जस्ता अन्य चुनौतीहरू सूचीबद्ध गरेको छ।",
+                "explanationEnglish": "The text lists other challenges for driverless technology, such as \"regulation\" and \"public perception.\" Citations: chapter 1, page 3."
               },
               {
                 "id": "v",
-                "questionEnglish": "Why was Malasha afraid to walk in the puddle?",
-                "correctAnswer": "She was afraid because the water was deep, coming up to her ankles.",
-                "explanation": "Explanation (English): Malasha says, \"It is deep, Akoulya, I am afraid!\" after the water came up to her ankles.\nব্যাখ্যা (Nepali Explanation): मलाशा भन्छिन्, \"It is deep, Akoulya, I am afraid!\" जब पानी उनको गोलीगाँठोसम्म आयो।",
-                "marks": 1
+                "questionEnglish": "What is the main idea of the text?",
+                "correctAnswer": "The main idea is that driverless cars offer significant potential benefits but face major challenges before they can become mainstream.",
+                "explanationNepali": "पाठले चालकविहीन कारका फाइदाहरू (जस्तै सुरक्षा, कम उत्सर्जन) र चुनौतीहरू (जस्तै मानव चालकहरू, नियमहरू) दुवैको बारेमा छलफल गर्दछ, जसले यो मुख्य विचारलाई संकेत गर्दछ।",
+                "explanationEnglish": "The text discusses both the benefits of driverless cars (e.g., safety, lower emissions) and the challenges (e.g., human drivers, regulation), indicating this main idea. Citations: chapter 1, pages 2-3."
               }
             ]
           }
@@ -163,53 +178,53 @@
       {
         "questionNumber": 3,
         "type": "reading_comprehension",
-        "title": "Read the following advertisement and do the tasks.",
+        "title": "Read the following text and do the tasks.",
         "marks": 10,
         "passage": {
-            "title": "CAREER OPPORTUNITY",
-            "content": "Tech Innovate Pvt. Ltd., a leading software development company in Nepal, invites applications from young, energetic, and result-oriented Nepali citizens for the following position.\n\nPosition: Junior Software Developer\nNumber of Vacancies: 5\nLocation: Head Office, Lalitpur\n\nRequired Qualifications and Skills:\n- Must have a Bachelor's Degree in Computer Engineering, Computer Science, or a related field from a recognized university.\n- Strong knowledge of programming languages like Java or Python.\n- Good problem-solving and analytical skills.\n- Excellent teamwork and communication skills.\n- Age should not exceed 28 years as of the application deadline.\n\nExperience:\n- Fresh graduates are encouraged to apply. However, candidates with 1-2 years of experience will be given preference.\n\nTo Apply:\nInterested candidates who meet the above requirements are requested to send their updated resume and a cover letter to hr@techinnovate.com.np by 25th April, 2025. Please mention the position you are applying for in the subject line of the email.\n\n(Only shortlisted candidates will be contacted for a written test and an interview. Canvassing at any stage will lead to automatic disqualification.)"
+          "title": "Call for Expression of Interest for Video Production",
+          "content": "Notice Publication date: 03 January, 2025\n\nChild Fund Japan Nepal Office (CFJNO) is a child-focused international development organization committed to promoting the rights of children. CFJNO is seeking interested and eligible External Individual Consultants or Consulting Firms in Nepal to provide video production services for two assignments:\n\n1. To document the transformative impact and capture the achievement and milestones of the sponsorship programme, showcasing their role in driving sustainable educational development in Dhading and Sindhupalchowk districts.\n2. Documenting the impact of migration on children, schools and community in Baglung district.\n\nThe proposals for both assignments must be written in English and submitted through a single application. Interested Nepali firms/organizations or individuals can submit their Expression of Interest (EOI). Please submit your EOI and the required documents electronically to info@childfund.org.np. Proposals received after the deadline will not be considered.\n\nDeadline for submission: 12 January, 2025 before 17:00 hours Nepal Time.\n\nAll rights are reserved with CFJNO either to approve or disapprove any proposal without giving reasons whatsoever."
         },
         "subSections": [
           {
             "id": "A",
-            "type": "true_false",
-            "title": "Write 'TRUE' for true and 'FALSE' for the false statements.",
+            "type": "true_false_not_given",
+            "title": "Write 'TRUE' for true, 'FALSE' for false, or 'NOT GIVEN' if the information is not in the text.",
             "marks": 5,
             "subQuestions": [
               {
                 "id": "i",
-                "questionEnglish": "The vacancy is for the post of Senior Software Developer.",
+                "questionEnglish": "The notice was published on the 12th of January, 2025.",
                 "correctAnswer": "FALSE",
-                "explanation": "Explanation (English): The advertisement is for the position of \"Junior Software Developer\".\nব্যাখ্যা (Nepali Explanation): विज्ञापन \"Junior Software Developer\" को पदको लागि हो।",
-                "marks": 1
+                "explanationNepali": "सूचनामा स्पष्ट रूपमा \"Notice Publication date: 03 January, 2025\" भनिएको छ।",
+                "explanationEnglish": "The notice clearly states, \"Notice Publication date: 03 January, 2025.\" Citations: page 9 of All English Exams.pdf"
               },
               {
                 "id": "ii",
-                "questionEnglish": "The company is located in Kathmandu.",
+                "questionEnglish": "CFJNO works mainly for the welfare of women.",
                 "correctAnswer": "FALSE",
-                "explanation": "Explanation (English): The location is mentioned as \"Head Office, Lalitpur\".\nব্যাখ্যা (Nepali Explanation): स्थान \"Head Office, Lalitpur\" भनेर उल्लेख गरिएको छ।",
-                "marks": 1
+                "explanationNepali": "पाठले बताउँछ कि CFJNO \"is a child-focused international development organization,\" जसको अर्थ हो कि यो बालबालिकामा केन्द्रित छ, महिलामा होइन।",
+                "explanationEnglish": "The text states that CFJNO \"is a child-focused international development organization,\" meaning it focuses on children, not women. Citations: page 9 of All English Exams.pdf"
               },
               {
                 "id": "iii",
-                "questionEnglish": "Applicants must be older than 28 years.",
-                "correctAnswer": "FALSE",
-                "explanation": "Explanation (English): The requirement is that the age \"should not exceed 28 years\".\nব্যাখ্যা (Nepali Explanation): आवश्यकता यो हो कि उमेर \"should not exceed 28 years\"।",
-                "marks": 1
+                "questionEnglish": "The video production service is required for three different districts.",
+                "correctAnswer": "TRUE",
+                "explanationNepali": "पाठले धादिङ, सिन्धुपाल्चोक, र बागलुङ गरी तीन जिल्लाहरू उल्लेख गरेको छ।",
+                "explanationEnglish": "The text mentions three districts: Dhading, Sindhupalchowk, and Baglung. Citations: page 9 of All English Exams.pdf"
               },
               {
                 "id": "iv",
-                "questionEnglish": "Candidates with no experience are not allowed to apply.",
+                "questionEnglish": "Applicants must be from Japan.",
                 "correctAnswer": "FALSE",
-                "explanation": "Explanation (English): The ad states, \"Fresh graduates are encouraged to apply.\"\nব্যাখ্যা (Nepali Explanation): विज्ञापनमा भनिएको छ, \"Fresh graduates are encouraged to apply.\"",
-                "marks": 1
+                "explanationNepali": "सूचनामा भनिएको छ, \"Interested Nepali firms/organizations or individuals can submit their Expression of Interest,\" जसको अर्थ आवेदकहरू नेपाली हुनुपर्छ।",
+                "explanationEnglish": "The notice states, \"Interested Nepali firms/organizations or individuals can submit their Expression of Interest,\" meaning applicants must be Nepali. Citations: page 9 of All English Exams.pdf"
               },
               {
                 "id": "v",
-                "questionEnglish": "All applicants will have to face a written test and an interview.",
-                "correctAnswer": "FALSE",
-                "explanation": "Explanation (English): The notice says, \"Only shortlisted candidates will be contacted for a written test and an interview.\"\nব্যাখ্যা (Nepali Explanation): सूचनामा भनिएको छ, \"Only shortlisted candidates will be contacted for a written test and an interview.\"",
-                "marks": 1
+                "questionEnglish": "The selected consultant will be paid in US dollars.",
+                "correctAnswer": "NOT GIVEN",
+                "explanationNepali": "सूचनामा भुक्तानीको मुद्रा (currency) बारे कुनै जानकारी दिइएको छैन।",
+                "explanationEnglish": "The notice does not provide any information about the currency of payment. Citations: page 9 of All English Exams.pdf"
               }
             ]
           },
@@ -221,38 +236,38 @@
             "subQuestions": [
               {
                 "id": "i",
-                "questionEnglish": "What kind of company is Tech Innovate Pvt. Ltd.?",
-                "correctAnswer": "It is a leading software development company.",
-                "explanation": "Explanation (English): The first line describes it as \"a leading software development company in Nepal\".\nব্যাখ্যা (Nepali Explanation): पहिलो पङ्क्तिले यसलाई \"a leading software development company in Nepal\" भनेर वर्णन गर्दछ।",
-                "marks": 1
+                "questionEnglish": "What is the full form of EOI?",
+                "correctAnswer": "The full form of EOI is Expression of Interest.",
+                "explanationNepali": "पाठले \"Expression of Interest (EOI)\" लाई कोष्ठक प्रयोग गरेर परिभाषित गरेको छ।",
+                "explanationEnglish": "The text defines \"Expression of Interest (EOI)\" using parenthesis. Citations: page 9 of All English Exams.pdf"
               },
               {
                 "id": "ii",
-                "questionEnglish": "How many vacancies are there for the post?",
-                "correctAnswer": "There are 5 vacancies for the post.",
-                "explanation": "Explanation (English): The ad specifies \"Number of Vacancies: 5\".\nব্যাখ্যা (Nepali Explanation): विज्ञापनले \"Number of Vacancies: 5\" निर्दिष्ट गर्दछ।",
-                "marks": 1
+                "questionEnglish": "What is the main goal of Child Fund Japan Nepal Office?",
+                "correctAnswer": "Its main goal is to promote the rights of children.",
+                "explanationNepali": "पाठले बताउँछ कि CFJNO \"is committed to promoting the rights of children.\"",
+                "explanationEnglish": "The text states that CFJNO \"is committed to promoting the rights of children.\" Citations: page 9 of All English Exams.pdf"
               },
               {
                 "id": "iii",
-                "questionEnglish": "Name two programming languages mentioned in the skills requirement.",
-                "correctAnswer": "Java and Python are the two programming languages mentioned.",
-                "explanation": "Explanation (English): The required skills include \"Strong knowledge of programming languages like Java or Python.\"\nব্যাখ্যা (Nepali Explanation): आवश्यक सीपहरूमा \"Strong knowledge of programming languages like Java or Python\" समावेश छ।",
-                "marks": 1
+                "questionEnglish": "What should be documented in Dhading and Sindhupalchowk districts?",
+                "correctAnswer": "The transformative impact and achievements of the sponsorship programme should be documented.",
+                "explanationNepali": "पहिलो कार्यमा \"document the transformative impact and capture the achievement and milestones of the sponsorship programme\" भनेर उल्लेख गरिएको छ।",
+                "explanationEnglish": "The first assignment is to \"document the transformative impact and capture the achievement and milestones of the sponsorship programme.\" Citations: page 9 of All English Exams.pdf"
               },
               {
                 "id": "iv",
-                "questionEnglish": "What is the deadline for submitting the application?",
-                "correctAnswer": "The deadline is 25th April, 2025.",
-                "explanation": "Explanation (English): The text states the deadline is \"by 25th April, 2025.\"\nব্যাখ্যা (Nepali Explanation): पाठमा अन्तिम मिति \"by 25th April, 2025\" उल्लेख छ।",
-                "marks": 1
+                "questionEnglish": "How must the proposals be submitted?",
+                "correctAnswer": "They must be submitted electronically to the given email address.",
+                "explanationNepali": "सूचनाले \"submit your EOI and the required documents electronically to info@childfund.org.np\" भनेर निर्देशन दिएको छ।",
+                "explanationEnglish": "The notice instructs to \"submit your EOI and the required documents electronically to info@childfund.org.np.\" Citations: page 9 of All English Exams.pdf"
               },
               {
                 "id": "v",
-                "questionEnglish": "What happens if a candidate tries to influence the selection process?",
-                "correctAnswer": "It will lead to automatic disqualification.",
-                "explanation": "Explanation (English): The last paragraph warns that \"Canvassing at any stage will lead to automatic disqualification.\"\nব্যাখ্যা (Nepali Explanation): अन्तिम अनुच्छेदले चेतावनी दिन्छ कि \"Canvassing at any stage will lead to automatic disqualification.\"",
-                "marks": 1
+                "questionEnglish": "What will happen if a proposal is submitted after the deadline?",
+                "correctAnswer": "It will not be considered for evaluation.",
+                "explanationNepali": "पाठले स्पष्ट रूपमा भन्छ, \"The proposal received after the deadline will not be considered for evaluation.\"",
+                "explanationEnglish": "The text clearly says, \"The proposal received after the deadline will not be considered for evaluation.\" Citations: page 9 of All English Exams.pdf"
               }
             ]
           }
@@ -261,86 +276,60 @@
       {
         "questionNumber": 4,
         "type": "reading_comprehension",
-        "title": "Read the text given below and do the tasks.",
+        "title": "Read the following text and do the tasks.",
         "marks": 15,
         "passage": {
-            "title": "Hachi: A Dog's Tale",
-            "content": "\"Hachi: A Dog's Story\" is a heartwarming and inspiring family drama that tells the story of a dog's unwavering loyalty and devotion. When college professor, Parker Wilson (Richard Gere), discovers a rather unlikely commuter wandering around the train station, he takes the lost Akita puppy home with him. Parker and his new canine friend, Hachi, soon form a bond that cannot be broken. Hachi follows Parker to the train station every day and returns to the station every evening to greet his beloved master after work. On one very sad day, Parker leaves for work and becomes deathly ill, never to return to the station again. Even after Parker passes away, Hachi faithfully returns to the station everyday for the next nine years, until his death, to wait for his beloved master.\n\nThis film is an American adaptation of a true story set in 1925 Japan about a professor and his devoted dog. Today, a bronze statue of Hachi stands in the Shibuya Station in Japan in honour of his faithfulness and loyalty.\n\nDirector, Lasse Hallström's choice of musical score, soft piano music, enhances the film's pathos beautifully. His creative use of black and white shots shows the audience Hachi's perspective of the world around him. Richard Gere's interaction with the adorable Hachi is a joy to watch and will put a smile on your face."
+          "title": "A Century of World Population Trends: 1950 to 2050",
+          "content": "Today, the world's population is more than three times larger than it was in the mid-twentieth century. It took around 37 years since 1950 for human numbers to double, surpassing 5 billion inhabitants in 1987. Since 1965, the pace of population growth has slowed by more than half owing to reduced levels of fertility. In 2020, the rate of population growth fell below one percent per year and it is projected to continue to slow.\n\nThe world's two most populous regions in 2022 were Eastern and South-Eastern Asia (2.3 billion people) and Central and Southern Asia (2.1 billion people). China and India accounted for the largest populations in these regions, with more than 1.4 billion each in 2022. However, Central and Southern Asia is expected to become the most populous region by 2037.\n\nBetween 2022 and 2050, the population of sub-Saharan Africa is expected to almost double, surpassing two billion inhabitants by the late 2040s. With average fertility levels remaining high, sub-Saharan Africa is projected to account for more than half of the growth of the world's population between 2022 and 2050.\n\nMore than half of the projected increase in the global population up to 2050 is expected to be concentrated in just eight countries: The Democratic Republic of the Congo, Egypt, Ethiopia, India, Nigeria, Pakistan, the Philippines and the United Republic of Tanzania. Disparate population growth rates among the world's largest countries will change their ranking by size: For example, India is projected to surpass China as the world's most populous country in 2023."
         },
         "subSections": [
           {
             "id": "A",
-            "type": "true_false",
-            "title": "Write 'TRUE' for true and 'FALSE' for the false statements.",
+            "type": "matching",
+            "title": "Match the words in Column ‘A’ with their meanings in Column ‘B’.",
             "marks": 5,
-            "subQuestions": [
-              {
-                "id": "i",
-                "questionEnglish": "Parker Wilson found a cat at the train station.",
-                "correctAnswer": "FALSE",
-                "explanation": "Explanation (English): The text says he discovers a \"lost Akita puppy\".\nব্যাখ্যা (Nepali Explanation): पाठमा भनिएको छ कि उनले एक \"lost Akita puppy\" फेला पारे।",
-                "marks": 1
-              },
-              {
-                "id": "ii",
-                "questionEnglish": "Hachi waited for his master at the station for nine years after his death.",
-                "correctAnswer": "TRUE",
-                "explanation": "Explanation (English): The text states, \"Hachi faithfully returns to the station everyday for the next nine years, until his death, to wait for his beloved master.\"\nব্যাখ্যা (Nepali Explanation): पाठमा भनिएको छ, \"Hachi faithfully returns to the station everyday for the next nine years, until his death, to wait for his beloved master.\"",
-                "marks": 1
-              },
-              {
-                "id": "iii",
-                "questionEnglish": "The movie is based on a fictional story.",
-                "correctAnswer": "FALSE",
-                "explanation": "Explanation (English): The text describes the film as an \"adaptation of a true story set in 1925 Japan\".\nব্যাখ্যা (Nepali Explanation): पाठले फिल्मलाई \"adaptation of a true story set in 1925 Japan\" को रूपमा वर्णन गर्दछ।",
-                "marks": 1
-              },
-              {
-                "id": "iv",
-                "questionEnglish": "A statue of Parker Wilson stands in Shibuya Station.",
-                "correctAnswer": "FALSE",
-                "explanation": "Explanation (English): The statue is of Hachi, not Parker Wilson. \"...a bronze statue of Hachi stands in the Shibuya Station\".\nব্যাখ্যা (Nepali Explanation): मूर्ति पार्कर विल्सनको होइन, हाचीको हो। \"...a bronze statue of Hachi stands in the Shibuya Station\"।",
-                "marks": 1
-              },
-              {
-                "id": "v",
-                "questionEnglish": "The director used black and white shots to show the world from the dog's perspective.",
-                "correctAnswer": "TRUE",
-                "explanation": "Explanation (English): The text says, \"His creative use of black and white shots shows the audience Hachi's perspective of the world around him.\"\nব্যাখ্যা (Nepali Explanation): पाठमा भनिएको छ, \"His creative use of black and white shots shows the audience Hachi's perspective of the world around him.\"",
-                "marks": 1
-              }
-            ]
+            "columns": {
+              "A": [
+                {"id": "i", "text": "surpassing"},
+                {"id": "ii", "text": "fertility"},
+                {"id": "iii", "text": "projected"},
+                {"id": "iv", "text": "populous"},
+                {"id": "v", "text": "disparate"}
+              ],
+              "B": [
+                {"id": "a", "text": "estimated or forecast"},
+                {"id": "b", "text": "essentially different; of a different kind"},
+                {"id": "c", "text": "the ability to conceive children"},
+                {"id": "d", "text": "having a large population"},
+                {"id": "e", "text": "becoming greater than"},
+                {"id": "f", "text": "decreasing rapidly"}
+              ]
+            },
+            "correctAnswer": [
+              {"A": "i", "B": "e"},
+              {"A": "ii", "B": "c"},
+              {"A": "iii", "B": "a"},
+              {"A": "iv", "B": "d"},
+              {"A": "v", "B": "b"}
+            ],
+            "explanationNepali": "यी शब्दहरूको अर्थ पाठको सन्दर्भमा आधारित छन्। 'Surpassing' को अर्थ 'पार गर्नु', 'fertility' को अर्थ 'प्रजनन क्षमता', 'projected' को अर्थ 'अनुमानित', 'populous' को अर्थ 'धेरै जनसंख्या भएको', र 'disparate' को अर्थ 'भिन्न' हो।",
+            "explanationEnglish": "The meanings of these words are based on their context in the text. 'Surpassing' means to exceed, 'fertility' means the ability to have children, 'projected' means estimated, 'populous' means having a large population, and 'disparate' means different. Citations: chapter 13, pages 206-208."
           },
           {
             "id": "B",
-            "type": "matching",
-            "title": "Match the words in Column 'A' with their meanings in Column 'B'.",
+            "type": "ordering",
+            "title": "Put the following sentences in the correct order.",
             "marks": 5,
-            "columns": {
-                "A": [
-                    {"id": "i", "text": "Unwavering"},
-                    {"id": "ii", "text": "Devotion"},
-                    {"id": "iii", "text": "Commuter"},
-                    {"id": "iv", "text": "Adaptation"},
-                    {"id": "v", "text": "Pathos"}
-                ],
-                "B": [
-                    {"id": "a", "text": "A quality that evokes pity or sadness"},
-                    {"id": "b", "text": "A person who travels some distance to work regularly"},
-                    {"id": "c", "text": "Steady or resolute; not changing"},
-                    {"id": "d", "text": "A person who writes movie scripts"},
-                    {"id": "e", "text": "A version of a work changed for a new medium"},
-                    {"id": "f", "text": "Love, loyalty, or enthusiasm for a person or activity"}
-                ]
-            },
-            "correctAnswer": [
-                {"A": "i", "B": "c"},
-                {"A": "ii", "B": "f"},
-                {"A": "iii", "B": "b"},
-                {"A": "iv", "B": "e"},
-                {"A": "v", "B": "a"}
+            "sentences": [
+              {"id": "i", "text": "The world population reached 5 billion."},
+              {"id": "ii", "text": "India is expected to become the most populous country."},
+              {"id": "iii", "text": "The global population growth rate fell below one percent."},
+              {"id": "iv", "text": "The pace of population growth started to slow down."},
+              {"id": "v", "text": "Central and Southern Asia is projected to be the most populous region."}
             ],
-            "explanation": "Explanation (English): The words from the text are matched with their standard dictionary definitions, all of which fit the context of the movie review.\nব্যাখ্যা (Nepali Explanation): पाठका शब्दहरूलाई तिनीहरूको मानक शब्दकोश परिभाषाहरूसँग मिलाइएको छ, जुन सबै फिल्म समीक्षाको सन्दर्भमा उपयुक्त छन्।"
+            "correctAnswer": ["iv", "i", "iii", "ii", "v"],
+            "explanationNepali": "पाठ अनुसार, घटनाहरूको क्रम हो: जनसंख्या वृद्धिदर घट्न थाल्यो (1965 पछि), जनसंख्या ५ अर्ब पुग्यो (1987), वृद्धिदर १ प्रतिशतभन्दा कम भयो (2020), भारत सबैभन्दा बढी जनसंख्या भएको देश बन्ने अनुमान (2023), र मध्य/दक्षिण एसिया सबैभन्दा बढी जनसंख्या भएको क्षेत्र बन्ने अनुमान (2037)।",
+            "explanationEnglish": "According to the text, the sequence of events is: the growth rate began to slow (after 1965), the population hit 5 billion (1987), the growth rate fell below 1% (2020), India is projected to become the most populous country (2023), and Central/Southern Asia is projected to be the most populous region (2037). Citations: chapter 13, pages 206-208."
           },
           {
             "id": "C",
@@ -350,38 +339,38 @@
             "subQuestions": [
               {
                 "id": "i",
-                "questionEnglish": "What is the genre of the film 'Hachi: A Dog's Story'?",
-                "correctAnswer": "The genre is family drama.",
-                "explanation": "Explanation (English): The review begins by describing the film as a \"heartwarming and inspiring family drama\".\nব্যাখ্যা (Nepali Explanation): समीक्षाले फिल्मलाई \"heartwarming and inspiring family drama\" को रूपमा वर्णन गरेर सुरु गर्छ।",
-                "marks": 1
+                "questionEnglish": "What was the primary reason for the slowing pace of population growth after 1965?",
+                "correctAnswer": "The primary reason was reduced levels of fertility.",
+                "explanationNepali": "पाठमा भनिएको छ, \"the pace of population growth has slowed by more than half owing to reduced levels of fertility.\"",
+                "explanationEnglish": "The text states, \"the pace of population growth has slowed by more than half owing to reduced levels of fertility.\" Citations: chapter 13, page 206."
               },
               {
                 "id": "ii",
-                "questionEnglish": "What kind of dog was Hachi?",
-                "correctAnswer": "Hachi was an Akita puppy.",
-                "explanation": "Explanation (English): The text mentions that Parker takes the \"lost Akita puppy home with him.\"\nব্যাখ্যা (Nepali Explanation): पाठमा उल्लेख छ कि पार्करले \"lost Akita puppy home with him\"।",
-                "marks": 1
+                "questionEnglish": "Which were the two most populous regions in the world in 2022?",
+                "correctAnswer": "They were Eastern and South-Eastern Asia, and Central and Southern Asia.",
+                "explanationNepali": "पाठले २०२२ मा विश्वका दुई सबैभन्दा बढी जनसंख्या भएका क्षेत्रहरू \"Eastern and South-Eastern Asia\" र \"Central and Southern Asia\" भनेर उल्लेख गरेको छ।",
+                "explanationEnglish": "The text mentions the two most populous regions in 2022 were \"Eastern and South-Eastern Asia\" and \"Central and Southern Asia.\" Citations: chapter 13, page 206."
               },
               {
                 "id": "iii",
-                "questionEnglish": "What was Hachi's daily routine?",
-                "correctAnswer": "Hachi would follow his master to the train station every day and return in the evening to greet him.",
-                "explanation": "Explanation (English): The passage describes that \"Hachi follows Parker to the train station every day and returns to the station every evening to greet his beloved master\".\nব্যাখ্যা (Nepali Explanation): अनुच्छेदले वर्णन गर्दछ कि \"Hachi follows Parker to the train station every day and returns to the station every evening to greet his beloved master\"।",
-                "marks": 1
+                "questionEnglish": "Which region is projected to contribute most to the world's population growth by 2050?",
+                "correctAnswer": "Sub-Saharan Africa is projected to contribute the most.",
+                "explanationNepali": "पाठले अनुमान गरेको छ कि उप-सहारा अफ्रिकाले \"account for more than half of the growth of the world's population between 2022 and 2050.\"",
+                "explanationEnglish": "The text projects that sub-Saharan Africa will \"account for more than half of the growth of the world's population between 2022 and 2050.\" Citations: chapter 13, page 208."
               },
               {
                 "id": "iv",
-                "questionEnglish": "Why is there a statue of Hachi in Japan?",
-                "correctAnswer": "There is a statue in honour of his faithfulness and loyalty.",
-                "explanation": "Explanation (English): The text says, \"a bronze statue of Hachi stands in the Shibuya Station in Japan in honour of his faithfulness and loyalty.\"\nব্যাখ্যা (Nepali Explanation): पाठमा भनिएको छ, \"a bronze statue of Hachi stands in the Shibuya Station in Japan in honour of his faithfulness and loyalty.\"",
-                "marks": 1
+                "questionEnglish": "Name any two of the eight countries where most of the population increase is expected by 2050.",
+                "correctAnswer": "Any two from: India, Nigeria, Pakistan, Egypt, Ethiopia, the Philippines, the DR Congo, and Tanzania.",
+                "explanationNepali": "पाठले आठ देशहरूको सूची दिएको छ जहाँ जनसंख्या वृद्धि केन्द्रित हुने अपेक्षा गरिएको छ, जसमा भारत र नाइजेरिया समावेश छन्।",
+                "explanationEnglish": "The text lists eight countries where population growth is expected to be concentrated, including India and Nigeria. Citations: chapter 13, page 208."
               },
               {
                 "id": "v",
-                "questionEnglish": "How did the director enhance the film's emotional quality?",
-                "correctAnswer": "He used soft piano music as the musical score to enhance the film's pathos.",
-                "explanation": "Explanation (English): The review mentions, \"Director, Lasse Hallström's choice of musical score, soft piano music, enhances the film's pathos beautifully.\"\nব্যাখ্যা (Nepali Explanation): समीक्षामा उल्लेख छ, \"Director, Lasse Hallström's choice of musical score, soft piano music, enhances the film's pathos beautifully.\"",
-                "marks": 1
+                "questionEnglish": "What major change in population ranking is projected for 2023?",
+                "correctAnswer": "India is projected to surpass China as the world's most populous country.",
+                "explanationNepali": "पाठमा भनिएको छ, \"India is projected to surpass China as the world's most populous country in 2023.\"",
+                "explanationEnglish": "The text says, \"India is projected to surpass China as the world's most populous country in 2023.\" Citations: chapter 13, page 208."
               }
             ]
           }
@@ -390,59 +379,74 @@
       {
         "questionNumber": 5,
         "type": "free_writing",
-        "title": "Write a notice for the school notice board about an upcoming Inter-House Debate Competition.",
+        "title": "Write a short travelogue about a place you have recently visited.",
         "marks": 5,
         "wordCount": 100,
         "clues": [
-            "Event: Inter-House Debate Competition",
-            "Date and Time",
-            "Venue: School Auditorium",
-            "Topic: 'Social Media does more harm than good'",
-            "Participants: Two students from each house (Classes 9 & 10)",
-            "Contact person for registration"
+          "name of the place",
+          "how you travelled",
+          "main attractions",
+          "your experience/feelings",
+          "recommendation"
         ],
         "sampleAnswer": {
-          "title": "NOTICE\nInter-House Debate Competition",
-          "content": "This is to inform all students of Classes 9 and 10 that the school is organizing an Inter-House Debate Competition on 10th May, 2025, at 11:00 AM in the School Auditorium. The topic for the debate is 'Social Media does more harm than good'.\n\nEach house can nominate two participants. Interested students are requested to register their names with the undersigned by 5th May, 2025. Your active participation is highly encouraged to make this event a grand success.\n\nSita Sharma\n(Head of Literary Club)"
+          "title": "A Memorable Trip to Lumbini",
+          "content": "Last month, I had the opportunity to visit Lumbini, the birthplace of Lord Buddha. We travelled from Kathmandu by bus, a journey that was long but filled with beautiful sights of Nepal's countryside. Upon arriving, the sense of peace was immediate. The main attraction, the sacred garden, with the Ashoka Pillar and the Mayadevi Temple, was truly serene. We also explored the monastic zone, where different countries have built beautiful monasteries in their own architectural styles. My experience was deeply spiritual and calming. I highly recommend everyone to visit this UNESCO World Heritage site to experience its tranquillity.",
+          "explanationNepali": "यो उत्तरले लुम्बिनीको भ्रमणको बारेमा एक छोटो यात्रा विवरण प्रस्तुत गर्दछ, दिइएको संकेतहरू प्रयोग गर्दै। यसमा स्थानको नाम, यात्राको माध्यम, मुख्य आकर्षणहरू, र लेखकको अनुभव समावेश छ। यसले पाठकलाई स्थानको शान्तिपूर्ण र आध्यात्मिक वातावरणको झलक दिन्छ।",
+          "explanationEnglish": "This answer presents a short travelogue about a visit to Lumbini, using the provided clues. It includes the name of the place, mode of travel, main attractions, and the writer's experience. It gives the reader a glimpse of the peaceful and spiritual atmosphere of the location. Citations: chapter 14, page 233."
         }
       },
       {
         "questionNumber": 6,
         "type": "free_writing",
-        "title": "Write a letter to your friend describing a festival that is celebrated in your community.",
+        "title": "Imagine your school is organizing an Inter-House Quiz Contest next week. Write a notice to inform the students about it.",
         "marks": 5,
         "wordCount": 100,
         "clues": [
-            "Name of the festival (e.g., Tihar)",
-            "When it is celebrated",
-            "Major activities (e.g., cleaning houses, lighting lamps, worshipping Laxmi, Bhai Tika)",
-            "Special foods",
-            "Why you like it",
-            "Invite your friend to join next year"
+          "event: Inter-House Quiz Contest",
+          "date, time, venue",
+          "participants: students from grades 8-10",
+          "topics: science, history, general knowledge",
+          "registration deadline",
+          "contact person"
         ],
         "sampleAnswer": {
-          "content": "Ghorahi, Dang\n15th November, 2025\n\nDear Hari,\n\nI hope this letter finds you well. I am writing to you today to tell you about my favorite festival, Tihar, which we just celebrated.\n\nTihar, the festival of lights, is a five-day celebration. We clean and decorate our houses with colourful lights and marigold garlands. On the third day, we worship Laxmi, the goddess of wealth. The most special day for me is the last day, Bhai Tika, when sisters put tika on their brothers' foreheads and pray for their long life. We also enjoy delicious foods like Sel Roti and Anarsa.\n\nI love this festival because it brings our family together and fills our home with joy and light. I wish you could have been here. I would like to invite you to celebrate Tihar with us next year.\n\nYour loving friend,\nKrishna"
+          "title": "NOTICE: Inter-House Quiz Contest",
+          "content": "This is to inform all students of grades 8, 9, and 10 that our school is organizing an Inter-House Quiz Contest next week. The details are as follows:\n\nDate: 20th September, 2025\nTime: 11:00 AM onwards\nVenue: School Auditorium\n\nThe quiz will cover topics from science, history, and general knowledge. Each house can send one team of three members. Interested students are requested to register their team names with the undersigned by 18th September. All students are encouraged to attend and support their respective houses.\n\n(Your Name)\nCultural Secretary\nStudent Council",
+          "explanationNepali": "यो उत्तरले अन्तर-सदन हाजिरीजवाफ प्रतियोगिताको बारेमा विद्यार्थीहरूलाई जानकारी दिनको लागि एक सूचना तयार गर्दछ। यसले कार्यक्रमको मिति, समय, स्थान, सहभागीहरू, र दर्ता विवरणहरू जस्ता सबै आवश्यक जानकारीहरू समावेश गर्दछ, दिइएको संकेतहरूमा आधारित।",
+          "explanationEnglish": "This answer prepares a notice to inform students about an inter-house quiz contest. It includes all necessary details like the date, time, venue, participants, and registration details, based on the provided clues. Citations: chapter 12, page 208."
         }
       },
       {
         "questionNumber": 7,
         "type": "free_writing",
-        "title": "Your younger brother spends too much time on his smartphone. Write a dialogue in at least six exchanges where you are advising him on the negative effects of its overuse.",
+        "title": "Write a dialogue between two friends discussing the pros and cons of online classes in at least six exchanges.",
         "marks": 6,
         "wordCount": 150,
         "sampleAnswer": {
-          "content": "Me: Ramesh, you've been on your phone for hours. You should take a break.\n\nRamesh: Just a little longer, Didi. I'm watching some interesting videos.\n\nMe: I know it's interesting, but staring at the screen for so long is bad for your eyes. It can cause headaches and eye strain.\n\nRamesh: Really? I did have a headache yesterday. I thought it was because of the heat.\n\nMe: It's likely the phone. Also, spending too much time on it means you're not going out to play. Physical activity is very important for your health. You need to balance your screen time with other activities.\n\nRamesh: You're right, Didi. I haven't played football with my friends all week. I will go out now. Thanks for the advice."
+          "content": "Anita: Hi Sameer! How are you finding these online classes?\n\nSameer: Hi Anita! Well, they are convenient. I like that I can study from the comfort of my home. What about you?\n\nAnita: I agree on the convenience, but I find it hard to concentrate sometimes. There are so many distractions at home.\n\nSameer: That's true. Also, the lack of face-to-face interaction with teachers is a big disadvantage. It's difficult to ask questions and have discussions.\n\nAnita: Exactly! And the internet connection is not always reliable. I missed half of the science class yesterday because of a network issue.\n\nSameer: Oh, that's a problem. However, I think learning to use these digital tools is a great skill for our future. It makes us more independent learners.\n\nAnita: I suppose so. It's a mixed experience, with both good and bad sides.",
+          "explanationNepali": "यो उत्तरले अनलाइन कक्षाहरूका फाइदा र बेफाइदाहरू बारे दुई साथीहरू बीचको संवाद प्रस्तुत गर्दछ। यसले सुविधा, एकाग्रताको कमी, शिक्षकसँगको अन्तरक्रियाको अभाव, र प्राविधिक समस्याहरू जस्ता विषयहरूलाई समेट्छ। संवादले सन्तुलित दृष्टिकोण प्रस्तुत गर्दछ र कम्तिमा छ आदानप्रदानको आवश्यकता पूरा गर्दछ।",
+          "explanationEnglish": "This answer presents a dialogue between two friends discussing the pros and cons of online classes. It covers points like convenience, lack of concentration, absence of teacher interaction, and technical issues. The dialogue offers a balanced view and fulfills the requirement of at least six exchanges. Citations: chapter 11, page 171."
         }
       },
       {
         "questionNumber": 8,
         "type": "free_writing",
-        "title": "Write a newspaper article in about 200 words on the 'Challenges of Artificial Intelligence (AI)'.",
+        "title": "Write a short biography of a person you admire (e.g., a famous scientist, artist, or social worker) in about 200 words.",
         "marks": 8,
-        "wordCount": 200,
+        "clues": [
+          "name and birth",
+          "early life and education",
+          "major works/contributions",
+          "challenges faced",
+          "awards/recognition",
+          "why you admire them"
+        ],
         "sampleAnswer": {
-            "title": "The Double-Edged Sword: Navigating the Challenges of AI",
-            "content": "Artificial Intelligence (AI) is rapidly transforming our world, from automating tasks to revolutionizing healthcare. While the benefits are immense, the advancement of AI also brings significant challenges that society must address to ensure a responsible and equitable future.\n\nOne of the most pressing concerns is job displacement. As AI systems become more capable, many jobs, particularly those involving repetitive tasks, are at risk of being automated. This could lead to widespread unemployment and economic inequality if we do not prepare our workforce for new roles that require uniquely human skills like creativity and critical thinking.\n\nAnother significant challenge is the issue of bias and ethics. AI systems learn from the data they are trained on. If this data reflects existing societal biases, the AI can perpetuate and even amplify them, leading to unfair outcomes in areas like hiring or loan applications. Ensuring fairness and transparency in AI algorithms is a complex but crucial task.\n\nFurthermore, the misuse of AI poses a serious threat. From autonomous weapons to sophisticated cyber-attacks and the spread of misinformation through deepfakes, the potential for harm is substantial. Establishing strong regulations and international agreements is essential to mitigate these risks.\n\nIn conclusion, while we embrace the potential of AI, we must also proactively address its challenges. Investing in education, promoting ethical AI development, and creating robust regulations are necessary steps to ensure that this powerful technology benefits all of humanity."
+          "title": "Anuradha Koirala: A Mother to Many",
+          "content": "Anuradha Koirala, born on April 14, 1949, is a renowned Nepali social activist and the founder of Maiti Nepal, a non-profit organization dedicated to helping victims of sex trafficking. Her early life was spent in different parts of Nepal, and she pursued her education in India. Witnessing the plight of trafficked girls and women inspired her to take action.\n\nIn 1993, she established Maiti Nepal with her own savings. Her major contribution has been the rescue and rehabilitation of thousands of trafficking survivors. Maiti Nepal provides a safe home, education, vocational training, and legal support to them. Koirala faced numerous challenges, including threats from traffickers and lack of resources, but her determination never wavered.\n\nFor her incredible work, she has received numerous national and international awards, including the prestigious CNN Hero of the Year award in 2010. I admire Anuradha Koirala for her immense courage, compassion, and selfless dedication. She has given a new life and hope to countless individuals, proving that one person's commitment can bring about a monumental change in society. She is truly an inspiration.",
+          "explanationNepali": "यो उत्तरले अनुराधा कोइरालाको जीवनी प्रस्तुत गर्दछ। यसले उनको जन्म, प्रारम्भिक जीवन, माइती नेपालको स्थापना, मुख्य योगदान, सामना गरेका चुनौतीहरू, र प्राप्त पुरस्कारहरू जस्ता मुख्य पक्षहरूलाई समेट्छ। अन्त्यमा, लेखकले उनको प्रशंसा गर्नुको कारण उल्लेख गर्दछ, जसले जीवनीलाई व्यक्तिगत स्पर्श दिन्छ।",
+          "explanationEnglish": "This answer provides a biography of Anuradha Koirala. It covers key aspects like her birth, early life, the founding of Maiti Nepal, her major contributions, challenges faced, and awards received. The conclusion states why the writer admires her, adding a personal touch to the biography. Citations: chapter 15, page 248."
         }
       },
       {
@@ -454,50 +458,50 @@
           {
             "id": "i",
             "type": "reproduce",
-            "questionEnglish": "I am a student, .............? (Add a correct question tag.)",
-            "correctAnswer": "I am a student, aren't I?",
-            "explanation": "Explanation (English): The question tag for 'I am' is an exception and is 'aren't I?'.\nব্যাখ্যা (Nepali Explanation): 'I am' को लागि प्रश्न ट्याग एक अपवाद हो र 'aren't I?' हुन्छ।",
-            "marks": 1
+            "questionEnglish": "Someone is following us. (Change into passive voice.)",
+            "correctAnswer": "We are being followed.",
+            "explanationNepali": "वर्तमान निरन्तर काल (is/are + v-ing) लाई passive voice मा परिवर्तन गर्दा, संरचना 'object + is/are + being + v3' हुन्छ। 'by someone' लाई प्रायः हटाइन्छ।",
+            "explanationEnglish": "To change a present continuous tense (is/are + v-ing) sentence into the passive voice, the structure becomes 'object + is/are + being + v3'. 'by someone' is usually omitted. Citations: chapter 8, page 131."
           },
           {
             "id": "ii",
             "type": "reproduce",
-            "questionEnglish": "He said to me, \"Please help me.\" (Change into indirect speech.)",
-            "correctAnswer": "He requested me to help him.",
-            "explanation": "Explanation (English): For a request in reported speech, the reporting verb becomes 'requested' and the imperative is changed to a to-infinitive. 'me' changes to 'him'.\nব্যাখ্যা (Nepali Explanation): रिपोर्टेड स्पीचमा अनुरोधको लागि, रिपोर्टिङ क्रिया 'requested' हुन्छ र आज्ञार्थकलाई to-infinitive मा परिवर्तन गरिन्छ। 'me' 'him' मा परिवर्तन हुन्छ।",
-            "marks": 1
+            "questionEnglish": "She has to finish the work, __________? (Add a correct question tag.)",
+            "correctAnswer": "She has to finish the work, doesn't she?",
+            "explanationNepali": "वाक्यमा 'has to' ले मुख्य क्रियाको रूपमा काम गर्दछ (simple present tense)। यसको सहायक क्रिया 'does' हो। वाक्य सकारात्मक भएकोले, ट्याग नकारात्मक ('doesn't she?') हुन्छ।",
+            "explanationEnglish": "In the sentence, 'has to' functions as a main verb (simple present tense). The auxiliary is 'does'. Since the statement is positive, the tag is negative ('doesn't she?'). Citations: chapter 14, page 237."
           },
           {
             "id": "iii",
             "type": "reproduce",
-            "questionEnglish": "By the time we arrived, the movie __________ (start). (Use the correct form of the verb 'start'.)",
-            "correctAnswer": "By the time we arrived, the movie had started.",
-            "explanation": "Explanation (English): The Past Perfect tense ('had started') is used to describe an action that was completed before another action in the past ('arrived').\nব্যাখ্যা (Nepali Explanation): विगतमा अर्को कार्य ('arrived') हुनुभन्दा पहिले नै सम्पन्न भइसकेको कार्यको वर्णन गर्न Past Perfect tense ('had started') प्रयोग गरिन्छ।",
-            "marks": 1
+            "questionEnglish": "The teacher said, \"The Earth revolves around the Sun.\" (Change into indirect speech.)",
+            "correctAnswer": "The teacher said that the Earth revolves around the Sun.",
+            "explanationNepali": "यो एक विश्वव्यापी सत्य (universal truth) हो, त्यसैले अप्रत्यक्ष बोलीमा परिवर्तन गर्दा क्रियाको काल परिवर्तन हुँदैन।",
+            "explanationEnglish": "This is a universal truth, so the tense of the verb does not change when converting to indirect speech. Citations: chapter 1, page 14."
           },
           {
             "id": "iv",
             "type": "reproduce",
-            "questionEnglish": "The children are flying kites. (Change into passive voice.)",
-            "correctAnswer": "Kites are being flown by the children.",
-            "explanation": "Explanation (English): The sentence is in Present Continuous tense. The passive form is 'object + are + being + V3 + by + subject'.\nব্যাখ্যা (Nepali Explanation): वाक्य Present Continuous tense मा छ। यसको passive form 'object + are + being + V3 + by + subject' हो।",
-            "marks": 1
+            "questionEnglish": "If you don't hurry, you ________ (miss) the bus. (Use the correct form of the verb 'miss' to complete the sentence.)",
+            "correctAnswer": "If you don't hurry, you will miss the bus.",
+            "explanationNepali": "यो पहिलो प्रकारको conditional वाक्य हो (If + simple present, ...simple future), जसले भविष्यको सम्भावित परिणामलाई जनाउँछ।",
+            "explanationEnglish": "This is a Type 1 conditional sentence (If + simple present, ...simple future), which refers to a real future possibility. Citations: chapter 5, page 75."
           },
           {
             "id": "v",
             "type": "reproduce",
-            "questionEnglish": "Everybody likes him. (Change into negative.)",
-            "correctAnswer": "Nobody dislikes him.",
-            "explanation": "Explanation (English): To make the sentence negative while keeping the meaning, 'Everybody' can be changed to its opposite 'Nobody' and the verb 'likes' to its opposite 'dislikes'. Another option 'Everybody doesn't like him' changes the meaning.\nব্যাখ্যা (Nepali Explanation): अर्थलाई कायम राख्दै वाक्यलाई नकारात्मक बनाउन, 'Everybody' लाई यसको विपरीत 'Nobody' र क्रिया 'likes' लाई यसको विपरीत 'dislikes' मा परिवर्तन गर्न सकिन्छ। 'Everybody doesn't like him' ले अर्थ परिवर्तन गर्दछ।",
-            "marks": 1
+            "questionEnglish": "He seldom goes to the cinema. (Change into affirmative.)",
+            "correctAnswer": "He often/sometimes/usually goes to the cinema. OR He goes to the cinema.",
+            "explanationNepali": "'Seldom' एक नकारात्मक अर्थ बोक्ने adverb हो। यसलाई हटाएर 'often' जस्तो affirmative adverb राख्दा वा केही नराख्दा वाक्य affirmative बन्छ।",
+            "explanationEnglish": "'Seldom' is a negative adverb. The sentence can be made affirmative by replacing it with an affirmative adverb like 'often' or by simply removing it. Citations: chapter 11, page 183."
           },
           {
             "id": "vi",
             "type": "reproduce",
-            "questionEnglish": "She goes to school <strong>by bus</strong>. (Change into a 'How' question.)",
-            "correctAnswer": "How does she go to school?",
-            "explanation": "Explanation (English): The phrase 'by bus' explains the manner of travel, answering 'How?'. To form the question, use 'How' followed by the auxiliary 'does', the subject 'she', and the base form of the verb 'go'.\nব্যাখ্যা (Nepali Explanation): 'by bus' वाक्यांशले यात्राको तरिका बताउँछ, जसले 'कसरी?' प्रश्नको उत्तर दिन्छ। प्रश्न बनाउन, 'How' पछि सहायक क्रिया 'does', कर्ता 'she', र क्रियाको मूल रूप 'go' प्रयोग गर्नुहोस्।",
-            "marks": 1
+            "questionEnglish": "She came here to meet her friend. (Change into 'Why' question.)",
+            "correctAnswer": "Why did she come here?",
+            "explanationNepali": "उद्देश्य ('to meet her friend') बारे प्रश्न सोध्न 'Why' को प्रयोग गरिन्छ र भूतकालको लागि सहायक क्रिया 'did' को साथ प्रश्न बनाइन्छ।",
+            "explanationEnglish": "To ask about the purpose ('to meet her friend'), 'Why' is used, and a question is formed with the auxiliary verb 'did' for the simple past. Citations: chapter 18, page 301."
           }
         ]
       },
@@ -506,60 +510,71 @@
         "type": "cloze_test",
         "title": "Choose and copy the correct answers from the brackets to complete the given text. (Rewriting the text is not compulsory.)",
         "marks": 5,
-        "passage": "Health and wellness are important aspects of our lives. A healthy diet is essential (a) _____ (for/to/at/in) maintaining good health. We should eat plenty of fruits and vegetables, (b) _____ (shouldn't we/should we/do we/don't we)? My doctor advised me (c) _____ (to avoid/avoid/avoiding/to avoiding) junk food. He told me that if I followed a healthy lifestyle, I (d) _____ (will feel/would feel/will have felt/felt) much better. It is a fact that a balanced diet (e) _____ (is given/given/gives/give) us the energy we need. Many people, (f) _____ (who/which/whose/whom) suffer from lifestyle diseases, often have poor eating habits. I got my brother (g) _____ (to start/start/started/starting) exercising with me. He was made (h) _____ (join/to join/joining/joined) the gym by our parents. Now, he enjoys (i) _____ (go/goes/to go/going) to the gym every day. (j) _____ (Although/Despite/Because/However) it was difficult at first, he is now much healthier.",
+        "passage": "There are many historical places in Nepal, (a) _____ (is there/isn't there/are there/aren't there)? Bhaktapur Durbar Square is one of them. It (b) _____ (was listed/is listed/listed/had listed) as a World Heritage Site in 1979. A lot of tourists visit this place every year. If I were a tourist guide, I (c) _____ (will tell/would tell/would have told/had told) them about its history. The guide said that the palace (d) _____ (is/was/has been/had been) built in the 15th century. He asked me (e) _____ (if I know/if I knew/do I know/did I know) about the 55-window palace. The local authority has made the visitors (f) _____ (to follow/follow/followed/following) certain rules. (g) _____ (Despite/Although/Because of/Because) the earthquake of 2015, the site still holds its ancient charm. Many buildings (h) _____ (were destroyed/destroyed/had destroyed/are destroyed) by the earthquake. The government is working hard (i) _____ (renovate/to renovate/renovating/renovated) the damaged structures. I spent (j) _____ (a/an/the/no article) whole day exploring the area.",
         "gaps": [
           {
-            "id": "a", 
-            "correctAnswer": "for",
-            "explanation": "Explanation (English): The preposition 'for' is used to show purpose, as in 'essential for maintaining'.\nব্যাখ্যা (Nepali Explanation): 'for' preposition लाई उद्देश्य देखाउन प्रयोग गरिन्छ, जस्तै 'essential for maintaining' मा।"
+            "id": "a",
+            "correctAnswer": "aren't there",
+            "explanationNepali": "वाक्य 'There are...' सकारात्मक छ, त्यसैले प्रश्न ट्याग नकारात्मक ('aren't') र सर्वनाम 'there' हुनुपर्छ।",
+            "explanationEnglish": "The statement 'There are...' is positive, so the tag must be negative ('aren't') with the pronoun 'there'. Citations: chapter 14, page 237."
           },
           {
-            "id": "b", 
-            "correctAnswer": "shouldn't we",
-            "explanation": "Explanation (English): The statement uses 'should' and is positive, so the tag question uses 'shouldn't' and the pronoun 'we'.\nব্যাখ্যা (Nepali Explanation): वाक्यमा 'should' प्रयोग भएको छ र यो सकारात्मक छ, त्यसैले ट्याग प्रश्नमा 'shouldn't' र सर्वनाम 'we' प्रयोग हुन्छ।"
+            "id": "b",
+            "correctAnswer": "was listed",
+            "explanationNepali": "यो कार्य भूतकाल (1979) मा भएको हो र वाक्य passive voice मा छ, त्यसैले simple past passive ('was listed') को प्रयोग हुन्छ।",
+            "explanationEnglish": "The action happened in the past (1979) and is in the passive voice, so the simple past passive ('was listed') is used. Citations: chapter 8, page 131."
           },
           {
-            "id": "c", 
-            "correctAnswer": "to avoid",
-            "explanation": "Explanation (English): The verb 'advised' is followed by an object ('me') and a to-infinitive.\nব্যাখ্যা (Nepali Explanation): क्रिया 'advised' पछि object ('me') र to-infinitive आउँछ।"
+            "id": "c",
+            "correctAnswer": "would tell",
+            "explanationNepali": "यो दोस्रो प्रकारको conditional वाक्य हो (If + simple past, ...would + v1), जसले एक काल्पनिक अवस्थालाई जनाउँछ।",
+            "explanationEnglish": "This is a Type 2 conditional sentence (If + simple past, ...would + v1), referring to a hypothetical situation. Citations: chapter 5, page 75."
           },
           {
-            "id": "d", 
-            "correctAnswer": "would feel",
-            "explanation": "Explanation (English): This is a reported Type I conditional. In indirect speech, 'will' in the main clause changes to 'would'.\nব্যাখ্যা (Nepali Explanation): यो रिपोर्टेड Type I conditional हो। अप्रत्यक्ष कथनमा, मुख्य खण्डको 'will' 'would' मा परिवर्तन हुन्छ।"
+            "id": "d",
+            "correctAnswer": "was",
+            "explanationNepali": "अप्रत्यक्ष बोलीमा, रिपोर्टिङ क्रिया (said) भूतकालमा भएकोले, क्रियालाई पनि भूतकाल (was) मा परिवर्तन गरिन्छ।",
+            "explanationEnglish": "In indirect speech, since the reporting verb (said) is in the past, the verb is also changed to the past tense (was). Citations: chapter 1, page 8."
           },
           {
-            "id": "e", 
-            "correctAnswer": "gives",
-            "explanation": "Explanation (English): The subject 'a balanced diet' is singular, so it takes the singular verb form 'gives' in the simple present tense.\nব্যাখ্যা (Nepali Explanation): कर्ता 'a balanced diet' एकवचन हो, त्यसैले simple present tense मा यसले एकवचन क्रिया 'gives' लिन्छ।"
+            "id": "e",
+            "correctAnswer": "if I knew",
+            "explanationNepali": "यो एक अप्रत्यक्ष yes/no प्रश्न हो। रिपोर्टिङ क्रिया (asked) भूतकालमा भएकोले, क्रिया 'know' लाई पनि भूतकाल ('knew') मा परिवर्तन गरिन्छ।",
+            "explanationEnglish": "This is an indirect yes/no question. Since the reporting verb (asked) is in the past, the verb 'know' is also changed to the past tense ('knew'). Citations: chapter 2, page 27."
           },
           {
-            "id": "f", 
-            "correctAnswer": "who",
-            "explanation": "Explanation (English): 'who' is a relative pronoun used as the subject to refer to people ('Many people').\nব্যাখ্যা (Nepali Explanation): 'who' एक relative pronoun हो जुन व्यक्तिहरू ('Many people') लाई जनाउन कर्ताको रूपमा प्रयोग गरिन्छ।"
+            "id": "f",
+            "correctAnswer": "follow",
+            "explanationNepali": "'make' को causative रूपमा, यसपछि object ('the visitors') र bare infinitive ('follow') आउँछ।",
+            "explanationEnglish": "In the causative form with 'make', it is followed by an object ('the visitors') and the bare infinitive ('follow'). Citations: chapter 18, page 307."
           },
           {
-            "id": "g", 
-            "correctAnswer": "to start",
-            "explanation": "Explanation (English): The causative verb 'get' is followed by an object ('my brother') and a to-infinitive.\nব্যাখ্যা (Nepali Explanation): causative verb 'get' पछि object ('my brother') र to-infinitive आउँछ।"
-          },
-          {
-            "id": "h", 
-            "correctAnswer": "to join",
-            "explanation": "Explanation (English): When the causative verb 'make' is used in the passive voice ('was made'), it is followed by a to-infinitive.\nব্যাখ্যা (Nepali Explanation): जब causative verb 'make' लाई passive voice ('was made') मा प्रयोग गरिन्छ, त्यसपछि to-infinitive आउँछ।"
-          },
-          {
-            "id": "i", 
-            "correctAnswer": "going",
-            "explanation": "Explanation (English): The verb 'enjoys' is followed by a gerund ('going').\nব্যাখ্যা (Nepali Explanation): क्रिया 'enjoys' पछि gerund ('going') आउँछ।"
-          },
-          {
-            "id": "j", 
+            "id": "g",
             "correctAnswer": "Although",
-            "explanation": "Explanation (English): 'Although' is a conjunction used to show contrast between two clauses.\nব্যাখ্যা (Nepali Explanation): 'Although' एक संयोजन हो जुन दुई खण्डहरू बिचको भिन्नता देखाउन प्रयोग गरिन्छ।"
+            "explanationNepali": "'Although' ले विरोधाभास देखाउँछ: भूकम्प गए तापनि, साइटले आफ्नो पुरानो आकर्षण कायम राखेको छ।",
+            "explanationEnglish": "'Although' introduces a contrast: despite the earthquake, the site still holds its charm. Citations: chapter 13, page 225."
+          },
+          {
+            "id": "h",
+            "correctAnswer": "were destroyed",
+            "explanationNepali": "यो वाक्य passive voice मा छ र भूतकालको घटनालाई जनाउँछ, त्यसैले 'were + v3' को प्रयोग हुन्छ।",
+            "explanationEnglish": "This is a passive voice sentence referring to a past event, so the structure 'were + v3' is used. Citations: chapter 10, page 172."
+          },
+          {
+            "id": "i",
+            "correctAnswer": "to renovate",
+            "explanationNepali": "उद्देश्य जनाउनको लागि 'to' + infinitive को प्रयोग गरिन्छ (The government is working hard for what purpose? To renovate...).",
+            "explanationEnglish": "The 'to' + infinitive form is used to express purpose (The government is working hard for what purpose? To renovate...). Citations: chapter 18, page 302."
+          },
+          {
+            "id": "j",
+            "correctAnswer": "a",
+            "explanationNepali": "'whole' शब्द व्यञ्जन ध्वनि /h/ बाट सुरु हुन्छ, त्यसैले article 'a' को प्रयोग हुन्छ।",
+            "explanationEnglish": "The word 'whole' begins with a consonant sound /h/, so the article 'a' is used. Citations: chapter 7, page 120."
           }
         ]
       }
     ]
   }
 ]
+

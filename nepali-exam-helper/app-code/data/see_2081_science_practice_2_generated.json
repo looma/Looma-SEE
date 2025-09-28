@@ -1,407 +1,409 @@
 [
   {
     "_id": "see_2081_science_practice_2_generated",
-    "title": "SEE 2081 Science Practice Test 2 (Generated Questions)",
-    "titleNepali": "SEE २०८१ विज्ञान अभ्यास परीक्षा २ (उत्पन्न प्रश्नहरू)",
+    "title": "SEE 2081 Science Practice Test 2",
+    "titleNepali": "SEE २०८۱ विज्ञान अभ्यास परीक्षा २",
     "subject": "science",
     "year": 2081,
     "totalMarks": 75,
     "duration": 180,
     "sections": ["A", "B", "C", "D"],
     "isActive": true,
-    "createdAt": { "$date": "2025-08-11T10:00:00.000Z" },
-    "updatedAt": { "$date": "2025-08-11T10:00:00.000Z" }
+    "createdAt": { "$date": "2025-09-01T10:00:00.000Z" },
+    "updatedAt": { "$date": "2025-09-01T10:00:00.000Z" }
   },
   {
-    "_id": { "$oid": "687d809a2f3df9d071c5210a" },
+    "_id": { "$oid": "66d6c1a1b3e4f5a6b7c8d9e2" },
     "testId": "see_2081_science_practice_2_generated",
     "questions": {
       "groupA": [
         {
           "id": "a",
           "type": "multiple_choice",
-          "questionNepali": "कुनै प्रयोगमा अनुसन्धानकर्ताले परिवर्तन गर्न सक्ने चरलाई के भनिन्छ?",
-          "questionEnglish": "In an experiment, what is the variable that can be manipulated by a researcher called?",
+          "questionNepali": "आधुनिक पेरियोडिक तालिकामा अधातुहरूलाई कहाँ राखिएको छ?",
+          "questionEnglish": "Where are non-metals placed in the modern periodic table?",
           "options": [
-            {"id": "i", "nepali": "आश्रित चर (Dependent variable)", "english": "Dependent variable"},
-            {"id": "ii", "nepali": "स्वतन्त्र चर (Independent variable)", "english": "Independent variable"},
-            {"id": "iii", "nepali": "नियन्त्रित चर (Controlled variable)", "english": "Controlled variable"},
-            {"id": "iv", "nepali": "तत्जन्य चर (Derived variable)", "english": "Derived variable"}
+            {"id": "i", "nepali": "बायाँतिर (On the left side)", "english": "On the left side"},
+            {"id": "ii", "nepali": "दायाँतिर (On the right side)", "english": "On the right side"},
+            {"id": "iii", "nepali": "बिचमा (In the middle)", "english": "In the middle"},
+            {"id": "iv", "nepali": "तल (At the bottom)", "english": "At the bottom"}
           ],
-          "correctAnswer": "ii", "marks": 1,
-          "explanation": "व्याख्या (Nepali Explanation): अनुसन्धानकर्ताले हेरफेर गर्न सक्ने चरलाई स्वतन्त्र चर भनिन्छ। आश्रित चरको मान स्वतन्त्र चरमा निर्भर गर्दछ।\n\nEnglish Explanation: The variable which can be manipulated by a researcher is called the independent variable. The value of a dependent variable depends upon the value of another variable."
+          "correctAnswer": "ii",
+          "marks": 1,
+          "explanation": "Explanation: आधुनिक पेरियोडिक तालिकामा धातुहरूलाई बायाँतिर, अधातुहरूलाई दायाँतिर र धातुजस्तै देखिने (metalloids) लाई बिचमा राखिएको छ ।\n\nIn the modern periodic table, metals are placed on the left side, non-metals are arranged on the right side, and metalloids are kept in the middle. Citations: chapter 14, page 367"
         },
         {
           "id": "b",
           "type": "multiple_choice",
-          "questionNepali": "आधुनिक आवधिक तालिकाको कुन समूहका तत्वहरूलाई 'ह्यालोजेन' भनिन्छ?",
-          "questionEnglish": "The elements of which group of the modern periodic table are called 'halogens'?",
+          "questionNepali": "कुन जीवको शरीर सपाट पातजस्तो वा लामो फिताजस्तो हुन्छ?",
+          "questionEnglish": "Which organism has a body that is like a flat leaf or a long ribbon?",
           "options": [
-            {"id": "i", "nepali": "समूह IA (Group IA)", "english": "Group IA"},
-            {"id": "ii", "nepali": "समूह IIA (Group IIA)", "english": "Group IIA"},
-            {"id": "iii", "nepali": "समूह VIIA (Group VIIA)", "english": "Group VIIA"},
-            {"id": "iv", "nepali": "समूह 0 (Group 0)", "english": "Group 0"}
+            {"id": "i", "nepali": "गड्यौला (Earthworm)", "english": "Earthworm"},
+            {"id": "ii", "nepali": "हाइड्रा (Hydra)", "english": "Hydra"},
+            {"id": "iii", "nepali": "गोलो जुका (Roundworm)", "english": "Roundworm"},
+            {"id": "iv", "nepali": "फित्तेजुका (Tapeworm)", "english": "Tapeworm"}
           ],
-          "correctAnswer": "iii", "marks": 1,
-          "explanation": "व्याख्या (Nepali Explanation): आधुनिक आवधिक तालिकाको समूह VIIA मा भएका तत्वहरूलाई ह्यालोजेन भनिन्छ। समूह IA का तत्वहरूलाई क्षार धातुहरू भनिन्छ।\n\nEnglish Explanation: The elements in group VIIA of the modern periodic table are called halogens. The elements of group IA are called alkali metals."
+          "correctAnswer": "iv",
+          "marks": 1,
+          "explanation": "Explanation: फित्तेजुका, लिभरफ्लुक जस्ता जीवहरू फाइलम प्लाटिहेल्मिन्थेस (Platyhelminthes) मा पर्छन्, जसको शरीर सपाट पातजस्तो वा लामो फिताजस्तो हुन्छ ।\n\nThe body of animals such as tapeworms and liverflukes is like a tape or flat leaf. These animals are classified under the phylum platyhelminthes. Citations: chapter 2, page 33"
         },
         {
           "id": "c",
           "type": "multiple_choice",
-          "questionNepali": "मानव शरीरमा कुन रक्तकोषको कमीले एनिमिया (anaemia) नामक रोग लाग्छ?",
-          "questionEnglish": "Deficiency of which blood cells in the human body causes a disease called anaemia?",
+          "questionNepali": "रानी मौरीको औसत आयु कति हुन्छ?",
+          "questionEnglish": "What is the average lifespan of a queen bee?",
           "options": [
-            {"id": "i", "nepali": "सेता रक्तकोष (White Blood Cell)", "english": "White Blood Cell"},
-            {"id": "ii", "nepali": "राता रक्तकोष (Red Blood Cell)", "english": "Red Blood Cell"},
-            {"id": "iii", "nepali": "प्लेटलेट्स (Platelets)", "english": "Platelets"},
-            {"id": "iv", "nepali": "प्लाज्मा (Plasma)", "english": "Plasma"}
+            {"id": "i", "nepali": "६ हप्तादेखि ६ महिना (6 weeks to 6 months)", "english": "6 weeks to 6 months"},
+            {"id": "ii", "nepali": "२ महिना (2 months)", "english": "2 months"},
+            {"id": "iii", "nepali": "२-५ वर्ष (2-5 years)", "english": "2-5 years"},
+            {"id": "iv", "nepali": "१ वर्ष (1 year)", "english": "1 year"}
           ],
-           "correctAnswer": "ii", "marks": 1,
-           "explanation": "व्याख्या (Nepali Explanation): रगतमा राता रक्तकोषको कमीले एनिमिया नामक रोग लाग्छ। एनिमिया भएको व्यक्ति छोटो हिँडाइमा पनि थकित महसुस गर्छ।\n\nEnglish Explanation: A deficiency of red blood cells in the blood leads to a disease called anaemia. An anaemic person feels tired even after a short walk."
+          "correctAnswer": "iii",
+          "marks": 1,
+          "explanation": "Explanation: रानी मौरी घारमा सबैभन्दा लामो समयसम्म बाँच्छ, जसको आयु लगभग २-५ वर्ष हुन्छ ।\n\nA queen bee lives the longest in the hive, about 2-5 years. Citations: chapter 3, page 62"
         },
         {
           "id": "d",
           "type": "multiple_choice",
-          "questionNepali": "तलका मध्ये कुन जीवमा मुटु दुई-कोठाको हुन्छ?",
-          "questionEnglish": "Which of the following animals has a two-chambered heart?",
+          "questionNepali": "मेन्डलको मोनोहाइब्रिड क्रसको दोस्रो वंशमा देखिने जिनोटाइपिक अनुपात कुन हो?",
+          "questionEnglish": "What is the genotypic ratio observed in the F2 generation of Mendel's monohybrid cross?",
           "options": [
-            {"id": "i", "nepali": "भ्यागुता (Frog)", "english": "Frog"},
-            {"id": "ii", "nepali": "माछा (Fish)", "english": "Fish"},
-            {"id": "iii", "nepali": "सर्प (Snake)", "english": "Snake"},
-            {"id": "iv", "nepali": "परेवा (Pigeon)", "english": "Pigeon"}
+            {"id": "i", "nepali": "३:१ (3:1)", "english": "3:1"},
+            {"id": "ii", "nepali": "१:१ (1:1)", "english": "1:1"},
+            {"id": "iii", "nepali": "९:३:३:१ (9:3:3:1)", "english": "9:3:3:1"},
+            {"id": "iv", "nepali": "१:२:१ (1:2:1)", "english": "1:2:1"}
           ],
-          "correctAnswer": "ii", "marks": 1,
-          "explanation": "व्याख्या (Nepali Explanation): माछा (वर्ग Pisces) को मुटु दुई-कोठाको हुन्छ। भ्यागुता र सर्पको तीन-कोठाको हुन्छ, र परेवाको चार-कोठाको हुन्छ।\n\nEnglish Explanation: Fish (class Pisces) have a two-chambered heart. Frogs and snakes have three-chambered hearts, and pigeons have a four-chambered heart."
+          "correctAnswer": "iv",
+          "marks": 1,
+          "explanation": "Explanation: मेन्डलको प्रयोगमा, दोस्रो वंशको जिनोटाइपिक अनुपात १ शुद्ध अग्लो : २ हाइब्रिड अग्लो : १ शुद्ध होचो हुन्छ ।\n\nIn Mendel's experiment, the genotypic ratio is pure tall: hybrid tall: pure dwarf = 1:2:1. Citations: chapter 4, page 93"
         },
         {
           "id": "e",
           "type": "multiple_choice",
-          "questionNepali": "कुन प्रकारको लेन्सलाई अपसारी लेन्स (diverging lens) पनि भनिन्छ?",
-          "questionEnglish": "Which type of lens is also known as a diverging lens?",
+          "questionNepali": "मानव शरीरमा रोग प्रतिरोधात्मक क्षमताका लागि कुन रक्तकोष जिम्मेवार छ?",
+          "questionEnglish": "Which blood cell is responsible for immunity in the human body?",
           "options": [
-            {"id": "i", "nepali": "कन्भेक्स लेन्स (Convex lens)", "english": "Convex lens"},
-            {"id": "ii", "nepali": "कन्केभ लेन्स (Concave lens)", "english": "Concave lens"},
-            {"id": "iii", "nepali": "प्लेनो-कन्भेक्स लेन्स (Plano-convex lens)", "english": "Plano-convex lens"},
-            {"id": "iv", "nepali": "बाइफोकल लेन्स (Bifocal lens)", "english": "Bifocal lens"}
+            {"id": "i", "nepali": "रातो रक्तकोष (Red Blood Cell)", "english": "Red Blood Cell"},
+            {"id": "ii", "nepali": "सेतो रक्तकोष (White Blood Cell)", "english": "White Blood Cell"},
+            {"id": "iii", "nepali": "प्लेटलेट्स (Platelets)", "english": "Platelets"},
+            {"id": "iv", "nepali": "प्लाज्मा (Plasma)", "english": "Plasma"}
           ],
-          "correctAnswer": "ii", "marks": 1,
-          "explanation": "व्याख्या (Nepali Explanation): कन्केभ लेन्सलाई अपसारी लेन्स भनिन्छ किनभने यसले प्रकाशका किरणहरूलाई फैलाउने (diverge) क्षमता राख्छ। कन्भेक्स लेन्सलाई अभिसारी लेन्स (converging lens) भनिन्छ।\n\nEnglish Explanation: The concave lens is known as a diverging lens because of its ability to diverge light rays. The convex lens is known as a converging lens."
+          "correctAnswer": "ii",
+          "marks": 1,
+          "explanation": "Explanation: सेतो रक्तकोषले शरीरमा बाहिरबाट प्रवेश गर्ने रोग लगाउने कीटाणुहरूसँग लडेर तिनीहरूलाई नष्ट गर्छ र शरीरको रोग प्रतिरोधात्मक क्षमता बढाउँछ ।\n\nWhite blood cells fight against disease-causing germs that enter the body from outside and destroy them. These cells increase the immunity of our body. Citations: chapter 5, page 115"
         },
         {
           "id": "f",
           "type": "multiple_choice",
-          "questionNepali": "इथेन (Ethane) को आणविक सूत्र के हो?",
-          "questionEnglish": "What is the molecular formula for Ethane?",
+          "questionNepali": "वस्तुको तौल (W), पिण्ड (m) र गुरुत्व प्रवेग (g) बिचको सही सम्बन्ध कुन हो?",
+          "questionEnglish": "Which is the correct relationship between the weight (W), mass (m), and acceleration due to gravity (g) of an object?",
           "options": [
-            {"id": "i", "nepali": "CH₄", "english": "CH₄"},
-            {"id": "ii", "nepali": "C₂H₄", "english": "C₂H₄"},
-            {"id": "iii", "nepali": "C₂H₂", "english": "C₂H₂"},
-            {"id": "iv", "nepali": "C₂H₆", "english": "C₂H₆"}
+            {"id": "i", "nepali": "m = Wg", "english": "m = Wg"},
+            {"id": "ii", "nepali": "g = Wm", "english": "g = Wm"},
+            {"id": "iii", "nepali": "W = mg", "english": "W = mg"},
+            {"id": "iv", "nepali": "W = m/g", "english": "W = m/g"}
           ],
-          "correctAnswer": "iv", "marks": 1,
-          "explanation": "व्याख्या (Nepali Explanation): इथेन एक संतृप्त हाइड्रोकार्बन (अल्केन) हो जसमा दुई कार्बन परमाणुहरू हुन्छन्। अल्केनको सामान्य सूत्र CnH2n+2 हो, त्यसैले n=2 को लागि, सूत्र C₂H₂(₂)₊₂ = C₂H₆ हुन्छ।\n\nEnglish Explanation: Ethane is a saturated hydrocarbon (alkane) with two carbon atoms. The general formula for alkanes is CnH2n+2, so for n=2, the formula is C₂H₂(₂)₊₂ = C₂H₆."
+          "correctAnswer": "iii",
+          "marks": 1,
+          "explanation": "Explanation: न्युटनको गतिको दोस्रो नियम अनुसार, 'm' पिण्ड भएको वस्तुमा लाग्ने गुरुत्व बल, अर्थात् तौल, W = mg हुन्छ, जहाँ g गुरुत्व प्रवेग हो ।\n\nAccording to Newton's second law of motion, the force of gravity acting on an object of mass 'm', i.e., weight, is W = mg, where g is the acceleration due to gravity. Citations: chapter 7, page 182"
         },
         {
           "id": "g",
           "type": "multiple_choice",
-          "questionNepali": "कुन रासायनिक पदार्थलाई ड्राइ आइस (dry ice) भनिन्छ?",
-          "questionEnglish": "Which chemical substance is known as dry ice?",
+          "questionNepali": "हाइड्रोमिटरले कुन सिद्धान्तमा आधारित भएर काम गर्छ?",
+          "questionEnglish": "On which principle does a hydrometer work?",
           "options": [
-            {"id": "i", "nepali": "ठोस एमोनिया (Solid Ammonia)", "english": "Solid Ammonia"},
-            {"id": "ii", "nepali": "ठोस कार्बन डाइअक्साइड (Solid Carbon dioxide)", "english": "Solid Carbon dioxide"},
-            {"id": "iii", "nepali": "जमेको पानी (Frozen Water)", "english": "Frozen Water"},
-            {"id": "iv", "nepali": "ठोस सल्फर डाइअक्साइड (Solid Sulphur dioxide)", "english": "Solid Sulphur dioxide"}
+            {"id": "i", "nepali": "पास्कलको नियम (Pascal's Law)", "english": "Pascal's Law"},
+            {"id": "ii", "nepali": "तैरिने नियम (Law of Floatation)", "english": "Law of Floatation"},
+            {"id": "iii", "nepali": "गुरुत्वाकर्षणको नियम (Law of Gravitation)", "english": "Law of Gravitation"},
+            {"id": "iv", "nepali": "न्युटनको गतिको नियम (Newton's Laws of Motion)", "english": "Newton's Laws of Motion"}
           ],
-          "correctAnswer": "ii", "marks": 1,
-          "explanation": "व्याख्या (Nepali Explanation): जब कार्बन डाइअक्साइडलाई -७८°C भन्दा तल चिस्याइन्छ, यो ठोस रूपमा परिणत हुन्छ जसलाई ड्राइ आइस भनिन्छ।\n\nEnglish Explanation: When Carbon dioxide is cooled below -78°C, it changes to solid form which is known as dry ice."
+          "correctAnswer": "ii",
+          "marks": 1,
+          "explanation": "Explanation: हाइड्रोमिटर तैरिने नियममा आधारित हुन्छ । यो तरल पदार्थमा तैरँदा यसले विस्थापित गरेको तरलको तौल बराबरको उर्ध्वचाप प्राप्त गर्छ । तरलको घनत्व अनुसार यो फरक-फरक मात्रामा डुब्छ ।\n\nA hydrometer works on the law of floatation. Due to the liquid displaced by its heavy bulb, it gets the necessary upthrust and floats vertically on the surface of the liquid. The hydrometer floats more on a liquid of high density and sinks more if the density is low. Citations: chapter 8, page 216"
         },
         {
           "id": "h",
           "type": "multiple_choice",
-          "questionNepali": "डाइरेक्ट करेन्ट (d.c.) को फ्रिक्वेन्सी कति हुन्छ?",
-          "questionEnglish": "What is the frequency of direct current (d.c.)?",
+          "questionNepali": "ताराहरू टिलपिल गर्नुको मुख्य कारण के हो?",
+          "questionEnglish": "What is the main reason for the twinkling of stars?",
           "options": [
-            {"id": "i", "nepali": "50 Hz", "english": "50 Hz"},
-            {"id": "ii", "nepali": "60 Hz", "english": "60 Hz"},
-            {"id": "iii", "nepali": "100 Hz", "english": "100 Hz"},
-            {"id": "iv", "nepali": "0 Hz", "english": "0 Hz"}
+            {"id": "i", "nepali": "वायुमण्डलीय परावर्तन (Atmospheric reflection)", "english": "Atmospheric reflection"},
+            {"id": "ii", "nepali": "वायुमण्डलीय आवर्तन (Atmospheric refraction)", "english": "Atmospheric refraction"},
+            {"id": "iii", "nepali": "प्रकाशको विच्छेदन (Dispersion of light)", "english": "Dispersion of light"},
+            {"id": "iv", "nepali": "पूर्ण आन्तरिक परावर्तन (Total internal reflection)", "english": "Total internal reflection"}
           ],
-          "correctAnswer": "iv", "marks": 1,
-          "explanation": "व्याख्या (Nepali Explanation): डाइरेक्ट करेन्टको दिशा समयसँगै परिवर्तन नहुने हुनाले यसको फ्रिक्वेन्सी शून्य हुन्छ।\n\nEnglish Explanation: Since the direction of the current in d.c. does not change with time, the frequency is zero."
+          "correctAnswer": "ii",
+          "marks": 1,
+          "explanation": "Explanation: ताराहरू वायुमण्डलीय आवर्तनका कारण टिलपिल गर्छन् । ताराको प्रकाश पृथ्वीको विभिन्न वायुमण्डलीय तहहरूबाट पार हुँदा पटक-पटक बाङ्गिन्छ, जसले गर्दा ताराको देखिने स्थान र चमकमा उतारचढाव आउँछ ।\n\nStars appear to be twinkling due to the refraction of light in the atmosphere. Citations: chapter 10, page 252"
         },
         {
           "id": "i",
           "type": "multiple_choice",
-          "questionNepali": "विश्वव्यापी गुरुत्वाकर्षण अचर (G) को SI एकाइ के हो?",
-          "questionEnglish": "What is the SI unit of the universal gravitational constant (G)?",
+          "questionNepali": "सोलेनोइडको चुम्बकीय क्षेत्रको शक्ति कुन कुरामा निर्भर गर्दैन?",
+          "questionEnglish": "The strength of the magnetic field of a solenoid does not depend on which of the following?",
           "options": [
-            {"id": "i", "nepali": "N m²/kg²", "english": "N m²/kg²"},
-            {"id": "ii", "nepali": "N kg²/m²", "english": "N kg²/m²"},
-            {"id": "iii", "nepali": "N m/kg", "english": "N m/kg"},
-            {"id": "iv", "nepali": "N/m²", "english": "N/m²"}
+            {"id": "i", "nepali": "सोलेनोइडमा करेन्टको परिमाण (Magnitude of the current in the solenoid)", "english": "Magnitude of the current in the solenoid"},
+            {"id": "ii", "nepali": "सोलेनोइडको क्वाइलमा फन्काको सङ्ख्या (Number of turns in the coil of the solenoid)", "english": "Number of turns in the coil of the solenoid"},
+            {"id": "iii", "nepali": "सोलेनोइड भित्र राखिएको पदार्थ (A material placed inside the solenoid)", "english": "A material placed inside the solenoid"},
+            {"id": "iv", "nepali": "तारको रङ (Color of the wire)", "english": "Color of the wire"}
           ],
-          "correctAnswer": "i", "marks": 1,
-          "explanation": "व्याख्या (Nepali Explanation): विश्वव्यापी गुरुत्वाकर्षण अचर (G) को SI एकाइ N m²/kg² हो।\n\nEnglish Explanation: The SI unit of the universal gravitational constant (G) is N m²/kg²."
+          "correctAnswer": "iv",
+          "marks": 1,
+          "explanation": "Explanation: सोलेनोइडको चुम्बकीय क्षेत्रको शक्ति करेन्टको परिमाण, क्वाइलमा फन्काको सङ्ख्या र भित्र राखिएको कोर पदार्थमा निर्भर गर्दछ, तर तारको रङमा निर्भर गर्दैन ।\n\nThe strength of the magnetic field around a solenoid depends on the magnitude of the current, the number of turns in the coil, and the material placed inside the solenoid (core). Citations: chapter 11, page 309"
         },
         {
           "id": "j",
           "type": "multiple_choice",
-          "questionNepali": "मानव शरीरमा कुन अङ्गमा रातो रक्तकोषहरू नष्ट हुन्छन्?",
-          "questionEnglish": "In which organ of the human body are red blood cells destroyed?",
+          "questionNepali": "अल्केन (Alkane) समूहको सामान्य सूत्र के हो?",
+          "questionEnglish": "What is the general formula for the Alkane group?",
           "options": [
-            {"id": "i", "nepali": "अस्थि मज्जा (Bone marrow)", "english": "Bone marrow"},
-            {"id": "ii", "nepali": "फोक्सो (Lungs)", "english": "Lungs"},
-            {"id": "iii", "nepali": "कलेजो र फियो (Liver and spleen)", "english": "Liver and spleen"},
-            {"id": "iv", "nepali": "मिर्गौला (Kidney)", "english": "Kidney"}
+            {"id": "i", "nepali": "Cn​H2n​", "english": "Cn​H2n​"},
+            {"id": "ii", "nepali": "Cn​H2n+2​", "english": "Cn​H2n+2​"},
+            {"id": "iii", "nepali": "Cn​H2n−2​", "english": "Cn​H2n−2​"},
+            {"id": "iv", "nepali": "Cn​H2n+1​OH", "english": "Cn​H2n+1​OH"}
           ],
-          "correctAnswer": "iii", "marks": 1,
-          "explanation": "व्याख्या (Nepali Explanation): रातो रक्तकोषहरू अस्थि मज्जामा बन्छन् र कलेजो तथा फियोमा नष्ट हुन्छन्।\n\nEnglish Explanation: Red blood cells are formed in the bone marrow and are destroyed in the liver and spleen."
+          "correctAnswer": "ii",
+          "marks": 1,
+          "explanation": "Explanation: अल्केनहरू संतृप्त हाइड्रोकार्बन हुन् जसमा कार्बन परमाणुहरूबीच एकल सहसंयोजक बन्धन हुन्छ । तिनीहरूको सामान्य सूत्र Cn​H2n+2​ हो ।\n\nAlkanes are saturated hydrocarbons having a single covalent bond between the carbon atoms. The general formula of these compounds is CnH2n +2. Citations: chapter 18, page 428"
         }
       ],
       "groupB": [
         {
           "id": "a",
           "type": "short_answer",
-          "questionNepali": "आधुनिक पेरियोडिक नियम लेख्नुहोस्।",
-          "questionEnglish": "State the modern periodic law.",
+          "questionNepali": "तत्जन्य एकाइको परिभाषा दिनुहोस् ।",
+          "questionEnglish": "Define a derived unit.",
           "marks": 1,
-          "sampleAnswer": "नेपालीमा (In Nepali): तत्वहरूको भौतिक तथा रासायनिक गुणधर्महरू तिनीहरूको पारमाणविक संख्याको पेरियोडिक कार्य हुन्।\n\nIn English: The physical and chemical properties of elements are the periodic function of their atomic number."
+          "sampleAnswer": "उत्तर: जुन एकाइको स्वतन्त्र अस्तित्व हुँदैन र दुई वा दुईभन्दा बढी आधारभूत एकाइहरू मिलेर बनेको हुन्छ, त्यसलाई तत्जन्य एकाइ भनिन्छ ।\n\nAnswer: The unit of measurement which has no independent existence and is composed of two or more fundamental units is called a derived unit. Citations: chapter 1, page 8"
         },
         {
           "id": "b",
           "type": "short_answer",
-          "questionNepali": "ट्रान्सफर्मरले कुन सिद्धान्तमा काम गर्छ?",
-          "questionEnglish": "On which principle does a transformer work?",
+          "questionNepali": "जिम्नोस्पर्म (Gymnosperms) को एउटा विशेषता लेख्नुहोस् ।",
+          "questionEnglish": "Give one characteristic of Gymnosperms.",
           "marks": 1,
-          "sampleAnswer": "नेपालीमा (In Nepali): ट्रान्सफर्मरले म्युचुअल इन्डक्सनको सिद्धान्तमा काम गर्छ।\n\nIn English: A transformer is based on the principle of mutual induction."
+          "sampleAnswer": "उत्तर: \n* यिनीहरूले फूलको सट्टा कोन (cones) धारण गर्छन् ।\n* यिनीहरूको बीउ नाङ्गो हुन्छ, फलभित्र हुँदैन ।\n* यिनीहरूका पातहरू लामा र सियोजस्ता हुन्छन् ।\n\nAnswer: \n* They bear cones instead of flowers.\n* Their seed is naked, without fruit.\n* Their leaves are elongated and needle-like. Citations: chapter 2, page 23"
         },
         {
           "id": "c",
           "type": "short_answer",
-          "questionNepali": "एउटा मोनोहाइड्रिक अल्कोहलको उदाहरण दिनुहोस्।",
-          "questionEnglish": "Give an example of a monohydric alcohol.",
+          "questionNepali": "डिप्लोइड (diploid) कोष भनेको के हो?",
+          "questionEnglish": "What is a diploid cell?",
           "marks": 1,
-          "sampleAnswer": "नेपालीमा (In Nepali): मिथाइल अल्कोहल (मेथानोल) वा इथाइल अल्कोहल (इथानोल)।\n\nIn English: Methyl alcohol (Methanol) or Ethyl alcohol (Ethanol)."
+          "sampleAnswer": "उत्तर: कुनै कोषमा दुई सेट क्रोमोजोम (एउटा बाबुबाट र अर्को आमाबाट) हुन्छ भने त्यसलाई डिप्लोइड कोष (2n) भनिन्छ ।\n\nAnswer: A cell containing two sets of chromosomes, one set from the father and another set from the mother, is called a diploid cell (2n). Citations: chapter 4, page 76"
         },
         {
           "id": "d",
           "type": "short_answer",
-          "questionNepali": "मानव शरीरमा कुन रक्तकोषलाई ‘शरीरको सिपाही’ भनिन्छ?",
-          "questionEnglish": "Which blood cells are referred to as the 'soldiers of the human body'?",
+          "questionNepali": "ट्राइकस्पिड भल्भको कार्य के हो?",
+          "questionEnglish": "What is the function of the tricuspid valve?",
           "marks": 1,
-          "sampleAnswer": "नेपालीमा (In Nepali): सेता रक्तकोष (White Blood Cells) लाई 'शरीरको सिपाही' भनिन्छ।\n\nIn English: White Blood Cells are referred to as the soldiers of the human body."
+          "sampleAnswer": "उत्तर: ट्राइकस्पिड भल्भले दाहिने अरिकलबाट दाहिने भेन्ट्रिकलमा रगत प्रवाह हुन दिन्छ तर उल्टो दिशामा फर्कनबाट रोक्छ ।\n\nAnswer: The tricuspid valve allows blood to pass from the right auricle to the right ventricle but prevents its backflow. Citations: chapter 5, page 120"
         },
         {
           "id": "e",
           "type": "short_answer",
-          "questionNepali": "तौलको SI एकाइ के हो?",
-          "questionEnglish": "What is the SI unit of weight?",
+          "questionNepali": "प्वाँख र सिक्का प्रयोगबाट के निष्कर्ष निकालिन्छ?",
+          "questionEnglish": "What conclusion is drawn from the feather and coin experiment?",
           "marks": 1,
-          "sampleAnswer": "नेपालीमा (In Nepali): तौलको SI एकाइ न्युटन (N) हो।\n\nIn English: The SI unit of weight is the newton (N)."
+          "sampleAnswer": "उत्तर: हावाको अवरोध नभएको अवस्थामा (भ्याकुममा), सबै वस्तुहरू समान गुरुत्व प्रवेगले खस्छन्, चाहे तिनीहरूको पिण्ड जतिसुकै होस् ।\n\nAnswer: In the absence of air resistance (in a vacuum), all objects fall with the same acceleration due to gravity, regardless of their mass. Citations: chapter 7, pages 176-177"
         },
         {
           "id": "f",
           "type": "short_answer",
-          "questionNepali": "कुनै वस्तु स्वतन्त्र रूपमा खस्दा त्यसमा कति प्रवेग उत्पन्न हुन्छ?",
-          "questionEnglish": "What is the acceleration of an object in free fall?",
+          "questionNepali": "उर्ध्वचाप उत्पन्न हुनुको कारण के हो?",
+          "questionEnglish": "What is the cause of upthrust?",
           "marks": 1,
-          "sampleAnswer": "नेपालीमा (In Nepali): स्वतन्त्र रूपमा खस्ने वस्तुको प्रवेग गुरुत्व प्रवेग (g) बराबर हुन्छ।\n\nIn English: The acceleration of an object in free fall is equal to the acceleration due to gravity (g)."
+          "sampleAnswer": "उत्तर: तरल पदार्थमा डुबाइएको वस्तुको तल्लो सतहमा माथिल्लो सतहमा भन्दा बढी चाप लाग्ने भएकोले उर्ध्वचाप उत्पन्न हुन्छ ।\n\nAnswer: The pressure on the lower surface of an object immersed in a liquid is greater than the pressure on its upper surface, which results in a net upward force, or upthrust. Citations: chapter 8, page 209"
         },
         {
           "id": "g",
           "type": "short_answer",
-          "questionNepali": "नेपालमा प्रतिबन्धित एउटा कीटनाशकको नाम लेख्नुहोस्।",
-          "questionEnglish": "Name one pesticide that is banned in Nepal.",
+          "questionNepali": "डाइरेक्ट करेन्ट (DC) को एउटा स्रोतको उदाहरण दिनुहोस् ।",
+          "questionEnglish": "Give an example of a source of Direct Current (DC).",
           "marks": 1,
-          "sampleAnswer": "नेपालीमा (In Nepali): DDT (वा Aldrin, Dieldrin, Endosulfan)।\n\nIn English: DDT (or Aldrin, Dieldrin, Endosulfan)."
+          "sampleAnswer": "उत्तर: ड्राइ सेल, सोलार प्यानल, ब्याट्रीहरू ।\n\nAnswer: Dry Cells, solar panels, batteries. Citations: chapter 11, page 303"
         },
         {
           "id": "h",
           "type": "short_answer",
-          "questionNepali": "कुनै दुई अल्केनको नाम लेख्नुहोस्।",
-          "questionEnglish": "Write the names of any two alkanes.",
+          "questionNepali": "मेटालोइड (metalloids) को परिभाषा दिनुहोस् ।",
+          "questionEnglish": "Define metalloids.",
           "marks": 1,
-          "sampleAnswer": "नेपालीमा (In Nepali): मिथेन (Methane) र इथेन (Ethane)।\n\nIn English: Methane and Ethane."
+          "sampleAnswer": "उत्तर: धातु र अधातुको बिचमा पर्ने र दुवैको गुण देखाउने तत्त्वहरूलाई मेटालोइड भनिन्छ ।\n\nAnswer: The elements which lie between metals and nonmetals and show some properties similar to both are called metalloids. Citations: chapter 14, page 373"
         },
         {
           "id": "i",
           "type": "short_answer",
-          "questionNepali": "फियोक्रोमसाइटोमा (pheochromocytoma) के हो?",
-          "questionEnglish": "What is pheochromocytoma?",
+          "questionNepali": "फलफूल पकाउन प्रयोग हुने कुनै एक रासायनिक पदार्थको नाम लेख्नुहोस् ।",
+          "questionEnglish": "Name one chemical substance used for ripening fruits.",
           "marks": 1,
-          "sampleAnswer": "नेपालीमा (In Nepali): यो एड्रिनल ग्रन्थिमा हुने एक प्रकारको ट्युमर हो, जसले एड्रेनालाईन र नोराड्रेनालाईन हर्मोनको अत्यधिक उत्पादन गर्दछ, जसले गर्दा उच्च रक्तचाप हुन्छ।\n\nIn English: It is a type of tumor in the adrenal gland that causes overproduction of adrenaline and noradrenaline hormones, leading to high blood pressure."
+          "sampleAnswer": "उत्तर: क्याल्सियम कार्बाइड, इथिलिन ग्यास, इथेफोन ।\n\nAnswer: Calcium carbide, ethylene gas, ethephon. Citations: chapter 19, page 445"
         }
       ],
       "groupC": [
         {
           "id": "3",
           "type": "long_answer",
-          "questionNepali": "गुरुत्व प्रवेग (g) र गुरुत्वाकर्षण अचर (G) बिच कुनै दुईओटा फरक लेख्नुहोस्।",
-          "questionEnglish": "Write any two differences between acceleration due to gravity (g) and gravitational constant (G).",
+          "questionNepali": "v = u + at समीकरणको मान्यता एकाइगत विश्लेषणबाट परीक्षण गर्नुहोस् ।",
+          "questionEnglish": "Test the validity of the equation v = u + at by unit analysis.",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\n१. **परिभाषा:** 'g' गुरुत्वाकर्षण बलको कारणले स्वतन्त्र रूपमा खस्ने वस्तुमा उत्पन्न हुने प्रवेग हो। 'G' एकाइ दूरीमा राखिएका दुई एकाइ पिण्डहरू बीचको गुरुत्वाकर्षण बल हो।\n२. **मान:** 'g' को मान स्थानअनुसार परिवर्तन हुन्छ (जस्तै, पृथ्वीको सतहमा ≈ 9.8 m/s²)। 'G' को मान ब्रह्माण्डमा जताततै स्थिर रहन्छ (6.67 x 10⁻¹¹ N m²/kg²)।\n\nIn English:\n1. **Definition:** 'g' is the acceleration produced in a freely falling body due to the force of gravity. 'G' is the gravitational force between two unit masses separated by a unit distance.\n2. **Value:** The value of 'g' varies from place to place (e.g., ≈ 9.8 m/s² on Earth's surface). The value of 'G' is constant throughout the universe (6.67 x 10⁻¹¹ N m²/kg²)."
+          "sampleAnswer": "उत्तर: समीकरण v = u + at मा,\nबायाँतर्फको राशिको एकाइ = v को एकाइ = m/s\nदायाँतर्फको राशिको एकाइ = u को एकाइ + at को एकाइ = m/s + (m/s²) × s = m/s + m/s\nसमान एकाइ भएका राशिहरूलाई मात्र जोड्न सकिन्छ । यहाँ, बायाँतर्फ र दायाँतर्फका सबै पदहरूको एकाइ m/s नै छ । त्यसैले, यो समीकरण मान्य छ ।\n\nAnswer: In the equation v = u + at,\nUnit of LHS = unit of v = m/s\nUnit of RHS = unit of u + unit of at = m/s + (m/s²) × s = m/s + m/s\nPhysical quantities can be added if they have the same composition of fundamental units. Here, the units on both sides of the equation are the same (m/s). Therefore, the equation is valid. Citations: chapter 1, pages 10-11"
         },
         {
           "id": "4",
           "type": "long_answer",
-          "questionNepali": "माइटोसिस र मियोसिस कोष विभाजन बिच कुनै दुई भिन्नताहरू लेख्नुहोस्।",
-          "questionEnglish": "Write any two differences between mitosis and meiosis cell division.",
+          "questionNepali": "फाइलम पोरिफेरा र सिलेन्टरेटा बिच दुईओटा भिन्नता लेख्नुहोस् ।",
+          "questionEnglish": "Write two differences between Phylum Porifera and Phylum Coelenterata.",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\n१. **उत्पन्न हुने कोष:** माइटोसिसले दुईवटा डिप्लोइड (2n) सोम्याटिक कोषहरू उत्पादन गर्छ। मियोसिसले चारवटा ह्याप्लोइड (n) ग्यामेट कोषहरू उत्पादन गर्छ।\n२. **क्रोमोजोम संख्या:** माइटोसिसमा, उत्पन्न हुने कोषहरूको क्रोमोजोम संख्या मातृ कोषको बराबर हुन्छ (equational division)। मियोसिसमा, उत्पन्न हुने कोषहरूको क्रोमोजोम संख्या मातृ कोषको आधा हुन्छ (reductional division)।\n\nIn English:\n1. **Daughter Cells:** Mitosis produces two diploid (2n) somatic cells. Meiosis produces four haploid (n) gamete cells.\n2. **Chromosome Number:** In mitosis, the chromosome number of daughter cells is the same as the parent cell (equational division). In meiosis, the chromosome number of daughter cells is halved (reductional division)."
+          "sampleAnswer": "उत्तर: पोरिफेरा र सिलेन्टरेटा बिचका भिन्नताहरू:\n* पोरिफेरामा तन्तु (tissue) विकसित भएको हुँदैन, जबकि सिलेन्टरेटा पहिलो तन्तु-स्तरको जनावर हो ।\n* पोरिफेराको शरीरमा छिद्रहरू (pores) हुन्छन्, जबकि सिलेन्टरेटाको शरीरमा खोक्रो गुहा (coelenteron) र टेन्टाकल्स (tentacles) हुन्छन् ।\n\nAnswer: Differences between Porifera and Coelenterata:\n* Tissue is not developed in Porifera, whereas Coelenterata are the first tissue-graded animals.\n* The body of Porifera has pores, whereas the body of Coelenterata has a hollow cavity (coelenteron) and tentacles. Citations: chapter 2, pages 31-32"
         },
         {
           "id": "5",
           "type": "long_answer",
-          "questionNepali": "साबुन र डिटर्जेन्टबीच दुईओटा भिन्नता लेख्नुहोस्।",
-          "questionEnglish": "Write two differences between soap and detergent.",
+          "questionNepali": "स्थानीय भैँसी र उन्नत जातको राँगोबीच क्रस ब्रिडिङ गराउँदा हुने कुनै दुई फाइदाहरू लेख्नुहोस् ।",
+          "questionEnglish": "Write any two advantages of cross-breeding between a local she-buffalo and a high-quality he-buffalo.",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\n१. **कडा पानीमा प्रभाव:** साबुनले कडा पानीमा फिँज दिँदैन र अघुलनशील पदार्थ (scum) बनाउँछ। डिटर्जेन्टले कडा पानीमा पनि राम्रोसँग काम गर्छ।\n२. **वातावरणीय प्रभाव:** साबुन बायोडिग्रेडेबल हुन्छ र रासायनिक प्रदूषण गर्दैन। डिटर्जेन्ट नन-बायोडिग्रेडेबल हुन्छ र यसले रासायनिक प्रदूषण निम्त्याउन सक्छ।\n\nIn English:\n1. **Action in Hard Water:** Soap does not work effectively in hard water and forms insoluble scum. Detergent works well even in hard water.\n2. **Environmental Impact:** Soap is biodegradable and does not cause chemical pollution. Detergent is non-biodegradable and can cause chemical pollution."
+          "sampleAnswer": "उत्तर: क्रस ब्रिडिङका फाइदाहरू:\n* यस विधिले दुई फरक जात, प्रजाति वा वंशका जीवहरूको वांछित गुणहरूलाई संयोजन गर्छ ।\n* रोग प्रतिरोधात्मक क्षमता, बल, आयु, र शक्ति जस्ता गुणहरू सुधार गर्न सकिन्छ ।\n\nAnswer: Advantages of cross-breeding:\n* This method combines the desirable qualities of two organisms from different breeds, varieties, or species.\n* Immunity, strength, age, vigor, etc. of an organism can be improved by this method. Citations: chapter 4, page 101"
         },
         {
           "id": "6",
           "type": "long_answer",
-          "questionNepali": "कुनै वस्तुको तौल पृथ्वीको सतहमा 60 N छ भने चन्द्रमाको सतहमा कति हुन्छ? (g on moon = 1/6th of g on Earth)",
-          "questionEnglish": "If the weight of an object on the surface of the Earth is 60 N, what will be its weight on the surface of the Moon? (g on moon = 1/6th of g on Earth)",
+          "questionNepali": "उच्च रक्तचापका कुनै दुई कारणहरू लेख्नुहोस् ।",
+          "questionEnglish": "Write any two causes of high blood pressure.",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\nचन्द्रमाको सतहमा वस्तुको तौल (Wm) = पृथ्वीको सतहमा वस्तुको तौल (We) / 6\nWm = 60 N / 6\nWm = 10 N\nतसर्थ, चन्द्रमामा वस्तुको तौल 10 N हुन्छ।\n\nIn English:\nWeight on Moon (Wm) = Weight on Earth (We) / 6\nWm = 60 N / 6\nWm = 10 N\nTherefore, the weight of the object on the moon will be 10 N."
+          "sampleAnswer": "उत्तर: उच्च रक्तचापका कारणहरू:\n* नियमित शारीरिक व्यायामको कमी ।\n* धुम्रपान र मद्यपानको नियमित सेवन ।\n* अत्यधिक मोटोपना ।\n* शारीरिक र मानसिक तनावपूर्ण जीवन ।\n* धेरै नुनिलो र चिल्लो खानेकुराको सेवन ।\n\nAnswer: Causes of high blood pressure:\n* Lack of regular physical exercise.\n* Smoking and drinking alcohol regularly.\n* Excessive body weight.\n* Physically and mentally stressful life.\n* Excess consumption of salty and fatty food items. Citations: chapter 5, page 131"
         },
         {
           "id": "7",
           "type": "long_answer",
-          "questionNepali": "जेनेरेटर र मोटरबीच दुईओटा भिन्नता लेख्नुहोस्।",
-          "questionEnglish": "Write two differences between a generator and a motor.",
+          "questionNepali": "जनावरहरू लोप हुनुका कुनै दुई कारणहरू लेख्नुहोस् ।",
+          "questionEnglish": "Write any two reasons for the extinction of animals.",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\n१. **ऊर्जा रूपान्तरण:** जेनेरेटरले मेकानिकल ऊर्जालाई विद्युतीय ऊर्जामा रूपान्तरण गर्छ। मोटरले विद्युतीय ऊर्जालाई मेकानिकल ऊर्जामा रूपान्तरण गर्छ।\n२. **कार्य सिद्धान्त:** जेनेरेटर विद्युत चुम्बकीय उपपादन (electromagnetic induction) को सिद्धान्तमा आधारित छ। मोटर मोटर असर (motor effect) को सिद्धान्तमा आधारित छ।\n\nIn English:\n1. **Energy Conversion:** A generator converts mechanical energy into electrical energy. A motor converts electrical energy into mechanical energy.\n2. **Working Principle:** A generator works on the principle of electromagnetic induction. A motor works on the principle of the motor effect."
+          "sampleAnswer": "उत्तर: जनावरहरू लोप हुनुका कारणहरू:\n* मौसम र जलवायु परिवर्तनको प्रतिकूल प्रभाव ।\n* जैविक स्रोतहरूको अनियन्त्रित प्रयोग ।\n* बासस्थानको विनाश ।\n* अवैध शिकार र व्यापार ।\n\nAnswer: Reasons for the extinction of animals:\n* Adverse effects of weather and climate change.\n* Uncontrolled use of biological resources.\n* Destruction of habitat.\n* Poaching and illegal trade. Citations: chapter 6, page 151"
         },
         {
           "id": "8",
           "type": "long_answer",
-          "questionNepali": "DNA र RNA बिच दुईओटा भिन्नता लेख्नुहोस्।",
-          "questionEnglish": "Write two differences between DNA and RNA.",
+          "questionNepali": "गुरुत्व प्रवेग ग्रहको पिण्डसँग कसरी सम्बन्धित छ?",
+          "questionEnglish": "How is acceleration due to gravity related to the mass of a planet?",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\n१. **संरचना:** DNA दुई-स्ट्र्यान्डेड (double-stranded) हुन्छ। RNA एक-स्ट्र्यान्डेड (single-stranded) हुन्छ।\n२. **नाइट्रोजन बेस:** DNA मा एडिनिन, ग्वानिन, साइटोसिन र थायमिन बेसहरू हुन्छन्। RNA मा थायमिनको सट्टा युरासिल बेस हुन्छ।\n\nIn English:\n1. **Structure:** DNA is double-stranded. RNA is single-stranded.\n2. **Nitrogenous Base:** DNA contains the bases Adenine, Guanine, Cytosine, and Thymine. RNA contains Uracil instead of Thymine."
+          "sampleAnswer": "उत्तर: गुरुत्व प्रवेग (g) ग्रहको पिण्ड (M) सँग सोझै समानुपातिक हुन्छ (g ∝ M), यदि ग्रहको अर्धव्यास स्थिर छ भने । यसको मतलब, पिण्ड जति बढी भयो, गुरुत्व प्रवेग पनि त्यति नै बढी हुन्छ ।\n\nAnswer: The acceleration due to gravity (g) is directly proportional to the mass of the planet (M) (g ∝ M), assuming the planet's radius is constant. This means the greater the mass, the greater the acceleration due to gravity. Citations: chapter 7, page 177"
         },
         {
           "id": "9",
           "type": "long_answer",
-          "questionNepali": "पानीको अस्वाभाविक प्रसारका कुनै दुई असरहरू लेख्नुहोस्।",
-          "questionEnglish": "Write any two effects of the anomalous expansion of water.",
+          "questionNepali": "फलामको काँटी पानीमा डुब्छ तर फलामले बनेको जहाज तैरन्छ, किन?",
+          "questionEnglish": "An iron nail sinks in water, but a ship made of iron floats. Why?",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\n१. **जलचरहरूको संरक्षण:** जाडोमा, तालको सतहमा बरफ जम्छ तर तलको पानी तरल रहन्छ, जसले गर्दा माछा र अन्य जलचरहरू जीवित रहन सक्छन्।\n२. **पाइप फुट्नु:** धेरै चिसो ठाउँहरूमा जाडोमा पाइपभित्रको पानी जम्दा फैलिन्छ, जसले गर्दा पाइप फुट्छ।\n\nIn English:\n1. **Survival of Aquatic Life:** In winter, ice forms on the surface of lakes while the water below remains liquid, allowing fish and other aquatic creatures to survive.\n2. **Bursting of Pipes:** In very cold places during winter, water inside pipes expands upon freezing, causing the pipes to burst."
+          "sampleAnswer": "उत्तर: फलामको काँटीले आफ्नो तौल बराबरको पानी विस्थापित गर्न सक्दैन, त्यसैले यो डुब्छ । तर, जहाजको बनावट फराकिलो, लामो र गहिरो हुन्छ, जसले गर्दा यसले आफ्नो तौल बराबरको पानी सजिलै विस्थापित गर्न सक्छ । तैरिने नियम अनुसार, वस्तुको तौल र विस्थापित पानीको तौल बराबर भएमा वस्तु तैरन्छ ।\n\nAnswer: An iron nail cannot displace a volume of water whose weight is equal to its own weight, and thus it sinks. However, a ship's hull is made wide, long, and deep. Because of this, the ship can displace enough water to generate an upthrust equal to its weight. According to the law of floatation, an object floats if its weight equals the weight of the displaced liquid. Citations: chapter 8, pages 214-215"
         },
         {
           "id": "10",
           "type": "long_answer",
-          "questionNepali": "कुनै वस्तु तैरिनका लागि आवश्यक शर्त के हो? प्लवनको नियम लेख्नुहोस्।",
-          "questionEnglish": "What is the condition required for an object to float? State the law of floatation.",
+          "questionNepali": "पानीको अस्वाभाविक प्रसार (anomalous expansion of water) भनेको के हो?",
+          "questionEnglish": "What is the anomalous expansion of water?",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\nकुनै वस्तु तैरिनका लागि, वस्तुले विस्थापित गरेको तरल पदार्थको तौल वस्तुको आफ्नै तौल बराबर हुनुपर्छ। यही प्लवनको नियम हो।\n\nIn English:\nFor an object to float in a liquid, the weight of the object must be equal to the weight of the liquid that it displaces. This is known as the law of floatation."
+          "sampleAnswer": "उत्तर: धेरैजसो पदार्थहरू चिस्याउँदा खुम्चिन्छन्, तर पानी 4°C बाट 0°C मा चिसिँदा यसको आयतन बढ्छ (फैलिन्छ) । पानीको यही अनौठो गुणलाई पानीको अस्वाभाविक प्रसार भनिन्छ । पानीको घनत्व 4°C मा सबैभन्दा बढी हुन्छ ।\n\nAnswer: While most substances contract on cooling, water's volume increases (expands) when cooled from 4°C to 0°C. This unique property of water is known as the anomalous expansion of water. Water has its maximum density at 4°C. Citations: chapter 9, page 228"
         },
         {
           "id": "11",
           "type": "long_answer",
-          "questionNepali": "रासायनिक प्रतिक्रियाको दरलाई असर पार्ने कुनै दुई तत्त्वहरू उल्लेख गर्नुहोस्।",
-          "questionEnglish": "Mention any two factors that affect the rate of a chemical reaction.",
+          "questionNepali": "कन्भेक्स लेन्सका कुनै दुई उपयोगिताहरू लेख्नुहोस् ।",
+          "questionEnglish": "Write any two uses of a convex lens.",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\n१. **तापक्रम (Heat):** सामान्यतया, तापक्रम बढाउँदा रासायनिक प्रतिक्रियाको दर बढ्छ।\n२. **उत्प्रेरक (Catalyst):** उत्प्रेरकले रासायनिक प्रतिक्रियाको दरलाई बढाउन वा घटाउन सक्छ।\n(अन्य सही उत्तरहरू: Pressure, Surface area, Light)\n\nIn English:\n1. **Heat (Temperature):** Generally, increasing the temperature increases the rate of a chemical reaction.\n2. **Catalyst:** A catalyst can increase or decrease the rate of a chemical reaction.\n(Other valid answers: Pressure, Surface area, Light)"
+          "sampleAnswer": "उत्तर: कन्भेक्स लेन्सका उपयोगिताहरू:\n* यसलाई दूरदृष्टि हटाउन चस्मामा प्रयोग गरिन्छ ।\n* यसलाई क्यामेरा, माइक्रोस्कोप, टेलिस्कोप र प्रोजेक्टर जस्ता उपकरणहरूमा प्रयोग गरिन्छ ।\n* यसलाई सानो अक्षर वा वस्तु ठूलो पारेर हेर्नका लागि ह्यान्ड लेन्सको रूपमा प्रयोग गरिन्छ ।\n\nAnswer: Uses of a convex lens:\n* It is used in spectacles to correct longsightedness.\n* It is used in devices such as cameras, microscopes, telescopes, and projectors.\n* It is used as a hand lens to magnify small letters or objects. Citations: chapter 10, page 270"
         },
         {
           "id": "12",
           "type": "long_answer",
-          "questionNepali": "मानव शरीरमा मुटुको धमनीमा अवरोध पत्ता लगाउन प्रयोग गरिने प्रविधिको नाम के हो? यो कसरी गरिन्छ?",
-          "questionEnglish": "What is the name of the technique used to test for blockages in the heart's arteries? How is it performed?",
+          "questionNepali": "हबलको नियम (Hubble's Law) छोटकरीमा व्याख्या गर्नुहोस् ।",
+          "questionEnglish": "Explain Hubble's Law briefly.",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\nप्रविधिको नाम एन्जियोग्राफी (Angiography) हो। यस प्रक्रियामा, रगतमा एक विशेष रङ्ग (contrast medium) इन्जेक्ट गरिन्छ र त्यसपछि एक्स-रे छवि लिइन्छ, जसले रक्तनलीहरूमा भएका अवरोधहरूलाई स्पष्ट रूपमा देखाउँछ।\n\nIn English:\nThe technique is called Angiography. In this process, a special dye (contrast medium) is injected into the blood, and then X-ray images are taken. This highlights blood flow and provides a clear view of any blockages in the blood vessels."
+          "sampleAnswer": "उत्तर: हबलको नियम अनुसार, आकाशगंगाहरू एकअर्काबाट टाढा सर्ने गति (v) तिनीहरूबीचको दूरी (d) सँग सोझै समानुपातिक हुन्छ (v = Hd) । यसको मतलब, जति टाढाका आकाशगंगाहरू छन्, तिनीहरू त्यति नै छिटो एकअर्काबाट टाढा सर्दैछन्, जसले ब्रह्माण्ड विस्तार भइरहेको पुष्टि गर्छ ।\n\nAnswer: According to Hubble's law, the velocity with which galaxies are moving away from each other (v) is directly proportional to the distance between them (d), represented by the equation v = Hd. This means that the farther the galaxies are, the faster they are separating, which confirms that the universe is expanding. Citations: chapter 12, page 332"
         },
         {
           "id": "13",
           "type": "long_answer",
-          "questionNepali": "एउटा वस्तुको पिण्ड 50 kg छ भने त्यसको तौल पृथ्वीको भूमध्यरेखीय क्षेत्रमा कति हुन्छ? (g = 9.78 m/s² मान्नुहोस्)",
-          "questionEnglish": "If an object has a mass of 50 kg, what is its weight in the equatorial region of the Earth? (assume g = 9.78 m/s²)",
+          "questionNepali": "पिरियडमा बायाँबाट दायाँ जाँदा पारमाणविक आकारमा कस्तो परिवर्तन हुन्छ र किन?",
+          "questionEnglish": "What change occurs in atomic size when moving from left to right in a period, and why?",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\nयहाँ, पिण्ड (m) = 50 kg\nगुरुत्व प्रवेग (g) = 9.78 m/s²\nतौल (W) = m × g\nW = 50 kg × 9.78 m/s²\nW = 489 N\n\nIn English:\nGiven, Mass (m) = 50 kg\nAcceleration due to gravity (g) = 9.78 m/s²\nWeight (W) = m × g\nW = 50 kg × 9.78 m/s²\nW = 489 N"
+          "sampleAnswer": "उत्तर: पिरियडमा बायाँबाट दायाँ जाँदा पारमाणविक आकार घट्दै जान्छ । किनभने, सेलहरूको सङ्ख्या उही रहन्छ तर न्युक्लियसमा प्रोटोनको सङ्ख्या बढ्छ, जसले गर्दा न्युक्लियसको आकर्षण बल बढ्छ र परमाणु खुम्चिन्छ ।\n\nAnswer: The atomic size of elements decreases from left to right in a period. This is because, while the number of shells remains the same, the number of protons in the nucleus increases. This leads to a stronger nuclear attraction force, which contracts the atom. Citations: chapter 14, page 374"
         },
         {
           "id": "14",
           "type": "long_answer",
-          "questionNepali": "दुईवटा परम्परागत रूपमा प्रयोग हुने औषधीय वनस्पती र तिनीहरूको एक-एक उपयोग लेख्नुहोस्।",
-          "questionEnglish": "Write the names of two traditionally used medicinal plants and one use for each.",
+          "questionNepali": "खानीबाट निकालिने धाउलाई सुरुमा किन धुलो बनाइन्छ? यो प्रक्रियालाई के भनिन्छ?",
+          "questionEnglish": "Why are ores obtained from mines first crushed into powder? What is this process called?",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\n१. **तुलसी (Holy Basil):** यसको पातलाई पानीमा उमालेर पिउँदा रुघाखोकी र घाँटीको दुखाइमा आराम मिल्छ।\n२. **घिउकुमारी (Aloe vera):** यसको जेल पोलेको ठाउँमा लगाउँदा घाउ छिटो निको हुन्छ र छालालाई चिसो राख्छ।\n\nIn English:\n1. **Tulsi (Holy Basil):** Its leaves are boiled with water and consumed for relief from cold, cough, and throat pain.\n2. **Ghiu kumari (Aloe vera):** Its gel is applied to burned areas to heal the wound faster and moisturize the skin."
+          "sampleAnswer": "उत्तर: खानीबाट निकालिने धाउका ठूला टुक्राहरूलाई धुलो बनाइन्छ ताकि यसमा रहेका धातु र अशुद्धताहरूलाई छुट्याउन सजिलो होस् । यस प्रक्रियालाई ग्राइन्डिङ (Grinding) भनिन्छ ।\n\nAnswer: Ores are crushed into small particles to make it easier to separate the metal from the impurities. This process is called grinding. Citations: chapter 17, page 420"
         },
         {
           "id": "15",
           "type": "long_answer",
-          "questionNepali": "एउटा बललाई २० m/s को सुरुको वेगले ठाडो माथितिर फ्याँकियो भने त्यसलाई अधिकतम उचाइमा पुग्न कति समय लाग्छ? (g=10 m/s² मान्नुहोस्)",
-          "questionEnglish": "If a ball is thrown vertically upwards with an initial velocity of 20 m/s, how much time will it take to reach the maximum height? (assume g=10 m/s²)",
+          "questionNepali": "मिथेन ग्यासका दुई उपयोगिताहरू लेख्नुहोस् ।",
+          "questionEnglish": "Write two uses of methane gas.",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\nयहाँ, सुरुको वेग (u) = 20 m/s\nअन्तिम वेग (v) = 0 m/s (अधिकतम उचाइमा)\nगुरुत्व प्रवेग (g) = -10 m/s²\nसूत्र v = u + gt अनुसार,\n0 = 20 + (-10) × t\n10t = 20\nt = 2 सेकेन्ड\n\nIn English:\nGiven, initial velocity (u) = 20 m/s\nFinal velocity (v) at max height = 0 m/s\nAcceleration due to gravity (g) = -10 m/s²\nUsing formula v = u + gt,\n0 = 20 + (-10) × t\n10t = 20\nt = 2 seconds"
-        },
-        {
-          "id": "16",
-          "type": "long_answer",
-          "questionNepali": "आधुनिक आवधिक तालिकामा पिरियड र समूहको सङ्ख्या कति छ?",
-          "questionEnglish": "How many periods and groups are there in the modern periodic table?",
-          "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\nआधुनिक आवधिक तालिकामा ७ वटा पिरियड र १८ वटा समूह छन्।\n\nIn English:\nThere are 7 periods and 18 groups in the modern periodic table."
+          "sampleAnswer": "उत्तर: मिथेन ग्यासका उपयोगिताहरू:\n* यो गोबर ग्यास वा बायोग्यासको रूपमा खाना पकाउन प्रयोग गरिन्छ ।\n* यसबाट कार्बन ब्ल्याक बनाइन्छ, जुन प्रिन्टिङ मसी, जुत्ता पालिस र पेन्ट बनाउन प्रयोग हुन्छ ।\n* यसबाट क्लोरोफर्म, मिथाइल अल्कोहल जस्ता रासायनिक पदार्थहरू बनाउन प्रयोग गरिन्छ ।\n\nAnswer: Uses of methane gas:\n* It is used for cooking food as gobar gas or biogas.\n* It is used to prepare carbon black which is used to make printing ink, shoe polish and paint.\n* Methane is also used to prepare chloroform, methyl alcohol, etc. Citations: chapter 18, page 433"
         }
       ],
       "groupD": [
         {
+          "id": "16",
+          "type": "essay",
+          "questionNepali": "स्तनधारी (Mammalia) वर्गका मुख्य विशेषताहरू वर्णन गर्नुहोस् र दुईओटा उदाहरण दिनुहोस् ।",
+          "questionEnglish": "Describe the main characteristics of class Mammalia and give two examples.",
+          "marks": 4,
+          "sampleAnswer": "उत्तर: स्तनधारी वर्गका मुख्य विशेषताहरू:\n* **शरीरको आवरण:** यिनीहरूको शरीर रौँले ढाकिएको हुन्छ ।\n* **स्तन ग्रन्थि:** यिनीहरूमा विकसित स्तन ग्रन्थि (mammary glands) हुन्छन् ।\n* **श्वासप्रश्वास:** यिनीहरूले फोक्सोबाट श्वास फेर्छन् ।\n* **तापक्रम:** यिनीहरू होमियोथर्मिक (homoeothermic) अर्थात् तातो रगत भएका जनावर हुन् ।\n* **मुटु:** यिनीहरूको मुटुमा चार कोठा हुन्छन् ।\n* **प्रजनन:** यिनीहरू युनिसेक्सुअल हुन्छन्, आन्तरिक गर्भाधान गर्छन् र भिभिपेरस (viviparous) अर्थात् बच्चा जन्माउँछन् ।\n**उदाहरणहरू:** मानिस (human), घोडा (horse), ह्वेल (whale), गाई (cow), चमेरो (bat) ।\n\nAnswer: Main characteristics of class Mammalia:\n* **Body Covering:** Their body is covered with hair.\n* **Mammary Glands:** They have developed mammary glands.\n* **Respiration:** They breathe through lungs.\n* **Body Temperature:** They are homeothermic (warm-blooded).\n* **Heart:** They have a four-chambered heart.\n* **Reproduction:** They are unisexual, perform internal fertilization, and are viviparous (give direct birth).\n**Examples:** Human, horse, whale, cow, bat. Citations: chapter 2, page 48"
+        },
+        {
           "id": "17",
           "type": "essay",
-          "questionNepali": "मानव आँखाको सफा चित्र बनाई निम्न भागहरूलाई नामाङ्कन गर्नुहोस्: लेन्स, रेटिना, अप्टिक नर्भ, र कर्निया। आँखाको समायोजन (accommodation) प्रक्रियाको वर्णन गर्नुहोस्।",
-          "questionEnglish": "Draw a neat diagram of the human eye and label the following parts: lens, retina, optic nerve, and cornea. Describe the process of accommodation of the eye.",
+          "questionNepali": "DNA र RNA को बनोटलाई चित्रसहित वर्णन गर्नुहोस् ।",
+          "questionEnglish": "Describe the structure of DNA and RNA with diagrams.",
           "marks": 4,
-          "sampleAnswer": "नेपालीमा (In Nepali):\n(विद्यार्थीले आँखाको सफा चित्र कोरेर लेन्स, रेटिना, अप्टिक नर्भ, र कर्निया नामाङ्कन गर्नुपर्छ।)\n\n**आँखाको समायोजन (Accommodation):**\nआँखाको समायोजन भनेको सिलियरी मांसपेशीहरूको संकुचन र विश्रामद्वारा आँखाको लेन्सको फोकल लम्बाइलाई वस्तुको दूरीअनुसार मिलाउने प्रक्रिया हो, जसले गर्दा वस्तुको स्पष्ट प्रतिविम्ब रेटिनामा बन्छ।\n* **टाढाको वस्तु हेर्दा:** जब हामी टाढाको वस्तु हेर्छौं, सिलियरी मांसपेशीहरू विश्राम गर्छन्। यसले लेन्सलाई पातलो बनाउँछ, जसले गर्दा यसको फोकल लम्बाइ बढ्छ र प्रकाशका किरणहरू ठिक रेटिनामा केन्द्रित हुन्छन्।\n* **नजिकको वस्तु हेर्दा:** जब हामी नजिकको वस्तु हेर्छौं, सिलियरी मांसपेशीहरू संकुचित हुन्छन्। यसले लेन्सलाई मोटो बनाउँछ, जसले गर्दा यसको फोकल लम्बाइ घट्छ र प्रकाशका किरणहरू फेरि ठिक रेटिनामा केन्द्रित हुन्छन्।\n\nIn English:\n(Student should draw a neat diagram of the human eye and label the lens, retina, optic nerve, and cornea.)\n\n**Accommodation of the Eye:**\nAccommodation is the process of adjusting the focal length of the eye lens according to the distance of the object by the relaxation and contraction of the ciliary muscles, so that a clear image is formed on the retina.\n* **Viewing a Distant Object:** When we look at a distant object, the ciliary muscles relax. This makes the lens thinner, increasing its focal length, and the light rays are focused correctly on the retina.\n* **Viewing a Nearby Object:** When we look at a nearby object, the ciliary muscles contract. This makes the lens thicker, decreasing its focal length, which refracts the light more strongly to focus it correctly on the retina."
+          "sampleAnswer": "उत्तर: **DNA (Deoxyribonucleic Acid):**\nDNA दुई त्यान्द्रे (double-stranded) हुन्छ र यसको बनोट घुमाउरो भर्याङ (double helix) जस्तो हुन्छ । यो न्यूक्लियोटाइड (nucleotide) नामक एकाइहरू मिलेर बनेको हुन्छ । प्रत्येक न्यूक्लियोटाइडमा डिअक्सिराइबोज सुगर, फस्फेट र चारमध्ये एक नाइट्रोजन बेस (एडेनिन, ग्वानिन, साइटोसिन, थाएमिन) हुन्छ । एडेनिनले थाएमिनसँग दुईओटा र ग्वानिनले साइटोसिनसँग तीनओटा हाइड्रोजन बन्ड बनाउँछ ।\n\n**RNA (Ribonucleic Acid):**\nRNA सामान्यतया एक त्यान्द्रे (single-stranded) हुन्छ । यो पनि न्यूक्लियोटाइडहरू मिलेर बनेको हुन्छ, तर यसमा राइबोज सुगर हुन्छ र नाइट्रोजन बेसमा थाएमिनको सट्टा युरासिल (uracil) हुन्छ ।\n\n(Note: Diagrams as shown in the textbook should be drawn by the student.)\n\nAnswer: **DNA (Deoxyribonucleic Acid):**\nDNA is double-stranded and has a double helix structure. It is made up of units called nucleotides. Each nucleotide consists of a deoxyribose sugar, a phosphate group, and one of four nitrogenous bases (adenine, guanine, cytosine, thymine). Adenine pairs with thymine via two hydrogen bonds, and guanine pairs with cytosine via three hydrogen bonds. Citations: chapter 4, page 79\n\n**RNA (Ribonucleic Acid):**\nRNA is generally single-stranded. It is also made of nucleotides, but it contains ribose sugar, and the nitrogenous base thymine is replaced by uracil. Citations: chapter 4, pages 79-80\n\n(Note: Diagrams as shown in the textbook should be drawn by the student.)"
         },
         {
           "id": "18",
           "type": "essay",
-          "questionNepali": "मानव शरीरमा हुने रगत सञ्चार प्रणालीलाई पल्मोनरी र सिस्टेमिक सञ्चारमा विभाजन गरी व्याख्या गर्नुहोस्।",
-          "questionEnglish": "Explain the human blood circulatory system by dividing it into pulmonary and systemic circulation.",
+          "questionNepali": "मानव शरीरमा हुने सिस्टेमिक (systemic) र पल्मोनरी (pulmonary) रक्तसञ्चारलाई चित्रसहित व्याख्या गर्नुहोस् ।",
+          "questionEnglish": "Explain systemic and pulmonary circulation in the human body with a diagram.",
           "marks": 4,
-          "sampleAnswer": "नेपालीमा (In Nepali):\nमानव रगत सञ्चार प्रणाली एक दोहोरो सञ्चार प्रणाली हो जसमा पल्मोनरी र सिस्टेमिक सञ्चार समावेश हुन्छ।\n\n१. **पल्मोनरी सञ्चार (Pulmonary Circulation):**\nयो मुटु र फोक्सो बीचको रगत सञ्चार हो। दाहिने भेन्ट्रिकलले अशुद्ध (deoxygenated) रगतलाई पल्मोनरी धमनीमार्फत फोक्सोमा पठाउँछ। फोक्सोमा, रगतले कार्बन डाइअक्साइड छोड्छ र अक्सिजन लिन्छ, जसले गर्दा यो शुद्ध (oxygenated) हुन्छ। यो शुद्ध रगत पल्मोनरी शिरामार्फत बायाँ अरिकलमा फर्किन्छ।\n\n२. **सिस्टेमिक सञ्चार (Systemic Circulation):**\nयो मुटु र शरीरका अन्य सबै भागहरू बीचको रगत सञ्चार हो। बायाँ भेन्ट्रिकलले शुद्ध रगतलाई एओर्टामार्फत शरीरका विभिन्न भागहरूमा पम्प गर्छ। कोषहरूमा अक्सिजन र पोषक तत्वहरू पुर्‍याएपछि, रगत अशुद्ध हुन्छ। यो अशुद्ध रगत भेना काभामार्फत दाहिने अरिकलमा फर्किन्छ।\n\nIn English:\nThe human blood circulatory system is a double circulation system comprising pulmonary and systemic circulation.\n\n1. **Pulmonary Circulation:**\nThis is the circulation of blood between the heart and the lungs. Deoxygenated blood is pumped from the right ventricle to the lungs via the pulmonary artery. In the lungs, the blood releases carbon dioxide and picks up oxygen, becoming oxygenated. This oxygenated blood then returns to the left auricle of the heart through the pulmonary veins.\n\n2. **Systemic Circulation:**\nThis is the circulation of blood between the heart and the rest of the body. Oxygenated blood is pumped from the left ventricle into the aorta, which distributes it to all parts of the body. After delivering oxygen and nutrients to the cells, the blood becomes deoxygenated. This deoxygenated blood is collected by veins and returns to the right auricle of the heart via the vena cava."
+          "sampleAnswer": "उत्तर:\n**सिस्टेमिक रक्तसञ्चार:** यसमा मुटुको बायाँ भेन्ट्रिकलबाट शुद्ध (अक्सिजनयुक्त) रगत एओर्टा हुँदै शरीरका विभिन्न भागमा जान्छ र त्यहाँबाट अशुद्ध (अक्सिजनरहित) रगत भेनाकाभा हुँदै दाहिने अरिकलमा फर्किन्छ । यो लामो चक्र हो ।\n\n**पल्मोनरी रक्तसञ्चार:** यसमा मुटुको दाहिने भेन्ट्रिकलबाट अशुद्ध रगत पल्मोनरी धमनी हुँदै फोक्सोमा जान्छ, जहाँ रगत शुद्ध हुन्छ । त्यसपछि शुद्ध रगत पल्मोनरी भेन हुँदै बायाँ अरिकलमा फर्किन्छ । यो छोटो चक्र हो ।\n\n(Note: A diagram showing both circulations as in the textbook should be drawn.)\n\nAnswer:\n**Systemic Circulation:** This is the process in which oxygenated blood from the left ventricle flows through the aorta to various parts of the body, and deoxygenated blood from these organs returns to the heart's right auricle through veins. Citations: chapter 5, page 128\n\n**Pulmonary Circulation:** This is the circulation of blood between the heart and lungs. Deoxygenated blood flows from the right ventricle to the lungs, where it gets oxygenated. The oxygenated blood then returns to the left auricle of the heart. Citations: chapter 5, page 129\n\n(Note: A diagram showing both circulations as in the textbook should be drawn.)"
         },
         {
           "id": "19",
           "type": "essay",
-          "questionNepali": "धातु शुद्धीकरणको सामान्य चरणहरू के-के हुन्? इलेक्ट्रो-रिफाइनिङ प्रक्रियाको सफा चित्र बनाई वर्णन गर्नुहोस्।",
-          "questionEnglish": "What are the general steps of metallurgy? Describe the electro-refining process with a neat diagram.",
+          "questionNepali": "हाइड्रोलिक मेसिनको काम गर्ने सिद्धान्त के हो? यसका कुनै दुई उपयोगिताहरू लेख्नुहोस् ।",
+          "questionEnglish": "What is the working principle of a hydraulic machine? Write any two of its applications.",
           "marks": 4,
-          "sampleAnswer": "नेपालीमा (In Nepali):\n**धातु शुद्धीकरणका सामान्य चरणहरू (Steps of Metallurgy):**\n१. **पिस्नु (Grinding):** धाउलाई मेसिनको सहायताले स-साना कणहरूमा पिस्ने प्रक्रिया।\n२. **संकेंद्रण (Concentration):** धाउबाट माटो, बालुवा जस्ता अशुद्धिहरू (ग्याङ्ग) हटाउने प्रक्रिया।\n३. **अक्सिडेसन (Oxidation):** संकेंद्रित धाउलाई धातु अक्साइडमा परिणत गर्ने प्रक्रिया (रोस्टिङ वा क्याल्सिनेसनद्वारा)।\n४. **रिडक्सन (Reduction):** धातु अक्साइडबाट अक्सिजन हटाएर धातु प्राप्त गर्ने प्रक्रिया (स्मेल्टिङद्वारा)।\n५. **शोधन (Refining):** अशुद्ध धातुबाट बाँकी रहेका अशुद्धिहरू हटाएर शुद्ध धातु प्राप्त गर्ने प्रक्रिया।\n\n**इलेक्ट्रो-रिफाइनिङ (Electro-refining):**\n(विद्यार्थीले एनोड, क्याथोड, इलेक्ट्रोलाइट र एनोड मड देखाइएको चित्र बनाउनुपर्छ।)\nयो एक शोधन प्रक्रिया हो। यसमा, अशुद्ध धातुको बाक्लो पातालाई एनोड (सकारात्मक ध्रुव) र सोही धातुको पातलो शुद्ध पातालाई क्याथोड (नकारात्मक ध्रुव) बनाइन्छ। ती धातुको लवणको घोललाई इलेक्ट्रोलाइटको रूपमा प्रयोग गरिन्छ। जब विद्युत प्रवाह गरिन्छ, एनोडमा रहेको अशुद्ध धातु पग्लिएर आयोनको रूपमा इलेक्ट्रोलाइटमा जान्छ, र इलेक्ट्रोलाइटबाट शुद्ध धातुका आयोनहरू क्याथोडमा गएर जम्मा हुन्छन्। अशुद्धिहरू एनोडको मुनि एनोड मडको रूपमा थिग्रिन्छन्।\n\nIn English:\n**General Steps of Metallurgy:**\n1. **Grinding:** The process of crushing ores into small particles.\n2. **Concentration:** The process of removing impurities (gangue) from the ores.\n3. **Oxidation:** The process of converting the concentrated ore into metal oxide (by roasting or calcination).\n4. **Reduction:** The process of removing oxygen from the metal oxide to obtain the metal (by smelting).\n5. **Refining:** The process of purifying the impure metal obtained after reduction.\n\n**Electro-refining:**\n(Student should draw a diagram showing anode, cathode, electrolyte, and anode mud.)\nThis is a refining process. In this method, a thick block of impure metal is made the anode (positive electrode) and a thin strip of pure metal is made the cathode (negative electrode). A salt solution of the same metal is used as the electrolyte. When electricity is passed, the impure metal from the anode dissolves into the electrolyte as ions, and an equivalent amount of pure metal ions from the electrolyte gets deposited on the cathode. Impurities settle down below the anode as anode mud."
+          "sampleAnswer": "उत्तर: **काम गर्ने सिद्धान्त:** हाइड्रोलिक मेसिन पास्कलको नियममा आधारित बल-बढाउने (force-multiplying) यन्त्र हो । यस नियम अनुसार, बन्द भाँडोमा रहेको तरल पदार्थमा लगाइएको चाप सबैतिर समान रूपले प्रसारण हुन्छ । हाइड्रोलिक मेसिनमा, सानो पिस्टनमा थोरै बल लगाएर उत्पन्न भएको चाप ठूलो पिस्टनमा प्रसारण हुन्छ । ठूलो पिस्टनको क्षेत्रफल बढी भएकोले, त्यहाँ ठूलो बल उत्पन्न हुन्छ (F₂ = F₁ × A₂/A₁) ।\n\n**Working Principle:** A hydraulic machine is a force-multiplying device based on Pascal's law. According to this law, the pressure generated at a point in an enclosed liquid is transmitted equally in all directions. In a hydraulic machine, the pressure generated by applying a small force on the small piston is transmitted to the large piston. Since the area of the large piston is greater, a larger force is produced on it (F₂ = F₁ × A₂/A₁). Citations: chapter 8, pages 201-202\n\n**उपयोगिताहरू:**\n* **हाइड्रोलिक लिफ्ट:** डेन्टिस्टको कुर्सी र गाडीहरू उठाउन प्रयोग गरिन्छ ।\n* **हाइड्रोलिक ब्रेक:** गाडीहरूलाई रोक्न प्रयोग गरिन्छ ।\n* **हाइड्रोलिक ज्याक:** ट्रक, बस जस्ता गह्रौं सवारीसाधन उठाउन प्रयोग गरिन्छ ।\n* **हाइड्रोलिक प्रेस:** कागज, कपास जस्ता वस्तुहरूलाई थिचेर प्याक गर्न प्रयोग गरिन्छ ।\n\n**Applications:**\n* **Hydraulic Lift:** Used to lift dentist chairs and cars.\n* **Hydraulic Brake:** Used to stop vehicles.\n* **Hydraulic Jack:** Used to lift heavy vehicles like trucks and buses.\n* **Hydraulic Press:** Used to compress and pack materials like paper and cotton. Citations: chapter 8, pages 203-206"
         },
         {
           "id": "20",
           "type": "essay",
-          "questionNepali": "मानवमा लिङ्ग निर्धारण कसरी हुन्छ? चार्ट बनाई व्याख्या गर्नुहोस्। लिङ्ग निर्धारणमा पुरुषको भूमिका किन प्रमुख हुन्छ?",
-          "questionEnglish": "How is sex determined in humans? Explain with a chart. Why is the male's role decisive in sex determination?",
+          "questionNepali": "अदूरदृष्टि (myopia) भनेको के हो? यसका कारणहरू र हटाउने उपायलाई किरण रेखाचित्रसहित व्याख्या गर्नुहोस् ।",
+          "questionEnglish": "What is shortsightedness (myopia)? Explain its causes and correction method with a ray diagram.",
           "marks": 4,
-          "sampleAnswer": "नेपालीमा (In Nepali):\nमानवमा लिङ्ग निर्धारण सेक्स क्रोमोजोम (X र Y) द्वारा हुन्छ। महिलामा XX र पुरुषमा XY सेक्स क्रोमोजोम हुन्छ।\n\n**चार्ट:**\n* **अभिभावक:** पुरुष (44+XY) × महिला (44+XX)\n* **ग्यामेटहरू:** पुरुषबाट (22+X) र (22+Y); महिलाबाट (22+X) र (22+X)\n* **सम्भावित सन्तान:**\n  * (22+X) शुक्रकीट + (22+X) अण्डा = (44+XX) छोरी\n  * (22+Y) शुक्रकीट + (22+X) अण्डा = (44+XY) छोरा\n\n**पुरुषको भूमिका:**\nलिङ्ग निर्धारणमा पुरुषको भूमिका प्रमुख हुन्छ किनभने महिलाले सधैं X क्रोमोजोम भएको अण्डा मात्र उत्पादन गर्छिन्। पुरुषले भने दुई प्रकारका शुक्रकीटहरू उत्पादन गर्छ: आधा X क्रोमोजोम भएका र आधा Y क्रोमोजोम भएका। यदि X क्रोमोजोम भएको शुक्रकीटले अण्डालाई निषेचित गर्छ भने छोरी (XX) जन्मिन्छ, र यदि Y क्रोमोजोम भएको शुक्रकीटले निषेचित गर्छ भने छोरा (XY) जन्मिन्छ। त्यसैले, सन्तानको लिङ्ग पुरुषबाट आउने शुक्रकीटको प्रकारमा निर्भर गर्दछ।\n\nIn English:\nSex in humans is determined by sex chromosomes (X and Y). Females have XX and males have XY sex chromosomes.\n\n**Chart:**\n* **Parents:** Male (44+XY) × Female (44+XX)\n* **Gametes:** From Male (22+X) and (22+Y); From Female (22+X) and (22+X)\n* **Possible Offspring:**\n  * (22+X) sperm + (22+X) egg = (44+XX) Daughter\n  * (22+Y) sperm + (22+X) egg = (44+XY) Son\n\n**Role of the Male:**\nThe male's role is decisive because the female produces only one type of egg, which always contains an X chromosome. The male, however, produces two types of sperms: half containing the X chromosome and the other half containing the Y chromosome. If a sperm with an X chromosome fertilizes the egg, a daughter (XX) is born, and if a sperm with a Y chromosome fertilizes the egg, a son (XY) is born. Therefore, the sex of the child depends on the type of sperm from the male."
+          "sampleAnswer": "उत्तर: **अदूरदृष्टि:** यो आँखाको यस्तो कमजोरी हो जसमा व्यक्तिले नजिकका वस्तुहरू स्पष्ट देख्न सक्छ तर टाढाका वस्तुहरू धमिलो देख्छ ।\n**कारणहरू:**\n* आँखाको नानी लामो हुनु ।\n* आँखाको लेन्सको बाक्लोपना बढी हुनु ।\nयी कारणहरूले गर्दा टाढाको वस्तुबाट आएका प्रकाशका किरणहरू रेटिनाको अगाडि केन्द्रित हुन्छन् ।\n**हटाउने उपाय:** अदूरदृष्टि हटाउन उपयुक्त केन्द्रीकरण दूरी भएको कन्केभ लेन्स (concave lens) प्रयोग गरिन्छ । यसले किरणहरूलाई विकेन्द्रित गरी ठीक रेटिनामा केन्द्रित गर्न मद्दत गर्छ ।\n\n(Note: Ray diagrams for the defect and its correction must be drawn as shown in the textbook.)\n\nAnswer: **Shortsightedness:** It is the problem in which one sees nearby objects clearly but not distant objects. Citations: chapter 10, page 283\n**Causes:**\n* The eyeball gets elongated.\n* The curvature of the lens increases (focal length becomes less).\nDue to these reasons, parallel rays coming from distant objects are focused in front of the retina. Citations: chapter 10, page 283\n**Correction Method:** To correct shortsightedness, a diverging lens, i.e., a concave lens of suitable focal length is used. This lens diverges the rays before they enter the eye, allowing the eye's lens to focus them correctly on the retina. Citations: chapter 10, page 284\n\n(Note: Ray diagrams for the defect and its correction must be drawn as shown in the textbook.)"
         },
         {
           "id": "21",
           "type": "essay",
-          "questionNepali": "एउटा वस्तुलाई १० मिटरको उचाइबाट खसालिन्छ। जमिनमा ठोक्किनुअघि त्यसको अन्तिम वेग कति हुन्छ? जमिनमा पुग्न कति समय लाग्छ? (g = 9.8 m/s² मान्नुहोस्)",
-          "questionEnglish": "An object is dropped from a height of 10 m. What will be its final velocity just before hitting the ground? How much time will it take to reach the ground? (assume g = 9.8 m/s²)",
+          "questionNepali": "AC र DC करेन्ट बिच चारओटा भिन्नता लेख्नुहोस् र दुवैको करेन्ट-समय ग्राफ बनाउनुहोस् ।",
+          "questionEnglish": "Write four differences between AC and DC, and draw the current-time graph for both.",
           "marks": 4,
-          "sampleAnswer": "नेपालीमा (In Nepali):\nयहाँ, उचाइ (h) = 10 m\nसुरुको वेग (u) = 0 m/s (खसालिएको हुनाले)\nगुरुत्व प्रवेग (g) = 9.8 m/s²\n\n**१. अन्तिम वेग (v) गणना:**\nसूत्र v² = u² + 2gh अनुसार,\nv² = 0² + 2 × 9.8 × 10\nv² = 196\nv = √196\n**v = 14 m/s**\n\n**२. समय (t) गणना:**\nसूत्र v = u + gt अनुसार,\n14 = 0 + 9.8 × t\nt = 14 / 9.8\n**t ≈ 1.43 सेकेन्ड**\n\nत्यसैले, अन्तिम वेग 14 m/s र लाग्ने समय लगभग 1.43 सेकेन्ड हो।\n\nIn English:\nGiven, height (h) = 10 m\nInitial velocity (u) = 0 m/s (since it is dropped)\nAcceleration due to gravity (g) = 9.8 m/s²\n\n**1. Calculation of Final Velocity (v):**\nUsing the formula: v² = u² + 2gh,\nv² = 0² + 2 × 9.8 × 10\nv² = 196\nv = √196\n**v = 14 m/s**\n\n**2. Calculation of Time (t):**\nUsing the formula: v = u + gt,\n14 = 0 + 9.8 × t\nt = 14 / 9.8\n**t ≈ 1.43 seconds**\n\nTherefore, the final velocity is 14 m/s and the time taken is approximately 1.43 seconds."
+          "sampleAnswer": "उत्तर: **भिन्नताहरू:**\n* AC को दिशा र परिमाण निरन्तर परिवर्तन हुन्छ, जबकि DC को दिशा र परिमाण स्थिर रहन्छ ।\n* AC को फ्रिक्वेन्सी हुन्छ (नेपालमा ५० Hz), जबकि DC को फ्रिक्वेन्सी शून्य हुन्छ ।\n* AC लाई ट्रान्सफर्मर प्रयोग गरेर सजिलै बढाउन वा घटाउन सकिन्छ, जबकि DC लाई सकिँदैन ।\n* AC का स्रोतहरू डाइनामो र जेनेरेटर हुन्, जबकि DC का स्रोतहरू सेल, ब्याट्री र सोलार प्यानल हुन् ।\n\n(Note: Current-time graphs for AC (sine wave) and DC (straight line) must be drawn.)\n\nAnswer: **Differences:**\n* The direction and magnitude of AC change continuously, while the direction and magnitude of DC remain constant.\n* AC has a frequency (50 Hz in Nepal), whereas DC has a frequency of zero.\n* AC can be easily stepped up or down using a transformer, while DC cannot.\n* Sources of AC are dynamos and generators, whereas sources of DC are cells, batteries, and solar panels. Citations: chapter 11, pages 303-304\n\n(Note: Current-time graphs for AC (sine wave) and DC (straight line) must be drawn.)"
         },
         {
           "id": "22",
           "type": "essay",
-          "questionNepali": "जलवायु परिवर्तनका कुनै दुई प्राकृतिक र दुई मानव-प्रेरित कारणहरू लेख्नुहोस्। यसका कुनै दुई असरहरू पनि उल्लेख गर्नुहोस्।",
-          "questionEnglish": "Write any two natural and two human-induced causes of climate change. Also, mention any two of its effects.",
+          "questionNepali": "साबुन र डिटर्जेन्ट भनेको के हो? तिनीहरूको सफाइ कार्यमा के फरक छ?",
+          "questionEnglish": "What are soap and detergent? What is the difference in their cleaning action?",
           "marks": 4,
-          "sampleAnswer": "नेपालीमा (In Nepali):\n**जलवायु परिवर्तनका कारणहरू:**\n*प्राकृतिक कारणहरू:*\n१. **ज्वालामुखी विस्फोट (Volcanic Eruption):** ज्वालामुखी विस्फोटले वायुमण्डलमा कार्बन डाइअक्साइड जस्ता ग्यासहरू उत्सर्जन गर्छ, जसले पृथ्वीको तापक्रम बढाउँछ।\n२. **सौर्य गतिविधि (Solar Activities):** सूर्यमा हुने ऊर्जा उत्पादनको दरमा हुने परिवर्तनले पृथ्वीमा आउने सौर्य विकिरणको तीव्रतामा असर पार्छ, जसले मौसमलाई प्रभावित गर्छ।\n\n*मानव-प्रेरित कारणहरू:*\n१. **खनिज इन्धनको प्रयोग (Burning of Fossil Fuels):** कोइला, पेट्रोल जस्ता इन्धन बाल्दा ठूलो मात्रामा हरितगृह ग्यासहरू उत्सर्जन हुन्छन्।\n२. **वन विनाश (Deforestation):** जङ्गल फँडानी गर्दा बोटबिरुवाले सोस्ने कार्बन डाइअक्साइडको मात्रा घट्छ, जसले गर्दा वायुमण्डलमा यसको मात्रा बढ्न जान्छ।\n\n**जलवायु परिवर्तनका असरहरू:**\n१. **समुद्री सतह बढ्नु (Increasing Sea Level):** विश्वव्यापी तापक्रम वृद्धिको कारण हिउँ पग्लिँदा र समुद्री पानी फैलिँदा समुद्री सतह बढ्छ, जसले तटीय क्षेत्रहरूमा डुबानको खतरा बढाउँछ।\n२. **जैविक विविधतामा असर (Effects on Biodiversity):** तापक्रम र मौसममा आएको परिवर्तनले जमिन र समुद्रमा बस्ने जीवहरूको जीवन प्रक्रियामा असर पार्छ, जसले गर्दा तिनीहरूको लोप हुने खतरा बढ्छ।\n\nIn English:\n**Causes of Climate Change:**\n*Natural Causes:*\n1. **Volcanic Eruption:** Volcanic eruptions emit gases like carbon dioxide into the atmosphere, which can increase the Earth's temperature.\n2. **Solar Activities:** Changes in the sun's energy production rate affect the intensity of solar radiation reaching Earth, thereby influencing the weather.\n\n*Human-induced Causes:*\n1. **Burning of Fossil Fuels:** Burning fuels like coal and petrol releases a tremendous amount of greenhouse gases.\n2. **Deforestation:** Cutting down forests reduces the absorption of carbon dioxide by plants, thus increasing its amount in the atmosphere.\n\n**Effects of Climate Change:**\n1. **Increasing Sea Level:** Global warming causes snow to melt and seawater to expand, leading to a rise in sea level, which increases the risk of flooding in coastal areas.\n2. **Effects on Biodiversity:** Changes in temperature and weather patterns affect the life processes of organisms, increasing their risk of extinction."
-        },
-        {
-          "id": "23",
-          "type": "essay",
-          "questionNepali": "डिजिटल प्रविधिका कुनै दुई सकारात्मक र दुई नकारात्मक प्रभावहरू लेख्नुहोस्। ‘डिजिटल वेलबिइङ’ भनेको के हो?",
-          "questionEnglish": "Write any two positive and two negative effects of digital technology. What is 'Digital Wellbeing'?",
-          "marks": 4,
-          "sampleAnswer": "नेपालीमा (In Nepali):\n**डिजिटल प्रविधिका प्रभावहरू:**\n*सकारात्मक प्रभावहरू:*\n१. **डिजिटल भुक्तानी (Digital Payment):** QR कोड स्क्यान गरेर वा अन्य माध्यमबाट सजिलै पैसा पठाउन सकिन्छ, जसले नगद बोक्नुपर्ने झन्झट हटाउँछ।\n२. **सामाजिक सञ्जाल (Social Networks):** सामाजिक सञ्जालले मानिसहरूलाई टाढा भए पनि एकअर्कासँग जोड्छ र आफ्नो विचार सार्वजनिक रूपमा व्यक्त गर्ने अवसर दिन्छ।\n\n*नकारात्मक प्रभावहरू:*\n१. **मानसिक स्वास्थ्यमा असर:** सामाजिक सञ्जालमा हुने अपराध वा प्रतिष्ठामा हुने हानिले मानसिक तनाव सिर्जना गर्न सक्छ।\n२. **शारीरिक व्यायामको कमी:** डिजिटल खेलहरूमा अत्यधिक समय बिताउँदा बालबालिकामा शारीरिक व्यायामको कमी भई मोटोपना जस्ता समस्याहरू देखिन सक्छ।\n\n**डिजिटल वेलबिइङ (Digital Wellbeing):**\nडिजिटल वेलबिइङ भनेको अनलाइन र अफलाइन गतिविधिहरूमा बिताउने समयलाई सन्तुलनमा राखेर मानसिक, शारीरिक, सामाजिक र भावनात्मक रूपमा स्वस्थ रहने अवस्था हो। यसले डिजिटल प्रविधिको प्रयोग गर्दा आफ्नो समग्र स्वास्थ्यमा असर नपरोस् भनेर सचेत रहन सिकाउँछ।\n\nIn English:\n**Effects of Digital Technology:**\n*Positive Effects:*\n1. **Digital Payment:** Money can be easily sent by scanning a QR code, eliminating the hassle of carrying cash.\n2. **Social Networks:** Social networks connect people digitally even if they are far apart and provide an opportunity to express opinions publicly.\n\n*Negative Effects:*\n1. **Impact on Mental Health:** Crimes on social media and damage to reputation can create mental stress.\n2. **Lack of Physical Exercise:** Excessive time spent on digital games can lead to a lack of physical exercise in children, causing problems like obesity.\n\n**Digital Wellbeing:**\nDigital wellbeing is the state of being healthy mentally, physically, socially, and emotionally by balancing the time spent on online and offline activities. It involves being aware of how to use digital technology in a way that does not negatively affect overall health."
+          "sampleAnswer": "उत्तर: **साबुन:** साबुन लामो चेन भएको फ्याटी एसिडको सोडियम वा पोटासियम लवण हो ।\n**Soap:** The sodium or potassium salts of long-chain fatty acids are called soap. Citations: chapter 19, page 448\n\n**डिटर्जेन्ट:** डिटर्जेन्ट हाइड्रोकार्बनबाट प्राप्त हुने रसायन हो जुन साबुनजस्तै सफा गर्ने गुण भएको तर रासायनिक प्रकृति फरक भएको हुन्छ ।\n**Detergent:** Detergent is a chemical obtained from hydrocarbons which is more soluble in water than soap and has cleaning properties like soap, but its chemical nature is different. Citations: chapter 19, page 449\n\n**सफाइ कार्यमा फरक:**\nसाबुनले कडा पानी (hard water) मा रहेको क्याल्सियम र म्याग्नेसियम आयोनसँग प्रतिक्रिया गरेर अघुलनशील पदार्थ (scum) बनाउँछ, जसले गर्दा यसको सफा गर्ने क्षमता कम हुन्छ ।\nडिटर्जेन्टले कडा पानीमा पनि अघुलनशील पदार्थ बनाउँदैन र प्रभावकारी रूपमा काम गर्छ । त्यसैले, कपडा धुनका लागि डिटर्जेन्ट साबुनभन्दा राम्रो मानिन्छ, तर यो जैविक रूपमा विघटनशील नहुने भएकोले वातावरणीय प्रदूषण गर्छ ।\n\n**Difference in Cleaning Action:**\nSoap produces insoluble scum with hard water, so it is not an efficient cleaner in hard water. Citations: chapter 19, page 448\nDetergent can be used with hard water as well. It is a chemical, so it is non-biodegradable and can cause chemical pollution. Citations: chapter 19, page 449"
         }
       ]
     }

@@ -1,3 +1,0 @@
-﻿C:\Users\porte\OneDrive\Documents\GitHub\Looma-SEE\nepali-exam-helper\app-code\docs\adding-tests-guide.md:79: - Visit: http://localhost:3000/api/tests
-C:\Users\porte\OneDrive\Documents\GitHub\Looma-SEE\nepali-exam-helper\app-code\docs\adding-tests-guide.md:80: - Visit: http://localhost:3000/api/questions/your_test_id
-C:\Users\porte\OneDrive\Documents\GitHub\Looma-SEE\nepali-exam-helper\app-code\scripts\import-all-tests.mjs:340:     console.log("   - Visit http://localhost:3000/api/tests to see all tests")

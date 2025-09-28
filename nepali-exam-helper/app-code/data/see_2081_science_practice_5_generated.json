@@ -1,419 +1,420 @@
 [
   {
     "_id": "see_2081_science_practice_5_generated",
-    "title": "SEE 2081 Science Practice Test 5 (Generated Questions)",
-    "titleNepali": "SEE २०८१ विज्ञान अभ्यास परीक्षा ५ (उत्पन्न प्रश्नहरू)",
+    "title": "SEE 2081 Science Practice Test 5",
+    "titleNepali": "SEE २०८१ विज्ञान अभ्यास परीक्षा ५",
     "subject": "science",
     "year": 2081,
     "totalMarks": 75,
     "duration": 180,
     "sections": ["A", "B", "C", "D"],
     "isActive": true,
-    "createdAt": { "$date": "2025-08-30T18:15:16.000Z" },
-    "updatedAt": { "$date": "2025-08-30T18:15:16.000Z" }
+    "createdAt": { "$date": "2025-09-01T10:00:00.000Z" },
+    "updatedAt": { "$date": "2025-09-01T10:00:00.000Z" }
   },
   {
-    "_id": { "$oid": "687d809a2f3df9d071c5210d" },
+    "_id": { "$oid": "66d6c1a1b3e4f5a6b7c8d9e5" },
     "testId": "see_2081_science_practice_5_generated",
     "questions": {
       "groupA": [
         {
           "id": "a",
           "type": "multiple_choice",
-          "questionNepali": " कम्प्युटर मेमोरीको क्षमता नाप्ने एकाइ कुन हो?",
-          "questionEnglish": "Which unit is used for measuring the capacity of computer memory?",
+          "questionNepali": "तलका मध्ये कुन आधारभूत एकाइ हो?",
+          "questionEnglish": "Which of the following is a fundamental unit?",
           "options": [
-            {"id": "i", "nepali": "हर्ज (Hertz)", "english": "Hertz"},
-            {"id": "ii", "nepali": "बाइट (Byte)", "english": "Byte"},
-            {"id": "iii", "nepali": "बिट्स प्रति सेकेन्ड (Bits per second)", "english": "Bits per second"},
-            {"id": "iv", "nepali": "पास्कल (Pascal)", "english": "Pascal"}
+            {"id": "i", "nepali": "न्युटन (Newton)", "english": "Newton"},
+            {"id": "ii", "nepali": "पास्कल (Pascal)", "english": "Pascal"},
+            {"id": "iii", "nepali": "जुल (Joule)", "english": "Joule"},
+            {"id": "iv", "nepali": "एम्पियर (Ampere)", "english": "Ampere"}
           ],
-          "correctAnswer": "ii",
+          "correctAnswer": "iv",
           "marks": 1,
-          "explanation": "व्याख्या (Nepali Explanation): कम्प्युटरको मेमोरी क्षमता बाइट (Byte) र यसका गुणकहरू जस्तै किलोबाइट (KB), मेगाबाइट (MB), गिगाबाइट (GB) मा मापिन्छ। हर्ज (Hertz) फ्रिक्वेन्सीको एकाइ हो।\n\nEnglish Explanation: The storage capacity of computer memory is measured in Bytes and its multiples like Kilobytes (KB), Megabytes (MB), and Gigabytes (GB). Hertz is the unit of frequency."
+          "explanation": "Explanation: एम्पियर (विद्युतीय करेन्ट) SI प्रणालीमा सात आधारभूत एकाइहरूमध्ये एक हो । न्युटन, पास्कल र जुल तत्जन्य एकाइहरू हुन् ।\n\nAmpere (electric current) is one of the seven fundamental units in the SI system. Newton, Pascal, and Joule are derived units. Citations: chapter 1, page 8"
         },
         {
           "id": "b",
           "type": "multiple_choice",
-          "questionNepali": "फूल फुल्ने, गुच्छे जरा हुने र हाँगा नहुने विरुवा दिइएकामध्ये कुन हो?",
-          "questionEnglish": "Which one of the following is a plant that bears flowers, has fibrous roots, and no branches?",
+          "questionNepali": "फाइलम इकाइनोडर्माटा (Echinodermata) को विशेषता कुन हो?",
+          "questionEnglish": "Which is a characteristic of Phylum Echinodermata?",
           "options": [
-            {"id": "i", "nepali": "उनिउँ (Fern)", "english": "Fern"},
-            {"id": "ii", "nepali": "मकै (Maize)", "english": "Maize"},
-            {"id": "iii", "nepali": "तोरी (Mustard)", "english": "Mustard"},
-            {"id": "iv", "nepali": "साइकस (Cycas)", "english": "Cycas"}
+            {"id": "i", "nepali": "शरीरमा छिद्रहरू हुनु (Body has pores)", "english": "Body has pores"},
+            {"id": "ii", "nepali": "जोर्नीयुक्त खुट्टाहरू हुनु (Having jointed legs)", "english": "Having jointed legs"},
+            {"id": "iii", "nepali": "ट्युब फिटको सहायताले हिँड्नु (Moves with the help of tube feet)", "english": "Moves with the help of tube feet"},
+            {"id": "iv", "nepali": "शरीर खण्ड-खण्डमा विभाजित हुनु (Body is segmented)", "english": "Body is segmented"}
           ],
-          "correctAnswer": "ii",
+          "correctAnswer": "iii",
           "marks": 1,
-          "explanation": "व्याख्या (Nepali Explanation): मकै एक मोनोकोट बिरुवा हो जसमा फूल फुल्छ, गुच्छे (fibrous) जरा हुन्छ, र सामान्यतया हाँगा हुँदैन। उनिउँ र साइकसमा फूल फुल्दैन, र तोरी (डाइकोट) मा मूल (tap) जरा हुन्छ।\n\nEnglish Explanation: Maize is a monocot plant that bears flowers, has fibrous roots, and typically has no branches. Fern and Cycas do not bear flowers, and mustard (a dicot) has a tap root system."
+          "explanation": "Explanation: इकाइनोडर्माटा फाइलमका जीवहरू ट्युब फिटको सहायताले हिँड्छन् र तिनीहरूको शरीर काँडादार छालाले ढाकिएको हुन्छ ।\n\nAnimals in Phylum Echinodermata move with the help of tube feet and their bodies are externally covered by hard calcareous spines. Citations: chapter 2, pages 40-41"
         },
         {
           "id": "c",
           "type": "multiple_choice",
-          "questionNepali": "विकास क्रमको आधारमा कुन क्रम सही छ?",
-          "questionEnglish": "Which order is correct in terms of evolution?",
+          "questionNepali": "रगत जमाउन मद्दत गर्ने रक्तकोष कुन हो?",
+          "questionEnglish": "Which blood cell helps in the clotting of blood?",
           "options": [
-            {"id": "i", "nepali": "गड्यौला, जेलिफिस, भ्यागुता, माछा (Earthworm, Jellyfish, Frog, Fish)", "english": "Earthworm, Jellyfish, Frog, Fish"},
-            {"id": "ii", "nepali": "जेलिफिस, गड्यौला, माछा, भ्यागुता (Jellyfish, Earthworm, Fish, Frog)", "english": "Jellyfish, Earthworm, Fish, Frog"},
-            {"id": "iii", "nepali": "माछा, भ्यागुता, जेलिफिस, गड्यौला (Fish, Frog, Jellyfish, Earthworm)", "english": "Fish, Frog, Jellyfish, Earthworm"},
-            {"id": "iv", "nepali": "भ्यागुता, माछा, गड्यौला, जेलिफिस (Frog, Fish, Earthworm, Jellyfish)", "english": "Frog, Fish, Earthworm, Jellyfish"}
+            {"id": "i", "nepali": "रातो रक्तकोष (Red Blood Cell)", "english": "Red Blood Cell"},
+            {"id": "ii", "nepali": "सेतो रक्तकोष (White Blood Cell)", "english": "White Blood Cell"},
+            {"id": "iii", "nepali": "प्लेटलेट्स (Platelets)", "english": "Platelets"},
+            {"id": "iv", "nepali": "लिम्फोसाइट (Lymphocyte)", "english": "Lymphocyte"}
           ],
-          "correctAnswer": "ii",
+          "correctAnswer": "iii",
           "marks": 1,
-          "explanation": "व्याख्या (Nepali Explanation): विकास क्रममा, सरल जीवहरू पहिले विकसित भए। जेलिफिस (सिलेन्टरेटा) गड्यौला (एनिलिडा) भन्दा सरल छ। माछा (पिसेस) भ्यागुता (एम्फिबिया) भन्दा पहिले विकसित भयो। त्यसैले सही क्रम जेलिफिस, गड्यौला, माछा, र भ्यागुता हो।\n\nEnglish Explanation: In evolution, simpler organisms evolved first. Jellyfish (Coelenterata) is simpler than Earthworm (Annelida). Fish (Pisces) evolved before Frogs (Amphibia). Therefore, the correct order is Jellyfish, Earthworm, Fish, Frog."
+          "explanation": "Explanation: प्लेटलेट्सले फाइब्रिनोजेनसँग मिलेर चोटपटक लागेको ठाउँमा रगत जमाउन मद्दत गर्छ ।\n\nPlatelets combine with fibrinogen to clot blood during cuts and injuries. Citations: chapter 5, page 115"
         },
         {
           "id": "d",
           "type": "multiple_choice",
-          "questionNepali": "ज्वालामुखी विस्फोटन (A) र जीवावशेष इन्धनको अत्यधिक प्रयोग (B) जलवायु परिवर्तनका दुई कारणहरू हुन्। यिनीहरूका बारेमा कुन विकल्प सही छ?",
-          "questionEnglish": "Volcanic eruption (A) and overuse of fossil fuels (B) are two causes of climate change. Which of the following alternatives is correct about them?",
+          "questionNepali": "पृथ्वीको सतहमा गुरुत्व प्रवेग (g) को मान कहाँ सबैभन्दा बढी हुन्छ?",
+          "questionEnglish": "Where is the value of acceleration due to gravity (g) maximum on the Earth's surface?",
           "options": [
-            {"id": "i", "nepali": "A प्राकृतिक कारण हो, B मानवीय कारण हो। (A is a natural cause, B is a human cause)", "english": "A is a natural cause, B is a human cause"},
-            {"id": "ii", "nepali": "A मानवीय कारण हो, B प्राकृतिक कारण हो। (A is a human cause, B is a natural cause)", "english": "A is a human cause, B is a natural cause"},
-            {"id": "iii", "nepali": "दुवै मानवीय कारण हुन्। (Both are human causes)", "english": "Both are human causes"},
-            {"id": "iv", "nepali": "दुवै प्राकृतिक कारण हुन्। (Both are natural causes)", "english": "Both are natural causes"}
+            {"id": "i", "nepali": "भूमध्यरेखामा (At the equator)", "english": "At the equator"},
+            {"id": "ii", "nepali": "ध्रुवमा (At the poles)", "english": "At the poles"},
+            {"id": "iii", "nepali": "पहाडको टुप्पोमा (At the top of a mountain)", "english": "At the top of a mountain"},
+            {"id": "iv", "nepali": "सबै ठाउँमा बराबर (Equal everywhere)", "english": "Equal everywhere"}
           ],
-          "correctAnswer": "i",
+          "correctAnswer": "ii",
           "marks": 1,
-          "explanation": "व्याख्या (Nepali Explanation): ज्वालामुखी विस्फोटन एक प्राकृतिक प्रक्रिया हो। जीवावशेष इन्धनको अत्यधिक प्रयोग मानव गतिविधि हो। दुवैले हरितगृह ग्यास उत्सर्जन गरी जलवायु परिवर्तनमा योगदान पुऱ्याउँछन्।\n\nEnglish Explanation: Volcanic eruption is a natural phenomenon. The overuse of fossil fuels is a human activity. Both contribute to climate change by releasing greenhouse gases."
+          "explanation": "Explanation: पृथ्वी ध्रुवमा चेप्टो भएकोले त्यहाँ अर्धव्यास कम हुन्छ । g ∝ 1/R² अनुसार, अर्धव्यास कम भएको ठाउँमा 'g' को मान बढी हुन्छ ।\n\nSince the Earth is flattened at the poles, its radius is less there. According to g ∝ 1/R², the value of 'g' is more where the radius is less. Citations: chapter 7, page 178"
         },
         {
           "id": "e",
           "type": "multiple_choice",
-          "questionNepali": "यदि पृथ्वीको पिण्डलाई यथावत् राखी अर्धव्यासलाई आधा गरियो भने गुरुत्व प्रवेग 'g' को मानमा कस्तो परिवर्तन आउँछ?",
-          "questionEnglish": "If the radius of the Earth is halved while keeping the mass constant, how will the value of acceleration due to gravity 'g' change?",
+          "questionNepali": "हाइड्रोलिक ब्रेक कुन नियममा आधारित छ?",
+          "questionEnglish": "A hydraulic brake is based on which law?",
           "options": [
-            {"id": "i", "nepali": "आधा हुन्छ (Becomes half)", "english": "Becomes half"},
-            {"id": "ii", "nepali": "उस्तै रहन्छ (Remains the same)", "english": "Remains the same"},
-            {"id": "iii", "nepali": "दुई गुणाले बढ्छ (Increases by 2 times)", "english": "Increases by 2 times"},
-            {"id": "iv", "nepali": "चार गुणाले बढ्छ (Increases by 4 times)", "english": "Increases by 4 times"}
+            {"id": "i", "nepali": "आर्किमिडिजको सिद्धान्त (Archimedes' principle)", "english": "Archimedes' principle"},
+            {"id": "ii", "nepali": "तैरिने नियम (Law of floatation)", "english": "Law of floatation"},
+            {"id": "iii", "nepali": "पास्कलको नियम (Pascal's law)", "english": "Pascal's law"},
+            {"id": "iv", "nepali": "न्युटनको गतिको नियम (Newton's law of motion)", "english": "Newton's law of motion"}
           ],
-          "correctAnswer": "iv",
+          "correctAnswer": "iii",
           "marks": 1,
-          "explanation": "व्याख्या (Nepali Explanation): गुरुत्व प्रवेग (g) को सूत्र g = GM/R² हो, जहाँ g अर्धव्यासको वर्गसँग व्युत्क्रमानुपातिक हुन्छ (g ∝ 1/R²)। यदि अर्धव्यास आधा (R/2) भयो भने, g' = GM/(R/2)² = GM/(R²/4) = 4(GM/R²) = 4g हुन्छ। तसर्थ, 'g' को मान चार गुणाले बढ्छ।\n\nEnglish Explanation: The formula for acceleration due to gravity (g) is g = GM/R², where g is inversely proportional to the square of the radius (g ∝ 1/R²). If the radius is halved (R/2), the new acceleration g' = GM/(R/2)² = GM/(R²/4) = 4(GM/R²) = 4g. Thus, the value of 'g' increases by 4 times."
+          "explanation": "Explanation: हाइड्रोलिक ब्रेक, हाइड्रोलिक लिफ्ट जस्ता उपकरणहरू पास्कलको नियममा आधारित हुन्छन्, जसले तरल पदार्थमा चाप समान रूपले प्रसारण हुने सिद्धान्तको उपयोग गर्छ ।\n\nHydraulic machines such as hydraulic brakes and hydraulic lifts are based on Pascal's law. Citations: chapter 8, page 200"
         },
         {
           "id": "f",
           "type": "multiple_choice",
-          "questionNepali": "एउटा हाइड्रोलिक मेसिनको सानो पिस्टनको क्षेत्रफल 2 cm² र ठूलो पिस्टनको क्षेत्रफल 10 cm² छ। यदि सानो पिस्टनमा 30 N बल लगाइयो भने ठूलो पिस्टनमा कति तौल सन्तुलन गर्न सकिन्छ?",
-          "questionEnglish": "In a hydraulic machine, the area of the small piston is 2 cm² and the large piston is 10 cm². If a 30 N force is applied to the small piston, how much weight can be balanced on the large piston?",
+          "questionNepali": "अदूरदृष्टि (myopia) हटाउन कुन प्रकारको लेन्स प्रयोग गरिन्छ?",
+          "questionEnglish": "Which type of lens is used to correct myopia?",
           "options": [
-            {"id": "i", "nepali": "6 N", "english": "6 N"},
-            {"id": "ii", "nepali": "60 N", "english": "60 N"},
-            {"id": "iii", "nepali": "150 N", "english": "150 N"},
-            {"id": "iv", "nepali": "300 N", "english": "300 N"}
+            {"id": "i", "nepali": "कन्भेक्स लेन्स (Convex lens)", "english": "Convex lens"},
+            {"id": "ii", "nepali": "कन्केभ लेन्स (Concave lens)", "english": "Concave lens"},
+            {"id": "iii", "nepali": "प्लेनो-कन्भेक्स लेन्स (Plano-convex lens)", "english": "Plano-convex lens"},
+            {"id": "iv", "nepali": "बाइफोकल लेन्स (Bifocal lens)", "english": "Bifocal lens"}
           ],
-          "correctAnswer": "iii",
+          "correctAnswer": "ii",
           "marks": 1,
-          "explanation": "व्याख्या (Nepali Explanation): पास्कलको नियमअनुसार, F₁/A₁ = F₂/A₂। यहाँ, F₁ = 30 N, A₁ = 2 cm², र A₂ = 10 cm² छ। F₂ = F₁ × (A₂/A₁) = 30 N × (10 cm² / 2 cm²) = 30 N × 5 = 150 N।\n\nEnglish Explanation: According to Pascal's law, F₁/A₁ = F₂/A₂. Here, F₁ = 30 N, A₁ = 2 cm², and A₂ = 10 cm². F₂ = F₁ × (A₂/A₁) = 30 N × (10 cm² / 2 cm²) = 30 N × 5 = 150 N."
+          "explanation": "Explanation: अदूरदृष्टि हटाउन विकेन्द्रित (diverging) लेन्स, अर्थात् कन्केभ लेन्सको प्रयोग गरिन्छ ।\n\nFor the correction of shortsightedness, a diverging lens, i.e., a concave lens, is used. Citations: chapter 10, page 284"
         },
         {
           "id": "g",
           "type": "multiple_choice",
-          "questionNepali": "प्रकाशको किरण हावाबाट काँचमा प्रवेश गरी फेरि हावामा निस्कँदा कुन अवस्था सही हुन्छ? (i=आपतित कोण, r=आवर्तित कोण, e=निर्गत कोण)",
-          "questionEnglish": "Which situation is correct when a ray of light enters glass from air and emerges back into the air? (i=angle of incidence, r=angle of refraction, e=emergent angle)",
+          "questionNepali": "डाइरेक्ट करेन्ट (DC) को फ्रिक्वेन्सी कति हुन्छ?",
+          "questionEnglish": "What is the frequency of Direct Current (DC)?",
           "options": [
-            {"id": "i", "nepali": "i = e < r", "english": "i = e < r"},
-            {"id": "ii", "nepali": "i = e > r", "english": "i = e > r"},
-            {"id": "iii", "nepali": "i > e > r", "english": "i > e > r"},
-            {"id": "iv", "nepali": "i < r < e", "english": "i < r < e"}
+            {"id": "i", "nepali": "५० हर्ज (50 Hz)", "english": "50 Hz"},
+            {"id": "ii", "nepali": "६० हर्ज (60 Hz)", "english": "60 Hz"},
+            {"id": "iii", "nepali": "शून्य (Zero)", "english": "Zero"},
+            {"id": "iv", "nepali": "अनन्त (Infinite)", "english": "Infinite"}
           ],
-          "correctAnswer": "ii",
+          "correctAnswer": "iii",
           "marks": 1,
-          "explanation": "व्याख्या (Nepali Explanation): जब प्रकाशको किरण हावा (विरल माध्यम) बाट काँच (सघन माध्यम) मा जान्छ, यो नर्मलतिर झुक्छ, त्यसैले i > r हुन्छ। जब यो काँचबाट फेरि हावामा निस्कन्छ, यो नर्मलबाट टाढा जान्छ र आपतित किरणसँग समानान्तर हुन्छ, जसले गर्दा i = e हुन्छ। तसर्थ, सही सम्बन्ध i = e > r हो।\n\nEnglish Explanation: When a light ray travels from air (rarer medium) to glass (denser medium), it bends towards the normal, so i > r. When it emerges from the glass back into the air, it bends away from the normal and becomes parallel to the incident ray, making i = e. Therefore, the correct relation is i = e > r."
+          "explanation": "Explanation: डाइरेक्ट करेन्टको दिशा समयसँगै परिवर्तन नहुने भएकोले यसको फ्रिक्वेन्सी शून्य हुन्छ ।\n\nSince the direction of the current in d.c. does not change with time, the frequency is zero. Citations: chapter 11, page 304"
         },
         {
           "id": "h",
           "type": "multiple_choice",
-          "questionNepali": "ब्रह्माण्डमा रहेका खगोलीय पिण्डहरू कुन बलको कारणले आफ्नो स्थानमा रहेका छन्?",
-          "questionEnglish": "Due to which force do celestial bodies in the universe remain in their position?",
+          "questionNepali": "क्षारीय भू-धातुहरू (alkaline earth metals) पेरियोडिक तालिकाको कुन समूहमा पर्छन्?",
+          "questionEnglish": "Alkaline earth metals belong to which group of the periodic table?",
           "options": [
-            {"id": "i", "nepali": "न्युक्लियर बल (Nuclear force)", "english": "Nuclear force"},
-            {"id": "ii", "nepali": "गुरुत्वाकर्षण बल (Gravitational force)", "english": "Gravitational force"},
-            {"id": "iii", "nepali": "चुम्बकीय बल (Magnetic force)", "english": "Magnetic force"},
-            {"id": "iv", "nepali": "विद्युत चुम्बकीय बल (Electromagnetic force)", "english": "Electromagnetic force"}
+            {"id": "i", "nepali": "समूह IA (Group IA)", "english": "Group IA"},
+            {"id": "ii", "nepali": "समूह IIA (Group IIA)", "english": "Group IIA"},
+            {"id": "iii", "nepali": "समूह IIIA (Group IIIA)", "english": "Group IIIA"},
+            {"id": "iv", "nepali": "समूह IVA (Group IVA)", "english": "Group IVA"}
           ],
           "correctAnswer": "ii",
           "marks": 1,
-          "explanation": "व्याख्या (Nepali Explanation): ब्रह्माण्डमा रहेका सबै खगोलीय पिण्डहरू, जस्तै ग्रह, तारा र आकाशगङ्गाहरू, एकअर्कालाई गुरुत्वाकर्षण बलले आकर्षित गर्छन्, जसले गर्दा तिनीहरू सन्तुलित अवस्थामा रहन्छन्।\n\nEnglish Explanation: All celestial bodies in the universe, such as planets, stars, and galaxies, attract each other with gravitational force, which keeps them in a balanced state."
+          "explanation": "Explanation: समूह IIA मा पर्ने तत्वहरूलाई क्षारीय भू-धातु भनिन्छ किनभने तिनीहरूका अक्साइडहरू पानीमा घुल्छन् र पृथ्वीको सतहमा पाइन्छन् ।\n\nThe elements of group IIA are known as alkaline earth metals because the oxides of these metals are soluble in water and they are found on the earth’s surface. Citations: chapter 14, page 372"
         },
         {
           "id": "i",
           "type": "multiple_choice",
-          "questionNepali": "तल दिइएको रासायनिक प्रतिक्रिया कुन प्रकारको हो? Zn + 2HCl → ZnCl₂ + H₂",
-          "questionEnglish": "What type of chemical reaction is given below? Zn + 2HCl → ZnCl₂ + H₂",
+          "questionNepali": "तलका मध्ये कुन ट्राइहाइड्रिक अल्कोहल (trihydric alcohol) हो?",
+          "questionEnglish": "Which of the following is a trihydric alcohol?",
           "options": [
-            {"id": "i", "nepali": "संयोजन (Combination)", "english": "Combination"},
-            {"id": "ii", "nepali": "विस्थापन (Displacement)", "english": "Displacement"},
-            {"id": "iii", "nepali": "विभाजन (Decomposition)", "english": "Decomposition"},
-            {"id": "iv", "nepali": "निराकरण (Neutralization)", "english": "Neutralization"}
+            {"id": "i", "nepali": "इथानोल (Ethanol)", "english": "Ethanol"},
+            {"id": "ii", "nepali": "ग्लाइकोल (Glycol)", "english": "Glycol"},
+            {"id": "iii", "nepali": "ग्लिसेरोल (Glycerol)", "english": "Glycerol"},
+            {"id": "iv", "nepali": "मिथेन (Methane)", "english": "Methane"}
           ],
-          "correctAnswer": "ii",
+          "correctAnswer": "iii",
           "marks": 1,
-          "explanation": "व्याख्या (Nepali Explanation): यो एक एकल विस्थापन प्रतिक्रिया हो किनभने बढी प्रतिक्रियाशील तत्व जिंक (Zn) ले हाइड्रोक्लोरिक एसिड (HCl) बाट कम प्रतिक्रियाशील तत्व हाइड्रोजन (H) लाई विस्थापित गरेको छ।\n\nEnglish Explanation: This is a single displacement reaction because a more reactive element, Zinc (Zn), has displaced a less reactive element, Hydrogen (H), from hydrochloric acid (HCl)."
+          "explanation": "Explanation: ग्लिसेरोल (propane-1, 2, 3-triol) एउटा ट्राइहाइड्रिक अल्कोहल हो किनभने यसमा तीनओटा हाइड्रोक्सिल (-OH) समूहहरू हुन्छन् ।\n\nGlycerol is a trihydric alcohol which is also known as glycerine. Citations: chapter 18, page 437"
         },
         {
           "id": "j",
           "type": "multiple_choice",
-          "questionNepali": "फलफूल व्यवसायीले फलफूल पकाउनका लागि प्रयोग गर्ने सेतो धुलो पाउडर कुन हो?",
-          "questionEnglish": "Which white powder is used by fruit sellers to ripen fruits?",
+          "questionNepali": "साबुन बनाउने प्रक्रियालाई के भनिन्छ?",
+          "questionEnglish": "What is the process of making soap called?",
           "options": [
-            {"id": "i", "nepali": "सोडियम सल्फेट (Sodium Sulphate)", "english": "Sodium Sulphate"},
-            {"id": "ii", "nepali": "क्याल्सियम कार्बोनेट (Calcium Carbonate)", "english": "Calcium Carbonate"},
-            {"id": "iii", "nepali": "क्याल्सियम कार्बाइड (Calcium Carbide)", "english": "Calcium Carbide"},
-            {"id": "iv", "nepali": "सोडियम कार्बोनेट (Sodium Carbonate)", "english": "Sodium Carbonate"}
+            {"id": "i", "nepali": "इस्टेरिफिकेसन (Esterification)", "english": "Esterification"},
+            {"id": "ii", "nepali": "स्यापोनिफिकेसन (Saponification)", "english": "Saponification"},
+            {"id": "iii", "nepali": "हाइड्रोजेनेसन (Hydrogenation)", "english": "Hydrogenation"},
+            {"id": "iv", "nepali": "पोलिमराइजेसन (Polymerization)", "english": "Polymerization"}
           ],
-          "correctAnswer": "iii",
+          "correctAnswer": "ii",
           "marks": 1,
-          "explanation": "व्याख्या (Nepali Explanation): फलफूल पकाउनका लागि क्याल्सियम कार्बाइड (CaC₂) प्रयोग गरिन्छ। यसले आर्द्रतासँग प्रतिक्रिया गरेर एसिटिलिन ग्यास (C₂H₂) उत्पादन गर्छ, जसले फलफूललाई कृत्रिम रूपमा पकाउँछ।\n\nEnglish Explanation: Calcium carbide (CaC₂) is used for ripening fruits. It reacts with moisture to produce acetylene gas (C₂H₂), which artificially ripens the fruit."
+          "explanation": "Explanation: वनस्पति तेल वा जनावरको बोसोलाई क्षारसँग तताएर साबुन बनाउने प्रक्रियालाई स्यापोनिफिकेसन भनिन्छ ।\n\nThis process of making soap by the hydrolysis of vegetable oil or animal fat with alkali is known as saponification. Citations: chapter 19, page 448"
         }
       ],
       "groupB": [
         {
           "id": "a",
           "type": "short_answer",
-          "questionNepali": "आधारभूत एकाइ र तत्जन्य एकाइबिच कुनै एक भिन्नता लेख्नुहोस्।",
-          "questionEnglish": "Write one difference between a fundamental unit and a derived unit.",
+          "questionNepali": "स्वतन्त्र चरको परिभाषा दिनुहोस् ।",
+          "questionEnglish": "Define independent variable.",
           "marks": 1,
-          "sampleAnswer": "नेपालीमा (In Nepali): आधारभूत एकाइहरू अन्य एकाइहरूमा निर्भर हुँदैनन्, जबकि तत्जन्य एकाइहरू आधारभूत एकाइहरूबाट बनेका हुन्छन्।\n\nIn English: Fundamental units do not depend on other units, whereas derived units are composed of fundamental units."
+          "sampleAnswer": "उत्तर: अनुसन्धानकर्ताले चाहेअनुसार परिवर्तन गर्न सक्ने चरलाई स्वतन्त्र चर भनिन्छ ।\n\nAnswer: The variable which can be manipulated by a researcher is called the independent variable. Citations: chapter 1, page 4"
         },
         {
           "id": "b",
           "type": "short_answer",
-          "questionNepali": "कुनै वस्तुलाई पानीमा डुबाउँदा पानीले त्यस वस्तुलाई माथितिर धकेल्ने बललाई के भनिन्छ?",
-          "questionEnglish": "What is the name of the upward force applied by water to a body immersed in it?",
+          "questionNepali": "उभयचर बिरुवा (amphibian plants) भनेर कुन डिभिजनका बिरुवालाई चिनिन्छ?",
+          "questionEnglish": "Which division of plants is known as amphibian plants?",
           "marks": 1,
-          "sampleAnswer": "नेपालीमा (In Nepali): कुनै वस्तुलाई पानीमा डुबाउँदा पानीले त्यस वस्तुलाई माथितिर धकेल्ने बललाई उर्ध्वचाप (upthrust) भनिन्छ।\n\nIn English: The upward force applied by water to a body immersed in it is called upthrust."
+          "sampleAnswer": "उत्तर: ब्रायोफाइटा (Bryophyta) डिभिजनका बिरुवाहरूलाई उभयचर बिरुवा भनिन्छ किनभने तिनीहरूलाई गर्भाधानका लागि पानी आवश्यक पर्छ ।\n\nAnswer: Plants under bryophyta need water for fertilization. So, they are also called amphibian plants. Citations: chapter 2, page 19"
         },
         {
           "id": "c",
           "type": "short_answer",
-          "questionNepali": "प्रकाशको किरण हावाबाट काँचमा जाँदा नर्मलतिर किन बाङ्गिन्छ?",
-          "questionEnglish": "Why does a ray of light bend towards the normal while refracting from air to glass?",
+          "questionNepali": "जिन (gene) को परिभाषा दिनुहोस् ।",
+          "questionEnglish": "Define gene.",
           "marks": 1,
-          "sampleAnswer": "नेपालीमा (In Nepali): हावाभन्दा काँच सघन माध्यम भएकोले काँचमा प्रकाशको गति कम हुन्छ, जसले गर्दा प्रकाशको किरण नर्मलतिर बाङ्गिन्छ।\n\nIn English: Since glass is a denser medium than air, the speed of light decreases in glass, which causes the light ray to bend towards the normal."
+          "sampleAnswer": "उत्तर: क्रोमोजोममा रहेको DNA को सानो खण्ड, जसले जीवको कुनै विशेष गुणलाई जनाउँछ, त्यसलाई जिन भनिन्छ ।\n\nAnswer: The smallest fragment of DNA in a chromosome which codes or represents a specific character of an organism is called a gene. Citations: chapter 4, page 82"
         },
         {
           "id": "d",
           "type": "short_answer",
-          "questionNepali": "दिइएको चित्र प्रकाशको कुन प्रक्रियासँग सम्बन्धित छ?",
-          "questionEnglish": "To which phenomenon of light is the given figure related? (Figure shows a magnet moving into a coil connected to a galvanometer)",
+          "questionNepali": "विश्वव्यापी उष्णता (global warming) को एउटा कारण लेख्नुहोस् ।",
+          "questionEnglish": "Write one cause of global warming.",
           "marks": 1,
-          "sampleAnswer": "नेपालीमा (In Nepali): दिइएको चित्र विद्युत चुम्बकीय उपपादन (electromagnetic induction) सँग सम्बन्धित छ।\n\nIn English: The given figure is related to electromagnetic induction."
+          "sampleAnswer": "उत्तर: वायुमण्डलमा हरितगृह ग्यासहरू (जस्तै, कार्बन डाइअक्साइड) को मात्रा बढ्नु विश्वव्यापी उष्णताको मुख्य कारण हो ।\n\nAnswer: The overall rise in temperature of the earth due to an excess amount of greenhouse gases in the atmosphere is called global warming. Citations: chapter 6, page 148"
         },
         {
           "id": "e",
           "type": "short_answer",
-          "questionNepali": "धाराविद्युत प्रवाह भएको क्वाइललाई चुम्बकीय क्षेत्रमा राख्दा तार किन कम्पन हुन्छ?",
-          "questionEnglish": "Why does a current-carrying coil vibrate when placed in a magnetic field?",
+          "questionNepali": "गुरुत्वाकर्षण अचर (G) को मान कति हुन्छ?",
+          "questionEnglish": "What is the value of the gravitational constant (G)?",
           "marks": 1,
-          "sampleAnswer": "नेपालीमा (In Nepali): मोटर असर (motor effect) को कारणले तार कम्पन हुन्छ, जहाँ स्थायी चुम्बक र करेन्टले उत्पन्न गरेको चुम्बकीय क्षेत्रबीच अन्तरक्रिया भई बल उत्पन्न हुन्छ।\n\nIn English: The wire vibrates due to the motor effect, where the interaction between the magnetic field of the permanent magnet and the magnetic field produced by the current generates a force."
+          "sampleAnswer": "उत्तर: गुरुत्वाकर्षण अचर (G) को मान 6.67 × 10⁻¹¹ Nm²/kg² हुन्छ ।\n\nAnswer: The value of G is 6.67 x 10⁻¹¹ Nm²/kg². Citations: chapter 7, page 170"
         },
         {
           "id": "f",
           "type": "short_answer",
-          "questionNepali": "बन्द ब्रह्माण्ड हुनको लागि आवश्यक पर्ने एउटा अवस्था लेख्नुहोस्।",
-          "questionEnglish": "Write one condition required for a closed universe.",
+          "questionNepali": "तापले पदार्थको आयतनमा कस्तो असर पार्छ?",
+          "questionEnglish": "What is the effect of heat on the volume of a substance?",
           "marks": 1,
-          "sampleAnswer": "नेपालीमा (In Nepali): बन्द ब्रह्माण्ड हुनको लागि, ब्रह्माण्डको औसत घनत्व चरम घनत्वभन्दा बढी हुनुपर्छ।\n\nIn English: For a closed universe to occur, the average density of the universe must be greater than the critical density."
+          "sampleAnswer": "उत्तर: सामान्यतया, ताप दिँदा पदार्थका अणुहरू टाढा-टाढा सर्ने हुनाले त्यसको आयतन बढ्छ (फैलिन्छ) ।\n\nAnswer: In general, most matter expands when the temperature increases. Citations: chapter 9, page 227"
         },
         {
           "id": "g",
           "type": "short_answer",
-          "questionNepali": "धाउको परिभाषा दिनुहोस्।",
-          "questionEnglish": "Define ore.",
+          "questionNepali": "लेन्सको सामर्थ्यको परिभाषा दिनुहोस् ।",
+          "questionEnglish": "Define the power of a lens.",
           "marks": 1,
-          "sampleAnswer": "नेपालीमा (In Nepali): जुन खनिजबाट सजिलै र कम लागतमा ठूलो मात्रामा धातु निकाल्न सकिन्छ, त्यसलाई धाउ (ore) भनिन्छ।\n\nIn English: An ore is a mineral from which a metal can be extracted easily and economically in a large amount."
+          "sampleAnswer": "उत्तर: लेन्सले प्रकाशका किरणहरूलाई केन्द्रित वा विकेन्द्रित गर्ने क्षमतालाई त्यसको सामर्थ्य भनिन्छ ।\n\nAnswer: The ability of a lens to converge or diverge light rays is called the power of that lens. Citations: chapter 10, page 278"
         },
         {
           "id": "h",
           "type": "short_answer",
-          "questionNepali": "फलामको धाउबाट शुद्ध फलाम प्रशोधन गर्दा कुन संकेंद्रण विधि अपनाइन्छ?",
-          "questionEnglish": "Which concentration method is applied during the purification of iron from its ore?",
+          "questionNepali": "निराकरण प्रतिक्रिया (neutralization reaction) को परिभाषा दिनुहोस् ।",
+          "questionEnglish": "Define neutralization reaction.",
           "marks": 1,
-          "sampleAnswer": "नेपालीमा (In Nepali): फलामको धाउलाई प्रशोधन गर्दा चुम्बकीय पृथकीकरण (magnetic separation) विधि अपनाइन्छ, किनभने फलाम चुम्बकीय पदार्थ हो।\n\nIn English: Magnetic separation method is applied to purify iron from its ore because iron is a magnetic substance."
+          "sampleAnswer": "उत्तर: जुन प्रतिक्रियामा अम्ल र क्षारले एकअर्काको गुणलाई नष्ट गरी लवण र पानी बनाउँछन्, त्यसलाई निराकरण प्रतिक्रिया भनिन्छ ।\n\nAnswer: The reaction in which acid and base react to form salt and water, where both properties are lost, is known as a neutralization reaction. Citations: chapter 15, page 391"
         },
         {
           "id": "i",
           "type": "short_answer",
-          "questionNepali": "हाइड्रोकार्बनलाई किन प्राङ्गारिक यौगिक भनिन्छ?",
-          "questionEnglish": "Why are hydrocarbons called organic compounds?",
+          "questionNepali": "सजीवन (Sajiban) को एउटा उपयोगिता लेख्नुहोस् ।",
+          "questionEnglish": "Write one use of Sajiban.",
           "marks": 1,
-          "sampleAnswer": "नेपालीमा (In Nepali): हाइड्रोकार्बनहरू जीवित स्रोतहरू (वनस्पति र जनावर) बाट प्राप्त हुने हुनाले र यिनीहरू कार्बनका मुख्य यौगिकहरू भएकाले यिनीहरूलाई प्राङ्गारिक यौगिक भनिन्छ।\n\nIn English: Hydrocarbons are called organic compounds because they are derived from living sources (plants and animals) and are primary compounds of carbon."
+          "sampleAnswer": "उत्तर: सजीवनको रस जलेको ठाउँमा लगाउन, यसको हाँगाले दाँत माझ्न, र यसको तेल साबुन बनाउन प्रयोग गरिन्छ ।\n\nAnswer: Its juice is used to cure burns, its twigs can be used for brushing teeth, and its oil can be used to make soaps. Citations: chapter 19, page 447"
         }
       ],
       "groupC": [
         {
           "id": "3",
           "type": "long_answer",
-          "questionNepali": "उज्यालो कोठा र अँध्यारो कोठामा विरुवाको वृद्धिमा के फरक पर्छ भनी गरिएको अवलोकनमा एउटा स्वतन्त्र र एउटा आश्रित चर लेख्नुहोस्।",
-          "questionEnglish": "Name one dependent and one independent variable of an observation on the growth rate of plants in a lighted room versus a dark room.",
+          "questionNepali": "स्वतन्त्र चर र आश्रित चर बिच दुईओटा फरक लेख्नुहोस् ।",
+          "questionEnglish": "Write two differences between independent and dependent variables.",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\n* **स्वतन्त्र चर:** प्रकाशको मात्रा (उज्यालो वा अँध्यारो कोठा)।\n* **आश्रित चर:** विरुवाको वृद्धि (जस्तै, उचाइ)।\n\nIn English:\n* **Independent Variable:** The amount of light (lighted or dark room).\n* **Dependent Variable:** The growth of the plant (e.g., its height)."
+          "sampleAnswer": "उत्तर: स्वतन्त्र चर र आश्रित चर बिचका भिन्नताहरू:\n* स्वतन्त्र चरलाई अनुसन्धानकर्ताले चाहेअनुसार परिवर्तन गर्न सक्छन्, जबकि आश्रित चर स्वतन्त्र चरमा आएको परिवर्तनमा निर्भर रहन्छ ।\n* ग्राफ बनाउँदा, स्वतन्त्र चरलाई x-अक्षमा र आश्रित चरलाई y-अक्षमा राखिन्छ ।\n\nAnswer: Differences between independent and dependent variables:\n* The independent variable is manipulated by the researcher, whereas the dependent variable's value depends on the value of the independent variable.\n* While plotting a graph, the independent variable is plotted on the x-axis and the dependent variable is plotted on the y-axis. Citations: chapter 1, pages 4, 7"
         },
         {
           "id": "4",
           "type": "long_answer",
-          "questionNepali": "चिप्लेकिरा (slug) र सिक्युकम्बर (sea cucumber) को फाइलम लेख्नुहोस्।",
-          "questionEnglish": "Write the Phylum of slug and sea cucumber.",
+          "questionNepali": "पिसेस र एम्फिबिया वर्गका जनावरहरूबीच दुईओटा भिन्नता लेख्नुहोस् ।",
+          "questionEnglish": "Write two differences between class Pisces and class Amphibia.",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\n* **चिप्लेकिरा (Slug):** फाइलम मोलस्का (Mollusca)\n* **सिक्युकम्बर (Sea cucumber):** फाइलम इकाइनोडर्माटा (Echinodermata)\n\nIn English:\n* **Slug:** Phylum Mollusca\n* **Sea cucumber:** Phylum Echinodermata"
+          "sampleAnswer": "उत्तर: पिसेस र एम्फिबियाबीचका भिन्नताहरू:\n* पिसेस वर्गका जनावरहरू पानीमा मात्र बस्छन् र गिल्सबाट श्वास फेर्छन्, जबकि एम्फिबिया वर्गका जनावरहरू पानी र जमिन दुवैमा बस्छन् र वयस्क अवस्थामा फोक्सो र छालाबाट श्वास फेर्छन् ।\n* पिसेसको मुटुमा दुई कोठा हुन्छन्, जबकि एम्फिबियाको मुटुमा तीन कोठा हुन्छन् ।\n\nAnswer: Differences between Pisces and Amphibia:\n* Animals of class Pisces live only in water and respire through gills, whereas amphibians live on both land and water and adults respire through lungs and moist skin.\n* Pisces have a two-chambered heart, whereas amphibians have a three-chambered heart. Citations: chapter 2, pages 44, 46"
         },
         {
           "id": "5",
           "type": "long_answer",
-          "questionNepali": "मौरी पालनबाट कृषकलाई हुने कुनै दुई फाइदाहरू लेख्नुहोस्।",
-          "questionEnglish": "Write any two advantages of bee-keeping for farmers.",
+          "questionNepali": "माइटोसिस कोष विभाजनका दुईओटा महत्त्वहरू लेख्नुहोस् ।",
+          "questionEnglish": "Write two significances of mitosis cell division.",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\n१. **मह उत्पादन:** कृषकहरूले मह बेचेर अतिरिक्त आम्दानी गर्न सक्छन्।\n२. **परागसेचन:** मौरीले बालीनालीमा परागसेचन प्रक्रियामा मद्दत गर्छ, जसले गर्दा उत्पादन बढ्छ।\n\nIn English:\n1. **Honey Production:** Farmers can earn extra income by selling honey.\n2. **Pollination:** Bees help in the pollination of crops, which increases agricultural yield."
+          "sampleAnswer": "उत्तर: माइटोसिस कोष विभाजनका महत्त्वहरू:\n* यसले शरीरको वृद्धि र विकासमा मुख्य भूमिका खेल्छ ।\n* यसले चोटपटक लागेको ठाउँमा नयाँ कोषहरू बनाएर घाउ निको पार्न मद्दत गर्छ ।\n* यसले आनुवंशिक स्थिरता कायम राख्छ ।\n\nAnswer: Significances of mitosis cell division:\n* It plays a key role in physical growth and development.\n* It helps regenerate cells in injured areas, returning them to their original state.\n* It maintains genetic stability. Citations: chapter 4, page 76"
         },
         {
           "id": "6",
           "type": "long_answer",
-          "questionNepali": "मियोसिस कोष विभाजनलाई न्यूनीकरण विभाजन भनिन्छ, किन? डिप्लोइड कोष भनेको के हो?",
-          "questionEnglish": "Why is meiosis cell division called reduction division? What is a diploid cell?",
+          "questionNepali": "रातो रक्तकोषका दुईओटा कार्यहरू लेख्नुहोस् ।",
+          "questionEnglish": "Write two functions of Red Blood Cells.",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\nमियोसिस कोष विभाजनमा मातृ कोष (parent cell) बाट बन्ने चारवटा सन्तति कोषहरू (daughter cells) मा क्रोमोजोमको सङ्ख्या आधा हुने भएकाले यसलाई न्यूनीकरण विभाजन भनिन्छ। डिप्लोइड कोष भनेको दुई सेट क्रोमोजोम (2n) भएको कोष हो।\n\nIn English:\nMeiosis is called reduction division because the number of chromosomes in the four daughter cells produced is halved compared to the parent cell. A diploid cell is a cell that contains two sets of chromosomes (2n)."
+          "sampleAnswer": "उत्तर: रातो रक्तकोषका कार्यहरू:\n* यसमा भएको हेमोग्लोबिनले फोक्सोबाट अक्सिजनलाई शरीरका कोषहरूसम्म पुर्‍याउँछ ।\n* यसले कोषहरूमा बनेको कार्बन डाइअक्साइडलाई फोक्सोसम्म फिर्ता ल्याउँछ ।\n\nAnswer: Functions of Red Blood Cells:\n* Hemoglobin in these cells is responsible for the transportation of abundant oxygen to the cells.\n* Hemoglobin also transports carbon dioxide produced by the cells to the lungs. Citations: chapter 5, page 114"
         },
         {
           "id": "7",
           "type": "long_answer",
-          "questionNepali": "इनभिट्रो फर्टिलाइजेसन (IVF) भनेको के हो? छोटकरीमा व्याख्या गर्नुहोस्।",
-          "questionEnglish": "What is In-Vitro Fertilization (IVF)? Explain briefly about it.",
+          "questionNepali": "जलवायु परिवर्तन नियन्त्रण गर्ने कुनै दुई उपायहरू लेख्नुहोस् ।",
+          "questionEnglish": "Write any two measures to control climate change.",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\nइनभिट्रो फर्टिलाइजेसन (IVF) एक सहायक प्रजनन प्रविधि हो जसमा महिलाको डिम्बाशयबाट डिम्ब निकालेर प्रयोगशालामा पुरुषको शुक्रकीटसँग निषेचित गराइन्छ। बनेको भ्रूणलाई केही दिनपछि महिलाको पाठेघरमा प्रत्यारोपण गरिन्छ।\n\nIn English:\nIn-Vitro Fertilization (IVF) is an assisted reproductive technology in which an egg is removed from a woman's ovaries and fertilized with a man's sperm in a laboratory. The resulting embryo is then transferred into the woman's uterus after a few days."
+          "sampleAnswer": "उत्तर: जलवायु परिवर्तन नियन्त्रण गर्ने उपायहरू:\n* **कार्बन उत्सर्जन घटाउने:** सौर्य र वायु ऊर्जा जस्ता वैकल्पिक ऊर्जा स्रोतहरूको प्रयोगलाई प्राथमिकता दिने ।\n* **कार्बन भण्डारणमा जोड दिने:** वृक्षारोपण र वन स्रोतहरूको संरक्षण गरेर बोटबिरुवामा बढी कार्बन भण्डारण गर्ने ।\n* **जनचेतना र व्यवहारमा परिवर्तन:** वातावरणीय मैत्री गतिविधिहरू अपनाएर जलवायु परिवर्तनलाई न्यूनीकरण गर्ने ।\n\nAnswer: Measures to control climate change:\n* **Reducing carbon emission:** Priority should be given to the use of alternative energy sources like solar energy and wind energy.\n* **Emphasizing carbon storage:** Emphasis should be given to the conservation of forest resources through plantation and the conservation of trees.\n* **Public awareness and change in behavior:** We can minimize climate change by making our activities more environmentally friendly. Citations: chapter 6, page 149"
         },
         {
           "id": "8",
           "type": "long_answer",
-          "questionNepali": "बेसार र घोडटाप्रेको एक-एक ओटा उपयोग लेख्नुहोस्।",
-          "questionEnglish": "Write one use each of Turmeric and Asiatic Pennywort.",
+          "questionNepali": "गुरुत्वाकर्षण बलका दुईओटा असरहरू लेख्नुहोस् ।",
+          "questionEnglish": "Write any two effects of gravitational force.",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\n* **बेसार (Turmeric):** यसमा एन्टिसेप्टिक गुण हुन्छ र यसलाई घाउ निको पार्न प्रयोग गरिन्छ।\n* **घोडटाप्रे (Asiatic Pennywort):** यसले स्मरणशक्ति बढाउन मद्दत गर्छ र यसलाई मानसिक तनाव कम गर्न प्रयोग गरिन्छ।\n\nIn English:\n* **Turmeric:** It has antiseptic properties and is used for healing wounds.\n* **Asiatic Pennywort:** It helps improve memory and is used to relieve mental stress."
+          "sampleAnswer": "उत्तर: गुरुत्वाकर्षण बलका असरहरू:\n* यसले सौर्यमण्डललगायत ब्रह्माण्डको अस्तित्वलाई सम्भव बनाएको छ; ग्रहहरू सूर्यको वरिपरि घुम्छन् ।\n* पृथ्वीको सतहमा रहेका वस्तुहरूलाई पृथ्वीको सतहमा टाँसिएर रहन मद्दत गर्छ ।\n\nAnswer: Effects of gravitational force:\n* Gravitational force has made the existence of the universe including the solar system possible; the planets revolve around the sun.\n* Gravitational forces between the earth and the objects on its surface make the objects stick to the surface of the earth. Citations: chapter 7, page 173"
         },
         {
           "id": "9",
           "type": "long_answer",
-          "questionNepali": "निम्न लक्षणहरू देखिने रोगको नाम लेख्नुहोस्: (i) टाउको दुख्ने, नाथ्रो फुट्ने, पसिना आउने (ii) धेरै भोक र तिर्खा लाग्ने, छिनछिनमा पिसाब लाग्ने",
-          "questionEnglish": "Write the name of diseases which have the following symptoms: (i) Headache, nose bleeding, sweating (ii) Excess appetite and thirst, frequent urination",
+          "questionNepali": "जहाज नदीबाट समुद्रमा प्रवेश गर्दा किन थोरै डुब्छ?",
+          "questionEnglish": "Why does a ship sink less when it enters a sea from a river?",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\n(i) उच्च रक्तचाप (High Blood Pressure)\n(ii) मधुमेह (Diabetes)\n\nIn English:\n(i) High Blood Pressure\n(ii) Diabetes"
+          "sampleAnswer": "उत्तर: समुद्रको पानीको घनत्व नदीको पानीभन्दा बढी हुन्छ । तरल पदार्थको घनत्व जति बढी भयो, त्यसले दिने उर्ध्वचाप पनि त्यति नै बढी हुन्छ । बढी उर्ध्वचापले जहाजलाई माथि धकेल्ने भएकोले यो समुद्रमा थोरै डुब्छ ।\n\nAnswer: The density of seawater is more than that of river water. Since upthrust is directly proportional to the density of the liquid, a ship sinks less in seawater than in river water. Citations: chapter 8, page 211"
         },
         {
           "id": "10",
           "type": "long_answer",
-          "questionNepali": "गुरुत्वप्रवेगको मान पृथ्वीको भू-मध्यरेखीय खण्डमा भन्दा ध्रुवीय खण्डमा बढी हुन्छ, किन?",
-          "questionEnglish": "The value of acceleration due to gravity is more in the polar region than the equatorial region, why?",
+          "questionNepali": "समुद्री समीर र स्थलीय समीरलाई छोटकरीमा व्याख्या गर्नुहोस् ।",
+          "questionEnglish": "Explain sea breeze and land breeze briefly.",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\nपृथ्वी ध्रुवमा चेप्टो र भूमध्यरेखामा फुकेको हुनाले ध्रुवीय अर्धव्यास कम हुन्छ। गुरुत्व प्रवेग (g) अर्धव्यासको वर्गसँग व्युत्क्रमानुपातिक (g ∝ 1/R²) हुने भएकाले, अर्धव्यास कम भएको ध्रुवीय क्षेत्रमा 'g' को मान बढी हुन्छ।\n\nIn English:\nSince the Earth is flattened at the poles and bulged at the equator, the polar radius is smaller. As the acceleration due to gravity (g) is inversely proportional to the square of the radius (g ∝ 1/R²), the value of 'g' is greater in the polar region where the radius is smaller."
+          "sampleAnswer": "उत्तर: **समुद्री समीर:** दिउँसो जमिन समुद्रको पानीभन्दा छिटो तातो हुन्छ, जसले गर्दा जमिनमाथि कम चाप र समुद्रमाथि बढी चाप हुन्छ । त्यसैले, चिसो हावा समुद्रबाट जमिनतिर बहन्छ ।\n**स्थलीय समीर:** राति जमिन छिटो चिसो हुन्छ, जसले गर्दा जमिनमाथि बढी चाप र समुद्रमाथि कम चाप हुन्छ । त्यसैले, चिसो हावा जमिनबाट समुद्रतिर बहन्छ ।\n\nAnswer: **Sea Breeze:** During the day, the land heats up faster than the sea. Cold air from the sea begins to flow toward the land.\n**Land Breeze:** At night, the land cools faster than the sea. The cold air flows from the land to the sea. Citations: chapter 9, page 234"
         },
         {
           "id": "11",
           "type": "long_answer",
-          "questionNepali": "गुरुत्व प्रवेग (g) र गुरुत्वाकर्षण अचर (G) मा कुनै दुईओटा फरक लेख्नुहोस्।",
-          "questionEnglish": "Write any two differences between acceleration due to gravity (g) and gravitational constant (G).",
+          "questionNepali": "पूर्ण आन्तरिक परावर्तन हुन आवश्यक दुई अवस्थाहरू लेख्नुहोस् ।",
+          "questionEnglish": "Write two necessary conditions for total internal reflection of light.",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\n१. 'g' को मान स्थानअनुसार परिवर्तन हुन्छ, जबकि 'G' को मान ब्रह्माण्डमा जताततै स्थिर रहन्छ।\n२. 'g' को SI एकाइ m/s² हो, जबकि 'G' को SI एकाइ N m²/kg² हो।\n\nIn English:\n1. The value of 'g' varies from place to place, whereas the value of 'G' is constant throughout the universe.\n2. The SI unit of 'g' is m/s², whereas the SI unit of 'G' is N m²/kg²."
+          "sampleAnswer": "उत्तर: पूर्ण आन्तरिक परावर्तन हुन आवश्यक अवस्थाहरू:\n* प्रकाश सघन माध्यमबाट विरल माध्यममा जानुपर्छ ।\n* सघन माध्यममा बन्ने आपतित कोण क्रिटिकल कोणभन्दा ठूलो हुनुपर्छ ।\n\nAnswer: Necessary conditions for total internal reflection:\n* Light must be travelling from the denser medium to the rarer medium.\n* The angle of incidence must be greater than the critical angle. Citations: chapter 10, page 254"
         },
         {
           "id": "12",
           "type": "long_answer",
-          "questionNepali": "चित्रमा देखाइएको ट्रान्सफर्मर कुन प्रकारको हो? यदि प्राइमरी क्वाइलमा 1000 फन्का र सेकेन्डरी क्वाइलमा 50 फन्का छन् र A मा 220 V भोल्टेज पठाइयो भने B मा कति भोल्टेज उत्पन्न हुन्छ?",
-          "questionEnglish": "What type of transformer is shown in the figure? If there are 1000 turns in the primary coil and 50 in the secondary, and 220 V is supplied to A, what voltage is produced at B?",
+          "questionNepali": "ट्रान्सफर्मरको काम गर्ने सिद्धान्त के हो? यसले DC मा किन काम गर्दैन?",
+          "questionEnglish": "What is the working principle of a transformer? Why does it not work on DC?",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\nयो स्टेप-डाउन ट्रान्सफर्मर हो।\nगणना:\nNp = 1000, Ns = 50, Vp = 220 V, Vs = ?\nVs/Vp = Ns/Np\nVs/220 = 50/1000\nVs = (50 × 220) / 1000 = 11 V\n\nIn English:\nThis is a step-down transformer.\nCalculation:\nNp = 1000, Ns = 50, Vp = 220 V, Vs = ?\nVs/Vp = Ns/Np\nVs/220 = 50/1000\nVs = (50 × 220) / 1000 = 11 V"
+          "sampleAnswer": "उत्तर: ट्रान्सफर्मरले म्युचुअल इन्डक्सनको सिद्धान्तमा काम गर्छ । DC करेन्टमा चुम्बकीय फ्लक्समा परिवर्तन हुँदैन, त्यसैले म्युचुअल इन्डक्सन हुँदैन र भोल्टेज उत्पन्न हुँदैन । त्यसैले, ट्रान्सफर्मरले DC मा काम गर्दैन ।\n\nAnswer: The transformer is based on the principle of mutual induction. Since there is no mutual induction when direct current flows in the coil instead of alternating current, the voltage of d.c. cannot be changed by using a transformer. Citations: chapter 11, page 318"
         },
         {
           "id": "13",
           "type": "long_answer",
-          "questionNepali": "विद्युत चुम्बक प्रयोग भएको एउटा उपकरणको नाम लेखी त्यसको एउटा उपयोगिता पनि लेख्नुहोस्।",
-          "questionEnglish": "Name an instrument in which an electromagnet is used, and write one of its uses.",
+          "questionNepali": "समूह 0 का तत्वहरूका दुईओटा गुणहरू लेख्नुहोस् ।",
+          "questionEnglish": "Write two properties of Group 0 elements.",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\n* **उपकरण:** विद्युत घण्टी (Electric Bell)\n* **उपयोगिता:** यसले विद्युत ऊर्जालाई ध्वनि ऊर्जामा परिणत गरी सचेत गराउने वा बोलाउने काम गर्छ।\n\nIn English:\n* **Instrument:** Electric Bell\n* **Use:** It converts electrical energy into sound energy to alert or call someone."
+          "sampleAnswer": "उत्तर: समूह 0 का तत्वहरू (निस्क्रिय ग्यासहरू) का गुणहरू:\n* यिनीहरूको बाहिरी सेलमा आठ इलेक्ट्रोन हुन्छन् (हेलियम बाहेक), जसले गर्दा तिनीहरू स्थिर हुन्छन् ।\n* यिनीहरू रासायनिक प्रतिक्रियामा भाग लिँदैनन्, त्यसैले यिनीहरूलाई निस्क्रिय ग्यास भनिन्छ ।\n\nAnswer: Properties of Group 0 elements (inert gases):\n* They have eight electrons in their valence shell (except for Helium), making them stable.\n* They do not take part in chemical reactions, so they are known as inert gases. Citations: chapter 14, page 373"
         },
         {
           "id": "14",
           "type": "long_answer",
-          "questionNepali": "बिकर A मा ३०°C तापक्रम भएको फिक्का HCl र बिकर B मा २०°C तापक्रम भएको फिक्का HCl राखिएको छ। दुवैमा समान साइजका चुनढुङ्गाका टुक्राहरू राख्दा कुनमा चाँडो रासायनिक प्रतिक्रिया हुन्छ, किन?",
-          "questionEnglish": "Beaker A contains dilute HCl at 30°C and beaker B contains dilute HCl at 20°C. If limestone pieces of the same size are placed in both beakers, in which beaker will the reaction be faster? Why?",
+          "questionNepali": "रोस्टिङ र क्याल्सिनेसनबिच दुईओटा भिन्नता लेख्नुहोस् ।",
+          "questionEnglish": "Write two differences between roasting and calcination.",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\nबिकर A मा प्रतिक्रिया चाँडो हुन्छ। किनभने तापक्रम बढी हुँदा अणुहरूको गति शक्ति बढ्छ, जसले गर्दा तिनीहरूबीचको ठक्करको दर बढ्छ र रासायनिक प्रतिक्रियाको दर पनि बढ्छ।\n\nIn English:\nThe reaction will be faster in beaker A. This is because at a higher temperature, the kinetic energy of the molecules increases, leading to a higher rate of collision between them and thus a faster rate of chemical reaction."
+          "sampleAnswer": "उत्तर: रोस्टिङ र क्याल्सिनेसनबिचका भिन्नताहरू:\n* रोस्टिङ हावाको उपस्थितिमा गरिन्छ, जबकि क्याल्सिनेसन हावाको अनुपस्थितिमा गरिन्छ ।\n* रोस्टिङ सामान्यतया सल्फाइड धाउका लागि गरिन्छ, जबकि क्याल्सिनेसन कार्बोनेट धाउका लागि गरिन्छ ।\n\nAnswer: Differences between roasting and calcination:\n* Roasting is the process of strongly heating the ore in the presence of oxygen, whereas calcination is done in the absence of air.\n* Roasting is generally done to convert sulphide ores to their oxide ores, whereas calcination is done to convert carbonate ores to their oxides. Citations: chapter 17, page 421"
         },
         {
           "id": "15",
           "type": "long_answer",
-          "questionNepali": "एक विद्यार्थीले मिथेन र अर्कोले प्रोपेनको मोडल बनाए। शिक्षकले दुवै मोडलका छेउको हाइड्रोजन निकालेर दुवैलाई आपसमा जोडिदिनुभयो। अब कुन हाइड्रोकार्बन तयार भयो? यसको संरचना सूत्र पनि बनाउनुहोस्।",
-          "questionEnglish": "A student made a model of methane and another student made a model of propane. Their teacher removed one hydrogen atom from the end of each model and joined them together. Which hydrocarbon is formed now? Write its structural formula too.",
+          "questionNepali": "संतृप्त र असंतृप्त हाइड्रोकार्बनबिच दुईओटा भिन्नता लेख्नुहोस् ।",
+          "questionEnglish": "Write two differences between saturated and unsaturated hydrocarbons.",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\nब्युटेन (Butane) तयार भयो।\nसंरचना सूत्र:\n    H   H   H   H\n    |   |   |   |\nH - C - C - C - C - H\n    |   |   |   |\n    H   H   H   H\n\nIn English:\nButane is formed.\nStructural Formula:\n    H   H   H   H\n    |   |   |   |\nH - C - C - C - C - H\n    |   |   |   |\n    H   H   H   H"
+          "sampleAnswer": "उत्तर: संतृप्त र असंतृप्त हाइड्रोकार्बनबिचका भिन्नताहरू:\n* संतृप्त हाइड्रोकार्बनमा कार्बन परमाणुहरूबीच एकल सहसंयोजक बन्धन हुन्छ, जबकि असंतृप्त हाइड्रोकार्बनमा दोहोरो वा तेहेरो सहसंयोजक बन्धन हुन्छ ।\n* संतृप्त हाइड्रोकार्बनहरू स्थिर र कम प्रतिक्रियाशील हुन्छन्, जबकि असंतृप्त हाइड्रोकार्बनहरू अस्थिर र बढी प्रतिक्रियाशील हुन्छन् ।\n\nAnswer: Differences between saturated and unsaturated hydrocarbons:\n* Saturated hydrocarbons have a single covalent bond between the carbon atoms, whereas unsaturated hydrocarbons have double or triple covalent bonds.\n* Saturated hydrocarbons are stable and less reactive, whereas unsaturated hydrocarbons are unstable and very reactive. Citations: chapter 18, pages 428-429, 431"
         },
         {
           "id": "16",
           "type": "long_answer",
-          "questionNepali": "कीटनाशक औषधीको प्रयोग गर्दा अपनाउनुपर्ने दुईओटा सावधानीहरू लेख्नुहोस्।",
-          "questionEnglish": "Write any two precautions to be taken while using insecticides.",
+          "questionNepali": "फलफूललाई कृत्रिम रूपमा पकाउन प्रयोग गरिने रसायनहरूको प्रयोग गर्दा के-के स्वास्थ्य समस्याहरू देखिन सक्छन्?",
+          "questionEnglish": "What health problems can arise from using chemicals for artificial ripening of fruits?",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\n१. कीटनाशक छर्किँदा शरीर पूरै ढाक्ने कपडा, मास्क, पन्जा र चस्मा लगाउनुपर्छ।\n२. कीटनाशक छर्किसकेपछि तुरुन्तै साबुन पानीले हातखुट्टा र शरीर राम्ररी धुनुपर्छ।\n\nIn English:\n1. Wear protective clothing that covers the whole body, including a mask, gloves, and goggles, when spraying pesticides.\n2. Wash hands, feet, and body thoroughly with soap and water immediately after spraying pesticides."
+          "sampleAnswer": "उत्तर: क्याल्सियम कार्बाइड जस्ता रसायनहरूको अत्यधिक प्रयोगले छालामा जलन, छाला पोल्ने, रातो फोकाहरू देखिने, फोक्सोमा पानी जम्ने, र आँखामा जलन जस्ता स्वास्थ्य समस्याहरू देखिन सक्छन् ।\n\nAnswer: Overuse of chemicals like calcium carbide can cause health problems like skin irritation, skin burning, appearance of red blisters on the skin, lung effusion, and eye irritation. Citations: chapter 19, page 446"
         }
       ],
       "groupD": [
         {
           "id": "17",
           "type": "essay",
-          "questionNepali": "अनलाइनमा बसेर सामाजिक सञ्जाल प्रयोग गर्दा हुने दुईओटा सकारात्मक र दुईओटा नकारात्मक प्रभावहरू लेख्नुहोस्।",
-          "questionEnglish": "Write any two positive and two negative effects of using online social media.",
+          "questionNepali": "मोनोकोट र डाइकोट बिरुवाहरूका चारओटा मुख्य विशेषताहरू वर्णन गर्नुहोस् ।",
+          "questionEnglish": "Describe four main characteristics of monocot and dicot plants.",
           "marks": 4,
-          "sampleAnswer": "नेपालीमा (In Nepali):\n**सकारात्मक प्रभावहरू:**\n१. **सञ्चार र सम्बन्ध:** टाढा रहेका साथीभाइ र परिवारसँग सजिलै सम्पर्कमा रहन सकिन्छ, जसले सम्बन्ध बलियो बनाउँछ।\n२. **सूचना र जागरूकता:** सामाजिक सञ्जालले विश्वभरका समाचार, घटना र सामाजिक मुद्दाहरूबारे छिटो जानकारी प्रदान गर्छ, जसले जागरूकता बढाउँछ।\n\n**नकारात्मक प्रभावहरू:**\n१. **मानसिक स्वास्थ्यमा असर:** अरूको जीवनसँग आफ्नो तुलना, साइबरबुलिङ र अनलाइन दुर्व्यवहारले चिन्ता, डिप्रेसन र आत्मसम्मानमा कमी ल्याउन सक्छ।\n२. **गलत सूचनाको प्रसार:** सामाजिक सञ्जालमा गलत समाचार र अफवाहहरू छिट्टै फैलिन्छन्, जसले समाजमा भ्रम र नकारात्मकता सिर्जना गर्न सक्छ।\n\nIn English:\n**Positive Effects:**\n1. **Communication and Connection:** It allows easy contact with friends and family who are far away, strengthening relationships.\n2. **Information and Awareness:** Social media provides quick information about news, events, and social issues worldwide, increasing awareness.\n\n**Negative Effects:**\n1. **Impact on Mental Health:** Comparison with others' lives, cyberbullying, and online harassment can lead to anxiety, depression, and low self-esteem.\n2. **Spread of Misinformation:** False news and rumors spread rapidly on social media, which can create confusion and negativity in society."
+          "sampleAnswer": "उत्तर: \n**मोनोकोट (Monocotyledon):**\n* **बीउ:** बीउमा एउटा मात्र कोपिला (cotyledon) हुन्छ ।\n* **जरा:** गुच्छे जरा (fibrous root) हुन्छ ।\n* **पात:** पातमा समानान्तर भेनेसन (parallel venation) हुन्छ ।\n* **फूल:** फूलका भागहरू तीन वा तीनको गुणनमा हुन्छन् ।\n\n**डाइकोट (Dicotyledon):**\n* **बीउ:** बीउमा दुईओटा कोपिला (cotyledons) हुन्छन् ।\n* **जरा:** मूल जरा (taproot) प्रणाली हुन्छ ।\n* **पात:** पातमा जालीदार भेनेसन (reticulate venation) हुन्छ ।\n* **फूल:** फूलका भागहरू चार वा पाँचको गुणनमा हुन्छन् ।\n\nAnswer:\n**Monocotyledon:**\n* **Seed:** The seed consists of only one cotyledon. Citations: chapter 2, page 26\n* **Root:** They have a fibrous root. Citations: chapter 2, page 26\n* **Leaf:** They have parallel venation in leaves. Citations: chapter 2, page 26\n* **Flower:** Floral parts are three or multiples of three in number. Citations: chapter 2, page 26\n\n**Dicotyledon:**\n* **Seed:** The seed consists of two cotyledons. Citations: chapter 2, page 28\n* **Root:** They have a taproot system. Citations: chapter 2, page 27\n* **Leaf:** Reticulate venation is found in the leaf. Citations: chapter 2, page 28\n* **Flower:** Floral parts are four or five or multiples of them in number."
         },
         {
           "id": "18",
           "type": "essay",
-          "questionNepali": "के बाबु आमा दुवै कालो हुँदा पनि गोरो सन्तान जन्मन सक्छ? मेन्डलको सिद्धान्तको आधारमा कसरी यो सम्भव भयो? चार्टमा देखाइ कारणसहित व्याख्या गर्नुहोस्।",
-          "questionEnglish": "Can a white-skinned child be born even though both parents are black-skinned? Based on Mendel's principles, how is this possible? Explain with a chart and reason.",
+          "questionNepali": "कृत्रिम गर्भाधान (Artificial Insemination) र इन भिट्रो फर्टिलाइजेसन (IVF) बीच के फरक छ? दुवैका एक-एक फाइदा लेख्नुहोस् ।",
+          "questionEnglish": "What is the difference between Artificial Insemination (AI) and In-Vitro Fertilization (IVF)? Write one advantage of each.",
           "marks": 4,
-          "sampleAnswer": "नेपालीमा (In Nepali):\nहो, दुवै बाबु आमा कालो हुँदा पनि गोरो सन्तान जन्मन सक्छ। यो तब सम्भव हुन्छ जब दुवै अभिभावक ठिमाहा (hybrid) कालो (Bb) हुन्छन्, जहाँ कालो रङ्गको जीन (B) प्रबल र गोरो रङ्गको जीन (b) लुप्त हुन्छ।\n\n**कारण:** मेन्डलको ग्यामेटको शुद्धताको नियमअनुसार, ग्यामेट बन्ने क्रममा जीनहरू छुट्टिन्छन्। यदि दुवै अभिभावकबाट लुप्त जीन (b) भएको ग्यामेटहरू मिल्न गएमा, सन्तानको जिनोटाइप (bb) हुन्छ, जसले गर्दा गोरो सन्तान जन्मिन्छ।\n\n**चार्ट:**\n* **अभिभावक (Parents):** ठिमाहा कालो (Bb) × ठिमाहा कालो (Bb)\n* **ग्यामेटहरू (Gametes):** (B), (b) × (B), (b)\n* **दोस्रो वंश (F₂ Generation):**\n  * BB (शुद्ध कालो)\n  * Bb (ठिमाहा कालो)\n  * Bb (ठिमाहा कालो)\n  * bb (शुद्ध गोरो)\nयसबाट २५% सम्भावना गोरो सन्तान जन्मिने देखिन्छ।\n\nIn English:\nYes, a white-skinned child can be born to two black-skinned parents. This is possible if both parents are hybrid black (Bb), where the gene for black skin (B) is dominant and the gene for white skin (b) is recessive.\n\n**Reason:** According to Mendel's Law of Segregation, genes separate during gamete formation. If gametes containing the recessive gene (b) from both parents fuse, the offspring will have the genotype (bb), resulting in a white-skinned child.\n\n**Chart:**\n* **Parents:** Hybrid Black (Bb) × Hybrid Black (Bb)\n* **Gametes:** (B), (b) × (B), (b)\n* **F₂ Generation:**\n  * BB (Pure Black)\n  * Bb (Hybrid Black)\n  * Bb (Hybrid Black)\n  * bb (Pure White)\nThis shows there is a 25% probability of having a white-skinned child."
+          "sampleAnswer": "उत्तर: **फरक:**\nकृत्रिम गर्भाधानमा, उन्नत जातको भालेबाट सङ्कलन गरिएको वीर्यलाई उपकरणको माध्यमबाट पोथीको गर्भाशयमा राखेर गर्भाधान गराइन्छ ।\nइन भिट्रो फर्टिलाइजेसनमा, पोथीको डिम्ब र भालेको शुक्रकीटलाई प्रयोगशालामा पेट्रीडिसमा निषेचन गराई बनेको भ्रूणलाई पोथीको गर्भाशयमा प्रत्यारोपण गरिन्छ ।\n\n**फाइदाहरू:**\n* **कृत्रिम गर्भाधानको फाइदा:** यसले गर्भाधानको दर बढाउँछ र भाले जनावर पाल्नुपर्ने खर्च बचाउँछ ।\n* **IVF को फाइदा:** यसले बाँझोपन र आनुवंशिक समस्या भएका दम्पतीहरूलाई सन्तान प्राप्त गर्न मद्दत गर्छ ।\n\nAnswer: **Difference:**\nIn artificial insemination (AI), semen collected from advanced breeds of male is allowed to enter the female reproductive tract at the right time through the use of equipment. Citations: chapter 4, page 102\nIn In-Vitro Fertilization (IVF), a mature ovum from the female's ovary is fused with the male's sperm in a laboratory dish, and the resulting embryo is transferred to the female’s uterus. Citations: chapter 4, page 105\n\n**Advantages:**\n* **Advantage of AI:** It increases the rate of fertilization and saves the expense of rearing males for breeding. Citations: chapter 4, page 103\n* **Advantage of IVF:** It is the best method of conception for couples who are unable to conceive due to various problems related to fertility and genetic problems. Citations: chapter 4, page 105"
         },
         {
           "id": "19",
           "type": "essay",
-          "questionNepali": "८०°C तापक्रम भएको 1 kg को फलामको डल्लोलाई २०°C तापक्रमसम्म चिस्याउँदा कति तापशक्ति गुमाउँछ? (फलामको विशिष्ट तापधारण क्षमता = 460 J/kg°C)। पानीलाई ०°C देखि १०°C सम्म तताउँदा तापक्रम र पानीको आयतनको सम्बन्ध ग्राफमा देखाउनुहोस्।",
-          "questionEnglish": "An iron ball of mass 1 kg at 80°C is cooled to 20°C. How much heat energy is lost by the iron ball? (Specific heat capacity of iron = 460 J/kg°C). Draw a graph that shows the relationship between temperature and volume when water is heated from 0°C to 10°C.",
+          "questionNepali": "मानव आँखाको सफा चित्र बनाई यसका मुख्य भागहरूको कार्य वर्णन गर्नुहोस् ।",
+          "questionEnglish": "Draw a neat diagram of the human eye and describe the functions of its main parts.",
           "marks": 4,
-          "sampleAnswer": "नेपालीमा (In Nepali):\n**गणना:**\nयहाँ, पिण्ड (m) = 1 kg\nविशिष्ट ताप धारण क्षमता (s) = 460 J/kg°C\nतापक्रममा परिवर्तन (dT) = 80°C - 20°C = 60°C\nगुमेको ताप शक्ति (Q) = m × s × dT\nQ = 1 × 460 × 60 = 27600 J\n\n**ग्राफ:**\n(विद्यार्थीले एउटा ग्राफ कोर्नुपर्छ जसको x-अक्षमा तापक्रम (°C) र y-अक्षमा आयतन (Volume) हुन्छ। ग्राफले ०°C बाट ४°C सम्म आयतन घट्दै गएको र त्यसपछि ४°C बाट १०°C सम्म बढ्दै गएको देखाउनुपर्छ, जहाँ ४°C मा आयतन न्यूनतम हुन्छ।)\n\nIn English:\n**Calculation:**\nGiven, Mass (m) = 1 kg\nSpecific heat capacity (s) = 460 J/kg°C\nChange in temperature (dT) = 80°C - 20°C = 60°C\nHeat energy lost (Q) = m × s × dT\nQ = 1 × 460 × 60 = 27600 J\n\n**Graph:**\n(The student should draw a graph with Temperature (°C) on the x-axis and Volume on the y-axis. The graph should show the volume decreasing from 0°C to 4°C, and then increasing from 4°C to 10°C, with the minimum volume at 4°C.)"
+          "sampleAnswer": "उत्तर: (Note: A neat, labeled diagram of the human eye must be drawn.)\n\n**मुख्य भागहरूको कार्य:**\n* **कोर्निया (Cornea):** यो आँखाको अगाडिको पारदर्शी तह हो जसले प्रकाशलाई भित्र पस्न दिन्छ र प्रकाशलाई रेटिनामा केन्द्रित गर्न मद्दत गर्छ ।\n* **आइरिस (Iris):** यसले पुतलीको आकारलाई नियन्त्रण गरेर आँखामा प्रवेश गर्ने प्रकाशको मात्रालाई समायोजन गर्छ ।\n* **लेन्स (Lens):** यसले प्रकाशका किरणहरूलाई थप आवर्तन गरी रेटिनामा स्पष्ट आकृति बनाउन मद्दत गर्छ ।\n* **रेटिना (Retina):** यो प्रकाश-संवेदनशील कोषहरूको तह हो जहाँ वस्तुको आकृति बन्छ । यसमा रहेका रड र कोन कोषहरूले प्रकाश र रङ पत्ता लगाउँछन् ।\n\nAnswer: (Note: A neat, labeled diagram of the human eye must be drawn.)\n\n**Functions of Main Parts:**\n* **Cornea:** A transparent layer in front of the eye that allows light to enter and helps to focus light on the retina. Citations: chapter 10, page 279\n* **Iris:** It changes the size of the pupil, thus controlling the amount of light entering the eye. Citations: chapter 10, page 279\n* **Lens:** It refracts the light rays further to converge onto the retina. Citations: chapter 10, page 280\n* **Retina:** A layer of light-sensitive cells where the image is formed. Its rod and cone cells detect brightness and color. Citations: chapter 10, page 280"
         },
         {
           "id": "20",
           "type": "essay",
-          "questionNepali": "काँच र हिरामा, हिरा बढी चम्किनुका दुईओटा कारणहरू लेख्नुहोस्। सेतो प्रकाशलाई प्रिज्मबाट पठाउँदा सात अलग-अलग रङमा विच्छेदन हुने प्रक्रियाको चित्र बनाउनुहोस् र रङहरूको नाम क्रमसँग लेख्नुहोस्।",
-          "questionEnglish": "Between glass and diamond, write two reasons why diamond shines more. Draw a diagram to show the splitting of white light into seven colors when it passes through a prism, and label the colors in the correct order.",
+          "questionNepali": "मोटर असर र फ्याराडेको विद्युत चुम्बकीय उपपादनको नियमलाई व्याख्या गर्नुहोस् ।",
+          "questionEnglish": "Explain the motor effect and Faraday's law of electromagnetic induction.",
           "marks": 4,
-          "sampleAnswer": "नेपालीमा (In Nepali):\n**हिरा बढी चम्किनुका कारणहरू:**\n१. **उच्च आवर्तनांक (High Refractive Index):** हिराको आवर्तनांक (≈2.42) काँचको (≈1.5) भन्दा धेरै बढी हुन्छ, जसले गर्दा प्रकाश बढी बाङ्गिन्छ।\n२. **कम क्रिटिकल कोण (Low Critical Angle):** हिराको क्रिटिकल कोण (≈24°) धेरै कम हुन्छ। यसले गर्दा भित्र पसेको प्रकाश सजिलै बाहिर निस्कन पाउँदैन र पटक-पटक पूर्ण आन्तरिक परावर्तन हुन्छ, जसले गर्दा यो चम्किलो देखिन्छ।\n\n**चित्र:**\n(विद्यार्थीले एउटा प्रिज्मको चित्र कोरेर त्यसमा सेतो प्रकाश प्रवेश गराई सातवटा रङमा छुट्टिएको देखाउनुपर्छ। रङहरूको क्रम तलबाट माथितिर बैजनी, आकासे, नीलो, हरियो, पहेँलो, सुन्तला र रातो (VIBGYOR) हुनुपर्छ।)\n\nIn English:\n**Reasons why diamond shines more:**\n1. **High Refractive Index:** Diamond has a much higher refractive index (≈2.42) than glass (≈1.5), which causes light to bend more significantly.\n2. **Low Critical Angle:** The critical angle of diamond is very low (≈24°). This means that light entering the diamond does not easily escape and undergoes multiple total internal reflections, making it sparkle.\n\n**Diagram:**\n(The student should draw a diagram of a prism, showing a ray of white light entering and dispersing into seven colors. The order of colors from bottom to top must be Violet, Indigo, Blue, Green, Yellow, Orange, and Red (VIBGYOR).)"
+          "sampleAnswer": "उत्तर: **मोटर असर:** चुम्बकीय क्षेत्रमा राखिएको तारमा करेन्ट प्रवाह गर्दा, तारमा भएको करेन्टले बनाउने चुम्बकीय क्षेत्र र बाहिरी चुम्बकीय क्षेत्रबीचको अन्तरक्रियाले तारमा बल उत्पन्न भई गति पैदा हुन्छ । यही प्रक्रियालाई मोटर असर भनिन्छ । विद्युतीय मोटर यही सिद्धान्तमा काम गर्छ ।\n\n**फ्याराडेको विद्युत चुम्बकीय उपपादनको नियम:** जब कुनै कन्डक्टर र चुम्बकबीच सापेक्षिक गति हुन्छ, कन्डक्टरसँग जोडिएको चुम्बकीय फ्लक्समा परिवर्तन आउँछ, जसले गर्दा कन्डक्टरमा e.m.f. (भोल्टेज) उत्पन्न हुन्छ । उत्पन्न हुने e.m.f. को परिमाण चुम्बकीय फ्लक्स परिवर्तनको दरसँग सोझै समानुपातिक हुन्छ । जेनेरेटर यही सिद्धान्तमा काम गर्छ ।\n\nAnswer: **Motor Effect:** The production of motion in a wire placed in a magnetic field when current is passed through it is called the motor effect. The force is produced due to the interaction between the magnetic field of the permanent magnet and that developed in the current-carrying wire. Electric motors work on this principle. Citations: chapter 11, page 311\n\n**Faraday's Law of Electromagnetic Induction:** When there is relative motion between a conductor and a magnet, an electromotive force (e.m.f.) is induced in the conductor. The magnitude of such electromotive force is directly proportional to the rate of change of the magnetic flux linked with the conductor. Generators work on this principle. Citations: chapter 11, pages 313-314"
         },
         {
           "id": "21",
           "type": "essay",
-          "questionNepali": "प्लाज्मामा पाइने तीनओटा प्रोटिनको नाम लेख्नुहोस्। रगत जम्न सहयोग गर्ने प्रोटिन हटाएपछिको प्लाज्मालाई के भनिन्छ?",
-          "questionEnglish": "Write the names of three proteins found in plasma. What is the plasma called after the removal of the protein that helps in the clotting of blood?",
+          "questionNepali": "पेरियोडिक तालिकाको कुनै पिरियडमा बायाँबाट दायाँ जाँदा पारमाणविक आकार, धात्विक गुण र रासायनिक सक्रियतामा कस्तो परिवर्तन हुन्छ, कारणसहित व्याख्या गर्नुहोस् ।",
+          "questionEnglish": "Explain the changes in atomic size, metallic character, and chemical reactivity when moving from left to right in a period of the periodic table, with reasons.",
           "marks": 4,
-          "sampleAnswer": "नेपालीमा (In Nepali):\n**प्लाज्मामा पाइने तीन प्रोटिनहरू हुन्:**\n१. **एल्बुमिन (Albumin):** यसले रगतको पानीको मात्रा नियन्त्रण गर्छ।\n२. **ग्लोबुलिन (Globulin):** यसले शरीरको प्रतिरक्षा प्रणालीमा मद्दत गर्छ।\n३. **फाइब्रिनोजेन (Fibrinogen):** यसले रगत जमाउन मद्दत गर्छ।\n\nरगत जम्न सहयोग गर्ने प्रोटिन (फाइब्रिनोजेन) हटाएपछिको प्लाज्मालाई **सिरम (Serum)** भनिन्छ।\n\nIn English:\n**Three proteins found in plasma are:**\n1. **Albumin:** It regulates the amount of water in the blood.\n2. **Globulin:** It helps in the body's immune system.\n3. **Fibrinogen:** It helps in the clotting of blood.\n\nThe plasma after the removal of the clotting protein (fibrinogen) is called **Serum**."
+          "sampleAnswer": "उत्तर: पिरियडमा बायाँबाट दायाँ जाँदा:\n* **पारमाणविक आकार (Atomic Size):** घट्दै जान्छ । किनभने, सेलहरूको सङ्ख्या उही रहन्छ तर न्युक्लियसमा प्रोटोनको सङ्ख्या बढ्छ, जसले गर्दा न्युक्लियसको आकर्षण बल बढ्छ र परमाणु खुम्चिन्छ ।\n* **धात्विक गुण (Metallic Character/Electropositivity):** घट्दै जान्छ । किनभने, पारमाणविक आकार घट्दा इलेक्ट्रोन गुमाउने क्षमता घट्छ ।\n* **रासायनिक सक्रियता (Chemical Reactivity):** पहिले घट्छ (धातुहरूमा) र त्यसपछि बढ्छ (अधातुहरूमा) । सोडियम (Na) सबैभन्दा बढी सक्रिय धातु हो भने क्लोरीन (Cl) सबैभन्दा बढी सक्रिय अधातु हो (तेस्रो पिरियडमा) ।\n\nAnswer: Moving from left to right in a period:\n* **Atomic Size:** Decreases. This is because the number of shells remains the same, but the number of protons in the nucleus increases, leading to a stronger nuclear attraction force that contracts the atom. Citations: chapter 14, page 374\n* **Metallic Character (Electropositivity):** Decreases. As the atomic size decreases, the tendency to lose electrons decreases. Citations: chapter 14, page 375\n* **Chemical Reactivity:** First decreases (for metals) and then increases (for non-metals). For example, in the third period, Sodium (Na) is the most reactive metal, while Chlorine (Cl) is the most reactive non-metal. Citations: chapter 14, page 376"
         },
         {
           "id": "22",
           "type": "essay",
-          "questionNepali": "सोडियम र पोटासियममा कुन तत्व बढी सक्रिय हुन्छ, किन? क्लोरिनको उपसेलको आधारमा इलेक्ट्रोन विन्यास लेख्नुहोस् र यसको पिरियोडिक तालिकाको समूह उल्लेख गर्नुहोस्।",
-          "questionEnglish": "Which element is more reactive between sodium and potassium, why? Write the electronic configuration of chlorine on the basis of sub-shell and write its group in the periodic table.",
+          "questionNepali": "प्रयोगशालामा कार्बन डाइअक्साइड ग्यास बनाउने विधिको नामाङ्कित चित्रसहित वर्णन गर्नुहोस् । यसका दुई उपयोगिताहरू लेख्नुहोस् ।",
+          "questionEnglish": "Describe the laboratory preparation of carbon dioxide gas with a labeled diagram. Write two of its uses.",
           "marks": 4,
-          "sampleAnswer": "नेपालीमा (In Nepali):\n**पोटासियम (K)** सोडियम (Na) भन्दा बढी सक्रिय हुन्छ।\n**कारण:** पोटासियमको परमाणु आकार सोडियमको भन्दा ठूलो हुन्छ। ठूलो आकारको कारणले, भ्यालेन्स इलेक्ट्रोन र न्युक्लियसबीचको आकर्षण बल कम हुन्छ, जसले गर्दा पोटासियमले आफ्नो भ्यालेन्स इलेक्ट्रोन सोडियमभन्दा सजिलै गुमाउन सक्छ, त्यसैले यो बढी प्रतिक्रियाशील हुन्छ।\n\n**क्लोरिन (Cl) को इलेक्ट्रोन विन्यास:** 1s², 2s²2p⁶, 3s²3p⁵\n**समूह:** VIIA (वा 17)\n\nIn English:\n**Potassium (K)** is more reactive than sodium (Na).\n**Reason:** Potassium has a larger atomic size than sodium. Due to its larger size, the force of attraction between the nucleus and the valence electron is weaker, which allows potassium to lose its valence electron more easily than sodium, making it more reactive.\n\n**Electronic configuration of Chlorine (Cl):** 1s², 2s²2p⁶, 3s²3p⁵\n**Group:** VIIA (or 17)"
+          "sampleAnswer": "उत्तर: **प्रयोगशालामा कार्बन डाइअक्साइड ग्यास बनाउने विधि:**\nप्रयोगशालामा कार्बन डाइअक्साइड ग्यास चुनढुङ्गा (CaCO₃) र फिक्का हाइड्रोक्लोरिक एसिड (dil. HCl) बीचको रासायनिक प्रतिक्रियाबाट बनाइन्छ ।\n**रासायनिक समीकरण:** CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g)\n\n**विधि:** उल्फको बोतलमा चुनढुङ्गाका टुक्राहरू राखेर त्यसमाथि थिसल फनेलबाट फिक्का HCl खन्याइन्छ । उत्पन्न भएको ग्यासलाई डेलिभरी ट्युबमार्फत हावाको माथिल्लो विस्थापन (upward displacement of air) विधिद्वारा ग्यास जारमा जम्मा गरिन्छ किनभने यो हावाभन्दा गह्रौं हुन्छ ।\n\n(Note: A neat, labeled diagram of the laboratory preparation of CO₂ must be drawn.)\n\n**उपयोगिताहरू:**\n* यो आगो निभाउन प्रयोग गरिन्छ (fire extinguisher) ।\n* यो कोक, फ्यान्टा जस्ता नरम पेय पदार्थहरूमा मिसाइन्छ ।\n* बोटबिरुवाहरूले प्रकाश संश्लेषणका लागि यसलाई प्रयोग गर्छन् ।\n\nAnswer: **Laboratory preparation of Carbon Dioxide Gas:**\nIn the laboratory, carbon dioxide gas is prepared by the chemical reaction of limestone (CaCO₃) with dilute hydrochloric acid (dil. HCl). Citations: chapter 16, page 396\n**Chemical Equation:** CaCO₃(s) + 2HCl(aq) → CaCl₂(aq) + H₂O(l) + CO₂(g)\n\n**Procedure:** Pieces of limestone are kept in a Woulfe's bottle, and dil. HCl is poured through a thistle funnel. The gas produced is collected in a gas jar by the upward displacement of air because it is heavier than air. Citations: chapter 16, page 396\n\n(Note: A neat, labeled diagram of the laboratory preparation of CO₂ must be drawn.)\n\n**Uses:**\n* It is used to extinguish fire (in fire extinguishers). Citations: chapter 16, page 400\n* It is dissolved in soft drinks. Citations: chapter 16, page 400\n* Plants use carbon dioxide for photosynthesis. Citations: chapter 16, page 399"
         },
         {
           "id": "23",
           "type": "essay",
-          "questionNepali": "प्रयोगशालामा एमोनिया ग्यास बनाउने विधिको सफा चित्र बनाई कुनै एउटा भागको नामाकरण गर्नुहोस्। यस प्रक्रियामा प्रयोग हुने लाइम टावरको काम के हो?",
-          "questionEnglish": "Draw a neat diagram of the apparatus used to prepare ammonia gas in the laboratory and label any one part. What is the function of the lime tower in this process?",
+          "questionNepali": "रासायनिक मल र कीटनाशक विषादीको अत्यधिक प्रयोगले हुने रासायनिक प्रदूषण र यसका असरहरूलाई वर्णन गर्नुहोस् । यसलाई व्यवस्थापन गर्ने उपायहरू के-के हुन्?",
+          "questionEnglish": "Describe the chemical pollution caused by the excessive use of chemical fertilizers and pesticides and its effects. What are the measures to manage it?",
           "marks": 4,
-          "sampleAnswer": "नेपालीमा (In Nepali):\n(विद्यार्थीले प्रयोगशालामा एमोनिया ग्यास बनाउने उपकरणको सफा चित्र बनाउनुपर्छ, जसमा स्ट्यान्डमा राखिएको हार्ड ग्लास टेस्ट ट्युब, लाइम टावर र घोप्टो ग्यास जार देखाइएको हुनुपर्छ। कुनै एक भाग, जस्तै 'लाइम टावर' वा 'हार्ड ग्लास टेस्ट ट्युब' नामाकरण गर्नुपर्छ।)\n\n**लाइम टावरको काम:**\nलाइम टावरमा क्याल्सियम अक्साइड (CaO) राखिएको हुन्छ। यसको मुख्य काम प्रतिक्रियाबाट उत्पन्न भएको एमोनिया ग्यासमा रहेको चिस्यान (moisture) लाई सोसेर सुक्खा एमोनिया ग्यास बनाउनु हो।\n\nIn English:\n(The student should draw a neat diagram of the apparatus for the laboratory preparation of ammonia gas, showing a hard glass test tube on a stand, a lime tower, and an inverted gas jar. Any one part, such as 'Lime tower' or 'Hard glass test tube', should be labeled.)\n\n**Function of the Lime Tower:**\nThe lime tower contains calcium oxide (CaO). Its main function is to dry the ammonia gas produced from the reaction by absorbing any moisture present in it."
+          "sampleAnswer": "उत्तर: **रासायनिक प्रदूषण र असरहरू:**\nरासायनिक मल र कीटनाशक विषादीको अत्यधिक प्रयोगले माटोको गुणस्तर घटाउँछ र त्यहाँका सूक्ष्मजीवहरूलाई नष्ट गर्छ । यी रसायनहरू वर्षाको पानीसँग बगेर पानीका स्रोतहरूमा मिसिन्छन्, जसले जल प्रदूषण गर्छ र जलीय जीवहरूलाई हानि पुर्‍याउँछ । यस्ता रसायनहरू खाद्य शृङ्खला (food chain) मा प्रवेश गरेर मानव स्वास्थ्यमा पनि नकारात्मक असर पार्छन्, जसले क्यान्सर जस्ता गम्भीर रोगहरू निम्त्याउन सक्छ ।\n\n**व्यवस्थापनका उपायहरू:**\n* **जैविक मलको प्रयोग:** रासायनिक मलको सट्टा कम्पोस्ट मल जस्ता जैविक मलको प्रयोग गर्ने ।\n* **एकीकृत कीट व्यवस्थापन (IPM):** रासायनिक विषादीको सट्टा जैविक र स्थानीय विधिहरू अपनाउने ।\n* **जनचेतना:** किसानहरूलाई रासायनिक मल र विषादीको सही प्रयोग र त्यसका असरहरूबारे सचेत गराउने ।\n* **नियमन:** सरकारले हानिकारक विषादीहरूको प्रयोगमा प्रतिबन्ध लगाउने र नियमन गर्ने ।\n\nAnswer: **Chemical Pollution and its Effects:**\nExcessive use of pesticides and fertilizers pollutes the soil. These insecticides and fertilizers reach the sources of water on getting mixed with rainwater and affect the ecosystem there, destroying aquatic animals. These chemicals also enter the food chain, causing negative impacts on human health. Citations: chapter 19, pages 451, 456\n\n**Management Measures:**\n* **Use of organic fertilizers:** Organic or compost fertilizer should be used instead of chemical fertilizers. Citations: chapter 19, page 458\n* **Integrated Pest Management (IPM):** We should follow the integrated pest management method as far as possible. Citations: chapter 19, page 455\n* **Public Awareness:** Raising awareness among farmers about the proper use and effects of chemical fertilizers and pesticides.\n* **Regulation:** Banning and regulating the use of harmful pesticides by the government. Citations: chapter 19, page 452"
         }
       ]
     }
   }
 ]
+

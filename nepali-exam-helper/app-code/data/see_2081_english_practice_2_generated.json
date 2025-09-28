@@ -1,8 +1,8 @@
 [
   {
-    "_id": "see_2081_english_practice_2_generated",
-    "title": "SEE 2081 English Practice Test 2 (Generated Questions)",
-    "titleNepali": "SEE २०८१ अंग्रेजी अभ्यास परीक्षा २ (उत्पन्न प्रश्नहरू)",
+    "_id": "see_2081_english_practice_2_generated_verified",
+    "title": "SEE 2081 English Practice Test 2",
+    "titleNepali": "SEE २०८१ अंग्रेजी अभ्यास परीक्षा २",
     "subject": "english",
     "year": 2081,
     "totalMarks": 75,
@@ -10,67 +10,70 @@
     "instructionsEnglish": "Candidates are required to answer the questions in their own words as far as practicable. Figures in the margin indicate the full marks. Attempt all the questions.",
     "isActive": true,
     "createdAt": {
-      "$date": "2025-08-30T19:22:10.000Z"
+      "$date": "2025-09-07T15:00:00.000Z"
     },
     "updatedAt": {
-      "$date": "2025-08-30T19:22:10.000Z"
+      "$date": "2025-09-07T15:00:00.000Z"
     }
   },
   {
     "_id": {
-      "$oid": "687d809a2f3df9d071c52111"
+      "$oid": "687d809a2f3df9d071c52113"
     },
-    "testId": "see_2081_english_practice_2_generated",
+    "testId": "see_2081_english_practice_2_generated_verified",
     "questions": [
       {
         "questionNumber": 1,
         "type": "reading_comprehension",
-        "title": "Read the poem and write 'TRUE' for true and 'FALSE' for the false statements.",
+        "title": "Read the poem and do the tasks.",
         "marks": 5,
         "passage": {
-          "title": "If—",
-          "content": "If you can keep your head when all about you\n    Are losing theirs and blaming it on you,\nIf you can trust yourself when all men doubt you,\n    But make allowance for their doubting too;\nIf you can wait and not be tired by waiting,\n    Or being lied about, don’t deal in lies,\nOr being hated, don’t give way to hating,\n    And yet don’t look too good, nor talk too wise:\n\nIf you can dream—and not make dreams your master;\n    If you can think—and not make thoughts your aim;\nIf you can meet with Triumph and Disaster\n    And treat those two impostors just the same..."
+          "title": "Leisure",
+          "author": "William Henry Davies",
+          "content": "What is this life if, full of care,\nWe have no time to stand and stare.\nNo time to stand beneath the boughs\nAnd stare as long as sheep or cows.\nNo time to see, when woods we pass,\nWhere squirrels hide their nuts in grass.\nNo time to see, in broad daylight,\nStreams full of stars, like skies at night.\nNo time to turn at Beauty’s glance,\nAnd watch her feet, how they can dance.\nNo time to wait till her mouth can\nEnrich that smile her eyes began.\nA poor life this if, full of care,\nWe have no time to stand and stare."
         },
-        "subQuestions": [
+        "subSections": [
           {
-            "id": "i",
+            "id": "A",
             "type": "true_false",
-            "questionEnglish": "The poem suggests that one should get angry when others are losing their calm.",
-            "correctAnswer": "FALSE",
-            "explanation": "Explanation (English): The poem advises the opposite: \"If you can keep your head when all about you / Are losing theirs...\" which means to stay calm.\nব্যাখ্যা (Nepali Explanation): कविताले उल्टो सल्लाह दिन्छ: \"If you can keep your head when all about you / Are losing theirs...\" जसको अर्थ शान्त रहनु हो।",
-            "marks": 1
-          },
-          {
-            "id": "ii",
-            "type": "true_false",
-            "questionEnglish": "According to the poet, it is important to trust yourself even when others doubt you.",
-            "correctAnswer": "TRUE",
-            "explanation": "Explanation (English): The line \"If you can trust yourself when all men doubt you\" directly supports this statement.\nব্যাখ্যা (Nepali Explanation): \"If you can trust yourself when all men doubt you\" भन्ने पङ्क्तिले यो कथनलाई सीधै समर्थन गर्दछ।",
-            "marks": 1
-          },
-          {
-            "id": "iii",
-            "type": "true_false",
-            "questionEnglish": "The poet recommends telling lies if others lie about you.",
-            "correctAnswer": "FALSE",
-            "explanation": "Explanation (English): The poem advises, \"Or being lied about, don’t deal in lies,\" meaning one should not lie in return.\nব্যাখ্যা (Nepali Explanation): कविताले सल्लाह दिन्छ, \"Or being lied about, don’t deal in lies,\" जसको अर्थ बदलामा झूटो बोल्नु हुँदैन भन्ने हो।",
-            "marks": 1
-          },
-          {
-            "id": "iv",
-            "type": "true_false",
-            "questionEnglish": "One should allow dreams to become their master.",
-            "correctAnswer": "FALSE",
-            "explanation": "Explanation (English): The poem says, \"If you can dream—and not make dreams your master,\" which means one should control their dreams, not be controlled by them.\nব্যাখ্যা (Nepali Explanation): कवितामा भनिएको छ, \"If you can dream—and not make dreams your master,\" जसको अर्थ सपनालाई नियन्त्रणमा राख्नुपर्छ, सपनाबाट नियन्त्रित हुनुहुँदैन भन्ने हो।",
-            "marks": 1
-          },
-          {
-            "id": "v",
-            "type": "true_false",
-            "questionEnglish": "Triumph and Disaster should be treated equally.",
-            "correctAnswer": "TRUE",
-            "explanation": "Explanation (English): The poem suggests one should \"meet with Triumph and Disaster / And treat those two impostors just the same,\" indicating they should be handled with the same balanced attitude.\nব্যাখ্যা (Nepali Explanation): कविताले सुझाव दिन्छ कि \"meet with Triumph and Disaster / And treat those two impostors just the same,\" जसले संकेत गर्दछ कि तिनीहरूलाई उस्तै सन्तुलित दृष्टिकोणले हेर्नुपर्छ।",
-            "marks": 1
+            "title": "Write ‘TRUE’ for true and ‘FALSE’ for the false statements.",
+            "subQuestions": [
+              {
+                "id": "i",
+                "questionEnglish": "The poet believes a life full of worries and without leisure is a good life.",
+                "correctAnswer": "FALSE",
+                "explanationNepali": "कविताको अन्तिम दुई पङ्क्तिले भन्छ, \"A poor life this if, full of care, / We have no time to stand and stare,\" जसको अर्थ हो कि फुर्सद बिनाको चिन्ताले भरिएको जीवन खराब (poor) जीवन हो।",
+                "explanationEnglish": "The last two lines of the poem state, \"A poor life this if, full of care, / We have no time to stand and stare,\" which means a life full of worries without leisure is a poor life. Citations: chapter 4, page 51."
+              },
+              {
+                "id": "ii",
+                "questionEnglish": "The poem suggests we should be as leisurely as sheep and cows.",
+                "correctAnswer": "TRUE",
+                "explanationNepali": "कवितामा भनिएको छ, \"No time to stand beneath the boughs / And stare as long as sheep or cows,\" जसले हामीलाई भेडा र गाईवस्तु जस्तै फुर्सदमा प्रकृतिलाई हेर्न समय निकाल्न सुझाव दिन्छ।",
+                "explanationEnglish": "The poem says, \"No time to stand beneath the boughs / And stare as long as sheep or cows,\" suggesting we should take time to observe nature leisurely, like those animals. Citations: chapter 4, page 51."
+              },
+              {
+                "id": "iii",
+                "questionEnglish": "The poem mentions that squirrels store their food in trees.",
+                "correctAnswer": "FALSE",
+                "explanationNepali": "कविताले \"Where squirrels hide their nuts in grass\" भन्छ, जसको अर्थ हो कि लोखर्केहरूले आफ्नो खाना घाँसमा लुकाउँछन्, रूखमा होइन।",
+                "explanationEnglish": "The poem states, \"Where squirrels hide their nuts in grass,\" meaning squirrels hide their food in the grass, not in trees. Citations: chapter 4, page 51."
+              },
+              {
+                "id": "iv",
+                "questionEnglish": "The 'stars' mentioned in the streams are actual celestial bodies.",
+                "correctAnswer": "FALSE",
+                "explanationNepali": "कवितामा \"Streams full of stars, like skies at night\" एक उपमा (simile) हो। यसले खोलामा सूर्यको प्रकाश चम्किरहेको दृश्यलाई रातको आकाशको तारासँग तुलना गर्दछ, वास्तविक ताराहरू होइन।",
+                "explanationEnglish": "The phrase \"Streams full of stars, like skies at night\" is a simile. It compares the reflection of sunlight on the water's surface to stars in the night sky, not actual stars. Citations: chapter 4, page 51."
+              },
+              {
+                "id": "v",
+                "questionEnglish": "The poet personifies Beauty as a dancing woman.",
+                "correctAnswer": "TRUE",
+                "explanationNepali": "कविताले \"No time to turn at Beauty’s glance, / And watch her feet, how they can dance\" भन्छ, जहाँ 'Beauty' लाई नाच्ने महिलाको रूपमा प्रस्तुत गरिएको छ, जुन मानवीकरण (personification) हो।",
+                "explanationEnglish": "The poem says, \"No time to turn at Beauty’s glance, / And watch her feet, how they can dance,\" where 'Beauty' is described as a dancing woman, which is a form of personification. Citations: chapter 4, page 51."
+              }
+            ]
           }
         ]
       },
@@ -81,39 +84,51 @@
         "marks": 10,
         "passage": {
           "title": "Walt Disney: An Example of Struggle and Success",
-          "content": "Walt Disney is known as an extraordinarily successful and creative person whose visions as an animator, filmmaker, and theme park developer changed the entertainment world. Yet, dig a little deeper into Disney's background, and you will discover that his road to success was paved by an unhappy childhood along with countless business failures and setbacks.\n\nBorn in Chicago in 1901 and raised in Missouri, Disney was the fourth son among five siblings. His father, Elias, was a domineering figure who was allegedly abusive. To escape from his stressful circumstances, Young Disney found solace in drawing. When Disney was 16, he dropped out of school to join the Army but was rejected for being underage. Instead, he joined the Red Cross and was sent to France for a year to drive an ambulance.\n\nWhen he returned home, Disney became an apprentice at a Kansas City commercial art studio. He and his older brother, Roy, launched their own cartoon business, Laugh-O-Gram Studios, in 1920, but the company went bankrupt a couple of years later. With the loss of his first business, Disney packed his bags, and with just forty dollars to his name, took off to Los Angeles to try his hand at acting. But he failed at that, too."
+          "content": "Walt Disney is known as an extraordinarily successful and creative person whose visions as an animator and filmmaker changed the entertainment world. Yet, his road to success was paved by an unhappy childhood and countless business failures.\n\nBorn in 1901, Disney's father was a domineering figure. To escape from his stressful circumstances, young Disney found solace in drawing. When he was 16, he dropped out of school to join the Army but was rejected for being underage. He then joined the Red Cross and was sent to France for a year to drive an ambulance.\n\nHe and his brother, Roy, launched their own cartoon business, Laugh-O-Gram Studios, in 1920, but the company went bankrupt. With just forty dollars, Disney took off to Los Angeles to try acting, but failed at that, too. Noticing there were no animation studios in California, Disney convinced Roy to join him to set up a shop. Soon, he found success with Oswald the Lucky Rabbit.\n\nHowever, his producer took his team of animators and the legal rights to Oswald. Instead of fighting, Disney started over again. On the train ride back to California, he created Mickey Mouse. Investors rejected the concept over 300 times before one accepted it. Even with Mickey's success, Disney faced challenges. Tensions with his employer led to a nervous breakdown. After recovering, he developed 'Snow White and the Seven Dwarfs' (1937), a huge success. But the films that followed, like 'Pinocchio' and 'Bambi', were duds.\n\nCommenting on failure, Disney once said: \"All the adversity I've had in my life, all the troubles and obstacles have strengthened me.\""
         },
         "subSections": [
           {
             "id": "A",
-            "type": "matching",
-            "title": "Match the words in Column 'A' with their meanings in Column 'B'.",
+            "type": "fill_in_the_blanks",
+            "title": "Fill in the blanks with the correct information from the text.",
             "marks": 5,
-            "columns": {
-              "A": [
-                {"id": "i", "text": "Domineering"},
-                {"id": "ii", "text": "Solace"},
-                {"id": "iii", "text": "Apprentice"},
-                {"id": "iv", "text": "Bankrupt"},
-                {"id": "v", "text": "Setback"}
-              ],
-              "B": [
-                {"id": "a", "text": "A difficulty or problem that delays or prevents something"},
-                {"id": "b", "text": "A person learning a trade from a skilled employer"},
-                {"id": "c", "text": "Trying to control other people without considering their feelings"},
-                {"id": "d", "text": "To be successful in a particular field"},
-                {"id": "e", "text": "Unable to pay what you owe"},
-                {"id": "f", "text": "Comfort or consolation in a time of distress"}
-              ]
-            },
-            "correctAnswer": [
-              {"A": "i", "B": "c"},
-              {"A": "ii", "B": "f"},
-              {"A": "iii", "B": "b"},
-              {"A": "iv", "B": "e"},
-              {"A": "v", "B": "a"}
-            ],
-            "explanation": "Explanation (English): The meanings match the context in the text: 'Domineering' describes his father's controlling nature. 'Solace' refers to the comfort he found in drawing. 'Apprentice' was his first job after returning home. 'Bankrupt' describes the failure of his first company. 'Setback' is a general term for the many failures he faced.\nব্যাখ্যা (Nepali Explanation): अर्थहरू पाठको सन्दर्भसँग मेल खान्छन्: 'Domineering' ले उसको बुबाको नियन्त्रण गर्ने स्वभावको वर्णन गर्दछ। 'Solace' ले चित्रकलामा पाएको सान्त्वनालाई जनाउँछ। 'Apprentice' घर फर्केपछिको उसको पहिलो काम थियो। 'Bankrupt' ले उसको पहिलो कम्पनीको असफलताको वर्णन गर्दछ। 'Setback' उसले सामना गरेका धेरै असफलताहरूको लागि एक सामान्य शब्द हो।"
+            "subQuestions": [
+              {
+                "id": "i",
+                "questionEnglish": "Walt Disney found comfort from his stressful childhood through __________.",
+                "correctAnswer": "drawing",
+                "explanationNepali": "पाठमा भनिएको छ, \"To escape from his stressful circumstances, Young Disney found solace in drawing,\" जसको अर्थ हो कि उनले चित्रकलामा सान्त्वना पाए।",
+                "explanationEnglish": "The text states, \"To escape from his stressful circumstances, Young Disney found solace in drawing,\" which means he found comfort in drawing. Citations: chapter 16, page 258."
+              },
+              {
+                "id": "ii",
+                "questionEnglish": "Disney's first cartoon business, Laugh-O-Gram Studios, eventually went __________.",
+                "correctAnswer": "bankrupt",
+                "explanationNepali": "पाठमा उल्लेख छ, \"...the company went bankrupt a couple of years later,\" जसको अर्थ हो कि कम्पनी टाट पल्टियो।",
+                "explanationEnglish": "The text mentions, \"...the company went bankrupt a couple of years later,\" meaning the company failed financially. Citations: chapter 16, page 258."
+              },
+              {
+                "id": "iii",
+                "questionEnglish": "The character created on a train ride to California was __________.",
+                "correctAnswer": "Mickey Mouse",
+                "explanationNepali": "पाठमा भनिएको छ, \"It was on the train ride back to California that he created Mickey Mouse.\" ",
+                "explanationEnglish": "The text states, \"It was on the train ride back to California that he created Mickey Mouse.\" Citations: chapter 16, page 259."
+              },
+              {
+                "id": "iv",
+                "questionEnglish": "After a nervous breakdown, Disney's first major successful film was __________.",
+                "correctAnswer": "Snow White and the Seven Dwarfs",
+                "explanationNepali": "पाठमा उल्लेख छ कि निको भएपछि, डिज्नीले \"a full-length animation feature, which he would call Snow White and the Seven Dwarfs (1937)\" विकसित गरे, जुन एक ठूलो सफलता थियो।",
+                "explanationEnglish": "The text mentions that after recovering, Disney developed \"a full-length animation feature, which he would call Snow White and the Seven Dwarfs (1937),\" which became a huge success. Citations: chapter 16, page 259."
+              },
+              {
+                "id": "v",
+                "questionEnglish": "According to Disney, all the __________ in his life had strengthened him.",
+                "correctAnswer": "adversity/troubles/obstacles",
+                "explanationNepali": "डिज्नीको भनाइ उद्धृत गरिएको छ: \"All the adversity I've had in my life, all the troubles and obstacles have strengthened me.\" ",
+                "explanationEnglish": "Disney is quoted as saying: \"All the adversity I've had in my life, all the troubles and obstacles have strengthened me.\" Citations: chapter 16, page 260."
+              }
+            ]
           },
           {
             "id": "B",
@@ -123,38 +138,38 @@
             "subQuestions": [
               {
                 "id": "i",
-                "questionEnglish": "What fields was Walt Disney successful in?",
-                "correctAnswer": "Walt Disney was successful as an animator, filmmaker, and theme park developer.",
-                "explanation": "Explanation (English): The first paragraph of the text lists his successful roles as \"animator, filmmaker, and theme park developer\".\nব্যাখ্যা (Nepali Explanation): पाठको पहिलो अनुच्छेदले उनको सफल भूमिकाहरूलाई \"animator, filmmaker, and theme park developer\" को रूपमा सूचीबद्ध गर्दछ।",
-                "marks": 1
+                "questionEnglish": "Why did Disney drop out of school at age 16?",
+                "correctAnswer": "He dropped out of school to join the Army.",
+                "explanationNepali": "पाठले बताउँछ, \"When Disney was 16, he dropped out of school to join the Army...\"",
+                "explanationEnglish": "The text says, \"When Disney was 16, he dropped out of school to join the Army...\" Citations: chapter 16, page 258."
               },
               {
                 "id": "ii",
-                "questionEnglish": "How did young Disney cope with his stressful childhood?",
-                "correctAnswer": "He found solace (comfort) in drawing to cope with his stressful childhood.",
-                "explanation": "Explanation (English): The text states, \"To escape from his stressful circumstances, Young Disney found solace in drawing.\"\nব্যাখ্যা (Nepali Explanation): पाठमा भनिएको छ, \"To escape from his stressful circumstances, Young Disney found solace in drawing.\"",
-                "marks": 1
+                "questionEnglish": "What happened to Disney's first successful character, Oswald the Lucky Rabbit?",
+                "correctAnswer": "His producer took his team of animators and the legal rights to the character.",
+                "explanationNepali": "पाठले बताउँछ कि उनको निर्माताले \"taken his team of animators from him and that he no longer had any legal rights to Oswald the Lucky Rabbit.\" ",
+                "explanationEnglish": "The text states his producer had \"taken his team of animators from him and that he no longer had any legal rights to Oswald the Lucky Rabbit.\" Citations: chapter 16, page 259."
               },
               {
                 "id": "iii",
-                "questionEnglish": "Why was Disney rejected from the Army at age 16?",
-                "correctAnswer": "He was rejected for being underage.",
-                "explanation": "Explanation (English): The text mentions that \"he dropped out of school to join the Army but was rejected for being underage.\"\nব্যাখ্যা (Nepali Explanation): पाठमा उल्लेख छ कि \"he dropped out of school to join the Army but was rejected for being underage.\"",
-                "marks": 1
+                "questionEnglish": "How many times was the Mickey Mouse concept rejected by investors?",
+                "correctAnswer": "It was rejected over 300 times.",
+                "explanationNepali": "पाठमा उल्लेख छ, \"Investors rejected the concept of his famous mouse over 300 times before one accepted it.\" ",
+                "explanationEnglish": "The text mentions, \"Investors rejected the concept of his famous mouse over 300 times before one accepted it.\" Citations: chapter 16, page 259."
               },
               {
                 "id": "iv",
-                "questionEnglish": "What was the name of Disney's first cartoon business?",
-                "correctAnswer": "The name of his first cartoon business was Laugh-O-Gram Studios.",
-                "explanation": "Explanation (English): The passage says, \"he and his older brother, Roy, launched their own cartoon business, Laugh-O-Gram Studios, in 1920\".\nব্যাখ্যা (Nepali Explanation): अनुच्छेदमा भनिएको छ, \"he and his older brother, Roy, launched their own cartoon business, Laugh-O-Gram Studios, in 1920\"।",
-                "marks": 1
+                "questionEnglish": "What does the word 'duds' mean in the context of the films 'Pinocchio' and 'Bambi'?",
+                "correctAnswer": "It means they were failures or unsuccessful at the box office.",
+                "explanationNepali": "पाठले 'Snow White' को सफलताको विपरीत 'Pinocchio', 'Fantasia' र 'Bambi' लाई 'duds' भनेको छ, जसको अर्थ हो कि तिनीहरू व्यावसायिक रूपमा असफल भए।",
+                "explanationEnglish": "The text contrasts the success of 'Snow White' with 'Pinocchio', 'Fantasia' and 'Bambi', calling them 'duds', which implies they were commercial failures. Citations: chapter 16, page 259."
               },
               {
                 "id": "v",
-                "questionEnglish": "What did Disney try to do after his first business failed?",
-                "correctAnswer": "He went to Los Angeles to try his hand at acting.",
-                "explanation": "Explanation (English): After his business went bankrupt, the text states he \"took off to Los Angeles to try his hand at acting.\"\nব্যাখ্যা (Nepali Explanation): उसको व्यवसाय टाट पल्टिएपछि, पाठमा भनिएको छ कि ऊ \"took off to Los Angeles to try his hand at acting.\"",
-                "marks": 1
+                "questionEnglish": "What was Disney's perspective on failure?",
+                "correctAnswer": "He believed that failures, troubles, and obstacles ultimately made him stronger.",
+                "explanationNepali": "डिज्नीले भने, \"All the adversity I've had in my life... have strengthened me,\" जसले देखाउँछ कि उनले असफलतालाई शक्तिको स्रोतको रूपमा हेरे।",
+                "explanationEnglish": "Disney said, \"All the adversity I've had in my life... have strengthened me,\" showing he viewed failure as a source of strength. Citations: chapter 16, page 260."
               }
             ]
           }
@@ -163,53 +178,53 @@
       {
         "questionNumber": 3,
         "type": "reading_comprehension",
-        "title": "Read the following notice and do the tasks.",
+        "title": "Read the following text and do the tasks.",
         "marks": 10,
         "passage": {
-            "title": "Chitwan National Park\nRules and Regulations for the Visitors",
-            "content": "1. An entry fee of NRs. 1500/- (Foreigners), NRs. 750/- (SAARC), and NRs. 100/- (Nepali) per person has to be paid at the Park's Entrance Gate.\n2. Flora and Fauna of the park are fully protected and must not be disturbed at any cost.\n3. Do not purchase illegal animal or plant products. The purchase of illegal animal or plant product may bring you to the legal prosecution.\n4. The visitors of the park must respect the religious and cultural sites all around the park.\n5. The visitors are required to place the trash in the rubbish bins and should care about the cleanliness.\n6. The visitors are strictly prohibited to walk within the park between sunset and sunrise."
+          "title": "JOB ADVERTISEMENT",
+          "content": "A well-established English medium boarding school in Pokhara invites applications from qualified, dynamic, and dedicated candidates for the following post.\n\nPosition: Secondary Level Science Teacher (Physics/Chemistry)\n\nRequired Number: 1 (One)\n\nRequired Qualification: Master’s Degree in Science (M.Sc.) in the relevant subject from a recognized university.\n\nExperience: At least 3 years of teaching experience in a similar position is required. Experience in a boarding school will be an added advantage.\n\nSkills & Competencies:\n- Excellent command of spoken and written English.\n- Ability to use modern teaching methodologies and IT tools.\n- Strong classroom management skills.\n- Must be a team player and willing to participate in extracurricular activities.\n\nSalary: Negotiable, but no bar for deserving candidates.\n\nApplying Procedure: Interested candidates are requested to submit a handwritten application, a recent CV, copies of academic credentials, and a passport-sized photograph to the school reception by 4:00 PM, 25th March, 2025.\n\nNote: Only shortlisted candidates will be called for a written test and interview. The school reserves the right to accept or reject any application without assigning any reason."
         },
         "subSections": [
           {
             "id": "A",
-            "type": "true_false",
-            "title": "Write 'TRUE' for true and 'FALSE' for the false statements.",
+            "type": "true_false_not_given",
+            "title": "Write 'TRUE' for true, 'FALSE' for false, or 'NOT GIVEN' if the information is not in the text.",
             "marks": 5,
             "subQuestions": [
               {
                 "id": "i",
-                "questionEnglish": "The entry fee is the same for all visitors.",
+                "questionEnglish": "The school is looking for a teacher for the primary level.",
                 "correctAnswer": "FALSE",
-                "explanation": "Explanation (English): The notice clearly lists different fees for Foreigners, SAARC nationals, and Nepalis.\nব্যাখ্যা (Nepali Explanation): सूचनामा विदेशी, सार्क नागरिक र नेपालीका लागि फरक-फरक शुल्क स्पष्ट रूपमा उल्लेख गरिएको छ।",
-                "marks": 1
+                "explanationNepali": "विज्ञापनमा स्पष्ट रूपमा \"Secondary Level Science Teacher\" भनिएको छ, प्राथमिक तहको होइन।",
+                "explanationEnglish": "The advertisement clearly states \"Secondary Level Science Teacher,\" not primary level. Citations: chapter 8, page 132."
               },
               {
                 "id": "ii",
-                "questionEnglish": "It is okay to disturb the plants and animals in the park.",
+                "questionEnglish": "A Bachelor's Degree in Science is sufficient for this post.",
                 "correctAnswer": "FALSE",
-                "explanation": "Explanation (English): Rule 2 states that the flora and fauna \"must not be disturbed at any cost.\"\nব্যাখ্যা (Nepali Explanation): नियम २ मा उल्लेख छ कि वनस्पति र जीवजन्तुलाई \"must not be disturbed at any cost.\"",
-                "marks": 1
+                "explanationNepali": "आवश्यक योग्यतामा \"Master’s Degree in Science (M.Sc.)\" उल्लेख गरिएको छ, स्नातक तह होइन।",
+                "explanationEnglish": "The required qualification is mentioned as \"Master’s Degree in Science (M.Sc.),\" not a Bachelor's degree. Citations: chapter 8, page 132."
               },
               {
                 "id": "iii",
-                "questionEnglish": "Visitors should throw their trash anywhere in the park.",
+                "questionEnglish": "Candidates must have prior experience of working in a boarding school.",
                 "correctAnswer": "FALSE",
-                "explanation": "Explanation (English): Rule 5 requires visitors to \"place the trash in the rubbish bins\".\nব্যাখ্যা (Nepali Explanation): नियम ५ अनुसार आगन्तुकहरूले \"place the trash in the rubbish bins\" गर्नुपर्छ।",
-                "marks": 1
+                "explanationNepali": "विज्ञापनमा भनिएको छ, \"Experience in a boarding school will be an added advantage,\" जसको अर्थ यो फाइदाजनक छ, तर अनिवार्य होइन। ३ वर्षको शिक्षण अनुभव अनिवार्य छ।",
+                "explanationEnglish": "The advertisement says, \"Experience in a boarding school will be an added advantage,\" which means it's beneficial but not mandatory. The 3 years of teaching experience is mandatory. Citations: chapter 8, page 132."
               },
               {
                 "id": "iv",
-                "questionEnglish": "Walking in the park at night is strictly forbidden.",
-                "correctAnswer": "TRUE",
-                "explanation": "Explanation (English): Rule 6 says visitors are \"strictly prohibited to walk within the park between sunset and sunrise.\"\nব্যাখ্যা (Nepali Explanation): नियम ६ मा भनिएको छ कि आगन्तुकहरूलाई \"strictly prohibited to walk within the park between sunset and sunrise.\"",
-                "marks": 1
+                "questionEnglish": "The salary for the post is fixed.",
+                "correctAnswer": "FALSE",
+                "explanationNepali": "तलबको बारेमा \"Negotiable\" (वार्तालापयोग्य) भनिएको छ, जसको अर्थ यो निश्चित छैन।",
+                "explanationEnglish": "The salary is mentioned as \"Negotiable,\" which means it is not fixed. Citations: chapter 4, page 59."
               },
               {
                 "id": "v",
-                "questionEnglish": "Buying illegal animal products is allowed in the park.",
+                "questionEnglish": "Applicants can submit their applications online via email.",
                 "correctAnswer": "FALSE",
-                "explanation": "Explanation (English): Rule 3 clearly states, \"Do not purchase illegal animal or plant products.\"\nব্যাখ্যা (Nepali Explanation): नियम ३ मा स्पष्ट रूपमा भनिएको छ, \"Do not purchase illegal animal or plant products.\"",
-                "marks": 1
+                "explanationNepali": "आवेदन प्रक्रियामा \"submit a handwritten application ... to the school reception\" भनिएको छ, इमेल मार्फत होइन।",
+                "explanationEnglish": "The applying procedure states to \"submit a handwritten application ... to the school reception,\" not via email. Citations: chapter 8, page 132."
               }
             ]
           },
@@ -221,38 +236,38 @@
             "subQuestions": [
               {
                 "id": "i",
-                "questionEnglish": "How much is the entry fee for a citizen of a SAARC country?",
-                "correctAnswer": "The entry fee for a citizen of a SAARC country is NRs. 750/-.",
-                "explanation": "Explanation (English): The first rule specifies the fee for SAARC citizens as \"NRs. 750/- (SAARC)\".\nব্যাখ্যা (Nepali Explanation): पहिलो नियमले सार्क नागरिकका लागि शुल्क \"NRs. 750/- (SAARC)\" भनेर तोकेको छ।",
-                "marks": 1
+                "questionEnglish": "What position is the school advertising for?",
+                "correctAnswer": "The school is advertising for the position of a Secondary Level Science Teacher (Physics/Chemistry).",
+                "explanationNepali": "विज्ञापनको 'Position' खण्डमा \"Secondary Level Science Teacher (Physics/Chemistry)\" उल्लेख छ।",
+                "explanationEnglish": "The 'Position' section of the advertisement mentions \"Secondary Level Science Teacher (Physics/Chemistry).\" Citations: chapter 8, page 132."
               },
               {
                 "id": "ii",
-                "questionEnglish": "What does 'Flora and Fauna' mean?",
-                "correctAnswer": "'Flora and Fauna' refers to the plants (flora) and animals (fauna) of a particular region.",
-                "explanation": "Explanation (English): This is a standard biological term. Rule 2 uses it to refer to the plants and animals of the park that must be protected.\nব্যাখ্যা (Nepali Explanation): यो एक मानक जैविक शब्द हो। नियम २ ले यसलाई पार्कका वनस्पति र जनावरहरूलाई जनाउन प्रयोग गर्दछ, जसलाई संरक्षण गर्नुपर्छ।",
-                "marks": 1
+                "questionEnglish": "Where is the school located?",
+                "correctAnswer": "The school is located in Pokhara.",
+                "explanationNepali": "विज्ञापनको पहिलो वाक्यमा \"A well-established English medium boarding school in Pokhara\" भनिएको छ।",
+                "explanationEnglish": "The first sentence of the ad says, \"A well-established English medium boarding school in Pokhara.\" Citations: chapter 15, page 240."
               },
               {
                 "id": "iii",
-                "questionEnglish": "What might happen if someone buys illegal plant products?",
-                "correctAnswer": "They may face legal prosecution.",
-                "explanation": "Explanation (English): Rule 3 warns that the purchase of such products \"may bring you to the legal prosecution.\"\nব্যাখ্যা (Nepali Explanation): नियम ३ ले चेतावनी दिन्छ कि यस्ता उत्पादनहरूको खरिदले \"may bring you to the legal prosecution.\"",
-                "marks": 1
+                "questionEnglish": "What is the minimum teaching experience required?",
+                "correctAnswer": "At least 3 years of teaching experience is required.",
+                "explanationNepali": "अनुभवको आवश्यकतामा \"At least 3 years of teaching experience in a similar position is required\" भनिएको छ।",
+                "explanationEnglish": "The experience requirement states, \"At least 3 years of teaching experience in a similar position is required.\" Citations: chapter 8, page 132."
               },
               {
                 "id": "iv",
-                "questionEnglish": "According to the notice, how should visitors treat religious and cultural sites?",
-                "correctAnswer": "Visitors must respect the religious and cultural sites.",
-                "explanation": "Explanation (English): Rule 4 states that \"The visitors of the park must respect the religious and cultural sites\".\nব্যাখ্যা (Nepali Explanation): नियम ४ मा भनिएको छ कि \"The visitors of the park must respect the religious and cultural sites\"।",
-                "marks": 1
+                "questionEnglish": "What documents should be submitted with the application?",
+                "correctAnswer": "A handwritten application, a recent CV, copies of academic credentials, and a passport-sized photograph should be submitted.",
+                "explanationNepali": "आवेदन प्रक्रियामा आवश्यक कागजातहरूको सूची दिइएको छ: \"a handwritten application, a recent CV, copies of academic credentials, and a passport-sized photograph.\" ",
+                "explanationEnglish": "The applying procedure lists the required documents: \"a handwritten application, a recent CV, copies of academic credentials, and a passport-sized photograph.\" Citations: chapter 8, page 132."
               },
               {
                 "id": "v",
-                "questionEnglish": "During which time is walking inside the park not allowed?",
-                "correctAnswer": "Walking inside the park is not allowed between sunset and sunrise.",
-                "explanation": "Explanation (English): Rule 6 prohibits walking \"between sunset and sunrise.\"\nব্যাখ্যা (Nepali Explanation): नियम ६ ले \"between sunset and sunrise\" हिँड्न निषेध गर्दछ।",
-                "marks": 1
+                "questionEnglish": "What will happen to the shortlisted candidates?",
+                "correctAnswer": "They will be called for a written test and interview.",
+                "explanationNepali": "नोटमा भनिएको छ, \"Only shortlisted candidates will be called for a written test and interview.\" ",
+                "explanationEnglish": "The note states, \"Only shortlisted candidates will be called for a written test and interview.\" Citations: chapter 4, page 59."
               }
             ]
           }
@@ -261,56 +276,60 @@
       {
         "questionNumber": 4,
         "type": "reading_comprehension",
-        "title": "Read the text given below and do the tasks.",
+        "title": "Read the following text and do the tasks.",
         "marks": 15,
         "passage": {
-            "title": "A Century of World Population Trends: 1950 to 2050",
-            "content": "Today, the world's population is more than three times larger than it was in the mid-twentieth century. The global population is estimated to double again in about 70 years, rising to over 10 billion by 2059.\n\nSince 1950, the pace of population growth has slowed by more than half owing to reduced levels of fertility. In 2020, the rate of population growth fell below one percent per year and it is projected to continue to slow. The global population could grow to around 8.5 billion in 2030, and 9.7 billion in 2050.\n\nThe world's two most populous regions in 2022 were Eastern and South-Eastern Asia (2.3 billion people) and Central and Southern Asia (2.1 billion people). China and India accounted for the largest populations in these regions, with more than 1.4 billion each in 2022. Between 2022 and 2050, the population of sub-Saharan Africa is expected to almost double, surpassing two billion inhabitants by the late 2040s.\n\nMore than half of the projected increase in the global population between 2022 and 2050 is expected to be concentrated in just eight countries: The Democratic Republic of the Congo, Egypt, Ethiopia, India, Nigeria, Pakistan, the Philippines and the United Republic of Tanzania. India is projected to surpass China as the world's most populous country in 2023."
+          "title": "Strange Food from Around the World",
+          "content": "You have to challenge yourself with food when you travel. The food stuff that seems so strange to you is actually so delicious to many others.\n\nHaggis, Scotland: When you take all of the parts of a sheep that no one else wants—the heart, the liver, and the lungs—grind it up, and mix it with mutton fat, oatmeal and spices, then pack it in a sheep's stomach and boil it, it tastes really good.\n\nJellyfish, China: This dish can appear challenging. There's a rubbery texture to jellyfish that some find a little challenging. However, the Chinese know what they're doing. They mix jellyfish into salads, pair it with chicken, or stir it through sesame oil. It’s all tasty, and it’s all low-fat.\n\nGreen ants, Australia: If I'm going for bush food, it's definitely green ants, little insects that are pulled from trees, lightly crushed, and then eaten. They're lemony, peppery and delicious. Local producers are even putting them on top of goat's cheeses now.\n\nCrickets, Thailand: In northern Thailand, deep-fried crickets are a staple, and they're delicious. They're nutty and crunchy, perfect with salt. I still struggle, however, with the larger insects. Anything that requires more than one bite is a bridge too far for this guy.\n\nBun rieu, Vietnam: Everything about bun rieu, a traditional Vietnamese soup, sounds good. It's a crab-based soup mixed with noodles. It's then topped with roasted tomatoes, crab meat, stewed pork, lime juice, and fresh herbs. Then, however, you drop in a large piece of congealed pig's blood, which is a serious challenge for the unsuspecting diner. My advice: give it a try."
         },
         "subSections": [
           {
             "id": "A",
             "type": "matching",
-            "title": "Match the words in Column 'A' with their correct meanings in Column 'B'.",
+            "title": "Match the food items in Column ‘A’ with their main ingredients in Column ‘B’.",
             "marks": 5,
             "columns": {
               "A": [
-                {"id": "i", "text": "Surpassing"},
-                {"id": "ii", "text": "Fertility"},
-                {"id": "iii", "text": "Projected"},
-                {"id": "iv", "text": "Populous"},
-                {"id": "v", "text": "Concentrated"}
+                {"id": "i", "text": "Haggis"},
+                {"id": "ii", "text": "Bun rieu"},
+                {"id": "iii", "text": "Crickets"},
+                {"id": "iv", "text": "Green ants"},
+                {"id": "v", "text": "Jellyfish"}
               ],
               "B": [
-                {"id": "a", "text": "Having a large population"},
-                {"id": "b", "text": "Gathered all in one place"},
-                {"id": "c", "text": "The ability to have children"},
-                {"id": "d", "text": "Going beyond; exceeding"},
-                {"id": "e", "text": "Estimated or forecast for the future"},
-                {"id": "f", "text": "A period of one hundred years"}
+                {"id": "a", "text": "insects with a lemony and peppery taste"},
+                {"id": "b", "text": "a sea creature with a rubbery texture"},
+                {"id": "c", "text": "a crab-based soup with congealed pig's blood"},
+                {"id": "d", "text": "deep-fried insects that are nutty and crunchy"},
+                {"id": "e", "text": "sheep's organs boiled in its stomach"},
+                {"id": "f", "text": "fermented horse milk"}
               ]
             },
             "correctAnswer": [
-                {"A": "i", "B": "d"},
-                {"A": "ii", "B": "c"},
-                {"A": "iii", "B": "e"},
-                {"A": "iv", "B": "a"},
-                {"A": "v", "B": "b"}
+              {"A": "i", "B": "e"},
+              {"A": "ii", "B": "c"},
+              {"A": "iii", "B": "d"},
+              {"A": "iv", "B": "a"},
+              {"A": "v", "B": "b"}
             ],
-            "explanation": "Explanation (English): These words are used in the text with these meanings: 'Surpassing' refers to population numbers exceeding others. 'Fertility' is mentioned as a factor in population growth rate. 'Projected' is used for future population estimates. 'Populous' describes regions with large populations. 'Concentrated' refers to where population growth will occur.\nব্যাখ্যা (Nepali Explanation): यी शब्दहरू पाठमा यी अर्थहरूका साथ प्रयोग गरिएका छन्: 'Surpassing' ले जनसंख्याको संख्या अरूलाई उछिनेको जनाउँछ। 'Fertility' लाई जनसंख्या वृद्धि दरको एक कारकको रूपमा उल्लेख गरिएको छ। 'Projected' भविष्यको जनसंख्या अनुमानका लागि प्रयोग गरिन्छ। 'Populous' ले ठूलो जनसंख्या भएका क्षेत्रहरूको वर्णन गर्दछ। 'Concentrated' ले जनसंख्या वृद्धि कहाँ हुनेछ भनेर जनाउँछ।"
+            "explanationNepali": "यो मिलान पाठमा वर्णन गरिएका विभिन्न परिकारहरू र तिनका मुख्य सामग्रीहरूमा आधारित छ।",
+            "explanationEnglish": "This matching is based on the descriptions of the various dishes and their main ingredients provided in the text. Citations: chapter 6, pages 86-87."
           },
           {
             "id": "B",
-            "type": "fill_in_the_blanks",
-            "title": "Fill in the blanks with correct information from the text.",
+            "type": "ordering",
+            "title": "The steps to prepare Haggis are jumbled. Put them in the correct order.",
             "marks": 5,
-            "subQuestions": [
-              { "id": "i", "questionEnglish": "The world's population is more than ______ times larger than in the mid-twentieth century.", "correctAnswer": "three", "marks": 1 },
-              { "id": "ii", "questionEnglish": "The pace of population growth has slowed down mainly due to reduced levels of ______.", "correctAnswer": "fertility", "marks": 1 },
-              { "id": "iii", "questionEnglish": "By 2050, the global population is projected to reach ______.", "correctAnswer": "9.7 billion", "marks": 1 },
-              { "id": "iv", "questionEnglish": "The two most populous regions in 2022 were Eastern and South-Eastern Asia and ______.", "correctAnswer": "Central and Southern Asia", "marks": 1 },
-              { "id": "v", "questionEnglish": "______ is expected to become the world's most populous country in 2023.", "correctAnswer": "India", "marks": 1 }
-            ]
+            "sentences": [
+              {"id": "i", "text": "Mix it with mutton fat, oatmeal, and spices."},
+              {"id": "ii", "text": "Boil it for a few hours."},
+              {"id": "iii", "text": "Grind up the sheep's heart, liver, and lungs."},
+              {"id": "iv", "text": "Take the parts of a sheep that no one wants."},
+              {"id": "v", "text": "Pack the mixture into a sheep's stomach."}
+            ],
+            "correctAnswer": ["iv", "iii", "i", "v", "ii"],
+            "explanationNepali": "ह्यागिस बनाउने सही क्रम हो: अनावश्यक अंगहरू लिने, तिनीहरूलाई पिस्ने, मसला र अन्य सामग्रीसँग मिसाउने, पेटमा भर्ने, र अन्त्यमा उमाल्ने।",
+            "explanationEnglish": "The correct order to prepare Haggis is: take the unwanted organs, grind them up, mix with spices and other ingredients, pack it into the stomach, and finally boil it. Citations: chapter 6, page 86."
           },
           {
             "id": "C",
@@ -320,38 +339,38 @@
             "subQuestions": [
               {
                 "id": "i",
-                "questionEnglish": "When did the world's population growth rate fall below one percent per year for the first time since 1950?",
-                "correctAnswer": "The world's population growth rate fell below one percent per year in 2020.",
-                "explanation": "Explanation (English): The text states, \"In 2020, and for the first time since 1950, the rate of population growth fell below one percent per year\".\nব্যাখ্যা (Nepali Explanation): पाठमा भनिएको छ, \"In 2020, and for the first time since 1950, the rate of population growth fell below one percent per year\"।",
-                "marks": 1
+                "questionEnglish": "According to the writer, what must one do with food when travelling?",
+                "correctAnswer": "One must challenge oneself with food when travelling.",
+                "explanationNepali": "पाठको पहिलो अनुच्छेदमा भनिएको छ, \"You have to challenge yourself with food when you travel.\" ",
+                "explanationEnglish": "The first paragraph of the text states, \"You have to challenge yourself with food when you travel.\" Citations: chapter 6, page 86."
               },
               {
                 "id": "ii",
-                "questionEnglish": "Which two countries had populations of more than 1.4 billion each in 2022?",
-                "correctAnswer": "China and India had populations of more than 1.4 billion each in 2022.",
-                "explanation": "Explanation (English): The text says, \"China and India accounted for the largest populations in these regions, with more than 1.4 billion each in 2022.\"\nব্যাখ্যা (Nepali Explanation): पाठमा भनिएको छ, \"China and India accounted for the largest populations in these regions, with more than 1.4 billion each in 2022.\"",
-                "marks": 1
+                "questionEnglish": "What is 'bush food' mentioned in the text?",
+                "correctAnswer": "Green ants are mentioned as a type of bush food.",
+                "explanationNepali": "पाठले हरियो कमिलाको वर्णन गर्दा भन्छ, \"If I'm going for bush food, it's definitely green ants...\"",
+                "explanationEnglish": "When describing green ants, the text says, \"If I'm going for bush food, it's definitely green ants...\" Citations: chapter 6, page 87."
               },
               {
                 "id": "iii",
-                "questionEnglish": "Which region's population is expected to almost double between 2022 and 2050?",
-                "correctAnswer": "The population of sub-Saharan Africa is expected to almost double.",
-                "explanation": "Explanation (English): The text clearly states, \"Between 2022 and 2050, the population of sub-Saharan Africa is expected to almost double\".\nব্যাখ্যা (Nepali Explanation): पाठमा स्पष्ट रूपमा भनिएको छ, \"Between 2022 and 2050, the population of sub-Saharan Africa is expected to almost double\"।",
-                "marks": 1
+                "questionEnglish": "How are crickets typically served in northern Thailand?",
+                "correctAnswer": "They are deep-fried and served with salt.",
+                "explanationNepali": "पाठले बताउँछ, \"In northern Thailand, deep-fried crickets are a staple... perfect with salt.\" ",
+                "explanationEnglish": "The text states, \"In northern Thailand, deep-fried crickets are a staple... perfect with salt.\" Citations: chapter 6, page 87."
               },
               {
                 "id": "iv",
-                "questionEnglish": "Name any two of the eight countries where more than half of the population increase is expected by 2050.",
-                "correctAnswer": "Any two of the following: The Democratic Republic of the Congo, Egypt, Ethiopia, India, Nigeria, Pakistan, the Philippines, the United Republic of Tanzania.",
-                "explanation": "Explanation (English): The text lists eight countries that will account for more than half of the projected population increase.\nব্যাখ্যা (Nepali Explanation): पाठले आठ देशहरूको सूची दिन्छ जुन अनुमानित जनसंख्या वृद्धिको आधाभन्दा बढीको लागि जिम्मेवार हुनेछन्।",
-                "marks": 1
+                "questionEnglish": "What makes 'bun rieu' a challenging dish for an unsuspecting diner?",
+                "correctAnswer": "The addition of a large piece of congealed pig's blood makes it challenging.",
+                "explanationNepali": "पाठले 'bun rieu' को बारेमा भन्छ कि जमेको सुँगुरको रगतको टुक्रा \"is a serious challenge for the unsuspecting diner.\" ",
+                "explanationEnglish": "The text says about 'bun rieu' that the piece of congealed pig's blood \"is a serious challenge for the unsuspecting diner.\" Citations: chapter 6, page 87."
               },
               {
                 "id": "v",
-                "questionEnglish": "What is the main idea of this text?",
-                "correctAnswer": "The main idea is to describe the trends of world population growth from 1950 and project them up to 2050, highlighting regional differences and key contributing factors.",
-                "explanation": "Explanation (English): The text discusses past growth, current slowdowns, and future projections for the world's population, focusing on specific regions and countries, which is the overall theme.\nব্যাখ্যা (Nepali Explanation): पाठले विश्वको जनसंख्याको विगतको वृद्धि, वर्तमानको सुस्तता र भविष्यका अनुमानहरूबारे छलफल गर्दछ, जसमा विशेष क्षेत्र र देशहरूमा ध्यान केन्द्रित गरिएको छ, जुन समग्र विषय हो।",
-                "marks": 1
+                "questionEnglish": "What does the phrase 'a bridge too far' mean?",
+                "correctAnswer": "It means something that is too extreme or difficult to attempt.",
+                "explanationNepali": "यो वाक्यांशको अर्थ हो कि कुनै कुरा प्रयास गर्नको लागि धेरै गाह्रो वा चरम छ। पाठमा, लेखकले ठूला कीराहरू खानलाई 'a bridge too far' भनेका छन्।",
+                "explanationEnglish": "The phrase means something is too difficult or extreme to attempt. In the text, the writer finds eating larger insects to be 'a bridge too far'. Citations: chapter 6, page 89."
               }
             ]
           }
@@ -360,62 +379,72 @@
       {
         "questionNumber": 5,
         "type": "free_writing",
-        "title": "Write a set of rules and regulations for the school library in about 100 words.",
+        "title": "Write a recipe to prepare your favourite dish.",
         "marks": 5,
         "wordCount": 100,
         "clues": [
-            "Maintain silence",
-            "Return books on time",
-            "No food or drinks",
-            "Handle books with care",
-            "Keep library card safe",
-            "Do not tear pages"
+          "name of the dish",
+          "ingredients",
+          "method/steps",
+          "serving suggestion"
         ],
         "sampleAnswer": {
-          "title": "School Library Rules",
-          "content": "All students must follow the library rules to ensure a peaceful environment for everyone. Please maintain complete silence at all times. Books must be returned on or before the due date to avoid a fine. Eating and drinking are strictly forbidden inside the library. Handle all books and library property with care; do not write in them or tear pages. You are responsible for your library card, so keep it safe and do not lend it to others. Misplaced or damaged books must be reported to the librarian immediately. Your cooperation will help us maintain our valuable collection."
+          "title": "Recipe for Vegetable Mo:Mo",
+          "content": "Vegetable Mo:Mo is a popular Nepali snack. Here is how you can prepare it.\n\nIngredients:\nFor dough: 2 cups of all-purpose flour, water.\nFor filling: 1 cup grated cabbage, ½ cup grated carrots, ¼ cup chopped onions, 1 tbsp ginger-garlic paste, salt, pepper, and mo:mo masala.\n\nMethod:\nFirst, prepare the dough by mixing flour and water until it is firm. Let it rest. For the filling, mix all the vegetables and spices in a bowl. Now, make small, thin, round wrappers from the dough. Place a spoonful of filling in the center of each wrapper and fold it into your desired shape. Finally, steam the mo:mos in a steamer for about 10-12 minutes.\n\nServing Suggestion:\nServe the hot mo:mos immediately with tomato-sesame pickle (achar).",
+          "explanationNepali": "यो उत्तरले तरकारी मो:मो बनाउने विधि प्रस्तुत गर्दछ, दिइएको संकेतहरू प्रयोग गर्दै। यसमा परिकारको नाम, आवश्यक सामग्री, बनाउने विधि, र कसरी प्रस्तुत गर्ने भन्ने सुझाव समावेश छ। चरणहरू स्पष्ट र क्रमबद्ध छन्, जसले पाठकलाई सजिलै पछ्याउन मद्दत गर्दछ।",
+          "explanationEnglish": "This answer provides a recipe for making vegetable mo:mo, using the given clues. It includes the name of the dish, the necessary ingredients, the preparation method, and a serving suggestion. The steps are clear and sequential, making it easy for the reader to follow. Citations: chapter 6, page 93."
         }
       },
       {
         "questionNumber": 6,
         "type": "free_writing",
-        "title": "Develop a readable story in about 100 words with the help of the given clues.",
+        "title": "Write a message of congratulation to a friend who has won a national-level essay writing competition. Write it in about 100 words.",
         "marks": 5,
         "wordCount": 100,
         "clues": [
-            "A thirsty crow...",
-            "sees a pitcher...",
-            "water at the bottom...",
-            "thinks of a plan...",
-            "drops pebbles...",
-            "water rises...",
-            "drinks and flies away...",
-            "moral"
+          "friend's name",
+          "name of the competition",
+          "express happiness and pride",
+          "mention hard work and talent",
+          "wish for future success"
         ],
         "sampleAnswer": {
-          "title": "The Thirsty Crow",
-          "content": "Once on a hot summer day, a thirsty crow was flying in search of water. After a long time, he saw a pitcher on the ground. He flew down to it with hope, but to his dismay, the water level was at the bottom, and his beak could not reach it. He thought for a moment and came up with a clever plan. He started picking up small pebbles one by one and dropping them into the pitcher. Slowly, the water level began to rise. After dropping many pebbles, the water rose high enough for him to drink. He drank the water happily and flew away. \n\nMoral: Where there is a will, there is a way."
+          "title": "Message of Congratulation",
+          "content": "Dear Anup,\n\nCongratulations!\n\nI was overjoyed to hear that you have won the first prize in the National-Level Essay Writing Competition 2081. I am so incredibly happy and proud of you. This is a fantastic achievement and a true testament to your hard work, dedication, and amazing talent in writing. You truly deserve this recognition.\n\nYour success is an inspiration to all of us. I have always admired your way with words, and now the whole nation knows how brilliant you are. I wish you all the very best for your future endeavors. May you achieve even greater success in the days to come. Keep shining!\n\nYour proud friend,\nSunil",
+          "explanationNepali": "यो उत्तरले राष्ट्रिय निबन्ध प्रतियोगिता जित्ने साथीलाई बधाई सन्देश प्रस्तुत गर्दछ। यसले दिइएको संकेतहरू समावेश गर्दछ: साथीको नाम, प्रतियोगिताको नाम, खुसी र गर्व व्यक्त गर्ने, कडा परिश्रम र प्रतिभाको प्रशंसा गर्ने, र भविष्यको लागि शुभकामना दिने। सन्देशको टोन न्यानो र उत्साहजनक छ, जुन यस्तो अवसरको लागि उपयुक्त छ।",
+          "explanationEnglish": "This answer presents a congratulatory message to a friend who has won a national essay competition. It incorporates the given clues: the friend's name, the competition's name, expressing happiness and pride, acknowledging hard work and talent, and wishing future success. The tone is warm and encouraging, appropriate for the occasion. Citations: chapter 16, page 265."
         }
       },
       {
         "questionNumber": 7,
         "type": "free_writing",
-        "title": "Write a dialogue between a doctor and a patient who is suffering from a common cold, in at least six exchanges.",
+        "title": "Write two paragraphs in about 150 words expressing your views on the importance of balancing work and leisure.",
         "marks": 6,
         "wordCount": 150,
         "sampleAnswer": {
-          "content": "Patient: Good morning, doctor. \n\nDoctor: Good morning. Please have a seat. What seems to be the problem?\n\nPatient: I have been feeling unwell for the last two days. I have a running nose, a sore throat, and I keep sneezing.\n\nDoctor: Do you have a fever or a headache as well?\n\nPatient: Yes, I have a slight fever and a bad headache. My whole body is aching.\n\nDoctor: It sounds like you have a common cold. Don't worry, it's a viral infection and should get better in a few days. I will prescribe some medicine for the fever and pain. Make sure to drink plenty of warm water and get a lot of rest.\n\nPatient: Thank you, doctor. I will follow your advice."
+          "content": "In our modern, competitive world, it is easy to get caught up in the endless cycle of work and responsibilities, often neglecting the importance of leisure. However, maintaining a healthy balance between our professional lives and personal time is crucial for overall well-being. Constant work without adequate rest leads to stress, burnout, and a decline in productivity. It can negatively impact both our mental and physical health. Therefore, recognizing the need for this balance is the first step towards a more fulfilling and sustainable lifestyle.\n\nLeisure is not merely an absence of work; it is an essential component for a healthy life. Engaging in hobbies, spending time with family and friends, or simply relaxing helps to recharge our minds and bodies. It fosters creativity, reduces stress, and improves our mood and concentration when we return to work. Activities like reading, playing sports, or travelling provide new perspectives and experiences that enrich our lives. By making a conscious effort to schedule leisure time, we not only improve our health but also enhance our efficiency and passion for our work, leading to greater success in all aspects of life.",
+          "explanationNepali": "यो उत्तरले काम र फुर्सदबीच सन्तुलनको महत्त्वबारे दुई अनुच्छेदमा विचार प्रस्तुत गर्दछ। पहिलो अनुच्छेदले सन्तुलनको आवश्यकता र निरन्तर कामको नकारात्मक प्रभावहरूलाई जोड दिन्छ। दोस्रो अनुच्छेदले फुर्सदका फाइदाहरू, जस्तै तनाव कम गर्ने, रचनात्मकता बढाउने, र समग्र उत्पादकत्वमा सुधार गर्ने बारेमा छलफल गर्दछ। उत्तरले एक संरचित तर्क प्रस्तुत गर्दछ र लगभग १५० शब्दहरूको शब्द सीमा भित्र रहन्छ।",
+          "explanationEnglish": "This answer presents views on the importance of balancing work and leisure in two paragraphs. The first paragraph emphasizes the need for balance and the negative consequences of constant work. The second paragraph discusses the benefits of leisure, such as stress reduction, enhanced creativity, and improved overall productivity. The response provides a structured argument and stays within the word limit of about 150 words. Citations: chapter 4, page 51."
         }
       },
       {
         "questionNumber": 8,
         "type": "free_writing",
-        "title": "Write an essay in about 200 words on the topic 'The Importance of Hobbies and Interests in a Student's Life'.",
+        "title": "Write a review of a film you have recently watched in about 200 words.",
         "marks": 8,
         "wordCount": 200,
+        "clues": [
+          "film title",
+          "director",
+          "main plot summary",
+          "strengths and weaknesses (acting, visuals, music)",
+          "recommendation"
+        ],
         "sampleAnswer": {
-            "title": "The Importance of Hobbies and Interests in a Student's Life",
-            "content": "In the busy and competitive life of a student, academics often take center stage, leaving little time for other activities. However, cultivating hobbies and interests outside of schoolwork is crucial for holistic development and overall well-being. Hobbies are not just pastimes; they are essential tools for growth.\n\nFirstly, hobbies are an excellent way to relieve stress. Engaging in an activity one loves, whether it is painting, playing a musical instrument, or gardening, can be a great escape from academic pressure. This mental break helps students to refresh their minds and return to their studies with renewed focus and energy. Secondly, hobbies help in discovering and nurturing hidden talents. A student might discover a passion for photography or writing, which could even turn into a future career.\n\nMoreover, hobbies teach valuable life skills. Team sports, for instance, teach cooperation, leadership, and discipline. Pursuing interests like coding or debating enhances problem-solving and communication skills. These are skills that are not always taught in a traditional classroom but are vital for success in life.\n\nIn conclusion, encouraging students to have hobbies is as important as focusing on their academic performance. These interests contribute to their mental health, skill development, and personal happiness, shaping them into well-rounded and successful individuals."
+          "title": "Film Review: Hachi: A Dog's Tale",
+          "content": "Lasse Hallström's 'Hachi: A Dog's Tale' is a deeply moving film that beautifully portrays a story of unwavering loyalty. The film is based on a true story and follows a college professor, Parker Wilson, who finds an abandoned Akita puppy at a train station and takes him home. They form an unbreakable bond, and the dog, Hachi, accompanies his master to the station every morning and waits for his return every evening. Tragically, Parker dies at work one day and never returns, but Hachi continues to wait at the same spot for the next nine years.\n\nThe film's greatest strength is its emotional depth, driven by the powerful, unspoken connection between Parker and Hachi. Richard Gere's performance is heartwarming, and the dog actors playing Hachi are incredibly expressive. Director Lasse Hallström’s use of soft piano music enhances the film's pathos, and the creative black-and-white shots from Hachi's perspective are a brilliant touch. One might argue that the plot is simple and perhaps overly sentimental, but its simplicity is precisely what makes it so powerful. The pacing is slow, which allows the emotional core of the story to develop organically.\n\nI highly recommend 'Hachi: A Dog's Tale' to anyone who appreciates a touching story about love and devotion. It's a tearjerker, so keep a box of tissues handy.",
+          "explanationNepali": "यो उत्तरले 'Hachi: A Dog's Tale' फिल्मको समीक्षा प्रस्तुत गर्दछ। यसले फिल्मको शीर्षक, निर्देशक, मुख्य कथाको सारांश, अभिनय र संगीत जस्ता शक्तिहरू, र एक सिफारिस समावेश गर्दछ, प्रश्नमा माग गरिए अनुसार। समीक्षाले फिल्मको भावनात्मक शक्ति र यसले दर्शकमा पार्ने प्रभावलाई जोड दिन्छ। यो लगभग २०० शब्दको छ।",
+          "explanationEnglish": "This answer provides a review of the film 'Hachi: A Dog's Tale'. It includes the film's title, director, a summary of the main plot, its strengths like acting and music, and a recommendation, as requested. The review emphasizes the film's emotional power and its impact on the audience. It is approximately 200 words. Citations: chapter 18, pages 291-292."
         }
       },
       {
@@ -427,50 +456,50 @@
           {
             "id": "i",
             "type": "reproduce",
-            "questionEnglish": "She seldom speaks in class, .............? (Add a correct question tag.)",
-            "correctAnswer": "She seldom speaks in class, does she?",
-            "explanation": "Explanation (English): 'Seldom' is a negative adverb, so the statement is considered negative. Therefore, the question tag must be positive. The verb is 'speaks' (simple present), so the auxiliary is 'does'.\nব্যাখ্যা (Nepali Explanation): 'Seldom' एक नकारात्मक क्रियाविशेषण हो, त्यसैले वाक्यलाई नकारात्मक मानिन्छ। तसर्थ, प्रश्न ट्याग सकारात्मक हुनुपर्छ। क्रिया 'speaks' (simple present) भएकोले, सहायक क्रिया 'does' हुन्छ।",
-            "marks": 1
+            "questionEnglish": "Let's go for a walk, __________? (Add a correct question tag.)",
+            "correctAnswer": "Let's go for a walk, shall we?",
+            "explanationNepali": "'Let's' बाट सुरु हुने वाक्यले सुझावलाई जनाउँछ, र यसको लागि प्रश्न ट्याग सधैं 'shall we?' हुन्छ।",
+            "explanationEnglish": "A sentence beginning with 'Let's' expresses a suggestion, and its question tag is always 'shall we?'. Citations: chapter 14, page 238."
           },
           {
             "id": "ii",
             "type": "reproduce",
-            "questionEnglish": "If I were a bird, I __________ (fly) in the sky. (Use the correct form of the verb 'fly' to complete the sentence.)",
-            "correctAnswer": "If I were a bird, I would fly in the sky.",
-            "explanation": "Explanation (English): This is a Type II conditional sentence, used for hypothetical or unreal situations in the present. The structure is 'If + simple past, ... would + bare infinitive'.\nব্যাখ্যা (Nepali Explanation): यो Type II conditional वाक्य हो, जुन वर्तमानको काल्पनिक वा असम्भव अवस्थाहरूको लागि प्रयोग गरिन्छ। यसको संरचना 'If + simple past, ... would + bare infinitive' हुन्छ।",
-            "marks": 1
+            "questionEnglish": "Somebody has to clean the room. (Change into passive voice.)",
+            "correctAnswer": "The room has to be cleaned.",
+            "explanationNepali": "Modal verb 'has to' भएको वाक्यलाई passive मा परिवर्तन गर्दा, संरचना 'object + has to + be + v3' हुन्छ। 'by somebody' लाई हटाइन्छ।",
+            "explanationEnglish": "When changing a sentence with the modal verb 'has to' into the passive, the structure is 'object + has to + be + v3'. 'by somebody' is omitted. Citations: chapter 8, page 131."
           },
           {
             "id": "iii",
             "type": "reproduce",
-            "questionEnglish": "The teacher said, \"What is your name?\" (Change into indirect speech.)",
-            "correctAnswer": "The teacher asked what my name was.",
-            "explanation": "Explanation (English): In reporting a WH-question, the reporting verb becomes 'asked', the conjunction is the WH-word itself ('what'), and the sentence structure changes from interrogative to statement form (subject + verb). 'is' changes to 'was'.\nব্যাখ্যা (Nepali Explanation): WH-प्रश्नलाई रिपोर्ट गर्दा, रिपोर्टिङ क्रिया 'asked' हुन्छ, संयोजन WH-शब्द ('what') आफैं हुन्छ, र वाक्यको संरचना प्रश्नवाचकबाट सामान्य कथन (subject + verb) मा परिवर्तन हुन्छ। 'is' 'was' मा बदलिन्छ।",
-            "marks": 1
+            "questionEnglish": "The teacher said, \"Why are you late?\" (Change into indirect speech.)",
+            "correctAnswer": "The teacher asked why I was late.",
+            "explanationNepali": "Wh-प्रश्नलाई अप्रत्यक्ष बोलीमा परिवर्तन गर्दा, 'asked' जस्ता रिपोर्टिङ क्रिया प्रयोग गरिन्छ र प्रश्नको संरचनालाई Wh-शब्द + कर्ता + क्रियाको संरचनामा परिवर्तन गरिन्छ।",
+            "explanationEnglish": "When changing a Wh-question to indirect speech, a reporting verb like 'asked' is used, and the question structure is changed to Wh-word + subject + verb. Citations: chapter 2, page 27."
           },
           {
             "id": "iv",
             "type": "reproduce",
-            "questionEnglish": "Someone has stolen my pen. (Change into passive voice.)",
-            "correctAnswer": "My pen has been stolen.",
-            "explanation": "Explanation (English): The sentence is in Present Perfect tense (has + V3). The passive form is 'object + has/have + been + V3'. The agent 'by someone' is usually omitted because it is unknown or unimportant.\nব্যাখ্যা (Nepali Explanation): वाक्य Present Perfect tense (has + V3) मा छ। यसको passive form 'object + has/have + been + V3' हो। 'by someone' लाई सामान्यतया हटाइन्छ किनभने यो अज्ञात वा महत्वहीन छ।",
-            "marks": 1
+            "questionEnglish": "If she had studied harder, she ________ (pass) the exam. (Use the correct form of the verb 'pass' to complete the sentence.)",
+            "correctAnswer": "If she had studied harder, she would have passed the exam.",
+            "explanationNepali": "यो तेस्रो प्रकारको conditional वाक्य हो, जसले भूतकालको एक असम्भव अवस्थालाई जनाउँछ। संरचना If + past perfect, ...would have + v3 हो।",
+            "explanationEnglish": "This is a Type 3 conditional sentence, which refers to an unreal past condition. The structure is If + past perfect, ...would have + v3. Citations: chapter 5, page 80."
           },
           {
             "id": "v",
             "type": "reproduce",
-            "questionEnglish": "My father made me clean the room. (Change into passive voice.)",
-            "correctAnswer": "I was made to clean the room by my father.",
-            "explanation": "Explanation (English): When the causative verb 'make' is used in the passive voice, it is followed by a to-infinitive ('to clean'), unlike in the active voice where it takes a bare infinitive ('clean').\nব্যাখ্যা (Nepali Explanation): जब causative verb 'make' लाई passive voice मा प्रयोग गरिन्छ, त्यसपछि to-infinitive ('to clean') आउँछ, जबकि active voice मा bare infinitive ('clean') प्रयोग हुन्छ।",
-            "marks": 1
+            "questionEnglish": "I saw him cross the road. (Change into 'What' question.)",
+            "correctAnswer": "What did you see him do?",
+            "explanationNepali": "क्रिया 'cross the road' बारे प्रश्न सोध्न, 'What' प्रयोग गरिन्छ र भूतकालको लागि सहायक क्रिया 'did' को साथ प्रश्न बनाइन्छ।",
+            "explanationEnglish": "To ask about the action 'cross the road', 'What' is used, and a question is formed with the auxiliary verb 'did' for the simple past. Citations: chapter 18, page 301."
           },
           {
             "id": "vi",
             "type": "reproduce",
-            "questionEnglish": "He went to the market <strong>to buy vegetables</strong>. (Change into a 'Why' question.)",
-            "correctAnswer": "Why did he go to the market?",
-            "explanation": "Explanation (English): The phrase 'to buy vegetables' explains the purpose or reason, answering the question 'Why?'. To form the question, use 'Why' followed by the auxiliary 'did' (because the verb is 'went'), the subject 'he', and the base form of the verb 'go'.\nব্যাখ্যা (Nepali Explanation): 'to buy vegetables' वाक्यांशले उद्देश्य वा कारण बताउँछ, जसले 'किन?' प्रश्नको उत्तर दिन्छ। प्रश्न बनाउन, 'Why' पछि सहायक क्रिया 'did' ('went' को कारणले), कर्ता 'he', र क्रियाको मूल रूप 'go' प्रयोग गर्नुहोस्।",
-            "marks": 1
+            "questionEnglish": "He likes both tea and coffee. (Change into negative.)",
+            "correctAnswer": "He likes neither tea nor coffee.",
+            "explanationNepali": "'both...and' को नकारात्मक रूप 'neither...nor' हो, जसले दुवै विकल्पहरूलाई अस्वीकार गर्दछ।",
+            "explanationEnglish": "The negative form of 'both...and' is 'neither...nor', which negates both options. Citations: chapter 11, page 183."
           }
         ]
       },
@@ -479,60 +508,71 @@
         "type": "cloze_test",
         "title": "Choose and copy the correct answers from the brackets to complete the given text. (Rewriting the text is not compulsory.)",
         "marks": 5,
-        "passage": "There was once (a) _____ (a/an/the/no article) very clever fox who was walking through the forest. He came to a vineyard (b) _____ (where/which/who/when) some delicious grapes were hanging high on a vine. The fox, (c) _____ (who/which/whom/whose) was very thirsty, tried to reach them but could not. He jumped again and again, (d) _____ (but/so/because/although) he failed every time. At last, he gave up and walked away. He said to himself, \"I am sure the grapes (e) _____ (are/is/was/were) sour.\" A little bird heard this, (f) _____ (didn't it/wasn't it/doesn't it/did it)? The fox didn't get the grapes (g) _____ (because/because of/in spite of/due) his best efforts. If he had tried a different method, he (h) _____ (may succeed/might succeed/might have succeeded/will succeed). People often (i) _____ (blames/blame/is blaming/blamed) the circumstances for their failures. This story makes us (j) _____ (to think/think/thinking/thought) about our own attitudes.",
+        "passage": "Last week, I went to (a) _____ (a/an/the/no article) historical place called Gorkha Palace. It (b) _____ (is/was/has been/had been) built in the 16th century. It is a home to a rich history, (c) _____ (is it/isn't it/was it/wasn't it)? I was amazed by the architecture. The guide (d) _____ (who/whom/which/whose) knowledge was impressive told us many stories. If I had known about its beauty earlier, I (e) _____ (will visit/would visit/would have visited/had visited) it long ago. Visitors (f) _____ (must/can/may/might) not touch the ancient artifacts. I asked the guide, \"(g) _____ (Why this palace is important/Why is this palace important/Why was this palace important/Why the palace was important)?\" He explained that it was the place (h) _____ (which/that/where/when) King Prithvi Narayan Shah began his unification campaign. The local people make the visitors (i) _____ (feel/to feel/felt/feeling) very welcome. (j) _____ (Therefore/However/Although/Because) the climb was steep, the view from the top was worth it.",
         "gaps": [
           {
-            "id": "a", 
+            "id": "a",
             "correctAnswer": "a",
-            "explanation": "Explanation (English): 'a' is used before a singular countable noun ('fox') that is being introduced for the first time.\nব্যাখ্যা (Nepali Explanation): पहिलो पटक प्रस्तुत गरिएको एकवचन गणनीय संज्ञा ('fox') को अगाडि 'a' प्रयोग गरिन्छ।"
+            "explanationNepali": "'historical' शब्द व्यञ्जन ध्वनि /h/ बाट सुरु हुन्छ, त्यसैले 'a' प्रयोग हुन्छ।",
+            "explanationEnglish": "The word 'historical' begins with a consonant sound /h/, so 'a' is used. Citations: chapter 7, page 120."
           },
           {
-            "id": "b", 
+            "id": "b",
+            "correctAnswer": "was",
+            "explanationNepali": "कार्य (निर्माण) भूतकालमा एक निश्चित समय (16th century) मा भएको हो, त्यसैले simple past passive ('was built') को प्रयोग हुन्छ।",
+            "explanationEnglish": "The action (building) happened at a specific time in the past (16th century), so the simple past passive ('was built') is used. Citations: chapter 8, page 131."
+          },
+          {
+            "id": "c",
+            "correctAnswer": "isn't it",
+            "explanationNepali": "वाक्य 'It is a home...' सकारात्मक र वर्तमान कालमा छ, त्यसैले प्रश्न ट्याग नकारात्मक ('isn't') र सर्वनाम ('it') हुनुपर्छ।",
+            "explanationEnglish": "The statement 'It is a home...' is positive and in the present tense, so the tag must be negative ('isn't') with the pronoun ('it'). Citations: chapter 14, page 237."
+          },
+          {
+            "id": "d",
+            "correctAnswer": "whose",
+            "explanationNepali": "'Whose' एक possessive relative pronoun हो, जसले यहाँ गाइडको ज्ञान ('knowledge') लाई जनाउँछ।",
+            "explanationEnglish": "'Whose' is a possessive relative pronoun, referring to the guide's possession of 'knowledge'. Citations: chapter 15, page 252."
+          },
+          {
+            "id": "e",
+            "correctAnswer": "would have visited",
+            "explanationNepali": "यो तेस्रो प्रकारको conditional वाक्य हो (If + past perfect, ...would have + v3), जसले भूतकालको एक असम्भव अवस्थालाई जनाउँछ।",
+            "explanationEnglish": "This is a Type 3 conditional sentence (If + past perfect, ...would have + v3), referring to an unreal past condition. Citations: chapter 5, page 80."
+          },
+          {
+            "id": "f",
+            "correctAnswer": "must",
+            "explanationNepali": "'Must not' को प्रयोग यहाँ एक कडा नियम वा निषेध (prohibition) लाई जनाउन गरिएको छ। 'must' को नकारात्मक रूप 'must not' हो।",
+            "explanationEnglish": "The use of 'must not' here indicates a strong rule or prohibition. The sentence requires the modal 'must' in its negative form. Citations: chapter 4, page 63."
+          },
+          {
+            "id": "g",
+            "correctAnswer": "Why is this palace important",
+            "explanationNepali": "प्रत्यक्ष प्रश्नमा, Wh-शब्द पछि सहायक क्रिया ('is') + कर्ता ('this palace') को संरचना हुन्छ।",
+            "explanationEnglish": "In a direct question, the structure is Wh-word + auxiliary verb ('is') + subject ('this palace'). Citations: chapter 18, page 301."
+          },
+          {
+            "id": "h",
             "correctAnswer": "where",
-            "explanation": "Explanation (English): 'where' is a relative adverb used to refer to a place (a vineyard).\nব্যাখ্যা (Nepali Explanation): 'where' एक relative adverb हो जुन कुनै ठाउँ (a vineyard) लाई जनाउन प्रयोग गरिन्छ।"
+            "explanationNepali": "'Where' ले स्थान ('the place') लाई जनाउँछ जहाँ कुनै कार्य भएको थियो।",
+            "explanationEnglish": "'Where' is a relative adverb used to refer to a place ('the place') where an action occurred. Citations: chapter 15, page 252."
           },
           {
-            "id": "c", 
-            "correctAnswer": "who",
-            "explanation": "Explanation (English): 'who' is a relative pronoun used as the subject for a person or an animal that is personified (the fox).\nব্যাখ্যা (Nepali Explanation): 'who' एक relative pronoun हो जुन व्यक्ति वा मानवीकरण गरिएको जनावर (the fox) को लागि कर्ताको रूपमा प्रयोग गरिन्छ।"
+            "id": "i",
+            "correctAnswer": "feel",
+            "explanationNepali": "'make' को causative रूपमा, यसपछि object ('the visitors') र bare infinitive ('feel') आउँछ।",
+            "explanationEnglish": "In the causative form with 'make', it is followed by an object ('the visitors') and the bare infinitive ('feel'). Citations: chapter 18, page 307."
           },
           {
-            "id": "d", 
-            "correctAnswer": "but",
-            "explanation": "Explanation (English): 'but' is a conjunction used to show contrast between the effort (jumping) and the result (failing).\nব্যাখ্যা (Nepali Explanation): 'but' एक संयोजन हो जुन प्रयास (jumping) र परिणाम (failing) बिचको भिन्नता देखाउन प्रयोग गरिन्छ।"
-          },
-          {
-            "id": "e", 
-            "correctAnswer": "are",
-            "explanation": "Explanation (English): This is reported speech, but the fox is stating a general belief as if it's true now, so the present tense 'are' (plural for grapes) is appropriate.\nব্যাখ্যা (Nepali Explanation): यो reported speech हो, तर स्यालले एक सामान्य विश्वासलाई अहिले सत्य भएझैं बताइरहेको छ, त्यसैले वर्तमान काल 'are' (grapes को लागि बहुवचन) उपयुक्त छ।"
-          },
-          {
-            "id": "f", 
-            "correctAnswer": "didn't it",
-            "explanation": "Explanation (English): The subject is 'A little bird' (it) and the verb is 'heard' (simple past, positive). The tag question uses 'did' and is negative.\nব্যাখ্যা (Nepali Explanation): कर्ता 'A little bird' (it) हो र क्रिया 'heard' (simple past, positive) हो। ट्याग प्रश्नमा 'did' प्रयोग हुन्छ र नकारात्मक हुन्छ।"
-          },
-          {
-            "id": "g", 
-            "correctAnswer": "in spite of",
-            "explanation": "Explanation (English): 'in spite of' (or despite) is used before a noun phrase ('his best efforts') to show contrast.\nব্যাখ্যা (Nepali Explanation): भिन्नता देखाउन noun phrase ('his best efforts') को अगाडि 'in spite of' (वा despite) प्रयोग गरिन्छ।"
-          },
-          {
-            "id": "h", 
-            "correctAnswer": "might have succeeded",
-            "explanation": "Explanation (English): This is a Type III conditional sentence (If + past perfect...), expressing an unreal possibility in the past. The result clause uses 'might have + V3'.\nব্যাখ্যা (Nepali Explanation): यो Type III conditional वाक्य हो (If + past perfect...), जसले विगतको एक असम्भव सम्भावनालाई व्यक्त गर्दछ। परिणाम खण्डमा 'might have + V3' प्रयोग हुन्छ।"
-          },
-          {
-            "id": "i", 
-            "correctAnswer": "blame",
-            "explanation": "Explanation (English): The subject 'People' is plural, so it takes the plural verb form 'blame' in the simple present tense.\nব্যাখ্যা (Nepali Explanation): कर्ता 'People' बहुवचन हो, त्यसैले simple present tense मा यसले बहुवचन क्रिया 'blame' लिन्छ।"
-          },
-          {
-            "id": "j", 
-            "correctAnswer": "think",
-            "explanation": "Explanation (English): The causative verb 'makes' is followed by a bare infinitive (verb without 'to').\nব্যাখ্যা (Nepali Explanation): causative verb 'makes' पछि bare infinitive (verb without 'to') प्रयोग हुन्छ।"
+            "id": "j",
+            "correctAnswer": "Although",
+            "explanationNepali": "'Although' ले विरोधाभास देखाउँछ: उकालो ठाडो भए तापनि, माथिको दृश्य राम्रो थियो।",
+            "explanationEnglish": "'Although' introduces a contrast: despite the climb being steep, the view was worth it. Citations: chapter 13, page 225."
           }
         ]
       }
     ]
   }
 ]
+

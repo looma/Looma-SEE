@@ -1,419 +1,422 @@
 [
   {
     "_id": "see_2081_science_practice_1_generated",
-    "title": "SEE 2081 Science Practice Test 1 (Generated Questions)",
-    "titleNepali": "SEE २०८१ विज्ञान अभ्यास परीक्षा १ (उत्पन्न प्रश्नहरू)",
+    "title": "SEE 2081 Science Practice Test 1",
+    "titleNepali": "SEE २०८१ विज्ञान अभ्यास परीक्षा १",
     "subject": "science",
     "year": 2081,
     "totalMarks": 75,
     "duration": 180,
     "sections": ["A", "B", "C", "D"],
     "isActive": true,
-    "createdAt": { "$date": "2025-08-10T19:25:11.000Z" },
-    "updatedAt": { "$date": "2025-08-10T19:25:11.000Z" }
+    "createdAt": { "$date": "2025-09-01T10:00:00.000Z" },
+    "updatedAt": { "$date": "2025-09-01T10:00:00.000Z" }
   },
   {
-    "_id": { "$oid": "687d809a2f3df9d071c52109" },
+    "_id": { "$oid": "66d6c1a1b3e4f5a6b7c8d9e0" },
     "testId": "see_2081_science_practice_1_generated",
     "questions": {
       "groupA": [
         {
           "id": "a",
           "type": "multiple_choice",
-          "questionNepali": "यदि कुनै ग्रहको गुरुत्व प्रवेग पृथ्वीको भन्दा एक-चौथाइ छ भने, सो ग्रहमा ६० के.जी. पिण्ड भएको वस्तुको तौल कति हुन्छ ? (g=10 m/s2 मान्नुहोस्)",
-          "questionEnglish": "If the acceleration due to gravity on a planet is one-fourth that of the Earth, what will be the weight of a 60 kg object on that planet? (take g=10 m/s2)",
+          "questionNepali": "चापको तत्जन्य एकाइ पास्कल (Pa) मा कुन-कुन आधारभूत एकाइहरू मिलेर बनेको हुन्छ?",
+          "questionEnglish": "Which fundamental units are included in the derived unit of pressure, Pascal (Pa)?",
           "options": [
-            {"id": "i", "nepali": "600 N", "english": "600 N"},
-            {"id": "ii", "nepali": "150 N", "english": "150 N"},
-            {"id": "iii", "nepali": "240 N", "english": "240 N"},
-            {"id": "iv", "nepali": "60 N", "english": "60 N"}
+            {"id": "i", "nepali": "kgm−2s−2", "english": "kgm−2s−2"},
+            {"id": "ii", "nepali": "kgm−1s−2", "english": "kgm−1s−2"},
+            {"id": "iii", "nepali": "kgm2s−2", "english": "kgm2s−2"},
+            {"id": "iv", "nepali": "kgms−2", "english": "kgms−2"}
           ],
           "correctAnswer": "ii",
           "marks": 1,
-          "explanation": "व्याख्या (Nepali Explanation): वस्तुको तौल (Weight) को सूत्र W=mg हो। पृथ्वीमा वस्तुको तौल = 60 kg×10 m/s2=600 N हुन्छ। प्रश्नअनुसार, उक्त ग्रहको गुरुत्व प्रवेग पृथ्वीको भन्दा एक-चौथाइ छ, अर्थात् g_planet = 1/4 × 10 m/s² = 2.5 m/s²। तसर्थ, ग्रहमा वस्तुको तौल = 60 kg × 2.5 m/s² = 150 N हुन्छ।\n\nEnglish Explanation: The formula for weight is W=mg. The weight of the object on Earth would be 60 kg × 10 m/s² = 600 N. According to the question, the acceleration due to gravity on the planet is one-fourth that of Earth, i.e., g_planet = 1/4 × 10 m/s² = 2.5 m/s². Therefore, the weight of the object on the planet is 60 kg × 2.5 m/s² = 150 N."
+          "explanation": "व्याख्या: चापको सूत्र बल/क्षेत्रफल (P=F/A) हो । बलको एकाइ न्युटन (N) हो, जसमा kgms−2 आधारभूत एकाइहरू हुन्छन् । क्षेत्रफलको एकाइ m2 हो । त्यसैले, चापको एकाइ N/m2 वा (kgms−2)/m2 हुन्छ, जसलाई सरलीकरण गर्दा kgm−1s−2 हुन्छ ।\n\nExplanation: The formula for pressure is Force/Area (P=F/A). The unit of force is Newton (N), which is composed of the fundamental units kgms−2. The unit of area is m2. Therefore, the unit of pressure is N/m2 or (kgms−2)/m2, which simplifies to kgm−1s−2. Citations: chapter 1, pages 8-9"
         },
         {
           "id": "b",
           "type": "multiple_choice",
-          "questionNepali": "मोनोहाइब्रिड क्रसको दोस्रो वंश (F2 generation) मा देखिने जिनोटाइपिक अनुपात कुन हो ?",
-          "questionEnglish": "In a monohybrid cross, what is the genotypic ratio in the F2 generation?",
+          "questionNepali": "विकसित भास्कुलर तन्तु भएको, जरा, काण्ड र पातमा विभाजित भएको तर फूल नफुल्ने बिरुवा कुन हो?",
+          "questionEnglish": "Which is the plant that has developed vascular tissue, is differentiated into root, stem, and leaf, but does not bear flowers?",
           "options": [
-            {"id": "i", "nepali": "1:1", "english": "1:1"},
-            {"id": "ii", "nepali": "3:1", "english": "3:1"},
-            {"id": "iii", "nepali": "1:2:1", "english": "1:2:1"},
-            {"id": "iv", "nepali": "9:3:3:1", "english": "9:3:3:1"}
+            {"id": "i", "nepali": "मस (Moss)", "english": "Moss"},
+            {"id": "ii", "nepali": "च्याउ (Mushroom)", "english": "Mushroom"},
+            {"id": "iii", "nepali": "फर्न (Fern)", "english": "Fern"},
+            {"id": "iv", "nepali": "सल्ला (Pinus)", "english": "Pinus"}
           ],
           "correctAnswer": "iii",
           "marks": 1,
-          "explanation": "व्याख्या (Nepali Explanation): मेण्डलको मोनोहाइब्रिड क्रसको दोस्रो वंश (F2 generation) मा फिनोटाइपिक अनुपात ३:१ हुन्छ भने जिनोटाइपिक अनुपात १:२:१ (१ शुद्ध प्रबल : २ ठिमाहा प्रबल : १ शुद्ध लुप्त) हुन्छ।\n\nEnglish Explanation: In the F2 generation of Mendel's monohybrid cross, the phenotypic ratio is 3:1, while the genotypic ratio is 1:2:1 (1 pure dominant : 2 hybrid dominant : 1 pure recessive)."
+          "explanation": "व्याख्या: फर्नहरू टेरिडोफाइटा (Pteridophyta) उपविभागमा पर्छन्, जसका विशेषताहरूमा विकसित भास्कुलर तन्तु (xylem and phloem), जरा, काण्ड र पातमा विभाजित शरीर, तर फूल र बीउ नहुनु समावेश छन् ।\n\nExplanation: Ferns belong to the subdivision Pteridophyta, whose characteristics include having developed vascular tissue (xylem and phloem), a body differentiated into root, stem, and leaf, but not bearing flowers or seeds. Citations: chapter 2, pages 21-22"
         },
         {
           "id": "c",
           "type": "multiple_choice",
-          "questionNepali": "तलका मध्ये कुन जीवको शरीर लामो, बेलनाकार र खण्ड-खण्डमा विभाजित (metamerically segmented) हुन्छ ?",
-          "questionEnglish": "Which of the following animals has a body that is elongated, cylindrical, and metamerically segmented?",
+          "questionNepali": "मेन्डलको प्रयोग अनुसार, शुद्ध अग्लो (TT) र शुद्ध होचो (tt) केराउको बोटबीच क्रस गराउँदा पहिलो वंश (F1 generation) मा कुन गुण देखिन्छ?",
+          "questionEnglish": "According to Mendel's experiment, when a pure tall (TT) and a pure dwarf (tt) pea plant are crossed, which character is expressed in the first filial (F1) generation?",
           "options": [
-            {"id": "i", "nepali": "तारामाछा (Starfish)", "english": "Starfish"},
-            {"id": "ii", "nepali": "गड्यौला (Earthworm)", "english": "Earthworm"},
-            {"id": "iii", "nepali": "हाइड्रा (Hydra)", "english": "Hydra"},
-            {"id": "iv", "nepali": "फित्तेजुका (Tapeworm)", "english": "Tapeworm"}
+            {"id": "i", "nepali": "सबै होचो (All dwarf)", "english": "All dwarf"},
+            {"id": "ii", "nepali": "सबै अग्लो (All tall)", "english": "All tall"},
+            {"id": "iii", "nepali": "७५% अग्लो र २५% होचो (75% tall and 25% dwarf)", "english": "75% tall and 25% dwarf"},
+            {"id": "iv", "nepali": "५०% अग्लो र ५०% होचो (50% tall and 50% dwarf)", "english": "50% tall and 50% dwarf"}
           ],
           "correctAnswer": "ii",
           "marks": 1,
-          "explanation": "व्याख्या (Nepali Explanation): गड्यौला फाइलम एनिलिडा (Annelida) अन्तर्गत पर्दछ, जसका जीवहरूको शरीर लामो, बेलनाकार र बाह्य तथा भित्री रूपमा खण्ड-खण्डमा विभाजित (metamerically segmented) हुन्छ।\n\nEnglish Explanation: The Earthworm belongs to the phylum Annelida, which is characterized by organisms with an elongated, cylindrical, and metamerically segmented body, both externally and internally."
+          "explanation": "व्याख्या: मेन्डलको प्रबलताको नियम (Law of Dominance) अनुसार, जब दुई शुद्ध विपरित गुण भएका जीवहरूबीच क्रस गराइन्छ, पहिलो वंशमा प्रबल गुण मात्र देखिन्छ । केराउमा अग्लोपन (Tallness) प्रबल गुण हो ।\n\nExplanation: According to Mendel's Law of Dominance, when two pure individuals with contrasting characters are crossed, only the dominant character is expressed in the first generation. In pea plants, tallness is the dominant character. Citations: chapter 4, pages 92-94"
         },
         {
           "id": "d",
           "type": "multiple_choice",
-          "questionNepali": "विद्युत जेनेरेटर कुन सिद्धान्तमा आधारित भई कार्य गर्दछ ?",
-          "questionEnglish": "On which principle does an electric generator work?",
+          "questionNepali": "कुनै वस्तुलाई तरल पदार्थमा डुबाउँदा त्यसले अनुभव गर्ने उर्ध्वचाप के कुरामा निर्भर गर्दछ?",
+          "questionEnglish": "When an object is immersed in a liquid, on what does the upthrust it experiences depend?",
           "options": [
-            {"id": "i", "nepali": "मोटर असर (Motor effect)", "english": "Motor effect"},
-            {"id": "ii", "nepali": "विद्युतको ताप असर (Heating effect of current)", "english": "Heating effect of current"},
-            {"id": "iii", "nepali": "विद्युत चुम्बकीय उपपादन (Electromagnetic induction)", "english": "Electromagnetic induction"},
-            {"id": "iv", "nepali": "विद्युतको रासायनिक असर (Chemical effect of current)", "english": "Chemical effect of current"}
+            {"id": "i", "nepali": "वस्तुको तौल (Weight of the object)", "english": "Weight of the object"},
+            {"id": "ii", "nepali": "तरल पदार्थको तापक्रम (Temperature of the liquid)", "english": "Temperature of the liquid"},
+            {"id": "iii", "nepali": "तरल पदार्थको घनत्व र विस्थापित तरलको आयतन (Density of the liquid and volume of the displaced liquid)", "english": "Density of the liquid and volume of the displaced liquid"},
+            {"id": "iv", "nepali": "वस्तुको आकार (Shape of the object)", "english": "Shape of the object"}
           ],
           "correctAnswer": "iii",
           "marks": 1,
-          "explanation": "व्याख्या (Nepali Explanation): जेनेरेटरले मेकानिकल शक्तिलाई विद्युतीय शक्तिमा बदल्छ। यो प्रक्रिया विद्युत चुम्बकीय उपपादनको सिद्धान्तमा आधारित छ, जसमा चुम्बकीय क्षेत्र र कन्डक्टरबीच सापेक्षिक चाल हुँदा कन्डक्टरमा विद्युत प्रवाह उत्पन्न हुन्छ।\n\nEnglish Explanation: A generator converts mechanical energy into electrical energy. This process is based on the principle of electromagnetic induction, which is the process of inducing an electromotive force (e.m.f.) in a conductor when there is a change in magnetic flux linked with that conductor."
+          "explanation": "व्याख्या: उर्ध्वचाप तरल पदार्थको घनत्व र वस्तुले विस्थापित गरेको तरलको आयतनमा सोझै समानुपातिक हुन्छ । घनत्व र विस्थापित आयतन जति बढी भयो, उर्ध्वचाप पनि त्यति नै बढी हुन्छ ।\n\nExplanation: Upthrust is directly proportional to the density of the liquid and the volume of the liquid displaced by the object. The greater the density and displaced volume, the greater the upthrust. Citations: chapter 8, pages 210-212"
         },
         {
           "id": "e",
           "type": "multiple_choice",
-          "questionNepali": "तलका मध्ये कुन यौगिक ट्राइहाइड्रिक अल्कोहल हो ?",
-          "questionEnglish": "Which of the following compounds is a trihydric alcohol?",
+          "questionNepali": "ट्रान्सफर्मरले कुन सिद्धान्तमा आधारित भएर काम गर्छ?",
+          "questionEnglish": "On which principle does a transformer work?",
           "options": [
-            {"id": "i", "nepali": "मिथानोल (Methanol)", "english": "Methanol"},
-            {"id": "ii", "nepali": "ग्लाइकोल (Glycol)", "english": "Glycol"},
-            {"id": "iii", "nepali": "ग्लिसेरोल (Glycerol)", "english": "Glycerol"},
-            {"id": "iv", "nepali": "इथानोल (Ethanol)", "english": "Ethanol"}
+            {"id": "i", "nepali": "मोटर असर (Motor effect)", "english": "Motor effect"},
+            {"id": "ii", "nepali": "विद्युत चुम्बकीय उपपादन (Electromagnetic induction)", "english": "Electromagnetic induction"},
+            {"id": "iii", "nepali": "म्युचुअल इन्डक्सन (Mutual induction)", "english": "Mutual induction"},
+            {"id": "iv", "nepali": "विद्युतको रासायनिक असर (Chemical effect of current)", "english": "Chemical effect of current"}
           ],
           "correctAnswer": "iii",
           "marks": 1,
-          "explanation": "व्याख्या (Nepali Explanation): ग्लिसेरोल (प्रोपेन-१, २, ३-ट्राइओल) एक ट्राइहाइड्रिक अल्कोहल हो किनभने यसमा तीनवटा हाइड्रोक्सिल (-OH) समूहहरू हुन्छन्। मिथानोल र इथानोल मोनोहाइड्रिक हुन् भने ग्लाइकोल डाइहाइड्रिक अल्कोहल हो।\n\nEnglish Explanation: Glycerol (propane-1, 2, 3-triol) is a trihydric alcohol because it contains three hydroxyl (-OH) groups. Methanol and ethanol are monohydric, while glycol is a dihydric alcohol."
+          "explanation": "व्याख्या: ट्रान्सफर्मरले म्युचुअल इन्डक्सनको सिद्धान्तमा काम गर्छ, जहाँ एउटा क्वाइलमा बदलिँदो करेन्टले नजिकैको अर्को क्वाइलमा भोल्टेज उत्पन्न गराउँछ ।\n\nExplanation: A transformer works on the principle of mutual induction, where a changing current in one coil induces a voltage in an adjacent coil. Citations: chapter 11, page 318"
         },
         {
           "id": "f",
           "type": "multiple_choice",
-          "questionNepali": "तलका मध्ये कुन सबैभन्दा बढी प्रतिक्रियाशील अधातु हो ?",
-          "questionEnglish": "Which of the following is the most reactive non-metal?",
+          "questionNepali": "आधुनिक पेरियोडिक तालिकाको कुनै समूहमा माथिबाट तल जाँदा तत्त्वहरूको रासायनिक सक्रियतामा कस्तो परिवर्तन हुन्छ?",
+          "questionEnglish": "What change occurs in the chemical reactivity of elements when moving from top to bottom in a group of the modern periodic table?",
           "options": [
-            {"id": "i", "nepali": "फ्लोरिन (Fluorine)", "english": "Fluorine"},
-            {"id": "ii", "nepali": "क्लोरिन (Chlorine)", "english": "Chlorine"},
-            {"id": "iii", "nepali": "अक्सिजन (Oxygen)", "english": "Oxygen"},
-            {"id": "iv", "nepali": "नाइट्रोजन (Nitrogen)", "english": "Nitrogen"}
+            {"id": "i", "nepali": "धातुको सक्रियता घट्छ, अधातुको बढ्छ (Reactivity of metals decreases, non-metals increases)", "english": "Reactivity of metals decreases, non-metals increases"},
+            {"id": "ii", "nepali": "धातुको सक्रियता बढ्छ, अधातुको घट्छ (Reactivity of metals increases, non-metals decreases)", "english": "Reactivity of metals increases, non-metals decreases"},
+            {"id": "iii", "nepali": "दुवैको सक्रियता बढ्छ (Reactivity of both increases)", "english": "Reactivity of both increases"},
+            {"id": "iv", "nepali": "दुवैको सक्रियता घट्छ (Reactivity of both decreases)", "english": "Reactivity of both decreases"}
           ],
-          "correctAnswer": "i",
+          "correctAnswer": "ii",
           "marks": 1,
-          "explanation": "व्याख्या (Nepali Explanation): पेरियोडिक तालिकाको समूहमा माथिबाट तलतिर जाँदा अधातुहरूको प्रतिक्रियाशीलता घट्दै जान्छ। फ्लोरिन (Fluorine) हेलोजन समूह (Group VIIA) को सबैभन्दा माथि रहेकोले यो सबैभन्दा बढी प्रतिक्रियाशील अधातु हो।\n\nEnglish Explanation: The reactivity of non-metals decreases down a group in the periodic table. Fluorine (F) is at the top of the halogen group (Group VIIA), making it the most electronegative and most reactive non-metal."
+          "explanation": "व्याख्या: समूहमा तल जाँदा परमाणुको आकार बढ्छ, जसले गर्दा धातुहरूले सजिलै इलेक्ट्रोन गुमाउँछन् र तिनीहरूको सक्रियता बढ्छ । तर अधातुहरूको इलेक्ट्रोन तान्ने क्षमता घट्छ, जसले गर्दा तिनीहरूको सक्रियता घट्छ ।\n\nExplanation: Moving down a group, the atomic size increases, making it easier for metals to lose electrons, thus increasing their reactivity. For non-metals, the ability to gain electrons decreases, so their reactivity decreases. Citations: chapter 14, page 376"
         },
         {
           "id": "g",
           "type": "multiple_choice",
-          "questionNepali": "तलका मध्ये कुन ग्यास अम्ल वर्षाको प्रमुख कारक हो ?",
-          "questionEnglish": "Which of the following gases is a major contributor to acid rain?",
+          "questionNepali": "एमोनिया ग्यासको भौतिक गुण कुन हो?",
+          "questionEnglish": "Which of the following is a physical property of ammonia gas?",
           "options": [
-            {"id": "i", "nepali": "एमोनिया (Ammonia)", "english": "Ammonia"},
-            {"id": "ii", "nepali": "मिथेन (Methane)", "english": "Methane"},
-            {"id": "iii", "nepali": "सल्फर डाइअक्साइड (Sulphur dioxide)", "english": "Sulphur dioxide"},
-            {"id": "iv", "nepali": "अक्सिजन (Oxygen)", "english": "Oxygen"}
+            {"id": "i", "nepali": "यो हावाभन्दा गह्रौं हुन्छ (It is heavier than air)", "english": "It is heavier than air"},
+            {"id": "ii", "nepali": "यो पानीमा अत्यधिक घुलनशील छ (It is highly soluble in water)", "english": "It is highly soluble in water"},
+            {"id": "iii", "nepali": "यसको कुनै गन्ध हुँदैन (It is odorless)", "english": "It is odorless"},
+            {"id": "iv", "nepali": "यो अम्लसँग प्रतिक्रिया गर्दैन (It does not react with acids)", "english": "It does not react with acids"}
           ],
-          "correctAnswer": "iii",
+          "correctAnswer": "ii",
           "marks": 1,
-          "explanation": "व्याख्या (Nepali Explanation): उद्योगहरू र सवारी साधनहरूबाट निस्कने सल्फर डाइअक्साइड (SO₂) र नाइट्रस अक्साइड जस्ता ग्यासहरू वायुमण्डलमा पानीको वाष्पसँग प्रतिक्रिया गरी सल्फ्युरिक एसिड र नाइट्रिक एसिड जस्ता अम्लहरू बनाउँछन्, जुन अम्ल वर्षाको रूपमा पृथ्वीमा खस्छ।\n\nEnglish Explanation: Gases like sulphur dioxide (SO₂) and nitrous oxide produced from industries and vehicles react with water vapor in the atmosphere to form acids like sulphuric acid and nitric acid, which then fall as acid rain."
+          "explanation": "व्याख्या: एमोनिया (NH3) ग्यास पानीमा अत्यधिक घुलनशील हुन्छ र एमोनियम हाइड्रोअक्साइड बनाउँछ । यो हावाभन्दा हलुका हुन्छ र यसको तिखो, पन्जेन्ट गन्ध हुन्छ ।\n\nExplanation: Ammonia (NH3) gas is highly soluble in water, forming ammonium hydroxide. It is lighter than air and has a strong, pungent odor. Citations: chapter 16, page 403"
         },
         {
           "id": "h",
           "type": "multiple_choice",
-          "questionNepali": "कुन रक्तकोषले रगत जमाउन मद्दत गर्दछ ?",
-          "questionEnglish": "Which blood cells help in the clotting of blood?",
+          "questionNepali": "मियोसिस कोष विभाजनको अन्त्यमा कतिओटा ह्याप्लोइड कोषहरू बन्छन्?",
+          "questionEnglish": "How many haploid cells are formed at the end of meiosis cell division?",
           "options": [
-            {"id": "i", "nepali": "राता रक्तकोष (Red blood cells)", "english": "Red blood cells"},
-            {"id": "ii", "nepali": "सेता रक्तकोष (White blood cells)", "english": "White blood cells"},
-            {"id": "iii", "nepali": "प्लाज्मा (Plasma)", "english": "Plasma"},
-            {"id": "iv", "nepali": "प्लेटलेट्स (Platelets)", "english": "Platelets"}
+            {"id": "i", "nepali": "एउटा (One)", "english": "One"},
+            {"id": "ii", "nepali": "दुईओटा (Two)", "english": "Two"},
+            {"id": "iii", "nepali": "तीनओटा (Three)", "english": "Three"},
+            {"id": "iv", "nepali": "चारओटा (Four)", "english": "Four"}
           ],
           "correctAnswer": "iv",
           "marks": 1,
-          "explanation": "व्याख्या (Nepali Explanation): प्लेटलेट्सले प्लाज्मामा रहेको फाइब्रिनोजेन नामक प्रोटिनसँग मिलेर चोटपटक लागेको ठाउँमा रगत जमाउने काम गर्छ, जसले गर्दा अत्यधिक रक्तश्राव हुनबाट रोकिन्छ।\n\nEnglish Explanation: Platelets combine with fibrinogen (a protein in plasma) to clot blood at the site of cuts and injuries, thereby preventing excessive bleeding."
+          "explanation": "व्याख्या: मियोसिस कोष विभाजनमा, एउटा डिप्लोइड मातृ कोष (diploid mother cell) विभाजित भएर चारओटा ह्याप्लोइड सन्तति कोष (haploid daughter cells) वा ग्यामेटहरू बन्छन् ।\n\nExplanation: In meiotic cell division, one diploid mother cell divides to form four haploid daughter cells or gametes. Citations: chapter 4, page 77"
         },
         {
           "id": "i",
           "type": "multiple_choice",
-          "questionNepali": "ताराहरू चम्किनु प्रकाशको कुन प्रक्रियाको कारण हो ?",
-          "questionEnglish": "The twinkling of stars is caused by which phenomenon of light?",
+          "questionNepali": "गाडीको रेडिएटरमा पानीलाई शीतलक (coolant) को रूपमा किन प्रयोग गरिन्छ?",
+          "questionEnglish": "Why is water used as a coolant in car radiators?",
           "options": [
-            {"id": "i", "nepali": "परावर्तन (Reflection)", "english": "Reflection"},
-            {"id": "ii", "nepali": "विच्छेदन (Dispersion)", "english": "Dispersion"},
-            {"id": "iii", "nepali": "पूर्ण आन्तरिक परावर्तन (Total internal reflection)", "english": "Total internal reflection"},
-            {"id": "iv", "nepali": "वायुमण्डलीय आवर्तन (Atmospheric refraction)", "english": "Atmospheric refraction"}
+            {"id": "i", "nepali": "पानीको विशिष्ट ताप धारण क्षमता कम भएकोले (Because water has low specific heat capacity)", "english": "Because water has low specific heat capacity"},
+            {"id": "ii", "nepali": "पानीको विशिष्ट ताप धारण क्षमता बढी भएकोले (Because water has high specific heat capacity)", "english": "Because water has high specific heat capacity"},
+            {"id": "iii", "nepali": "पानी सजिलै उपलब्ध हुने भएकोले (Because water is easily available)", "english": "Because water is easily available"},
+            {"id": "iv", "nepali": "पानीको घनत्व बढी भएकोले (Because water has high density)", "english": "Because water has high density"}
           ],
-          "correctAnswer": "iv",
+          "correctAnswer": "ii",
           "marks": 1,
-          "explanation": "व्याख्या (Nepali Explanation): ताराहरूबाट आएको प्रकाश पृथ्वीको वायुमण्डलका विभिन्न तहहरूबाट गुज्रिँदा लगातार आवर्तन हुन्छ। वायुमण्डलका तहहरूको घनत्व र तापक्रम परिवर्तन भइरहने हुनाले प्रकाशको बाटो पनि बदलिन्छ, जसले गर्दा ताराहरू चम्किएको देखिन्छ।\n\nEnglish Explanation: The twinkling of stars is caused by the successive refraction of starlight as it passes through different layers of the Earth's atmosphere. The density and temperature of these layers are constantly changing, which alters the path of the light, making the stars appear to twinkle."
+          "explanation": "व्याख्या: पानीको विशिष्ट ताप धारण क्षमता उच्च (4200 J/kg°C) हुन्छ, जसको अर्थ यसले तापक्रममा खासै वृद्धि नभईकन धेरै ताप सोस्न सक्छ । यसले इन्जिनलाई प्रभावकारी रूपमा चिसो राख्छ ।\n\nExplanation: Water has a high specific heat capacity (4200 J/kg°C), meaning it can absorb a large amount of heat without a significant increase in its own temperature. This makes it an effective coolant for engines. Citations: chapter 9, page 233"
         },
         {
           "id": "j",
           "type": "multiple_choice",
-          "questionNepali": "हाइड्रोलिक ब्रेक कुन सिद्धान्तमा आधारित छ ?",
-          "questionEnglish": "Hydraulic brakes work on the principle of:",
+          "questionNepali": "अल्किन (Alkene) समूहको सामान्य सूत्र के हो?",
+          "questionEnglish": "What is the general formula for the Alkene group?",
           "options": [
-            {"id": "i", "nepali": "आर्किमिडिजको सिद्धान्त (Archimedes' Principle)", "english": "Archimedes' Principle"},
-            {"id": "ii", "nepali": "प्लवनको नियम (Law of Floatation)", "english": "Law of Floatation"},
-            {"id": "iii", "nepali": "पास्कलको नियम (Pascal's Law)", "english": "Pascal's Law"},
-            {"id": "iv", "nepali": "न्युटनको नियम (Newton's Law)", "english": "Newton's Law"}
+            {"id": "i", "nepali": "Cn​H2n​", "english": "Cn​H2n​"},
+            {"id": "ii", "nepali": "Cn​H2n+2​", "english": "Cn​H2n+2​"},
+            {"id": "iii", "nepali": "Cn​H2n−2​", "english": "Cn​H2n−2​"},
+            {"id": "iv", "nepali": "Cn​H2n+1​OH", "english": "Cn​H2n+1​OH"}
           ],
-          "correctAnswer": "iii",
+          "correctAnswer": "i",
           "marks": 1,
-          "explanation": "व्याख्या (Nepali Explanation): हाइड्रोलिक ब्रेक जस्ता हाइड्रोलिक मेसिनहरू पास्कलको नियममा आधारित हुन्छन्। यस नियमअनुसार, बन्द भाँडोमा रहेको तरल पदार्थमा एक ठाउँमा चाप दिँदा उक्त चाप सबैतिर लम्ब भएर बराबर रूपमा प्रसारण हुन्छ।\n\nEnglish Explanation: Hydraulic machines, including hydraulic brakes, are based on Pascal's law. This law states that pressure exerted at any point in an enclosed liquid is transmitted normally and equally in all directions throughout the liquid."
+          "explanation": "व्याख्या: अल्किनहरू असंतृप्त हाइड्रोकार्बन हुन् जसमा कार्बन परमाणुहरूबीच कम्तिमा एउटा दोहोरो बन्धन हुन्छ । तिनीहरूको सामान्य सूत्र Cn​H2n​ हो ।\n\nExplanation: Alkenes are unsaturated hydrocarbons containing at least one carbon-carbon double bond. Their general formula is Cn​H2n​. Citations: chapter 18, page 429"
         }
       ],
       "groupB": [
         {
           "id": "a",
           "type": "short_answer",
-          "questionNepali": "नियन्त्रित चर भनेको के हो ?",
-          "questionEnglish": "What is a controlled variable?",
+          "questionNepali": "नियन्त्रित चरको परिभाषा दिनुहोस् ।",
+          "questionEnglish": "Define a controlled variable.",
           "marks": 1,
-          "sampleAnswer": "नेपालीमा (In Nepali): प्रयोगभरि अपरिवर्तित राखिने चरलाई नियन्त्रित चर भनिन्छ ताकि यसले प्रयोगको नतिजामा असर नगरोस्।\n\nIn English: A variable which is taken into control throughout the experiment or research so that it does not affect the result is known as a controlled variable."
+          "sampleAnswer": "उत्तर: प्रयोग वा अनुसन्धानभरि स्थिर राखिने चरहरू, जसले नतिजालाई असर नगरून्, तिनीहरूलाई नियन्त्रित चर भनिन्छ ।\n\nAnswer: Variables that are kept constant throughout an experiment or research so that they do not affect the result are known as controlled variables. Citations: chapter 1, pages 4-5"
         },
         {
           "id": "b",
           "type": "short_answer",
-          "questionNepali": "विग ब्याङ्ग सिद्धान्तअनुसार ब्रह्माण्डको उत्पत्ति कसरी भयो ?",
-          "questionEnglish": "According to the Big Bang theory, how did the universe originate?",
+          "questionNepali": "चमेरोलाई किन स्तनधारी वर्गमा राखिएको हो?",
+          "questionEnglish": "Why is a bat classified under class Mammalia?",
           "marks": 1,
-          "sampleAnswer": "नेपालीमा (In Nepali): विग ब्याङ्ग सिद्धान्तअनुसार, ब्रह्माण्डको उत्पत्ति एउटा सानो, अत्यधिक घनत्व र शक्ति भएको अणुजस्तो अवस्थामा भएको ठूलो विस्फोटबाट भएको हो।\n\nIn English: According to the Big Bang theory, the universe is believed to have originated from the big explosion of a single, extremely dense and energetic atom-like state."
+          "sampleAnswer": "उत्तर: चमेरोले बच्चा जन्माउँछ र दूध चुसाउँछ, त्यसैले यसलाई स्तनधारी वर्गमा राखिएको हो ।\n\nAnswer: A bat gives direct birth to young ones and suckles milk to its babies, which is why it is classified under class Mammalia. Citations: chapter 2, pages 48-49"
         },
         {
           "id": "c",
           "type": "short_answer",
-          "questionNepali": "पानीको विशिष्ट ताप धारण क्षमता कति हुन्छ ?",
-          "questionEnglish": "What is the specific heat capacity of water?",
+          "questionNepali": "'रोयल जेली' के हो?",
+          "questionEnglish": "What is 'royal jelly'?",
           "marks": 1,
-          "sampleAnswer": "नेपालीमा (In Nepali): पानीको विशिष्ट ताप धारण क्षमता ४२०० जुल/के.जी.°C (4200 J/kg°C) हुन्छ।\n\nIn English: The specific heat capacity of water is 4200 J/kg°C."
+          "sampleAnswer": "उत्तर: रोयल जेली कर्मी मौरीको टाउकोमा रहेको ग्रन्थिबाट उत्पादन हुने एक पौष्टिक पदार्थ हो, जुन लार्भा र रानी मौरीलाई खुवाइन्छ ।\n\nAnswer: Royal jelly is a nutritious substance produced from a gland in the head of worker bees, which is fed to larvae and the queen bee. Citations: chapter 3, pages 62, 65"
         },
         {
           "id": "d",
           "type": "short_answer",
-          "questionNepali": "भाले मौरी कुन प्रकारको अण्डाबाट विकसित हुन्छ ?",
-          "questionEnglish": "From which type of egg does a drone bee develop?",
+          "questionNepali": "तौलविहीनता भनेको के हो?",
+          "questionEnglish": "What is weightlessness?",
           "marks": 1,
-          "sampleAnswer": "नेपालीमा (In Nepali): भाले मौरी गर्भाधान नभएको (unfertilized) अण्डाबाट विकसित हुन्छ।\n\nIn English: Drones are developed from unfertilized eggs."
+          "sampleAnswer": "उत्तर: स्वतन्त्र खसाइको अवस्थामा रहेको वस्तुको तौल शून्य हुने अवस्थालाई तौलविहीनता भनिन्छ ।\n\nAnswer: The condition in which the weight of an object in a state of free fall is zero is called weightlessness. Citations: chapter 7, page 187"
         },
         {
           "id": "e",
           "type": "short_answer",
-          "questionNepali": "फलफूल पकाउन प्रयोग गरिने एउटा रसायनको नाम लेख्नुहोस् ।",
-          "questionEnglish": "Name one chemical used to induce the ripening of fruits.",
+          "questionNepali": "क्रिटिकल कोणको परिभाषा दिनुहोस् ।",
+          "questionEnglish": "Define critical angle.",
           "marks": 1,
-          "sampleAnswer": "नेपालीमा (In Nepali): फलफूल पकाउन प्रयोग गरिने रसायनहरू क्याल्सियम कार्बाइड, इथिलिन ग्यास, इथेफोन आदि हुन्। (कुनै एक लेख्दा हुन्छ।)\n\nIn English: Chemicals used to induce the ripening of fruits are calcium carbide, ethylene gas, ethephon, etc. (Writing any one is correct.)"
+          "sampleAnswer": "उत्तर: सघन माध्यममा बन्ने त्यो आपतित कोण, जसका लागि विरल माध्यममा बन्ने आवर्तित कोण ९०° हुन्छ, त्यसलाई क्रिटिकल कोण भनिन्छ ।\n\nAnswer: The angle of incidence in the denser medium for which the corresponding angle of refraction in the rarer medium becomes 90° is known as the critical angle. Citations: chapter 10, page 254"
         },
         {
           "id": "f",
           "type": "short_answer",
-          "questionNepali": "९५% अक्सिजन र ५% कार्बन डाइअक्साइडको मिश्रणलाई के भनिन्छ ?",
-          "questionEnglish": "What is the mixture of 95% oxygen and 5% carbon dioxide called?",
+          "questionNepali": "मोटर असर भनेको के हो?",
+          "questionEnglish": "What is the motor effect?",
           "marks": 1,
-          "sampleAnswer": "नेपालीमा (In Nepali): ९५% अक्सिजन र ५% कार्बन डाइअक्साइडको मिश्रणलाई कार्बोजेन (Carbogen) भनिन्छ।\n\nIn English: The mixture of 95% oxygen and 5% carbon dioxide is called Carbogen."
+          "sampleAnswer": "उत्तर: चुम्बकीय क्षेत्रमा राखिएको तारमा करेन्ट प्रवाह गर्दा तारमा गति उत्पन्न हुने प्रक्रियालाई मोटर असर भनिन्छ ।\n\nAnswer: The production of motion in a wire placed in a magnetic field when current is passed through it is called the motor effect. Citations: chapter 11, page 311"
         },
         {
           "id": "g",
           "type": "short_answer",
-          "questionNepali": "ग्याङ्ग भनेको के हो ?",
-          "questionEnglish": "What is gangue?",
+          "questionNepali": "अल्काली धातुहरू के हुन्?",
+          "questionEnglish": "What are alkali metals?",
           "marks": 1,
-          "sampleAnswer": "नेपालीमा (In Nepali): धाउमा पाइने माटो, बालुवा, ढुङ्गा जस्ता अशुद्धिहरूलाई ग्याङ्ग (gangue) भनिन्छ।\n\nIn English: Impurities like mud, sand, rocks, etc. present in the ores is known as gangue."
+          "sampleAnswer": "उत्तर: आधुनिक पेरियोडिक तालिकाको समूह IA मा पर्ने धातुहरू, जसले पानीमा घुलेर कडा क्षार (alkali) बनाउँछन्, तिनीहरूलाई अल्काली धातु भनिन्छ ।\n\nAnswer: The metals of group IA of the modern periodic table, which form a strong base or alkali when dissolved in water, are known as alkali metals. Citations: chapter 14, page 372"
         },
         {
           "id": "h",
           "type": "short_answer",
-          "questionNepali": "IUPAC को पूरा रूप लेख्नुहोस् ।",
-          "questionEnglish": "What is the full form of IUPAC?",
+          "questionNepali": "उत्प्रेरक भनेको के हो?",
+          "questionEnglish": "What is a catalyst?",
           "marks": 1,
-          "sampleAnswer": "नेपालीमा (In Nepali): IUPAC को पूरा रूप International Union of Pure and Applied Chemistry हो।\n\nIn English: The full form of IUPAC is International Union of Pure and Applied Chemistry."
+          "sampleAnswer": "उत्तर: रासायनिक प्रतिक्रियामा भाग नलिई प्रतिक्रियाको दरलाई बढाउने वा घटाउने पदार्थलाई उत्प्रेरक भनिन्छ ।\n\nAnswer: The substance which increases or decreases the rate of a chemical reaction without undergoing any permanent chemical change itself is called a catalyst. Citations: chapter 15, page 393"
         },
         {
           "id": "i",
           "type": "short_answer",
-          "questionNepali": "अम्ल र क्षारबिच प्रतिक्रिया भई लवण र पानी बन्ने प्रतिक्रियालाई के भनिन्छ ?",
-          "questionEnglish": "An acid reacts with a base to form salt and water. What is this reaction called?",
+          "questionNepali": "सफाइका लागि प्रयोग हुने कुनै एक प्राकृतिक वस्तुको नाम लेख्नुहोस् ।",
+          "questionEnglish": "Name one natural material used for cleansing.",
           "marks": 1,
-          "sampleAnswer": "नेपालीमा (In Nepali): यस प्रतिक्रियालाई निराकरण प्रतिक्रिया (Neutralization reaction) भनिन्छ।\n\nIn English: This reaction is called a Neutralization reaction."
+          "sampleAnswer": "उत्तर: रिठा (soapberry)/पिना (mustard seed cake)/काठको खरानी (wood ash)/सजीवन (Sajiban)/कागतीको रस (lemon juice)\n\nAnswer: Reetha (soapberry)/Peena (mustard seed cake)/Wood ash/Sajiban/Lemon juice. Citations: chapter 19, page 446"
         }
       ],
       "groupC": [
         {
           "id": "3",
           "type": "long_answer",
-          "questionNepali": "पिण्ड र तौलबीच दुईओटा भिन्नता लेख्नुहोस् ।",
-          "questionEnglish": "Differentiate between mass and weight.",
+          "questionNepali": "आधारभूत एकाइ र तत्जन्य एकाइबिच दुईओटा फरक लेख्नुहोस् ।",
+          "questionEnglish": "Write two differences between fundamental units and derived units.",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\nपिण्ड र तौलबीच भिन्नताहरू:\n* वस्तुमा रहेको पदार्थको कुल परिमाणलाई पिण्ड भनिन्छ, जबकि वस्तुलाई गुरुत्व बलले आफ्नो केन्द्रतिर तान्ने बललाई तौल भनिन्छ।\n* पिण्ड एक स्केलर परिमाण हो, जबकि तौल एक भेक्टर परिमाण हो।\n* पिण्ड ठाउँअनुसार परिवर्तन हुँदैन, जबकि तौल गुरुत्व प्रवेग (g) को मानअनुसार ठाउँपिच्छे परिवर्तन हुन्छ।\n\nIn English:\nDifferences between Mass and Weight:\n* Mass is the total quantity of matter present in an object, whereas weight is the measure of the force of gravity acting on an object.\n* Mass is a scalar quantity, whereas weight is a vector quantity.\n* The mass of an object does not change according to the place, whereas its weight varies depending on the value of acceleration due to gravity (g)."
+          "sampleAnswer": "उत्तर: आधारभूत एकाइ र तत्जन्य एकाइबिचका फरकहरू:\n1. आधारभूत एकाइ अन्य एकाइहरूमा निर्भर हुँदैन, तर तत्जन्य एकाइ आधारभूत एकाइहरूमा निर्भर हुन्छ ।\n2. अहिलेसम्म सातओटा आधारभूत एकाइहरू प्रयोगमा छन्, तर सातओटा आधारभूत एकाइहरूबाट धेरै तत्जन्य एकाइहरू बनाइन्छन् ।\n\nAnswer: Differences between fundamental and derived units are:\n1. A fundamental unit does not depend upon other units, whereas a derived unit depends upon fundamental units.\n2. There are seven fundamental units used till now, whereas many derived units are formed from the seven fundamental units. Citations: chapter 1, page 10"
         },
         {
           "id": "4",
           "type": "long_answer",
-          "questionNepali": "जिम्नोस्पर्म र एन्जियोस्पर्मबीच कुनै दुई भिन्नताहरू लेख्नुहोस् ।",
-          "questionEnglish": "Write any two differences between gymnosperms and angiosperms.",
+          "questionNepali": "जिम्नोस्पर्म र एन्जियोस्पर्मबिच दुईओटा भिन्नता लेख्नुहोस् ।",
+          "questionEnglish": "Write two differences between gymnosperms and angiosperms.",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\nजिम्नोस्पर्म र एन्जियोस्पर्मबीच भिन्नताहरू:\n* जिम्नोस्पर्ममा फूलको सट्टा कोन (cone) फल्छ, जबकि एन्जियोस्पर्ममा वास्तविक फूल फुल्छ।\n* जिम्नोस्पर्मका बीउहरू नाङ्गा हुन्छन् र फलभित्र हुँदैनन्, जबकि एन्जियोस्पर्मका बीउहरू फलभित्र सुरक्षित हुन्छन्।\n\nIn English:\nDifferences between Gymnosperms and Angiosperms:\n* Gymnosperms bear cones instead of flowers, whereas Angiosperms bear real flowers.\n* The seeds of gymnosperms are naked and not enclosed in a fruit, whereas the seeds of angiosperms are enclosed within a fruit."
+          "sampleAnswer": "उत्तर: जिम्नोस्पर्म र एन्जियोस्पर्मबिचका भिन्नताहरू:\n1. जिम्नोस्पर्महरूले फूलको सट्टा कोन (cones) धारण गर्छन् र तिनीहरूको बीउ नाङ्गो हुन्छ, तर एन्जियोस्पर्महरूले वास्तविक फूल धारण गर्छन् र तिनीहरूको बीउ फलभित्र हुन्छ ।\n2. जिम्नोस्पर्महरूमा परागसेचन हावाबाट मात्र हुन्छ, तर एन्जियोस्पर्महरूमा हावा, पानी, कीरा, जनावर जस्ता विभिन्न माध्यमबाट हुन्छ ।\n\nAnswer: Differences between gymnosperms and angiosperms are:\n1. Gymnosperms bear cones instead of flowers and have naked seeds, whereas angiosperms bear real flowers and have seeds enclosed in fruit.\n2. In gymnosperms, pollination takes place only through wind, whereas in angiosperms, it occurs through various mediums like wind, water, insects, and animals. Citations: chapter 2, pages 23-24"
         },
         {
           "id": "5",
           "type": "long_answer",
-          "questionNepali": "मौरीलाई सामाजिक कीरा किन भनिन्छ ? दुई कारण दिनुहोस् ।",
-          "questionEnglish": "Why is a honey bee called a social insect? Give two reasons.",
+          "questionNepali": "रानी मौरी र कर्मी मौरीको जीवनचक्र पूरा हुन लाग्ने समयमा के फरक छ?",
+          "questionEnglish": "What is the difference in the time taken to complete the life cycle between a queen bee and a worker bee?",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali): मौरीलाई सामाजिक कीरा भनिन्छ किनभने:\n* यिनीहरू ठूलो समूह वा colonमा मिलेर बस्छन्।\n* यिनीहरूको समूहमा रानी, भाले र कर्मी मौरीबीच स्पष्ट कार्य विभाजन हुन्छ।\n\nIn English: A honey bee is called a social insect because:\n* They are social insects living in a large colony.\n* A high degree of division of labour is also found among them."
+          "sampleAnswer": "उत्तर: रानी मौरीको जीवनचक्र (अण्डाबाट वयस्कसम्म) पूरा हुन १६ दिन लाग्छ, जसमा लार्भा अवस्था ५.५ दिन र प्युपा अवस्था ७.५ दिनको हुन्छ । कर्मी मौरीको जीवनचक्र पूरा हुन २१ दिन लाग्छ, जसमा लार्भा अवस्था ६ दिन र प्युपा अवस्था १२ दिनको हुन्छ ।\n\nAnswer: A queen bee's life cycle (egg to adult) takes 16 days, with a larval stage of 5.5 days and a pupal stage of 7.5 days. A worker bee's life cycle takes 21 days, with a larval stage of 6 days and a pupal stage of 12 days. Citations: chapter 3, page 67"
         },
         {
           "id": "6",
           "type": "long_answer",
-          "questionNepali": "अटोजोम र सेक्स क्रोमोजोमबीच भिन्नता लेख्नुहोस् ।",
-          "questionEnglish": "Differentiate between autosomes and sex chromosomes.",
+          "questionNepali": "माइटोसिस कोष विभाजनलाई किन इक्वेसनल (equational) विभाजन भनिन्छ?",
+          "questionEnglish": "Why is mitosis cell division also called equational division?",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\nअटोजोम र सेक्स क्रोमोजोमबीच भिन्नताहरू:\n* अटोजोमले शरीरको भौतिक विशेषताहरू निर्धारण गर्छ, जबकि सेक्स क्रोमोजोमले जीवको लिङ्ग निर्धारण गर्छ।\n* मानिसमा २२ जोडी अटोजोमहरू हुन्छन्, जबकि १ जोडी सेक्स क्रोमोजोम हुन्छ।\n\nIn English:\nDifferences between Autosomes and Sex Chromosomes:\n* Autosomes are the chromosomes that determine the physical characteristics of an individual, whereas sex chromosomes are the chromosomes that determine the sex of an individual.\n* In humans, there are 22 pairs of autosomes, while there is 1 pair of sex chromosomes."
+          "sampleAnswer": "उत्तर: माइटोसिस कोष विभाजनमा एउटा मातृ कोष विभाजित भएर बन्ने दुईओटा सन्तति कोषहरूमा क्रोमोजोमको सङ्ख्या मातृ कोषमा जति नै हुन्छ, कुनै परिवर्तन हुँदैन । त्यसैले यसलाई इक्वेसनल विभाजन भनिन्छ ।\n\nAnswer: In mitotic cell division, the two daughter cells formed from one mother cell have the same number of chromosomes as the mother cell; there is no change. Therefore, this type of cell division is also called equational division. Citations: chapter 4, page 76"
         },
         {
           "id": "7",
           "type": "long_answer",
-          "questionNepali": "राता रक्तकोष (RBC) र सेता रक्तकोष (WBC) को कार्यहरू लेख्नुहोस् ।",
-          "questionEnglish": "Write the functions of Red Blood Cells (RBC) and White Blood Cells (WBC).",
+          "questionNepali": "प्लेटलेट्सको मुख्य कार्य के हो?",
+          "questionEnglish": "What is the main function of platelets?",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\n* राता रक्तकोष (RBC) को कार्य: यसमा हेमोग्लोबिन नामक तत्त्व हुन्छ, जसले फोक्सोबाट शरीरका कोषहरूमा अक्सिजन र कोषहरूबाट फोक्सोमा कार्बन डाइअक्साइड पुऱ्याउने काम गर्छ।\n* सेता रक्तकोष (WBC) को कार्य: यसले शरीरमा प्रवेश गर्ने रोगका कीटाणुहरूसँग लडेर शरीरलाई रोगहरूबाट बचाउँछ, त्यसैले यसलाई शरीरको सिपाही पनि भनिन्छ।\n\nIn English:\n* Function of Red Blood Cells (RBC): It contains hemoglobin, which is responsible for the transportation of abundant oxygen to the cells and also transports carbon dioxide produced by the cells to the lungs.\n* Function of White Blood Cells (WBC): White blood cells fight against disease-causing germs that enter the body from outside and destroy them, so these cells are referred to as the soldiers of the human body."
+          "sampleAnswer": "उत्तर: प्लेटलेट्सको मुख्य कार्य चोटपटक लाग्दा रगत जमाउनु हो । तिनीहरू रगतमा भएको फाइब्रिनोजेनसँग मिलेर रगतलाई जमाउँछन्, जसले गर्दा अत्यधिक रक्तस्राव रोकिन्छ ।\n\nAnswer: The main function of platelets is to clot blood during cuts and injuries. They combine with fibrinogen in the blood to form a clot, which helps to stop bleeding. Citations: chapter 5, page 115"
         },
         {
           "id": "8",
           "type": "long_answer",
-          "questionNepali": "जलवायु परिवर्तनका कुनै दुईओटा मानव-प्रेरित कारणहरू उल्लेख गर्नुहोस् ।",
-          "questionEnglish": "Mention two human-induced causes of climate change.",
+          "questionNepali": "जलवायु परिवर्तनका कुनै दुई मानव-प्रेरित कारणहरू लेख्नुहोस् ।",
+          "questionEnglish": "Write any two human-induced causes of climate change.",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali): जलवायु परिवर्तनका मानव-प्रेरित कारणहरू हुन्:\n* खनिज इन्धनको प्रयोग: गाडी, उद्योग आदिमा पेट्रोल, डिजेल, कोइला बाल्दा हरितगृह ग्यासहरू उत्सर्जन हुन्छ, जसले पृथ्वीको तापक्रम बढाउँछ।\n* वन विनाश: सडक, बस्ती निर्माण र खेतीका लागि जङ्गल फँडानी गर्दा बोटबिरुवाले सोस्ने कार्बन डाइअक्साइडको मात्रा घट्छ र वायुमण्डलमा यसको मात्रा बढ्न जान्छ।\n\nIn English: Human-induced causes of climate change are:\n* Burning of fossil fuels: Burning fuels like coal, petrol, and diesel for vehicles and to produce energy releases a tremendous amount of greenhouse gases.\n* Deforestation: Forests are being cut down for the construction of roads, human settlements, and cultivation, which increases the amount of greenhouse gases in the environment."
+          "sampleAnswer": "उत्तर: जलवायु परिवर्तनका दुई मानव-प्रेरित कारणहरू हुन्:\n1. जीवावशेष इन्धनको दहन: कोइला, खनिज तेल र प्राकृतिक ग्यास जस्ता जीवावशेष इन्धन बाल्दा ठूलो मात्रामा हरितगृह ग्यासहरू उत्पादन हुन्छन् ।\n2. वन विनाश: सडक, बस्ती निर्माण र खेतीका लागि अनियन्त्रित रूपमा वन फँडानी गर्दा वायुमण्डलमा कार्बन डाइअक्साइडको मात्रा बढ्छ ।\n\nAnswer: Two human-induced causes of climate change are:\n1. Burning of fossil fuels: Burning fossil fuels like coal, mineral oil, and natural gas produces a tremendous amount of greenhouse gases.\n2. Deforestation: Uncontrolled cutting of forests for construction, human settlements, and cultivation increases the amount of carbon dioxide in the atmosphere. Citations: chapter 6, page 146"
         },
         {
           "id": "9",
           "type": "long_answer",
-          "questionNepali": "भूमध्यरेखामा भन्दा ध्रुवमा वस्तु छिटो खस्छ, किन ?",
-          "questionEnglish": "An object falls faster at the poles than at the equator. Why?",
+          "questionNepali": "कुनै वस्तुको पिण्ड स्थिर रहन्छ तर तौल ठाउँअनुसार फरक पर्छ, किन?",
+          "questionEnglish": "The mass of an object remains constant, but its weight varies from place to place. Why?",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali): पृथ्वी ध्रुवमा चेप्टो र भूमध्यरेखामा फुकेको छ। त्यसैले, ध्रुवीय अर्धव्यास भूमध्यरेखीय अर्धव्यासभन्दा कम हुन्छ। गुरुत्व प्रवेग (g) को मान अर्धव्यासको वर्गसँग व्युत्क्रमानुपातिक (g∝1/R²) हुने हुनाले, अर्धव्यास कम भएको ठाउँ (ध्रुव) मा 'g' को मान बढी हुन्छ र वस्तु छिटो खस्छ।\n\nIn English: The earth is slightly flattened at the poles and bulged in the equatorial region. Hence, the radius of the Earth is less towards the poles. Since the value of the acceleration due to gravity is inversely proportional to the square of the radius of the earth, its value is more at the poles, and objects fall faster there."
+          "sampleAnswer": "उत्तर: वस्तुको पिण्ड भनेको त्यसमा भएको पदार्थको कुल मात्रा हो, जुन ठाउँअनुसार परिवर्तन हुँदैन । तर, वस्तुको तौल (W = mg) गुरुत्व प्रवेग (g) मा निर्भर गर्दछ । गुरुत्व प्रवेगको मान पृथ्वीको विभिन्न ठाउँमा र अन्य खगोलीय पिण्डहरूमा फरक हुने भएकोले वस्तुको तौल पनि ठाउँअनुसार फरक पर्छ ।\n\nAnswer: The mass of an object is the total quantity of matter present in it, which does not change with place. However, the weight of an object (W = mg) depends on the acceleration due to gravity (g). Since the value of 'g' varies at different places on Earth and on other celestial bodies, the weight of the object also changes. Citations: chapter 7, pages 181-182"
         },
         {
           "id": "10",
           "type": "long_answer",
-          "questionNepali": "फलामको किला पानीमा डुब्छ तर फलामले बनेको ठूलो जहाज तैरिन्छ, किन ? दुई कारण दिनुहोस् ।",
-          "questionEnglish": "Why does an iron nail sink in water but a large iron ship floats? Give two reasons.",
+          "questionNepali": "पास्कलको नियम लेख्नुहोस् ।",
+          "questionEnglish": "State Pascal's law.",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\nफलामको किलाले आफ्नो तौल बराबरको पानी विस्थापित गर्न सक्दैन, त्यसैले डुब्छ। तर जहाजको बनावट खोक्रो र ठूलो हुनाले यसले आफ्नो तौल बराबरको पानी विस्थापित गर्छ। आर्किमिडिजको सिद्धान्तअनुसार, वस्तुले विस्थापित गरेको तरल पदार्थको तौल बराबरको उर्ध्वचाप वस्तुमा लाग्छ। जब उर्ध्वचाप जहाजको तौल बराबर हुन्छ, जहाज प्लवनको नियम (Law of Floatation) अनुसार पानीमा तैरिन्छ।\n\nIn English:\nAn iron block cannot displace the volume of water whose weight is equal to its weight, and thus, it sinks. A ship has a large, hollow shape with a wide, long, and deep hull. Because of this, the ship can displace enough water to generate upthrust equal to its weight. According to Archimedes' principle, the upthrust exerted on the ship is equal to the weight of water displaced by it. When the upthrust equals the ship's weight, the ship floats according to the Law of Floatation."
+          "sampleAnswer": "उत्तर: पास्कलको नियम अनुसार, \"जब बन्द भाँडोमा रहेको तरल पदार्थको कुनै एक बिन्दुमा बल लगाइन्छ, उत्पन्न भएको चाप उक्त तरल पदार्थमा सबैतिर लम्ब बनाई समान रूपले प्रसारण हुन्छ ।\"\n\nAnswer: Pascal's law states that, \"when a force is exerted at a point in an enclosed liquid, the pressure generated is transmitted normally throughout the liquid in all directions.\" Citations: chapter 8, pages 199-200"
         },
         {
           "id": "11",
           "type": "long_answer",
-          "questionNepali": "धेरै चिसो ठाउँहरूमा जाडोयाममा पानीका पाइपहरू किन फुट्छन् ?",
-          "questionEnglish": "Why do water pipes often burst in very cold places during winter?",
+          "questionNepali": "धेरै चिसो ठाउँहरूमा जाडोयाममा पानीका पाइपहरू किन फुट्छन्?",
+          "questionEnglish": "Why do water pipes burst in very cold places during winter?",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali): पानीको अस्वाभाविक प्रसार (anomalous expansion of water) का कारण यसो हुन्छ। सामान्यतया तरल पदार्थ चिसिँदा खुम्चिन्छ, तर पानी ४°C बाट ०°C मा चिसिँदा यसको आयतन बढ्छ (फैलिन्छ)। पाइपभित्रको पानी जम्दा फैलिन्छ र पाइपको भित्तामा अत्यधिक चाप दिन्छ, जसले गर्दा पाइप फुट्छ।\n\nIn English: This happens due to the anomalous expansion of water. Although most substances contract on cooling, the volume of water decreases on cooling down to 4°C, but from 4°C to 0°C its volume increases (expands). When the water inside the pipe freezes and becomes ice, the pressure can become very high and the pipe may burst."
+          "sampleAnswer": "उत्तर: पानीको अस्वाभाविक प्रसार (anomalous expansion) का कारण, पानी 4∘C बाट 0∘C मा चिसिँदा यसको आयतन बढ्छ । जाडोमा जब पाइपभित्रको पानी जमेर बरफ बन्छ, बढेको आयतनले पाइपको भित्री भित्तामा अत्यधिक चाप दिन्छ, जसले गर्दा पाइप फुट्छ ।\n\nAnswer: Due to the anomalous expansion of water, its volume increases when it cools from 4∘C to 0∘C. In winter, when the water inside a pipe freezes and becomes ice, the increased volume exerts very high pressure on the inner wall of the pipe, which may cause the pipe to burst. Citations: chapter 9, pages 228, 229"
         },
         {
           "id": "12",
           "type": "long_answer",
-          "questionNepali": "क्रिटिकल कोण भनेको के हो ? पूर्ण आन्तरिक परावर्तन हुनका लागि आवश्यक दुई अवस्थाहरू लेख्नुहोस् ।",
-          "questionEnglish": "What is a critical angle? Write the two necessary conditions for total internal reflection to occur.",
+          "questionNepali": "अदूरदृष्टि (shortsightedness) र दूरदृष्टि (longsightedness) बिच दुईओटा भिन्नता लेख्नुहोस् ।",
+          "questionEnglish": "Write two differences between shortsightedness and longsightedness.",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\n* **क्रिटिकल कोण:** सघन माध्यममा बनेको त्यो आपतित कोण हो, जसका लागि विरल माध्यममा आवर्तित कोण ९०° हुन्छ।\n* **पूर्ण आन्तरिक परावर्तनका लागि आवश्यक अवस्थाहरू:**\n* प्रकाश सघन माध्यमबाट विरल माध्यममा जानुपर्छ।\n* आपतित कोणको मान क्रिटिकल कोणभन्दा बढी हुनुपर्छ।\n\nIn English:\n* **Critical Angle:** The angle of incidence in the denser medium for which the value of its corresponding angle of refraction in the rarer medium becomes 90° is known as the critical angle.\n* **Necessary conditions for total internal reflection:**\n* Light must be travelling from the denser medium to the rarer medium.\n* The angle of incidence must be greater than the critical angle."
+          "sampleAnswer": "उत्तर: अदूरदृष्टि र दूरदृष्टिबिचका भिन्नताहरू:\n1. अदूरदृष्टिमा नजिकका वस्तुहरू स्पष्ट देखिन्छन् तर टाढाका वस्तुहरू धमिलो देखिन्छन्, जबकि दूरदृष्टिमा टाढाका वस्तुहरू स्पष्ट देखिन्छन् तर नजिकका वस्तुहरू धमिलो देखिन्छन् ।\n2. अदूरदृष्टि हटाउन कन्केभ लेन्सको प्रयोग गरिन्छ, जबकि दूरदृष्टि हटाउन कन्भेक्स लेन्सको प्रयोग गरिन्छ ।\n\nAnswer: Differences between shortsightedness and longsightedness:\n1. In shortsightedness, nearby objects are seen clearly but distant objects appear blurry, whereas in longsightedness, distant objects are seen clearly but nearby objects appear blurry.\n2. A concave lens is used to correct shortsightedness, whereas a convex lens is used to correct longsightedness. Citations: chapter 10, pages 283-285"
         },
         {
           "id": "13",
           "type": "long_answer",
-          "questionNepali": "सोलेनोइड भनेको के हो ? यसको चुम्बकीय क्षेत्रको शक्ति निर्भर हुने कुनै दुई तत्त्वहरू उल्लेख गर्नुहोस् ।",
-          "questionEnglish": "What is a solenoid? Mention two factors on which the strength of its magnetic field depends.",
+          "questionNepali": "'बिग ब्याङ्ग' सिद्धान्तलाई छोटकरीमा व्याख्या गर्नुहोस् ।",
+          "questionEnglish": "Explain the 'Big Bang' theory briefly.",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\n* **सोलेनोइड:** कुनै बेलनाकार वस्तुमा बेरिएको इन्सुलित तारको क्वाइललाई सोलेनोइड भनिन्छ।\n* **यसको चुम्बकीय क्षेत्रको शक्ति निर्भर हुने तत्त्वहरू:**\n* सोलेनोइडमा बग्ने करेन्टको मात्रा।\n* सोलेनोइडको क्वाइलमा भएको फन्काको सङ्ख्या।\n\nIn English:\n* **Solenoid:** A solenoid is a cylindrical coil made of insulated wire.\n* **Factors affecting the strength of its magnetic field:**\n* Magnitude of the current in the solenoid.\n* Number of turns in the coil of the solenoid."
+          "sampleAnswer": "उत्तर: बिग ब्याङ्ग सिद्धान्त अनुसार, ब्रह्माण्डको उत्पत्ति एउटा सानो, अत्यन्तै घनत्व र ऊर्जा भएको परमाणुको ठूलो विस्फोटबाट भएको हो । विस्फोटपछि, ब्रह्माण्डका सबै खगोलीय पिण्डहरू एकअर्काबाट टाढा सर्दै गए, जसले गर्दा ब्रह्माण्ड आज पनि विस्तार भइरहेको छ ।\n\nAnswer: According to the Big Bang theory, the universe is believed to have originated from the big explosion of a single, highly dense and energetic atom. After the explosion, all the celestial bodies in the universe started moving away from each other, causing the universe to expand, a process that continues today. Citations: chapter 12, page 331"
         },
         {
           "id": "14",
           "type": "long_answer",
-          "questionNepali": "पोटासियम सोडियमभन्दा बढी प्रतिक्रियाशील हुन्छ, किन ? परमाणु आकारको आधारमा व्याख्या गर्नुहोस् ।",
-          "questionEnglish": "Why is potassium more reactive than sodium? Explain based on atomic size.",
+          "questionNepali": "एनालग र डिजिटल सिग्नलबीच दुईओटा भिन्नता लेख्नुहोस् ।",
+          "questionEnglish": "Write two differences between analogue and digital signals.",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali): पोटासियम (K) पेरियोडिक तालिकाको समूह IA मा सोडियम (Na) भन्दा तल पर्दछ। समूहमा माथिबाट तल जाँदा नयाँ सेल थपिने हुनाले परमाणुको आकार बढ्छ। ठूलो आकारको कारणले, भ्यालेन्स इलेक्ट्रोन र न्युक्लियसबीचको आकर्षण बल कम हुन्छ, जसले गर्दा पोटासियमले आफ्नो भ्यालेन्स इलेक्ट्रोन सोडियमभन्दा सजिलै गुमाउन सक्छ। त्यसैले यो बढी प्रतिक्रियाशील हुन्छ।\n\nIn English: Potassium (K) is below Sodium (Na) in Group IA of the periodic table. Moving down the group, the atomic size increases due to the addition of a new shell. Due to its larger size, the force of attraction between the nucleus and the valence electron is weaker, which allows potassium to lose its valence electron more easily than sodium. Hence, it is more reactive."
+          "sampleAnswer": "उत्तर: एनालग र डिजिटल सिग्नलबीचका भिन्नताहरू:\n1. एनालग सिग्नल समयसँगै निरन्तर परिवर्तन हुने भौतिक राशिलाई जनाउने सिग्नल हो, जबकि डिजिटल सिग्नल खण्ड-खण्डमा परिवर्तन हुने भौतिक राशिलाई जनाउने सिग्नल हो ।\n2. एनालग सिग्नललाई साइन वेभ (sine wave) द्वारा प्रतिनिधित्व गरिन्छ, जबकि डिजिटल सिग्नललाई स्क्वायर वेभ (square wave) द्वारा प्रतिनिधित्व गरिन्छ र यसमा ० र १ गरी दुई निश्चित मानहरू मात्र हुन्छन् ।\n\nAnswer: Differences between analogue and digital signals:\n1. An analogue signal is a signal that indicates a constantly changing physical quantity, whereas a digital signal represents a physical quantity that is changing in discrete segments.\n2. An analogue signal is represented by a sine wave, whereas a digital signal is indicated by a square wave and has only two fixed values, typically 0 and 1. Citations: chapter 13, page 341"
         },
         {
           "id": "15",
           "type": "long_answer",
-          "questionNepali": "दिइएको रासायनिक समीकरणलाई सन्तुलन गर्नुहोस् र यसको प्रकार पहिचान गर्नुहोस्: Na + Cl₂ → NaCl",
-          "questionEnglish": "Balance the following chemical equation and identify its type: Na + Cl₂ → NaCl.",
+          "questionNepali": "धाउ (ore) र खनिज (mineral) बीच दुईओटा भिन्नता लेख्नुहोस् ।",
+          "questionEnglish": "Write two differences between ore and mineral.",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\n* **सन्तुलित समीकरण:** 2Na + Cl₂ → 2NaCl\n* **प्रतिक्रियाको प्रकार:** यो संयोजन प्रतिक्रिया (Combination reaction) हो, किनभने दुईवटा reactant हरू (Na र Cl₂) मिलेर एउटा मात्र product (NaCl) बनेको छ।\n\nIn English:\n* **Balanced Equation:** 2Na + Cl₂ → 2NaCl\n* **Type of Reaction:** This is a combination reaction because two reactants (Na and Cl₂) combine to form a single product (NaCl)."
+          "sampleAnswer": "उत्तर: धाउ र खनिजबीच भिन्नताहरू:\n1. सबै धाउहरू खनिज हुन्, तर सबै खनिजहरू धाउ होइनन्।\n2. धाउबाट धातुलाई सजिलै र आर्थिक रूपमा फाइदाजनक तरिकाले निकाल्न सकिन्छ, जबकि सबै खनिजबाट त्यसो गर्न सकिँदैन।\n\nAnswer: Differences between ore and mineral:\n1. All ores are minerals, but all minerals are not ores.\n2. A metal can be extracted easily and economically from an ore, whereas it is not possible to do so from all minerals. Citations: chapter 17, page 417"
         },
         {
           "id": "16",
           "type": "long_answer",
-          "questionNepali": "संतृप्त र असंतृप्त हाइड्रोकार्बनबीच भिन्नता लेख्नुहोस् ।",
-          "questionEnglish": "Differentiate between saturated and unsaturated hydrocarbons.",
+          "questionNepali": "साबुन र डिटर्जेन्टबीच दुईओटा भिन्नता लेख्नुहोस् ।",
+          "questionEnglish": "Write two differences between soap and detergent.",
           "marks": 2,
-          "sampleAnswer": "नेपालीमा (In Nepali):\nसंतृप्त र असंतृप्त हाइड्रोकार्बनबीच भिन्नताहरू:\n* संतृप्त हाइड्रोकार्बनमा कार्बन परमाणुहरूबीच एकल सहसंयोजक बन्ड (single covalent bond) मात्र हुन्छ, जबकि असंतृप्त हाइड्रोकार्बनमा कम्तिमा एउटा दोहोरो वा तेहेरो सहसंयोजक बन्ड (double or triple covalent bond) हुन्छ।\n* संतृप्त हाइड्रोकार्बनहरू कम प्रतिक्रियाशील र स्थिर हुन्छन्, जबकि असंतृप्त हाइड्रोकार्बनहरू बढी प्रतिक्रियाशील र अस्थिर हुन्छन्।\n\nIn English:\nDifferences between Saturated and Unsaturated Hydrocarbons:\n* Saturated hydrocarbons have only single covalent bonds between the carbon atoms, whereas unsaturated hydrocarbons have at least one double or triple covalent bond between carbon atoms.\n* Saturated hydrocarbons are stable and less reactive, whereas unsaturated hydrocarbons are less stable and more reactive."
+          "sampleAnswer": "उत्तर: साबुन र डिटर्जेन्टबीच भिन्नताहरू:\n1. साबुन कडा पानीमा फिँज दिँदैन र सफा गर्ने क्षमता कम हुन्छ, जबकि डिटर्जेन्टले कडा पानीमा पनि प्रभावकारी रूपमा काम गर्छ।\n2. साबुन बायोडिग्रेडेबल (biodegradable) हुन्छ र रासायनिक प्रदूषण गर्दैन, जबकि डिटर्जेन्ट नन-बायोडिग्रेडेबल (non-biodegradable) हुन्छ र रासायनिक प्रदूषण गर्छ।\n\nAnswer: Differences between soap and detergent:\n1. Soap produces insoluble scum with hard water and is not an efficient cleaner, whereas detergent works well even with hard water.\n2. Soap is biodegradable and does not cause chemical pollution, whereas detergent is non-biodegradable and causes chemical pollution. Citations: chapter 19, pages 448-449"
         }
       ],
       "groupD": [
         {
           "id": "17",
           "type": "essay",
-          "questionNepali": "मेण्डलको प्रबलताको नियम (Law of Dominance) के हो ? शुद्ध अग्लो केराउ (TT) र शुद्ध होचो केराउ (tt) बिच क्रस गराउँदा पहिलो वंश (F1 generation) सम्मको प्रक्रियालाई उदाहरणसहित व्याख्या गर्नुहोस् ।",
-          "questionEnglish": "What is Mendel's law of dominance? Explain with an example of a cross between a pure tall pea plant (TT) and a pure dwarf pea plant (tt) up to the F1 generation.",
+          "questionNepali": "फाइलम आर्थ्रोपोडाका मुख्य विशेषताहरू वर्णन गर्नुहोस् र दुईओटा उदाहरण दिनुहोस् ।",
+          "questionEnglish": "Describe the main characteristics of phylum Arthropoda and give two examples.",
           "marks": 4,
-          "sampleAnswer": "नेपालीमा (In Nepali):\n**मेण्डलको प्रबलताको नियम:** जब एक जोडी विपरीत गुण भएका दुई शुद्ध जीवहरूबीच क्रस गराइन्छ, पहिलो वंश (F1 generation) मा एउटा गुण मात्र बाह्य रूपमा देखिन्छ, जसलाई प्रबल गुण (dominant character) भनिन्छ, र नदेखिने गुणलाई लुप्त गुण (recessive character) भनिन्छ।\n\n**उदाहरण:**\nजब एउटा शुद्ध अग्लो केराउको बोट (TT) र एउटा शुद्ध होचो केराउको बोट (tt) बिच क्रस परागसेचन गराइन्छ, पहिलो वंश (F1) मा सबै बोटहरू ठिमाहा अग्ला (Tt) हुन्छन्। यहाँ, अग्लोपनको गुण (T) प्रबल हुन्छ र होचोपनको गुण (t) लुप्त रहन्छ, त्यसैले सबै बोटहरू बाहिरबाट अग्ला देखिन्छन्।\n* **अभिभावक (Parents):** शुद्ध अग्लो (TT) × शुद्ध होचो (tt)\n* **ग्यामेटहरू (Gametes):** (T) (T) × (t) (t)\n* **पहिलो वंश (F1 Generation):** Tt, Tt, Tt, Tt\n* **जिनोटाइप (Genotype):** सबै ठिमाहा अग्ला (All hybrid tall) (Tt)\n* **फिनोटाइप (Phenotype):** सबै अग्ला (All tall)\n\nIn English:\n**Mendel's Law of Dominance:** When a cross is made between two pure individuals having a pair of contrasting characters, only one character is expressed externally in the F1 generation which is called the dominant character, and the character which remains hidden is called the recessive character.\n\n**Example:**\nWhen a pure tall pea plant (TT) is cross-pollinated with a pure dwarf pea plant (tt), all the offspring in the first filial generation (F1) are hybrid tall (Tt). Here, the tall character (T) is dominant, and the dwarf character (t) is recessive, so all the plants appear tall phenotypically.\n* **Parents:** Pure Tall (TT) × Pure Dwarf (tt)\n* **Gametes:** (T) (T) × (t) (t)\n* **F1 Generation:** Tt, Tt, Tt, Tt\n* **Genotype:** All hybrid tall (Tt)\n* **Phenotype:** All tall"
+          "sampleAnswer": "उत्तर: फाइलम आर्थ्रोपोडा जनावर जगतको सबैभन्दा ठूलो फाइलम हो । यसका मुख्य विशेषताहरू निम्न छन्:\n* **बाहिरी आवरण:** यिनीहरूको शरीर काइटिन (chitin) ले बनेको कडा बाहिरी आवरण (exoskeleton) ले ढाकिएको हुन्छ ।\n* **शरीरको विभाजन:** शरीर टाउको, छाती र पेट गरी तीन भागमा विभाजित हुन्छ । केहीमा टाउको र छाती जोडिएर सेफालोथोराक्स (cephalothorax) बनेको हुन्छ ।\n* **जोर्नीयुक्त खुट्टाहरू:** यिनीहरूका खुट्टाहरू जोर्नीयुक्त हुन्छन्, जुन छातीबाट निस्किएका हुन्छन् ।\n* **सममिति र तह:** यिनीहरूको शरीर बाईलैटरल्ली सिमेट्रिकल (bilaterally symmetrical) र ट्रिप्लोब्लास्टिक (triploblastic) हुन्छ ।\n* **श्वासप्रश्वास:** यिनीहरूले शरीरको सतह, गिल्स वा ट्रेकिया (trachea) मार्फत श्वास फेर्छन् ।\n**उदाहरणहरू:** पुतली (butterfly), माहुरी (bee), गंगटो (crab), माकुरो (spider), सयखुट्टे (centipede), आदि ।\n\nAnswer: Phylum Arthropoda is the largest phylum in the animal kingdom. Its main characteristics are as follows:\n* **Exoskeleton:** Their body is externally covered by a hard covering called an exoskeleton, which is made up of chitin.\n* **Body Division:** The body is divisible into the head, thorax, and abdomen. In some forms, the head and thorax are fused and called a cephalothorax.\n* **Jointed Legs:** They have jointed legs arising from the thorax.\n* **Symmetry and Layers:** The body is bilaterally symmetrical and triploblastic.\n* **Respiration:** They breathe through their body surface, gills, or trachea.\n**Examples:** Butterfly, bee, crab, spider, centipede, etc. Citations: chapter 2, page 38"
         },
         {
           "id": "18",
           "type": "essay",
-          "questionNepali": "दूरदृष्टि (Hypermetropia) भनेको के हो ? यसका दुई मुख्य कारणहरू लेख्नुहोस् । यो कमजोरीलाई कसरी सुधार गर्न सकिन्छ ? सुधारात्मक लेन्सको भूमिका व्याख्या गर्नुहोस् ।",
-          "questionEnglish": "What is long-sightedness (hypermetropia)? Write its two main causes. How can this defect be corrected? Explain the role of the corrective lens.",
+          "questionNepali": "मानवमा लिङ्ग निर्धारण कसरी हुन्छ? व्याख्या गर्नुहोस् ।",
+          "questionEnglish": "Explain how sex is determined in humans.",
           "marks": 4,
-          "sampleAnswer": "नेपालीमा (In Nepali):\n* **दूरदृष्टि:** आँखाको त्यो कमजोरी हो जसमा टाढाका वस्तुहरू स्पष्ट देखिन्छन् तर नजिकका वस्तुहरू धमिलो देखिन्छन्।\n* **कारणहरू:**\n  * आँखाको नानी (eyeball) धेरै छोटो हुनु, जसले गर्दा लेन्स र रेटिनाबीचको दूरी घट्छ।\n  * आँखाको लेन्स आवश्यकताअनुसार मोटो हुन नसक्नु, जसले गर्दा यसको केन्द्रीकरण दूरी (focal length) बढ्छ र प्रकाशका किरणहरू रेटिनाभन्दा पछाडि केन्द्रित हुन्छन्।\n* **सुधार:** यो कमजोरीलाई उपयुक्त सामर्थ्य भएको कन्भेक्स (उत्तल) लेन्स प्रयोग गरेर सुधार गर्न सकिन्छ। कन्भेक्स लेन्सले नजिकको वस्तुबाट आएका प्रकाशका किरणहरूलाई आँखामा प्रवेश गर्नुअघि केही मात्रामा केन्द्रित (converge) गरिदिन्छ। यसले आँखाको लेन्सलाई अन्तिम प्रतिविम्ब ठिक रेटिनामा बनाउन मद्दत गर्छ र वस्तु स्पष्ट देखिन्छ।\n\nIn English:\n* **Long-sightedness (Hypermetropia):** It is the defect of vision in which a person can see distant objects clearly but the nearby objects appear blurry.\n* **Causes:**\n  * The eyeball becomes too short, which decreases the distance between the lens and the retina.\n  * The eye lens cannot become thick enough, which increases its focal length and causes light rays from nearby objects to focus behind the retina.\n* **Correction:** This defect can be corrected by using a convex (converging) lens of suitable power. The convex lens converges the light rays from a nearby object to some extent before they enter the eye. This helps the eye lens to focus the final image correctly on the retina, making the object appear clear."
+          "sampleAnswer": "उत्तर: मानवमा लिङ्ग निर्धारण सेक्स क्रोमोजोमले गर्दछ । मानव शरीरको कोषमा २३ जोडी क्रोमोजोम हुन्छन्, जसमध्ये २२ जोडी अटोजोम (autosomes) र एक जोडी सेक्स क्रोमोजोम (sex chromosomes) हुन्छन् ।\n* **महिलामा:** महिलाको कोषमा XX सेक्स क्रोमोजोम हुन्छ । मियोसिस कोष विभाजन हुँदा, महिलाको डिम्ब (ovum) मा २२+X क्रोमोजोम मात्र हुन्छ ।\n* **पुरुषमा:** पुरुषको कोषमा XY सेक्स क्रोमोजोम हुन्छ । मियोसिस कोष विभाजन हुँदा, पुरुषको शुक्रकीट (sperm) दुई प्रकारका हुन्छन्: ५०% मा २२+X र ५०% मा २२+Y क्रोमोजोम हुन्छ ।\n* **गर्भाधान:** यदि २२+X भएको शुक्रकीटले डिम्बलाई गर्भाधान गर्यो भने, बन्ने जाइगोटमा ४४+XX क्रोमोजोम हुन्छ र छोरी (female) जन्मिन्छिन् । यदि २२+Y भएको शुक्रकीटले डिम्बलाई गर्भाधान गर्यो भने, बन्ने जाइगोटमा ४४+XY क्रोमोजोम हुन्छ र छोरा (male) जन्मिन्छ ।\nयसरी, सन्तानको लिङ्ग निर्धारणमा पुरुषको शुक्रकीटको मुख्य भूमिका हुन्छ । छोरा वा छोरी जन्मिने सम्भावना ५०% हुन्छ ।\n\nAnswer: Sex in humans is determined by sex chromosomes. Human body cells contain 23 pairs of chromosomes, of which 22 pairs are autosomes and one pair is sex chromosomes.\n* **In females:** The cells of a female individual contain XX sex chromosomes. During meiosis, all ova produced by a female contain only 22+X chromosomes.\n* **In males:** The cells of a male individual contain XY sex chromosomes. During meiosis, two types of sperm are produced: 50% with 22+X chromosomes and 50% with 22+Y chromosomes.\n* **Fertilization:** If a sperm with 22+X chromosomes fuses with an ovum (22+X), the resulting zygote will have 44+XX chromosomes, and the child will be a female. If a sperm with 22+Y chromosomes fuses with the ovum, the resulting zygote will have 44+XY chromosomes, and the child will be a male.\nTherefore, the male's sperm plays the main role in sex determination. The probability of having a son or a daughter is 50%. Citations: chapter 4, pages 84-85"
         },
         {
           "id": "19",
           "type": "essay",
-          "questionNepali": "एउटा बललाई १९.६ मिटर प्रति सेकेन्डको सुरुको वेगले ठाडो माथितिर फालियो । यसले प्राप्त गर्ने अधिकतम उचाइ र जमिनमा फर्कन लाग्ने कुल समय गणना गर्नुहोस् । (g=9.8 m/s²)",
-          "questionEnglish": "A ball is thrown vertically upwards with an initial velocity of 19.6 m/s. Calculate the maximum height it reaches and the total time it takes to return to the ground. (g=9.8 m/s²)",
+          "questionNepali": "हृदयघात (heart attack) भनेको के हो? यसका चार कारणहरू र चार रोकथामका उपायहरू लेख्नुहोस् ।",
+          "questionEnglish": "What is a heart attack? Write four of its causes and four preventive measures.",
           "marks": 4,
-          "sampleAnswer": "नेपालीमा (In Nepali):\nयहाँ, सुरुको वेग (u) = 19.6 m/s, अन्तिम वेग (v) = 0 m/s (अधिकतम उचाइमा), गुरुत्व प्रवेग (g) = -9.8 m/s² (माथि फाल्दा)\n\n**(i) अधिकतम उचाइ (Maximum Height, h):**\nसूत्र v² = u² + 2gh अनुसार,\n0² = (19.6)² + 2 × (−9.8) × h\n0 = 384.16 − 19.6h\n19.6h = 384.16\nh = 384.16 / 19.6 = **19.6 मिटर।**\n\n**(ii) कुल समय (Total Time):**\nमाथि पुग्न लाग्ने समय (t_up):\nसूत्र v = u + gt अनुसार,\n0 = 19.6 + (−9.8) × t_up\n9.8t_up = 19.6\nt_up = 19.6 / 9.8 = **2 सेकेन्ड।**\n\nमाथि जान लाग्ने समय र तल फर्कन लाग्ने समय बराबर हुन्छ।\nकुल समय = t_up + t_down = 2 + 2 = **4 सेकेन्ड।**\n\nत्यसैले, अधिकतम उचाइ १९.६ मिटर र जमिनमा फर्कन लाग्ने कुल समय ४ सेकेन्ड हो।\n\nIn English:\nHere, initial velocity (u) = 19.6 m/s, final velocity (v) = 0 m/s (at maximum height), acceleration due to gravity (g) = -9.8 m/s² (when thrown upwards)\n\n**(i) Maximum Height (h):**\nAccording to the formula v² = u² + 2gh,\n0² = (19.6)² + 2 × (−9.8) × h\n0 = 384.16 − 19.6h\n19.6h = 384.16\nh = 384.16 / 19.6 = **19.6 meters.**\n\n**(ii) Total Time:**\nTime to reach max height (t_up):\nAccording to the formula v = u + gt,\n0 = 19.6 + (−9.8) × t_up\n9.8t_up = 19.6\nt_up = 19.6 / 9.8 = **2 seconds.**\n\nTime of ascent is equal to the time of descent.\nTotal time = t_up + t_down = 2 + 2 = **4 seconds.**\n\nTherefore, the maximum height reached is 19.6 meters, and the total time taken to return to the ground is 4 seconds."
+          "sampleAnswer": "उत्तर: **हृदयघात (Heart Attack):** कोरोनरी धमनी (coronary artery) मा रगतको प्रवाह अचानक कम वा बन्द हुँदा मुटुको तन्तुले काम गर्न नसक्ने अवस्थालाई हृदयघात भनिन्छ ।\n**कारणहरू (Causes):**\n1. उच्च रक्तचाप (High blood pressure)\n2. उच्च कोलेस्ट्रोल (High cholesterol)\n3. धुम्रपान र सूर्तिजन्य पदार्थको सेवन (Smoking and tobacco use)\n4. मधुमेह (Diabetes) / अस्वस्थ जीवनशैली (Unhealthy lifestyle)\n**रोकथामका उपायहरू (Preventive Measures):**\n1. स्वस्थ जीवनशैली अपनाउने (Maintain a healthy lifestyle)\n2. स्वस्थ र सन्तुलित आहार खाने (Consume a healthy and balanced diet)\n3. धुम्रपान र मद्यपान त्याग्ने (Quit smoking and drinking alcohol)\n4. तनाव व्यवस्थापन गर्ने (Manage stress)\n\nAnswer: **Heart Attack:** A heart attack is a condition where the flow of blood to the heart tissue is suddenly reduced or blocked, causing the heart to not work properly. Citations: chapter 5, page 121\n**Causes:**\n1. High blood pressure\n2. High cholesterol\n3. Smoking and tobacco use\n4. Diabetes / Unhealthy lifestyle. Citations: chapter 5, page 122\n**Preventive Measures:**\n1. Maintain a healthy lifestyle\n2. Consume a healthy and balanced diet\n3. Quit smoking and drinking alcohol\n4. Manage stress. Citations: chapter 5, page 124"
         },
         {
           "id": "20",
           "type": "essay",
-          "questionNepali": "फाइलम आर्थ्रोपोडाका कुनै चार विशेषताहरू लेख्नुहोस् । यो फाइलमलाई प्राणी जगतमा सबैभन्दा ठूलो किन मानिन्छ ?",
-          "questionEnglish": "Write any four characteristics of Phylum Arthropoda. Why is this phylum considered the largest in the animal kingdom?",
+          "questionNepali": "न्युटनको गुरुत्वाकर्षणसम्बन्धी विश्वव्यापी नियम लेख्नुहोस् । गुरुत्वाकर्षण बल पिण्ड र दूरीसँग कसरी परिवर्तन हुन्छ, व्याख्या गर्नुहोस् ।",
+          "questionEnglish": "State Newton's universal law of gravitation. Explain how gravitational force changes with mass and distance.",
           "marks": 4,
-          "sampleAnswer": "नेपालीमा (In Nepali):\n**फाइलम आर्थ्रोपोडाका विशेषताहरू:**\n* यिनीहरूको शरीर काइटिन (chitin) ले बनेको बाहिरी कंकाल (exoskeleton) ले ढाकिएको हुन्छ।\n* शरीर टाउको, छाती र पेट गरी तीन भागमा विभाजित हुन्छ।\n* यिनीहरूको शरीर बाईल्यटरल्ली सिमेट्रिकल (bilaterally symmetrical) र खण्डित (segmented) हुन्छ।\n* यिनीहरूका खुट्टाहरू जोडिएका (jointed legs) हुन्छन्।\n\n**यो फाइलमलाई प्राणी जगतमा सबैभन्दा ठूलो किन मानिन्छ?**\nयो फाइलमलाई प्राणी जगतमा सबैभन्दा ठूलो मानिन्छ किनभने यसमा कीराहरू, माकुराहरू, केकडाहरू जस्ता जीवहरूको विशाल सङ्ख्या र प्रजातिहरू समावेश छन्, जो हावा, पानी र जमिन जस्ता सबै प्रकारका बासस्थानमा सफलतापूर्वक अनुकूलन भएका छन्।\n\nIn English:\n**Characteristics of Phylum Arthropoda:**\n* Their body is externally covered by an exoskeleton made of chitin.\n* Their body is divisible into the head, thorax, and abdomen.\n* The body is bilaterally symmetrical and segmented.\n* They have jointed legs.\n\n**Why is this phylum considered the largest in the animal kingdom?**\nThis phylum is considered the largest in the animal kingdom because it includes a vast number of diverse species of insects, spiders, crabs, etc., which have successfully adapted to all types of habitats like air, water, and land."
+          "sampleAnswer": "उत्तर: **न्युटनको गुरुत्वाकर्षणसम्बन्धी विश्वव्यापी नियम:** \"ब्रह्माण्डमा रहेका कुनै दुई वस्तुहरूबीच उत्पन्न हुने गुरुत्वाकर्षण बल ती वस्तुहरूको पिण्डको गुणनफलसँग समानुपातिक र तिनीहरूबीचको दूरीको वर्गसँग व्युत्क्रमानुपातिक हुन्छ ।\"\n**पिण्ड र दूरीसँग गुरुत्वाकर्षण बलमा परिवर्तन:**\n* **पिण्डसँगको सम्बन्ध:** गुरुत्वाकर्षण बल (F) दुई वस्तुको पिण्ड (m1​ र m2​) को गुणनफलसँग सोझै समानुपातिक हुन्छ (F∝m1​m2​) । यदि कुनै एक वस्तुको पिण्ड दोब्बर बनाइयो भने बल पनि दोब्बर हुन्छ ।\n* **दूरीसँगको सम्बन्ध:** गुरुत्वाकर्षण बल (F) वस्तुहरूबीचको दूरी (d) को वर्गसँग व्युत्क्रमानुपातिक हुन्छ (F∝1/d²) । यदि वस्तुहरूबीचको दूरी दोब्बर बनाइयो भने, बल चार गुणाले घट्छ ।\n\nAnswer: **Newton's Universal Law of Gravitation:** \"The gravitational force produced between any two objects in the universe is directly proportional to the product of their masses and inversely proportional to the square of the distance between them.\" Citations: chapter 7, page 169\n**Change of Gravitational Force with Mass and Distance:**\n* **Relation with Mass:** The gravitational force (F) is directly proportional to the product of the masses of the two objects (m1​ and m2​), i.e., F∝m1​m2​. If the mass of one object is doubled, the force also doubles.\n* **Relation with Distance:** The gravitational force (F) is inversely proportional to the square of the distance (d) between the objects, i.e., F∝1/d². If the distance between the objects is doubled, the force decreases by four times. Citations: chapter 7, pages 172-173"
         },
         {
           "id": "21",
           "type": "essay",
-          "questionNepali": "एउटा ट्रान्सफर्मरलाई २४० भोल्टको ए.सी. मुख्य आपूर्तिबाट १२ भोल्ट चाहिने उपकरण चलाउन प्रयोग गरिन्छ । यदि प्राइमरी क्वाइलमा फन्काको सङ्ख्या ४००० छ भने सेकेन्डरी क्वाइलमा फन्काको सङ्ख्या गणना गर्नुहोस् । यो कस्तो प्रकारको ट्रान्सफर्मर हो ? यसको एउटा सामान्य प्रयोग लेख्नुहोस् ।",
-          "questionEnglish": "A transformer is used to run a device requiring 12V from a 240V AC main supply. If the number of turns in the primary coil is 4000, calculate the number of turns in the secondary coil. What type of transformer is this? Write one of its common uses.",
+          "questionNepali": "प्रयोगशालामा एमोनिया ग्यास बनाउने विधिको वर्णन गर्नुहोस् । यसका दुई भौतिक गुण र दुई उपयोगिताहरू लेख्नुहोस् ।",
+          "questionEnglish": "Describe the laboratory preparation of ammonia gas. Mention two of its physical properties and two uses.",
           "marks": 4,
-          "sampleAnswer": "नेपालीमा (In Nepali):\nयहाँ, प्राइमरी भोल्टेज (Vp) = 240 V, सेकेन्डरी भोल्टेज (Vs) = 12 V, प्राइमरी फन्का (Np) = 4000, सेकेन्डरी फन्का (Ns) = ?\n\nट्रान्सफर्मरको सूत्र (Transformer formula) Vs/Vp = Ns/Np अनुसार,\n12 / 240 = Ns / 4000\nNs = (12 × 4000) / 240\nNs = 48000 / 240 = 200\nसेकेन्डरी क्वाइलमा फन्काको सङ्ख्या २०० हो।\n\n* **ट्रान्सफर्मरको प्रकार:** यो स्टेप-डाउन (step-down) ट्रान्सफर्मर हो किनभने यसले उच्च भोल्टेज (240V) लाई निम्न भोल्टेज (12V) मा घटाउँछ र यसमा सेकेन्डरी फन्का प्राइमरीभन्दा कम छ।\n* **प्रयोग:** यस्तो ट्रान्सफर्मर मोबाइल फोन चार्जर, रेडियो, डोरबेल आदिमा प्रयोग हुन्छ।\n\nIn English:\nHere, Primary Voltage (Vp) = 240 V, Secondary Voltage (Vs) = 12 V, Primary turns (Np) = 4000, Secondary turns (Ns) = ?\n\nAccording to the transformer formula Vs/Vp = Ns/Np,\n12 / 240 = Ns / 4000\nNs = (12 × 4000) / 240\nNs = 48000 / 240 = 200\nThe number of turns in the secondary coil is 200.\n\n* **Type of Transformer:** This is a step-down transformer because it reduces the high voltage (240V) to a lower voltage (12V), and the number of secondary turns is less than the primary turns.\n* **Use:** This type of transformer is used in mobile phone chargers, radios, doorbells, etc."
+          "sampleAnswer": "उत्तर: **प्रयोगशालामा एमोनिया ग्यास बनाउने विधि:** प्रयोगशालामा एमोनिया ग्यास एमोनियम क्लोराइड (NH4​Cl) र क्याल्सियम हाइड्रोअक्साइड (Ca(OH)2​) को २:१ को अनुपातको मिश्रणलाई कडा सिसाको टेस्ट ट्युबमा तताएर बनाइन्छ । उत्पन्न भएको ग्यासलाई लाइम टावरबाट पठाई सुक्खा बनाइन्छ र हावाको तल्लो विस्थापन विधिद्वारा ग्यास जारमा जम्मा गरिन्छ ।\n**रासायनिक समीकरण:** 2NH4​Cl(s)+Ca(OH)2​(s) --[Heat]--> CaCl2​(s)+2H2​O(l)+2NH3​(g)\n**भौतिक गुणहरू:**\n1. यो रंगहीन ग्यास हो जसको तिखो, पन्जेन्ट गन्ध हुन्छ ।\n2. यो पानीमा अत्यधिक घुलनशील हुन्छ ।\n**उपयोगिताहरू:**\n1. यो युरिया, एमोनियम सल्फेट जस्ता रासायनिक मल बनाउन प्रयोग गरिन्छ ।\n2. यो रेफ्रिजरेटरमा शीतलक (cooling agent) को रूपमा प्रयोग गरिन्छ ।\n\nAnswer: **Laboratory preparation of ammonia gas:** In the laboratory, ammonia gas is prepared by heating a mixture of ammonium chloride (NH4​Cl) and calcium hydroxide (Ca(OH)2​) in a 2:1 ratio. The gas produced is dried by passing it through a lime tower and collected in a gas jar by the downward displacement of air. Citations: chapter 16, pages 401-402\n**Chemical Equation:** 2NH4​Cl(s)+Ca(OH)2​(s) --[Heat]--> CaCl2​(s)+2H2​O(l)+2NH3​(g)\n**Physical Properties:**\n1. It is a colorless gas with a strong and pungent odor.\n2. It is highly soluble in water. Citations: chapter 16, page 403\n**Uses:**\n1. It is used to make fertilizers like urea and ammonium sulphate.\n2. It is used as a cooling agent in refrigerators. Citations: chapter 16, page 405"
         },
         {
           "id": "22",
           "type": "essay",
-          "questionNepali": "धाउ (ore) भनेको के हो ? रोस्टिङ र क्याल्सिनेसनबीच भिन्नता लेख्नुहोस् । तामाको शुद्धीकरणका लागि इलेक्ट्रो-रिफाइनिङ प्रक्रियाको वर्णन गर्नुहोस् ।",
-          "questionEnglish": "What is an ore? Differentiate between roasting and calcination. Describe the electro-refining process for the purification of copper.",
+          "questionNepali": "कीटनाशक विषादी भनेको के हो? तिनीहरूले असर गर्ने कीराको आधारमा विभिन्न प्रकारका कीटनाशकहरूको एक-एक उदाहरणसहित व्याख्या गर्नुहोस् ।",
+          "questionEnglish": "What are pesticides? Explain different types of pesticides based on the pests they affect, with one example for each type.",
           "marks": 4,
-          "sampleAnswer": "नेपालीमा (In Nepali):\n* **धाउ (Ore):** त्यो खनिज हो जसबाट ठूलो मात्रामा र कम लागतमा धातु निकाल्न सकिन्छ।\n* **रोस्टिङ र क्याल्सिनेसनबीच भिन्नता:**\n  * रोस्टिङ धाउलाई हावाको उपस्थितिमा तीव्र रूपमा तताएर अक्साइडमा परिणत गर्ने प्रक्रिया हो, जुन सामान्यतया सल्फाइड धाउका लागि प्रयोग गरिन्छ।\n  * क्याल्सिनेसन धाउलाई हावाको अनुपस्थितिमा तीव्र रूपमा तताएर अक्साइडमा परिणत गर्ने प्रक्रिया हो, जुन सामान्यतया कार्बोनेट धाउका लागि प्रयोग गरिन्छ।\n* **तामाको इलेक्ट्रो-रिफाइनिङ:** यो प्रक्रियामा, अशुद्ध तामाको बाक्लो पातालाई एनोड र शुद्ध तामाको पातलो पातालाई क्याथोड बनाइन्छ। कपर सल्फेटको घोललाई इलेक्ट्रोलाइटको रूपमा प्रयोग गरिन्छ। जब विद्युत प्रवाह गरिन्छ, एनोडमा रहेको अशुद्ध तामा पग्लिएर इलेक्ट्रोलाइटमा जान्छ, र इलेक्ट्रोलाइटबाट शुद्ध तामा क्याथोडमा गएर जम्मा हुन्छ। अशुद्धिहरू एनोडको मुनि एनोड मडको रूपमा थिग्रिन्छन्।\n\nIn English:\n* **Ore:** An ore is a mineral from which a metal can be extracted in a large amount and at a low cost.\n* **Difference between Roasting and Calcination:**\n  * Roasting is the process of strongly heating an ore in the presence of air to convert it into its oxide, generally used for sulphide ores.\n  * Calcination is the process of strongly heating an ore in the absence of air to convert it into its oxide, generally used for carbonate ores.\n* **Electro-refining of copper:** In this process, an impure copper plate is made the anode and a pure copper plate is made the cathode. A solution of copper sulphate is used as the electrolyte. When electricity is passed, impure copper from the anode dissolves into the electrolyte, and pure copper from the electrolyte gets deposited on the cathode. Impurities settle down below the anode as anode mud."
+          "sampleAnswer": "उत्तर: **कीटनाशक विषादी:** हानिकारक कीरा, फट्याङ्ग्रा, सुलसुले, झारपात र मुसा जस्ता जीवहरूबाट बालीनाली, पशुपन्छी र मानव स्वास्थ्यलाई बचाउन प्रयोग गरिने विषाक्त पदार्थहरूलाई कीटनाशक विषादी भनिन्छ ।\n**कीराको आधारमा प्रकारहरू:**\n* **कीटनाशक (Insecticides):** हानिकारक कीराहरू मार्न प्रयोग गरिन्छ । उदाहरण: मालाथियन (Malathion) ।\n* **ढुसीनाशक (Fungicides):** ढुसी र त्यसबाट लाग्ने रोगहरूविरुद्ध प्रयोग गरिन्छ । उदाहरण: म्यान्कोजेब (Mancozeb) ।\n* **झारनाशक (Herbicides):** अनावश्यक झारपात नष्ट गर्न प्रयोग गरिन्छ । उदाहरण: बुटाक्लोर (Butachlor) ।\n* **मुसानाशक (Rodenticides):** मुसा र मुसा प्रजातिका जीवहरू मार्न प्रयोग गरिन्छ । उदाहरण: जिंक फस्फाइड (Zinc phosphide) ।\n\nAnswer: **Pesticides:** Poisonous substances used to remove, destroy, kill, and control harmful pests from seeds, plants, birds, animals, human health, and construction areas are called pesticides. Citations: chapter 19, page 451\n**Types of pesticides based on the pests they affect:**\n* **Insecticides:** Used to kill and control harmful insects. Example: Malathion.\n* **Fungicides:** Used against fungi and the diseases they cause. Example: Mancozeb.\n* **Herbicides:** Used to destroy or control unwanted herbs and plants. Example: Butachlor.\n* **Rodenticides:** Used to kill rats and rodents. Example: Zinc phosphide. Citations: chapter 19, page 452"
         },
         {
           "id": "23",
           "type": "essay",
-          "questionNepali": "प्रयोगशालामा एमोनिया ग्यास बनाउने विधिको वर्णन गर्नुहोस् । प्रतिक्रियाको सन्तुलित रासायनिक समीकरण लेख्नुहोस् । तयारीको क्रममा अपनाउनुपर्ने कुनै दुई सावधानीहरू उल्लेख गर्नुहोस् ।",
-          "questionEnglish": "Describe the laboratory preparation of ammonia gas. Write the balanced chemical equation. Mention any two precautions to be taken during the preparation.",
+          "questionNepali": "मानव स्वास्थ्यमा डिजिटल प्रविधिको दुईओटा सकारात्मक र दुईओटा नकारात्मक प्रभावहरू लेख्नुहोस् ।",
+          "questionEnglish": "Write two positive and two negative effects of digital technology on human health.",
           "marks": 4,
-          "sampleAnswer": "नेपालीमा (In Nepali):\n* **प्रयोगशालामा एमोनिया ग्यास बनाउने विधि:** प्रयोगशालामा, एमोनिया ग्यास एमोनियम क्लोराइड (NH₄Cl) र क्याल्सियम हाइड्रोअक्साइड (Ca(OH)₂) को मिश्रणलाई २:१ को अनुपातमा मिलाएर तताएर तयार पारिन्छ। मिश्रणलाई हार्ड ग्लास टेस्ट ट्युबमा राखेर तताइन्छ। उत्पन्न भएको ग्यासलाई लाइम टावरबाट पठाई सुक्खा बनाइन्छ र हावाभन्दा हलुका हुने भएकाले यसलाई घोप्टो ग्यास जारमा हावाको तल्लो विस्थापन विधिद्वारा जम्मा गरिन्छ।\n* **सन्तुलित रासायनिक समीकरण:** 2NH₄Cl(s) + Ca(OH)₂(s) --[Heat]--> CaCl₂(s) + 2H₂O(l) + 2NH₃(g)\n* **अपनाउनुपर्ने सावधानीहरू:**\n  * टेस्ट ट्युबको मुखलाई अलिकति तलतिर ढल्काउनुपर्छ ताकि बनेको पानी पछाडि फर्केर तातो टेस्ट ट्युबलाई फुट्नबाट जोगाउन सकियोस्।\n  * एमोनिया ग्यास पानीमा अत्यधिक घुलनशील हुने भएकाले यसलाई पानीको विस्थापन विधिद्वारा जम्मा गर्नु हुँदैन।\n\nIn English:\n* **Laboratory preparation of ammonia gas:** In the laboratory, ammonia gas is prepared by heating a mixture of ammonium chloride (NH₄Cl) and calcium hydroxide (Ca(OH)₂) in a 2:1 ratio. The mixture is heated in a hard glass test tube. The gas produced is dried by passing it through a lime tower and collected in an inverted gas jar by the downward displacement of air, as it is lighter than air.\n* **Balanced Chemical Equation:** 2NH₄Cl(s) + Ca(OH)₂(s) --[Heat]--> CaCl₂(s) + 2H₂O(l) + 2NH₃(g)\n* **Precautions to be taken:**\n  * The mouth of the hard glass test tube should be slightly inclined downward to prevent the water vapor produced from cracking the hot test tube.\n  * Since the gas is highly soluble in water, it should not be collected by the displacement of water."
+          "sampleAnswer": "उत्तर:\n**सकारात्मक प्रभावहरू:**\n1. **जानकारीमा पहुँच:** डिजिटल प्रविधिले स्वास्थ्यसम्बन्धी जानकारीमा सहज पहुँच प्रदान गर्छ, जसले मानिसहरूलाई आफ्नो स्वास्थ्यबारे सचेत रहन मद्दत गर्छ।\n2. **टेलिमेडिसिन:** अनलाइन परामर्श र उपचार सेवाहरूले दुर्गम क्षेत्रका मानिसहरूलाई पनि विशेषज्ञ स्वास्थ्य सेवा उपलब्ध गराउँछ।\n\n**नकारात्मक प्रभावहरू:**\n1. **शारीरिक निष्क्रियता:** डिजिटल उपकरणहरूको अत्यधिक प्रयोगले शारीरिक गतिविधिमा कमी ल्याउँछ, जसले मोटोपना र अन्य स्वास्थ्य समस्याहरू निम्त्याउन सक्छ।\n2. **मानसिक स्वास्थ्यमा असर:** सामाजिक सञ्जालको अत्यधिक प्रयोगले मानसिक तनाव, चिन्ता, डिप्रेसन र निद्रासम्बन्धी समस्याहरू निम्त्याउन सक्छ।\n\nAnswer:\n**Positive Effects:**\n1. **Access to Information:** Digital technology provides easy access to health information, helping people stay aware of their health.\n2. **Telemedicine:** Online consultation and treatment services make specialized healthcare available even to people in remote areas.\n\n**Negative Effects:**\n1. **Physical Inactivity:** Excessive use of digital devices leads to a decrease in physical activity, which can cause obesity and other health problems.\n2. **Impact on Mental Health:** Excessive use of social media can cause mental stress, anxiety, depression, and sleep-related problems. Citations: chapter 13, page 351"
         }
       ]
     }
   }
 ]
+
+
+
