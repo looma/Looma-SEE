@@ -1,4 +1,4 @@
-# Adding New Practice Tests and Sections
+﻿# Adding New Practice Tests and Sections
 
 ## Step 1: Check Current Database
 First, verify what's currently in your database:
@@ -76,8 +76,8 @@ node scripts/import-test-json.mjs --file ./data/your-test-file.json
 
 ## Step 5: Verify Import
 - Check database: `node scripts/check-database.mjs`
-- Visit: http://localhost:3000/api/tests
-- Visit: http://localhost:3000/api/questions/your_test_id
+- Visit: //api/tests
+- Visit: //api/questions/your_test_id
 
 ## Adding New Subjects/Sections
 
@@ -103,3 +103,4 @@ Add new color schemes for different subjects in `app/globals.css`:
 2. **Import conflicts**: Ensure _id is unique and createdAt/updatedAt are properly formatted
 3. **Questions not loading**: Verify the question structure matches the expected format
 4. **Grading errors**: Ensure all free-response questions have proper marks field
+

@@ -1,4 +1,4 @@
-// Universal script to sync ALL test JSON files from data/ folder with database
+﻿// Universal script to sync ALL test JSON files from data/ folder with database
 // Usage: node scripts/import-all-tests.mjs
 // This script will: ADD new tests, UPDATE existing tests, REMOVE tests not in data folder
 // Env: MONGODB_URI (default: mongodb://127.0.0.1:47017/see_exam_system)
@@ -28,7 +28,7 @@ function normalizeExtendedJSON(value) {
 
 async function processTestFile(filePath) {
   try {
-    console.log(`📄 Processing: ${path.basename(filePath)}`)
+    console.log(`ðŸ“„ Processing: ${path.basename(filePath)}`)
     
     const raw = await fs.readFile(filePath, "utf8")
     
@@ -37,8 +37,8 @@ async function processTestFile(filePath) {
     try {
       input = JSON.parse(raw)
     } catch (parseError) {
-      console.error(`   ❌ JSON Parse Error in ${path.basename(filePath)}:`)
-      console.error(`   📍 ${parseError.message}`)
+      console.error(`   âŒ JSON Parse Error in ${path.basename(filePath)}:`)
+      console.error(`   ðŸ“ ${parseError.message}`)
       
       // Try to give more helpful context
       const lines = raw.split('\n')
@@ -51,8 +51,8 @@ async function processTestFile(filePath) {
         for (const line of lines) {
           if (currentPos + line.length >= position) {
             const colNum = position - currentPos + 1
-            console.error(`   📍 Around line ${lineNum}, column ${colNum}:`)
-            console.error(`   📝 "${line.trim()}"`)
+            console.error(`   ðŸ“ Around line ${lineNum}, column ${colNum}:`)
+            console.error(`   ðŸ“ "${line.trim()}"`)
             break
           }
           currentPos += line.length + 1 // +1 for newline
@@ -60,7 +60,7 @@ async function processTestFile(filePath) {
         }
       }
       
-      console.error(`   💡 Common fixes:`)
+      console.error(`   ðŸ’¡ Common fixes:`)
       console.error(`      - Check for missing commas between array elements`)
       console.error(`      - Check for missing commas between object properties`)
       console.error(`      - Check for trailing commas before closing brackets`)
@@ -69,7 +69,7 @@ async function processTestFile(filePath) {
     }
     
     if (!Array.isArray(input)) {
-      console.warn(`   ⚠️  Skipping ${path.basename(filePath)} - not an array`)
+      console.warn(`   âš ï¸  Skipping ${path.basename(filePath)} - not an array`)
       return null
     }
 
@@ -78,19 +78,19 @@ async function processTestFile(filePath) {
     const questionsDoc = docs.find((d) => (d.testId && d.questions) || (d.testId && Array.isArray(d.questions)))
 
     if (!practiceDoc) {
-      console.warn(`   ⚠️  Skipping ${path.basename(filePath)} - missing practice_tests document with string _id`)
+      console.warn(`   âš ï¸  Skipping ${path.basename(filePath)} - missing practice_tests document with string _id`)
       return null
     }
 
     const testId = practiceDoc._id
 
     if (!questionsDoc) {
-      console.warn(`   ⚠️  Skipping ${path.basename(filePath)} - missing questions document`)
+      console.warn(`   âš ï¸  Skipping ${path.basename(filePath)} - missing questions document`)
       return null
     }
 
     if (questionsDoc.testId !== testId) {
-      console.warn(`   🔧 Normalizing testId: ${questionsDoc.testId} → ${testId}`)
+      console.warn(`   ðŸ”§ Normalizing testId: ${questionsDoc.testId} â†’ ${testId}`)
       questionsDoc.testId = testId
     }
 
@@ -114,7 +114,7 @@ async function processTestFile(filePath) {
           englishQuestions: questionsDoc.questions 
         }
         
-        console.log(`   📚 English test detected with ${questionCount} questions`)
+        console.log(`   ðŸ“š English test detected with ${questionCount} questions`)
       } else if (questionsDoc.questions.groupA || questionsDoc.questions.groupB || questionsDoc.questions.groupC || questionsDoc.questions.groupD) {
         // Science format - grouped questions
         testType = "science"
@@ -124,46 +124,46 @@ async function processTestFile(filePath) {
           (questionsDoc.questions.groupC?.length || 0) +
           (questionsDoc.questions.groupD?.length || 0)
         
-        console.log(`   🧪 Science test detected with ${questionCount} questions`)
+        console.log(`   ðŸ§ª Science test detected with ${questionCount} questions`)
       } else if (questionsDoc.questions.englishQuestions) {
         // Already in correct English format
         testType = "english"
         questionCount = questionsDoc.questions.englishQuestions.length
         
-        console.log(`   📚 English test (pre-formatted) with ${questionCount} questions`)
+        console.log(`   ðŸ“š English test (pre-formatted) with ${questionCount} questions`)
       } else {
-        console.warn(`   ⚠️  Unknown question format in ${path.basename(filePath)}`)
-        console.warn(`   🔍 Available keys:`, Object.keys(questionsDoc.questions))
+        console.warn(`   âš ï¸  Unknown question format in ${path.basename(filePath)}`)
+        console.warn(`   ðŸ” Available keys:`, Object.keys(questionsDoc.questions))
       }
     }
 
-    console.log(`   📊 Found ${questionCount} questions (${testType} test, subject: ${practiceDoc.subject})`)
+    console.log(`   ðŸ“Š Found ${questionCount} questions (${testType} test, subject: ${practiceDoc.subject})`)
 
     return { practiceDoc, questionsDoc, testId, fileName: path.basename(filePath), testType }
   } catch (error) {
-    console.error(`   ❌ Error processing ${path.basename(filePath)}:`, error.message)
+    console.error(`   âŒ Error processing ${path.basename(filePath)}:`, error.message)
     if (error.stack) {
-      console.error(`   🔍 Stack trace:`, error.stack.split('\n')[1]?.trim())
+      console.error(`   ðŸ” Stack trace:`, error.stack.split('\n')[1]?.trim())
     }
     return null
   }
 }
 
 async function importAllTests() {
-  console.log("🚀 Syncing database with data/ folder")
-  console.log("   • Adding new tests")
-  console.log("   • Updating existing tests") 
-  console.log("   • Removing tests not in data folder")
+  console.log("ðŸš€ Syncing database with data/ folder")
+  console.log("   â€¢ Adding new tests")
+  console.log("   â€¢ Updating existing tests") 
+  console.log("   â€¢ Removing tests not in data folder")
   console.log("=" .repeat(50))
   
   // Check if data folder exists
   try {
     await fs.access("data")
   } catch {
-    console.log("📁 Creating data/ folder...")
+    console.log("ðŸ“ Creating data/ folder...")
     await fs.mkdir("data", { recursive: true })
-    console.log("   ℹ️  No JSON files found. Add your test files to data/ folder.")
-    console.log("   💡 You can add multiple files like:")
+    console.log("   â„¹ï¸  No JSON files found. Add your test files to data/ folder.")
+    console.log("   ðŸ’¡ You can add multiple files like:")
     console.log("      - see-2081-english-test1.json")
     console.log("      - see-2081-english-test2.json") 
     console.log("      - see-2080-science-test1.json")
@@ -176,12 +176,12 @@ async function importAllTests() {
   const jsonFiles = files.filter(f => f.endsWith('.json'))
   
   if (jsonFiles.length === 0) {
-    console.log("   ℹ️  No JSON files found in data/ folder.")
-    console.log("   💡 Add your test JSON files to the data/ folder and run this script again.")
+    console.log("   â„¹ï¸  No JSON files found in data/ folder.")
+    console.log("   ðŸ’¡ Add your test JSON files to the data/ folder and run this script again.")
     return
   }
 
-  console.log(`📋 Found ${jsonFiles.length} JSON files:`)
+  console.log(`ðŸ“‹ Found ${jsonFiles.length} JSON files:`)
   jsonFiles.forEach(f => console.log(`   - ${f}`))
   console.log()
 
@@ -200,17 +200,17 @@ async function importAllTests() {
   }
 
   if (failedFiles.length > 0) {
-    console.log(`\n⚠️  Failed to process ${failedFiles.length} files:`)
+    console.log(`\nâš ï¸  Failed to process ${failedFiles.length} files:`)
     failedFiles.forEach(f => console.log(`   - ${f}`))
-    console.log(`\n💡 Please fix the JSON syntax errors in these files and try again.`)
+    console.log(`\nðŸ’¡ Please fix the JSON syntax errors in these files and try again.`)
   }
 
   if (processedTests.length === 0) {
-    console.log("❌ No valid test files found to import.")
+    console.log("âŒ No valid test files found to import.")
     return
   }
 
-  console.log(`\n💾 Syncing ${processedTests.length} tests to database...`)
+  console.log(`\nðŸ’¾ Syncing ${processedTests.length} tests to database...`)
   console.log("Connecting to:", uri)
 
   const client = new MongoClient(uri)
@@ -237,13 +237,13 @@ async function importAllTests() {
     // Find tests to remove (in database but not in data folder)
     const testsToRemove = existingTests.filter(t => !dataFolderTestIds.has(t._id))
     
-    console.log(`\n📊 Database Analysis:`)
+    console.log(`\nðŸ“Š Database Analysis:`)
     console.log(`   Existing tests in database: ${existingTests.length}`)
     console.log(`   Tests in data folder: ${processedTests.length}`)
     console.log(`   Tests to remove: ${testsToRemove.length}`)
     
     if (testsToRemove.length > 0) {
-      console.log(`\n🗑️  Removing ${testsToRemove.length} tests no longer in data folder:`)
+      console.log(`\nðŸ—‘ï¸  Removing ${testsToRemove.length} tests no longer in data folder:`)
       for (const test of testsToRemove) {
         console.log(`   - ${test._id} (${test.subject}: ${test.title})`)
       }
@@ -268,12 +268,12 @@ async function importAllTests() {
       })
       
       removedCount = practiceDeleteResult.deletedCount
-      console.log(`   ✅ Removed ${removedCount} practice tests`)
-      console.log(`   ✅ Removed ${questionsDeleteResult.deletedCount} question sets`)
+      console.log(`   âœ… Removed ${removedCount} practice tests`)
+      console.log(`   âœ… Removed ${questionsDeleteResult.deletedCount} question sets`)
     }
 
     // Import/update tests from data folder
-    console.log(`\n📥 Processing tests from data folder:`)
+    console.log(`\nðŸ“¥ Processing tests from data folder:`)
     for (const { practiceDoc, questionsDoc, testId, fileName, testType } of processedTests) {
       try {
         // Check if test already exists (after removals)
@@ -299,19 +299,19 @@ async function importAllTests() {
         )
 
         if (isUpdate) {
-          console.log(`   🔄 Updated: ${testId} (${testType} test from ${fileName})`)
+          console.log(`   ðŸ”„ Updated: ${testId} (${testType} test from ${fileName})`)
           updatedCount++
         } else {
-          console.log(`   ✅ Imported: ${testId} (${testType} test from ${fileName})`)
+          console.log(`   âœ… Imported: ${testId} (${testType} test from ${fileName})`)
           importedCount++
         }
       } catch (error) {
-        console.error(`   ❌ Failed to import ${testId}:`, error.message)
+        console.error(`   âŒ Failed to import ${testId}:`, error.message)
       }
     }
 
     console.log("\n" + "=".repeat(50))
-    console.log("📊 Sync Summary:")
+    console.log("ðŸ“Š Sync Summary:")
     console.log(`   New tests imported: ${importedCount}`)
     console.log(`   Existing tests updated: ${updatedCount}`)
     console.log(`   Tests removed: ${removedCount}`)
@@ -325,7 +325,7 @@ async function importAllTests() {
       return acc
     }, {})
 
-    console.log(`\n📈 Final Database Status:`)
+    console.log(`\nðŸ“ˆ Final Database Status:`)
     console.log(`   Total practice tests: ${finalTests.length}`)
     Object.entries(testsBySubject).forEach(([subject, count]) => {
       console.log(`   - ${subject}: ${count} tests`)
@@ -334,10 +334,10 @@ async function importAllTests() {
     const totalQuestions = await questions.countDocuments()
     console.log(`   Total question sets: ${totalQuestions}`)
 
-    console.log("\n🎉 Database sync completed!")
-    console.log("💡 Next steps:")
+    console.log("\nðŸŽ‰ Database sync completed!")
+    console.log("ðŸ’¡ Next steps:")
     console.log("   - Run 'npm run dev' to test in the app")
-    console.log("   - Visit http://localhost:3000/api/tests to see all tests")
+    console.log("   - Visit //api/tests to see all tests")
     
     if (failedFiles.length > 0) {
       console.log("   - Fix JSON syntax errors in failed files and re-run sync")
@@ -346,18 +346,19 @@ async function importAllTests() {
     }
 
     if (removedCount > 0) {
-      console.log(`\n⚠️  Note: ${removedCount} tests were removed from the database`)
+      console.log(`\nâš ï¸  Note: ${removedCount} tests were removed from the database`)
       console.log("   If you need them back, add their JSON files to the data/ folder")
     }
 
   } catch (error) {
-    console.error("❌ Database error:", error)
+    console.error("âŒ Database error:", error)
   } finally {
     await client.close()
   }
 }
 
 importAllTests().catch((e) => {
-  console.error("❌ Sync failed:", e)
+  console.error("âŒ Sync failed:", e)
   process.exit(1)
 })
+
