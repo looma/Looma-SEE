@@ -1,0 +1,23 @@
+---------THIS SHOULD BE IN POWERSHELL----------
+
+
+
+
+
+cd "C:\Users\porte\OneDrive\Documents\GitHub\Looma-SEE"
+
+# 1) Make sure your branch is 'main'
+git branch -M main
+
+# 2) Add/replace the 'prod' remote (only needed once, safe to re-run)
+git remote remove prod 2>$null
+git remote add prod ssh://see-ec2/home/ec2-user/see-live.git
+
+# 3) Split out just the app-code folder into a temp branch
+git subtree split --prefix=nepali-exam-helper/app-code -b deploy
+
+# 4) Force-push that branch to EC2's main
+git push -f prod deploy:main
+
+# 5) Clean up the temp branch
+git branch -D deploy
