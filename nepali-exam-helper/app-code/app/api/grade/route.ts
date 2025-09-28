@@ -39,7 +39,7 @@ export async function POST(req: Request) {
     }
 
     // Simplified, more reliable prompt
-    const systemPrompt = `You are a SEE Science examiner. Grade the student's answer and provide brief feedback.
+    const systemPrompt = `You are a SEE examiner. Grade the student's answer and provide brief feedback.
 
 IMPORTANT: You must respond with ONLY valid JSON in this exact format:
 {"score": <number>, "feedback": "<string>"}
@@ -48,7 +48,9 @@ Rules:
 - Score must be integer between 0 and ${marks}
 - Award partial credit when appropriate
 - Keep feedback to 1-2 sentences maximum
-- Be constructive and specific`
+- Be constructive and specific
+- For English questions, focus on content understanding rather than exact wording
+- Recognize equivalent answers that convey the same meaning`
 
     const userPrompt = `Grade this answer (${marks} marks total):
 

@@ -7,7 +7,6 @@ import { StudentHeader } from "@/components/student-header"
 import { TestSelectionScreen } from "@/components/test-selection-screen"
 import { ResultsCard } from "@/components/results-card"
 import { loadStudentProgress, saveStudentProgress } from "@/lib/storage"
-
 export default function SeePrepPage() {
   const [currentStudentId, setCurrentStudentId] = useState<string | null>(null)
   const [currentTestId, setCurrentTestId] = useState<string | null>(null)
@@ -15,12 +14,7 @@ export default function SeePrepPage() {
   const [showTestSelection, setShowTestSelection] = useState(false)
   const [showResults, setShowResults] = useState(false)
   const [testResults, setTestResults] = useState<any>(null)
-  const [isClient, setIsClient] = useState(false)
-
-  // Ensure we're on the client side before accessing localStorage
-  useEffect(() => {
-    setIsClient(true)
-  }, [])
+  const [isHydrated, setIsHydrated] = useState(false)
 
   // Fetch test title when test ID changes
   useEffect(() => {
@@ -37,10 +31,10 @@ export default function SeePrepPage() {
     }
   }, [currentTestId])
 
-  // Load saved state only on client side
+  // Mark as hydrated and load saved state
   useEffect(() => {
-    if (!isClient) return
-
+    setIsHydrated(true)
+    
     try {
       const lastStudentId = localStorage.getItem("see_last_student_id")
       const lastTestId = localStorage.getItem("see_last_test_id")
@@ -59,20 +53,24 @@ export default function SeePrepPage() {
     } catch (error) {
       console.error("Error loading saved state:", error)
     }
-  }, [isClient])
+  }, [])
 
   const handleLogin = (studentId: string) => {
     setCurrentStudentId(studentId)
-    if (isClient) {
+    try {
       localStorage.setItem("see_last_student_id", studentId)
+    } catch (error) {
+      console.error("Error saving student ID:", error)
     }
     setShowTestSelection(true) // Always show test selection after login
   }
 
   const handleTestSelect = (testId: string) => {
     setCurrentTestId(testId)
-    if (isClient) {
+    try {
       localStorage.setItem("see_last_test_id", testId)
+    } catch (error) {
+      console.error("Error saving test ID:", error)
     }
     setShowTestSelection(false)
     setShowResults(false) // Hide results when selecting a new test
@@ -83,11 +81,13 @@ export default function SeePrepPage() {
         saveStudentProgress(currentStudentId, {
           studentId: currentStudentId,
           testId,
-          answersA: {},
-          answersB: {},
-          answersC: {},
-          answersD: {},
-          currentTab: "group-a",
+          answers: {
+            groupA: {},
+            groupB: {},
+            groupC: {},
+            groupD: {},
+          },
+          currentTab: "groupA",
           attempts: [],
         })
       }
@@ -108,9 +108,11 @@ export default function SeePrepPage() {
     setShowTestSelection(false)
     setShowResults(false)
     setTestResults(null)
-    if (isClient) {
+    try {
       localStorage.removeItem("see_last_student_id")
       localStorage.removeItem("see_last_test_id")
+    } catch (error) {
+      console.error("Error clearing localStorage:", error)
     }
   }
 
@@ -127,11 +129,12 @@ export default function SeePrepPage() {
       saveStudentProgress(currentStudentId, {
         studentId: currentStudentId,
         testId: currentTestId,
-        answers: {}, // Clear all answers for retake
-        answersA: {},
-        answersB: {},
-        answersC: {},
-        answersD: {},
+        answers: {
+          groupA: {},
+          groupB: {},
+          groupC: {},
+          groupD: {},
+        }, // Clear all answers for retake
         currentTab: "groupA", // Reset to first section
         attempts: loadStudentProgress(`${currentStudentId}_${currentTestId}`)?.attempts || [],
       })
@@ -149,7 +152,7 @@ export default function SeePrepPage() {
   }, [])
 
   // Show login screen (always show initially to avoid hydration mismatch)
-  if (!isClient || !currentStudentId) {
+  if (!isHydrated || !currentStudentId) {
     return <StudentLogin onLogin={handleLogin} />
   }
 
@@ -176,7 +179,7 @@ export default function SeePrepPage() {
 
   // Show main exam interface
   return (
-    <div className="min-h-screen bg-gradient-to-br from-yellow-50 via-orange-50 to-amber-50">
+    <div className="min-h-screen bg-gradient-to-br from-yellow-50 via-orange-50 to-amber-50" suppressHydrationWarning>
       {/* Background Effects */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-yellow-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>

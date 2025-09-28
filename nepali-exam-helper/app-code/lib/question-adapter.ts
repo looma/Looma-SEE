@@ -1,4 +1,5 @@
 // Enhanced adapter to handle both science and English questions with bilingual support
+import type { EnglishQuestion } from "./english-question-types"
 interface DatabaseQuestion {
   _id?: string
   questionId?: string
@@ -54,22 +55,6 @@ export interface FreeResponseQuestion {
   explanationNepali?: string
 }
 
-export interface EnglishQuestion {
-  id: string
-  questionNumber: number
-  type: string
-  title: string
-  marks: number
-  passage?: any
-  subQuestions?: any[]
-  subSections?: any[]
-  wordCount?: number
-  clues?: string[]
-  sampleAnswer?: any
-  gaps?: any[]
-  explanation?: string
-  explanationNepali?: string
-}
 
 export function adaptDatabaseQuestions(dbQuestions: Record<string, DatabaseQuestion[]>) {
   const adapted = {

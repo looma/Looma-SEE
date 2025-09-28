@@ -6,11 +6,9 @@ export interface StudentProgress {
     groupB: Record<string, string>
     groupC: Record<string, string>
     groupD: Record<string, string>
+    // English test answers stored as nested objects
+    [questionId: string]: any
   }
-  answersA: Record<string, string>
-  answersB: Record<string, string>
-  answersC: Record<string, string>
-  answersD: Record<string, string>
   currentTab: string
   lastUpdated: string
   attempts: AttemptHistory[]
@@ -47,11 +45,6 @@ export function saveStudentProgress(studentId: string, progress: Omit<StudentPro
     const progressWithTimestamp = {
       ...progress,
       lastUpdated: new Date().toISOString(),
-      // Ensure backward compatibility with old format
-      answersA: progress.answers?.groupA || progress.answersA || {},
-      answersB: progress.answers?.groupB || progress.answersB || {},
-      answersC: progress.answers?.groupC || progress.answersC || {},
-      answersD: progress.answers?.groupD || progress.answersD || {},
     }
     const storageKey = `${STORAGE_KEY_PREFIX}${studentId}_${progress.testId}`
 
@@ -76,6 +69,24 @@ export function loadStudentProgress(studentIdWithTest: string): StudentProgress 
     const stored = localStorage.getItem(storageKey)
     if (stored) {
       const parsed = JSON.parse(stored)
+      
+      // Handle backward compatibility: convert old format to new format
+      if (parsed.answersA || parsed.answersB || parsed.answersC || parsed.answersD) {
+        parsed.answers = {
+          groupA: parsed.answersA || parsed.answers?.groupA || {},
+          groupB: parsed.answersB || parsed.answers?.groupB || {},
+          groupC: parsed.answersC || parsed.answers?.groupC || {},
+          groupD: parsed.answersD || parsed.answers?.groupD || {},
+          // Preserve any existing English answers
+          ...(parsed.answers || {})
+        }
+        // Remove old format fields
+        delete parsed.answersA
+        delete parsed.answersB
+        delete parsed.answersC
+        delete parsed.answersD
+      }
+      
       console.log(`✅ Successfully loaded progress for ${studentIdWithTest}`)
       return parsed
     } else {

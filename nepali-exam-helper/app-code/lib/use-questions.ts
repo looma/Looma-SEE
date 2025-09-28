@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import type { EnglishQuestion } from "./english-question-types"
 
 export interface GroupAQuestion {
   id: string
@@ -20,20 +21,6 @@ export interface FreeResponseQuestion {
   sampleAnswer?: string
 }
 
-export interface EnglishQuestion {
-  id: string
-  questionNumber: number
-  type: string
-  title: string
-  marks: number
-  passage?: any
-  subQuestions?: any[]
-  subSections?: any[]
-  wordCount?: number
-  clues?: string[]
-  sampleAnswer?: any
-  gaps?: any[]
-}
 
 interface QuestionsData {
   groupA: GroupAQuestion[]

@@ -54,8 +54,461 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground;
+    background: transparent !important;
+    color: hsl(222.2 84% 4.9%) !important; /* Explicit dark text color */
   }
+  
+  /* Force text colors to be readable */
+  .text-foreground {
+    color: hsl(222.2 84% 4.9%) !important; /* Dark text */
+  }
+  
+  .text-muted-foreground {
+    color: hsl(215.4 16.3% 46.9%) !important; /* Muted text */
+  }
+  
+  /* Ensure input fields have proper colors */
+  input, textarea {
+    color: hsl(222.2 84% 4.9%) !important; /* Dark text in inputs */
+    background-color: hsl(0 0% 100%) !important; /* White background */
+    border: 1px solid hsl(214.3 31.8% 91.4%) !important; /* Light gray border */
+  }
+  
+  /* Fix specific input field classes */
+  .border-input {
+    border-color: hsl(214.3 31.8% 91.4%) !important;
+  }
+  
+  .bg-background {
+    background-color: hsl(0 0% 100%) !important;
+  }
+  
+  .text-foreground {
+    color: hsl(222.2 84% 4.9%) !important;
+  }
+  
+  .text-muted-foreground {
+    color: hsl(215.4 16.3% 46.9%) !important;
+  }
+  
+  .ring-offset-background {
+    --tw-ring-offset-color: hsl(0 0% 100%) !important;
+  }
+  
+  .ring-ring {
+    --tw-ring-color: hsl(222.2 84% 4.9%) !important;
+  }
+  
+  /* Fix focus states for input fields */
+  input:focus, textarea:focus {
+    outline: none !important;
+    border-color: hsl(222.2 84% 4.9%) !important;
+    box-shadow: 0 0 0 2px hsl(222.2 84% 4.9% / 0.2) !important;
+  }
+  
+  /* Fix disabled states */
+  input:disabled, textarea:disabled {
+    opacity: 0.5 !important;
+    cursor: not-allowed !important;
+  }
+  
+  /* Fix file input styling */
+  input[type="file"] {
+    border: 0 !important;
+    background: transparent !important;
+  }
+  
+  input[type="file"]::file-selector-button {
+    border: 0 !important;
+    background: transparent !important;
+    font-size: 0.875rem !important;
+    font-weight: 500 !important;
+    color: hsl(222.2 84% 4.9%) !important;
+  }
+  
+  /* Ensure cards have proper colors */
+  .bg-white {
+    background-color: hsl(0 0% 100%) !important;
+  }
+  
+  .bg-white\/90 {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+  }
+  
+  .bg-white\/95 {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+  }
+  
+  /* Ensure all text elements are readable */
+  h1, h2, h3, h4, h5, h6 {
+    color: hsl(222.2 84% 4.9%) !important;
+  }
+  
+  p, span, div {
+    color: hsl(222.2 84% 4.9%) !important;
+  }
+  
+  /* Ensure buttons have proper text colors */
+  button {
+    color: inherit !important;
+  }
+  
+  /* Ensure labels are readable */
+  label {
+    color: hsl(222.2 84% 4.9%) !important;
+  }
+  
+  /* Ensure placeholders are visible */
+  input::placeholder, textarea::placeholder {
+    color: hsl(215.4 16.3% 46.9%) !important;
+  }
+  
+  /* Ensure fonts are properly loaded */
+  body {
+    font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important;
+  }
+}
+
+/* Override Tailwind input classes with explicit values */
+.flex.h-10.w-full.rounded-md.border.border-input.bg-background.px-3.py-2.text-base.ring-offset-background {
+  color: hsl(222.2 84% 4.9%) !important;
+  background-color: hsl(0 0% 100%) !important;
+  border-color: hsl(214.3 31.8% 91.4%) !important;
+}
+
+.flex.min-h-\[80px\].w-full.rounded-md.border.border-input.bg-background.px-3.py-2.text-base.ring-offset-background {
+  color: hsl(222.2 84% 4.9%) !important;
+  background-color: hsl(0 0% 100%) !important;
+  border-color: hsl(214.3 31.8% 91.4%) !important;
+}
+
+/* Fix placeholder colors specifically */
+.placeholder\:text-muted-foreground::placeholder {
+  color: hsl(215.4 16.3% 46.9%) !important;
+}
+
+/* Fix card backgrounds and gradients */
+.bg-white\/90 {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.bg-white\/95 {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.backdrop-blur-sm {
+  backdrop-filter: blur(4px) !important;
+}
+
+/* Fix gradient backgrounds */
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops)) !important;
+}
+
+.from-yellow-500 {
+  --tw-gradient-from: #eab308 !important;
+  --tw-gradient-to: rgb(234 179 8 / 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.to-amber-500 {
+  --tw-gradient-to: #f59e0b !important;
+}
+
+/* Fix subject-specific gradients */
+/* Science - Green gradients (darker for better contrast) */
+.from-emerald-500 {
+  --tw-gradient-from: #059669 !important; /* Darker emerald */
+  --tw-gradient-to: rgb(5 150 105 / 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.to-teal-600 {
+  --tw-gradient-to: #0f766e !important; /* Darker teal */
+}
+
+/* English - Purple gradients (darker for better contrast) */
+.from-purple-500 {
+  --tw-gradient-from: #7c3aed !important; /* Darker purple */
+  --tw-gradient-to: rgb(124 58 237 / 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.to-violet-600 {
+  --tw-gradient-to: #5b21b6 !important; /* Even darker violet */
+}
+
+/* Mathematics - Blue gradients (darker for better contrast) */
+.from-blue-500 {
+  --tw-gradient-from: #2563eb !important; /* Darker blue */
+  --tw-gradient-to: rgb(37 99 235 / 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.to-indigo-600 {
+  --tw-gradient-to: #3730a3 !important; /* Darker indigo */
+}
+
+/* Nepali - Orange gradients (darker for better contrast) */
+.from-orange-500 {
+  --tw-gradient-from: #ea580c !important; /* Darker orange */
+  --tw-gradient-to: rgb(234 88 12 / 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.to-red-600 {
+  --tw-gradient-to: #b91c1c !important; /* Darker red */
+}
+
+/* Social - Amber gradients (darker for better contrast) */
+.from-amber-500 {
+  --tw-gradient-from: #d97706 !important; /* Darker amber */
+  --tw-gradient-to: rgb(217 119 6 / 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.to-yellow-600 {
+  --tw-gradient-to: #a16207 !important; /* Darker yellow */
+}
+
+/* Default - Slate gradients */
+.from-slate-500 {
+  --tw-gradient-from: #64748b !important;
+  --tw-gradient-to: rgb(100 116 139 / 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.to-gray-600 {
+  --tw-gradient-to: #4b5563 !important;
+}
+
+/* Fix English question type gradients */
+/* Reading Comprehension - Blue gradients */
+.from-blue-500 {
+  --tw-gradient-from: #2563eb !important; /* Darker blue */
+  --tw-gradient-to: rgb(37 99 235 / 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.to-blue-600 {
+  --tw-gradient-to: #1d4ed8 !important; /* Darker blue */
+}
+
+/* Free Writing - Green gradients */
+.from-green-500 {
+  --tw-gradient-from: #059669 !important; /* Darker green */
+  --tw-gradient-to: rgb(5 150 105 / 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.to-green-600 {
+  --tw-gradient-to: #047857 !important; /* Darker green */
+}
+
+/* Grammar - Purple gradients (already defined above, but ensuring consistency) */
+.to-purple-600 {
+  --tw-gradient-to: #7c3aed !important; /* Darker purple */
+}
+
+/* Cloze Test - Orange gradients (already defined above, but ensuring consistency) */
+.to-orange-600 {
+  --tw-gradient-to: #ea580c !important; /* Darker orange */
+}
+
+/* Fix yellow text colors */
+.text-yellow-100 {
+  color: #fef3c7 !important;
+}
+
+.text-yellow-200 {
+  color: #fde68a !important;
+}
+
+/* Fix card styling */
+.rounded-lg {
+  border-radius: 0.5rem !important;
+}
+
+.shadow-2xl {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.border-white\/20 {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Fix card component base styling */
+.rounded-lg.border.bg-card.text-card-foreground.shadow-sm {
+  background-color: hsl(0 0% 100%) !important;
+  color: hsl(222.2 84% 4.9%) !important;
+  border-color: hsl(214.3 31.8% 91.4%) !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06) !important;
+}
+
+/* Fix card header styling */
+.flex.flex-col.space-y-1\.5.p-6 {
+  padding: 1.5rem !important;
+}
+
+/* Fix card content styling */
+.p-6.pt-0 {
+  padding: 1.5rem !important;
+  padding-top: 0 !important;
+}
+
+/* Ensure z-index works */
+.relative.z-10 {
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+/* Fix card hover effects */
+.group:hover .group-hover\:translate-x-1 {
+  transform: translateX(0.25rem) !important;
+}
+
+.group:hover .group-hover\:shadow-xl {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.group:hover .group-hover\:scale-\[1\.02\] {
+  transform: scale(1.02) !important;
+}
+
+/* Fix transition effects */
+.transition-all {
+  transition-property: all !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transition-duration: 150ms !important;
+}
+
+.transition-transform {
+  transition-property: transform !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transition-duration: 150ms !important;
+}
+
+.duration-300 {
+  transition-duration: 300ms !important;
+}
+
+/* Fix overflow and positioning */
+.overflow-hidden {
+  overflow: hidden !important;
+}
+
+.absolute {
+  position: absolute !important;
+}
+
+.top-0 {
+  top: 0 !important;
+}
+
+.right-0 {
+  right: 0 !important;
+}
+
+/* Fix opacity */
+.opacity-10 {
+  opacity: 0.1 !important;
+}
+
+.opacity-75 {
+  opacity: 0.75 !important;
+}
+
+.opacity-90 {
+  opacity: 0.9 !important;
+}
+
+/* Fix text contrast on gradient backgrounds */
+/* Ensure all text on gradient backgrounds is white and readable */
+.bg-gradient-to-r.text-white {
+  color: white !important;
+}
+
+.bg-gradient-to-r.text-white h1,
+.bg-gradient-to-r.text-white h2,
+.bg-gradient-to-r.text-white h3,
+.bg-gradient-to-r.text-white h4,
+.bg-gradient-to-r.text-white h5,
+.bg-gradient-to-r.text-white h6 {
+  color: white !important;
+}
+
+.bg-gradient-to-r.text-white p,
+.bg-gradient-to-r.text-white span,
+.bg-gradient-to-r.text-white div {
+  color: white !important;
+}
+
+/* Fix specific text opacity classes on gradients */
+.text-white\/90 {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.text-white\/80 {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.text-white\/75 {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+/* Fix badge styling on gradients */
+.bg-white\/20 {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.bg-white\/30 {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.border-white\/30 {
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Ensure card titles are white on gradients */
+.bg-gradient-to-r .text-lg,
+.bg-gradient-to-r .text-xl,
+.bg-gradient-to-r .text-2xl {
+  color: white !important;
+  font-weight: bold !important;
+}
+
+/* Fix button styling on gradients */
+.bg-white\/20.text-white {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+}
+
+.bg-white\/20.text-white:hover {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Force yellow gradients to work */
+.bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops)) !important;
+}
+.from-yellow-50 {
+  --tw-gradient-from: #fefce8 !important;
+  --tw-gradient-to: rgb(254 252 232 / 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+.via-orange-50 {
+  --tw-gradient-to: rgb(255 247 237 / 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), #fff7ed, var(--tw-gradient-to) !important;
+}
+.to-amber-50 {
+  --tw-gradient-to: #fffbeb !important;
 }
 
 /* Animations and extras */

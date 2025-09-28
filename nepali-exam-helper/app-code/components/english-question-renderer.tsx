@@ -65,10 +65,24 @@ export function EnglishQuestionRenderer({
     return { english, nepali }
   }
 
-  const renderExplanation = (explanation?: string) => {
+  const renderExplanation = (explanation?: string | { explanationEnglish?: string; explanationNepali?: string }) => {
     if (!explanation || !showExplanations) return null
 
-    const { english, nepali } = parseExplanation(explanation)
+    let english = ""
+    let nepali = ""
+
+    // Handle both old format (string) and new format (object with explanationEnglish/explanationNepali)
+    if (typeof explanation === "string") {
+      const parsed = parseExplanation(explanation)
+      english = parsed.english
+      nepali = parsed.nepali
+    } else if (typeof explanation === "object") {
+      english = explanation.explanationEnglish || ""
+      nepali = explanation.explanationNepali || ""
+    }
+
+    // Don't render if both are empty
+    if (!english && !nepali) return null
 
     return (
       <div className="mt-3 p-3 bg-blue-50 rounded-lg border border-blue-200">
@@ -175,7 +189,7 @@ export function EnglishQuestionRenderer({
                       </div>
                     </RadioGroup>
 
-                    {renderExplanation(subQ.explanation)}
+                    {renderExplanation(subQ)}
                   </div>
                 </div>
               </CardContent>
@@ -233,7 +247,7 @@ export function EnglishQuestionRenderer({
                       rows={3}
                     />
 
-                    {renderExplanation(subQ.explanation)}
+                    {renderExplanation(subQ)}
                   </div>
                 </div>
               </CardContent>
@@ -289,9 +303,16 @@ export function EnglishQuestionRenderer({
                   className="flex gap-2"
                 >
                   {section.columns.B.map((bItem: any) => (
-                    <div key={bItem.id} className="flex items-center space-x-1">
+                    <div 
+                      key={bItem.id} 
+                      className="flex items-center space-x-2 cursor-pointer p-2 rounded hover:bg-blue-50 transition-colors"
+                      onClick={() => {
+                        const newAnswers = { ...currentAnswers, [item.id]: bItem.id }
+                        onAnswerChange(question.id, section.id, newAnswers)
+                      }}
+                    >
                       <RadioGroupItem value={bItem.id} id={`${item.id}-${bItem.id}`} />
-                      <Label htmlFor={`${item.id}-${bItem.id}`} className="text-sm">
+                      <Label htmlFor={`${item.id}-${bItem.id}`} className="font-medium text-blue-700 cursor-pointer">
                         ({bItem.id})
                       </Label>
                     </div>
@@ -302,7 +323,7 @@ export function EnglishQuestionRenderer({
           </div>
         </div>
 
-        {renderExplanation(section.explanation)}
+        {renderExplanation(section)}
       </div>
     )
   }
@@ -437,7 +458,7 @@ export function EnglishQuestionRenderer({
                       rows={2}
                     />
 
-                    {renderExplanation(subQ.explanation)}
+                    {renderExplanation(subQ)}
                   </div>
                 </div>
               </CardContent>
@@ -477,7 +498,7 @@ export function EnglishQuestionRenderer({
                     />
                   </div>
 
-                  {renderExplanation(gap.explanation)}
+                  {renderExplanation(gap)}
                 </CardContent>
               </Card>
             )

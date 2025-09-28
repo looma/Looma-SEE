@@ -18,6 +18,14 @@ const nextConfig = {
   experimental: {
     // Enable any experimental features you need
   },
+  // Fix for HTTPS CSS loading issues
+  compiler: {
+    removeConsole: false,
+  },
+  // Ensure CSS is loaded properly in production
+  swcMinify: true,
+  // Force CSS to load synchronously to prevent HTTPS issues
+  optimizeFonts: false,
   webpack: (config) => {
     // Handle path aliases for both src and root structures
     config.resolve.alias = {
