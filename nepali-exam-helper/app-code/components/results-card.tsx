@@ -20,7 +20,7 @@ import {
 } from "lucide-react"
 import { useQuestions } from "@/lib/use-questions"
 import { loadStudentProgress } from "@/lib/storage"
-import type { GroupAQuestion } from "@/components/group-a"
+import type { GroupAQuestion } from "@/lib/use-questions"
 
 interface GradedFeedback {
   id: string

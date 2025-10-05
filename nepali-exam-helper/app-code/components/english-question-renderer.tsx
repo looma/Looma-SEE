@@ -200,6 +200,122 @@ export function EnglishQuestionRenderer({
     )
   }
 
+  const renderTrueFalseNotGivenQuestions = (subQuestions: any[], parentId?: string) => {
+    return (
+      <div className="space-y-4">
+        {subQuestions.map((subQ, index) => {
+          const questionId = parentId ? `${parentId}_${subQ.id}` : subQ.id
+          const currentAnswer = parentId ? answers[question.id]?.[parentId]?.[subQ.id] : answers[question.id]?.[subQ.id]
+
+          return (
+            <Card key={subQ.id} className="border-slate-200">
+              <CardContent className="p-4">
+                <div className="flex items-start gap-3">
+                  <div className="flex-shrink-0 mt-1">
+                    {currentAnswer ? (
+                      <CheckCircle2 className="h-5 w-5 text-green-500" />
+                    ) : (
+                      <Circle className="h-5 w-5 text-slate-400" />
+                    )}
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex justify-between items-start mb-3">
+                      <p className="font-medium text-slate-800">
+                        ({subQ.id}) {subQ.questionEnglish}
+                      </p>
+                      <Badge variant="outline" className="ml-2">
+                        {subQ.marks} mark{subQ.marks !== 1 ? "s" : ""}
+                      </Badge>
+                    </div>
+
+                    <RadioGroup
+                      value={currentAnswer || ""}
+                      onValueChange={(value) => {
+                        if (parentId) {
+                          const currentSection = answers[question.id]?.[parentId] || {}
+                          onAnswerChange(question.id, parentId, {
+                            ...currentSection,
+                            [subQ.id]: value,
+                          })
+                        } else {
+                          onAnswerChange(question.id, subQ.id, value)
+                        }
+                      }}
+                      className="grid grid-cols-1 sm:grid-cols-3 gap-3"
+                    >
+                      <div
+                        className="flex items-center space-x-2 cursor-pointer p-3 rounded-lg border hover:bg-green-50 transition-colors"
+                        onClick={() => {
+                          const value = "TRUE"
+                          if (parentId) {
+                            const currentSection = answers[question.id]?.[parentId] || {}
+                            onAnswerChange(question.id, parentId, {
+                              ...currentSection,
+                              [subQ.id]: value,
+                            })
+                          } else {
+                            onAnswerChange(question.id, subQ.id, value)
+                          }
+                        }}
+                      >
+                        <RadioGroupItem value="TRUE" id={`${questionId}_true`} />
+                        <Label htmlFor={`${questionId}_true`} className="font-medium text-green-700 cursor-pointer">
+                          TRUE
+                        </Label>
+                      </div>
+                      <div
+                        className="flex items-center space-x-2 cursor-pointer p-3 rounded-lg border hover:bg-red-50 transition-colors"
+                        onClick={() => {
+                          const value = "FALSE"
+                          if (parentId) {
+                            const currentSection = answers[question.id]?.[parentId] || {}
+                            onAnswerChange(question.id, parentId, {
+                              ...currentSection,
+                              [subQ.id]: value,
+                            })
+                          } else {
+                            onAnswerChange(question.id, subQ.id, value)
+                          }
+                        }}
+                      >
+                        <RadioGroupItem value="FALSE" id={`${questionId}_false`} />
+                        <Label htmlFor={`${questionId}_false`} className="font-medium text-red-700 cursor-pointer">
+                          FALSE
+                        </Label>
+                      </div>
+                      <div
+                        className="flex items-center space-x-2 cursor-pointer p-3 rounded-lg border hover:bg-yellow-50 transition-colors"
+                        onClick={() => {
+                          const value = "NOT GIVEN"
+                          if (parentId) {
+                            const currentSection = answers[question.id]?.[parentId] || {}
+                            onAnswerChange(question.id, parentId, {
+                              ...currentSection,
+                              [subQ.id]: value,
+                            })
+                          } else {
+                            onAnswerChange(question.id, subQ.id, value)
+                          }
+                        }}
+                      >
+                        <RadioGroupItem value="NOT GIVEN" id={`${questionId}_not_given`} />
+                        <Label htmlFor={`${questionId}_not_given`} className="font-medium text-yellow-700 cursor-pointer">
+                          NOT GIVEN
+                        </Label>
+                      </div>
+                    </RadioGroup>
+
+                    {renderExplanation(subQ)}
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          )
+        })}
+      </div>
+    )
+  }
+
   const renderShortAnswerQuestions = (subQuestions: any[], parentId?: string) => {
     return (
       <div className="space-y-4">
@@ -258,69 +374,139 @@ export function EnglishQuestionRenderer({
     )
   }
 
+  const renderFillInTheBlanksQuestions = (subQuestions: any[], parentId?: string) => {
+    return (
+      <div className="space-y-4">
+        {subQuestions.map((subQ, index) => {
+          const currentAnswer = parentId
+            ? answers[question.id]?.[parentId]?.[subQ.id] || ""
+            : answers[question.id]?.[subQ.id] || ""
+
+          return (
+            <Card key={subQ.id} className="border-slate-200">
+              <CardContent className="p-4">
+                <div className="flex items-start gap-3">
+                  <div className="flex-shrink-0 mt-1">
+                    {currentAnswer.trim() ? (
+                      <CheckCircle2 className="h-5 w-5 text-green-500" />
+                    ) : (
+                      <Circle className="h-5 w-5 text-slate-400" />
+                    )}
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex justify-between items-start mb-3">
+                      <p className="font-medium text-slate-800">
+                        ({subQ.id}) {subQ.questionEnglish}
+                      </p>
+                      <Badge variant="outline" className="ml-2">
+                        {subQ.marks} mark{subQ.marks !== 1 ? "s" : ""}
+                      </Badge>
+                    </div>
+
+                    <div className="space-y-2">
+                      <Label htmlFor={`fill-${subQ.id}`} className="text-sm font-medium text-slate-700">
+                        Fill in the blank:
+                      </Label>
+                      <input
+                        id={`fill-${subQ.id}`}
+                        type="text"
+                        value={currentAnswer}
+                        onChange={(e) => {
+                          if (parentId) {
+                            const currentSection = answers[question.id]?.[parentId] || {}
+                            onAnswerChange(question.id, parentId, {
+                              ...currentSection,
+                              [subQ.id]: e.target.value,
+                            })
+                          } else {
+                            onAnswerChange(question.id, subQ.id, e.target.value)
+                          }
+                        }}
+                        placeholder="Type your answer here..."
+                        className="w-full px-3 py-2 border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      />
+                    </div>
+
+                    {renderExplanation(subQ)}
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          )
+        })}
+      </div>
+    )
+  }
+
   const renderMatchingQuestion = (section: any) => {
     const currentAnswers = answers[question.id]?.[section.id] || {}
 
     return (
-      <div className="space-y-4">
-        <p className="text-sm text-slate-600 mb-4">{section.title}</p>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div>
-            <h4 className="font-semibold text-slate-800 mb-3">Column A</h4>
-            <div className="space-y-2">
-              {section.columns.A.map((item: any) => (
-                <div key={item.id} className="p-3 bg-slate-50 rounded-lg">
-                  <span className="font-medium">({item.id})</span> {item.text}
-                </div>
-              ))}
-            </div>
-          </div>
-          <div>
-            <h4 className="font-semibold text-slate-800 mb-3">Column B</h4>
-            <div className="space-y-2">
-              {section.columns.B.map((item: any) => (
-                <div key={item.id} className="p-3 bg-slate-50 rounded-lg">
-                  <span className="font-medium">({item.id})</span> {item.text}
-                </div>
-              ))}
-            </div>
-          </div>
+      <div className="space-y-6">
+        <div className="flex justify-between items-start mb-4">
+          <p className="text-sm text-slate-600">{section.title}</p>
+          <Badge variant="outline" className="ml-2">
+            {section.marks} mark{section.marks !== 1 ? "s" : ""}
+          </Badge>
+        </div>
+        
+        {/* Instructions */}
+        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+          <p className="text-sm text-blue-800 font-medium">
+            Match each item with the correct option by selecting the appropriate choice below.
+          </p>
         </div>
 
-        <div className="mt-6">
-          <h4 className="font-semibold text-slate-800 mb-3">Your Matches:</h4>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {section.columns.A.map((item: any) => (
-              <div key={item.id} className="flex items-center gap-3">
-                <span className="font-medium">({item.id})</span>
-                <span>=</span>
-                <RadioGroup
-                  value={currentAnswers[item.id] || ""}
-                  onValueChange={(value) => {
-                    const newAnswers = { ...currentAnswers, [item.id]: value }
-                    onAnswerChange(question.id, section.id, newAnswers)
-                  }}
-                  className="flex gap-2"
-                >
-                  {section.columns.B.map((bItem: any) => (
-                    <div 
-                      key={bItem.id} 
-                      className="flex items-center space-x-2 cursor-pointer p-2 rounded hover:bg-blue-50 transition-colors"
-                      onClick={() => {
-                        const newAnswers = { ...currentAnswers, [item.id]: bItem.id }
+        {/* Matching Interface */}
+        <div className="space-y-4">
+          {section.columns.A.map((item: any) => (
+            <Card key={item.id} className="border-slate-200">
+              <CardContent className="p-4">
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0">
+                    <div className="w-8 h-8 bg-blue-100 text-blue-800 rounded-full flex items-center justify-center font-semibold text-sm">
+                      {item.id}
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <p className="font-medium text-slate-800 mb-3">{item.text}</p>
+                    <div className="flex items-center gap-2 mb-3">
+                      <span className="text-sm text-slate-600 font-medium">Choose the correct match:</span>
+                    </div>
+                    <RadioGroup
+                      value={currentAnswers[item.id] || ""}
+                      onValueChange={(value) => {
+                        const newAnswers = { ...currentAnswers, [item.id]: value }
                         onAnswerChange(question.id, section.id, newAnswers)
                       }}
+                      className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2"
                     >
-                      <RadioGroupItem value={bItem.id} id={`${item.id}-${bItem.id}`} />
-                      <Label htmlFor={`${item.id}-${bItem.id}`} className="font-medium text-blue-700 cursor-pointer">
-                        ({bItem.id})
-                      </Label>
-                    </div>
-                  ))}
-                </RadioGroup>
-              </div>
-            ))}
-          </div>
+                      {section.columns.B.map((bItem: any) => (
+                        <div 
+                          key={bItem.id} 
+                          className={`flex items-center space-x-2 cursor-pointer p-3 rounded-lg border transition-colors ${
+                            currentAnswers[item.id] === bItem.id
+                              ? "bg-blue-50 border-blue-300"
+                              : "bg-slate-50 border-slate-200 hover:bg-slate-100"
+                          }`}
+                          onClick={() => {
+                            const newAnswers = { ...currentAnswers, [item.id]: bItem.id }
+                            onAnswerChange(question.id, section.id, newAnswers)
+                          }}
+                        >
+                          <RadioGroupItem value={bItem.id} id={`${item.id}-${bItem.id}`} />
+                          <Label htmlFor={`${item.id}-${bItem.id}`} className="cursor-pointer flex-1">
+                            <span className="font-medium text-blue-700 mr-2">({bItem.id})</span>
+                            <span className="text-slate-700">{bItem.text}</span>
+                          </Label>
+                        </div>
+                      ))}
+                    </RadioGroup>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
 
         {renderExplanation(section)}
@@ -358,9 +544,15 @@ export function EnglishQuestionRenderer({
             {section.type === "true_false" &&
               section.subQuestions &&
               renderTrueFalseQuestions(section.subQuestions, section.id)}
+            {section.type === "true_false_not_given" &&
+              section.subQuestions &&
+              renderTrueFalseNotGivenQuestions(section.subQuestions, section.id)}
             {section.type === "short_answer" &&
               section.subQuestions &&
               renderShortAnswerQuestions(section.subQuestions, section.id)}
+            {section.type === "fill_in_the_blanks" &&
+              section.subQuestions &&
+              renderFillInTheBlanksQuestions(section.subQuestions, section.id)}
             {section.type === "matching" && renderMatchingQuestion(section)}
           </div>
         ))}

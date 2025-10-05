@@ -42,7 +42,7 @@ export function FreeResponseGroup({
         cleanExplanation = cleanExplanation.replace(/^English:\s*/, "")
       }
       if (cleanExplanation.startsWith("Explanation (English):")) {
-        cleanExplanation = cleanExplanation.replace(/^Explanation $$English$$:\s*/, "")
+        cleanExplanation = cleanExplanation.replace(/^Explanation \$English\$:\s*/, "")
       }
 
       return (

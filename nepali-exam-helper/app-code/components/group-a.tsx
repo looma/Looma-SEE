@@ -40,7 +40,7 @@ export function GroupA({ questions, answers, onAnswerChange, progress, language 
       cleanExplanation = cleanExplanation.replace(/^English:\s*/, "")
     }
     if (cleanExplanation.startsWith("Explanation (English):")) {
-      cleanExplanation = cleanExplanation.replace(/^Explanation $$English$$:\s*/, "")
+      cleanExplanation = cleanExplanation.replace(/^Explanation \$English\$:\s*/, "")
     }
 
     return (

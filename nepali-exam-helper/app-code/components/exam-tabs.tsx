@@ -783,7 +783,7 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
                   return answer !== undefined && answer !== null && answer !== ""
                 }).length
               }{" "}
-              of ${questions.englishQuestions.length} questions answered
+              of {questions.englishQuestions.length} questions answered
             </span>
             <span className="font-medium">{calculateOverallProgress()}%</span>
           </div>
