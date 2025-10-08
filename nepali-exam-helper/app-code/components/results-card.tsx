@@ -67,12 +67,12 @@ export function ResultsCard({
   let scoreB, scoreC, scoreD, totalScore, maxScoreA, maxScoreB, maxScoreC, maxScoreD, maxTotalScore
 
   if (isEnglishTest) {
-    // English test format - use AI grading results only
+    // English test format - use same structure as Science tests
     scoreB = 0
     scoreC = 0  
     scoreD = 0
     
-    // Use AI grading results - no fallback to manual calculation
+    // Use AI grading results from feedbackA (same as Science tests)
     totalScore = results.scoreA || 0
     
     maxScoreA = questions.englishQuestions.reduce((acc, q) => acc + q.marks, 0)
@@ -231,9 +231,9 @@ export function ResultsCard({
   const renderAttemptHistory = () => {
     if ((attempts || []).length <= 1) return null
     
-    // Filter out corrupted attempts (0/0 scores or invalid data)
+    // Filter out corrupted attempts (invalid data)
     const validAttempts = attempts.filter(attempt => 
-      attempt.totalScore > 0 || attempt.maxScore > 0
+      attempt.maxScore > 0 && typeof attempt.totalScore === 'number' && typeof attempt.percentage === 'number'
     )
     
     // Don't show the section if no valid attempts
@@ -605,6 +605,47 @@ export function ResultsCard({
                     questions.groupD,
                   )}
                 </>
+              )}
+              
+              {/* English test feedback */}
+              {isEnglishTest && results.feedbackA && results.feedbackA.length > 0 && (
+                <div className="mt-6">
+                  <h3 className="text-lg font-semibold mb-4 text-gray-800">
+                    AI Feedback / AI प्रतिक्रिया
+                  </h3>
+                  <div className="space-y-4">
+                    {results.feedbackA.map((feedback: any, index: number) => (
+                      <div key={feedback.id || index} className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                        <div className="flex justify-between items-start mb-2">
+                          <h4 className="font-medium text-blue-900">
+                            Question {index + 1}
+                          </h4>
+                          <span className="text-sm font-semibold text-blue-700">
+                            {feedback.score}/{questions.englishQuestions[index]?.marks || 1} marks
+                          </span>
+                        </div>
+                        <div className="space-y-2">
+                          <div>
+                            <p className="text-sm font-medium text-gray-700 mb-1">Question:</p>
+                            <p className="text-sm text-gray-600">{feedback.question}</p>
+                          </div>
+                          <div>
+                            <p className="text-sm font-medium text-gray-700 mb-1">Your Answer:</p>
+                            <p className="text-sm text-gray-600 bg-white p-2 rounded border">
+                              {feedback.studentAnswer}
+                            </p>
+                          </div>
+                          <div>
+                            <p className="text-sm font-medium text-gray-700 mb-1">AI Feedback:</p>
+                            <p className="text-sm text-gray-600 bg-white p-2 rounded border">
+                              {feedback.feedback}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               )}
             </CardContent>
 

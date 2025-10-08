@@ -37,6 +37,7 @@ export interface ShortAnswerQuestion {
 }
 
 export interface FreeWritingQuestion {
+  id: string
   questionNumber: number
   type: "free_writing"
   title: string
@@ -65,6 +66,7 @@ export interface ClozeTestGap {
 }
 
 export interface ClozeTestQuestion {
+  id: string
   questionNumber: number
   type: "cloze_test"
   title: string
@@ -74,6 +76,7 @@ export interface ClozeTestQuestion {
 }
 
 export interface ReadingComprehensionQuestion {
+  id: string
   questionNumber: number
   type: "reading_comprehension"
   title: string

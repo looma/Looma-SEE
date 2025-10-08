@@ -49,34 +49,22 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
     const storageKey = `${studentId}_${testId}`
     const progress = loadStudentProgress(storageKey)
 
-    if (progress) {
-      setAnswers(progress.answers || {})
+    if (progress && progress.answers) {
+      setAnswers(progress.answers)
       setLastSaved(new Date(progress.lastUpdated))
-      
-      // Only set tab for Science tests, English tests don't use tabs
-      const isEnglishTest = questions?.englishQuestions && questions.englishQuestions.length > 0
-      if (!isEnglishTest) {
-        setCurrentTab(getFirstAvailableSection())
-      }
-    } else {
-      // No progress found, set to first available section for Science tests only
-      const isEnglishTest = questions?.englishQuestions && questions.englishQuestions.length > 0
-      if (!isEnglishTest) {
-        setCurrentTab(getFirstAvailableSection())
-      }
     }
-  }, [studentId, testId, questions])
+  }, [studentId, testId])
 
-  // Set initial tab when questions load (backup)
+  // Set tab when questions load (separate effect to avoid clearing answers)
   useEffect(() => {
-    if (questions && !currentTab) {
-      const isEnglishTest = questions.englishQuestions && questions.englishQuestions.length > 0
-      if (!isEnglishTest) {
-        const firstSection = getFirstAvailableSection()
-        setCurrentTab(firstSection)
-      }
+    if (!questions) return
+    
+    const isEnglishTest = questions.englishQuestions && questions.englishQuestions.length > 0
+    if (!isEnglishTest && !currentTab) {
+      setCurrentTab(getFirstAvailableSection())
     }
   }, [questions, currentTab])
+
 
   // Save progress when answers change
   useEffect(() => {
@@ -261,130 +249,116 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
       }
 
       if (isEnglishTest) {
-        // English test grading
-        console.log("📚 Grading English test...")
+        // English test grading - use same simple approach as Science tests
         
-        // Grade English questions with AI
+        // Grade English questions with AI (treat like Group B/C/D)
         const gradingPromises: Promise<any>[] = []
-        
-        questions.englishQuestions.forEach((question) => {
-          const userAnswer = answers[question.id]
-          if (!userAnswer) return
-          
-          // Handle different English question types
-          if (question.type === 'reading_comprehension' && question.subSections) {
-            question.subSections.forEach(section => {
-              // Only call AI grading for questions that need semantic understanding
-              if (section.subQuestions && (section.type === 'short_answer' || section.type === 'fill_in_the_blanks')) {
-                section.subQuestions.forEach(subQ => {
-                  const sectionAnswer = userAnswer[section.id]
-                  if (sectionAnswer && typeof sectionAnswer === 'object') {
-                    const userSubAnswer = sectionAnswer[subQ.id]
-                    if (userSubAnswer && userSubAnswer.trim()) {
-                      gradingPromises.push(
-                        fetch("/api/grade", {
-                          method: "POST",
-                          headers: { "Content-Type": "application/json" },
-                          body: JSON.stringify({
-                            question: subQ.questionEnglish,
-                            answer: userSubAnswer,
-                            marks: subQ.marks || (section.marks ? Math.round((section.marks / section.subQuestions.length) * 10) / 10 : 1),
-                            sampleAnswer: subQ.correctAnswer,
-                          }),
-                        })
-                          .then(async (res) => {
-                            const result = await res.json()
-                            if (!res.ok) {
-                              throw new Error(result.error || `HTTP ${res.status}`)
-                            }
-                            return result
-                          })
-                          .then((result) => ({
-                            id: `${question.id}_${section.id}_${subQ.id}`,
-                            score: result.score || 0,
-                            feedback: result.feedback || "No feedback available",
+
+        if (questions.englishQuestions && questions.englishQuestions.length > 0) {
+          questions.englishQuestions.forEach((question) => {
+            const userAnswer = answers[(question as any).id]
+            if (!userAnswer) return
+
+            // Handle different English question types
+            if ((question as any).type === 'reading_comprehension' && (question as any).subSections) {
+              // For reading comprehension, grade each sub-section separately
+              question.subSections.forEach(section => {
+                if (section.subQuestions) {
+                  section.subQuestions.forEach(subQ => {
+                    const sectionAnswer = userAnswer[section.id]
+                    if (sectionAnswer && typeof sectionAnswer === 'object') {
+                      const userSubAnswer = sectionAnswer[subQ.id]
+                      if (userSubAnswer && typeof userSubAnswer === 'string' && userSubAnswer.trim().length > 0) {
+                        // Calculate marks for sub-question
+                        const subQuestionMarks = subQ.marks || (section.marks ? Math.round((section.marks / section.subQuestions.length) * 10) / 10 : 1)
+                        
+                        if (section.type === 'true_false') {
+                          // Grade true/false questions automatically
+                          const isCorrect = userSubAnswer.toUpperCase() === subQ.correctAnswer.toUpperCase()
+                          const score = isCorrect ? subQuestionMarks : 0
+                          const feedback = isCorrect 
+                            ? "Correct! Well done." 
+                            : `Incorrect. The correct answer is ${subQ.correctAnswer}.`
+                          
+                          gradingPromises.push(Promise.resolve({
+                            id: `${(question as any).id}_${section.id}_${subQ.id}`,
+                            score: score,
+                            feedback: feedback,
                             question: subQ.questionEnglish,
                             studentAnswer: userSubAnswer,
                             group: "English",
-                            questionId: question.id,
+                            questionId: (question as any).id,
                             sectionId: section.id,
                             subQuestionId: subQ.id,
                           }))
-                          .catch((error) => ({
-                            id: `${question.id}_${section.id}_${subQ.id}`,
-                            score: 0,
-                            feedback: `AI grading failed: ${error.message || 'Unknown error'}`,
-                            question: subQ.questionEnglish,
-                            studentAnswer: userSubAnswer,
-                            group: "English",
-                            questionId: question.id,
-                            sectionId: section.id,
-                            subQuestionId: subQ.id,
-                          }))
-                      )
+                        } else if (section.type === 'short_answer' || section.type === 'fill_in_the_blanks') {
+                          // Grade open-ended questions with AI
+                          gradingPromises.push(
+                            fetch("/api/grade", {
+                              method: "POST",
+                              headers: { "Content-Type": "application/json" },
+                              body: JSON.stringify({
+                                question: subQ.questionEnglish,
+                                answer: userSubAnswer,
+                                marks: subQuestionMarks,
+                                sampleAnswer: subQ.correctAnswer,
+                              }),
+                            })
+                              .then(async (res) => {
+                                const result = await res.json()
+                                if (!res.ok) {
+                                  throw new Error(result.error || `HTTP ${res.status}`)
+                                }
+                                return result
+                              })
+                              .then((result) => ({
+                                id: `${question.id}_${section.id}_${subQ.id}`,
+                                score: result.score || 0,
+                                feedback: result.feedback || "No feedback available",
+                                question: subQ.questionEnglish,
+                                studentAnswer: userSubAnswer,
+                                group: "English",
+                                questionId: question.id,
+                                sectionId: section.id,
+                                subQuestionId: subQ.id,
+                              }))
+                              .catch((error) => ({
+                                id: `${question.id}_${section.id}_${subQ.id}`,
+                                score: 0,
+                                feedback: `AI grading failed: ${error.message || 'Unknown error'}`,
+                                question: subQ.questionEnglish,
+                                studentAnswer: userSubAnswer,
+                                group: "English",
+                                questionId: question.id,
+                                sectionId: section.id,
+                                subQuestionId: subQ.id,
+                              }))
+                          )
+                        }
+                      }
                     }
-                  }
-                })
-              }
-            })
-          } else if (question.type === 'free_writing') {
-            // Handle free writing questions
-            const userWritingAnswer = userAnswer
-            if (userWritingAnswer && typeof userWritingAnswer === 'string' && userWritingAnswer.trim()) {
-              gradingPromises.push(
-                fetch("/api/grade", {
-                  method: "POST",
-                  headers: { "Content-Type": "application/json" },
-                  body: JSON.stringify({
-                    question: question.title,
-                    answer: userWritingAnswer,
-                    marks: question.marks,
-                    sampleAnswer: question.sampleAnswer?.content,
-                  }),
-                })
-                  .then(async (res) => {
-                    const result = await res.json()
-                    if (!res.ok) {
-                      throw new Error(result.error || `HTTP ${res.status}`)
-                    }
-                    return result
                   })
-                  .then((result) => ({
-                    id: question.id,
-                    score: result.score || 0,
-                    feedback: result.feedback || "No feedback available",
-                    question: question.title,
-                    studentAnswer: userWritingAnswer,
-                    group: "English",
-                    questionId: question.id,
-                  }))
-                  .catch((error) => ({
-                    id: question.id,
-                    score: 0,
-                    feedback: `AI grading failed: ${error.message || 'Unknown error'}`,
-                    question: question.title,
-                    studentAnswer: userWritingAnswer,
-                    group: "English",
-                    questionId: question.id,
-                  }))
-              )
-            }
-          } else if (question.type === 'cloze_test') {
-            // Handle cloze test questions
-            if (userAnswer && typeof userAnswer === 'object') {
-              Object.entries(userAnswer).forEach(([gapId, gapAnswer]) => {
-                if (gapAnswer && typeof gapAnswer === 'string' && gapAnswer.trim()) {
-                  const gap = question.gaps?.find(g => g.id === gapId)
-                  if (gap) {
+                }
+              })
+            } else if (question.subQuestions) {
+              // Handle questions with direct sub-questions (like grammar questions)
+              question.subQuestions.forEach(subQ => {
+                const userSubAnswer = userAnswer[subQ.id]
+                if (userSubAnswer && typeof userSubAnswer === 'string' && userSubAnswer.trim().length > 0) {
+                  // Calculate marks for sub-question
+                  const subQuestionMarks = subQ.marks || (question.marks ? Math.round((question.marks / question.subQuestions.length) * 10) / 10 : 1)
+                  
+                  if (subQ.type === 'reproduce') {
+                    // Grade grammar/reproduce questions with AI
                     gradingPromises.push(
                       fetch("/api/grade", {
                         method: "POST",
                         headers: { "Content-Type": "application/json" },
                         body: JSON.stringify({
-                          question: `Fill in the blank (${gapId}): ${question.passage}`,
-                          answer: gapAnswer,
-                          marks: question.marks && question.gaps ? Math.round((question.marks / question.gaps.length) * 10) / 10 : 1,
-                          sampleAnswer: gap.correctAnswer,
+                          question: subQ.questionEnglish,
+                          answer: userSubAnswer,
+                          marks: subQuestionMarks,
+                          sampleAnswer: subQ.correctAnswer,
                         }),
                       })
                         .then(async (res) => {
@@ -395,55 +369,147 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
                           return result
                         })
                         .then((result) => ({
-                          id: `${question.id}_${gapId}`,
+                          id: `${question.id}_${subQ.id}`,
                           score: result.score || 0,
                           feedback: result.feedback || "No feedback available",
-                          question: `Fill in the blank (${gapId})`,
-                          studentAnswer: gapAnswer,
+                          question: subQ.questionEnglish,
+                          studentAnswer: userSubAnswer,
                           group: "English",
                           questionId: question.id,
-                          gapId: gapId,
+                          subQuestionId: subQ.id,
                         }))
                         .catch((error) => ({
-                          id: `${question.id}_${gapId}`,
+                          id: `${question.id}_${subQ.id}`,
                           score: 0,
                           feedback: `AI grading failed: ${error.message || 'Unknown error'}`,
-                          question: `Fill in the blank (${gapId})`,
-                          studentAnswer: gapAnswer,
+                          question: subQ.questionEnglish,
+                          studentAnswer: userSubAnswer,
                           group: "English",
                           questionId: question.id,
-                          gapId: gapId,
+                          subQuestionId: subQ.id,
                         }))
                     )
                   }
                 }
               })
+            } else if ((question as any).type === 'free_writing') {
+              // Handle free writing questions
+              const userWritingAnswer = userAnswer
+              if (userWritingAnswer && typeof userWritingAnswer === 'string' && userWritingAnswer.trim().length > 0) {
+                gradingPromises.push(
+                  fetch("/api/grade", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+                      question: (question as any).title,
+                      answer: userWritingAnswer,
+                      marks: (question as any).marks,
+                      sampleAnswer: (question as any).sampleAnswer?.content,
+                    }),
+                  })
+                    .then(async (res) => {
+                      const result = await res.json()
+                      if (!res.ok) {
+                        throw new Error(result.error || `HTTP ${res.status}`)
+                      }
+                      return result
+                    })
+                    .then((result) => ({
+                      id: (question as any).id,
+                      score: result.score || 0,
+                      feedback: result.feedback || "No feedback available",
+                      question: (question as any).title,
+                      studentAnswer: userWritingAnswer,
+                      group: "English",
+                      questionId: (question as any).id,
+                    }))
+                    .catch((error) => ({
+                      id: (question as any).id,
+                      score: 0,
+                      feedback: `AI grading failed: ${error.message || 'Unknown error'}`,
+                      question: (question as any).title,
+                      studentAnswer: userWritingAnswer,
+                      group: "English",
+                      questionId: (question as any).id,
+                    }))
+                )
+              }
+            } else if ((question as any).type === 'cloze_test') {
+              // Handle cloze test questions
+              if (userAnswer && typeof userAnswer === 'object') {
+                const gaps = (question as any).gaps || []
+                Object.entries(userAnswer).forEach(([gapId, gapAnswer]) => {
+                  if (gapAnswer && typeof gapAnswer === 'string' && gapAnswer.trim().length > 0) {
+                    const gap = gaps.find((g: any) => g.id === gapId)
+                    if (gap) {
+                      gradingPromises.push(
+                        fetch("/api/grade", {
+                          method: "POST",
+                          headers: { "Content-Type": "application/json" },
+                          body: JSON.stringify({
+                            question: `Fill in the blank (${gapId}): ${(question as any).passage}`,
+                            answer: gapAnswer,
+                            marks: (question as any).marks && gaps.length ? Math.round(((question as any).marks / gaps.length) * 10) / 10 : 1,
+                            sampleAnswer: gap.correctAnswer,
+                          }),
+                        })
+                          .then(async (res) => {
+                            const result = await res.json()
+                            if (!res.ok) {
+                              throw new Error(result.error || `HTTP ${res.status}`)
+                            }
+                            return result
+                          })
+                          .then((result) => ({
+                            id: `${(question as any).id}_${gapId}`,
+                            score: result.score || 0,
+                            feedback: result.feedback || "No feedback available",
+                            question: `Fill in the blank (${gapId})`,
+                            studentAnswer: gapAnswer,
+                            group: "English",
+                            questionId: (question as any).id,
+                            gapId: gapId,
+                          }))
+                          .catch((error) => ({
+                            id: `${(question as any).id}_${gapId}`,
+                            score: 0,
+                            feedback: `AI grading failed: ${error.message || 'Unknown error'}`,
+                            question: `Fill in the blank (${gapId})`,
+                            studentAnswer: gapAnswer,
+                            group: "English",
+                            questionId: (question as any).id,
+                            gapId: gapId,
+                          }))
+                      )
+                    }
+                  }
+                })
+              }
             }
-          }
-        })
+          })
+        }
 
         // Wait for all AI grading to complete
         if (gradingPromises.length > 0) {
           const gradingResults = await Promise.all(gradingPromises)
           
-          // Store English grading results
+          // Store English grading results in same format as Science tests
+          results.feedbackA = gradingResults
           results.englishFeedback = gradingResults
-          
-          // Calculate total English score
           results.scoreA = gradingResults.reduce((sum, result) => sum + result.score, 0)
         } else {
-          // No AI grading was attempted - set default values
+          // No answers provided or no AI grading was attempted - set default values
+          results.feedbackA = []
           results.englishFeedback = []
           results.scoreA = 0
         }
 
-        // Save attempt to history
+        // Save attempt to history (same format as Science tests)
         const totalScore = results.scoreA
         const maxScore = questions.englishQuestions.reduce((acc, q) => acc + q.marks, 0)
         const percentage = Math.round((totalScore / maxScore) * 100)
         const grade = percentage >= 90 ? "A+" : percentage >= 80 ? "A" : percentage >= 70 ? "B+" : percentage >= 60 ? "B" : percentage >= 50 ? "C+" : percentage >= 40 ? "C" : percentage >= 32 ? "D" : "E"
 
-        // Save attempt history
         try {
           saveAttemptHistory(studentId, testId, {
             scoreA: results.scoreA,

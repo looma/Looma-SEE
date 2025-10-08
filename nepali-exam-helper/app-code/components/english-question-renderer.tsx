@@ -25,6 +25,11 @@ export function EnglishQuestionRenderer({
 }: EnglishQuestionRendererProps) {
   const [showExplanations, setShowExplanations] = useState(false)
 
+  // Helper functions to safely access question properties
+  const getQuestionId = (q: EnglishQuestion) => (q as any).id || `q${(q as any).questionNumber}`
+  const getQuestionTitle = (q: EnglishQuestion) => (q as any).title || 'Question'
+  const getQuestionMarks = (q: EnglishQuestion) => (q as any).marks || 1
+
   const getQuestionIcon = (type: string) => {
     switch (type) {
       case "reading_comprehension":
@@ -109,7 +114,7 @@ export function EnglishQuestionRenderer({
       <div className="space-y-4">
         {subQuestions.map((subQ, index) => {
           const questionId = parentId ? `${parentId}_${subQ.id}` : subQ.id
-          const currentAnswer = parentId ? answers[question.id]?.[parentId]?.[subQ.id] : answers[question.id]?.[subQ.id]
+          const currentAnswer = parentId ? answers[(question as any).id]?.[parentId]?.[subQ.id] : answers[(question as any).id]?.[subQ.id]
           
           // Calculate marks for sub-question: use subQ.marks if available, otherwise divide section marks by number of sub-questions
           const subQuestionMarks = subQ.marks || (sectionMarks ? Math.round((sectionMarks / subQuestions.length) * 10) / 10 : 1)
@@ -139,13 +144,13 @@ export function EnglishQuestionRenderer({
                       value={currentAnswer || ""}
                       onValueChange={(value) => {
                         if (parentId) {
-                          const currentSection = answers[question.id]?.[parentId] || {}
-                          onAnswerChange(question.id, parentId, {
+                          const currentSection = answers[(question as any).id]?.[parentId] || {}
+                          onAnswerChange((question as any).id, parentId, {
                             ...currentSection,
                             [subQ.id]: value,
                           })
                         } else {
-                          onAnswerChange(question.id, subQ.id, value)
+                          onAnswerChange((question as any).id, subQ.id, value)
                         }
                       }}
                       className="flex gap-6"
@@ -155,13 +160,13 @@ export function EnglishQuestionRenderer({
                         onClick={() => {
                           const value = "TRUE"
                           if (parentId) {
-                            const currentSection = answers[question.id]?.[parentId] || {}
-                            onAnswerChange(question.id, parentId, {
+                            const currentSection = answers[(question as any).id]?.[parentId] || {}
+                            onAnswerChange((question as any).id, parentId, {
                               ...currentSection,
                               [subQ.id]: value,
                             })
                           } else {
-                            onAnswerChange(question.id, subQ.id, value)
+                            onAnswerChange((question as any).id, subQ.id, value)
                           }
                         }}
                       >
@@ -175,13 +180,13 @@ export function EnglishQuestionRenderer({
                         onClick={() => {
                           const value = "FALSE"
                           if (parentId) {
-                            const currentSection = answers[question.id]?.[parentId] || {}
-                            onAnswerChange(question.id, parentId, {
+                            const currentSection = answers[(question as any).id]?.[parentId] || {}
+                            onAnswerChange((question as any).id, parentId, {
                               ...currentSection,
                               [subQ.id]: value,
                             })
                           } else {
-                            onAnswerChange(question.id, subQ.id, value)
+                            onAnswerChange((question as any).id, subQ.id, value)
                           }
                         }}
                       >
@@ -208,7 +213,7 @@ export function EnglishQuestionRenderer({
       <div className="space-y-4">
         {subQuestions.map((subQ, index) => {
           const questionId = parentId ? `${parentId}_${subQ.id}` : subQ.id
-          const currentAnswer = parentId ? answers[question.id]?.[parentId]?.[subQ.id] : answers[question.id]?.[subQ.id]
+          const currentAnswer = parentId ? answers[(question as any).id]?.[parentId]?.[subQ.id] : answers[(question as any).id]?.[subQ.id]
           
           // Calculate marks for sub-question: use subQ.marks if available, otherwise divide section marks by number of sub-questions
           const subQuestionMarks = subQ.marks || (sectionMarks ? Math.round((sectionMarks / subQuestions.length) * 10) / 10 : 1)
@@ -238,13 +243,13 @@ export function EnglishQuestionRenderer({
                       value={currentAnswer || ""}
                       onValueChange={(value) => {
                         if (parentId) {
-                          const currentSection = answers[question.id]?.[parentId] || {}
-                          onAnswerChange(question.id, parentId, {
+                          const currentSection = answers[(question as any).id]?.[parentId] || {}
+                          onAnswerChange((question as any).id, parentId, {
                             ...currentSection,
                             [subQ.id]: value,
                           })
                         } else {
-                          onAnswerChange(question.id, subQ.id, value)
+                          onAnswerChange((question as any).id, subQ.id, value)
                         }
                       }}
                       className="grid grid-cols-1 sm:grid-cols-3 gap-3"
@@ -254,13 +259,13 @@ export function EnglishQuestionRenderer({
                         onClick={() => {
                           const value = "TRUE"
                           if (parentId) {
-                            const currentSection = answers[question.id]?.[parentId] || {}
-                            onAnswerChange(question.id, parentId, {
+                            const currentSection = answers[(question as any).id]?.[parentId] || {}
+                            onAnswerChange((question as any).id, parentId, {
                               ...currentSection,
                               [subQ.id]: value,
                             })
                           } else {
-                            onAnswerChange(question.id, subQ.id, value)
+                            onAnswerChange((question as any).id, subQ.id, value)
                           }
                         }}
                       >
@@ -274,13 +279,13 @@ export function EnglishQuestionRenderer({
                         onClick={() => {
                           const value = "FALSE"
                           if (parentId) {
-                            const currentSection = answers[question.id]?.[parentId] || {}
-                            onAnswerChange(question.id, parentId, {
+                            const currentSection = answers[(question as any).id]?.[parentId] || {}
+                            onAnswerChange((question as any).id, parentId, {
                               ...currentSection,
                               [subQ.id]: value,
                             })
                           } else {
-                            onAnswerChange(question.id, subQ.id, value)
+                            onAnswerChange((question as any).id, subQ.id, value)
                           }
                         }}
                       >
@@ -294,13 +299,13 @@ export function EnglishQuestionRenderer({
                         onClick={() => {
                           const value = "NOT GIVEN"
                           if (parentId) {
-                            const currentSection = answers[question.id]?.[parentId] || {}
-                            onAnswerChange(question.id, parentId, {
+                            const currentSection = answers[(question as any).id]?.[parentId] || {}
+                            onAnswerChange((question as any).id, parentId, {
                               ...currentSection,
                               [subQ.id]: value,
                             })
                           } else {
-                            onAnswerChange(question.id, subQ.id, value)
+                            onAnswerChange((question as any).id, subQ.id, value)
                           }
                         }}
                       >
@@ -327,8 +332,8 @@ export function EnglishQuestionRenderer({
       <div className="space-y-4">
         {subQuestions.map((subQ, index) => {
           const currentAnswer = parentId
-            ? answers[question.id]?.[parentId]?.[subQ.id] || ""
-            : answers[question.id]?.[subQ.id] || ""
+            ? answers[(question as any).id]?.[parentId]?.[subQ.id] || ""
+            : answers[(question as any).id]?.[subQ.id] || ""
           
           // Calculate marks for sub-question: use subQ.marks if available, otherwise divide section marks by number of sub-questions
           const subQuestionMarks = subQ.marks || (sectionMarks ? Math.round((sectionMarks / subQuestions.length) * 10) / 10 : 1)
@@ -358,13 +363,13 @@ export function EnglishQuestionRenderer({
                       value={currentAnswer}
                       onChange={(e) => {
                         if (parentId) {
-                          const currentSection = answers[question.id]?.[parentId] || {}
-                          onAnswerChange(question.id, parentId, {
+                          const currentSection = answers[(question as any).id]?.[parentId] || {}
+                          onAnswerChange((question as any).id, parentId, {
                             ...currentSection,
                             [subQ.id]: e.target.value,
                           })
                         } else {
-                          onAnswerChange(question.id, subQ.id, e.target.value)
+                          onAnswerChange((question as any).id, subQ.id, e.target.value)
                         }
                       }}
                       placeholder="Write your answer here..."
@@ -388,8 +393,8 @@ export function EnglishQuestionRenderer({
       <div className="space-y-4">
         {subQuestions.map((subQ, index) => {
           const currentAnswer = parentId
-            ? answers[question.id]?.[parentId]?.[subQ.id] || ""
-            : answers[question.id]?.[subQ.id] || ""
+            ? answers[(question as any).id]?.[parentId]?.[subQ.id] || ""
+            : answers[(question as any).id]?.[subQ.id] || ""
           
           // Calculate marks for sub-question: use subQ.marks if available, otherwise divide section marks by number of sub-questions
           const subQuestionMarks = subQ.marks || (sectionMarks ? Math.round((sectionMarks / subQuestions.length) * 10) / 10 : 1)
@@ -425,13 +430,13 @@ export function EnglishQuestionRenderer({
                         value={currentAnswer}
                         onChange={(e) => {
                           if (parentId) {
-                            const currentSection = answers[question.id]?.[parentId] || {}
-                            onAnswerChange(question.id, parentId, {
+                            const currentSection = answers[(question as any).id]?.[parentId] || {}
+                            onAnswerChange((question as any).id, parentId, {
                               ...currentSection,
                               [subQ.id]: e.target.value,
                             })
                           } else {
-                            onAnswerChange(question.id, subQ.id, e.target.value)
+                            onAnswerChange((question as any).id, subQ.id, e.target.value)
                           }
                         }}
                         placeholder="Type your answer here..."
@@ -451,7 +456,7 @@ export function EnglishQuestionRenderer({
   }
 
   const renderMatchingQuestion = (section: any) => {
-    const currentAnswers = answers[question.id]?.[section.id] || {}
+    const currentAnswers = answers[(question as any).id]?.[section.id] || {}
 
     return (
       <div className="space-y-6">
@@ -489,7 +494,7 @@ export function EnglishQuestionRenderer({
                       value={currentAnswers[item.id] || ""}
                       onValueChange={(value) => {
                         const newAnswers = { ...currentAnswers, [item.id]: value }
-                        onAnswerChange(question.id, section.id, newAnswers)
+                        onAnswerChange((question as any).id, section.id, newAnswers)
                       }}
                       className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2"
                     >
@@ -503,7 +508,7 @@ export function EnglishQuestionRenderer({
                           }`}
                           onClick={() => {
                             const newAnswers = { ...currentAnswers, [item.id]: bItem.id }
-                            onAnswerChange(question.id, section.id, newAnswers)
+                            onAnswerChange((question as any).id, section.id, newAnswers)
                           }}
                         >
                           <RadioGroupItem value={bItem.id} id={`${item.id}-${bItem.id}`} />
@@ -530,25 +535,25 @@ export function EnglishQuestionRenderer({
     return (
       <div className="space-y-6">
         {/* Passage */}
-        {question.passage && (
+        {(question as any).passage && (
           <Card className="bg-slate-50 border-slate-200">
             <CardContent className="p-6">
-              {question.passage.title && (
-                <h3 className="text-xl font-bold text-slate-800 mb-2">{question.passage.title}</h3>
+              {(question as any).passage.title && (
+                <h3 className="text-xl font-bold text-slate-800 mb-2">{(question as any).passage.title}</h3>
               )}
-              {question.passage.author && <p className="text-sm text-slate-600 mb-4">by {question.passage.author}</p>}
+              {(question as any).passage.author && <p className="text-sm text-slate-600 mb-4">by {(question as any).passage.author}</p>}
               <div className="prose prose-slate max-w-none">
-                <p className="whitespace-pre-line leading-relaxed">{question.passage.content}</p>
+                <p className="whitespace-pre-line leading-relaxed">{(question as any).passage.content}</p>
               </div>
             </CardContent>
           </Card>
         )}
 
         {/* Sub-questions */}
-        {question.subQuestions && renderTrueFalseQuestions(question.subQuestions)}
+        {(question as any).subQuestions && renderTrueFalseQuestions((question as any).subQuestions)}
 
         {/* Sub-sections */}
-        {question.subSections?.map((section, index) => (
+        {(question as any).subSections?.map((section: any, index: number) => (
           <div key={section.id} className="space-y-4">
             <h4 className="text-lg font-semibold text-slate-800">
               {section.id}. {section.title}
@@ -573,16 +578,16 @@ export function EnglishQuestionRenderer({
   }
 
   const renderFreeWriting = () => {
-    const currentAnswer = answers[question.id]?.content || ""
+    const currentAnswer = answers[(question as any).id]?.content || ""
 
     return (
       <div className="space-y-6">
-        {question.clues && (
+        {(question as any).clues && (
           <Card className="bg-blue-50 border-blue-200">
             <CardContent className="p-4">
               <h4 className="font-semibold text-blue-800 mb-2">Clues to help you:</h4>
               <div className="flex flex-wrap gap-2">
-                {question.clues.map((clue, index) => (
+                {(question as any).clues.map((clue: any, index: number) => (
                   <Badge key={index} variant="secondary" className="bg-blue-100 text-blue-800">
                     {clue}
                   </Badge>
@@ -593,16 +598,16 @@ export function EnglishQuestionRenderer({
         )}
 
         <div>
-          <Label htmlFor={`writing-${question.id}`} className="text-base font-medium text-slate-800">
+          <Label htmlFor={`writing-${(question as any).id}`} className="text-base font-medium text-slate-800">
             Your Answer:
           </Label>
-          {question.wordCount && (
-            <p className="text-sm text-slate-600 mb-2">Write approximately {question.wordCount} words.</p>
+          {(question as any).wordCount && (
+            <p className="text-sm text-slate-600 mb-2">Write approximately {(question as any).wordCount} words.</p>
           )}
           <Textarea
-            id={`writing-${question.id}`}
+            id={`writing-${(question as any).id}`}
             value={currentAnswer}
-            onChange={(e) => onAnswerChange(question.id, "content", e.target.value)}
+            onChange={(e) => onAnswerChange((question as any).id, "content", e.target.value)}
             placeholder="Write your answer here..."
             className="min-h-[200px] resize-none"
             rows={10}
@@ -615,12 +620,12 @@ export function EnglishQuestionRenderer({
           </div>
         </div>
 
-        {question.sampleAnswer && showExplanations && (
+        {(question as any).sampleAnswer && showExplanations && (
           <Card className="bg-green-50 border-green-200">
             <CardContent className="p-4">
               <h4 className="font-semibold text-green-800 mb-2">Sample Answer:</h4>
               <div className="text-sm whitespace-pre-line text-green-700">
-                {typeof question.sampleAnswer === "string" ? question.sampleAnswer : question.sampleAnswer.content}
+                {typeof (question as any).sampleAnswer === "string" ? (question as any).sampleAnswer : (question as any).sampleAnswer.content}
               </div>
             </CardContent>
           </Card>
@@ -632,11 +637,11 @@ export function EnglishQuestionRenderer({
   const renderGrammar = () => {
     return (
       <div className="space-y-4">
-        {question.subQuestions?.map((subQ, index) => {
-          const currentAnswer = answers[question.id]?.[subQ.id] || ""
+        {(question as any).subQuestions?.map((subQ: any, index: number) => {
+          const currentAnswer = answers[(question as any).id]?.[subQ.id] || ""
           
           // Calculate marks for sub-question: use subQ.marks if available, otherwise divide question marks by number of sub-questions
-          const subQuestionMarks = subQ.marks || (question.marks && question.subQuestions ? Math.round((question.marks / question.subQuestions.length) * 10) / 10 : 1)
+          const subQuestionMarks = subQ.marks || ((question as any).marks && (question as any).subQuestions ? Math.round(((question as any).marks / (question as any).subQuestions.length) * 10) / 10 : 1)
           
           return (
             <Card key={subQ.id} className="border-slate-200">
@@ -660,7 +665,7 @@ export function EnglishQuestionRenderer({
                     </div>
                     <Textarea
                       value={currentAnswer}
-                      onChange={(e) => onAnswerChange(question.id, subQ.id, e.target.value)}
+                      onChange={(e) => onAnswerChange((question as any).id, subQ.id, e.target.value)}
                       placeholder="Write the corrected sentence here..."
                       className="min-h-[60px] resize-none"
                       rows={2}
@@ -683,18 +688,18 @@ export function EnglishQuestionRenderer({
         <Card className="bg-slate-50 border-slate-200">
           <CardContent className="p-6">
             <div className="prose prose-slate max-w-none">
-              <p className="whitespace-pre-line leading-relaxed">{question.passage}</p>
+              <p className="whitespace-pre-line leading-relaxed">{(question as any).passage}</p>
             </div>
           </CardContent>
         </Card>
 
         <div className="space-y-4">
           <h4 className="font-semibold text-slate-800">Fill in the blanks:</h4>
-          {question.gaps?.map((gap, index) => {
-            const currentAnswer = answers[question.id]?.[gap.id] || ""
+          {(question as any).gaps?.map((gap: any, index: number) => {
+            const currentAnswer = answers[(question as any).id]?.[gap.id] || ""
             
             // Calculate marks for each gap: divide question marks by number of gaps
-            const gapMarks = question.marks && question.gaps ? Math.round((question.marks / question.gaps.length) * 10) / 10 : 1
+            const gapMarks = (question as any).marks && (question as any).gaps ? Math.round(((question as any).marks / (question as any).gaps.length) * 10) / 10 : 1
             
             return (
               <Card key={gap.id} className="border-slate-200">
@@ -703,7 +708,7 @@ export function EnglishQuestionRenderer({
                     <span className="font-medium text-slate-800">({gap.id})</span>
                     <Textarea
                       value={currentAnswer}
-                      onChange={(e) => onAnswerChange(question.id, gap.id, e.target.value)}
+                      onChange={(e) => onAnswerChange((question as any).id, gap.id, e.target.value)}
                       placeholder="Your answer..."
                       className="min-h-[40px] resize-none flex-1"
                       rows={1}
@@ -730,8 +735,8 @@ export function EnglishQuestionRenderer({
           <div className="flex items-center gap-3">
             {getQuestionIcon(question.type)}
             <div>
-              <CardTitle className="text-lg sm:text-xl font-bold">Question {question.questionNumber}</CardTitle>
-              <p className="text-white/90 text-sm sm:text-base">{question.title}</p>
+              <CardTitle className="text-lg sm:text-xl font-bold">Question {(question as any).questionNumber}</CardTitle>
+              <p className="text-white/90 text-sm sm:text-base">{(question as any).title}</p>
             </div>
           </div>
           <div className="flex items-center gap-2">
@@ -745,7 +750,7 @@ export function EnglishQuestionRenderer({
               <span className="ml-1 hidden sm:inline">{showExplanations ? "Hide" : "Show"} Help</span>
             </Button>
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
-              {question.marks} marks
+              {(question as any).marks} marks
             </Badge>
           </div>
         </div>
@@ -754,7 +759,7 @@ export function EnglishQuestionRenderer({
       <CardContent className="p-4 sm:p-6">
         {question.type === "reading_comprehension" && renderReadingComprehension()}
         {question.type === "free_writing" && renderFreeWriting()}
-        {question.type === "grammar" && renderGrammar()}
+        {(question as any).type === "grammar" && renderGrammar()}
         {question.type === "cloze_test" && renderClozeTest()}
       </CardContent>
     </Card>
