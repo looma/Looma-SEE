@@ -152,7 +152,12 @@ export function ResultsCard({
                       ) : (
                         <XCircle className="h-5 w-5 text-red-500" />
                       )}
-                      <Badge variant={isCorrect ? "default" : "destructive"}>{isCorrect ? "1/1" : "0/1"}</Badge>
+                      <Badge 
+                        variant={isCorrect ? "default" : "destructive"}
+                        className={isCorrect ? "bg-green-500 text-white hover:bg-green-600" : ""}
+                      >
+                        {isCorrect ? "1/1" : "0/1"}
+                      </Badge>
                     </div>
                   </div>
                 </AccordionTrigger>
@@ -318,7 +323,15 @@ export function ResultsCard({
                       {index + 1}.{" "}
                       {question.english.length > 80 ? `${question.english.substring(0, 80)}...` : question.english}
                     </span>
-                    <Badge className="ml-4 flex-shrink-0">
+                    <Badge 
+                      className={`ml-4 flex-shrink-0 ${
+                        fb.score === question.marks 
+                          ? "bg-green-500 text-white hover:bg-green-600" 
+                          : fb.score > 0 
+                            ? "bg-yellow-500 text-white hover:bg-yellow-600" 
+                            : "bg-red-500 text-white hover:bg-red-600"
+                      }`}
+                    >
                       {fb.score}/{question.marks}
                     </Badge>
                   </div>
@@ -476,7 +489,10 @@ export function ResultsCard({
                                 ) : (
                                   <XCircle className="h-5 w-5 text-red-500" />
                                 )}
-                                <Badge variant={isFullyCorrect ? "default" : isPartiallyCorrect ? "secondary" : "destructive"}>
+                                <Badge 
+                                  variant={isFullyCorrect ? "default" : isPartiallyCorrect ? "secondary" : "destructive"}
+                                  className={isFullyCorrect ? "bg-green-500 text-white hover:bg-green-600" : ""}
+                                >
                                   {questionScore}/{question.marks}
                                 </Badge>
                               </div>

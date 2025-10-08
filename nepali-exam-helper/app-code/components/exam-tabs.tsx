@@ -28,6 +28,13 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
 
   const getFirstAvailableSection = () => {
     if (!questions) return "groupA"
+    
+    // Check if this is an English test
+    if (questions.englishQuestions && questions.englishQuestions.length > 0) {
+      return questions.englishQuestions[0].id
+    }
+    
+    // Science test sections
     if (questions.groupA.length > 0) return "groupA"
     if (questions.groupB.length > 0) return "groupB"
     if (questions.groupC.length > 0) return "groupC"
@@ -45,19 +52,29 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
     if (progress) {
       setAnswers(progress.answers || {})
       setLastSaved(new Date(progress.lastUpdated))
-      // Always set to first available section, don't rely on stored currentTab for retakes
-      setCurrentTab(getFirstAvailableSection())
+      
+      // Only set tab for Science tests, English tests don't use tabs
+      const isEnglishTest = questions?.englishQuestions && questions.englishQuestions.length > 0
+      if (!isEnglishTest) {
+        setCurrentTab(getFirstAvailableSection())
+      }
     } else {
-      // No progress found, set to first available section
-      setCurrentTab(getFirstAvailableSection())
+      // No progress found, set to first available section for Science tests only
+      const isEnglishTest = questions?.englishQuestions && questions.englishQuestions.length > 0
+      if (!isEnglishTest) {
+        setCurrentTab(getFirstAvailableSection())
+      }
     }
   }, [studentId, testId, questions])
 
   // Set initial tab when questions load (backup)
   useEffect(() => {
     if (questions && !currentTab) {
-      const firstSection = getFirstAvailableSection()
-      setCurrentTab(firstSection)
+      const isEnglishTest = questions.englishQuestions && questions.englishQuestions.length > 0
+      if (!isEnglishTest) {
+        const firstSection = getFirstAvailableSection()
+        setCurrentTab(firstSection)
+      }
     }
   }, [questions, currentTab])
 
@@ -271,7 +288,7 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
                           body: JSON.stringify({
                             question: subQ.questionEnglish,
                             answer: userSubAnswer,
-                            marks: subQ.marks || (question.marks / section.subQuestions.length),
+                            marks: subQ.marks || (section.marks ? Math.round((section.marks / section.subQuestions.length) * 10) / 10 : 1),
                             sampleAnswer: subQ.correctAnswer,
                           }),
                         })
@@ -325,7 +342,13 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
                     sampleAnswer: question.sampleAnswer?.content,
                   }),
                 })
-                  .then((res) => res.json())
+                  .then(async (res) => {
+                    const result = await res.json()
+                    if (!res.ok) {
+                      throw new Error(result.error || `HTTP ${res.status}`)
+                    }
+                    return result
+                  })
                   .then((result) => ({
                     id: question.id,
                     score: result.score || 0,
@@ -335,10 +358,10 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
                     group: "English",
                     questionId: question.id,
                   }))
-                  .catch(() => ({
+                  .catch((error) => ({
                     id: question.id,
                     score: 0,
-                    feedback: "AI grading failed",
+                    feedback: `AI grading failed: ${error.message || 'Unknown error'}`,
                     question: question.title,
                     studentAnswer: userWritingAnswer,
                     group: "English",
@@ -360,11 +383,17 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
                         body: JSON.stringify({
                           question: `Fill in the blank (${gapId}): ${question.passage}`,
                           answer: gapAnswer,
-                          marks: question.marks / (question.gaps?.length || 1),
+                          marks: question.marks && question.gaps ? Math.round((question.marks / question.gaps.length) * 10) / 10 : 1,
                           sampleAnswer: gap.correctAnswer,
                         }),
                       })
-                        .then((res) => res.json())
+                        .then(async (res) => {
+                          const result = await res.json()
+                          if (!res.ok) {
+                            throw new Error(result.error || `HTTP ${res.status}`)
+                          }
+                          return result
+                        })
                         .then((result) => ({
                           id: `${question.id}_${gapId}`,
                           score: result.score || 0,
@@ -375,10 +404,10 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
                           questionId: question.id,
                           gapId: gapId,
                         }))
-                        .catch(() => ({
+                        .catch((error) => ({
                           id: `${question.id}_${gapId}`,
                           score: 0,
-                          feedback: "AI grading failed",
+                          feedback: `AI grading failed: ${error.message || 'Unknown error'}`,
                           question: `Fill in the blank (${gapId})`,
                           studentAnswer: gapAnswer,
                           group: "English",

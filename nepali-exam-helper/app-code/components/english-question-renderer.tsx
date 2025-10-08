@@ -8,7 +8,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { CheckCircle2, Circle, FileText, BookOpen, PenTool, MessageSquare, Eye, EyeOff } from "lucide-react"
 import { useState } from "react"
-import type { EnglishQuestion } from "@/lib/use-questions"
+import type { EnglishQuestion } from "@/lib/english-question-types"
 
 interface EnglishQuestionRendererProps {
   question: EnglishQuestion
@@ -104,12 +104,15 @@ export function EnglishQuestionRenderer({
     )
   }
 
-  const renderTrueFalseQuestions = (subQuestions: any[], parentId?: string) => {
+  const renderTrueFalseQuestions = (subQuestions: any[], parentId?: string, sectionMarks?: number) => {
     return (
       <div className="space-y-4">
         {subQuestions.map((subQ, index) => {
           const questionId = parentId ? `${parentId}_${subQ.id}` : subQ.id
           const currentAnswer = parentId ? answers[question.id]?.[parentId]?.[subQ.id] : answers[question.id]?.[subQ.id]
+          
+          // Calculate marks for sub-question: use subQ.marks if available, otherwise divide section marks by number of sub-questions
+          const subQuestionMarks = subQ.marks || (sectionMarks ? Math.round((sectionMarks / subQuestions.length) * 10) / 10 : 1)
 
           return (
             <Card key={subQ.id} className="border-slate-200">
@@ -128,7 +131,7 @@ export function EnglishQuestionRenderer({
                         ({subQ.id}) {subQ.questionEnglish}
                       </p>
                       <Badge variant="outline" className="ml-2">
-                        {subQ.marks} mark{subQ.marks !== 1 ? "s" : ""}
+                        {subQuestionMarks} mark{subQuestionMarks !== 1 ? "s" : ""}
                       </Badge>
                     </div>
 
@@ -200,12 +203,15 @@ export function EnglishQuestionRenderer({
     )
   }
 
-  const renderTrueFalseNotGivenQuestions = (subQuestions: any[], parentId?: string) => {
+  const renderTrueFalseNotGivenQuestions = (subQuestions: any[], parentId?: string, sectionMarks?: number) => {
     return (
       <div className="space-y-4">
         {subQuestions.map((subQ, index) => {
           const questionId = parentId ? `${parentId}_${subQ.id}` : subQ.id
           const currentAnswer = parentId ? answers[question.id]?.[parentId]?.[subQ.id] : answers[question.id]?.[subQ.id]
+          
+          // Calculate marks for sub-question: use subQ.marks if available, otherwise divide section marks by number of sub-questions
+          const subQuestionMarks = subQ.marks || (sectionMarks ? Math.round((sectionMarks / subQuestions.length) * 10) / 10 : 1)
 
           return (
             <Card key={subQ.id} className="border-slate-200">
@@ -224,7 +230,7 @@ export function EnglishQuestionRenderer({
                         ({subQ.id}) {subQ.questionEnglish}
                       </p>
                       <Badge variant="outline" className="ml-2">
-                        {subQ.marks} mark{subQ.marks !== 1 ? "s" : ""}
+                        {subQuestionMarks} mark{subQuestionMarks !== 1 ? "s" : ""}
                       </Badge>
                     </div>
 
@@ -316,13 +322,16 @@ export function EnglishQuestionRenderer({
     )
   }
 
-  const renderShortAnswerQuestions = (subQuestions: any[], parentId?: string) => {
+  const renderShortAnswerQuestions = (subQuestions: any[], parentId?: string, sectionMarks?: number) => {
     return (
       <div className="space-y-4">
         {subQuestions.map((subQ, index) => {
           const currentAnswer = parentId
             ? answers[question.id]?.[parentId]?.[subQ.id] || ""
             : answers[question.id]?.[subQ.id] || ""
+          
+          // Calculate marks for sub-question: use subQ.marks if available, otherwise divide section marks by number of sub-questions
+          const subQuestionMarks = subQ.marks || (sectionMarks ? Math.round((sectionMarks / subQuestions.length) * 10) / 10 : 1)
 
           return (
             <Card key={subQ.id} className="border-slate-200">
@@ -341,7 +350,7 @@ export function EnglishQuestionRenderer({
                         ({subQ.id}) {subQ.questionEnglish}
                       </p>
                       <Badge variant="outline" className="ml-2">
-                        {subQ.marks} mark{subQ.marks !== 1 ? "s" : ""}
+                        {subQuestionMarks} mark{subQuestionMarks !== 1 ? "s" : ""}
                       </Badge>
                     </div>
 
@@ -374,13 +383,16 @@ export function EnglishQuestionRenderer({
     )
   }
 
-  const renderFillInTheBlanksQuestions = (subQuestions: any[], parentId?: string) => {
+  const renderFillInTheBlanksQuestions = (subQuestions: any[], parentId?: string, sectionMarks?: number) => {
     return (
       <div className="space-y-4">
         {subQuestions.map((subQ, index) => {
           const currentAnswer = parentId
             ? answers[question.id]?.[parentId]?.[subQ.id] || ""
             : answers[question.id]?.[subQ.id] || ""
+          
+          // Calculate marks for sub-question: use subQ.marks if available, otherwise divide section marks by number of sub-questions
+          const subQuestionMarks = subQ.marks || (sectionMarks ? Math.round((sectionMarks / subQuestions.length) * 10) / 10 : 1)
 
           return (
             <Card key={subQ.id} className="border-slate-200">
@@ -399,7 +411,7 @@ export function EnglishQuestionRenderer({
                         ({subQ.id}) {subQ.questionEnglish}
                       </p>
                       <Badge variant="outline" className="ml-2">
-                        {subQ.marks} mark{subQ.marks !== 1 ? "s" : ""}
+                        {subQuestionMarks} mark{subQuestionMarks !== 1 ? "s" : ""}
                       </Badge>
                     </div>
 
@@ -543,16 +555,16 @@ export function EnglishQuestionRenderer({
             </h4>
             {section.type === "true_false" &&
               section.subQuestions &&
-              renderTrueFalseQuestions(section.subQuestions, section.id)}
+              renderTrueFalseQuestions(section.subQuestions, section.id, section.marks)}
             {section.type === "true_false_not_given" &&
               section.subQuestions &&
-              renderTrueFalseNotGivenQuestions(section.subQuestions, section.id)}
+              renderTrueFalseNotGivenQuestions(section.subQuestions, section.id, section.marks)}
             {section.type === "short_answer" &&
               section.subQuestions &&
-              renderShortAnswerQuestions(section.subQuestions, section.id)}
+              renderShortAnswerQuestions(section.subQuestions, section.id, section.marks)}
             {section.type === "fill_in_the_blanks" &&
               section.subQuestions &&
-              renderFillInTheBlanksQuestions(section.subQuestions, section.id)}
+              renderFillInTheBlanksQuestions(section.subQuestions, section.id, section.marks)}
             {section.type === "matching" && renderMatchingQuestion(section)}
           </div>
         ))}
@@ -622,6 +634,10 @@ export function EnglishQuestionRenderer({
       <div className="space-y-4">
         {question.subQuestions?.map((subQ, index) => {
           const currentAnswer = answers[question.id]?.[subQ.id] || ""
+          
+          // Calculate marks for sub-question: use subQ.marks if available, otherwise divide question marks by number of sub-questions
+          const subQuestionMarks = subQ.marks || (question.marks && question.subQuestions ? Math.round((question.marks / question.subQuestions.length) * 10) / 10 : 1)
+          
           return (
             <Card key={subQ.id} className="border-slate-200">
               <CardContent className="p-4">
@@ -639,7 +655,7 @@ export function EnglishQuestionRenderer({
                         ({subQ.id}) {subQ.questionEnglish}
                       </p>
                       <Badge variant="outline" className="ml-2">
-                        {subQ.marks} mark{subQ.marks !== 1 ? "s" : ""}
+                        {subQuestionMarks} mark{subQuestionMarks !== 1 ? "s" : ""}
                       </Badge>
                     </div>
                     <Textarea
@@ -676,6 +692,10 @@ export function EnglishQuestionRenderer({
           <h4 className="font-semibold text-slate-800">Fill in the blanks:</h4>
           {question.gaps?.map((gap, index) => {
             const currentAnswer = answers[question.id]?.[gap.id] || ""
+            
+            // Calculate marks for each gap: divide question marks by number of gaps
+            const gapMarks = question.marks && question.gaps ? Math.round((question.marks / question.gaps.length) * 10) / 10 : 1
+            
             return (
               <Card key={gap.id} className="border-slate-200">
                 <CardContent className="p-4">
@@ -688,6 +708,9 @@ export function EnglishQuestionRenderer({
                       className="min-h-[40px] resize-none flex-1"
                       rows={1}
                     />
+                    <Badge variant="outline" className="ml-2">
+                      {gapMarks} mark{gapMarks !== 1 ? "s" : ""}
+                    </Badge>
                   </div>
 
                   {renderExplanation(gap)}
