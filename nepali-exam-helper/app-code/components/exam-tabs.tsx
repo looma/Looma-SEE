@@ -808,6 +808,22 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
     )
   }
 
+  // Show loading overlay when submitting
+  if (isSubmitting) {
+    return (
+      <div className="fixed inset-0 bg-white/90 backdrop-blur-sm z-50 flex items-center justify-center">
+        <div className="bg-white rounded-xl p-8 shadow-lg border border-slate-200 text-center max-w-md mx-4">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-6"></div>
+          <h3 className="text-lg font-semibold text-slate-800 mb-2">Submitting Test</h3>
+          <p className="text-slate-600 text-sm">Please wait while we grade your answers...</p>
+          <div className="mt-4 text-xs text-slate-500">
+            This may take a few moments
+          </div>
+        </div>
+      </div>
+    )
+  }
+
   if (error) {
     return (
       <div className="text-center p-6 sm:p-8 text-red-600 mx-3 sm:mx-0">

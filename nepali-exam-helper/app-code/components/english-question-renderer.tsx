@@ -135,7 +135,7 @@ export function EnglishQuestionRenderer({
                       <p className="font-medium text-slate-800">
                         ({subQ.id}) {subQ.questionEnglish}
                       </p>
-                      <Badge variant="outline" className="ml-2">
+                      <Badge variant="secondary" className="ml-2 bg-blue-100 text-blue-800">
                         {subQuestionMarks} mark{subQuestionMarks !== 1 ? "s" : ""}
                       </Badge>
                     </div>
@@ -234,7 +234,7 @@ export function EnglishQuestionRenderer({
                       <p className="font-medium text-slate-800">
                         ({subQ.id}) {subQ.questionEnglish}
                       </p>
-                      <Badge variant="outline" className="ml-2">
+                      <Badge variant="secondary" className="ml-2 bg-blue-100 text-blue-800">
                         {subQuestionMarks} mark{subQuestionMarks !== 1 ? "s" : ""}
                       </Badge>
                     </div>
@@ -354,7 +354,7 @@ export function EnglishQuestionRenderer({
                       <p className="font-medium text-slate-800">
                         ({subQ.id}) {subQ.questionEnglish}
                       </p>
-                      <Badge variant="outline" className="ml-2">
+                      <Badge variant="secondary" className="ml-2 bg-blue-100 text-blue-800">
                         {subQuestionMarks} mark{subQuestionMarks !== 1 ? "s" : ""}
                       </Badge>
                     </div>
@@ -415,7 +415,7 @@ export function EnglishQuestionRenderer({
                       <p className="font-medium text-slate-800">
                         ({subQ.id}) {subQ.questionEnglish}
                       </p>
-                      <Badge variant="outline" className="ml-2">
+                      <Badge variant="secondary" className="ml-2 bg-blue-100 text-blue-800">
                         {subQuestionMarks} mark{subQuestionMarks !== 1 ? "s" : ""}
                       </Badge>
                     </div>
@@ -462,7 +462,7 @@ export function EnglishQuestionRenderer({
       <div className="space-y-6">
         <div className="flex justify-between items-start mb-4">
           <p className="text-sm text-slate-600">{section.title}</p>
-          <Badge variant="outline" className="ml-2">
+          <Badge variant="secondary" className="ml-2 bg-green-100 text-green-800">
             {section.marks} mark{section.marks !== 1 ? "s" : ""}
           </Badge>
         </div>
@@ -659,7 +659,7 @@ export function EnglishQuestionRenderer({
                       <p className="font-medium text-slate-800">
                         ({subQ.id}) {subQ.questionEnglish}
                       </p>
-                      <Badge variant="outline" className="ml-2">
+                      <Badge variant="secondary" className="ml-2 bg-blue-100 text-blue-800">
                         {subQuestionMarks} mark{subQuestionMarks !== 1 ? "s" : ""}
                       </Badge>
                     </div>
@@ -713,7 +713,7 @@ export function EnglishQuestionRenderer({
                       className="min-h-[40px] resize-none flex-1"
                       rows={1}
                     />
-                    <Badge variant="outline" className="ml-2">
+                    <Badge variant="secondary" className="ml-2 bg-purple-100 text-purple-800">
                       {gapMarks} mark{gapMarks !== 1 ? "s" : ""}
                     </Badge>
                   </div>

@@ -257,7 +257,7 @@ export function ResultsCard({
                 className="bg-white p-4 rounded-lg border border-slate-200 flex items-center justify-between"
               >
                 <div className="flex items-center gap-4">
-                  <Badge variant={idx === 0 ? "default" : "secondary"}>
+                  <Badge variant={idx === 0 ? "default" : "secondary"} className={idx === 0 ? "bg-green-100 text-green-800 border-green-200" : ""}>
                     {idx === 0 ? "Latest" : `Attempt ${validAttempts.length - idx}`}
                   </Badge>
                   <div className="text-sm text-slate-600">
@@ -272,7 +272,21 @@ export function ResultsCard({
                     </div>
                     <div className="text-sm text-slate-600">{attempt.percentage}%</div>
                   </div>
-                  <Badge>{attempt.grade}</Badge>
+                  <Badge 
+                    variant="secondary" 
+                    className={
+                      attempt.grade === "A+" ? "bg-green-100 text-green-800 border-green-200" :
+                      attempt.grade === "A" ? "bg-green-100 text-green-800 border-green-200" :
+                      attempt.grade === "B+" ? "bg-blue-100 text-blue-800 border-blue-200" :
+                      attempt.grade === "B" ? "bg-blue-100 text-blue-800 border-blue-200" :
+                      attempt.grade === "C+" ? "bg-yellow-100 text-yellow-800 border-yellow-200" :
+                      attempt.grade === "C" ? "bg-yellow-100 text-yellow-800 border-yellow-200" :
+                      attempt.grade === "D" ? "bg-orange-100 text-orange-800 border-orange-200" :
+                      "bg-red-100 text-red-800 border-red-200"
+                    }
+                  >
+                    {attempt.grade}
+                  </Badge>
                 </div>
               </div>
             ))}
@@ -614,36 +628,47 @@ export function ResultsCard({
                     AI Feedback / AI प्रतिक्रिया
                   </h3>
                   <div className="space-y-4">
-                    {results.feedbackA.map((feedback: any, index: number) => (
-                      <div key={feedback.id || index} className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-                        <div className="flex justify-between items-start mb-2">
-                          <h4 className="font-medium text-blue-900">
-                            Question {index + 1}
-                          </h4>
-                          <span className="text-sm font-semibold text-blue-700">
-                            {feedback.score}/{questions.englishQuestions[index]?.marks || 1} marks
-                          </span>
+                    {results.feedbackA.map((feedback: any, index: number) => {
+                      // Find the actual question this feedback refers to
+                      const actualQuestion = questions.englishQuestions.find(q => q.id === feedback.questionId)
+                      const questionNumber = actualQuestion?.questionNumber || (index + 1)
+                      
+                      return (
+                        <div key={feedback.id || index} className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                          <div className="flex justify-between items-start mb-2">
+                            <h4 className="font-medium text-blue-900">
+                              Question {questionNumber}
+                              {feedback.sectionId && feedback.subQuestionId && (
+                                <span className="text-sm text-blue-700 ml-2">
+                                  ({feedback.sectionId}.{feedback.subQuestionId})
+                                </span>
+                              )}
+                            </h4>
+                            <span className="text-sm font-semibold text-blue-700">
+                              {feedback.score}/{actualQuestion?.marks || 1} marks
+                            </span>
+                          </div>
+                          <div className="space-y-2">
+                            <div>
+                              <p className="text-sm font-medium text-gray-700 mb-1">Question:</p>
+                              <p className="text-sm text-gray-600">{feedback.question}</p>
+                            </div>
+                            <div>
+                              <p className="text-sm font-medium text-gray-700 mb-1">Your Answer:</p>
+                              <p className="text-sm text-gray-600 bg-white p-2 rounded border">
+                                {feedback.studentAnswer}
+                              </p>
+                            </div>
+                            <div>
+                              <p className="text-sm font-medium text-gray-700 mb-1">AI Feedback:</p>
+                              <p className="text-sm text-gray-600 bg-white p-2 rounded border">
+                                {feedback.feedback}
+                              </p>
+                            </div>
+                          </div>
                         </div>
-                        <div className="space-y-2">
-                          <div>
-                            <p className="text-sm font-medium text-gray-700 mb-1">Question:</p>
-                            <p className="text-sm text-gray-600">{feedback.question}</p>
-                          </div>
-                          <div>
-                            <p className="text-sm font-medium text-gray-700 mb-1">Your Answer:</p>
-                            <p className="text-sm text-gray-600 bg-white p-2 rounded border">
-                              {feedback.studentAnswer}
-                            </p>
-                          </div>
-                          <div>
-                            <p className="text-sm font-medium text-gray-700 mb-1">AI Feedback:</p>
-                            <p className="text-sm text-gray-600 bg-white p-2 rounded border">
-                              {feedback.feedback}
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
+                      )
+                    })}
                   </div>
                 </div>
               )}
@@ -653,7 +678,7 @@ export function ResultsCard({
               <Button
                 onClick={onEditAnswers}
                 size="lg"
-                className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
+                className="bg-gradient-to-r from-yellow-600 to-amber-600 hover:from-yellow-700 hover:to-amber-700 text-white px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
               >
                 <Edit3 className="mr-2 h-5 w-5" />
                 Edit Answers / उत्तर सम्पादन गर्नुहोस्
@@ -662,7 +687,7 @@ export function ResultsCard({
               <Button
                 onClick={onRetake}
                 size="lg"
-                className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 text-white px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
+                className="bg-gradient-to-r from-yellow-600 to-amber-600 hover:from-yellow-700 hover:to-amber-700 text-white px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
               >
                 <RefreshCw className="mr-2 h-5 w-5" />
                 Take Test Again / फेरि परीक्षा दिनुहोस्
