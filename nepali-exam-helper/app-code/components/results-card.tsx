@@ -472,10 +472,23 @@ export function ResultsCard({
                         questionFeedback = questionFeedbacks.map(f => f.feedback).join("; ")
                         hasAIFeedback = questionFeedbacks.length > 0
                       } else {
-                        // No AI feedback available - show as ungraded
-                        questionScore = 0
-                        questionFeedback = "AI grading not available"
-                        hasAIFeedback = false
+                        // Check if question was answered
+                        const hasAnswer = answers[question.id] && 
+                          (typeof answers[question.id] === 'string' ? answers[question.id].trim() : 
+                           typeof answers[question.id] === 'object' ? Object.values(answers[question.id]).some(val => val && val.toString().trim()) : 
+                           false)
+                        
+                        if (hasAnswer) {
+                          // Question was answered but no AI feedback - AI grading failed
+                          questionScore = 0
+                          questionFeedback = "AI grading not available"
+                          hasAIFeedback = false
+                        } else {
+                          // Question was not answered
+                          questionScore = 0
+                          questionFeedback = "No answer provided"
+                          hasAIFeedback = false
+                        }
                       }
                       
                       const isFullyCorrect = questionScore === question.marks
@@ -580,7 +593,7 @@ export function ResultsCard({
                               ) : (
                                 <div className="p-3 rounded-lg bg-slate-50 border-l-4 border-slate-400">
                                   <p className="font-semibold text-slate-800 mb-1">Your Answer / तपाईंको उत्तर:</p>
-                                  <p className="text-slate-500 italic">AI grading not available / AI मूल्याङ्कन उपलब्ध छैन</p>
+                                  <p className="text-slate-500 italic">No answer provided / कुनै उत्तर दिइएको छैन</p>
                                 </div>
                               )}
                             </div>
