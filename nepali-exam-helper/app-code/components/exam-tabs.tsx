@@ -545,6 +545,7 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
                             gapId: gapId,
                           }))
                       )
+                    )
                     }
                   }
                 })
