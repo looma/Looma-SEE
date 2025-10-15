@@ -172,7 +172,7 @@ export function FreeResponseGroup({
                   <div className="flex items-start gap-3">
                     <div className="flex-shrink-0 mt-1">
                       {isAnswered ? (
-                        <CheckCircle2 className="h-5 w-5 text-green-500" />
+                        <CheckCircle2 className="h-5 w-5 text-slate-600" />
                       ) : (
                         <Circle className="h-5 w-5 text-slate-400" />
                       )}

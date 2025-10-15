@@ -1198,7 +1198,7 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
             onClick={handleNextSection}
             size="lg"
             variant="outline"
-            className="bg-blue-600 hover:bg-blue-700 text-white border-blue-600 hover:border-blue-700 px-6 sm:px-8 py-4 sm:py-3 rounded-xl w-full sm:w-auto min-h-[56px] text-sm sm:text-base"
+            className="bg-blue-600 hover:bg-blue-700 !text-white border-blue-600 hover:border-blue-700 px-6 sm:px-8 py-4 sm:py-3 rounded-xl w-full sm:w-auto min-h-[56px] text-sm sm:text-base"
           >
             Next Section →
           </Button>
