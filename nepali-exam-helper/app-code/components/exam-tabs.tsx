@@ -272,8 +272,8 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
                         // Calculate marks for sub-question
                         const subQuestionMarks = subQ.marks || (section.marks ? Math.round((section.marks / section.subQuestions.length) * 10) / 10 : 1)
                         
-                        if (section.type === 'true_false') {
-                          // Grade true/false questions automatically
+                        if (section.type === 'true_false' || section.type === 'true_false_not_given') {
+                          // Grade true/false and true/false/not given questions automatically
                           const isCorrect = userSubAnswer.toUpperCase() === subQ.correctAnswer.toUpperCase()
                           const score = isCorrect ? subQuestionMarks : 0
                           const feedback = isCorrect 
@@ -340,7 +340,67 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
                   })
                 }
               })
-            } else if (question.subQuestions) {
+            } else if (section.type === 'matching') {
+              // Handle matching questions - they don't have subQuestions, they have columns
+              const sectionAnswer = userAnswer[section.id]
+              if (sectionAnswer && typeof sectionAnswer === 'object') {
+                const correctAnswers = section.correctAnswer || []
+                const userAnswers = sectionAnswer || {}
+                
+                // Check if all matches are correct
+                const isCorrect = correctAnswers.every((correctMatch: any) => {
+                  const itemId = correctMatch.A
+                  const expectedMatch = correctMatch.B
+                  const userMatch = userAnswers[itemId]
+                  return userMatch === expectedMatch
+                })
+                
+                const score = isCorrect ? section.marks : 0
+                const feedback = isCorrect 
+                  ? "Correct! All matches are accurate." 
+                  : "Incorrect. Please check your matches against the correct answers."
+                
+                gradingPromises.push(Promise.resolve({
+                  id: `${(question as any).id}_${section.id}`,
+                  score: score,
+                  feedback: feedback,
+                  question: section.title,
+                  studentAnswer: JSON.stringify(userAnswers),
+                  group: "English",
+                  questionId: (question as any).id,
+                  sectionId: section.id,
+                }))
+              }
+            } else if (section.type === 'ordering') {
+              // Handle ordering questions - they don't have subQuestions, they have sentences
+              const sectionAnswer = userAnswer[section.id]
+              if (sectionAnswer && Array.isArray(sectionAnswer)) {
+                const correctOrder = section.correctAnswer || []
+                const userOrder = sectionAnswer || []
+                
+                // Check if the order is correct
+                const isCorrect = correctOrder.length === userOrder.length && 
+                  correctOrder.every((correctId: string, index: number) => correctId === userOrder[index])
+                
+                const score = isCorrect ? section.marks : 0
+                const feedback = isCorrect 
+                  ? "Correct! The order is accurate." 
+                  : "Incorrect. Please check the correct order."
+                
+                gradingPromises.push(Promise.resolve({
+                  id: `${(question as any).id}_${section.id}`,
+                  score: score,
+                  feedback: feedback,
+                  question: section.title,
+                  studentAnswer: JSON.stringify(userOrder),
+                  group: "English",
+                  questionId: (question as any).id,
+                  sectionId: section.id,
+                }))
+              }
+            }
+          })
+        } else if (question.subQuestions) {
               // Handle questions with direct sub-questions (like grammar questions)
               question.subQuestions.forEach(subQ => {
                 const userSubAnswer = userAnswer[subQ.id]

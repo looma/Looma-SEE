@@ -363,7 +363,7 @@ export function ResultsCard({
                       <div className="flex items-start gap-3">
                         <MessageSquareQuote className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
                         <div className="flex-1 min-w-0">
-                          <p className="font-semibold text-blue-800">AI Feedback / AI प्रतिक्रिया:</p>
+                          <p className="font-semibold text-blue-800">Feedback / प्रतिक्रिया:</p>
                           <p className="text-blue-700 mt-1 leading-relaxed whitespace-pre-wrap break-words">{fb.feedback}</p>
                         </div>
                       </div>
@@ -535,14 +535,14 @@ export function ResultsCard({
                                  question.type === 'cloze_test' ? 'Cloze Test Question' : 'English Question'}
                               </div>
 
-                              {/* Show AI Feedback if available */}
+                              {/* Show Feedback if available */}
                               {hasAIFeedback && questionFeedback ? (
                                 <div className="space-y-4">
-                                  {/* AI Feedback Section */}
+                                  {/* Feedback Section */}
                                   <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
                                     <div className="flex items-start gap-2 mb-2">
                                       <Lightbulb className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
-                                      <span className="font-medium text-blue-800">AI Feedback / AI प्रतिक्रिया:</span>
+                                      <span className="font-medium text-blue-800">Feedback / प्रतिक्रिया:</span>
                                     </div>
                                     <p className="text-blue-700 leading-relaxed">{questionFeedback}</p>
                                   </div>
@@ -638,7 +638,7 @@ export function ResultsCard({
               {isEnglishTest && results.feedbackA && results.feedbackA.length > 0 && (
                 <div className="mt-6">
                   <h3 className="text-lg font-semibold mb-4 text-gray-800">
-                    AI Feedback / AI प्रतिक्रिया
+                    Feedback / प्रतिक्रिया
                   </h3>
                   <div className="space-y-4">
                     {results.feedbackA.map((feedback: any, index: number) => {
@@ -673,7 +673,7 @@ export function ResultsCard({
                               </p>
                             </div>
                             <div>
-                              <p className="text-sm font-medium text-gray-700 mb-1">AI Feedback:</p>
+                              <p className="text-sm font-medium text-gray-700 mb-1">Feedback:</p>
                               <p className="text-sm text-gray-600 bg-white p-2 rounded border">
                                 {feedback.feedback}
                               </p>
