@@ -274,11 +274,14 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
                         
                         if (section.type === 'true_false' || section.type === 'true_false_not_given') {
                           // Grade true/false and true/false/not given questions automatically
+                          console.log(`🎯 Auto-grading ${section.type} question: ${subQ.questionEnglish}`)
                           const isCorrect = userSubAnswer.toUpperCase() === subQ.correctAnswer.toUpperCase()
                           const score = isCorrect ? subQuestionMarks : 0
                           const feedback = isCorrect 
                             ? "Correct! Well done." 
                             : `Incorrect. The correct answer is ${subQ.correctAnswer}.`
+                          
+                          console.log(`✅ Auto-graded result: ${isCorrect ? 'CORRECT' : 'INCORRECT'} - ${feedback}`)
                           
                           gradingPromises.push(Promise.resolve({
                             id: `${(question as any).id}_${section.id}_${subQ.id}`,
@@ -293,6 +296,7 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
                           }))
                         } else if (section.type === 'short_answer' || section.type === 'fill_in_the_blanks') {
                           // Grade open-ended questions with AI
+                          console.log(`🤖 AI-grading ${section.type} question: ${subQ.questionEnglish}`)
                           gradingPromises.push(
                             fetch("/api/grade", {
                               method: "POST",
