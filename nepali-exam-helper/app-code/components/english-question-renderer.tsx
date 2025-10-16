@@ -142,7 +142,7 @@ export function EnglishQuestionRenderer({
 
                     <RadioGroup
                       value={currentAnswer || ""}
-                      onValueChange={(value) => {
+                      onValueChange={(value: string) => {
                         if (parentId) {
                           const currentSection = answers[(question as any).id]?.[parentId] || {}
                           onAnswerChange((question as any).id, parentId, {
@@ -241,7 +241,7 @@ export function EnglishQuestionRenderer({
 
                     <RadioGroup
                       value={currentAnswer || ""}
-                      onValueChange={(value) => {
+                      onValueChange={(value: string) => {
                         if (parentId) {
                           const currentSection = answers[(question as any).id]?.[parentId] || {}
                           onAnswerChange((question as any).id, parentId, {
@@ -361,7 +361,7 @@ export function EnglishQuestionRenderer({
 
                     <Textarea
                       value={currentAnswer}
-                      onChange={(e) => {
+                      onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => {
                         if (parentId) {
                           const currentSection = answers[(question as any).id]?.[parentId] || {}
                           onAnswerChange((question as any).id, parentId, {
@@ -428,7 +428,7 @@ export function EnglishQuestionRenderer({
                         id={`fill-${subQ.id}`}
                         type="text"
                         value={currentAnswer}
-                        onChange={(e) => {
+                        onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
                           if (parentId) {
                             const currentSection = answers[(question as any).id]?.[parentId] || {}
                             onAnswerChange((question as any).id, parentId, {
@@ -492,7 +492,7 @@ export function EnglishQuestionRenderer({
                     </div>
                     <RadioGroup
                       value={currentAnswers[item.id] || ""}
-                      onValueChange={(value) => {
+                      onValueChange={(value: string) => {
                         const newAnswers = { ...currentAnswers, [item.id]: value }
                         onAnswerChange((question as any).id, section.id, newAnswers)
                       }}
@@ -607,7 +607,7 @@ export function EnglishQuestionRenderer({
           <Textarea
             id={`writing-${(question as any).id}`}
             value={currentAnswer}
-            onChange={(e) => onAnswerChange((question as any).id, "content", e.target.value)}
+            onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => onAnswerChange((question as any).id, "content", e.target.value)}
             placeholder="Write your answer here..."
             className="min-h-[200px] resize-none"
             rows={10}
@@ -665,7 +665,7 @@ export function EnglishQuestionRenderer({
                     </div>
                     <Textarea
                       value={currentAnswer}
-                      onChange={(e) => onAnswerChange((question as any).id, subQ.id, e.target.value)}
+                      onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => onAnswerChange((question as any).id, subQ.id, e.target.value)}
                       placeholder="Write the corrected sentence here..."
                       className="min-h-[60px] resize-none"
                       rows={2}
@@ -708,7 +708,7 @@ export function EnglishQuestionRenderer({
                     <span className="font-medium text-slate-800">({gap.id})</span>
                     <Textarea
                       value={currentAnswer}
-                      onChange={(e) => onAnswerChange((question as any).id, gap.id, e.target.value)}
+                      onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => onAnswerChange((question as any).id, gap.id, e.target.value)}
                       placeholder="Your answer..."
                       className="min-h-[40px] resize-none flex-1"
                       rows={1}

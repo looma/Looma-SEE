@@ -87,7 +87,7 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
   }, [answers, studentId, testId, onProgressUpdate, currentTab])
 
   const handleAnswerChange = (questionId: string, subQuestionId: string, answer: any) => {
-    setAnswers((prev) => ({
+    setAnswers((prev: Record<string, any>) => ({
       ...prev,
       [questionId]: {
         ...prev[questionId],
@@ -97,7 +97,7 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
   }
 
   const handleGroupAAnswerChange = (id: string, answer: string) => {
-    setAnswers((prev) => ({
+    setAnswers((prev: Record<string, any>) => ({
       ...prev,
       groupA: {
         ...prev.groupA,
@@ -107,7 +107,7 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
   }
 
   const handleFreeResponseChange = (group: "B" | "C" | "D", id: string, answer: string) => {
-    setAnswers((prev) => ({
+    setAnswers((prev: Record<string, any>) => ({
       ...prev,
       [`group${group}`]: {
         ...prev[`group${group}`],
@@ -128,7 +128,7 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
 
     if (questions.englishQuestions && questions.englishQuestions.length > 0) {
       totalQuestions = questions.englishQuestions.length
-      answeredQuestions = questions.englishQuestions.filter((q) => {
+      answeredQuestions = questions.englishQuestions.filter((q: any) => {
         const answer = answers[q.id]
         if (!answer) return false
         if (typeof answer === "object" && !Array.isArray(answer)) {
@@ -142,22 +142,22 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
         questions.groupA.length + questions.groupB.length + questions.groupC.length + questions.groupD.length
 
       // Count Group A answers
-      const groupAAnswered = questions.groupA.filter((q) => answers.groupA?.[q.id]).length
+      const groupAAnswered = questions.groupA.filter((q: any) => answers.groupA?.[q.id]).length
 
       // Count Group B answers
-      const groupBAnswered = questions.groupB.filter((q) => {
+      const groupBAnswered = questions.groupB.filter((q: any) => {
         const answer = answers.groupB?.[q.id]
         return answer && answer.trim().length > 0
       }).length
 
       // Count Group C answers
-      const groupCAnswered = questions.groupC.filter((q) => {
+      const groupCAnswered = questions.groupC.filter((q: any) => {
         const answer = answers.groupC?.[q.id]
         return answer && answer.trim().length > 0
       }).length
 
       // Count Group D answers
-      const groupDAnswered = questions.groupD.filter((q) => {
+      const groupDAnswered = questions.groupD.filter((q: any) => {
         const answer = answers.groupD?.[q.id]
         return answer && answer.trim().length > 0
       }).length
@@ -176,7 +176,7 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
 
     if (questions.englishQuestions && questions.englishQuestions.length > 0) {
       totalQuestions = questions.englishQuestions.length
-      incompleteQuestions = questions.englishQuestions.filter((q) => {
+      incompleteQuestions = questions.englishQuestions.filter((q: any) => {
         const answer = answers[q.id]
         if (!answer) return true
         if (typeof answer === "object" && !Array.isArray(answer)) {
@@ -190,22 +190,22 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
         questions.groupA.length + questions.groupB.length + questions.groupC.length + questions.groupD.length
 
       // Count Group A incomplete answers
-      const groupAIncomplete = questions.groupA.filter((q) => !answers.groupA?.[q.id]).length
+      const groupAIncomplete = questions.groupA.filter((q: any) => !answers.groupA?.[q.id]).length
 
       // Count Group B incomplete answers
-      const groupBIncomplete = questions.groupB.filter((q) => {
+      const groupBIncomplete = questions.groupB.filter((q: any) => {
         const answer = answers.groupB?.[q.id]
         return !answer || answer.trim().length === 0
       }).length
 
       // Count Group C incomplete answers
-      const groupCIncomplete = questions.groupC.filter((q) => {
+      const groupCIncomplete = questions.groupC.filter((q: any) => {
         const answer = answers.groupC?.[q.id]
         return !answer || answer.trim().length === 0
       }).length
 
       // Count Group D incomplete answers
-      const groupDIncomplete = questions.groupD.filter((q) => {
+      const groupDIncomplete = questions.groupD.filter((q: any) => {
         const answer = answers.groupD?.[q.id]
         return !answer || answer.trim().length === 0
       }).length
@@ -255,16 +255,16 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
         const gradingPromises: Promise<any>[] = []
 
         if (questions.englishQuestions && questions.englishQuestions.length > 0) {
-          questions.englishQuestions.forEach((question) => {
+          questions.englishQuestions.forEach((question: any) => {
             const userAnswer = answers[(question as any).id]
             if (!userAnswer) return
 
             // Handle different English question types
             if ((question as any).type === 'reading_comprehension' && (question as any).subSections) {
               // For reading comprehension, grade each sub-section separately
-              question.subSections.forEach(section => {
+              question.subSections.forEach((section: any) => {
                 if (section.subQuestions) {
-                  section.subQuestions.forEach(subQ => {
+                  section.subQuestions.forEach((subQ: any) => {
                     const sectionAnswer = userAnswer[section.id]
                     if (sectionAnswer && typeof sectionAnswer === 'object') {
                       const userSubAnswer = sectionAnswer[subQ.id]
@@ -344,69 +344,9 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
                   })
                 }
               })
-            } else if (section.type === 'matching') {
-              // Handle matching questions - they don't have subQuestions, they have columns
-              const sectionAnswer = userAnswer[section.id]
-              if (sectionAnswer && typeof sectionAnswer === 'object') {
-                const correctAnswers = section.correctAnswer || []
-                const userAnswers = sectionAnswer || {}
-                
-                // Check if all matches are correct
-                const isCorrect = correctAnswers.every((correctMatch: any) => {
-                  const itemId = correctMatch.A
-                  const expectedMatch = correctMatch.B
-                  const userMatch = userAnswers[itemId]
-                  return userMatch === expectedMatch
-                })
-                
-                const score = isCorrect ? section.marks : 0
-                const feedback = isCorrect 
-                  ? "Correct! All matches are accurate." 
-                  : "Incorrect. Please check your matches against the correct answers."
-                
-                gradingPromises.push(Promise.resolve({
-                  id: `${(question as any).id}_${section.id}`,
-                  score: score,
-                  feedback: feedback,
-                  question: section.title,
-                  studentAnswer: JSON.stringify(userAnswers),
-                  group: "English",
-                  questionId: (question as any).id,
-                  sectionId: section.id,
-                }))
-              }
-            } else if (section.type === 'ordering') {
-              // Handle ordering questions - they don't have subQuestions, they have sentences
-              const sectionAnswer = userAnswer[section.id]
-              if (sectionAnswer && Array.isArray(sectionAnswer)) {
-                const correctOrder = section.correctAnswer || []
-                const userOrder = sectionAnswer || []
-                
-                // Check if the order is correct
-                const isCorrect = correctOrder.length === userOrder.length && 
-                  correctOrder.every((correctId: string, index: number) => correctId === userOrder[index])
-                
-                const score = isCorrect ? section.marks : 0
-                const feedback = isCorrect 
-                  ? "Correct! The order is accurate." 
-                  : "Incorrect. Please check the correct order."
-                
-                gradingPromises.push(Promise.resolve({
-                  id: `${(question as any).id}_${section.id}`,
-                  score: score,
-                  feedback: feedback,
-                  question: section.title,
-                  studentAnswer: JSON.stringify(userOrder),
-                  group: "English",
-                  questionId: (question as any).id,
-                  sectionId: section.id,
-                }))
-              }
-            }
-          })
-        } else if (question.subQuestions) {
+            } else if (question.subQuestions) {
               // Handle questions with direct sub-questions (like grammar questions)
-              question.subQuestions.forEach(subQ => {
+              question.subQuestions.forEach((subQ: any) => {
                 const userSubAnswer = userAnswer[subQ.id]
                 if (userSubAnswer && typeof userSubAnswer === 'string' && userSubAnswer.trim().length > 0) {
                   // Calculate marks for sub-question
@@ -560,7 +500,7 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
           // Store English grading results in same format as Science tests
           results.feedbackA = gradingResults
           results.englishFeedback = gradingResults
-          results.scoreA = gradingResults.reduce((sum, result) => sum + result.score, 0)
+          results.scoreA = gradingResults.reduce((sum: number, result: any) => sum + result.score, 0)
         } else {
           // No answers provided or no AI grading was attempted - set default values
           results.feedbackA = []
@@ -570,7 +510,7 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
 
         // Save attempt to history (same format as Science tests)
         const totalScore = results.scoreA
-        const maxScore = questions.englishQuestions.reduce((acc, q) => acc + q.marks, 0)
+        const maxScore = questions.englishQuestions.reduce((acc: number, q: any) => acc + q.marks, 0)
         const percentage = Math.round((totalScore / maxScore) * 100)
         const grade = percentage >= 90 ? "A+" : percentage >= 80 ? "A" : percentage >= 70 ? "B+" : percentage >= 60 ? "B" : percentage >= 50 ? "C+" : percentage >= 40 ? "C" : percentage >= 32 ? "D" : "E"
 
@@ -597,7 +537,7 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
       // Science test grading (existing logic)
       // Grade Group A (Multiple Choice) - instant scoring
       if (questions.groupA && questions.groupA.length > 0) {
-        results.scoreA = questions.groupA.reduce((score, question) => {
+        results.scoreA = questions.groupA.reduce((score: number, question: any) => {
           const userAnswer = answers.groupA?.[question.id]
           return userAnswer === question.correctAnswer ? score + question.marks : score
         }, 0)
@@ -608,7 +548,7 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
 
       // Grade Group B
       if (questions.groupB && questions.groupB.length > 0) {
-        questions.groupB.forEach((question) => {
+        questions.groupB.forEach((question: any) => {
           const userAnswer = answers.groupB?.[question.id] || ""
           if (userAnswer.trim()) {
             gradingPromises.push(
@@ -654,7 +594,7 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
 
       // Grade Group C
       if (questions.groupC && questions.groupC.length > 0) {
-        questions.groupC.forEach((question) => {
+        questions.groupC.forEach((question: any) => {
           const userAnswer = answers.groupC?.[question.id] || ""
           if (userAnswer.trim()) {
             gradingPromises.push(
@@ -700,7 +640,7 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
 
       // Grade Group D
       if (questions.groupD && questions.groupD.length > 0) {
-        questions.groupD.forEach((question) => {
+        questions.groupD.forEach((question: any) => {
           const userAnswer = answers.groupD?.[question.id] || ""
           if (userAnswer.trim()) {
             gradingPromises.push(
@@ -767,10 +707,10 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
         results.feedbackD.reduce((sum: number, f: any) => sum + f.score, 0)
 
       const maxScore =
-        (questions.groupA?.reduce((sum, q) => sum + q.marks, 0) || 0) +
-        (questions.groupB?.reduce((sum, q) => sum + q.marks, 0) || 0) +
-        (questions.groupC?.reduce((sum, q) => sum + q.marks, 0) || 0) +
-        (questions.groupD?.reduce((sum, q) => sum + q.marks, 0) || 0)
+        (questions.groupA?.reduce((sum: number, q: any) => sum + q.marks, 0) || 0) +
+        (questions.groupB?.reduce((sum: number, q: any) => sum + q.marks, 0) || 0) +
+        (questions.groupC?.reduce((sum: number, q: any) => sum + q.marks, 0) || 0) +
+        (questions.groupD?.reduce((sum: number, q: any) => sum + q.marks, 0) || 0)
 
       const percentage = Math.round((totalScore / maxScore) * 100)
       const grade =
@@ -810,7 +750,7 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
       onShowResults(results)
     } catch (error) {
       console.error("❌ Submission failed:", error)
-      alert(`Failed to submit test: ${error.message}. Please try again.`)
+      alert(`Failed to submit test: ${error instanceof Error ? error.message : 'Unknown error'}. Please try again.`)
     } finally {
       setIsSubmitting(false)
       setShowSubmitWarning(false)
@@ -949,7 +889,7 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
           <div className="flex justify-between items-center mt-2 text-xs text-slate-600">
             <span>
               {
-                questions.englishQuestions.filter((q) => {
+                questions.englishQuestions.filter((q: any) => {
                   const answer = answers[q.id]
                   if (!answer) return false
                   if (typeof answer === "object" && !Array.isArray(answer)) {
@@ -966,7 +906,7 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
 
         {/* Questions */}
         <div className="space-y-6">
-          {questions.englishQuestions.map((question) => (
+          {questions.englishQuestions.map((question: any) => (
             <EnglishQuestionRenderer
               key={question.id}
               question={question}
@@ -991,7 +931,7 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
             ) : (
               <>
                 <Trophy className="mr-2 h-4 w-4 sm:h-5 sm:w-5" /> Submit Test ({(() => {
-                  const answered = questions.englishQuestions.filter((q) => {
+                  const answered = questions.englishQuestions.filter((q: any) => {
                     const answer = answers[q.id]
                     if (!answer) return false
                     if (typeof answer === "object" && !Array.isArray(answer)) {
@@ -1076,10 +1016,10 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
         <div className="flex justify-between items-center mt-2 text-xs text-slate-600">
           <span>
             {(() => {
-              const groupAAnswered = questions.groupA.filter((q) => answers.groupA?.[q.id]).length
-              const groupBAnswered = questions.groupB.filter((q) => answers.groupB?.[q.id]?.trim()).length
-              const groupCAnswered = questions.groupC.filter((q) => answers.groupC?.[q.id]?.trim()).length
-              const groupDAnswered = questions.groupD.filter((q) => answers.groupD?.[q.id]?.trim()).length
+              const groupAAnswered = questions.groupA.filter((q: any) => answers.groupA?.[q.id]).length
+              const groupBAnswered = questions.groupB.filter((q: any) => answers.groupB?.[q.id]?.trim()).length
+              const groupCAnswered = questions.groupC.filter((q: any) => answers.groupC?.[q.id]?.trim()).length
+              const groupDAnswered = questions.groupD.filter((q: any) => answers.groupD?.[q.id]?.trim()).length
               const totalAnswered = groupAAnswered + groupBAnswered + groupCAnswered + groupDAnswered
               const totalQuestions =
                 questions.groupA.length + questions.groupB.length + questions.groupC.length + questions.groupD.length
@@ -1179,10 +1119,10 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
             <>
               <Trophy className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
               {isLastSection() ? "Submit Test" : "Submit & Grade"} ({(() => {
-                const groupAAnswered = questions.groupA.filter((q) => answers.groupA?.[q.id]).length
-                const groupBAnswered = questions.groupB.filter((q) => answers.groupB?.[q.id]?.trim()).length
-                const groupCAnswered = questions.groupC.filter((q) => answers.groupC?.[q.id]?.trim()).length
-                const groupDAnswered = questions.groupD.filter((q) => answers.groupD?.[q.id]?.trim()).length
+                const groupAAnswered = questions.groupA.filter((q: any) => answers.groupA?.[q.id]).length
+                const groupBAnswered = questions.groupB.filter((q: any) => answers.groupB?.[q.id]?.trim()).length
+                const groupCAnswered = questions.groupC.filter((q: any) => answers.groupC?.[q.id]?.trim()).length
+                const groupDAnswered = questions.groupD.filter((q: any) => answers.groupD?.[q.id]?.trim()).length
                 const totalAnswered = groupAAnswered + groupBAnswered + groupCAnswered + groupDAnswered
                 const totalQuestions =
                   questions.groupA.length + questions.groupB.length + questions.groupC.length + questions.groupD.length
