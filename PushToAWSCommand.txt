@@ -5,8 +5,20 @@
 
 
 cd "C:\Users\porte\OneDrive\Documents\GitHub\Looma-SEE"
-cd "C:\Users\porte\OneDrive\Documents\GitHub\Looma-SEE"
+
+# 1) Make sure you’re on main
+git branch -M main
+
+# 2) Add or update the remote (safe to re-run)
+git remote remove prod 2>$null
+git remote add prod ssh://ec2-user@ec2-54-148-203-226.us-west-2.compute.amazonaws.com/home/ec2-user/see-live.git
+
+# 3) Split out just the app-code folder into a temp branch
 git subtree split --prefix=nepali-exam-helper/app-code -b deploy
+
+# 4) Force-push that branch to EC2’s main (using your .pem key)
 $env:GIT_SSH_COMMAND = 'ssh -i "C:/Users/porte/OneDrive/Desktop/Looma Test Prep.pem" -o IdentitiesOnly=yes'
-git push -f ssh://ec2-user@ec2-54-148-203-226.us-west-2.compute.amazonaws.com/home/ec2-user/see-live.git deploy:main
+git push -f prod deploy:main
+
+# 5) Clean up the temp branch
 git branch -D deploy

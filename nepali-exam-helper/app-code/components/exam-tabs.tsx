@@ -578,7 +578,7 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
                   question: question.english,
                   studentAnswer: userAnswer,
                   group: "B",
-                })),
+                }))
             )
           } else {
             results.feedbackB.push({
@@ -624,7 +624,7 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
                   question: question.english,
                   studentAnswer: userAnswer,
                   group: "C",
-                })),
+                }))
             )
           } else {
             results.feedbackC.push({
@@ -670,7 +670,7 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
                   question: question.english,
                   studentAnswer: userAnswer,
                   group: "D",
-                })),
+                }))
             )
           } else {
             results.feedbackD.push({
