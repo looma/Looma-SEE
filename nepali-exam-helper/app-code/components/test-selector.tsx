@@ -37,11 +37,64 @@ export function TestSelector({ currentTestId, onTestChange, onBackToSelection, s
     const progress = loadStudentProgress(`${studentId}_${testId}`)
     if (!progress) return { completed: false, hasProgress: false, percentage: 0, lastAttempt: null as any }
 
-    const totalAnswered =
-      Object.keys(progress.answersA || {}).length +
-      Object.keys(progress.answersB || {}).filter((k) => progress.answersB[k]?.trim()).length +
-      Object.keys(progress.answersC || {}).filter((k) => progress.answersC[k]?.trim()).length +
-      Object.keys(progress.answersD || {}).filter((k) => progress.answersD[k]?.trim()).length
+    // Count actual answered questions from their progress
+    let totalAnswered = 0
+
+    // Count Group A answers (multiple choice)
+    const groupAAnswers = Object.keys(progress.answersA || {}).filter(
+      (key) => progress.answersA[key] && progress.answersA[key].trim(),
+    ).length
+
+    // Count Group B answers (free response)
+    const groupBAnswers = Object.keys(progress.answersB || {}).filter(
+      (key) => progress.answersB[key] && progress.answersB[key].trim(),
+    ).length
+
+    // Count Group C answers (free response)
+    const groupCAnswers = Object.keys(progress.answersC || {}).filter(
+      (key) => progress.answersC[key] && progress.answersC[key].trim(),
+    ).length
+
+    // Count Group D answers (free response)
+    const groupDAnswers = Object.keys(progress.answersD || {}).filter(
+      (key) => progress.answersD[key] && progress.answersD[key].trim(),
+    ).length
+
+    // Check for English test answers (stored differently)
+    let englishAnswers = 0
+    if (progress.answers) {
+      // Count English question answers - handle different question types
+      englishAnswers = Object.keys(progress.answers).filter((key) => {
+        const answer = progress.answers[key]
+        if (!answer) return false
+        
+        // Handle different answer structures based on question type
+        if (typeof answer === 'string') {
+          return answer.trim().length > 0
+        } else if (typeof answer === 'object' && !Array.isArray(answer)) {
+          // Check if it's a free writing question (has content property)
+          if (answer.content && typeof answer.content === 'string') {
+            return answer.content.trim().length > 0
+          }
+          // Check other object structures (cloze test, grammar, reading comprehension)
+          return Object.values(answer).some((val) => {
+            if (typeof val === 'string') {
+              return val.trim().length > 0
+            } else if (typeof val === 'object' && val !== null) {
+              // Handle nested objects (like reading comprehension sub-sections)
+              return Object.values(val).some((nestedVal) => 
+                typeof nestedVal === 'string' && nestedVal.trim().length > 0
+              )
+            }
+            return val !== undefined && val !== null && val !== ""
+          })
+        }
+        return answer !== undefined && answer !== null && answer !== ""
+      }).length
+    }
+
+    // Use the higher count (either science format or English format)
+    totalAnswered = Math.max(groupAAnswers + groupBAnswers + groupCAnswers + groupDAnswers, englishAnswers)
 
     const hasAttempts = (progress.attempts || []).length > 0
     const hasProgress = totalAnswered > 0
@@ -51,7 +104,7 @@ export function TestSelector({ currentTestId, onTestChange, onBackToSelection, s
     return {
       completed: hasAttempts,
       hasProgress,
-      percentage,
+      percentage: Math.min(percentage, 100), // Cap at 100%
       lastAttempt: hasAttempts ? progress.attempts[progress.attempts.length - 1] : null,
     }
   }

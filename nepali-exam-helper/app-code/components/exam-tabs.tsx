@@ -131,8 +131,24 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
       answeredQuestions = questions.englishQuestions.filter((q: any) => {
         const answer = answers[q.id]
         if (!answer) return false
-        if (typeof answer === "object" && !Array.isArray(answer)) {
-          return Object.values(answer).some((val) => val !== undefined && val !== null && val !== "")
+        
+        // Handle different answer structures based on question type
+        if (q.type === 'free_writing') {
+          // Free writing questions store answer as { content: "..." }
+          return answer.content && typeof answer.content === 'string' && answer.content.trim().length > 0
+        } else if (typeof answer === "object" && !Array.isArray(answer)) {
+          // Other question types with object answers (like reading comprehension with sub-sections)
+          return Object.values(answer).some((val) => {
+            if (typeof val === 'string') {
+              return val.trim().length > 0
+            } else if (typeof val === 'object' && val !== null) {
+              // Handle nested objects (like sub-sections)
+              return Object.values(val).some((nestedVal) => 
+                typeof nestedVal === 'string' && nestedVal.trim().length > 0
+              )
+            }
+            return val !== undefined && val !== null && val !== ""
+          })
         }
         return answer !== undefined && answer !== null && answer !== ""
       }).length
@@ -179,8 +195,24 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
       incompleteQuestions = questions.englishQuestions.filter((q: any) => {
         const answer = answers[q.id]
         if (!answer) return true
-        if (typeof answer === "object" && !Array.isArray(answer)) {
-          return !Object.values(answer).some((val) => val !== undefined && val !== null && val !== "")
+        
+        // Handle different answer structures based on question type
+        if (q.type === 'free_writing') {
+          // Free writing questions store answer as { content: "..." }
+          return !answer.content || typeof answer.content !== 'string' || answer.content.trim().length === 0
+        } else if (typeof answer === "object" && !Array.isArray(answer)) {
+          // Other question types with object answers (like reading comprehension with sub-sections)
+          return !Object.values(answer).some((val) => {
+            if (typeof val === 'string') {
+              return val.trim().length > 0
+            } else if (typeof val === 'object' && val !== null) {
+              // Handle nested objects (like sub-sections)
+              return Object.values(val).some((nestedVal) => 
+                typeof nestedVal === 'string' && nestedVal.trim().length > 0
+              )
+            }
+            return val !== undefined && val !== null && val !== ""
+          })
         }
         return answer === undefined || answer === null || answer === ""
       }).length
@@ -892,8 +924,24 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
                 questions.englishQuestions.filter((q: any) => {
                   const answer = answers[q.id]
                   if (!answer) return false
-                  if (typeof answer === "object" && !Array.isArray(answer)) {
-                    return Object.values(answer).some((val) => val !== undefined && val !== null && val !== "")
+                  
+                  // Handle different answer structures based on question type
+                  if (q.type === 'free_writing') {
+                    // Free writing questions store answer as { content: "..." }
+                    return answer.content && typeof answer.content === 'string' && answer.content.trim().length > 0
+                  } else if (typeof answer === "object" && !Array.isArray(answer)) {
+                    // Other question types with object answers (like reading comprehension with sub-sections)
+                    return Object.values(answer).some((val) => {
+                      if (typeof val === 'string') {
+                        return val.trim().length > 0
+                      } else if (typeof val === 'object' && val !== null) {
+                        // Handle nested objects (like sub-sections)
+                        return Object.values(val).some((nestedVal) => 
+                          typeof nestedVal === 'string' && nestedVal.trim().length > 0
+                        )
+                      }
+                      return val !== undefined && val !== null && val !== ""
+                    })
                   }
                   return answer !== undefined && answer !== null && answer !== ""
                 }).length
@@ -934,8 +982,24 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
                   const answered = questions.englishQuestions.filter((q: any) => {
                     const answer = answers[q.id]
                     if (!answer) return false
-                    if (typeof answer === "object" && !Array.isArray(answer)) {
-                      return Object.values(answer).some((val) => val !== undefined && val !== null && val !== "")
+                    
+                    // Handle different answer structures based on question type
+                    if (q.type === 'free_writing') {
+                      // Free writing questions store answer as { content: "..." }
+                      return answer.content && typeof answer.content === 'string' && answer.content.trim().length > 0
+                    } else if (typeof answer === "object" && !Array.isArray(answer)) {
+                      // Other question types with object answers (like reading comprehension with sub-sections)
+                      return Object.values(answer).some((val) => {
+                        if (typeof val === 'string') {
+                          return val.trim().length > 0
+                        } else if (typeof val === 'object' && val !== null) {
+                          // Handle nested objects (like sub-sections)
+                          return Object.values(val).some((nestedVal) => 
+                            typeof nestedVal === 'string' && nestedVal.trim().length > 0
+                          )
+                        }
+                        return val !== undefined && val !== null && val !== ""
+                      })
                     }
                     return answer !== undefined && answer !== null && answer !== ""
                   }).length

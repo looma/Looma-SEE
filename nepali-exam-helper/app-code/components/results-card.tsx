@@ -472,11 +472,33 @@ export function ResultsCard({
                         questionFeedback = questionFeedbacks.map(f => f.feedback).join("; ")
                         hasAIFeedback = questionFeedbacks.length > 0
                       } else {
-                        // Check if question was answered
-                        const hasAnswer = answers[question.id] && 
-                          (typeof answers[question.id] === 'string' ? answers[question.id].trim() : 
-                           typeof answers[question.id] === 'object' ? Object.values(answers[question.id]).some(val => val && val.toString().trim()) : 
-                           false)
+                        // Check if question was answered - handle different question types
+                        let hasAnswer = false
+                        const answer = answers[question.id]
+                        
+                        if (!answer) {
+                          hasAnswer = false
+                        } else if (question.type === 'free_writing') {
+                          // Free writing questions store answer as { content: "..." }
+                          hasAnswer = answer.content && typeof answer.content === 'string' && answer.content.trim().length > 0
+                        } else if (typeof answer === 'string') {
+                          hasAnswer = answer.trim().length > 0
+                        } else if (typeof answer === 'object' && !Array.isArray(answer)) {
+                          // Other question types with object answers (cloze test, grammar, reading comprehension)
+                          hasAnswer = Object.values(answer).some((val) => {
+                            if (typeof val === 'string') {
+                              return val.trim().length > 0
+                            } else if (typeof val === 'object' && val !== null) {
+                              // Handle nested objects (like reading comprehension sub-sections)
+                              return Object.values(val).some((nestedVal) => 
+                                typeof nestedVal === 'string' && nestedVal.trim().length > 0
+                              )
+                            }
+                            return val !== undefined && val !== null && val !== ""
+                          })
+                        } else {
+                          hasAnswer = answer !== undefined && answer !== null && answer !== ""
+                        }
                         
                         if (hasAnswer) {
                           // Question was answered but no AI feedback - AI grading failed

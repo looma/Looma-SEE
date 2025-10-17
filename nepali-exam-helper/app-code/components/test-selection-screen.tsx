@@ -65,12 +65,31 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser }: T
     // Check for English test answers (stored differently)
     let englishAnswers = 0
     if (progress.answers) {
-      // Count English question answers
+      // Count English question answers - handle different question types
       englishAnswers = Object.keys(progress.answers).filter((key) => {
         const answer = progress.answers[key]
         if (!answer) return false
-        if (typeof answer === "object" && !Array.isArray(answer)) {
-          return Object.values(answer).some((val) => val !== undefined && val !== null && val !== "")
+        
+        // Handle different answer structures based on question type
+        if (typeof answer === 'string') {
+          return answer.trim().length > 0
+        } else if (typeof answer === 'object' && !Array.isArray(answer)) {
+          // Check if it's a free writing question (has content property)
+          if (answer.content && typeof answer.content === 'string') {
+            return answer.content.trim().length > 0
+          }
+          // Check other object structures (cloze test, grammar, reading comprehension)
+          return Object.values(answer).some((val) => {
+            if (typeof val === 'string') {
+              return val.trim().length > 0
+            } else if (typeof val === 'object' && val !== null) {
+              // Handle nested objects (like reading comprehension sub-sections)
+              return Object.values(val).some((nestedVal) => 
+                typeof nestedVal === 'string' && nestedVal.trim().length > 0
+              )
+            }
+            return val !== undefined && val !== null && val !== ""
+          })
         }
         return answer !== undefined && answer !== null && answer !== ""
       }).length
