@@ -479,7 +479,7 @@ export function ResultsCard({
                         if (!answer) {
                           hasAnswer = false
                         } else if (question.type === 'free_writing') {
-                          // Free writing questions store answer as { content: "..." }
+                          // Free writing questions store answer as answers[questionId].content = "text"
                           hasAnswer = answer.content && typeof answer.content === 'string' && answer.content.trim().length > 0
                         } else if (typeof answer === 'string') {
                           hasAnswer = answer.trim().length > 0

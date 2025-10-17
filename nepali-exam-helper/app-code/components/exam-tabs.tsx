@@ -134,7 +134,7 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
         
         // Handle different answer structures based on question type
         if (q.type === 'free_writing') {
-          // Free writing questions store answer as { content: "..." }
+          // Free writing questions store answer as answers[questionId].content = "text"
           return answer.content && typeof answer.content === 'string' && answer.content.trim().length > 0
         } else if (typeof answer === "object" && !Array.isArray(answer)) {
           // Other question types with object answers (like reading comprehension with sub-sections)
@@ -196,10 +196,10 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
         const answer = answers[q.id]
         if (!answer) return true
         
-        // Handle different answer structures based on question type
-        if (q.type === 'free_writing') {
-          // Free writing questions store answer as { content: "..." }
-          return !answer.content || typeof answer.content !== 'string' || answer.content.trim().length === 0
+          // Handle different answer structures based on question type
+          if (q.type === 'free_writing') {
+            // Free writing questions store answer as answers[questionId].content = "text"
+            return !answer.content || typeof answer.content !== 'string' || answer.content.trim().length === 0
         } else if (typeof answer === "object" && !Array.isArray(answer)) {
           // Other question types with object answers (like reading comprehension with sub-sections)
           return !Object.values(answer).some((val) => {
@@ -927,7 +927,7 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
                   
                   // Handle different answer structures based on question type
                   if (q.type === 'free_writing') {
-                    // Free writing questions store answer as { content: "..." }
+                    // Free writing questions store answer as answers[questionId].content = "text"
                     return answer.content && typeof answer.content === 'string' && answer.content.trim().length > 0
                   } else if (typeof answer === "object" && !Array.isArray(answer)) {
                     // Other question types with object answers (like reading comprehension with sub-sections)
@@ -985,7 +985,7 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
                     
                     // Handle different answer structures based on question type
                     if (q.type === 'free_writing') {
-                      // Free writing questions store answer as { content: "..." }
+                      // Free writing questions store answer as answers[questionId].content = "text"
                       return answer.content && typeof answer.content === 'string' && answer.content.trim().length > 0
                     } else if (typeof answer === "object" && !Array.isArray(answer)) {
                       // Other question types with object answers (like reading comprehension with sub-sections)
