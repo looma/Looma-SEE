@@ -3,8 +3,8 @@
 
 
 
-
-cd "C:\Users\porte\OneDrive\Documents\GitHub\Looma-SEE"
+# This should be the local directory of the GitHub repo on your machine
+cd C:\Users\porte\OneDrive\Documents\Looma-SEE
 
 # 1) Make sure you’re on main
 git branch -M main
