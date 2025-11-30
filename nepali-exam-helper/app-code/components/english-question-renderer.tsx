@@ -135,7 +135,7 @@ export function EnglishQuestionRenderer({
                       <p className="font-medium text-slate-800">
                         ({subQ.id}) {subQ.questionEnglish}
                       </p>
-                      <Badge variant="secondary" className="ml-2 bg-blue-100 text-blue-800">
+                      <Badge variant="secondary" className="ml-2 bg-blue-100 text-blue-800 whitespace-nowrap">
                         {subQuestionMarks} mark{subQuestionMarks !== 1 ? "s" : ""}
                       </Badge>
                     </div>
@@ -234,7 +234,7 @@ export function EnglishQuestionRenderer({
                       <p className="font-medium text-slate-800">
                         ({subQ.id}) {subQ.questionEnglish}
                       </p>
-                      <Badge variant="secondary" className="ml-2 bg-blue-100 text-blue-800">
+                      <Badge variant="secondary" className="ml-2 bg-blue-100 text-blue-800 whitespace-nowrap">
                         {subQuestionMarks} mark{subQuestionMarks !== 1 ? "s" : ""}
                       </Badge>
                     </div>
@@ -354,7 +354,7 @@ export function EnglishQuestionRenderer({
                       <p className="font-medium text-slate-800">
                         ({subQ.id}) {subQ.questionEnglish}
                       </p>
-                      <Badge variant="secondary" className="ml-2 bg-blue-100 text-blue-800">
+                      <Badge variant="secondary" className="ml-2 bg-blue-100 text-blue-800 whitespace-nowrap">
                         {subQuestionMarks} mark{subQuestionMarks !== 1 ? "s" : ""}
                       </Badge>
                     </div>
@@ -415,7 +415,7 @@ export function EnglishQuestionRenderer({
                       <p className="font-medium text-slate-800">
                         ({subQ.id}) {subQ.questionEnglish}
                       </p>
-                      <Badge variant="secondary" className="ml-2 bg-blue-100 text-blue-800">
+                      <Badge variant="secondary" className="ml-2 bg-blue-100 text-blue-800 whitespace-nowrap">
                         {subQuestionMarks} mark{subQuestionMarks !== 1 ? "s" : ""}
                       </Badge>
                     </div>
@@ -462,7 +462,7 @@ export function EnglishQuestionRenderer({
       <div className="space-y-6">
         <div className="flex justify-between items-start mb-4">
           <p className="text-sm text-slate-600">{section.title}</p>
-          <Badge variant="secondary" className="ml-2 bg-green-100 text-green-800">
+          <Badge variant="secondary" className="ml-2 bg-green-100 text-green-800 whitespace-nowrap">
             {section.marks} mark{section.marks !== 1 ? "s" : ""}
           </Badge>
         </div>
@@ -666,7 +666,7 @@ export function EnglishQuestionRenderer({
                       <p className="font-medium text-slate-800">
                         ({subQ.id}) {subQ.questionEnglish}
                       </p>
-                      <Badge variant="secondary" className="ml-2 bg-blue-100 text-blue-800">
+                      <Badge variant="secondary" className="ml-2 bg-blue-100 text-blue-800 whitespace-nowrap">
                         {subQuestionMarks} mark{subQuestionMarks !== 1 ? "s" : ""}
                       </Badge>
                     </div>
@@ -720,7 +720,7 @@ export function EnglishQuestionRenderer({
                       className="min-h-[40px] resize-none flex-1"
                       rows={1}
                     />
-                    <Badge variant="secondary" className="ml-2 bg-purple-100 text-purple-800">
+                    <Badge variant="secondary" className="ml-2 bg-purple-100 text-purple-800 whitespace-nowrap">
                       {gapMarks} mark{gapMarks !== 1 ? "s" : ""}
                     </Badge>
                   </div>
@@ -756,7 +756,7 @@ export function EnglishQuestionRenderer({
               {showExplanations ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
               <span className="ml-1 hidden sm:inline">{showExplanations ? "Hide" : "Show"} Help</span>
             </Button>
-            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
+            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 whitespace-nowrap">
               {(question as any).marks} marks
             </Badge>
           </div>
