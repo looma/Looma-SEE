@@ -50,13 +50,25 @@ Rules:
 - Keep feedback to 1-2 sentences maximum
 - Be constructive and specific
 - For English questions, focus on content understanding rather than exact wording
-- Recognize equivalent answers that convey the same meaning`
+- Recognize equivalent answers that convey the same meaning
+- Accept both American English (e.g., "gotten", "gotten") and British English (e.g., "got", "got") as correct
+- Do NOT penalize answers that are shorter than suggested word counts if they adequately address the question
+- If a student's answer fully meets the requirements in fewer words, award full marks
+- When grading, prioritize whether the answer demonstrates understanding of the key concepts over strict word-for-word matches`
 
     const userPrompt = `Grade this answer (${marks} marks total):
 
 Question: ${question}
-${sampleAnswer ? `Expected answer: ${sampleAnswer}` : ""}
+${sampleAnswer ? `Sample/expected answer: ${sampleAnswer}` : ""}
 Student answer: ${answer}
+
+IMPORTANT GRADING GUIDELINES:
+- Accept equivalent phrasings that convey the same meaning as the sample answer
+- Accept both American and British English variants (e.g., "gotten" and "got" are both acceptable)
+- Do NOT penalize for being shorter than suggested word counts if the answer is complete and accurate
+- Award full marks if the answer demonstrates complete understanding, even if worded differently
+- Award partial marks for partially correct answers that show some understanding
+- Focus on whether key concepts are addressed, not exact word matching
 
 Respond with JSON only: {"score": <0-${marks}>, "feedback": "<brief feedback>"}`
 
@@ -79,7 +91,7 @@ Respond with JSON only: {"score": <0-${marks}>, "feedback": "<brief feedback>"}`
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            model: "gpt-4o",
+            model: "gpt-4o-mini",
             messages: [
               { role: "system", content: systemPrompt },
               { role: "user", content: userPrompt },

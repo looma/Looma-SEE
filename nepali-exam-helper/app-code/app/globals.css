@@ -551,3 +551,10 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #94a3b8;
 }
+
+/* Version indicator - ensure white text */
+.version-indicator-wrapper,
+.version-indicator,
+.version-indicator * {
+  color: #ffffff !important;
+}

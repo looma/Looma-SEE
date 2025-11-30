@@ -295,7 +295,61 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
             if ((question as any).type === 'reading_comprehension' && (question as any).subSections) {
               // For reading comprehension, grade each sub-section separately
               question.subSections.forEach((section: any) => {
-                if (section.subQuestions) {
+                if (section.type === 'matching' && section.columns && section.correctAnswer) {
+                  // Grade matching questions automatically
+                  const sectionAnswer = userAnswer[section.id]
+                  if (sectionAnswer && typeof sectionAnswer === 'object') {
+                    const correctMatches = section.correctAnswer || []
+                    const userMatches: Array<{ A: string; B: string }> = []
+                    
+                    // Convert user answers to match format
+                    if (section.columns && section.columns.A) {
+                      section.columns.A.forEach((itemA: any) => {
+                        const userMatch = sectionAnswer[itemA.id]
+                        if (userMatch) {
+                          userMatches.push({ A: itemA.id, B: userMatch })
+                        }
+                      })
+                    }
+                    
+                    // Count correct matches
+                    let correctCount = 0
+                    const totalMatches = correctMatches.length
+                    
+                    correctMatches.forEach((correctMatch: { A: string; B: string }) => {
+                      const userMatch = userMatches.find(
+                        (um: { A: string; B: string }) => um.A === correctMatch.A && um.B === correctMatch.B
+                      )
+                      if (userMatch) {
+                        correctCount++
+                      }
+                    })
+                    
+                    // Calculate marks per match
+                    const marksPerMatch = section.marks && totalMatches > 0 
+                      ? Math.round((section.marks / totalMatches) * 10) / 10 
+                      : 1
+                    const score = correctCount * marksPerMatch
+                    const feedback = correctCount === totalMatches
+                      ? `Perfect! All ${totalMatches} matches are correct.`
+                      : correctCount > 0
+                      ? `Partially correct. ${correctCount} out of ${totalMatches} matches are correct.`
+                      : `Incorrect. None of the matches are correct.`
+                    
+                    console.log(`🎯 Auto-grading matching question: ${correctCount}/${totalMatches} correct`)
+                    
+                    gradingPromises.push(Promise.resolve({
+                      id: `${(question as any).id}_${section.id}`,
+                      score: score,
+                      feedback: feedback,
+                      question: section.title || 'Matching question',
+                      studentAnswer: JSON.stringify(userMatches),
+                      group: "English",
+                      questionId: (question as any).id,
+                      sectionId: section.id,
+                    }))
+                  }
+                } else if (section.subQuestions) {
                   section.subQuestions.forEach((subQ: any) => {
                     const sectionAnswer = userAnswer[section.id]
                     if (sectionAnswer && typeof sectionAnswer === 'object') {
@@ -478,45 +532,98 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
                   if (gapAnswer && typeof gapAnswer === 'string' && gapAnswer.trim().length > 0) {
                     const gap = gaps.find((g: any) => g.id === gapId)
                     if (gap) {
-                      gradingPromises.push(
-                        fetch("/api/grade", {
-                          method: "POST",
-                          headers: { "Content-Type": "application/json" },
-                          body: JSON.stringify({
-                            question: `Fill in the blank (${gapId}): ${(question as any).passage}`,
-                            answer: gapAnswer,
-                            marks: (question as any).marks && gaps.length ? Math.round(((question as any).marks / gaps.length) * 10) / 10 : 1,
-                            sampleAnswer: gap.correctAnswer,
-                          }),
-                        })
-                          .then(async (res) => {
-                            const result = await res.json()
-                            if (!res.ok) {
-                              throw new Error(result.error || `HTTP ${res.status}`)
-                            }
-                            return result
+                      const gapMarks = (question as any).marks && gaps.length ? Math.round(((question as any).marks / gaps.length) * 10) / 10 : 1
+                      const trimmedAnswer = gapAnswer.trim()
+                      const correctAnswer = gap.correctAnswer?.trim() || ""
+                      
+                      // First try exact matching (case-insensitive)
+                      const isExactMatch = trimmedAnswer.toLowerCase() === correctAnswer.toLowerCase()
+                      
+                      // Also check for British/American English variants (e.g., "gotten" vs "got")
+                      let isVariantMatch = false
+                      if (!isExactMatch && correctAnswer) {
+                        // Check if answer is a variant (British vs American English)
+                        const normalizedCorrect = correctAnswer.toLowerCase()
+                        const normalizedAnswer = trimmedAnswer.toLowerCase()
+                        
+                        // Check common British/American variants
+                        // Handle "gotten" <-> "got" variants (e.g., "would not have gotten" vs "would not have got")
+                        if (normalizedCorrect.includes("gotten") && !normalizedAnswer.includes("gotten")) {
+                          // Try replacing "gotten" with "got" in correct answer
+                          const correctWithGot = normalizedCorrect.replace(/\bgotten\b/g, "got")
+                          if (correctWithGot === normalizedAnswer) {
+                            isVariantMatch = true
+                          }
+                        } else if (normalizedAnswer.includes("gotten") && !normalizedCorrect.includes("gotten")) {
+                          // Try replacing "gotten" with "got" in student answer
+                          const answerWithGot = normalizedAnswer.replace(/\bgotten\b/g, "got")
+                          if (answerWithGot === normalizedCorrect) {
+                            isVariantMatch = true
+                          }
+                        }
+                      }
+                      
+                      if (isExactMatch || isVariantMatch) {
+                        // Auto-grade exact matches
+                        const score = gapMarks
+                        const feedback = isVariantMatch 
+                          ? "Correct! (British/American English variant accepted)"
+                          : "Correct! Well done."
+                        
+                        console.log(`🎯 Auto-grading cloze test gap ${gapId}: ${isVariantMatch ? 'VARIANT' : 'EXACT'} match`)
+                        
+                        gradingPromises.push(Promise.resolve({
+                          id: `${(question as any).id}_${gapId}`,
+                          score: score,
+                          feedback: feedback,
+                          question: `Fill in the blank (${gapId})`,
+                          studentAnswer: gapAnswer,
+                          group: "English",
+                          questionId: (question as any).id,
+                          gapId: gapId,
+                        }))
+                      } else {
+                        // Use AI grading for non-exact matches (handles paraphrasing, etc.)
+                        gradingPromises.push(
+                          fetch("/api/grade", {
+                            method: "POST",
+                            headers: { "Content-Type": "application/json" },
+                            body: JSON.stringify({
+                              question: `Fill in the blank (${gapId}): ${(question as any).passage}`,
+                              answer: gapAnswer,
+                              marks: gapMarks,
+                              sampleAnswer: gap.correctAnswer,
+                            }),
                           })
-                          .then((result) => ({
-                            id: `${(question as any).id}_${gapId}`,
-                            score: result.score || 0,
-                            feedback: result.feedback || "No feedback available",
-                            question: `Fill in the blank (${gapId})`,
-                            studentAnswer: gapAnswer,
-                            group: "English",
-                            questionId: (question as any).id,
-                            gapId: gapId,
-                          }))
-                          .catch((error) => ({
-                            id: `${(question as any).id}_${gapId}`,
-                            score: 0,
-                            feedback: `AI grading failed: ${error.message || 'Unknown error'}`,
-                            question: `Fill in the blank (${gapId})`,
-                            studentAnswer: gapAnswer,
-                            group: "English",
-                            questionId: (question as any).id,
-                            gapId: gapId,
-                          }))
-                      )
+                            .then(async (res) => {
+                              const result = await res.json()
+                              if (!res.ok) {
+                                throw new Error(result.error || `HTTP ${res.status}`)
+                              }
+                              return result
+                            })
+                            .then((result) => ({
+                              id: `${(question as any).id}_${gapId}`,
+                              score: result.score || 0,
+                              feedback: result.feedback || "No feedback available",
+                              question: `Fill in the blank (${gapId})`,
+                              studentAnswer: gapAnswer,
+                              group: "English",
+                              questionId: (question as any).id,
+                              gapId: gapId,
+                            }))
+                            .catch((error) => ({
+                              id: `${(question as any).id}_${gapId}`,
+                              score: 0,
+                              feedback: `AI grading failed: ${error.message || 'Unknown error'}`,
+                              question: `Fill in the blank (${gapId})`,
+                              studentAnswer: gapAnswer,
+                              group: "English",
+                              questionId: (question as any).id,
+                              gapId: gapId,
+                            }))
+                        )
+                      }
                     }
                   }
                 })

@@ -549,6 +549,13 @@ export function EnglishQuestionRenderer({
           </Card>
         )}
 
+        {/* Instruction about looking back */}
+        <div className="bg-blue-50 border border-blue-200 rounded-lg p-3">
+          <p className="text-sm text-blue-800">
+            <strong>Note:</strong> You may refer back to the passage above while answering the questions below. The grading focuses on understanding the content rather than exact wording.
+          </p>
+        </div>
+
         {/* Sub-questions */}
         {(question as any).subQuestions && renderTrueFalseQuestions((question as any).subQuestions)}
 

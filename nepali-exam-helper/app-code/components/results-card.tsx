@@ -58,6 +58,7 @@ export function ResultsCard({
 }: ResultsCardProps) {
   const { questions } = useQuestions(testId)
   const progress = loadStudentProgress(`${studentId}_${testId}`)
+  const answers = progress?.answers || {}
 
   if (!questions) return <div>Loading...</div>
 
@@ -459,59 +460,44 @@ export function ResultsCard({
                   <Accordion type="single" collapsible className="w-full">
                     {questions.englishQuestions.map((question, index) => {
                       const userAnswer = progress?.answers?.[question.id]
+                      const storedAnswer = answers[question.id]
+                      const questionFeedbacks = (results.englishFeedback || []).filter((f: any) => f.questionId === question.id)
                       
                       // Calculate score for this question using AI feedback if available
-                      let questionScore = 0
-                      let questionFeedback = ""
-                      let hasAIFeedback = false
+                      const questionScore = questionFeedbacks.reduce((sum, f) => sum + (f.score || 0), 0)
+                      const hasAIFeedback = questionFeedbacks.length > 0
                       
-                      if (results.englishFeedback && results.englishFeedback.length > 0) {
-                        // Use AI grading results
-                        const questionFeedbacks = results.englishFeedback.filter(f => f.questionId === question.id)
-                        questionScore = questionFeedbacks.reduce((sum, f) => sum + f.score, 0)
-                        questionFeedback = questionFeedbacks.map(f => f.feedback).join("; ")
-                        hasAIFeedback = questionFeedbacks.length > 0
-                      } else {
-                        // Check if question was answered - handle different question types
-                        let hasAnswer = false
-                        const answer = answers[question.id]
-                        
-                        if (!answer) {
-                          hasAnswer = false
-                        } else if (question.type === 'free_writing') {
-                          // Free writing questions store answer as answers[questionId].content = "text"
-                          hasAnswer = answer.content && typeof answer.content === 'string' && answer.content.trim().length > 0
-                        } else if (typeof answer === 'string') {
-                          hasAnswer = answer.trim().length > 0
-                        } else if (typeof answer === 'object' && !Array.isArray(answer)) {
-                          // Other question types with object answers (cloze test, grammar, reading comprehension)
-                          hasAnswer = Object.values(answer).some((val) => {
+                      // Determine whether the student attempted the question
+                      const hasAnswer = (() => {
+                        const answer = storedAnswer || userAnswer
+                        if (!answer) return false
+                        if (question.type === 'free_writing') {
+                          return !!(answer.content && typeof answer.content === 'string' && answer.content.trim().length > 0)
+                        }
+                        if (typeof answer === 'string') {
+                          return answer.trim().length > 0
+                        }
+                        if (typeof answer === 'object' && !Array.isArray(answer)) {
+                          return Object.values(answer).some((val) => {
                             if (typeof val === 'string') {
                               return val.trim().length > 0
-                            } else if (typeof val === 'object' && val !== null) {
-                              // Handle nested objects (like reading comprehension sub-sections)
-                              return Object.values(val).some((nestedVal) => 
-                                typeof nestedVal === 'string' && nestedVal.trim().length > 0
+                            }
+                            if (typeof val === 'object' && val !== null) {
+                              return Object.values(val).some(
+                                (nestedVal) => typeof nestedVal === 'string' && nestedVal.trim().length > 0,
                               )
                             }
                             return val !== undefined && val !== null && val !== ""
                           })
-                        } else {
-                          hasAnswer = answer !== undefined && answer !== null && answer !== ""
                         }
-                        
-                        if (hasAnswer) {
-                          // Question was answered but no AI feedback - AI grading failed
-                          questionScore = 0
-                          questionFeedback = "AI grading not available"
-                          hasAIFeedback = false
-                        } else {
-                          // Question was not answered
-                          questionScore = 0
-                          questionFeedback = "No answer provided"
-                          hasAIFeedback = false
-                        }
-                      }
+                        return answer !== undefined && answer !== null && answer !== ""
+                      })()
+                      
+                      const fallbackFeedback = !hasAIFeedback
+                        ? hasAnswer
+                          ? "AI grading not available"
+                          : "No answer provided"
+                        : ""
                       
                       const isFullyCorrect = questionScore === question.marks
                       const isPartiallyCorrect = questionScore > 0 && questionScore < question.marks
@@ -548,74 +534,207 @@ export function ResultsCard({
                             </div>
                           </AccordionTrigger>
                           <AccordionContent className="px-4 pb-4">
-                            <div className="space-y-4">
-                              {/* Question description */}
-                              <div className="text-sm text-slate-600 italic mb-3 leading-relaxed">
-                                {question.type === 'reading_comprehension' ? 'Reading Comprehension Question' : 
-                                 question.type === 'grammar' ? 'Grammar Question' :
-                                 question.type === 'free_writing' ? 'Free Writing Question' :
-                                 question.type === 'cloze_test' ? 'Cloze Test Question' : 'English Question'}
-                              </div>
+                            <div className="space-y-6">
+                              {/* Reading Comprehension Passage */}
+                              {question.type === 'reading_comprehension' && question.passage && (
+                                <div className="bg-slate-50 border border-slate-200 rounded-lg p-4">
+                                  <h4 className="font-semibold text-slate-800 mb-2">
+                                    {question.passage.title || 'Reading Passage'}
+                                  </h4>
+                                  {question.passage.author && (
+                                    <p className="text-sm text-slate-600 mb-2">by {question.passage.author}</p>
+                                  )}
+                                  <p className="text-sm text-slate-700 whitespace-pre-line leading-relaxed">
+                                    {question.passage.content}
+                                  </p>
+                                </div>
+                              )}
 
-                              {/* Show Feedback if available */}
-                              {hasAIFeedback && questionFeedback ? (
-                                <div className="space-y-4">
-                                  {/* Feedback Section */}
-                                  <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
-                                    <div className="flex items-start gap-2 mb-2">
-                                      <Lightbulb className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
-                                      <span className="font-medium text-blue-800">Feedback / प्रतिक्रिया:</span>
-                                    </div>
-                                    <p className="text-blue-700 leading-relaxed">{questionFeedback}</p>
-                                  </div>
+                              {/* Handle reading comprehension with sub-sections */}
+                              {question.type === 'reading_comprehension' && question.subSections && userAnswer && typeof userAnswer === 'object' ? (
+                                question.subSections.map((section: any) => {
+                                  const sectionAnswers = userAnswer[section.id]
+                                  if (!sectionAnswers || typeof sectionAnswers !== 'object') return null
+                                  
+                                  const sectionFeedbacks = questionFeedbacks.filter(
+                                    (f: any) => f.sectionId === section.id,
+                                  )
 
-                                  {/* User's Answer Section */}
-                                  {userAnswer && typeof userAnswer === 'object' && !Array.isArray(userAnswer) ? (
-                                    Object.entries(userAnswer).map(([sectionId, sectionAnswers]) => {
-                                      const section = question.subSections?.find(s => s.id === sectionId)
-                                      return (
-                                        <div key={sectionId} className="mb-4">
-                                          <div className="font-semibold text-slate-800 mb-3">Section {sectionId}:</div>
-                                          {typeof sectionAnswers === 'object' && sectionAnswers !== null ? (
-                                            Object.entries(sectionAnswers).map(([subId, answer]) => {
-                                              const subQuestion = section?.subQuestions?.find(sq => sq.id === subId)
-                                              
-                                              return (
-                                                <div key={subId} className="mb-3">
-                                                  <div className="space-y-4">
-                                                    <div className="text-sm text-slate-600 italic mb-3 leading-relaxed">
-                                                      Question ({subId}): {subQuestion?.questionEnglish}
-                                                    </div>
+                                  return (
+                                    <div key={section.id} className="space-y-4">
+                                      <h4 className="text-lg font-semibold text-slate-800 border-b border-slate-300 pb-2">
+                                        Section {section.id}: {section.title}
+                                      </h4>
+                                      
+                                      {section.subQuestions?.map((subQ: any) => {
+                                        const answer = sectionAnswers[subQ.id]
+                                        const feedback = sectionFeedbacks.find((f: any) => f.subQuestionId === subQ.id)
+                                        const subQuestionMarks = subQ.marks || (section.marks ? Math.round((section.marks / section.subQuestions.length) * 10) / 10 : 1)
+                                        const score = feedback?.score || 0
+                                        const isCorrect = score === subQuestionMarks
+                                        const isPartiallyCorrect = score > 0 && score < subQuestionMarks
 
-                                                    {/* User's Answer Section */}
-                                                    <div className="bg-slate-50 border-l-4 border-slate-400 p-3 rounded-r-lg">
-                                                      <p className="font-semibold text-slate-800 mb-2">Your Answer / तपाईंको उत्तर:</p>
-                                                      <p className="text-slate-700 font-medium">{String(answer)}</p>
-                                                    </div>
+                                        return (
+                                          <div key={subQ.id} className="border border-slate-200 rounded-lg p-4 space-y-3">
+                                            {/* Question */}
+                                            <div className="flex items-start justify-between">
+                                              <p className="font-medium text-slate-800 flex-1">
+                                                ({subQ.id}) {subQ.questionEnglish}
+                                              </p>
+                                              <Badge 
+                                                className={`ml-4 flex-shrink-0 ${
+                                                  isCorrect 
+                                                    ? "bg-green-500 text-white" 
+                                                    : isPartiallyCorrect
+                                                    ? "bg-yellow-500 text-white"
+                                                    : "bg-red-500 text-white"
+                                                }`}
+                                              >
+                                                {score}/{subQuestionMarks}
+                                              </Badge>
+                                            </div>
+
+                                            {/* Your Answer */}
+                                            <div className={`p-3 rounded-lg ${
+                                              isCorrect 
+                                                ? "bg-green-50 border-l-4 border-green-500" 
+                                                : isPartiallyCorrect
+                                                ? "bg-yellow-50 border-l-4 border-yellow-500"
+                                                : "bg-red-50 border-l-4 border-red-500"
+                                            }`}>
+                                              <p className="font-semibold text-slate-800 mb-1">Your Answer / तपाईंको उत्तर:</p>
+                                              <p className="text-slate-700 font-medium">{String(answer || 'No answer')}</p>
+                                            </div>
+
+                                            {/* Feedback */}
+                                            {feedback && (
+                                              <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded-r-lg">
+                                                <div className="flex items-start gap-2">
+                                                  <Lightbulb className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                                                  <div className="flex-1">
+                                                    <p className="font-semibold text-blue-800 mb-1">Feedback / प्रतिक्रिया:</p>
+                                                    <p className="text-blue-700">{feedback.feedback}</p>
                                                   </div>
                                                 </div>
-                                              )
-                                            })
-                                          ) : (
-                                            <div className="p-3 rounded-lg bg-slate-50 border-l-4 border-slate-400">
-                                              <p className="font-semibold text-slate-800 mb-1">Your Answer / तपाईंको उत्तर:</p>
-                                              <p className="text-slate-700">{String(sectionAnswers)}</p>
-                                            </div>
-                                          )}
+                                              </div>
+                                            )}
+
+                                            {/* Correct Answer (for true/false questions) */}
+                                            {section.type === 'true_false' && subQ.correctAnswer && !isCorrect && !feedback && (
+                                              <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded-r-lg">
+                                                <p className="font-semibold text-blue-800 mb-1">Correct Answer / सही उत्तर:</p>
+                                                <p className="text-blue-700 font-medium">{subQ.correctAnswer}</p>
+                                              </div>
+                                            )}
+                                          </div>
+                                        )
+                                      })}
+                                    </div>
+                                  )
+                                })
+                              ) : question.subQuestions ? (
+                                // Handle grammar questions with direct sub-questions
+                                question.subQuestions.map((subQ: any) => {
+                                  const answer = userAnswer?.[subQ.id]
+                                        const feedback = questionFeedbacks.find((f: any) => f.subQuestionId === subQ.id)
+                                  const subQuestionMarks = subQ.marks || (question.marks ? Math.round((question.marks / question.subQuestions.length) * 10) / 10 : 1)
+                                  const score = feedback?.score || 0
+                                  const isCorrect = score === subQuestionMarks
+
+                                  return (
+                                    <div key={subQ.id} className="border border-slate-200 rounded-lg p-4 space-y-3">
+                                      <div className="flex items-start justify-between">
+                                        <p className="font-medium text-slate-800 flex-1">
+                                          ({subQ.id}) {subQ.questionEnglish}
+                                        </p>
+                                        <Badge className={`ml-4 ${isCorrect ? "bg-green-500 text-white" : "bg-red-500 text-white"}`}>
+                                          {score}/{subQuestionMarks}
+                                        </Badge>
+                                      </div>
+                                      <div className={`p-3 rounded-lg ${isCorrect ? "bg-green-50 border-l-4 border-green-500" : "bg-red-50 border-l-4 border-red-500"}`}>
+                                        <p className="font-semibold text-slate-800 mb-1">Your Answer / तपाईंको उत्तर:</p>
+                                        <p className="text-slate-700">{String(answer || 'No answer')}</p>
+                                      </div>
+                                      {feedback && (
+                                        <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded-r-lg">
+                                          <p className="font-semibold text-blue-800 mb-1">Feedback / प्रतिक्रिया:</p>
+                                          <p className="text-blue-700">{feedback.feedback}</p>
                                         </div>
-                                      )
-                                    })
-                                  ) : (
-                                    <div className="p-3 rounded-lg bg-slate-50 border-l-4 border-slate-400">
-                                      <p className="font-semibold text-slate-800 mb-1">Your Answer / तपाईंको उत्तर:</p>
-                                      <p className="text-slate-500 italic">No answer provided / कुनै उत्तर प्रदान गरिएको छैन</p>
+                                      )}
+                                    </div>
+                                  )
+                                })
+                              ) : question.type === 'free_writing' ? (
+                                // Handle free writing questions
+                                <div className="space-y-4">
+                                  <div className={`p-4 rounded-lg ${isFullyCorrect ? "bg-green-50 border-l-4 border-green-500" : isPartiallyCorrect ? "bg-yellow-50 border-l-4 border-yellow-500" : "bg-red-50 border-l-4 border-red-500"}`}>
+                                    <p className="font-semibold text-slate-800 mb-2">Your Answer / तपाईंको उत्तर:</p>
+                                    <p className="text-slate-700 whitespace-pre-wrap">{userAnswer?.content || 'No answer provided'}</p>
+                                  </div>
+                                  {(hasAIFeedback || fallbackFeedback) && (
+                                    <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
+                                      <div className="flex items-start gap-2">
+                                        <Lightbulb className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                                        <div className="flex-1">
+                                          <p className="font-semibold text-blue-800 mb-1">Feedback / प्रतिक्रिया:</p>
+                                          <p className="text-blue-700">
+                                            {hasAIFeedback
+                                              ? questionFeedbacks.map((fb) => fb.feedback).join(" ")
+                                              : fallbackFeedback}
+                                          </p>
+                                        </div>
+                                      </div>
                                     </div>
                                   )}
                                 </div>
+                              ) : question.type === 'cloze_test' && question.gaps ? (
+                                // Handle cloze test questions
+                                question.gaps.map((gap: any) => {
+                                  const answer = userAnswer?.[gap.id]
+                                  const feedback = questionFeedbacks.find((f: any) => f.gapId === gap.id)
+                                  const gapMarks = question.marks && question.gaps ? Math.round((question.marks / question.gaps.length) * 10) / 10 : 1
+                                  const score = feedback?.score || 0
+                                  const isCorrect = score === gapMarks
+
+                                  return (
+                                    <div key={gap.id} className="border border-slate-200 rounded-lg p-4 space-y-3">
+                                      <div className="flex items-start justify-between">
+                                        <p className="font-medium text-slate-800">Gap ({gap.id})</p>
+                                        <Badge className={`ml-4 ${isCorrect ? "bg-green-500 text-white" : "bg-red-500 text-white"}`}>
+                                          {score}/{gapMarks}
+                                        </Badge>
+                                      </div>
+                                      <div className={`p-3 rounded-lg ${isCorrect ? "bg-green-50 border-l-4 border-green-500" : "bg-red-50 border-l-4 border-red-500"}`}>
+                                        <p className="font-semibold text-slate-800 mb-1">Your Answer / तपाईंको उत्तर:</p>
+                                        <p className="text-slate-700 font-medium">{String(answer || 'No answer')}</p>
+                                      </div>
+                                      {feedback && (
+                                        <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded-r-lg">
+                                          <p className="font-semibold text-blue-800 mb-1">Feedback / प्रतिक्रिया:</p>
+                                          <p className="text-blue-700">{feedback.feedback}</p>
+                                        </div>
+                                      )}
+                                      {gap.correctAnswer && !isCorrect && (
+                                        <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded-r-lg">
+                                          <p className="font-semibold text-blue-800 mb-1">Correct Answer / सही उत्तर:</p>
+                                          <p className="text-blue-700 font-medium">{gap.correctAnswer}</p>
+                                        </div>
+                                      )}
+                                    </div>
+                                  )
+                                })
                               ) : (
-                                <div className="p-3 rounded-lg bg-slate-50 border-l-4 border-slate-400">
-                                  <p className="font-semibold text-slate-800 mb-1">Your Answer / तपाईंको उत्तर:</p>
-                                  <p className="text-slate-500 italic">No answer provided / कुनै उत्तर दिइएको छैन</p>
+                                <div className="space-y-3">
+                                  <div className="p-3 rounded-lg bg-slate-50 border-l-4 border-slate-400">
+                                    <p className="font-semibold text-slate-800 mb-1">Your Answer / तपाईंको उत्तर:</p>
+                                    <p className="text-slate-500 italic">No answer provided / कुनै उत्तर दिइएको छैन</p>
+                                  </div>
+                                  {!hasAIFeedback && (
+                                    <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded-r-lg">
+                                      <p className="font-semibold text-blue-800 mb-1">Feedback / प्रतिक्रिया:</p>
+                                      <p className="text-blue-700">{fallbackFeedback}</p>
+                                    </div>
+                                  )}
                                 </div>
                               )}
                             </div>
@@ -654,58 +773,6 @@ export function ResultsCard({
                     questions.groupD,
                   )}
                 </>
-              )}
-              
-              {/* English test feedback */}
-              {isEnglishTest && results.feedbackA && results.feedbackA.length > 0 && (
-                <div className="mt-6">
-                  <h3 className="text-lg font-semibold mb-4 text-gray-800">
-                    Feedback / प्रतिक्रिया
-                  </h3>
-                  <div className="space-y-4">
-                    {results.feedbackA.map((feedback: any, index: number) => {
-                      // Find the actual question this feedback refers to
-                      const actualQuestion = questions.englishQuestions.find(q => q.id === feedback.questionId)
-                      const questionNumber = actualQuestion?.questionNumber || (index + 1)
-                      
-                      return (
-                        <div key={feedback.id || index} className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-                          <div className="flex justify-between items-start mb-2">
-                            <h4 className="font-medium text-blue-900">
-                              Question {questionNumber}
-                              {feedback.sectionId && feedback.subQuestionId && (
-                                <span className="text-sm text-blue-700 ml-2">
-                                  ({feedback.sectionId}.{feedback.subQuestionId})
-                                </span>
-                              )}
-                            </h4>
-                            <span className="text-sm font-semibold text-blue-700">
-                              {feedback.score}/{actualQuestion?.marks || 1} marks
-                            </span>
-                          </div>
-                          <div className="space-y-2">
-                            <div>
-                              <p className="text-sm font-medium text-gray-700 mb-1">Question:</p>
-                              <p className="text-sm text-gray-600">{feedback.question}</p>
-                            </div>
-                            <div>
-                              <p className="text-sm font-medium text-gray-700 mb-1">Your Answer:</p>
-                              <p className="text-sm text-gray-600 bg-white p-2 rounded border">
-                                {feedback.studentAnswer}
-                              </p>
-                            </div>
-                            <div>
-                              <p className="text-sm font-medium text-gray-700 mb-1">Feedback:</p>
-                              <p className="text-sm text-gray-600 bg-white p-2 rounded border">
-                                {feedback.feedback}
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      )
-                    })}
-                  </div>
-                </div>
               )}
             </CardContent>
 
