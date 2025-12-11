@@ -29,9 +29,9 @@ function normalizeExtendedJSON(value) {
 async function processTestFile(filePath) {
   try {
     console.log(`ðŸ“„ Processing: ${path.basename(filePath)}`)
-    
+
     const raw = await fs.readFile(filePath, "utf8")
-    
+
     // Try to parse JSON with better error reporting
     let input
     try {
@@ -39,7 +39,7 @@ async function processTestFile(filePath) {
     } catch (parseError) {
       console.error(`   âŒ JSON Parse Error in ${path.basename(filePath)}:`)
       console.error(`   ðŸ“ ${parseError.message}`)
-      
+
       // Try to give more helpful context
       const lines = raw.split('\n')
       const errorMatch = parseError.message.match(/position (\d+)/)
@@ -47,7 +47,7 @@ async function processTestFile(filePath) {
         const position = parseInt(errorMatch[1])
         let currentPos = 0
         let lineNum = 1
-        
+
         for (const line of lines) {
           if (currentPos + line.length >= position) {
             const colNum = position - currentPos + 1
@@ -59,7 +59,7 @@ async function processTestFile(filePath) {
           lineNum++
         }
       }
-      
+
       console.error(`   ðŸ’¡ Common fixes:`)
       console.error(`      - Check for missing commas between array elements`)
       console.error(`      - Check for missing commas between object properties`)
@@ -67,7 +67,7 @@ async function processTestFile(filePath) {
       console.error(`      - Validate JSON syntax at jsonlint.com`)
       return null
     }
-    
+
     if (!Array.isArray(input)) {
       console.warn(`   âš ï¸  Skipping ${path.basename(filePath)} - not an array`)
       return null
@@ -75,7 +75,7 @@ async function processTestFile(filePath) {
 
     const docs = input.map(normalizeExtendedJSON)
     const practiceDoc = docs.find((d) => d.title && d.subject && typeof d._id === "string")
-    const questionsDoc = docs.find((d) => (d.testId && d.questions) || (d.testId && Array.isArray(d.questions)))
+    const questionsDoc = docs.find((d) => (d.testId && d.questions) || (d.testId && Array.isArray(d.questions)) || (d.testId && Array.isArray(d.groups)))
 
     if (!practiceDoc) {
       console.warn(`   âš ï¸  Skipping ${path.basename(filePath)} - missing practice_tests document with string _id`)
@@ -102,39 +102,61 @@ async function processTestFile(filePath) {
     // Handle both English and Science test formats
     let questionCount = 0
     let testType = "unknown"
-    
+
     if (questionsDoc.questions) {
       if (Array.isArray(questionsDoc.questions)) {
         // English format - array of questions
         questionCount = questionsDoc.questions.length
         testType = "english"
-        
+
         // Transform to our expected format
-        questionsDoc.questions = { 
-          englishQuestions: questionsDoc.questions 
+        questionsDoc.questions = {
+          englishQuestions: questionsDoc.questions
         }
-        
+
         console.log(`   ðŸ“š English test detected with ${questionCount} questions`)
       } else if (questionsDoc.questions.groupA || questionsDoc.questions.groupB || questionsDoc.questions.groupC || questionsDoc.questions.groupD) {
         // Science format - grouped questions
         testType = "science"
-        questionCount = 
+        questionCount =
           (questionsDoc.questions.groupA?.length || 0) +
           (questionsDoc.questions.groupB?.length || 0) +
           (questionsDoc.questions.groupC?.length || 0) +
           (questionsDoc.questions.groupD?.length || 0)
-        
+
         console.log(`   ðŸ§ª Science test detected with ${questionCount} questions`)
       } else if (questionsDoc.questions.englishQuestions) {
         // Already in correct English format
         testType = "english"
         questionCount = questionsDoc.questions.englishQuestions.length
-        
+
         console.log(`   ðŸ“š English test (pre-formatted) with ${questionCount} questions`)
+      } else if (questionsDoc.questions.socialStudiesGroups) {
+        // Already in correct Social Studies format
+        testType = "social_studies"
+        questionCount = questionsDoc.questions.socialStudiesGroups.reduce(
+          (count, group) => count + (group.questions?.length || 0), 0
+        )
+
+        console.log(`   🏛️ Social Studies test (pre-formatted) with ${questionCount} questions`)
       } else {
         console.warn(`   âš ï¸  Unknown question format in ${path.basename(filePath)}`)
         console.warn(`   ðŸ” Available keys:`, Object.keys(questionsDoc.questions))
       }
+    } else if (questionsDoc.groups && Array.isArray(questionsDoc.groups)) {
+      // Social Studies format - groups array with metadata
+      testType = "social_studies"
+      questionCount = questionsDoc.groups.reduce(
+        (count, group) => count + (group.questions?.length || 0), 0
+      )
+
+      // Transform to our expected format
+      questionsDoc.questions = {
+        socialStudiesGroups: questionsDoc.groups
+      }
+      delete questionsDoc.groups
+
+      console.log(`   🏛️ Social Studies test detected with ${questionCount} questions`)
     }
 
     console.log(`   ðŸ“Š Found ${questionCount} questions (${testType} test, subject: ${practiceDoc.subject})`)
@@ -152,10 +174,10 @@ async function processTestFile(filePath) {
 async function importAllTests() {
   console.log("ðŸš€ Syncing database with data/ folder")
   console.log("   â€¢ Adding new tests")
-  console.log("   â€¢ Updating existing tests") 
+  console.log("   â€¢ Updating existing tests")
   console.log("   â€¢ Removing tests not in data folder")
-  console.log("=" .repeat(50))
-  
+  console.log("=".repeat(50))
+
   // Check if data folder exists
   try {
     await fs.access("data")
@@ -165,7 +187,7 @@ async function importAllTests() {
     console.log("   â„¹ï¸  No JSON files found. Add your test files to data/ folder.")
     console.log("   ðŸ’¡ You can add multiple files like:")
     console.log("      - see-2081-english-test1.json")
-    console.log("      - see-2081-english-test2.json") 
+    console.log("      - see-2081-english-test2.json")
     console.log("      - see-2080-science-test1.json")
     console.log("      - etc...")
     return
@@ -174,7 +196,7 @@ async function importAllTests() {
   // Get all JSON files from data folder
   const files = await fs.readdir("data")
   const jsonFiles = files.filter(f => f.endsWith('.json'))
-  
+
   if (jsonFiles.length === 0) {
     console.log("   â„¹ï¸  No JSON files found in data/ folder.")
     console.log("   ðŸ’¡ Add your test JSON files to the data/ folder and run this script again.")
@@ -188,7 +210,7 @@ async function importAllTests() {
   // Process all files
   const processedTests = []
   const failedFiles = []
-  
+
   for (const file of jsonFiles) {
     const filePath = path.join("data", file)
     const result = await processTestFile(filePath)
@@ -216,13 +238,13 @@ async function importAllTests() {
   const client = new MongoClient(uri)
   try {
     await client.connect()
-    
+
     let dbName = "see_exam_system"
     try {
       const u = new URL(uri)
       dbName = u.pathname.replace("/", "") || "see_exam_system"
-    } catch {}
-    
+    } catch { }
+
     const db = client.db(dbName)
     const practiceTests = db.collection("practice_tests")
     const questions = db.collection("questions")
@@ -230,18 +252,18 @@ async function importAllTests() {
     // Get all existing tests from database
     const existingTests = await practiceTests.find({}).toArray()
     const existingTestIds = new Set(existingTests.map(t => t._id))
-    
+
     // Get test IDs from data folder
     const dataFolderTestIds = new Set(processedTests.map(t => t.testId))
-    
+
     // Find tests to remove (in database but not in data folder)
     const testsToRemove = existingTests.filter(t => !dataFolderTestIds.has(t._id))
-    
+
     console.log(`\nðŸ“Š Database Analysis:`)
     console.log(`   Existing tests in database: ${existingTests.length}`)
     console.log(`   Tests in data folder: ${processedTests.length}`)
     console.log(`   Tests to remove: ${testsToRemove.length}`)
-    
+
     if (testsToRemove.length > 0) {
       console.log(`\nðŸ—‘ï¸  Removing ${testsToRemove.length} tests no longer in data folder:`)
       for (const test of testsToRemove) {
@@ -256,17 +278,17 @@ async function importAllTests() {
     // Remove tests not in data folder
     if (testsToRemove.length > 0) {
       const testIdsToRemove = testsToRemove.map(t => t._id)
-      
+
       // Remove from practice_tests collection
-      const practiceDeleteResult = await practiceTests.deleteMany({ 
-        _id: { $in: testIdsToRemove } 
+      const practiceDeleteResult = await practiceTests.deleteMany({
+        _id: { $in: testIdsToRemove }
       })
-      
+
       // Remove from questions collection
-      const questionsDeleteResult = await questions.deleteMany({ 
-        testId: { $in: testIdsToRemove } 
+      const questionsDeleteResult = await questions.deleteMany({
+        testId: { $in: testIdsToRemove }
       })
-      
+
       removedCount = practiceDeleteResult.deletedCount
       console.log(`   âœ… Removed ${removedCount} practice tests`)
       console.log(`   âœ… Removed ${questionsDeleteResult.deletedCount} question sets`)
@@ -338,7 +360,7 @@ async function importAllTests() {
     console.log("ðŸ’¡ Next steps:")
     console.log("   - Run 'npm run dev' to test in the app")
     console.log("   - Visit //api/tests to see all tests")
-    
+
     if (failedFiles.length > 0) {
       console.log("   - Fix JSON syntax errors in failed files and re-run sync")
     } else {

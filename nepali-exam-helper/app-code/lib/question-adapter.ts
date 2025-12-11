@@ -1,5 +1,7 @@
-// Enhanced adapter to handle both science and English questions with bilingual support
+// Enhanced adapter to handle science, English, and social studies questions
 import type { EnglishQuestion } from "./english-question-types"
+import type { SocialStudiesGroup, SocialStudiesQuestion } from "./social-studies-types"
+
 interface DatabaseQuestion {
   _id?: string
   questionId?: string
@@ -56,18 +58,39 @@ export interface FreeResponseQuestion {
 }
 
 
-export function adaptDatabaseQuestions(dbQuestions: Record<string, DatabaseQuestion[]>) {
+export function adaptDatabaseQuestions(dbQuestions: Record<string, any>) {
   const adapted = {
     groupA: [] as GroupAQuestion[],
     groupB: [] as FreeResponseQuestion[],
     groupC: [] as FreeResponseQuestion[],
     groupD: [] as FreeResponseQuestion[],
     englishQuestions: [] as EnglishQuestion[],
+    socialStudiesGroups: [] as SocialStudiesGroup[],
+  }
+
+  // Handle Social Studies format if it exists
+  if (dbQuestions.socialStudiesGroups && Array.isArray(dbQuestions.socialStudiesGroups)) {
+    adapted.socialStudiesGroups = dbQuestions.socialStudiesGroups.map((group: any) => ({
+      groupName: group.groupName || '',
+      groupInstruction: group.groupInstruction || '',
+      marksSchema: group.marksSchema || '',
+      questions: (group.questions || []).map((q: any): SocialStudiesQuestion => ({
+        id: q.questionNumber?.toString() || q._id || Math.random().toString(),
+        questionNumber: q.questionNumber || '',
+        type: q.type,
+        marks: q.marks,
+        questionNepali: q.questionNepali || '',
+        answerNepali: q.answerNepali,
+        explanationNepali: q.explanationNepali,
+        alternatives: q.alternatives,
+      }))
+    }))
+    return adapted // Social studies tests don't have other groups
   }
 
   // Handle English questions if they exist
   if (dbQuestions.englishQuestions) {
-    adapted.englishQuestions = dbQuestions.englishQuestions.map((q) => ({
+    adapted.englishQuestions = dbQuestions.englishQuestions.map((q: any) => ({
       id: q.questionNumber?.toString() || q._id || Math.random().toString(),
       questionNumber:
         typeof q.questionNumber === "number" ? q.questionNumber : Number.parseInt(q.questionNumber || "0"),
@@ -88,9 +111,11 @@ export function adaptDatabaseQuestions(dbQuestions: Record<string, DatabaseQuest
 
   // Handle traditional science-style questions
   Object.entries(dbQuestions).forEach(([groupKey, questions]) => {
-    if (groupKey === "englishQuestions") return // Skip, already handled above
+    if (groupKey === "englishQuestions" || groupKey === "socialStudiesGroups") return // Skip, already handled above
 
-    questions.forEach((q) => {
+    if (!Array.isArray(questions)) return
+
+    questions.forEach((q: any) => {
       if (groupKey === "groupA" || groupKey === "A") {
         adapted.groupA.push({
           id: q.id || q.questionNumber?.toString() || q.questionId || q._id || Math.random().toString(),

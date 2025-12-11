@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import type { EnglishQuestion } from "./english-question-types"
+import type { SocialStudiesGroup } from "./social-studies-types"
 
 export interface GroupAQuestion {
   id: string
@@ -28,6 +29,7 @@ interface QuestionsData {
   groupC: FreeResponseQuestion[]
   groupD: FreeResponseQuestion[]
   englishQuestions: EnglishQuestion[]
+  socialStudiesGroups: SocialStudiesGroup[]
 }
 
 export function useQuestions(testId = "see_2080_science") {

@@ -37,6 +37,7 @@ export interface Result {
   feedbackD: GradedFeedback[]
   answersA: Record<string, string>
   englishFeedback?: GradedFeedback[]
+  socialStudiesFeedback?: any[]
 }
 
 interface ResultsCardProps {
@@ -65,17 +66,34 @@ export function ResultsCard({
   // Check if this is an English test
   const isEnglishTest = questions.englishQuestions && questions.englishQuestions.length > 0
 
+  // Check if this is a Social Studies test
+  const isSocialStudiesTest = questions.socialStudiesGroups && questions.socialStudiesGroups.length > 0
+
   let scoreB, scoreC, scoreD, totalScore, maxScoreA, maxScoreB, maxScoreC, maxScoreD, maxTotalScore
 
-  if (isEnglishTest) {
+  if (isSocialStudiesTest) {
+    // Social Studies test format
+    scoreB = 0
+    scoreC = 0
+    scoreD = 0
+    totalScore = results.scoreA || 0
+
+    maxScoreA = questions.socialStudiesGroups.reduce((acc: number, group: any) => {
+      return acc + (group.questions?.reduce((qAcc: number, q: any) => qAcc + q.marks, 0) || 0)
+    }, 0)
+    maxScoreB = 0
+    maxScoreC = 0
+    maxScoreD = 0
+    maxTotalScore = maxScoreA
+  } else if (isEnglishTest) {
     // English test format - use same structure as Science tests
     scoreB = 0
-    scoreC = 0  
+    scoreC = 0
     scoreD = 0
-    
+
     // Use AI grading results from feedbackA (same as Science tests)
     totalScore = results.scoreA || 0
-    
+
     maxScoreA = questions.englishQuestions.reduce((acc, q) => acc + q.marks, 0)
     maxScoreB = 0
     maxScoreC = 0
@@ -153,7 +171,7 @@ export function ResultsCard({
                       ) : (
                         <XCircle className="h-5 w-5 text-red-500" />
                       )}
-                      <Badge 
+                      <Badge
                         variant={isCorrect ? "default" : "destructive"}
                         className={isCorrect ? "bg-green-500 text-white hover:bg-green-600" : ""}
                       >
@@ -169,13 +187,12 @@ export function ResultsCard({
 
                     {/* User's Answer Section with better formatting */}
                     <div
-                      className={`p-3 rounded-lg ${
-                        userAnswer
-                          ? isCorrect
-                            ? "bg-green-50 border-l-4 border-green-500"
-                            : "bg-red-50 border-l-4 border-red-500"
-                          : "bg-slate-50 border-l-4 border-slate-400"
-                      }`}
+                      className={`p-3 rounded-lg ${userAnswer
+                        ? isCorrect
+                          ? "bg-green-50 border-l-4 border-green-500"
+                          : "bg-red-50 border-l-4 border-red-500"
+                        : "bg-slate-50 border-l-4 border-slate-400"
+                        }`}
                     >
                       <p className="font-semibold text-slate-800 mb-2">Your Answer / तपाईंको उत्तर:</p>
                       {userAnswer ? (
@@ -231,15 +248,15 @@ export function ResultsCard({
 
   const renderAttemptHistory = () => {
     if ((attempts || []).length <= 1) return null
-    
+
     // Filter out corrupted attempts (invalid data)
-    const validAttempts = attempts.filter(attempt => 
+    const validAttempts = attempts.filter(attempt =>
       attempt.maxScore > 0 && typeof attempt.totalScore === 'number' && typeof attempt.percentage === 'number'
     )
-    
+
     // Don't show the section if no valid attempts
     if (validAttempts.length <= 1) return null
-    
+
     return (
       <div className="mb-8">
         <div className="flex items-center justify-between p-4 rounded-lg bg-slate-50 mb-4">
@@ -273,17 +290,17 @@ export function ResultsCard({
                     </div>
                     <div className="text-sm text-slate-600">{attempt.percentage}%</div>
                   </div>
-                  <Badge 
-                    variant="secondary" 
+                  <Badge
+                    variant="secondary"
                     className={
                       attempt.grade === "A+" ? "bg-green-100 text-green-800 border-green-200" :
-                      attempt.grade === "A" ? "bg-green-100 text-green-800 border-green-200" :
-                      attempt.grade === "B+" ? "bg-blue-100 text-blue-800 border-blue-200" :
-                      attempt.grade === "B" ? "bg-blue-100 text-blue-800 border-blue-200" :
-                      attempt.grade === "C+" ? "bg-yellow-100 text-yellow-800 border-yellow-200" :
-                      attempt.grade === "C" ? "bg-yellow-100 text-yellow-800 border-yellow-200" :
-                      attempt.grade === "D" ? "bg-orange-100 text-orange-800 border-orange-200" :
-                      "bg-red-100 text-red-800 border-red-200"
+                        attempt.grade === "A" ? "bg-green-100 text-green-800 border-green-200" :
+                          attempt.grade === "B+" ? "bg-blue-100 text-blue-800 border-blue-200" :
+                            attempt.grade === "B" ? "bg-blue-100 text-blue-800 border-blue-200" :
+                              attempt.grade === "C+" ? "bg-yellow-100 text-yellow-800 border-yellow-200" :
+                                attempt.grade === "C" ? "bg-yellow-100 text-yellow-800 border-yellow-200" :
+                                  attempt.grade === "D" ? "bg-orange-100 text-orange-800 border-orange-200" :
+                                    "bg-red-100 text-red-800 border-red-200"
                     }
                   >
                     {attempt.grade}
@@ -338,14 +355,13 @@ export function ResultsCard({
                       {index + 1}.{" "}
                       {question.english.length > 80 ? `${question.english.substring(0, 80)}...` : question.english}
                     </span>
-                    <Badge 
-                      className={`ml-4 flex-shrink-0 ${
-                        fb.score === question.marks 
-                          ? "bg-green-500 text-white hover:bg-green-600" 
-                          : fb.score > 0 
-                            ? "bg-yellow-500 text-white hover:bg-yellow-600" 
-                            : "bg-red-500 text-white hover:bg-red-600"
-                      }`}
+                    <Badge
+                      className={`ml-4 flex-shrink-0 ${fb.score === question.marks
+                        ? "bg-green-500 text-white hover:bg-green-600"
+                        : fb.score > 0
+                          ? "bg-yellow-500 text-white hover:bg-yellow-600"
+                          : "bg-red-500 text-white hover:bg-red-600"
+                        }`}
                     >
                       {fb.score}/{question.marks}
                     </Badge>
@@ -433,8 +449,136 @@ export function ResultsCard({
               </div>
 
               {renderAttemptHistory()}
-              
-              {isEnglishTest ? (
+
+              {isSocialStudiesTest ? (
+                // Social Studies test format
+                <div className="mb-8">
+                  <div className="flex items-center justify-between p-4 rounded-lg bg-amber-50 mb-4">
+                    <h3 className="text-xl font-semibold text-amber-700 flex items-center gap-2">
+                      <BookOpen className="h-5 w-5" />
+                      सामाजिक अध्ययन प्रश्नहरू / Social Studies Questions
+                    </h3>
+                    <Badge variant="secondary">{results.socialStudiesFeedback?.length || 0} प्रश्नहरू</Badge>
+                  </div>
+                  <div className="bg-white p-4 rounded-lg border border-amber-200 mb-4">
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="text-lg font-semibold text-amber-800">
+                        कुल अंक: {totalScore}/{maxTotalScore}
+                      </div>
+                      <div className="text-2xl font-bold text-amber-600">{percentage}%</div>
+                    </div>
+                    <div className="text-sm text-amber-600">
+                      सबै प्रश्नहरू AI द्वारा ग्रेड गरिएको छ। नक्सा प्रश्नहरूलाई म्यानुअल ग्रेडिङ आवश्यक छ।
+                    </div>
+                  </div>
+
+                  {/* Group-based feedback display */}
+                  {questions.socialStudiesGroups.map((group: any, groupIndex: number) => {
+                    const groupFeedback = (results.socialStudiesFeedback || []).filter(
+                      (fb: any) => fb.group === groupIndex
+                    )
+                    if (groupFeedback.length === 0) return null
+
+                    const groupScore = groupFeedback.reduce((sum: number, fb: any) => sum + fb.score, 0)
+                    const groupMaxScore = group.questions?.reduce((sum: number, q: any) => sum + q.marks, 0) || 0
+                    const groupColors = ["bg-blue-50 border-blue-200", "bg-green-50 border-green-200", "bg-purple-50 border-purple-200"]
+                    const groupBgColor = groupColors[groupIndex % groupColors.length]
+
+                    return (
+                      <div key={groupIndex} className="mb-6">
+                        <div className={`flex items-center justify-between p-4 rounded-lg ${groupBgColor} mb-4`}>
+                          <h3 className="text-xl font-semibold text-slate-700">{group.groupName}</h3>
+                          <div className="text-right">
+                            <p className="text-2xl font-bold text-slate-800">{groupScore}/{groupMaxScore}</p>
+                          </div>
+                        </div>
+                        <Accordion type="single" collapsible className="w-full">
+                          {groupFeedback.map((fb: any, idx: number) => {
+                            const question = group.questions?.find((q: any) => q.id === fb.id)
+                            const isFullScore = fb.score === fb.marks
+                            const isPartialScore = fb.score > 0 && fb.score < fb.marks
+
+                            return (
+                              <AccordionItem
+                                value={`social-${groupIndex}-${idx}`}
+                                key={fb.id}
+                                className="border border-slate-200 rounded-lg mb-2 overflow-hidden"
+                              >
+                                <AccordionTrigger className="hover:bg-slate-50 px-4 py-3 text-left">
+                                  <div className="flex justify-between w-full items-center min-h-[48px]">
+                                    <span className="text-left font-medium pr-4 flex-1 leading-tight">
+                                      {idx + 1}. {fb.question?.substring(0, 80) || "प्रश्न"}...
+                                    </span>
+                                    <div className="flex items-center gap-2 flex-shrink-0 ml-4">
+                                      {isFullScore ? (
+                                        <CheckCircle className="h-5 w-5 text-green-500" />
+                                      ) : isPartialScore ? (
+                                        <div className="h-5 w-5 rounded-full border-2 border-yellow-500 bg-yellow-100 flex items-center justify-center">
+                                          <span className="text-xs font-bold text-yellow-700">!</span>
+                                        </div>
+                                      ) : (
+                                        <XCircle className="h-5 w-5 text-red-500" />
+                                      )}
+                                      <Badge
+                                        className={`${isFullScore
+                                            ? "bg-green-500 text-white"
+                                            : isPartialScore
+                                              ? "bg-yellow-500 text-white"
+                                              : "bg-red-500 text-white"
+                                          }`}
+                                      >
+                                        {fb.score}/{fb.marks}
+                                      </Badge>
+                                    </div>
+                                  </div>
+                                </AccordionTrigger>
+                                <AccordionContent className="px-4 pb-4">
+                                  <div className="space-y-4">
+                                    {/* Full question */}
+                                    <div className="text-slate-700 mb-3">{fb.question}</div>
+
+                                    {/* Your Answer */}
+                                    <div
+                                      className={`p-3 rounded-lg ${isFullScore
+                                          ? "bg-green-50 border-l-4 border-green-500"
+                                          : isPartialScore
+                                            ? "bg-yellow-50 border-l-4 border-yellow-500"
+                                            : "bg-red-50 border-l-4 border-red-500"
+                                        }`}
+                                    >
+                                      <p className="font-semibold text-slate-800 mb-1">तपाईंको उत्तर:</p>
+                                      <p className="text-slate-700 whitespace-pre-wrap">{fb.studentAnswer || "कुनै उत्तर प्रदान गरिएको छैन"}</p>
+                                    </div>
+
+                                    {/* Feedback */}
+                                    <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
+                                      <div className="flex items-start gap-3">
+                                        <Lightbulb className="h-5 w-5 text-blue-596 mt-1 flex-shrink-0" />
+                                        <div className="flex-1">
+                                          <p className="font-semibold text-blue-800 mb-1">प्रतिक्रिया:</p>
+                                          <p className="text-blue-700 leading-relaxed">{fb.feedback}</p>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    {/* Sample answer if available */}
+                                    {question?.answerNepali && (
+                                      <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg">
+                                        <p className="font-semibold text-amber-800 mb-1">नमुना उत्तर:</p>
+                                        <p className="text-amber-700 leading-relaxed whitespace-pre-wrap">{question.answerNepali}</p>
+                                      </div>
+                                    )}
+                                  </div>
+                                </AccordionContent>
+                              </AccordionItem>
+                            )
+                          })}
+                        </Accordion>
+                      </div>
+                    )
+                  })}
+                </div>
+              ) : isEnglishTest ? (
                 // English test format
                 <div className="mb-8">
                   <div className="flex items-center justify-between p-4 rounded-lg bg-purple-50 mb-4">
@@ -455,18 +599,18 @@ export function ResultsCard({
                       All English questions are graded together as one section.
                     </div>
                   </div>
-                  
+
                   {/* Show individual English questions with science test styling */}
                   <Accordion type="single" collapsible className="w-full">
                     {questions.englishQuestions.map((question, index) => {
                       const userAnswer = progress?.answers?.[question.id]
                       const storedAnswer = answers[question.id]
                       const questionFeedbacks = (results.englishFeedback || []).filter((f: any) => f.questionId === question.id)
-                      
+
                       // Calculate score for this question using AI feedback if available
                       const questionScore = questionFeedbacks.reduce((sum, f) => sum + (f.score || 0), 0)
                       const hasAIFeedback = questionFeedbacks.length > 0
-                      
+
                       // Determine whether the student attempted the question
                       const hasAnswer = (() => {
                         const answer = storedAnswer || userAnswer
@@ -492,17 +636,17 @@ export function ResultsCard({
                         }
                         return answer !== undefined && answer !== null && answer !== ""
                       })()
-                      
+
                       const fallbackFeedback = !hasAIFeedback
                         ? hasAnswer
                           ? "AI grading not available"
                           : "No answer provided"
                         : ""
-                      
+
                       const isFullyCorrect = questionScore === question.marks
                       const isPartiallyCorrect = questionScore > 0 && questionScore < question.marks
                       const isIncorrect = questionScore === 0
-                      
+
                       return (
                         <AccordionItem
                           value={`english-${index}`}
@@ -524,7 +668,7 @@ export function ResultsCard({
                                 ) : (
                                   <XCircle className="h-5 w-5 text-red-500" />
                                 )}
-                                <Badge 
+                                <Badge
                                   variant={isFullyCorrect ? "default" : isPartiallyCorrect ? "secondary" : "destructive"}
                                   className={isFullyCorrect ? "bg-green-500 text-white hover:bg-green-600" : ""}
                                 >
@@ -555,7 +699,7 @@ export function ResultsCard({
                                 question.subSections.map((section: any) => {
                                   const sectionAnswers = userAnswer[section.id]
                                   if (!sectionAnswers || typeof sectionAnswers !== 'object') return null
-                                  
+
                                   const sectionFeedbacks = questionFeedbacks.filter(
                                     (f: any) => f.sectionId === section.id,
                                   )
@@ -565,7 +709,7 @@ export function ResultsCard({
                                       <h4 className="text-lg font-semibold text-slate-800 border-b border-slate-300 pb-2">
                                         Section {section.id}: {section.title}
                                       </h4>
-                                      
+
                                       {section.subQuestions?.map((subQ: any) => {
                                         const answer = sectionAnswers[subQ.id]
                                         const feedback = sectionFeedbacks.find((f: any) => f.subQuestionId === subQ.id)
@@ -581,27 +725,25 @@ export function ResultsCard({
                                               <p className="font-medium text-slate-800 flex-1">
                                                 ({subQ.id}) {subQ.questionEnglish}
                                               </p>
-                                              <Badge 
-                                                className={`ml-4 flex-shrink-0 ${
-                                                  isCorrect 
-                                                    ? "bg-green-500 text-white" 
-                                                    : isPartiallyCorrect
+                                              <Badge
+                                                className={`ml-4 flex-shrink-0 ${isCorrect
+                                                  ? "bg-green-500 text-white"
+                                                  : isPartiallyCorrect
                                                     ? "bg-yellow-500 text-white"
                                                     : "bg-red-500 text-white"
-                                                }`}
+                                                  }`}
                                               >
                                                 {score}/{subQuestionMarks}
                                               </Badge>
                                             </div>
 
                                             {/* Your Answer */}
-                                            <div className={`p-3 rounded-lg ${
-                                              isCorrect 
-                                                ? "bg-green-50 border-l-4 border-green-500" 
-                                                : isPartiallyCorrect
+                                            <div className={`p-3 rounded-lg ${isCorrect
+                                              ? "bg-green-50 border-l-4 border-green-500"
+                                              : isPartiallyCorrect
                                                 ? "bg-yellow-50 border-l-4 border-yellow-500"
                                                 : "bg-red-50 border-l-4 border-red-500"
-                                            }`}>
+                                              }`}>
                                               <p className="font-semibold text-slate-800 mb-1">Your Answer / तपाईंको उत्तर:</p>
                                               <p className="text-slate-700 font-medium">{String(answer || 'No answer')}</p>
                                             </div>
@@ -636,7 +778,7 @@ export function ResultsCard({
                                 // Handle grammar questions with direct sub-questions
                                 question.subQuestions.map((subQ: any) => {
                                   const answer = userAnswer?.[subQ.id]
-                                        const feedback = questionFeedbacks.find((f: any) => f.subQuestionId === subQ.id)
+                                  const feedback = questionFeedbacks.find((f: any) => f.subQuestionId === subQ.id)
                                   const subQuestionMarks = subQ.marks || (question.marks ? Math.round((question.marks / question.subQuestions.length) * 10) / 10 : 1)
                                   const score = feedback?.score || 0
                                   const isCorrect = score === subQuestionMarks

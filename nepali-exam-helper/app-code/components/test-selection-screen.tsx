@@ -69,7 +69,7 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser }: T
       englishAnswers = Object.keys(progress.answers).filter((key) => {
         const answer = progress.answers[key]
         if (!answer) return false
-        
+
         // Handle different answer structures based on question type
         if (typeof answer === 'string') {
           return answer.trim().length > 0
@@ -84,7 +84,7 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser }: T
               return val.trim().length > 0
             } else if (typeof val === 'object' && val !== null) {
               // Handle nested objects (like reading comprehension sub-sections)
-              return Object.values(val).some((nestedVal) => 
+              return Object.values(val).some((nestedVal) =>
                 typeof nestedVal === 'string' && nestedVal.trim().length > 0
               )
             }
@@ -121,6 +121,7 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser }: T
       case "nepali":
         return "from-orange-500 to-red-600"
       case "social":
+      case "social_studies":
         return "from-amber-500 to-yellow-600"
       default:
         return "from-slate-500 to-gray-600"
@@ -138,6 +139,7 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser }: T
       case "nepali":
         return "🇳🇵"
       case "social":
+      case "social_studies":
         return "🌍"
       default:
         return "📖"
@@ -155,9 +157,10 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser }: T
       case "nepali":
         return "Nepali"
       case "social":
+      case "social_studies":
         return "Social Studies"
       default:
-        return subject?.charAt(0).toUpperCase() + subject?.slice(1) || "General"
+        return subject?.charAt(0).toUpperCase() + subject?.slice(1).replace(/_/g, ' ') || "General"
     }
   }
 
@@ -326,7 +329,7 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser }: T
                   {subject === "mathematics" && "गणित परीक्षाहरू"}
                   {subject === "english" && "अंग्रेजी परीक्षाहरू"}
                   {subject === "nepali" && "नेपाली परीक्षाहरू"}
-                  {subject === "social" && "सामाजिक परीक्षाहरू"}
+                  {(subject === "social" || subject === "social_studies") && "सामाजिक अध्ययन परीक्षाहरू"}
                   {subject === "general" && "सामान्य परीक्षाहरू"}
                 </p>
               </div>
