@@ -1,0 +1,4 @@
+To restart and rebuild docker (to see changes made locally):
+cd C:\Users\porte\OneDrive\Documents\Looma-SEE\nepali-exam-helper\app-code
+docker-compose down
+docker-compose up --build
