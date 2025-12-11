@@ -1,6 +1,7 @@
-// Enhanced adapter to handle science, English, and social studies questions
+// Enhanced adapter to handle science, English, social studies, and Nepali questions
 import type { EnglishQuestion } from "./english-question-types"
 import type { SocialStudiesGroup, SocialStudiesQuestion } from "./social-studies-types"
+import type { NepaliQuestion } from "./nepali-types"
 
 interface DatabaseQuestion {
   _id?: string
@@ -66,6 +67,28 @@ export function adaptDatabaseQuestions(dbQuestions: Record<string, any>) {
     groupD: [] as FreeResponseQuestion[],
     englishQuestions: [] as EnglishQuestion[],
     socialStudiesGroups: [] as SocialStudiesGroup[],
+    nepaliQuestions: [] as NepaliQuestion[],
+  }
+
+  // Handle Nepali questions if they exist
+  if (dbQuestions.nepaliQuestions && Array.isArray(dbQuestions.nepaliQuestions)) {
+    adapted.nepaliQuestions = dbQuestions.nepaliQuestions.map((q: any): NepaliQuestion => ({
+      questionNumber: q.questionNumber || 0,
+      type: q.type,
+      title: q.title || '',
+      marks: q.marks,
+      explanation: q.explanation,
+      columns: q.columns,
+      correctAnswer: q.correctAnswer,
+      passage: q.passage,
+      subQuestions: q.subQuestions,
+      sampleAnswer: q.sampleAnswer,
+      subSections: q.subSections,
+      options: q.options,
+      topics: q.topics,
+      sampleAnswerId: q.sampleAnswerId,
+    }))
+    return adapted // Nepali tests are self-contained
   }
 
   // Handle Social Studies format if it exists

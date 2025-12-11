@@ -8,6 +8,7 @@ import { GroupA } from "./group-a"
 import { FreeResponseGroup } from "./free-response-group"
 import { EnglishQuestionRenderer } from "./english-question-renderer"
 import { SocialStudiesGroupRenderer } from "./social-studies-question-renderer"
+import { NepaliQuestionRenderer } from "./nepali-question-renderer"
 import { useQuestions } from "@/lib/use-questions"
 import { loadStudentProgress, saveStudentProgress, saveAttemptHistory } from "@/lib/storage"
 
@@ -33,6 +34,11 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
     // Check if this is an English test
     if (questions.englishQuestions && questions.englishQuestions.length > 0) {
       return questions.englishQuestions[0].id
+    }
+
+    // Check if this is a Nepali test
+    if (questions.nepaliQuestions && questions.nepaliQuestions.length > 0) {
+      return "nepali_0"
     }
 
     // Check if this is a Social Studies test
@@ -135,6 +141,16 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
     }))
   }
 
+  const handleNepaliAnswerChange = (questionId: string, value: any) => {
+    setAnswers((prev: Record<string, any>) => ({
+      ...prev,
+      nepali: {
+        ...prev.nepali,
+        [questionId]: value,
+      },
+    }))
+  }
+
   const formatSavedTime = (date: Date) => {
     return date.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", hour12: true })
   }
@@ -182,6 +198,25 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
           }
         })
       })
+    } else if (questions.nepaliQuestions && questions.nepaliQuestions.length > 0) {
+      // Nepali test format
+      totalQuestions = questions.nepaliQuestions.length
+      answeredQuestions = questions.nepaliQuestions.filter((q: any) => {
+        const answer = answers.nepali?.[`q${q.questionNumber}`]
+        if (!answer) return false
+        if (typeof answer === 'string') return answer.trim().length > 0
+        if (typeof answer === 'object') {
+          // Check if any nested value has content
+          return Object.values(answer).some((val: any) => {
+            if (typeof val === 'string') return val.trim().length > 0
+            if (typeof val === 'object' && val !== null) {
+              return Object.values(val).some((v: any) => typeof v === 'string' && v.trim().length > 0)
+            }
+            return val !== undefined && val !== null && val !== ''
+          })
+        }
+        return false
+      }).length
     } else {
       // Science test format
       totalQuestions =
@@ -257,6 +292,25 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
           }
         })
       })
+    } else if (questions.nepaliQuestions && questions.nepaliQuestions.length > 0) {
+      // Nepali test format
+      totalQuestions = questions.nepaliQuestions.length
+      incompleteQuestions = questions.nepaliQuestions.filter((q: any) => {
+        const answer = answers.nepali?.[`q${q.questionNumber}`]
+        if (!answer) return true
+        if (typeof answer === 'string') return answer.trim().length === 0
+        if (typeof answer === 'object') {
+          // Check if any nested value has content
+          return !Object.values(answer).some((val: any) => {
+            if (typeof val === 'string') return val.trim().length > 0
+            if (typeof val === 'object' && val !== null) {
+              return Object.values(val).some((v: any) => typeof v === 'string' && v.trim().length > 0)
+            }
+            return val !== undefined && val !== null && val !== ''
+          })
+        }
+        return true
+      }).length
     } else {
       // Science test format
       totalQuestions =
@@ -832,6 +886,297 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
         return
       }
 
+      // Nepali test grading
+      if (isNepaliTest && questions.nepaliQuestions) {
+        console.log("🇳🇵 Grading Nepali test...")
+        const nepaliFeedback: any[] = []
+        const gradingPromises: Promise<any>[] = []
+
+        questions.nepaliQuestions.forEach((question: any, qIndex: number) => {
+          const questionKey = `q${question.questionNumber || qIndex + 1}`
+          const userAnswer = answers.nepali?.[questionKey]
+          const questionTitle = question.title || question.questionNepali || question.questionEnglish || `Question ${qIndex + 1}`
+
+          switch (question.type) {
+            case "matching": {
+              // Auto-grade matching questions
+              // UI stores answers as: { "i": "c", "ii": "a", ... } using itemA.id as keys
+              let score = 0
+              const columns = question.columns?.A || question.columns?.a || []
+              const maxScore = question.marks || columns.length || 5
+              const pointsPerMatch = columns.length > 0 ? maxScore / columns.length : maxScore
+
+              if (userAnswer && columns.length > 0) {
+                // Get correct answers - could be array of {A, B} pairs or on items
+                const correctAnswers = question.correctAnswer || []
+
+                columns.forEach((item: any) => {
+                  const userChoice = userAnswer[item.id]
+                  // Check if correct answer is in correctAnswer array
+                  const correctPair = Array.isArray(correctAnswers)
+                    ? correctAnswers.find((ca: any) => ca.A === item.id)
+                    : null
+                  const expectedAnswer = correctPair?.B || item.correctAnswer
+
+                  if (userChoice && expectedAnswer && userChoice === expectedAnswer) {
+                    score += pointsPerMatch
+                  }
+                })
+              }
+
+              nepaliFeedback.push({
+                id: questionKey,
+                type: question.type,
+                score: Math.round(score * 10) / 10,
+                maxScore: maxScore,
+                feedback: score >= maxScore ? "सबै मिल्यो! (All correct!)" :
+                  score > 0 ? `${Math.round(score)}/${maxScore} सही (correct)` : "केही मिलेन (None correct)",
+                question: questionTitle,
+                studentAnswer: userAnswer,
+              })
+              break
+            }
+
+            case "fill_in_the_blanks":
+            case "fill_in_the_blanks_choices": {
+              // Auto-grade fill in the blanks - UI stores as { "subId": "answer", ... }
+              let score = 0
+              const subQuestions = question.subQuestions || []
+              const maxScore = question.marks || subQuestions.length || 5
+              const pointsPerBlank = subQuestions.length > 0 ? maxScore / subQuestions.length : maxScore
+
+              if (userAnswer && subQuestions.length > 0) {
+                subQuestions.forEach((sub: any) => {
+                  const userVal = userAnswer[sub.id]
+                  if (userVal && sub.correctAnswer) {
+                    if (userVal.toLowerCase().trim() === sub.correctAnswer.toLowerCase().trim()) {
+                      score += pointsPerBlank
+                    }
+                  }
+                })
+              }
+
+              nepaliFeedback.push({
+                id: questionKey,
+                type: question.type,
+                score: Math.round(score * 10) / 10,
+                maxScore: maxScore,
+                feedback: score >= maxScore ? "सबै सही! (All correct!)" :
+                  score > 0 ? `${Math.round(score)}/${maxScore} सही (correct)` : "केही सही छैन (None correct)",
+                question: questionTitle,
+                studentAnswer: userAnswer,
+              })
+              break
+            }
+
+            case "grammar_choice":
+            case "parts_of_speech": {
+              // These are mostly free-response, but if they have subQuestions with correctAnswer, we can auto-grade
+              const subQuestions = question.subQuestions || []
+              const correctWords = Array.isArray(question.correctAnswer) ? question.correctAnswer : []
+
+              // For parts_of_speech with correctAnswer array like [{word: "जो", pos: "सर्वनाम"}, ...]
+              if (question.type === "parts_of_speech" && correctWords.length > 0 && userAnswer) {
+                let score = 0
+                const maxScore = question.marks || correctWords.length || 5
+                const pointsPerWord = correctWords.length > 0 ? maxScore / correctWords.length : maxScore
+
+                correctWords.forEach((pair: any) => {
+                  const userVal = userAnswer[pair.word]
+                  if (userVal && pair.pos) {
+                    if (userVal.toLowerCase().trim() === pair.pos.toLowerCase().trim()) {
+                      score += pointsPerWord
+                    }
+                  }
+                })
+
+                nepaliFeedback.push({
+                  id: questionKey,
+                  type: question.type,
+                  score: Math.round(score * 10) / 10,
+                  maxScore: maxScore,
+                  feedback: score >= maxScore ? "सबै सही! (All correct!)" :
+                    score > 0 ? `${Math.round(score)}/${maxScore} सही (correct)` : "केही सही छैन (None correct)",
+                  question: questionTitle,
+                  studentAnswer: userAnswer,
+                })
+              } else {
+                // Fall back to AI grading for complex grammar questions
+                const marks = question.marks || 5
+                const sampleAnswer = question.sampleAnswer || ""
+
+                let combinedAnswer = ""
+                if (typeof userAnswer === "string") {
+                  combinedAnswer = userAnswer
+                } else if (typeof userAnswer === "object" && userAnswer) {
+                  combinedAnswer = Object.entries(userAnswer)
+                    .filter(([key]) => !key.includes("selected"))
+                    .map(([key, val]) => typeof val === "string" ? `${key}: ${val}` : "")
+                    .filter(val => val.trim())
+                    .join("\n")
+                }
+
+                if (combinedAnswer.trim()) {
+                  gradingPromises.push(
+                    fetch("/api/grade", {
+                      method: "POST",
+                      headers: { "Content-Type": "application/json" },
+                      body: JSON.stringify({
+                        question: questionTitle,
+                        answer: combinedAnswer,
+                        marks: marks,
+                        sampleAnswer: sampleAnswer,
+                      }),
+                    })
+                      .then((res) => res.json())
+                      .then((result) => ({
+                        id: questionKey,
+                        type: question.type,
+                        score: result.score || 0,
+                        maxScore: marks,
+                        feedback: result.feedback || "प्रतिक्रिया उपलब्ध छैन",
+                        question: questionTitle,
+                        studentAnswer: combinedAnswer,
+                      }))
+                      .catch(() => ({
+                        id: questionKey,
+                        type: question.type,
+                        score: 0,
+                        maxScore: marks,
+                        feedback: "AI ग्रेडिङ असफल भयो",
+                        question: questionTitle,
+                        studentAnswer: combinedAnswer,
+                      }))
+                  )
+                } else {
+                  nepaliFeedback.push({
+                    id: questionKey,
+                    type: question.type,
+                    score: 0,
+                    maxScore: marks,
+                    feedback: "कुनै उत्तर प्रदान गरिएको छैन",
+                    question: questionTitle,
+                    studentAnswer: "",
+                  })
+                }
+              }
+              break
+            }
+
+            default: {
+              // AI grade all other question types (free response, essay, etc.)
+              const marks = question.marks || 5
+              const sampleAnswer = question.sampleAnswer || question.modelAnswer || ""
+
+              // Collect all sub-answers into a single response string for AI grading
+              let combinedAnswer = ""
+              if (typeof userAnswer === "string") {
+                combinedAnswer = userAnswer
+              } else if (typeof userAnswer === "object" && userAnswer) {
+                // Filter out selection keys and format answer values
+                combinedAnswer = Object.entries(userAnswer)
+                  .filter(([key]) => !key.includes("selected"))
+                  .map(([key, val]) => typeof val === "string" ? val : JSON.stringify(val))
+                  .filter(val => val && val.trim())
+                  .join("\n")
+              }
+
+              if (combinedAnswer.trim()) {
+                gradingPromises.push(
+                  fetch("/api/grade", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+                      question: questionTitle,
+                      answer: combinedAnswer,
+                      marks: marks,
+                      sampleAnswer: sampleAnswer,
+                    }),
+                  })
+                    .then((res) => res.json())
+                    .then((result) => ({
+                      id: questionKey,
+                      type: question.type,
+                      score: result.score || 0,
+                      maxScore: marks,
+                      feedback: result.feedback || "प्रतिक्रिया उपलब्ध छैन (No feedback available)",
+                      question: questionTitle,
+                      studentAnswer: combinedAnswer,
+                      sampleAnswer: sampleAnswer,
+                    }))
+                    .catch(() => ({
+                      id: questionKey,
+                      type: question.type,
+                      score: 0,
+                      maxScore: marks,
+                      feedback: "AI ग्रेडिङ असफल भयो (AI grading failed)",
+                      question: questionTitle,
+                      studentAnswer: combinedAnswer,
+                      sampleAnswer: sampleAnswer,
+                    }))
+                )
+              } else {
+                nepaliFeedback.push({
+                  id: questionKey,
+                  type: question.type,
+                  score: 0,
+                  maxScore: marks,
+                  feedback: "कुनै उत्तर प्रदान गरिएको छैन (No answer provided)",
+                  question: questionTitle,
+                  studentAnswer: "",
+                  sampleAnswer: sampleAnswer,
+                })
+              }
+              break
+            }
+          }
+        })
+
+        // Wait for AI grading to complete
+        if (gradingPromises.length > 0) {
+          console.log(`⏳ Waiting for ${gradingPromises.length} Nepali AI grading requests...`)
+          const gradingResults = await Promise.all(gradingPromises)
+          nepaliFeedback.push(...gradingResults)
+        }
+
+        // Sort feedback by question ID
+        nepaliFeedback.sort((a, b) => {
+          const numA = parseInt(a.id.replace("q", ""))
+          const numB = parseInt(b.id.replace("q", ""))
+          return numA - numB
+        })
+
+        // Calculate scores
+        const totalScore = nepaliFeedback.reduce((sum: number, f: any) => sum + (f.score || 0), 0)
+        const maxScore = nepaliFeedback.reduce((sum: number, f: any) => sum + (f.maxScore || 0), 0)
+        const percentage = maxScore > 0 ? Math.round((totalScore / maxScore) * 100) : 0
+        const grade = percentage >= 90 ? "A+" : percentage >= 80 ? "A" : percentage >= 70 ? "B+" : percentage >= 60 ? "B" : percentage >= 50 ? "C+" : percentage >= 40 ? "C" : percentage >= 32 ? "D" : "E"
+
+        // Create results object for Nepali tests
+        results.nepaliFeedback = nepaliFeedback
+        results.scoreA = totalScore
+
+        // Save attempt history
+        try {
+          saveAttemptHistory(studentId, testId, {
+            scoreA: totalScore,
+            scoreB: 0,
+            scoreC: 0,
+            scoreD: 0,
+            totalScore,
+            maxScore,
+            percentage,
+            grade,
+          })
+        } catch (error) {
+          console.error("Error saving attempt history:", error)
+        }
+
+        console.log("✅ Nepali grading completed!")
+        onShowResults(results)
+        return
+      }
+
       // Science test grading (existing logic)
       // Grade Group A (Multiple Choice) - instant scoring
       if (questions.groupA && questions.groupA.length > 0) {
@@ -1138,9 +1483,11 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
 
   const isEnglishTest = questions.englishQuestions && questions.englishQuestions.length > 0
   const isSocialStudiesTest = questions.socialStudiesGroups && questions.socialStudiesGroups.length > 0
+  const isNepaliTest = questions.nepaliQuestions && questions.nepaliQuestions.length > 0
   const isEmpty =
     !isEnglishTest &&
     !isSocialStudiesTest &&
+    !isNepaliTest &&
     questions.groupA.length === 0 &&
     questions.groupB.length === 0 &&
     questions.groupC.length === 0 &&
@@ -1238,7 +1585,7 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
             onClick={handleSubmit}
             disabled={isSubmitting}
             size="lg"
-            className="bg-gradient-to-r from-yellow-600 to-amber-600 text-white px-6 sm:px-8 py-4 sm:py-3 rounded-xl disabled:opacity-50 w-full sm:w-auto min-h-[56px] text-sm sm:text-base"
+            className="bg-slate-800 hover:bg-slate-900 !text-white px-6 sm:px-8 py-4 sm:py-3 rounded-xl disabled:opacity-50 w-full sm:w-auto min-h-[56px] text-sm sm:text-base"
           >
             {isSubmitting ? (
               <>
@@ -1307,6 +1654,129 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
                       </>
                     ) : (
                       "Submit Anyway"
+                    )}
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+    )
+  }
+
+  // Nepali test interface
+  if (isNepaliTest) {
+    const totalQuestions = questions.nepaliQuestions.length
+    const answeredQuestions = questions.nepaliQuestions.filter((q: any) => {
+      const answer = answers.nepali?.[`q${q.questionNumber}`]
+      if (!answer) return false
+      if (typeof answer === 'string') return answer.trim().length > 0
+      if (typeof answer === 'object') {
+        return Object.values(answer).some((val: any) => {
+          if (typeof val === 'string') return val.trim().length > 0
+          if (typeof val === 'object' && val !== null) {
+            return Object.values(val).some((v: any) => typeof v === 'string' && v.trim().length > 0)
+          }
+          return val !== undefined && val !== null && val !== ''
+        })
+      }
+      return false
+    }).length
+
+    return (
+      <div className="px-3 sm:px-0">
+        {/* Progress Header */}
+        <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4 sm:p-6 shadow-lg border border-white/20 mb-4 sm:mb-6">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-3 sm:gap-0">
+            <div className="flex items-center gap-2">
+              <h3 className="font-semibold text-slate-800 text-sm sm:text-base">नेपाली परीक्षा प्रगति</h3>
+              <span className="text-xs text-slate-600">{calculateOverallProgress()}% पूर्ण</span>
+            </div>
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
+              {lastSaved && (
+                <div className="flex items-center gap-1 text-xs text-green-600">
+                  <Save className="h-3 w-3" />
+                  <span>सुरक्षित {formatSavedTime(lastSaved)}</span>
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* Overall Progress Bar */}
+          <div className="w-full bg-slate-200 rounded-full h-3 overflow-hidden">
+            <div
+              className="h-full bg-amber-500 transition-all duration-500 ease-out"
+              style={{ width: `${calculateOverallProgress()}%` }}
+            />
+          </div>
+          <div className="flex justify-between items-center mt-2 text-xs text-slate-600">
+            <span>{answeredQuestions} / {totalQuestions} प्रश्नहरू उत्तर दिइएको</span>
+            <span className="font-medium">{calculateOverallProgress()}%</span>
+          </div>
+        </div>
+
+        {/* Questions */}
+        <div className="space-y-6">
+          {questions.nepaliQuestions.map((question: any, index: number) => (
+            <NepaliQuestionRenderer
+              key={question.questionNumber}
+              question={question}
+              answer={answers.nepali?.[`q${question.questionNumber}`]}
+              onAnswerChange={handleNepaliAnswerChange}
+              questionIndex={index}
+            />
+          ))}
+        </div>
+
+        {/* Submit Button */}
+        <div className="mt-6 sm:mt-8 flex justify-center px-3 sm:px-0">
+          <Button
+            onClick={handleSubmit}
+            disabled={isSubmitting}
+            size="lg"
+            className="bg-slate-800 hover:bg-slate-900 !text-white px-6 sm:px-8 py-4 sm:py-3 rounded-xl disabled:opacity-50 w-full sm:w-auto min-h-[56px] text-sm sm:text-base"
+          >
+            {isSubmitting ? (
+              <>
+                <Loader2 className="mr-2 h-4 w-4 sm:h-5 sm:w-5 animate-spin" /> पेश गर्दै...
+              </>
+            ) : (
+              <>
+                <Trophy className="mr-2 h-4 w-4 sm:h-5 sm:w-5" /> परीक्षा पेश गर्नुहोस् ({answeredQuestions}/{totalQuestions})
+              </>
+            )}
+          </Button>
+        </div>
+
+        {/* Submit Warning Dialog */}
+        {showSubmitWarning && (
+          <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+            <div className="bg-white rounded-xl p-6 max-w-md w-full shadow-2xl">
+              <div className="text-center">
+                <Trophy className="h-12 w-12 text-amber-500 mx-auto mb-4" />
+                <h3 className="text-xl font-bold text-slate-800 mb-2">अपूर्ण परीक्षा</h3>
+                <p className="text-slate-600 mb-4">
+                  तपाईंले {getIncompleteQuestions().incomplete} प्रश्नहरू उत्तर दिनुभएको छैन ({getIncompleteQuestions().total} मध्ये)।
+                </p>
+                <p className="text-sm text-slate-500 mb-6">
+                  के तपाईं अहिले आफ्नो परीक्षा पेश गर्न चाहनुहुन्छ?
+                </p>
+                <div className="flex gap-3">
+                  <Button onClick={() => setShowSubmitWarning(false)} variant="outline" className="flex-1">
+                    फिर्ता जानुहोस्
+                  </Button>
+                  <Button
+                    onClick={submitTest}
+                    disabled={isSubmitting}
+                    className="flex-1 bg-amber-600 hover:bg-amber-700"
+                  >
+                    {isSubmitting ? (
+                      <>
+                        <Loader2 className="mr-2 h-4 w-4 animate-spin" /> पेश गर्दै...
+                      </>
+                    ) : (
+                      "पेश गर्नुहोस्"
                     )}
                   </Button>
                 </div>
@@ -1428,7 +1898,7 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
             onClick={handleSubmit}
             disabled={isSubmitting}
             size="lg"
-            className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 sm:px-8 py-4 sm:py-3 rounded-xl disabled:opacity-50 w-full sm:w-auto min-h-[56px] text-sm sm:text-base"
+            className="bg-slate-800 hover:bg-slate-900 !text-white px-6 sm:px-8 py-4 sm:py-3 rounded-xl disabled:opacity-50 w-full sm:w-auto min-h-[56px] text-sm sm:text-base"
           >
             {isSubmitting ? (
               <>
@@ -1603,7 +2073,7 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
           onClick={handleSubmit}
           disabled={isSubmitting}
           size="lg"
-          className="bg-gradient-to-r from-yellow-600 to-amber-600 text-white px-6 sm:px-8 py-4 sm:py-3 rounded-xl disabled:opacity-50 w-full sm:w-auto min-h-[56px] text-sm sm:text-base"
+          className="bg-slate-800 hover:bg-slate-900 !text-white px-6 sm:px-8 py-4 sm:py-3 rounded-xl disabled:opacity-50 w-full sm:w-auto min-h-[56px] text-sm sm:text-base"
         >
           {isSubmitting ? (
             <>

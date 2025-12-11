@@ -105,16 +105,38 @@ async function processTestFile(filePath) {
 
     if (questionsDoc.questions) {
       if (Array.isArray(questionsDoc.questions)) {
-        // English format - array of questions
-        questionCount = questionsDoc.questions.length
-        testType = "english"
+        // Check subject to determine test type
+        const subject = practiceDoc.subject?.toLowerCase()
 
-        // Transform to our expected format
-        questionsDoc.questions = {
-          englishQuestions: questionsDoc.questions
+        if (subject === "nepali") {
+          // Nepali format - array of questions with varied types
+          questionCount = questionsDoc.questions.length
+          testType = "nepali"
+
+          // Transform to our expected format
+          questionsDoc.questions = {
+            nepaliQuestions: questionsDoc.questions
+          }
+
+          console.log(`   🇳🇵 Nepali test detected with ${questionCount} questions`)
+        } else {
+          // English format - array of questions
+          questionCount = questionsDoc.questions.length
+          testType = "english"
+
+          // Transform to our expected format
+          questionsDoc.questions = {
+            englishQuestions: questionsDoc.questions
+          }
+
+          console.log(`   ðŸ“š English test detected with ${questionCount} questions`)
         }
+      } else if (questionsDoc.questions.nepaliQuestions) {
+        // Already in correct Nepali format
+        testType = "nepali"
+        questionCount = questionsDoc.questions.nepaliQuestions.length
 
-        console.log(`   ðŸ“š English test detected with ${questionCount} questions`)
+        console.log(`   🇳🇵 Nepali test (pre-formatted) with ${questionCount} questions`)
       } else if (questionsDoc.questions.groupA || questionsDoc.questions.groupB || questionsDoc.questions.groupC || questionsDoc.questions.groupD) {
         // Science format - grouped questions
         testType = "science"

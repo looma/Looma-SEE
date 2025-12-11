@@ -38,6 +38,7 @@ export interface Result {
   answersA: Record<string, string>
   englishFeedback?: GradedFeedback[]
   socialStudiesFeedback?: any[]
+  nepaliFeedback?: any[]
 }
 
 interface ResultsCardProps {
@@ -69,9 +70,25 @@ export function ResultsCard({
   // Check if this is a Social Studies test
   const isSocialStudiesTest = questions.socialStudiesGroups && questions.socialStudiesGroups.length > 0
 
+  // Check if this is a Nepali test
+  const isNepaliTest = questions.nepaliQuestions && questions.nepaliQuestions.length > 0
+
   let scoreB, scoreC, scoreD, totalScore, maxScoreA, maxScoreB, maxScoreC, maxScoreD, maxTotalScore
 
-  if (isSocialStudiesTest) {
+  if (isNepaliTest) {
+    // Nepali test format
+    scoreB = 0
+    scoreC = 0
+    scoreD = 0
+    totalScore = results.nepaliFeedback?.reduce((sum: number, f: any) => sum + (f.score || 0), 0) || results.scoreA || 0
+
+    maxScoreA = results.nepaliFeedback?.reduce((sum: number, f: any) => sum + (f.maxScore || 0), 0) ||
+      questions.nepaliQuestions.reduce((acc: number, q: any) => acc + (q.marks || 5), 0)
+    maxScoreB = 0
+    maxScoreC = 0
+    maxScoreD = 0
+    maxTotalScore = maxScoreA
+  } else if (isSocialStudiesTest) {
     // Social Studies test format
     scoreB = 0
     scoreC = 0
@@ -374,7 +391,14 @@ export function ResultsCard({
                       <p className="text-slate-600">
                         <span className="font-semibold text-slate-800">Your Answer / तपाईंको उत्तर:</span>
                       </p>
-                      <p className="mt-1 text-slate-700 whitespace-pre-wrap break-words">{fb.studentAnswer}</p>
+                      <p className="mt-1 text-slate-700 whitespace-pre-wrap break-words">
+                        {typeof fb.studentAnswer === "object"
+                          ? Object.entries(fb.studentAnswer as Record<string, string>)
+                            .filter(([key]) => !key.startsWith("selected"))
+                            .map(([key, value]) => `${key} → ${value}`)
+                            .join("\n") || "No answer provided"
+                          : fb.studentAnswer || "No answer provided"}
+                      </p>
                     </div>
                     <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
                       <div className="flex items-start gap-3">
@@ -521,10 +545,10 @@ export function ResultsCard({
                                       )}
                                       <Badge
                                         className={`${isFullScore
-                                            ? "bg-green-500 text-white"
-                                            : isPartialScore
-                                              ? "bg-yellow-500 text-white"
-                                              : "bg-red-500 text-white"
+                                          ? "bg-green-500 text-white"
+                                          : isPartialScore
+                                            ? "bg-yellow-500 text-white"
+                                            : "bg-red-500 text-white"
                                           }`}
                                       >
                                         {fb.score}/{fb.marks}
@@ -535,19 +559,32 @@ export function ResultsCard({
                                 <AccordionContent className="px-4 pb-4">
                                   <div className="space-y-4">
                                     {/* Full question */}
-                                    <div className="text-slate-700 mb-3">{fb.question}</div>
+                                    <div className="text-slate-700 mb-3">
+                                      {typeof fb.question === "object"
+                                        ? Object.entries(fb.question as Record<string, string>)
+                                          .map(([key, value]) => `${key}: ${value}`)
+                                          .join("\n")
+                                        : fb.question || "प्रश्न"}
+                                    </div>
 
                                     {/* Your Answer */}
                                     <div
                                       className={`p-3 rounded-lg ${isFullScore
-                                          ? "bg-green-50 border-l-4 border-green-500"
-                                          : isPartialScore
-                                            ? "bg-yellow-50 border-l-4 border-yellow-500"
-                                            : "bg-red-50 border-l-4 border-red-500"
+                                        ? "bg-green-50 border-l-4 border-green-500"
+                                        : isPartialScore
+                                          ? "bg-yellow-50 border-l-4 border-yellow-500"
+                                          : "bg-red-50 border-l-4 border-red-500"
                                         }`}
                                     >
                                       <p className="font-semibold text-slate-800 mb-1">तपाईंको उत्तर:</p>
-                                      <p className="text-slate-700 whitespace-pre-wrap">{fb.studentAnswer || "कुनै उत्तर प्रदान गरिएको छैन"}</p>
+                                      <p className="text-slate-700 whitespace-pre-wrap">
+                                        {typeof fb.studentAnswer === "object"
+                                          ? Object.entries(fb.studentAnswer as Record<string, string>)
+                                            .filter(([key]) => !key.startsWith("selected"))
+                                            .map(([key, value]) => `${key} → ${value}`)
+                                            .join("\n") || "कुनै उत्तर प्रदान गरिएको छैन"
+                                          : fb.studentAnswer || "कुनै उत्तर प्रदान गरिएको छैन"}
+                                      </p>
                                     </div>
 
                                     {/* Feedback */}
@@ -577,6 +614,166 @@ export function ResultsCard({
                       </div>
                     )
                   })}
+                </div>
+              ) : isNepaliTest ? (
+                // Nepali test format
+                <div className="mb-8">
+                  <div className="flex items-center justify-between p-4 rounded-lg bg-orange-50 mb-4">
+                    <h3 className="text-xl font-semibold text-orange-700 flex items-center gap-2">
+                      <BookOpen className="h-5 w-5" />
+                      नेपाली परीक्षा नतिजा / Nepali Test Results
+                    </h3>
+                    <Badge variant="secondary">{questions.nepaliQuestions.length} प्रश्नहरू</Badge>
+                  </div>
+                  <div className="bg-white p-4 rounded-lg border border-orange-200 mb-4">
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="text-lg font-semibold text-orange-800">
+                        कुल अंक: {totalScore}/{maxTotalScore}
+                      </div>
+                      <div className="text-2xl font-bold text-orange-600">{percentage}%</div>
+                    </div>
+                    <div className="text-sm text-orange-600">
+                      सबै प्रश्नहरू AI द्वारा ग्रेड गरिएको छ। केही प्रश्नहरू स्वत: ग्रेड गरिएको छ।
+                    </div>
+                  </div>
+
+                  {/* Nepali question feedback */}
+                  <Accordion type="single" collapsible className="w-full">
+                    {(results.nepaliFeedback || []).map((fb: any, idx: number) => {
+                      const isFullScore = fb.score >= fb.maxScore
+                      const isPartialScore = fb.score > 0 && fb.score < fb.maxScore
+
+                      // Find the original question for context
+                      const originalQuestion = questions.nepaliQuestions.find(
+                        (q: any) => `q${q.questionNumber || idx + 1}` === fb.id
+                      )
+
+                      // Get question type display name
+                      const getTypeDisplayName = (type: string) => {
+                        const typeNames: Record<string, string> = {
+                          matching: "मिलान",
+                          fill_in_the_blanks: "खाली ठाउँ भर्नुहोस्",
+                          fill_in_the_blanks_choices: "खाली ठाउँ भर्नुहोस्",
+                          short_answer: "छोटो उत्तर",
+                          spelling_correction: "हिज्जे सुधार",
+                          parts_of_speech: "शब्द भेद",
+                          parts_of_speech_choices: "शब्द भेद",
+                          word_formation: "शब्द निर्माण",
+                          tense_change: "काल परिवर्तन",
+                          grammar_choice: "व्याकरण विकल्प",
+                          grammar_choices: "व्याकरण",
+                          sentence_transformation: "वाक्य रूपान्तरण",
+                          reading_comprehension: "पढाइ बुझाइ",
+                          reading_comprehension_grammar: "व्याकरण पढाइ बुझाइ",
+                          reading_comprehension_short: "छोटो पढाइ बुझाइ",
+                          reading_comprehension_long: "लामो पढाइ बुझाइ",
+                          unseen_passage: "अपठित गद्यांश",
+                          free_writing: "स्वतन्त्र लेखन",
+                          free_writing_choice: "स्वतन्त्र लेखन विकल्प",
+                          functional_writing: "कार्यात्मक लेखन",
+                          functional_writing_choice: "कार्यात्मक लेखन विकल्प",
+                          note_taking: "टिप्पणी लेखन",
+                          summarization: "सारांश",
+                          literature_short_answer: "साहित्य छोटो उत्तर",
+                          literature_argumentative: "साहित्य तर्कपूर्ण",
+                          literature_explanation: "साहित्य व्याख्या",
+                          literature_critical_analysis_choice: "समीक्षात्मक विश्लेषण",
+                          literature_question: "साहित्य",
+                          poem_question: "कविता",
+                          essay: "निबन्ध",
+                        }
+                        return typeNames[type] || type
+                      }
+
+                      return (
+                        <AccordionItem
+                          value={`nepali-${idx}`}
+                          key={fb.id}
+                          className="border border-slate-200 rounded-lg mb-2 overflow-hidden"
+                        >
+                          <AccordionTrigger className="hover:bg-slate-50 px-4 py-3 text-left">
+                            <div className="flex justify-between w-full items-center min-h-[48px]">
+                              <span className="text-left font-medium pr-4 flex-1 leading-tight">
+                                {idx + 1}. {fb.question?.substring(0, 80) || "प्रश्न"}...
+                                <Badge variant="outline" className="ml-2 text-xs">{getTypeDisplayName(fb.type)}</Badge>
+                              </span>
+                              <div className="flex items-center gap-2 flex-shrink-0 ml-4">
+                                {isFullScore ? (
+                                  <CheckCircle className="h-5 w-5 text-green-500" />
+                                ) : isPartialScore ? (
+                                  <div className="h-5 w-5 rounded-full border-2 border-yellow-500 bg-yellow-100 flex items-center justify-center">
+                                    <span className="text-xs font-bold text-yellow-700">!</span>
+                                  </div>
+                                ) : (
+                                  <XCircle className="h-5 w-5 text-red-500" />
+                                )}
+                                <Badge
+                                  variant={isFullScore ? "default" : isPartialScore ? "secondary" : "destructive"}
+                                  className={`min-w-[60px] text-center ${isFullScore
+                                    ? "bg-green-500 hover:bg-green-600"
+                                    : isPartialScore
+                                      ? "bg-yellow-500 text-yellow-900 hover:bg-yellow-600"
+                                      : ""
+                                    }`}
+                                >
+                                  {fb.score}/{fb.maxScore}
+                                </Badge>
+                              </div>
+                            </div>
+                          </AccordionTrigger>
+                          <AccordionContent className="px-4 pb-4">
+                            <div className="space-y-4">
+                              {/* Question */}
+                              <div className="bg-slate-50 p-4 rounded-lg">
+                                <p className="font-semibold text-slate-700 mb-2">प्रश्न:</p>
+                                <p className="text-slate-700 whitespace-pre-wrap">
+                                  {typeof fb.question === "object"
+                                    ? Object.entries(fb.question as Record<string, string>)
+                                      .map(([key, value]) => `${key}: ${value}`)
+                                      .join("\n")
+                                    : fb.question || "प्रश्न"}
+                                </p>
+                              </div>
+
+                              {/* Student Answer */}
+                              <div className="bg-slate-50 p-4 rounded-lg">
+                                <p className="font-semibold text-slate-700 mb-2">तपाईंको उत्तर:</p>
+                                <p className="text-slate-700 whitespace-pre-wrap">
+                                  {typeof fb.studentAnswer === "object"
+                                    ? Object.entries(fb.studentAnswer as Record<string, string>)
+                                      .filter(([key]) => !key.startsWith("selected"))
+                                      .map(([key, value]) => `${key} → ${value}`)
+                                      .join("\n") || "कुनै उत्तर प्रदान गरिएको छैन"
+                                    : fb.studentAnswer || "कुनै उत्तर प्रदान गरिएको छैन"}
+                                </p>
+                              </div>
+
+                              {/* Feedback */}
+                              <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
+                                <div className="flex items-start gap-3">
+                                  <Lightbulb className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
+                                  <div className="flex-1">
+                                    <p className="font-semibold text-blue-800 mb-1">प्रतिक्रिया:</p>
+                                    <p className="text-blue-700 leading-relaxed">{fb.feedback}</p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              {/* Sample answer if available */}
+                              {(fb.sampleAnswer || originalQuestion?.sampleAnswer || originalQuestion?.modelAnswer) && (
+                                <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg">
+                                  <p className="font-semibold text-amber-800 mb-1">नमुना उत्तर:</p>
+                                  <p className="text-amber-700 leading-relaxed whitespace-pre-wrap">
+                                    {fb.sampleAnswer || originalQuestion?.sampleAnswer || originalQuestion?.modelAnswer}
+                                  </p>
+                                </div>
+                              )}
+                            </div>
+                          </AccordionContent>
+                        </AccordionItem>
+                      )
+                    })}
+                  </Accordion>
                 </div>
               ) : isEnglishTest ? (
                 // English test format
