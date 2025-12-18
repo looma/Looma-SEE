@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Progress } from "@/components/ui/progress"
 import { CheckCircle2, Circle, Eye, EyeOff, Lightbulb } from "lucide-react"
+import { MathText } from "./math-text"
 import type { FreeResponseQuestion } from "@/lib/use-questions"
 
 interface FreeResponseGroupProps {
@@ -54,7 +55,7 @@ export function FreeResponseGroup({
                 <span className="font-medium text-blue-800">Explanation / व्याख्या:</span>
               </div>
               <div className="ml-6">
-                <p className="text-blue-700 whitespace-pre-line leading-relaxed">{cleanExplanation}</p>
+                <MathText text={cleanExplanation} className="text-blue-700 whitespace-pre-line leading-relaxed" />
               </div>
             </div>
           </div>
@@ -73,7 +74,7 @@ export function FreeResponseGroup({
                 <span className="font-medium text-blue-800">Sample Answer / नमूना उत्तर:</span>
               </div>
               <div className="ml-6">
-                <p className="text-blue-700 whitespace-pre-line leading-relaxed">{question.sampleAnswer}</p>
+                <MathText text={question.sampleAnswer || ""} className="text-blue-700 whitespace-pre-line leading-relaxed" />
               </div>
             </div>
           </div>
@@ -179,9 +180,9 @@ export function FreeResponseGroup({
                     </div>
                     <div className="flex-1">
                       <CardTitle className="text-base font-semibold text-slate-800">Question {index + 1}</CardTitle>
-                      <p className="text-slate-700 mt-2 leading-relaxed">
-                        {language === "nepali" ? question.nepali : question.english}
-                      </p>
+                      <div className="text-slate-700 mt-2 leading-relaxed">
+                        <MathText text={language === "nepali" ? question.nepali : question.english} />
+                      </div>
                     </div>
                   </div>
                   <Badge variant="outline" className="ml-3">

@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Progress } from "@/components/ui/progress"
 import { CheckCircle2, Circle, Eye, EyeOff, Lightbulb } from "lucide-react"
+import { MathText } from "./math-text"
 import type { GroupAQuestion } from "@/lib/use-questions"
 
 interface GroupAProps {
@@ -51,7 +52,7 @@ export function GroupA({ questions, answers, onAnswerChange, progress, language 
             <span className="font-medium text-blue-800">Explanation / व्याख्या:</span>
           </div>
           <div className="ml-6">
-            <p className="text-blue-700 whitespace-pre-line leading-relaxed">{cleanExplanation}</p>
+            <MathText text={cleanExplanation} className="text-blue-700 whitespace-pre-line leading-relaxed" />
           </div>
         </div>
       </div>
@@ -123,9 +124,9 @@ export function GroupA({ questions, answers, onAnswerChange, progress, language 
                     </div>
                     <div className="flex-1">
                       <CardTitle className="text-base font-semibold text-slate-800">Question {index + 1}</CardTitle>
-                      <p className="text-slate-700 mt-2 leading-relaxed">
-                        {language === "nepali" ? question.nepali : question.english}
-                      </p>
+                      <div className="text-slate-700 mt-2 leading-relaxed">
+                        <MathText text={language === "nepali" ? question.nepali : question.english} />
+                      </div>
                     </div>
                   </div>
                   <Badge variant="outline" className="ml-3">
@@ -143,17 +144,16 @@ export function GroupA({ questions, answers, onAnswerChange, progress, language 
                   {question.options.map((option) => (
                     <div
                       key={option.id}
-                      className={`flex items-center space-x-3 p-3 rounded-lg border transition-colors cursor-pointer ${
-                        selectedAnswer === option.id
+                      className={`flex items-center space-x-3 p-3 rounded-lg border transition-colors cursor-pointer ${selectedAnswer === option.id
                           ? "bg-blue-50 border-blue-200"
                           : "bg-slate-50 border-slate-200 hover:bg-slate-100"
-                      }`}
+                        }`}
                       onClick={() => onAnswerChange(question.id, option.id)}
                     >
                       <RadioGroupItem value={option.id} id={`${question.id}-${option.id}`} />
                       <Label htmlFor={`${question.id}-${option.id}`} className="flex-1 text-sm leading-relaxed">
                         <span className="font-medium mr-2">({option.id})</span>
-                        {language === "nepali" ? option.nepali : option.english}
+                        <MathText text={language === "nepali" ? option.nepali : option.english} />
                       </Label>
                     </div>
                   ))}

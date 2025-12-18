@@ -275,7 +275,6 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser }: T
         <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8 py-4 sm:py-6">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div className="flex items-center gap-3 sm:gap-4">
-              <img src="/looma-logo.png" alt="Looma" className="h-8 sm:h-12 w-auto" />
               <div>
                 <h1 className="text-2xl sm:text-3xl font-bold text-slate-800">Choose Your Practice Test</h1>
                 <p className="text-base sm:text-lg text-slate-600">आफ्नो अभ्यास परीक्षा छान्नुहोस्</p>

@@ -41,7 +41,6 @@ export function StudentLogin({ onLogin }: StudentLoginProps) {
       <Card className="w-full max-w-sm sm:max-w-md bg-white/90 backdrop-blur-sm shadow-2xl border border-white/20 relative z-10">
         <CardHeader className="text-center bg-gradient-to-r from-yellow-500 to-amber-500 text-white rounded-t-lg p-4 sm:p-6">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 mb-2">
-            <img src="/looma-logo.png" alt="Looma" className="h-6 sm:h-8 w-auto" />
             <CardTitle className="text-xl sm:text-2xl font-bold">SEE Exam Practice</CardTitle>
           </div>
           <p className="text-yellow-100 text-sm sm:text-base">SEE परीक्षा अभ्यास</p>

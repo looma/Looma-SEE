@@ -34,7 +34,7 @@ export default function SeePrepPage() {
   // Mark as hydrated and load saved state
   useEffect(() => {
     setIsHydrated(true)
-    
+
     try {
       const lastStudentId = localStorage.getItem("see_last_student_id")
       const lastTestId = localStorage.getItem("see_last_test_id")
@@ -189,15 +189,12 @@ export default function SeePrepPage() {
 
       <div className="relative z-10 w-full p-4 sm:p-6 lg:p-8">
         <div className="max-w-4xl mx-auto">
-          <header className="mb-8">
-            <div className="relative flex items-center mb-6">
-              <img src="/looma-logo.png" alt="Looma" className="h-16 w-auto" />
-              <div className="absolute left-1/2 transform -translate-x-1/2 text-center">
-                <h1 className="text-3xl sm:text-4xl font-bold text-slate-800 bg-gradient-to-r from-yellow-600 to-amber-600 bg-clip-text text-transparent">
-                  SEE Exam Practice
-                </h1>
-                <h2 className="text-xl font-medium text-slate-700 mt-1">SEE परीक्षा अभ्यास</h2>
-              </div>
+          <header className="mb-8 pt-2">
+            <div className="text-center py-2">
+              <h1 className="text-3xl sm:text-4xl font-bold text-slate-800 bg-gradient-to-r from-yellow-600 to-amber-600 bg-clip-text text-transparent">
+                SEE Exam Practice
+              </h1>
+              <h2 className="text-xl font-medium text-slate-700 mt-1">SEE परीक्षा अभ्यास</h2>
             </div>
           </header>
 

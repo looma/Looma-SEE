@@ -7,13 +7,24 @@
     "year": 2081,
     "totalMarks": 75,
     "duration": 180,
-    "sections": ["A", "B", "C", "D"],
+    "sections": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
     "isActive": true,
-    "createdAt": { "$date": "2025-09-01T10:00:00.000Z" },
-    "updatedAt": { "$date": "2025-09-01T10:00:00.000Z" }
+    "createdAt": {
+      "$date": "2025-09-01T10:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-01T10:00:00.000Z"
+    }
   },
   {
-    "_id": { "$oid": "66d6c1a1b3e4f5a6b7c8d9e0" },
+    "_id": {
+      "$oid": "66d6c1a1b3e4f5a6b7c8d9e0"
+    },
     "testId": "see_2081_science_practice_1_generated",
     "questions": {
       "groupA": [
@@ -23,14 +34,30 @@
           "questionNepali": "चापको तत्जन्य एकाइ पास्कल (Pa) मा कुन-कुन आधारभूत एकाइहरू मिलेर बनेको हुन्छ?",
           "questionEnglish": "Which fundamental units are included in the derived unit of pressure, Pascal (Pa)?",
           "options": [
-            {"id": "i", "nepali": "kgm−2s−2", "english": "kgm−2s−2"},
-            {"id": "ii", "nepali": "kgm−1s−2", "english": "kgm−1s−2"},
-            {"id": "iii", "nepali": "kgm2s−2", "english": "kgm2s−2"},
-            {"id": "iv", "nepali": "kgms−2", "english": "kgms−2"}
+            {
+              "id": "i",
+              "nepali": "$\\text{kg} \\cdot \\text{m}^{-2} \\cdot \\text{s}^{-2}$",
+              "english": "$\\text{kg} \\cdot \\text{m}^{-2} \\cdot \\text{s}^{-2}$"
+            },
+            {
+              "id": "ii",
+              "nepali": "$\\text{kg} \\cdot \\text{m}^{-1} \\cdot \\text{s}^{-2}$",
+              "english": "$\\text{kg} \\cdot \\text{m}^{-1} \\cdot \\text{s}^{-2}$"
+            },
+            {
+              "id": "iii",
+              "nepali": "$\\text{kg} \\cdot \\text{m}^{2} \\cdot \\text{s}^{-2}$",
+              "english": "$\\text{kg} \\cdot \\text{m}^{2} \\cdot \\text{s}^{-2}$"
+            },
+            {
+              "id": "iv",
+              "nepali": "$\\text{kg} \\cdot \\text{m} \\cdot \\text{s}^{-2}$",
+              "english": "$\\text{kg} \\cdot \\text{m} \\cdot \\text{s}^{-2}$"
+            }
           ],
           "correctAnswer": "ii",
           "marks": 1,
-          "explanation": "व्याख्या: चापको सूत्र बल/क्षेत्रफल (P=F/A) हो । बलको एकाइ न्युटन (N) हो, जसमा kgms−2 आधारभूत एकाइहरू हुन्छन् । क्षेत्रफलको एकाइ m2 हो । त्यसैले, चापको एकाइ N/m2 वा (kgms−2)/m2 हुन्छ, जसलाई सरलीकरण गर्दा kgm−1s−2 हुन्छ ।\n\nExplanation: The formula for pressure is Force/Area (P=F/A). The unit of force is Newton (N), which is composed of the fundamental units kgms−2. The unit of area is m2. Therefore, the unit of pressure is N/m2 or (kgms−2)/m2, which simplifies to kgm−1s−2. Citations: chapter 1, pages 8-9"
+          "explanation": "व्याख्या: चापको सूत्र बल/क्षेत्रफल ($P=\\frac{F}{A}$) हो । बलको एकाइ न्युटन (N) हो, जसमा $\\text{kg} \\cdot \\text{m} \\cdot \\text{s}^{-2}$ आधारभूत एकाइहरू हुन्छन् । क्षेत्रफलको एकाइ $\\text{m}^2$ हो । त्यसैले, चापको एकाइ $\\frac{N}{m^2}$ वा $\\frac{\\text{kg} \\cdot \\text{m} \\cdot \\text{s}^{-2}}{\\text{m}^2}$ हुन्छ, जसलाई सरलीकरण गर्दा $\\text{kg} \\cdot \\text{m}^{-1} \\cdot \\text{s}^{-2}$ हुन्छ ।\n\nExplanation: The formula for pressure is Force/Area ($P=\\frac{F}{A}$). The unit of force is Newton (N), which is composed of the fundamental units $\\text{kg} \\cdot \\text{m} \\cdot \\text{s}^{-2}$. The unit of area is $\\text{m}^2$. Therefore, the unit of pressure is $\\frac{N}{m^2}$ or $\\frac{\\text{kg} \\cdot \\text{m} \\cdot \\text{s}^{-2}}{\\text{m}^2}$, which simplifies to $\\text{kg} \\cdot \\text{m}^{-1} \\cdot \\text{s}^{-2}$. Citations: chapter 1, pages 8-9"
         },
         {
           "id": "b",
@@ -38,10 +65,26 @@
           "questionNepali": "विकसित भास्कुलर तन्तु भएको, जरा, काण्ड र पातमा विभाजित भएको तर फूल नफुल्ने बिरुवा कुन हो?",
           "questionEnglish": "Which is the plant that has developed vascular tissue, is differentiated into root, stem, and leaf, but does not bear flowers?",
           "options": [
-            {"id": "i", "nepali": "मस (Moss)", "english": "Moss"},
-            {"id": "ii", "nepali": "च्याउ (Mushroom)", "english": "Mushroom"},
-            {"id": "iii", "nepali": "फर्न (Fern)", "english": "Fern"},
-            {"id": "iv", "nepali": "सल्ला (Pinus)", "english": "Pinus"}
+            {
+              "id": "i",
+              "nepali": "मस (Moss)",
+              "english": "Moss"
+            },
+            {
+              "id": "ii",
+              "nepali": "च्याउ (Mushroom)",
+              "english": "Mushroom"
+            },
+            {
+              "id": "iii",
+              "nepali": "फर्न (Fern)",
+              "english": "Fern"
+            },
+            {
+              "id": "iv",
+              "nepali": "सल्ला (Pinus)",
+              "english": "Pinus"
+            }
           ],
           "correctAnswer": "iii",
           "marks": 1,
@@ -53,10 +96,26 @@
           "questionNepali": "मेन्डलको प्रयोग अनुसार, शुद्ध अग्लो (TT) र शुद्ध होचो (tt) केराउको बोटबीच क्रस गराउँदा पहिलो वंश (F1 generation) मा कुन गुण देखिन्छ?",
           "questionEnglish": "According to Mendel's experiment, when a pure tall (TT) and a pure dwarf (tt) pea plant are crossed, which character is expressed in the first filial (F1) generation?",
           "options": [
-            {"id": "i", "nepali": "सबै होचो (All dwarf)", "english": "All dwarf"},
-            {"id": "ii", "nepali": "सबै अग्लो (All tall)", "english": "All tall"},
-            {"id": "iii", "nepali": "७५% अग्लो र २५% होचो (75% tall and 25% dwarf)", "english": "75% tall and 25% dwarf"},
-            {"id": "iv", "nepali": "५०% अग्लो र ५०% होचो (50% tall and 50% dwarf)", "english": "50% tall and 50% dwarf"}
+            {
+              "id": "i",
+              "nepali": "सबै होचो (All dwarf)",
+              "english": "All dwarf"
+            },
+            {
+              "id": "ii",
+              "nepali": "सबै अग्लो (All tall)",
+              "english": "All tall"
+            },
+            {
+              "id": "iii",
+              "nepali": "७५% अग्लो र २५% होचो (75% tall and 25% dwarf)",
+              "english": "75% tall and 25% dwarf"
+            },
+            {
+              "id": "iv",
+              "nepali": "५०% अग्लो र ५०% होचो (50% tall and 50% dwarf)",
+              "english": "50% tall and 50% dwarf"
+            }
           ],
           "correctAnswer": "ii",
           "marks": 1,
@@ -68,10 +127,26 @@
           "questionNepali": "कुनै वस्तुलाई तरल पदार्थमा डुबाउँदा त्यसले अनुभव गर्ने उर्ध्वचाप के कुरामा निर्भर गर्दछ?",
           "questionEnglish": "When an object is immersed in a liquid, on what does the upthrust it experiences depend?",
           "options": [
-            {"id": "i", "nepali": "वस्तुको तौल (Weight of the object)", "english": "Weight of the object"},
-            {"id": "ii", "nepali": "तरल पदार्थको तापक्रम (Temperature of the liquid)", "english": "Temperature of the liquid"},
-            {"id": "iii", "nepali": "तरल पदार्थको घनत्व र विस्थापित तरलको आयतन (Density of the liquid and volume of the displaced liquid)", "english": "Density of the liquid and volume of the displaced liquid"},
-            {"id": "iv", "nepali": "वस्तुको आकार (Shape of the object)", "english": "Shape of the object"}
+            {
+              "id": "i",
+              "nepali": "वस्तुको तौल (Weight of the object)",
+              "english": "Weight of the object"
+            },
+            {
+              "id": "ii",
+              "nepali": "तरल पदार्थको तापक्रम (Temperature of the liquid)",
+              "english": "Temperature of the liquid"
+            },
+            {
+              "id": "iii",
+              "nepali": "तरल पदार्थको घनत्व र विस्थापित तरलको आयतन (Density of the liquid and volume of the displaced liquid)",
+              "english": "Density of the liquid and volume of the displaced liquid"
+            },
+            {
+              "id": "iv",
+              "nepali": "वस्तुको आकार (Shape of the object)",
+              "english": "Shape of the object"
+            }
           ],
           "correctAnswer": "iii",
           "marks": 1,
@@ -83,10 +158,26 @@
           "questionNepali": "ट्रान्सफर्मरले कुन सिद्धान्तमा आधारित भएर काम गर्छ?",
           "questionEnglish": "On which principle does a transformer work?",
           "options": [
-            {"id": "i", "nepali": "मोटर असर (Motor effect)", "english": "Motor effect"},
-            {"id": "ii", "nepali": "विद्युत चुम्बकीय उपपादन (Electromagnetic induction)", "english": "Electromagnetic induction"},
-            {"id": "iii", "nepali": "म्युचुअल इन्डक्सन (Mutual induction)", "english": "Mutual induction"},
-            {"id": "iv", "nepali": "विद्युतको रासायनिक असर (Chemical effect of current)", "english": "Chemical effect of current"}
+            {
+              "id": "i",
+              "nepali": "मोटर असर (Motor effect)",
+              "english": "Motor effect"
+            },
+            {
+              "id": "ii",
+              "nepali": "विद्युत चुम्बकीय उपपादन (Electromagnetic induction)",
+              "english": "Electromagnetic induction"
+            },
+            {
+              "id": "iii",
+              "nepali": "म्युचुअल इन्डक्सन (Mutual induction)",
+              "english": "Mutual induction"
+            },
+            {
+              "id": "iv",
+              "nepali": "विद्युतको रासायनिक असर (Chemical effect of current)",
+              "english": "Chemical effect of current"
+            }
           ],
           "correctAnswer": "iii",
           "marks": 1,
@@ -98,10 +189,26 @@
           "questionNepali": "आधुनिक पेरियोडिक तालिकाको कुनै समूहमा माथिबाट तल जाँदा तत्त्वहरूको रासायनिक सक्रियतामा कस्तो परिवर्तन हुन्छ?",
           "questionEnglish": "What change occurs in the chemical reactivity of elements when moving from top to bottom in a group of the modern periodic table?",
           "options": [
-            {"id": "i", "nepali": "धातुको सक्रियता घट्छ, अधातुको बढ्छ (Reactivity of metals decreases, non-metals increases)", "english": "Reactivity of metals decreases, non-metals increases"},
-            {"id": "ii", "nepali": "धातुको सक्रियता बढ्छ, अधातुको घट्छ (Reactivity of metals increases, non-metals decreases)", "english": "Reactivity of metals increases, non-metals decreases"},
-            {"id": "iii", "nepali": "दुवैको सक्रियता बढ्छ (Reactivity of both increases)", "english": "Reactivity of both increases"},
-            {"id": "iv", "nepali": "दुवैको सक्रियता घट्छ (Reactivity of both decreases)", "english": "Reactivity of both decreases"}
+            {
+              "id": "i",
+              "nepali": "धातुको सक्रियता घट्छ, अधातुको बढ्छ (Reactivity of metals decreases, non-metals increases)",
+              "english": "Reactivity of metals decreases, non-metals increases"
+            },
+            {
+              "id": "ii",
+              "nepali": "धातुको सक्रियता बढ्छ, अधातुको घट्छ (Reactivity of metals increases, non-metals decreases)",
+              "english": "Reactivity of metals increases, non-metals decreases"
+            },
+            {
+              "id": "iii",
+              "nepali": "दुवैको सक्रियता बढ्छ (Reactivity of both increases)",
+              "english": "Reactivity of both increases"
+            },
+            {
+              "id": "iv",
+              "nepali": "दुवैको सक्रियता घट्छ (Reactivity of both decreases)",
+              "english": "Reactivity of both decreases"
+            }
           ],
           "correctAnswer": "ii",
           "marks": 1,
@@ -113,10 +220,26 @@
           "questionNepali": "एमोनिया ग्यासको भौतिक गुण कुन हो?",
           "questionEnglish": "Which of the following is a physical property of ammonia gas?",
           "options": [
-            {"id": "i", "nepali": "यो हावाभन्दा गह्रौं हुन्छ (It is heavier than air)", "english": "It is heavier than air"},
-            {"id": "ii", "nepali": "यो पानीमा अत्यधिक घुलनशील छ (It is highly soluble in water)", "english": "It is highly soluble in water"},
-            {"id": "iii", "nepali": "यसको कुनै गन्ध हुँदैन (It is odorless)", "english": "It is odorless"},
-            {"id": "iv", "nepali": "यो अम्लसँग प्रतिक्रिया गर्दैन (It does not react with acids)", "english": "It does not react with acids"}
+            {
+              "id": "i",
+              "nepali": "यो हावाभन्दा गह्रौं हुन्छ (It is heavier than air)",
+              "english": "It is heavier than air"
+            },
+            {
+              "id": "ii",
+              "nepali": "यो पानीमा अत्यधिक घुलनशील छ (It is highly soluble in water)",
+              "english": "It is highly soluble in water"
+            },
+            {
+              "id": "iii",
+              "nepali": "यसको कुनै गन्ध हुँदैन (It is odorless)",
+              "english": "It is odorless"
+            },
+            {
+              "id": "iv",
+              "nepali": "यो अम्लसँग प्रतिक्रिया गर्दैन (It does not react with acids)",
+              "english": "It does not react with acids"
+            }
           ],
           "correctAnswer": "ii",
           "marks": 1,
@@ -128,10 +251,26 @@
           "questionNepali": "मियोसिस कोष विभाजनको अन्त्यमा कतिओटा ह्याप्लोइड कोषहरू बन्छन्?",
           "questionEnglish": "How many haploid cells are formed at the end of meiosis cell division?",
           "options": [
-            {"id": "i", "nepali": "एउटा (One)", "english": "One"},
-            {"id": "ii", "nepali": "दुईओटा (Two)", "english": "Two"},
-            {"id": "iii", "nepali": "तीनओटा (Three)", "english": "Three"},
-            {"id": "iv", "nepali": "चारओटा (Four)", "english": "Four"}
+            {
+              "id": "i",
+              "nepali": "एउटा (One)",
+              "english": "One"
+            },
+            {
+              "id": "ii",
+              "nepali": "दुईओटा (Two)",
+              "english": "Two"
+            },
+            {
+              "id": "iii",
+              "nepali": "तीनओटा (Three)",
+              "english": "Three"
+            },
+            {
+              "id": "iv",
+              "nepali": "चारओटा (Four)",
+              "english": "Four"
+            }
           ],
           "correctAnswer": "iv",
           "marks": 1,
@@ -143,10 +282,26 @@
           "questionNepali": "गाडीको रेडिएटरमा पानीलाई शीतलक (coolant) को रूपमा किन प्रयोग गरिन्छ?",
           "questionEnglish": "Why is water used as a coolant in car radiators?",
           "options": [
-            {"id": "i", "nepali": "पानीको विशिष्ट ताप धारण क्षमता कम भएकोले (Because water has low specific heat capacity)", "english": "Because water has low specific heat capacity"},
-            {"id": "ii", "nepali": "पानीको विशिष्ट ताप धारण क्षमता बढी भएकोले (Because water has high specific heat capacity)", "english": "Because water has high specific heat capacity"},
-            {"id": "iii", "nepali": "पानी सजिलै उपलब्ध हुने भएकोले (Because water is easily available)", "english": "Because water is easily available"},
-            {"id": "iv", "nepali": "पानीको घनत्व बढी भएकोले (Because water has high density)", "english": "Because water has high density"}
+            {
+              "id": "i",
+              "nepali": "पानीको विशिष्ट ताप धारण क्षमता कम भएकोले (Because water has low specific heat capacity)",
+              "english": "Because water has low specific heat capacity"
+            },
+            {
+              "id": "ii",
+              "nepali": "पानीको विशिष्ट ताप धारण क्षमता बढी भएकोले (Because water has high specific heat capacity)",
+              "english": "Because water has high specific heat capacity"
+            },
+            {
+              "id": "iii",
+              "nepali": "पानी सजिलै उपलब्ध हुने भएकोले (Because water is easily available)",
+              "english": "Because water is easily available"
+            },
+            {
+              "id": "iv",
+              "nepali": "पानीको घनत्व बढी भएकोले (Because water has high density)",
+              "english": "Because water has high density"
+            }
           ],
           "correctAnswer": "ii",
           "marks": 1,
@@ -158,14 +313,30 @@
           "questionNepali": "अल्किन (Alkene) समूहको सामान्य सूत्र के हो?",
           "questionEnglish": "What is the general formula for the Alkene group?",
           "options": [
-            {"id": "i", "nepali": "Cn​H2n​", "english": "Cn​H2n​"},
-            {"id": "ii", "nepali": "Cn​H2n+2​", "english": "Cn​H2n+2​"},
-            {"id": "iii", "nepali": "Cn​H2n−2​", "english": "Cn​H2n−2​"},
-            {"id": "iv", "nepali": "Cn​H2n+1​OH", "english": "Cn​H2n+1​OH"}
+            {
+              "id": "i",
+              "nepali": "$C_nH_{2n}$",
+              "english": "$C_nH_{2n}$"
+            },
+            {
+              "id": "ii",
+              "nepali": "$C_nH_{2n+2}$",
+              "english": "$C_nH_{2n+2}$"
+            },
+            {
+              "id": "iii",
+              "nepali": "$C_nH_{2n-2}$",
+              "english": "$C_nH_{2n-2}$"
+            },
+            {
+              "id": "iv",
+              "nepali": "$C_nH_{2n+1}OH$",
+              "english": "$C_nH_{2n+1}OH$"
+            }
           ],
           "correctAnswer": "i",
           "marks": 1,
-          "explanation": "व्याख्या: अल्किनहरू असंतृप्त हाइड्रोकार्बन हुन् जसमा कार्बन परमाणुहरूबीच कम्तिमा एउटा दोहोरो बन्धन हुन्छ । तिनीहरूको सामान्य सूत्र Cn​H2n​ हो ।\n\nExplanation: Alkenes are unsaturated hydrocarbons containing at least one carbon-carbon double bond. Their general formula is Cn​H2n​. Citations: chapter 18, page 429"
+          "explanation": "व्याख्या: अल्किनहरू असंतृप्त हाइड्रोकार्बन हुन् जसमा कार्बन परमाणुहरूबीच कम्तिमा एउटा दोहोरो बन्धन हुन्छ । तिनीहरूको सामान्य सूत्र $C_nH_{2n}$ हो ।\n\nExplanation: Alkenes are unsaturated hydrocarbons containing at least one carbon-carbon double bond. Their general formula is $C_nH_{2n}$. Citations: chapter 18, page 429"
         }
       ],
       "groupB": [
@@ -417,6 +588,3 @@
     }
   }
 ]
-
-
-

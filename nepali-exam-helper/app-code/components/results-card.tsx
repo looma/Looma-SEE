@@ -20,6 +20,7 @@ import {
 } from "lucide-react"
 import { useQuestions } from "@/lib/use-questions"
 import { loadStudentProgress } from "@/lib/storage"
+import { MathText } from "./math-text"
 import type { GroupAQuestion } from "@/lib/use-questions"
 
 interface GradedFeedback {
@@ -200,7 +201,7 @@ export function ResultsCard({
                 <AccordionContent className="px-4 pb-4">
                   <div className="space-y-4">
                     {/* Question in Nepali with proper spacing */}
-                    <div className="text-sm text-slate-600 italic mb-3 leading-relaxed">{question.nepali}</div>
+                    <div className="text-sm text-slate-600 italic mb-3 leading-relaxed"><MathText text={question.nepali} /></div>
 
                     {/* User's Answer Section with better formatting */}
                     <div
@@ -215,10 +216,10 @@ export function ResultsCard({
                       {userAnswer ? (
                         <div className="space-y-1">
                           <p className="text-slate-700 font-medium">
-                            ({userAnswer}) {userOption?.english}
+                            ({userAnswer}) <MathText text={userOption?.english || ""} />
                           </p>
                           {userOption?.nepali && userOption.nepali !== userOption.english && (
-                            <p className="text-sm text-slate-600 italic">{userOption.nepali}</p>
+                            <p className="text-sm text-slate-600 italic"><MathText text={userOption.nepali} /></p>
                           )}
                         </div>
                       ) : (
@@ -232,10 +233,10 @@ export function ResultsCard({
                         <p className="font-semibold text-blue-800 mb-2">Correct Answer / सही उत्तर:</p>
                         <div className="space-y-1">
                           <p className="text-blue-700 font-medium">
-                            ({question.correctAnswer}) {correctOption?.english}
+                            ({question.correctAnswer}) <MathText text={correctOption?.english || ""} />
                           </p>
                           {correctOption?.nepali && correctOption.nepali !== correctOption.english && (
-                            <p className="text-sm text-blue-600 italic">{correctOption.nepali}</p>
+                            <p className="text-sm text-blue-600 italic"><MathText text={correctOption.nepali} /></p>
                           )}
                         </div>
                       </div>
@@ -248,7 +249,7 @@ export function ResultsCard({
                           <Lightbulb className="h-5 w-5 text-amber-600 mt-1 flex-shrink-0" />
                           <div className="flex-1">
                             <p className="font-semibold text-amber-800 mb-2">Explanation / व्याख्या:</p>
-                            <p className="text-amber-700 leading-relaxed whitespace-pre-line">{question.explanation}</p>
+                            <div className="text-amber-700 leading-relaxed whitespace-pre-line"><MathText text={question.explanation || ""} /></div>
                           </div>
                         </div>
                       </div>
@@ -386,7 +387,7 @@ export function ResultsCard({
                 </AccordionTrigger>
                 <AccordionContent className="px-4 pb-4">
                   <div className="space-y-4">
-                    <div className="text-sm text-slate-600 italic mb-3">{question.nepali}</div>
+                    <div className="text-sm text-slate-600 italic mb-3"><MathText text={question.nepali} /></div>
                     <div className="bg-slate-50 p-3 rounded-lg">
                       <p className="text-slate-600">
                         <span className="font-semibold text-slate-800">Your Answer / तपाईंको उत्तर:</span>
@@ -405,7 +406,7 @@ export function ResultsCard({
                         <MessageSquareQuote className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
                         <div className="flex-1 min-w-0">
                           <p className="font-semibold text-blue-800">Feedback / प्रतिक्रिया:</p>
-                          <p className="text-blue-700 mt-1 leading-relaxed whitespace-pre-wrap break-words">{fb.feedback}</p>
+                          <div className="text-blue-700 mt-1 leading-relaxed whitespace-pre-wrap break-words"><MathText text={fb.feedback} /></div>
                         </div>
                       </div>
                     </div>

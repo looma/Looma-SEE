@@ -22,5 +22,13 @@ RUN pnpm run build
 # Expose the port the app runs on
 EXPOSE 3000
 
-# Define the command to run the application
-CMD ["pnpm", "start"]
+# Create a startup script that imports tests then starts the app
+RUN echo '#!/bin/sh' > /app/start.sh && \
+    echo 'echo "🔄 Importing tests from data folder..."' >> /app/start.sh && \
+    echo 'node scripts/import-all-tests.mjs' >> /app/start.sh && \
+    echo 'echo "🚀 Starting application..."' >> /app/start.sh && \
+    echo 'exec pnpm start' >> /app/start.sh && \
+    chmod +x /app/start.sh
+
+# Run the startup script
+CMD ["/app/start.sh"]
