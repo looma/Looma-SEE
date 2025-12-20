@@ -6,7 +6,17 @@ import { StudentLogin } from "@/components/student-login"
 import { StudentHeader } from "@/components/student-header"
 import { TestSelectionScreen } from "@/components/test-selection-screen"
 import { ResultsCard } from "@/components/results-card"
-import { loadStudentProgress, saveStudentProgress } from "@/lib/storage"
+import {
+  loadStudentProgress,
+  saveStudentProgress,
+  getAuthState,
+  clearAuthState,
+  syncProgressToServer,
+  loadProgressFromServer,
+  isGuestUser,
+  type StudentProgress,
+} from "@/lib/storage"
+
 export default function SeePrepPage() {
   const [currentStudentId, setCurrentStudentId] = useState<string | null>(null)
   const [currentTestId, setCurrentTestId] = useState<string | null>(null)
@@ -15,6 +25,8 @@ export default function SeePrepPage() {
   const [showResults, setShowResults] = useState(false)
   const [testResults, setTestResults] = useState<any>(null)
   const [isHydrated, setIsHydrated] = useState(false)
+  const [isAuthenticated, setIsAuthenticated] = useState(false)
+  const [userEmail, setUserEmail] = useState<string | null>(null)
 
   // Fetch test title when test ID changes
   useEffect(() => {
@@ -36,6 +48,41 @@ export default function SeePrepPage() {
     setIsHydrated(true)
 
     try {
+      // Check auth state first
+      const authState = getAuthState()
+      if (authState.isAuthenticated && authState.email) {
+        setIsAuthenticated(true)
+        setUserEmail(authState.email)
+        setCurrentStudentId(authState.email)
+
+        // Load last test from localStorage
+        const lastTestId = localStorage.getItem("see_last_test_id")
+        if (lastTestId) {
+          // Check if we have local progress for this test
+          const localProgress = loadStudentProgress(`${authState.email}_${lastTestId}`)
+          if (localProgress) {
+            setCurrentTestId(lastTestId)
+            setShowTestSelection(false)
+          } else {
+            // Try to load from server
+            loadProgressFromServer(authState.email, lastTestId).then((serverProgress) => {
+              if (serverProgress && !Array.isArray(serverProgress)) {
+                // Cache server progress locally
+                saveStudentProgress(authState.email!, serverProgress as Omit<StudentProgress, "lastUpdated">)
+                setCurrentTestId(lastTestId)
+                setShowTestSelection(false)
+              } else {
+                setShowTestSelection(true)
+              }
+            })
+          }
+        } else {
+          setShowTestSelection(true)
+        }
+        return
+      }
+
+      // Check for guest session
       const lastStudentId = localStorage.getItem("see_last_student_id")
       const lastTestId = localStorage.getItem("see_last_test_id")
 
@@ -44,10 +91,10 @@ export default function SeePrepPage() {
         if (progress) {
           setCurrentStudentId(lastStudentId)
           setCurrentTestId(lastTestId)
-          setShowTestSelection(false) // Go directly to exam if they have progress
-        } else {
+          setShowTestSelection(false)
+        } else if (lastStudentId) {
           setCurrentStudentId(lastStudentId)
-          setShowTestSelection(true) // Show test selection if no progress
+          setShowTestSelection(true)
         }
       }
     } catch (error) {
@@ -55,17 +102,20 @@ export default function SeePrepPage() {
     }
   }, [])
 
-  const handleLogin = (studentId: string) => {
+  const handleLogin = (studentId: string, authenticated: boolean, email?: string) => {
     setCurrentStudentId(studentId)
+    setIsAuthenticated(authenticated)
+    setUserEmail(authenticated && email ? email : null)
+
     try {
       localStorage.setItem("see_last_student_id", studentId)
     } catch (error) {
       console.error("Error saving student ID:", error)
     }
-    setShowTestSelection(true) // Always show test selection after login
+    setShowTestSelection(true)
   }
 
-  const handleTestSelect = (testId: string) => {
+  const handleTestSelect = async (testId: string) => {
     setCurrentTestId(testId)
     try {
       localStorage.setItem("see_last_test_id", testId)
@@ -73,12 +123,24 @@ export default function SeePrepPage() {
       console.error("Error saving test ID:", error)
     }
     setShowTestSelection(false)
-    setShowResults(false) // Hide results when selecting a new test
+    setShowResults(false)
 
     if (currentStudentId) {
       const existingProgress = loadStudentProgress(`${currentStudentId}_${testId}`)
+
       if (!existingProgress) {
-        saveStudentProgress(currentStudentId, {
+        // Check server for authenticated users
+        if (isAuthenticated && userEmail) {
+          const serverProgress = await loadProgressFromServer(userEmail, testId)
+          if (serverProgress && !Array.isArray(serverProgress)) {
+            // Use server progress
+            saveStudentProgress(currentStudentId, serverProgress as Omit<StudentProgress, "lastUpdated">)
+            return
+          }
+        }
+
+        // Create new progress
+        const newProgress = {
           studentId: currentStudentId,
           testId,
           answers: {
@@ -89,7 +151,13 @@ export default function SeePrepPage() {
           },
           currentTab: "groupA",
           attempts: [],
-        })
+        }
+        saveStudentProgress(currentStudentId, newProgress)
+
+        // Sync to server for authenticated users
+        if (isAuthenticated && userEmail) {
+          syncProgressToServer(userEmail, newProgress)
+        }
       }
     }
   }
@@ -108,9 +176,13 @@ export default function SeePrepPage() {
     setShowTestSelection(false)
     setShowResults(false)
     setTestResults(null)
+    setIsAuthenticated(false)
+    setUserEmail(null)
+
     try {
       localStorage.removeItem("see_last_student_id")
       localStorage.removeItem("see_last_test_id")
+      clearAuthState()
     } catch (error) {
       console.error("Error clearing localStorage:", error)
     }
@@ -126,7 +198,8 @@ export default function SeePrepPage() {
     setTestResults(null)
     // Clear answers but keep the same test
     if (currentStudentId && currentTestId) {
-      saveStudentProgress(currentStudentId, {
+      const existingProgress = loadStudentProgress(`${currentStudentId}_${currentTestId}`)
+      const newProgress = {
         studentId: currentStudentId,
         testId: currentTestId,
         answers: {
@@ -134,10 +207,16 @@ export default function SeePrepPage() {
           groupB: {},
           groupC: {},
           groupD: {},
-        }, // Clear all answers for retake
-        currentTab: "groupA", // Reset to first section
-        attempts: loadStudentProgress(`${currentStudentId}_${currentTestId}`)?.attempts || [],
-      })
+        },
+        currentTab: "groupA",
+        attempts: existingProgress?.attempts || [],
+      }
+      saveStudentProgress(currentStudentId, newProgress)
+
+      // Sync to server for authenticated users
+      if (isAuthenticated && userEmail) {
+        syncProgressToServer(userEmail, newProgress)
+      }
     }
   }
 
@@ -148,8 +227,14 @@ export default function SeePrepPage() {
   }
 
   const updateLastSaved = useCallback(() => {
-    // This callback is called when progress is updated
-  }, [])
+    // Sync to server when progress updates for authenticated users
+    if (isAuthenticated && userEmail && currentStudentId && currentTestId) {
+      const progress = loadStudentProgress(`${currentStudentId}_${currentTestId}`)
+      if (progress) {
+        syncProgressToServer(userEmail, progress)
+      }
+    }
+  }, [isAuthenticated, userEmail, currentStudentId, currentTestId])
 
   // Show login screen (always show initially to avoid hydration mismatch)
   if (!isHydrated || !currentStudentId) {
@@ -159,7 +244,13 @@ export default function SeePrepPage() {
   // Show test selection screen
   if (showTestSelection) {
     return (
-      <TestSelectionScreen studentId={currentStudentId} onTestSelect={handleTestSelect} onSwitchUser={handleLogout} />
+      <TestSelectionScreen
+        studentId={currentStudentId}
+        onTestSelect={handleTestSelect}
+        onSwitchUser={handleLogout}
+        isAuthenticated={isAuthenticated}
+        userEmail={userEmail || undefined}
+      />
     )
   }
 
@@ -203,6 +294,8 @@ export default function SeePrepPage() {
             onLogout={handleLogout}
             onChangeTest={handleChangeTest}
             currentTestTitle={currentTestTitle || undefined}
+            isAuthenticated={isAuthenticated}
+            userEmail={userEmail || undefined}
           />
 
           <ExamTabs

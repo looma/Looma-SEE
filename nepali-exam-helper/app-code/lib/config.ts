@@ -2,6 +2,9 @@
 export const config = {
   mongodbUri: process.env.MONGODB_URI,
   openaiApiKey: process.env.OPENAI_API_KEY, // No fallback - must be in .env.local
+  // Email configuration (Resend)
+  resendApiKey: process.env.RESEND_API_KEY,
+  emailFromAddress: process.env.EMAIL_FROM_ADDRESS || "SEE Practice <noreply@resend.dev>",
 }
 
 // Debug function to check environment loading

@@ -106,6 +106,49 @@ function ShortAnswerQuestion({ question, answer, onAnswerChange, questionIndex }
     )
 }
 
+// Multiple Choice Question - radio button options
+function MultipleChoiceQuestion({ question, answer, onAnswerChange, questionIndex }: NepaliQuestionRendererProps) {
+    const currentAnswer = answer || ""
+    const options = (question as any).options || (question as any).choices || []
+
+    return (
+        <div className="space-y-4">
+            {question.passage && (
+                <div className="p-4 bg-slate-50 rounded-lg border border-slate-200 leading-relaxed">
+                    {question.passage}
+                </div>
+            )}
+            <RadioGroup
+                value={currentAnswer}
+                onValueChange={(value) => onAnswerChange(`q${question.questionNumber}`, value)}
+                className="space-y-2"
+            >
+                {options.map((opt: any, idx: number) => {
+                    const optionText = typeof opt === 'string' ? opt : opt.text || opt.label || opt
+                    const optionValue = typeof opt === 'string' ? opt : opt.id || opt.value || opt.text || String(idx)
+                    return (
+                        <div
+                            key={idx}
+                            className={`p-3 rounded-lg border cursor-pointer transition-colors ${currentAnswer === optionValue
+                                ? 'bg-amber-50 border-amber-300'
+                                : 'bg-slate-50 border-slate-200 hover:bg-slate-100'
+                                }`}
+                            onClick={() => onAnswerChange(`q${question.questionNumber}`, optionValue)}
+                        >
+                            <div className="flex items-center gap-3">
+                                <RadioGroupItem value={optionValue} id={`opt-${questionIndex}-${idx}`} />
+                                <Label htmlFor={`opt-${questionIndex}-${idx}`} className="cursor-pointer flex-1">
+                                    {optionText}
+                                </Label>
+                            </div>
+                        </div>
+                    )
+                })}
+            </RadioGroup>
+        </div>
+    )
+}
+
 // Spelling Correction - mixed multiple choice and text
 function SpellingCorrectionQuestion({ question, answer, onAnswerChange, questionIndex }: NepaliQuestionRendererProps) {
     const currentAnswer = answer || {}
@@ -585,6 +628,7 @@ export function NepaliQuestionRenderer(props: NepaliQuestionRendererProps) {
         matching: MatchingQuestion,
         fill_in_the_blanks: FillInTheBlanksQuestion,
         short_answer: ShortAnswerQuestion,
+        multiple_choice: MultipleChoiceQuestion,
         spelling_correction: SpellingCorrectionQuestion,
         parts_of_speech: PartsOfSpeechQuestion,
         word_formation: WordFormationQuestion,

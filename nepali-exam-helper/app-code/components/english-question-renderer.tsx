@@ -115,7 +115,7 @@ export function EnglishQuestionRenderer({
         {subQuestions.map((subQ, index) => {
           const questionId = parentId ? `${parentId}_${subQ.id}` : subQ.id
           const currentAnswer = parentId ? answers[(question as any).id]?.[parentId]?.[subQ.id] : answers[(question as any).id]?.[subQ.id]
-          
+
           // Calculate marks for sub-question: use subQ.marks if available, otherwise divide section marks by number of sub-questions
           const subQuestionMarks = subQ.marks || (sectionMarks ? Math.round((sectionMarks / subQuestions.length) * 10) / 10 : 1)
 
@@ -214,7 +214,7 @@ export function EnglishQuestionRenderer({
         {subQuestions.map((subQ, index) => {
           const questionId = parentId ? `${parentId}_${subQ.id}` : subQ.id
           const currentAnswer = parentId ? answers[(question as any).id]?.[parentId]?.[subQ.id] : answers[(question as any).id]?.[subQ.id]
-          
+
           // Calculate marks for sub-question: use subQ.marks if available, otherwise divide section marks by number of sub-questions
           const subQuestionMarks = subQ.marks || (sectionMarks ? Math.round((sectionMarks / subQuestions.length) * 10) / 10 : 1)
 
@@ -334,7 +334,7 @@ export function EnglishQuestionRenderer({
           const currentAnswer = parentId
             ? answers[(question as any).id]?.[parentId]?.[subQ.id] || ""
             : answers[(question as any).id]?.[subQ.id] || ""
-          
+
           // Calculate marks for sub-question: use subQ.marks if available, otherwise divide section marks by number of sub-questions
           const subQuestionMarks = subQ.marks || (sectionMarks ? Math.round((sectionMarks / subQuestions.length) * 10) / 10 : 1)
 
@@ -395,7 +395,7 @@ export function EnglishQuestionRenderer({
           const currentAnswer = parentId
             ? answers[(question as any).id]?.[parentId]?.[subQ.id] || ""
             : answers[(question as any).id]?.[subQ.id] || ""
-          
+
           // Calculate marks for sub-question: use subQ.marks if available, otherwise divide section marks by number of sub-questions
           const subQuestionMarks = subQ.marks || (sectionMarks ? Math.round((sectionMarks / subQuestions.length) * 10) / 10 : 1)
 
@@ -466,7 +466,7 @@ export function EnglishQuestionRenderer({
             {section.marks} mark{section.marks !== 1 ? "s" : ""}
           </Badge>
         </div>
-        
+
         {/* Instructions */}
         <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
           <p className="text-sm text-blue-800 font-medium">
@@ -499,13 +499,12 @@ export function EnglishQuestionRenderer({
                       className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2"
                     >
                       {section.columns.B.map((bItem: any) => (
-                        <div 
-                          key={bItem.id} 
-                          className={`flex items-center space-x-2 cursor-pointer p-3 rounded-lg border transition-colors ${
-                            currentAnswers[item.id] === bItem.id
-                              ? "bg-blue-50 border-blue-300"
-                              : "bg-slate-50 border-slate-200 hover:bg-slate-100"
-                          }`}
+                        <div
+                          key={bItem.id}
+                          className={`flex items-center space-x-2 cursor-pointer p-3 rounded-lg border transition-colors ${currentAnswers[item.id] === bItem.id
+                            ? "bg-blue-50 border-blue-300"
+                            : "bg-slate-50 border-slate-200 hover:bg-slate-100"
+                            }`}
                           onClick={() => {
                             const newAnswers = { ...currentAnswers, [item.id]: bItem.id }
                             onAnswerChange((question as any).id, section.id, newAnswers)
@@ -519,6 +518,63 @@ export function EnglishQuestionRenderer({
                         </div>
                       ))}
                     </RadioGroup>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
+        {renderExplanation(section)}
+      </div>
+    )
+  }
+
+  const renderOrderingQuestion = (section: any) => {
+    const currentAnswers = answers[(question as any).id]?.[section.id] || {}
+    const items = section.items || []
+
+    return (
+      <div className="space-y-6">
+        <div className="flex justify-between items-start mb-4">
+          <p className="text-sm text-slate-600">{section.title}</p>
+          <Badge variant="secondary" className="ml-2 bg-orange-100 text-orange-800 whitespace-nowrap">
+            {section.marks} mark{section.marks !== 1 ? "s" : ""}
+          </Badge>
+        </div>
+
+        {/* Instructions */}
+        <div className="bg-orange-50 border border-orange-200 rounded-lg p-4">
+          <p className="text-sm text-orange-800 font-medium">
+            Arrange the following items in the correct order by selecting a number (1, 2, 3, etc.) for each item.
+          </p>
+        </div>
+
+        {/* Ordering Interface */}
+        <div className="space-y-3">
+          {items.map((item: any, idx: number) => (
+            <Card key={item.id || idx} className="border-slate-200">
+              <CardContent className="p-4">
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0">
+                    <select
+                      value={currentAnswers[item.id] || ""}
+                      onChange={(e) => {
+                        const newAnswers = { ...currentAnswers, [item.id]: e.target.value }
+                        onAnswerChange((question as any).id, section.id, newAnswers)
+                      }}
+                      className="w-16 h-10 px-3 border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent text-center font-semibold"
+                    >
+                      <option value="">--</option>
+                      {items.map((_: any, i: number) => (
+                        <option key={i + 1} value={String(i + 1)}>
+                          {i + 1}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-slate-700">{item.text || item.sentence}</p>
                   </div>
                 </div>
               </CardContent>
@@ -578,6 +634,7 @@ export function EnglishQuestionRenderer({
               section.subQuestions &&
               renderFillInTheBlanksQuestions(section.subQuestions, section.id, section.marks)}
             {section.type === "matching" && renderMatchingQuestion(section)}
+            {section.type === "ordering" && renderOrderingQuestion(section)}
           </div>
         ))}
       </div>
@@ -646,10 +703,10 @@ export function EnglishQuestionRenderer({
       <div className="space-y-4">
         {(question as any).subQuestions?.map((subQ: any, index: number) => {
           const currentAnswer = answers[(question as any).id]?.[subQ.id] || ""
-          
+
           // Calculate marks for sub-question: use subQ.marks if available, otherwise divide question marks by number of sub-questions
           const subQuestionMarks = subQ.marks || ((question as any).marks && (question as any).subQuestions ? Math.round(((question as any).marks / (question as any).subQuestions.length) * 10) / 10 : 1)
-          
+
           return (
             <Card key={subQ.id} className="border-slate-200">
               <CardContent className="p-4">
@@ -704,10 +761,10 @@ export function EnglishQuestionRenderer({
           <h4 className="font-semibold text-slate-800">Fill in the blanks:</h4>
           {(question as any).gaps?.map((gap: any, index: number) => {
             const currentAnswer = answers[(question as any).id]?.[gap.id] || ""
-            
+
             // Calculate marks for each gap: divide question marks by number of gaps
             const gapMarks = (question as any).marks && (question as any).gaps ? Math.round(((question as any).marks / (question as any).gaps.length) * 10) / 10 : 1
-            
+
             return (
               <Card key={gap.id} className="border-slate-200">
                 <CardContent className="p-4">

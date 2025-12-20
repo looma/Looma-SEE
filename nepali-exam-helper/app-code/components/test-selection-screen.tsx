@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Clock, Trophy, ArrowRight, Loader2, AlertTriangle, GraduationCap, LogOut } from "lucide-react"
+import { Clock, Trophy, ArrowRight, Loader2, AlertTriangle, GraduationCap, LogOut, Mail, UserX } from "lucide-react"
 import { loadStudentProgress } from "@/lib/storage"
 
 type TestMeta = {
@@ -23,9 +23,11 @@ interface TestSelectionScreenProps {
   studentId: string
   onTestSelect: (testId: string) => void
   onSwitchUser?: () => void
+  isAuthenticated?: boolean
+  userEmail?: string
 }
 
-export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser }: TestSelectionScreenProps) {
+export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isAuthenticated, userEmail }: TestSelectionScreenProps) {
   const [tests, setTests] = useState<TestMeta[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
@@ -43,23 +45,23 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser }: T
     const estimatedTotal = 25 // Default estimate
 
     // Count Group A answers (multiple choice)
-    const groupAAnswers = Object.keys(progress.answersA || {}).filter(
-      (key) => progress.answersA[key] && progress.answersA[key].trim(),
+    const groupAAnswers = Object.keys(progress.answers?.groupA || {}).filter(
+      (key) => progress.answers?.groupA?.[key] && progress.answers.groupA[key].trim(),
     ).length
 
     // Count Group B answers (free response)
-    const groupBAnswers = Object.keys(progress.answersB || {}).filter(
-      (key) => progress.answersB[key] && progress.answersB[key].trim(),
+    const groupBAnswers = Object.keys(progress.answers?.groupB || {}).filter(
+      (key) => progress.answers?.groupB?.[key] && progress.answers.groupB[key].trim(),
     ).length
 
     // Count Group C answers (free response)
-    const groupCAnswers = Object.keys(progress.answersC || {}).filter(
-      (key) => progress.answersC[key] && progress.answersC[key].trim(),
+    const groupCAnswers = Object.keys(progress.answers?.groupC || {}).filter(
+      (key) => progress.answers?.groupC?.[key] && progress.answers.groupC[key].trim(),
     ).length
 
     // Count Group D answers (free response)
-    const groupDAnswers = Object.keys(progress.answersD || {}).filter(
-      (key) => progress.answersD[key] && progress.answersD[key].trim(),
+    const groupDAnswers = Object.keys(progress.answers?.groupD || {}).filter(
+      (key) => progress.answers?.groupD?.[key] && progress.answers.groupD[key].trim(),
     ).length
 
     // Check for English test answers (stored differently)
@@ -281,9 +283,28 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser }: T
               </div>
             </div>
             <div className="flex items-center justify-between sm:justify-end gap-4">
-              <div className="text-left sm:text-right">
-                <p className="text-xs sm:text-sm text-slate-500">Student ID</p>
-                <p className="font-semibold text-slate-800 text-sm sm:text-base">{studentId}</p>
+              <div className="text-left sm:text-right flex items-center gap-2">
+                {isAuthenticated ? (
+                  <Mail className="h-4 w-4 text-amber-600" />
+                ) : (
+                  <UserX className="h-4 w-4 text-slate-500" />
+                )}
+                <div>
+                  {isAuthenticated && userEmail ? (
+                    <>
+                      <p className="font-semibold text-slate-800 text-sm sm:text-base">{userEmail}</p>
+                      <p className="text-xs text-green-600 flex items-center gap-1">
+                        <span className="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+                        Signed in
+                      </p>
+                    </>
+                  ) : (
+                    <>
+                      <p className="font-semibold text-slate-800 text-sm sm:text-base">Guest Mode</p>
+                      <p className="text-xs text-amber-600">Progress saved locally only</p>
+                    </>
+                  )}
+                </div>
               </div>
               {onSwitchUser && (
                 <Button
@@ -293,8 +314,8 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser }: T
                   className="text-amber-700 hover:text-amber-800 bg-amber-50 border-amber-300 hover:bg-amber-100 transition-all duration-200 shadow-sm hover:shadow-md font-medium text-xs sm:text-sm min-h-[40px]"
                 >
                   <LogOut className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2" />
-                  <span className="hidden sm:inline">Switch Student</span>
-                  <span className="sm:hidden">Switch</span>
+                  <span className="hidden sm:inline">{isAuthenticated ? "Sign Out" : "Exit Guest"}</span>
+                  <span className="sm:hidden">{isAuthenticated ? "Out" : "Exit"}</span>
                 </Button>
               )}
             </div>

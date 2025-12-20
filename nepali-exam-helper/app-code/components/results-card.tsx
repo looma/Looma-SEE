@@ -410,6 +410,20 @@ export function ResultsCard({
                         </div>
                       </div>
                     </div>
+                    {/* Show Sample Answer for Groups B, C, D questions */}
+                    {question.sampleAnswer && (
+                      <div className="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded-r-lg">
+                        <div className="flex items-start gap-3">
+                          <Lightbulb className="h-5 w-5 text-indigo-600 mt-1 flex-shrink-0" />
+                          <div className="flex-1 min-w-0">
+                            <p className="font-semibold text-indigo-800">Sample Answer / नमूना उत्तर:</p>
+                            <div className="text-indigo-700 mt-1 text-sm leading-relaxed whitespace-pre-wrap break-words">
+                              <MathText text={question.sampleAnswer} />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </AccordionContent>
               </AccordionItem>
@@ -519,7 +533,12 @@ export function ResultsCard({
                         </div>
                         <Accordion type="single" collapsible className="w-full">
                           {groupFeedback.map((fb: any, idx: number) => {
-                            const question = group.questions?.find((q: any) => q.id === fb.id)
+                            // Find question by questionNumber (e.g., "१") or by matching index
+                            const question = group.questions?.find((q: any) =>
+                              q.questionNumber === fb.questionNumber ||
+                              q.id === fb.id ||
+                              group.questions?.indexOf(q) === idx
+                            )
                             const isFullScore = fb.score === fb.marks
                             const isPartialScore = fb.score > 0 && fb.score < fb.marks
 
@@ -591,7 +610,7 @@ export function ResultsCard({
                                     {/* Feedback */}
                                     <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
                                       <div className="flex items-start gap-3">
-                                        <Lightbulb className="h-5 w-5 text-blue-596 mt-1 flex-shrink-0" />
+                                        <Lightbulb className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
                                         <div className="flex-1">
                                           <p className="font-semibold text-blue-800 mb-1">प्रतिक्रिया:</p>
                                           <p className="text-blue-700 leading-relaxed">{fb.feedback}</p>
@@ -602,8 +621,21 @@ export function ResultsCard({
                                     {/* Sample answer if available */}
                                     {question?.answerNepali && (
                                       <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg">
-                                        <p className="font-semibold text-amber-800 mb-1">नमुना उत्तर:</p>
+                                        <p className="font-semibold text-amber-800 mb-1">नमुना उत्तर / Sample Answer:</p>
                                         <p className="text-amber-700 leading-relaxed whitespace-pre-wrap">{question.answerNepali}</p>
+                                      </div>
+                                    )}
+
+                                    {/* Explanation if available */}
+                                    {question?.explanationNepali && (
+                                      <div className="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded-r-lg">
+                                        <div className="flex items-start gap-3">
+                                          <Lightbulb className="h-5 w-5 text-indigo-600 mt-1 flex-shrink-0" />
+                                          <div className="flex-1">
+                                            <p className="font-semibold text-indigo-800 mb-1">व्याख्या / Explanation:</p>
+                                            <p className="text-indigo-700 leading-relaxed text-sm whitespace-pre-wrap">{question.explanationNepali}</p>
+                                          </div>
+                                        </div>
                                       </div>
                                     )}
                                   </div>
@@ -761,12 +793,29 @@ export function ResultsCard({
                               </div>
 
                               {/* Sample answer if available */}
-                              {(fb.sampleAnswer || originalQuestion?.sampleAnswer || originalQuestion?.modelAnswer) && (
+                              {(fb.sampleAnswer || originalQuestion?.sampleAnswer || originalQuestion?.correctAnswer) && (
                                 <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg">
-                                  <p className="font-semibold text-amber-800 mb-1">नमुना उत्तर:</p>
+                                  <p className="font-semibold text-amber-800 mb-1">नमुना उत्तर / Sample Answer:</p>
                                   <p className="text-amber-700 leading-relaxed whitespace-pre-wrap">
-                                    {fb.sampleAnswer || originalQuestion?.sampleAnswer || originalQuestion?.modelAnswer}
+                                    {typeof (fb.sampleAnswer || originalQuestion?.sampleAnswer || originalQuestion?.correctAnswer) === 'object'
+                                      ? JSON.stringify(fb.sampleAnswer || originalQuestion?.sampleAnswer || originalQuestion?.correctAnswer, null, 2)
+                                      : (fb.sampleAnswer || originalQuestion?.sampleAnswer || originalQuestion?.correctAnswer)}
                                   </p>
+                                </div>
+                              )}
+
+                              {/* Explanation if available */}
+                              {(fb.explanation || originalQuestion?.explanation) && (
+                                <div className="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded-r-lg">
+                                  <div className="flex items-start gap-3">
+                                    <Lightbulb className="h-5 w-5 text-indigo-600 mt-1 flex-shrink-0" />
+                                    <div className="flex-1">
+                                      <p className="font-semibold text-indigo-800 mb-1">व्याख्या / Explanation:</p>
+                                      <p className="text-indigo-700 leading-relaxed text-sm whitespace-pre-wrap">
+                                        {fb.explanation || originalQuestion?.explanation}
+                                      </p>
+                                    </div>
+                                  </div>
                                 </div>
                               )}
                             </div>
@@ -892,11 +941,9 @@ export function ResultsCard({
                                 </div>
                               )}
 
-                              {/* Handle reading comprehension with sub-sections */}
-                              {question.type === 'reading_comprehension' && question.subSections && userAnswer && typeof userAnswer === 'object' ? (
+                              {question.type === 'reading_comprehension' && question.subSections && question.subSections.length > 0 ? (
                                 question.subSections.map((section: any) => {
-                                  const sectionAnswers = userAnswer[section.id]
-                                  if (!sectionAnswers || typeof sectionAnswers !== 'object') return null
+                                  const sectionAnswers = (userAnswer && typeof userAnswer === 'object') ? userAnswer[section.id] || {} : {}
 
                                   const sectionFeedbacks = questionFeedbacks.filter(
                                     (f: any) => f.sectionId === section.id,
@@ -908,7 +955,154 @@ export function ResultsCard({
                                         Section {section.id}: {section.title}
                                       </h4>
 
-                                      {section.subQuestions?.map((subQ: any) => {
+                                      {/* Handle matching type sections */}
+                                      {section.type === 'matching' && section.columns ? (
+                                        <div className="space-y-4">
+                                          {/* Display the matching columns */}
+                                          <div className="grid grid-cols-2 gap-4 mb-4">
+                                            <div className="bg-slate-50 p-3 rounded-lg">
+                                              <h5 className="font-semibold text-slate-700 mb-2">Column A</h5>
+                                              <ul className="space-y-1 text-sm">
+                                                {section.columns.A?.map((item: any) => (
+                                                  <li key={item.id} className="text-slate-600">({item.id}) {item.text}</li>
+                                                ))}
+                                              </ul>
+                                            </div>
+                                            <div className="bg-slate-50 p-3 rounded-lg">
+                                              <h5 className="font-semibold text-slate-700 mb-2">Column B</h5>
+                                              <ul className="space-y-1 text-sm">
+                                                {section.columns.B?.map((item: any) => (
+                                                  <li key={item.id} className="text-slate-600">({item.id}) {item.text}</li>
+                                                ))}
+                                              </ul>
+                                            </div>
+                                          </div>
+
+                                          {/* Display matching answers */}
+                                          <div className="space-y-2">
+                                            <h5 className="font-semibold text-slate-700">Your Matches / तपाईंको मिलान:</h5>
+                                            {section.columns.A?.map((itemA: any) => {
+                                              const userMatch = sectionAnswers?.[itemA.id]
+                                              const correctMatch = section.correctAnswer?.find((ca: any) => ca.A === itemA.id)?.B
+                                              const matchedB = section.columns.B?.find((b: any) => b.id === userMatch)
+                                              const correctB = section.columns.B?.find((b: any) => b.id === correctMatch)
+                                              const isCorrect = userMatch === correctMatch
+                                              const matchFeedback = sectionFeedbacks.find((f: any) => f.matchId === itemA.id)
+                                              const matchScore = matchFeedback?.score || (isCorrect ? 1 : 0)
+                                              const matchMaxScore = section.marks ? Math.round((section.marks / section.columns.A.length) * 10) / 10 : 1
+
+                                              return (
+                                                <div key={itemA.id} className={`p-3 rounded-lg ${isCorrect ? 'bg-green-50 border-l-4 border-green-500' : 'bg-red-50 border-l-4 border-red-500'}`}>
+                                                  <div className="flex justify-between items-start">
+                                                    <div className="flex-1">
+                                                      <p className="font-medium text-slate-800">({itemA.id}) {itemA.text}</p>
+                                                      <p className="text-sm mt-1">
+                                                        <span className="text-slate-600">Your answer: </span>
+                                                        <span className={isCorrect ? 'text-green-700 font-medium' : 'text-red-700 font-medium'}>
+                                                          {matchedB ? `(${userMatch}) ${matchedB.text}` : 'No answer'}
+                                                        </span>
+                                                      </p>
+                                                      {!isCorrect && correctB && (
+                                                        <p className="text-sm mt-1">
+                                                          <span className="text-slate-600">Correct answer: </span>
+                                                          <span className="text-blue-700 font-medium">({correctMatch}) {correctB.text}</span>
+                                                        </p>
+                                                      )}
+                                                    </div>
+                                                    <Badge className={`ml-2 flex-shrink-0 ${isCorrect ? 'bg-green-500 text-white' : 'bg-red-500 text-white'}`}>
+                                                      {matchScore}/{matchMaxScore}
+                                                    </Badge>
+                                                  </div>
+                                                  {matchFeedback?.feedback && (
+                                                    <p className="text-sm text-blue-700 mt-2 italic">{matchFeedback.feedback}</p>
+                                                  )}
+                                                </div>
+                                              )
+                                            })}
+                                          </div>
+
+                                          {/* Show explanation if available */}
+                                          {(section.explanationEnglish || section.explanationNepali) && (
+                                            <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded-r-lg mt-3">
+                                              <p className="font-semibold text-blue-800 mb-1">Explanation / व्याख्या:</p>
+                                              <p className="text-blue-700 text-sm">{section.explanationEnglish || section.explanationNepali}</p>
+                                            </div>
+                                          )}
+                                        </div>
+                                      ) : section.type === 'ordering' && section.sentences ? (
+                                        /* Handle ordering type sections */
+                                        <div className="space-y-4">
+                                          <div className="bg-slate-50 p-4 rounded-lg">
+                                            <h5 className="font-semibold text-slate-700 mb-3">Sentences to Order:</h5>
+                                            <ul className="space-y-2 text-sm">
+                                              {section.sentences?.map((sentence: any) => (
+                                                <li key={sentence.id} className="text-slate-600">
+                                                  <span className="font-medium">({sentence.id})</span> {sentence.text}
+                                                </li>
+                                              ))}
+                                            </ul>
+                                          </div>
+
+                                          {/* Display user's ordering vs correct order */}
+                                          <div className="space-y-3">
+                                            <div className={`p-4 rounded-lg ${JSON.stringify(sectionAnswers?.order) === JSON.stringify(section.correctAnswer)
+                                              ? 'bg-green-50 border-l-4 border-green-500'
+                                              : 'bg-red-50 border-l-4 border-red-500'
+                                              }`}>
+                                              <p className="font-semibold text-slate-800 mb-2">Your Order / तपाईंको क्रम:</p>
+                                              {sectionAnswers?.order && Array.isArray(sectionAnswers.order) ? (
+                                                <ol className="list-decimal list-inside space-y-1 text-sm">
+                                                  {sectionAnswers.order.map((id: string, idx: number) => {
+                                                    const sentence = section.sentences?.find((s: any) => s.id === id)
+                                                    return (
+                                                      <li key={id} className="text-slate-700">
+                                                        <span className="font-medium">({id})</span> {sentence?.text || 'Unknown'}
+                                                      </li>
+                                                    )
+                                                  })}
+                                                </ol>
+                                              ) : (
+                                                <p className="text-slate-500 italic">No answer provided</p>
+                                              )}
+                                            </div>
+
+                                            {/* Show correct order if wrong */}
+                                            {JSON.stringify(sectionAnswers?.order) !== JSON.stringify(section.correctAnswer) && section.correctAnswer && (
+                                              <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg">
+                                                <p className="font-semibold text-amber-800 mb-2">Correct Order / सही क्रम:</p>
+                                                <ol className="list-decimal list-inside space-y-1 text-sm">
+                                                  {section.correctAnswer.map((id: string) => {
+                                                    const sentence = section.sentences?.find((s: any) => s.id === id)
+                                                    return (
+                                                      <li key={id} className="text-amber-700">
+                                                        <span className="font-medium">({id})</span> {sentence?.text || 'Unknown'}
+                                                      </li>
+                                                    )
+                                                  })}
+                                                </ol>
+                                              </div>
+                                            )}
+                                          </div>
+
+                                          {/* Score for ordering */}
+                                          <div className="flex justify-end">
+                                            <Badge className={`${JSON.stringify(sectionAnswers?.order) === JSON.stringify(section.correctAnswer)
+                                              ? 'bg-green-500 text-white'
+                                              : 'bg-red-500 text-white'
+                                              }`}>
+                                              {JSON.stringify(sectionAnswers?.order) === JSON.stringify(section.correctAnswer) ? section.marks || 5 : 0}/{section.marks || 5}
+                                            </Badge>
+                                          </div>
+
+                                          {/* Show explanation if available */}
+                                          {(section.explanationEnglish || section.explanationNepali) && (
+                                            <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded-r-lg">
+                                              <p className="font-semibold text-blue-800 mb-1">Explanation / व्याख्या:</p>
+                                              <p className="text-blue-700 text-sm">{section.explanationEnglish || section.explanationNepali}</p>
+                                            </div>
+                                          )}
+                                        </div>
+                                      ) : section.subQuestions?.map((subQ: any) => {
                                         const answer = sectionAnswers[subQ.id]
                                         const feedback = sectionFeedbacks.find((f: any) => f.subQuestionId === subQ.id)
                                         const subQuestionMarks = subQ.marks || (section.marks ? Math.round((section.marks / section.subQuestions.length) * 10) / 10 : 1)
@@ -966,6 +1160,14 @@ export function ResultsCard({
                                                 <p className="text-blue-700 font-medium">{subQ.correctAnswer}</p>
                                               </div>
                                             )}
+
+                                            {/* Correct Answer for fill_in_the_blanks and short_answer when incorrect */}
+                                            {(section.type === 'fill_in_the_blanks' || section.type === 'short_answer' || section.type === 'true_false_not_given') && subQ.correctAnswer && !isCorrect && (
+                                              <div className="bg-amber-50 border-l-4 border-amber-500 p-3 rounded-r-lg">
+                                                <p className="font-semibold text-amber-800 mb-1">Correct Answer / सही उत्तर:</p>
+                                                <p className="text-amber-700 font-medium">{subQ.correctAnswer}</p>
+                                              </div>
+                                            )}
                                           </div>
                                         )
                                       })}
@@ -1001,6 +1203,13 @@ export function ResultsCard({
                                           <p className="text-blue-700">{feedback.feedback}</p>
                                         </div>
                                       )}
+                                      {/* Show correct answer for grammar questions when wrong */}
+                                      {subQ.correctAnswer && !isCorrect && (
+                                        <div className="bg-amber-50 border-l-4 border-amber-500 p-3 rounded-r-lg">
+                                          <p className="font-semibold text-amber-800 mb-1">Correct Answer / सही उत्तर:</p>
+                                          <p className="text-amber-700 font-medium">{subQ.correctAnswer}</p>
+                                        </div>
+                                      )}
                                     </div>
                                   )
                                 })
@@ -1024,6 +1233,16 @@ export function ResultsCard({
                                           </p>
                                         </div>
                                       </div>
+                                    </div>
+                                  )}
+                                  {/* Show sample answer for free writing questions if available */}
+                                  {question.sampleAnswer && (
+                                    <div className="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded-r-lg">
+                                      <p className="font-semibold text-indigo-800 mb-2">Sample Answer / नमूना उत्तर:</p>
+                                      {question.sampleAnswer.title && (
+                                        <p className="font-medium text-indigo-700 mb-1">{question.sampleAnswer.title}</p>
+                                      )}
+                                      <p className="text-indigo-700 text-sm whitespace-pre-wrap">{question.sampleAnswer.content}</p>
                                     </div>
                                   )}
                                 </div>

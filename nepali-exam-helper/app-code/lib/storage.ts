@@ -69,7 +69,7 @@ export function loadStudentProgress(studentIdWithTest: string): StudentProgress 
     const stored = localStorage.getItem(storageKey)
     if (stored) {
       const parsed = JSON.parse(stored)
-      
+
       // Handle backward compatibility: convert old format to new format
       if (parsed.answersA || parsed.answersB || parsed.answersC || parsed.answersD) {
         parsed.answers = {
@@ -86,7 +86,7 @@ export function loadStudentProgress(studentIdWithTest: string): StudentProgress 
         delete parsed.answersC
         delete parsed.answersD
       }
-      
+
       console.log(`✅ Successfully loaded progress for ${studentIdWithTest}`)
       return parsed
     } else {
@@ -127,4 +127,114 @@ export function saveAttemptHistory(
   } catch (error) {
     console.error("❌ Failed to save attempt history:", error)
   }
+}
+
+// ============================================================
+// Server Sync Functions for Authenticated Users
+// ============================================================
+
+const AUTH_KEY = "see_auth_state"
+
+export interface AuthState {
+  isAuthenticated: boolean
+  email: string | null
+}
+
+export function getAuthState(): AuthState {
+  if (!isClientSide()) {
+    return { isAuthenticated: false, email: null }
+  }
+
+  try {
+    const stored = localStorage.getItem(AUTH_KEY)
+    if (stored) {
+      return JSON.parse(stored)
+    }
+  } catch (error) {
+    console.error("❌ Failed to get auth state:", error)
+  }
+
+  return { isAuthenticated: false, email: null }
+}
+
+export function setAuthState(state: AuthState): void {
+  if (!isClientSide()) return
+
+  try {
+    localStorage.setItem(AUTH_KEY, JSON.stringify(state))
+    console.log(`✅ Auth state updated: ${state.isAuthenticated ? state.email : "logged out"}`)
+  } catch (error) {
+    console.error("❌ Failed to save auth state:", error)
+  }
+}
+
+export function clearAuthState(): void {
+  if (!isClientSide()) return
+
+  try {
+    localStorage.removeItem(AUTH_KEY)
+    console.log("✅ Auth state cleared")
+  } catch (error) {
+    console.error("❌ Failed to clear auth state:", error)
+  }
+}
+
+export async function syncProgressToServer(
+  email: string,
+  progress: Omit<StudentProgress, "lastUpdated">
+): Promise<boolean> {
+  try {
+    const response = await fetch("/api/progress/sync", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email, progress }),
+    })
+
+    if (!response.ok) {
+      console.error("❌ Server sync failed:", response.statusText)
+      return false
+    }
+
+    console.log(`☁️ Progress synced to server for ${email}`)
+    return true
+  } catch (error) {
+    console.error("❌ Server sync error:", error)
+    return false
+  }
+}
+
+export async function loadProgressFromServer(
+  email: string,
+  testId?: string
+): Promise<StudentProgress | StudentProgress[] | null> {
+  try {
+    const url = new URL("/api/progress/load", window.location.origin)
+    url.searchParams.set("email", email)
+    if (testId) {
+      url.searchParams.set("testId", testId)
+    }
+
+    const response = await fetch(url.toString())
+
+    if (!response.ok) {
+      console.error("❌ Failed to load server progress:", response.statusText)
+      return null
+    }
+
+    const data = await response.json()
+    if (data.success && data.progress) {
+      console.log(`☁️ Progress loaded from server for ${email}`)
+      return data.progress
+    }
+
+    return null
+  } catch (error) {
+    console.error("❌ Load server progress error:", error)
+    return null
+  }
+}
+
+// Helper to check if user is a guest (not authenticated)
+export function isGuestUser(studentId: string): boolean {
+  return studentId.startsWith("guest_")
 }
