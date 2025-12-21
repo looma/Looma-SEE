@@ -9,7 +9,7 @@ import { Label } from "@/components/ui/label"
 import { Mail, ArrowLeft, Loader2, CheckCircle2, AlertCircle, UserX } from "lucide-react"
 import { setAuthState } from "@/lib/storage"
 
-type LoginStep = "choice" | "email" | "login" | "otp" | "verifying"
+type LoginStep = "choice" | "email" | "otp" | "verifying"
 
 interface StudentLoginProps {
   onLogin: (studentId: string, isAuthenticated: boolean, email?: string) => void
@@ -66,13 +66,6 @@ export function StudentLogin({ onLogin }: StudentLoginProps) {
       const data = await response.json()
 
       if (!response.ok) {
-        // If user already has a valid code, redirect to login step
-        if (data.hasExistingCode) {
-          setSuccess("You already have a code! Enter it below to log in.")
-          setStep("login")
-          setIsLoading(false)
-          return
-        }
         setError(data.error || "Failed to send code")
         setIsLoading(false)
         return
@@ -192,24 +185,23 @@ export function StudentLogin({ onLogin }: StudentLoginProps) {
           {/* Choice Step */}
           {step === "choice" && (
             <div className="space-y-4">
-              <div className="text-center mb-4">
-                <h3 className="text-lg font-semibold text-slate-700 mb-1">Welcome! / स्वागत छ!</h3>
+              <div className="text-center mb-6">
+                <h3 className="text-lg font-semibold text-slate-700 mb-2">Welcome! / स्वागत छ!</h3>
                 <p className="text-sm text-slate-500">Choose how you'd like to continue</p>
               </div>
 
-              {/* Primary: Log in with existing code */}
               <Button
-                onClick={() => setStep("login")}
+                onClick={() => setStep("email")}
                 className="w-full bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-white py-6 text-base rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <Mail className="mr-2 h-5 w-5" />
-                Log in with my code
+                Sign in with Email
               </Button>
-              <p className="text-xs text-center text-slate-500 -mt-2">
-                Already have a code? / पहिले कोड छ?
+              <p className="text-xs text-center text-slate-500 -mt-1">
+                We'll send you a login code / हामी तपाईंलाई कोड पठाउनेछौं
               </p>
 
-              <div className="relative my-3">
+              <div className="relative my-4">
                 <div className="absolute inset-0 flex items-center">
                   <div className="w-full border-t border-slate-200"></div>
                 </div>
@@ -218,41 +210,15 @@ export function StudentLogin({ onLogin }: StudentLoginProps) {
                 </div>
               </div>
 
-              {/* Secondary: Get a new code */}
-              <Button
-                onClick={async () => {
-                  setStep("email")
-                  // Will automatically be in "email" step where they can request a code
-                }}
-                variant="outline"
-                className="w-full border-2 border-amber-300 text-amber-700 hover:bg-amber-50 py-5 text-base rounded-xl transition-all duration-300"
-              >
-                <Mail className="mr-2 h-5 w-5" />
-                New user? Get a code
-              </Button>
-              <p className="text-xs text-center text-slate-500 -mt-2">
-                First time? We'll email you a code / पहिलो पटक? कोड पठाउनुहोस्
-              </p>
-
-              <div className="relative my-3">
-                <div className="absolute inset-0 flex items-center">
-                  <div className="w-full border-t border-slate-200"></div>
-                </div>
-                <div className="relative flex justify-center text-xs">
-                  <span className="bg-white px-2 text-slate-400">or / वा</span>
-                </div>
-              </div>
-
-              {/* Tertiary: Continue as guest */}
               <Button
                 onClick={handleContinueAsGuest}
-                variant="ghost"
-                className="w-full text-slate-500 hover:text-slate-700 hover:bg-slate-100 py-4 text-sm rounded-xl transition-all duration-300"
+                variant="outline"
+                className="w-full border-2 border-slate-200 hover:border-amber-300 hover:bg-amber-50 py-6 text-base rounded-xl transition-all duration-300"
               >
-                <UserX className="mr-2 h-4 w-4" />
+                <UserX className="mr-2 h-5 w-5 text-slate-500" />
                 Continue without signing in
               </Button>
-              <p className="text-xs text-center text-slate-400 -mt-2">
+              <p className="text-xs text-center text-slate-400 -mt-1">
                 Progress saved only in this browser
               </p>
             </div>
@@ -288,7 +254,7 @@ export function StudentLogin({ onLogin }: StudentLoginProps) {
                   disabled={isLoading}
                 />
                 <p className="text-xs text-slate-500">
-                  We'll send you a one-time code to verify your email
+                  We'll send you a one-time code to verify (expires in 15 min)
                 </p>
               </div>
 
@@ -313,132 +279,6 @@ export function StudentLogin({ onLogin }: StudentLoginProps) {
                   "Send Code"
                 )}
               </Button>
-
-              {/* Option to use existing code */}
-              <div className="text-center">
-                <button
-                  type="button"
-                  onClick={() => {
-                    setStep("login")
-                    setError(null)
-                    setSuccess(null)
-                  }}
-                  className="text-sm text-amber-600 hover:text-amber-700 hover:underline"
-                >
-                  I already have a code
-                </button>
-                <p className="text-xs text-slate-400 mt-1">
-                  म सँग पहिले नै कोड छ
-                </p>
-              </div>
-            </form>
-          )}
-
-          {/* Login Step - For returning users with existing code */}
-          {step === "login" && (
-            <form onSubmit={handleVerifyCode} className="space-y-4">
-              <Button
-                type="button"
-                variant="ghost"
-                size="sm"
-                onClick={() => {
-                  setStep("choice")
-                  setEmail("")
-                  setOtpCode("")
-                  setError(null)
-                  setSuccess(null)
-                }}
-                className="text-slate-500 hover:text-slate-700 -ml-2"
-              >
-                <ArrowLeft className="mr-1 h-4 w-4" />
-                Back
-              </Button>
-
-              <div className="text-center mb-2">
-                <h4 className="font-semibold text-slate-700">Welcome back! / स्वागतम्!</h4>
-                <p className="text-sm text-slate-500">Enter your email and code</p>
-              </div>
-
-              <div className="space-y-3">
-                <Label htmlFor="login-email" className="text-base font-semibold flex items-center gap-2">
-                  <Mail className="h-4 w-4" />
-                  Email Address
-                </Label>
-                <Input
-                  id="login-email"
-                  type="email"
-                  placeholder="Enter your email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                  className="border-2 focus:border-yellow-400 text-base py-3 min-h-[48px]"
-                  disabled={isLoading}
-                />
-              </div>
-
-              <div className="space-y-3">
-                <Label htmlFor="login-code" className="text-base font-semibold">
-                  Your Code / तपाईंको कोड
-                </Label>
-                <Input
-                  id="login-code"
-                  type="text"
-                  inputMode="numeric"
-                  pattern="[0-9]*"
-                  maxLength={6}
-                  placeholder="Enter your 6-digit code"
-                  value={otpCode}
-                  onChange={(e) => setOtpCode(e.target.value.replace(/\D/g, "").slice(0, 6))}
-                  required
-                  className="border-2 focus:border-yellow-400 text-base py-3 min-h-[48px] text-center text-xl tracking-widest font-mono"
-                  disabled={isLoading}
-                />
-              </div>
-
-              {error && (
-                <div className="flex items-center gap-2 text-red-600 text-sm bg-red-50 p-3 rounded-lg">
-                  <AlertCircle className="h-4 w-4 flex-shrink-0" />
-                  {error}
-                </div>
-              )}
-
-              {success && (
-                <div className="flex items-center gap-2 text-green-600 text-sm bg-green-50 p-3 rounded-lg">
-                  <CheckCircle2 className="h-4 w-4 flex-shrink-0" />
-                  {success}
-                </div>
-              )}
-
-              <Button
-                type="submit"
-                className="w-full bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-white py-4 text-base rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
-                disabled={!email.trim() || otpCode.length !== 6 || isLoading}
-              >
-                {isLoading ? (
-                  <>
-                    <Loader2 className="mr-2 h-5 w-5 animate-spin" />
-                    Logging in...
-                  </>
-                ) : (
-                  "Log In"
-                )}
-              </Button>
-
-              <div className="text-center">
-                <p className="text-sm text-slate-500 mb-2">Don't have a code? / कोड छैन?</p>
-                <button
-                  type="button"
-                  onClick={() => {
-                    setStep("email")
-                    setOtpCode("")
-                    setError(null)
-                    setSuccess(null)
-                  }}
-                  className="text-sm text-amber-600 hover:text-amber-700 hover:underline font-medium"
-                >
-                  Get a new code sent to your email
-                </button>
-              </div>
             </form>
           )}
 

@@ -1,10 +1,7 @@
 import { NextRequest, NextResponse } from "next/server"
 import { connectToDatabase } from "@/lib/mongodb"
 
-// Force dynamic rendering
-export const dynamic = "force-dynamic"
-
-const MAX_ATTEMPTS_PER_DAY = 10 // Max failed attempts per day before temporary lockout
+const MAX_ATTEMPTS = 5 // Max failed attempts before code is invalidated
 
 export async function POST(request: NextRequest) {
     try {
@@ -24,60 +21,54 @@ export async function POST(request: NextRequest) {
         const { db } = await connectToDatabase()
         const authCodesCollection = db.collection("auth_codes")
 
-        // Find the permanent code for this email
+        // Find the code
         const storedCode = await authCodesCollection.findOne({
             email: normalizedEmail,
         })
 
         if (!storedCode) {
             return NextResponse.json(
-                { error: "No code found for this email. Please request a code first." },
+                { error: "No code found. Please request a new one." },
                 { status: 400 }
             )
         }
 
-        // Check for too many failed attempts (reset daily)
-        const today = new Date()
-        today.setHours(0, 0, 0, 0)
+        // Check if code is expired
+        if (storedCode.expiresAt < new Date()) {
+            await authCodesCollection.deleteOne({ email: normalizedEmail })
+            return NextResponse.json(
+                { error: "Code expired. Please request a new one." },
+                { status: 400 }
+            )
+        }
 
-        if (storedCode.lastFailedAttempt && storedCode.lastFailedAttempt >= today) {
-            if (storedCode.failedAttemptsToday >= MAX_ATTEMPTS_PER_DAY) {
-                return NextResponse.json(
-                    { error: "Too many failed attempts today. Please try again tomorrow." },
-                    { status: 429 }
-                )
-            }
+        // Check attempts
+        if (storedCode.attempts >= MAX_ATTEMPTS) {
+            await authCodesCollection.deleteOne({ email: normalizedEmail })
+            return NextResponse.json(
+                { error: "Too many failed attempts. Please request a new code." },
+                { status: 400 }
+            )
         }
 
         // Verify code
         if (storedCode.code !== normalizedCode) {
-            // Check if this is a new day - reset counter if so
-            const isNewDay = !storedCode.lastFailedAttempt || storedCode.lastFailedAttempt < today
-
-            // Increment failed attempts
+            // Increment attempts
             await authCodesCollection.updateOne(
                 { email: normalizedEmail },
-                isNewDay
-                    ? { $set: { lastFailedAttempt: new Date(), failedAttemptsToday: 1 } }
-                    : { $set: { lastFailedAttempt: new Date() }, $inc: { failedAttemptsToday: 1 } }
+                { $inc: { attempts: 1 } }
             )
-
+            const remainingAttempts = MAX_ATTEMPTS - storedCode.attempts - 1
             return NextResponse.json(
-                { error: "Invalid code. Please check your code and try again." },
+                {
+                    error: `Invalid code. ${remainingAttempts} attempt${remainingAttempts !== 1 ? 's' : ''} remaining.`
+                },
                 { status: 400 }
             )
         }
 
-        // Code is valid! Reset failed attempts counter
-        await authCodesCollection.updateOne(
-            { email: normalizedEmail },
-            {
-                $set: {
-                    lastLogin: new Date(),
-                    failedAttemptsToday: 0
-                }
-            }
-        )
+        // Code is valid - delete it (one-time use)
+        await authCodesCollection.deleteOne({ email: normalizedEmail })
 
         // Ensure user exists in users collection
         const usersCollection = db.collection("users")
