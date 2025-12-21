@@ -1,5 +1,7 @@
 import { config, debugEnvironment } from "@/lib/config"
 
+// Force dynamic rendering
+export const dynamic = "force-dynamic"
 export const maxDuration = 30
 
 export async function POST(req: Request) {

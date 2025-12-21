@@ -2,6 +2,9 @@ import { type NextRequest, NextResponse } from "next/server"
 import { connectToDatabase } from "@/lib/mongodb"
 import { adaptDatabaseQuestions } from "@/lib/question-adapter"
 
+// Force dynamic rendering - this route uses database and params
+export const dynamic = "force-dynamic"
+
 export async function GET(request: NextRequest, { params }: { params: { testId: string } }) {
   try {
     const { testId } = params

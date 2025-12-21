@@ -1,6 +1,9 @@
 import { NextRequest, NextResponse } from "next/server"
 import { connectToDatabase } from "@/lib/mongodb"
 
+// Force dynamic rendering
+export const dynamic = "force-dynamic"
+
 const MAX_ATTEMPTS_PER_DAY = 10 // Max failed attempts per day before temporary lockout
 
 export async function POST(request: NextRequest) {

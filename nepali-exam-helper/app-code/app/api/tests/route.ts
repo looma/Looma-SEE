@@ -1,6 +1,9 @@
 import { NextResponse } from "next/server"
 import { connectToDatabase } from "@/lib/mongodb"
 
+// Force dynamic rendering - this route uses database
+export const dynamic = "force-dynamic"
+
 export async function GET() {
   try {
     console.log("🔍 /api/tests called - ONLY checking database on port 47017")

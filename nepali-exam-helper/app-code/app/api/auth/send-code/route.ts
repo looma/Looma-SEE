@@ -2,6 +2,9 @@ import { NextRequest, NextResponse } from "next/server"
 import { connectToDatabase } from "@/lib/mongodb"
 import { sendOTPEmail } from "@/lib/email"
 
+// Force dynamic rendering
+export const dynamic = "force-dynamic"
+
 // Rate limit: max 3 code requests per email per hour (to prevent spam)
 const RATE_LIMIT_WINDOW_MS = 60 * 60 * 1000 // 1 hour
 const MAX_REQUESTS_PER_WINDOW = 3
