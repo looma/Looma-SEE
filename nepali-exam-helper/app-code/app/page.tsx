@@ -301,6 +301,7 @@ export default function SeePrepPage() {
           <ExamTabs
             studentId={currentStudentId}
             testId={currentTestId || ""}
+            userEmail={userEmail}
             onProgressUpdate={updateLastSaved}
             onShowResults={handleShowResults}
             onBackToTestSelection={handleChangeTest}

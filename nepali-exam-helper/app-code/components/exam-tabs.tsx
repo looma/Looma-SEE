@@ -10,17 +10,18 @@ import { EnglishQuestionRenderer } from "./english-question-renderer"
 import { SocialStudiesGroupRenderer } from "./social-studies-question-renderer"
 import { NepaliQuestionRenderer } from "./nepali-question-renderer"
 import { useQuestions } from "@/lib/use-questions"
-import { loadStudentProgress, saveStudentProgress, saveAttemptHistory } from "@/lib/storage"
+import { loadStudentProgress, saveStudentProgress, saveAttemptHistory, syncProgressToServer, loadProgressFromServer } from "@/lib/storage"
 
 interface ExamTabsProps {
   studentId: string
   testId: string
+  userEmail?: string | null  // For cloud sync
   onProgressUpdate: () => void
   onShowResults: (results: any) => void
   onBackToTestSelection: () => void
 }
 
-export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, onBackToTestSelection }: ExamTabsProps) {
+export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onShowResults, onBackToTestSelection }: ExamTabsProps) {
   const { questions, loading, error } = useQuestions(testId)
   const [answers, setAnswers] = useState<Record<string, any>>({})
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -58,14 +59,33 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
   useEffect(() => {
     if (!studentId || !testId) return
 
-    const storageKey = `${studentId}_${testId}`
-    const progress = loadStudentProgress(storageKey)
+    async function loadProgress() {
+      const storageKey = `${studentId}_${testId}`
+      let progress = loadStudentProgress(storageKey)
 
-    if (progress && progress.answers) {
-      setAnswers(progress.answers)
-      setLastSaved(new Date(progress.lastUpdated))
+      // If no local progress and user is authenticated, try loading from server
+      if (!progress && userEmail) {
+        try {
+          const serverProgress = await loadProgressFromServer(userEmail, testId)
+          if (serverProgress && !Array.isArray(serverProgress)) {
+            progress = serverProgress
+            // Cache server progress locally
+            saveStudentProgress(studentId, serverProgress)
+            console.log(`☁️ Loaded test progress from server for ${userEmail}`)
+          }
+        } catch (error) {
+          console.error("Failed to load progress from server:", error)
+        }
+      }
+
+      if (progress && progress.answers) {
+        setAnswers(progress.answers)
+        setLastSaved(new Date(progress.lastUpdated))
+      }
     }
-  }, [studentId, testId])
+
+    loadProgress()
+  }, [studentId, testId, userEmail])
 
   // Set tab when questions load (separate effect to avoid clearing answers)
   useEffect(() => {
@@ -99,7 +119,12 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
     saveStudentProgress(studentId, progressData)
     setLastSaved(new Date())
     onProgressUpdate()
-  }, [answers, studentId, testId, onProgressUpdate, currentTab])
+
+    // Also sync to server for authenticated users (debounced)
+    if (userEmail) {
+      syncProgressToServer(userEmail, progressData)
+    }
+  }, [answers, studentId, testId, onProgressUpdate, currentTab, userEmail])
 
   const handleAnswerChange = (questionId: string, subQuestionId: string, answer: any) => {
     setAnswers((prev: Record<string, any>) => ({
@@ -809,7 +834,13 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
                     sampleAnswer: question.answerNepali,
                   }),
                 })
-                  .then((res) => res.json())
+                  .then(async (res) => {
+                    const result = await res.json()
+                    if (!res.ok) {
+                      throw new Error(result.error || `HTTP ${res.status}`)
+                    }
+                    return result
+                  })
                   .then((result) => ({
                     id: question.id,
                     score: result.score || 0,
@@ -819,10 +850,10 @@ export function ExamTabs({ studentId, testId, onProgressUpdate, onShowResults, o
                     group: groupIndex,
                     marks: question.marks,
                   }))
-                  .catch(() => ({
+                  .catch((error) => ({
                     id: question.id,
                     score: 0,
-                    feedback: "AI ग्रेडिङ असफल भयो",
+                    feedback: `AI ग्रेडिङ असफल भयो: ${error.message || 'Unknown error'}`,
                     question: question.questionNepali,
                     studentAnswer: userAnswer,
                     group: groupIndex,

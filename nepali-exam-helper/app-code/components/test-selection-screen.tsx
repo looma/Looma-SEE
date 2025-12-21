@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Clock, Trophy, ArrowRight, Loader2, AlertTriangle, GraduationCap, LogOut, Mail, UserX } from "lucide-react"
-import { loadStudentProgress } from "@/lib/storage"
+import { loadStudentProgress, loadProgressFromServer, saveStudentProgress, type StudentProgress } from "@/lib/storage"
 
 type TestMeta = {
   id: string
@@ -31,9 +31,20 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
   const [tests, setTests] = useState<TestMeta[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+  const [serverProgress, setServerProgress] = useState<Record<string, StudentProgress>>({})
+  const [loadingServerProgress, setLoadingServerProgress] = useState(false)
 
   const getTestProgress = (testId: string) => {
-    const progress = loadStudentProgress(`${studentId}_${testId}`)
+    // First try localStorage, then check server progress cache
+    let progress = loadStudentProgress(`${studentId}_${testId}`)
+
+    // If no local progress but we have server progress, use that
+    if (!progress && serverProgress[testId]) {
+      progress = serverProgress[testId]
+      // Also cache it locally for future use
+      saveStudentProgress(studentId, progress)
+    }
+
     if (!progress) return { completed: false, hasProgress: false, percentage: 0, lastAttempt: null as any }
 
     // Check if they have completed attempts (submitted the test)
@@ -189,6 +200,34 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
     }
     fetchTests()
   }, [])
+
+  // Load server progress for authenticated users
+  useEffect(() => {
+    async function fetchServerProgress() {
+      if (!isAuthenticated || !userEmail) return
+
+      setLoadingServerProgress(true)
+      try {
+        const result = await loadProgressFromServer(userEmail)
+        if (result && Array.isArray(result)) {
+          // Convert array to map by testId
+          const progressMap: Record<string, StudentProgress> = {}
+          result.forEach((p: StudentProgress) => {
+            if (p.testId) {
+              progressMap[p.testId] = p
+            }
+          })
+          setServerProgress(progressMap)
+          console.log(`☁️ Loaded ${result.length} test progress from server for ${userEmail}`)
+        }
+      } catch (error) {
+        console.error("Failed to load server progress:", error)
+      } finally {
+        setLoadingServerProgress(false)
+      }
+    }
+    fetchServerProgress()
+  }, [isAuthenticated, userEmail])
 
   // Group tests by subject
   const testsBySubject = tests.reduce(
