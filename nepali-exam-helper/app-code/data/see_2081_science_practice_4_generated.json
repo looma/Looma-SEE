@@ -7,13 +7,24 @@
     "year": 2081,
     "totalMarks": 75,
     "duration": 180,
-    "sections": ["A", "B", "C", "D"],
+    "sections": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
     "isActive": true,
-    "createdAt": { "$date": "2025-09-01T10:00:00.000Z" },
-    "updatedAt": { "$date": "2025-09-01T10:00:00.000Z" }
+    "createdAt": {
+      "$date": "2025-09-01T10:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-01T10:00:00.000Z"
+    }
   },
   {
-    "_id": { "$oid": "66d6c1a1b3e4f5a6b7c8d9e4" },
+    "_id": {
+      "$oid": "66d6c1a1b3e4f5a6b7c8d9e4"
+    },
     "testId": "see_2081_science_practice_4_generated",
     "questions": {
       "groupA": [
@@ -23,10 +34,26 @@
           "questionNepali": "कम्प्युटर मेमोरीको क्षमता नाप्ने आधारभूत एकाइ कुन हो?",
           "questionEnglish": "What is the basic unit for measuring the capacity of computer memory?",
           "options": [
-            {"id": "i", "nepali": "बाइट (Byte)", "english": "Byte"},
-            {"id": "ii", "nepali": "बिट (Bit)", "english": "Bit"},
-            {"id": "iii", "nepali": "निबल (Nibble)", "english": "Nibble"},
-            {"id": "iv", "nepali": "हर्ज (Hertz)", "english": "Hertz"}
+            {
+              "id": "i",
+              "nepali": "बाइट (Byte)",
+              "english": "Byte"
+            },
+            {
+              "id": "ii",
+              "nepali": "बिट (Bit)",
+              "english": "Bit"
+            },
+            {
+              "id": "iii",
+              "nepali": "निबल (Nibble)",
+              "english": "Nibble"
+            },
+            {
+              "id": "iv",
+              "nepali": "हर्ज (Hertz)",
+              "english": "Hertz"
+            }
           ],
           "correctAnswer": "ii",
           "marks": 1,
@@ -38,10 +65,26 @@
           "questionNepali": "कुन उपविभागका बिरुवाहरूमा बीउ फलभित्र हुन्छ?",
           "questionEnglish": "In which subdivision of plants are the seeds enclosed within a fruit?",
           "options": [
-            {"id": "i", "nepali": "एल्गी (Algae)", "english": "Algae"},
-            {"id": "ii", "nepali": "टेरिडोफाइटा (Pteridophyta)", "english": "Pteridophyta"},
-            {"id": "iii", "nepali": "जिम्नोस्पर्म (Gymnosperm)", "english": "Gymnosperm"},
-            {"id": "iv", "nepali": "एन्जियोस्पर्म (Angiosperm)", "english": "Angiosperm"}
+            {
+              "id": "i",
+              "nepali": "एल्गी (Algae)",
+              "english": "Algae"
+            },
+            {
+              "id": "ii",
+              "nepali": "टेरिडोफाइटा (Pteridophyta)",
+              "english": "Pteridophyta"
+            },
+            {
+              "id": "iii",
+              "nepali": "जिम्नोस्पर्म (Gymnosperm)",
+              "english": "Gymnosperm"
+            },
+            {
+              "id": "iv",
+              "nepali": "एन्जियोस्पर्म (Angiosperm)",
+              "english": "Angiosperm"
+            }
           ],
           "correctAnswer": "iv",
           "marks": 1,
@@ -53,10 +96,26 @@
           "questionNepali": "क्रोमोजोमको सानो खण्ड जसले जीवको कुनै विशेष गुणलाई जनाउँछ, त्यसलाई के भनिन्छ?",
           "questionEnglish": "What is the small fragment of a chromosome that represents a specific character of an organism called?",
           "options": [
-            {"id": "i", "nepali": "DNA", "english": "DNA"},
-            {"id": "ii", "nepali": "RNA", "english": "RNA"},
-            {"id": "iii", "nepali": "जिन (Gene)", "english": "Gene"},
-            {"id": "iv", "nepali": "सेन्ट्रोमेयर (Centromere)", "english": "Centromere"}
+            {
+              "id": "i",
+              "nepali": "DNA",
+              "english": "DNA"
+            },
+            {
+              "id": "ii",
+              "nepali": "RNA",
+              "english": "RNA"
+            },
+            {
+              "id": "iii",
+              "nepali": "जिन (Gene)",
+              "english": "Gene"
+            },
+            {
+              "id": "iv",
+              "nepali": "सेन्ट्रोमेयर (Centromere)",
+              "english": "Centromere"
+            }
           ],
           "correctAnswer": "iii",
           "marks": 1,
@@ -68,10 +127,26 @@
           "questionNepali": "एक स्वस्थ मानिसको रगतमा प्रति घन मिलिमिटर प्लेटलेट्सको सङ्ख्या कति हुन्छ?",
           "questionEnglish": "What is the number of platelets per cubic millimeter of blood in a healthy person?",
           "options": [
-            {"id": "i", "nepali": "४ हजारदेखि ११ हजार (4 thousand to 11 thousand)", "english": "4 thousand to 11 thousand"},
-            {"id": "ii", "nepali": "२ लाखदेखि ४ लाख (2 lakhs to 4 lakhs)", "english": "2 lakhs to 4 lakhs"},
-            {"id": "iii", "nepali": "४५ लाखदेखि ५० लाख (45 lakhs to 50 lakhs)", "english": "45 lakhs to 50 lakhs"},
-            {"id": "iv", "nepali": "१ लाखभन्दा कम (Less than 1 lakh)", "english": "Less than 1 lakh"}
+            {
+              "id": "i",
+              "nepali": "४ हजारदेखि ११ हजार (4 thousand to 11 thousand)",
+              "english": "4 thousand to 11 thousand"
+            },
+            {
+              "id": "ii",
+              "nepali": "२ लाखदेखि ४ लाख (2 lakhs to 4 lakhs)",
+              "english": "2 lakhs to 4 lakhs"
+            },
+            {
+              "id": "iii",
+              "nepali": "४५ लाखदेखि ५० लाख (45 lakhs to 50 lakhs)",
+              "english": "45 lakhs to 50 lakhs"
+            },
+            {
+              "id": "iv",
+              "nepali": "१ लाखभन्दा कम (Less than 1 lakh)",
+              "english": "Less than 1 lakh"
+            }
           ],
           "correctAnswer": "ii",
           "marks": 1,
@@ -83,14 +158,30 @@
           "questionNepali": "यदि पृथ्वीको अर्धव्यासलाई आधा गरियो तर पिण्डलाई यथावत् राखियो भने गुरुत्व प्रवेग 'g' को मानमा कस्तो परिवर्तन आउँछ?",
           "questionEnglish": "If the radius of the Earth is halved while keeping its mass constant, how will the value of acceleration due to gravity 'g' change?",
           "options": [
-            {"id": "i", "nepali": "आधा हुन्छ (Becomes half)", "english": "Becomes half"},
-            {"id": "ii", "nepali": "उस्तै रहन्छ (Remains the same)", "english": "Remains the same"},
-            {"id": "iii", "nepali": "दुई गुणाले बढ्छ (Increases by two times)", "english": "Increases by two times"},
-            {"id": "iv", "nepali": "चार गुणाले बढ्छ (Increases by four times)", "english": "Increases by four times"}
+            {
+              "id": "i",
+              "nepali": "आधा हुन्छ (Becomes half)",
+              "english": "Becomes half"
+            },
+            {
+              "id": "ii",
+              "nepali": "उस्तै रहन्छ (Remains the same)",
+              "english": "Remains the same"
+            },
+            {
+              "id": "iii",
+              "nepali": "दुई गुणाले बढ्छ (Increases by two times)",
+              "english": "Increases by two times"
+            },
+            {
+              "id": "iv",
+              "nepali": "चार गुणाले बढ्छ (Increases by four times)",
+              "english": "Increases by four times"
+            }
           ],
           "correctAnswer": "iv",
           "marks": 1,
-          "explanation": "Explanation: गुरुत्व प्रवेग (g) अर्धव्यास (R) को वर्गसँग व्युत्क्रमानुपातिक हुन्छ (g ∝ 1/R²)। यदि R लाई आधा (R/2) बनाइयो भने, g ∝ 1/(R/2)² = 1/(R²/4) = 4/R² हुन्छ, अर्थात् g चार गुणाले बढ्छ ।\n\nThe acceleration due to gravity (g) is inversely proportional to the square of the radius (R) (g ∝ 1/R²). If R is halved (R/2), then g ∝ 1/(R/2)² = 1/(R²/4) = 4/R², meaning 'g' increases by four times. Citations: chapter 7, page 177"
+          "explanation": "Explanation: गुरुत्व प्रवेग ($g$) अर्धव्यास ($R$) को वर्गसँग व्युत्क्रमानुपातिक हुन्छ ($g \\propto 1/R^2$)। यदि $R$ लाई आधा ($R/2$) बनाइयो भने, $g \\propto 1/(R/2)^2 = 1/(R^2/4) = 4/R^2$ हुन्छ, अर्थात् $g$ चार गुणाले बढ्छ ।\n\nThe acceleration due to gravity ($g$) is inversely proportional to the square of the radius ($R$) ($g \\propto 1/R^2$). If $R$ is halved ($R/2$), then $g \\propto 1/(R/2)^2 = 1/(R^2/4) = 4/R^2$, meaning '$g$' increases by four times. Citations: chapter 7, page 177"
         },
         {
           "id": "f",
@@ -98,14 +189,30 @@
           "questionNepali": "विशिष्ट ताप धारण क्षमताको SI एकाइ के हो?",
           "questionEnglish": "What is the SI unit of specific heat capacity?",
           "options": [
-            {"id": "i", "nepali": "जुल (Joule)", "english": "Joule"},
-            {"id": "ii", "nepali": "जुल/केजी (°C) (Joule/kg°C)", "english": "Joule/kg°C"},
-            {"id": "iii", "nepali": "केजी/°C (kg/°C)", "english": "kg/°C"},
-            {"id": "iv", "nepali": "जुल/केजी (Joule/kg)", "english": "Joule/kg"}
+            {
+              "id": "i",
+              "nepali": "जुल (Joule)",
+              "english": "Joule"
+            },
+            {
+              "id": "ii",
+              "nepali": "जुल/केजी ($^\\circ\\text{C}$) (Joule/kg$^\\circ\\text{C}$)",
+              "english": "Joule/kg$^\\circ\\text{C}$"
+            },
+            {
+              "id": "iii",
+              "nepali": "केजी/$^\\circ\\text{C}$ (kg/$^\\circ\\text{C}$)",
+              "english": "kg/$^\\circ\\text{C}$"
+            },
+            {
+              "id": "iv",
+              "nepali": "जुल/केजी (Joule/kg)",
+              "english": "Joule/kg"
+            }
           ],
           "correctAnswer": "ii",
           "marks": 1,
-          "explanation": "Explanation: विशिष्ट ताप धारण क्षमताको SI एकाइ जुल प्रति किलोग्राम प्रति डिग्री सेल्सियस (J/kg°C) हो ।\n\nIts SI unit is joule per kilogram per degree Celsius (J/kg°C). Citations: chapter 9, page 231"
+          "explanation": "Explanation: विशिष्ट ताप धारण क्षमताको SI एकाइ जुल प्रति किलोग्राम प्रति डिग्री सेल्सियस ($\\text{J/kg}^\\circ\\text{C}$) हो ।\n\nIts SI unit is joule per kilogram per degree Celsius ($\\text{J/kg}^\\circ\\text{C}$). Citations: chapter 9, page 231"
         },
         {
           "id": "g",
@@ -113,10 +220,26 @@
           "questionNepali": "इन्द्रेणी बन्नुको मुख्य कारण के हो?",
           "questionEnglish": "What is the main cause of the formation of a rainbow?",
           "options": [
-            {"id": "i", "nepali": "प्रकाशको परावर्तन (Reflection of light)", "english": "Reflection of light"},
-            {"id": "ii", "nepali": "प्रकाशको आवर्तन (Refraction of light)", "english": "Refraction of light"},
-            {"id": "iii", "nepali": "प्रकाशको विच्छेदन (Dispersion of light)", "english": "Dispersion of light"},
-            {"id": "iv", "nepali": "प्रकाशको शोषण (Absorption of light)", "english": "Absorption of light"}
+            {
+              "id": "i",
+              "nepali": "प्रकाशको परावर्तन (Reflection of light)",
+              "english": "Reflection of light"
+            },
+            {
+              "id": "ii",
+              "nepali": "प्रकाशको आवर्तन (Refraction of light)",
+              "english": "Refraction of light"
+            },
+            {
+              "id": "iii",
+              "nepali": "प्रकाशको विच्छेदन (Dispersion of light)",
+              "english": "Dispersion of light"
+            },
+            {
+              "id": "iv",
+              "nepali": "प्रकाशको शोषण (Absorption of light)",
+              "english": "Absorption of light"
+            }
           ],
           "correctAnswer": "iii",
           "marks": 1,
@@ -128,10 +251,26 @@
           "questionNepali": "तलका मध्ये कुन उपकरण मोटर असर (motor effect) मा आधारित छ?",
           "questionEnglish": "Which of the following devices is based on the motor effect?",
           "options": [
-            {"id": "i", "nepali": "विद्युतीय पङ्खा (Electric fan)", "english": "Electric fan"},
-            {"id": "ii", "nepali": "जेनेरेटर (Generator)", "english": "Generator"},
-            {"id": "iii", "nepali": "ट्रान्सफर्मर (Transformer)", "english": "Transformer"},
-            {"id": "iv", "nepali": "सोलार प्यानल (Solar panel)", "english": "Solar panel"}
+            {
+              "id": "i",
+              "nepali": "विद्युतीय पङ्खा (Electric fan)",
+              "english": "Electric fan"
+            },
+            {
+              "id": "ii",
+              "nepali": "जेनेरेटर (Generator)",
+              "english": "Generator"
+            },
+            {
+              "id": "iii",
+              "nepali": "ट्रान्सफर्मर (Transformer)",
+              "english": "Transformer"
+            },
+            {
+              "id": "iv",
+              "nepali": "सोलार प्यानल (Solar panel)",
+              "english": "Solar panel"
+            }
           ],
           "correctAnswer": "i",
           "marks": 1,
@@ -140,17 +279,33 @@
         {
           "id": "i",
           "type": "multiple_choice",
-          "questionNepali": "पोटासियम क्लोरेट (KClO₃) लाई तताएर अक्सिजन ग्यास बनाउँदा कुन उत्प्रेरकको प्रयोग गरिन्छ?",
-          "questionEnglish": "Which catalyst is used in the preparation of oxygen gas by heating potassium chlorate (KClO₃)?",
+          "questionNepali": "पोटासियम क्लोरेट ($\\text{KClO}_3$) लाई तताएर अक्सिजन ग्यास बनाउँदा कुन उत्प्रेरकको प्रयोग गरिन्छ?",
+          "questionEnglish": "Which catalyst is used in the preparation of oxygen gas by heating potassium chlorate ($\\text{KClO}_3$)?",
           "options": [
-            {"id": "i", "nepali": "फलाम (Iron)", "english": "Iron"},
-            {"id": "ii", "nepali": "म्याङ्गनिज डाइअक्साइड (Manganese dioxide)", "english": "Manganese dioxide"},
-            {"id": "iii", "nepali": "फस्फोरिक एसिड (Phosphoric acid)", "english": "Phosphoric acid"},
-            {"id": "iv", "nepali": "प्लाटिनम (Platinum)", "english": "Platinum"}
+            {
+              "id": "i",
+              "nepali": "फलाम (Iron)",
+              "english": "Iron"
+            },
+            {
+              "id": "ii",
+              "nepali": "म्याङ्गनिज डाइअक्साइड (Manganese dioxide)",
+              "english": "Manganese dioxide"
+            },
+            {
+              "id": "iii",
+              "nepali": "फस्फोरिक एसिड (Phosphoric acid)",
+              "english": "Phosphoric acid"
+            },
+            {
+              "id": "iv",
+              "nepali": "प्लाटिनम (Platinum)",
+              "english": "Platinum"
+            }
           ],
           "correctAnswer": "ii",
           "marks": 1,
-          "explanation": "Explanation: पोटासियम क्लोरेटलाई तताउँदा म्याङ्गनिज डाइअक्साइड (MnO₂) ले सकारात्मक उत्प्रेरकको रूपमा काम गर्छ, जसले प्रतिक्रियाको दरलाई बढाउँछ ।\n\nManganese dioxide (MnO₂) is a positive catalyst that increases the rate of reaction when potassium chlorate is heated. Citations: chapter 15, pages 393-394"
+          "explanation": "Explanation: पोटासियम क्लोरेटलाई तताउँदा म्याङ्गनिज डाइअक्साइड ($\\text{MnO}_2$) ले सकारात्मक उत्प्रेरकको रूपमा काम गर्छ, जसले प्रतिक्रियाको दरलाई बढाउँछ ।\n\nManganese dioxide ($\\text{MnO}_2$) is a positive catalyst that increases the rate of reaction when potassium chlorate is heated. Citations: chapter 15, pages 393-394"
         },
         {
           "id": "j",
@@ -158,10 +313,26 @@
           "questionNepali": "तलका मध्ये कुन प्राकृतिक सफाइ वस्तु हो?",
           "questionEnglish": "Which of the following is a natural cleansing material?",
           "options": [
-            {"id": "i", "nepali": "साबुन (Soap)", "english": "Soap"},
-            {"id": "ii", "nepali": "डिटर्जेन्ट (Detergent)", "english": "Detergent"},
-            {"id": "iii", "nepali": "रिठा (Soapberry)", "english": "Soapberry"},
-            {"id": "iv", "nepali": "खरानी (Ash)", "english": "Ash"}
+            {
+              "id": "i",
+              "nepali": "साबुन (Soap)",
+              "english": "Soap"
+            },
+            {
+              "id": "ii",
+              "nepali": "डिटर्जेन्ट (Detergent)",
+              "english": "Detergent"
+            },
+            {
+              "id": "iii",
+              "nepali": "रिठा (Soapberry)",
+              "english": "Soapberry"
+            },
+            {
+              "id": "iv",
+              "nepali": "खरानी (Ash)",
+              "english": "Ash"
+            }
           ],
           "correctAnswer": "iii",
           "marks": 1,
@@ -249,7 +420,7 @@
           "questionNepali": "जुल (Joule) मा कुन-कुन आधारभूत एकाइहरू समावेश हुन्छन्, पत्ता लगाउनुहोस् ।",
           "questionEnglish": "Find out the fundamental units involved in Joule (J).",
           "marks": 2,
-          "sampleAnswer": "उत्तर: जुल कार्य (Work) को एकाइ हो ।\nकार्य = बल × दूरी (Work = Force × distance)\nकार्यको एकाइ = N × m = (kgms⁻²) × m = kgm²s⁻²\nत्यसैले, जुलमा किलोग्राम (kg), मिटर (m), र सेकेन्ड (s) आधारभूत एकाइहरू समावेश हुन्छन् ।\n\nAnswer: Joule is the unit of work.\nWork = Force × distance\nUnit of work = N × m = (kgms⁻²) × m = kgm²s⁻²\nTherefore, the fundamental units involved in Joule are kilogram (kg), meter (m), and second (s). Citations: chapter 1, page 9"
+          "sampleAnswer": "उत्तर: जुल कार्य (Work) को एकाइ हो ।\nकार्य = बल × दूरी ($\\text{Work} = \\text{Force} \\times \\text{distance}$)\nकार्यको एकाइ = $N \\times m = (\\text{kg} \\cdot \\text{m} \\cdot \\text{s}^{-2}) \\times m = \\text{kg} \\cdot \\text{m}^2 \\cdot \\text{s}^{-2}$\nत्यसैले, जुलमा किलोग्राम (kg), मिटर (m), र सेकेन्ड (s) आधारभूत एकाइहरू समावेश हुन्छन् ।\n\nAnswer: Joule is the unit of work.\nWork = Force × distance\nUnit of work = $N \\times m = (\\text{kg} \\cdot \\text{m} \\cdot \\text{s}^{-2}) \\times m = \\text{kg} \\cdot \\text{m}^2 \\cdot \\text{s}^{-2}$\nTherefore, the fundamental units involved in Joule are kilogram (kg), meter (m), and second (s). Citations: chapter 1, page 9"
         },
         {
           "id": "4",
@@ -297,105 +468,65 @@
           "questionNepali": "गुरुत्व प्रवेग (g) र गुरुत्वाकर्षण अचर (G) बिच दुईओटा भिन्नता लेख्नुहोस् ।",
           "questionEnglish": "Write two differences between acceleration due to gravity (g) and gravitational constant (G).",
           "marks": 2,
-          "sampleAnswer": "उत्तर: g र G बिचका भिन्नताहरू:\n* 'g' को मान ठाउँअनुसार परिवर्तन हुन्छ (पृथ्वीमा ≈ 9.8 m/s²), तर 'G' को मान ब्रह्माण्डमा जताततै स्थिर रहन्छ (6.67 × 10⁻¹¹ Nm²/kg²)।\n* 'g' को एकाइ m/s² हो, जबकि 'G' को एकाइ Nm²/kg² हो ।\n\nAnswer: Differences between g and G:\n* The value of 'g' changes from place to place (≈ 9.8 m/s² on Earth), but the value of 'G' remains the same everywhere in the universe (6.67 × 10⁻¹¹ Nm²/kg²). Citations: chapter 7, page 170\n* The SI unit of 'g' is m/s², whereas the SI unit of 'G' is Nm²/kg². Citations: chapter 7, pages 170, 175"
+          "sampleAnswer": "उत्तर: g र G बिचका भिन्नताहरू:\n* 'g' को मान ठाउँअनुसार परिवर्तन हुन्छ (पृथ्वीमा $\\approx 9.8 \\text{ m/s}^2$), तर 'G' को मान ब्रह्माण्डमा जताततै स्थिर रहन्छ ($6.67 \\times 10^{-11} \\text{ Nm}^2/\\text{kg}^2$)।\n* 'g' को एकाइ $\\text{m/s}^2$ हो, जबकि 'G' को एकाइ $\\text{Nm}^2/\\text{kg}^2$ हो ।\n\nAnswer: Differences between g and G:\n* The value of 'g' changes from place to place ($\\approx 9.8 \\text{ m/s}^2$ on Earth), but the value of 'G' remains the same everywhere in the universe ($6.67 \\times 10^{-11} \\text{ Nm}^2/\\text{kg}^2$). Citations: chapter 7, page 170\n* The unit of 'g' is $\\text{m/s}^2$, while the unit of 'G' is $\\text{Nm}^2/\\text{kg}^2$. Citations: chapter 7, page 170"
         },
         {
           "id": "10",
           "type": "long_answer",
-          "questionNepali": "फलामको कचौरा पानीमा तैरन्छ तर फलामको काँटी डुब्छ, किन?",
-          "questionEnglish": "An iron bowl floats on water, but an iron nail sinks. Why?",
+          "questionNepali": "समुद्री समीर र स्थलीय समीरबिच दुईओटा भिन्नता लेख्नुहोस् ।",
+          "questionEnglish": "Write two differences between sea breeze and land breeze.",
           "marks": 2,
-          "sampleAnswer": "उत्तर: फलामको कचौराको खोक्रो बनावटले गर्दा यसले आफ्नो तौल बराबरको पानी विस्थापित गर्न सक्छ, जसले गर्दा यसमा लाग्ने उर्ध्वचापले यसको तौललाई सन्तुलनमा राख्छ र यो तैरन्छ । तर, फलामको काँटीले आफ्नो तौल बराबरको पानी विस्थापित गर्न सक्दैन, त्यसैले यो डुब्छ ।\n\nAnswer: An iron bowl, due to its shape, can displace water equal to its weight, so it floats. An iron block (like a nail), however, cannot displace water equal to its weight and thus sinks. Citations: chapter 8, page 215"
+          "sampleAnswer": "उत्तर: **समुद्री समीर:** दिउँसो जमिन समुद्रको पानीभन्दा छिटो तातो हुन्छ, जसले गर्दा जमिनमाथि कम चाप र समुद्रमाथि बढी चाप हुन्छ । त्यसैले, चिसो हावा समुद्रबाट जमिनतिर बहन्छ ।\n**स्थलीय समीर:** राति जमिन छिटो चिसो हुन्छ, जसले गर्दा जमिनमाथि बढी चाप र समुद्रमाथि कम चाप हुन्छ । त्यसैले, चिसो हावा जमिनबाट समुद्रतिर बहन्छ ।\n\nAnswer: **Sea Breeze:** During the day, the land heats up faster than the sea. Cold air from the sea begins to flow toward the land.\n**Land Breeze:** At night, the land cools faster than the sea. The cold air flows from the land to the sea. Citations: chapter 9, page 234"
         },
         {
           "id": "11",
           "type": "long_answer",
-          "questionNepali": "यदि कुनै लेन्सको केन्द्रीकरण दूरी २५ से.मि. छ भने, त्यसको सामर्थ्य कति होला?",
-          "questionEnglish": "If the focal length of a lens is 25 cm, what is its power?",
+          "questionNepali": "पूर्ण आन्तरिक परावर्तन हुन आवश्यक दुई अवस्थाहरू लेख्नुहोस् ।",
+          "questionEnglish": "Write two necessary conditions for total internal reflection of light.",
           "marks": 2,
-          "sampleAnswer": "उत्तर: यहाँ, केन्द्रीकरण दूरी (f) = 25 cm = 0.25 m\nसामर्थ्य (P) = 1/f (in meter) = 1 / 0.25 = +4 D\nयो कन्भेक्स लेन्स हो ।\n\nAnswer: Here, focal length (f) = 25 cm = 0.25 m\nPower (P) = 1/f (in meters) = 1 / 0.25 = +4 D\nThis is a convex lens. Citations: chapter 10, page 278"
+          "sampleAnswer": "उत्तर: पूर्ण आन्तरिक परावर्तन हुन आवश्यक अवस्थाहरू:\n* प्रकाश सघन माध्यमबाट विरल माध्यममा जानुपर्छ ।\n* सघन माध्यममा बन्ने आपतित कोण क्रिटिकल कोणभन्दा ठूलो हुनुपर्छ ।\n\nAnswer: Necessary conditions for total internal reflection:\n* Light must be travelling from the denser medium to the rarer medium.\n* The angle of incidence must be greater than the critical angle. Citations: chapter 10, page 254"
         },
         {
           "id": "12",
           "type": "long_answer",
-          "questionNepali": "AC र DC करेन्ट बिच दुईओटा भिन्नता लेख्नुहोस् ।",
-          "questionEnglish": "Write two differences between AC and DC.",
+          "questionNepali": "ट्रान्सफर्मरको काम गर्ने सिद्धान्त के हो? यसले DC मा किन काम गर्दैन?",
+          "questionEnglish": "What is the working principle of a transformer? Why does it not work on DC?",
           "marks": 2,
-          "sampleAnswer": "उत्तर: AC र DC करेन्ट बिचका भिन्नताहरू:\n* AC को दिशा र परिमाण निरन्तर परिवर्तन हुन्छ, जबकि DC को दिशा र परिमाण स्थिर रहन्छ ।\n* AC को फ्रिक्वेन्सी हुन्छ (नेपालमा ५० Hz), जबकि DC को फ्रिक्वेन्सी शून्य हुन्छ ।\n\nAnswer: Differences between AC and DC:\n* The direction and magnitude of AC change continuously, while the direction and magnitude of DC remain constant.\n* AC has a frequency (50 Hz in Nepal), whereas DC has a frequency of zero. Citations: chapter 11, page 304"
+          "sampleAnswer": "उत्तर: ट्रान्सफर्मरले म्युचुअल इन्डक्सनको सिद्धान्तमा काम गर्छ । DC करेन्टमा चुम्बकीय फ्लक्समा परिवर्तन हुँदैन, त्यसैले म्युचुअल इन्डक्सन हुँदैन र भोल्टेज उत्पन्न हुँदैन । त्यसैले, ट्रान्सफर्मरले DC मा काम गर्दैन ।\n\nAnswer: The transformer is based on the principle of mutual induction. Since there is no mutual induction when direct current flows in the coil instead of alternating current, the voltage of d.c. cannot be changed by using a transformer. Citations: chapter 11, page 318"
         },
         {
           "id": "13",
           "type": "long_answer",
-          "questionNepali": "बन्द ब्रह्माण्ड (closed universe) को अवधारणालाई छोटकरीमा व्याख्या गर्नुहोस् ।",
-          "questionEnglish": "Explain the concept of a closed universe briefly.",
+          "questionNepali": "क्याल्सियम कार्बाइडको अत्यधिक प्रयोगले मानव स्वास्थ्यमा पर्ने दुईओटा असरहरू लेख्नुहोस् ।",
+          "questionEnglish": "Write two effects of excessive use of calcium carbide on human health.",
           "marks": 2,
-          "sampleAnswer": "उत्तर: यदि ब्रह्माण्डको औसत घनत्व क्रिटिकल घनत्वभन्दा बढी छ भने, गुरुत्वाकर्षणले ब्रह्माण्डको विस्तारलाई रोकेर यसलाई फेरि एउटै बिन्दुमा खुम्च्याउँछ । ब्रह्माण्डको यो जीवनचक्र, जसमा 'बिग ब्याङ्ग' र 'बिग क्रन्च' पालैपालो आउँछन्, त्यसलाई बन्द ब्रह्माण्ड भनिन्छ ।\n\nAnswer: If the average density of the universe is greater than the critical density, the universe will stop expanding and eventually collapse back to a single point (Big Crunch). This cyclical nature of the universe (Big Bang followed by Big Crunch) is called a closed universe. Citations: chapter 12, page 335"
-        },
-        {
-          "id": "14",
-          "type": "long_answer",
-          "questionNepali": "ह्यालोजन (halogens) का दुईओटा गुणहरू लेख्नुहोस् ।",
-          "questionEnglish": "Write two properties of halogens.",
-          "marks": 2,
-          "sampleAnswer": "उत्तर: ह्यालोजनका गुणहरू:\n* यिनीहरूको बाहिरी सेलमा सातओटा इलेक्ट्रोन हुन्छन् र यिनीहरूको संयोजकता १ हुन्छ ।\n* यिनीहरू अत्यन्तै प्रतिक्रियाशील अधातुहरू हुन् ।\n\nAnswer: Properties of halogens:\n* They have seven electrons in their valence shell and their valency is 1.\n* They are very reactive non-metals. Citations: chapter 14, pages 372-373"
-        },
-        {
-          "id": "15",
-          "type": "long_answer",
-          "questionNepali": "संयोजन प्रतिक्रियालाई एक उदाहरणसहित परिभाषित गर्नुहोस् ।",
-          "questionEnglish": "Define combination reaction with an example.",
-          "marks": 2,
-          "sampleAnswer": "उत्तर: जुन रासायनिक प्रतिक्रियामा दुई वा दुईभन्दा बढी अभिकारकहरू मिलेर एउटा मात्र उत्पादन बन्छ, त्यसलाई संयोजन प्रतिक्रिया भनिन्छ ।\nउदाहरण: 2Mg + O₂ → 2MgO\n\nAnswer: The chemical reaction in which two or more reactants combine to form only one product is called a combination reaction.\nExample: 2Mg + O₂ → 2MgO. Citations: chapter 15, pages 387-388"
-        },
-        {
-          "id": "16",
-          "type": "long_answer",
-          "questionNepali": "इथानोल (ethanol) का दुईओटा उपयोगिताहरू लेख्नुहोस् ।",
-          "questionEnglish": "Write two uses of ethanol.",
-          "marks": 2,
-          "sampleAnswer": "उत्तर: इथानोलका उपयोगिताहरू:\n* यो ह्विस्की, वाइन, बियर जस्ता पेय पदार्थ बनाउन प्रयोग गरिन्छ ।\n* यो अस्पतालमा सिरिन्ज र घाउलाई कीटाणुरहित बनाउन प्रयोग गरिन्छ ।\n* यो प्रयोगशालामा जैविक नमुनाहरू सुरक्षित राख्न प्रयोग गरिन्छ ।\n\nAnswer: Uses of ethanol:\n* It is used to prepare hard drinks like whisky, wine, beer, etc.\n* It is used to sterilize syringes and wounds in hospitals.\n* It is used to preserve biological specimens in laboratories. Citations: chapter 18, page 436"
+          "sampleAnswer": "उत्तर: क्याल्सियम कार्बाइड जस्ता रसायनहरूको अत्यधिक प्रयोगले छालामा जलन, छाला पोल्ने, रातो फोकाहरू देखिने, फोक्सोमा पानी जम्ने, र आँखामा जलन जस्ता स्वास्थ्य समस्याहरू देखिन सक्छन् ।\n\nAnswer: Overuse of chemicals like calcium carbide can cause health problems like skin irritation, skin burning, appearance of red blisters on the skin, lung effusion, and eye irritation. Citations: chapter 19, page 446"
         }
       ],
       "groupD": [
         {
           "id": "17",
           "type": "essay",
-          "questionNepali": "मेन्डलको प्रबलताको नियमलाई केराउको बोटको उदाहरण दिएर चार्टसहित व्याख्या गर्नुहोस् ।",
-          "questionEnglish": "Explain Mendel's law of dominance with a chart using the example of a pea plant.",
+          "questionNepali": "मोनोकोट र डाइकोट बिरुवाहरूका चारओटा मुख्य विशेषताहरू वर्णन गर्नुहोस् ।",
+          "questionEnglish": "Describe four main characteristics of monocot and dicot plants.",
           "marks": 4,
-          "sampleAnswer": "उत्तर: **मेन्डलको प्रबलताको नियम:** यस नियम अनुसार, जब दुई शुद्ध विपरित गुण भएका जीवहरूबीच क्रस गराइन्छ, पहिलो वंश (F1 generation) मा एउटा गुण मात्र बाह्य रूपमा देखिन्छ, जसलाई प्रबल गुण (dominant character) भनिन्छ । लुकेको गुणलाई अप्रबल गुण (recessive character) भनिन्छ ।\n\n**उदाहरण र चार्ट:**\nजब शुद्ध अग्लो केराउको बोट (TT) र शुद्ध होचो केराउको बोट (tt) बीच क्रस परागसेचन गराइन्छ, पहिलो वंश (F1) मा सबै सन्तानहरू हाइब्रिड अग्ला (Tt) हुन्छन् । यहाँ, अग्लोपन प्रबल गुण हो ।\n\n(Note: A chart showing the cross between pure tall (TT) and pure dwarf (tt) plants to produce all hybrid tall (Tt) offspring in the F1 generation must be drawn.)\n\nAnswer: **Mendel's Law of Dominance:** According to this law, when a cross is made between two pure individuals having a pair of contrasting characters, only one character is expressed externally in the F1 generation, which is called the dominant character. The character which remains hidden is called the recessive character. Citations: chapter 4, page 94\n\n**Example and Chart:**\nWhen a pure tall pea plant (TT) is cross-pollinated with a pure dwarf pea plant (tt), all the hybrid offspring in the F1 generation are externally tall (Tt). Here, the tall character is dominant. Citations: chapter 4, page 94\n\n(Note: A chart showing the cross between pure tall (TT) and pure dwarf (tt) plants to produce all hybrid tall (Tt) offspring in the F1 generation must be drawn.)"
+          "sampleAnswer": "उत्तर: \n**मोनोकोट (Monocotyledon):**\n* **बीउ:** बीउमा एउटा मात्र कोपिला (cotyledon) हुन्छ ।\n* **जरा:** गुच्छे जरा (fibrous root) हुन्छ ।\n* **पात:** पातमा समानान्तर भेनेसन (parallel venation) हुन्छ ।\n* **फूल:** फूलका भागहरू तीन वा तीनको गुणनमा हुन्छन् ।\n\n**डाइकोट (Dicotyledon):**\n* **बीउ:** बीउमा दुईओटा कोपिला (cotyledons) हुन्छन् ।\n* **जरा:** मूल जरा (taproot) प्रणाली हुन्छ ।\n* **पात:** पातमा जालीदार भेनेसन (reticulate venation) हुन्छ ।\n* **फूल:** फूलका भागहरू चार वा पाँचको गुणनमा हुन्छन् ।\n\nAnswer:\n**Monocotyledon:**\n* **Seed:** The seed consists of only one cotyledon. Citations: chapter 2, page 26\n* **Root:** They have a fibrous root. Citations: chapter 2, page 26\n* **Leaf:** They have parallel venation in leaves. Citations: chapter 2, page 26\n* **Flower:** Floral parts are three or multiples of three in number. Citations: chapter 2, page 26\n\n**Dicotyledon:**\n* **Seed:** The seed consists of two cotyledons. Citations: chapter 2, page 28\n* **Root:** They have a taproot system. Citations: chapter 2, page 27\n* **Leaf:** Reticulate venation is found in the leaf. Citations: chapter 2, page 27\n* **Flower:** Floral parts are four or five or multiples of four or five. Citations: chapter 2, page 28"
         },
         {
           "id": "18",
           "type": "essay",
-          "questionNepali": "मानव मुटुको भित्री बनोटको सफा र नामाङ्कित चित्र बनाई यसका मुख्य भागहरूको कार्य वर्णन गर्नुहोस् ।",
-          "questionEnglish": "Draw a neat and labeled diagram of the internal structure of the human heart and describe the functions of its main parts.",
+          "questionNepali": "मानव आँखाको बनावटलाई चित्रसहित वर्णन गर्नुहोस् र यसका मुख्य भागहरूको कार्य लेख्नुहोस् ।",
+          "questionEnglish": "Describe the structure of the human eye with a diagram and write the functions of its main parts.",
           "marks": 4,
-          "sampleAnswer": "उत्तर: (Note: A neat, labeled diagram of the internal structure of the human heart must be drawn.)\n\n**मुख्य भागहरूको कार्य:**\n* **अरिकल (Auricles):** दाहिने अरिकलले शरीरबाट अशुद्ध रगत र बायाँ अरिकलले फोक्सोबाट शुद्ध रगत प्राप्त गर्छ ।\n* **भेन्ट्रिकल (Ventricles):** दाहिने भेन्ट्रिकलले अशुद्ध रगत फोक्सोमा पठाउँछ र बायाँ भेन्ट्रिकलले शुद्ध रगत शरीरका विभिन्न भागमा पठाउँछ ।\n* **भल्भहरू (Valves):** ट्राइकस्पिड, बाइकस्पिड, पल्मोनिक र एओर्टिक भल्भहरूले रगतलाई एकै दिशामा मात्र बग्न दिन्छन् ।\n* **सेप्टम (Septum):** यसले मुटुलाई दायाँ र बायाँ भागमा विभाजन गर्छ र शुद्ध र अशुद्ध रगतलाई मिसिनबाट रोक्छ ।\n\nAnswer: (Note: A neat, labeled diagram of the internal structure of the human heart must be drawn.)\n\n**Functions of Main Parts:**\n* **Auricles:** The right auricle receives deoxygenated blood from the body, and the left auricle receives oxygenated blood from the lungs. Citations: chapter 5, page 120\n* **Ventricles:** The right ventricle pumps deoxygenated blood to the lungs, and the left ventricle pumps oxygenated blood to various parts of the body. Citations: chapter 5, page 120\n* **Valves:** The tricuspid, bicuspid, pulmonic, and aortic valves ensure the unidirectional flow of blood. Citations: chapter 5, page 120\n* **Septum:** It divides the heart into left and right parts and prevents the mixing of oxygenated and deoxygenated blood. Citations: chapter 5, page 119"
-        },
-        {
-          "id": "19",
-          "type": "essay",
-          "questionNepali": "आर्किमिडिजको सिद्धान्त र तैरिने नियम लेख्नुहोस् । यी दुईबीच के सम्बन्ध छ?",
-          "questionEnglish": "State Archimedes' principle and the law of floatation. What is the relationship between them?",
-          "marks": 4,
-          "sampleAnswer": "उत्तर: **आर्किमिडिजको सिद्धान्त:** जब कुनै वस्तुलाई तरल पदार्थमा आंशिक वा पूर्ण रूपमा डुबाइन्छ, त्यसमा लाग्ने उर्ध्वचाप वस्तुले विस्थापित गरेको तरल पदार्थको तौल बराबर हुन्छ ।\n\n**तैरिने नियम:** कुनै वस्तु तरल पदार्थमा तैरिनका लागि, वस्तुको तौल त्यसले विस्थापित गरेको तरल पदार्थको तौल बराबर हुनुपर्छ ।\n\n**सम्बन्ध:** तैरिने नियम आर्किमिडिजको सिद्धान्तको एक विशेष अवस्था हो । आर्किमिडिजको सिद्धान्तले उर्ध्वचापको परिमाण दिन्छ । जब यो उर्ध्वचाप वस्तुको तौल बराबर हुन्छ, वस्तु तैरन्छ । त्यसैले, तैरिने नियम आर्किमिडिजको सिद्धान्तबाटै निकालिएको हो ।\n\nAnswer: **Archimedes' Principle:** When an object is partially or completely immersed in a liquid, the upthrust is equal to the weight of the liquid displaced by it. Citations: chapter 8, page 213\n\n**Law of Floatation:** For an object to float in a liquid, the weight of the object must be equal to the weight of the liquid that it displaces. Citations: chapter 8, page 215\n\n**Relationship:** The law of floatation is a special case of Archimedes' principle. Archimedes' principle gives the magnitude of the upthrust. When this upthrust equals the weight of the object, the object floats. Therefore, the law of floatation is derived from Archimedes' principle."
+          "sampleAnswer": "उत्तर: (Note: A neat, labeled diagram of the human eye must be drawn.)\n\n**मुख्य भागहरूको कार्य:**\n* **कोर्निया (Cornea):** यो आँखाको अगाडिको पारदर्शी तह हो जसले प्रकाशलाई भित्र पस्न दिन्छ र प्रकाशलाई रेटिनामा केन्द्रित गर्न मद्दत गर्छ ।\n* **आइरिस (Iris):** यसले पुतलीको आकारलाई नियन्त्रण गरेर आँखामा प्रवेश गर्ने प्रकाशको मात्रालाई समायोजन गर्छ ।\n* **लेन्स (Lens):** यसले प्रकाशका किरणहरूलाई थप आवर्तन गरी रेटिनामा स्पष्ट आकृति बनाउन मद्दत गर्छ ।\n* **रेटिना (Retina):** यो प्रकाश-संवेदनशील कोषहरूको तह हो जहाँ वस्तुको आकृति बन्छ । यसमा रहेका रड र कोन कोषहरूले प्रकाश र रङ पत्ता लगाउँछन् ।\n\nAnswer: (Note: A neat, labeled diagram of the human eye must be drawn.)\n\n**Functions of Main Parts:**\n* **Cornea:** A transparent layer in front of the eye that allows light to enter and helps to focus light on the retina. Citations: chapter 10, page 279\n* **Iris:** It changes the size of the pupil, thus controlling the amount of light entering the eye. Citations: chapter 10, page 279\n* **Lens:** It refracts the light rays further to converge onto the retina. Citations: chapter 10, page 280\n* **Retina:** A layer of light-sensitive cells where the image is formed. Its rod and cone cells detect brightness and color. Citations: chapter 10, page 280"
         },
         {
           "id": "20",
           "type": "essay",
-          "questionNepali": "पानीको अस्वाभाविक प्रसार भनेको के हो? यसका दुई असरहरू वर्णन गर्नुहोस् ।",
-          "questionEnglish": "What is the anomalous expansion of water? Describe two of its effects.",
+          "questionNepali": "मोटर असर र फ्याराडेको विद्युत चुम्बकीय उपपादनको नियमलाई व्याख्या गर्नुहोस् ।",
+          "questionEnglish": "Explain the motor effect and Faraday's law of electromagnetic induction.",
           "marks": 4,
-          "sampleAnswer": "उत्तर: **पानीको अस्वाभाविक प्रसार:** धेरैजसो पदार्थहरू चिस्याउँदा खुम्चिन्छन्, तर पानी 4°C बाट 0°C मा चिसिँदा यसको आयतन बढ्छ (फैलिन्छ) । पानीको यही अनौठो गुणलाई पानीको अस्वाभाविक प्रसार भनिन्छ ।\n\n**असरहरू:**\n* **जलीय जीवहरूको संरक्षण:** जाडोमा, ताल र पोखरीको सतहमा बरफ जम्छ तर तलको पानी 4°C मा तरल अवस्थामै रहन्छ, जसले गर्दा माछा र अन्य जलीय जीवहरू बाँच्न सक्छन् ।\n* **पानीका पाइपहरू फुट्नु:** धेरै चिसो ठाउँहरूमा जाडोमा पाइपभित्रको पानी जम्दा यसको आयतन बढ्छ, जसले पाइपमा अत्यधिक चाप दिन्छ र पाइप फुट्न सक्छ ।\n\nAnswer: **Anomalous Expansion of Water:** While most substances contract on cooling, water's volume increases (expands) when cooled from 4°C to 0°C. This unique property of water is known as the anomalous expansion of water. Citations: chapter 9, page 228\n\n**Effects:**\n* **Survival of aquatic life:** In winter, the surface of lakes and ponds freezes, but the water below remains liquid at 4°C, allowing fish and other aquatic creatures to survive. Citations: chapter 9, page 229\n* **Bursting of water pipes:** In very cold places, when water inside pipes freezes, its volume increases, exerting high pressure that can burst the pipes. Citations: chapter 9, page 229"
-        },
-        {
-          "id": "21",
-          "type": "essay",
-          "questionNepali": "AC जेनेरेटरको काम गर्ने सिद्धान्त के हो? यसको बनावट र कार्यविधि छोटकरीमा वर्णन गर्नुहोस् ।",
-          "questionEnglish": "What is the working principle of an AC generator? Briefly describe its construction and working mechanism.",
-          "marks": 4,
-          "sampleAnswer": "उत्तर: **काम गर्ने सिद्धान्त:** AC जेनेरेटरले विद्युत चुम्बकीय उपपादन (electromagnetic induction) को सिद्धान्तमा काम गर्छ । जब चुम्बकीय क्षेत्रमा राखिएको तारको क्वाइललाई घुमाइन्छ, क्वाइलसँग जोडिएको चुम्बकीय फ्लक्समा परिवर्तन आउँछ, जसले गर्दा क्वाइलमा e.m.f. (भोल्टेज) उत्पन्न हुन्छ ।\n\n**बनावट र कार्यविधि:**\nयसमा एउटा आयताकार क्वाइल हुन्छ जुन दुई शक्तिशाली चुम्बकको ध्रुवहरूबीच राखिएको हुन्छ । क्वाइलका दुई छेउहरू दुईओटा स्लिप रिङ (slip rings) सँग जोडिएका हुन्छन्, जसले कार्बन ब्रसलाई छुन्छन् । जब टर्बाइनको मद्दतले क्वाइललाई घुमाइन्छ, यसले चुम्बकीय बल रेखाहरूलाई काट्छ । यसले गर्दा क्वाइलमा AC करेन्ट उत्पन्न हुन्छ, जुन स्लिप रिङ र कार्बन ब्रसमार्फत बाहिरी सर्किटमा प्रवाह हुन्छ ।\n\nAnswer: **Working Principle:** An AC generator works on the principle of electromagnetic induction. When a coil of conducting wire is rotated in a magnetic field, the magnetic flux associated with the coil changes, which induces an electromotive force (e.m.f.) in the coil. Citations: chapter 11, page 314\n\n**Construction and Working:**\nIt consists of a rectangular coil placed between the poles of two powerful magnets. The two ends of the coil are connected to two slip rings, which touch carbon brushes. When the coil is rotated with the help of a turbine, it cuts the magnetic field lines. This induces an AC current in the coil, which flows to the external circuit through the slip rings and carbon brushes. Citations: chapter 11, pages 315-316"
+          "sampleAnswer": "उत्तर: **मोटर असर (Motor Effect):** जब चुम्बकीय क्षेत्रमा राखिएको करेन्ट बगिरहेको तार वा कन्डक्टरलाई चुम्बकीय बल रेखाहरू काट्ने गरी राखिन्छ, तब उक्त तारमा चाल (motion) वा बल उत्पन्न हुन्छ । यसलाई मोटर असर भनिन्छ । विद्युतीय मोटरले यही सिद्धान्तमा काम गर्छ ।\n\n**फ्याराडेको विद्युत चुम्बकीय उपपादनको नियम (Faraday's Law of Electromagnetic Induction):**\n1. जब कुनै बन्द सर्किट वा क्वाइलसँग सम्बन्धित चुम्बकीय फ्लक्समा परिवर्तन हुन्छ, तब सर्किटमा e.m.f. (भोल्टेज) प्रेरित हुन्छ ।\n2. प्रेरित e.m.f. को परिमाण चुम्बकीय फ्लक्सको परिवर्तनको दरसँग सोझै समानुपातिक हुन्छ ($E \\propto -\\frac{d\\phi}{dt}$) ।\n\nAnswer: **Motor Effect:** When a current-carrying conductor placed in a magnetic field cuts the magnetic lines of force, a force acts on the conductor, causing it to move. This is called the motor effect. Electric motors work on this principle. Citations: chapter 11, page 311\n\n**Faraday's Law of Electromagnetic Induction:**\n1. Whenever the magnetic flux linked with a closed circuit or coil changes, an induced electromotive force (e.m.f.) is produced in it.\n2. The magnitude of the induced e.m.f. is directly proportional to the rate of change of magnetic flux ($E \\propto -\\frac{d\\phi}{dt}$). Citations: chapter 11, page 314"
         },
         {
           "id": "22",

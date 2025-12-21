@@ -6,7 +6,7 @@ export async function GET() {
     console.log("🔍 /api/tests called - ONLY checking database on port 47017")
 
     const { db } = await connectToDatabase()
-    const practiceTests = await db.collection("practice_tests").find({}).toArray()
+    const practiceTests = await db.collection("practice_tests").find({}).sort({ _id: 1 }).toArray()
 
     console.log(`📊 Database query returned ${practiceTests.length} documents`)
 

@@ -334,152 +334,166 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
 
       {/* Content */}
       <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8 py-6 sm:py-8 relative z-10">
-        {Object.entries(testsBySubject).map(([subject, subjectTests]) => (
-          <div key={subject} className="mb-8 sm:mb-12">
-            {/* Subject Header */}
-            <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
-              <div className="text-2xl sm:text-3xl">{getSubjectIcon(subject)}</div>
-              <div className="flex-1">
-                <h2 className="text-xl sm:text-2xl font-bold text-slate-800 capitalize flex items-center gap-2">
-                  <GraduationCap className="h-5 w-5 sm:h-6 sm:w-6" />
-                  {getSubjectDisplayName(subject)} Tests
-                </h2>
-                <p className="text-slate-600 text-sm sm:text-base">
-                  {subject === "science" && "विज्ञान र प्रविधि परीक्षाहरू"}
-                  {subject === "mathematics" && "गणित परीक्षाहरू"}
-                  {subject === "english" && "अंग्रेजी परीक्षाहरू"}
-                  {subject === "nepali" && "नेपाली परीक्षाहरू"}
-                  {(subject === "social" || subject === "social_studies") && "सामाजिक अध्ययन परीक्षाहरू"}
-                  {subject === "general" && "सामान्य परीक्षाहरू"}
-                </p>
+        {Object.entries(testsBySubject)
+          .sort(([a], [b]) => {
+            // Define a preferred order for subjects
+            const subjectOrder: Record<string, number> = {
+              nepali: 1,
+              english: 2,
+              science: 3,
+              social: 4,
+              social_studies: 4,
+              mathematics: 5,
+              general: 99,
+            }
+            return (subjectOrder[a] || 50) - (subjectOrder[b] || 50)
+          })
+          .map(([subject, subjectTests]) => (
+            <div key={subject} className="mb-8 sm:mb-12">
+              {/* Subject Header */}
+              <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+                <div className="text-2xl sm:text-3xl">{getSubjectIcon(subject)}</div>
+                <div className="flex-1">
+                  <h2 className="text-xl sm:text-2xl font-bold text-slate-800 capitalize flex items-center gap-2">
+                    <GraduationCap className="h-5 w-5 sm:h-6 sm:w-6" />
+                    {getSubjectDisplayName(subject)} Tests
+                  </h2>
+                  <p className="text-slate-600 text-sm sm:text-base">
+                    {subject === "science" && "विज्ञान र प्रविधि परीक्षाहरू"}
+                    {subject === "mathematics" && "गणित परीक्षाहरू"}
+                    {subject === "english" && "अंग्रेजी परीक्षाहरू"}
+                    {subject === "nepali" && "नेपाली परीक्षाहरू"}
+                    {(subject === "social" || subject === "social_studies") && "सामाजिक अध्ययन परीक्षाहरू"}
+                    {subject === "general" && "सामान्य परीक्षाहरू"}
+                  </p>
+                </div>
+                <div className="hidden sm:block flex-1 h-px bg-gradient-to-r from-slate-300 to-transparent ml-4"></div>
               </div>
-              <div className="hidden sm:block flex-1 h-px bg-gradient-to-r from-slate-300 to-transparent ml-4"></div>
-            </div>
 
-            {/* Tests Grid */}
-            <div className="grid gap-4 sm:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-              {subjectTests.map((test) => {
-                const progress = getTestProgress(test.id)
-                return (
-                  <Card
-                    key={test.id}
-                    className="group hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer border-0 shadow-lg overflow-hidden bg-white/90 backdrop-blur-sm"
-                    onClick={() => onTestSelect(test.id)}
-                  >
-                    <CardHeader
-                      className={`bg-gradient-to-r ${getSubjectColor(test.subject || "")} text-white relative overflow-hidden p-4 sm:p-6`}
+              {/* Tests Grid */}
+              <div className="grid gap-4 sm:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                {subjectTests.map((test) => {
+                  const progress = getTestProgress(test.id)
+                  return (
+                    <Card
+                      key={test.id}
+                      className="group hover:shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer border-0 shadow-lg overflow-hidden bg-white/90 backdrop-blur-sm"
+                      onClick={() => onTestSelect(test.id)}
                     >
-                      <div className="absolute top-0 right-0 w-24 h-24 sm:w-32 sm:h-32 opacity-10">
-                        <div className="text-4xl sm:text-6xl transform rotate-12 translate-x-6 sm:translate-x-8 -translate-y-2 sm:-translate-y-4">
-                          {getSubjectIcon(test.subject || "")}
-                        </div>
-                      </div>
-                      <div className="relative z-10">
-                        <div className="flex items-start justify-between mb-2">
-                          <div className="flex-1 pr-2">
-                            <CardTitle className="text-lg sm:text-xl font-bold leading-tight">{test.title}</CardTitle>
-                            {test.titleNepali && <p className="text-white/90 mt-2 text-sm">{test.titleNepali}</p>}
-                          </div>
-                          <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 opacity-75 group-hover:translate-x-1 transition-transform flex-shrink-0" />
-                        </div>
-                        {test.year && (
-                          <Badge variant="secondary" className="bg-white/20 text-white border-white/30 text-xs">
-                            Year {test.year}
-                          </Badge>
-                        )}
-                      </div>
-                    </CardHeader>
-
-                    <CardContent className="p-4 sm:p-6 bg-white">
-                      {/* Test Info */}
-                      <div className="flex items-center justify-between mb-4">
-                        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-3">
-                          <Badge variant="outline" className="text-xs">
-                            <Trophy className="h-3 w-3 mr-1" />
-                            {test.totalMarks || 0} marks
-                          </Badge>
-                          <Badge variant="outline" className="text-xs">
-                            <Clock className="h-3 w-3 mr-1" />
-                            {test.duration || 180} min
-                          </Badge>
-                        </div>
-                      </div>
-
-                      {/* Progress Status - Fixed Height */}
-                      <div className="h-20 mb-4">
-                        {" "}
-                        {/* Fixed height container */}
-                        {progress.completed && progress.lastAttempt && (
-                          <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-3 sm:p-4 h-full flex items-center">
-                            <div className="flex items-center justify-between w-full">
-                              <div>
-                                <p className="text-sm font-semibold text-emerald-800">✅ Completed</p>
-                                <p className="text-xs text-emerald-600">
-                                  पूरा भयो • Score: {progress.lastAttempt.totalScore}/{progress.lastAttempt.maxScore}
-                                </p>
-                              </div>
-                              <div className="text-right">
-                                <div className="text-xl sm:text-2xl font-bold text-emerald-800">
-                                  {progress.lastAttempt.percentage}%
-                                </div>
-                                <Badge
-                                  variant={progress.lastAttempt.grade === "E" ? "destructive" : "default"}
-                                  className="text-xs"
-                                >
-                                  Grade {progress.lastAttempt.grade}
-                                </Badge>
-                              </div>
-                            </div>
-                          </div>
-                        )}
-                        {progress.hasProgress && !progress.completed && (
-                          <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 sm:p-4 h-full flex items-center">
-                            <div className="flex items-center justify-between w-full">
-                              <div>
-                                <p className="text-sm font-semibold text-blue-800">📝 In Progress</p>
-                                <p className="text-xs text-blue-600">
-                                  प्रगतिमा छ • {progress.answeredCount} questions answered
-                                </p>
-                              </div>
-                              <div className="text-right">
-                                <div className="text-xl sm:text-2xl font-bold text-blue-800">
-                                  {progress.percentage}%
-                                </div>
-                                <p className="text-xs text-blue-600">estimated</p>
-                              </div>
-                            </div>
-                          </div>
-                        )}
-                        {!progress.hasProgress && !progress.completed && (
-                          <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 sm:p-4 h-full flex items-center justify-center">
-                            <div className="text-center">
-                              <p className="text-sm font-semibold text-slate-600">🚀 Ready to Start</p>
-                              <p className="text-xs text-slate-500">सुरु गर्न तयार</p>
-                            </div>
-                          </div>
-                        )}
-                      </div>
-
-                      <Button
-                        className={`w-full bg-gradient-to-r ${getSubjectColor(test.subject || "")} hover:shadow-lg text-white font-semibold py-3 sm:py-3 min-h-[48px] text-sm sm:text-base`}
-                        onClick={(e) => {
-                          e.stopPropagation()
-                          onTestSelect(test.id)
-                        }}
+                      <CardHeader
+                        className={`bg-gradient-to-r ${getSubjectColor(test.subject || "")} text-white relative overflow-hidden p-4 sm:p-6`}
                       >
-                        {progress.completed
-                          ? "🔄 Retake Test"
-                          : progress.hasProgress
-                            ? "▶️ Continue Test"
-                            : "🚀 Start Test"}
-                      </Button>
-                    </CardContent>
-                  </Card>
-                )
-              })}
+                        <div className="absolute top-0 right-0 w-24 h-24 sm:w-32 sm:h-32 opacity-10">
+                          <div className="text-4xl sm:text-6xl transform rotate-12 translate-x-6 sm:translate-x-8 -translate-y-2 sm:-translate-y-4">
+                            {getSubjectIcon(test.subject || "")}
+                          </div>
+                        </div>
+                        <div className="relative z-10">
+                          <div className="flex items-start justify-between mb-2">
+                            <div className="flex-1 pr-2">
+                              <CardTitle className="text-lg sm:text-xl font-bold leading-tight">{test.title}</CardTitle>
+                              {test.titleNepali && <p className="text-white/90 mt-2 text-sm">{test.titleNepali}</p>}
+                            </div>
+                            <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 opacity-75 group-hover:translate-x-1 transition-transform flex-shrink-0" />
+                          </div>
+                          {test.year && (
+                            <Badge variant="secondary" className="bg-white/20 text-white border-white/30 text-xs">
+                              Year {test.year}
+                            </Badge>
+                          )}
+                        </div>
+                      </CardHeader>
+
+                      <CardContent className="p-4 sm:p-6 bg-white">
+                        {/* Test Info */}
+                        <div className="flex items-center justify-between mb-4">
+                          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-3">
+                            <Badge variant="outline" className="text-xs">
+                              <Trophy className="h-3 w-3 mr-1" />
+                              {test.totalMarks || 0} marks
+                            </Badge>
+                            <Badge variant="outline" className="text-xs">
+                              <Clock className="h-3 w-3 mr-1" />
+                              {test.duration || 180} min
+                            </Badge>
+                          </div>
+                        </div>
+
+                        {/* Progress Status - Fixed Height */}
+                        <div className="h-20 mb-4">
+                          {" "}
+                          {/* Fixed height container */}
+                          {progress.completed && progress.lastAttempt && (
+                            <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-3 sm:p-4 h-full flex items-center">
+                              <div className="flex items-center justify-between w-full">
+                                <div>
+                                  <p className="text-sm font-semibold text-emerald-800">✅ Completed</p>
+                                  <p className="text-xs text-emerald-600">
+                                    पूरा भयो • Score: {progress.lastAttempt.totalScore}/{progress.lastAttempt.maxScore}
+                                  </p>
+                                </div>
+                                <div className="text-right">
+                                  <div className="text-xl sm:text-2xl font-bold text-emerald-800">
+                                    {progress.lastAttempt.percentage}%
+                                  </div>
+                                  <Badge
+                                    variant={progress.lastAttempt.grade === "E" ? "destructive" : "default"}
+                                    className="text-xs"
+                                  >
+                                    Grade {progress.lastAttempt.grade}
+                                  </Badge>
+                                </div>
+                              </div>
+                            </div>
+                          )}
+                          {progress.hasProgress && !progress.completed && (
+                            <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 sm:p-4 h-full flex items-center">
+                              <div className="flex items-center justify-between w-full">
+                                <div>
+                                  <p className="text-sm font-semibold text-blue-800">📝 In Progress</p>
+                                  <p className="text-xs text-blue-600">
+                                    प्रगतिमा छ • {progress.answeredCount} questions answered
+                                  </p>
+                                </div>
+                                <div className="text-right">
+                                  <div className="text-xl sm:text-2xl font-bold text-blue-800">
+                                    {progress.percentage}%
+                                  </div>
+                                  <p className="text-xs text-blue-600">estimated</p>
+                                </div>
+                              </div>
+                            </div>
+                          )}
+                          {!progress.hasProgress && !progress.completed && (
+                            <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 sm:p-4 h-full flex items-center justify-center">
+                              <div className="text-center">
+                                <p className="text-sm font-semibold text-slate-600">🚀 Ready to Start</p>
+                                <p className="text-xs text-slate-500">सुरु गर्न तयार</p>
+                              </div>
+                            </div>
+                          )}
+                        </div>
+
+                        <Button
+                          className={`w-full bg-gradient-to-r ${getSubjectColor(test.subject || "")} hover:shadow-lg text-white font-semibold py-3 sm:py-3 min-h-[48px] text-sm sm:text-base`}
+                          onClick={(e) => {
+                            e.stopPropagation()
+                            onTestSelect(test.id)
+                          }}
+                        >
+                          {progress.completed
+                            ? "🔄 Retake Test"
+                            : progress.hasProgress
+                              ? "▶️ Continue Test"
+                              : "🚀 Start Test"}
+                        </Button>
+                      </CardContent>
+                    </Card>
+                  )
+                })}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
       </div>
     </div>
   )

@@ -2,18 +2,29 @@
   {
     "_id": "see_2081_science_practice_2_generated",
     "title": "SEE 2081 Science Practice Test 2",
-    "titleNepali": "SEE २०८۱ विज्ञान अभ्यास परीक्षा २",
+    "titleNepali": "SEE २०८१ विज्ञान अभ्यास परीक्षा २",
     "subject": "science",
     "year": 2081,
     "totalMarks": 75,
     "duration": 180,
-    "sections": ["A", "B", "C", "D"],
+    "sections": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
     "isActive": true,
-    "createdAt": { "$date": "2025-09-01T10:00:00.000Z" },
-    "updatedAt": { "$date": "2025-09-01T10:00:00.000Z" }
+    "createdAt": {
+      "$date": "2025-09-01T10:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-01T10:00:00.000Z"
+    }
   },
   {
-    "_id": { "$oid": "66d6c1a1b3e4f5a6b7c8d9e2" },
+    "_id": {
+      "$oid": "66d6c1a1b3e4f5a6b7c8d9e2"
+    },
     "testId": "see_2081_science_practice_2_generated",
     "questions": {
       "groupA": [
@@ -23,10 +34,26 @@
           "questionNepali": "आधुनिक पेरियोडिक तालिकामा अधातुहरूलाई कहाँ राखिएको छ?",
           "questionEnglish": "Where are non-metals placed in the modern periodic table?",
           "options": [
-            {"id": "i", "nepali": "बायाँतिर (On the left side)", "english": "On the left side"},
-            {"id": "ii", "nepali": "दायाँतिर (On the right side)", "english": "On the right side"},
-            {"id": "iii", "nepali": "बिचमा (In the middle)", "english": "In the middle"},
-            {"id": "iv", "nepali": "तल (At the bottom)", "english": "At the bottom"}
+            {
+              "id": "i",
+              "nepali": "बायाँतिर (On the left side)",
+              "english": "On the left side"
+            },
+            {
+              "id": "ii",
+              "nepali": "दायाँतिर (On the right side)",
+              "english": "On the right side"
+            },
+            {
+              "id": "iii",
+              "nepali": "बिचमा (In the middle)",
+              "english": "In the middle"
+            },
+            {
+              "id": "iv",
+              "nepali": "तल (At the bottom)",
+              "english": "At the bottom"
+            }
           ],
           "correctAnswer": "ii",
           "marks": 1,
@@ -38,10 +65,26 @@
           "questionNepali": "कुन जीवको शरीर सपाट पातजस्तो वा लामो फिताजस्तो हुन्छ?",
           "questionEnglish": "Which organism has a body that is like a flat leaf or a long ribbon?",
           "options": [
-            {"id": "i", "nepali": "गड्यौला (Earthworm)", "english": "Earthworm"},
-            {"id": "ii", "nepali": "हाइड्रा (Hydra)", "english": "Hydra"},
-            {"id": "iii", "nepali": "गोलो जुका (Roundworm)", "english": "Roundworm"},
-            {"id": "iv", "nepali": "फित्तेजुका (Tapeworm)", "english": "Tapeworm"}
+            {
+              "id": "i",
+              "nepali": "गड्यौला (Earthworm)",
+              "english": "Earthworm"
+            },
+            {
+              "id": "ii",
+              "nepali": "हाइड्रा (Hydra)",
+              "english": "Hydra"
+            },
+            {
+              "id": "iii",
+              "nepali": "गोलो जुका (Roundworm)",
+              "english": "Roundworm"
+            },
+            {
+              "id": "iv",
+              "nepali": "फित्तेजुका (Tapeworm)",
+              "english": "Tapeworm"
+            }
           ],
           "correctAnswer": "iv",
           "marks": 1,
@@ -53,10 +96,26 @@
           "questionNepali": "रानी मौरीको औसत आयु कति हुन्छ?",
           "questionEnglish": "What is the average lifespan of a queen bee?",
           "options": [
-            {"id": "i", "nepali": "६ हप्तादेखि ६ महिना (6 weeks to 6 months)", "english": "6 weeks to 6 months"},
-            {"id": "ii", "nepali": "२ महिना (2 months)", "english": "2 months"},
-            {"id": "iii", "nepali": "२-५ वर्ष (2-5 years)", "english": "2-5 years"},
-            {"id": "iv", "nepali": "१ वर्ष (1 year)", "english": "1 year"}
+            {
+              "id": "i",
+              "nepali": "६ हप्तादेखि ६ महिना (6 weeks to 6 months)",
+              "english": "6 weeks to 6 months"
+            },
+            {
+              "id": "ii",
+              "nepali": "२ महिना (2 months)",
+              "english": "2 months"
+            },
+            {
+              "id": "iii",
+              "nepali": "२-५ वर्ष (2-5 years)",
+              "english": "2-5 years"
+            },
+            {
+              "id": "iv",
+              "nepali": "१ वर्ष (1 year)",
+              "english": "1 year"
+            }
           ],
           "correctAnswer": "iii",
           "marks": 1,
@@ -68,10 +127,26 @@
           "questionNepali": "मेन्डलको मोनोहाइब्रिड क्रसको दोस्रो वंशमा देखिने जिनोटाइपिक अनुपात कुन हो?",
           "questionEnglish": "What is the genotypic ratio observed in the F2 generation of Mendel's monohybrid cross?",
           "options": [
-            {"id": "i", "nepali": "३:१ (3:1)", "english": "3:1"},
-            {"id": "ii", "nepali": "१:१ (1:1)", "english": "1:1"},
-            {"id": "iii", "nepali": "९:३:३:१ (9:3:3:1)", "english": "9:3:3:1"},
-            {"id": "iv", "nepali": "१:२:१ (1:2:1)", "english": "1:2:1"}
+            {
+              "id": "i",
+              "nepali": "३:१ (3:1)",
+              "english": "3:1"
+            },
+            {
+              "id": "ii",
+              "nepali": "१:१ (1:1)",
+              "english": "1:1"
+            },
+            {
+              "id": "iii",
+              "nepali": "९:३:३:१ (9:3:3:1)",
+              "english": "9:3:3:1"
+            },
+            {
+              "id": "iv",
+              "nepali": "१:२:१ (1:2:1)",
+              "english": "1:2:1"
+            }
           ],
           "correctAnswer": "iv",
           "marks": 1,
@@ -83,10 +158,26 @@
           "questionNepali": "मानव शरीरमा रोग प्रतिरोधात्मक क्षमताका लागि कुन रक्तकोष जिम्मेवार छ?",
           "questionEnglish": "Which blood cell is responsible for immunity in the human body?",
           "options": [
-            {"id": "i", "nepali": "रातो रक्तकोष (Red Blood Cell)", "english": "Red Blood Cell"},
-            {"id": "ii", "nepali": "सेतो रक्तकोष (White Blood Cell)", "english": "White Blood Cell"},
-            {"id": "iii", "nepali": "प्लेटलेट्स (Platelets)", "english": "Platelets"},
-            {"id": "iv", "nepali": "प्लाज्मा (Plasma)", "english": "Plasma"}
+            {
+              "id": "i",
+              "nepali": "रातो रक्तकोष (Red Blood Cell)",
+              "english": "Red Blood Cell"
+            },
+            {
+              "id": "ii",
+              "nepali": "सेतो रक्तकोष (White Blood Cell)",
+              "english": "White Blood Cell"
+            },
+            {
+              "id": "iii",
+              "nepali": "प्लेटलेट्स (Platelets)",
+              "english": "Platelets"
+            },
+            {
+              "id": "iv",
+              "nepali": "प्लाज्मा (Plasma)",
+              "english": "Plasma"
+            }
           ],
           "correctAnswer": "ii",
           "marks": 1,
@@ -98,14 +189,30 @@
           "questionNepali": "वस्तुको तौल (W), पिण्ड (m) र गुरुत्व प्रवेग (g) बिचको सही सम्बन्ध कुन हो?",
           "questionEnglish": "Which is the correct relationship between the weight (W), mass (m), and acceleration due to gravity (g) of an object?",
           "options": [
-            {"id": "i", "nepali": "m = Wg", "english": "m = Wg"},
-            {"id": "ii", "nepali": "g = Wm", "english": "g = Wm"},
-            {"id": "iii", "nepali": "W = mg", "english": "W = mg"},
-            {"id": "iv", "nepali": "W = m/g", "english": "W = m/g"}
+            {
+              "id": "i",
+              "nepali": "$m = Wg$",
+              "english": "$m = Wg$"
+            },
+            {
+              "id": "ii",
+              "nepali": "$g = Wm$",
+              "english": "$g = Wm$"
+            },
+            {
+              "id": "iii",
+              "nepali": "$W = mg$",
+              "english": "$W = mg$"
+            },
+            {
+              "id": "iv",
+              "nepali": "$W = \\frac{m}{g}$",
+              "english": "$W = \\frac{m}{g}$"
+            }
           ],
           "correctAnswer": "iii",
           "marks": 1,
-          "explanation": "Explanation: न्युटनको गतिको दोस्रो नियम अनुसार, 'm' पिण्ड भएको वस्तुमा लाग्ने गुरुत्व बल, अर्थात् तौल, W = mg हुन्छ, जहाँ g गुरुत्व प्रवेग हो ।\n\nAccording to Newton's second law of motion, the force of gravity acting on an object of mass 'm', i.e., weight, is W = mg, where g is the acceleration due to gravity. Citations: chapter 7, page 182"
+          "explanation": "Explanation: न्युटनको गतिको दोस्रो नियम अनुसार, '$m$' पिण्ड भएको वस्तुमा लाग्ने गुरुत्व बल, अर्थात् तौल, $W = mg$ हुन्छ, जहाँ $g$ गुरुत्व प्रवेग हो ।\n\nAccording to Newton's second law of motion, the force of gravity acting on an object of mass '$m$', i.e., weight, is $W = mg$, where $g$ is the acceleration due to gravity. Citations: chapter 7, page 182"
         },
         {
           "id": "g",
@@ -113,10 +220,26 @@
           "questionNepali": "हाइड्रोमिटरले कुन सिद्धान्तमा आधारित भएर काम गर्छ?",
           "questionEnglish": "On which principle does a hydrometer work?",
           "options": [
-            {"id": "i", "nepali": "पास्कलको नियम (Pascal's Law)", "english": "Pascal's Law"},
-            {"id": "ii", "nepali": "तैरिने नियम (Law of Floatation)", "english": "Law of Floatation"},
-            {"id": "iii", "nepali": "गुरुत्वाकर्षणको नियम (Law of Gravitation)", "english": "Law of Gravitation"},
-            {"id": "iv", "nepali": "न्युटनको गतिको नियम (Newton's Laws of Motion)", "english": "Newton's Laws of Motion"}
+            {
+              "id": "i",
+              "nepali": "पास्कलको नियम (Pascal's Law)",
+              "english": "Pascal's Law"
+            },
+            {
+              "id": "ii",
+              "nepali": "तैरिने नियम (Law of Floatation)",
+              "english": "Law of Floatation"
+            },
+            {
+              "id": "iii",
+              "nepali": "गुरुत्वाकर्षणको नियम (Law of Gravitation)",
+              "english": "Law of Gravitation"
+            },
+            {
+              "id": "iv",
+              "nepali": "न्युटनको गतिको नियम (Newton's Laws of Motion)",
+              "english": "Newton's Laws of Motion"
+            }
           ],
           "correctAnswer": "ii",
           "marks": 1,
@@ -128,10 +251,26 @@
           "questionNepali": "ताराहरू टिलपिल गर्नुको मुख्य कारण के हो?",
           "questionEnglish": "What is the main reason for the twinkling of stars?",
           "options": [
-            {"id": "i", "nepali": "वायुमण्डलीय परावर्तन (Atmospheric reflection)", "english": "Atmospheric reflection"},
-            {"id": "ii", "nepali": "वायुमण्डलीय आवर्तन (Atmospheric refraction)", "english": "Atmospheric refraction"},
-            {"id": "iii", "nepali": "प्रकाशको विच्छेदन (Dispersion of light)", "english": "Dispersion of light"},
-            {"id": "iv", "nepali": "पूर्ण आन्तरिक परावर्तन (Total internal reflection)", "english": "Total internal reflection"}
+            {
+              "id": "i",
+              "nepali": "वायुमण्डलीय परावर्तन (Atmospheric reflection)",
+              "english": "Atmospheric reflection"
+            },
+            {
+              "id": "ii",
+              "nepali": "वायुमण्डलीय आवर्तन (Atmospheric refraction)",
+              "english": "Atmospheric refraction"
+            },
+            {
+              "id": "iii",
+              "nepali": "प्रकाशको विच्छेदन (Dispersion of light)",
+              "english": "Dispersion of light"
+            },
+            {
+              "id": "iv",
+              "nepali": "पूर्ण आन्तरिक परावर्तन (Total internal reflection)",
+              "english": "Total internal reflection"
+            }
           ],
           "correctAnswer": "ii",
           "marks": 1,
@@ -143,10 +282,26 @@
           "questionNepali": "सोलेनोइडको चुम्बकीय क्षेत्रको शक्ति कुन कुरामा निर्भर गर्दैन?",
           "questionEnglish": "The strength of the magnetic field of a solenoid does not depend on which of the following?",
           "options": [
-            {"id": "i", "nepali": "सोलेनोइडमा करेन्टको परिमाण (Magnitude of the current in the solenoid)", "english": "Magnitude of the current in the solenoid"},
-            {"id": "ii", "nepali": "सोलेनोइडको क्वाइलमा फन्काको सङ्ख्या (Number of turns in the coil of the solenoid)", "english": "Number of turns in the coil of the solenoid"},
-            {"id": "iii", "nepali": "सोलेनोइड भित्र राखिएको पदार्थ (A material placed inside the solenoid)", "english": "A material placed inside the solenoid"},
-            {"id": "iv", "nepali": "तारको रङ (Color of the wire)", "english": "Color of the wire"}
+            {
+              "id": "i",
+              "nepali": "सोलेनोइडमा करेन्टको परिमाण (Magnitude of the current in the solenoid)",
+              "english": "Magnitude of the current in the solenoid"
+            },
+            {
+              "id": "ii",
+              "nepali": "सोलेनोइडको क्वाइलमा फन्काको सङ्ख्या (Number of turns in the coil of the solenoid)",
+              "english": "Number of turns in the coil of the solenoid"
+            },
+            {
+              "id": "iii",
+              "nepali": "सोलेनोइड भित्र राखिएको पदार्थ (A material placed inside the solenoid)",
+              "english": "A material placed inside the solenoid"
+            },
+            {
+              "id": "iv",
+              "nepali": "तारको रङ (Color of the wire)",
+              "english": "Color of the wire"
+            }
           ],
           "correctAnswer": "iv",
           "marks": 1,
@@ -158,14 +313,30 @@
           "questionNepali": "अल्केन (Alkane) समूहको सामान्य सूत्र के हो?",
           "questionEnglish": "What is the general formula for the Alkane group?",
           "options": [
-            {"id": "i", "nepali": "Cn​H2n​", "english": "Cn​H2n​"},
-            {"id": "ii", "nepali": "Cn​H2n+2​", "english": "Cn​H2n+2​"},
-            {"id": "iii", "nepali": "Cn​H2n−2​", "english": "Cn​H2n−2​"},
-            {"id": "iv", "nepali": "Cn​H2n+1​OH", "english": "Cn​H2n+1​OH"}
+            {
+              "id": "i",
+              "nepali": "$C_nH_{2n}$",
+              "english": "$C_nH_{2n}$"
+            },
+            {
+              "id": "ii",
+              "nepali": "$C_nH_{2n+2}$",
+              "english": "$C_nH_{2n+2}$"
+            },
+            {
+              "id": "iii",
+              "nepali": "$C_nH_{2n-2}$",
+              "english": "$C_nH_{2n-2}$"
+            },
+            {
+              "id": "iv",
+              "nepali": "$C_nH_{2n+1}OH$",
+              "english": "$C_nH_{2n+1}OH$"
+            }
           ],
           "correctAnswer": "ii",
           "marks": 1,
-          "explanation": "Explanation: अल्केनहरू संतृप्त हाइड्रोकार्बन हुन् जसमा कार्बन परमाणुहरूबीच एकल सहसंयोजक बन्धन हुन्छ । तिनीहरूको सामान्य सूत्र Cn​H2n+2​ हो ।\n\nAlkanes are saturated hydrocarbons having a single covalent bond between the carbon atoms. The general formula of these compounds is CnH2n +2. Citations: chapter 18, page 428"
+          "explanation": "Explanation: अल्केनहरू संतृप्त हाइड्रोकार्बन हुन् जसमा कार्बन परमाणुहरूबीच एकल सहसंयोजक बन्धन हुन्छ । तिनीहरूको सामान्य सूत्र $C_nH_{2n+2}$ हो ।\n\nAlkanes are saturated hydrocarbons having a single covalent bond between the carbon atoms. The general formula of these compounds is $C_nH_{2n+2}$. Citations: chapter 18, page 428"
         }
       ],
       "groupB": [
@@ -191,7 +362,7 @@
           "questionNepali": "डिप्लोइड (diploid) कोष भनेको के हो?",
           "questionEnglish": "What is a diploid cell?",
           "marks": 1,
-          "sampleAnswer": "उत्तर: कुनै कोषमा दुई सेट क्रोमोजोम (एउटा बाबुबाट र अर्को आमाबाट) हुन्छ भने त्यसलाई डिप्लोइड कोष (2n) भनिन्छ ।\n\nAnswer: A cell containing two sets of chromosomes, one set from the father and another set from the mother, is called a diploid cell (2n). Citations: chapter 4, page 76"
+          "sampleAnswer": "उत्तर: कुनै कोषमा दुई सेट क्रोमोजोम (एउटा बाबुबाट र अर्को आमाबाट) हुन्छ भने त्यसलाई डिप्लोइड कोष ($2n$) भनिन्छ ।\n\nAnswer: A cell containing two sets of chromosomes, one set from the father and another set from the mother, is called a diploid cell ($2n$). Citations: chapter 4, page 76"
         },
         {
           "id": "d",
@@ -246,10 +417,10 @@
         {
           "id": "3",
           "type": "long_answer",
-          "questionNepali": "v = u + at समीकरणको मान्यता एकाइगत विश्लेषणबाट परीक्षण गर्नुहोस् ।",
-          "questionEnglish": "Test the validity of the equation v = u + at by unit analysis.",
+          "questionNepali": "$v = u + at$ समीकरणको मान्यता एकाइगत विश्लेषणबाट परीक्षण गर्नुहोस् ।",
+          "questionEnglish": "Test the validity of the equation $v = u + at$ by unit analysis.",
           "marks": 2,
-          "sampleAnswer": "उत्तर: समीकरण v = u + at मा,\nबायाँतर्फको राशिको एकाइ = v को एकाइ = m/s\nदायाँतर्फको राशिको एकाइ = u को एकाइ + at को एकाइ = m/s + (m/s²) × s = m/s + m/s\nसमान एकाइ भएका राशिहरूलाई मात्र जोड्न सकिन्छ । यहाँ, बायाँतर्फ र दायाँतर्फका सबै पदहरूको एकाइ m/s नै छ । त्यसैले, यो समीकरण मान्य छ ।\n\nAnswer: In the equation v = u + at,\nUnit of LHS = unit of v = m/s\nUnit of RHS = unit of u + unit of at = m/s + (m/s²) × s = m/s + m/s\nPhysical quantities can be added if they have the same composition of fundamental units. Here, the units on both sides of the equation are the same (m/s). Therefore, the equation is valid. Citations: chapter 1, pages 10-11"
+          "sampleAnswer": "उत्तर: समीकरण $v = u + at$ मा,\nबायाँतर्फको राशिको एकाइ = $v$ को एकाइ = $\\text{m/s}$\nदायाँतर्फको राशिको एकाइ = $u$ को एकाइ + $at$ को एकाइ = $\\text{m/s} + (\\text{m/s}^2) \\times \\text{s} = \\text{m/s} + \\text{m/s}$\nसमान एकाइ भएका राशिहरूलाई मात्र जोड्न सकिन्छ । यहाँ, बायाँतर्फ र दायाँतर्फका सबै पदहरूको एकाइ $\\text{m/s}$ नै छ । त्यसैले, यो समीकरण मान्य छ ।\n\nAnswer: In the equation $v = u + at$,\nUnit of LHS = unit of $v = \\text{m/s}$\nUnit of RHS = unit of $u + \\text{unit of } at = \\text{m/s} + (\\text{m/s}^2) \\times \\text{s} = \\text{m/s} + \\text{m/s}$\nPhysical quantities can be added if they have the same composition of fundamental units. Here, the units on both sides of the equation are the same ($\\text{m/s}$). Therefore, the equation is valid. Citations: chapter 1, pages 10-11"
         },
         {
           "id": "4",
@@ -289,7 +460,7 @@
           "questionNepali": "गुरुत्व प्रवेग ग्रहको पिण्डसँग कसरी सम्बन्धित छ?",
           "questionEnglish": "How is acceleration due to gravity related to the mass of a planet?",
           "marks": 2,
-          "sampleAnswer": "उत्तर: गुरुत्व प्रवेग (g) ग्रहको पिण्ड (M) सँग सोझै समानुपातिक हुन्छ (g ∝ M), यदि ग्रहको अर्धव्यास स्थिर छ भने । यसको मतलब, पिण्ड जति बढी भयो, गुरुत्व प्रवेग पनि त्यति नै बढी हुन्छ ।\n\nAnswer: The acceleration due to gravity (g) is directly proportional to the mass of the planet (M) (g ∝ M), assuming the planet's radius is constant. This means the greater the mass, the greater the acceleration due to gravity. Citations: chapter 7, page 177"
+          "sampleAnswer": "उत्तर: गुरुत्व प्रवेग ($g$) ग्रहको पिण्ड ($M$) सँग सोझै समानुपातिक हुन्छ ($g \\propto M$), यदि ग्रहको अर्धव्यास स्थिर छ भने । यसको मतलब, पिण्ड जति बढी भयो, गुरुत्व प्रवेग पनि त्यति नै बढी हुन्छ ।\n\nAnswer: The acceleration due to gravity ($g$) is directly proportional to the mass of the planet ($M$) ($g \\propto M$), assuming the planet's radius is constant. This means the greater the mass, the greater the acceleration due to gravity. Citations: chapter 7, page 177"
         },
         {
           "id": "9",
@@ -305,7 +476,7 @@
           "questionNepali": "पानीको अस्वाभाविक प्रसार (anomalous expansion of water) भनेको के हो?",
           "questionEnglish": "What is the anomalous expansion of water?",
           "marks": 2,
-          "sampleAnswer": "उत्तर: धेरैजसो पदार्थहरू चिस्याउँदा खुम्चिन्छन्, तर पानी 4°C बाट 0°C मा चिसिँदा यसको आयतन बढ्छ (फैलिन्छ) । पानीको यही अनौठो गुणलाई पानीको अस्वाभाविक प्रसार भनिन्छ । पानीको घनत्व 4°C मा सबैभन्दा बढी हुन्छ ।\n\nAnswer: While most substances contract on cooling, water's volume increases (expands) when cooled from 4°C to 0°C. This unique property of water is known as the anomalous expansion of water. Water has its maximum density at 4°C. Citations: chapter 9, page 228"
+          "sampleAnswer": "उत्तर: धेरैजसो पदार्थहरू चिस्याउँदा खुम्चिन्छन्, तर पानी $4^\\circ\\text{C}$ बाट $0^\\circ\\text{C}$ मा चिसिँदा यसको आयतन बढ्छ (फैलिन्छ) । पानीको यही अनौठो गुणलाई पानीको अस्वाभाविक प्रसार भनिन्छ । पानीको घनत्व $4^\\circ\\text{C}$ मा सबैभन्दा बढी हुन्छ ।\n\nAnswer: While most substances contract on cooling, water's volume increases (expands) when cooled from $4^\\circ\\text{C}$ to $0^\\circ\\text{C}$. This unique property of water is known as the anomalous expansion of water. Water has its maximum density at $4^\\circ\\text{C}$. Citations: chapter 9, page 228"
         },
         {
           "id": "11",
@@ -321,7 +492,7 @@
           "questionNepali": "हबलको नियम (Hubble's Law) छोटकरीमा व्याख्या गर्नुहोस् ।",
           "questionEnglish": "Explain Hubble's Law briefly.",
           "marks": 2,
-          "sampleAnswer": "उत्तर: हबलको नियम अनुसार, आकाशगंगाहरू एकअर्काबाट टाढा सर्ने गति (v) तिनीहरूबीचको दूरी (d) सँग सोझै समानुपातिक हुन्छ (v = Hd) । यसको मतलब, जति टाढाका आकाशगंगाहरू छन्, तिनीहरू त्यति नै छिटो एकअर्काबाट टाढा सर्दैछन्, जसले ब्रह्माण्ड विस्तार भइरहेको पुष्टि गर्छ ।\n\nAnswer: According to Hubble's law, the velocity with which galaxies are moving away from each other (v) is directly proportional to the distance between them (d), represented by the equation v = Hd. This means that the farther the galaxies are, the faster they are separating, which confirms that the universe is expanding. Citations: chapter 12, page 332"
+          "sampleAnswer": "उत्तर: हबलको नियम अनुसार, आकाशगंगाहरू एकअर्काबाट टाढा सर्ने गति ($v$) तिनीहरूबीचको दूरी ($d$) सँग सोझै समानुपातिक हुन्छ ($v = Hd$) । यसको मतलब, जति टाढाका आकाशगंगाहरू छन्, तिनीहरू त्यति नै छिटो एकअर्काबाट टाढा सर्दैछन्, जसले ब्रह्माण्ड विस्तार भइरहेको पुष्टि गर्छ ।\n\nAnswer: According to Hubble's law, the velocity with which galaxies are moving away from each other ($v$) is directly proportional to the distance between them ($d$), represented by the equation $v = Hd$. This means that the farther the galaxies are, the faster they are separating, which confirms that the universe is expanding. Citations: chapter 12, page 332"
         },
         {
           "id": "13",
@@ -379,7 +550,7 @@
           "questionNepali": "हाइड्रोलिक मेसिनको काम गर्ने सिद्धान्त के हो? यसका कुनै दुई उपयोगिताहरू लेख्नुहोस् ।",
           "questionEnglish": "What is the working principle of a hydraulic machine? Write any two of its applications.",
           "marks": 4,
-          "sampleAnswer": "उत्तर: **काम गर्ने सिद्धान्त:** हाइड्रोलिक मेसिन पास्कलको नियममा आधारित बल-बढाउने (force-multiplying) यन्त्र हो । यस नियम अनुसार, बन्द भाँडोमा रहेको तरल पदार्थमा लगाइएको चाप सबैतिर समान रूपले प्रसारण हुन्छ । हाइड्रोलिक मेसिनमा, सानो पिस्टनमा थोरै बल लगाएर उत्पन्न भएको चाप ठूलो पिस्टनमा प्रसारण हुन्छ । ठूलो पिस्टनको क्षेत्रफल बढी भएकोले, त्यहाँ ठूलो बल उत्पन्न हुन्छ (F₂ = F₁ × A₂/A₁) ।\n\n**Working Principle:** A hydraulic machine is a force-multiplying device based on Pascal's law. According to this law, the pressure generated at a point in an enclosed liquid is transmitted equally in all directions. In a hydraulic machine, the pressure generated by applying a small force on the small piston is transmitted to the large piston. Since the area of the large piston is greater, a larger force is produced on it (F₂ = F₁ × A₂/A₁). Citations: chapter 8, pages 201-202\n\n**उपयोगिताहरू:**\n* **हाइड्रोलिक लिफ्ट:** डेन्टिस्टको कुर्सी र गाडीहरू उठाउन प्रयोग गरिन्छ ।\n* **हाइड्रोलिक ब्रेक:** गाडीहरूलाई रोक्न प्रयोग गरिन्छ ।\n* **हाइड्रोलिक ज्याक:** ट्रक, बस जस्ता गह्रौं सवारीसाधन उठाउन प्रयोग गरिन्छ ।\n* **हाइड्रोलिक प्रेस:** कागज, कपास जस्ता वस्तुहरूलाई थिचेर प्याक गर्न प्रयोग गरिन्छ ।\n\n**Applications:**\n* **Hydraulic Lift:** Used to lift dentist chairs and cars.\n* **Hydraulic Brake:** Used to stop vehicles.\n* **Hydraulic Jack:** Used to lift heavy vehicles like trucks and buses.\n* **Hydraulic Press:** Used to compress and pack materials like paper and cotton. Citations: chapter 8, pages 203-206"
+          "sampleAnswer": "उत्तर: **काम गर्ने सिद्धान्त:** हाइड्रोलिक मेसिन पास्कलको नियममा आधारित बल-बढाउने (force-multiplying) यन्त्र हो । यस नियम अनुसार, बन्द भाँडोमा रहेको तरल पदार्थमा लगाइएको चाप सबैतिर समान रूपले प्रसारण हुन्छ । हाइड्रोलिक मेसिनमा, सानो पिस्टनमा थोरै बल लगाएर उत्पन्न भएको चाप ठूलो पिस्टनमा प्रसारण हुन्छ । ठूलो पिस्टनको क्षेत्रफल बढी भएकोले, त्यहाँ ठूलो बल उत्पन्न हुन्छ ($F_2 = F_1 \\times \\frac{A_2}{A_1}$) ।\n\n**Working Principle:** A hydraulic machine is a force-multiplying device based on Pascal's law. According to this law, the pressure generated at a point in an enclosed liquid is transmitted equally in all directions. In a hydraulic machine, the pressure generated by applying a small force on the small piston is transmitted to the large piston. Since the area of the large piston is greater, a larger force is produced on it ($F_2 = F_1 \\times \\frac{A_2}{A_1}$). Citations: chapter 8, pages 201-202\n\n**उपयोगिताहरू:**\n* **हाइड्रोलिक लिफ्ट:** डेन्टिस्टको कुर्सी र गाडीहरू उठाउन प्रयोग गरिन्छ ।\n* **हाइड्रोलिक ब्रेक:** गाडीहरूलाई रोक्न प्रयोग गरिन्छ ।\n* **हाइड्रोलिक ज्याक:** ट्रक, बस जस्ता गह्रौं सवारीसाधन उठाउन प्रयोग गरिन्छ ।\n* **हाइड्रोलिक प्रेस:** कागज, कपास जस्ता वस्तुहरूलाई थिचेर प्याक गर्न प्रयोग गरिन्छ ।\n\n**Applications:**\n* **Hydraulic Lift:** Used to lift dentist chairs and cars.\n* **Hydraulic Brake:** Used to stop vehicles.\n* **Hydraulic Jack:** Used to lift heavy vehicles like trucks and buses.\n* **Hydraulic Press:** Used to compress and pack materials like paper and cotton. Citations: chapter 8, pages 203-206"
         },
         {
           "id": "20",

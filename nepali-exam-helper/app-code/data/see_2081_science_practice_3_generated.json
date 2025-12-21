@@ -7,30 +7,57 @@
     "year": 2081,
     "totalMarks": 75,
     "duration": 180,
-    "sections": ["A", "B", "C", "D"],
+    "sections": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
     "isActive": true,
-    "createdAt": { "$date": "2025-09-01T10:00:00.000Z" },
-    "updatedAt": { "$date": "2025-09-01T10:00:00.000Z" }
+    "createdAt": {
+      "$date": "2025-09-01T10:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-01T10:00:00.000Z"
+    }
   },
   {
-    "_id": { "$oid": "66d6c1a1b3e4f5a6b7c8d9e3" },
+    "_id": {
+      "$oid": "66d6c1a1b3e4f5a6b7c8d9e3"
+    },
     "testId": "see_2081_science_practice_3_generated",
     "questions": {
       "groupA": [
         {
           "id": "a",
           "type": "multiple_choice",
-          "questionNepali": "तल दिइएको रासायनिक प्रतिक्रिया कुन प्रकारको हो? NaCl + AgNO₃ → AgCl + NaNO₃",
-          "questionEnglish": "Which type of chemical reaction is given below? NaCl + AgNO₃ → AgCl + NaNO₃",
+          "questionNepali": "तल दिइएको रासायनिक प्रतिक्रिया कुन प्रकारको हो? $\\text{NaCl} + \\text{AgNO}_3 \\rightarrow \\text{AgCl} + \\text{NaNO}_3$",
+          "questionEnglish": "Which type of chemical reaction is given below? $\\text{NaCl} + \\text{AgNO}_3 \\rightarrow \\text{AgCl} + \\text{NaNO}_3$",
           "options": [
-            {"id": "i", "nepali": "संयोजन प्रतिक्रिया (Combination reaction)", "english": "Combination reaction"},
-            {"id": "ii", "nepali": "विभाजन प्रतिक्रिया (Decomposition reaction)", "english": "Decomposition reaction"},
-            {"id": "iii", "nepali": "एकल विस्थापन प्रतिक्रिया (Single displacement reaction)", "english": "Single displacement reaction"},
-            {"id": "iv", "nepali": "दोहोरो विस्थापन प्रतिक्रिया (Double displacement reaction)", "english": "Double displacement reaction"}
+            {
+              "id": "i",
+              "nepali": "संयोजन प्रतिक्रिया (Combination reaction)",
+              "english": "Combination reaction"
+            },
+            {
+              "id": "ii",
+              "nepali": "विभाजन प्रतिक्रिया (Decomposition reaction)",
+              "english": "Decomposition reaction"
+            },
+            {
+              "id": "iii",
+              "nepali": "एकल विस्थापन प्रतिक्रिया (Single displacement reaction)",
+              "english": "Single displacement reaction"
+            },
+            {
+              "id": "iv",
+              "nepali": "दोहोरो विस्थापन प्रतिक्रिया (Double displacement reaction)",
+              "english": "Double displacement reaction"
+            }
           ],
           "correctAnswer": "iv",
           "marks": 1,
-          "explanation": "Explanation: यो एक दोहोरो विस्थापन प्रतिक्रिया हो किनभने दुई अभिकारकहरू (NaCl र AgNO₃) बीच आयोनहरूको पारस्परिक आदानप्रदान भएर दुई नयाँ यौगिकहरू (AgCl र NaNO₃) बनेका छन् ।\n\nThis is a double displacement reaction because two new compounds are formed by the mutual exchange of atoms or radicals between two reactants. Citations: chapter 15, page 391"
+          "explanation": "Explanation: यो एक दोहोरो विस्थापन प्रतिक्रिया हो किनभने दुई अभिकारकहरू ($\\text{NaCl}$ र $\\text{AgNO}_3$) बीच आयोनहरूको पारस्परिक आदानप्रदान भएर दुई नयाँ यौगिकहरू ($\\text{AgCl}$ र $\\text{NaNO}_3$) बनेका छन् ।\n\nThis is a double displacement reaction because two new compounds are formed by the mutual exchange of atoms or radicals between two reactants. Citations: chapter 15, page 391"
         },
         {
           "id": "b",
@@ -38,10 +65,26 @@
           "questionNepali": "कुन वर्ग (class) का जनावरहरूको शरीर प्वाँखले ढाकिएको हुन्छ र अगाडिको हात पखेटामा परिणत भएको हुन्छ?",
           "questionEnglish": "Which class of animals has a body covered with feathers and forelimbs modified into wings?",
           "options": [
-            {"id": "i", "nepali": "रेप्टिलिया (Reptilia)", "english": "Reptilia"},
-            {"id": "ii", "nepali": "एभ्स (Aves)", "english": "Aves"},
-            {"id": "iii", "nepali": "म्यामेलिया (Mammalia)", "english": "Mammalia"},
-            {"id": "iv", "nepali": "एम्फिबिया (Amphibia)", "english": "Amphibia"}
+            {
+              "id": "i",
+              "nepali": "रेप्टिलिया (Reptilia)",
+              "english": "Reptilia"
+            },
+            {
+              "id": "ii",
+              "nepali": "एभ्स (Aves)",
+              "english": "Aves"
+            },
+            {
+              "id": "iii",
+              "nepali": "म्यामेलिया (Mammalia)",
+              "english": "Mammalia"
+            },
+            {
+              "id": "iv",
+              "nepali": "एम्फिबिया (Amphibia)",
+              "english": "Amphibia"
+            }
           ],
           "correctAnswer": "ii",
           "marks": 1,
@@ -53,10 +96,26 @@
           "questionNepali": "जीवहरूमा भिन्नता (variation) आउनुको मुख्य कारण के हो?",
           "questionEnglish": "What is the main reason for variation in organisms?",
           "options": [
-            {"id": "i", "nepali": "माइटोसिस कोष विभाजन (Mitosis cell division)", "english": "Mitosis cell division"},
-            {"id": "ii", "nepali": "मियोसिस कोष विभाजन (Meiosis cell division)", "english": "Meiosis cell division"},
-            {"id": "iii", "nepali": "अलैङ्गिक प्रजनन (Asexual reproduction)", "english": "Asexual reproduction"},
-            {"id": "iv", "nepali": "क्लोनिङ (Cloning)", "english": "Cloning"}
+            {
+              "id": "i",
+              "nepali": "माइटोसिस कोष विभाजन (Mitosis cell division)",
+              "english": "Mitosis cell division"
+            },
+            {
+              "id": "ii",
+              "nepali": "मियोसिस कोष विभाजन (Meiosis cell division)",
+              "english": "Meiosis cell division"
+            },
+            {
+              "id": "iii",
+              "nepali": "अलैङ्गिक प्रजनन (Asexual reproduction)",
+              "english": "Asexual reproduction"
+            },
+            {
+              "id": "iv",
+              "nepali": "क्लोनिङ (Cloning)",
+              "english": "Cloning"
+            }
           ],
           "correctAnswer": "ii",
           "marks": 1,
@@ -68,10 +127,26 @@
           "questionNepali": "एक स्वस्थ वयस्क व्यक्तिको आराम गरिरहेको अवस्थामा सामान्य मुटुको धड्कन प्रति मिनेट कति हुन्छ?",
           "questionEnglish": "What is the normal heart rate of a healthy adult person at rest?",
           "options": [
-            {"id": "i", "nepali": "४०-६० पटक (40-60 times)", "english": "40-60 times"},
-            {"id": "ii", "nepali": "६०-१०० पटक (60-100 times)", "english": "60-100 times"},
-            {"id": "iii", "nepali": "१००-१२० पटक (100-120 times)", "english": "100-120 times"},
-            {"id": "iv", "nepali": "१२०-१४० पटक (120-140 times)", "english": "120-140 times"}
+            {
+              "id": "i",
+              "nepali": "४०-६० पटक (40-60 times)",
+              "english": "40-60 times"
+            },
+            {
+              "id": "ii",
+              "nepali": "६०-१०० पटक (60-100 times)",
+              "english": "60-100 times"
+            },
+            {
+              "id": "iii",
+              "nepali": "१००-१२० पटक (100-120 times)",
+              "english": "100-120 times"
+            },
+            {
+              "id": "iv",
+              "nepali": "१२०-१४० पटक (120-140 times)",
+              "english": "120-140 times"
+            }
           ],
           "correctAnswer": "ii",
           "marks": 1,
@@ -80,17 +155,33 @@
         {
           "id": "e",
           "type": "multiple_choice",
-          "questionNepali": "पृथ्वीमा ६० केजी पिण्ड भएको वस्तुलाई चन्द्रमामा लैजाँदा त्यसको तौल कति हुन्छ? (चन्द्रमाको g = पृथ्वीको g को १/६)",
-          "questionEnglish": "What will be the weight of an object with a mass of 60 kg on Earth when taken to the Moon? (g on Moon = 1/6 of g on Earth)",
+          "questionNepali": "पृथ्वीमा ६० केजी पिण्ड भएको वस्तुलाई चन्द्रमामा लैजाँदा त्यसको तौल कति हुन्छ? (चन्द्रमाको $g$ = पृथ्वीको $g$ को $\\frac{1}{6}$)",
+          "questionEnglish": "What will be the weight of an object with a mass of 60 kg on Earth when taken to the Moon? ($g$ on Moon = $\\frac{1}{6}$ of $g$ on Earth)",
           "options": [
-            {"id": "i", "nepali": "६० N (60 N)", "english": "60 N"},
-            {"id": "ii", "nepali": "९८ N (98 N)", "english": "98 N"},
-            {"id": "iii", "nepali": "५८८ N (588 N)", "english": "588 N"},
-            {"id": "iv", "nepali": "१० N (10 N)", "english": "10 N"}
+            {
+              "id": "i",
+              "nepali": "$60\\text{ N}$",
+              "english": "$60\\text{ N}$"
+            },
+            {
+              "id": "ii",
+              "nepali": "$98\\text{ N}$",
+              "english": "$98\\text{ N}$"
+            },
+            {
+              "id": "iii",
+              "nepali": "$588\\text{ N}$",
+              "english": "$588\\text{ N}$"
+            },
+            {
+              "id": "iv",
+              "nepali": "$10\\text{ N}$",
+              "english": "$10\\text{ N}$"
+            }
           ],
           "correctAnswer": "ii",
           "marks": 1,
-          "explanation": "Explanation: वस्तुको पिण्ड जताततै समान रहन्छ (m = ६० केजी) । चन्द्रमामा गुरुत्व प्रवेग (gm) = 9.8/6 ≈ 1.63 m/s² । चन्द्रमामा तौल (Wm) = m × gm = 60 × 1.63 ≈ 98 N ।\n\nAn object's mass remains constant everywhere (m=60 kg). The acceleration due to gravity on the moon (gm) = 9.8/6 ≈ 1.63 m/s². Weight on the moon (Wm) = m × gm = 60 × 1.63 ≈ 98 N. Citations: chapter 7, page 183"
+          "explanation": "Explanation: वस्तुको पिण्ड जताततै समान रहन्छ ($m = 60\\text{ kg}$) । चन्द्रमामा गुरुत्व प्रवेग ($g_m$) = $9.8/6 \\approx 1.63\\text{ m/s}^2$ । चन्द्रमामा तौल ($W_m$) = $m \\times g_m = 60 \\times 1.63 \\approx 98\\text{ N}$ ।\n\nAn object's mass remains constant everywhere ($m=60\\text{ kg}$). The acceleration due to gravity on the moon ($g_m$) = $9.8/6 \\approx 1.63\\text{ m/s}^2$. Weight on the moon ($W_m$) = $m \\times g_m = 60 \\times 1.63 \\approx 98\\text{ N}$. Citations: chapter 7, page 183"
         },
         {
           "id": "f",
@@ -98,14 +189,30 @@
           "questionNepali": "कुन तापक्रममा पानीको घनत्व सबैभन्दा बढी हुन्छ?",
           "questionEnglish": "At what temperature does water have its maximum density?",
           "options": [
-            {"id": "i", "nepali": "०°C (0°C)", "english": "0°C"},
-            {"id": "ii", "nepali": "४°C (4°C)", "english": "4°C"},
-            {"id": "iii", "nepali": "१००°C (100°C)", "english": "100°C"},
-            {"id": "iv", "nepali": "-४°C (-4°C)", "english": "-4°C"}
+            {
+              "id": "i",
+              "nepali": "$0^\\circ\\text{C}$",
+              "english": "$0^\\circ\\text{C}$"
+            },
+            {
+              "id": "ii",
+              "nepali": "$4^\\circ\\text{C}$",
+              "english": "$4^\\circ\\text{C}$"
+            },
+            {
+              "id": "iii",
+              "nepali": "$100^\\circ\\text{C}$",
+              "english": "$100^\\circ\\text{C}$"
+            },
+            {
+              "id": "iv",
+              "nepali": "$-4^\\circ\\text{C}$",
+              "english": "$-4^\\circ\\text{C}$"
+            }
           ],
           "correctAnswer": "ii",
           "marks": 1,
-          "explanation": "Explanation: पानीको अस्वाभाविक प्रसारका कारण, पानीको घनत्व ४°C मा सबैभन्दा बढी र आयतन सबैभन्दा कम हुन्छ ।\n\nDue to the anomalous expansion of water, water at 4°C has the minimum volume and the maximum density. Citations: chapter 9, page 228"
+          "explanation": "Explanation: पानीको अस्वाभाविक प्रसारका कारण, पानीको घनत्व $4^\\circ\\text{C}$ मा सबैभन्दा बढी र आयतन सबैभन्दा कम हुन्छ ।\n\nDue to the anomalous expansion of water, water at $4^\\circ\\text{C}$ has the minimum volume and the maximum density. Citations: chapter 9, page 228"
         },
         {
           "id": "g",
@@ -113,10 +220,26 @@
           "questionNepali": "मरुभूमिमा देखिने मृगतृष्णा (mirage) कुन प्रकाशीय घटनाको परिणाम हो?",
           "questionEnglish": "The mirage seen in deserts is a result of which optical phenomenon?",
           "options": [
-            {"id": "i", "nepali": "परावर्तन (Reflection)", "english": "Reflection"},
-            {"id": "ii", "nepali": "आवर्तन (Refraction)", "english": "Refraction"},
-            {"id": "iii", "nepali": "विच्छेदन (Dispersion)", "english": "Dispersion"},
-            {"id": "iv", "nepali": "पूर्ण आन्तरिक परावर्तन (Total internal reflection)", "english": "Total internal reflection"}
+            {
+              "id": "i",
+              "nepali": "परावर्तन (Reflection)",
+              "english": "Reflection"
+            },
+            {
+              "id": "ii",
+              "nepali": "आवर्तन (Refraction)",
+              "english": "Refraction"
+            },
+            {
+              "id": "iii",
+              "nepali": "विच्छेदन (Dispersion)",
+              "english": "Dispersion"
+            },
+            {
+              "id": "iv",
+              "nepali": "पूर्ण आन्तरिक परावर्तन (Total internal reflection)",
+              "english": "Total internal reflection"
+            }
           ],
           "correctAnswer": "iv",
           "marks": 1,
@@ -128,10 +251,26 @@
           "questionNepali": "कम्प्युटरमा डाटाको सबैभन्दा सानो रूप के हो?",
           "questionEnglish": "What is the smallest form of data on a computer?",
           "options": [
-            {"id": "i", "nepali": "बाइट (Byte)", "english": "Byte"},
-            {"id": "ii", "nepali": "निबल (Nibble)", "english": "Nibble"},
-            {"id": "iii", "nepali": "बिट (Bit)", "english": "Bit"},
-            {"id": "iv", "nepali": "किलोबाइट (Kilobyte)", "english": "Kilobyte"}
+            {
+              "id": "i",
+              "nepali": "बाइट (Byte)",
+              "english": "Byte"
+            },
+            {
+              "id": "ii",
+              "nepali": "निबल (Nibble)",
+              "english": "Nibble"
+            },
+            {
+              "id": "iii",
+              "nepali": "बिट (Bit)",
+              "english": "Bit"
+            },
+            {
+              "id": "iv",
+              "nepali": "किलोबाइट (Kilobyte)",
+              "english": "Kilobyte"
+            }
           ],
           "correctAnswer": "iii",
           "marks": 1,
@@ -143,10 +282,26 @@
           "questionNepali": "निस्क्रिय ग्यासहरू (inert gases) पेरियोडिक तालिकाको कुन समूहमा पर्छन्?",
           "questionEnglish": "Inert gases belong to which group of the periodic table?",
           "options": [
-            {"id": "i", "nepali": "समूह IA (Group IA)", "english": "Group IA"},
-            {"id": "ii", "nepali": "समूह IIA (Group IIA)", "english": "Group IIA"},
-            {"id": "iii", "nepali": "समूह VIIA (Group VIIA)", "english": "Group VIIA"},
-            {"id": "iv", "nepali": "समूह 0 (Group 0)", "english": "Group 0"}
+            {
+              "id": "i",
+              "nepali": "समूह IA (Group IA)",
+              "english": "Group IA"
+            },
+            {
+              "id": "ii",
+              "nepali": "समूह IIA (Group IIA)",
+              "english": "Group IIA"
+            },
+            {
+              "id": "iii",
+              "nepali": "समूह VIIA (Group VIIA)",
+              "english": "Group VIIA"
+            },
+            {
+              "id": "iv",
+              "nepali": "समूह 0 (Group 0)",
+              "english": "Group 0"
+            }
           ],
           "correctAnswer": "iv",
           "marks": 1,
@@ -158,14 +313,30 @@
           "questionNepali": "आल्मुनियमको मुख्य धाउ कुन हो?",
           "questionEnglish": "Which is the chief ore of aluminum?",
           "options": [
-            {"id": "i", "nepali": "हेमाटाइट (Hematite)", "english": "Hematite"},
-            {"id": "ii", "nepali": "बक्साइट (Bauxite)", "english": "Bauxite"},
-            {"id": "iii", "nepali": "क्यालामाइन (Calamine)", "english": "Calamine"},
-            {"id": "iv", "nepali": "सिनाबार (Cinnabar)", "english": "Cinnabar"}
+            {
+              "id": "i",
+              "nepali": "हेमाटाइट (Hematite)",
+              "english": "Hematite"
+            },
+            {
+              "id": "ii",
+              "nepali": "बक्साइट (Bauxite)",
+              "english": "Bauxite"
+            },
+            {
+              "id": "iii",
+              "nepali": "क्यालामाइन (Calamine)",
+              "english": "Calamine"
+            },
+            {
+              "id": "iv",
+              "nepali": "सिनाबार (Cinnabar)",
+              "english": "Cinnabar"
+            }
           ],
           "correctAnswer": "ii",
           "marks": 1,
-          "explanation": "Explanation: आल्मुनियमका धेरै धाउहरूमध्ये, बक्साइट (2Al₂O₃.2H₂O) मुख्य धाउ हो, जसमा लगभग ४०-६०% आल्मुनियम हुन्छ ।\n\nAmong the ores of aluminum, Bauxite (2Al₂O₃.2H₂O) is the chief ore, which contains about 40-60% of aluminum. Citations: chapter 17, page 418"
+          "explanation": "Explanation: आल्मुनियमका धेरै धाउहरूमध्ये, बक्साइट ($\\text{2Al}_2\\text{O}_3 \\cdot \\text{2H}_2\\text{O}$) मुख्य धाउ हो, जसमा लगभग ४०-६०% आल्मुनियम हुन्छ ।\n\nAmong the ores of aluminum, Bauxite ($\\text{2Al}_2\\text{O}_3 \\cdot \\text{2H}_2\\text{O}$) is the chief ore, which contains about 40-60% of aluminum. Citations: chapter 17, page 418"
         }
       ],
       "groupB": [
@@ -215,7 +386,7 @@
           "questionNepali": "विशिष्ट ताप धारण क्षमताको परिभाषा दिनुहोस् ।",
           "questionEnglish": "Define specific heat capacity.",
           "marks": 1,
-          "sampleAnswer": "उत्तर: १ किलोग्राम पिण्ड भएको कुनै वस्तुको तापक्रम १°C ले परिवर्तन गर्न आवश्यक पर्ने तापको मात्रालाई त्यस वस्तुको विशिष्ट ताप धारण क्षमता भनिन्छ ।\n\nAnswer: The heat required to change the temperature of a substance of 1 kg mass by 1°C is the specific heat capacity of that substance. Citations: chapter 9, page 231"
+          "sampleAnswer": "उत्तर: १ किलोग्राम पिण्ड भएको कुनै वस्तुको तापक्रम $1^\\circ\\text{C}$ ले परिवर्तन गर्न आवश्यक पर्ने तापको मात्रालाई त्यस वस्तुको विशिष्ट ताप धारण क्षमता भनिन्छ ।\n\nAnswer: The heat required to change the temperature of a substance of 1 kg mass by $1^\\circ\\text{C}$ is the specific heat capacity of that substance. Citations: chapter 9, page 231"
         },
         {
           "id": "g",
@@ -363,7 +534,7 @@
           "questionNepali": "पाँच जगत वर्गीकरण प्रणालीलाई चित्रसहित वर्णन गर्नुहोस् ।",
           "questionEnglish": "Describe the five kingdom classification system with a diagram.",
           "marks": 4,
-          "sampleAnswer": "उत्तर: पाँच जगत वर्गीकरण प्रणालीले जीवहरूलाई तिनीहरूको कोषको संरचना, शरीरको बनोट, पोषणको तरिका, र कोष भित्ताको उपस्थिति वा अनुपस्थितिको आधारमा पाँच जगतमा विभाजन गर्दछ ।\n१. **मोनेरा (Monera):** प्रोक्यारियोटिक र एककोषीय जीवहरू (जस्तै, ब्याक्टेरिया) ।\n२. **प्रोटिस्टा (Protista):** युकेरियोटिक र एककोषीय जीवहरू (जस्तै, युग्लेना) ।\n३. **फन्जाई (Fungi):** युकेरियोटिक, कोष भित्ता भएको तर क्लोरोफिल नभएको स्याप्रोट्रोफिक जीवहरू (जस्तै, च्याउ) ।\n४. **प्लान्टी (Plantae):** युकेरियोटिक, कोष भित्ता र क्लोरोफिल भएको स्वपोषी जीवहरू (जस्तै, फर्न, सल्ला) ।\n५. **एनिमलिया (Animalia):** युकेरियोटिक, कोष भित्ता नभएको परपोषी जीवहरू (जस्तै, मानिस, माछा) ।\n\n(Note: A tree diagram as shown in the textbook should be drawn by the student.)\n\nAnswer: The five kingdom classification system classifies organisms into five kingdoms based on the structure of the cell, body structure, mode of nutrition, and presence or absence of a cell wall.\n1. **Monera:** Prokaryotic and unicellular organisms (e.g., bacteria).\n2. **Protista:** Eukaryotic and unicellular organisms (e.g., Euglena).\n3. **Fungi:** Eukaryotic, saprotrophic organisms with a cell wall but no chlorophyll (e.g., mushroom).\n4. **Plantae:** Eukaryotic, autotrophic organisms with a cell wall and chlorophyll (e.g., fern, pinus).\n5. **Animalia:** Eukaryotic, heterotrophic organisms without a cell wall (e.g., human, fish). Citations: chapter 2, page 16\n\n(Note: A tree diagram as shown in the textbook should be drawn by the student.)"
+          "sampleAnswer": "उत्तर: पाँच जगत वर्गीकरण प्रणालीले जीवहरूलाई तिनीहरूको कोषको संरचना, शरीरको बनोट, पोषणको तरिका, र कोष भित्ताको उपस्थिति वा अनुपस्थितिको आधारमा पाँच जगतमा विभाजन गर्दछ ।\n१. **मोनेरा (Monera):** प्रोक्यारियोटिक र एककोषीय जीवहरू (जस्तै, ब्याक्टेरिया) ।\n२. **प्रोटिस्टा (Protista):** युकेरियोटिक र एककोषीय जीवहरू (जस्तै, युग्लेना) ।\n३. **फन्जाई (Fungi):** युकेरियोटिक, कोष भित्ता भएको तर क्लोरोफिल नभएको स्याप्रोट्रोफिक जीवहरू (जस्तै, च्याउ) ।\n४. **प्लान्टी (Plantae):** युकेरियोटिक, कोष भित्ता र क्लोरोफिल भएको स्वपोषी जीवहरू (जस्तै, फर्न, सल्ला) ।\n५. **एनिमलिया (Animalia):** युकेरियोटिक, कोष भित्ता नभएको परपोषी जीवहरू (जस्तै, मानिस, माछा) ।\n\n(Note: A tree diagram as shown in the textbook should be drawn by the student.)\n\nAnswer: The five kingdom classification system classifies organisms into five kingdoms based on the structure of the cell, body structure, mode of nutrition, and presence or absence of a cell wall.\n1. **Monera:** Prokaryotic and unicellular organisms (e.g., bacteria).\n2. **Protista:** Eukaryotic and unicellular organisms (e.g., Euglena).\n3. **Fungi:** Eukaryotic, saprotrophic organisms with a cell wall but no chlorophyll (e.g., mushroom).\n4. **Plantae:** Eukaryotic, autotrophic organisms with a cell wall and chlorophyll (e.g., fern, pinus).\n5. **Animalia:** Eukaryotic, heterotrophic organisms without a cell wall (e.g., human, fish).\n Citations: chapter 2, page 16\n\n(Note: A tree diagram as shown in the textbook should be drawn by the student.)"
         },
         {
           "id": "18",
@@ -371,15 +542,15 @@
           "questionNepali": "मौरीको जीवनचक्रलाई चित्रसहित वर्णन गर्नुहोस् ।",
           "questionEnglish": "Describe the life cycle of a honey bee with a diagram.",
           "marks": 4,
-          "sampleAnswer": "उत्तर: मौरीको जीवनचक्र पूर्ण मेटामोर्फोसिस (complete metamorphosis) हो, जसमा चार चरणहरू हुन्छन्: अण्डा, लार्भा, प्युपा र वयस्क ।\n* **अण्डा (Egg):** रानी मौरीले कोठामा सेतो र लाम्चो अण्डा पार्छिन् । यो चरण ३ दिनको हुन्छ ।\n* **लार्भा (Larva):** ३ दिनपछि अण्डाबाट लार्भा निस्किन्छ । यो चरणमा लार्भाले सक्रिय रूपमा खान्छ । यो चरण रानीको लागि ५.५ दिन, कर्मीको लागि ६ दिन, र भालेको लागि ७ दिनको हुन्छ ।\n* **प्युपा (Pupa):** यो एक निष्क्रिय चरण हो जसमा लार्भा वयस्कमा परिणत हुन्छ । यो चरण रानीको लागि ८ दिन, कर्मीको लागि १२ दिन, र भालेको लागि १४ दिनको हुन्छ ।\n* **वयस्क (Adult):** प्युपाबाट पूर्ण रूपमा विकसित वयस्क मौरी निस्किन्छ ।\n\n(Note: A diagram showing the life cycle stages as in the textbook should be drawn.)\n\nAnswer: All bees complete their life cycle in four stages: egg, larva, pupa, and adult, which is called complete metamorphosis.\n* **Egg:** The queen bee lays white, elongated eggs in brood cells. This stage lasts for three days.\n* **Larva:** After three days, the eggs hatch into larvae. The larva actively feeds in this stage. This stage lasts for about 5.5 days for queens, 6 days for workers, and 7 days for drones.\n* **Pupa:** This is an inactive phase in which the larva transforms into an adult. This stage lasts for 8 days for the queen, 12 days for the worker, and 14 days for the drone.\n* **Adult:** After many changes, the pupa is transformed into an adult. Citations: chapter 3, pages 63-66\n\n(Note: A diagram showing the life cycle stages as in the textbook should be drawn.)"
+          "sampleAnswer": "उत्तर: मौरीको जीवनचक्र पूर्ण मेटामोर्फोसिस (complete metamorphosis) हो, जसमा चार चरणहरू हुन्छन्: अण्डा, लार्भा, प्युपा र वयस्क ।\n* **अण्डा (Egg):** रानी मौरीले कोठामा सेतो र लाम्चो अण्डा पार्छिन् । यो चरण ३ दिनको हुन्छ ।\n* **लार्भा (Larva):** ३ दिनपछि अण्डाबाट लार्भा निस्किन्छ । यो चरणमा लार्भाले सक्रिय रूपमा खान्छ । यो चरण रानीको लागि ५.५ दिन, कर्मीको लागि ६ दिन, र भालेको लागि ७ दिनको हुन्छ ।\n* **प्युपा (Pupa):** यो एक निष्क्रिय चरण हो जसमा लार्भा वयस्कमा परिणत हुन्छ । यो चरण रानीको लागि ८ दिन, कर्मीको लागि १२ दिन, र भालेको लागि १४ दिनको हुन्छ ।\n* **वयस्क (Adult):** प्युपाबाट पूर्ण रूपमा विकसित वयस्क मौरी निस्किन्छ ।\n\n(Note: A diagram showing the life cycle stages as in the textbook should be drawn.)\n\nAnswer: All bees complete their life cycle in four stages: egg, larva, pupa, and adult, which is called complete metamorphosis.\n* **Egg:** The queen bee lays white, elongated eggs in brood cells. This stage lasts for three days.\n* **Larva:** After three days, the eggs hatch into larvae. The larva actively feeds in this stage. This stage lasts for about 5.5 days for queens, 6 days for workers, and 7 days for drones.\n* **Pupa:** This is an inactive phase in which the larva transforms into an adult. This stage lasts for 8 days for the queen, 12 days for the worker, and 14 days for the drone.\n* **Adult:** After many changes, the pupa is transformed into an adult.\n Citations: chapter 3, pages 63-66\n\n(Note: A diagram showing the life cycle stages as in the textbook should be drawn.)"
         },
         {
           "id": "19",
           "type": "essay",
-          "questionNepali": "गुरुत्व प्रवेग (g) पृथ्वीको अर्धव्यास (R) को वर्गसँग व्युत्क्रमानुपातिक हुन्छ (g ∝ 1/R²) भनी प्रमाणित गर्नुहोस् र पृथ्वीमा यसको मानमा आउने भिन्नताको व्याख्या गर्नुहोस् ।",
-          "questionEnglish": "Prove that the acceleration due to gravity (g) is inversely proportional to the square of the Earth's radius (R) (g ∝ 1/R²) and explain its variation on Earth.",
+          "questionNepali": "गुरुत्व प्रवेग ($g$) पृथ्वीको अर्धव्यास ($R$) को वर्गसँग व्युत्क्रमानुपातिक हुन्छ ($g \\propto 1/R^2$) भनी प्रमाणित गर्नुहोस् र पृथ्वीमा यसको मानमा आउने भिन्नताको व्याख्या गर्नुहोस् ।",
+          "questionEnglish": "Prove that the acceleration due to gravity ($g$) is inversely proportional to the square of the Earth's radius ($R$) ($g \\propto 1/R^2$) and explain its variation on Earth.",
           "marks": 4,
-          "sampleAnswer": "उत्तर: **प्रमाण:**\nपृथ्वीको पिण्ड 'M' र अर्धव्यास 'R' छ । 'm' पिण्ड भएको वस्तु पृथ्वीको सतहमा छ ।\nगुरुत्वाकर्षण बल, F = GMm/R² ... (i)\nन्युटनको दोस्रो नियम अनुसार, F = mg ... (ii)\nसमीकरण (i) र (ii) बाट, mg = GMm/R²\nत्यसैले, g = GM/R²\nयहाँ, G र M स्थिर छन्, त्यसैले g ∝ 1/R² ।\n\n**पृथ्वीमा भिन्नता:**\nपृथ्वी पूर्ण रूपमा गोलो छैन; यो ध्रुवमा चेप्टो र भूमध्यरेखामा फैलिएको छ ।\nत्यसैले, ध्रुवमा अर्धव्यास (R) कम हुन्छ र भूमध्यरेखामा बढी हुन्छ ।\nचूंकि g ∝ 1/R², ध्रुवमा 'g' को मान बढी (9.83 m/s²) हुन्छ र भूमध्यरेखामा 'g' को मान कम (9.78 m/s²) हुन्छ ।\n\nAnswer: **Proof:**\nLet the mass of the Earth be 'M' and its radius be 'R'. An object of mass 'm' is on its surface.\nGravitational force, F = GMm/R² ... (i)\nAccording to Newton's second law, F = mg ... (ii)\nFrom equations (i) and (ii), mg = GMm/R²\nTherefore, g = GM/R²\nHere, G and M are constants, so g ∝ 1/R². Citations: chapter 7, page 177\n\n**Variation on Earth:**\nThe Earth is not perfectly round; it is flattened at the poles and bulged at the equator.\nTherefore, the radius (R) is less at the poles and more at the equator.\nSince g ∝ 1/R², the value of 'g' is more at the poles (9.83 m/s²) and less at the equator (9.78 m/s²). Citations: chapter 7, page 178"
+          "sampleAnswer": "उत्तर: **प्रमाण:**\nपृथ्वीको पिण्ड '$M$' र अर्धव्यास '$R$' छ । '$m$' पिण्ड भएको वस्तु पृथ्वीको सतहमा छ ।\nगुरुत्वाकर्षण बल, $F = \\frac{GMm}{R^2}$ ... (i)\nन्युटनको दोस्रो नियम अनुसार, $F = mg$ ... (ii)\nसमीकरण (i) र (ii) बाट, $mg = \\frac{GMm}{R^2}$\nत्यसैले, $g = \\frac{GM}{R^2}$\nयहाँ, $G$ र $M$ स्थिर छन्, त्यसैले $g \\propto \\frac{1}{R^2}$ ।\n\n**पृथ्वीमा भिन्नता:**\nपृथ्वी पूर्ण रूपमा गोलो छैन; यो ध्रुवमा चेप्टो र भूमध्यरेखामा फैलिएको छ ।\nत्यसैले, ध्रुवमा अर्धव्यास ($R$) कम हुन्छ र भूमध्यरेखामा बढी हुन्छ ।\nचूंकि $g \\propto \\frac{1}{R^2}$, ध्रुवमा '$g$' को मान बढी ($9.83\\text{ m/s}^2$) हुन्छ र भूमध्यरेखामा '$g$' को मान कम ($9.78\\text{ m/s}^2$) हुन्छ ।\n\nAnswer: **Proof:**\nLet the mass of the Earth be '$M$' and its radius be '$R$'. An object of mass '$m$' is on its surface.\nGravitational force, $F = \\frac{GMm}{R^2}$ ... (i)\nAccording to Newton's second law, $F = mg$ ... (ii)\nFrom equations (i) and (ii), $mg = \\frac{GMm}{R^2}$\nTherefore, $g = \\frac{GM}{R^2}$\nHere, $G$ and $M$ are constants, so $g \\propto \\frac{1}{R^2}$. Citations: chapter 7, page 177\n\n**Variation on Earth:**\nThe Earth is not perfectly round; it is flattened at the poles and bulged at the equator.\nTherefore, the radius ($R$) is less at the poles and more at the equator.\nSince $g \\propto \\frac{1}{R^2}$, the value of '$g$' is more at the poles ($9.83\\text{ m/s}^2$) and less at the equator ($9.78\\text{ m/s}^2$). Citations: chapter 7, page 178"
         },
         {
           "id": "20",
