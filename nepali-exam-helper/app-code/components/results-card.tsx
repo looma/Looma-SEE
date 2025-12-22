@@ -12,6 +12,7 @@ import {
   TrendingUp,
   CheckCircle,
   XCircle,
+  AlertCircle,
   History,
   Lightbulb,
   RotateCcw,
@@ -40,6 +41,7 @@ export interface Result {
   englishFeedback?: GradedFeedback[]
   socialStudiesFeedback?: any[]
   nepaliFeedback?: any[]
+  mathFeedback?: GradedFeedback[]
 }
 
 interface ResultsCardProps {
@@ -73,6 +75,9 @@ export function ResultsCard({
 
   // Check if this is a Nepali test
   const isNepaliTest = questions.nepaliQuestions && questions.nepaliQuestions.length > 0
+
+  // Check if this is a Math test
+  const isMathTest = questions.mathQuestions && questions.mathQuestions.length > 0
 
   let scoreB, scoreC, scoreD, totalScore, maxScoreA, maxScoreB, maxScoreC, maxScoreD, maxTotalScore
 
@@ -113,6 +118,20 @@ export function ResultsCard({
     totalScore = results.scoreA || 0
 
     maxScoreA = questions.englishQuestions.reduce((acc, q) => acc + q.marks, 0)
+    maxScoreB = 0
+    maxScoreC = 0
+    maxScoreD = 0
+    maxTotalScore = maxScoreA
+  } else if (isMathTest) {
+    // Math test format
+    scoreB = 0
+    scoreC = 0
+    scoreD = 0
+    totalScore = results.mathFeedback?.reduce((sum: number, f: any) => sum + (f.score || 0), 0) || results.scoreA || 0
+
+    // Calculate max score from all sub-questions
+    maxScoreA = questions.mathQuestions.reduce((acc: number, q: any) =>
+      acc + q.sub_questions.reduce((subAcc: number, sq: any) => subAcc + 5, 0), 0) // Assume 5 marks per sub-question
     maxScoreB = 0
     maxScoreC = 0
     maxScoreD = 0
@@ -814,6 +833,127 @@ export function ResultsCard({
                                       <p className="text-indigo-700 leading-relaxed text-sm whitespace-pre-wrap">
                                         {fb.explanation || originalQuestion?.explanation}
                                       </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              )}
+                            </div>
+                          </AccordionContent>
+                        </AccordionItem>
+                      )
+                    })}
+                  </Accordion>
+                </div>
+              ) : isMathTest ? (
+                // Math test format
+                <div className="mb-8">
+                  <div className="flex items-center justify-between p-4 rounded-lg bg-blue-50 mb-4">
+                    <h3 className="text-xl font-semibold text-blue-700 flex items-center gap-2">
+                      📐 Math / गणित
+                    </h3>
+                    <Badge variant="secondary">{results.mathFeedback?.length || 0} sub-questions</Badge>
+                  </div>
+                  <div className="bg-white p-4 rounded-lg border border-blue-200 mb-4">
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="text-lg font-semibold text-blue-800">
+                        Total Score: {totalScore}/{maxTotalScore}
+                      </div>
+                      <div className="text-2xl font-bold text-blue-600">{percentage}%</div>
+                    </div>
+                    <div className="text-sm text-blue-600">
+                      All sub-questions graded by AI. Review explanations for detailed solutions.
+                    </div>
+                  </div>
+
+                  {/* Math question feedback */}
+                  <Accordion type="single" collapsible className="w-full">
+                    {(results.mathFeedback || []).map((fb: any, idx: number) => {
+                      const isAIUnavailable = fb.score === null || fb.aiUnavailable
+                      const isFullScore = !isAIUnavailable && fb.score >= fb.maxScore
+                      const isPartialScore = !isAIUnavailable && fb.score > 0 && fb.score < fb.maxScore
+
+                      return (
+                        <AccordionItem key={fb.id || idx} value={fb.id || `math-${idx}`} className="border rounded-lg mb-2 overflow-hidden">
+                          <AccordionTrigger className="px-4 py-3 hover:bg-blue-50">
+                            <div className="flex items-center justify-between w-full pr-4">
+                              <div className="flex items-center gap-3">
+                                <span className="text-sm font-medium text-blue-600">
+                                  Q{fb.questionNumber} ({fb.subLabel})
+                                </span>
+                              </div>
+                              <div className="flex items-center gap-2">
+                                {isAIUnavailable ? (
+                                  <AlertCircle className="h-5 w-5 text-amber-500" />
+                                ) : isFullScore ? (
+                                  <CheckCircle className="h-5 w-5 text-green-500" />
+                                ) : isPartialScore ? (
+                                  <AlertCircle className="h-5 w-5 text-yellow-500" />
+                                ) : (
+                                  <XCircle className="h-5 w-5 text-red-500" />
+                                )}
+                                <span className={`font-semibold ${isAIUnavailable ? "text-amber-600" : isFullScore ? "text-green-600" : isPartialScore ? "text-yellow-600" : "text-red-600"}`}>
+                                  {isAIUnavailable ? "Pending Review" : `${fb.score}/${fb.maxScore}`}
+                                </span>
+                              </div>
+                            </div>
+                          </AccordionTrigger>
+                          <AccordionContent className="px-4 pb-4">
+                            <div className="space-y-3">
+                              {/* Question with MathText */}
+                              <div className="text-slate-700 mb-3">
+                                <MathText text={fb.question || "Question"} />
+                              </div>
+
+                              {/* Your Answer */}
+                              <div
+                                className={`p-3 rounded-lg ${isAIUnavailable
+                                  ? "bg-amber-50 border-l-4 border-amber-500"
+                                  : isFullScore
+                                    ? "bg-green-50 border-l-4 border-green-500"
+                                    : isPartialScore
+                                      ? "bg-yellow-50 border-l-4 border-yellow-500"
+                                      : "bg-red-50 border-l-4 border-red-500"
+                                  }`}
+                              >
+                                <p className="font-semibold text-slate-800 mb-1">Your Answer:</p>
+                                <p className="text-slate-700 whitespace-pre-wrap">
+                                  <MathText text={fb.studentAnswer || "No answer provided"} />
+                                </p>
+                              </div>
+
+                              {/* Feedback - only show if there's actual feedback */}
+                              {fb.feedback && (
+                                <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
+                                  <div className="flex items-start gap-3">
+                                    <Lightbulb className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
+                                    <div className="flex-1">
+                                      <p className="font-semibold text-blue-800 mb-1">Feedback:</p>
+                                      <p className="text-blue-700 leading-relaxed">{fb.feedback}</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              )}
+
+                              {/* Expected answer with MathText */}
+                              {fb.expectedAnswer && (
+                                <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg">
+                                  <p className="font-semibold text-amber-800 mb-1">Expected Answer:</p>
+                                  <p className="text-amber-700 leading-relaxed">
+                                    <MathText text={fb.expectedAnswer} />
+                                  </p>
+                                </div>
+                              )}
+
+                              {/* Explanation with MathText */}
+                              {fb.explanation && (
+                                <div className="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded-r-lg">
+                                  <div className="flex items-start gap-3">
+                                    <Lightbulb className="h-5 w-5 text-indigo-600 mt-1 flex-shrink-0" />
+                                    <div className="flex-1">
+                                      <p className="font-semibold text-indigo-800 mb-1">Explanation:</p>
+                                      <div className="text-indigo-700 leading-relaxed text-sm">
+                                        <MathText text={fb.explanation} />
+                                      </div>
                                     </div>
                                   </div>
                                 </div>

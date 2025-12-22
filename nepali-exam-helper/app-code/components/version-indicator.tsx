@@ -10,7 +10,7 @@ export function VersionIndicator() {
           color: '#ffffff !important'
         } as React.CSSProperties}
       >
-        <span style={{ color: '#ffffff' }}>v1.1.9</span>
+        <span style={{ color: '#ffffff' }}>v1.2.0</span>
       </div>
     </div>
   )

@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import type { EnglishQuestion } from "./english-question-types"
 import type { SocialStudiesGroup } from "./social-studies-types"
 import type { NepaliQuestion } from "./nepali-types"
+import type { MathQuestion } from "./math-types"
 
 export interface GroupAQuestion {
   id: string
@@ -32,6 +33,7 @@ interface QuestionsData {
   englishQuestions: EnglishQuestion[]
   socialStudiesGroups: SocialStudiesGroup[]
   nepaliQuestions: NepaliQuestion[]
+  mathQuestions: MathQuestion[]
 }
 
 export function useQuestions(testId = "see_2080_science") {

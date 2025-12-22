@@ -68,6 +68,13 @@ export function adaptDatabaseQuestions(dbQuestions: Record<string, any>) {
     englishQuestions: [] as EnglishQuestion[],
     socialStudiesGroups: [] as SocialStudiesGroup[],
     nepaliQuestions: [] as NepaliQuestion[],
+    mathQuestions: [] as any[],
+  }
+
+  // Handle Math questions if they exist
+  if (dbQuestions.mathQuestions && Array.isArray(dbQuestions.mathQuestions)) {
+    adapted.mathQuestions = dbQuestions.mathQuestions
+    return adapted // Math tests are self-contained
   }
 
   // Handle Nepali questions if they exist

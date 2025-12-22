@@ -9,6 +9,7 @@ import { FreeResponseGroup } from "./free-response-group"
 import { EnglishQuestionRenderer } from "./english-question-renderer"
 import { SocialStudiesGroupRenderer } from "./social-studies-question-renderer"
 import { NepaliQuestionRenderer } from "./nepali-question-renderer"
+import { MathQuestionRenderer } from "./math-question-renderer"
 import { useQuestions } from "@/lib/use-questions"
 import { loadStudentProgress, saveStudentProgress, saveAttemptHistory, syncProgressToServer, loadProgressFromServer } from "@/lib/storage"
 
@@ -45,6 +46,11 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
     // Check if this is a Social Studies test
     if (questions.socialStudiesGroups && questions.socialStudiesGroups.length > 0) {
       return "socialStudies_0"
+    }
+
+    // Check if this is a Math test
+    if (questions.mathQuestions && questions.mathQuestions.length > 0) {
+      return "math"
     }
 
     // Science test sections
@@ -93,10 +99,21 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
 
     const isEnglishTest = questions.englishQuestions && questions.englishQuestions.length > 0
     const isSocialStudiesTest = questions.socialStudiesGroups && questions.socialStudiesGroups.length > 0
-    if (!isEnglishTest && !isSocialStudiesTest && !currentTab) {
-      setCurrentTab(getFirstAvailableSection())
-    } else if (isSocialStudiesTest && !currentTab) {
-      setCurrentTab("socialStudies_0")
+    const isNepaliTest = questions.nepaliQuestions && questions.nepaliQuestions.length > 0
+    const isMathTest = questions.mathQuestions && questions.mathQuestions.length > 0
+
+    if (!currentTab) {
+      if (isEnglishTest) {
+        setCurrentTab(questions.englishQuestions[0].id)
+      } else if (isSocialStudiesTest) {
+        setCurrentTab("socialStudies_0")
+      } else if (isNepaliTest) {
+        setCurrentTab("nepali_0")
+      } else if (isMathTest) {
+        setCurrentTab("math")
+      } else {
+        setCurrentTab(getFirstAvailableSection())
+      }
     }
   }, [questions, currentTab])
 
@@ -176,6 +193,19 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
     }))
   }
 
+  const handleMathAnswerChange = (questionNumber: number, subLabel: string, answer: string) => {
+    setAnswers((prev: Record<string, any>) => ({
+      ...prev,
+      math: {
+        ...prev.math,
+        [questionNumber]: {
+          ...prev.math?.[questionNumber],
+          [subLabel]: answer,
+        },
+      },
+    }))
+  }
+
   const formatSavedTime = (date: Date) => {
     return date.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", hour12: true })
   }
@@ -242,6 +272,17 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
         }
         return false
       }).length
+    } else if (questions.mathQuestions && questions.mathQuestions.length > 0) {
+      // Math test format - count sub-questions
+      questions.mathQuestions.forEach((q: any) => {
+        totalQuestions += q.sub_questions?.length || 0
+        q.sub_questions?.forEach((subQ: any) => {
+          const answer = answers.math?.[q.question_number]?.[subQ.label]
+          if (answer && answer.trim().length > 0) {
+            answeredQuestions++
+          }
+        })
+      })
     } else {
       // Science test format
       totalQuestions =
@@ -336,6 +377,17 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
         }
         return true
       }).length
+    } else if (questions.mathQuestions && questions.mathQuestions.length > 0) {
+      // Math test format - count incomplete sub-questions
+      questions.mathQuestions.forEach((q: any) => {
+        totalQuestions += q.sub_questions?.length || 0
+        q.sub_questions?.forEach((subQ: any) => {
+          const answer = answers.math?.[q.question_number]?.[subQ.label]
+          if (!answer || answer.trim().length === 0) {
+            incompleteQuestions++
+          }
+        })
+      })
     } else {
       // Science test format
       totalQuestions =
@@ -864,7 +916,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
               socialStudiesFeedback.push({
                 id: question.id,
                 score: 0,
-                feedback: "कुनै उत्तर प्रदान गरिएको छैन (No answer provided)",
+                feedback: "",
                 question: question.questionNepali,
                 studentAnswer: "",
                 group: groupIndex,
@@ -1152,7 +1204,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                   type: question.type,
                   score: 0,
                   maxScore: marks,
-                  feedback: "कुनै उत्तर प्रदान गरिएको छैन (No answer provided)",
+                  feedback: "",
                   question: questionTitle,
                   studentAnswer: "",
                   sampleAnswer: sampleAnswer,
@@ -1208,6 +1260,150 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
         return
       }
 
+      // Check if this is a Math test
+      const isMathTest = questions.mathQuestions && questions.mathQuestions.length > 0
+
+      if (isMathTest) {
+        console.log("📐 Math test detected - grading sub-questions...")
+        const mathFeedback: any[] = []
+        const gradingPromises: Promise<any>[] = []
+
+        // Grade each sub-question in each Math question
+        questions.mathQuestions.forEach((question: any) => {
+          const questionAnswers = answers.math?.[question.question_number] || {}
+
+          question.sub_questions.forEach((subQ: any) => {
+            const userAnswer = questionAnswers[subQ.label] || ""
+            const questionText = `${question.context.english}\n\nPart (${subQ.label}): ${subQ.question_english || 'Solve the above problem.'}`
+            const marksPerQuestion = 5 // Default marks per sub-question
+
+            if (userAnswer.trim()) {
+              gradingPromises.push(
+                fetch("/api/grade", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify({
+                    question: questionText,
+                    answer: userAnswer,
+                    marks: marksPerQuestion,
+                    sampleAnswer: subQ.answer,
+                  }),
+                })
+                  .then(async (res) => {
+                    const result = await res.json()
+
+                    // Check if AI grading is unavailable
+                    if (result.error || result.code === "AI_UNAVAILABLE" || result.code === "AI_ERROR") {
+                      console.warn("AI grading unavailable for Math question:", result.error)
+                      return {
+                        id: `q${question.question_number}_${subQ.label}`,
+                        score: null, // null indicates "not graded"
+                        maxScore: marksPerQuestion,
+                        feedback: "⚠️ AI grading unavailable. Please review your answer manually against the expected answer below.",
+                        question: questionText,
+                        studentAnswer: userAnswer,
+                        expectedAnswer: subQ.answer,
+                        explanation: subQ.explanation,
+                        questionNumber: question.question_number,
+                        subLabel: subQ.label,
+                        aiUnavailable: true,
+                      }
+                    }
+
+                    return {
+                      id: `q${question.question_number}_${subQ.label}`,
+                      score: result.score ?? 0,
+                      maxScore: marksPerQuestion,
+                      feedback: result.feedback || "Grading complete",
+                      question: questionText,
+                      studentAnswer: userAnswer,
+                      expectedAnswer: subQ.answer,
+                      explanation: subQ.explanation,
+                      questionNumber: question.question_number,
+                      subLabel: subQ.label,
+                    }
+                  })
+                  .catch((err) => {
+                    console.error("Math grading error:", err)
+                    return {
+                      id: `q${question.question_number}_${subQ.label}`,
+                      score: null, // null indicates "not graded"
+                      maxScore: marksPerQuestion,
+                      feedback: "⚠️ AI grading failed. Please review your answer manually against the expected answer below.",
+                      question: questionText,
+                      studentAnswer: userAnswer,
+                      expectedAnswer: subQ.answer,
+                      explanation: subQ.explanation,
+                      questionNumber: question.question_number,
+                      subLabel: subQ.label,
+                      aiUnavailable: true,
+                    }
+                  })
+              )
+            } else {
+              mathFeedback.push({
+                id: `q${question.question_number}_${subQ.label}`,
+                score: 0,
+                maxScore: marksPerQuestion,
+                feedback: "", // Empty - it's obvious no answer was provided
+                question: questionText,
+                studentAnswer: "",
+                expectedAnswer: subQ.answer,
+                explanation: subQ.explanation,
+                questionNumber: question.question_number,
+                subLabel: subQ.label,
+                noAnswer: true,
+              })
+            }
+          })
+        })
+
+        // Wait for AI grading to complete
+        if (gradingPromises.length > 0) {
+          console.log(`⏳ Waiting for ${gradingPromises.length} Math AI grading requests...`)
+          const gradingResults = await Promise.all(gradingPromises)
+          mathFeedback.push(...gradingResults)
+        }
+
+        // Sort feedback by question number and sub-label
+        mathFeedback.sort((a, b) => {
+          if (a.questionNumber !== b.questionNumber) {
+            return a.questionNumber - b.questionNumber
+          }
+          return a.subLabel.localeCompare(b.subLabel)
+        })
+
+        // Calculate scores
+        const totalScore = mathFeedback.reduce((sum: number, f: any) => sum + (f.score || 0), 0)
+        const maxScore = mathFeedback.reduce((sum: number, f: any) => sum + (f.maxScore || 5), 0)
+        const percentage = maxScore > 0 ? Math.round((totalScore / maxScore) * 100) : 0
+        const grade = percentage >= 90 ? "A+" : percentage >= 80 ? "A" : percentage >= 70 ? "B+" : percentage >= 60 ? "B" : percentage >= 50 ? "C+" : percentage >= 40 ? "C" : percentage >= 32 ? "D" : "E"
+
+        // Create results object for Math tests
+        results.mathFeedback = mathFeedback
+        results.scoreA = totalScore
+
+        // Save attempt history
+        try {
+          saveAttemptHistory(studentId, testId, {
+            scoreA: totalScore,
+            scoreB: 0,
+            scoreC: 0,
+            scoreD: 0,
+            totalScore,
+            maxScore,
+            percentage,
+            grade,
+          })
+        } catch (error) {
+          console.error("Error saving attempt history:", error)
+        }
+
+        console.log("✅ Math grading completed!")
+        onShowResults(results)
+        return
+      }
+
       // Science test grading (existing logic)
       // Grade Group A (Multiple Choice) - instant scoring
       if (questions.groupA && questions.groupA.length > 0) {
@@ -1258,7 +1454,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
             results.feedbackB.push({
               id: question.id,
               score: 0,
-              feedback: "No answer provided",
+              feedback: "",
               question: question.english,
               studentAnswer: "",
             })
@@ -1304,7 +1500,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
             results.feedbackC.push({
               id: question.id,
               score: 0,
-              feedback: "No answer provided",
+              feedback: "",
               question: question.english,
               studentAnswer: "",
             })
@@ -1350,7 +1546,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
             results.feedbackD.push({
               id: question.id,
               score: 0,
-              feedback: "No answer provided",
+              feedback: "",
               question: question.english,
               studentAnswer: "",
             })
@@ -1515,10 +1711,12 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
   const isEnglishTest = questions.englishQuestions && questions.englishQuestions.length > 0
   const isSocialStudiesTest = questions.socialStudiesGroups && questions.socialStudiesGroups.length > 0
   const isNepaliTest = questions.nepaliQuestions && questions.nepaliQuestions.length > 0
+  const isMathTest = questions.mathQuestions && questions.mathQuestions.length > 0
   const isEmpty =
     !isEnglishTest &&
     !isSocialStudiesTest &&
     !isNepaliTest &&
+    !isMathTest &&
     questions.groupA.length === 0 &&
     questions.groupB.length === 0 &&
     questions.groupC.length === 0 &&
@@ -1532,6 +1730,120 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
           <h3 className="text-xl sm:text-2xl font-bold text-slate-800 mb-2">Test Coming Soon</h3>
           <p className="text-slate-600 text-sm sm:text-base">This practice test is being prepared.</p>
         </div>
+      </div>
+    )
+  }
+  // Math test interface
+  if (isMathTest) {
+    return (
+      <div className="px-3 sm:px-0">
+        {/* Progress Header */}
+        <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4 sm:p-6 shadow-lg border border-white/20 mb-4 sm:mb-6">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-3 sm:gap-0">
+            <div className="flex items-center gap-2">
+              <h3 className="font-semibold text-slate-800 text-sm sm:text-base">📐 Math Test Progress</h3>
+              <span className="text-xs text-slate-600">{calculateOverallProgress()}% Complete</span>
+            </div>
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
+              {lastSaved && (
+                <div className="flex items-center gap-1 text-xs text-green-600">
+                  <Save className="h-3 w-3" />
+                  <span>Saved {formatSavedTime(lastSaved)}</span>
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* Overall Progress Bar */}
+          <div className="w-full bg-slate-200 rounded-full h-3 overflow-hidden">
+            <div
+              className="h-full bg-gradient-to-r from-blue-500 to-indigo-500 transition-all duration-500 ease-out"
+              style={{ width: `${calculateOverallProgress()}%` }}
+            />
+          </div>
+          <div className="flex justify-between items-center mt-2 text-xs text-slate-600">
+            <span>
+              {Object.values(answers.math || {}).reduce((count: number, q: any) => {
+                if (typeof q === 'object') {
+                  return count + Object.values(q).filter((a: any) => a && String(a).trim()).length
+                }
+                return count
+              }, 0)} sub-questions answered
+            </span>
+            <span>{questions.mathQuestions.reduce((total, q) => total + q.sub_questions.length, 0)} total sub-questions</span>
+          </div>
+        </div>
+
+        {/* Math Questions */}
+        <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4 sm:p-6 shadow-lg border border-white/20 mb-4 sm:mb-6">
+          <MathQuestionRenderer
+            questions={questions.mathQuestions}
+            answers={answers.math || {}}
+            onAnswerChange={handleMathAnswerChange}
+            language="english"
+            showExplanations={false}
+          />
+        </div>
+
+        {/* Submit Button */}
+        <div className="flex justify-center mt-6 mb-8">
+          <Button
+            onClick={handleSubmit}
+            disabled={isSubmitting}
+            className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 min-h-[56px]"
+          >
+            {isSubmitting ? (
+              <>
+                <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+                Submitting...
+              </>
+            ) : (
+              <>
+                <Trophy className="mr-2 h-5 w-5" />
+                Submit Test ({(() => {
+                  const answered = Object.values(answers.math || {}).reduce((count: number, q: any) => {
+                    if (typeof q === 'object') {
+                      return count + Object.values(q).filter((a: any) => a && String(a).trim()).length
+                    }
+                    return count
+                  }, 0)
+                  return `${answered}/${questions.mathQuestions.reduce((total, q) => total + q.sub_questions.length, 0)}`
+                })()})
+              </>
+            )}
+          </Button>
+        </div>
+
+        {/* Submit Warning Dialog */}
+        {showSubmitWarning && (
+          <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+            <div className="bg-white rounded-xl p-6 max-w-md w-full shadow-2xl">
+              <div className="text-center">
+                <Trophy className="h-12 w-12 text-amber-500 mx-auto mb-4" />
+                <h3 className="text-xl font-bold text-slate-800 mb-2">Incomplete Test</h3>
+                <p className="text-slate-600 mb-4">
+                  You have {getIncompleteQuestions().incomplete} unanswered questions out of{" "}
+                  {getIncompleteQuestions().total} total questions.
+                </p>
+                <p className="text-sm text-slate-500 mb-6">
+                  Are you sure you want to submit your test now? You can still go back and answer more questions.
+                </p>
+                <div className="flex gap-3">
+                  <Button onClick={() => setShowSubmitWarning(false)} variant="outline" className="flex-1">
+                    Go Back
+                  </Button>
+                  <Button
+                    onClick={submitTest}
+                    disabled={isSubmitting}
+                    className="flex-1 bg-amber-600 hover:bg-amber-700"
+                  >
+                    {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin" /> : "Submit Anyway"}
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     )
   }

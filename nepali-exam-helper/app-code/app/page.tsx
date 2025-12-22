@@ -196,6 +196,7 @@ export default function SeePrepPage() {
   const handleRetakeTest = () => {
     setShowResults(false)
     setTestResults(null)
+    window.scrollTo(0, 0) // Scroll to top of page
     // Clear answers but keep the same test
     if (currentStudentId && currentTestId) {
       const existingProgress = loadStudentProgress(`${currentStudentId}_${currentTestId}`)

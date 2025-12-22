@@ -1,0 +1,344 @@
+{
+  "exam_metadata": {
+    "title": "SEE 2081 Math Practice Test 1",
+    "subject": "Compulsory Mathematics (अनिवार्य गणित)",
+    "duration": 180,
+    "totalMarks": 75
+  },
+  "questions": [
+    {
+      "question_number": 1,
+      "context": {
+        "nepali": "एउटा विद्यालयका 1200 जना विद्यार्थीहरूमा गरिएको सर्वेक्षणमा, 100 जनाले गणित मात्र मन पराउँछन् र 200 जनाले विज्ञान मात्र मन पराउँछन् तर 700 जनाले यी दुईमध्ये कुनै पनि विषय मन पराउँदैनन् ।",
+        "english": "In a survey among 1200 students of a school, 100 like Mathematics only and 200 like Science only but 700 like neither of the subjects."
+      },
+      "sub_questions": [
+        {
+          "label": "a",
+          "question_nepali": "यदि M र S ले क्रमशः गणित र विज्ञान मन पराउने विद्यार्थीहरूको समूहलाई जनाउँछ भने, कुनै पनि विषय मन नपराउने विद्यार्थीको संख्यालाई गणनात्मकता सङ्केतमा लेख्नुहोस् ।",
+          "question_english": "If M and S denote the sets of students who like Mathematics and Science respectively, write the cardinality notation of the number of students who like neither subject.",
+          "answer": "$n(\\overline{M \\cup S}) = 700$",
+          "explanation": "प्रश्नमा दिइए अनुसार, कुनै पनि विषय (गणित वा विज्ञान) मन नपराउने विद्यार्थीहरूको संख्या 700 छ । यसलाई समुच्चय सङ्केतमा $n(\\overline{M \\cup S})$ ले जनाइन्छ ।\n\nExplanation: Given that 700 students like neither subject, the cardinality notation for the complement of the union of sets M and S is $n(\\overline{M \\cup S}) = 700$.\nCitation: Lesson 1"
+        },
+        {
+          "label": "b",
+          "question_nepali": "दुवै विषय मन पराउने विद्यार्थीको संख्या पत्ता लगाउनुहोस् ।",
+          "question_english": "Find the number of students who like both subjects.",
+          "answer": "200 students",
+          "explanation": "जम्मा विद्यार्थी संख्या $n(U) = 1200$, गणित मात्र $n_0(M) = 100$, विज्ञान मात्र $n_0(S) = 200$, दुवै मन नपराउने $n(\\overline{M \\cup S}) = 700$। सूत्र $n(U) = n_0(M) + n_0(S) + n(M \\cap S) + n(\\overline{M \\cup S})$ प्रयोग गर्दा $n(M \\cap S) = 200$ हुन्छ।\n\nExplanation: We know that total students equals the sum of those liking only one, both, and neither: $n(U) = n_0(M) + n_0(S) + n(M \\cap S) + n(\\overline{M \\cup S})$. Substituting the values: $1200 = 100 + 200 + n(M \\cap S) + 700$. Solving for the intersection: $n(M \\cap S) = 1200 - 1000 = 200$.\nCitation: Lesson 1"
+        },
+        {
+          "label": "c",
+          "question_nepali": "कम्तीमा एउटा विषय मन पराउने विद्यार्थीको संख्या पत्ता लगाउनुहोस् ।",
+          "question_english": "Find the number of students who like at least one subject.",
+          "answer": "500 students",
+          "explanation": "कम्तीमा एउटा विषय मन पराउने विद्यार्थी संख्या $n(M \\cup S) = n_0(M) + n_0(S) + n(M \\cap S) = 100 + 200 + 200 = 500$ वा $n(U) - n(\\overline{M \\cup S}) = 1200 - 700 = 500$।\n\nExplanation: Students liking at least one subject is the union of the sets. $n(M \\cup S) = n_0(M) + n_0(S) + n(M \\cap S) = 100 + 200 + 200 = 500$. Alternatively, subtracting those who like neither from the total: $1200 - 700 = 500$.\nCitation: Lesson 1"
+        },
+        {
+          "label": "d",
+          "question_nepali": "विज्ञान मन पराउने विद्यार्थी र गणित मन पराउने विद्यार्थीको अनुपात निकाल्नुहोस् ।",
+          "question_english": "Find the ratio of students who like Science to those who like Mathematics.",
+          "answer": "4:3",
+          "explanation": "गणित मन पराउने जम्मा संख्या $n(M) = 300$ र विज्ञान मन पराउने $n(S) = 400$ छ। अनुपात $\\frac{n(S)}{n(M)} = \\frac{400}{300} = 4:3$ हुन्छ।\n\nExplanation: Total liking Math ($n(M)$) = $100 + 200 = 300$. Total liking Science ($n(S)$) = $200 + 200 = 400$. The ratio is $\\frac{400}{300} = \\frac{4}{3}$.\nCitation: Lesson 1"
+        }
+      ]
+    },
+    {
+      "question_number": 2,
+      "context": {
+        "nepali": "एक जना शिक्षकले आफ्नो छोरीको खातामा बैङ्कमा रु. 50,000 जम्मा गर्नुभयो । यदि बैङ्कले वार्षिक 10% ब्याज दिन्छ भने:",
+        "english": "A teacher deposited Rs. 50,000 in a bank in the account of his daughter. If the bank provides yearly 10% interest:"
+      },
+      "sub_questions": [
+        {
+          "label": "a",
+          "question_nepali": "3 वर्षमा हुने चक्रीय ब्याज र मिश्रधन पत्ता लगाउनुहोस् ।",
+          "question_english": "Find the compound interest and compound amount in 3 years.",
+          "answer": "CA = Rs. 66,550, CI = Rs. 16,550",
+          "explanation": "मिश्रधन $(CA) = P(1 + \\frac{R}{100})^T = 50,000(1.1)^3 = 66,550$ र चक्रीय ब्याज $(CI) = CA - P = 16,550$।\n\nExplanation: Using the formula $CA = P(1 + \\frac{R}{100})^T$, we get $50,000(1.1)^3 = 66,550$. The compound interest is $CA - P = 66,550 - 50,000 = 16,550$.\nCitation: Lesson 2"
+        },
+        {
+          "label": "b",
+          "question_nepali": "सोही रकम र समयका लागि साधारण ब्याज कति हुन्छ गणना गर्नुहोस् ।",
+          "question_english": "Calculate the simple interest for the same sum and time.",
+          "answer": "Rs. 15,000",
+          "explanation": "साधारण ब्याज $(SI) = \\frac{P \\times T \\times R}{100} = \\frac{50,000 \\times 3 \\times 10}{100} = 15,000$।\n\nExplanation: Simple Interest $(SI) = \\frac{P \\times T \\times R}{100} = \\frac{50,000 \\times 3 \\times 10}{100} = 15,000$.\nCitation: Lesson 2"
+        }
+      ]
+    },
+    {
+      "question_number": 3,
+      "context": {
+        "nepali": "एउटा गाउँपालिकाको 2 वर्ष अघिको जनसङ्ख्या 28,500 थियो । यदि जनसङ्ख्या वृद्धिदर वार्षिक 2% छ भने:",
+        "english": "The population of a rural municipality before 2 years was 28,500. If the population growth rate is 2% p.a.:"
+      },
+      "sub_questions": [
+        {
+          "label": "a",
+          "question_nepali": "हालको जनसङ्ख्या पत्ता लगाउनुहोस् ।",
+          "question_english": "Find the present population.",
+          "answer": "29,651 (approximately)",
+          "explanation": "हालको जनसङ्ख्या $(P_T) = P(1 + \\frac{R}{100})^T = 28,500(1.02)^2 \\approx 29,651$।\n\nExplanation: Using $P_T = P(1 + \\frac{R}{100})^T$: $28,500(1.02)^2 = 28,500 \\times 1.0404 \\approx 29,651$.\nCitation: Lesson 3"
+        },
+        {
+          "label": "b",
+          "question_nepali": "2 वर्षमा जनसङ्ख्या कतिले बढेछ ?",
+          "question_english": "By how much is the population increased in 2 years?",
+          "answer": "1,151",
+          "explanation": "बढेको जनसङ्ख्या = हालको जनसङ्ख्या - सुरुको जनसङ्ख्या = $29,651 - 28,500 = 1,151$।\n\nExplanation: Increase = Present Population - Initial Population = $29,651 - 28,500 = 1,151$.\nCitation: Lesson 3"
+        }
+      ]
+    },
+    {
+      "question_number": 4,
+      "context": {
+        "nepali": "एउटा मनी एक्सचेन्जमा अमेरिकी डलर 1 को खरिद दर ने.रु. 131.50 र बिक्री दर ने.रु. 132.50 छ ।",
+        "english": "In a money exchange, the buying rate of 1 US Dollar is NRs. 131.50 and the selling rate is NRs. 132.50."
+      },
+      "sub_questions": [
+        {
+          "label": "a",
+          "question_nepali": "यदि तपाईंसँग $500 छ भने नेपाली रुपैयाँमा साट्दा कति पाउनुहुन्छ ?",
+          "question_english": "If you have $500, how much Nepali Rupees will you get upon exchange?",
+          "answer": "Rs. 65,750",
+          "explanation": "डलर साट्दा बैंकले खरिद गर्छ, त्यसैले खरिद दर प्रयोग हुन्छ: $500 \\times 131.50 = 65,750$।\n\nExplanation: The bank buys dollars from you, so the buying rate applies. $500 \\times 131.50 = 65,750$.\nCitation: Lesson 2"
+        },
+        {
+          "label": "b",
+          "question_nepali": "नेपाली रु. 1,00,000 सँग कति अमेरिकी डलर साट्न सकिन्छ ? (दशमलवको दुई स्थानसम्म)",
+          "question_english": "How many US Dollars can be exchanged with NRs. 1,00,000? (Up to two decimal places)",
+          "answer": "$754.72",
+          "explanation": "डलर किन्न बैंकले बिक्री गर्छ, त्यसैले बिक्री दर प्रयोग हुन्छ: $\\frac{1,00,000}{132.50} \\approx 754.72$।\n\nExplanation: To buy dollars, the bank's selling rate is used. $\\frac{1,00,000}{132.50} \\approx 754.72$.\nCitation: Lesson 2"
+        }
+      ]
+    },
+    {
+      "question_number": 5,
+      "context": {
+        "nepali": "एउटा वर्ग आधार भएको पिरामिडको आधारको क्षेत्रफल 64 वर्ग से.मि. र उचाइ 15 से.मि. छ ।",
+        "english": "Find the volume of a square based pyramid in which the area of base is 64 sq. cm and height is 15 cm."
+      },
+      "sub_questions": [
+        {
+          "label": "a",
+          "question_nepali": "सो पिरामिडको आधारको भुजाको लम्बाइ कति हुन्छ ?",
+          "question_english": "What is the length of the side of the base of the pyramid?",
+          "answer": "8 cm",
+          "explanation": "आधारको क्षेत्रफल $(A) = a^2 = 64$ भएकोले भुजा $(a) = \\sqrt{64} = 8$ से.मि. हुन्छ।\n\nExplanation: Since the base is square, $a = \\sqrt{Area} = \\sqrt{64} = 8$.\nCitation: Lesson 5"
+        },
+        {
+          "label": "b",
+          "question_nepali": "सो पिरामिडको आयतन पत्ता लगाउनुहोस् ।",
+          "question_english": "Find the volume of the pyramid.",
+          "answer": "320 cm³",
+          "explanation": "आयतन $(V) = \\frac{1}{3} \\times \\text{Base Area} \\times \\text{Height} = \\frac{1}{3} \\times 64 \\times 15 = 320$ घन से.मि.।\n\nExplanation: $V = \\frac{1}{3} \\times \\text{Base Area} \\times \\text{Height} = \\frac{1}{3} \\times 64 \\times 15 = 320$.\nCitation: Lesson 5"
+        }
+      ]
+    },
+    {
+      "question_number": 6,
+      "context": {
+        "nepali": "एउटा आइसक्रिम सोली र अर्धगोला मिलेर बनेको छ । यदि सोलीको अर्धव्यास 21 से.मि. र आइसक्रिमको जम्मा आयतन 32,340 घन से.मि. छ भने सोलीको उचाइ पत्ता लगाउनुहोस् ।",
+        "english": "An ice cream is composed of a cone and a hemisphere. If the radius of the base is 21 cm and the volume of the ice cream is 32,340 cm³, find the height of the conical part."
+      },
+      "sub_questions": [
+        {
+          "label": "a",
+          "question_nepali": "सोली र अर्धगोलाको संयुक्त आयतनको सूत्र लेख्नुहोस् ।",
+          "question_english": "Write the formula for the combined volume of a cone and a hemisphere.",
+          "answer": "$V = \\frac{1}{3}\\pi r^2 h + \\frac{2}{3}\\pi r^3$",
+          "explanation": "सोलीको आयतन $\\frac{1}{3}\\pi r^2 h$ र अर्धगोलाको आयतन $\\frac{2}{3}\\pi r^3$ हुन्छ ।\n\nExplanation: Total volume is the sum of the cone's volume ($\\frac{1}{3}\\pi r^2 h$) and the hemisphere's volume ($\\frac{2}{3}\\pi r^3$).\nCitation: Lesson 5"
+        },
+        {
+          "label": "b",
+          "question_nepali": "सोलीको उचाइ गणना गर्नुहोस् ।",
+          "question_english": "Calculate the height of the cone.",
+          "answer": "28 cm",
+          "explanation": "संयुक्त आयतनको सूत्र प्रयोग गरी हल गर्दा $h = 28$ से.मि. आउँछ।\n\nExplanation: Substituting values into the volume formula: $32340 = \\frac{1}{3} \\pi r^2 (h + 2r)$. Solving for h leads to $70 = h + 42$, so $h = 28$.\nCitation: Lesson 5"
+        }
+      ]
+    },
+    {
+      "question_number": 7,
+      "context": {
+        "nepali": "एउटा आयताकार कोठाको लम्बाइ 12 मिटर, चौडाइ 8 मिटर र उचाइ 3 मिटर छ ।",
+        "english": "A rectangular room has length 12 m, breadth 8 m, and height 3 m."
+      },
+      "sub_questions": [
+        {
+          "label": "a",
+          "question_nepali": "कोठाको भुइँको क्षेत्रफल कति हुन्छ ?",
+          "question_english": "What is the area of the floor of the room?",
+          "answer": "96 sq. m",
+          "explanation": "क्षेत्रफल $(A) = l \\times b = 12 \\times 8 = 96$ वर्ग मिटर ।\n\nExplanation: Area = $l \\times b = 12 \\times 8 = 96$.\nCitation: Lesson 5"
+        },
+        {
+          "label": "b",
+          "question_nepali": "यदि सो कोठाको चार भित्तामा रङ लगाउँदा प्रति वर्ग मिटर रु. 15 लाग्छ भने, जम्मा खर्च कति लाग्ला ?",
+          "question_english": "If the cost of painting the four walls of the room is Rs. 15 per square meter, what will be the total cost?",
+          "answer": "Rs. 1,800",
+          "explanation": "चार भित्ताको क्षेत्रफल $= 2h(l + b) = 120$ वर्ग मिटर हुन्छ। जम्मा खर्च $= 120 \\times 15 = 1,800$।\n\nExplanation: Area of 4 walls is $2h(l+b) = 2(3)(20) = 120$ sq m. Total cost = $120 \\times 15 = 1,800$.\nCitation: Lesson 5"
+        }
+      ]
+    },
+    {
+      "question_number": 8,
+      "context": {
+        "nepali": "दिइएको अंकगणितीय श्रेणी 1 + 2 + 3 + ... को पहिलो 20 पदहरूको योगफल पत्ता लगाउनुहोस् ।",
+        "english": "Find the sum of the first 20 terms of the arithmetic series 1 + 2 + 3 + ..."
+      },
+      "sub_questions": [
+        {
+          "label": "a",
+          "question_nepali": "",
+          "question_english": "",
+          "answer": "210",
+          "explanation": "सूत्र $S_n = \\frac{n}{2} [2a + (n-1)d]$ प्रयोग गर्दा योगफल 210 हुन्छ।\n\nExplanation: Using $S_n = \\frac{n}{2} [2a + (n-1)d]$ with $a=1, d=1, n=20$: $S_{20} = 10[2 + 19] = 210$.\nCitation: Lesson 6"
+        }
+      ]
+    },
+    {
+      "question_number": 9,
+      "context": {
+        "nepali": "हल गर्नुहोस् (Solve): $x^2 - 3x - 10 = 0$",
+        "english": "Solve: $x^2 - 3x - 10 = 0$"
+      },
+      "sub_questions": [
+        {
+          "label": "a",
+          "question_nepali": "",
+          "question_english": "",
+          "answer": "$x = 5, -2$",
+          "explanation": "खण्डीकरण गर्दा $(x - 5)(x + 2) = 0$ हुन्छ, त्यसैले $x = 5$ वा $x = -2$।\n\nExplanation: Factoring the quadratic: $(x - 5)(x + 2) = 0$, thus $x = 5$ or $x = -2$.\nCitation: Lesson 7"
+        }
+      ]
+    },
+    {
+      "question_number": 10,
+      "context": {
+        "nepali": "यदि $2^x \\times 3^{x+1} = 18$ भए, x को मान पत्ता लगाउनुहोस् ।",
+        "english": "If $2^x \\times 3^{x+1} = 18$, find the value of x."
+      },
+      "sub_questions": [
+        {
+          "label": "a",
+          "question_nepali": "",
+          "question_english": "",
+          "answer": "$x = 1$",
+          "explanation": "घाताङ्कको नियम अनुसार हल गर्दा $x = 1$ हुन्छ।\n\nExplanation: Simplifying: $2^x \\times 3^x \\times 3 = 18 \\Rightarrow 6^x = 6^1$, so $x = 1$.\nCitation: Lesson 9"
+        }
+      ]
+    },
+    {
+      "question_number": 11,
+      "context": {
+        "nepali": "एउटा समानान्तर चतुर्भुज PQRS को क्षेत्रफल 48 वर्ग से.मि. छ । यदि सोही आधार QR र उही समानान्तर रेखाहरू बिच एउटा त्रिभुज QTR बनेको छ भने:",
+        "english": "The area of a parallelogram PQRS is 48 sq. cm. If a triangle QTR is formed on the same base QR and between the same parallel lines:"
+      },
+      "sub_questions": [
+        {
+          "label": "a",
+          "question_nepali": "त्रिभुज QTR को क्षेत्रफल कति हुन्छ ?",
+          "question_english": "What is the area of triangle QTR?",
+          "answer": "24 sq. cm",
+          "explanation": "एउटै आधार र उही समानान्तर रेखाहरू बिच बनेको त्रिभुजको क्षेत्रफल समानान्तर चतुर्भुजको क्षेत्रफलको आधा हुन्छ ।\n\nExplanation: The area of a triangle is half the area of a parallelogram on the same base and between same parallels: $\\frac{1}{2} \\times 48 = 24$.\nCitation: Lesson 10"
+        }
+      ]
+    },
+    {
+      "question_number": 12,
+      "context": {
+        "nepali": "एउटा वृत्तमा चाप AB ले केन्द्रमा बनाएको कोण $\\angle AOB$ र परिधिमा बनाएको कोण $\\angle ACB$ छ । यदि $\\angle AOB = 100^\\circ$ भए $\\angle ACB$ को मान पत्ता लगाउनुहोस् ।",
+        "english": "In a circle, arc AB subtends angle $\\angle AOB$ at the center and $\\angle ACB$ at the circumference. If $\\angle AOB = 100^\\circ$, find the value of $\\angle ACB$."
+      },
+      "sub_questions": [
+        {
+          "label": "a",
+          "question_nepali": "",
+          "question_english": "",
+          "answer": "$50^\\circ$",
+          "explanation": "केन्द्रिय कोण परिधिको कोणको दोब्बर हुन्छ, त्यसैले $\\angle ACB = \\frac{1}{2} \\times 100 = 50^\\circ$।\n\nExplanation: The angle at the circumference is half the angle at the center: $\\frac{1}{2} \\times 100 = 50^\\circ$.\nCitation: Lesson 12"
+        }
+      ]
+    },
+    {
+      "question_number": 13,
+      "context": {
+        "nepali": "एउटा त्रिभुजका तीन भुजाका लम्बाइहरू क्रमशः 6 से.मि., 8 से.मि. र 10 से.मि. छन् ।",
+        "english": "The lengths of three sides of a triangle are 6 cm, 8 cm, and 10 cm respectively."
+      },
+      "sub_questions": [
+        {
+          "label": "a",
+          "question_nepali": "यो कस्तो प्रकारको त्रिभुज हो ?",
+          "question_english": "What type of triangle is this?",
+          "answer": "Right-angled triangle",
+          "explanation": "$6^2 + 8^2 = 100 = 10^2$ भएकोले, पाइथागोरस साध्य अनुसार यो समकोण त्रिभुज हो।\n\nExplanation: Since $6^2 + 8^2 = 100 = 10^2$, it satisfies Pythagoras theorem.\nCitation: Lesson 10"
+        },
+        {
+          "label": "b",
+          "question_nepali": "उक्त त्रिभुजको क्षेत्रफल गणना गर्नुहोस् ।",
+          "question_english": "Calculate the area of the triangle.",
+          "answer": "24 sq. cm",
+          "explanation": "समकोण त्रिभुजको क्षेत्रफल $= \\frac{1}{2} \\times \\text{base} \\times \\text{height} = 24$।\n\nExplanation: Area = $\\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 6 \\times 8 = 24$.\nCitation: Lesson 10"
+        }
+      ]
+    },
+    {
+      "question_number": 14,
+      "context": {
+        "nepali": "तलको तथ्याङ्कबाट मध्यक (Mean) पत्ता लगाउनुहोस्: 35, 36, 42, 45, 48, 52, 58, 60",
+        "english": "Find the mean from the following data: 35, 36, 42, 45, 48, 52, 58, 60"
+      },
+      "sub_questions": [
+        {
+          "label": "a",
+          "question_nepali": "",
+          "question_english": "",
+          "answer": "47",
+          "explanation": "तथ्याङ्कको योगफल 376 र संख्या 8 छ, त्यसैले मध्यक 47 हुन्छ।\n\nExplanation: Sum = 376, Count = 8. Mean = $\\frac{376}{8} = 47$.\nCitation: Lesson 13"
+        }
+      ]
+    },
+    {
+      "question_number": 15,
+      "context": {
+        "nepali": "तलको तथ्याङ्कबाट प्रथम चतुर्थांश ($Q_1$) र तेस्रो चतुर्थांश ($Q_3$) पत्ता लगाउनुहोस् ।",
+        "english": "Find the first quartile ($Q_1$) and third quartile ($Q_3$) from the data: 10, 12, 14, 11, 22, 15, 27, 14, 16, 13, 25"
+      },
+      "sub_questions": [
+        {
+          "label": "a",
+          "question_nepali": "",
+          "question_english": "",
+          "answer": "$Q_1 = 12, Q_3 = 22$",
+          "explanation": "तथ्याङ्कलाई क्रमबद्ध गरेर सूत्र प्रयोग गर्दा $Q_1 = 12$ र $Q_3 = 22$ आउँछ।\n\nExplanation: Ordered data: 10, 11, 12, 13, 14, 14, 15, 16, 22, 25, 27. $N=11$. $Q_1$ is $\\frac{12}{4} = 3$rd item (12). $Q_3$ is $3 \\times 3 = 9$th item (22).\nCitation: Lesson 13"
+        }
+      ]
+    },
+    {
+      "question_number": 16,
+      "context": {
+        "nepali": "एउटा सिक्कालाई तीन पटक उचालिएको छ ।",
+        "english": "A coin is tossed three times."
+      },
+      "sub_questions": [
+        {
+          "label": "a",
+          "question_nepali": "सम्भाव्यताको वृक्ष चित्र बनाउनुहोस् र कुल नमुना क्षेत्र (Sample Space) लेख्नुहोस् ।",
+          "question_english": "Draw a probability tree diagram and write the total sample space.",
+          "answer": "S = {HHH, HHT, HTH, HTT, THH, THT, TTH, TTT}",
+          "explanation": "3 पटक उचाल्दा जम्मा $2^3 = 8$ वटा परिणामहरू हुन्छन्।\n\nExplanation: With 3 tosses, there are $2^3 = 8$ outcomes as shown in the tree diagram.\nCitation: Lesson 14"
+        },
+        {
+          "label": "b",
+          "question_nepali": "कम्तीमा दुईवटा टाउको (Head) आउने सम्भाव्यता कति हुन्छ ?",
+          "question_english": "What is the probability of getting at least two heads?",
+          "answer": "$\\frac{1}{2}$",
+          "explanation": "कम्तीमा दुई टाउको आउने घटनाहरू 4 वटा छन्, त्यसैले सम्भाव्यता $\\frac{4}{8} = \\frac{1}{2}$ हुन्छ।\n\nExplanation: Events with $\\geq 2$ heads: {HHH, HHT, HTH, THH}. Count is 4. Probability = $\\frac{4}{8} = \\frac{1}{2}$.\nCitation: Lesson 14"
+        }
+      ]
+    }
+  ]
+}
+

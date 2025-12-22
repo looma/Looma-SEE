@@ -150,7 +150,7 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
       case "english":
         return "📚"
       case "nepali":
-        return "🇳🇵"
+        return "ने"
       case "social":
       case "social_studies":
         return "🌍"
@@ -423,7 +423,7 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
                         className={`bg-gradient-to-r ${getSubjectColor(test.subject || "")} text-white relative overflow-hidden p-4 sm:p-6`}
                       >
                         <div className="absolute top-0 right-0 w-24 h-24 sm:w-32 sm:h-32 opacity-10">
-                          <div className="text-4xl sm:text-6xl transform rotate-12 translate-x-6 sm:translate-x-8 -translate-y-2 sm:-translate-y-4">
+                          <div className="text-4xl sm:text-6xl transform rotate-12 translate-x-4 sm:translate-x-6 translate-y-2 sm:translate-y-4">
                             {getSubjectIcon(test.subject || "")}
                           </div>
                         </div>
