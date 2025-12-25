@@ -95,13 +95,13 @@ export function EnglishQuestionRenderer({
           {english && (
             <div className="mb-2">
               <span className="font-medium text-blue-800">English:</span>
-              <p className="text-blue-700 mt-1">{english}</p>
+              <p className="text-blue-700 mt-1 whitespace-pre-line">{english}</p>
             </div>
           )}
           {nepali && (
             <div>
               <span className="font-medium text-blue-800">नेपाली:</span>
-              <p className="text-blue-700 mt-1">{nepali}</p>
+              <p className="text-blue-700 mt-1 whitespace-pre-line">{nepali}</p>
             </div>
           )}
         </div>
@@ -458,6 +458,16 @@ export function EnglishQuestionRenderer({
   const renderMatchingQuestion = (section: any) => {
     const currentAnswers = answers[(question as any).id]?.[section.id] || {}
 
+    // Safety check: if columns data is missing, show a message
+    if (!section.columns || !section.columns.A || !section.columns.B) {
+      return (
+        <div className="p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
+          <p className="text-yellow-800">⚠️ Matching question data is incomplete. Please check the test data.</p>
+        </div>
+      )
+    }
+
+
     return (
       <div className="space-y-6">
         <div className="flex justify-between items-start mb-4">
@@ -476,7 +486,7 @@ export function EnglishQuestionRenderer({
 
         {/* Matching Interface */}
         <div className="space-y-4">
-          {section.columns.A.map((item: any) => (
+          {section.columns?.A?.map((item: any) => (
             <Card key={item.id} className="border-slate-200">
               <CardContent className="p-4">
                 <div className="flex items-start gap-4">
@@ -498,7 +508,7 @@ export function EnglishQuestionRenderer({
                       }}
                       className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2"
                     >
-                      {section.columns.B.map((bItem: any) => (
+                      {section.columns?.B?.map((bItem: any) => (
                         <div
                           key={bItem.id}
                           className={`flex items-center space-x-2 cursor-pointer p-3 rounded-lg border transition-colors ${currentAnswers[item.id] === bItem.id
@@ -532,7 +542,16 @@ export function EnglishQuestionRenderer({
 
   const renderOrderingQuestion = (section: any) => {
     const currentAnswers = answers[(question as any).id]?.[section.id] || {}
-    const items = section.items || []
+    const items = section.sentences || section.items || []
+
+    // Safety check: if no items to order
+    if (items.length === 0) {
+      return (
+        <div className="p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
+          <p className="text-yellow-800">⚠️ Ordering question data is incomplete. Please check the test data.</p>
+        </div>
+      )
+    }
 
     return (
       <div className="space-y-6">
@@ -635,6 +654,10 @@ export function EnglishQuestionRenderer({
               renderFillInTheBlanksQuestions(section.subQuestions, section.id, section.marks)}
             {section.type === "matching" && renderMatchingQuestion(section)}
             {section.type === "ordering" && renderOrderingQuestion(section)}
+            {/* Fallback: render any unrecognized section type with subQuestions as short answer */}
+            {!["true_false", "true_false_not_given", "short_answer", "fill_in_the_blanks", "matching", "ordering"].includes(section.type) &&
+              section.subQuestions &&
+              renderShortAnswerQuestions(section.subQuestions, section.id, section.marks)}
           </div>
         ))}
       </div>
@@ -678,8 +701,8 @@ export function EnglishQuestionRenderer({
           />
           <div className="flex justify-between items-center mt-2 text-xs text-slate-500">
             <span>Write clearly and organize your thoughts</span>
-            <span className={currentAnswer.length > 50 ? "text-green-600" : "text-slate-400"}>
-              {currentAnswer.length} characters
+            <span className={currentAnswer.trim().split(/\s+/).filter(Boolean).length > 20 ? "text-green-600" : "text-slate-400"}>
+              {currentAnswer.trim() ? currentAnswer.trim().split(/\s+/).filter(Boolean).length : 0} words
             </span>
           </div>
         </div>

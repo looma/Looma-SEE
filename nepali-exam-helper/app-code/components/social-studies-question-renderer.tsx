@@ -118,7 +118,7 @@ export function SocialStudiesGroupRenderer({
                                     {alt.type === "alternative" && "• वैकल्पिक: "}
                                     {alt.type === "for_visually_impaired" && "• दृष्टिविहीनहरूका लागि: "}
                                 </span>
-                                <span className="text-amber-900">{alt.questionNepali}</span>
+                                <span className="text-amber-900 whitespace-pre-line">{alt.questionNepali}</span>
                             </div>
                         ))}
                     </div>
@@ -204,7 +204,7 @@ export function SocialStudiesGroupRenderer({
                                                     {typeInfo.label}
                                                 </Badge>
                                             </div>
-                                            <p className="text-slate-700 mt-2 leading-relaxed text-lg">
+                                            <p className="text-slate-700 mt-2 leading-relaxed text-lg whitespace-pre-line">
                                                 {question.questionNepali}
                                             </p>
                                         </div>

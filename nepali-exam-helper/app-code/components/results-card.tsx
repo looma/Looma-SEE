@@ -1165,83 +1165,128 @@ export function ResultsCard({
                                           {(section.explanationEnglish || section.explanationNepali) && (
                                             <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded-r-lg mt-3">
                                               <p className="font-semibold text-blue-800 mb-1">Explanation / व्याख्या:</p>
-                                              <p className="text-blue-700 text-sm">{section.explanationEnglish || section.explanationNepali}</p>
+                                              <p className="text-blue-700 text-sm whitespace-pre-line">{section.explanationEnglish || section.explanationNepali}</p>
                                             </div>
                                           )}
                                         </div>
                                       ) : section.type === 'ordering' && section.sentences ? (
                                         /* Handle ordering type sections */
-                                        <div className="space-y-4">
-                                          <div className="bg-slate-50 p-4 rounded-lg">
-                                            <h5 className="font-semibold text-slate-700 mb-3">Sentences to Order:</h5>
-                                            <ul className="space-y-2 text-sm">
-                                              {section.sentences?.map((sentence: any) => (
-                                                <li key={sentence.id} className="text-slate-600">
-                                                  <span className="font-medium">({sentence.id})</span> {sentence.text}
-                                                </li>
-                                              ))}
-                                            </ul>
-                                          </div>
+                                        (() => {
+                                          // Convert { itemId: "position" } format to ordered array
+                                          const userOrderArray: string[] = []
+                                          const sentences = section.sentences || []
 
-                                          {/* Display user's ordering vs correct order */}
-                                          <div className="space-y-3">
-                                            <div className={`p-4 rounded-lg ${JSON.stringify(sectionAnswers?.order) === JSON.stringify(section.correctAnswer)
-                                              ? 'bg-green-50 border-l-4 border-green-500'
-                                              : 'bg-red-50 border-l-4 border-red-500'
-                                              }`}>
-                                              <p className="font-semibold text-slate-800 mb-2">Your Order / तपाईंको क्रम:</p>
-                                              {sectionAnswers?.order && Array.isArray(sectionAnswers.order) ? (
-                                                <ol className="list-decimal list-inside space-y-1 text-sm">
-                                                  {sectionAnswers.order.map((id: string, idx: number) => {
-                                                    const sentence = section.sentences?.find((s: any) => s.id === id)
-                                                    return (
-                                                      <li key={id} className="text-slate-700">
-                                                        <span className="font-medium">({id})</span> {sentence?.text || 'Unknown'}
-                                                      </li>
-                                                    )
-                                                  })}
-                                                </ol>
+                                          sentences.forEach((item: any) => {
+                                            const position = sectionAnswers?.[item.id]
+                                            if (position) {
+                                              const posIndex = parseInt(position) - 1
+                                              if (posIndex >= 0) {
+                                                userOrderArray[posIndex] = item.id
+                                              }
+                                            }
+                                          })
+
+                                          const userOrder = userOrderArray.filter(Boolean)
+                                          const hasUserOrder = userOrder.length > 0
+
+                                          // Check correctness
+                                          const correctOrder = section.correctAnswer || []
+                                          let correctCount = 0
+                                          correctOrder.forEach((correctId: string, index: number) => {
+                                            if (userOrder[index] === correctId) {
+                                              correctCount++
+                                            }
+                                          })
+                                          const isAllCorrect = correctCount === correctOrder.length && hasUserOrder
+
+                                          return (
+                                            <div className="space-y-4">
+                                              <div className="bg-slate-50 p-4 rounded-lg">
+                                                <h5 className="font-semibold text-slate-700 mb-3">Sentences to Order:</h5>
+                                                <ul className="space-y-2 text-sm">
+                                                  {sentences?.map((sentence: any) => (
+                                                    <li key={sentence.id} className="text-slate-600">
+                                                      <span className="font-medium">({sentence.id})</span> {sentence.text}
+                                                    </li>
+                                                  ))}
+                                                </ul>
+                                              </div>
+
+                                              {/* Display user's ordering vs correct order */}
+                                              <div className="space-y-3">
+                                                <div className={`p-4 rounded-lg ${isAllCorrect
+                                                  ? 'bg-green-50 border-l-4 border-green-500'
+                                                  : 'bg-red-50 border-l-4 border-red-500'
+                                                  }`}>
+                                                  <p className="font-semibold text-slate-800 mb-2">Your Order / तपाईंको क्रम:</p>
+                                                  {hasUserOrder ? (
+                                                    <ol className="list-decimal list-inside space-y-1 text-sm">
+                                                      {userOrder.map((id: string, idx: number) => {
+                                                        const sentence = sentences?.find((s: any) => s.id === id)
+                                                        const isPositionCorrect = correctOrder[idx] === id
+                                                        return (
+                                                          <li key={id} className={isPositionCorrect ? 'text-green-700' : 'text-red-700'}>
+                                                            <span className="font-medium">({id})</span> {sentence?.text || 'Unknown'}
+                                                            {isPositionCorrect && <span className="ml-2">✓</span>}
+                                                          </li>
+                                                        )
+                                                      })}
+                                                    </ol>
+                                                  ) : (
+                                                    <p className="text-slate-500 italic">No answer provided</p>
+                                                  )}
+                                                </div>
+
+                                                {/* Show correct order if wrong */}
+                                                {!isAllCorrect && correctOrder.length > 0 && (
+                                                  <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg">
+                                                    <p className="font-semibold text-amber-800 mb-2">Correct Order / सही क्रम:</p>
+                                                    <ol className="list-decimal list-inside space-y-1 text-sm">
+                                                      {correctOrder.map((id: string) => {
+                                                        const sentence = sentences?.find((s: any) => s.id === id)
+                                                        return (
+                                                          <li key={id} className="text-amber-700">
+                                                            <span className="font-medium">({id})</span> {sentence?.text || 'Unknown'}
+                                                          </li>
+                                                        )
+                                                      })}
+                                                    </ol>
+                                                  </div>
+                                                )}
+                                              </div>
+
+                                              {/* Score for ordering - use feedback from grading */}
+                                              {sectionFeedbacks.length > 0 ? (
+                                                <div className="flex justify-between items-center">
+                                                  <div className="text-sm text-slate-600">{sectionFeedbacks[0]?.feedback}</div>
+                                                  <Badge className={`${sectionFeedbacks[0]?.score > 0
+                                                    ? 'bg-green-500 text-white'
+                                                    : 'bg-red-500 text-white'
+                                                    }`}>
+                                                    {sectionFeedbacks[0]?.score || 0}/{section.marks || 5}
+                                                  </Badge>
+                                                </div>
                                               ) : (
-                                                <p className="text-slate-500 italic">No answer provided</p>
+                                                <div className="flex justify-end">
+                                                  <Badge className={`${isAllCorrect
+                                                    ? 'bg-green-500 text-white'
+                                                    : 'bg-red-500 text-white'
+                                                    }`}>
+                                                    {isAllCorrect ? section.marks || 5 : correctCount}/{section.marks || 5}
+                                                  </Badge>
+                                                </div>
+                                              )}
+
+                                              {/* Show explanation if available */}
+                                              {(section.explanationEnglish || section.explanationNepali) && (
+                                                <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded-r-lg">
+                                                  <p className="font-semibold text-blue-800 mb-1">Explanation / व्याख्या:</p>
+                                                  <p className="text-blue-700 text-sm">{section.explanationEnglish || section.explanationNepali}</p>
+                                                </div>
                                               )}
                                             </div>
-
-                                            {/* Show correct order if wrong */}
-                                            {JSON.stringify(sectionAnswers?.order) !== JSON.stringify(section.correctAnswer) && section.correctAnswer && (
-                                              <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg">
-                                                <p className="font-semibold text-amber-800 mb-2">Correct Order / सही क्रम:</p>
-                                                <ol className="list-decimal list-inside space-y-1 text-sm">
-                                                  {section.correctAnswer.map((id: string) => {
-                                                    const sentence = section.sentences?.find((s: any) => s.id === id)
-                                                    return (
-                                                      <li key={id} className="text-amber-700">
-                                                        <span className="font-medium">({id})</span> {sentence?.text || 'Unknown'}
-                                                      </li>
-                                                    )
-                                                  })}
-                                                </ol>
-                                              </div>
-                                            )}
-                                          </div>
-
-                                          {/* Score for ordering */}
-                                          <div className="flex justify-end">
-                                            <Badge className={`${JSON.stringify(sectionAnswers?.order) === JSON.stringify(section.correctAnswer)
-                                              ? 'bg-green-500 text-white'
-                                              : 'bg-red-500 text-white'
-                                              }`}>
-                                              {JSON.stringify(sectionAnswers?.order) === JSON.stringify(section.correctAnswer) ? section.marks || 5 : 0}/{section.marks || 5}
-                                            </Badge>
-                                          </div>
-
-                                          {/* Show explanation if available */}
-                                          {(section.explanationEnglish || section.explanationNepali) && (
-                                            <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded-r-lg">
-                                              <p className="font-semibold text-blue-800 mb-1">Explanation / व्याख्या:</p>
-                                              <p className="text-blue-700 text-sm">{section.explanationEnglish || section.explanationNepali}</p>
-                                            </div>
-                                          )}
-                                        </div>
+                                          )
+                                        })()
                                       ) : section.subQuestions?.map((subQ: any) => {
                                         const answer = sectionAnswers[subQ.id]
                                         const feedback = sectionFeedbacks.find((f: any) => f.subQuestionId === subQ.id)

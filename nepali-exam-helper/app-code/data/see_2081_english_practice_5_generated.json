@@ -35,43 +35,44 @@
         "subSections": [
           {
             "id": "A",
-            "type": "true_false",
-            "title": "Write ‘TRUE’ for true and ‘FALSE’ for the false statements.",
+            "type": "short_answer",
+            "title": "Read and complete the sentences below with the correct information from the poem.",
+            "marks": 5,
             "subQuestions": [
               {
                 "id": "i",
-                "questionEnglish": "The speaker believes there is no sight on Earth more beautiful than the one from Westminster Bridge.",
-                "correctAnswer": "TRUE",
-                "explanationNepali": "कविताको पहिलो पङ्क्ति, \"Earth has not anything to show more fair,\" ले स्पष्ट पार्छ कि वक्ताले यो दृश्यलाई पृथ्वीमा सबैभन्दा सुन्दर मान्छन्।",
-                "explanationEnglish": "The first line of the poem, \"Earth has not anything to show more fair,\" makes it clear that the speaker considers this sight the most beautiful on Earth. Citations: chapter 12, page 199."
+                "questionEnglish": "The speaker shares his impressions of the view from __________.",
+                "correctAnswer": "Westminster Bridge",
+                "explanationNepali": "कविताको शीर्षक 'Composed upon Westminster Bridge' हो, जसले वक्ताको स्थानलाई स्पष्ट पार्छ।",
+                "explanationEnglish": "The title of the poem is 'Composed upon Westminster Bridge,' which indicates the speaker's location. \nCitation: Lesson 12."
               },
               {
                 "id": "ii",
-                "questionEnglish": "The city is described as noisy and crowded in the morning.",
-                "correctAnswer": "FALSE",
-                "explanationNepali": "कविताले शहरलाई \"silent, bare\" भनेर वर्णन गरेको छ र घरहरू \"asleep\" देखिन्छन्, जसले शान्त र खाली वातावरणलाई संकेत गर्दछ।",
-                "explanationEnglish": "The poem describes the city as \"silent, bare\" and says the houses seem \"asleep,\" which indicates a quiet and empty atmosphere. Citations: chapter 12, page 199."
+                "questionEnglish": "He, who does not praise the beauty of nature is __________.",
+                "correctAnswer": "dull of soul",
+                "explanationNepali": "कविताले भन्छ, \"Dull would he be of soul who could pass by / A sight so touching in its majesty.\"",
+                "explanationEnglish": "The poem states, \"Dull would he be of soul who could pass by / A sight so touching in its majesty.\" \nCitation: Lesson 12."
               },
               {
                 "id": "iii",
-                "questionEnglish": "The air in the city is described as being polluted with smoke.",
-                "correctAnswer": "FALSE",
-                "explanationNepali": "कविताले शहर \"All bright and glittering in the smokeless air\" अर्थात् धुवाँरहित हावामा चम्किरहेको उल्लेख गरेको छ।",
-                "explanationEnglish": "The poem mentions the city is \"All bright and glittering in the smokeless air.\" Citations: chapter 12, page 199."
+                "questionEnglish": "Temples, towers, domes, etc. are shining in __________.",
+                "correctAnswer": "the smokeless air",
+                "explanationNepali": "कविताले वर्णन गर्दछ, \"All bright and glittering in the smokeless air.\"",
+                "explanationEnglish": "The poem describes them as \"All bright and glittering in the smokeless air.\" \nCitation: Lesson 12."
               },
               {
                 "id": "iv",
-                "questionEnglish": "The river is flowing aggressively and rapidly.",
-                "correctAnswer": "FALSE",
-                "explanationNepali": "कवितामा भनिएको छ, \"The river glideth at his own sweet will,\" जसले नदी शान्त र सहज रूपमा बगिरहेको देखाउँछ।",
-                "explanationEnglish": "The poem states, \"The river glideth at his own sweet will,\" which suggests the river is flowing calmly and gently. Citations: chapter 12, page 199."
+                "questionEnglish": "The poet feels __________ to see the outlines of the city buildings.",
+                "correctAnswer": "a calm so deep",
+                "explanationNepali": "कविले भन्छन्, \"Ne'er saw I, never felt, a calm so deep!\"",
+                "explanationEnglish": "The poet says, \"Ne'er saw I, never felt, a calm so deep!\" \nCitation: Lesson 12."
               },
               {
                 "id": "v",
-                "questionEnglish": "The speaker feels a deep sense of calm while observing the city.",
-                "correctAnswer": "TRUE",
-                "explanationNepali": "वक्ताले आफ्नो भावना व्यक्त गर्छन्, \"Ne'er saw I, never felt, a calm so deep!\" जसले उनको गहिरो शान्तिको अनुभवलाई देखाउँछ।",
-                "explanationEnglish": "The speaker expresses his feeling, \"Ne'er saw I, never felt, a calm so deep!\" which shows his experience of profound calmness. Citations: chapter 12, page 199."
+                "questionEnglish": "The houses are asleep and the heart of London is __________.",
+                "correctAnswer": "lying still",
+                "explanationNepali": "कविताको अन्तिम पङ्क्ति हो, \"And all that mighty heart is lying still!\"",
+                "explanationEnglish": "The last line of the poem is, \"And all that mighty heart is lying still!\" \nCitation: Lesson 12."
               }
             ]
           }
@@ -83,93 +84,93 @@
         "title": "Read the text and do the tasks.",
         "marks": 10,
         "passage": {
-          "title": "Wisdom of Little Girls",
-          "content": "Two little girls from different houses happened to meet in a lane. The dirty water after running through the farm-yards had formed a large puddle. One girl was very small, the other a little bigger. Their mothers had dressed them both in new frocks.\n\nSoon the fancy took them to splash about in the water, and the smaller one was going to step into the puddle, shoes and all, when the elder checked her: 'Don't go in so, Malasha,' said she, 'your mother will scold you. I will take off my shoes and stockings, and you take off yours.'\n\nThey did so; and then, picking up their skirts, began walking towards each other through the puddle. When they got near one another, Akoulya said: 'Mind, Malasha, don't splash. Walk carefully!' She had hardly said this, when Malasha plumped down her foot so that the water splashed right on to Akoulya's frock. The frock was splashed, and so were Akoulya's eyes and nose. When she saw the stains on her frock, she was angry and ran after Malasha to strike her.\n\nJust then Akoulya's mother happened to be passing, and seeing her daughter's skirt was splashed, she seized Malasha, and struck her. Malasha began to howl. Her mother came out and began scolding her neighbour. One word led to another and they had an angry quarrel. The men came out, and a crowd collected, everyone shouting. They all went on quarreling, till Akoulya's old grandmother tried to calm them. But they would not listen. While the women were abusing each other, Akoulya had wiped the mud off her frock, and gone back to the puddle. She took a stone and began scraping away the earth to make a channel. Presently Malasha joined her, and with a chip of wood helped her dig the channel. The little girls ran straight into the group of men. The old woman, seeing them, said to the men: 'Are you not ashamed of yourselves? To go fighting on account of these lassies, when they themselves have forgotten all about it, and are playing happily together. Dear little souls! They are wiser than you!'"
+          "title": "Bird Migration",
+          "content": "Like marathon runners, birds pace themselves so they do not run out of energy before they can land. They are always adjusting speed, height and flight path to account for changing winds, their own weight, and storms. In the spring, they retrace their paths back to their summer homes. Each fall, about five billion birds migrate south for the winter from North America. Nearly all 500 of the 650 species of North American birds migrate. Yet this is just one small part of the picture. More than half of all the bird species in the world-approximately 5,000 species- migrate, and each species is on a different journey.\n\nOther animal species also migrate, including insects, amphibians, reptiles, fish and mammals. Migration is happening all the time: Herds of wild beast arrive every January at green pastures in the Southern Serengeti of Africa. Swarms of free tailed bats arrive each March to caves in Texas. Northern fur seals gather on Alaskan islands each June. In September, Chinook salmon swim up rivers in Washington State. If you are in the right place at the right time, you can witness these amazing journeys. Yet, no matter where you live, you can see some birds migrating. In fact, much of what we know about migration comes from studying birds."
         },
         "subSections": [
           {
             "id": "A",
-            "type": "fill_in_the_blanks",
-            "title": "Fill in the blanks with the correct information from the text.",
+            "type": "true_false",
+            "title": "Write ‘TRUE’ for true and ‘FALSE’ for the false statements.",
             "marks": 5,
             "subQuestions": [
               {
                 "id": "i",
-                "questionEnglish": "The water in the lane formed a large __________.",
-                "correctAnswer": "puddle",
-                "explanationNepali": "पाठमा उल्लेख छ कि फोहोर पानीले \"a large puddle\" बनाएको थियो।",
-                "explanationEnglish": "The text mentions that the dirty water had formed \"a large puddle.\" Citations: chapter 11, page 172."
+                "questionEnglish": "Birds store energy for their flights by running like marathon runners.",
+                "correctAnswer": "FALSE",
+                "explanationNepali": "पाठले चराहरूलाई म्याराथन धावकहरूसँग तुलना गर्छ (pace themselves), तर तिनीहरू धावकजस्तै दौडेर शक्ति सञ्चय गर्छन् भन्दैन।",
+                "explanationEnglish": "The text compares birds to marathon runners in how they pace themselves, not that they run to store energy. \nCitation: Lesson 13."
               },
               {
                 "id": "ii",
-                "questionEnglish": "Akoulya advised Malasha to take off her shoes and __________ before entering the water.",
-                "correctAnswer": "stockings",
-                "explanationNepali": "अकौल्याले भनिन्, \"I will take off my shoes and stockings, and you take off yours.\" ",
-                "explanationEnglish": "Akoulya said, \"I will take off my shoes and stockings, and you take off yours.\" Citations: chapter 11, page 172."
+                "questionEnglish": "Almost five million birds migrate south from North America in winter season.",
+                "correctAnswer": "FALSE",
+                "explanationNepali": "पाठमा \"about five billion birds\" भनिएको छ, पाँच मिलियन होइन।",
+                "explanationEnglish": "The text says \"about five billion birds,\" not five million. \nCitation: Lesson 13."
               },
               {
                 "id": "iii",
-                "questionEnglish": "Malasha accidentally splashed water onto Akoulya's __________.",
-                "correctAnswer": "frock",
-                "explanationNepali": "पाठले बताउँछ कि पानी \"splashed right on to Akoulya's frock.\" ",
-                "explanationEnglish": "The text states that the water \"splashed right on to Akoulya's frock.\" Citations: chapter 11, page 172."
+                "questionEnglish": "Migration is a regular process among animal species.",
+                "correctAnswer": "TRUE",
+                "explanationNepali": "पाठले भन्छ, \"Migration is happening all the time\" र धेरै प्रजातिहरू बसाइँ सर्छन्।",
+                "explanationEnglish": "The text states, \"Migration is happening all the time,\" and lists various species that migrate. \nCitation: Lesson 13."
               },
               {
                 "id": "iv",
-                "questionEnglish": "When the adults started quarreling, Akoulya's __________ tried to calm them down.",
-                "correctAnswer": "old grandmother",
-                "explanationNepali": "पाठले उल्लेख गर्छ कि \"Akoulya's old grandmother, stepping in among them, tried to calm them.\"",
-                "explanationEnglish": "The text mentions that \"Akoulya's old grandmother, stepping in among them, tried to calm them.\" Citations: chapter 11, page 173."
+                "questionEnglish": "Swarms of free tailed bats migrate to caves in Texas every March.",
+                "correctAnswer": "TRUE",
+                "explanationNepali": "पाठमा उल्लेख छ, \"Swarms of free tailed bats arrive each March to caves in Texas.\"",
+                "explanationEnglish": "The text mentions, \"Swarms of free tailed bats arrive each March to caves in Texas.\" \nCitation: Lesson 13."
               },
               {
                 "id": "v",
-                "questionEnglish": "The grandmother said the little girls were __________ than the adults.",
-                "correctAnswer": "wiser",
-                "explanationNepali": "हजुरआमाले भन्नुभयो, \"They are wiser than you!\"",
-                "explanationEnglish": "The grandmother said, \"They are wiser than you!\" Citations: chapter 11, page 174."
+                "questionEnglish": "We can observe bird migration only from Washington State.",
+                "correctAnswer": "FALSE",
+                "explanationNepali": "पाठले भन्छ, \"no matter where you live, you can see some birds migrating.\"",
+                "explanationEnglish": "The text says, \"no matter where you live, you can see some birds migrating.\" \nCitation: Lesson 13."
               }
             ]
           },
           {
             "id": "B",
             "type": "short_answer",
-            "title": "Answer the following questions.",
+            "title": "Answer the following questions in full sentences.",
             "marks": 5,
             "subQuestions": [
               {
                 "id": "i",
-                "questionEnglish": "Why did Akoulya get angry with Malasha?",
-                "correctAnswer": "She got angry because Malasha splashed dirty water on her new frock.",
-                "explanationNepali": "जब मलाशाले अकौल्याको फ्रकमा पानी छ्यापिन्, \"she was angry and ran after Malasha to strike her.\"",
-                "explanationEnglish": "When Malasha splashed water on Akoulya's frock, \"she was angry and ran after Malasha to strike her.\" Citations: chapter 11, page 172."
+                "questionEnglish": "What are the birds compared with in the text?",
+                "correctAnswer": "The birds are compared with marathon runners.",
+                "explanationNepali": "पाठको पहिलो वाक्यमा भनिएको छ, \"Like marathon runners, birds pace themselves...\"",
+                "explanationEnglish": "The first sentence of the text states, \"Like marathon runners, birds pace themselves...\" \nCitation: Lesson 13."
               },
               {
                 "id": "ii",
-                "questionEnglish": "What started the quarrel among the adults?",
-                "correctAnswer": "The quarrel started when Akoulya's mother struck Malasha, and Malasha's mother came out and started scolding her.",
-                "explanationNepali": "झगडा तब सुरु भयो जब अकौल्याकी आमाले मलाशालाई हानिन् र मलाशाकी आमाले छिमेकीलाई गाली गर्न थालिन्।",
-                "explanationEnglish": "The quarrel began when Akoulya's mother struck Malasha, which led to Malasha's mother coming out and scolding the neighbour. Citations: chapter 11, page 173."
+                "questionEnglish": "When do the birds return to their summer homes?",
+                "correctAnswer": "They return to their summer homes in the spring.",
+                "explanationNepali": "पाठमा उल्लेख छ, \"In the spring, they retrace their paths back to their summer homes.\"",
+                "explanationEnglish": "The text mentions, \"In the spring, they retrace their paths back to their summer homes.\" \nCitation: Lesson 13."
               },
               {
                 "id": "iii",
-                "questionEnglish": "What did Akoulya and Malasha do while the adults were fighting?",
-                "correctAnswer": "They went back to the puddle and worked together to dig a channel for the water to flow out.",
-                "explanationNepali": "ठूलाहरू झगडा गरिरहेको बेला, दुई केटीहरू मिलेर पानीको लागि नहर खन्न थाले।",
-                "explanationEnglish": "While the adults were fighting, the two girls started working together to dig a channel for the water. Citations: chapter 11, page 173."
+                "questionEnglish": "What portion of all the bird species move from one place to another?",
+                "correctAnswer": "More than half of all the bird species in the world migrate.",
+                "explanationNepali": "पाठले भन्छ, \"More than half of all the bird species in the world... migrate.\"",
+                "explanationEnglish": "The text states, \"More than half of all the bird species in the world... migrate.\" \nCitation: Lesson 13."
               },
               {
                 "id": "iv",
-                "questionEnglish": "How did the adults' quarrel finally end?",
-                "correctAnswer": "It ended when they saw the two little girls playing happily together, making them feel ashamed of their own fighting.",
-                "explanationNepali": "जब पुरुषहरूले केटीहरूलाई खुशीसाथ सँगै खेलिरहेको देखे, उनीहरूलाई लाज लाग्यो र आफ्नो घर फर्किए।",
-                "explanationEnglish": "When the men saw the girls playing happily together, they felt ashamed and went back to their homes. Citations: chapter 11, page 174."
+                "questionEnglish": "Which animal species except birds migrate?",
+                "correctAnswer": "Insects, amphibians, reptiles, fish, and mammals also migrate.",
+                "explanationNepali": "पाठले \"including insects, amphibians, reptiles, fish and mammals\" लाई बसाइँ सर्ने प्रजातिको रूपमा सूचीबद्ध गर्दछ।",
+                "explanationEnglish": "The text lists \"insects, amphibians, reptiles, fish and mammals\" as species that also migrate. \nCitation: Lesson 13."
               },
               {
                 "id": "v",
-                "questionEnglish": "What is the main message of the story?",
-                "correctAnswer": "The main message is that children are often wiser and more forgiving than adults, and we should learn to let go of anger and resolve conflicts peacefully.",
-                "explanationNepali": "कथाको मुख्य सन्देश यो हो कि बालबालिकाहरू प्रायः ठूलाहरूभन्दा बढी बुद्धिमान र क्षमाशील हुन्छन्, र हामीले रिसलाई त्यागेर शान्तिपूर्वक विवाद समाधान गर्न सिक्नुपर्छ।",
-                "explanationEnglish": "The story's main message is that children are often wiser and more forgiving than adults, and we should learn to let go of anger and resolve conflicts peacefully. Citations: chapter 11, pages 172-174."
+                "questionEnglish": "Why do you think the wild beasts migrate to the green pastures in Africa? Give a reason.",
+                "correctAnswer": "They likely migrate to find food, as green pastures provide grazing.",
+                "explanationNepali": "हरियो खर्क (green pastures) ले खाना (घाँस) उपलब्ध गराउने भएकोले उनीहरू त्यहाँ जान्छन्।",
+                "explanationEnglish": "Green pastures provide food (grazing), which is the likely reason for their migration. \nCitation: Lesson 13."
               }
             ]
           }
@@ -181,93 +182,93 @@
         "title": "Read the following text and do the tasks.",
         "marks": 10,
         "passage": {
-          "title": "SPORTS COMPETITION NOTICE",
-          "content": "Sunshine Secondary School\nSports Club\nDate: 5th October, 2025\n\nThis is to inform all students that the annual 'Sports Week' will be held from 15th to 20th October, 2025. A variety of track and field events, as well as team sports, will be organized.\n\nEvents include:\n- 100m, 200m, and 400m races\n- Long Jump and High Jump\n- Shot Put\n- Football (Boys)\n- Volleyball (Girls)\n- Basketball (Boys & Girls)\n\nInterested students are requested to register their names for their desired events with their respective House Captains by 10th October, 2025. A student can participate in a maximum of three individual events and one team sport. All events will take place at the school playground, starting at 9:00 AM each day.\n\nAll students are encouraged to participate enthusiastically to make this event a grand success.\n\n(Signature)\nSports In-charge"
+          "title": "Janakpur Bolts Thump Sudurpaschim to Clinch Inaugural Nepal Premier League Title",
+          "content": "By MyKhel Staff, December 21\nJanakpur Bolts clinched the first ever Nepal Premier League after a thumping 5-wicket win over Sudurpaschim Royals in the final at the TU International Stadium in Kirtipur on Saturday. Lahiru Milantha smashed a 49-ball 87 as Janakpur Bolts made light work of the run chase of 185 against Sudurpaschim Royals. Milantha and skipper Aasif Sheikh (33 off 19 balls) shared a 73-run stand for the first wicket in seven overs to lay the foundation for a smooth run chase. After the two openers departed and the wickets fell at the other end, Harsh Thaker (30* off 24 balls) remained unbeaten alongside Mayan Yadav (2* off 3 balls) to see the team home with four balls to spare. For Royals, Scott Kuggeleijn, Saif Zaib and Ishan Pandey claimed a wicket each in a losing cause.\n\nEarlier opting to bat first, Sudurpaschim Royals got off to a great start as openers Saif Zaib (69 off 43 balls) and Binod Bhandari (41 off 31 balls) added 117 runs from 72 balls for the first wicket before Lalit Rajbanshi broke the stand, leading to successive dismissals in the space of 3 deliveries. Destined for a total above 200, Janakpur Bolts struck in regular intervals through Mohammed Mohsin (3 for 40) and Kishor Mahato (3 for 25) to keep the Royals down to 184/9 in their allotted 20 overs. With this, Janakpur Bolts defeated the Sudurpaschim for the first time, having lost to the table-toppers twice earlier in the tournament. The final marked the close of the first edition of the Nepal Premier League (NPL)."
         },
         "subSections": [
           {
             "id": "A",
-            "type": "fill_in_the_blanks",
-            "title": "Fill in the blanks with correct words/phrases from the text.",
+            "type": "true_false",
+            "title": "Write 'TRUE' for true and 'FALSE' for the false statements.",
             "marks": 5,
             "subQuestions": [
               {
                 "id": "i",
-                "questionEnglish": "The notice is published by the __________ of the school.",
-                "correctAnswer": "Sports Club",
-                "explanationNepali": "सूचनाको शीर्षकमुनि 'Sports Club' उल्लेख गरिएको छ।",
-                "explanationEnglish": "The notice mentions 'Sports Club' under the title. Citations: page 44 of All English Exams.pdf"
+                "questionEnglish": "Janakpur Bolts won the title of the first edition of NPL.",
+                "correctAnswer": "TRUE",
+                "explanationNepali": "पहिलो वाक्यले भन्छ, \"Janakpur Bolts clinched the first ever Nepal Premier League...\"",
+                "explanationEnglish": "The first sentence says, \"Janakpur Bolts clinched the first ever Nepal Premier League...\" \nCitation: Lesson 2."
               },
               {
                 "id": "ii",
-                "questionEnglish": "The annual Sports Week will be held for __________ days.",
-                "correctAnswer": "six",
-                "explanationNepali": "कार्यक्रम १५ देखि २० अक्टोबरसम्म चल्नेछ, जुन ६ दिन हुन्छ।",
-                "explanationEnglish": "The event will be held from the 15th to the 20th of October, which is a duration of six days. Citations: page 44 of All English Exams.pdf"
+                "questionEnglish": "Aasif Sheikh scored individual 87 runs.",
+                "correctAnswer": "FALSE",
+                "explanationNepali": "पाठले भन्छ, \"Lahiru Milantha smashed a 49-ball 87,\" असिफ शेखले होइन।",
+                "explanationEnglish": "The text says, \"Lahiru Milantha smashed a 49-ball 87,\" not Aasif Sheikh. \nCitation: Lesson 2."
               },
               {
                 "id": "iii",
-                "questionEnglish": "Volleyball is a team sport specifically for __________.",
-                "correctAnswer": "Girls",
-                "explanationNepali": "घटनाहरूको सूचीमा \"Volleyball (Girls)\" उल्लेख गरिएको छ।",
-                "explanationEnglish": "The list of events specifies \"Volleyball (Girls)\". Citations: page 44 of All English Exams.pdf"
+                "questionEnglish": "The three bowlers including Ishan Pandey took a wicket each.",
+                "correctAnswer": "TRUE",
+                "explanationNepali": "पाठले उल्लेख गर्छ, \"Scott Kuggeleijn, Saif Zaib and Ishan Pandey claimed a wicket each...\"",
+                "explanationEnglish": "The text mentions, \"Scott Kuggeleijn, Saif Zaib and Ishan Pandey claimed a wicket each...\" \nCitation: Lesson 2."
               },
               {
                 "id": "iv",
-                "questionEnglish": "Students must register their names with their __________.",
-                "correctAnswer": "House Captains",
-                "explanationNepali": "सूचनामा विद्यार्थीहरूलाई \"register their names ... with their respective House Captains\" भनिएको छ।",
-                "explanationEnglish": "The notice instructs students to \"register their names ... with their respective House Captains.\" Citations: page 44 of All English Exams.pdf"
+                "questionEnglish": "The run target to Janakpur Bolts was 185.",
+                "correctAnswer": "TRUE",
+                "explanationNepali": "सुदूरपश्चिमले १८4/९ रन बनायो, त्यसैले जित्नको लागि लक्ष्य १८५ रन थियो। पाठले \"run chase of 185\" भन्छ।",
+                "explanationEnglish": "Sudurpaschim made 184/9, so the target to win was 185. The text says \"run chase of 185.\" \nCitation: Lesson 2."
               },
               {
                 "id": "v",
-                "questionEnglish": "The deadline for registration is __________.",
-                "correctAnswer": "10th October, 2025",
-                "explanationNepali": "पाठले दर्ताको अन्तिम मिति \"by 10th October, 2025\" तोकेको छ।",
-                "explanationEnglish": "The text specifies the registration deadline is \"by 10th October, 2025.\" Citations: page 44 of All English Exams.pdf"
+                "questionEnglish": "Binod Bhandari alone collected 117 runs to first wicket.",
+                "correctAnswer": "FALSE",
+                "explanationNepali": "पाठले भन्छ, \"openers Saif Zaib... and Binod Bhandari... added 117 runs... for the first wicket,\" अर्थात् दुबै मिलेर, एक्लै होइन।",
+                "explanationEnglish": "The text says, \"openers Saif Zaib... and Binod Bhandari... added 117 runs... for the first wicket,\" meaning together, not alone. \nCitation: Lesson 2."
               }
             ]
           },
           {
             "id": "B",
             "type": "short_answer",
-            "title": "Answer the following questions.",
+            "title": "Answer the following questions in full sentences.",
             "marks": 5,
             "subQuestions": [
               {
                 "id": "i",
-                "questionEnglish": "What is the purpose of this notice?",
-                "correctAnswer": "The purpose is to inform students about the upcoming annual 'Sports Week'.",
-                "explanationNepali": "सूचनाको पहिलो वाक्यले यसको उद्देश्य वार्षिक 'खेलकुद सप्ताह' बारे जानकारी दिनु हो भनेर बताउँछ।",
-                "explanationEnglish": "The first sentence of the notice states its purpose is to inform students about the annual 'Sports Week'. Citations: page 44 of All English Exams.pdf"
+                "questionEnglish": "When was the news published?",
+                "correctAnswer": "The news was published on December 21.",
+                "explanationNepali": "समाचारको सुरुमा \"By MyKhel Staff, December 21\" लेखिएको छ।",
+                "explanationEnglish": "At the beginning of the news, it says \"By MyKhel Staff, December 21.\" \nCitation: Lesson 2."
               },
               {
                 "id": "ii",
-                "questionEnglish": "List two track and field events mentioned in the notice.",
-                "correctAnswer": "Two events are the 100m race and Long Jump. (Any two from the list are correct).",
-                "explanationNepali": "सूचनामा १०० मिटर दौड, लङ जम्प, हाई जम्प, र शट पुट जस्ता धेरै ट्र्याक र फिल्ड कार्यक्रमहरू सूचीबद्ध छन्।",
-                "explanationEnglish": "The notice lists several track and field events, including 100m race, Long Jump, High Jump, and Shot Put. Citations: page 44 of All English Exams.pdf"
+                "questionEnglish": "In which Stadium was the final game of NPL played?",
+                "correctAnswer": "It was played at the TU International Stadium in Kirtipur.",
+                "explanationNepali": "पहिलो अनुच्छेदमा \"at the TU International Stadium in Kirtipur\" उल्लेख छ।",
+                "explanationEnglish": "The first paragraph mentions \"at the TU International Stadium in Kirtipur.\" \nCitation: Lesson 2."
               },
               {
                 "id": "iii",
-                "questionEnglish": "What is the maximum number of events a single student can participate in?",
-                "correctAnswer": "A student can participate in a maximum of three individual events and one team sport.",
-                "explanationNepali": "सूचनामा भनिएको छ, \"A student can participate in a maximum of three individual events and one team sport.\"",
-                "explanationEnglish": "The notice states, \"A student can participate in a maximum of three individual events and one team sport.\" Citations: page 44 of All English Exams.pdf"
+                "questionEnglish": "Who remained unbeaten together with Mayan Yadav?",
+                "correctAnswer": "Harsh Thaker remained unbeaten alongside Mayan Yadav.",
+                "explanationNepali": "पाठमा भनिएको छ, \"Harsh Thaker... remained unbeaten alongside Mayan Yadav...\"",
+                "explanationEnglish": "The text states, \"Harsh Thaker... remained unbeaten alongside Mayan Yadav...\" \nCitation: Lesson 2."
               },
               {
                 "id": "iv",
-                "questionEnglish": "Where will the sports events be held?",
-                "correctAnswer": "They will be held at the school playground.",
-                "explanationNepali": "पाठले उल्लेख गरेको छ, \"All events will take place at the school playground.\"",
-                "explanationEnglish": "The text mentions, \"All events will take place at the school playground.\" Citations: page 44 of All English Exams.pdf"
+                "questionEnglish": "Which teams played the final of the first edition of NPL?",
+                "correctAnswer": "Janakpur Bolts and Sudurpaschim Royals played the final.",
+                "explanationNepali": "शीर्षक र पहिलो अनुच्छेदले जनकपुर बोल्ट्स र सुदूरपश्चिम रोयल्स बीचको फाइनल खेलको उल्लेख गर्दछ।",
+                "explanationEnglish": "The title and first paragraph mention the final between Janakpur Bolts and Sudurpaschim Royals. \nCitation: Lesson 2."
               },
               {
                 "id": "v",
-                "questionEnglish": "Who issued this notice?",
-                "correctAnswer": "The Sports In-charge issued this notice.",
-                "explanationNepali": "सूचनाको अन्त्यमा 'Sports In-charge' भनेर हस्ताक्षर गरिएको छ।",
-                "explanationEnglish": "The notice is signed by the 'Sports In-charge' at the end. Citations: page 44 of All English Exams.pdf"
+                "questionEnglish": "Was the journey of NPL exciting to the Sudurpaschim Royals? Why or why not?",
+                "correctAnswer": "It was likely exciting but disappointing at the end because they lost the final despite having beaten Janakpur twice before.",
+                "explanationNepali": "उनीहरूले पहिले दुई पटक जनकपुरलाई हराएका थिए (exciting), तर फाइनलमा हारे (disappointing)।",
+                "explanationEnglish": "They had beaten Janakpur twice before (exciting), but lost in the final (disappointing). \nCitation: Lesson 2."
               }
             ]
           }
@@ -279,125 +280,203 @@
         "title": "Read the following text and do the tasks.",
         "marks": 15,
         "passage": {
-          "title": "Flowers in Russian Culture",
-          "content": "Flowers are a staple item in the gift-giving world. Flower etiquette, in Russia, is strictly guided by a range of rules depending on the setting. If flowers are gifted outside these rules, it is possible to offend the receiver.\n\nRed carnations are filled with a deep sense of patriotism, originating from the 1917 February Revolution. In contrast, white carnations represent bad omens and are believed to strip holders of good luck and talent.\n\nIn Russian culture, yellow flowers symbolise sadness and dishonesty. Therefore, giving a bunch of yellow flowers to a beloved one represents an inevitable break-up. This is famously represented in the break-up song called 'yellow tulips.'\n\nChamomile is the national flower of Russia. Its slender white petals encapsulate a bright yellow centre. Russians believe that chamomile, in the form of tea and aromatherapy, offers a vast range of medical benefits. A lesser-known belief suggests that the chamomile is a mosquito and fly repellent. Among women, chamomile holds a fortune-telling function. The self-murmured pattern of 'he loves me, he loves me not' is repeated until the last petal is plucked.\n\nThe white calla lily is an elegant flower. However, bringing a white lily bouquet to a Russian wedding would not be a good idea. These flowers symbolise death and are believed to foreshadow the split of the newly-wed couple."
+          "title": "Pushpa Basnet",
+          "content": "Pushpa Basnet, born in 1984 in Kathmandu, Nepal, is a Nepali social worker and the founder/president of Early Childhood Development Center (ECDC) and Butterfly Home, non-profit organizations in Kathmandu, Nepal. Her organization works to strengthen the rights of children living behind bars with their incarcerated parents. Her efforts have been recognized by national and international media since she was nominated for CNN Heroes Award which she subsequently won in 2012. She has won the super Hero Award in 2016.\n\nBasnet started her career at the age of 21, while she was still an undergraduate in social work at St. Xavier's College, Kathmandu. As part of her college assignment, she visited the women in prison in Kathmandu. She was dismayed when she saw children with their parents behind the bars. She raised 70,000 rupees from her close friends and sister, and started a non-profit organization - The Early Childhood Development Center (ECDC) to provide a day care program to the children in 2005.\n\nIn 2007, she opened a residential home for kids to live outside the prison year around while still visiting their mothers on holidays. Today, she has assisted more than 137 children of incarcerated parents. She runs a day care center for the prison children and a residential home for older ones. She has also helped to provide alternative residence, school enrollment, free meals and medical care to them.\n\nBasnet has been awarded with CNN Hero Award 2012, which was held at the Shrine Auditorium in Los Angeles, California, on Sunday, 2nd December. Academy Award winning actress Susan Sarandon presented Basnet with the award. The show was aired LIVE through CNN.\n\nWhen earlier interviewed by CNN, she commented on her venture as: \"It is not fair for (these) children to live in the prison because they have not done anything wrong ... My mission is to make sure no child grows up behind prison walls.\""
         },
         "subSections": [
           {
             "id": "A",
-            "type": "matching",
-            "title": "Match the flowers in Column ‘A’ with their symbolism in Column ‘B’.",
-            "marks": 5,
-            "columns": {
-              "A": [
-                {"id": "i", "text": "Red carnation"},
-                {"id": "ii", "text": "White carnation"},
-                {"id": "iii", "text": "Yellow flowers"},
-                {"id": "iv", "text": "Chamomile"},
-                {"id": "v", "text": "White calla lily"}
-              ],
-              "B": [
-                {"id": "a", "text": "sadness and break-up"},
-                {"id": "b", "text": "patriotism"},
-                {"id": "c", "text": "death and split of a couple"},
-                {"id": "d", "text": "bad omens and bad luck"},
-                {"id": "e", "text": "national flower and fortune-telling"},
-                {"id": "f", "text": "long-lasting love"}
-              ]
-            },
-            "correctAnswer": [
-              {"A": "i", "B": "b"},
-              {"A": "ii", "B": "d"},
-              {"A": "iii", "B": "a"},
-              {"A": "iv", "B": "e"},
-              {"A": "v", "B": "c"}
-            ],
-            "explanationNepali": "यो मिलान पाठमा वर्णन गरिएका विभिन्न फूलहरू र तिनीहरूको रूसी संस्कृतिमा रहेको प्रतीकात्मक अर्थमा आधारित छ।",
-            "explanationEnglish": "This matching is based on the descriptions of different flowers and their symbolic meanings in Russian culture as provided in the text. Citations: chapter 9, pages 144-146."
-          },
-          {
-            "id": "B",
-            "type": "true_false",
-            "title": "Write ‘TRUE’ for true and ‘FALSE’ for the false statements.",
+            "type": "multiple_choice",
+            "title": "Choose and copy the correct answer from the given alternatives.",
             "marks": 5,
             "subQuestions": [
               {
                 "id": "i",
-                "questionEnglish": "In Russia, there are no specific rules for gifting flowers.",
-                "correctAnswer": "FALSE",
-                "explanationNepali": "पाठले स्पष्ट रूपमा भन्छ, \"Flower etiquette, in Russia, is strictly guided by a range of rules...\"",
-                "explanationEnglish": "The text explicitly states, \"Flower etiquette, in Russia, is strictly guided by a range of rules...\" Citations: chapter 9, page 144."
+                "questionEnglish": "ECDC and Butterfly Home are __________ organizations.",
+                "options": [
+                  "profit",
+                  "non-profit",
+                  "national",
+                  "international"
+                ],
+                "correctAnswer": "non-profit",
+                "explanationNepali": "पहिलो अनुच्छेदमा तिनीहरूलाई \"non-profit organizations\" भनेर चिनाइएको छ।",
+                "explanationEnglish": "The first paragraph identifies them as \"non-profit organizations.\" \nCitation: Lesson 15."
               },
               {
                 "id": "ii",
-                "questionEnglish": "Red carnations symbolize the February Revolution of 1917.",
-                "correctAnswer": "TRUE",
-                "explanationNepali": "पाठले रातो कार्नेशनको प्रतीकवाद \"originating from the 1917 February Revolution\" भनेर उल्लेख गरेको छ।",
-                "explanationEnglish": "The text mentions the symbolism of red carnations \"originating from the 1917 February Revolution.\" Citations: chapter 9, page 144."
+                "questionEnglish": "Pushpa Basnet won Super Hero award in __________.",
+                "options": [
+                  "1984",
+                  "2005",
+                  "2007",
+                  "2016"
+                ],
+                "correctAnswer": "2016",
+                "explanationNepali": "पाठमा भनिएको छ, \"She has won the super Hero Award in 2016.\"",
+                "explanationEnglish": "The text states, \"She has won the super Hero Award in 2016.\" \nCitation: Lesson 15."
               },
               {
                 "id": "iii",
-                "questionEnglish": "Yellow flowers are a good gift for a friend in Russia.",
-                "correctAnswer": "FALSE",
-                "explanationNepali": "रूसी संस्कृतिमा, पहेंलो फूलले \"sadness and dishonesty\" को प्रतीक हो, त्यसैले यो राम्रो उपहार होइन।",
-                "explanationEnglish": "In Russian culture, yellow flowers \"symbolise sadness and dishonesty,\" so they are not a good gift. Citations: chapter 9, page 145."
+                "questionEnglish": "Pushpa Basnet began her __________ at the age of twenty one.",
+                "options": [
+                  "social work",
+                  "college",
+                  "career",
+                  "organization"
+                ],
+                "correctAnswer": "career",
+                "explanationNepali": "पाठमा उल्लेख छ, \"Basnet started her career at the age of 21...\"",
+                "explanationEnglish": "The text mentions, \"Basnet started her career at the age of 21...\" \nCitation: Lesson 15."
               },
               {
                 "id": "iv",
-                "questionEnglish": "Chamomile is believed to have medicinal properties.",
-                "correctAnswer": "TRUE",
-                "explanationNepali": "पाठले बताउँछ कि क्यामोमाइलले \"a vast range of medical benefits\" प्रदान गर्दछ।",
-                "explanationEnglish": "The text states that chamomile offers \"a vast range of medical benefits.\" Citations: chapter 9, page 145."
+                "questionEnglish": "Pushpa Basnet collected a sum of 70000 rupees from __________.",
+                "options": [
+                  "close friends",
+                  "her sister",
+                  "close friends and sister",
+                  "women in prison"
+                ],
+                "correctAnswer": "close friends and sister",
+                "explanationNepali": "उनले \"raised 70,000 rupees from her close friends and sister\" भनेर उल्लेख गरिएको छ।",
+                "explanationEnglish": "It is mentioned that she \"raised 70,000 rupees from her close friends and sister.\" \nCitation: Lesson 15."
               },
               {
                 "id": "v",
-                "questionEnglish": "It is considered good luck to bring white calla lilies to a Russian wedding.",
-                "correctAnswer": "FALSE",
-                "explanationNepali": "पाठले चेतावनी दिन्छ कि सेतो लिलीले \"symbolise death\" र नवविवाहित जोडीको बिछोडको भविष्यवाणी गर्छ।",
-                "explanationEnglish": "The text warns that white lilies \"symbolise death\" and foreshadow the split of the newly-wed couple. Citations: chapter 9, page 146."
+                "questionEnglish": "Pushpa Basnet has provided __________ to the children in prison.",
+                "options": [
+                  "alternative residence",
+                  "alternative school",
+                  "paid meals",
+                  "awards"
+                ],
+                "correctAnswer": "alternative residence",
+                "explanationNepali": "तेस्रो अनुच्छेदमा उनले \"provide alternative residence...\" भनेर भनिएको छ।",
+                "explanationEnglish": "In the third paragraph, it says she helped to \"provide alternative residence...\" \nCitation: Lesson 15."
               }
             ]
           },
           {
+            "id": "B",
+            "type": "matching",
+            "title": "Match the meanings in 'Column A' with the correct words from the text in Column 'B'.",
+            "marks": 5,
+            "columns": {
+              "A": [
+                {
+                  "id": "i",
+                  "text": "worried, disappointed"
+                },
+                {
+                  "id": "ii",
+                  "text": "an important official job"
+                },
+                {
+                  "id": "iii",
+                  "text": "a group of people formed to achieve particular aim"
+                },
+                {
+                  "id": "iv",
+                  "text": "to be chosen for important role"
+                },
+                {
+                  "id": "v",
+                  "text": "suitable for living in; consisting of house"
+                }
+              ],
+              "B": [
+                {
+                  "id": "a",
+                  "text": "organization"
+                },
+                {
+                  "id": "b",
+                  "text": "recognized"
+                },
+                {
+                  "id": "c",
+                  "text": "nominated"
+                },
+                {
+                  "id": "d",
+                  "text": "dismayed"
+                },
+                {
+                  "id": "e",
+                  "text": "mission"
+                },
+                {
+                  "id": "f",
+                  "text": "residential"
+                }
+              ]
+            },
+            "correctAnswer": [
+              {
+                "A": "i",
+                "B": "d"
+              },
+              {
+                "A": "ii",
+                "B": "e"
+              },
+              {
+                "A": "iii",
+                "B": "a"
+              },
+              {
+                "A": "iv",
+                "B": "c"
+              },
+              {
+                "A": "v",
+                "B": "f"
+              }
+            ],
+            "explanationNepali": "यो मिलान पाठमा प्रयोग भएका शब्दहरूको अर्थमा आधारित छ।",
+            "explanationEnglish": "This matching is based on the meanings of the words as used in the text. \nCitation: Lesson 15."
+          },
+          {
             "id": "C",
             "type": "short_answer",
-            "title": "Answer the following questions.",
+            "title": "Answer the following questions in full sentences.",
             "marks": 5,
             "subQuestions": [
               {
                 "id": "i",
-                "questionEnglish": "What can happen if flowers are gifted incorrectly in Russia?",
-                "correctAnswer": "It is possible to offend the receiver.",
-                "explanationNepali": "पाठमा भनिएको छ, \"If flowers are gifted outside these rules, it is possible to offend the receiver.\"",
-                "explanationEnglish": "The text says, \"If flowers are gifted outside these rules, it is possible to offend the receiver.\" Citations: chapter 9, page 144."
+                "questionEnglish": "Who is Pushpa Basnet?",
+                "correctAnswer": "Pushpa Basnet is a Nepali social worker and the founder/president of ECDC and Butterfly Home.",
+                "explanationNepali": "पहिलो वाक्यले उनको परिचय दिन्छ।",
+                "explanationEnglish": "The first sentence introduces her. \nCitation: Lesson 15."
               },
               {
                 "id": "ii",
-                "questionEnglish": "Why should one avoid giving white carnations to performers?",
-                "correctAnswer": "Because they are believed to strip holders of good luck and talent.",
-                "explanationNepali": "सेतो कार्नेशनले धारकहरूबाट राम्रो भाग्य र प्रतिभा खोस्छ भन्ने विश्वास गरिन्छ।",
-                "explanationEnglish": "White carnations are believed to strip holders of good luck and talent. Citations: chapter 9, page 145."
+                "questionEnglish": "Why did Pushpa Basnet set up a social organization?",
+                "correctAnswer": "She set it up to help children living behind bars with their incarcerated parents.",
+                "explanationNepali": "उनले जेलमा रहेका आमाबाबुसँगै बस्ने बालबालिकालाई मद्दत गर्न संस्था स्थापना गरिन्।",
+                "explanationEnglish": "She set it up to help children living behind bars with their incarcerated parents. \nCitation: Lesson 15."
               },
               {
                 "id": "iii",
-                "questionEnglish": "What is the national flower of Russia?",
-                "correctAnswer": "The national flower of Russia is Chamomile.",
-                "explanationNepali": "पाठले स्पष्ट रूपमा बताउँछ, \"Chamomile is the national flower of Russia.\"",
-                "explanationEnglish": "The text clearly states, \"Chamomile is the national flower of Russia.\" Citations: chapter 9, page 145."
+                "questionEnglish": "What does ECDC stand for?",
+                "correctAnswer": "ECDC stands for Early Childhood Development Center.",
+                "explanationNepali": "पाठले ECDC को पूर्ण रूप दिन्छ।",
+                "explanationEnglish": "The text gives the full form of ECDC. \nCitation: Lesson 15."
               },
               {
                 "id": "iv",
-                "questionEnglish": "Apart from its medical benefits, what is another belief about chamomile?",
-                "correctAnswer": "It is believed to be a mosquito and fly repellent.",
-                "explanationNepali": "पाठले \"a lesser-known belief suggests that the chamomile is a mosquito and fly repellent\" उल्लेख गरेको छ।",
-                "explanationEnglish": "The text mentions \"a lesser-known belief suggests that the chamomile is a mosquito and fly repellent.\" Citations: chapter 9, page 145."
+                "questionEnglish": "Why was Pushpa Basnet given a 'CNN Hero Award'?",
+                "correctAnswer": "She was given the award for her efforts to strengthen the rights of children living in prison with their parents.",
+                "explanationNepali": "उनको प्रयास र योगदानको कदर गर्दै उनलाई यो अवार्ड दिइएको हो।",
+                "explanationEnglish": "She was awarded for her efforts and contribution. \nCitation: Lesson 15."
               },
               {
                 "id": "v",
-                "questionEnglish": "How is chamomile used for fortune-telling?",
-                "correctAnswer": "By plucking its petals one by one while repeating 'he loves me, he loves me not'.",
-                "explanationNepali": "'उसले मलाई माया गर्छ, उसले मलाई माया गर्दैन' भन्दै एउटा-एउटा पत्रदल तोडेर भविष्य बताउन प्रयोग गरिन्छ।",
-                "explanationEnglish": "It is used for fortune-telling by plucking its petals one by one while repeating 'he loves me, he loves me not'. Citations: chapter 9, page 146."
+                "questionEnglish": "Where was the 'CNN Hero Award' ceremony held?",
+                "correctAnswer": "It was held at the Shrine Auditorium in Los Angeles, California.",
+                "explanationNepali": "समारोह लस एन्जलसको श्राइन अडिटोरियममा भएको थियो।",
+                "explanationEnglish": "The ceremony took place at the Shrine Auditorium in Los Angeles. \nCitation: Lesson 15."
               }
             ]
           }
@@ -406,73 +485,71 @@
       {
         "questionNumber": 5,
         "type": "free_writing",
-        "title": "Imagine you have lost your English textbook in the school. Write a 'Lost and Found' notice to be put on the school notice board.",
+        "title": "Study the bar-diagram and interpret it in about 100 words using the clues given below it.",
         "marks": 5,
         "wordCount": 100,
         "clues": [
-          "what was lost (Grade 10 English Textbook)",
-          "where it was lost (library/playground)",
-          "when it was lost (date, day)",
-          "identification marks (name written, cover type)",
-          "request to return",
-          "contact person/place"
+          "XYZ school",
+          "grade 11 admission",
+          "150 in 2020",
+          "increases by 100 each year",
+          "lowest number in 2020",
+          "highest number in 2024",
+          "gradual progress",
+          "quality education"
         ],
         "sampleAnswer": {
-          "title": "LOST! LOST! LOST!",
-          "content": "I have lost my Grade 10 English Textbook somewhere in the school premises, most likely in the library or on the playground, yesterday (15th September, Friday) during the lunch break.\n\nThe book has a blue plastic cover and my name, 'Anjali Sharma, Class 10-B', is written on the first page. It is very important for my studies.\n\nAnyone who finds it is kindly requested to return it to the undersigned or deposit it at the school's reception. A suitable reward is promised.\n\nAnjali Sharma\nClass: 10, Section: 'B'",
-          "explanationNepali": "यो उत्तरले हराएको पाठ्यपुस्तकको लागि एक सूचना तयार गर्दछ। यसले के हरायो, कहाँ र कहिले हरायो, पहिचान चिन्ह, र फिर्ता गर्न अनुरोध जस्ता सबै आवश्यक विवरणहरू समावेश गर्दछ। यो स्पष्ट र संक्षिप्त छ, सूचनाको उद्देश्य पूरा गर्दै।",
-          "explanationEnglish": "This answer prepares a notice for a lost textbook. It includes all necessary details like what was lost, where and when it was lost, identification marks, and a request to return it. It is clear and concise, serving the purpose of a notice. Citations: chapter 12, page 208."
+          "title": "Interpretation of Bar Diagram: Grade 11 Admission",
+          "content": "The bar diagram illustrates the number of students admitted to Grade 11 at XYZ School over a period of five years, from 2020 to 2024. In 2020, the admission number was the lowest, standing at 150 students. However, the school saw a consistent upward trend in the following years. The number of admitted students increased by exactly 100 each year, reaching 250 in 2021, 350 in 2022, and 450 in 2023. By 2024, the admission reached its peak at 550 students. This gradual and steady progress indicates the growing popularity of XYZ School, likely due to its quality education and improved facilities.",
+          "explanationNepali": "यो उत्तरले बार डायग्रामको व्याख्या गर्दछ। यसले २०२० देखि २०२४ सम्मको भर्ना संख्यामा भएको वृद्धिलाई वर्णन गर्दछ, जहाँ हरेक वर्ष १०० ले वृद्धि भएको छ। यसले विद्यालयको प्रगति र लोकप्रियतालाई संकेत गर्दछ।",
+          "explanationEnglish": "This answer interprets the bar diagram. It describes the increase in admission numbers from 2020 to 2024, noting a steady rise of 100 students each year. This indicates the school's progress and popularity. \nCitation: Lesson 10."
         }
       },
       {
         "questionNumber": 6,
         "type": "free_writing",
-        "title": "Your friend was absent from school because he/she was sick. Write a message of sympathy in about 100 words.",
+        "title": "Write a formal message of condolence to be published in a newspaper on behalf of XYZ School using the given outlines.",
         "marks": 5,
         "wordCount": 100,
         "clues": [
-          "express sadness about illness",
-          "inquire about their health now",
-          "offer help with missed lessons/notes",
-          "wish for a speedy recovery",
-          "mention you miss them in school"
+          "Daman Nath Dhungana (15th Jan. 1942 - 17th Nov. 2024)",
+          "passed away at Frontline Hospital",
+          "liver related problem",
+          "Nepali politician and senior advocate",
+          "former speaker of House of Representatives",
+          "role in civil rights, peace process, democracy",
+          "heartfelt condolence"
         ],
         "sampleAnswer": {
-          "title": "Message of Sympathy",
-          "content": "Dear Rohan,\n\nI was so sad to hear that you have been sick with a fever and couldn't come to school. I was really worried about you. I hope you are feeling much better now and are on your way to a full recovery.\n\nWe all miss you in class, especially during the maths period! Don't worry about the missed lessons; I have taken notes for you and will help you catch up when you are back. Please take good care of yourself and get plenty of rest. I wish you a very speedy recovery and hope to see you back at school soon.\n\nGet well soon!\n\nYour friend,\nAayush",
-          "explanationNepali": "यो उत्तरले बिरामी साथीलाई पठाइने सहानुभूति सन्देश हो। यसले बिरामी भएकोमा दुःख व्यक्त गर्दछ, स्वास्थ्यको बारेमा सोधपुछ गर्दछ, छुटेको पाठमा मद्दत गर्ने प्रस्ताव गर्दछ, र शीघ्र स्वास्थ्य लाभको कामना गर्दछ। सन्देशको टोन हेरचाह र सहयोगी छ।",
-          "explanationEnglish": "This answer is a sympathy message to a sick friend. It expresses sadness about the illness, inquires about their health, offers help with missed lessons, and wishes for a speedy recovery. The tone is caring and supportive. Citations: chapter 11, page 187."
+          "title": "HEARTFELT CONDOLENCE",
+          "content": "We are deeply saddened by the untimely demise of Mr. Daman Nath Dhungana, a senior advocate, human rights activist, and the former Speaker of the House of Representatives, who passed away on 17th November 2024 at Frontline Hospital, Kathmandu, due to liver-related complications. He was 82.\n\nMr. Dhungana was a towering figure in Nepali politics, known for his pivotal role in the people's movement, the peace process, and the protection of civil rights and democracy. His contribution to the nation as the Speaker from 1991 to 1994 will always be remembered.\n\nWe extend our heartfelt condolences to the bereaved family and pray for the eternal peace of the departed soul.\n\nXYZ School Family",
+          "explanationNepali": "यो उत्तरले दमननाथ ढुङ्गानाको निधनमा समवेदना सन्देश प्रस्तुत गर्दछ। यसले उनको मृत्युको विवरण, उनको राजनीतिक र सामाजिक योगदान, र शोकाकुल परिवारप्रति समवेदना व्यक्त गर्दछ।",
+          "explanationEnglish": "This answer presents a condolence message on the passing of Daman Nath Dhungana. It includes details of his death, his political and social contributions, and expresses sympathy to the bereaved family. \nCitation: Lesson 11."
         }
       },
       {
         "questionNumber": 7,
         "type": "free_writing",
-        "title": "Write a couple of paragraphs expressing your views on 'The Importance of Games and Sports in a Student's Life' in about 150 words.",
+        "title": "You are Arsey Chaudhary. You want to borrow a book for a week from your school library. Prepare a dialogue in at least six exchanges between you and the librarian in about 150 words.",
         "marks": 6,
         "wordCount": 150,
         "sampleAnswer": {
-          "content": "Games and sports are an indispensable part of a student's life. While academic education is crucial for intellectual development, sports are essential for physical fitness and mental well-being. Engaging in sports helps students build strong muscles and bones, improve cardiovascular health, and maintain a healthy weight. This physical activity provides a much-needed break from the sedentary routine of classroom learning, refreshing the mind and improving concentration. Therefore, schools should treat sports not as a mere extracurricular activity but as a vital component of the curriculum.\n\nFurthermore, the benefits of sports extend beyond physical health. They instill valuable life skills such as teamwork, discipline, leadership, and resilience. When students play as part of a team, they learn to cooperate and communicate with others to achieve a common goal. They also learn to handle both victory and defeat gracefully, which is a crucial lesson for life. Participating in sports builds confidence and sportsmanship, shaping students into well-rounded individuals who are prepared to face the challenges of the world.",
-          "explanationNepali": "यो उत्तरले विद्यार्थी जीवनमा खेलकुदको महत्त्वबारे दुई अनुच्छेदमा विचार प्रस्तुत गर्दछ। पहिलो अनुच्छेदले शारीरिक र मानसिक स्वास्थ्यमा हुने फाइदाहरूमा केन्द्रित छ। दोस्रो अनुच्छेदले टिमवर्क, अनुशासन र लचिलोपन जस्ता जीवन कौशलहरूको विकासमा खेलकुदको भूमिकाबारे छलफल गर्दछ।",
-          "explanationEnglish": "This answer presents views on the importance of sports in a student's life in two paragraphs. The first paragraph focuses on the benefits for physical and mental health. The second paragraph discusses the role of sports in developing life skills like teamwork, discipline, and resilience. Citations: chapter 10, page 160."
+          "content": "Arsey: Good morning, sir. I would like to borrow a book.\n\nLibrarian: Good morning, Arsey. Sure, which book are you looking for?\n\nArsey: I need 'The Alchemist' by Paulo Coelho. Is it available?\n\nLibrarian: Let me check the system. Yes, we have one copy available. Here it is.\n\nArsey: Thank you, sir. For how many days can I keep it?\n\nLibrarian: You can borrow it for one week. You must return it by next Tuesday.\n\nArsey: Okay, sir. What happens if I am late in returning it?\n\nLibrarian: There is a fine of Rs. 5 per day for late returns. So please be on time.\n\nArsey: I understand. I will return it on time. Here is my library card.\n\nLibrarian: Thank you. I have issued the book to your account. Happy reading!",
+          "explanationNepali": "यो उत्तरले विद्यार्थी र लाइब्रेरियन बीचको संवाद प्रस्तुत गर्दछ। विद्यार्थीले किताब माग्छ, लाइब्रेरियनले उपलब्धता जाँच गर्छ, नियमहरू (समयसीमा, जरिवाना) बताउँछ, र किताब जारी गर्छ।",
+          "explanationEnglish": "This answer presents a dialogue between a student and a librarian. The student asks for a book, the librarian checks availability, explains the rules (deadline, fine), and issues the book. \nCitation: Lesson 5."
         }
       },
       {
         "questionNumber": 8,
         "type": "free_writing",
-        "title": "Write a short biography of a historical figure from Nepal (e.g., Amar Singh Thapa, Bhrikuti, Arniko) in about 200 words.",
+        "title": "Write an essay expressing your opinion on the effects of junk food on human health in about 200 words.",
         "marks": 8,
-        "clues": [
-          "name and era",
-          "major achievements/contributions",
-          "role in history",
-          "character/qualities",
-          "legacy/why they are remembered"
-        ],
+        "wordCount": 200,
         "sampleAnswer": {
-          "title": "Arniko: The Great Nepali Architect",
-          "content": "Arniko was a brilliant Nepali architect and artist who lived in the 13th century. He is celebrated for his exceptional skills that took Nepali art and architecture to the international stage, particularly to Tibet and China. At a young age, Arniko mastered the arts of painting, sculpture, and architecture. His talent was so profound that he was chosen to lead a delegation of eighty artisans to Tibet to construct a golden stupa.\n\nHis work in Tibet was so impressive that he was invited by the Mongol emperor Kublai Khan to his court in China. In China, Arniko designed and built numerous magnificent structures, including the famous White Stupa at the Miaoying Temple in Beijing, which still stands today as a testament to his genius. He also excelled in painting and sculpture, creating beautiful portraits and statues. Arniko was not just an artist; he was also a cultural ambassador who created a strong bond between Nepal, Tibet, and China through art.\n\nHe is remembered for his incredible artistic talent, leadership, and his role in spreading Nepali artistic traditions across Asia. His legacy continues to inspire artists and architects today.",
-          "explanationNepali": "यो उत्तरले १३औं शताब्दीका नेपाली वास्तुकार अरनिकोको जीवनी प्रस्तुत गर्दछ। यसले उनको तिब्बत र चीनमा गरेका मुख्य उपलब्धिहरू, जस्तै बेइजिङको सेतो स्तूप, र नेपाली कला फैलाउनमा उनको भूमिकालाई हाइलाइट गर्दछ। जीवनीले उनको कलात्मक प्रतिभा र सांस्कृतिक राजदूतको रूपमा उनको विरासतलाई जोड दिन्छ।",
-          "explanationEnglish": "This answer provides a biography of the 13th-century Nepali architect, Arniko. It highlights his major achievements in Tibet and China, such as the White Stupa in Beijing, and his role in spreading Nepali art. The biography emphasizes his artistic genius and his legacy as a cultural ambassador. Citations: chapter 15, page 248."
+          "title": "The Harmful Effects of Junk Food",
+          "content": "In recent years, the consumption of junk food has skyrocketed, becoming a staple in the diet of many, especially the youth. While these foods are tasty and convenient, they pose a significant threat to human health. Junk food is typically defined as food that is high in calories from sugar or fat, with little dietary fiber, protein, vitamins, minerals, or other important forms of nutritional value.\n\nThe most immediate effect of consuming junk food is weight gain and obesity. These foods are calorie-dense but nutrient-poor, leading to an excessive intake of energy that the body stores as fat. Obesity opens the door to a host of other chronic diseases, including type 2 diabetes, cardiovascular diseases, and hypertension. The high sodium content in processed foods can raise blood pressure, putting strain on the heart.\n\nFurthermore, junk food can negatively impact mental health. Studies have suggested a link between poor diet and depression or anxiety. The lack of essential nutrients affects brain function and energy levels, leading to fatigue and poor concentration. To maintain a healthy life, it is crucial to limit the intake of junk food and opt for a balanced diet rich in fruits, vegetables, and whole grains. Health is wealth, and we must not compromise it for momentary taste.",
+          "explanationNepali": "यो उत्तरले जंक फुडका नकारात्मक प्रभावहरूबारे निबन्ध प्रस्तुत गर्दछ। यसले मोटोपना, मधुमेह, मुटुको रोग जस्ता शारीरिक समस्याहरू र मानसिक स्वास्थ्यमा पर्ने असरहरूलाई समेट्छ। अन्त्यमा, सन्तुलित भोजनको महत्त्वमा जोड दिइएको छ।",
+          "explanationEnglish": "This answer provides an essay on the negative effects of junk food. It covers physical issues like obesity, diabetes, and heart disease, as well as impacts on mental health. It concludes by emphasizing the importance of a balanced diet. \nCitation: Lesson 6."
         }
       },
       {
@@ -484,50 +561,50 @@
           {
             "id": "i",
             "type": "reproduce",
-            "questionEnglish": "Nothing is impossible, __________? (Add a correct question tag.)",
-            "correctAnswer": "Nothing is impossible, is it?",
-            "explanationNepali": "'Nothing' एक नकारात्मक शब्द हो, त्यसैले प्रश्न ट्याग सकारात्मक हुनुपर्छ। 'Nothing' को लागि सर्वनाम 'it' प्रयोग गरिन्छ।",
-            "explanationEnglish": "'Nothing' is a negative word, so the question tag must be positive. The pronoun for 'Nothing' is 'it'. Citations: chapter 14, page 237."
+            "questionEnglish": "Anita never gets angry, __________? (Add a correct question tag.)",
+            "correctAnswer": "Anita never gets angry, does she?",
+            "explanationNepali": "'never' नकारात्मक शब्द हो, त्यसैले ट्याग सकारात्मक हुन्छ। 'gets' (v5) को लागि 'does' प्रयोग गरिन्छ।",
+            "explanationEnglish": "'never' is a negative word, so the tag is positive. 'does' is used for 'gets' (v5). \nCitation: Lesson 14."
           },
           {
             "id": "ii",
             "type": "reproduce",
-            "questionEnglish": "I had my car repaired. (Change into active voice with an agent.)",
-            "correctAnswer": "I had a mechanic repair my car.",
-            "explanationNepali": "Causative verb 'have' को active voice संरचना 'have + agent (person) + bare infinitive (v1)' हुन्छ।",
-            "explanationEnglish": "The active voice structure with the causative verb 'have' is 'have + agent (person) + bare infinitive (v1)'. Citations: chapter 18, page 307."
+            "questionEnglish": "By the time I reached home, my father ______ (leave) already home. (Use the correct form of the verb 'leave'.)",
+            "correctAnswer": "By the time I reached home, my father had already left home.",
+            "explanationNepali": "भूतकालका दुई घटनाहरूमध्ये, पहिले भएको घटना (बुबा निस्केको) को लागि Past Perfect (had left) प्रयोग गरिन्छ।",
+            "explanationEnglish": "For the earlier of two past actions (father leaving), the Past Perfect (had left) is used. \nCitation: Lesson 9."
           },
           {
             "id": "iii",
             "type": "reproduce",
-            "questionEnglish": "He said, \"I will do it tomorrow.\" (Change into indirect speech.)",
-            "correctAnswer": "He said that he would do it the next day.",
-            "explanationNepali": "अप्रत्यक्ष बोलीमा, 'will' लाई 'would' मा र 'tomorrow' लाई 'the next day' मा परिवर्तन गरिन्छ।",
-            "explanationEnglish": "In indirect speech, 'will' changes to 'would' and 'tomorrow' changes to 'the next day'. Citations: chapter 1, page 14."
+            "questionEnglish": "Sunaina came late to school. (Change into negative.)",
+            "correctAnswer": "Sunaina did not come late to school.",
+            "explanationNepali": "Simple Past (came) लाई नकारात्मक बनाउन 'did not' + v1 (come) प्रयोग गरिन्छ।",
+            "explanationEnglish": "To make Simple Past (came) negative, 'did not' + v1 (come) is used. \nCitation: Lesson 11."
           },
           {
             "id": "iv",
             "type": "reproduce",
-            "questionEnglish": "She is used to ________ (wake) up early. (Use the correct form of the verb 'wake' to complete the sentence.)",
-            "correctAnswer": "She is used to waking up early.",
-            "explanationNepali": "वाक्यांश 'be used to' पछि क्रियाको gerund form (v-ing) को प्रयोग हुन्छ, जसले बानीलाई जनाउँछ।",
-            "explanationEnglish": "The phrase 'be used to' is followed by the gerund form (v-ing) of the verb to indicate a habit. Citations: chapter 9, page 140."
+            "questionEnglish": "Krishna visits his grandfather once a month. (Change into 'How often' question.)",
+            "correctAnswer": "How often does Krishna visit his grandfather?",
+            "explanationNepali": "'once a month' (frequency) बारे सोध्न 'How often' प्रयोग गरिन्छ।",
+            "explanationEnglish": "'How often' is used to ask about frequency ('once a month'). \nCitation: Lesson 18."
           },
           {
             "id": "v",
             "type": "reproduce",
-            "questionEnglish": "He is so weak that he cannot walk. (Rewrite using 'too...to'.)",
-            "correctAnswer": "He is too weak to walk.",
-            "explanationNepali": "'so...that...cannot' लाई 'too...to' को संरचना प्रयोग गरेर प्रतिस्थापन गर्न सकिन्छ।",
-            "explanationEnglish": "'so...that...cannot' can be replaced by the structure 'too...to'. Citations: chapter 11, page 185."
+            "questionEnglish": "The teacher said to the students, \"Don't spend your valuable time on mobile.\" (Change into indirect speech.)",
+            "correctAnswer": "The teacher forbade the students to spend their valuable time on mobile. OR The teacher advised the students not to spend their valuable time on mobile.",
+            "explanationNepali": "Negative imperative लाई 'forbade...to' वा 'advised...not to' प्रयोग गरेर परिवर्तन गरिन्छ।",
+            "explanationEnglish": "Negative imperative is changed using 'forbade...to' or 'advised...not to'. \nCitation: Lesson 3."
           },
           {
             "id": "vi",
             "type": "reproduce",
-            "questionEnglish": "Who broke this glass? (Change into passive voice.)",
-            "correctAnswer": "By whom was this glass broken?",
-            "explanationNepali": "'Who' बाट सुरु हुने प्रश्नलाई passive voice मा परिवर्तन गर्दा, यो 'By whom' बाट सुरु हुन्छ र प्रश्नवाचक संरचना कायम रहन्छ।",
-            "explanationEnglish": "When changing a question starting with 'Who' to the passive voice, it begins with 'By whom' and the interrogative structure is maintained. Citations: chapter 8, page 131."
+            "questionEnglish": "The culprit was sent to prison by the police. (Change into active voice.)",
+            "correctAnswer": "The police sent the culprit to prison.",
+            "explanationNepali": "Passive 'was sent' (Simple Past) लाई Active मा लैजाँदा 'sent' (v2) हुन्छ। Agent 'The police' विषय बन्छ।",
+            "explanationEnglish": "Passive 'was sent' (Simple Past) becomes 'sent' (v2) in Active. The agent 'The police' becomes the subject. \nCitation: Lesson 8."
           }
         ]
       },
@@ -536,67 +613,67 @@
         "type": "cloze_test",
         "title": "Choose and copy the correct answers from the brackets to complete the given text. (Rewriting the text is not compulsory.)",
         "marks": 5,
-        "passage": "My sister works (a) _____ (in/at/on/for) a hospital. She is (b) _____ (a/an/the/no article) nurse. Yesterday, she came home very late. She (c) _____ (looked/was looking/had looked/has looked) very tired. I asked her, \"Why are you so late?\" She said that she (d) _____ (has to/had to/must/should) look after a serious patient. The patient (e) _____ (was brought/brought/had brought/was being brought) to the hospital in the morning. (f) _____ (In spite of/Although/Because/Therefore) her tiredness, she cooked dinner for us. She is very good at cooking, (g) _____ (is she/isn't she/does she/doesn't she)? If she had not been a nurse, she (h) _____ (will be/would be/would have been/had been) a great chef. She often gets her colleagues (i) _____ (to taste/taste/tasted/tasting) her new recipes. She is (j) _____ (loved/is loving/loves/was loved) by everyone in her office.",
+        "passage": "One evening in December I decided to see (a) _____ (a/an/the/no article) my friend, Renuka. Renuka (b) _____ (whose/who/whom/which) everyone called a notorious woman decided to celebrate her 25th birthday. She invited her friends and relatives (c) _____ (to/for/in/of) attend the party. I met her and (d) _____ (wished/to wish/wishing/wishes) her a happy birthday. She was not happy (e) _____ (although/because/in spite of/otherwise) the memorable moment. Suddenly, a lady police officer appeared. She made Renuka (f) _____ (accepts/accepted/accept/accepting) the case of damaging the minister's car because of her reckless driving. She (g) _____ (takes/was being taken/was taken/had taken) to the police station. In the police station, the Deputy Superintendent of police said, \"Renuka (h) _____ (May/must/can/will) pay for the harm she has made.\" If Renuka had driven her motorcycle carefully, she (i) _____ (will not cause/would not cause/would not have caused/would not have been casued) the accident. Finally, she got the (j) _____ (bad/as bad as/worse/worst) penalty.",
         "gaps": [
           {
             "id": "a",
-            "correctAnswer": "in",
-            "explanationNepali": "अस्पताल जस्ता भवन भित्र काम गर्ने ठाउँ जनाउन 'in' preposition को प्रयोग गरिन्छ।",
-            "explanationEnglish": "The preposition 'in' is used for a place of work inside a building, like a hospital. Citations: chapter 15, page 259."
+            "correctAnswer": "no article",
+            "explanationNepali": "Possessive pronoun 'my' अगाडि article प्रयोग हुँदैन।",
+            "explanationEnglish": "No article is used before the possessive pronoun 'my'. \nCitation: Lesson 7."
           },
           {
             "id": "b",
-            "correctAnswer": "a",
-            "explanationNepali": "'nurse' एक singular countable noun हो र यो consonant ध्वनि /n/ बाट सुरु हुन्छ, त्यसैले 'a' article को प्रयोग हुन्छ।",
-            "explanationEnglish": "'nurse' is a singular countable noun beginning with a consonant sound /n/, so the article 'a' is used. Citations: chapter 7, page 120."
+            "correctAnswer": "whom",
+            "explanationNepali": "यहाँ 'Renuka' object को रूपमा छ (everyone called *her*), त्यसैले 'whom' प्रयोग गरिन्छ।",
+            "explanationEnglish": "Here 'Renuka' functions as an object (everyone called *her*), so 'whom' is used. \nCitation: Lesson 15."
           },
           {
             "id": "c",
-            "correctAnswer": "looked",
-            "explanationNepali": "कथा भूतकालमा भएको घटनाको वर्णन गरिरहेको छ, त्यसैले simple past tense 'looked' उपयुक्त छ।",
-            "explanationEnglish": "The story is narrating a past event, so the simple past tense 'looked' is appropriate. Citations: chapter 9, page 147."
+            "correctAnswer": "to",
+            "explanationNepali": "उद्देश्य जनाउन infinitive 'to attend' को प्रयोग हुन्छ।",
+            "explanationEnglish": "The infinitive 'to attend' is used to show purpose. \nCitation: Lesson 18."
           },
           {
             "id": "d",
-            "correctAnswer": "had to",
-            "explanationNepali": "अप्रत्यक्ष बोलीमा, simple past (said) पछि, 'have to' लाई 'had to' मा परिवर्तन गरिन्छ।",
-            "explanationEnglish": "In indirect speech, following the simple past (said), 'have to' is changed to 'had to'. Citations: chapter 11, page 183."
+            "correctAnswer": "wished",
+            "explanationNepali": "'met' (v2) सँग समानान्तर हुन 'wished' (v2) प्रयोग गरिन्छ।",
+            "explanationEnglish": "'wished' (v2) is used to maintain parallel structure with 'met' (v2). \nCitation: Lesson 9."
           },
           {
             "id": "e",
-            "correctAnswer": "had been brought",
-            "explanationNepali": "दुईवटा भूतकालका कार्यहरू मध्ये, पहिले भएको कार्य (बिरामी ल्याइएको) को लागि past perfect passive ('had been brought') को प्रयोग हुन्छ।",
-            "explanationEnglish": "When there are two past actions, the past perfect passive ('had been brought') is used for the action that happened earlier (the patient was brought). Citations: chapter 9, page 147."
+            "correctAnswer": "in spite of",
+            "explanationNepali": "'in spite of' पछि noun phrase ('the memorable moment') आउँछ र यसले विरोधाभास देखाउँछ।",
+            "explanationEnglish": "'in spite of' takes a noun phrase and shows contrast. \nCitation: Lesson 13."
           },
           {
             "id": "f",
-            "correctAnswer": "In spite of",
-            "explanationNepali": "'In spite of' पछि एक संज्ञा वाक्यांश ('her tiredness') आउँछ र यसले विरोधाभास देखाउँछ।",
-            "explanationEnglish": "'In spite of' is followed by a noun phrase ('her tiredness') and shows contrast. Citations: chapter 13, page 225."
+            "correctAnswer": "accept",
+            "explanationNepali": "Causative verb 'make' ले active voice मा bare infinitive (v1) लिन्छ।",
+            "explanationEnglish": "The causative verb 'make' takes the bare infinitive (v1) in the active voice. \nCitation: Lesson 18."
           },
           {
             "id": "g",
-            "correctAnswer": "isn't she",
-            "explanationNepali": "वाक्य 'She is very good...' सकारात्मक छ र 'be' verb प्रयोग गर्दछ, त्यसैले प्रश्न ट्याग नकारात्मक ('isn't she?') हुनुपर्छ।",
-            "explanationEnglish": "The statement 'She is very good...' is positive and uses the 'be' verb, so the tag must be negative ('isn't she?'). Citations: chapter 14, page 237."
+            "correctAnswer": "was taken",
+            "explanationNepali": "यो passive voice मा छ (उनीलाई लगियो), र भूतकालको घटना हो।",
+            "explanationEnglish": "It is in the passive voice (she was taken), referring to a past event. \nCitation: Lesson 8."
           },
           {
             "id": "h",
-            "correctAnswer": "would have been",
-            "explanationNepali": "यो तेस्रो प्रकारको conditional वाक्य हो (If + past perfect, ...would have + v3), जसले भूतकालको एक असम्भव अवस्थालाई जनाउँछ।",
-            "explanationEnglish": "This is a Type 3 conditional sentence (If + past perfect, ...would have + v3), which refers to an unreal past condition. Citations: chapter 5, page 80."
+            "correctAnswer": "must",
+            "explanationNepali": "'must' ले बाध्यता (obligation) जनाउँछ।",
+            "explanationEnglish": "'must' indicates obligation. \nCitation: Lesson 4."
           },
           {
             "id": "i",
-            "correctAnswer": "to taste",
-            "explanationNepali": "Causative verb 'get' को संरचना 'get + agent (person) + to-infinitive' हुन्छ।",
-            "explanationEnglish": "The structure for the causative verb 'get' is 'get + agent (person) + to-infinitive'. Citations: chapter 18, page 307."
+            "correctAnswer": "would not have caused",
+            "explanationNepali": "यो Type 3 Conditional हो (If + past perfect ... would have + v3)।",
+            "explanationEnglish": "This is a Type 3 Conditional (If + past perfect ... would have + v3). \nCitation: Lesson 5."
           },
           {
             "id": "j",
-            "correctAnswer": "is loved",
-            "explanationNepali": "यो वाक्य passive voice मा छ र simple present tense मा छ, जहाँ 'everyone' ले कार्य गर्दछ। संरचना 'is + v3' हो।",
-            "explanationEnglish": "This is a passive voice sentence in the simple present tense, where 'everyone' is the agent. The structure is 'is + v3'. Citations: chapter 8, page 131."
+            "correctAnswer": "worst",
+            "explanationNepali": "Superlative degree 'worst' यहाँ सबैभन्दा खराब दण्ड जनाउन प्रयोग गरिन्छ।",
+            "explanationEnglish": "The superlative 'worst' is used to indicate the most severe penalty. \nCitation: Lesson 10."
           }
         ]
       }

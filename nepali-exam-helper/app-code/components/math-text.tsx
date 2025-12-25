@@ -26,7 +26,7 @@ export function MathText({ text, className }: MathTextProps) {
         <span className={className}>
             {parts.map((part, index) => {
                 if (part.type === "text") {
-                    return <span key={index}>{part.content}</span>
+                    return <span key={index} style={{ whiteSpace: 'pre-line' }}>{part.content}</span>
                 } else if (part.type === "inline-math") {
                     return (
                         <span key={index} className="inline-block align-middle">

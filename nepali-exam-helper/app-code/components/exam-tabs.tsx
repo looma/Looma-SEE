@@ -521,6 +521,64 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                       sectionId: section.id,
                     }))
                   }
+                } else if (section.type === 'ordering' && section.sentences && section.correctAnswer) {
+                  // Grade ordering questions automatically
+                  const sectionAnswer = userAnswer[section.id]
+                  if (sectionAnswer && typeof sectionAnswer === 'object') {
+                    const correctOrder = section.correctAnswer || [] // Array of item IDs in correct order
+                    const sentences = section.sentences || section.items || []
+
+                    // Convert user answers (item.id -> position) to ordered array
+                    const userOrderArray: string[] = []
+                    sentences.forEach((item: any) => {
+                      const position = sectionAnswer[item.id]
+                      if (position) {
+                        const posIndex = parseInt(position) - 1 // Convert 1-based to 0-based
+                        userOrderArray[posIndex] = item.id
+                      }
+                    })
+
+                    // Filter out undefined entries and get the user's order
+                    const userOrder = userOrderArray.filter(Boolean)
+
+                    // Count correct positions
+                    let correctCount = 0
+                    const totalItems = correctOrder.length
+
+                    correctOrder.forEach((correctId: string, index: number) => {
+                      if (userOrder[index] === correctId) {
+                        correctCount++
+                      }
+                    })
+
+                    // Calculate marks per item
+                    const marksPerItem = section.marks && totalItems > 0
+                      ? Math.round((section.marks / totalItems) * 10) / 10
+                      : 1
+                    const score = correctCount * marksPerItem
+                    const feedback = correctCount === totalItems
+                      ? `Perfect! All ${totalItems} items are in the correct order.`
+                      : correctCount > 0
+                        ? `Partially correct. ${correctCount} out of ${totalItems} items are in the correct position.`
+                        : `Incorrect. None of the items are in the correct position.`
+
+                    // Format user answer for display
+                    const userAnswerDisplay = userOrder.map((id, idx) => {
+                      const sentence = sentences.find((s: any) => s.id === id)
+                      return `${idx + 1}. ${sentence?.text || id}`
+                    }).join('\n')
+
+                    gradingPromises.push(Promise.resolve({
+                      id: `${(question as any).id}_${section.id}`,
+                      score: score,
+                      feedback: feedback,
+                      question: section.title || 'Ordering question',
+                      studentAnswer: userAnswerDisplay || 'No answer provided',
+                      group: "English",
+                      questionId: (question as any).id,
+                      sectionId: section.id,
+                    }))
+                  }
                 } else if (section.subQuestions) {
                   section.subQuestions.forEach((subQ: any) => {
                     const sectionAnswer = userAnswer[section.id]
@@ -656,7 +714,11 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
               })
             } else if ((question as any).type === 'free_writing') {
               // Handle free writing questions
-              const userWritingAnswer = userAnswer
+              // free_writing answers are stored as { content: "..." } 
+              const userWritingAnswer = typeof userAnswer === 'object' && userAnswer?.content
+                ? userAnswer.content
+                : (typeof userAnswer === 'string' ? userAnswer : null)
+
               if (userWritingAnswer && typeof userWritingAnswer === 'string' && userWritingAnswer.trim().length > 0) {
                 gradingPromises.push(
                   fetch("/api/grade", {
