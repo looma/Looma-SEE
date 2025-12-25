@@ -632,7 +632,7 @@ export function ResultsCard({
                                         <Lightbulb className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
                                         <div className="flex-1">
                                           <p className="font-semibold text-blue-800 mb-1">प्रतिक्रिया:</p>
-                                          <p className="text-blue-700 leading-relaxed">{fb.feedback}</p>
+                                          <p className="text-blue-700 leading-relaxed whitespace-pre-wrap break-words">{fb.feedback}</p>
                                         </div>
                                       </div>
                                     </div>
@@ -806,7 +806,7 @@ export function ResultsCard({
                                   <Lightbulb className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
                                   <div className="flex-1">
                                     <p className="font-semibold text-blue-800 mb-1">प्रतिक्रिया:</p>
-                                    <p className="text-blue-700 leading-relaxed">{fb.feedback}</p>
+                                    <p className="text-blue-700 leading-relaxed whitespace-pre-wrap break-words">{fb.feedback}</p>
                                   </div>
                                 </div>
                               </div>
@@ -928,7 +928,7 @@ export function ResultsCard({
                                     <Lightbulb className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
                                     <div className="flex-1">
                                       <p className="font-semibold text-blue-800 mb-1">Feedback:</p>
-                                      <p className="text-blue-700 leading-relaxed">{fb.feedback}</p>
+                                      <p className="text-blue-700 leading-relaxed whitespace-pre-wrap break-words">{fb.feedback}</p>
                                     </div>
                                   </div>
                                 </div>
@@ -1332,7 +1332,7 @@ export function ResultsCard({
                                                   <Lightbulb className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
                                                   <div className="flex-1">
                                                     <p className="font-semibold text-blue-800 mb-1">Feedback / प्रतिक्रिया:</p>
-                                                    <p className="text-blue-700">{feedback.feedback}</p>
+                                                    <p className="text-blue-700 whitespace-pre-wrap break-words">{feedback.feedback}</p>
                                                   </div>
                                                 </div>
                                               </div>
@@ -1411,7 +1411,7 @@ export function ResultsCard({
                                         <Lightbulb className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
                                         <div className="flex-1">
                                           <p className="font-semibold text-blue-800 mb-1">Feedback / प्रतिक्रिया:</p>
-                                          <p className="text-blue-700">
+                                          <p className="text-blue-700 whitespace-pre-wrap break-words">
                                             {hasAIFeedback
                                               ? questionFeedbacks.map((fb) => fb.feedback).join(" ")
                                               : fallbackFeedback}

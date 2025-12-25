@@ -88,6 +88,9 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
         setAnswers(progress.answers)
         setLastSaved(new Date(progress.lastUpdated))
       }
+
+      // Always scroll to top when loading/resuming a test
+      window.scrollTo({ top: 0, behavior: 'instant' })
     }
 
     loadProgress()

@@ -180,10 +180,7 @@ Respond with JSON only: {"score": <0-${marks}>, "feedback": "<brief feedback>"}`
           parsedResponse.feedback = "AI feedback unavailable"
         }
 
-        // Trim feedback to reasonable length
-        if (parsedResponse.feedback.length > 200) {
-          parsedResponse.feedback = parsedResponse.feedback.substring(0, 197) + "..."
-        }
+        // No length limit on feedback - display full AI response
 
         console.log("✅ Final grading result:", {
           score: parsedResponse.score,
