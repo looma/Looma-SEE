@@ -127,9 +127,11 @@ export function GroupA({ questions, answers, onAnswerChange, progress, language 
                       <div className="text-slate-700 mt-2 leading-relaxed">
                         <MathText text={question.english} />
                       </div>
-                      <div className="text-slate-700 mt-1 leading-relaxed">
-                        <MathText text={question.nepali} />
-                      </div>
+                      {question.nepali && question.nepali !== question.english && (
+                        <div className="text-slate-700 mt-1 leading-relaxed">
+                          <MathText text={question.nepali} />
+                        </div>
+                      )}
                     </div>
                   </div>
                   <Badge variant="outline" className="ml-3">
@@ -159,9 +161,11 @@ export function GroupA({ questions, answers, onAnswerChange, progress, language 
                           <span className="font-medium mr-2">({option.id})</span>
                           <MathText text={option.english} />
                         </div>
-                        <div className="mt-0.5">
-                          <MathText text={option.nepali} />
-                        </div>
+                        {option.nepali && option.nepali !== option.english && (
+                          <div className="mt-0.5">
+                            <MathText text={option.nepali} />
+                          </div>
+                        )}
                       </Label>
                     </div>
                   ))}

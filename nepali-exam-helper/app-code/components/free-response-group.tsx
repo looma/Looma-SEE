@@ -183,9 +183,11 @@ export function FreeResponseGroup({
                       <div className="text-slate-700 mt-2 leading-relaxed">
                         <MathText text={question.english} />
                       </div>
-                      <div className="text-slate-700 mt-1 leading-relaxed">
-                        <MathText text={question.nepali} />
-                      </div>
+                      {question.nepali && question.nepali !== question.english && (
+                        <div className="text-slate-700 mt-1 leading-relaxed">
+                          <MathText text={question.nepali} />
+                        </div>
+                      )}
                     </div>
                   </div>
                   <Badge variant="outline" className="ml-3">
