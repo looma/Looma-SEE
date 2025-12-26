@@ -220,7 +220,7 @@ export function ResultsCard({
                 <AccordionContent className="px-4 pb-4">
                   <div className="space-y-4">
                     {/* Question in Nepali with proper spacing */}
-                    <div className="text-sm text-slate-600 italic mb-3 leading-relaxed"><MathText text={question.nepali} /></div>
+                    <div className="text-slate-600 mb-3 leading-relaxed"><MathText text={question.nepali} /></div>
 
                     {/* User's Answer Section with better formatting */}
                     <div
@@ -237,9 +237,9 @@ export function ResultsCard({
                           <p className="text-slate-700 font-medium">
                             ({userAnswer}) <MathText text={userOption?.english || ""} />
                           </p>
-                          {userOption?.nepali && userOption.nepali !== userOption.english && (
-                            <p className="text-sm text-slate-600 italic"><MathText text={userOption.nepali} /></p>
-                          )}
+                          <p className="text-slate-700">
+                            <MathText text={userOption?.nepali || ""} />
+                          </p>
                         </div>
                       ) : (
                         <p className="text-slate-500 italic">No answer provided / कुनै उत्तर प्रदान गरिएको छैन</p>
@@ -254,9 +254,9 @@ export function ResultsCard({
                           <p className="text-blue-700 font-medium">
                             ({question.correctAnswer}) <MathText text={correctOption?.english || ""} />
                           </p>
-                          {correctOption?.nepali && correctOption.nepali !== correctOption.english && (
-                            <p className="text-sm text-blue-600 italic"><MathText text={correctOption.nepali} /></p>
-                          )}
+                          <p className="text-blue-700">
+                            <MathText text={correctOption?.nepali || ""} />
+                          </p>
                         </div>
                       </div>
                     )}
@@ -406,7 +406,7 @@ export function ResultsCard({
                 </AccordionTrigger>
                 <AccordionContent className="px-4 pb-4">
                   <div className="space-y-4">
-                    <div className="text-sm text-slate-600 italic mb-3"><MathText text={question.nepali} /></div>
+                    <div className="text-slate-600 mb-3"><MathText text={question.nepali} /></div>
                     <div className="bg-slate-50 p-3 rounded-lg">
                       <p className="text-slate-600">
                         <span className="font-semibold text-slate-800">Your Answer / तपाईंको उत्तर:</span>

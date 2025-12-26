@@ -181,7 +181,10 @@ export function FreeResponseGroup({
                     <div className="flex-1">
                       <CardTitle className="text-base font-semibold text-slate-800">Question {index + 1}</CardTitle>
                       <div className="text-slate-700 mt-2 leading-relaxed">
-                        <MathText text={language === "nepali" ? question.nepali : question.english} />
+                        <MathText text={question.english} />
+                      </div>
+                      <div className="text-slate-700 mt-1 leading-relaxed">
+                        <MathText text={question.nepali} />
                       </div>
                     </div>
                   </div>

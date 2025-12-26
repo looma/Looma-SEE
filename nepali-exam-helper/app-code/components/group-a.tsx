@@ -125,7 +125,10 @@ export function GroupA({ questions, answers, onAnswerChange, progress, language 
                     <div className="flex-1">
                       <CardTitle className="text-base font-semibold text-slate-800">Question {index + 1}</CardTitle>
                       <div className="text-slate-700 mt-2 leading-relaxed">
-                        <MathText text={language === "nepali" ? question.nepali : question.english} />
+                        <MathText text={question.english} />
+                      </div>
+                      <div className="text-slate-700 mt-1 leading-relaxed">
+                        <MathText text={question.nepali} />
                       </div>
                     </div>
                   </div>
@@ -145,15 +148,20 @@ export function GroupA({ questions, answers, onAnswerChange, progress, language 
                     <div
                       key={option.id}
                       className={`flex items-center space-x-3 p-3 rounded-lg border transition-colors cursor-pointer ${selectedAnswer === option.id
-                          ? "bg-blue-50 border-blue-200"
-                          : "bg-slate-50 border-slate-200 hover:bg-slate-100"
+                        ? "bg-blue-50 border-blue-200"
+                        : "bg-slate-50 border-slate-200 hover:bg-slate-100"
                         }`}
                       onClick={() => onAnswerChange(question.id, option.id)}
                     >
                       <RadioGroupItem value={option.id} id={`${question.id}-${option.id}`} />
                       <Label htmlFor={`${question.id}-${option.id}`} className="flex-1 text-sm leading-relaxed">
-                        <span className="font-medium mr-2">({option.id})</span>
-                        <MathText text={language === "nepali" ? option.nepali : option.english} />
+                        <div>
+                          <span className="font-medium mr-2">({option.id})</span>
+                          <MathText text={option.english} />
+                        </div>
+                        <div className="mt-0.5">
+                          <MathText text={option.nepali} />
+                        </div>
                       </Label>
                     </div>
                   ))}

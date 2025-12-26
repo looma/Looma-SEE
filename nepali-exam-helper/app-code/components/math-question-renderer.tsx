@@ -51,18 +51,11 @@ export function MathQuestionRenderer({
                         {/* Context / Problem Statement */}
                         <div className="bg-slate-50 p-4 rounded-lg border-l-4 border-blue-500">
                             <p className="text-slate-700 leading-relaxed">
-                                <MathText
-                                    text={language === "nepali" ? question.context.nepali : question.context.english}
-                                />
+                                <MathText text={question.context.english} />
                             </p>
-                            {/* Show other language if different */}
-                            {question.context.nepali !== question.context.english && (
-                                <p className="text-sm text-slate-500 mt-2 italic">
-                                    <MathText
-                                        text={language === "nepali" ? question.context.english : question.context.nepali}
-                                    />
-                                </p>
-                            )}
+                            <p className="text-slate-700 leading-relaxed mt-2">
+                                <MathText text={question.context.nepali} />
+                            </p>
                         </div>
 
                         {/* Sub-questions */}
@@ -89,27 +82,11 @@ export function MathQuestionRenderer({
                                             {hasSubQuestionText && (
                                                 <div className="flex-1">
                                                     <p className="text-slate-700">
-                                                        <MathText
-                                                            text={
-                                                                language === "nepali"
-                                                                    ? subQ.question_nepali
-                                                                    : subQ.question_english
-                                                            }
-                                                        />
+                                                        <MathText text={subQ.question_english} />
                                                     </p>
-                                                    {/* Show other language if different and not empty */}
-                                                    {subQ.question_nepali !== subQ.question_english &&
-                                                        (language === "nepali" ? subQ.question_english : subQ.question_nepali) && (
-                                                            <p className="text-sm text-slate-500 mt-1 italic">
-                                                                <MathText
-                                                                    text={
-                                                                        language === "nepali"
-                                                                            ? subQ.question_english
-                                                                            : subQ.question_nepali
-                                                                    }
-                                                                />
-                                                            </p>
-                                                        )}
+                                                    <p className="text-slate-700 mt-1">
+                                                        <MathText text={subQ.question_nepali} />
+                                                    </p>
                                                 </div>
                                             )}
                                         </div>
