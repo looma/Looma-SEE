@@ -29,6 +29,13 @@ export function FreeResponseGroup({
 }: FreeResponseGroupProps) {
   const [showExplanations, setShowExplanations] = useState(false)
 
+  // Strip English text in parentheses from Nepali strings
+  // e.g., "यो हावाभन्दा गह्रौं हुन्छ (It is heavier than air)" -> "यो हावाभन्दा गह्रौं हुन्छ"
+  const cleanNepaliText = (text: string) => {
+    if (!text) return text
+    return text.replace(/\s*\([0-9A-Za-z][^)]*\)\s*$/g, '').trim()
+  }
+
   const renderExplanation = (question: FreeResponseQuestion) => {
     if (!showExplanations) return null
 
@@ -185,7 +192,7 @@ export function FreeResponseGroup({
                       </div>
                       {question.nepali && question.nepali !== question.english && (
                         <div className="text-slate-700 mt-1 leading-relaxed">
-                          <MathText text={question.nepali} />
+                          <MathText text={cleanNepaliText(question.nepali)} />
                         </div>
                       )}
                     </div>

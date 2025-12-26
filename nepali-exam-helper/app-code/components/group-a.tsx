@@ -22,6 +22,14 @@ interface GroupAProps {
 export function GroupA({ questions, answers, onAnswerChange, progress, language = "english" }: GroupAProps) {
   const [showExplanations, setShowExplanations] = useState(false)
 
+  // Strip English text in parentheses from Nepali strings
+  // e.g., "यो हावाभन्दा गह्रौं हुन्छ (It is heavier than air)" -> "यो हावाभन्दा गह्रौं हुन्छ"
+  const cleanNepaliText = (text: string) => {
+    if (!text) return text
+    // Remove English text in parentheses at the end
+    return text.replace(/\s*\([0-9A-Za-z][^)]*\)\s*$/g, '').trim()
+  }
+
   const parseExplanation = (explanation?: string) => {
     if (!explanation) return { english: "", nepali: "" }
 
@@ -129,7 +137,7 @@ export function GroupA({ questions, answers, onAnswerChange, progress, language 
                       </div>
                       {question.nepali && question.nepali !== question.english && (
                         <div className="text-slate-700 mt-1 leading-relaxed">
-                          <MathText text={question.nepali} />
+                          <MathText text={cleanNepaliText(question.nepali)} />
                         </div>
                       )}
                     </div>
@@ -163,7 +171,7 @@ export function GroupA({ questions, answers, onAnswerChange, progress, language 
                         </div>
                         {option.nepali && option.nepali !== option.english && (
                           <div className="mt-0.5">
-                            <MathText text={option.nepali} />
+                            <MathText text={cleanNepaliText(option.nepali)} />
                           </div>
                         )}
                       </Label>

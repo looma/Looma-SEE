@@ -33,6 +33,12 @@ export function MathQuestionRenderer({
         }))
     }
 
+    // Strip English text in parentheses from Nepali strings
+    const cleanNepaliText = (text: string) => {
+        if (!text) return text
+        return text.replace(/\s*\([0-9A-Za-z][^)]*\)\s*$/g, '').trim()
+    }
+
     return (
         <div className="space-y-6">
             {questions.map((question) => (
@@ -53,9 +59,11 @@ export function MathQuestionRenderer({
                             <p className="text-slate-700 leading-relaxed">
                                 <MathText text={question.context.english} />
                             </p>
-                            <p className="text-slate-700 leading-relaxed mt-2">
-                                <MathText text={question.context.nepali} />
-                            </p>
+                            {question.context.nepali && question.context.nepali !== question.context.english && (
+                                <p className="text-slate-700 leading-relaxed mt-2">
+                                    <MathText text={cleanNepaliText(question.context.nepali)} />
+                                </p>
+                            )}
                         </div>
 
                         {/* Sub-questions */}
@@ -68,25 +76,31 @@ export function MathQuestionRenderer({
 
                                 // Handle questions with empty sub-question text (single-part questions)
                                 const hasSubQuestionText = subQ.question_nepali || subQ.question_english
+                                // Hide label if single sub-question with no text (direct answer to main question)
+                                const showLabel = question.sub_questions.length > 1 || hasSubQuestionText
 
                                 return (
                                     <div key={subQ.label} className="border rounded-lg p-4 bg-white">
                                         {/* Sub-question label and text */}
-                                        <div className="flex items-start gap-3 mb-3">
-                                            <Badge
-                                                variant="outline"
-                                                className="font-bold text-blue-600 border-blue-300 min-w-[28px] justify-center"
-                                            >
-                                                {subQ.label}
-                                            </Badge>
+                                        <div className={`flex items-start gap-3 ${showLabel ? 'mb-3' : ''}`}>
+                                            {showLabel && (
+                                                <Badge
+                                                    variant="outline"
+                                                    className="font-bold text-blue-600 border-blue-300 min-w-[28px] justify-center"
+                                                >
+                                                    {subQ.label}
+                                                </Badge>
+                                            )}
                                             {hasSubQuestionText && (
                                                 <div className="flex-1">
                                                     <p className="text-slate-700">
                                                         <MathText text={subQ.question_english} />
                                                     </p>
-                                                    <p className="text-slate-700 mt-1">
-                                                        <MathText text={subQ.question_nepali} />
-                                                    </p>
+                                                    {subQ.question_nepali && subQ.question_nepali !== subQ.question_english && (
+                                                        <p className="text-slate-700 mt-1">
+                                                            <MathText text={cleanNepaliText(subQ.question_nepali)} />
+                                                        </p>
+                                                    )}
                                                 </div>
                                             )}
                                         </div>

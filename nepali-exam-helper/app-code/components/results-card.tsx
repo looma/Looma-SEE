@@ -65,6 +65,13 @@ export function ResultsCard({
   const progress = loadStudentProgress(`${studentId}_${testId}`)
   const answers = progress?.answers || {}
 
+  // Strip English text in parentheses from Nepali strings
+  // e.g., "यो हावाभन्दा गह्रौं हुन्छ (It is heavier than air)" -> "यो हावाभन्दा गह्रौं हुन्छ"
+  const cleanNepaliText = (text: string) => {
+    if (!text) return text
+    return text.replace(/\s*\([0-9A-Za-z][^)]*\)\s*$/g, '').trim()
+  }
+
   if (!questions) return <div>Loading...</div>
 
   // Check if this is an English test
@@ -220,7 +227,7 @@ export function ResultsCard({
                 <AccordionContent className="px-4 pb-4">
                   <div className="space-y-4">
                     {/* Question in Nepali with proper spacing */}
-                    <div className="text-slate-600 mb-3 leading-relaxed"><MathText text={question.nepali} /></div>
+                    <div className="text-slate-600 mb-3 leading-relaxed"><MathText text={cleanNepaliText(question.nepali)} /></div>
 
                     {/* User's Answer Section with better formatting */}
                     <div
@@ -237,9 +244,11 @@ export function ResultsCard({
                           <p className="text-slate-700 font-medium">
                             ({userAnswer}) <MathText text={userOption?.english || ""} />
                           </p>
-                          <p className="text-slate-700">
-                            <MathText text={userOption?.nepali || ""} />
-                          </p>
+                          {userOption?.nepali && userOption.nepali !== userOption.english && (
+                            <p className="text-slate-700">
+                              <MathText text={cleanNepaliText(userOption.nepali)} />
+                            </p>
+                          )}
                         </div>
                       ) : (
                         <p className="text-slate-500 italic">No answer provided / कुनै उत्तर प्रदान गरिएको छैन</p>
@@ -254,9 +263,11 @@ export function ResultsCard({
                           <p className="text-blue-700 font-medium">
                             ({question.correctAnswer}) <MathText text={correctOption?.english || ""} />
                           </p>
-                          <p className="text-blue-700">
-                            <MathText text={correctOption?.nepali || ""} />
-                          </p>
+                          {correctOption?.nepali && correctOption.nepali !== correctOption.english && (
+                            <p className="text-blue-700">
+                              <MathText text={cleanNepaliText(correctOption.nepali)} />
+                            </p>
+                          )}
                         </div>
                       </div>
                     )}
@@ -406,7 +417,7 @@ export function ResultsCard({
                 </AccordionTrigger>
                 <AccordionContent className="px-4 pb-4">
                   <div className="space-y-4">
-                    <div className="text-slate-600 mb-3"><MathText text={question.nepali} /></div>
+                    <div className="text-slate-600 mb-3"><MathText text={cleanNepaliText(question.nepali)} /></div>
                     <div className="bg-slate-50 p-3 rounded-lg">
                       <p className="text-slate-600">
                         <span className="font-semibold text-slate-800">Your Answer / तपाईंको उत्तर:</span>
