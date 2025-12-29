@@ -617,7 +617,7 @@
             "id": "क",
             "titleNepali": "दिइएका बुँदाका आधारमा कथा तयार पारी शीर्षकसमेत दिनुहोस् :",
             "titleEnglish": "Prepare a story based on the given points and also give a title:",
-            "clues": [
+            "cluesNepali": [
               "एउटा गाउँमा एकजना लोभी व्यापारी हुनु",
               "सधैँ सामानमा मिसावट गरेर बेच्नु",
               "एकदिन गाउँमा ठुलो भोज हुनु",
@@ -627,6 +627,17 @@
               "गाउँलेहरूले व्यापारीलाई समातेर सजाय दिनु",
               "व्यापारीले आफ्नो गल्ती स्वीकार गरी माफी माग्नु",
               "लोभको फल नराम्रो हुने ज्ञान पाउनु"
+            ],
+            "cluesEnglish": [
+              "A greedy merchant lived in a village",
+              "Always selling adulterated goods",
+              "One day there was a big feast in the village",
+              "The merchant sold ghee for the feast",
+              "Selling ghee mixed with vegetable oil",
+              "Everyone who ate the feast fell ill",
+              "The villagers caught the merchant and punished him",
+              "The merchant admitted his mistake and apologized",
+              "Realizing that the fruit of greed is bad"
             ]
           },
           {
@@ -640,7 +651,7 @@
             "id": "क",
             "titleNepali": "दिइएका बुँदाका आधारमा कथा तयार पारी शीर्षकसमेत दिनुहोस् :",
             "titleEnglish": "Prepare a story based on the given points and also give a title:",
-            "clues": [
+            "cluesNepali": [
               "एउटा गाउँमा एकजना लोभी व्यापारी हुनु",
               "सधैँ सामानमा मिसावट गरेर बेच्नु",
               "एकदिन गाउँमा ठुलो भोज हुनु",
@@ -650,6 +661,17 @@
               "गाउँलेहरूले व्यापारीलाई समातेर सजाय दिनु",
               "व्यापारीले आफ्नो गल्ती स्वीकार गरी माफी माग्नु",
               "लोभको फल नराम्रो हुने ज्ञान पाउनु"
+            ],
+            "cluesEnglish": [
+              "A greedy merchant lived in a village",
+              "Always selling adulterated goods",
+              "One day there was a big feast in the village",
+              "The merchant sold ghee for the feast",
+              "Selling ghee mixed with vegetable oil",
+              "Everyone who ate the feast fell ill",
+              "The villagers caught the merchant and punished him",
+              "The merchant admitted his mistake and apologized",
+              "Realizing that the fruit of greed is bad"
             ]
           },
           {

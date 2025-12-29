@@ -605,7 +605,7 @@
             "id": "क",
             "titleNepali": "दिइएका बुँदाका आधारमा कथा तयार पारी शीर्षकसमेत दिनुहोस् :",
             "titleEnglish": "Prepare a story based on the given points and also give a title:",
-            "clues": [
+            "cluesNepali": [
               "एउटा गाउँमा एकजना अल्छी किसान हुनु",
               "हरेक दिन चौतारीमा बसेर गफ गरेर दिन बिताउनु",
               "एकदिन गाउँमा एकजना साधु आउनु",
@@ -615,6 +615,17 @@
               "श्रीमतीको सल्लाहमा खेतमा मकै छर्नु",
               "मकैको राम्रो उत्पादन हुनु र धेरै पैसा कमाउनु",
               "मिहिनेत नै सुनको घैँटो रहेछ भन्ने ज्ञान प्राप्त हुनु"
+            ],
+            "cluesEnglish": [
+              "A lazy farmer lived in a village",
+              "Spending time gossiping sitting on Chautari every day",
+              "One day a sage came to the village",
+              "The farmer asked the sage for a way to become rich easily",
+              "The sage told that a pot of gold is buried in the middle of the field and can be found only by working hard",
+              "The farmer dug the field day and night but did not find the pot",
+              "Sowing maize in the field on the advice of his wife",
+              "Good maize production and earning a lot of money",
+              "Realizing that hard work itself is the pot of gold"
             ]
           },
           {
@@ -628,7 +639,7 @@
             "id": "क",
             "titleNepali": "दिइएका बुँदाका आधारमा कथा तयार पारी शीर्षकसमेत दिनुहोस् :",
             "titleEnglish": "Prepare a story based on the given points and also give a title:",
-            "clues": [
+            "cluesNepali": [
               "एउटा गाउँमा एकजना अल्छी किसान हुनु",
               "हरेक दिन चौतारीमा बसेर गफ गरेर दिन बिताउनु",
               "एकदिन गाउँमा एकजना साधु आउनु",
@@ -638,6 +649,17 @@
               "श्रीमतीको सल्लाहमा खेतमा मकै छर्नु",
               "मकैको राम्रो उत्पादन हुनु र धेरै पैसा कमाउनु",
               "मिहिनेत नै सुनको घैँटो रहेछ भन्ने ज्ञान प्राप्त हुनु"
+            ],
+            "cluesEnglish": [
+              "A lazy farmer lived in a village",
+              "Spending time gossiping sitting on Chautari every day",
+              "One day a sage came to the village",
+              "The farmer asked the sage for a way to become rich easily",
+              "The sage told that a pot of gold is buried in the middle of the field and can be found only by working hard",
+              "The farmer dug the field day and night but did not find the pot",
+              "Sowing maize in the field on the advice of his wife",
+              "Good maize production and earning a lot of money",
+              "Realizing that hard work itself is the pot of gold"
             ]
           },
           {

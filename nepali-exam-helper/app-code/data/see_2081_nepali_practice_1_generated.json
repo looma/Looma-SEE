@@ -615,7 +615,7 @@
             "id": "क",
             "titleNepali": "दिइएका बुँदाका आधारमा जीवनी तयार पारी शीर्षकसमेत लेख्नुहोस् :",
             "titleEnglish": "Prepare a biography based on the given points and also write a title:",
-            "clues": [
+            "cluesNepali": [
               "नाम: भानुभक्त आचार्य",
               "जन्म: वि.सं. १८७१, असार २९",
               "जन्मस्थान: तनहुँको रम्घा",
@@ -623,6 +623,15 @@
               "शिक्षा: घरमै हजुरबुबा श्रीकृष्ण आचार्यबाट संस्कृत शिक्षा",
               "योगदान: ‘रामायण’ लाई नेपालीमा भावानुवाद गरी नेपाली भाषालाई जनस्तरमा लोकप्रिय बनाएका, ‘प्रश्नमाला’, ‘भक्तमाला’, ‘वधूशिक्षा’ जस्ता कृति रचना गरेका, नेपाली साहित्यमा आदिकविको उपाधि पाएका, घाँसीबाट प्रेरणा पाएर समाजसेवामा लागेका।",
               "निधन: वि.सं. १९२५"
+            ],
+            "cluesEnglish": [
+              "Name: Bhanubhakta Acharya",
+              "Birth: 29 Ashad 1871 B.S.",
+              "Birthplace: Ramgha, Tanahun",
+              "Mother/Father: Dharmawatidevi / Dhananjaya Acharya",
+              "Education: Sanskrit education from grandfather Shrikrishna Acharya at home",
+              "Contribution: Popularized Nepali language among the masses by translating 'Ramayana' into Nepali, composed works like 'Prashnamala', 'Bhaktamala', 'Badhushiksha', received the title of Adikavi in Nepali literature, engaged in social service inspired by a grass cutter.",
+              "Death: 1925 B.S."
             ]
           },
           {
@@ -636,7 +645,7 @@
             "id": "क",
             "titleNepali": "दिइएका बुँदाका आधारमा जीवनी तयार पारी शीर्षकसमेत लेख्नुहोस् :",
             "titleEnglish": "Prepare a biography based on the given points and also write a title:",
-            "clues": [
+            "cluesNepali": [
               "नाम: भानुभक्त आचार्य",
               "जन्म: वि.सं. १८७१, असार २९",
               "जन्मस्थान: तनहुँको रम्घा",
@@ -644,6 +653,15 @@
               "शिक्षा: घरमै हजुरबुबा श्रीकृष्ण आचार्यबाट संस्कृत शिक्षा",
               "योगदान: ‘रामायण’ लाई नेपालीमा भावानुवाद गरी नेपाली भाषालाई जनस्तरमा लोकप्रिय बनाएका, ‘प्रश्नमाला’, ‘भक्तमाला’, ‘वधूशिक्षा’ जस्ता कृति रचना गरेका, नेपाली साहित्यमा आदिकविको उपाधि पाएका, घाँसीबाट प्रेरणा पाएर समाजसेवामा लागेका।",
               "निधन: वि.सं. १९२५"
+            ],
+            "cluesEnglish": [
+              "Name: Bhanubhakta Acharya",
+              "Birth: 29 Ashad 1871 B.S.",
+              "Birthplace: Ramgha, Tanahun",
+              "Mother/Father: Dharmawatidevi / Dhananjaya Acharya",
+              "Education: Sanskrit education from grandfather Shrikrishna Acharya at home",
+              "Contribution: Popularized Nepali language among the masses by translating 'Ramayana' into Nepali, composed works like 'Prashnamala', 'Bhaktamala', 'Badhushiksha', received the title of Adikavi in Nepali literature, engaged in social service inspired by a grass cutter.",
+              "Death: 1925 B.S."
             ]
           },
           {
