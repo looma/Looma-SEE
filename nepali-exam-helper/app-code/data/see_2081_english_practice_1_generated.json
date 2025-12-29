@@ -25,11 +25,12 @@
         "type": "reading_comprehension",
         "marks": 5,
         "passage": {
-          "author": "Rudyard Kipling",
           "contentNepali": "यदि तिमी आफ्नो शिर ठाडो राख्न सक्छौ जब तिम्रो वरपरका सबैले\nआफ्नो गुमाइरहेका छन् र दोष तिमीलाई दिइरहेका छन्,\nयदि तिमी आफैलाई विश्वास गर्न सक्छौ जब सबै मानिसहरूले तिमीलाई शंका गर्छन्,\nतर तिनीहरूको शंकालाई पनि स्थान दिन्छौ;\nयदि तिमी पर्खन सक्छौ र पर्खाइबाट थकित हुँदैनौ,\nवा तिम्रो बारेमा झूट बोलिँदा, झूटको व्यवहार गर्दैनौ,\nवा घृणा गरिँदा, घृणालाई बाटो दिँदैनौ,\nर तैपनि धेरै राम्रो देखिदैनौ, न त धेरै बुद्धिमानी कुरा गर्छौ:\n\nयदि तिमी सपना देख्न सक्छौ—र सपनालाई आफ्नो मालिक बनाउँदैनौ;\nयदि तिमी सोच्न सक्छौ—र विचारहरूलाई आफ्नो लक्ष्य बनाउँदैनौ;\nयदि तिमी विजय र विपत्तिलाई भेट्न सक्छौ\nर ती दुई ढोंगीहरूलाई उस्तै व्यवहार गर्न सक्छौ;\nयदि तिमीले बोलेको सत्य सुन्न सहन सक्छौ\nजसलाई धूर्तहरूले मूर्खहरूको लागि पासो बनाउन बङ्ग्याएका छन्,\nवा तिमीले आफ्नो जीवन दिएका चीजहरू, टुटेको देख्छौ,\nर निहुरिएर तिनीहरूलाई थोत्रो औजारहरूले फेरि बनाउँछौ:",
           "contentEnglish": "If you can keep your head when all about you\nAre losing theirs and blaming it on you,\nIf you can trust yourself when all men doubt you,\nBut make allowance for their doubting too;\nIf you can wait and not be tired by waiting,\nOr being lied about, don’t deal in lies,\nOr being hated, don’t give way to hating,\nAnd yet don’t look too good, nor talk too wise:\n\nIf you can dream—and not make dreams your master;\nIf you can think—and not make thoughts your aim;\nIf you can meet with Triumph and Disaster\nAnd treat those two impostors just the same;\nIf you can bear to hear the truth you’ve spoken\nTwisted by knaves to make a trap for fools,\nOr watch the things you gave your life to, broken,\nAnd stoop and build ’em up with worn-out tools:",
           "titleNepali": "यदि (IF)",
-          "titleEnglish": "IF"
+          "titleEnglish": "IF",
+          "authorNepali": "रुडयार्ड किप्लिङ",
+          "authorEnglish": "Rudyard Kipling"
         },
         "subSections": [
           {
@@ -354,49 +355,60 @@
               "A": [
                 {
                   "id": "i",
-                  "text": "tackle"
+                  "textNepali": "सामना गर्नु (tackle)",
+                  "textEnglish": "tackle"
                 },
                 {
                   "id": "ii",
-                  "text": "chronic"
+                  "textNepali": "दीर्घकालीन (chronic)",
+                  "textEnglish": "chronic"
                 },
                 {
                   "id": "iii",
-                  "text": "modify"
+                  "textNepali": "परिमार्जन (modify)",
+                  "textEnglish": "modify"
                 },
                 {
                   "id": "iv",
-                  "text": "vital"
+                  "textNepali": "महत्त्वपूर्ण/जीवन्त",
+                  "textEnglish": "vital"
                 },
                 {
                   "id": "v",
-                  "text": "realize"
+                  "textNepali": "महसुस गर्नु",
+                  "textEnglish": "realize"
                 }
               ],
               "B": [
                 {
                   "id": "a",
-                  "text": "to make something suitable for a new purpose"
+                  "textNepali": "कुनै कुरालाई नयाँ उद्देश्यका लागि उपयुक्त बनाउनु",
+                  "textEnglish": "to make something suitable for a new purpose"
                 },
                 {
                   "id": "b",
-                  "text": "to deal with a difficult problem"
+                  "textNepali": "कठिन समस्याको सामना गर्नु",
+                  "textEnglish": "to deal with a difficult problem"
                 },
                 {
                   "id": "c",
-                  "text": "to understand or become aware of something"
+                  "textNepali": "कुनै कुरा बुझ्नु वा सचेत हुनु",
+                  "textEnglish": "to understand or become aware of something"
                 },
                 {
                   "id": "d",
-                  "text": "lasting for a long time"
+                  "textNepali": "लामो समयसम्म रहने",
+                  "textEnglish": "lasting for a long time"
                 },
                 {
                   "id": "e",
-                  "text": "extremely important or necessary"
+                  "textNepali": "अत्यन्त महत्त्वपूर्ण वा आवश्यक",
+                  "textEnglish": "extremely important or necessary"
                 },
                 {
                   "id": "f",
-                  "text": "to create something new"
+                  "textNepali": "केहि नयाँ सिर्जना गर्नु",
+                  "textEnglish": "to create something new"
                 }
               ]
             },
@@ -533,16 +545,6 @@
         "type": "free_writing",
         "marks": 5,
         "wordCount": 100,
-        "clues": [
-          "enter quietly.....remove shoes",
-          "no food or drink",
-          "use assigned computer",
-          "do not change settings",
-          "save work properly",
-          "log off before leaving",
-          "report problems to the teacher",
-          "keep the lab clean"
-        ],
         "sampleAnswer": {
           "explanationNepali": "यो उत्तरले कम्प्युटर ल्याबमा पालना गर्नुपर्ने नियम र विनियमहरूको एक सेट प्रस्तुत गर्दछ, जुन दिइएको संकेतहरूमा आधारित छ। यसले विद्यार्थीहरूलाई शान्तपूर्वक प्रवेश गर्न, जुत्ता खोल्न, खानेकुरा र पेय पदार्थहरू नल्याउन, र तोकिएको कम्प्युटर मात्र प्रयोग गर्न निर्देशन दिन्छ। नियमहरूले सेटिङहरू परिवर्तन नगर्न, काम राम्ररी सेभ गर्न, र बाहिर निस्कनु अघि लग अफ गर्न पनि निर्दिष्ट गर्दछ। अन्तमा, यसले समस्याहरू रिपोर्ट गर्ने र ल्याब सफा राख्ने महत्त्वलाई जोड दिन्छ।\nउद्धरण: पाठ ४",
           "explanationEnglish": "This answer presents a set of rules and regulations to be followed in a computer lab, based on the clues provided. It instructs students to enter quietly, remove shoes, avoid food and drinks, and use only the assigned computer. The rules also specify not to change settings, to save work properly, and to log off before leaving. Finally, it emphasizes reporting problems and keeping the lab clean. \nCitation: Lesson 4.",
@@ -552,21 +554,33 @@
           "titleEnglish": "Rules and Regulations for the Computer Lab"
         },
         "titleNepali": "विद्यालयको कम्प्युटर प्रयोगशालामा पालना गर्नुपर्ने नियम तथा विनियमहरू लेख्नुहोस्।",
-        "titleEnglish": "Write a set of rules and regulations to be followed in the school computer lab."
+        "titleEnglish": "Write a set of rules and regulations to be followed in the school computer lab.",
+        "cluesNepali": [
+          "सुस्तरी पस्नुहोस्.....जुत्ता फुकाल्नुहोस्",
+          "खाना वा पेय पदार्थ निषेध",
+          "तोकिएको कम्प्युटर प्रयोग गर्नुहोस्",
+          "सेटिङहरू परिवर्तन नगर्नुहोस्",
+          "काम राम्रोसँग सुरक्षित (save) गर्नुहोस्",
+          "निस्कनु अघि लग अफ गर्नुहोस्",
+          "शिक्षकलाई समस्या रिपोर्ट गर्नुहोस्",
+          "ल्याब सफा राख्नुहोस्"
+        ],
+        "cluesEnglish": [
+          "enter quietly.....remove shoes",
+          "no food or drink",
+          "use assigned computer",
+          "do not change settings",
+          "save work properly",
+          "log off before leaving",
+          "report problems to the teacher",
+          "keep the lab clean"
+        ]
       },
       {
         "questionNumber": 6,
         "type": "free_writing",
         "marks": 5,
         "wordCount": 100,
-        "clues": [
-          "date, time, venue",
-          "chief guest",
-          "cultural programmes",
-          "prize distribution",
-          "request for presence",
-          "confirm attendance"
-        ],
         "sampleAnswer": {
           "explanationNepali": "यो उत्तरले 'अभिभावक दिवस' को लागि अभिभावकहरूलाई पठाइने एक औपचारिक निमन्त्रणा सन्देश प्रस्तुत गर्दछ, दिइएको संकेतहरू प्रयोग गर्दै। यसले कार्यक्रमको मिति, समय, र स्थान स्पष्ट रूपमा उल्लेख गर्दछ। यसले प्रमुख अतिथि, सांस्कृतिक कार्यक्रमहरू, र पुरस्कार वितरण जस्ता मुख्य आकर्षणहरूलाई हाइलाइट गर्दछ। निमन्त्रणाले अभिभावकहरूलाई उपस्थित हुन अनुरोध गर्दछ र व्यवस्थापनको लागि उनीहरूको उपस्थिति पुष्टि गर्न आग्रह गर्दछ, जसले यसलाई एक पूर्ण र औपचारिक सन्देश बनाउँछ।\nउद्धरण: पाठ १६",
           "explanationEnglish": "This answer presents a formal invitation message to be sent to parents for 'Parents' Day', using the provided clues. It clearly states the date, time, and venue of the event. It highlights the main attractions like the chief guest, cultural programmes, and prize distribution. The invitation requests the parents' presence and asks them to confirm their attendance for arrangement purposes, making it a complete and formal message. \nCitation: Lesson 16.",
@@ -576,7 +590,23 @@
           "titleEnglish": "Invitation to Parents' Day Celebration"
         },
         "titleNepali": "तपाईंको विद्यालयले अर्को हप्ता 'अभिभावक दिवस' आयोजना गर्दैछ। अभिभावकहरूलाई पठाउनका लागि करिब १०० शब्दमा औपचारिक निमन्त्रणा सन्देश लेख्नुहोस्।",
-        "titleEnglish": "Your school is organizing a 'Parents' Day' next week. Write a formal message of invitation to be sent to the parents in about 100 words."
+        "titleEnglish": "Your school is organizing a 'Parents' Day' next week. Write a formal message of invitation to be sent to the parents in about 100 words.",
+        "cluesNepali": [
+          "मिति, समय, स्थान",
+          "प्रमुख अतिथि",
+          "सांस्कृतिक कार्यक्रमहरू",
+          "पुरस्कार वितरण",
+          "उपस्थितिको लागि अनुरोध",
+          "उपस्थिति पुष्टि गर्नुहोस्"
+        ],
+        "cluesEnglish": [
+          "date, time, venue",
+          "chief guest",
+          "cultural programmes",
+          "prize distribution",
+          "request for presence",
+          "confirm attendance"
+        ]
       },
       {
         "questionNumber": 7,
@@ -597,12 +627,6 @@
         "type": "free_writing",
         "marks": 8,
         "wordCount": 200,
-        "clues": [
-          "book's title and author",
-          "summary of the main plot",
-          "analysis of its strengths and weaknesses",
-          "recommendation"
-        ],
         "sampleAnswer": {
           "explanationNepali": "यो उत्तरले झमक घिमिरेको आत्मकथा 'जीवन काँडा कि फूल' को समीक्षा प्रस्तुत गर्दछ। यसले पुस्तकको शीर्षक, लेखक, मुख्य कथाको सारांश, यसको शक्ति र कमजोरीहरूको विश्लेषण, र एक सिफारिस समावेश गर्दछ, जुन प्रश्नमा माग गरिएको थियो। समीक्षाले घिमिरेको संघर्ष र दृढतालाई हाइलाइट गर्दछ, उनको लेखनको इमानदारीलाई पुस्तकको मुख्य शक्तिको रूपमा उल्लेख गर्दछ। यसले पुस्तकको भावनात्मक गहनतालाई सम्भावित कमजोरीको रूपमा पनि स्वीकार गर्दछ। अन्त्यमा, यसले मानव आत्माको शक्तिको प्रमाणको रूपमा पुस्तकलाई दृढतापूर्वक सिफारिस गर्दछ, जुन लगभग २०० शब्दहरूको शब्द सीमा भित्र छ।\nउद्धरण: पाठ १५",
           "explanationEnglish": "This answer provides a review of Jhamak Ghimire's autobiography, Jivan Kada Ki Phul. It includes the book's title, author, a summary of the main plot, an analysis of its strengths and weaknesses, and a recommendation, as requested in the question. The review highlights Ghimire's struggle and determination, citing the honesty of her writing as the book's main strength. It also acknowledges the emotional weight as a potential weakness. Finally, it strongly recommends the book as a testament to the power of the human spirit, all within the word limit of about 200 words. \nCitation: Lesson 15.",
@@ -612,7 +636,19 @@
           "titleEnglish": "Book Review: Jivan Kada Ki Phul"
         },
         "titleNepali": "तपाईंले भर्खरै पढेको कुनै पुस्तकको समीक्षा करिब २०० शब्दमा लेख्नुहोस्।",
-        "titleEnglish": "Write a review of a book you have recently read in about 200 words."
+        "titleEnglish": "Write a review of a book you have recently read in about 200 words.",
+        "cluesNepali": [
+          "पुस्तकको शीर्षक र लेखक",
+          "मुख्य कथानकको सारांश",
+          "यसको शक्ति र कमजोरीहरूको विश्लेषण",
+          "सिफारिस/सुझाव"
+        ],
+        "cluesEnglish": [
+          "book's title and author",
+          "summary of the main plot",
+          "analysis of its strengths and weaknesses",
+          "recommendation"
+        ]
       },
       {
         "questionNumber": 9,

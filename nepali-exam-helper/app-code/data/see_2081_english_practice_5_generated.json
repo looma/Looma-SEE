@@ -28,11 +28,12 @@
         "type": "reading_comprehension",
         "marks": 5,
         "passage": {
-          "author": "William Wordsworth",
           "contentNepali": "पृथ्वीसँग देखाउनु पर्ने यसभन्दा सुन्दर केही छैन:\nत्यो आत्मा नीरस हुनेछ, जो अगाडि बढ्न सक्छ\nयति प्रभावशाली महानताको दृश्य छोडेर:\nयो सहरले अहिले, एउटा कपडा जस्तै, पहिरिएको छ\nबिहानीको सुन्दरता; शान्त, नाङ्गो,\nजहाजहरू, टावरहरू, गुम्बजहरू, थिएटरहरू, र मन्दिरहरू पल्टिएका छन्\nखुला खेतहरूमा, र आकाशतिर;\nसबै चम्किलो र टल्किएको धुवाँरहित हावामा।\nसूर्य कहिल्यै यति सुन्दर रूपमा डुबेको थिएन\nआफ्नो पहिलो भव्यतामा, उपत्यका, चट्टान, वा पहाडमा;\nमैले कहिल्यै देखिन, कहिल्यै महसुस गरिन, यति गहिरो शान्ति!\nनदी अपनी मीठो इच्छामा बग्दछ:\nहे भगवान! घरहरू नै निदाए जस्तो लाग्छ;\nर त्यो सबै शक्तिशाली हृदय शान्त पल्टिरहेको छ!",
           "contentEnglish": "Earth has not anything to show more fair:\nDull would he be of soul who could pass by\nA sight so touching in its majesty:\nThis City now doth, like a garment, wear\nThe beauty of the morning; silent, bare,\nShips, towers, domes, theatres, and temples lie\nOpen unto the fields, and to the sky;\nAll bright and glittering in the smokeless air.\nNever did sun more beautifully steep\nIn his first splendour, valley, rock, or hill;\nNe'er saw I, never felt, a calm so deep!\nThe river glideth at his own sweet will:\nDear God! the very houses seem asleep;\nAnd all that mighty heart is lying still!",
           "titleNepali": "वेस्टमिन्स्टर ब्रिजमा रचित, सेप्टेम्बर ३, १८०२",
-          "titleEnglish": "Composed upon Westminster Bridge, September 3, 1802"
+          "titleEnglish": "Composed upon Westminster Bridge, September 3, 1802",
+          "authorNepali": "विलियम वर्ड्सवर्थ",
+          "authorEnglish": "William Wordsworth"
         },
         "subSections": [
           {
@@ -359,76 +360,106 @@
                 "id": "i",
                 "questionNepali": "ECDC र बटरफ्लाई होम __________ सङ्घसंस्थाहरू हुन्।",
                 "questionEnglish": "ECDC and Butterfly Home are __________ organizations.",
-                "options": [
+                "correctAnswerNepali": "गैर नाफा (non-profit)",
+                "correctAnswerEnglish": "non-profit",
+                "explanationNepali": "पहिलो अनुच्छेदमा तिनीहरूलाई \"non-profit organizations\" भनेर चिनाइएको छ।\nउद्धरण: पाठ १५",
+                "explanationEnglish": "The first paragraph identifies them as \"non-profit organizations.\" \nCitation: Lesson 15.",
+                "optionsEnglish": [
                   "profit",
                   "non-profit",
                   "national",
                   "international"
                 ],
-                "correctAnswerNepali": "गैर नाफा (non-profit)",
-                "correctAnswerEnglish": "non-profit",
-                "explanationNepali": "पहिलो अनुच्छेदमा तिनीहरूलाई \"non-profit organizations\" भनेर चिनाइएको छ।\nउद्धरण: पाठ १५",
-                "explanationEnglish": "The first paragraph identifies them as \"non-profit organizations.\" \nCitation: Lesson 15."
+                "optionsNepali": [
+                  "नाफा",
+                  "गैर नाफा",
+                  "राष्ट्रिय",
+                  "अन्तर्राष्ट्रिय"
+                ]
               },
               {
                 "id": "ii",
                 "questionNepali": "पुष्पा बस्नेतले __________ मा सुपर हिरो अवार्ड जितिन्।",
                 "questionEnglish": "Pushpa Basnet won Super Hero award in __________.",
-                "options": [
+                "correctAnswerNepali": "२०१६",
+                "correctAnswerEnglish": "2016",
+                "explanationNepali": "पाठमा भनिएको छ, \"She has won the super Hero Award in 2016.\"\nउद्धरण: पाठ १५",
+                "explanationEnglish": "The text states, \"She has won the super Hero Award in 2016.\" \nCitation: Lesson 15.",
+                "optionsEnglish": [
                   "1984",
                   "2005",
                   "2007",
                   "2016"
                 ],
-                "correctAnswerNepali": "२०१६",
-                "correctAnswerEnglish": "2016",
-                "explanationNepali": "पाठमा भनिएको छ, \"She has won the super Hero Award in 2016.\"\nउद्धरण: पाठ १५",
-                "explanationEnglish": "The text states, \"She has won the super Hero Award in 2016.\" \nCitation: Lesson 15."
+                "optionsNepali": [
+                  "१९८४",
+                  "२००५",
+                  "२००७",
+                  "२०१६"
+                ]
               },
               {
                 "id": "iii",
                 "questionNepali": "पुष्पा बस्नेतले एक्काइस वर्षको उमेरमा आफ्नो __________ सुरु गरिन्।",
                 "questionEnglish": "Pushpa Basnet began her __________ at the age of twenty one.",
-                "options": [
+                "correctAnswerNepali": "करियर/वृत्ति",
+                "correctAnswerEnglish": "career",
+                "explanationNepali": "पाठमा उल्लेख छ, \"Basnet started her career at the age of 21...\"\nउद्धरण: पाठ १५",
+                "explanationEnglish": "The text mentions, \"Basnet started her career at the age of 21...\" \nCitation: Lesson 15.",
+                "optionsEnglish": [
                   "social work",
                   "college",
                   "career",
                   "organization"
                 ],
-                "correctAnswerNepali": "करियर/वृत्ति",
-                "correctAnswerEnglish": "career",
-                "explanationNepali": "पाठमा उल्लेख छ, \"Basnet started her career at the age of 21...\"\nउद्धरण: पाठ १५",
-                "explanationEnglish": "The text mentions, \"Basnet started her career at the age of 21...\" \nCitation: Lesson 15."
+                "optionsNepali": [
+                  "सामाजिक कार्य",
+                  "कलेज",
+                  "करियर",
+                  "सङ्घसंस्था"
+                ]
               },
               {
                 "id": "iv",
                 "questionNepali": "पुष्पा बस्नेतले __________ बाट ७०,००० रुपैयाँ सङ्कलन गरिन्।",
                 "questionEnglish": "Pushpa Basnet collected a sum of 70000 rupees from __________.",
-                "options": [
+                "correctAnswerNepali": "करीबका साथीहरू र बहिनी",
+                "correctAnswerEnglish": "close friends and sister",
+                "explanationNepali": "उनले \"raised 70,000 rupees from her close friends and sister\" भनेर उल्लेख गरिएको छ।\nउद्धरण: पाठ १५",
+                "explanationEnglish": "It is mentioned that she \"raised 70,000 rupees from her close friends and sister.\" \nCitation: Lesson 15.",
+                "optionsEnglish": [
                   "close friends",
                   "her sister",
                   "close friends and sister",
                   "women in prison"
                 ],
-                "correctAnswerNepali": "करीबका साथीहरू र बहिनी",
-                "correctAnswerEnglish": "close friends and sister",
-                "explanationNepali": "उनले \"raised 70,000 rupees from her close friends and sister\" भनेर उल्लेख गरिएको छ।\nउद्धरण: पाठ १५",
-                "explanationEnglish": "It is mentioned that she \"raised 70,000 rupees from her close friends and sister.\" \nCitation: Lesson 15."
+                "optionsNepali": [
+                  "करीबका साथीहरू",
+                  "उनको बहिनी",
+                  "करीबका साथीहरू र बहिनी",
+                  "जेलमा रहेका महिलाहरू"
+                ]
               },
               {
                 "id": "v",
                 "questionNepali": "पुष्पा बस्नेतले जेलमा रहेका बालबालिकालाई __________ उपलब्ध गराएकी छिन्।",
                 "questionEnglish": "Pushpa Basnet has provided __________ to the children in prison.",
-                "options": [
+                "correctAnswerNepali": "वैकल्पिक निवास",
+                "correctAnswerEnglish": "alternative residence",
+                "explanationNepali": "तेस्रो अनुच्छेदमा उनले \"provide alternative residence...\" भनेर भनिएको छ।\nउद्धरण: पाठ १५",
+                "explanationEnglish": "In the third paragraph, it says she helped to \"provide alternative residence...\" \nCitation: Lesson 15.",
+                "optionsEnglish": [
                   "alternative residence",
                   "alternative school",
                   "paid meals",
                   "awards"
                 ],
-                "correctAnswerNepali": "वैकल्पिक निवास",
-                "correctAnswerEnglish": "alternative residence",
-                "explanationNepali": "तेस्रो अनुच्छेदमा उनले \"provide alternative residence...\" भनेर भनिएको छ।\nउद्धरण: पाठ १५",
-                "explanationEnglish": "In the third paragraph, it says she helped to \"provide alternative residence...\" \nCitation: Lesson 15."
+                "optionsNepali": [
+                  "वैकल्पिक निवास",
+                  "वैकल्पिक विद्यालय",
+                  "सशुल्क खाना",
+                  "पुरस्कारहरू"
+                ]
               }
             ],
             "titleNepali": "दिइएका विकल्पहरूबाट सही उत्तर छान्नुहोस् र प्रतिलिपि गर्नुहोस्।",
@@ -442,49 +473,60 @@
               "A": [
                 {
                   "id": "i",
-                  "text": "worried, disappointed"
+                  "textNepali": "चिन्तित, निराश",
+                  "textEnglish": "worried, disappointed"
                 },
                 {
                   "id": "ii",
-                  "text": "an important official job"
+                  "textNepali": "एक महत्त्वपूर्ण आधिकारिक काम",
+                  "textEnglish": "an important official job"
                 },
                 {
                   "id": "iii",
-                  "text": "a group of people formed to achieve particular aim"
+                  "textNepali": "एक विशेष उद्देश्य प्राप्त गर्न गठन गरिएको मानिसहरूको समूह",
+                  "textEnglish": "a group of people formed to achieve particular aim"
                 },
                 {
                   "id": "iv",
-                  "text": "to be chosen for important role"
+                  "textNepali": "महत्त्वपूर्ण भूमिकाको लागि छनोट हुनु",
+                  "textEnglish": "to be chosen for important role"
                 },
                 {
                   "id": "v",
-                  "text": "suitable for living in; consisting of house"
+                  "textNepali": "बस्नको लागि उपयुक्त; घरहरू भएको",
+                  "textEnglish": "suitable for living in; consisting of house"
                 }
               ],
               "B": [
                 {
                   "id": "a",
-                  "text": "organization"
+                  "textNepali": "संगठन/संस्था",
+                  "textEnglish": "organization"
                 },
                 {
                   "id": "b",
-                  "text": "recognized"
+                  "textNepali": "मान्यता प्राप्त/पहिचान गरिएको",
+                  "textEnglish": "recognized"
                 },
                 {
                   "id": "c",
-                  "text": "nominated"
+                  "textNepali": "मनोनीत",
+                  "textEnglish": "nominated"
                 },
                 {
                   "id": "d",
-                  "text": "dismayed"
+                  "textNepali": "निराश/हतोत्साहित",
+                  "textEnglish": "dismayed"
                 },
                 {
                   "id": "e",
-                  "text": "mission"
+                  "textNepali": "मिसन/लक्ष्य",
+                  "textEnglish": "mission"
                 },
                 {
                   "id": "f",
-                  "text": "residential"
+                  "textNepali": "आवासीय",
+                  "textEnglish": "residential"
                 }
               ]
             },
@@ -578,16 +620,6 @@
         "type": "free_writing",
         "marks": 5,
         "wordCount": 100,
-        "clues": [
-          "XYZ school",
-          "grade 11 admission",
-          "150 in 2020",
-          "increases by 100 each year",
-          "lowest number in 2020",
-          "highest number in 2024",
-          "gradual progress",
-          "quality education"
-        ],
         "sampleAnswer": {
           "explanationNepali": "यो उत्तरले बार डायग्रामको व्याख्या गर्दछ। यसले २०२० देखि २०२४ सम्मको भर्ना संख्यामा भएको वृद्धिलाई वर्णन गर्दछ, जहाँ हरेक वर्ष १०० ले वृद्धि भएको छ। यसले विद्यालयको प्रगति र लोकप्रियतालाई संकेत गर्दछ।\nउद्धरण: पाठ १०",
           "explanationEnglish": "This answer interprets the bar diagram. It describes the increase in admission numbers from 2020 to 2024, noting a steady rise of 100 students each year. This indicates the school's progress and popularity. \nCitation: Lesson 10.",
@@ -597,22 +629,33 @@
           "titleEnglish": "Interpretation of Bar Diagram: Grade 11 Admission"
         },
         "titleNepali": "बार-चित्रको अध्ययन गर्नुहोस् र तल दिइएका संकेतहरूको प्रयोग गरी करिब १०० शब्दमा यसको व्याख्या गर्नुहोस्।",
-        "titleEnglish": "Study the bar-diagram and interpret it in about 100 words using the clues given below it."
+        "titleEnglish": "Study the bar-diagram and interpret it in about 100 words using the clues given below it.",
+        "cluesNepali": [
+          "XYZ विद्यालय",
+          "कक्षा ११ भर्ना",
+          "२०२० मा १५० जना",
+          "हरेक वर्ष १०० ले बढ्छ",
+          "२०२० मा सबैभन्दा कम संख्या",
+          "२०२४ मा सबैभन्दा बढी संख्या",
+          "क्रमिक प्रगति",
+          "गुणस्तरीय शिक्षा"
+        ],
+        "cluesEnglish": [
+          "XYZ school",
+          "grade 11 admission",
+          "150 in 2020",
+          "increases by 100 each year",
+          "lowest number in 2020",
+          "highest number in 2024",
+          "gradual progress",
+          "quality education"
+        ]
       },
       {
         "questionNumber": 6,
         "type": "free_writing",
         "marks": 5,
         "wordCount": 100,
-        "clues": [
-          "Daman Nath Dhungana (15th Jan. 1942 - 17th Nov. 2024)",
-          "passed away at Frontline Hospital",
-          "liver related problem",
-          "Nepali politician and senior advocate",
-          "former speaker of House of Representatives",
-          "role in civil rights, peace process, democracy",
-          "heartfelt condolence"
-        ],
         "sampleAnswer": {
           "explanationNepali": "यो उत्तरले दमननाथ ढुङ्गानाको निधनमा समवेदना सन्देश प्रस्तुत गर्दछ। यसले उनको मृत्युको विवरण, उनको राजनीतिक र सामाजिक योगदान, र शोकाकुल परिवारप्रति समवेदना व्यक्त गर्दछ।\nउद्धरण: पाठ ११",
           "explanationEnglish": "This answer presents a condolence message on the passing of Daman Nath Dhungana. It includes details of his death, his political and social contributions, and expresses sympathy to the bereaved family. \nCitation: Lesson 11.",
@@ -622,7 +665,25 @@
           "titleEnglish": "HEARTFELT CONDOLENCE"
         },
         "titleNepali": "दिइएको रूपरेखा प्रयोग गरी XYZ स्कूलको तर्फबाट पत्रपत्रिकामा प्रकाशित गर्नका लागि औपचारिक समवेदना सन्देश लेख्नुहोस्।",
-        "titleEnglish": "Write a formal message of condolence to be published in a newspaper on behalf of XYZ School using the given outlines."
+        "titleEnglish": "Write a formal message of condolence to be published in a newspaper on behalf of XYZ School using the given outlines.",
+        "cluesNepali": [
+          "दमननाथ ढुंगाना (१५ जनवरी १९४२ - १७ नोभेम्बर २०२४)",
+          "फ्रन्टलाइन अस्पतालमा निधन भयो",
+          "कलेजो सम्बन्धी समस्या",
+          "नेपाली राजनीतिज्ञ र वरिष्ठ अधिवक्ता",
+          "प्रतिनिधिसभाका पूर्व सभामुख",
+          "नागरिक अधिकार, शान्ति प्रक्रिया, लोकतन्त्रमा भूमिका",
+          "हार्दिक समवेदना"
+        ],
+        "cluesEnglish": [
+          "Daman Nath Dhungana (15th Jan. 1942 - 17th Nov. 2024)",
+          "passed away at Frontline Hospital",
+          "liver related problem",
+          "Nepali politician and senior advocate",
+          "former speaker of House of Representatives",
+          "role in civil rights, peace process, democracy",
+          "heartfelt condolence"
+        ]
       },
       {
         "questionNumber": 7,

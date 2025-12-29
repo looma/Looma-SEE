@@ -50,7 +50,8 @@
         ],
         "correctAnswer": "ii",
         "marks": 1,
-        "explanation": "व्याख्या: चापको सूत्र बल/क्षेत्रफल ($P=\\frac{F}{A}$) हो । बलको एकाइ न्युटन (N) हो, जसमा $\\text{kg} \\cdot \\text{m} \\cdot \\text{s}^{-2}$ आधारभूत एकाइहरू हुन्छन् । क्षेत्रफलको एकाइ $\\text{m}^2$ हो । त्यसैले, चापको एकाइ $\\frac{N}{m^2}$ वा $\\frac{\\text{kg} \\cdot \\text{m} \\cdot \\text{s}^{-2}}{\\text{m}^2}$ हुन्छ, जसलाई सरलीकरण गर्दा $\\text{kg} \\cdot \\text{m}^{-1} \\cdot \\text{s}^{-2}$ हुन्छ ।\n\nExplanation: The formula for pressure is Force/Area ($P=\\frac{F}{A}$). The unit of force is Newton (N), which is composed of the fundamental units $\\text{kg} \\cdot \\text{m} \\cdot \\text{s}^{-2}$. The unit of area is $\\text{m}^2$. Therefore, the unit of pressure is $\\frac{N}{m^2}$ or $\\frac{\\text{kg} \\cdot \\text{m} \\cdot \\text{s}^{-2}}{\\text{m}^2}$, which simplifies to $\\text{kg} \\cdot \\text{m}^{-1} \\cdot \\text{s}^{-2}$. \nCitation: Lesson 1"
+        "explanationNepali": "व्याख्या: चापको सूत्र बल/क्षेत्रफल ($P=\\frac{F}{A}$) हो । बलको एकाइ न्युटन (N) हो, जसमा $\\text{kg} \\cdot \\text{m} \\cdot \\text{s}^{-2}$ आधारभूत एकाइहरू हुन्छन् । क्षेत्रफलको एकाइ $\\text{m}^2$ हो । त्यसैले, चापको एकाइ $\\frac{N}{m^2}$ वा $\\frac{\\text{kg} \\cdot \\text{m} \\cdot \\text{s}^{-2}}{\\text{m}^2}$ हुन्छ, जसलाई सरलीकरण गर्दा $\\text{kg} \\cdot \\text{m}^{-1} \\cdot \\text{s}^{-2}$ हुन्छ ।\nउद्धरण: पाठ १",
+        "explanationEnglish": "The formula for pressure is Force/Area ($P=\\frac{F}{A}$). The unit of force is Newton (N), which is composed of the fundamental units $\\text{kg} \\cdot \\text{m} \\cdot \\text{s}^{-2}$. The unit of area is $\\text{m}^2$. Therefore, the unit of pressure is $\\frac{N}{m^2}$ or $\\frac{\\text{kg} \\cdot \\text{m} \\cdot \\text{s}^{-2}}{\\text{m}^2}$, which simplifies to $\\text{kg} \\cdot \\text{m}^{-1} \\cdot \\text{s}^{-2}$.\nCitation: Lesson 1"
       },
       {
         "id": "b",
@@ -81,7 +82,8 @@
         ],
         "correctAnswer": "iii",
         "marks": 1,
-        "explanation": "व्याख्या: फर्नहरू टेरिडोफाइटा (Pteridophyta) उपविभागमा पर्छन्, जसका विशेषताहरूमा विकसित भास्कुलर तन्तु (xylem and phloem), जरा, काण्ड र पातमा विभाजित शरीर, तर फूल र बीउ नहुनु समावेश छन् ।\n\nExplanation: Ferns belong to the subdivision Pteridophyta, whose characteristics include having developed vascular tissue (xylem and phloem), a body differentiated into root, stem, and leaf, but not bearing flowers or seeds. \nCitation: Lesson 2"
+        "explanationNepali": "व्याख्या: फर्नहरू टेरिडोफाइटा (Pteridophyta) उपविभागमा पर्छन्, जसका विशेषताहरूमा विकसित भास्कुलर तन्तु (xylem and phloem), जरा, काण्ड र पातमा विभाजित शरीर, तर फूल र बीउ नहुनु समावेश छन् ।\nउद्धरण: पाठ २",
+        "explanationEnglish": "Ferns belong to the subdivision Pteridophyta, whose characteristics include having developed vascular tissue (xylem and phloem), a body differentiated into root, stem, and leaf, but not bearing flowers or seeds.\nCitation: Lesson 2"
       },
       {
         "id": "c",
@@ -112,7 +114,8 @@
         ],
         "correctAnswer": "ii",
         "marks": 1,
-        "explanation": "व्याख्या: मेन्डलको प्रबलताको नियम (Law of Dominance) अनुसार, जब दुई शुद्ध विपरित गुण भएका जीवहरूबीच क्रस गराइन्छ, पहिलो वंशमा प्रबल गुण मात्र देखिन्छ । केराउमा अग्लोपन (Tallness) प्रबल गुण हो ।\n\nExplanation: According to Mendel's Law of Dominance, when two pure individuals with contrasting characters are crossed, only the dominant character is expressed in the first generation. In pea plants, tallness is the dominant character. \nCitation: Lesson 4"
+        "explanationNepali": "व्याख्या: मेन्डलको प्रबलताको नियम (Law of Dominance) अनुसार, जब दुई शुद्ध विपरित गुण भएका जीवहरूबीच क्रस गराइन्छ, पहिलो वंशमा प्रबल गुण मात्र देखिन्छ । केराउमा अग्लोपन (Tallness) प्रबल गुण हो ।\nउद्धरण: पाठ ४",
+        "explanationEnglish": "According to Mendel's Law of Dominance, when two pure individuals with contrasting characters are crossed, only the dominant character is expressed in the first generation. In pea plants, tallness is the dominant character.\nCitation: Lesson 4"
       },
       {
         "id": "d",
@@ -143,7 +146,8 @@
         ],
         "correctAnswer": "iii",
         "marks": 1,
-        "explanation": "व्याख्या: उर्ध्वचाप तरल पदार्थको घनत्व र वस्तुले विस्थापित गरेको तरलको आयतनमा सोझै समानुपातिक हुन्छ । घनत्व र विस्थापित आयतन जति बढी भयो, उर्ध्वचाप पनि त्यति नै बढी हुन्छ ।\n\nExplanation: Upthrust is directly proportional to the density of the liquid and the volume of the liquid displaced by the object. The greater the density and displaced volume, the greater the upthrust. \nCitation: Lesson 8"
+        "explanationNepali": "व्याख्या: उर्ध्वचाप तरल पदार्थको घनत्व र वस्तुले विस्थापित गरेको तरलको आयतनमा सोझै समानुपातिक हुन्छ । घनत्व र विस्थापित आयतन जति बढी भयो, उर्ध्वचाप पनि त्यति नै बढी हुन्छ ।\nउद्धरण: पाठ ८",
+        "explanationEnglish": "Upthrust is directly proportional to the density of the liquid and the volume of the liquid displaced by the object. The greater the density and displaced volume, the greater the upthrust.\nCitation: Lesson 8"
       },
       {
         "id": "e",
@@ -174,7 +178,8 @@
         ],
         "correctAnswer": "iii",
         "marks": 1,
-        "explanation": "व्याख्या: ट्रान्सफर्मरले म्युचुअल इन्डक्सनको सिद्धान्तमा काम गर्छ, जहाँ एउटा क्वाइलमा बदलिँदो करेन्टले नजिकैको अर्को क्वाइलमा भोल्टेज उत्पन्न गराउँछ ।\n\nExplanation: A transformer works on the principle of mutual induction, where a changing current in one coil induces a voltage in an adjacent coil. \nCitation: Lesson 11"
+        "explanationNepali": "व्याख्या: ट्रान्सफर्मरले म्युचुअल इन्डक्सनको सिद्धान्तमा काम गर्छ, जहाँ एउटा क्वाइलमा बदलिँदो करेन्टले नजिकैको अर्को क्वाइलमा भोल्टेज उत्पन्न गराउँछ ।\nउद्धरण: पाठ ११",
+        "explanationEnglish": "A transformer works on the principle of mutual induction, where a changing current in one coil induces a voltage in an adjacent coil.\nCitation: Lesson 11"
       },
       {
         "id": "f",
@@ -205,7 +210,8 @@
         ],
         "correctAnswer": "ii",
         "marks": 1,
-        "explanation": "व्याख्या: समूहमा तल जाँदा परमाणुको आकार बढ्छ, जसले गर्दा धातुहरूले सजिलै इलेक्ट्रोन गुमाउँछन् र तिनीहरूको सक्रियता बढ्छ । तर अधातुहरूको इलेक्ट्रोन तान्ने क्षमता घट्छ, जसले गर्दा तिनीहरूको सक्रियता घट्छ ।\n\nExplanation: Moving down a group, the atomic size increases, making it easier for metals to lose electrons, thus increasing their reactivity. For non-metals, the ability to gain electrons decreases, so their reactivity decreases. \nCitation: Lesson 14"
+        "explanationNepali": "व्याख्या: समूहमा तल जाँदा परमाणुको आकार बढ्छ, जसले गर्दा धातुहरूले सजिलै इलेक्ट्रोन गुमाउँछन् र तिनीहरूको सक्रियता बढ्छ । तर अधातुहरूको इलेक्ट्रोन तान्ने क्षमता घट्छ, जसले गर्दा तिनीहरूको सक्रियता घट्छ ।\nउद्धरण: पाठ १४",
+        "explanationEnglish": "Moving down a group, the atomic size increases, making it easier for metals to lose electrons, thus increasing their reactivity. For non-metals, the ability to gain electrons decreases, so their reactivity decreases.\nCitation: Lesson 14"
       },
       {
         "id": "g",
@@ -236,7 +242,8 @@
         ],
         "correctAnswer": "ii",
         "marks": 1,
-        "explanation": "व्याख्या: एमोनिया (NH$_3$) ग्यास पानीमा अत्यधिक घुलनशील हुन्छ र एमोनियम हाइड्रोअक्साइड बनाउँछ । यो हावाभन्दा हलुका हुन्छ र यसको तिखो, पन्जेन्ट गन्ध हुन्छ ।\n\nExplanation: Ammonia (NH$_3$) gas is highly soluble in water, forming ammonium hydroxide. It is lighter than air and has a strong, pungent odor. \nCitation: Lesson 16"
+        "explanationNepali": "व्याख्या: एमोनिया (NH$_3$) ग्यास पानीमा अत्यधिक घुलनशील हुन्छ र एमोनियम हाइड्रोअक्साइड बनाउँछ । यो हावाभन्दा हलुका हुन्छ र यसको तिखो, पन्जेन्ट गन्ध हुन्छ ।\nउद्धरण: पाठ १६",
+        "explanationEnglish": "Ammonia (NH$_3$) gas is highly soluble in water, forming ammonium hydroxide. It is lighter than air and has a strong, pungent odor.\nCitation: Lesson 16"
       },
       {
         "id": "h",
@@ -267,7 +274,8 @@
         ],
         "correctAnswer": "iv",
         "marks": 1,
-        "explanation": "व्याख्या: मियोसिस कोष विभाजनमा, एउटा डिप्लोइड मातृ कोष (diploid mother cell) विभाजित भएर चारओटा ह्याप्लोइड सन्तति कोष (haploid daughter cells) वा ग्यामेटहरू बन्छन् ।\n\nExplanation: In meiotic cell division, one diploid mother cell divides to form four haploid daughter cells or gametes. \nCitation: Lesson 4"
+        "explanationNepali": "व्याख्या: मियोसिस कोष विभाजनमा, एउटा डिप्लोइड मातृ कोष (diploid mother cell) विभाजित भएर चारओटा ह्याप्लोइड सन्तति कोष (haploid daughter cells) वा ग्यामेटहरू बन्छन् ।\nउद्धरण: पाठ ४",
+        "explanationEnglish": "In meiotic cell division, one diploid mother cell divides to form four haploid daughter cells or gametes.\nCitation: Lesson 4"
       },
       {
         "id": "i",
@@ -298,7 +306,8 @@
         ],
         "correctAnswer": "ii",
         "marks": 1,
-        "explanation": "व्याख्या: पानीको विशिष्ट ताप धारण क्षमता उच्च ($4200 \\text{ J/kg}^\\circ\\text{C}$) हुन्छ, जसको अर्थ यसले तापक्रममा खासै वृद्धि नभईकन धेरै ताप सोस्न सक्छ । यसले इन्जिनलाई प्रभावकारी रूपमा चिसो राख्छ ।\n\nExplanation: Water has a high specific heat capacity ($4200 \\text{ J/kg}^\\circ\\text{C}$), meaning it can absorb a large amount of heat without a significant increase in its own temperature. This makes it an effective coolant for engines. \nCitation: Lesson 9"
+        "explanationNepali": "व्याख्या: पानीको विशिष्ट ताप धारण क्षमता उच्च ($4200 \\text{ J/kg}^\\circ\\text{C}$) हुन्छ, जसको अर्थ यसले तापक्रममा खासै वृद्धि नभईकन धेरै ताप सोस्न सक्छ । यसले इन्जिनलाई प्रभावकारी रूपमा चिसो राख्छ ।\nउद्धरण: पाठ ९",
+        "explanationEnglish": "Water has a high specific heat capacity ($4200 \\text{ J/kg}^\\circ\\text{C}$), meaning it can absorb a large amount of heat without a significant increase in its own temperature. This makes it an effective coolant for engines.\nCitation: Lesson 9"
       },
       {
         "id": "j",
@@ -329,7 +338,8 @@
         ],
         "correctAnswer": "i",
         "marks": 1,
-        "explanation": "व्याख्या: अल्किनहरू असंतृप्त हाइड्रोकार्बन हुन् जसमा कार्बन परमाणुहरूबीच कम्तिमा एउटा दोहोरो बन्धन हुन्छ । तिनीहरूको सामान्य सूत्र $C_nH_{2n}$ हो ।\n\nExplanation: Alkenes are unsaturated hydrocarbons containing at least one carbon-carbon double bond. Their general formula is $C_nH_{2n}$. \nCitation: Lesson 18"
+        "explanationNepali": "व्याख्या: अल्किनहरू असंतृप्त हाइड्रोकार्बन हुन् जसमा कार्बन परमाणुहरूबीच कम्तिमा एउटा दोहोरो बन्धन हुन्छ । तिनीहरूको सामान्य सूत्र $C_nH_{2n}$ हो ।\nउद्धरण: पाठ १८",
+        "explanationEnglish": "Alkenes are unsaturated hydrocarbons containing at least one carbon-carbon double bond. Their general formula is $C_nH_{2n}$.\nCitation: Lesson 18"
       }
     ],
     "groupB": [

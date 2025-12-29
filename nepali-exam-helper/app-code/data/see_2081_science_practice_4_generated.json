@@ -50,7 +50,8 @@
         ],
         "correctAnswer": "iv",
         "marks": 1,
-        "explanation": "Explanation: कम्प्युटर मेमोरीको क्षमता बाइट (Byte), किलो बाइट (KB), मेगा बाइट (MB), गिगा बाइट (GB) आदिमा नापिन्छ । हर्ज (Hz) ले फ्रिक्वेन्सी नाप्छ ।\n\nComputer memory capacity is measured in Bytes, KB, MB, GB, etc. Hertz (Hz) measures frequency. \nCitation: Lesson 13"
+        "explanationNepali": "कम्प्युटर मेमोरीको क्षमता बाइट (Byte), किलो बाइट (KB), मेगा बाइट (MB), गिगा बाइट (GB) आदिमा नापिन्छ । हर्ज (Hz) ले फ्रिक्वेन्सी नाप्छ ।\nउद्धरण: पाठ १३",
+        "explanationEnglish": "Computer memory capacity is measured in Bytes, KB, MB, GB, etc. Hertz (Hz) measures frequency.\nCitation: Lesson 13"
       },
       {
         "id": "b",
@@ -81,7 +82,8 @@
         ],
         "correctAnswer": "ii",
         "marks": 1,
-        "explanation": "Explanation: मेन्डलको मोनोहाइब्रिड क्रसको दोस्रो वंश (F2) मा फिनोटाइपिक अनुपात ३ प्रवल (Dominant) : १ लुप्त (Recessive) हुन्छ ।\n\nIn Mendel's monohybrid cross, the phenotypic ratio in the F2 generation is 3 Dominant : 1 Recessive. \nCitation: Lesson 4"
+        "explanationNepali": "मेन्डलको मोनोहाइब्रिड क्रसको दोस्रो वंश (F2) मा फिनोटाइपिक अनुपात ३ प्रवल (Dominant) : १ लुप्त (Recessive) हुन्छ ।\nउद्धरण: पाठ ४",
+        "explanationEnglish": "In Mendel's monohybrid cross, the phenotypic ratio in the F2 generation is 3 Dominant : 1 Recessive.\nCitation: Lesson 4"
       },
       {
         "id": "c",
@@ -112,7 +114,8 @@
         ],
         "correctAnswer": "i",
         "marks": 1,
-        "explanation": "Explanation: उनिउँको प्रोथ्यालसमा एन्थेरिडियमले भाले ग्यामेट र आर्किगोनियमले पोथी ग्यामेट उत्पादन गर्छ ।\n\nIn the prothallus of a fern, the Antheridium produces male gametes and the Archegonium produces female gametes. \nCitation: Lesson 2"
+        "explanationNepali": "उनिउँको प्रोथ्यालसमा एन्थेरिडियमले भाले ग्यामेट र आर्किगोनियमले पोथी ग्यामेट उत्पादन गर्छ ।\nउद्धरण: पाठ २",
+        "explanationEnglish": "In the prothallus of a fern, the Antheridium produces male gametes and the Archegonium produces female gametes.\nCitation: Lesson 2"
       },
       {
         "id": "d",
@@ -143,7 +146,8 @@
         ],
         "correctAnswer": "i",
         "marks": 1,
-        "explanation": "Explanation: घ्युकुमारी (Aloe vera) को प्रयोग पेट र छाला सम्बन्धी समस्याहरू, साथै जलेको घाउ निको पार्न गरिन्छ ।\n\nAloe vera is used to cure stomach and skin problems, as well as to heal burns. \nCitation: Lesson 6"
+        "explanationNepali": "घ्युकुमारी (Aloe vera) को प्रयोग पेट र छाला सम्बन्धी समस्याहरू, साथै जलेको घाउ निको पार्न गरिन्छ ।\nउद्धरण: पाठ ६",
+        "explanationEnglish": "Aloe vera is used to cure stomach and skin problems, as well as to heal burns.\nCitation: Lesson 6"
       },
       {
         "id": "e",
@@ -174,7 +178,8 @@
         ],
         "correctAnswer": "iii",
         "marks": 1,
-        "explanation": "Explanation: चन्द्रमामा गुरुत्व प्रवेग पृथ्वीको भन्दा लगभग १/६ गुणा हुन्छ । त्यसैले तौल = $294/6 = 49 \\text{ N}$ ।\n\nGravity on the Moon is about 1/6th of that on Earth. Therefore, weight = $294/6 = 49 \\text{ N}$. \nCitation: Lesson 7"
+        "explanationNepali": "चन्द्रमामा गुरुत्व प्रवेग पृथ्वीको भन्दा लगभग १/६ गुणा हुन्छ । त्यसैले तौल = $294/6 = 49 \\text{ N}$ ।\nउद्धरण: पाठ ७",
+        "explanationEnglish": "Gravity on the Moon is about 1/6th of that on Earth. Therefore, weight = $294/6 = 49 \\text{ N}$.\nCitation: Lesson 7"
       },
       {
         "id": "f",
@@ -205,7 +210,8 @@
         ],
         "correctAnswer": "ii",
         "marks": 1,
-        "explanation": "Explanation: समुन्द्रको पानीमा नुन घुलेको हुनाले यसको घनत्व नदीको पानीभन्दा बढी हुन्छ । बढी घनत्व भएको तरलले बढी उर्ध्वचाप दिन्छ, त्यसैले जहाज समुन्द्रमा कम डुब्छ र नदीमा (कम घनत्व हुँदा) बढी डुब्छ ।\n\nSeawater contains salt, so its density is higher than river water. A liquid with higher density exerts more upthrust, so the ship sinks less in the sea and more in the river. \nCitation: Lesson 8"
+        "explanationNepali": "समुन्द्रको पानीमा नुन घुलेको हुनाले यसको घनत्व नदीको पानीभन्दा बढी हुन्छ । बढी घनत्व भएको तरलले बढी उर्ध्वचाप दिन्छ, त्यसैले जहाज समुन्द्रमा कम डुब्छ र नदीमा (कम घनत्व हुँदा) बढी डुब्छ ।\nउद्धरण: पाठ ८",
+        "explanationEnglish": "Seawater contains salt, so its density is higher than river water. A liquid with higher density exerts more upthrust, so the ship sinks less in the sea and more in the river.\nCitation: Lesson 8"
       },
       {
         "id": "g",
@@ -236,7 +242,8 @@
         ],
         "correctAnswer": "i",
         "marks": 1,
-        "explanation": "Explanation: यहाँ, आपतित कोण ($30^{\\circ}$) भन्दा आवर्तित कोण ($52^{\\circ}$) ठूलो छ । प्रकाश सघन माध्यमबाट विरल माध्यममा जाँदा 'नर्मल' भन्दा टाढा बाङ्गिन्छ (कोण बढ्छ) । त्यसैले माध्यम १ सघन र माध्यम २ विरल हो ।\n\nHere, the angle of refraction ($52^{\\circ}$) is greater than the angle of incidence ($30^{\\circ}$). Light bends away from the normal when travelling from a denser to a rarer medium. Thus, Medium 1 is denser and Medium 2 is rarer. \nCitation: Lesson 10"
+        "explanationNepali": "यहाँ, आपतित कोण ($30^{\\circ}$) भन्दा आवर्तित कोण ($52^{\\circ}$) ठूलो छ । प्रकाश सघन माध्यमबाट विरल माध्यममा जाँदा 'नर्मल' भन्दा टाढा बाङ्गिन्छ (कोण बढ्छ) । त्यसैले माध्यम १ सघन र माध्यम २ विरल हो ।\nउद्धरण: पाठ १०",
+        "explanationEnglish": "Here, the angle of refraction ($52^{\\circ}$) is greater than the angle of incidence ($30^{\\circ}$). Light bends away from the normal when travelling from a denser to a rarer medium. Thus, Medium 1 is denser and Medium 2 is rarer.\nCitation: Lesson 10"
       },
       {
         "id": "h",
@@ -267,7 +274,8 @@
         ],
         "correctAnswer": "iv",
         "marks": 1,
-        "explanation": "Explanation: हबल कन्स्ट्यान्ट (H) को हालको स्वीकार्य मान लगभग $73 \\text{ km/s/Mpc}$ हो ।\n\nThe currently accepted value of Hubble's constant (H) is approximately $73 \\text{ km/s/Mpc}$. \nCitation: Lesson 12"
+        "explanationNepali": "हबल कन्स्ट्यान्ट (H) को हालको स्वीकार्य मान लगभग $73 \\text{ km/s/Mpc}$ हो ।\nउद्धरण: पाठ १२",
+        "explanationEnglish": "The currently accepted value of Hubble's constant (H) is approximately $73 \\text{ km/s/Mpc}$.\nCitation: Lesson 12"
       },
       {
         "id": "i",
@@ -298,7 +306,8 @@
         ],
         "correctAnswer": "iii",
         "marks": 1,
-        "explanation": "Explanation: उत्पादन $YCl_3$ मा, क्लोरिन (Cl) को संयुज्यता १ हुन्छ । तीनओटा क्लोरिन परमाणुसँग एउटा Y परमाणु मिलेको छ, त्यसैले Y को संयुज्यता ३ हुनुपर्छ (सूत्र अनुसार क्रिस-क्रस विधि) ।\n\nIn the product $YCl_3$, Chlorine (Cl) has a valency of 1. Since one atom of Y combines with three atoms of Cl, the valency of Y must be 3. \nCitation: Lesson 15"
+        "explanationNepali": "उत्पादन $YCl_3$ मा, क्लोरिन (Cl) को संयुज्यता १ हुन्छ । तीनओटा क्लोरिन परमाणुसँग एउटा Y परमाणु मिलेको छ, त्यसैले Y को संयुज्यता ३ हुनुपर्छ (सूत्र अनुसार क्रिस-क्रस विधि) ।\nउद्धरण: पाठ १५",
+        "explanationEnglish": "In the product $YCl_3$, Chlorine (Cl) has a valency of 1. Since one atom of Y combines with three atoms of Cl, the valency of Y must be 3.\nCitation: Lesson 15"
       },
       {
         "id": "j",
@@ -329,7 +338,8 @@
         ],
         "correctAnswer": "i",
         "marks": 1,
-        "explanation": "Explanation: साबुनले कडा पानीमा फिँज दिँदैन र 'स्कम' बनाउँछ, तर डिटर्जेन्टले कडा पानीमा पनि सजिलै फिँज दिन्छ र सफाइ राम्रो गर्छ ।\n\nSoap forms scum with hard water and does not lather easily, whereas detergents lather well in both hard and soft water, making them more effective for washing. \nCitation: Lesson 19"
+        "explanationNepali": "साबुनले कडा पानीमा फिँज दिँदैन र 'स्कम' बनाउँछ, तर डिटर्जेन्टले कडा पानीमा पनि सजिलै फिँज दिन्छ र सफाइ राम्रो गर्छ ।\nउद्धरण: पाठ १९",
+        "explanationEnglish": "Soap forms scum with hard water and does not lather easily, whereas detergents lather well in both hard and soft water, making them more effective for washing.\nCitation: Lesson 19"
       }
     ],
     "groupB": [

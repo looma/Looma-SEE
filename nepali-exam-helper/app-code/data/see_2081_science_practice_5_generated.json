@@ -57,7 +57,8 @@
           ],
           "correctAnswer": "iv",
           "marks": 1,
-          "explanation": "Explanation: एम्पियर (विद्युतीय करेन्ट) SI प्रणालीमा सात आधारभूत एकाइहरूमध्ये एक हो । न्युटन, पास्कल र जुल तत्जन्य एकाइहरू हुन् ।\n\nAmpere (electric current) is one of the seven fundamental units in the SI system. Newton, Pascal, and Joule are derived units.\nCitation: Lesson 1"
+          "explanationNepali": "एम्पियर (विद्युतीय करेन्ट) SI प्रणालीमा सात आधारभूत एकाइहरूमध्ये एक हो । न्युटन, पास्कल र जुल तत्जन्य एकाइहरू हुन् ।\nउद्धरण: पाठ १",
+          "explanationEnglish": "Ampere (electric current) is one of the seven fundamental units in the SI system. Newton, Pascal, and Joule are derived units.\nCitation: Lesson 1"
         },
         {
           "id": "b",
@@ -88,7 +89,8 @@
           ],
           "correctAnswer": "iii",
           "marks": 1,
-          "explanation": "Explanation: इकाइनोडर्माटा फाइलमका जीवहरू ट्युब फिटको सहायताले हिँड्छन् र तिनीहरूको शरीर काँडादार छालाले ढाकिएको हुन्छ ।\n\nAnimals in Phylum Echinodermata move with the help of tube feet and their bodies are externally covered by hard calcareous spines.\nCitation: Lesson 2"
+          "explanationNepali": "इकाइनोडर्माटा फाइलमका जीवहरू ट्युब फिटको सहायताले हिँड्छन् र तिनीहरूको शरीर काँडादार छालाले ढाकिएको हुन्छ ।\nउद्धरण: पाठ २",
+          "explanationEnglish": "Animals in Phylum Echinodermata move with the help of tube feet and their bodies are externally covered by hard calcareous spines.\nCitation: Lesson 2"
         },
         {
           "id": "c",
@@ -119,7 +121,8 @@
           ],
           "correctAnswer": "iii",
           "marks": 1,
-          "explanation": "Explanation: प्लेटलेट्सले फाइब्रिनोजेनसँग मिलेर चोटपटक लागेको ठाउँमा रगत जमाउन मद्दत गर्छ ।\n\nPlatelets combine with fibrinogen to clot blood during cuts and injuries.\nCitation: Lesson 5"
+          "explanationNepali": "प्लेटलेट्सले फाइब्रिनोजेनसँग मिलेर चोटपटक लागेको ठाउँमा रगत जमाउन मद्दत गर्छ ।\nउद्धरण: पाठ ५",
+          "explanationEnglish": "Platelets combine with fibrinogen to clot blood during cuts and injuries.\nCitation: Lesson 5"
         },
         {
           "id": "d",
@@ -150,7 +153,8 @@
           ],
           "correctAnswer": "ii",
           "marks": 1,
-          "explanation": "Explanation: पृथ्वी ध्रुवमा चेप्टो भएकोले त्यहाँ अर्धव्यास कम हुन्छ । $g \\propto 1/R^2$ अनुसार, अर्धव्यास कम भएको ठाउँमा '$g$' को मान बढी हुन्छ ।\n\nSince the Earth is flattened at the poles, its radius is less there. According to $g \\propto 1/R^2$, the value of '$g$' is more where the radius is less.\nCitation: Lesson 7"
+          "explanationNepali": "पृथ्वी ध्रुवमा चेप्टो भएकोले त्यहाँ अर्धव्यास कम हुन्छ । $g \\propto 1/R^2$ अनुसार, अर्धव्यास कम भएको ठाउँमा '$g$' को मान बढी हुन्छ ।\nउद्धरण: पाठ ७",
+          "explanationEnglish": "Since the Earth is flattened at the poles, its radius is less there. According to $g \\propto 1/R^2$, the value of '$g$' is more where the radius is less.\nCitation: Lesson 7"
         },
         {
           "id": "e",
@@ -181,7 +185,8 @@
           ],
           "correctAnswer": "iii",
           "marks": 1,
-          "explanation": "Explanation: हाइड्रोलिक ब्रेक, हाइड्रोलिक लिफ्ट जस्ता उपकरणहरू पास्कलको नियममा आधारित हुन्छन्, जसले तरल पदार्थमा चाप समान रूपले प्रसारण हुने सिद्धान्तको उपयोग गर्छ ।\n\nHydraulic machines such as hydraulic brakes and hydraulic lifts are based on Pascal's law.\nCitation: Lesson 8"
+          "explanationNepali": "हाइड्रोलिक ब्रेक, हाइड्रोलिक लिफ्ट जस्ता उपकरणहरू पास्कलको नियममा आधारित हुन्छन्, जसले तरल पदार्थमा चाप समान रूपले प्रसारण हुने सिद्धान्तको उपयोग गर्छ ।\nउद्धरण: पाठ ८",
+          "explanationEnglish": "Hydraulic machines such as hydraulic brakes and hydraulic lifts are based on Pascal's law.\nCitation: Lesson 8"
         },
         {
           "id": "f",
@@ -212,7 +217,8 @@
           ],
           "correctAnswer": "ii",
           "marks": 1,
-          "explanation": "Explanation: अदूरदृष्टिमा, प्रकाशका किरणहरू रेटिनाको अगाडि केन्द्रित हुन्छन् । कन्केभ लेन्सले किरणहरूलाई विकेन्द्रित गरी रेटिनामा ठीकसँग केन्द्रित गर्न मद्दत गर्छ ।\n\nIn myopia, light rays focus in front of the retina. A concave lens diverges the light rays before they enter the eye, helping them to focus correctly on the retina.\nCitation: Lesson 10"
+          "explanationNepali": "अदूरदृष्टिमा, प्रकाशका किरणहरू रेटिनाको अगाडि केन्द्रित हुन्छन् । कन्केभ लेन्सले किरणहरूलाई विकेन्द्रित गरी रेटिनामा ठीकसँग केन्द्रित गर्न मद्दत गर्छ ।\nउद्धरण: पाठ १०",
+          "explanationEnglish": "In myopia, light rays focus in front of the retina. A concave lens diverges the light rays before they enter the eye, helping them to focus correctly on the retina.\nCitation: Lesson 10"
         },
         {
           "id": "g",
@@ -243,7 +249,8 @@
           ],
           "correctAnswer": "iii",
           "marks": 1,
-          "explanation": "Explanation: इथिन ($C_2H_4$) एक असंतृप्त हाइड्रोकार्बन (अल्किन) हो किनभने यसमा कार्बन परमाणुहरूबीच दोहोरो बन्धन ($C=C$) हुन्छ । अन्य सबै विकल्पहरू संतृप्त हाइड्रोकार्बन (अल्केन) हुन् ।\n\nEthene ($C_2H_4$) is an unsaturated hydrocarbon (alkene) because it has a double bond ($C=C$) between carbon atoms. All other options are saturated hydrocarbons (alkanes).\nCitation: Lesson 18"
+          "explanationNepali": "इथिन ($C_2H_4$) एक असंतृप्त हाइड्रोकार्बन (अल्किन) हो किनभने यसमा कार्बन परमाणुहरूबीच दोहोरो बन्धन ($C=C$) हुन्छ । अन्य सबै विकल्पहरू संतृप्त हाइड्रोकार्बन (अल्केन) हुन् ।\nउद्धरण: पाठ १८",
+          "explanationEnglish": "Ethene ($C_2H_4$) is an unsaturated hydrocarbon (alkene) because it has a double bond ($C=C$) between carbon atoms. All other options are saturated hydrocarbons (alkanes).\nCitation: Lesson 18"
         },
         {
           "id": "h",
@@ -274,7 +281,8 @@
           ],
           "correctAnswer": "ii",
           "marks": 1,
-          "explanation": "Explanation: चन्द्रमाको पिण्ड र अर्धव्यास पृथ्वीको भन्दा कम भएकोले, त्यहाँ गुरुत्व प्रवेगको मान कम हुन्छ, जुन लगभग $1.67 \\text{ m/s}^2$ (पृथ्वीको १/६ भाग) छ ।\n\nSince the mass and radius of the moon are less than that of the earth, the value of acceleration due to gravity is less there, which is about $1.67 \\text{ m/s}^2$ (1/6th of earth).\nCitation: Lesson 7"
+          "explanationNepali": "चन्द्रमाको पिण्ड र अर्धव्यास पृथ्वीको भन्दा कम भएकोले, त्यहाँ गुरुत्व प्रवेगको मान कम हुन्छ, जुन लगभग $1.67 \\text{ m/s}^2$ (पृथ्वीको १/६ भाग) छ ।\nउद्धरण: पाठ ७",
+          "explanationEnglish": "Since the mass and radius of the moon are less than that of the earth, the value of acceleration due to gravity is less there, which is about $1.67 \\text{ m/s}^2$ (1/6th of earth).\nCitation: Lesson 7"
         },
         {
           "id": "i",
@@ -305,7 +313,8 @@
           ],
           "correctAnswer": "ii",
           "marks": 1,
-          "explanation": "Explanation: इन्सुलिन हर्मोन प्यान्क्रियाजबाट उत्पादन हुन्छ र यसले रगतमा ग्लुकोज (चिनी) को मात्रालाई नियन्त्रण गर्छ ।\n\nInsulin is produced by the pancreas and it controls the level of glucose (sugar) in the blood.\nCitation: Lesson 5"
+          "explanationNepali": "इन्सुलिन हर्मोन प्यान्क्रियाजबाट उत्पादन हुन्छ र यसले रगतमा ग्लुकोज (चिनी) को मात्रालाई नियन्त्रण गर्छ ।\nउद्धरण: पाठ ५",
+          "explanationEnglish": "Insulin is produced by the pancreas and it controls the level of glucose (sugar) in the blood.\nCitation: Lesson 5"
         },
         {
           "id": "j",
@@ -336,7 +345,8 @@
           ],
           "correctAnswer": "ii",
           "marks": 1,
-          "explanation": "Explanation: ह्यालोजन समूहमा क्लोरीनको इलेक्ट्रोन एफिनिटी सबैभन्दा बढी हुन्छ ।\n\nChlorine has the highest electron affinity among the halogens.\nCitation: Lesson 14"
+          "explanationNepali": "ह्यालोजन समूहमा क्लोरीनको इलेक्ट्रोन एफिनिटी सबैभन्दा बढी हुन्छ ।\nउद्धरण: पाठ १४",
+          "explanationEnglish": "Chlorine has the highest electron affinity among the halogens.\nCitation: Lesson 14"
         }
       ],
       "groupB": [

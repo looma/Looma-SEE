@@ -28,11 +28,12 @@
         "type": "reading_comprehension",
         "marks": 5,
         "passage": {
-          "author": "William Henry Davies",
           "contentNepali": "यो जीवन के हो यदि, चिन्ताले भरिएको छ,\nहामीसँग उभिएर हेर्ने समय छैन।\nहाँगाहरूको तल उभिने समय छैन\nर भेडा वा गाईहरू जति लामो समय एकटक हेर्ने।\nहामी जंगल हुँदै जाँदा, देख्ने समय छैन,\nजहाँ लोखर्केहरूले घाँसमा आफ्ना बदाम लुकाउँछन्।\nदिउँसै देख्ने समय छैन,\nरातिको आकाश जस्तै, ताराहरूले भरिएका खोलाहरू।\nसुन्दरताको झलकमा फर्कने समय छैन,\nर उनको खुट्टाहरू हेर्ने, तिनीहरू कसरी नाच्छन्।\nउनको मुखले, उनको आँखाहरूले सुरु गरेको मुस्कानलाई\nसमृद्ध बनाउनुन्जेल पर्खने समय छैन।\nयो एक दयनीय जीवन हो यदि, चिन्ताले भरिएको छ,\nहामीसँग उभिएर हेर्ने समय छैन।",
           "contentEnglish": "What is this life if, full of care,\nWe have no time to stand and stare.\nNo time to stand beneath the boughs\nAnd stare as long as sheep or cows.\nNo time to see, when woods we pass,\nWhere squirrels hide their nuts in grass.\nNo time to see, in broad daylight,\nStreams full of stars, like skies at night.\nNo time to turn at Beauty’s glance,\nAnd watch her feet, how they can dance.\nNo time to wait till her mouth can\nEnrich that smile her eyes began.\nA poor life this if, full of care,\nWe have no time to stand and stare.",
           "titleNepali": "फुर्सद (Leisure)",
-          "titleEnglish": "Leisure"
+          "titleEnglish": "Leisure",
+          "authorNepali": "विलियम हेनरी डेभिस",
+          "authorEnglish": "William Henry Davies"
         },
         "subSections": [
           {
@@ -357,49 +358,60 @@
               "A": [
                 {
                   "id": "i",
-                  "text": "Haggis"
+                  "textNepali": "ह्यागिस (Haggis)",
+                  "textEnglish": "Haggis"
                 },
                 {
                   "id": "ii",
-                  "text": "Bun rieu"
+                  "textNepali": "बन रियु (Bun rieu)",
+                  "textEnglish": "Bun rieu"
                 },
                 {
                   "id": "iii",
-                  "text": "Crickets"
+                  "textNepali": "क्रिकेट्स (Crickets)",
+                  "textEnglish": "Crickets"
                 },
                 {
                   "id": "iv",
-                  "text": "Green ants"
+                  "textNepali": "हरियो कमिला (Green ants)",
+                  "textEnglish": "Green ants"
                 },
                 {
                   "id": "v",
-                  "text": "Jellyfish"
+                  "textNepali": "जेलीफिस (Jellyfish)",
+                  "textEnglish": "Jellyfish"
                 }
               ],
               "B": [
                 {
                   "id": "a",
-                  "text": "insects with a lemony and peppery taste"
+                  "textNepali": "कागती र मरिचको स्वाद भएका कीराहरू",
+                  "textEnglish": "insects with a lemony and peppery taste"
                 },
                 {
                   "id": "b",
-                  "text": "a sea creature with a rubbery texture"
+                  "textNepali": "रबर जस्तो बनावट भएको समुद्री जीव",
+                  "textEnglish": "a sea creature with a rubbery texture"
                 },
                 {
                   "id": "c",
-                  "text": "a crab-based soup with congealed pig's blood"
+                  "textNepali": "जमेको सुँगुरको रगत भएको गँगटोमा आधारित सुप",
+                  "textEnglish": "a crab-based soup with congealed pig's blood"
                 },
                 {
                   "id": "d",
-                  "text": "deep-fried insects that are nutty and crunchy"
+                  "textNepali": "नटी र क्रन्ची हुने गहिरो भुटेका कीराहरू",
+                  "textEnglish": "deep-fried insects that are nutty and crunchy"
                 },
                 {
                   "id": "e",
-                  "text": "sheep's organs boiled in its stomach"
+                  "textNepali": "भेडाको पेटमा उमालिएका भेडाका अंगहरू",
+                  "textEnglish": "sheep's organs boiled in its stomach"
                 },
                 {
                   "id": "f",
-                  "text": "fermented horse milk"
+                  "textNepali": "घोडाको किण्वित दूध (ज्यादै अमिल्याइएको)",
+                  "textEnglish": "fermented horse milk"
                 }
               ]
             },
@@ -437,23 +449,28 @@
             "sentences": [
               {
                 "id": "i",
-                "text": "Mix it with mutton fat, oatmeal, and spices."
+                "textNepali": "यसलाई भेडाको बोसो, जईको पीठो र मसलासँग मिसाउनुहोस्।",
+                "textEnglish": "Mix it with mutton fat, oatmeal, and spices."
               },
               {
                 "id": "ii",
-                "text": "Boil it for a few hours."
+                "textNepali": "यसलाई केही घण्टा उमाल्नुहोस्।",
+                "textEnglish": "Boil it for a few hours."
               },
               {
                 "id": "iii",
-                "text": "Grind up the sheep's heart, liver, and lungs."
+                "textNepali": "भेडाको मुटु, कलेजो र फोक्सो पिस्नुहोस्।",
+                "textEnglish": "Grind up the sheep's heart, liver, and lungs."
               },
               {
                 "id": "iv",
-                "text": "Take the parts of a sheep that no one wants."
+                "textNepali": "भेडाका ती अंगहरू लिनुहोस् जुन कसैले चाहँदैन।",
+                "textEnglish": "Take the parts of a sheep that no one wants."
               },
               {
                 "id": "v",
-                "text": "Pack the mixture into a sheep's stomach."
+                "textNepali": "मिश्रणलाई भेडाको पेटमा भर्नुहोस्।",
+                "textEnglish": "Pack the mixture into a sheep's stomach."
               }
             ],
             "correctAnswer": [
@@ -531,12 +548,6 @@
         "type": "free_writing",
         "marks": 5,
         "wordCount": 100,
-        "clues": [
-          "name of the dish",
-          "ingredients",
-          "method/steps",
-          "serving suggestion"
-        ],
         "sampleAnswer": {
           "explanationNepali": "यो उत्तरले तरकारी मो:मो बनाउने विधि प्रस्तुत गर्दछ, दिइएको संकेतहरू प्रयोग गर्दै। यसमा परिकारको नाम, आवश्यक सामग्री, बनाउने विधि, र कसरी प्रस्तुत गर्ने भन्ने सुझाव समावेश छ। चरणहरू स्पष्ट र क्रमबद्ध छन्, जसले पाठकलाई सजिलै पछ्याउन मद्दत गर्दछ।\nउद्धरण: पाठ ६",
           "explanationEnglish": "This answer provides a recipe for making vegetable mo:mo, using the given clues. It includes the name of the dish, the necessary ingredients, the preparation method, and a serving suggestion. The steps are clear and sequential, making it easy for the reader to follow. \nCitation: Lesson 6.",
@@ -546,20 +557,25 @@
           "titleEnglish": "Recipe for Vegetable Mo:Mo"
         },
         "titleNepali": "तपाईंको मनपर्ने परिकार तयार गर्ने विधि (recipe) लेख्नुहोस्।",
-        "titleEnglish": "Write a recipe to prepare your favourite dish."
+        "titleEnglish": "Write a recipe to prepare your favourite dish.",
+        "cluesNepali": [
+          "परिकारको नाम",
+          "सामग्रीहरू",
+          "विधि/चरणहरू",
+          "पस्कने सुझाव"
+        ],
+        "cluesEnglish": [
+          "name of the dish",
+          "ingredients",
+          "method/steps",
+          "serving suggestion"
+        ]
       },
       {
         "questionNumber": 6,
         "type": "free_writing",
         "marks": 5,
         "wordCount": 100,
-        "clues": [
-          "friend's name",
-          "name of the competition",
-          "express happiness and pride",
-          "mention hard work and talent",
-          "wish for future success"
-        ],
         "sampleAnswer": {
           "explanationNepali": "यो उत्तरले राष्ट्रिय निबन्ध प्रतियोगिता जित्ने साथीलाई बधाई सन्देश प्रस्तुत गर्दछ। यसले दिइएको संकेतहरू समावेश गर्दछ: साथीको नाम, प्रतियोगिताको नाम, खुसी र गर्व व्यक्त गर्ने, कडा परिश्रम र प्रतिभाको प्रशंसा गर्ने, र भविष्यको लागि शुभकामना दिने। सन्देशको टोन न्यानो र उत्साहजनक छ, जुन यस्तो अवसरको लागि उपयुक्त छ।\nउद्धरण: पाठ १६",
           "explanationEnglish": "This answer presents a congratulatory message to a friend who has won a national essay competition. It incorporates the given clues: the friend's name, the competition's name, expressing happiness and pride, acknowledging hard work and talent, and wishing future success. The tone is warm and encouraging, appropriate for the occasion. \nCitation: Lesson 16.",
@@ -569,7 +585,21 @@
           "titleEnglish": "Message of Congratulation"
         },
         "titleNepali": "राष्ट्रिय स्तरको निबन्ध लेखन प्रतियोगिता जितेको साथीलाई बधाई सन्देश लेख्नुहोस्। यो करिब १०० शब्दमा लेख्नुहोस्।",
-        "titleEnglish": "Write a message of congratulation to a friend who has won a national-level essay writing competition. Write it in about 100 words."
+        "titleEnglish": "Write a message of congratulation to a friend who has won a national-level essay writing competition. Write it in about 100 words.",
+        "cluesNepali": [
+          "साथीको नाम",
+          "प्रतियोगिताको नाम",
+          "खुशी र गर्व व्यक्त गर्नुहोस्",
+          "कडा परिश्रम र प्रतिभाको उल्लेख गर्नुहोस्",
+          "भविष्यको सफलताको कामना"
+        ],
+        "cluesEnglish": [
+          "friend's name",
+          "name of the competition",
+          "express happiness and pride",
+          "mention hard work and talent",
+          "wish for future success"
+        ]
       },
       {
         "questionNumber": 7,
@@ -590,13 +620,6 @@
         "type": "free_writing",
         "marks": 8,
         "wordCount": 200,
-        "clues": [
-          "film title",
-          "director",
-          "main plot summary",
-          "strengths and weaknesses (acting, visuals, music)",
-          "recommendation"
-        ],
         "sampleAnswer": {
           "explanationNepali": "यो उत्तरले 'Hachi: A Dog's Tale' फिल्मको समीक्षा प्रस्तुत गर्दछ। यसले फिल्मको शीर्षक, निर्देशक, मुख्य कथाको सारांश, अभिनय र संगीत जस्ता शक्तिहरू, र एक सिफारिस समावेश गर्दछ, प्रश्नमा माग गरिए अनुसार। समीक्षाले फिल्मको भावनात्मक शक्ति र यसले दर्शकमा पार्ने प्रभावलाई जोड दिन्छ। यो लगभग २०० शब्दको छ।\nउद्धरण: पाठ १८",
           "explanationEnglish": "This answer provides a review of the film 'Hachi: A Dog's Tale'. It includes the film's title, director, a summary of the main plot, its strengths like acting and music, and a recommendation, as requested. The review emphasizes the film's emotional power and its impact on the audience. It is approximately 200 words. \nCitation: Lesson 18.",
@@ -606,7 +629,21 @@
           "titleEnglish": "Film Review: Hachi: A Dog's Tale"
         },
         "titleNepali": "तपाईंले भर्खरै हेर्नुभएको चलचित्रको समीक्षा करिब २०० शब्दमा लेख्नुहोस्।",
-        "titleEnglish": "Write a review of a film you have recently watched in about 200 words."
+        "titleEnglish": "Write a review of a film you have recently watched in about 200 words.",
+        "cluesNepali": [
+          "चलचित्रको शीर्षक",
+          "निर्देशक",
+          "मुख्य कथानकको सारांश",
+          "सबल र दुर्बल पक्षहरू (अभिनय, दृश्य, संगीत)",
+          "सिफारिस/सुझाव"
+        ],
+        "cluesEnglish": [
+          "film title",
+          "director",
+          "main plot summary",
+          "strengths and weaknesses (acting, visuals, music)",
+          "recommendation"
+        ]
       },
       {
         "questionNumber": 9,

@@ -28,11 +28,12 @@
         "type": "reading_comprehension",
         "marks": 5,
         "passage": {
-          "author": "Walt Whitman",
           "contentNepali": "र तिमी को हौ? मैले बिस्तारै झरिरहेको झरीलाई सोधेँ,\nजसले, भन्न अनौठो लाग्छ, मलाई जवाफ दियो, जुन यहाँ अनुवाद गरिएको छ:\nम पृथ्वीको कविता हुँ, वर्षाको आवाजले भन्यो,\nअनन्त म अदृश्य भई जमिन र अथाह समुद्रबाट उठ्छु,\nमाथि आकाशतिर, जहाँ, अस्पष्ट रूप लिई, पूर्ण रूपमा बद्लिए पनि, उही रहन्छु।\nम खडेरी, सुक्ष्म कणहरू, विश्वका धुलोका तहहरू पखाल्न ओर्लिन्छु,\nर ती सबै जुन म बिना केवल बीउ मात्र थिए, सुप्त, अजन्मे:\nर सधैंभरि, दिन र रात, म आफ्नै उद्गमलाई जीवन फिर्ता दिन्छु,\nर यसलाई शुद्ध र सुन्दर बनाउँछु:\n(किनकि गीत, यसको जन्मस्थानबाट निस्केर, पूर्णतापछि, घुम्दै,\nवास्ता गरियोस् वा नगरियोस्, प्रेमका साथ विधिवत फर्कन्छ।)",
           "contentEnglish": "And who art thou? said I to the soft-falling shower,\nWhich, strange to tell, gave me an answer, as here translated:\nI am the Poem of Earth, said the voice of the rain,\nEternal I rise impalpable out of the land and the bottomless sea,\nUpward to heaven, whence, vaguely form'd, altogether changed, and yet the same.\nI descend to lave the droughts, atomies, dust-layers of the globe,\nAnd all that in them without me were seeds only, latent, unborn:\nAnd forever, by day and night, I give back life to my own origin,\nand make pure and beautify it:\n(For song, issuing from its birth-place, after fulfilment, wandering,\nReck'd or unreck'd, duly with love returns.)",
           "titleNepali": "वर्षाको आवाज (The Voice of the Rain)",
-          "titleEnglish": "The Voice of the Rain"
+          "titleEnglish": "The Voice of the Rain",
+          "authorNepali": "वाल्ट ह्विटम्यान",
+          "authorEnglish": "Walt Whitman"
         },
         "subSections": [
           {
@@ -357,49 +358,60 @@
               "A": [
                 {
                   "id": "i",
-                  "text": "surpassing"
+                  "textNepali": "उछिन्दै/अगाडि बढ्दै",
+                  "textEnglish": "surpassing"
                 },
                 {
                   "id": "ii",
-                  "text": "fertility"
+                  "textNepali": "प्रजनन दर (fertility)",
+                  "textEnglish": "fertility"
                 },
                 {
                   "id": "iii",
-                  "text": "projected"
+                  "textNepali": "प्रक्षेपण गरिएको/अनुमान गरिएको",
+                  "textEnglish": "projected"
                 },
                 {
                   "id": "iv",
-                  "text": "populous"
+                  "textNepali": "घना बस्ती भएको/धेरै जनसंख्या भएको",
+                  "textEnglish": "populous"
                 },
                 {
                   "id": "v",
-                  "text": "disparate"
+                  "textNepali": "भिन्न/असमान",
+                  "textEnglish": "disparate"
                 }
               ],
               "B": [
                 {
                   "id": "a",
-                  "text": "estimated or forecast"
+                  "textNepali": "अनुमानित वा पूर्वानुमान गरिएको",
+                  "textEnglish": "estimated or forecast"
                 },
                 {
                   "id": "b",
-                  "text": "essentially different; of a different kind"
+                  "textNepali": "तात्विक रूपमा फरक; फरक प्रकारको",
+                  "textEnglish": "essentially different; of a different kind"
                 },
                 {
                   "id": "c",
-                  "text": "the ability to conceive children"
+                  "textNepali": "सन्तान जन्माउने क्षमता",
+                  "textEnglish": "the ability to conceive children"
                 },
                 {
                   "id": "d",
-                  "text": "having a large population"
+                  "textNepali": "ठूलो जनसंख्या भएको",
+                  "textEnglish": "having a large population"
                 },
                 {
                   "id": "e",
-                  "text": "becoming greater than"
+                  "textNepali": "भन्दा ठूलो हुँदै/उछिन्दै",
+                  "textEnglish": "becoming greater than"
                 },
                 {
                   "id": "f",
-                  "text": "decreasing rapidly"
+                  "textNepali": "तीव्र रूपमा घट्दै",
+                  "textEnglish": "decreasing rapidly"
                 }
               ]
             },
@@ -437,23 +449,28 @@
             "sentences": [
               {
                 "id": "i",
-                "text": "The world population reached 5 billion."
+                "textNepali": "विश्वको जनसंख्या ५ अर्ब पुग्यो।",
+                "textEnglish": "The world population reached 5 billion."
               },
               {
                 "id": "ii",
-                "text": "India is expected to become the most populous country."
+                "textNepali": "भारत सबैभन्दा धेरै जनसंख्या भएको देश बन्ने अपेक्षा गरिएको छ।",
+                "textEnglish": "India is expected to become the most populous country."
               },
               {
                 "id": "iii",
-                "text": "The global population growth rate fell below one percent."
+                "textNepali": "विश्वव्यापी जनसंख्या वृद्धि दर एक प्रतिशतभन्दा तल झर्यो।",
+                "textEnglish": "The global population growth rate fell below one percent."
               },
               {
                 "id": "iv",
-                "text": "The pace of population growth started to slow down."
+                "textNepali": "जनसंख्या वृद्धिको गति सुस्त हुन थाल्यो।",
+                "textEnglish": "The pace of population growth started to slow down."
               },
               {
                 "id": "v",
-                "text": "Central and Southern Asia is projected to be the most populous region."
+                "textNepali": "मध्य र दक्षिणी एसिया सबैभन्दा धेरै जनसंख्या भएको क्षेत्र हुने अनुमान गरिएको छ।",
+                "textEnglish": "Central and Southern Asia is projected to be the most populous region."
               }
             ],
             "correctAnswer": [
@@ -531,13 +548,6 @@
         "type": "free_writing",
         "marks": 5,
         "wordCount": 100,
-        "clues": [
-          "name of the place",
-          "how you travelled",
-          "main attractions",
-          "your experience/feelings",
-          "recommendation"
-        ],
         "sampleAnswer": {
           "explanationNepali": "यो उत्तरले लुम्बिनीको भ्रमणको बारेमा एक छोटो यात्रा विवरण प्रस्तुत गर्दछ, दिइएको संकेतहरू प्रयोग गर्दै। यसमा स्थानको नाम, यात्राको माध्यम, मुख्य आकर्षणहरू, र लेखकको अनुभव समावेश छ। यसले पाठकलाई स्थानको शान्तिपूर्ण र आध्यात्मिक वातावरणको झलक दिन्छ।\nउद्धरण: पाठ १४",
           "explanationEnglish": "This answer presents a short travelogue about a visit to Lumbini, using the provided clues. It includes the name of the place, mode of travel, main attractions, and the writer's experience. It gives the reader a glimpse of the peaceful and spiritual atmosphere of the location. \nCitation: Lesson 14.",
@@ -547,21 +557,27 @@
           "titleEnglish": "A Memorable Trip to Lumbini"
         },
         "titleNepali": "तपाईंले भर्खरै भ्रमण गरेको ठाउँको बारेमा छोटो यात्रा निबन्ध (travelogue) लेख्नुहोस्।",
-        "titleEnglish": "Write a short travelogue about a place you have recently visited."
+        "titleEnglish": "Write a short travelogue about a place you have recently visited.",
+        "cluesNepali": [
+          "ठाउँको नाम",
+          "तपाईंले कसरी यात्रा गर्नुभयो",
+          "मुख्य आकर्षणहरू",
+          "तपाईंको अनुभव/भावनाहरू",
+          "सिफारिस/सुझाव"
+        ],
+        "cluesEnglish": [
+          "name of the place",
+          "how you travelled",
+          "main attractions",
+          "your experience/feelings",
+          "recommendation"
+        ]
       },
       {
         "questionNumber": 6,
         "type": "free_writing",
         "marks": 5,
         "wordCount": 100,
-        "clues": [
-          "event: Inter-House Quiz Contest",
-          "date, time, venue",
-          "participants: students from grades 8-10",
-          "topics: science, history, general knowledge",
-          "registration deadline",
-          "contact person"
-        ],
         "sampleAnswer": {
           "explanationNepali": "यो उत्तरले अन्तर-सदन हाजिरीजवाफ प्रतियोगिताको बारेमा विद्यार्थीहरूलाई जानकारी दिनको लागि एक सूचना तयार गर्दछ। यसले कार्यक्रमको मिति, समय, स्थान, सहभागीहरू, र दर्ता विवरणहरू जस्ता सबै आवश्यक जानकारीहरू समावेश गर्दछ, दिइएको संकेतहरूमा आधारित।\nउद्धरण: पाठ १२",
           "explanationEnglish": "This answer prepares a notice to inform students about an inter-house quiz contest. It includes all necessary details like the date, time, venue, participants, and registration details, based on the provided clues. \nCitation: Lesson 12.",
@@ -571,7 +587,23 @@
           "titleEnglish": "NOTICE: Inter-House Quiz Contest"
         },
         "titleNepali": "कल्पना गर्नुहोस् कि तपाईंको विद्यालयले अर्को हप्ता अन्तर-सदन हाजिरीजवाफ प्रतियोगिता आयोजना गर्दैछ। विद्यार्थीहरूलाई यस बारे जानकारी दिनको लागि सूचना लेख्नुहोस्।",
-        "titleEnglish": "Imagine your school is organizing an Inter-House Quiz Contest next week. Write a notice to inform the students about it."
+        "titleEnglish": "Imagine your school is organizing an Inter-House Quiz Contest next week. Write a notice to inform the students about it.",
+        "cluesNepali": [
+          "कार्यक्रम: अन्तर-सदन हाजिरीजवाफ प्रतियोगिता",
+          "मिति, समय, स्थान",
+          "सहभागीहरू: कक्षा ८-१० का विद्यार्थीहरू",
+          "विषयहरू: विज्ञान, इतिहास, सामान्य ज्ञान",
+          "दर्ता गर्ने अन्तिम म्याद",
+          "सम्पर्क व्यक्ति"
+        ],
+        "cluesEnglish": [
+          "event: Inter-House Quiz Contest",
+          "date, time, venue",
+          "participants: students from grades 8-10",
+          "topics: science, history, general knowledge",
+          "registration deadline",
+          "contact person"
+        ]
       },
       {
         "questionNumber": 7,
@@ -591,14 +623,6 @@
         "questionNumber": 8,
         "type": "free_writing",
         "marks": 8,
-        "clues": [
-          "name and birth",
-          "early life and education",
-          "major works/contributions",
-          "challenges faced",
-          "awards/recognition",
-          "why you admire them"
-        ],
         "sampleAnswer": {
           "explanationNepali": "यो उत्तरले अनुराधा कोइरालाको जीवनी प्रस्तुत गर्दछ। यसले उनको जन्म, प्रारम्भिक जीवन, माइती नेपालको स्थापना, मुख्य योगदान, सामना गरेका चुनौतीहरू, र प्राप्त पुरस्कारहरू जस्ता मुख्य पक्षहरूलाई समेट्छ। अन्त्यमा, लेखकले उनको प्रशंसा गर्नुको कारण उल्लेख गर्दछ, जसले जीवनीलाई व्यक्तिगत स्पर्श दिन्छ।\nउद्धरण: पाठ १५",
           "explanationEnglish": "This answer provides a biography of Anuradha Koirala. It covers key aspects like her birth, early life, the founding of Maiti Nepal, her major contributions, challenges faced, and awards received. The conclusion states why the writer admires her, adding a personal touch to the biography. \nCitation: Lesson 15.",
@@ -608,7 +632,23 @@
           "titleEnglish": "Anuradha Koirala: A Mother to Many"
         },
         "titleNepali": "तपाईंले प्रशंसा गर्ने व्यक्ति (जस्तै: प्रसिद्ध वैज्ञानिक, कलाकार, वा समाजसेवी) को छोटो जीवनी करिब २०० शब्दमा लेख्नुहोस्।",
-        "titleEnglish": "Write a short biography of a person you admire (e.g., a famous scientist, artist, or social worker) in about 200 words."
+        "titleEnglish": "Write a short biography of a person you admire (e.g., a famous scientist, artist, or social worker) in about 200 words.",
+        "cluesNepali": [
+          "नाम र जन्म",
+          "प्रारम्भिक जीवन र शिक्षा",
+          "प्रमुख कार्यहरू/योगदानहरू",
+          "सामना गरिएका चुनौतीहरू",
+          "पुरस्कार/सम्मान",
+          "तपाईं उनीहरूलाई किन प्रशंसा गर्नुहुन्छ"
+        ],
+        "cluesEnglish": [
+          "name and birth",
+          "early life and education",
+          "major works/contributions",
+          "challenges faced",
+          "awards/recognition",
+          "why you admire them"
+        ]
       },
       {
         "questionNumber": 9,

@@ -28,11 +28,12 @@
         "type": "reading_comprehension",
         "marks": 5,
         "passage": {
-          "author": "Richard Scrafton Sharpe",
           "contentNepali": "सानो सुरक्षित झुपडीमा एउटा मोटो सानो मुसा बस्थ्यो,\nजसले, बिना कुनै बाधा, घरको आनन्द लिन्थ्यो;\nसादा खानामा सन्तुष्ट, उसले बिहानको खाजामा चीज खान्थ्यो,\nदिउँसोको खानामा बेकन, र रातीको खानामा खैरो केराउ।\n\nसहरबाट एउटा साथी झुपडीतिर भटकियो,\nर उसले भन्यो कि ऊ छोटो भेटघाटको लागि आएको हो;\nत्यसैले मुसाले तिमीलाई खुसी पार्न आफ्नो टेबल सजायो,\nर मिठो बेकन र मनमोहक खैरो केराउ ल्यायो।\n\nपाहुनाले निधार खुम्च्यायो, र आफूलाई चलाख ठान्यो:\nउसले चिच्यायो, \"तिमीलाई थाहा हुनुपर्छ, म सहरबाट आएको हुँ,\nजहाँ हामी सबै यस्ता खानेकुराहरू देख्दा छक्क पर्छौं,\nकिनकि हामी कहिल्यै बेकन र डरलाग्दो खैरो केराउ खाँदैनौं।\"",
           "contentEnglish": "In a snug little cot lived a fat little mouse,\nWho enjoyed, unmolested, the range of the house;\nWith plain food content, she would breakfast on cheese,\nShe dined upon bacon, and supped on grey peas.\n\nA friend from the town to the cottage did stray,\nAnd he said he was come a short visit to pay;\nSo the mouse spread her table as gay as you please,\nAnd brought the nice bacon and charming grey peas.\n\nThe visitor frowned, and he thought to be witty:\nCried he, “You must know, I come from the city,\nWhere we all should be shocked at provisions like these,\nFor we never eat bacon and horrid grey peas.”",
           "titleNepali": "गाउँको मुसा र शहरको मुसा",
-          "titleEnglish": "The Country Mouse and the City Mouse"
+          "titleEnglish": "The Country Mouse and the City Mouse",
+          "authorNepali": "रिचर्ड स्क्र्याफ्टन शार्प",
+          "authorEnglish": "Richard Scrafton Sharpe"
         },
         "subSections": [
           {
@@ -410,23 +411,28 @@
             "sentences": [
               {
                 "id": "i",
-                "text": "Nobel Prize for Peace is granted in Norway."
+                "textNepali": "नोबेल शान्ति पुरस्कार नर्वेमा प्रदान गरिन्छ।",
+                "textEnglish": "Nobel Prize for Peace is granted in Norway."
               },
               {
                 "id": "ii",
-                "text": "The Nobel Prizes firstly distributed at the beginning of the 20th century."
+                "textNepali": "नोबेल पुरस्कारहरू पहिलो पटक २० औं शताब्दीको सुरुमा वितरण गरियो।",
+                "textEnglish": "The Nobel Prizes firstly distributed at the beginning of the 20th century."
               },
               {
                 "id": "iii",
-                "text": "Nobel Prizes are awarded every year to those who have contributed for mankind."
+                "textNepali": "मानवजातिका लागि योगदान पुर्याउनेहरूलाई हरेक वर्ष नोबेल पुरस्कार प्रदान गरिन्छ।",
+                "textEnglish": "Nobel Prizes are awarded every year to those who have contributed for mankind."
               },
               {
                 "id": "iv",
-                "text": "The Nobel foundation manages the provisions related to the prizes."
+                "textNepali": "नोबेल फाउन्डेसनले पुरस्कारसँग सम्बन्धित प्रावधानहरू व्यवस्थापन गर्छ।",
+                "textEnglish": "The Nobel foundation manages the provisions related to the prizes."
               },
               {
                 "id": "v",
-                "text": "Bank of Sweden established the prize for Economic Sciences."
+                "textNepali": "बैंक अफ स्वीडेनले अर्थशास्त्रका लागि पुरस्कार स्थापना गर्यो।",
+                "textEnglish": "Bank of Sweden established the prize for Economic Sciences."
               }
             ],
             "correctAnswer": [
@@ -504,13 +510,6 @@
         "type": "free_writing",
         "marks": 5,
         "wordCount": 100,
-        "clues": [
-          "Parents Day",
-          "at school premises",
-          "all staff and students",
-          "awards and prizes for winners of sports and other activities",
-          "chief guest - ward chairperson"
-        ],
         "sampleAnswer": {
           "explanationNepali": "यो उत्तरले विद्यालयमा अभिभावक दिवसको बारेमा जानकारी दिने सूचनाको ढाँचामा छ। यसले मिति, समय, स्थान, प्रमुख अतिथि, र कार्यक्रमका मुख्य आकर्षणहरू (पुरस्कार वितरण) समावेश गर्दछ।\nउद्धरण: पाठ २",
           "explanationEnglish": "This answer is in the format of a notice informing about the Parents Day celebration. It includes the date, time, venue, chief guest, and main attractions (prize distribution). \nCitation: Lesson 2.",
@@ -520,14 +519,51 @@
           "titleEnglish": "NOTICE: PARENTS DAY CELEBRATION"
         },
         "titleNepali": "तपाईंको विद्यालयले जुलाई १० मा अभिभावक दिवस आयोजना गर्दैछ। दिनिएका संकेतहरू प्रयोग गरी आफ्नो प्रधानाध्यापकको तर्फबाट करिब १०० शब्दमा सूचना लेख्नुहोस्।",
-        "titleEnglish": "Your school is going to organize Parents Day on July 10. Write a notice in about 100 words on behalf of your Head teacher using the given clues."
+        "titleEnglish": "Your school is going to organize Parents Day on July 10. Write a notice in about 100 words on behalf of your Head teacher using the given clues.",
+        "cluesNepali": [
+          "अभिभावक दिवस",
+          "विद्यालय परिसरमा",
+          "सबै कर्मचारी र विद्यार्थीहरू",
+          "खेलकुद र अन्य क्रियाकलापका विजेताहरूका लागि पुरस्कारहरू",
+          "प्रमुख अतिथि - वडा अध्यक्ष"
+        ],
+        "cluesEnglish": [
+          "Parents Day",
+          "at school premises",
+          "all staff and students",
+          "awards and prizes for winners of sports and other activities",
+          "chief guest - ward chairperson"
+        ]
       },
       {
         "questionNumber": 6,
         "type": "free_writing",
         "marks": 5,
         "wordCount": 100,
-        "clues": [
+        "sampleAnswer": {
+          "explanationNepali": "यो उत्तरले दिइएको संकेतहरू प्रयोग गरेर चार गाई र सिंहको कथा विकास गर्दछ। यसले कसरी एकताले उनीहरूलाई सुरक्षित राख्यो र कसरी फूटले उनीहरूको विनाश निम्त्यायो भन्ने देखाउँछ।\nउद्धरण: पाठ ११",
+          "explanationEnglish": "This answer develops the story of four cows and a lion using the provided clues. It shows how unity kept them safe and how division led to their destruction. \nCitation: Lesson 11.",
+          "contentNepali": "एकादेशमा, एउटा घना जंगलमा चारवटा गाई बस्थे। तिनीहरू धेरै घनिष्ठ साथीहरू थिए र सबै काम सँगै गर्थे। जब तिनीहरू चर्ने गर्थे, सँगै बस्थे। तिनीहरूको एकताका कारण, कुनै पनि शिकारी, सिंहले समेत, तिनीहरूलाई आक्रमण गर्ने आँट गर्दैनथ्यो। सिंहले तिनीहरूलाई खान चाहन्थ्यो तर थाहा थियो कि उसले ती सबैजनासँग एकै पटक लड्न सक्दैन। त्यसैले, उसले एउटा धूर्त योजना सोच्यो। उसले अन्य जनावरहरूको मद्दतले एउटा गाईको बारेमा अर्कोलाई हल्ला फैलायो। बिस्तारै, गाईहरू एक अर्कालाई शंका गर्न थाले र झगडा गरे। अन्ततः तिनीहरू अलग भए र विभिन्न दिशाहरूमा गए। यो मौका छोपेर, सिंहले तिनीहरूलाई एक-एक गरेर आक्रमण गर्यो र ती सबैलाई मारिदियो।\n\nनैतिक शिक्षा: एकतामा बल हुन्छ, विभाजन नै कमजोरी हो।",
+          "contentEnglish": "Once upon a time, four cows lived in a dense jungle. They were very close friends and did everything together. Whenever they grazed, they stayed together. Because of their unity, no predator, not even the lion, dared to attack them. The lion wanted to eat them but knew he couldn't fight them all at once. So, he thought of a cunning plan. He spread rumours about one cow to another with the help of other animals. Slowly, the cows started doubting each other and quarreled. They eventually separated and went in different directions. Taking this opportunity, the lion attacked them one by one and killed them all.\n\nMoral: Unity is strength, division is weakness.",
+          "titleNepali": "एक्तामा बल हुन्छ",
+          "titleEnglish": "Unity is Strength"
+        },
+        "titleNepali": "दिइएका संकेतहरूको मद्दतले करिब १०० शब्दमा पढ्न सकिने कथा तयार गर्नुहोस्। उपयुक्त शीर्षक र नैतिकता पनि दिनुहोस्।",
+        "titleEnglish": "Develop a readable story in about 100 words with the help of the given clues. Also supply a suitable title and a moral.",
+        "cluesNepali": [
+          "जंगलमा चार गाईहरू",
+          "एक अर्काको नजिक",
+          "सबै कुरा सँगै गर्नु",
+          "कुनै शिकारीले आक्रमण गर्न सक्दैन",
+          "एउटा सिंहले आक्रमण गर्ने योजना बनाउँछ",
+          "मार्न सम्भव छैन",
+          "एउटा नयाँ उपाय सोच्छ",
+          "अन्य जनावरहरूको मद्दतले हल्ला फैलाउँछ",
+          "तिनीहरू बीच प्रतिस्पर्धा सिर्जना गर्न सक्षम",
+          "फरक-फरक दिशामा जानु",
+          "एक पछि अर्को आक्रमण गर्छ"
+        ],
+        "cluesEnglish": [
           "four cows in a jungle",
           "close to each other",
           "do everything together",
@@ -539,17 +575,7 @@
           "able to create a rivalry among them",
           "go in different directions",
           "attacks one after another"
-        ],
-        "sampleAnswer": {
-          "explanationNepali": "यो उत्तरले दिइएको संकेतहरू प्रयोग गरेर चार गाई र सिंहको कथा विकास गर्दछ। यसले कसरी एकताले उनीहरूलाई सुरक्षित राख्यो र कसरी फूटले उनीहरूको विनाश निम्त्यायो भन्ने देखाउँछ।\nउद्धरण: पाठ ११",
-          "explanationEnglish": "This answer develops the story of four cows and a lion using the provided clues. It shows how unity kept them safe and how division led to their destruction. \nCitation: Lesson 11.",
-          "contentNepali": "एकादेशमा, एउटा घना जंगलमा चारवटा गाई बस्थे। तिनीहरू धेरै घनिष्ठ साथीहरू थिए र सबै काम सँगै गर्थे। जब तिनीहरू चर्ने गर्थे, सँगै बस्थे। तिनीहरूको एकताका कारण, कुनै पनि शिकारी, सिंहले समेत, तिनीहरूलाई आक्रमण गर्ने आँट गर्दैनथ्यो। सिंहले तिनीहरूलाई खान चाहन्थ्यो तर थाहा थियो कि उसले ती सबैजनासँग एकै पटक लड्न सक्दैन। त्यसैले, उसले एउटा धूर्त योजना सोच्यो। उसले अन्य जनावरहरूको मद्दतले एउटा गाईको बारेमा अर्कोलाई हल्ला फैलायो। बिस्तारै, गाईहरू एक अर्कालाई शंका गर्न थाले र झगडा गरे। अन्ततः तिनीहरू अलग भए र विभिन्न दिशाहरूमा गए। यो मौका छोपेर, सिंहले तिनीहरूलाई एक-एक गरेर आक्रमण गर्यो र ती सबैलाई मारिदियो।\n\nनैतिक शिक्षा: एकतामा बल हुन्छ, विभाजन नै कमजोरी हो।",
-          "contentEnglish": "Once upon a time, four cows lived in a dense jungle. They were very close friends and did everything together. Whenever they grazed, they stayed together. Because of their unity, no predator, not even the lion, dared to attack them. The lion wanted to eat them but knew he couldn't fight them all at once. So, he thought of a cunning plan. He spread rumours about one cow to another with the help of other animals. Slowly, the cows started doubting each other and quarreled. They eventually separated and went in different directions. Taking this opportunity, the lion attacked them one by one and killed them all.\n\nMoral: Unity is strength, division is weakness.",
-          "titleNepali": "एक्तामा बल हुन्छ",
-          "titleEnglish": "Unity is Strength"
-        },
-        "titleNepali": "दिइएका संकेतहरूको मद्दतले करिब १०० शब्दमा पढ्न सकिने कथा तयार गर्नुहोस्। उपयुक्त शीर्षक र नैतिकता पनि दिनुहोस्।",
-        "titleEnglish": "Develop a readable story in about 100 words with the help of the given clues. Also supply a suitable title and a moral."
+        ]
       },
       {
         "questionNumber": 7,

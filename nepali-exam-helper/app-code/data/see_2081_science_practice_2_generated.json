@@ -50,7 +50,8 @@
         ],
         "correctAnswer": "ii",
         "marks": 1,
-        "explanation": "Explanation: आधुनिक पेरियोडिक तालिकामा धातुहरूलाई बायाँतिर, अधातुहरूलाई दायाँतिर र धातुजस्तै देखिने (metalloids) लाई बिचमा राखिएको छ ।\n\nIn the modern periodic table, metals are placed on the left side, non-metals are arranged on the right side, and metalloids are kept in the middle. \nCitation: Lesson 14"
+        "explanationNepali": "आधुनिक पेरियोडिक तालिकामा धातुहरूलाई बायाँतिर, अधातुहरूलाई दायाँतिर र धातुजस्तै देखिने (metalloids) लाई बिचमा राखिएको छ ।\nउद्धरण: पाठ १४",
+        "explanationEnglish": "In the modern periodic table, metals are placed on the left side, non-metals are arranged on the right side, and metalloids are kept in the middle.\nCitation: Lesson 14"
       },
       {
         "id": "b",
@@ -81,7 +82,8 @@
         ],
         "correctAnswer": "iv",
         "marks": 1,
-        "explanation": "Explanation: फित्तेजुका, लिभरफ्लुक जस्ता जीवहरू फाइलम प्लाटिहेल्मिन्थेस (Platyhelminthes) मा पर्छन्, जसको शरीर सपाट पातजस्तो वा लामो फिताजस्तो हुन्छ ।\n\nThe body of animals such as tapeworms and liverflukes is like a tape or flat leaf. These animals are classified under the phylum platyhelminthes. \nCitation: Lesson 2"
+        "explanationNepali": "फित्तेजुका, लिभरफ्लुक जस्ता जीवहरू फाइलम प्लाटिहेल्मिन्थेस (Platyhelminthes) मा पर्छन्, जसको शरीर सपाट पातजस्तो वा लामो फिताजस्तो हुन्छ ।\nउद्धरण: पाठ २",
+        "explanationEnglish": "The body of animals such as tapeworms and liverflukes is like a tape or flat leaf. These animals are classified under the phylum platyhelminthes.\nCitation: Lesson 2"
       },
       {
         "id": "c",
@@ -112,7 +114,8 @@
         ],
         "correctAnswer": "iii",
         "marks": 1,
-        "explanation": "Explanation: रानी मौरी घारमा सबैभन्दा लामो समयसम्म बाँच्छ, जसको आयु लगभग २-५ वर्ष हुन्छ ।\n\nA queen bee lives the longest in the hive, about 2-5 years. \nCitation: Lesson 3"
+        "explanationNepali": "रानी मौरी घारमा सबैभन्दा लामो समयसम्म बाँच्छ, जसको आयु लगभग २-५ वर्ष हुन्छ ।\nउद्धरण: पाठ ३",
+        "explanationEnglish": "A queen bee lives the longest in the hive, about 2-5 years.\nCitation: Lesson 3"
       },
       {
         "id": "d",
@@ -143,7 +146,8 @@
         ],
         "correctAnswer": "iv",
         "marks": 1,
-        "explanation": "Explanation: मेन्डलको प्रयोगमा, दोस्रो वंशको जिनोटाइपिक अनुपात १ शुद्ध अग्लो : २ हाइब्रिड अग्लो : १ शुद्ध होचो हुन्छ ।\n\nIn Mendel's experiment, the genotypic ratio is pure tall: hybrid tall: pure dwarf = 1:2:1. \nCitation: Lesson 4"
+        "explanationNepali": "मेन्डलको प्रयोगमा, दोस्रो वंशको जिनोटाइपिक अनुपात १ शुद्ध अग्लो : २ हाइब्रिड अग्लो : १ शुद्ध होचो हुन्छ ।\nउद्धरण: पाठ ४",
+        "explanationEnglish": "In Mendel's experiment, the genotypic ratio is pure tall: hybrid tall: pure dwarf = 1:2:1.\nCitation: Lesson 4"
       },
       {
         "id": "e",
@@ -174,7 +178,8 @@
         ],
         "correctAnswer": "ii",
         "marks": 1,
-        "explanation": "Explanation: सेतो रक्तकोषले शरीरमा बाहिरबाट प्रवेश गर्ने रोग लगाउने कीटाणुहरूसँग लडेर तिनीहरूलाई नष्ट गर्छ र शरीरको रोग प्रतिरोधात्मक क्षमता बढाउँछ ।\n\nWhite blood cells fight against disease-causing germs that enter the body from outside and destroy them. These cells increase the immunity of our body. \nCitation: Lesson 5"
+        "explanationNepali": "सेतो रक्तकोषले शरीरमा बाहिरबाट प्रवेश गर्ने रोग लगाउने कीटाणुहरूसँग लडेर तिनीहरूलाई नष्ट गर्छ र शरीरको रोग प्रतिरोधात्मक क्षमता बढाउँछ ।\nउद्धरण: पाठ ५",
+        "explanationEnglish": "White blood cells fight against disease-causing germs that enter the body from outside and destroy them. These cells increase the immunity of our body.\nCitation: Lesson 5"
       },
       {
         "id": "f",
@@ -205,7 +210,8 @@
         ],
         "correctAnswer": "iii",
         "marks": 1,
-        "explanation": "Explanation: न्युटनको गतिको दोस्रो नियम अनुसार, '$m$' पिण्ड भएको वस्तुमा लाग्ने गुरुत्व बल, अर्थात् तौल, $W = mg$ हुन्छ, जहाँ $g$ गुरुत्व प्रवेग हो ।\n\nAccording to Newton's second law of motion, the force of gravity acting on an object of mass '$m$', i.e., weight, is $W = mg$, where $g$ is the acceleration due to gravity. \nCitation: Lesson 7"
+        "explanationNepali": "न्युटनको गतिको दोस्रो नियम अनुसार, '$m$' पिण्ड भएको वस्तुमा लाग्ने गुरुत्व बल, अर्थात् तौल, $W = mg$ हुन्छ, जहाँ $g$ गुरुत्व प्रवेग हो ।\nउद्धरण: पाठ ७",
+        "explanationEnglish": "According to Newton's second law of motion, the force of gravity acting on an object of mass '$m$', i.e., weight, is $W = mg$, where $g$ is the acceleration due to gravity.\nCitation: Lesson 7"
       },
       {
         "id": "g",
@@ -236,7 +242,8 @@
         ],
         "correctAnswer": "ii",
         "marks": 1,
-        "explanation": "Explanation: हाइड्रोमिटर तैरिने नियममा आधारित हुन्छ । यो तरल पदार्थमा तैरँदा यसले विस्थापित गरेको तरलको तौल बराबरको उर्ध्वचाप प्राप्त गर्छ । तरलको घनत्व अनुसार यो फरक-फरक मात्रामा डुब्छ ।\n\nA hydrometer works on the law of floatation. Due to the liquid displaced by its heavy bulb, it gets the necessary upthrust and floats vertically on the surface of the liquid. The hydrometer floats more on a liquid of high density and sinks more if the density is low. \nCitation: Lesson 8"
+        "explanationNepali": "हाइड्रोमिटर तैरिने नियममा आधारित हुन्छ । यो तरल पदार्थमा तैरँदा यसले विस्थापित गरेको तरलको तौल बराबरको उर्ध्वचाप प्राप्त गर्छ । तरलको घनत्व अनुसार यो फरक-फरक मात्रामा डुब्छ ।\nउद्धरण: पाठ ८",
+        "explanationEnglish": "A hydrometer works on the law of floatation. Due to the liquid displaced by its heavy bulb, it gets the necessary upthrust and floats vertically on the surface of the liquid. The hydrometer floats more on a liquid of high density and sinks more if the density is low.\nCitation: Lesson 8"
       },
       {
         "id": "h",
@@ -267,7 +274,8 @@
         ],
         "correctAnswer": "ii",
         "marks": 1,
-        "explanation": "Explanation: ताराहरू वायुमण्डलीय आवर्तनका कारण टिलपिल गर्छन् । ताराको प्रकाश पृथ्वीको विभिन्न वायुमण्डलीय तहहरूबाट पार हुँदा पटक-पटक बाङ्गिन्छ, जसले गर्दा ताराको देखिने स्थान र चमकमा उतारचढाव आउँछ ।\n\nStars appear to be twinkling due to the refraction of light in the atmosphere. \nCitation: Lesson 10"
+        "explanationNepali": "ताराहरू वायुमण्डलीय आवर्तनका कारण टिलपिल गर्छन् । ताराको प्रकाश पृथ्वीको विभिन्न वायुमण्डलीय तहहरूबाट पार हुँदा पटक-पटक बाङ्गिन्छ, जसले गर्दा ताराको देखिने स्थान र चमकमा उतारचढाव आउँछ ।\nउद्धरण: पाठ १०",
+        "explanationEnglish": "Stars appear to be twinkling due to the refraction of light in the atmosphere.\nCitation: Lesson 10"
       },
       {
         "id": "i",
@@ -298,7 +306,8 @@
         ],
         "correctAnswer": "iv",
         "marks": 1,
-        "explanation": "Explanation: सोलेनोइडको चुम्बकीय क्षेत्रको शक्ति करेन्टको परिमाण, क्वाइलमा फन्काको सङ्ख्या र भित्र राखिएको कोर पदार्थमा निर्भर गर्दछ, तर तारको रङमा निर्भर गर्दैन ।\n\nThe strength of the magnetic field around a solenoid depends on the magnitude of the current, the number of turns in the coil, and the material placed inside the solenoid (core). \nCitation: Lesson 11"
+        "explanationNepali": "सोलेनोइडको चुम्बकीय क्षेत्रको शक्ति करेन्टको परिमाण, क्वाइलमा फन्काको सङ्ख्या र भित्र राखिएको कोर पदार्थमा निर्भर गर्दछ, तर तारको रङमा निर्भर गर्दैन ।\nउद्धरण: पाठ ११",
+        "explanationEnglish": "The strength of the magnetic field around a solenoid depends on the magnitude of the current, the number of turns in the coil, and the material placed inside the solenoid (core).\nCitation: Lesson 11"
       },
       {
         "id": "j",
@@ -329,7 +338,8 @@
         ],
         "correctAnswer": "ii",
         "marks": 1,
-        "explanation": "Explanation: अल्केनहरू संतृप्त हाइड्रोकार्बन हुन् जसमा कार्बन परमाणुहरूबीच एकल सहसंयोजक बन्धन हुन्छ । तिनीहरूको सामान्य सूत्र $C_nH_{2n+2}$ हो ।\n\nAlkanes are saturated hydrocarbons having a single covalent bond between the carbon atoms. The general formula of these compounds is $C_nH_{2n+2}$. \nCitation: Lesson 18"
+        "explanationNepali": "अल्केनहरू संतृप्त हाइड्रोकार्बन हुन् जसमा कार्बन परमाणुहरूबीच एकल सहसंयोजक बन्धन हुन्छ । तिनीहरूको सामान्य सूत्र $C_nH_{2n+2}$ हो ।\nउद्धरण: पाठ १८",
+        "explanationEnglish": "Alkanes are saturated hydrocarbons having a single covalent bond between the carbon atoms. The general formula of these compounds is $C_nH_{2n+2}$.\nCitation: Lesson 18"
       }
     ],
     "groupB": [

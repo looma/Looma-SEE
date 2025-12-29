@@ -50,7 +50,8 @@
         ],
         "correctAnswer": "iv",
         "marks": 1,
-        "explanation": "Explanation: यो एक दोहोरो विस्थापन प्रतिक्रिया हो किनभने दुई अभिकारकहरू ($\\text{NaCl}$ र $\\text{AgNO}_3$) बीच आयोनहरूको पारस्परिक आदानप्रदान भएर दुई नयाँ यौगिकहरू ($\\text{AgCl}$ र $\\text{NaNO}_3$) बनेका छन् ।\n\nThis is a double displacement reaction because two new compounds are formed by the mutual exchange of atoms or radicals between two reactants. \nCitation: Lesson 15"
+        "explanationNepali": "यो एक दोहोरो विस्थापन प्रतिक्रिया हो किनभने दुई अभिकारकहरू ($\\text{NaCl}$ र $\\text{AgNO}_3$) बीच आयोनहरूको पारस्परिक आदानप्रदान भएर दुई नयाँ यौगिकहरू ($\\text{AgCl}$ र $\\text{NaNO}_3$) बनेका छन् ।\nउद्धरण: पाठ १५",
+        "explanationEnglish": "This is a double displacement reaction because two new compounds are formed by the mutual exchange of atoms or radicals between two reactants.\nCitation: Lesson 15"
       },
       {
         "id": "b",
@@ -81,7 +82,8 @@
         ],
         "correctAnswer": "ii",
         "marks": 1,
-        "explanation": "Explanation: एभ्स (चरा) वर्गका जनावरहरूको शरीर प्वाँखले ढाकिएको हुन्छ र अगाडिको हात पखेटामा परिणत भएको हुन्छ, जसले तिनीहरूलाई उड्न मद्दत गर्छ ।\n\nAnimals in class Aves have their bodies covered with feathers and their forelimbs are modified into wings. \nCitation: Lesson 2"
+        "explanationNepali": "एभ्स (चरा) वर्गका जनावरहरूको शरीर प्वाँखले ढाकिएको हुन्छ र अगाडिको हात पखेटामा परिणत भएको हुन्छ, जसले तिनीहरूलाई उड्न मद्दत गर्छ ।\nउद्धरण: पाठ २",
+        "explanationEnglish": "Animals in class Aves have their bodies covered with feathers and their forelimbs are modified into wings.\nCitation: Lesson 2"
       },
       {
         "id": "c",
@@ -112,7 +114,8 @@
         ],
         "correctAnswer": "ii",
         "marks": 1,
-        "explanation": "Explanation: मियोसिस कोष विभाजनको पहिलो चरणमा क्रसिङ ओभर (crossing over) हुँदा आनुवंशिक पदार्थको आदानप्रदान हुन्छ, जसले गर्दा सन्तति कोषहरूको आनुवंशिक बनोटमा थोरै भिन्नता आउँछ । यही भिन्नताले क्रमविकासमा मद्दत गर्छ ।\n\nDuring the first phase of meiosis, an exchange of genetic materials occurs through crossing over, leading to slight variations in the genetic makeup of the daughter cells. This process helps in evolution by bringing variation. \nCitation: Lesson 4"
+        "explanationNepali": "मियोसिस कोष विभाजनको पहिलो चरणमा क्रसिङ ओभर (crossing over) हुँदा आनुवंशिक पदार्थको आदानप्रदान हुन्छ, जसले गर्दा सन्तति कोषहरूको आनुवंशिक बनोटमा थोरै भिन्नता आउँछ । यही भिन्नताले क्रमविकासमा मद्दत गर्छ ।\nउद्धरण: पाठ ४",
+        "explanationEnglish": "During the first phase of meiosis, an exchange of genetic materials occurs through crossing over, leading to slight variations in the genetic makeup of the daughter cells. This process helps in evolution by bringing variation.\nCitation: Lesson 4"
       },
       {
         "id": "d",
@@ -143,7 +146,8 @@
         ],
         "correctAnswer": "ii",
         "marks": 1,
-        "explanation": "Explanation: आराम गरिरहेको अवस्थामा, एक स्वस्थ वयस्क व्यक्तिको मुटुको धड्कन प्रति मिनेट ६०-१०० पटक हुन्छ ।\n\nAt resting condition, the heartbeat of a healthy adult person is 60-100 times per minute. \nCitation: Lesson 5"
+        "explanationNepali": "आराम गरिरहेको अवस्थामा, एक स्वस्थ वयस्क व्यक्तिको मुटुको धड्कन प्रति मिनेट ६०-१०० पटक हुन्छ ।\nउद्धरण: पाठ ५",
+        "explanationEnglish": "At resting condition, the heartbeat of a healthy adult person is 60-100 times per minute.\nCitation: Lesson 5"
       },
       {
         "id": "e",
@@ -174,7 +178,8 @@
         ],
         "correctAnswer": "ii",
         "marks": 1,
-        "explanation": "Explanation: वस्तुको पिण्ड जताततै समान रहन्छ ($m = 60\\text{ kg}$) । चन्द्रमामा गुरुत्व प्रवेग ($g_m$) = $9.8/6 \\approx 1.63\\text{ m/s}^2$ । चन्द्रमामा तौल ($W_m$) = $m \\times g_m = 60 \\times 1.63 \\approx 98\\text{ N}$ ।\n\nAn object's mass remains constant everywhere ($m=60\\text{ kg}$). The acceleration due to gravity on the moon ($g_m$) = $9.8/6 \\approx 1.63\\text{ m/s}^2$. Weight on the moon ($W_m$) = $m \\times g_m = 60 \\times 1.63 \\approx 98\\text{ N}$. \nCitation: Lesson 7"
+        "explanationNepali": "वस्तुको पिण्ड जताततै समान रहन्छ ($m = 60\\text{ kg}$) । चन्द्रमामा गुरुत्व प्रवेग ($g_m$) = $9.8/6 \\approx 1.63\\text{ m/s}^2$ । चन्द्रमामा तौल ($W_m$) = $m \\times g_m = 60 \\times 1.63 \\approx 98\\text{ N}$ ।\nउद्धरण: पाठ ७",
+        "explanationEnglish": "An object's mass remains constant everywhere ($m=60\\text{ kg}$). The acceleration due to gravity on the moon ($g_m$) = $9.8/6 \\approx 1.63\\text{ m/s}^2$. Weight on the moon ($W_m$) = $m \\times g_m = 60 \\times 1.63 \\approx 98\\text{ N}$.\nCitation: Lesson 7"
       },
       {
         "id": "f",
@@ -205,7 +210,8 @@
         ],
         "correctAnswer": "ii",
         "marks": 1,
-        "explanation": "Explanation: पानीको अस्वाभाविक प्रसारका कारण, पानीको घनत्व $4^\\circ\\text{C}$ मा सबैभन्दा बढी र आयतन सबैभन्दा कम हुन्छ ।\n\nDue to the anomalous expansion of water, water at $4^\\circ\\text{C}$ has the minimum volume and the maximum density. \nCitation: Lesson 9"
+        "explanationNepali": "पानीको अस्वाभाविक प्रसारका कारण, पानीको घनत्व $4^\\circ\\text{C}$ मा सबैभन्दा बढी र आयतन सबैभन्दा कम हुन्छ ।\nउद्धरण: पाठ ९",
+        "explanationEnglish": "Due to the anomalous expansion of water, water at $4^\\circ\\text{C}$ has the minimum volume and the maximum density.\nCitation: Lesson 9"
       },
       {
         "id": "g",
@@ -236,7 +242,8 @@
         ],
         "correctAnswer": "iv",
         "marks": 1,
-        "explanation": "Explanation: तातो दिनमा जमिन नजिकको हावा तातो र विरल हुन्छ, जबकि माथिल्लो हावा चिसो र सघन हुन्छ । टाढाको वस्तुबाट आएको प्रकाश सघनबाट विरल माध्यममा जाँदा पूर्ण आन्तरिक परावर्तन हुन्छ, जसले गर्दा पानीको भ्रम पैदा हुन्छ ।\n\nOn hot days, the air near the ground is hotter and rarer, while the upper layers are cooler and denser. Light from a distant object traveling from the denser to the rarer medium undergoes total internal reflection, creating an illusion of water. \nCitation: Lesson 10"
+        "explanationNepali": "तातो दिनमा जमिन नजिकको हावा तातो र विरल हुन्छ, जबकि माथिल्लो हावा चिसो र सघन हुन्छ । टाढाको वस्तुबाट आएको प्रकाश सघनबाट विरल माध्यममा जाँदा पूर्ण आन्तरिक परावर्तन हुन्छ, जसले गर्दा पानीको भ्रम पैदा हुन्छ ।\nउद्धरण: पाठ १०",
+        "explanationEnglish": "On hot days, the air near the ground is hotter and rarer, while the upper layers are cooler and denser. Light from a distant object traveling from the denser to the rarer medium undergoes total internal reflection, creating an illusion of water.\nCitation: Lesson 10"
       },
       {
         "id": "h",
@@ -267,7 +274,8 @@
         ],
         "correctAnswer": "iii",
         "marks": 1,
-        "explanation": "Explanation: बिट (Bit) कम्प्युटरमा डाटाको सबैभन्दा सानो रूप हो । यो बाइनरी डिजिटको छोटो रूप हो र ० वा १ हुन सक्छ ।\n\nA bit is the smallest form of data on a computer. It is a short form of binary digit and it can be either 0 or 1. \nCitation: Lesson 13"
+        "explanationNepali": "बिट (Bit) कम्प्युटरमा डाटाको सबैभन्दा सानो रूप हो । यो बाइनरी डिजिटको छोटो रूप हो र ० वा १ हुन सक्छ ।\nउद्धरण: पाठ १३",
+        "explanationEnglish": "A bit is the smallest form of data on a computer. It is a short form of binary digit and it can be either 0 or 1.\nCitation: Lesson 13"
       },
       {
         "id": "i",
@@ -298,7 +306,8 @@
         ],
         "correctAnswer": "iv",
         "marks": 1,
-        "explanation": "Explanation: निस्क्रिय ग्यासहरूको बाहिरी सेलमा आठ इलेक्ट्रोन (हेलियम बाहेक) हुन्छन् र तिनीहरू रासायनिक प्रतिक्रियामा भाग लिँदैनन् । तिनीहरूलाई समूह 0 (18) मा राखिएको छ ।\n\nInert gases have eight electrons in their valence shell (except Helium) and do not take part in chemical reactions. They are kept in group 0 (18). \nCitation: Lesson 14"
+        "explanationNepali": "निस्क्रिय ग्यासहरूको बाहिरी सेलमा आठ इलेक्ट्रोन (हेलियम बाहेक) हुन्छन् र तिनीहरू रासायनिक प्रतिक्रियामा भाग लिँदैनन् । तिनीहरूलाई समूह 0 (18) मा राखिएको छ ।\nउद्धरण: पाठ १४",
+        "explanationEnglish": "Inert gases have eight electrons in their valence shell (except Helium) and do not take part in chemical reactions. They are kept in group 0 (18).\nCitation: Lesson 14"
       },
       {
         "id": "j",
@@ -329,7 +338,8 @@
         ],
         "correctAnswer": "ii",
         "marks": 1,
-        "explanation": "Explanation: आल्मुनियमका धेरै धाउहरूमध्ये, बक्साइट ($\\text{2Al}_2\\text{O}_3 \\cdot \\text{2H}_2\\text{O}$) मुख्य धाउ हो, जसमा लगभग ४०-६०% आल्मुनियम हुन्छ ।\n\nAmong the ores of aluminum, Bauxite ($\\text{2Al}_2\\text{O}_3 \\cdot \\text{2H}_2\\text{O}$) is the chief ore, which contains about 40-60% of aluminum. \nCitation: Lesson 17"
+        "explanationNepali": "आल्मुनियमका धेरै धाउहरूमध्ये, बक्साइट ($\\text{2Al}_2\\text{O}_3 \\cdot \\text{2H}_2\\text{O}$) मुख्य धाउ हो, जसमा लगभग ४०-६०% आल्मुनियम हुन्छ ।\nउद्धरण: पाठ १७",
+        "explanationEnglish": "Among the ores of aluminum, Bauxite ($\\text{2Al}_2\\text{O}_3 \\cdot \\text{2H}_2\\text{O}$) is the chief ore, which contains about 40-60% of aluminum.\nCitation: Lesson 17"
       }
     ],
     "groupB": [
