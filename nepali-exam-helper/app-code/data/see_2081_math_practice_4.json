@@ -18,7 +18,8 @@
           "question_nepali": "दुवै फलफूल मन नपराउने मानिसहरूको प्रतिशत कति छ ?",
           "question_english": "What is the percentage of people who like neither fruit?",
           "answer": "10%",
-          "explanation": "मानौँ जम्मा प्रतिशत $n(U) = 100\\%$। $n(O) = 60\\%, n(A) = 50\\%, n(O \\cap A) = 20\\%$। सूत्र अनुसार $n(O \\cup A) = 60 + 50 - 20 = 90\\%$। दुवै मन नपराउने $= 100 - 90 = 10\\%$।\n\nExplanation: Let total percentage $n(U) = 100\\%$. Using the formula for union: $n(O \\cup A) = 60 + 50 - 20 = 90\\%$. Those who like neither = $100\\% - 90\\% = 10\\%$.\nCitation: Lesson 1"
+          "explanation_nepali": "मानौँ जम्मा प्रतिशत $n(U) = 100\\%$। $n(O) = 60\\%, n(A) = 50\\%, n(O \\cap A) = 20\\%$। सूत्र अनुसार $n(O \\cup A) = 60 + 50 - 20 = 90\\%$। दुवै मन नपराउने $= 100 - 90 = 10\\%$।\nउद्धरण: पाठ १",
+          "explanation_english": "Explanation: Let total percentage $n(U) = 100\\%$. Using the formula for union: $n(O \\cup A) = 60 + 50 - 20 = 90\\%$. Those who like neither = $100\\% - 90\\% = 10\\%$.\nCitation: Lesson 1"
         }
       ]
     },
@@ -34,7 +35,8 @@
           "question_nepali": "",
           "question_english": "",
           "answer": "2 years",
-          "explanation": "चक्रीय मिश्रधन $(CA) = 10000 + 2100 = 12100$। सूत्र $CA = P(1 + \\frac{R}{100})^T$ अनुसार, $12100 = 10000(1.1)^T \\Rightarrow 1.21 = (1.1)^T \\Rightarrow (1.1)^2 = (1.1)^T \\Rightarrow T = 2$।\n\nExplanation: Compound Amount = $12,100$. Using formula $12100 = 10000(1.1)^T$, we get $1.21 = (1.1)^T$, so $T=2$ years.\nCitation: Lesson 2"
+          "explanation_nepali": "चक्रीय मिश्रधन $(CA) = 10000 + 2100 = 12100$। सूत्र $CA = P(1 + \\frac{R}{100})^T$ अनुसार, $12100 = 10000(1.1)^T \\Rightarrow 1.21 = (1.1)^T \\Rightarrow (1.1)^2 = (1.1)^T \\Rightarrow T = 2$।\nउद्धरण: पाठ २",
+          "explanation_english": "Explanation: Compound Amount = $12,100$. Using formula $12100 = 10000(1.1)^T$, we get $1.21 = (1.1)^T$, so $T=2$ years.\nCitation: Lesson 2"
         }
       ]
     },
@@ -50,7 +52,8 @@
           "question_nepali": "2 वर्षपछि उक्त कम्प्युटरको मूल्य कति हुन्छ ?",
           "question_english": "What will be the price of the computer after 2 years?",
           "answer": "Rs. 25,600",
-          "explanation": "ह्रास कट्टी सूत्र $P_T = P(1 - \\frac{R}{100})^T$ प्रयोग गर्दा: $40000(1 - 0.2)^2 = 40000(0.8)^2 = 40000 \\times 0.64 = 25,600$।\n\nExplanation: Using depreciation formula: $40000(0.8)^2 = 25,600$.\nCitation: Lesson 3"
+          "explanation_nepali": "ह्रास कट्टी सूत्र $P_T = P(1 - \\frac{R}{100})^T$ प्रयोग गर्दा: $40000(1 - 0.2)^2 = 40000(0.8)^2 = 40000 \\times 0.64 = 25,600$।\nउद्धरण: पाठ ३",
+          "explanation_english": "Explanation: Using depreciation formula: $40000(0.8)^2 = 25,600$.\nCitation: Lesson 3"
         }
       ]
     },
@@ -66,7 +69,8 @@
           "question_nepali": "उसले कति डलर प्राप्त गर्यो (दशमलवको दुई स्थानसम्म) ?",
           "question_english": "How many dollars did he receive (up to two decimal places)?",
           "answer": "$1,515.15",
-          "explanation": "डलर रकम = $\\frac{200000}{132} = 1515.1515... \\approx 1515.15$।\n\nExplanation: Dollar amount = $200000 / 132 \\approx 1515.15$.\nCitation: Lesson 2"
+          "explanation_nepali": "डलर रकम = $\\frac{200000}{132} = 1515.1515... \\approx 1515.15$।\nउद्धरण: पाठ २",
+          "explanation_english": "Explanation: Dollar amount = $200000 / 132 \\approx 1515.15$.\nCitation: Lesson 2"
         }
       ]
     },
@@ -82,7 +86,8 @@
           "question_nepali": "प्रिज्मको आयतन पत्ता लगाउनुहोस् ।",
           "question_english": "Find the volume of the prism.",
           "answer": "360 cubic cm",
-          "explanation": "प्रिज्मको आयतन = आधारको क्षेत्रफल $\\times$ लम्बाइ = $24 \\times 15 = 360$ घन से.मि.।\n\nExplanation: Volume of prism = Base Area $\\times$ Length = $24 \\times 15 = 360$.\nCitation: Lesson 5"
+          "explanation_nepali": "प्रिज्मको आयतन = आधारको क्षेत्रफल $\\times$ लम्बाइ = $24 \\times 15 = 360$ घन से.मि.।\nउद्धरण: पाठ ५",
+          "explanation_english": "Explanation: Volume of prism = Base Area $\\times$ Length = $24 \\times 15 = 360$.\nCitation: Lesson 5"
         }
       ]
     },
@@ -98,7 +103,8 @@
           "question_nepali": "तिनीहरूको आयतनको अनुपात कति हुन्छ ?",
           "question_english": "What is the ratio of their volumes?",
           "answer": "1:3",
-          "explanation": "सोलीको आयतन $\\frac{1}{3}\\pi r^2 h$ र बेलनाको आयतन $\\pi r^2 h$ हुन्छ। अनुपात $\\frac{1}{3}:1$ वा $1:3$।\n\nExplanation: Volume of cone is $1/3 \\pi r^2 h$ and cylinder is $\\pi r^2 h$. Ratio is $1:3$.\nCitation: Lesson 5"
+          "explanation_nepali": "सोलीको आयतन $\\frac{1}{3}\\pi r^2 h$ र बेलनाको आयतन $\\pi r^2 h$ हुन्छ। अनुपात $\\frac{1}{3}:1$ वा $1:3$।\nउद्धरण: पाठ ५",
+          "explanation_english": "Explanation: Volume of cone is $1/3 \\pi r^2 h$ and cylinder is $\\pi r^2 h$. Ratio is $1:3$.\nCitation: Lesson 5"
         }
       ]
     },
@@ -114,7 +120,8 @@
           "question_nepali": "बाटोको क्षेत्रफल पत्ता लगाउनुहोस् ।",
           "question_english": "Find the area of the path.",
           "answer": "336 sq. m",
-          "explanation": "भित्री लम्बाइ $l = 40$। बाहिरी लम्बाइ $L = 40 + 2 + 2 = 44$। बाटोको क्षेत्रफल = $L^2 - l^2 = 44^2 - 40^2 = 1936 - 1600 = 336$।\n\nExplanation: Inner length 40, outer length 44. Area = $44^2 - 40^2 = 336$.\nCitation: Lesson 5"
+          "explanation_nepali": "भित्री लम्बाइ $l = 40$। बाहिरी लम्बाइ $L = 40 + 2 + 2 = 44$। बाटोको क्षेत्रफल = $L^2 - l^2 = 44^2 - 40^2 = 1936 - 1600 = 336$।\nउद्धरण: पाठ ५",
+          "explanation_english": "Explanation: Inner length 40, outer length 44. Area = $44^2 - 40^2 = 336$.\nCitation: Lesson 5"
         }
       ]
     },
@@ -130,7 +137,8 @@
           "question_nepali": "$n$ को मान पत्ता लगाउनुहोस् ।",
           "question_english": "Find the value of $n$.",
           "answer": "10",
-          "explanation": "सूत्र $\\frac{n(n+1)}{2} = 55 \\Rightarrow n^2 + n - 110 = 0$। खण्डीकरण गर्दा $(n+11)(n-10)=0$, त्यसैले $n=10$।\n\nExplanation: Using formula $\\frac{n(n+1)}{2} = 55$, we get quadratic $n^2+n-110=0$, solving gives $n=10$.\nCitation: Lesson 6"
+          "explanation_nepali": "सूत्र $\\frac{n(n+1)}{2} = 55 \\Rightarrow n^2 + n - 110 = 0$। खण्डीकरण गर्दा $(n+11)(n-10)=0$, त्यसैले $n=10$।\nउद्धरण: पाठ ६",
+          "explanation_english": "Explanation: Using formula $\\frac{n(n+1)}{2} = 55$, we get quadratic $n^2+n-110=0$, solving gives $n=10$.\nCitation: Lesson 6"
         }
       ]
     },
@@ -146,7 +154,8 @@
           "question_nepali": "",
           "question_english": "",
           "answer": "$x=2, y=3$",
-          "explanation": "$y = 7 - 2x$ दोस्रो समीकरणमा राख्दा: $4x - 3(7-2x) + 1 = 0 \\Rightarrow 4x - 21 + 6x + 1 = 0 \\Rightarrow 10x = 20 \\Rightarrow x=2$। $y = 3$।\n\nExplanation: Substituting $y=7-2x$ into second eq: $10x=20 \\Rightarrow x=2$, then $y=3$.\nCitation: Lesson 7"
+          "explanation_nepali": "$y = 7 - 2x$ दोस्रो समीकरणमा राख्दा: $4x - 3(7-2x) + 1 = 0 \\Rightarrow 4x - 21 + 6x + 1 = 0 \\Rightarrow 10x = 20 \\Rightarrow x=2$। $y = 3$।\nउद्धरण: पाठ ७",
+          "explanation_english": "Explanation: Substituting $y=7-2x$ into second eq: $10x=20 \\Rightarrow x=2$, then $y=3$.\nCitation: Lesson 7"
         }
       ]
     },
@@ -162,7 +171,8 @@
           "question_nepali": "",
           "question_english": "",
           "answer": "$3 a^2 b$",
-          "explanation": "$27 = 3^3$, $a^6 = (a^2)^3$, $b^3 = b^3$। घनमूल निकाल्दा $3 a^2 b$।\n\nExplanation: Taking cube root of each factor: $\\sqrt[3]{3^3 (a^2)^3 b^3} = 3 a^2 b$.\nCitation: Lesson 9"
+          "explanation_nepali": "$27 = 3^3$, $a^6 = (a^2)^3$, $b^3 = b^3$। घनमूल निकाल्दा $3 a^2 b$।\nउद्धरण: पाठ ९",
+          "explanation_english": "Explanation: Taking cube root of each factor: $\\sqrt[3]{3^3 (a^2)^3 b^3} = 3 a^2 b$.\nCitation: Lesson 9"
         }
       ]
     },
@@ -178,7 +188,8 @@
           "question_nepali": "",
           "question_english": "",
           "answer": "20 sq. cm",
-          "explanation": "त्रिभुजको क्षेत्रफल आयतको आधा हुन्छ: $\\frac{1}{2} \\times 40 = 20$।\n\nExplanation: Area of triangle is half of the rectangle: $20$ sq cm.\nCitation: Lesson 10"
+          "explanation_nepali": "त्रिभुजको क्षेत्रफल आयतको आधा हुन्छ: $\\frac{1}{2} \\times 40 = 20$।\nउद्धरण: पाठ १०",
+          "explanation_english": "Explanation: Area of triangle is half of the rectangle: $20$ sq cm.\nCitation: Lesson 10"
         }
       ]
     },
@@ -194,7 +205,8 @@
           "question_nepali": "",
           "question_english": "",
           "answer": "$100^\\circ$",
-          "explanation": "सम्मुख कोणहरूको योग $180^\\circ$ हुन्छ। $\\angle R = 180 - 80 = 100^\\circ$।\n\nExplanation: Opposite angles sum to 180: $180 - 80 = 100$.\nCitation: Lesson 12"
+          "explanation_nepali": "सम्मुख कोणहरूको योग $180^\\circ$ हुन्छ। $\\angle R = 180 - 80 = 100^\\circ$।\nउद्धरण: पाठ १२",
+          "explanation_english": "Explanation: Opposite angles sum to 180: $180 - 80 = 100$.\nCitation: Lesson 12"
         }
       ]
     },
@@ -210,7 +222,8 @@
           "question_nepali": "तिनीहरूको सङ्गत भुजाहरूको अनुपात कति हुन्छ ?",
           "question_english": "What is the ratio of their corresponding sides?",
           "answer": "4:5",
-          "explanation": "क्षेत्रफलको अनुपात भुजाहरूको वर्गको अनुपातसँग बराबर हुन्छ। भुजा अनुपात = $\\sqrt{16}:\\sqrt{25} = 4:5$।\n\nExplanation: Ratio of areas equals square of ratio of sides. Sides ratio = $\\sqrt{16/25} = 4:5$.\nCitation: Lesson 10"
+          "explanation_nepali": "क्षेत्रफलको अनुपात भुजाहरूको वर्गको अनुपातसँग बराबर हुन्छ। भुजा अनुपात = $\\sqrt{16}:\\sqrt{25} = 4:5$।\nउद्धरण: पाठ १०",
+          "explanation_english": "Explanation: Ratio of areas equals square of ratio of sides. Sides ratio = $\\sqrt{16/25} = 4:5$.\nCitation: Lesson 10"
         }
       ]
     },
@@ -226,7 +239,8 @@
           "question_nepali": "",
           "question_english": "",
           "answer": "10",
-          "explanation": "सूत्र $\\bar{X} = \\frac{\\sum X}{N} \\Rightarrow 20 = \\frac{200}{N} \\Rightarrow N = 10$।\n\nExplanation: Using Mean formula: $20 = 200/N \\Rightarrow N=10$.\nCitation: Lesson 13"
+          "explanation_nepali": "सूत्र $\\bar{X} = \\frac{\\sum X}{N} \\Rightarrow 20 = \\frac{200}{N} \\Rightarrow N = 10$।\nउद्धरण: पाठ १३",
+          "explanation_english": "Explanation: Using Mean formula: $20 = 200/N \\Rightarrow N=10$.\nCitation: Lesson 13"
         }
       ]
     },
@@ -242,7 +256,8 @@
           "question_nepali": "",
           "question_english": "",
           "answer": "20th item",
-          "explanation": "निरन्तर श्रेणीमा मध्यिकाको स्थान $\\frac{N}{2}$ औं पद हो = $\\frac{40}{2} = 20$।\n\nExplanation: For continuous series, Median class position is $N/2 = 20$th item.\nCitation: Lesson 13"
+          "explanation_nepali": "निरन्तर श्रेणीमा मध्यिकाको स्थान $\\frac{N}{2}$ औं पद हो = $\\frac{40}{2} = 20$।\nउद्धरण: पाठ १३",
+          "explanation_english": "Explanation: For continuous series, Median class position is $N/2 = 20$th item.\nCitation: Lesson 13"
         }
       ]
     },
@@ -258,10 +273,10 @@
           "question_nepali": "",
           "question_english": "",
           "answer": "$\\frac{1}{2}$",
-          "explanation": "4 भन्दा साना अंकहरू {1, 2, 3} हुन् (3 वटा)। सम्भाव्यता = $\\frac{3}{6} = \\frac{1}{2}$।\n\nExplanation: Numbers less than 4 are {1, 2, 3}. Probability = $3/6 = 1/2$.\nCitation: Lesson 14"
+          "explanation_nepali": "4 भन्दा साना अंकहरू {1, 2, 3} हुन् (3 वटा)। सम्भाव्यता = $\\frac{3}{6} = \\frac{1}{2}$।\nउद्धरण: पाठ १४",
+          "explanation_english": "Explanation: Numbers less than 4 are {1, 2, 3}. Probability = $3/6 = 1/2$.\nCitation: Lesson 14"
         }
       ]
     }
   ]
 }
-

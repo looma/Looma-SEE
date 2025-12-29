@@ -1,12 +1,12 @@
 [
   {
     "_id": "see_2081_english_practice_5_generated_verified",
-    "title": "SEE 2081 English Practice Test 5",
     "titleNepali": "SEE २०८१ अंग्रेजी अभ्यास परीक्षा ५",
     "subject": "english",
     "year": 2081,
     "totalMarks": 75,
     "duration": 180,
+    "instructionsNepali": "उम्मेदवारहरूलाई सकेसम्म आफ्नै शब्दमा उत्तर दिन आग्रह गरिन्छ। किनारामा रहेका अङ्कहरूले पूर्ण अङ्कलाई जनाउँछन्। सबै प्रश्नहरूको उत्तर दिनुहोस्।",
     "instructionsEnglish": "Candidates are required to answer the questions in their own words as far as practicable. Figures in the margin indicate the full marks. Attempt all the questions.",
     "isActive": true,
     "createdAt": {
@@ -14,7 +14,8 @@
     },
     "updatedAt": {
       "$date": "2025-09-07T15:15:00.000Z"
-    }
+    },
+    "titleEnglish": "SEE 2081 English Practice Test 5"
   },
   {
     "_id": {
@@ -25,273 +26,338 @@
       {
         "questionNumber": 1,
         "type": "reading_comprehension",
-        "title": "Read the poem and do the tasks.",
         "marks": 5,
         "passage": {
-          "title": "Composed upon Westminster Bridge, September 3, 1802",
           "author": "William Wordsworth",
-          "content": "Earth has not anything to show more fair:\nDull would he be of soul who could pass by\nA sight so touching in its majesty:\nThis City now doth, like a garment, wear\nThe beauty of the morning; silent, bare,\nShips, towers, domes, theatres, and temples lie\nOpen unto the fields, and to the sky;\nAll bright and glittering in the smokeless air.\nNever did sun more beautifully steep\nIn his first splendour, valley, rock, or hill;\nNe'er saw I, never felt, a calm so deep!\nThe river glideth at his own sweet will:\nDear God! the very houses seem asleep;\nAnd all that mighty heart is lying still!"
+          "contentNepali": "पृथ्वीसँग देखाउनु पर्ने यसभन्दा सुन्दर केही छैन:\nत्यो आत्मा नीरस हुनेछ, जो अगाडि बढ्न सक्छ\nयति प्रभावशाली महानताको दृश्य छोडेर:\nयो सहरले अहिले, एउटा कपडा जस्तै, पहिरिएको छ\nबिहानीको सुन्दरता; शान्त, नाङ्गो,\nजहाजहरू, टावरहरू, गुम्बजहरू, थिएटरहरू, र मन्दिरहरू पल्टिएका छन्\nखुला खेतहरूमा, र आकाशतिर;\nसबै चम्किलो र टल्किएको धुवाँरहित हावामा।\nसूर्य कहिल्यै यति सुन्दर रूपमा डुबेको थिएन\nआफ्नो पहिलो भव्यतामा, उपत्यका, चट्टान, वा पहाडमा;\nमैले कहिल्यै देखिन, कहिल्यै महसुस गरिन, यति गहिरो शान्ति!\nनदी अपनी मीठो इच्छामा बग्दछ:\nहे भगवान! घरहरू नै निदाए जस्तो लाग्छ;\nर त्यो सबै शक्तिशाली हृदय शान्त पल्टिरहेको छ!",
+          "contentEnglish": "Earth has not anything to show more fair:\nDull would he be of soul who could pass by\nA sight so touching in its majesty:\nThis City now doth, like a garment, wear\nThe beauty of the morning; silent, bare,\nShips, towers, domes, theatres, and temples lie\nOpen unto the fields, and to the sky;\nAll bright and glittering in the smokeless air.\nNever did sun more beautifully steep\nIn his first splendour, valley, rock, or hill;\nNe'er saw I, never felt, a calm so deep!\nThe river glideth at his own sweet will:\nDear God! the very houses seem asleep;\nAnd all that mighty heart is lying still!",
+          "titleNepali": "वेस्टमिन्स्टर ब्रिजमा रचित, सेप्टेम्बर ३, १८०२",
+          "titleEnglish": "Composed upon Westminster Bridge, September 3, 1802"
         },
         "subSections": [
           {
             "id": "A",
             "type": "short_answer",
-            "title": "Read and complete the sentences below with the correct information from the poem.",
             "marks": 5,
             "subQuestions": [
               {
                 "id": "i",
+                "questionNepali": "वक्ताले __________ बाट देखिएको दृश्यको आफ्नो प्रभाव साझा गर्छन्।",
                 "questionEnglish": "The speaker shares his impressions of the view from __________.",
-                "correctAnswer": "Westminster Bridge",
-                "explanationNepali": "कविताको शीर्षक 'Composed upon Westminster Bridge' हो, जसले वक्ताको स्थानलाई स्पष्ट पार्छ।",
+                "correctAnswerNepali": "वेस्टमिन्स्टर ब्रिज",
+                "correctAnswerEnglish": "Westminster Bridge",
+                "explanationNepali": "कविताको शीर्षक 'Composed upon Westminster Bridge' हो, जसले वक्ताको स्थानलाई स्पष्ट पार्छ।\nउद्धरण: पाठ १२",
                 "explanationEnglish": "The title of the poem is 'Composed upon Westminster Bridge,' which indicates the speaker's location. \nCitation: Lesson 12."
               },
               {
                 "id": "ii",
+                "questionNepali": "उ, जसले प्रकृतिको सुन्दरताको प्रशंसा गर्दैन, उ __________ हो।",
                 "questionEnglish": "He, who does not praise the beauty of nature is __________.",
-                "correctAnswer": "dull of soul",
-                "explanationNepali": "कविताले भन्छ, \"Dull would he be of soul who could pass by / A sight so touching in its majesty.\"",
+                "correctAnswerNepali": "नीरस आत्मा (dull of soul)",
+                "correctAnswerEnglish": "dull of soul",
+                "explanationNepali": "कविताले भन्छ, \"Dull would he be of soul who could pass by / A sight so touching in its majesty.\"\nउद्धरण: पाठ १२",
                 "explanationEnglish": "The poem states, \"Dull would he be of soul who could pass by / A sight so touching in its majesty.\" \nCitation: Lesson 12."
               },
               {
                 "id": "iii",
+                "questionNepali": "मन्दिर, टावर, गुम्बज, आदि __________ मा चम्किरहेका छन्।",
                 "questionEnglish": "Temples, towers, domes, etc. are shining in __________.",
-                "correctAnswer": "the smokeless air",
-                "explanationNepali": "कविताले वर्णन गर्दछ, \"All bright and glittering in the smokeless air.\"",
+                "correctAnswerNepali": "धुवाँरहित हावा (the smokeless air)",
+                "correctAnswerEnglish": "the smokeless air",
+                "explanationNepali": "कविताले वर्णन गर्दछ, \"All bright and glittering in the smokeless air.\"\nउद्धरण: पाठ १२",
                 "explanationEnglish": "The poem describes them as \"All bright and glittering in the smokeless air.\" \nCitation: Lesson 12."
               },
               {
                 "id": "iv",
+                "questionNepali": "कवि सहरका भवनहरूको रूपरेखा देखेर __________ महसुस गर्छन्।",
                 "questionEnglish": "The poet feels __________ to see the outlines of the city buildings.",
-                "correctAnswer": "a calm so deep",
-                "explanationNepali": "कविले भन्छन्, \"Ne'er saw I, never felt, a calm so deep!\"",
+                "correctAnswerNepali": "गहिरो शान्ति (a calm so deep)",
+                "correctAnswerEnglish": "a calm so deep",
+                "explanationNepali": "कविले भन्छन्, \"Ne'er saw I, never felt, a calm so deep!\"\nउद्धरण: पाठ १२",
                 "explanationEnglish": "The poet says, \"Ne'er saw I, never felt, a calm so deep!\" \nCitation: Lesson 12."
               },
               {
                 "id": "v",
+                "questionNepali": "घरहरू सुतेका छन् र लन्डनको मुटु __________ छ।",
                 "questionEnglish": "The houses are asleep and the heart of London is __________.",
-                "correctAnswer": "lying still",
-                "explanationNepali": "कविताको अन्तिम पङ्क्ति हो, \"And all that mighty heart is lying still!\"",
+                "correctAnswerNepali": "शान्त रहनु (lying still)",
+                "correctAnswerEnglish": "lying still",
+                "explanationNepali": "कविताको अन्तिम पङ्क्ति हो, \"And all that mighty heart is lying still!\"\nउद्धरण: पाठ १२",
                 "explanationEnglish": "The last line of the poem is, \"And all that mighty heart is lying still!\" \nCitation: Lesson 12."
               }
-            ]
+            ],
+            "titleNepali": "कविताबाट सही जानकारी प्रयोग गरी तलका वाक्यहरू पढ्नुहोस् र पूरा गर्नुहोस्।",
+            "titleEnglish": "Read and complete the sentences below with the correct information from the poem."
           }
-        ]
+        ],
+        "titleNepali": "कविता पढ्नुहोस् र कार्यहरू गर्नुहोस्।",
+        "titleEnglish": "Read the poem and do the tasks."
       },
       {
         "questionNumber": 2,
         "type": "reading_comprehension",
-        "title": "Read the text and do the tasks.",
         "marks": 10,
         "passage": {
-          "title": "Bird Migration",
-          "content": "Like marathon runners, birds pace themselves so they do not run out of energy before they can land. They are always adjusting speed, height and flight path to account for changing winds, their own weight, and storms. In the spring, they retrace their paths back to their summer homes. Each fall, about five billion birds migrate south for the winter from North America. Nearly all 500 of the 650 species of North American birds migrate. Yet this is just one small part of the picture. More than half of all the bird species in the world-approximately 5,000 species- migrate, and each species is on a different journey.\n\nOther animal species also migrate, including insects, amphibians, reptiles, fish and mammals. Migration is happening all the time: Herds of wild beast arrive every January at green pastures in the Southern Serengeti of Africa. Swarms of free tailed bats arrive each March to caves in Texas. Northern fur seals gather on Alaskan islands each June. In September, Chinook salmon swim up rivers in Washington State. If you are in the right place at the right time, you can witness these amazing journeys. Yet, no matter where you live, you can see some birds migrating. In fact, much of what we know about migration comes from studying birds."
+          "contentNepali": "म्याराथन धावकहरू जस्तै, चराहरूले आफ्नो गति नियन्त्रण गर्छन् ताकि उनीहरू अवतरण गर्नु अघि ऊर्जा सकिएर थकित नहुन्। तिनीहरू सधैं बदलिँदो हावा, आफ्नै तौल, र आँधीहरूलाई ध्यानमा राख्दै गति, उचाइ र उडान मार्ग समायोजन गरिरहन्छन्। वसन्त ऋतुमा, तिनीहरू आफ्नो ग्रीष्मकालीन घरहरूमा फर्कने बाटो पछ्याउँछन्। प्रत्येक शरद ऋतुमा, करिब पाँच अर्ब चराहरू जाडो छल्न उत्तर अमेरिकाबाट दक्षिणतिर बसाइँ सर्छन्। उत्तर अमेरिकी चराहरूका ६५० प्रजातिहरू मध्ये लगभग सबै ५०० प्रजातिहरू बसाइँ सर्छन्। तर यो तस्बिरको एउटा सानो अंश मात्र हो। संसारका सबै चरा प्रजातिहरू मध्ये आधा भन्दा बढी - लगभग ५,००० प्रजातिहरू - बसाइँ सर्छन्, र प्रत्येक प्रजाति फरक यात्रामा हुन्छ।\n\nकीरा, उभयचर, घस्रने जनावर, माछा र स्तनधारी जनावरहरू सहित अन्य जनावर प्रजातिहरू पनि बसाइँ सर्छन्। बसाइँसराइ सधैं भइरहन्छ: वाइल्डबिस्ट (wild beast) का बथानहरू हरेक जनवरीमा अफ्रिकाको दक्षिणी सेरेन्गेटीको हरियो चरनमा आइपुग्छन्। फ्रि-टेल्ड चमेरो (free tailed bats) का बथानहरू हरेक मार्चमा टेक्सासका गुफाहरूमा आइपुग्छन्। उत्तरी फर सिलहरू (Northern fur seals) हरेक जुनमा अलास्काका टापुहरूमा जम्मा हुन्छन्। सेप्टेम्बरमा, चिनूक साल्मन माछाहरू वाशिंगटन राज्यका नदीहरूमा माथितिर पौडिन्छन्। यदि तपाईं सही समयमा सही ठाउँमा हुनुहुन्छ भने, तपाईं यी अद्भुत यात्राहरू देख्न सक्नुहुन्छ। तैपनि, तपाईं जहाँ बसे पनि, तपाईंले केही चराहरूलाई बसाइँ सर्दै गरेको देख्न सक्नुहुन्छ। वास्तवमा, बसाइँसराइको बारेमा हामीलाई थाहा भएको धेरैजसो कुरा चराहरूको अध्ययनबाट आएको हो।",
+          "contentEnglish": "Like marathon runners, birds pace themselves so they do not run out of energy before they can land. They are always adjusting speed, height and flight path to account for changing winds, their own weight, and storms. In the spring, they retrace their paths back to their summer homes. Each fall, about five billion birds migrate south for the winter from North America. Nearly all 500 of the 650 species of North American birds migrate. Yet this is just one small part of the picture. More than half of all the bird species in the world-approximately 5,000 species- migrate, and each species is on a different journey.\n\nOther animal species also migrate, including insects, amphibians, reptiles, fish and mammals. Migration is happening all the time: Herds of wild beast arrive every January at green pastures in the Southern Serengeti of Africa. Swarms of free tailed bats arrive each March to caves in Texas. Northern fur seals gather on Alaskan islands each June. In September, Chinook salmon swim up rivers in Washington State. If you are in the right place at the right time, you can witness these amazing journeys. Yet, no matter where you live, you can see some birds migrating. In fact, much of what we know about migration comes from studying birds.",
+          "titleNepali": "चरा बसाइँसराइ",
+          "titleEnglish": "Bird Migration"
         },
         "subSections": [
           {
             "id": "A",
             "type": "true_false",
-            "title": "Write ‘TRUE’ for true and ‘FALSE’ for the false statements.",
             "marks": 5,
             "subQuestions": [
               {
                 "id": "i",
+                "questionNepali": "म्याराथन धावकहरू जस्तै दौडिएर चराहरूले उडानका लागि शक्ति सञ्चय गर्छन्।",
                 "questionEnglish": "Birds store energy for their flights by running like marathon runners.",
-                "correctAnswer": "FALSE",
-                "explanationNepali": "पाठले चराहरूलाई म्याराथन धावकहरूसँग तुलना गर्छ (pace themselves), तर तिनीहरू धावकजस्तै दौडेर शक्ति सञ्चय गर्छन् भन्दैन।",
+                "correctAnswerNepali": "गलत",
+                "correctAnswerEnglish": "FALSE",
+                "explanationNepali": "पाठले चराहरूलाई म्याराथन धावकहरूसँग तुलना गर्छ (pace themselves), तर तिनीहरू धावकजस्तै दौडेर शक्ति सञ्चय गर्छन् भन्दैन।\nउद्धरण: पाठ १३",
                 "explanationEnglish": "The text compares birds to marathon runners in how they pace themselves, not that they run to store energy. \nCitation: Lesson 13."
               },
               {
                 "id": "ii",
+                "questionNepali": "जाडो मौसममा उत्तर अमेरिकाबाट करिब ५० लाख चराहरू दक्षिणतिर बसाइँ सर्छन्।",
                 "questionEnglish": "Almost five million birds migrate south from North America in winter season.",
-                "correctAnswer": "FALSE",
-                "explanationNepali": "पाठमा \"about five billion birds\" भनिएको छ, पाँच मिलियन होइन।",
+                "correctAnswerNepali": "गलत",
+                "correctAnswerEnglish": "FALSE",
+                "explanationNepali": "पाठमा \"about five billion birds\" भनिएको छ, पाँच मिलियन होइन।\nउद्धरण: पाठ १३",
                 "explanationEnglish": "The text says \"about five billion birds,\" not five million. \nCitation: Lesson 13."
               },
               {
                 "id": "iii",
+                "questionNepali": "बसाइँसराइ जीवजन्तुहरूमा हुने एक नियमित प्रक्रिया हो।",
                 "questionEnglish": "Migration is a regular process among animal species.",
-                "correctAnswer": "TRUE",
-                "explanationNepali": "पाठले भन्छ, \"Migration is happening all the time\" र धेरै प्रजातिहरू बसाइँ सर्छन्।",
+                "correctAnswerNepali": "सही (TRUE)",
+                "correctAnswerEnglish": "TRUE",
+                "explanationNepali": "पाठले भन्छ, \"Migration is happening all the time\" र धेरै प्रजातिहरू बसाइँ सर्छन्।\nउद्धरण: पाठ १३",
                 "explanationEnglish": "The text states, \"Migration is happening all the time,\" and lists various species that migrate. \nCitation: Lesson 13."
               },
               {
                 "id": "iv",
+                "questionNepali": "फ्रि-टेल्ड चमेरोहरूको बथान हरेक मार्चमा टेक्सासका गुफाहरूमा बसाइँ सर्छन्।",
                 "questionEnglish": "Swarms of free tailed bats migrate to caves in Texas every March.",
-                "correctAnswer": "TRUE",
-                "explanationNepali": "पाठमा उल्लेख छ, \"Swarms of free tailed bats arrive each March to caves in Texas.\"",
+                "correctAnswerNepali": "सही (TRUE)",
+                "correctAnswerEnglish": "TRUE",
+                "explanationNepali": "पाठमा उल्लेख छ, \"Swarms of free tailed bats arrive each March to caves in Texas.\"\nउद्धरण: पाठ १३",
                 "explanationEnglish": "The text mentions, \"Swarms of free tailed bats arrive each March to caves in Texas.\" \nCitation: Lesson 13."
               },
               {
                 "id": "v",
+                "questionNepali": "हामी चराहरूको बसाइँसराइ वासिङ्टन राज्यबाट मात्र अवलोकन गर्न सक्छौं।",
                 "questionEnglish": "We can observe bird migration only from Washington State.",
-                "correctAnswer": "FALSE",
-                "explanationNepali": "पाठले भन्छ, \"no matter where you live, you can see some birds migrating.\"",
+                "correctAnswerNepali": "गलत",
+                "correctAnswerEnglish": "FALSE",
+                "explanationNepali": "पाठले भन्छ, \"no matter where you live, you can see some birds migrating.\"\nउद्धरण: पाठ १३",
                 "explanationEnglish": "The text says, \"no matter where you live, you can see some birds migrating.\" \nCitation: Lesson 13."
               }
-            ]
+            ],
+            "titleNepali": "सही कथनका लागि 'TRUE' र गलत कथनका लागि 'FALSE' लेख्नुहोस्।",
+            "titleEnglish": "Write ‘TRUE’ for true and ‘FALSE’ for the false statements."
           },
           {
             "id": "B",
             "type": "short_answer",
-            "title": "Answer the following questions in full sentences.",
             "marks": 5,
             "subQuestions": [
               {
                 "id": "i",
+                "questionNepali": "पाठमा चराहरूलाई केसँग तुलना गरिएको छ?",
                 "questionEnglish": "What are the birds compared with in the text?",
-                "correctAnswer": "The birds are compared with marathon runners.",
-                "explanationNepali": "पाठको पहिलो वाक्यमा भनिएको छ, \"Like marathon runners, birds pace themselves...\"",
+                "correctAnswerNepali": "चराहरूलाई म्याराथन धावकहरूसँग तुलना गरिएको छ।",
+                "correctAnswerEnglish": "The birds are compared with marathon runners.",
+                "explanationNepali": "पाठको पहिलो वाक्यमा भनिएको छ, \"Like marathon runners, birds pace themselves...\"\nउद्धरण: पाठ १३",
                 "explanationEnglish": "The first sentence of the text states, \"Like marathon runners, birds pace themselves...\" \nCitation: Lesson 13."
               },
               {
                 "id": "ii",
+                "questionNepali": "चराहरू कहिले आफ्नो गर्मीको घरमा फर्कन्छन्?",
                 "questionEnglish": "When do the birds return to their summer homes?",
-                "correctAnswer": "They return to their summer homes in the spring.",
-                "explanationNepali": "पाठमा उल्लेख छ, \"In the spring, they retrace their paths back to their summer homes.\"",
+                "correctAnswerNepali": "तिनीहरू वसन्तमा आफ्नो ग्रीष्मकालीन घरहरूमा फर्कन्छन्।",
+                "correctAnswerEnglish": "They return to their summer homes in the spring.",
+                "explanationNepali": "पाठमा उल्लेख छ, \"In the spring, they retrace their paths back to their summer homes.\"\nउद्धरण: पाठ १३",
                 "explanationEnglish": "The text mentions, \"In the spring, they retrace their paths back to their summer homes.\" \nCitation: Lesson 13."
               },
               {
                 "id": "iii",
+                "questionNepali": "सबै चरा प्रजातिहरूमध्ये कति भाग एक ठाउँबाट अर्को ठाउँमा सर्छन्?",
                 "questionEnglish": "What portion of all the bird species move from one place to another?",
-                "correctAnswer": "More than half of all the bird species in the world migrate.",
-                "explanationNepali": "पाठले भन्छ, \"More than half of all the bird species in the world... migrate.\"",
+                "correctAnswerNepali": "संसारका सबै चरा प्रजातिहरू मध्ये आधा भन्दा बढी बसाइँ सर्छन्।",
+                "correctAnswerEnglish": "More than half of all the bird species in the world migrate.",
+                "explanationNepali": "पाठले भन्छ, \"More than half of all the bird species in the world... migrate.\"\nउद्धरण: पाठ १३",
                 "explanationEnglish": "The text states, \"More than half of all the bird species in the world... migrate.\" \nCitation: Lesson 13."
               },
               {
                 "id": "iv",
+                "questionNepali": "चरा बाहेक कुन जीवजन्तु प्रजातिहरू बसाइँ सर्छन्?",
                 "questionEnglish": "Which animal species except birds migrate?",
-                "correctAnswer": "Insects, amphibians, reptiles, fish, and mammals also migrate.",
-                "explanationNepali": "पाठले \"including insects, amphibians, reptiles, fish and mammals\" लाई बसाइँ सर्ने प्रजातिको रूपमा सूचीबद्ध गर्दछ।",
+                "correctAnswerNepali": "कीरा, उभयचर, घस्रने जनावर, माछा र स्तनधारी जनावरहरू पनि बसाइँ सर्छन्।",
+                "correctAnswerEnglish": "Insects, amphibians, reptiles, fish, and mammals also migrate.",
+                "explanationNepali": "पाठले \"including insects, amphibians, reptiles, fish and mammals\" लाई बसाइँ सर्ने प्रजातिको रूपमा सूचीबद्ध गर्दछ।\nउद्धरण: पाठ १३",
                 "explanationEnglish": "The text lists \"insects, amphibians, reptiles, fish and mammals\" as species that also migrate. \nCitation: Lesson 13."
               },
               {
                 "id": "v",
+                "questionNepali": "अफ्रिकाको हरियो चरनमा जङ्गली जनावरहरू किन बसाइँ सर्छन् जस्तो लाग्छ? एउटा कारण दिनुहोस्।",
                 "questionEnglish": "Why do you think the wild beasts migrate to the green pastures in Africa? Give a reason.",
-                "correctAnswer": "They likely migrate to find food, as green pastures provide grazing.",
-                "explanationNepali": "हरियो खर्क (green pastures) ले खाना (घाँस) उपलब्ध गराउने भएकोले उनीहरू त्यहाँ जान्छन्।",
+                "correctAnswerNepali": "तिनीहरू सम्भवतः खाना खोज्न बसाइँ सर्छन्, किनकि हरियो चरनले चरन प्रदान गर्दछ।",
+                "correctAnswerEnglish": "They likely migrate to find food, as green pastures provide grazing.",
+                "explanationNepali": "हरियो खर्क (green pastures) ले खाना (घाँस) उपलब्ध गराउने भएकोले उनीहरू त्यहाँ जान्छन्।\nउद्धरण: पाठ १३",
                 "explanationEnglish": "Green pastures provide food (grazing), which is the likely reason for their migration. \nCitation: Lesson 13."
               }
-            ]
+            ],
+            "titleNepali": "तलका प्रश्नहरूको पूर्ण वाक्यमा उत्तर दिनुहोस्।",
+            "titleEnglish": "Answer the following questions in full sentences."
           }
-        ]
+        ],
+        "titleNepali": "पाठ पढ्नुहोस् र कार्यहरू गर्नुहोस्।",
+        "titleEnglish": "Read the text and do the tasks."
       },
       {
         "questionNumber": 3,
         "type": "reading_comprehension",
-        "title": "Read the following text and do the tasks.",
         "marks": 10,
         "passage": {
-          "title": "Janakpur Bolts Thump Sudurpaschim to Clinch Inaugural Nepal Premier League Title",
-          "content": "By MyKhel Staff, December 21\nJanakpur Bolts clinched the first ever Nepal Premier League after a thumping 5-wicket win over Sudurpaschim Royals in the final at the TU International Stadium in Kirtipur on Saturday. Lahiru Milantha smashed a 49-ball 87 as Janakpur Bolts made light work of the run chase of 185 against Sudurpaschim Royals. Milantha and skipper Aasif Sheikh (33 off 19 balls) shared a 73-run stand for the first wicket in seven overs to lay the foundation for a smooth run chase. After the two openers departed and the wickets fell at the other end, Harsh Thaker (30* off 24 balls) remained unbeaten alongside Mayan Yadav (2* off 3 balls) to see the team home with four balls to spare. For Royals, Scott Kuggeleijn, Saif Zaib and Ishan Pandey claimed a wicket each in a losing cause.\n\nEarlier opting to bat first, Sudurpaschim Royals got off to a great start as openers Saif Zaib (69 off 43 balls) and Binod Bhandari (41 off 31 balls) added 117 runs from 72 balls for the first wicket before Lalit Rajbanshi broke the stand, leading to successive dismissals in the space of 3 deliveries. Destined for a total above 200, Janakpur Bolts struck in regular intervals through Mohammed Mohsin (3 for 40) and Kishor Mahato (3 for 25) to keep the Royals down to 184/9 in their allotted 20 overs. With this, Janakpur Bolts defeated the Sudurpaschim for the first time, having lost to the table-toppers twice earlier in the tournament. The final marked the close of the first edition of the Nepal Premier League (NPL)."
+          "contentNepali": "माईखेल स्टाफ द्वारा, डिसेम्बर २१\nजनकपुर बोल्ट्सले शनिबार कीर्तिपुरस्थित टीयू अन्तर्राष्ट्रिय क्रिकेट मैदानमा भएको फाइनलमा सुदूरपश्चिम रोयल्सलाई ५ विकेटको फराकिलो अन्तरले पराजित गर्दै पहिलो पटक नेपाल प्रिमियर लिगको उपाधि जित्यो। लाहिरु मिलान्थाले ४९ बलमा ८७ रन प्रहार गरेपछि जनकपुर बोल्ट्सले सुदूरपश्चिम रोयल्सको १८५ रनको लक्ष्य पछ्याउन सहज भयो। मिलान्था र कप्तान आसिफ शेख (१९ बलमा ३३) ले पहिलो विकेटका लागि सात ओभरमा ७३ रनको साझेदारी गर्दै सहज जितको आधार तयार गरे। दुई ओपनर आउट भएपछि र अर्को छेउमा विकेट खसेपछि, हर्ष ठाकर (२४ बलमा ३०*) मयन यादव (३ बलमा २*) सँग अविजित रहँदै ४ बल बाँकी छँदै टोलीलाई जित दिलाए। रोयल्सका लागि स्टक कुग्गेलेइन, सैफ जैब र इशान पाण्डेले हारका बाबजुद एक-एक विकेट लिए।\n\nयसअघि ब्याटिङ रोजेको सुदूरपश्चिम रोयल्सले उत्कृष्ट सुरुवात गरेको थियो। ओपनर सैफ जैब (४३ बलमा ६९) र विनोद भण्डारी (३१ बलमा ४१) ले पहिलो विकेटका लागि ७२ बलमा ११७ रन जोडेका थिए। तर ललित राजवंशीले सो साझेदारी तोडेपछि ३ बलको अन्तरालमा लगातार विकेट खसे। २०० भन्दा बढी रनको लक्ष्यतर्फ अघि बढेको रोयल्सलाई मोहम्मद मोहसिन (४० रनमा ३ विकेट) र किशोर महतो (२५ रनमा ३ विकेट) ले नियमित अन्तरालमा विकेट लिँदै निर्धारित २० ओभरमा १८४/९ मा रोके। यससँगै जनकपुर बोल्ट्सले प्रतियोगितामा यसअघि दुई पटक शीर्ष स्थानको टोलीसँग हारेको भए पनि पहिलो पटक सुदूरपश्चिमलाई पराजित गर्यो। फाइनलले नेपाल प्रिमियर लिग (NPL) को पहिलो संस्करणको समापन गर्यो।",
+          "contentEnglish": "By MyKhel Staff, December 21\nJanakpur Bolts clinched the first ever Nepal Premier League after a thumping 5-wicket win over Sudurpaschim Royals in the final at the TU International Stadium in Kirtipur on Saturday. Lahiru Milantha smashed a 49-ball 87 as Janakpur Bolts made light work of the run chase of 185 against Sudurpaschim Royals. Milantha and skipper Aasif Sheikh (33 off 19 balls) shared a 73-run stand for the first wicket in seven overs to lay the foundation for a smooth run chase. After the two openers departed and the wickets fell at the other end, Harsh Thaker (30* off 24 balls) remained unbeaten alongside Mayan Yadav (2* off 3 balls) to see the team home with four balls to spare. For Royals, Scott Kuggeleijn, Saif Zaib and Ishan Pandey claimed a wicket each in a losing cause.\n\nEarlier opting to bat first, Sudurpaschim Royals got off to a great start as openers Saif Zaib (69 off 43 balls) and Binod Bhandari (41 off 31 balls) added 117 runs from 72 balls for the first wicket before Lalit Rajbanshi broke the stand, leading to successive dismissals in the space of 3 deliveries. Destined for a total above 200, Janakpur Bolts struck in regular intervals through Mohammed Mohsin (3 for 40) and Kishor Mahato (3 for 25) to keep the Royals down to 184/9 in their allotted 20 overs. With this, Janakpur Bolts defeated the Sudurpaschim for the first time, having lost to the table-toppers twice earlier in the tournament. The final marked the close of the first edition of the Nepal Premier League (NPL).",
+          "titleNepali": "जनकपुर बोल्ट्सद्वारा सुदुरपश्चिमलाई हराउदै उद्घाटन नेपाल प्रिमियर लिग उपाधि कब्जा",
+          "titleEnglish": "Janakpur Bolts Thump Sudurpaschim to Clinch Inaugural Nepal Premier League Title"
         },
         "subSections": [
           {
             "id": "A",
             "type": "true_false",
-            "title": "Write 'TRUE' for true and 'FALSE' for the false statements.",
             "marks": 5,
             "subQuestions": [
               {
                 "id": "i",
+                "questionNepali": "जनकपुर बोल्ट्सले NPL को पहिलो संस्करणको उपाधि जित्यो।",
                 "questionEnglish": "Janakpur Bolts won the title of the first edition of NPL.",
-                "correctAnswer": "TRUE",
-                "explanationNepali": "पहिलो वाक्यले भन्छ, \"Janakpur Bolts clinched the first ever Nepal Premier League...\"",
+                "correctAnswerNepali": "सही (TRUE)",
+                "correctAnswerEnglish": "TRUE",
+                "explanationNepali": "पहिलो वाक्यले भन्छ, \"Janakpur Bolts clinched the first ever Nepal Premier League...\"\nउद्धरण: पाठ २",
                 "explanationEnglish": "The first sentence says, \"Janakpur Bolts clinched the first ever Nepal Premier League...\" \nCitation: Lesson 2."
               },
               {
                 "id": "ii",
+                "questionNepali": "आसिफ शेखले व्यक्तिगत ८७ रन बनाए।",
                 "questionEnglish": "Aasif Sheikh scored individual 87 runs.",
-                "correctAnswer": "FALSE",
-                "explanationNepali": "पाठले भन्छ, \"Lahiru Milantha smashed a 49-ball 87,\" असिफ शेखले होइन।",
+                "correctAnswerNepali": "गलत",
+                "correctAnswerEnglish": "FALSE",
+                "explanationNepali": "पाठले भन्छ, \"Lahiru Milantha smashed a 49-ball 87,\" असिफ शेखले होइन।\nउद्धरण: पाठ २",
                 "explanationEnglish": "The text says, \"Lahiru Milantha smashed a 49-ball 87,\" not Aasif Sheikh. \nCitation: Lesson 2."
               },
               {
                 "id": "iii",
+                "questionNepali": "ईशान पाण्डे सहित तीन बलरले एक-एक विकेट लिए।",
                 "questionEnglish": "The three bowlers including Ishan Pandey took a wicket each.",
-                "correctAnswer": "TRUE",
-                "explanationNepali": "पाठले उल्लेख गर्छ, \"Scott Kuggeleijn, Saif Zaib and Ishan Pandey claimed a wicket each...\"",
+                "correctAnswerNepali": "सही (TRUE)",
+                "correctAnswerEnglish": "TRUE",
+                "explanationNepali": "पाठले उल्लेख गर्छ, \"Scott Kuggeleijn, Saif Zaib and Ishan Pandey claimed a wicket each...\"\nउद्धरण: पाठ २",
                 "explanationEnglish": "The text mentions, \"Scott Kuggeleijn, Saif Zaib and Ishan Pandey claimed a wicket each...\" \nCitation: Lesson 2."
               },
               {
                 "id": "iv",
+                "questionNepali": "जनकपुर बोल्ट्सको लागि रन लक्ष्य १८५ थियो।",
                 "questionEnglish": "The run target to Janakpur Bolts was 185.",
-                "correctAnswer": "TRUE",
-                "explanationNepali": "सुदूरपश्चिमले १८4/९ रन बनायो, त्यसैले जित्नको लागि लक्ष्य १८५ रन थियो। पाठले \"run chase of 185\" भन्छ।",
+                "correctAnswerNepali": "सही (TRUE)",
+                "correctAnswerEnglish": "TRUE",
+                "explanationNepali": "सुदूरपश्चिमले १८4/९ रन बनायो, त्यसैले जित्नको लागि लक्ष्य १८५ रन थियो। पाठले \"run chase of 185\" भन्छ।\nउद्धरण: पाठ २",
                 "explanationEnglish": "Sudurpaschim made 184/9, so the target to win was 185. The text says \"run chase of 185.\" \nCitation: Lesson 2."
               },
               {
                 "id": "v",
+                "questionNepali": "विनोद भण्डारी एक्लैले पहिलो विकेटको लागि ११७ रन जोडे।",
                 "questionEnglish": "Binod Bhandari alone collected 117 runs to first wicket.",
-                "correctAnswer": "FALSE",
-                "explanationNepali": "पाठले भन्छ, \"openers Saif Zaib... and Binod Bhandari... added 117 runs... for the first wicket,\" अर्थात् दुबै मिलेर, एक्लै होइन।",
+                "correctAnswerNepali": "गलत",
+                "correctAnswerEnglish": "FALSE",
+                "explanationNepali": "पाठले भन्छ, \"openers Saif Zaib... and Binod Bhandari... added 117 runs... for the first wicket,\" अर्थात् दुबै मिलेर, एक्लै होइन।\nउद्धरण: पाठ २",
                 "explanationEnglish": "The text says, \"openers Saif Zaib... and Binod Bhandari... added 117 runs... for the first wicket,\" meaning together, not alone. \nCitation: Lesson 2."
               }
-            ]
+            ],
+            "titleNepali": "सही कथनका लागि 'TRUE' र गलत कथनका लागि 'FALSE' लेख्नुहोस्।",
+            "titleEnglish": "Write 'TRUE' for true and 'FALSE' for the false statements."
           },
           {
             "id": "B",
             "type": "short_answer",
-            "title": "Answer the following questions in full sentences.",
             "marks": 5,
             "subQuestions": [
               {
                 "id": "i",
+                "questionNepali": "समाचार कहिले प्रकाशित भएको थियो?",
                 "questionEnglish": "When was the news published?",
-                "correctAnswer": "The news was published on December 21.",
-                "explanationNepali": "समाचारको सुरुमा \"By MyKhel Staff, December 21\" लेखिएको छ।",
+                "correctAnswerNepali": "समाचार डिसेम्बर २१ मा प्रकाशित भएको थियो।",
+                "correctAnswerEnglish": "The news was published on December 21.",
+                "explanationNepali": "समाचारको सुरुमा \"By MyKhel Staff, December 21\" लेखिएको छ।\nउद्धरण: पाठ २",
                 "explanationEnglish": "At the beginning of the news, it says \"By MyKhel Staff, December 21.\" \nCitation: Lesson 2."
               },
               {
                 "id": "ii",
+                "questionNepali": "NPL को अन्तिम खेल कुन रङ्गशालामा खेलिएको थियो?",
                 "questionEnglish": "In which Stadium was the final game of NPL played?",
-                "correctAnswer": "It was played at the TU International Stadium in Kirtipur.",
-                "explanationNepali": "पहिलो अनुच्छेदमा \"at the TU International Stadium in Kirtipur\" उल्लेख छ।",
+                "correctAnswerNepali": "यो कीर्तिपुरको टीयू अन्तर्राष्ट्रिय क्रिकेट मैदानमा खेलिएको थियो।",
+                "correctAnswerEnglish": "It was played at the TU International Stadium in Kirtipur.",
+                "explanationNepali": "पहिलो अनुच्छेदमा \"at the TU International Stadium in Kirtipur\" उल्लेख छ।\nउद्धरण: पाठ २",
                 "explanationEnglish": "The first paragraph mentions \"at the TU International Stadium in Kirtipur.\" \nCitation: Lesson 2."
               },
               {
                 "id": "iii",
+                "questionNepali": "मयन यादवसँग को अविजित रह्यो?",
                 "questionEnglish": "Who remained unbeaten together with Mayan Yadav?",
-                "correctAnswer": "Harsh Thaker remained unbeaten alongside Mayan Yadav.",
-                "explanationNepali": "पाठमा भनिएको छ, \"Harsh Thaker... remained unbeaten alongside Mayan Yadav...\"",
+                "correctAnswerNepali": "हर्ष ठाकर मयन यादवसँग अविजित रहे।",
+                "correctAnswerEnglish": "Harsh Thaker remained unbeaten alongside Mayan Yadav.",
+                "explanationNepali": "पाठमा भनिएको छ, \"Harsh Thaker... remained unbeaten alongside Mayan Yadav...\"\nउद्धरण: पाठ २",
                 "explanationEnglish": "The text states, \"Harsh Thaker... remained unbeaten alongside Mayan Yadav...\" \nCitation: Lesson 2."
               },
               {
                 "id": "iv",
+                "questionNepali": "NPL को पहिलो संस्करणको फाइनल कुन टोलीहरूले खेले?",
                 "questionEnglish": "Which teams played the final of the first edition of NPL?",
-                "correctAnswer": "Janakpur Bolts and Sudurpaschim Royals played the final.",
-                "explanationNepali": "शीर्षक र पहिलो अनुच्छेदले जनकपुर बोल्ट्स र सुदूरपश्चिम रोयल्स बीचको फाइनल खेलको उल्लेख गर्दछ।",
+                "correctAnswerNepali": "जनकपुर बोल्ट्स र सुदूरपश्चिम रोयल्सले फाइनल खेले।",
+                "correctAnswerEnglish": "Janakpur Bolts and Sudurpaschim Royals played the final.",
+                "explanationNepali": "शीर्षक र पहिलो अनुच्छेदले जनकपुर बोल्ट्स र सुदूरपश्चिम रोयल्स बीचको फाइनल खेलको उल्लेख गर्दछ।\nउद्धरण: पाठ २",
                 "explanationEnglish": "The title and first paragraph mention the final between Janakpur Bolts and Sudurpaschim Royals. \nCitation: Lesson 2."
               },
               {
                 "id": "v",
+                "questionNepali": "के NPL को यात्रा सुदूरपश्चिम रोयल्सका लागि रोमाञ्चक थियो? किन वा किन होइन?",
                 "questionEnglish": "Was the journey of NPL exciting to the Sudurpaschim Royals? Why or why not?",
-                "correctAnswer": "It was likely exciting but disappointing at the end because they lost the final despite having beaten Janakpur twice before.",
-                "explanationNepali": "उनीहरूले पहिले दुई पटक जनकपुरलाई हराएका थिए (exciting), तर फाइनलमा हारे (disappointing)।",
+                "correctAnswerNepali": "यो सम्भवतः रोमाञ्चक तर अन्त्यमा निराशजनक थियो किनभने उनीहरूले जनकपुरलाई यसअघि दुई पटक हराए पनि फाइनलमा हारे।",
+                "correctAnswerEnglish": "It was likely exciting but disappointing at the end because they lost the final despite having beaten Janakpur twice before.",
+                "explanationNepali": "उनीहरूले पहिले दुई पटक जनकपुरलाई हराएका थिए (exciting), तर फाइनलमा हारे (disappointing)।\nउद्धरण: पाठ २",
                 "explanationEnglish": "They had beaten Janakpur twice before (exciting), but lost in the final (disappointing). \nCitation: Lesson 2."
               }
-            ]
+            ],
+            "titleNepali": "तलका प्रश्नहरूको पूर्ण वाक्यमा उत्तर दिनुहोस्।",
+            "titleEnglish": "Answer the following questions in full sentences."
           }
-        ]
+        ],
+        "titleNepali": "तलको पाठ पढ्नुहोस् र कार्यहरू गर्नुहोस्।",
+        "titleEnglish": "Read the following text and do the tasks."
       },
       {
         "questionNumber": 4,
         "type": "reading_comprehension",
-        "title": "Read the following text and do the tasks.",
         "marks": 15,
         "passage": {
-          "title": "Pushpa Basnet",
-          "content": "Pushpa Basnet, born in 1984 in Kathmandu, Nepal, is a Nepali social worker and the founder/president of Early Childhood Development Center (ECDC) and Butterfly Home, non-profit organizations in Kathmandu, Nepal. Her organization works to strengthen the rights of children living behind bars with their incarcerated parents. Her efforts have been recognized by national and international media since she was nominated for CNN Heroes Award which she subsequently won in 2012. She has won the super Hero Award in 2016.\n\nBasnet started her career at the age of 21, while she was still an undergraduate in social work at St. Xavier's College, Kathmandu. As part of her college assignment, she visited the women in prison in Kathmandu. She was dismayed when she saw children with their parents behind the bars. She raised 70,000 rupees from her close friends and sister, and started a non-profit organization - The Early Childhood Development Center (ECDC) to provide a day care program to the children in 2005.\n\nIn 2007, she opened a residential home for kids to live outside the prison year around while still visiting their mothers on holidays. Today, she has assisted more than 137 children of incarcerated parents. She runs a day care center for the prison children and a residential home for older ones. She has also helped to provide alternative residence, school enrollment, free meals and medical care to them.\n\nBasnet has been awarded with CNN Hero Award 2012, which was held at the Shrine Auditorium in Los Angeles, California, on Sunday, 2nd December. Academy Award winning actress Susan Sarandon presented Basnet with the award. The show was aired LIVE through CNN.\n\nWhen earlier interviewed by CNN, she commented on her venture as: \"It is not fair for (these) children to live in the prison because they have not done anything wrong ... My mission is to make sure no child grows up behind prison walls.\""
+          "contentNepali": "पुष्पा बस्नेत, जन्म १९८४ काठमाडौं, नेपालमा, एक नेपाली समाजसेवी र काठमाडौं, नेपालमा रहेको गैर-नाफामूलक संस्था प्रारम्भिक बाल विकास केन्द्र (ECDC) र पुतली घर (Butterfly Home) को संस्थापक/अध्यक्ष हुन्। उनको संस्थाले जेलमा रहेका आफ्ना आमाबुबासँगै जेलमा बस्ने बालबालिकाहरूको अधिकारलाई सुदृढ गर्न काम गर्छ। सीएनएन हिरोज अवार्डका लागि मनोनित भएदेखि नै उनको प्रयासलाई राष्ट्रिय र अन्तर्राष्ट्रिय सञ्चारमाध्यमले मान्यता दिएका छन्, जुन उनले पछि २०१२ मा जितिन्। उनले २०१६ मा सुपर हिरो अवार्ड जितेकी छिन्।\n\nबस्नेतले २१ वर्षको उमेरमा सेन्ट जेभियर्स कलेज, काठमाडौंमा सामाजिक कार्यमा स्नातक गर्दै गर्दा आफ्नो करियर सुरु गरेकी थिइन्। कलेजको असाइनमेन्टको एक भागको रूपमा, उनले काठमाडौंको जेलमा रहेका महिलाहरूलाई भेटिन्। बालबालिकालाई आमाबुबासँगै जेलभित्र देखेपछि उनी निराश भइन्। उनले आफ्ना नजिकका साथीहरू र दिदीबाट ७०,००० रुपैयाँ उठाइन्, र २००५ मा बालबालिकाहरूलाई दिवा स्याहार कार्यक्रम प्रदान गर्न एक गैर-नाफामूलक संस्था - प्रारम्भिक बाल विकास केन्द्र (ECDC) सुरु गरिन्।\n\n२००७ मा, उनले बालबालिकाहरूलाई जेल बाहिर वर्षभरि बस्नका लागि आवासीय घर खोलिन् जहाँ उनीहरू अझै पनि बिदामा आफ्ना आमाहरूलाई भेट्न जान्छन्। आज, उनले जेलमा परेका आमाबाबुका १३७ भन्दा बढी बालबालिकालाई सहयोग गरिसकेकी छिन्। उनी जेलका बालबालिकाका लागि दिवा स्याहार केन्द्र र ठूलाहरूका लागि आवासीय घर चलाउँछिन्। उनले उनीहरूलाई वैकल्पिक বাসস্থান, विद्यालय भर्ना, निःशुल्क खाना र औषधि उपचार प्रदान गर्न पनि मद्दत गरेकी छिन्।\n\nबस्नेतलाई २०१२ को सीएनएन हिरो अवार्डबाट सम्मानित गरिएको थियो, जुन लस एन्जलस, क्यालिफोर्नियाको श्राइन अडिटोरियममा आइतबार, २ डिसेम्बरमा आयोजित भएको थियो। एकेडेमी अवार्ड विजेता अभिनेत्री सुसान सरान्डनले बस्नेतलाई अवार्ड प्रदान गरेकी थिइन्। उक्त शो सीएनएन मार्फत प्रत्यक्ष प्रसारण गरिएको थियो।\n\nयसअघि सीएनएनसँगको अन्तर्वार्तामा, उनले आफ्नो उद्यमको बारेमा टिप्पणी गरिन्: \"(यी) बालबालिकाहरू जेलमा बस्नु उचित होइन किनभने उनीहरूले कुनै गल्ती गरेका छैनन् ... मेरो उद्देश्य कुनै पनि बच्चा जेलको पर्खालभित्र हुर्कन नपरोस् भन्ने सुनिश्चित गर्नु हो।\"",
+          "contentEnglish": "Pushpa Basnet, born in 1984 in Kathmandu, Nepal, is a Nepali social worker and the founder/president of Early Childhood Development Center (ECDC) and Butterfly Home, non-profit organizations in Kathmandu, Nepal. Her organization works to strengthen the rights of children living behind bars with their incarcerated parents. Her efforts have been recognized by national and international media since she was nominated for CNN Heroes Award which she subsequently won in 2012. She has won the super Hero Award in 2016.\n\nBasnet started her career at the age of 21, while she was still an undergraduate in social work at St. Xavier's College, Kathmandu. As part of her college assignment, she visited the women in prison in Kathmandu. She was dismayed when she saw children with their parents behind the bars. She raised 70,000 rupees from her close friends and sister, and started a non-profit organization - The Early Childhood Development Center (ECDC) to provide a day care program to the children in 2005.\n\nIn 2007, she opened a residential home for kids to live outside the prison year around while still visiting their mothers on holidays. Today, she has assisted more than 137 children of incarcerated parents. She runs a day care center for the prison children and a residential home for older ones. She has also helped to provide alternative residence, school enrollment, free meals and medical care to them.\n\nBasnet has been awarded with CNN Hero Award 2012, which was held at the Shrine Auditorium in Los Angeles, California, on Sunday, 2nd December. Academy Award winning actress Susan Sarandon presented Basnet with the award. The show was aired LIVE through CNN.\n\nWhen earlier interviewed by CNN, she commented on her venture as: \"It is not fair for (these) children to live in the prison because they have not done anything wrong ... My mission is to make sure no child grows up behind prison walls.\"",
+          "titleNepali": "पुष्पा बस्नेत",
+          "titleEnglish": "Pushpa Basnet"
         },
         "subSections": [
           {
             "id": "A",
             "type": "multiple_choice",
-            "title": "Choose and copy the correct answer from the given alternatives.",
             "marks": 5,
             "subQuestions": [
               {
                 "id": "i",
+                "questionNepali": "ECDC र बटरफ्लाई होम __________ सङ्घसंस्थाहरू हुन्।",
                 "questionEnglish": "ECDC and Butterfly Home are __________ organizations.",
                 "options": [
                   "profit",
@@ -299,12 +365,14 @@
                   "national",
                   "international"
                 ],
-                "correctAnswer": "non-profit",
-                "explanationNepali": "पहिलो अनुच्छेदमा तिनीहरूलाई \"non-profit organizations\" भनेर चिनाइएको छ।",
+                "correctAnswerNepali": "गैर नाफा (non-profit)",
+                "correctAnswerEnglish": "non-profit",
+                "explanationNepali": "पहिलो अनुच्छेदमा तिनीहरूलाई \"non-profit organizations\" भनेर चिनाइएको छ।\nउद्धरण: पाठ १५",
                 "explanationEnglish": "The first paragraph identifies them as \"non-profit organizations.\" \nCitation: Lesson 15."
               },
               {
                 "id": "ii",
+                "questionNepali": "पुष्पा बस्नेतले __________ मा सुपर हिरो अवार्ड जितिन्।",
                 "questionEnglish": "Pushpa Basnet won Super Hero award in __________.",
                 "options": [
                   "1984",
@@ -312,12 +380,14 @@
                   "2007",
                   "2016"
                 ],
-                "correctAnswer": "2016",
-                "explanationNepali": "पाठमा भनिएको छ, \"She has won the super Hero Award in 2016.\"",
+                "correctAnswerNepali": "२०१६",
+                "correctAnswerEnglish": "2016",
+                "explanationNepali": "पाठमा भनिएको छ, \"She has won the super Hero Award in 2016.\"\nउद्धरण: पाठ १५",
                 "explanationEnglish": "The text states, \"She has won the super Hero Award in 2016.\" \nCitation: Lesson 15."
               },
               {
                 "id": "iii",
+                "questionNepali": "पुष्पा बस्नेतले एक्काइस वर्षको उमेरमा आफ्नो __________ सुरु गरिन्।",
                 "questionEnglish": "Pushpa Basnet began her __________ at the age of twenty one.",
                 "options": [
                   "social work",
@@ -325,12 +395,14 @@
                   "career",
                   "organization"
                 ],
-                "correctAnswer": "career",
-                "explanationNepali": "पाठमा उल्लेख छ, \"Basnet started her career at the age of 21...\"",
+                "correctAnswerNepali": "करियर/वृत्ति",
+                "correctAnswerEnglish": "career",
+                "explanationNepali": "पाठमा उल्लेख छ, \"Basnet started her career at the age of 21...\"\nउद्धरण: पाठ १५",
                 "explanationEnglish": "The text mentions, \"Basnet started her career at the age of 21...\" \nCitation: Lesson 15."
               },
               {
                 "id": "iv",
+                "questionNepali": "पुष्पा बस्नेतले __________ बाट ७०,००० रुपैयाँ सङ्कलन गरिन्।",
                 "questionEnglish": "Pushpa Basnet collected a sum of 70000 rupees from __________.",
                 "options": [
                   "close friends",
@@ -338,12 +410,14 @@
                   "close friends and sister",
                   "women in prison"
                 ],
-                "correctAnswer": "close friends and sister",
-                "explanationNepali": "उनले \"raised 70,000 rupees from her close friends and sister\" भनेर उल्लेख गरिएको छ।",
+                "correctAnswerNepali": "करीबका साथीहरू र बहिनी",
+                "correctAnswerEnglish": "close friends and sister",
+                "explanationNepali": "उनले \"raised 70,000 rupees from her close friends and sister\" भनेर उल्लेख गरिएको छ।\nउद्धरण: पाठ १५",
                 "explanationEnglish": "It is mentioned that she \"raised 70,000 rupees from her close friends and sister.\" \nCitation: Lesson 15."
               },
               {
                 "id": "v",
+                "questionNepali": "पुष्पा बस्नेतले जेलमा रहेका बालबालिकालाई __________ उपलब्ध गराएकी छिन्।",
                 "questionEnglish": "Pushpa Basnet has provided __________ to the children in prison.",
                 "options": [
                   "alternative residence",
@@ -351,16 +425,18 @@
                   "paid meals",
                   "awards"
                 ],
-                "correctAnswer": "alternative residence",
-                "explanationNepali": "तेस्रो अनुच्छेदमा उनले \"provide alternative residence...\" भनेर भनिएको छ।",
+                "correctAnswerNepali": "वैकल्पिक निवास",
+                "correctAnswerEnglish": "alternative residence",
+                "explanationNepali": "तेस्रो अनुच्छेदमा उनले \"provide alternative residence...\" भनेर भनिएको छ।\nउद्धरण: पाठ १५",
                 "explanationEnglish": "In the third paragraph, it says she helped to \"provide alternative residence...\" \nCitation: Lesson 15."
               }
-            ]
+            ],
+            "titleNepali": "दिइएका विकल्पहरूबाट सही उत्तर छान्नुहोस् र प्रतिलिपि गर्नुहोस्।",
+            "titleEnglish": "Choose and copy the correct answer from the given alternatives."
           },
           {
             "id": "B",
             "type": "matching",
-            "title": "Match the meanings in 'Column A' with the correct words from the text in Column 'B'.",
             "marks": 5,
             "columns": {
               "A": [
@@ -434,58 +510,72 @@
                 "B": "f"
               }
             ],
-            "explanationNepali": "यो मिलान पाठमा प्रयोग भएका शब्दहरूको अर्थमा आधारित छ।",
-            "explanationEnglish": "This matching is based on the meanings of the words as used in the text. \nCitation: Lesson 15."
+            "explanationNepali": "यो मिलान पाठमा प्रयोग भएका शब्दहरूको अर्थमा आधारित छ।\nउद्धरण: पाठ १५",
+            "explanationEnglish": "This matching is based on the meanings of the words as used in the text. \nCitation: Lesson 15.",
+            "titleNepali": "'स्तम्भ A' मा भएका अर्थहरूलाई पाठबाट 'स्तम्भ B' मा रहेका सही शब्दहरूसँग मिलाउनुहोस्।",
+            "titleEnglish": "Match the meanings in 'Column A' with the correct words from the text in Column 'B'."
           },
           {
             "id": "C",
             "type": "short_answer",
-            "title": "Answer the following questions in full sentences.",
             "marks": 5,
             "subQuestions": [
               {
                 "id": "i",
+                "questionNepali": "पुष्पा बस्नेत को हुन्?",
                 "questionEnglish": "Who is Pushpa Basnet?",
-                "correctAnswer": "Pushpa Basnet is a Nepali social worker and the founder/president of ECDC and Butterfly Home.",
-                "explanationNepali": "पहिलो वाक्यले उनको परिचय दिन्छ।",
+                "correctAnswerNepali": "पुष्पा बस्नेत एक नेपाली समाजसेवी र ईसीडीसी तथा पुतली घरको संस्थापक/अध्यक्ष हुन्।",
+                "correctAnswerEnglish": "Pushpa Basnet is a Nepali social worker and the founder/president of ECDC and Butterfly Home.",
+                "explanationNepali": "पहिलो वाक्यले उनको परिचय दिन्छ।\nउद्धरण: पाठ १५",
                 "explanationEnglish": "The first sentence introduces her. \nCitation: Lesson 15."
               },
               {
                 "id": "ii",
+                "questionNepali": "पुष्पा बस्नेतले किन सामाजिक संस्था स्थापना गरिन्?",
                 "questionEnglish": "Why did Pushpa Basnet set up a social organization?",
-                "correctAnswer": "She set it up to help children living behind bars with their incarcerated parents.",
-                "explanationNepali": "उनले जेलमा रहेका आमाबाबुसँगै बस्ने बालबालिकालाई मद्दत गर्न संस्था स्थापना गरिन्।",
+                "correctAnswerNepali": "उनले जेलमा रहेका आफ्ना आमाबुबासँगै बस्ने बालबालिकाहरूलाई मद्दत गर्न यसको स्थापना गरिन्।",
+                "correctAnswerEnglish": "She set it up to help children living behind bars with their incarcerated parents.",
+                "explanationNepali": "उनले जेलमा रहेका आमाबाबुसँगै बस्ने बालबालिकालाई मद्दत गर्न संस्था स्थापना गरिन्।\nउद्धरण: पाठ १५",
                 "explanationEnglish": "She set it up to help children living behind bars with their incarcerated parents. \nCitation: Lesson 15."
               },
               {
                 "id": "iii",
+                "questionNepali": "ECDC को पूरा रूप के हो?",
                 "questionEnglish": "What does ECDC stand for?",
-                "correctAnswer": "ECDC stands for Early Childhood Development Center.",
-                "explanationNepali": "पाठले ECDC को पूर्ण रूप दिन्छ।",
+                "correctAnswerNepali": "ईसीडीसीको पूरा रूप अर्ली चाइल्डहुड डेभलपमेन्ट सेन्टर हो।",
+                "correctAnswerEnglish": "ECDC stands for Early Childhood Development Center.",
+                "explanationNepali": "पाठले ECDC को पूर्ण रूप दिन्छ।\nउद्धरण: पाठ १५",
                 "explanationEnglish": "The text gives the full form of ECDC. \nCitation: Lesson 15."
               },
               {
                 "id": "iv",
+                "questionNepali": "पुष्पा बस्नेतलाई 'CNN Hero Award' किन दिइयो?",
                 "questionEnglish": "Why was Pushpa Basnet given a 'CNN Hero Award'?",
-                "correctAnswer": "She was given the award for her efforts to strengthen the rights of children living in prison with their parents.",
-                "explanationNepali": "उनको प्रयास र योगदानको कदर गर्दै उनलाई यो अवार्ड दिइएको हो।",
+                "correctAnswerNepali": "आफ्ना आमाबुबासँगै जेलमा बस्ने बालबालिकाको अधिकार सुदृढ गर्ने उनको प्रयासका लागि उनलाई यो पुरस्कार दिइएको थियो।",
+                "correctAnswerEnglish": "She was given the award for her efforts to strengthen the rights of children living in prison with their parents.",
+                "explanationNepali": "उनको प्रयास र योगदानको कदर गर्दै उनलाई यो अवार्ड दिइएको हो।\nउद्धरण: पाठ १५",
                 "explanationEnglish": "She was awarded for her efforts and contribution. \nCitation: Lesson 15."
               },
               {
                 "id": "v",
+                "questionNepali": "'CNN Hero Award' समारोह कहाँ आयोजना गरिएको थियो?",
                 "questionEnglish": "Where was the 'CNN Hero Award' ceremony held?",
-                "correctAnswer": "It was held at the Shrine Auditorium in Los Angeles, California.",
-                "explanationNepali": "समारोह लस एन्जलसको श्राइन अडिटोरियममा भएको थियो।",
+                "correctAnswerNepali": "यो लस एन्जलस, क्यालिफोर्नियाको श्राइन अडिटोरियममा आयोजना गरिएको थियो।",
+                "correctAnswerEnglish": "It was held at the Shrine Auditorium in Los Angeles, California.",
+                "explanationNepali": "समारोह लस एन्जलसको श्राइन अडिटोरियममा भएको थियो।\nउद्धरण: पाठ १५",
                 "explanationEnglish": "The ceremony took place at the Shrine Auditorium in Los Angeles. \nCitation: Lesson 15."
               }
-            ]
+            ],
+            "titleNepali": "तलका प्रश्नहरूको पूर्ण वाक्यमा उत्तर दिनुहोस्।",
+            "titleEnglish": "Answer the following questions in full sentences."
           }
-        ]
+        ],
+        "titleNepali": "तलको पाठ पढ्नुहोस् र कार्यहरू गर्नुहोस्।",
+        "titleEnglish": "Read the following text and do the tasks."
       },
       {
         "questionNumber": 5,
         "type": "free_writing",
-        "title": "Study the bar-diagram and interpret it in about 100 words using the clues given below it.",
         "marks": 5,
         "wordCount": 100,
         "clues": [
@@ -499,16 +589,19 @@
           "quality education"
         ],
         "sampleAnswer": {
-          "title": "Interpretation of Bar Diagram: Grade 11 Admission",
-          "content": "The bar diagram illustrates the number of students admitted to Grade 11 at XYZ School over a period of five years, from 2020 to 2024. In 2020, the admission number was the lowest, standing at 150 students. However, the school saw a consistent upward trend in the following years. The number of admitted students increased by exactly 100 each year, reaching 250 in 2021, 350 in 2022, and 450 in 2023. By 2024, the admission reached its peak at 550 students. This gradual and steady progress indicates the growing popularity of XYZ School, likely due to its quality education and improved facilities.",
-          "explanationNepali": "यो उत्तरले बार डायग्रामको व्याख्या गर्दछ। यसले २०२० देखि २०२४ सम्मको भर्ना संख्यामा भएको वृद्धिलाई वर्णन गर्दछ, जहाँ हरेक वर्ष १०० ले वृद्धि भएको छ। यसले विद्यालयको प्रगति र लोकप्रियतालाई संकेत गर्दछ।",
-          "explanationEnglish": "This answer interprets the bar diagram. It describes the increase in admission numbers from 2020 to 2024, noting a steady rise of 100 students each year. This indicates the school's progress and popularity. \nCitation: Lesson 10."
-        }
+          "explanationNepali": "यो उत्तरले बार डायग्रामको व्याख्या गर्दछ। यसले २०२० देखि २०२४ सम्मको भर्ना संख्यामा भएको वृद्धिलाई वर्णन गर्दछ, जहाँ हरेक वर्ष १०० ले वृद्धि भएको छ। यसले विद्यालयको प्रगति र लोकप्रियतालाई संकेत गर्दछ।\nउद्धरण: पाठ १०",
+          "explanationEnglish": "This answer interprets the bar diagram. It describes the increase in admission numbers from 2020 to 2024, noting a steady rise of 100 students each year. This indicates the school's progress and popularity. \nCitation: Lesson 10.",
+          "contentNepali": "बार चित्रले २०२० देखि २०२४ सम्मको पाँच वर्षको अवधिमा XYZ स्कूलमा कक्षा ११ मा भर्ना भएका विद्यार्थीहरूको सङ्ख्या चित्रण गर्दछ। २०२० मा, भर्ना सङ्ख्या सबैभन्दा कम थियो, जुन १५० विद्यार्थीहरू थियो। यद्यपि, विद्यालयले पछिल्ला वर्षहरूमा निरन्तर उकालो लाग्ने प्रवृत्ति देख्यो। भर्ना भएका विद्यार्थीहरूको सङ्ख्या हरेक वर्ष ठ्याक्कै १०० ले बढ्यो, २०२१ मा २५०, २०२२ मा ३५० र २०२३ मा ४५० पुग्यो। २०२४ सम्ममा, भर्ना ५५० विद्यार्थीहरूको शिखरमा पुग्यो। यो क्रमिक र स्थिर प्रगतिले XYZ स्कूलको बढ्दो लोकप्रियतालाई सङ्केत गर्छ, जुन सम्भवतः यसको गुणस्तरीय शिक्षा र सुधारिएका सुविधाहरूको कारण हो।",
+          "contentEnglish": "The bar diagram illustrates the number of students admitted to Grade 11 at XYZ School over a period of five years, from 2020 to 2024. In 2020, the admission number was the lowest, standing at 150 students. However, the school saw a consistent upward trend in the following years. The number of admitted students increased by exactly 100 each year, reaching 250 in 2021, 350 in 2022, and 450 in 2023. By 2024, the admission reached its peak at 550 students. This gradual and steady progress indicates the growing popularity of XYZ School, likely due to its quality education and improved facilities.",
+          "titleNepali": "बार चित्रको व्याख्या: कक्षा ११ भर्ना",
+          "titleEnglish": "Interpretation of Bar Diagram: Grade 11 Admission"
+        },
+        "titleNepali": "बार-चित्रको अध्ययन गर्नुहोस् र तल दिइएका संकेतहरूको प्रयोग गरी करिब १०० शब्दमा यसको व्याख्या गर्नुहोस्।",
+        "titleEnglish": "Study the bar-diagram and interpret it in about 100 words using the clues given below it."
       },
       {
         "questionNumber": 6,
         "type": "free_writing",
-        "title": "Write a formal message of condolence to be published in a newspaper on behalf of XYZ School using the given outlines.",
         "marks": 5,
         "wordCount": 100,
         "clues": [
@@ -521,163 +614,195 @@
           "heartfelt condolence"
         ],
         "sampleAnswer": {
-          "title": "HEARTFELT CONDOLENCE",
-          "content": "We are deeply saddened by the untimely demise of Mr. Daman Nath Dhungana, a senior advocate, human rights activist, and the former Speaker of the House of Representatives, who passed away on 17th November 2024 at Frontline Hospital, Kathmandu, due to liver-related complications. He was 82.\n\nMr. Dhungana was a towering figure in Nepali politics, known for his pivotal role in the people's movement, the peace process, and the protection of civil rights and democracy. His contribution to the nation as the Speaker from 1991 to 1994 will always be remembered.\n\nWe extend our heartfelt condolences to the bereaved family and pray for the eternal peace of the departed soul.\n\nXYZ School Family",
-          "explanationNepali": "यो उत्तरले दमननाथ ढुङ्गानाको निधनमा समवेदना सन्देश प्रस्तुत गर्दछ। यसले उनको मृत्युको विवरण, उनको राजनीतिक र सामाजिक योगदान, र शोकाकुल परिवारप्रति समवेदना व्यक्त गर्दछ।",
-          "explanationEnglish": "This answer presents a condolence message on the passing of Daman Nath Dhungana. It includes details of his death, his political and social contributions, and expresses sympathy to the bereaved family. \nCitation: Lesson 11."
-        }
+          "explanationNepali": "यो उत्तरले दमननाथ ढुङ्गानाको निधनमा समवेदना सन्देश प्रस्तुत गर्दछ। यसले उनको मृत्युको विवरण, उनको राजनीतिक र सामाजिक योगदान, र शोकाकुल परिवारप्रति समवेदना व्यक्त गर्दछ।\nउद्धरण: पाठ ११",
+          "explanationEnglish": "This answer presents a condolence message on the passing of Daman Nath Dhungana. It includes details of his death, his political and social contributions, and expresses sympathy to the bereaved family. \nCitation: Lesson 11.",
+          "contentNepali": "कालेजो सम्बन्धी जटिलताका कारण ८२ वर्षको उमेरमा, १७ नोभेम्बर २०२४ मा फ्रन्टलाइन अस्पताल, काठमाडौंमा निधन हुनुभएका वरिष्ठ अधिवक्ता, मानव अधिकारकर्मी तथा पूर्व सभामुख श्री दमननाथ ढुङ्गानाको असामयिक निधनले हामीलाई गहिरो दुःखी तुल्याएको छ।\n\nश्री ढुङ्गाना नेपाली राजनीतिमा एक उच्च व्यक्तित्व हुनुहुन्थ्यो, जो जनआन्दोलन, शान्ति प्रक्रिया, र नागरिक अधिकार तथा लोकतन्त्रको रक्षामा आफ्नो महत्त्वपूर्ण भूमिकाका लागि चिनिनुहुन्थ्यो। १९९१ देखि १९९४ सम्म सभामुखको रूपमा राष्ट्रमा उहाँको योगदान सधैं सम्झिनेछ।\n\nहामी शोकाकुल परिवारप्रति हार्दिक समवेदना व्यक्त गर्दछौं र दिवंगत आत्माको चीर शान्तिको कामना गर्दछौं।\n\nXYZ स्कूल परिवार",
+          "contentEnglish": "We are deeply saddened by the untimely demise of Mr. Daman Nath Dhungana, a senior advocate, human rights activist, and the former Speaker of the House of Representatives, who passed away on 17th November 2024 at Frontline Hospital, Kathmandu, due to liver-related complications. He was 82.\n\nMr. Dhungana was a towering figure in Nepali politics, known for his pivotal role in the people's movement, the peace process, and the protection of civil rights and democracy. His contribution to the nation as the Speaker from 1991 to 1994 will always be remembered.\n\nWe extend our heartfelt condolences to the bereaved family and pray for the eternal peace of the departed soul.\n\nXYZ School Family",
+          "titleNepali": "हार्दिक समवेदना",
+          "titleEnglish": "HEARTFELT CONDOLENCE"
+        },
+        "titleNepali": "दिइएको रूपरेखा प्रयोग गरी XYZ स्कूलको तर्फबाट पत्रपत्रिकामा प्रकाशित गर्नका लागि औपचारिक समवेदना सन्देश लेख्नुहोस्।",
+        "titleEnglish": "Write a formal message of condolence to be published in a newspaper on behalf of XYZ School using the given outlines."
       },
       {
         "questionNumber": 7,
         "type": "free_writing",
-        "title": "You are Arsey Chaudhary. You want to borrow a book for a week from your school library. Prepare a dialogue in at least six exchanges between you and the librarian in about 150 words.",
         "marks": 6,
         "wordCount": 150,
         "sampleAnswer": {
-          "content": "Arsey: Good morning, sir. I would like to borrow a book.\n\nLibrarian: Good morning, Arsey. Sure, which book are you looking for?\n\nArsey: I need 'The Alchemist' by Paulo Coelho. Is it available?\n\nLibrarian: Let me check the system. Yes, we have one copy available. Here it is.\n\nArsey: Thank you, sir. For how many days can I keep it?\n\nLibrarian: You can borrow it for one week. You must return it by next Tuesday.\n\nArsey: Okay, sir. What happens if I am late in returning it?\n\nLibrarian: There is a fine of Rs. 5 per day for late returns. So please be on time.\n\nArsey: I understand. I will return it on time. Here is my library card.\n\nLibrarian: Thank you. I have issued the book to your account. Happy reading!",
-          "explanationNepali": "यो उत्तरले विद्यार्थी र लाइब्रेरियन बीचको संवाद प्रस्तुत गर्दछ। विद्यार्थीले किताब माग्छ, लाइब्रेरियनले उपलब्धता जाँच गर्छ, नियमहरू (समयसीमा, जरिवाना) बताउँछ, र किताब जारी गर्छ।",
-          "explanationEnglish": "This answer presents a dialogue between a student and a librarian. The student asks for a book, the librarian checks availability, explains the rules (deadline, fine), and issues the book. \nCitation: Lesson 5."
-        }
+          "explanationNepali": "यो उत्तरले विद्यार्थी र लाइब्रेरियन बीचको संवाद प्रस्तुत गर्दछ। विद्यार्थीले किताब माग्छ, लाइब्रेरियनले उपलब्धता जाँच गर्छ, नियमहरू (समयसीमा, जरिवाना) बताउँछ, र किताब जारी गर्छ।\nउद्धरण: पाठ ५",
+          "explanationEnglish": "This answer presents a dialogue between a student and a librarian. The student asks for a book, the librarian checks availability, explains the rules (deadline, fine), and issues the book. \nCitation: Lesson 5.",
+          "contentNepali": "आर्सी: शुभ बिहानी, सर। म एउटा किताब लिन चाहन्छु।\n\nपुस्तकालय प्रमुख: शुभ बिहानी, आर्सी। पक्कै, तिमी कुन किताब खोज्दैछौ?\n\nआर्सी: मलाई पाउलो कोएल्होको 'द अल्केमिस्ट' चाहिन्छ। के यो उपलब्ध छ?\n\nपुस्तकालय प्रमुख: मलाई सिस्टममा जाँच गर्न देऊ। हो, हामीसँग एउटा प्रतिलिपि उपलब्ध छ। यो लिनुहोस्।\n\nआर्सी: धन्यवाद, सर। म यसलाई कति दिन राख्न सक्छु?\n\nपुस्तकालय प्रमुख: तिमी यसलाई एक हप्ताको लागि लैजान सक्छौ। तिमीले यसलाई अर्को मंगलबारसम्म फिर्ता गर्नुपर्छ।\n\nआर्सी: हुन्छ, सर। यदि मैले फिर्ता गर्न ढिला गरेँ भने के हुन्छ?\n\nपुस्तकालय प्रमुख: ढिलो फिर्ता गर्दा प्रति दिन ५ रुपैयाँ जरिवाना लाग्छ। त्यसैले कृपया समयमै आउनुहोला।\n\nआर्सी: मैले बुझें। म समयमै फिर्ता गर्नेछु। मेरो पुस्तकालय कार्ड यहाँ छ।\n\nपुस्तकालय प्रमुख: धन्यवाद। मैले तिम्रो खातामा किताब जारी गरेको छु। रमाइलो गरी पढ्नु!",
+          "contentEnglish": "Arsey: Good morning, sir. I would like to borrow a book.\n\nLibrarian: Good morning, Arsey. Sure, which book are you looking for?\n\nArsey: I need 'The Alchemist' by Paulo Coelho. Is it available?\n\nLibrarian: Let me check the system. Yes, we have one copy available. Here it is.\n\nArsey: Thank you, sir. For how many days can I keep it?\n\nLibrarian: You can borrow it for one week. You must return it by next Tuesday.\n\nArsey: Okay, sir. What happens if I am late in returning it?\n\nLibrarian: There is a fine of Rs. 5 per day for late returns. So please be on time.\n\nArsey: I understand. I will return it on time. Here is my library card.\n\nLibrarian: Thank you. I have issued the book to your account. Happy reading!"
+        },
+        "titleNepali": "तपाईं अर्सी चौधरी हो। तपाईं आफ्नो विद्यालयको पुस्तकालयबाट एक हप्ताका लागि किताब लिन चाहनुहुन्छ। तपाईं र लाइब्रेरियन बीच कम्तिमा छ पटक दोहोरो संवाद हुने गरी करिब १५० शब्दमा संवाद तयार गर्नुहोस्।",
+        "titleEnglish": "You are Arsey Chaudhary. You want to borrow a book for a week from your school library. Prepare a dialogue in at least six exchanges between you and the librarian in about 150 words."
       },
       {
         "questionNumber": 8,
         "type": "free_writing",
-        "title": "Write an essay expressing your opinion on the effects of junk food on human health in about 200 words.",
         "marks": 8,
         "wordCount": 200,
         "sampleAnswer": {
-          "title": "The Harmful Effects of Junk Food",
-          "content": "In recent years, the consumption of junk food has skyrocketed, becoming a staple in the diet of many, especially the youth. While these foods are tasty and convenient, they pose a significant threat to human health. Junk food is typically defined as food that is high in calories from sugar or fat, with little dietary fiber, protein, vitamins, minerals, or other important forms of nutritional value.\n\nThe most immediate effect of consuming junk food is weight gain and obesity. These foods are calorie-dense but nutrient-poor, leading to an excessive intake of energy that the body stores as fat. Obesity opens the door to a host of other chronic diseases, including type 2 diabetes, cardiovascular diseases, and hypertension. The high sodium content in processed foods can raise blood pressure, putting strain on the heart.\n\nFurthermore, junk food can negatively impact mental health. Studies have suggested a link between poor diet and depression or anxiety. The lack of essential nutrients affects brain function and energy levels, leading to fatigue and poor concentration. To maintain a healthy life, it is crucial to limit the intake of junk food and opt for a balanced diet rich in fruits, vegetables, and whole grains. Health is wealth, and we must not compromise it for momentary taste.",
-          "explanationNepali": "यो उत्तरले जंक फुडका नकारात्मक प्रभावहरूबारे निबन्ध प्रस्तुत गर्दछ। यसले मोटोपना, मधुमेह, मुटुको रोग जस्ता शारीरिक समस्याहरू र मानसिक स्वास्थ्यमा पर्ने असरहरूलाई समेट्छ। अन्त्यमा, सन्तुलित भोजनको महत्त्वमा जोड दिइएको छ।",
-          "explanationEnglish": "This answer provides an essay on the negative effects of junk food. It covers physical issues like obesity, diabetes, and heart disease, as well as impacts on mental health. It concludes by emphasizing the importance of a balanced diet. \nCitation: Lesson 6."
-        }
+          "explanationNepali": "यो उत्तरले जंक फुडका नकारात्मक प्रभावहरूबारे निबन्ध प्रस्तुत गर्दछ। यसले मोटोपना, मधुमेह, मुटुको रोग जस्ता शारीरिक समस्याहरू र मानसिक स्वास्थ्यमा पर्ने असरहरूलाई समेट्छ। अन्त्यमा, सन्तुलित भोजनको महत्त्वमा जोड दिइएको छ।\nउद्धरण: पाठ ६",
+          "explanationEnglish": "This answer provides an essay on the negative effects of junk food. It covers physical issues like obesity, diabetes, and heart disease, as well as impacts on mental health. It concludes by emphasizing the importance of a balanced diet. \nCitation: Lesson 6.",
+          "contentNepali": "हालका वर्षहरूमा, जंक फूडको खपत ह्वात्तै बढेको छ, धेरैको, विशेष गरी युवाहरूको आहारमा मुख्य हिस्सा बनेको छ। यद्यपि यी खानेकुराहरू स्वादिष्ट र सुविधाजनक छन्, तर यिनीहरूले मानव स्वास्थ्यमा ठूलो खतरा निम्त्याउँछन्। जंक फूडलाई सामान्यतया धेरै क्यालोरी (चिनी वा बोसोबाट) भएको, तर कम फाइबर, प्रोटिन, भिटामिन, खनिज, वा अन्य महत्त्वपूर्ण पोषण मूल्य भएका खानाको रूपमा परिभाषित गरिन्छ।\n\nजंक फूड सेवनको सबैभन्दा तत्काल प्रभाव तौल बढ्नु र मोटोपना हो। यी खानेकुराहरूमा क्यालोरी धेरै हुन्छ तर पोषक तत्व कम हुन्छ, जसले गर्दा शरीरले बोसोको रूपमा भण्डारण गर्ने ऊर्जाको अत्यधिक सेवन हुन्छ। मोटोपनाले टाइप २ मधुमेह, हृदय रोग, र उच्च रक्तचाप सहित अन्य धेरै दीर्घकालीन रोगहरूको ढोका खोल्छ। प्रशोधित खानेकुरामा उच्च सोडियम (noon) को मात्राले रक्तचाप बढाउन सक्छ, जसले मुटुमा दबाब दिन्छ।\n\nसाथै, जंक फूडले मानसिक स्वास्थ्यमा नकारात्मक प्रभाव पार्न सक्छ। अध्ययनहरूले खराब आहार र अवसाद (depression) वा चिन्ता (anxiety) बीचको सम्बन्ध सुझाव दिएका छन्। आवश्यक पोषक तत्वहरूको कमीले मस्तिष्कको कार्य र ऊर्जा स्तरलाई असर गर्छ, जसले थकान र कमजोर एकाग्रता निम्त्याउँछ। स्वस्थ जीवन कायम राख्न, जंक फूडको सेवन सीमित गर्नु र फलफूल, तरकारी, र पूर्ण अन्न (whole grains) युक्त सन्तुलित आहार रोज्नु महत्त्वपूर्ण छ। स्वास्थ्य नै धन हो, र हामीले क्षणिक स्वादको लागि यसमा सम्झौता गर्नु हुँदैन।",
+          "contentEnglish": "In recent years, the consumption of junk food has skyrocketed, becoming a staple in the diet of many, especially the youth. While these foods are tasty and convenient, they pose a significant threat to human health. Junk food is typically defined as food that is high in calories from sugar or fat, with little dietary fiber, protein, vitamins, minerals, or other important forms of nutritional value.\n\nThe most immediate effect of consuming junk food is weight gain and obesity. These foods are calorie-dense but nutrient-poor, leading to an excessive intake of energy that the body stores as fat. Obesity opens the door to a host of other chronic diseases, including type 2 diabetes, cardiovascular diseases, and hypertension. The high sodium content in processed foods can raise blood pressure, putting strain on the heart.\n\nFurthermore, junk food can negatively impact mental health. Studies have suggested a link between poor diet and depression or anxiety. The lack of essential nutrients affects brain function and energy levels, leading to fatigue and poor concentration. To maintain a healthy life, it is crucial to limit the intake of junk food and opt for a balanced diet rich in fruits, vegetables, and whole grains. Health is wealth, and we must not compromise it for momentary taste.",
+          "titleNepali": "जंक फूडका हानिकारक असरहरू",
+          "titleEnglish": "The Harmful Effects of Junk Food"
+        },
+        "titleNepali": "मानव स्वास्थ्यमा जंक फूडको असरबारे आफ्नो विचार व्यक्त गर्दै करिब २०० शब्दमा निबन्ध लेख्नुहोस्।",
+        "titleEnglish": "Write an essay expressing your opinion on the effects of junk food on human health in about 200 words."
       },
       {
         "questionNumber": 9,
         "type": "grammar",
-        "title": "Reproduce the following sentences as instructed in the brackets.",
         "marks": 6,
         "subQuestions": [
           {
             "id": "i",
             "type": "reproduce",
+            "questionNepali": "Anita never gets angry, __________? (सही question tag थप्नुहोस्।)",
             "questionEnglish": "Anita never gets angry, __________? (Add a correct question tag.)",
-            "correctAnswer": "Anita never gets angry, does she?",
-            "explanationNepali": "'never' नकारात्मक शब्द हो, त्यसैले ट्याग सकारात्मक हुन्छ। 'gets' (v5) को लागि 'does' प्रयोग गरिन्छ।",
+            "correctAnswerNepali": "अनिता कहिल्यै रिसाउँदिनन्, होइन त?",
+            "correctAnswerEnglish": "Anita never gets angry, does she?",
+            "explanationNepali": "'never' नकारात्मक शब्द हो, त्यसैले ट्याग सकारात्मक हुन्छ। 'gets' (v5) को लागि 'does' प्रयोग गरिन्छ।\nउद्धरण: पाठ १४",
             "explanationEnglish": "'never' is a negative word, so the tag is positive. 'does' is used for 'gets' (v5). \nCitation: Lesson 14."
           },
           {
             "id": "ii",
             "type": "reproduce",
+            "questionNepali": "By the time I reached home, my father ______ (leave) already home. ('leave' क्रियाको सही रूप प्रयोग गर्नुहोस्।)",
             "questionEnglish": "By the time I reached home, my father ______ (leave) already home. (Use the correct form of the verb 'leave'.)",
-            "correctAnswer": "By the time I reached home, my father had already left home.",
-            "explanationNepali": "भूतकालका दुई घटनाहरूमध्ये, पहिले भएको घटना (बुबा निस्केको) को लागि Past Perfect (had left) प्रयोग गरिन्छ।",
+            "correctAnswerNepali": "म घर पुग्दा सम्म, मेरो बुबा घरबाट निस्किसक्नुभएको थियो।",
+            "correctAnswerEnglish": "By the time I reached home, my father had already left home.",
+            "explanationNepali": "भूतकालका दुई घटनाहरूमध्ये, पहिले भएको घटना (बुबा निस्केको) को लागि Past Perfect (had left) प्रयोग गरिन्छ।\nउद्धरण: पाठ ९",
             "explanationEnglish": "For the earlier of two past actions (father leaving), the Past Perfect (had left) is used. \nCitation: Lesson 9."
           },
           {
             "id": "iii",
             "type": "reproduce",
+            "questionNepali": "Sunaina came late to school. (नकारात्मकमा बदल्नुहोस्।)",
             "questionEnglish": "Sunaina came late to school. (Change into negative.)",
-            "correctAnswer": "Sunaina did not come late to school.",
-            "explanationNepali": "Simple Past (came) लाई नकारात्मक बनाउन 'did not' + v1 (come) प्रयोग गरिन्छ।",
+            "correctAnswerNepali": "सुनैना विद्यालय ढिलो आएनन्।",
+            "correctAnswerEnglish": "Sunaina did not come late to school.",
+            "explanationNepali": "Simple Past (came) लाई नकारात्मक बनाउन 'did not' + v1 (come) प्रयोग गरिन्छ।\nउद्धरण: पाठ ११",
             "explanationEnglish": "To make Simple Past (came) negative, 'did not' + v1 (come) is used. \nCitation: Lesson 11."
           },
           {
             "id": "iv",
             "type": "reproduce",
+            "questionNepali": "Krishna visits his grandfather once a month. ('How often' प्रयोग गरी प्रश्नमा बदल्नुहोस्।)",
             "questionEnglish": "Krishna visits his grandfather once a month. (Change into 'How often' question.)",
-            "correctAnswer": "How often does Krishna visit his grandfather?",
-            "explanationNepali": "'once a month' (frequency) बारे सोध्न 'How often' प्रयोग गरिन्छ।",
+            "correctAnswerNepali": "कृष्ण कति पटक आफ्नो हजुरबुबालाई भेट्न जान्छन्?",
+            "correctAnswerEnglish": "How often does Krishna visit his grandfather?",
+            "explanationNepali": "'once a month' (frequency) बारे सोध्न 'How often' प्रयोग गरिन्छ।\nउद्धरण: पाठ १८",
             "explanationEnglish": "'How often' is used to ask about frequency ('once a month'). \nCitation: Lesson 18."
           },
           {
             "id": "v",
             "type": "reproduce",
+            "questionNepali": "The teacher said to the students, \"Don't spend your valuable time on mobile.\" (अप्रत्यक्ष कथन (indirect speech) मा बदल्नुहोस्।)",
             "questionEnglish": "The teacher said to the students, \"Don't spend your valuable time on mobile.\" (Change into indirect speech.)",
-            "correctAnswer": "The teacher forbade the students to spend their valuable time on mobile. OR The teacher advised the students not to spend their valuable time on mobile.",
-            "explanationNepali": "Negative imperative लाई 'forbade...to' वा 'advised...not to' प्रयोग गरेर परिवर्तन गरिन्छ।",
+            "correctAnswerNepali": "शिक्षकले विद्यार्थीहरूलाई मोबाइलमा आफ्नो बहुमूल्य समय नखर्चन निर्देशन दिए। वा शिक्षकले विद्यार्थीहरूलाई मोबाइलमा आफ्नो बहुमूल्य समय नखर्चन सल्लाह दिए।",
+            "correctAnswerEnglish": "The teacher forbade the students to spend their valuable time on mobile. OR The teacher advised the students not to spend their valuable time on mobile.",
+            "explanationNepali": "Negative imperative लाई 'forbade...to' वा 'advised...not to' प्रयोग गरेर परिवर्तन गरिन्छ।\nउद्धरण: पाठ ३",
             "explanationEnglish": "Negative imperative is changed using 'forbade...to' or 'advised...not to'. \nCitation: Lesson 3."
           },
           {
             "id": "vi",
             "type": "reproduce",
+            "questionNepali": "The culprit was sent to prison by the police. (कर्तृवाच्य (active voice) मा बदल्नुहोस्।)",
             "questionEnglish": "The culprit was sent to prison by the police. (Change into active voice.)",
-            "correctAnswer": "The police sent the culprit to prison.",
-            "explanationNepali": "Passive 'was sent' (Simple Past) लाई Active मा लैजाँदा 'sent' (v2) हुन्छ। Agent 'The police' विषय बन्छ।",
+            "correctAnswerNepali": "प्रहरीले अपराधीलाई जेल पठायो।",
+            "correctAnswerEnglish": "The police sent the culprit to prison.",
+            "explanationNepali": "Passive 'was sent' (Simple Past) लाई Active मा लैजाँदा 'sent' (v2) हुन्छ। Agent 'The police' विषय बन्छ।\nउद्धरण: पाठ ८",
             "explanationEnglish": "Passive 'was sent' (Simple Past) becomes 'sent' (v2) in Active. The agent 'The police' becomes the subject. \nCitation: Lesson 8."
           }
-        ]
+        ],
+        "titleNepali": "कोष्ठकमा निर्देशन दिइए अनुसार तलका वाक्यहरू पुनः लेख्नुहोस्।",
+        "titleEnglish": "Reproduce the following sentences as instructed in the brackets."
       },
       {
         "questionNumber": 10,
         "type": "cloze_test",
-        "title": "Choose and copy the correct answers from the brackets to complete the given text. (Rewriting the text is not compulsory.)",
         "marks": 5,
         "passage": "One evening in December I decided to see (a) _____ (a/an/the/no article) my friend, Renuka. Renuka (b) _____ (whose/who/whom/which) everyone called a notorious woman decided to celebrate her 25th birthday. She invited her friends and relatives (c) _____ (to/for/in/of) attend the party. I met her and (d) _____ (wished/to wish/wishing/wishes) her a happy birthday. She was not happy (e) _____ (although/because/in spite of/otherwise) the memorable moment. Suddenly, a lady police officer appeared. She made Renuka (f) _____ (accepts/accepted/accept/accepting) the case of damaging the minister's car because of her reckless driving. She (g) _____ (takes/was being taken/was taken/had taken) to the police station. In the police station, the Deputy Superintendent of police said, \"Renuka (h) _____ (May/must/can/will) pay for the harm she has made.\" If Renuka had driven her motorcycle carefully, she (i) _____ (will not cause/would not cause/would not have caused/would not have been casued) the accident. Finally, she got the (j) _____ (bad/as bad as/worse/worst) penalty.",
         "gaps": [
           {
             "id": "a",
-            "correctAnswer": "no article",
-            "explanationNepali": "Possessive pronoun 'my' अगाडि article प्रयोग हुँदैन।",
+            "correctAnswerNepali": "कुनै आर्टीकल छैन (no article)",
+            "correctAnswerEnglish": "no article",
+            "explanationNepali": "Possessive pronoun 'my' अगाडि article प्रयोग हुँदैन।\nउद्धरण: पाठ ७",
             "explanationEnglish": "No article is used before the possessive pronoun 'my'. \nCitation: Lesson 7."
           },
           {
             "id": "b",
-            "correctAnswer": "whom",
-            "explanationNepali": "यहाँ 'Renuka' object को रूपमा छ (everyone called *her*), त्यसैले 'whom' प्रयोग गरिन्छ।",
+            "correctAnswerNepali": "कसलाई (whom)",
+            "correctAnswerEnglish": "whom",
+            "explanationNepali": "यहाँ 'Renuka' object को रूपमा छ (everyone called *her*), त्यसैले 'whom' प्रयोग गरिन्छ।\nउद्धरण: पाठ १५",
             "explanationEnglish": "Here 'Renuka' functions as an object (everyone called *her*), so 'whom' is used. \nCitation: Lesson 15."
           },
           {
             "id": "c",
-            "correctAnswer": "to",
-            "explanationNepali": "उद्देश्य जनाउन infinitive 'to attend' को प्रयोग हुन्छ।",
+            "correctAnswerNepali": "लाई (to)",
+            "correctAnswerEnglish": "to",
+            "explanationNepali": "उद्देश्य जनाउन infinitive 'to attend' को प्रयोग हुन्छ।\nउद्धरण: पाठ १८",
             "explanationEnglish": "The infinitive 'to attend' is used to show purpose. \nCitation: Lesson 18."
           },
           {
             "id": "d",
-            "correctAnswer": "wished",
-            "explanationNepali": "'met' (v2) सँग समानान्तर हुन 'wished' (v2) प्रयोग गरिन्छ।",
+            "correctAnswerNepali": "इच्छा (wished)",
+            "correctAnswerEnglish": "wished",
+            "explanationNepali": "'met' (v2) सँग समानान्तर हुन 'wished' (v2) प्रयोग गरिन्छ।\nउद्धरण: पाठ ९",
             "explanationEnglish": "'wished' (v2) is used to maintain parallel structure with 'met' (v2). \nCitation: Lesson 9."
           },
           {
             "id": "e",
-            "correctAnswer": "in spite of",
-            "explanationNepali": "'in spite of' पछि noun phrase ('the memorable moment') आउँछ र यसले विरोधाभास देखाउँछ।",
+            "correctAnswerNepali": "को बाबजुद (in spite of)",
+            "correctAnswerEnglish": "in spite of",
+            "explanationNepali": "'in spite of' पछि noun phrase ('the memorable moment') आउँछ र यसले विरोधाभास देखाउँछ।\nउद्धरण: पाठ १३",
             "explanationEnglish": "'in spite of' takes a noun phrase and shows contrast. \nCitation: Lesson 13."
           },
           {
             "id": "f",
-            "correctAnswer": "accept",
-            "explanationNepali": "Causative verb 'make' ले active voice मा bare infinitive (v1) लिन्छ।",
+            "correctAnswerNepali": "स्वीकार्नु (accept)",
+            "correctAnswerEnglish": "accept",
+            "explanationNepali": "Causative verb 'make' ले active voice मा bare infinitive (v1) लिन्छ।\nउद्धरण: पाठ १८",
             "explanationEnglish": "The causative verb 'make' takes the bare infinitive (v1) in the active voice. \nCitation: Lesson 18."
           },
           {
             "id": "g",
-            "correctAnswer": "was taken",
-            "explanationNepali": "यो passive voice मा छ (उनीलाई लगियो), र भूतकालको घटना हो।",
+            "correctAnswerNepali": "लिइएको थियो (was taken)",
+            "correctAnswerEnglish": "was taken",
+            "explanationNepali": "यो passive voice मा छ (उनीलाई लगियो), र भूतकालको घटना हो।\nउद्धरण: पाठ ८",
             "explanationEnglish": "It is in the passive voice (she was taken), referring to a past event. \nCitation: Lesson 8."
           },
           {
             "id": "h",
-            "correctAnswer": "must",
-            "explanationNepali": "'must' ले बाध्यता (obligation) जनाउँछ।",
+            "correctAnswerNepali": "पर्छ (must)",
+            "correctAnswerEnglish": "must",
+            "explanationNepali": "'must' ले बाध्यता (obligation) जनाउँछ।\nउद्धरण: पाठ ४",
             "explanationEnglish": "'must' indicates obligation. \nCitation: Lesson 4."
           },
           {
             "id": "i",
-            "correctAnswer": "would not have caused",
-            "explanationNepali": "यो Type 3 Conditional हो (If + past perfect ... would have + v3)।",
+            "correctAnswerNepali": "कारण हुने थिएन (would not have caused)",
+            "correctAnswerEnglish": "would not have caused",
+            "explanationNepali": "यो Type 3 Conditional हो (If + past perfect ... would have + v3)।\nउद्धरण: पाठ ५",
             "explanationEnglish": "This is a Type 3 Conditional (If + past perfect ... would have + v3). \nCitation: Lesson 5."
           },
           {
             "id": "j",
-            "correctAnswer": "worst",
-            "explanationNepali": "Superlative degree 'worst' यहाँ सबैभन्दा खराब दण्ड जनाउन प्रयोग गरिन्छ।",
+            "correctAnswerNepali": "सबैभन्दा खराब (worst)",
+            "correctAnswerEnglish": "worst",
+            "explanationNepali": "Superlative degree 'worst' यहाँ सबैभन्दा खराब दण्ड जनाउन प्रयोग गरिन्छ।\nउद्धरण: पाठ १०",
             "explanationEnglish": "The superlative 'worst' is used to indicate the most severe penalty. \nCitation: Lesson 10."
           }
-        ]
+        ],
+        "titleNepali": "दिइएको पाठ पूरा गर्न कोष्ठकबाट सही उत्तरहरू छान्नुहोस् र प्रतिलिपि गर्नुहोस्। (पाठ पुनः लेख्न अनिवार्य छैन।)",
+        "titleEnglish": "Choose and copy the correct answers from the brackets to complete the given text. (Rewriting the text is not compulsory.)"
       }
     ]
   }
 ]
-

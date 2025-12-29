@@ -18,7 +18,8 @@
           "question_nepali": "दुवै खेल मन पराउने मानिसहरूको संख्या पत्ता लगाउनुहोस् ।",
           "question_english": "Find the number of people who like both games.",
           "marks": 6,
-          "explanation": "$n(U) = n_0(F) + n_0(V) + n(F \\cap V) + n(\\overline{F \\cup V})$। $40 = 18 + 12 + x + 5 \\Rightarrow 40 = 35 + x \\Rightarrow x = 5$।\n\nExplanation: Using set formula: $40 = 18 + 12 + x + 5$, so $x = 5$.\nCitation: Lesson 1",
+          "explanation_nepali": "$n(U) = n_0(F) + n_0(V) + n(F \\cap V) + n(\\overline{F \\cup V})$। $40 = 18 + 12 + x + 5 \\Rightarrow 40 = 35 + x \\Rightarrow x = 5$।\nउद्धरण: पाठ १",
+          "explanation_english": "Explanation: Using set formula: $40 = 18 + 12 + x + 5$, so $x = 5$.\nCitation: Lesson 1",
           "answer": "5"
         }
       ]
@@ -35,7 +36,8 @@
           "question_nepali": "",
           "question_english": "",
           "marks": 4,
-          "explanation": "वार्षिक CI = $20000(1.1^2 - 1) = 4200$। अर्ध-वार्षिक CI = $20000(1.05^4 - 1) \\approx 4310.125$। फरक $\\approx 110.1$।\n\nExplanation: Annual CI = $4200$. Semi-annual CI = $20000[(1.05)^4 - 1] \\approx 4310.1$. Difference $\\approx 110.1$.\nCitation: Lesson 2",
+          "explanation_nepali": "वार्षिक CI = $20000(1.1^2 - 1) = 4200$। अर्ध-वार्षिक CI = $20000(1.05^4 - 1) \\approx 4310.125$। फरक $\\approx 110.1$।\nउद्धरण: पाठ २",
+          "explanation_english": "Explanation: Annual CI = $4200$. Semi-annual CI = $20000[(1.05)^4 - 1] \\approx 4310.1$. Difference $\\approx 110.1$.\nCitation: Lesson 2",
           "answer": "Rs. 110.10 (approx)"
         }
       ]
@@ -52,7 +54,8 @@
           "question_nepali": "",
           "question_english": "",
           "marks": 4,
-          "explanation": "सूत्र $P_T = P(1 + \\frac{R}{100})^T$। $100000(1.02)^2 = 100000 \\times 1.0404 = 104040$।\n\nExplanation: Using growth formula: $100000(1.02)^2 = 104040$.\nCitation: Lesson 3",
+          "explanation_nepali": "सूत्र $P_T = P(1 + \\frac{R}{100})^T$। $100000(1.02)^2 = 100000 \\times 1.0404 = 104040$।\nउद्धरण: पाठ ३",
+          "explanation_english": "Explanation: Using growth formula: $100000(1.02)^2 = 104040$.\nCitation: Lesson 3",
           "answer": "1,04,040"
         }
       ]
@@ -69,7 +72,8 @@
           "question_nepali": "",
           "question_english": "",
           "marks": 5,
-          "explanation": "चेन रुल अनुसार: $x \\text{ NRs} = 1 \\text{ Euro} \\times \\frac{1 \\text{ USD}}{0.90 \\text{ Euro}} \\times \\frac{130 \\text{ NRs}}{1 \\text{ USD}} = \\frac{130}{0.90} \\approx 144.44$।\n\nExplanation: Using Chain rule or unitary method: $1 Euro = 1/0.9 USD = 1.11 USD$. $1.11 \\times 130 \\approx 144.44$.\nCitation: Lesson 2",
+          "explanation_nepali": "चेन रुल अनुसार: $x \\text{ NRs} = 1 \\text{ Euro} \\times \\frac{1 \\text{ USD}}{0.90 \\text{ Euro}} \\times \\frac{130 \\text{ NRs}}{1 \\text{ USD}} = \\frac{130}{0.90} \\approx 144.44$।\nउद्धरण: पाठ २",
+          "explanation_english": "Explanation: Using Chain rule or unitary method: $1 Euro = 1/0.9 USD = 1.11 USD$. $1.11 \\times 130 \\approx 144.44$.\nCitation: Lesson 2",
           "answer": "Rs. 144.44"
         }
       ]
@@ -86,7 +90,8 @@
           "question_nepali": "गोलाको अर्धव्यास पत्ता लगाउनुहोस् ।",
           "question_english": "Find the radius of the sphere.",
           "marks": 4,
-          "explanation": "$4\\pi r^2 = 616 \\Rightarrow 4 \\times \\frac{22}{7} \\times r^2 = 616 \\Rightarrow 88 r^2 = 4312 \\Rightarrow r^2 = 49 \\Rightarrow r = 7$।\n\nExplanation: Formula $4\\pi r^2 = 616$, solving gives $r = 7$.\nCitation: Lesson 5",
+          "explanation_nepali": "$4\\pi r^2 = 616 \\Rightarrow 4 \\times \\frac{22}{7} \\times r^2 = 616 \\Rightarrow 88 r^2 = 4312 \\Rightarrow r^2 = 49 \\Rightarrow r = 7$।\nउद्धरण: पाठ ५",
+          "explanation_english": "Explanation: Formula $4\\pi r^2 = 616$, solving gives $r = 7$.\nCitation: Lesson 5",
           "answer": "7 cm"
         }
       ]
@@ -103,7 +108,8 @@
           "question_nepali": "पिरामिडको पूरा सतहको क्षेत्रफल निकाल्नुहोस् ।",
           "question_english": "Find the total surface area of the pyramid.",
           "marks": 5,
-          "explanation": "$TSA = a^2 + 2al = 10^2 + 2(10)(13) = 100 + 260 = 360$।\n\nExplanation: TSA = Base Area + Lateral Area = $100 + 2(10)(13) = 360$.\nCitation: Lesson 5",
+          "explanation_nepali": "$TSA = a^2 + 2al = 10^2 + 2(10)(13) = 100 + 260 = 360$।\nउद्धरण: पाठ ५",
+          "explanation_english": "Explanation: TSA = Base Area + Lateral Area = $100 + 2(10)(13) = 360$.\nCitation: Lesson 5",
           "answer": "360 sq. cm"
         }
       ]
@@ -120,7 +126,8 @@
           "question_nepali": "",
           "question_english": "",
           "marks": 4,
-          "explanation": "सिलिङको क्षेत्रफल = $l \\times b = 5 \\times 4 = 20$। खर्च = $20 \\times 150 = 3000$।\n\nExplanation: Area of ceiling = $20$ sq m. Cost = $20 \\times 150 = 3000$.\nCitation: Lesson 5",
+          "explanation_nepali": "सिलिङको क्षेत्रफल = $l \\times b = 5 \\times 4 = 20$। खर्च = $20 \\times 150 = 3000$।\nउद्धरण: पाठ ५",
+          "explanation_english": "Explanation: Area of ceiling = $20$ sq m. Cost = $20 \\times 150 = 3000$.\nCitation: Lesson 5",
           "answer": "Rs. 3,000"
         }
       ]
@@ -137,7 +144,8 @@
           "question_nepali": "",
           "question_english": "",
           "marks": 5,
-          "explanation": "$GM = \\sqrt{ab} = \\sqrt{4 \\times 16} = \\sqrt{64} = 8$।\n\nExplanation: Formula $GM = \\sqrt{ab} = \\sqrt{64} = 8$.\nCitation: Lesson 6",
+          "explanation_nepali": "$GM = \\sqrt{ab} = \\sqrt{4 \\times 16} = \\sqrt{64} = 8$।\nउद्धरण: पाठ ६",
+          "explanation_english": "Explanation: Formula $GM = \\sqrt{ab} = \\sqrt{64} = 8$.\nCitation: Lesson 6",
           "answer": "8"
         }
       ]
@@ -154,7 +162,8 @@
           "question_nepali": "",
           "question_english": "",
           "marks": 5,
-          "explanation": "पहिलो: $(a-b)(a+b)$। दोस्रो: $(a-b)(a^2+ab+b^2)$। साझा गुणनखण्ड $a-b$ हो।\n\nExplanation: Factors: $(a-b)(a+b)$ and $(a-b)(a^2+ab+b^2)$. Common factor is $a-b$.\nCitation: Lesson 8",
+          "explanation_nepali": "पहिलो: $(a-b)(a+b)$। दोस्रो: $(a-b)(a^2+ab+b^2)$। साझा गुणनखण्ड $a-b$ हो।\nउद्धरण: पाठ ८",
+          "explanation_english": "Explanation: Factors: $(a-b)(a+b)$ and $(a-b)(a^2+ab+b^2)$. Common factor is $a-b$.\nCitation: Lesson 8",
           "answer": "$a - b$"
         }
       ]
@@ -171,7 +180,8 @@
           "question_nepali": "",
           "question_english": "",
           "marks": 5,
-          "explanation": "$5^x(5 + 1) = 150 \\Rightarrow 5^x(6) = 150 \\Rightarrow 5^x = 25 \\Rightarrow x=2$।\n\nExplanation: Factoring $5^x$: $5^x(6) = 150 \\Rightarrow 5^x = 25 \\Rightarrow x=2$.\nCitation: Lesson 9",
+          "explanation_nepali": "$5^x(5 + 1) = 150 \\Rightarrow 5^x(6) = 150 \\Rightarrow 5^x = 25 \\Rightarrow x=2$।\nउद्धरण: पाठ ९",
+          "explanation_english": "Explanation: Factoring $5^x$: $5^x(6) = 150 \\Rightarrow 5^x = 25 \\Rightarrow x=2$.\nCitation: Lesson 9",
           "answer": "2"
         }
       ]
@@ -188,7 +198,8 @@
           "question_nepali": "",
           "question_english": "",
           "marks": 4,
-          "explanation": "मध्यिकाले क्षेत्रफल आधा गर्छ: $\\frac{40}{2} = 20$।\n\nExplanation: Median bisects area: $40/2 = 20$.\nCitation: Lesson 10",
+          "explanation_nepali": "मध्यिकाले क्षेत्रफल आधा गर्छ: $\\frac{40}{2} = 20$।\nउद्धरण: पाठ १०",
+          "explanation_english": "Explanation: Median bisects area: $40/2 = 20$.\nCitation: Lesson 10",
           "answer": "20"
         }
       ]
@@ -205,7 +216,8 @@
           "question_nepali": "",
           "question_english": "",
           "marks": 5,
-          "explanation": "अर्धव्यास र स्पर्शरेखा स्पर्शबिन्दुमा लम्ब हुन्छन्।\n\nExplanation: Radius is perpendicular to tangent at point of contact.\nCitation: Lesson 12",
+          "explanation_nepali": "अर्धव्यास र स्पर्शरेखा स्पर्शबिन्दुमा लम्ब हुन्छन्।\nउद्धरण: पाठ १२",
+          "explanation_english": "Explanation: Radius is perpendicular to tangent at point of contact.\nCitation: Lesson 12",
           "answer": "$90^\\circ$"
         }
       ]
@@ -222,7 +234,8 @@
           "question_nepali": "",
           "question_english": "",
           "marks": 4,
-          "explanation": "आधा जीवा $x = \\sqrt{5^2 - 3^2} = 4$। पूरा जीवा = $2 \\times 4 = 8$।\n\nExplanation: Half chord = $\\sqrt{25-9} = 4$. Total length = 8.\nCitation: Lesson 12",
+          "explanation_nepali": "आधा जीवा $x = \\sqrt{5^2 - 3^2} = 4$। पूरा जीवा = $2 \\times 4 = 8$।\nउद्धरण: पाठ १२",
+          "explanation_english": "Explanation: Half chord = $\\sqrt{25-9} = 4$. Total length = 8.\nCitation: Lesson 12",
           "answer": "8 cm"
         }
       ]
@@ -239,7 +252,8 @@
           "question_nepali": "",
           "question_english": "",
           "marks": 4,
-          "explanation": "$N=5$। पद स्थान $\\frac{N+1}{4} = 1.5$ औं पद। $1.5$ औं पद भनेको 10 र 20 को बिचको मान (Interpolation) वा सामान्य स्कूल तहमा $2$nd item मान्न सकिन्छ (निकटतम पूर्णांक)। यदि Interpolation गर्ने हो भने 15 हुन्छ, तर SEE तहमा साधारणतया $\\frac{5+1}{4}$ प्रयोग गर्दा दशमलव आए पनि नजिकको पद लिने चलन छ वा प्रश्न स्पष्ट हुन्छ। यहाँ $Q_1$ स्थान 1.5, मान 15. (Optional: school level usually uses discrete precise position). Let's assume discrete formula gives 1.5th item, average of 1st and 2nd = 15. (SEE answer keys usually look for distinct value, let's adjust data for integer result). Data: 10, 20, 30, 40, 50, 60, 70 ($N=7$). Pos = $(7+1)/4 = 2$nd item = 20. Updated Answer: 20 based on $N=7$. (Assuming standard discrete series).\n\nExplanation: $N=7$. Position of $Q_1$ is $(7+1)/4 = 2$nd item, which is 20.\nCitation: Lesson 13",
+          "explanation_nepali": "$N=5$। पद स्थान $\\frac{N+1}{4} = 1.5$ औं पद। $1.5$ औं पद भनेको 10 र 20 को बिचको मान (Interpolation) वा सामान्य स्कूल तहमा $2$nd item मान्न सकिन्छ (निकटतम पूर्णांक)। यदि Interpolation गर्ने हो भने 15 हुन्छ, तर SEE तहमा साधारणतया $\\frac{5+1}{4}$ प्रयोग गर्दा दशमलव आए पनि नजिकको पद लिने चलन छ वा प्रश्न स्पष्ट हुन्छ। यहाँ $Q_1$ स्थान 1.5, मान 15. (Optional: school level usually uses discrete precise position). Let's assume discrete formula gives 1.5th item, average of 1st and 2nd = 15. (SEE answer keys usually look for distinct value, let's adjust data for integer result). Data: 10, 20, 30, 40, 50, 60, 70 ($N=7$). Pos = $(7+1)/4 = 2$nd item = 20. Updated Answer: 20 based on $N=7$. (Assuming standard discrete series).\nउद्धरण: पाठ १३",
+          "explanation_english": "Explanation: $N=7$. Position of $Q_1$ is $(7+1)/4 = 2$nd item, which is 20.\nCitation: Lesson 13",
           "answer": "20"
         }
       ]
@@ -256,7 +270,8 @@
           "question_nepali": "",
           "question_english": "",
           "marks": 6,
-          "explanation": "सबैभन्दा धेरै बारम्बारता भएको श्रेणीलाई रीत श्रेणी भनिन्छ।\n\nExplanation: The class with maximum frequency is the Modal Class.\nCitation: Lesson 13",
+          "explanation_nepali": "सबैभन्दा धेरै बारम्बारता भएको श्रेणीलाई रीत श्रेणी भनिन्छ।\nउद्धरण: पाठ १३",
+          "explanation_english": "Explanation: The class with maximum frequency is the Modal Class.\nCitation: Lesson 13",
           "answer": "Modal Class (रीत श्रेणी)"
         }
       ]
@@ -273,11 +288,11 @@
           "question_nepali": "",
           "question_english": "",
           "marks": 5,
-          "explanation": "नमुना क्षेत्र S = {BB, BG, GB, GG}। दुवै छोरा (BB) आउने 1 वटा। सम्भाव्यता $\\frac{1}{4}$।\n\nExplanation: Sample space {BB, BG, GB, GG}. Probability of BB is $1/4$.\nCitation: Lesson 14",
+          "explanation_nepali": "नमुना क्षेत्र S = {BB, BG, GB, GG}। दुवै छोरा (BB) आउने 1 वटा। सम्भाव्यता $\\frac{1}{4}$।\nउद्धरण: पाठ १४",
+          "explanation_english": "Explanation: Sample space {BB, BG, GB, GG}. Probability of BB is $1/4$.\nCitation: Lesson 14",
           "answer": "$\\frac{1}{4}$"
         }
       ]
     }
   ]
 }
- 
