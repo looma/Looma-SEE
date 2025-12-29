@@ -1,280 +1,364 @@
 {
   "exam_metadata": {
-    "title": "SEE 2081 Math Practice Test 4",
-    "subject": "Compulsory Mathematics (अनिवार्य गणित)",
-    "duration": 180,
-    "totalMarks": 75
+    "titleNepali": "SEE २०८१ अनिवार्य गणित अभ्यास परीक्षा ४",
+    "titleEnglish": "SEE 2081 Math Practice Test 4",
+    "subjectNepali": "अनिवार्य गणित",
+    "subjectEnglish": "Compulsory Mathematics",
+    "durationNepali": "१८०",
+    "durationEnglish": 180,
+    "totalMarksNepali": "७५",
+    "totalMarksEnglish": 75
   },
   "questions": [
     {
-      "question_number": 1,
+      "question_numberNepali": "१",
+      "question_numberEnglish": 1,
       "context": {
-        "nepali": "एउटा गाउँका मानिसहरूमा गरिएको सर्वेक्षणमा, 60% ले सुन्तला मन पराउँछन्, 50% ले स्याउ मन पराउँछन् र 20% ले दुवै फलफूल मन पराउँछन् ।",
-        "english": "In a survey conducted among people of a village, 60% like oranges, 50% like apples and 20% like both fruits."
+        "Nepali": "एउटा गाउँका मानिसहरूमा गरिएको सर्वेक्षणमा, 60% ले सुन्तला मन पराउँछन्, 50% ले स्याउ मन पराउँछन् र 20% ले दुवै फलफूल मन पराउँछन् ।",
+        "English": "In a survey conducted among people of a village, 60% like oranges, 50% like apples and 20% like both fruits."
       },
       "sub_questions": [
         {
-          "label": "a",
-          "question_nepali": "दुवै फलफूल मन नपराउने मानिसहरूको प्रतिशत कति छ ?",
-          "question_english": "What is the percentage of people who like neither fruit?",
-          "answer": "10%",
-          "explanation_nepali": "मानौँ जम्मा प्रतिशत $n(U) = 100\\%$। $n(O) = 60\\%, n(A) = 50\\%, n(O \\cap A) = 20\\%$। सूत्र अनुसार $n(O \\cup A) = 60 + 50 - 20 = 90\\%$। दुवै मन नपराउने $= 100 - 90 = 10\\%$।\nउद्धरण: पाठ १",
-          "explanation_english": "Explanation: Let total percentage $n(U) = 100\\%$. Using the formula for union: $n(O \\cup A) = 60 + 50 - 20 = 90\\%$. Those who like neither = $100\\% - 90\\% = 10\\%$.\nCitation: Lesson 1"
+          "labelNepali": "क",
+          "labelEnglish": "a",
+          "questionNepali": "दुवै फलफूल मन नपराउने मानिसहरूको प्रतिशत कति छ ?",
+          "questionEnglish": "What is the percentage of people who like neither fruit?",
+          "marksNepali": "१",
+          "marksEnglish": 1,
+          "explanationNepali": "मानौँ जम्मा प्रतिशत $n(U) = 100\\%$। $n(O) = 60\\%, n(A) = 50\\%, n(O \\cap A) = 20\\%$। सूत्र अनुसार $n(O \\cup A) = 60 + 50 - 20 = 90\\%$। दुवै मन नपराउने $= 100 - 90 = 10\\%$।\nउद्धरण: पाठ १",
+          "explanationEnglish": "Explanation: Let total percentage $n(U) = 100\\%$. Using the formula for union: $n(O \\cup A) = 60 + 50 - 20 = 90\\%$. Those who like neither = $100\\% - 90\\% = 10\\%$.\nCitation: Lesson 1",
+          "answerNepali": "१०%",
+          "answerEnglish": "10%"
         }
       ]
     },
     {
-      "question_number": 2,
+      "question_numberNepali": "२",
+      "question_numberEnglish": 2,
       "context": {
-        "nepali": "रु. 10,000 को 10% वार्षिक ब्याजदरले कति वर्षमा चक्रीय ब्याज रु. 2,100 हुन्छ ?",
-        "english": "In how many years will the compound interest on Rs. 10,000 at 10% p.a. be Rs. 2,100?"
+        "Nepali": "रु. 10,000 को 10% वार्षिक ब्याजदरले कति वर्षमा चक्रीय ब्याज रु. 2,100 हुन्छ ?",
+        "English": "In how many years will the compound interest on Rs. 10,000 at 10% p.a. be Rs. 2,100?"
       },
       "sub_questions": [
         {
-          "label": "a",
-          "question_nepali": "",
-          "question_english": "",
-          "answer": "2 years",
-          "explanation_nepali": "चक्रीय मिश्रधन $(CA) = 10000 + 2100 = 12100$। सूत्र $CA = P(1 + \\frac{R}{100})^T$ अनुसार, $12100 = 10000(1.1)^T \\Rightarrow 1.21 = (1.1)^T \\Rightarrow (1.1)^2 = (1.1)^T \\Rightarrow T = 2$।\nउद्धरण: पाठ २",
-          "explanation_english": "Explanation: Compound Amount = $12,100$. Using formula $12100 = 10000(1.1)^T$, we get $1.21 = (1.1)^T$, so $T=2$ years.\nCitation: Lesson 2"
+          "labelNepali": "क",
+          "labelEnglish": "a",
+          "questionNepali": "",
+          "questionEnglish": "",
+          "marksNepali": "१",
+          "marksEnglish": 1,
+          "explanationNepali": "चक्रीय मिश्रधन $(CA) = 10000 + 2100 = 12100$। सूत्र $CA = P(1 + \\frac{R}{100})^T$ अनुसार, $12100 = 10000(1.1)^T \\Rightarrow 1.21 = (1.1)^T \\Rightarrow (1.1)^2 = (1.1)^T \\Rightarrow T = 2$।\nउद्धरण: पाठ २",
+          "explanationEnglish": "Explanation: Compound Amount = $12,100$. Using formula $12100 = 10000(1.1)^T$, we get $1.21 = (1.1)^T$, so $T=2$ years.\nCitation: Lesson 2",
+          "answerNepali": "२ वर्ष",
+          "answerEnglish": "2 years"
         }
       ]
     },
     {
-      "question_number": 3,
+      "question_numberNepali": "३",
+      "question_numberEnglish": 3,
       "context": {
-        "nepali": "एउटा कम्प्युटरको मूल्य रु. 40,000 छ । यदि यसको मूल्यमा वार्षिक 20% ह्रास आउँछ भने:",
-        "english": "The price of a computer is Rs. 40,000. If its price depreciates by 20% annually:"
+        "Nepali": "एउटा कम्प्युटरको मूल्य रु. 40,000 छ । यदि यसको मूल्यमा वार्षिक 20% ह्रास आउँछ भने:",
+        "English": "The price of a computer is Rs. 40,000. If its price depreciates by 20% annually:"
       },
       "sub_questions": [
         {
-          "label": "a",
-          "question_nepali": "2 वर्षपछि उक्त कम्प्युटरको मूल्य कति हुन्छ ?",
-          "question_english": "What will be the price of the computer after 2 years?",
-          "answer": "Rs. 25,600",
-          "explanation_nepali": "ह्रास कट्टी सूत्र $P_T = P(1 - \\frac{R}{100})^T$ प्रयोग गर्दा: $40000(1 - 0.2)^2 = 40000(0.8)^2 = 40000 \\times 0.64 = 25,600$।\nउद्धरण: पाठ ३",
-          "explanation_english": "Explanation: Using depreciation formula: $40000(0.8)^2 = 25,600$.\nCitation: Lesson 3"
+          "labelNepali": "क",
+          "labelEnglish": "a",
+          "questionNepali": "2 वर्षपछि उक्त कम्प्युटरको मूल्य कति हुन्छ ?",
+          "questionEnglish": "What will be the price of the computer after 2 years?",
+          "marksNepali": "१",
+          "marksEnglish": 1,
+          "explanationNepali": "ह्रास कट्टी सूत्र $P_T = P(1 - \\frac{R}{100})^T$ प्रयोग गर्दा: $40000(1 - 0.2)^2 = 40000(0.8)^2 = 40000 \\times 0.64 = 25,600$।\nउद्धरण: पाठ ३",
+          "explanationEnglish": "Explanation: Using depreciation formula: $40000(0.8)^2 = 25,600$.\nCitation: Lesson 3",
+          "answerNepali": "रु. २५,६००",
+          "answerEnglish": "Rs. 25,600"
         }
       ]
     },
     {
-      "question_number": 4,
+      "question_numberNepali": "४",
+      "question_numberEnglish": 4,
       "context": {
-        "nepali": "रामसँग रु. 2,00,000 थियो । उसले अमेरिकन डलर साट्यो (विनिमय दर $1 = रु. 132) । केही दिनपछि नेपाली रुपैयाँ 10% ले अवमूल्यन भयो ।",
-        "english": "Ram had Rs. 2,00,000. He exchanged it for US dollars (Exchange rate $1 = Rs. 132). A few days later, Nepali rupee devalued by 10%."
+        "Nepali": "रामसँग रु. 2,00,000 थियो । उसले अमेरिकन डलर साट्यो (विनिमय दर $1 = रु. 132) । केही दिनपछि नेपाली रुपैयाँ 10% ले अवमूल्यन भयो ।",
+        "English": "Ram had Rs. 2,00,000. He exchanged it for US dollars (Exchange rate $1 = Rs. 132). A few days later, Nepali rupee devalued by 10%."
       },
       "sub_questions": [
         {
-          "label": "a",
-          "question_nepali": "उसले कति डलर प्राप्त गर्यो (दशमलवको दुई स्थानसम्म) ?",
-          "question_english": "How many dollars did he receive (up to two decimal places)?",
-          "answer": "$1,515.15",
-          "explanation_nepali": "डलर रकम = $\\frac{200000}{132} = 1515.1515... \\approx 1515.15$।\nउद्धरण: पाठ २",
-          "explanation_english": "Explanation: Dollar amount = $200000 / 132 \\approx 1515.15$.\nCitation: Lesson 2"
+          "labelNepali": "क",
+          "labelEnglish": "a",
+          "questionNepali": "उसले कति डलर प्राप्त गर्यो (दशमलवको दुई स्थानसम्म) ?",
+          "questionEnglish": "How many dollars did he receive (up to two decimal places)?",
+          "marksNepali": "१",
+          "marksEnglish": 1,
+          "explanationNepali": "डलर रकम = $\\frac{200000}{132} = 1515.1515... \\approx 1515.15$।\nउद्धरण: पाठ २",
+          "explanationEnglish": "Explanation: Dollar amount = $200000 / 132 \\approx 1515.15$.\nCitation: Lesson 2",
+          "answerNepali": "$१,५१५.१५",
+          "answerEnglish": "$1,515.15"
         }
       ]
     },
     {
-      "question_number": 5,
+      "question_numberNepali": "५",
+      "question_numberEnglish": 5,
       "context": {
-        "nepali": "एउटा त्रिभुजाकार प्रिज्मको आधारको क्षेत्रफल 24 वर्ग से.मि. र लम्बाइ 15 से.मि. छ ।",
-        "english": "The base area of a triangular prism is 24 sq. cm and length is 15 cm."
+        "Nepali": "एउटा त्रिभुजाकार प्रिज्मको आधारको क्षेत्रफल 24 वर्ग से.मि. र लम्बाइ 15 से.मि. छ ।",
+        "English": "The base area of a triangular prism is 24 sq. cm and length is 15 cm."
       },
       "sub_questions": [
         {
-          "label": "a",
-          "question_nepali": "प्रिज्मको आयतन पत्ता लगाउनुहोस् ।",
-          "question_english": "Find the volume of the prism.",
-          "answer": "360 cubic cm",
-          "explanation_nepali": "प्रिज्मको आयतन = आधारको क्षेत्रफल $\\times$ लम्बाइ = $24 \\times 15 = 360$ घन से.मि.।\nउद्धरण: पाठ ५",
-          "explanation_english": "Explanation: Volume of prism = Base Area $\\times$ Length = $24 \\times 15 = 360$.\nCitation: Lesson 5"
+          "labelNepali": "क",
+          "labelEnglish": "a",
+          "questionNepali": "प्रिज्मको आयतन पत्ता लगाउनुहोस् ।",
+          "questionEnglish": "Find the volume of the prism.",
+          "marksNepali": "१",
+          "marksEnglish": 1,
+          "explanationNepali": "प्रिज्मको आयतन = आधारको क्षेत्रफल $\\times$ लम्बाइ = $24 \\times 15 = 360$ घन से.मि.।\nउद्धरण: पाठ ५",
+          "explanationEnglish": "Explanation: Volume of prism = Base Area $\\times$ Length = $24 \\times 15 = 360$.\nCitation: Lesson 5",
+          "answerNepali": "३६० घन से.मि.",
+          "answerEnglish": "360 cubic cm"
         }
       ]
     },
     {
-      "question_number": 6,
+      "question_numberNepali": "६",
+      "question_numberEnglish": 6,
       "context": {
-        "nepali": "एउटा सोली र बेलनाको आधारको अर्धव्यास र उचाइ बराबर छन् ।",
-        "english": "The radius of the base and height of a cone and a cylinder are equal."
+        "Nepali": "एउटा सोली र बेलनाको आधारको अर्धव्यास र उचाइ बराबर छन् ।",
+        "English": "The radius of the base and height of a cone and a cylinder are equal."
       },
       "sub_questions": [
         {
-          "label": "a",
-          "question_nepali": "तिनीहरूको आयतनको अनुपात कति हुन्छ ?",
-          "question_english": "What is the ratio of their volumes?",
-          "answer": "1:3",
-          "explanation_nepali": "सोलीको आयतन $\\frac{1}{3}\\pi r^2 h$ र बेलनाको आयतन $\\pi r^2 h$ हुन्छ। अनुपात $\\frac{1}{3}:1$ वा $1:3$।\nउद्धरण: पाठ ५",
-          "explanation_english": "Explanation: Volume of cone is $1/3 \\pi r^2 h$ and cylinder is $\\pi r^2 h$. Ratio is $1:3$.\nCitation: Lesson 5"
+          "labelNepali": "क",
+          "labelEnglish": "a",
+          "questionNepali": "तिनीहरूको आयतनको अनुपात कति हुन्छ ?",
+          "questionEnglish": "What is the ratio of their volumes?",
+          "marksNepali": "१",
+          "marksEnglish": 1,
+          "explanationNepali": "सोलीको आयतन $\\frac{1}{3}\\pi r^2 h$ र बेलनाको आयतन $\\pi r^2 h$ हुन्छ। अनुपात $\\frac{1}{3}:1$ वा $1:3$।\nउद्धरण: पाठ ५",
+          "explanationEnglish": "Explanation: Volume of cone is $1/3 \\pi r^2 h$ and cylinder is $\\pi r^2 h$. Ratio is $1:3$.\nCitation: Lesson 5",
+          "answerNepali": "१:३",
+          "answerEnglish": "1:3"
         }
       ]
     },
     {
-      "question_number": 7,
+      "question_numberNepali": "७",
+      "question_numberEnglish": 7,
       "context": {
-        "nepali": "एउटा वर्गाकार बगैंचाको लम्बाइ 40 मिटर छ । यसको वरिपरि बाहिरबाट 2 मिटर चौडा बाटो बनाइएको छ ।",
-        "english": "The length of a square garden is 40 m. A path of width 2 m is constructed outside around it."
+        "Nepali": "एउटा वर्गाकार बगैंचाको लम्बाइ 40 मिटर छ । यसको वरिपरि बाहिरबाट 2 मिटर चौडा बाटो बनाइएको छ ।",
+        "English": "The length of a square garden is 40 m. A path of width 2 m is constructed outside around it."
       },
       "sub_questions": [
         {
-          "label": "a",
-          "question_nepali": "बाटोको क्षेत्रफल पत्ता लगाउनुहोस् ।",
-          "question_english": "Find the area of the path.",
-          "answer": "336 sq. m",
-          "explanation_nepali": "भित्री लम्बाइ $l = 40$। बाहिरी लम्बाइ $L = 40 + 2 + 2 = 44$। बाटोको क्षेत्रफल = $L^2 - l^2 = 44^2 - 40^2 = 1936 - 1600 = 336$।\nउद्धरण: पाठ ५",
-          "explanation_english": "Explanation: Inner length 40, outer length 44. Area = $44^2 - 40^2 = 336$.\nCitation: Lesson 5"
+          "labelNepali": "क",
+          "labelEnglish": "a",
+          "questionNepali": "बाटोको क्षेत्रफल पत्ता लगाउनुहोस् ।",
+          "questionEnglish": "Find the area of the path.",
+          "marksNepali": "१",
+          "marksEnglish": 1,
+          "explanationNepali": "भित्री लम्बाइ $l = 40$। बाहिरी लम्बाइ $L = 40 + 2 + 2 = 44$। बाटोको क्षेत्रफल = $L^2 - l^2 = 44^2 - 40^2 = 1936 - 1600 = 336$।\nउद्धरण: पाठ ५",
+          "explanationEnglish": "Explanation: Inner length 40, outer length 44. Area = $44^2 - 40^2 = 336$.\nCitation: Lesson 5",
+          "answerNepali": "३३६ वर्ग मिटर",
+          "answerEnglish": "336 sq. m"
         }
       ]
     },
     {
-      "question_number": 8,
+      "question_numberNepali": "८",
+      "question_numberEnglish": 8,
       "context": {
-        "nepali": "यदि पहिलो $n$ प्राकृतिक संख्याहरूको योगफल 55 छ भने:",
-        "english": "If the sum of the first $n$ natural numbers is 55:"
+        "Nepali": "यदि पहिलो $n$ प्राकृतिक संख्याहरूको योगफल 55 छ भने:",
+        "English": "If the sum of the first $n$ natural numbers is 55:"
       },
       "sub_questions": [
         {
-          "label": "a",
-          "question_nepali": "$n$ को मान पत्ता लगाउनुहोस् ।",
-          "question_english": "Find the value of $n$.",
-          "answer": "10",
-          "explanation_nepali": "सूत्र $\\frac{n(n+1)}{2} = 55 \\Rightarrow n^2 + n - 110 = 0$। खण्डीकरण गर्दा $(n+11)(n-10)=0$, त्यसैले $n=10$।\nउद्धरण: पाठ ६",
-          "explanation_english": "Explanation: Using formula $\\frac{n(n+1)}{2} = 55$, we get quadratic $n^2+n-110=0$, solving gives $n=10$.\nCitation: Lesson 6"
+          "labelNepali": "क",
+          "labelEnglish": "a",
+          "questionNepali": "$n$ को मान पत्ता लगाउनुहोस् ।",
+          "questionEnglish": "Find the value of $n$.",
+          "marksNepali": "१",
+          "marksEnglish": 1,
+          "explanationNepali": "सूत्र $\\frac{n(n+1)}{2} = 55 \\Rightarrow n^2 + n - 110 = 0$। खण्डीकरण गर्दा $(n+11)(n-10)=0$, त्यसैले $n=10$।\nउद्धरण: पाठ ६",
+          "explanationEnglish": "Explanation: Using formula $\\frac{n(n+1)}{2} = 55$, we get quadratic $n^2+n-110=0$, solving gives $n=10$.\nCitation: Lesson 6",
+          "answerNepali": "१०",
+          "answerEnglish": "10"
         }
       ]
     },
     {
-      "question_number": 9,
+      "question_numberNepali": "९",
+      "question_numberEnglish": 9,
       "context": {
-        "nepali": "हल गर्नुहोस्: $2x + y = 7$ र $4x - 3y + 1 = 0$",
-        "english": "Solve: $2x + y = 7$ and $4x - 3y + 1 = 0$"
+        "Nepali": "हल गर्नुहोस्: $2x + y = 7$ र $4x - 3y + 1 = 0$",
+        "English": "Solve: $2x + y = 7$ and $4x - 3y + 1 = 0$"
       },
       "sub_questions": [
         {
-          "label": "a",
-          "question_nepali": "",
-          "question_english": "",
-          "answer": "$x=2, y=3$",
-          "explanation_nepali": "$y = 7 - 2x$ दोस्रो समीकरणमा राख्दा: $4x - 3(7-2x) + 1 = 0 \\Rightarrow 4x - 21 + 6x + 1 = 0 \\Rightarrow 10x = 20 \\Rightarrow x=2$। $y = 3$।\nउद्धरण: पाठ ७",
-          "explanation_english": "Explanation: Substituting $y=7-2x$ into second eq: $10x=20 \\Rightarrow x=2$, then $y=3$.\nCitation: Lesson 7"
+          "labelNepali": "क",
+          "labelEnglish": "a",
+          "questionNepali": "",
+          "questionEnglish": "",
+          "marksNepali": "१",
+          "marksEnglish": 1,
+          "explanationNepali": "$y = 7 - 2x$ दोस्रो समीकरणमा राख्दा: $4x - 3(7-2x) + 1 = 0 \\Rightarrow 4x - 21 + 6x + 1 = 0 \\Rightarrow 10x = 20 \\Rightarrow x=2$। $y = 3$।\nउद्धरण: पाठ ७",
+          "explanationEnglish": "Explanation: Substituting $y=7-2x$ into second eq: $10x=20 \\Rightarrow x=2$, then $y=3$.\nCitation: Lesson 7",
+          "answerNepali": "$x=२, y=३$",
+          "answerEnglish": "$x=2, y=3$"
         }
       ]
     },
     {
-      "question_number": 10,
+      "question_numberNepali": "१०",
+      "question_numberEnglish": 10,
       "context": {
-        "nepali": "सरल गर्नुहोस्: $\\sqrt[3]{27 a^6 b^3}$",
-        "english": "Simplify: $\\sqrt[3]{27 a^6 b^3}$"
+        "Nepali": "सरल गर्नुहोस्: $\\sqrt[3]{27 a^6 b^3}$",
+        "English": "Simplify: $\\sqrt[3]{27 a^6 b^3}$"
       },
       "sub_questions": [
         {
-          "label": "a",
-          "question_nepali": "",
-          "question_english": "",
-          "answer": "$3 a^2 b$",
-          "explanation_nepali": "$27 = 3^3$, $a^6 = (a^2)^3$, $b^3 = b^3$। घनमूल निकाल्दा $3 a^2 b$।\nउद्धरण: पाठ ९",
-          "explanation_english": "Explanation: Taking cube root of each factor: $\\sqrt[3]{3^3 (a^2)^3 b^3} = 3 a^2 b$.\nCitation: Lesson 9"
+          "labelNepali": "क",
+          "labelEnglish": "a",
+          "questionNepali": "",
+          "questionEnglish": "",
+          "marksNepali": "१",
+          "marksEnglish": 1,
+          "explanationNepali": "$27 = 3^3$, $a^6 = (a^2)^3$, $b^3 = b^3$। घनमूल निकाल्दा $3 a^2 b$।\nउद्धरण: पाठ ९",
+          "explanationEnglish": "Explanation: Taking cube root of each factor: $\\sqrt[3]{3^3 (a^2)^3 b^3} = 3 a^2 b$.\nCitation: Lesson 9",
+          "answerNepali": "$३ a^2 b$",
+          "answerEnglish": "$3 a^2 b$"
         }
       ]
     },
     {
-      "question_number": 11,
+      "question_numberNepali": "११",
+      "question_numberEnglish": 11,
       "context": {
-        "nepali": "एउटा त्रिभुज र एउटा आयत एउटै आधार र उही समानान्तर रेखाहरू बिच बनेका छन् । आयतको क्षेत्रफल 40 वर्ग से.मि. भए त्रिभुजको क्षेत्रफल कति हुन्छ ?",
-        "english": "A triangle and a rectangle stand on the same base and between the same parallel lines. If the area of the rectangle is 40 sq. cm, what is the area of the triangle?"
+        "Nepali": "एउटा त्रिभुज र एउटा आयत एउटै आधार र उही समानान्तर रेखाहरू बिच बनेका छन् । आयतको क्षेत्रफल 40 वर्ग से.मि. भए त्रिभुजको क्षेत्रफल कति हुन्छ ?",
+        "English": "A triangle and a rectangle stand on the same base and between the same parallel lines. If the area of the rectangle is 40 sq. cm, what is the area of the triangle?"
       },
       "sub_questions": [
         {
-          "label": "a",
-          "question_nepali": "",
-          "question_english": "",
-          "answer": "20 sq. cm",
-          "explanation_nepali": "त्रिभुजको क्षेत्रफल आयतको आधा हुन्छ: $\\frac{1}{2} \\times 40 = 20$।\nउद्धरण: पाठ १०",
-          "explanation_english": "Explanation: Area of triangle is half of the rectangle: $20$ sq cm.\nCitation: Lesson 10"
+          "labelNepali": "क",
+          "labelEnglish": "a",
+          "questionNepali": "",
+          "questionEnglish": "",
+          "marksNepali": "१",
+          "marksEnglish": 1,
+          "explanationNepali": "त्रिभुजको क्षेत्रफल आयतको आधा हुन्छ: $\\frac{1}{2} \\times 40 = 20$।\nउद्धरण: पाठ १०",
+          "explanationEnglish": "Explanation: Area of triangle is half of the rectangle: $20$ sq cm.\nCitation: Lesson 10",
+          "answerNepali": "२० वर्ग से.मि.",
+          "answerEnglish": "20 sq. cm"
         }
       ]
     },
     {
-      "question_number": 12,
+      "question_numberNepali": "१२",
+      "question_numberEnglish": 12,
       "context": {
-        "nepali": "चक्रीय चतुर्भुज PQRS मा $\\angle P = 80^\\circ$ भए $\\angle R$ को मान कति हुन्छ ?",
-        "english": "In a cyclic quadrilateral PQRS, if $\\angle P = 80^\\circ$, what is the value of $\\angle R$?"
+        "Nepali": "चक्रीय चतुर्भुज PQRS मा $\\angle P = 80^\\circ$ भए $\\angle R$ को मान कति हुन्छ ?",
+        "English": "In a cyclic quadrilateral PQRS, if $\\angle P = 80^\\circ$, what is the value of $\\angle R$?"
       },
       "sub_questions": [
         {
-          "label": "a",
-          "question_nepali": "",
-          "question_english": "",
-          "answer": "$100^\\circ$",
-          "explanation_nepali": "सम्मुख कोणहरूको योग $180^\\circ$ हुन्छ। $\\angle R = 180 - 80 = 100^\\circ$।\nउद्धरण: पाठ १२",
-          "explanation_english": "Explanation: Opposite angles sum to 180: $180 - 80 = 100$.\nCitation: Lesson 12"
+          "labelNepali": "क",
+          "labelEnglish": "a",
+          "questionNepali": "",
+          "questionEnglish": "",
+          "marksNepali": "१",
+          "marksEnglish": 1,
+          "explanationNepali": "सम्मुख कोणहरूको योग $180^\\circ$ हुन्छ। $\\angle R = 180 - 80 = 100^\\circ$।\nउद्धरण: पाठ १२",
+          "explanationEnglish": "Explanation: Opposite angles sum to 180: $180 - 80 = 100$.\nCitation: Lesson 12",
+          "answerNepali": "$१००^\\circ$",
+          "answerEnglish": "$100^\\circ$"
         }
       ]
     },
     {
-      "question_number": 13,
+      "question_numberNepali": "१३",
+      "question_numberEnglish": 13,
       "context": {
-        "nepali": "दुई समरूप त्रिभुजका क्षेत्रफलहरूको अनुपात 16:25 छ ।",
-        "english": "The ratio of the areas of two similar triangles is 16:25."
+        "Nepali": "दुई समरूप त्रिभुजका क्षेत्रफलहरूको अनुपात 16:25 छ ।",
+        "English": "The ratio of the areas of two similar triangles is 16:25."
       },
       "sub_questions": [
         {
-          "label": "a",
-          "question_nepali": "तिनीहरूको सङ्गत भुजाहरूको अनुपात कति हुन्छ ?",
-          "question_english": "What is the ratio of their corresponding sides?",
-          "answer": "4:5",
-          "explanation_nepali": "क्षेत्रफलको अनुपात भुजाहरूको वर्गको अनुपातसँग बराबर हुन्छ। भुजा अनुपात = $\\sqrt{16}:\\sqrt{25} = 4:5$।\nउद्धरण: पाठ १०",
-          "explanation_english": "Explanation: Ratio of areas equals square of ratio of sides. Sides ratio = $\\sqrt{16/25} = 4:5$.\nCitation: Lesson 10"
+          "labelNepali": "क",
+          "labelEnglish": "a",
+          "questionNepali": "तिनीहरूको सङ्गत भुजाहरूको अनुपात कति हुन्छ ?",
+          "questionEnglish": "What is the ratio of their corresponding sides?",
+          "marksNepali": "१",
+          "marksEnglish": 1,
+          "explanationNepali": "क्षेत्रफलको अनुपात भुजाहरूको वर्गको अनुपातसँग बराबर हुन्छ। भुजा अनुपात = $\\sqrt{16}:\\sqrt{25} = 4:5$।\nउद्धरण: पाठ १०",
+          "explanationEnglish": "Explanation: Ratio of areas equals square of ratio of sides. Sides ratio = $\\sqrt{16/25} = 4:5$.\nCitation: Lesson 10",
+          "answerNepali": "४:५",
+          "answerEnglish": "4:5"
         }
       ]
     },
     {
-      "question_number": 14,
+      "question_numberNepali": "१४",
+      "question_numberEnglish": 14,
       "context": {
-        "nepali": "एउटा तथ्याङ्कको मध्यक 20 छ । यदि पदहरूको योगफल $\\sum X = 200$ भए पद संख्या ($N$) पत्ता लगाउनुहोस् ।",
-        "english": "The mean of a data set is 20. If the sum of terms $\\sum X = 200$, find the number of terms ($N$)."
+        "Nepali": "एउटा तथ्याङ्कको मध्यक 20 छ । यदि पदहरूको योगफल $\\sum X = 200$ भए पद संख्या ($N$) पत्ता लगाउनुहोस् ।",
+        "English": "The mean of a data set is 20. If the sum of terms $\\sum X = 200$, find the number of terms ($N$)."
       },
       "sub_questions": [
         {
-          "label": "a",
-          "question_nepali": "",
-          "question_english": "",
-          "answer": "10",
-          "explanation_nepali": "सूत्र $\\bar{X} = \\frac{\\sum X}{N} \\Rightarrow 20 = \\frac{200}{N} \\Rightarrow N = 10$।\nउद्धरण: पाठ १३",
-          "explanation_english": "Explanation: Using Mean formula: $20 = 200/N \\Rightarrow N=10$.\nCitation: Lesson 13"
+          "labelNepali": "क",
+          "labelEnglish": "a",
+          "questionNepali": "",
+          "questionEnglish": "",
+          "marksNepali": "१",
+          "marksEnglish": 1,
+          "explanationNepali": "सूत्र $\\bar{X} = \\frac{\\sum X}{N} \\Rightarrow 20 = \\frac{200}{N} \\Rightarrow N = 10$।\nउद्धरण: पाठ १३",
+          "explanationEnglish": "Explanation: Using Mean formula: $20 = 200/N \\Rightarrow N=10$.\nCitation: Lesson 13",
+          "answerNepali": "१०",
+          "answerEnglish": "10"
         }
       ]
     },
     {
-      "question_number": 15,
+      "question_numberNepali": "१५",
+      "question_numberEnglish": 15,
       "context": {
-        "nepali": "निरन्तर श्रेणीमा $N = 40$ भए मध्यिका पर्ने स्थान कुन हो ?",
-        "english": "In a continuous series, if $N = 40$, which is the position of the median?"
+        "Nepali": "निरन्तर श्रेणीमा $N = 40$ भए मध्यिका पर्ने स्थान कुन हो ?",
+        "English": "In a continuous series, if $N = 40$, which is the position of the median?"
       },
       "sub_questions": [
         {
-          "label": "a",
-          "question_nepali": "",
-          "question_english": "",
-          "answer": "20th item",
-          "explanation_nepali": "निरन्तर श्रेणीमा मध्यिकाको स्थान $\\frac{N}{2}$ औं पद हो = $\\frac{40}{2} = 20$।\nउद्धरण: पाठ १३",
-          "explanation_english": "Explanation: For continuous series, Median class position is $N/2 = 20$th item.\nCitation: Lesson 13"
+          "labelNepali": "क",
+          "labelEnglish": "a",
+          "questionNepali": "",
+          "questionEnglish": "",
+          "marksNepali": "१",
+          "marksEnglish": 1,
+          "explanationNepali": "निरन्तर श्रेणीमा मध्यिकाको स्थान $\\frac{N}{2}$ औं पद हो = $\\frac{40}{2} = 20$।\nउद्धरण: पाठ १३",
+          "explanationEnglish": "Explanation: For continuous series, Median class position is $N/2 = 20$th item.\nCitation: Lesson 13",
+          "answerNepali": "२० औं पद",
+          "answerEnglish": "20th item"
         }
       ]
     },
     {
-      "question_number": 16,
+      "question_numberNepali": "१६",
+      "question_numberEnglish": 16,
       "context": {
-        "nepali": "एउटा लुडोको गोटी उचाल्दा 4 भन्दा सानो अंक आउने सम्भाव्यता कति हुन्छ ?",
-        "english": "When a die is rolled, what is the probability of getting a number less than 4?"
+        "Nepali": "एउटा लुडोको गोटी उचाल्दा 4 भन्दा सानो अंक आउने सम्भाव्यता कति हुन्छ ?",
+        "English": "When a die is rolled, what is the probability of getting a number less than 4?"
       },
       "sub_questions": [
         {
-          "label": "a",
-          "question_nepali": "",
-          "question_english": "",
-          "answer": "$\\frac{1}{2}$",
-          "explanation_nepali": "4 भन्दा साना अंकहरू {1, 2, 3} हुन् (3 वटा)। सम्भाव्यता = $\\frac{3}{6} = \\frac{1}{2}$।\nउद्धरण: पाठ १४",
-          "explanation_english": "Explanation: Numbers less than 4 are {1, 2, 3}. Probability = $3/6 = 1/2$.\nCitation: Lesson 14"
+          "labelNepali": "क",
+          "labelEnglish": "a",
+          "questionNepali": "",
+          "questionEnglish": "",
+          "marksNepali": "१",
+          "marksEnglish": 1,
+          "explanationNepali": "4 भन्दा साना अंकहरू {1, 2, 3} हुन् (3 वटा)। सम्भाव्यता = $\\frac{3}{6} = \\frac{1}{2}$।\nउद्धरण: पाठ १४",
+          "explanationEnglish": "Explanation: Numbers less than 4 are {1, 2, 3}. Probability = $3/6 = 1/2$.\nCitation: Lesson 14",
+          "answerNepali": "$\\frac{1}{2}$",
+          "answerEnglish": "$\\frac{1}{2}$"
         }
       ]
     }

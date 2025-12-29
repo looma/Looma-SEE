@@ -8,14 +8,7 @@
     "totalMarks": 75,
     "duration": 180,
     "instructionsEnglish": "Candidates are required to give creative answers in their own style based on the given instructions.",
-    "instructionsNepali": "दिइएका निर्देशनका आधारमा आफ्नै शैलीमा सिर्जनात्मक उत्तर दिनुहोस् :",
-    "isActive": true,
-    "createdAt": {
-      "$date": "2025-08-31T18:45:00.000Z"
-    },
-    "updatedAt": {
-      "$date": "2025-08-31T18:45:00.000Z"
-    }
+    "instructionsNepali": "दिइएका निर्देशनका आधारमा आफ्नै शैलीमा सिर्जनात्मक उत्तर दिनुहोस् :"
   },
   {
     "_id": {

@@ -1,323 +1,400 @@
 {
   "exam_metadata": {
-    "title": "SEE 2081 Math Practice Test 2",
-    "subject": "Compulsory Mathematics (अनिवार्य गणित)",
-    "duration": 180,
-    "totalMarks": 75
+    "titleNepali": "SEE २०८१ अनिवार्य गणित अभ्यास परीक्षा २",
+    "titleEnglish": "SEE 2081 Math Practice Test 2",
+    "subjectNepali": "अनिवार्य गणित",
+    "subjectEnglish": "Compulsory Mathematics",
+    "durationNepali": "१८०",
+    "durationEnglish": 180,
+    "totalMarksNepali": "७५",
+    "totalMarksEnglish": 75
   },
   "questions": [
     {
-      "question_number": 1,
+      "question_numberNepali": "१",
+      "question_numberEnglish": 1,
       "context": {
-        "nepali": "एउटा समुदायका 500 मानिसहरूमा गरिएको सर्वेक्षणमा, 250 जनाले चिया मन पराउँछन्, 300 जनाले कफी मन पराउँछन् र 100 जनाले दुवै मन पराउँछन् ।",
-        "english": "In a survey of 500 people in a community, 250 like tea, 300 like coffee and 100 like both."
+        "Nepali": "एउटा समुदायका 500 मानिसहरूमा गरिएको सर्वेक्षणमा, 250 जनाले चिया मन पराउँछन्, 300 जनाले कफी मन पराउँछन् र 100 जनाले दुवै मन पराउँछन् ।",
+        "English": "In a survey of 500 people in a community, 250 like tea, 300 like coffee and 100 like both."
       },
       "sub_questions": [
         {
-          "label": "a",
-          "question_nepali": "चिया वा कफी मध्ये कुनै पनि मन नपराउने मानिसहरूको संख्या पत्ता लगाउनुहोस् ।",
-          "question_english": "Find the number of people who like neither tea nor coffee.",
-          "marks": 2,
-          "explanation_nepali": "भेन् चित्र वा सूत्र प्रयोग गर्दा: $n(U) = 500$, $n(T) = 250$, $n(C) = 300$, $n(T \\cap C) = 100$। $n(T \\cup C) = 250 + 300 - 100 = 450$। कुनै पनि मन नपराउने = $500 - 450 = 50$।\nउद्धरण: पाठ १",
-          "explanation_english": "Explanation: Using Venn diagram or formula: $n(T \\cup C) = n(T) + n(C) - n(T \\cap C) = 250 + 300 - 100 = 450$. Those who like neither = $Total - n(T \\cup C) = 500 - 450 = 50$.\nCitation: Lesson 1",
-          "answer": "50 people"
+          "labelNepali": "क",
+          "labelEnglish": "a",
+          "questionNepali": "चिया वा कफी मध्ये कुनै पनि मन नपराउने मानिसहरूको संख्या पत्ता लगाउनुहोस् ।",
+          "questionEnglish": "Find the number of people who like neither tea nor coffee.",
+          "marksNepali": "२",
+          "marksEnglish": 2,
+          "explanationNepali": "भेन् चित्र वा सूत्र प्रयोग गर्दा: $n(U) = 500$, $n(T) = 250$, $n(C) = 300$, $n(T \\cap C) = 100$। $n(T \\cup C) = 250 + 300 - 100 = 450$। कुनै पनि मन नपराउने = $500 - 450 = 50$।\nउद्धरण: पाठ १",
+          "explanationEnglish": "Explanation: Using Venn diagram or formula: $n(T \\cup C) = n(T) + n(C) - n(T \\cap C) = 250 + 300 - 100 = 450$. Those who like neither = $Total - n(T \\cup C) = 500 - 450 = 50$.\nCitation: Lesson 1",
+          "answerNepali": "५० जना",
+          "answerEnglish": "50 people"
         },
         {
-          "label": "b",
-          "question_nepali": "चिया मात्र मन पराउने र कफी मात्र मन पराउने मानिसहरूको अनुपात निकाल्नुहोस् ।",
-          "question_english": "Find the ratio of people who like tea only to those who like coffee only.",
-          "marks": 4,
-          "explanation_nepali": "चिया मात्र = $250 - 100 = 150$, कफी मात्र = $300 - 100 = 200$। अनुपात = $150:200 = 3:4$।\nउद्धरण: पाठ १",
-          "explanation_english": "Explanation: Tea only = $250 - 100 = 150$. Coffee only = $300 - 100 = 200$. Ratio = $150:200 = 3:4$.\nCitation: Lesson 1",
-          "answer": "3:4"
+          "labelNepali": "ख",
+          "labelEnglish": "b",
+          "questionNepali": "चिया मात्र मन पराउने र कफी मात्र मन पराउने मानिसहरूको अनुपात निकाल्नुहोस् ।",
+          "questionEnglish": "Find the ratio of people who like tea only to those who like coffee only.",
+          "marksNepali": "४",
+          "marksEnglish": 4,
+          "explanationNepali": "चिया मात्र = $250 - 100 = 150$, कफी मात्र = $300 - 100 = 200$। अनुपात = $150:200 = 3:4$।\nउद्धरण: पाठ १",
+          "explanationEnglish": "Explanation: Tea only = $250 - 100 = 150$. Coffee only = $300 - 100 = 200$. Ratio = $150:200 = 3:4$.\nCitation: Lesson 1",
+          "answerNepali": "३:४",
+          "answerEnglish": "3:4"
         }
       ]
     },
     {
-      "question_number": 2,
+      "question_numberNepali": "२",
+      "question_numberEnglish": 2,
       "context": {
-        "nepali": "रामले रु. 80,000 दुई वर्षका लागि 12% वार्षिक ब्याजदरमा ऋण लियो ।",
-        "english": "Ram took a loan of Rs. 80,000 for 2 years at 12% annual interest rate."
+        "Nepali": "रामले रु. 80,000 दुई वर्षका लागि 12% वार्षिक ब्याजदरमा ऋण लियो ।",
+        "English": "Ram took a loan of Rs. 80,000 for 2 years at 12% annual interest rate."
       },
       "sub_questions": [
         {
-          "label": "a",
-          "question_nepali": "वार्षिक चक्रीय ब्याज र साधारण ब्याजको अन्तर पत्ता लगाउनुहोस् ।",
-          "question_english": "Find the difference between annual compound interest and simple interest.",
-          "marks": 4,
-          "explanation_nepali": "साधारण ब्याज $SI = \\frac{80000 \\times 2 \\times 12}{100} = 19,200$। चक्रीय ब्याज $CI = 80000[(1.12)^2 - 1] = 20,352$। अन्तर = $20,352 - 19,200 = 1,152$।\nउद्धरण: पाठ २",
-          "explanation_english": "Explanation: Simple Interest $SI = 19,200$. Compound Interest $CI = 80000[(1.12)^2 - 1] = 20,352$. Difference = $1,152$.\nCitation: Lesson 2",
-          "answer": "Rs. 1,152"
+          "labelNepali": "क",
+          "labelEnglish": "a",
+          "questionNepali": "वार्षिक चक्रीय ब्याज र साधारण ब्याजको अन्तर पत्ता लगाउनुहोस् ।",
+          "questionEnglish": "Find the difference between annual compound interest and simple interest.",
+          "marksNepali": "४",
+          "marksEnglish": 4,
+          "explanationNepali": "साधारण ब्याज $SI = \\frac{80000 \\times 2 \\times 12}{100} = 19,200$। चक्रीय ब्याज $CI = 80000[(1.12)^2 - 1] = 20,352$। अन्तर = $20,352 - 19,200 = 1,152$।\nउद्धरण: पाठ २",
+          "explanationEnglish": "Explanation: Simple Interest $SI = 19,200$. Compound Interest $CI = 80000[(1.12)^2 - 1] = 20,352$. Difference = $1,152$.\nCitation: Lesson 2",
+          "answerNepali": "रु. १,१५२",
+          "answerEnglish": "Rs. 1,152"
         }
       ]
     },
     {
-      "question_number": 3,
+      "question_numberNepali": "३",
+      "question_numberEnglish": 3,
       "context": {
-        "nepali": "एउटा मोटरसाइकलको हालको मूल्य रु. 2,50,000 छ । यदि यसको मूल्य ह्रास दर 10% प्रति वर्ष छ भने:",
-        "english": "The present price of a motorcycle is Rs. 2,50,000. If its depreciation rate is 10% per annum:"
+        "Nepali": "एउटा मोटरसाइकलको हालको मूल्य रु. 2,50,000 छ । यदि यसको मूल्य ह्रास दर 10% प्रति वर्ष छ भने:",
+        "English": "The present price of a motorcycle is Rs. 2,50,000. If its depreciation rate is 10% per annum:"
       },
       "sub_questions": [
         {
-          "label": "a",
-          "question_nepali": "2 वर्षपछिको मूल्य कति हुन्छ ?",
-          "question_english": "What will be the price after 2 years?",
-          "marks": 4,
-          "explanation_nepali": "सूत्र $P_T = P(1 - \\frac{R}{100})^T$ प्रयोग गर्दा: $2,50,000(1 - 0.1)^2 = 2,50,000(0.81) = 2,02,500$।\nउद्धरण: पाठ ३",
-          "explanation_english": "Explanation: Using depreciation formula: $2,50,000(0.9)^2 = 2,02,500$.\nCitation: Lesson 3",
-          "answer": "Rs. 2,02,500"
+          "labelNepali": "क",
+          "labelEnglish": "a",
+          "questionNepali": "2 वर्षपछिको मूल्य कति हुन्छ ?",
+          "questionEnglish": "What will be the price after 2 years?",
+          "marksNepali": "४",
+          "marksEnglish": 4,
+          "explanationNepali": "सूत्र $P_T = P(1 - \\frac{R}{100})^T$ प्रयोग गर्दा: $2,50,000(1 - 0.1)^2 = 2,50,000(0.81) = 2,02,500$।\nउद्धरण: पाठ ३",
+          "explanationEnglish": "Explanation: Using depreciation formula: $2,50,000(0.9)^2 = 2,02,500$.\nCitation: Lesson 3",
+          "answerNepali": "रु. २,०२,५००",
+          "answerEnglish": "Rs. 2,02,500"
         }
       ]
     },
     {
-      "question_number": 4,
+      "question_numberNepali": "४",
+      "question_numberEnglish": 4,
       "context": {
-        "nepali": "एउटा व्यापारीले अमेरिकी डलर $800 लाई ने.रु. 132 को दरले साट्यो । एक हप्तापछि नेपाली मुद्राको 5% अवमूल्यन भयो ।",
-        "english": "A merchant exchanged US $800 at the rate of NRs. 132. After a week, Nepali currency was devalued by 5%."
+        "Nepali": "एउटा व्यापारीले अमेरिकी डलर $800 लाई ने.रु. 132 को दरले साट्यो । एक हप्तापछि नेपाली मुद्राको 5% अवमूल्यन भयो ।",
+        "English": "A merchant exchanged US $800 at the rate of NRs. 132. After a week, Nepali currency was devalued by 5%."
       },
       "sub_questions": [
         {
-          "label": "a",
-          "question_nepali": "अवमूल्यन पछिको नयाँ विनिमय दर कति हुन्छ ?",
-          "question_english": "What is the new exchange rate after devaluation?",
-          "marks": 2,
-          "explanation_nepali": "अवमूल्यनको अर्थ ने.रु. को मान घट्नु हो, त्यसैले डलर महँगो हुन्छ। नयाँ दर = $132 + 5\\% \\text{ of } 132 = 132 + 6.6 = 138.60$।\nउद्धरण: पाठ २",
-          "explanation_english": "Explanation: Devaluation means local currency weakens, so rate increases. New rate = $132 \\times 1.05 = 138.60$.\nCitation: Lesson 2",
-          "answer": "NRs. 138.60"
+          "labelNepali": "क",
+          "labelEnglish": "a",
+          "questionNepali": "अवमूल्यन पछिको नयाँ विनिमय दर कति हुन्छ ?",
+          "questionEnglish": "What is the new exchange rate after devaluation?",
+          "marksNepali": "२",
+          "marksEnglish": 2,
+          "explanationNepali": "अवमूल्यनको अर्थ ने.रु. को मान घट्नु हो, त्यसैले डलर महँगो हुन्छ। नयाँ दर = $132 + 5\\% \\text{ of } 132 = 132 + 6.6 = 138.60$।\nउद्धरण: पाठ २",
+          "explanationEnglish": "Explanation: Devaluation means local currency weakens, so rate increases. New rate = $132 \\times 1.05 = 138.60$.\nCitation: Lesson 2",
+          "answerNepali": "ने.रु. १३८.६०",
+          "answerEnglish": "NRs. 138.60"
         },
         {
-          "label": "b",
-          "question_nepali": "अब सोही डलर साट्दा कति नाफा वा नोक्सान हुन्छ ?",
-          "question_english": "How much profit or loss is made if the dollars are exchanged now?",
-          "marks": 3,
-          "explanation_nepali": "नाफा = (नयाँ दर - पुरानो दर) $\\times$ डलर = $(138.60 - 132) \\times 800 = 6.6 \\times 800 = 5,280$।\nउद्धरण: पाठ २",
-          "explanation_english": "Explanation: Profit = (New Rate - Old Rate) $\\times$ Amount = $6.6 \\times 800 = 5,280$.\nCitation: Lesson 2",
-          "answer": "Profit of Rs. 5,280"
+          "labelNepali": "ख",
+          "labelEnglish": "b",
+          "questionNepali": "अब सोही डलर साट्दा कति नाफा वा नोक्सान हुन्छ ?",
+          "questionEnglish": "How much profit or loss is made if the dollars are exchanged now?",
+          "marksNepali": "३",
+          "marksEnglish": 3,
+          "explanationNepali": "नाफा = (नयाँ दर - पुरानो दर) $\\times$ डलर = $(138.60 - 132) \\times 800 = 6.6 \\times 800 = 5,280$।\nउद्धरण: पाठ २",
+          "explanationEnglish": "Explanation: Profit = (New Rate - Old Rate) $\\times$ Amount = $6.6 \\times 800 = 5,280$.\nCitation: Lesson 2",
+          "answerNepali": "रु. ५,२८० नाफा",
+          "answerEnglish": "Profit of Rs. 5,280"
         }
       ]
     },
     {
-      "question_number": 5,
+      "question_numberNepali": "५",
+      "question_numberEnglish": 5,
       "context": {
-        "nepali": "एउटा सोलीको आधारको क्षेत्रफल 154 वर्ग से.मि. र उचाइ 24 से.मि. छ ।",
-        "english": "The area of the base of a cone is 154 sq. cm and height is 24 cm."
+        "Nepali": "एउटा सोलीको आधारको क्षेत्रफल 154 वर्ग से.मि. र उचाइ 24 से.मि. छ ।",
+        "English": "The area of the base of a cone is 154 sq. cm and height is 24 cm."
       },
       "sub_questions": [
         {
-          "label": "a",
-          "question_nepali": "यसको छड्के उचाइ पत्ता लगाउनुहोस् ।",
-          "question_english": "Find its slant height.",
-          "marks": 2,
-          "explanation_nepali": "$\\pi r^2 = 154 \\Rightarrow r = 7$। छड्के उचाइ $l = \\sqrt{h^2 + r^2} = \\sqrt{24^2 + 7^2} = \\sqrt{576 + 49} = \\sqrt{625} = 25$।\nउद्धरण: पाठ ५",
-          "explanation_english": "Explanation: Base area gives radius $r=7$. Slant height $l = \\sqrt{24^2 + 7^2} = 25$.\nCitation: Lesson 5",
-          "answer": "25 cm"
+          "labelNepali": "क",
+          "labelEnglish": "a",
+          "questionNepali": "यसको छड्के उचाइ पत्ता लगाउनुहोस् ।",
+          "questionEnglish": "Find its slant height.",
+          "marksNepali": "२",
+          "marksEnglish": 2,
+          "explanationNepali": "$\\pi r^2 = 154 \\Rightarrow r = 7$। छड्के उचाइ $l = \\sqrt{h^2 + r^2} = \\sqrt{24^2 + 7^2} = \\sqrt{576 + 49} = \\sqrt{625} = 25$।\nउद्धरण: पाठ ५",
+          "explanationEnglish": "Explanation: Base area gives radius $r=7$. Slant height $l = \\sqrt{24^2 + 7^2} = 25$.\nCitation: Lesson 5",
+          "answerNepali": "२५ से.मि.",
+          "answerEnglish": "25 cm"
         },
         {
-          "label": "b",
-          "question_nepali": "वक्र सतहको क्षेत्रफल निकाल्नुहोस् ।",
-          "question_english": "Find the curved surface area.",
-          "marks": 2,
-          "explanation_nepali": "CSA = $\\pi r l = \\frac{22}{7} \\times 7 \\times 25 = 550$ वर्ग से.मि.।\nउद्धरण: पाठ ५",
-          "explanation_english": "Explanation: CSA = $\\pi r l = 22 \\times 25 = 550$.\nCitation: Lesson 5",
-          "answer": "550 sq. cm"
+          "labelNepali": "ख",
+          "labelEnglish": "b",
+          "questionNepali": "वक्र सतहको क्षेत्रफल निकाल्नुहोस् ।",
+          "questionEnglish": "Find the curved surface area.",
+          "marksNepali": "२",
+          "marksEnglish": 2,
+          "explanationNepali": "CSA = $\\pi r l = \\frac{22}{7} \\times 7 \\times 25 = 550$ वर्ग से.मि.।\nउद्धरण: पाठ ५",
+          "explanationEnglish": "Explanation: CSA = $\\pi r l = 22 \\times 25 = 550$.\nCitation: Lesson 5",
+          "answerNepali": "५५० वर्ग से.मि.",
+          "answerEnglish": "550 sq. cm"
         }
       ]
     },
     {
-      "question_number": 6,
+      "question_numberNepali": "६",
+      "question_numberEnglish": 6,
       "context": {
-        "nepali": "एउटा बेलनाकार ट्याङ्कीको व्यास 1.4 मिटर र उचाइ 2 मिटर छ ।",
-        "english": "A cylindrical tank has diameter 1.4 m and height 2 m."
+        "Nepali": "एउटा बेलनाकार ट्याङ्कीको व्यास 1.4 मिटर र उचाइ 2 मिटर छ ।",
+        "English": "A cylindrical tank has diameter 1.4 m and height 2 m."
       },
       "sub_questions": [
         {
-          "label": "a",
-          "question_nepali": "ट्याङ्कीमा कति लिटर पानी अट्छ ?",
-          "question_english": "How many liters of water can the tank hold?",
-          "marks": 5,
-          "explanation_nepali": "आयतन $V = \\pi r^2 h = \\frac{22}{7} \\times (0.7)^2 \\times 2 = 3.08$ घन मिटर। 1 घन मिटर = 1000 लिटर, त्यसैले $3.08 \\times 1000 = 3080$ लिटर।\nउद्धरण: पाठ ५",
-          "explanation_english": "Explanation: Volume = $\\pi (0.7)^2 (2) = 3.08 m^3$. Capacity = $3.08 \\times 1000 = 3080$ liters.\nCitation: Lesson 5",
-          "answer": "3080 liters"
+          "labelNepali": "क",
+          "labelEnglish": "a",
+          "questionNepali": "ट्याङ्कीमा कति लिटर पानी अट्छ ?",
+          "questionEnglish": "How many liters of water can the tank hold?",
+          "marksNepali": "५",
+          "marksEnglish": 5,
+          "explanationNepali": "आयतन $V = \\pi r^2 h = \\frac{22}{7} \\times (0.7)^2 \\times 2 = 3.08$ घन मिटर। 1 घन मिटर = 1000 लिटर, त्यसैले $3.08 \\times 1000 = 3080$ लिटर।\nउद्धरण: पाठ ५",
+          "explanationEnglish": "Explanation: Volume = $\\pi (0.7)^2 (2) = 3.08 m^3$. Capacity = $3.08 \\times 1000 = 3080$ liters.\nCitation: Lesson 5",
+          "answerNepali": "३०८० लिटर",
+          "answerEnglish": "3080 liters"
         }
       ]
     },
     {
-      "question_number": 7,
+      "question_numberNepali": "७",
+      "question_numberEnglish": 7,
       "context": {
-        "nepali": "एउटा कोठाको लम्बाइ, चौडाइ र उचाइ क्रमशः 10 मि, 8 मि र 3 मि छ ।",
-        "english": "The length, breadth and height of a room are 10 m, 8 m and 3 m respectively."
+        "Nepali": "एउटा कोठाको लम्बाइ, चौडाइ र उचाइ क्रमशः 10 मि, 8 मि र 3 मि छ ।",
+        "English": "The length, breadth and height of a room are 10 m, 8 m and 3 m respectively."
       },
       "sub_questions": [
         {
-          "label": "a",
-          "question_nepali": "भुइँमा कार्पेट बिछ्याउँदा प्रति वर्ग मिटर रु. 200 का दरले कति खर्च लाग्छ ?",
-          "question_english": "What is the cost of carpeting the floor at the rate of Rs. 200 per sq. meter?",
-          "marks": 4,
-          "explanation_nepali": "क्षेत्रफल = $10 \\times 8 = 80$ वर्ग मिटर। खर्च = $80 \\times 200 = 16,000$।\nउद्धरण: पाठ ५",
-          "explanation_english": "Explanation: Area = $80 m^2$. Cost = $80 \\times 200 = 16,000$.\nCitation: Lesson 5",
-          "answer": "Rs. 16,000"
+          "labelNepali": "क",
+          "labelEnglish": "a",
+          "questionNepali": "भुइँमा कार्पेट बिछ्याउँदा प्रति वर्ग मिटर रु. 200 का दरले कति खर्च लाग्छ ?",
+          "questionEnglish": "What is the cost of carpeting the floor at the rate of Rs. 200 per sq. meter?",
+          "marksNepali": "४",
+          "marksEnglish": 4,
+          "explanationNepali": "क्षेत्रफल = $10 \\times 8 = 80$ वर्ग मिटर। खर्च = $80 \\times 200 = 16,000$।\nउद्धरण: पाठ ५",
+          "explanationEnglish": "Explanation: Area = $80 m^2$. Cost = $80 \\times 200 = 16,000$.\nCitation: Lesson 5",
+          "answerNepali": "रु. १६,०००",
+          "answerEnglish": "Rs. 16,000"
         }
       ]
     },
     {
-      "question_number": 8,
+      "question_numberNepali": "८",
+      "question_numberEnglish": 8,
       "context": {
-        "nepali": "गुणोत्तर श्रेणी 3, 6, 12, 24, ... को १०औं पद पत्ता लगाउनुहोस् ।",
-        "english": "Find the 10th term of the geometric series 3, 6, 12, 24, ..."
+        "Nepali": "गुणोत्तर श्रेणी 3, 6, 12, 24, ... को १०औं पद पत्ता लगाउनुहोस् ।",
+        "English": "Find the 10th term of the geometric series 3, 6, 12, 24, ..."
       },
       "sub_questions": [
         {
-          "label": "a",
-          "question_nepali": "",
-          "question_english": "",
-          "marks": 5,
-          "explanation_nepali": "$a = 3, r = 2$। सूत्र $t_n = ar^{n-1}$ प्रयोग गर्दा $t_{10} = 3 \\times 2^9 = 3 \\times 512 = 1536$।\nउद्धरण: पाठ ६",
-          "explanation_english": "Explanation: Using $t_n = ar^{n-1}$ with $a=3, r=2$, we get $3 \\times 2^9 = 1536$.\nCitation: Lesson 6",
-          "answer": "1536"
+          "labelNepali": "क",
+          "labelEnglish": "a",
+          "questionNepali": "",
+          "questionEnglish": "",
+          "marksNepali": "५",
+          "marksEnglish": 5,
+          "explanationNepali": "$a = 3, r = 2$। सूत्र $t_n = ar^{n-1}$ प्रयोग गर्दा $t_{10} = 3 \\times 2^9 = 3 \\times 512 = 1536$।\nउद्धरण: पाठ ६",
+          "explanationEnglish": "Explanation: Using $t_n = ar^{n-1}$ with $a=3, r=2$, we get $3 \\times 2^9 = 1536$.\nCitation: Lesson 6",
+          "answerNepali": "१५३६",
+          "answerEnglish": "1536"
         }
       ]
     },
     {
-      "question_number": 9,
+      "question_numberNepali": "९",
+      "question_numberEnglish": 9,
       "context": {
-        "nepali": "हल गर्नुहोस्: $\\frac{x}{2} + \\frac{2}{x} = \\frac{5}{2}$",
-        "english": "Solve: $\\frac{x}{2} + \\frac{2}{x} = \\frac{5}{2}$"
+        "Nepali": "हल गर्नुहोस्: $\\frac{x}{2} + \\frac{2}{x} = \\frac{5}{2}$",
+        "English": "Solve: $\\frac{x}{2} + \\frac{2}{x} = \\frac{5}{2}$"
       },
       "sub_questions": [
         {
-          "label": "a",
-          "question_nepali": "",
-          "question_english": "",
-          "marks": 5,
-          "explanation_nepali": "ल.स. लिँदा $\\frac{x^2+4}{2x} = \\frac{5}{2} \\Rightarrow 2x^2 + 8 = 10x \\Rightarrow x^2 - 5x + 4 = 0$। खण्डीकरण गर्दा $(x-4)(x-1)=0$।\nउद्धरण: पाठ ७",
-          "explanation_english": "Explanation: Solving the fraction yields $x^2 - 5x + 4 = 0$, which factors to $(x-4)(x-1)=0$.\nCitation: Lesson 7",
-          "answer": "$x = 4, 1$"
+          "labelNepali": "क",
+          "labelEnglish": "a",
+          "questionNepali": "",
+          "questionEnglish": "",
+          "marksNepali": "५",
+          "marksEnglish": 5,
+          "explanationNepali": "ल.स. लिँदा $\\frac{x^2+4}{2x} = \\frac{5}{2} \\Rightarrow 2x^2 + 8 = 10x \\Rightarrow x^2 - 5x + 4 = 0$। खण्डीकरण गर्दा $(x-4)(x-1)=0$।\nउद्धरण: पाठ ७",
+          "explanationEnglish": "Explanation: Solving the fraction yields $x^2 - 5x + 4 = 0$, which factors to $(x-4)(x-1)=0$.\nCitation: Lesson 7",
+          "answerNepali": "$x = ४, १$",
+          "answerEnglish": "$x = 4, 1$"
         }
       ]
     },
     {
-      "question_number": 10,
+      "question_numberNepali": "१०",
+      "question_numberEnglish": 10,
       "context": {
-        "nepali": "सरल गर्नुहोस्: $\\frac{8^{n+1} - 8^n}{7 \\times 8^n}$",
-        "english": "Simplify: $\\frac{8^{n+1} - 8^n}{7 \\times 8^n}$"
+        "Nepali": "सरल गर्नुहोस्: $\\frac{8^{n+1} - 8^n}{7 \\times 8^n}$",
+        "English": "Simplify: $\\frac{8^{n+1} - 8^n}{7 \\times 8^n}$"
       },
       "sub_questions": [
         {
-          "label": "a",
-          "question_nepali": "",
-          "question_english": "",
-          "marks": 5,
-          "explanation_nepali": "अंशमा साझा लिँदा $\\frac{8^n(8 - 1)}{7 \\times 8^n} = \\frac{7}{7} = 1$।\nउद्धरण: पाठ ९",
-          "explanation_english": "Explanation: Factoring $8^n$ from the numerator gives $\\frac{8^n(7)}{7 \\times 8^n} = 1$.\nCitation: Lesson 9",
-          "answer": "1"
+          "labelNepali": "क",
+          "labelEnglish": "a",
+          "questionNepali": "",
+          "questionEnglish": "",
+          "marksNepali": "५",
+          "marksEnglish": 5,
+          "explanationNepali": "अंशमा साझा लिँदा $\\frac{8^n(8 - 1)}{7 \\times 8^n} = \\frac{7}{7} = 1$।\nउद्धरण: पाठ ९",
+          "explanationEnglish": "Explanation: Factoring $8^n$ from the numerator gives $\\frac{8^n(7)}{7 \\times 8^n} = 1$.\nCitation: Lesson 9",
+          "answerNepali": "१",
+          "answerEnglish": "1"
         }
       ]
     },
     {
-      "question_number": 11,
+      "question_numberNepali": "११",
+      "question_numberEnglish": 11,
       "context": {
-        "nepali": "चित्रमा, समानान्तर चतुर्भुज ABCD को क्षेत्रफल 60 वर्ग से.मि. छ । बिन्दु E भुजा AB मा पर्दछ ।",
-        "english": "In the figure, the area of parallelogram ABCD is 60 sq. cm. Point E lies on side AB."
+        "Nepali": "चित्रमा, समानान्तर चतुर्भुज ABCD को क्षेत्रफल 60 वर्ग से.मि. छ । बिन्दु E भुजा AB मा पर्दछ ।",
+        "English": "In the figure, the area of parallelogram ABCD is 60 sq. cm. Point E lies on side AB."
       },
       "sub_questions": [
         {
-          "label": "a",
-          "question_nepali": "त्रिभुज DEC को क्षेत्रफल कति हुन्छ ?",
-          "question_english": "What is the area of triangle DEC?",
-          "marks": 4,
-          "explanation_nepali": "त्रिभुजको क्षेत्रफल समानान्तर चतुर्भुजको आधा हुन्छ किनकि तिनीहरू एउटै आधार DC र उही समानान्तर रेखाहरू बिचमा छन्।\nउद्धरण: पाठ १०",
-          "explanation_english": "Explanation: The triangle shares the same base and parallel lines, so its area is half: $60/2 = 30$.\nCitation: Lesson 10",
-          "answer": "30 sq. cm"
+          "labelNepali": "क",
+          "labelEnglish": "a",
+          "questionNepali": "त्रिभुज DEC को क्षेत्रफल कति हुन्छ ?",
+          "questionEnglish": "What is the area of triangle DEC?",
+          "marksNepali": "४",
+          "marksEnglish": 4,
+          "explanationNepali": "त्रिभुजको क्षेत्रफल समानान्तर चतुर्भुजको आधा हुन्छ किनकि तिनीहरू एउटै आधार DC र उही समानान्तर रेखाहरू बिचमा छन्।\nउद्धरण: पाठ १०",
+          "explanationEnglish": "Explanation: The triangle shares the same base and parallel lines, so its area is half: $60/2 = 30$.\nCitation: Lesson 10",
+          "answerNepali": "३० वर्ग से.मि.",
+          "answerEnglish": "30 sq. cm"
         }
       ]
     },
     {
-      "question_number": 12,
+      "question_numberNepali": "१२",
+      "question_numberEnglish": 12,
       "context": {
-        "nepali": "एउटा चक्रीय चतुर्भुज ABCD मा, $\\angle A = (2x + 10)^\\circ$ र $\\angle C = (3x - 5)^\\circ$ छन् ।",
-        "english": "In a cyclic quadrilateral ABCD, $\\angle A = (2x + 10)^\\circ$ and $\\angle C = (3x - 5)^\\circ$."
+        "Nepali": "एउटा चक्रीय चतुर्भुज ABCD मा, $\\angle A = (2x + 10)^\\circ$ र $\\angle C = (3x - 5)^\\circ$ छन् ।",
+        "English": "In a cyclic quadrilateral ABCD, $\\angle A = (2x + 10)^\\circ$ and $\\angle C = (3x - 5)^\\circ$."
       },
       "sub_questions": [
         {
-          "label": "a",
-          "question_nepali": "x को मान पत्ता लगाउनुहोस् ।",
-          "question_english": "Find the value of x.",
-          "marks": 5,
-          "explanation_nepali": "चक्रीय चतुर्भुजका सम्मुख कोणहरूको योग $180^\\circ$ हुन्छ। $(2x+10) + (3x-5) = 180 \\Rightarrow 5x + 5 = 180 \\Rightarrow x = 35$।\nउद्धरण: पाठ १२",
-          "explanation_english": "Explanation: Opposite angles sum to 180: $5x + 5 = 180$, so $x = 35$.\nCitation: Lesson 12",
-          "answer": "35"
+          "labelNepali": "क",
+          "labelEnglish": "a",
+          "questionNepali": "x को मान पत्ता लगाउनुहोस् ।",
+          "questionEnglish": "Find the value of x.",
+          "marksNepali": "५",
+          "marksEnglish": 5,
+          "explanationNepali": "चक्रीय चतुर्भुजका सम्मुख कोणहरूको योग $180^\\circ$ हुन्छ। $(2x+10) + (3x-5) = 180 \\Rightarrow 5x + 5 = 180 \\Rightarrow x = 35$।\nउद्धरण: पाठ १२",
+          "explanationEnglish": "Explanation: Opposite angles sum to 180: $5x + 5 = 180$, so $x = 35$.\nCitation: Lesson 12",
+          "answerNepali": "३५",
+          "answerEnglish": "35"
         }
       ]
     },
     {
-      "question_number": 13,
+      "question_numberNepali": "१३",
+      "question_numberEnglish": 13,
       "context": {
-        "nepali": "यदि एउटा त्रिभुजका कोणहरूको अनुपात 1:2:3 छ भने,",
-        "english": "If the ratio of the angles of a triangle is 1:2:3,"
+        "Nepali": "यदि एउटा त्रिभुजका कोणहरूको अनुपात 1:2:3 छ भने,",
+        "English": "If the ratio of the angles of a triangle is 1:2:3,"
       },
       "sub_questions": [
         {
-          "label": "a",
-          "question_nepali": "सबैभन्दा ठुलो कोणको नाप कति हुन्छ ?",
-          "question_english": "What is the measure of the largest angle?",
-          "marks": 4,
-          "explanation_nepali": "मानौँ कोणहरू $x, 2x, 3x$ हुन्। $6x = 180 \\Rightarrow x = 30$। ठुलो कोण $3x = 90^\\circ$।\nउद्धरण: पाठ १०",
-          "explanation_english": "Explanation: Let angles be $x, 2x, 3x$. Sum is 180, so $x=30$. Largest is $3(30) = 90$.\nCitation: Lesson 10",
-          "answer": "$90^\\circ$"
+          "labelNepali": "क",
+          "labelEnglish": "a",
+          "questionNepali": "सबैभन्दा ठुलो कोणको नाप कति हुन्छ ?",
+          "questionEnglish": "What is the measure of the largest angle?",
+          "marksNepali": "४",
+          "marksEnglish": 4,
+          "explanationNepali": "मानौँ कोणहरू $x, 2x, 3x$ हुन्। $6x = 180 \\Rightarrow x = 30$। ठुलो कोण $3x = 90^\\circ$।\nउद्धरण: पाठ १०",
+          "explanationEnglish": "Explanation: Let angles be $x, 2x, 3x$. Sum is 180, so $x=30$. Largest is $3(30) = 90$.\nCitation: Lesson 10",
+          "answerNepali": "$९०^\\circ$",
+          "answerEnglish": "$90^\\circ$"
         }
       ]
     },
     {
-      "question_number": 14,
+      "question_numberNepali": "१४",
+      "question_numberEnglish": 14,
       "context": {
-        "nepali": "तलको तथ्याङ्कको मध्यिका (Median) 25 भए, p को मान निकाल्नुहोस्: 10, 15, 20, p, 30, 35",
-        "english": "If the median of the following data is 25, find p: 10, 15, 20, p, 30, 35 (Data is in ascending order)"
+        "Nepali": "तलको तथ्याङ्कको मध्यिका (Median) 25 भए, p को मान निकाल्नुहोस्: 10, 15, 20, p, 30, 35",
+        "English": "If the median of the following data is 25, find p: 10, 15, 20, p, 30, 35 (Data is in ascending order)"
       },
       "sub_questions": [
         {
-          "label": "a",
-          "question_nepali": "",
-          "question_english": "",
-          "marks": 4,
-          "explanation_nepali": "पद संख्या $N=6$ (जोड)। मध्यिका $\\frac{20+p}{2} = 25 \\Rightarrow 20+p = 50 \\Rightarrow p = 30$।\nउद्धरण: पाठ १३",
-          "explanation_english": "Explanation: $N=6$, so median is average of 3rd and 4th terms: $\\frac{20+p}{2} = 25$, thus $p=30$.\nCitation: Lesson 13",
-          "answer": "30"
+          "labelNepali": "क",
+          "labelEnglish": "a",
+          "questionNepali": "",
+          "questionEnglish": "",
+          "marksNepali": "४",
+          "marksEnglish": 4,
+          "explanationNepali": "पद संख्या $N=6$ (जोड)। मध्यिका $\\frac{20+p}{2} = 25 \\Rightarrow 20+p = 50 \\Rightarrow p = 30$।\nउद्धरण: पाठ १३",
+          "explanationEnglish": "Explanation: $N=6$, so median is average of 3rd and 4th terms: $\\frac{20+p}{2} = 25$, thus $p=30$.\nCitation: Lesson 13",
+          "answerNepali": "३०",
+          "answerEnglish": "30"
         }
       ]
     },
     {
-      "question_number": 15,
+      "question_numberNepali": "१५",
+      "question_numberEnglish": 15,
       "context": {
-        "nepali": "एउटा तथ्याङ्कमा $Q_1 = 20$ र $Q_3 = 50$ छ भने चतुर्थांश विचलन (Quartile Deviation) निकाल्नुहोस् ।",
-        "english": "In a data set, $Q_1 = 20$ and $Q_3 = 50$. Find the Quartile Deviation."
+        "Nepali": "एउटा तथ्याङ्कमा $Q_1 = 20$ र $Q_3 = 50$ छ भने चतुर्थांश विचलन (Quartile Deviation) निकाल्नुहोस् ।",
+        "English": "In a data set, $Q_1 = 20$ and $Q_3 = 50$. Find the Quartile Deviation."
       },
       "sub_questions": [
         {
-          "label": "a",
-          "question_nepali": "",
-          "question_english": "",
-          "marks": 6,
-          "explanation_nepali": "सूत्र $QD = \\frac{Q_3 - Q_1}{2} = \\frac{50 - 20}{2} = 15$।\nउद्धरण: पाठ १३",
-          "explanation_english": "Explanation: Formula $QD = \\frac{Q_3 - Q_1}{2} = 15$.\nCitation: Lesson 13",
-          "answer": "15"
+          "labelNepali": "क",
+          "labelEnglish": "a",
+          "questionNepali": "",
+          "questionEnglish": "",
+          "marksNepali": "६",
+          "marksEnglish": 6,
+          "explanationNepali": "सूत्र $QD = \\frac{Q_3 - Q_1}{2} = \\frac{50 - 20}{2} = 15$।\nउद्धरण: पाठ १३",
+          "explanationEnglish": "Explanation: Formula $QD = \\frac{Q_3 - Q_1}{2} = 15$.\nCitation: Lesson 13",
+          "answerNepali": "१५",
+          "answerEnglish": "15"
         }
       ]
     },
     {
-      "question_number": 16,
+      "question_numberNepali": "१६",
+      "question_numberEnglish": 16,
       "context": {
-        "nepali": "52 पत्ताको तासमा एक पत्ता थुत्दा, त्यो पत्ता राजा (King) वा रानी (Queen) पर्ने सम्भाव्यता कति हुन्छ ?",
-        "english": "From a deck of 52 cards, one card is drawn. What is the probability that it is a King or a Queen?"
+        "Nepali": "52 पत्ताको तासमा एक पत्ता थुत्दा, त्यो पत्ता राजा (King) वा रानी (Queen) पर्ने सम्भाव्यता कति हुन्छ ?",
+        "English": "From a deck of 52 cards, one card is drawn. What is the probability that it is a King or a Queen?"
       },
       "sub_questions": [
         {
-          "label": "a",
-          "question_nepali": "सम्भाव्यताको वृक्ष चित्र बनाउनुहोस् र कुल नमुना क्षेत्र (Sample Space) लेख्नुहोस् ।",
-          "question_english": "Write the total sample space.",
-          "marks": 2,
-          "explanation_nepali": "राजा 4 र रानी 4 हुन्छन्, जम्मा अनुकूल घटना 8। सम्भाव्यता $\\frac{8}{52} = \\frac{2}{13}$।\nउद्धरण: पाठ १४",
-          "explanation_english": "Explanation: Kings=4, Queens=4, Total favorable=8. Probability $\\frac{8}{52} = \\frac{2}{13}$.\nCitation: Lesson 14",
-          "answer": "$\\frac{2}{13}$"
+          "labelNepali": "क",
+          "labelEnglish": "a",
+          "questionNepali": "सम्भाव्यताको वृक्ष चित्र बनाउनुहोस् र कुल नमुना क्षेत्र (Sample Space) लेख्नुहोस् ।",
+          "questionEnglish": "Write the total sample space.",
+          "marksNepali": "२",
+          "marksEnglish": 2,
+          "explanationNepali": "राजा 4 र रानी 4 हुन्छन्, जम्मा अनुकूल घटना 8। सम्भाव्यता $\\frac{8}{52} = \\frac{2}{13}$।\nउद्धरण: पाठ १४",
+          "explanationEnglish": "Explanation: Kings=4, Queens=4, Total favorable=8. Probability $\\frac{8}{52} = \\frac{2}{13}$.\nCitation: Lesson 14",
+          "answerNepali": "$\\frac{2}{13}$",
+          "answerEnglish": "$\\frac{2}{13}$"
         }
       ]
     }

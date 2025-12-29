@@ -1,21 +1,14 @@
 [
   {
     "_id": "see_2081_nepali_practice_3_generated",
-    "title": "SEE 2081 Nepali Practice Test 3",
     "titleNepali": "SEE २०८१ नेपाली अभ्यास परीक्षा ३",
+    "titleEnglish": "SEE 2081 Nepali Practice Test 3",
     "subject": "nepali",
     "year": 2081,
     "totalMarks": 75,
     "duration": 180,
     "instructionsNepali": "दिइएका निर्देशनका आधारमा आफ्नै शैलीमा सिर्जनात्मक उत्तर दिनुहोस् :",
-    "instructionsEnglish": "Give creative answers in your own style based on the given instructions:",
-    "isActive": true,
-    "createdAt": {
-      "$date": "2025-09-01T10:00:00.000Z"
-    },
-    "updatedAt": {
-      "$date": "2025-09-01T10:00:00.000Z"
-    }
+    "instructionsEnglish": "Give creative answers in your own style based on the given instructions:"
   },
   {
     "_id": {
@@ -84,7 +77,9 @@
             }
           ]
         },
-        "correctAnswer": [
+        "explanationNepali": "यी शब्दहरू पाठ्यपुस्तकको पाठ ११ ('कर्तव्य') र पाठ १४ ('घरको माया') जस्ता पाठहरूबाट लिइएका हुन्, जसले विद्यार्थीहरूको शब्दभण्डारको गहिराइ जाँच्दछ।\nउद्धरण: कक्षा १०, पाठ ११; पाठ १४, पृष्ठ १८९।",
+        "explanationEnglish": "These words are taken from lessons like Lesson 11 ('Kartavya') and Lesson 14 ('Ghar Ko Maya') of the textbook, which test the depth of students' vocabulary.\nCitation: Class 10, Lesson 11; Lesson 14, Page 189.",
+        "correctAnswerEnglish": [
           {
             "A": "i",
             "B": "d"
@@ -102,8 +97,24 @@
             "B": "a"
           }
         ],
-        "explanationNepali": "यी शब्दहरू पाठ्यपुस्तकको पाठ ११ ('कर्तव्य') र पाठ १४ ('घरको माया') जस्ता पाठहरूबाट लिइएका हुन्, जसले विद्यार्थीहरूको शब्दभण्डारको गहिराइ जाँच्दछ।\nउद्धरण: कक्षा १०, पाठ ११; पाठ १४, पृष्ठ १८९।",
-        "explanationEnglish": "These words are taken from lessons like Lesson 11 ('Kartavya') and Lesson 14 ('Ghar Ko Maya') of the textbook, which test the depth of students' vocabulary.\nCitation: Class 10, Lesson 11; Lesson 14, Page 189."
+        "correctAnswerNepali": [
+          {
+            "A": "अ",
+            "B": "घ"
+          },
+          {
+            "A": "आ",
+            "B": "ङ"
+          },
+          {
+            "A": "इ",
+            "B": "ख"
+          },
+          {
+            "A": "ई",
+            "B": "क"
+          }
+        ]
       },
       {
         "questionNumber": 2,
@@ -201,37 +212,25 @@
             "choices": [
               {
                 "id": "अ",
-                "optionsNepali": [
+                "correctAnswerNepali": "म्याट्रिकुलेसन",
+                "correctAnswerEnglish": "Matriculation",
+                "options": [
                   "म्याट्रिकुलेसन",
                   "म्याट्रीकुलेसन",
                   "म्याट्रिकुलेसन",
                   "मेट्रिकुलेसन"
-                ],
-                "optionsEnglish": [
-                  "Matriculation",
-                  "Matriculation (Incorrect Spelling)",
-                  "Matriculation",
-                  "Matriculation (Incorrect Spelling)"
-                ],
-                "correctAnswerNepali": "म्याट्रिकुलेसन",
-                "correctAnswerEnglish": "Matriculation"
+                ]
               },
               {
                 "id": "आ",
-                "optionsNepali": [
+                "correctAnswerNepali": "तिलाञ्जली",
+                "correctAnswerEnglish": "Tilanjali (Abandoning)",
+                "options": [
                   "तिलाञ्जली",
                   "तिलान्जली",
                   "तिलाञ्जली",
                   "तिलाञ्जलि"
-                ],
-                "optionsEnglish": [
-                  "Renunciation (Incorrect Spelling)",
-                  "Renunciation (Incorrect Spelling)",
-                  "Renunciation (Incorrect Spelling)",
-                  "Renunciation"
-                ],
-                "correctAnswerNepali": "तिलाञ्जली",
-                "correctAnswerEnglish": "Tilanjali (Abandoning)"
+                ]
               }
             ],
             "explanationNepali": "सही वर्णविन्यास क्रमशः 'म्याट्रिकुलेसन' र 'तिलाञ्जली' हुन्।\nउद्धरण: कक्षा १०, पाठ २; पाठ ५, पृष्ठ ५३।",
@@ -600,19 +599,7 @@
         "titleNepali": "कुनै एक प्रश्नको उत्तर दिनुहोस् :",
         "titleEnglish": "Answer any one question:",
         "marks": 4,
-        "optionsNepali": [
-          {
-            "id": "क",
-            "titleNepali": "'नतिजा प्रकाशनको अघिल्लो दिन' शीर्षकमा एक विद्यार्थीले मनमा खेलाएका कुराहरू समेटेर मनोवाद तयार पार्नुहोस्।",
-            "titleEnglish": "Prepare a monologue incorporating the thoughts of a student on the topic 'The Day Before Result Publication'."
-          },
-          {
-            "id": "ख",
-            "titleNepali": "'गाउँको जीवन र सहरको जीवन' शीर्षकमा दुई जना साथीबिच भएको संवाद तयार पार्नुहोस्।",
-            "titleEnglish": "Prepare a dialogue between two friends on the topic 'Village Life and City Life'."
-          }
-        ],
-        "optionsEnglish": [
+        "options": [
           {
             "id": "क",
             "titleNepali": "'नतिजा प्रकाशनको अघिल्लो दिन' शीर्षकमा एक विद्यार्थीले मनमा खेलाएका कुराहरू समेटेर मनोवाद तयार पार्नुहोस्।",
@@ -631,19 +618,7 @@
         "titleNepali": "कुनै एक प्रश्नको उत्तर दिनुहोस् :",
         "titleEnglish": "Answer any one question:",
         "marks": 4,
-        "optionsNepali": [
-          {
-            "id": "क",
-            "titleNepali": "आफ्नो विद्यालयबाट चारित्रिक प्रमाणपत्र पाउनका लागि प्रधानाध्यापकलाई लेख्ने निवेदनको नमुना तयार पार्नुहोस्।",
-            "titleEnglish": "Prepare a sample application to the Principal to obtain a character certificate from your school."
-          },
-          {
-            "id": "ख",
-            "titleNepali": "नयाँ खुलेको 'सगरमाथा कम्प्युटर इन्स्टिच्युट' का लागि विभिन्न कोर्सहरू उल्लेख गरी एउटा विज्ञापनको नमुना तयार पार्नुहोस्।",
-            "titleEnglish": "Prepare a sample advertisement mentioning various courses for the newly opened 'Sagarmatha Computer Institute'."
-          }
-        ],
-        "optionsEnglish": [
+        "options": [
           {
             "id": "क",
             "titleNepali": "आफ्नो विद्यालयबाट चारित्रिक प्रमाणपत्र पाउनका लागि प्रधानाध्यापकलाई लेख्ने निवेदनको नमुना तयार पार्नुहोस्।",
@@ -664,11 +639,17 @@
         "marks": 2,
         "passageNepali": "पिकासोको कलाकृति सिर्जना प्रवृत्तिका दृष्टिले विविध प्रकारका छन्। स्पेनिस चित्रकार पिकासोद्वारा सन् १९०१ र सन् १९०४ का बिचमा सिर्जित कलाकृतिलाई परिभाषित गर्न ‘ब्लु पिरियड’ पदावली प्रयोग गरिन्छ। पारिवारिक तथा आर्थिक सङ्कटजन्य परिस्थितिका कारण उनमा एक प्रकारको असाधारण अवस्था सिर्जना भयो। यसैको प्रभावस्वरूप उनले मुख्य रूपमा ब्लु र हरियो रङको कठोर रङका प्रकारहरूमा अन्य केही मि श्रित मोनोक्रोमेटिक चित्रकला प्रस्तुत गरे।",
         "passageEnglish": "Picasso's artworks are diverse in terms of creation trends. The term 'Blue Period' is used to define the artworks created by Spanish painter Picasso between 1901 and 1904. Due to family and economic crisis situations, a kind of extraordinary state was created in him. As a result of this, he presented monochromatic paintings mixed with some other harsh colors mainly of blue and green.",
-        "correctAnswer": [
+        "correctAnswerNepali": [
           "पिकासोको कला सिर्जनामा विविधता पाइनु।",
           "सन् १९०१-१९०४ बिचको कलाकृतिलाई 'ब्लु पिरियड' भनिनु।",
           "पारिवारिक र आर्थिक सङ्कटले पिकासोमा असाधारण अवस्था सिर्जना हुनु।",
           "ब्लु पिरियडमा मुख्य रूपमा ब्लु र हरियो रङको मोनोक्रोमेटिक चित्रकला प्रस्तुत गरिनु।"
+        ],
+        "correctAnswerEnglish": [
+          "Diversity found in Picasso's art creation.",
+          "The artworks between 1901-1904 being called 'Blue Period'.",
+          "Family and financial crisis creating an extraordinary situation in Picasso.",
+          "Mainly blue and green monochromatic paintings being presented in the Blue Period."
         ]
       },
       {
@@ -750,17 +731,7 @@
         "titleNepali": "कुनै एक उद्धरणको व्याख्या गर्नुहोस् :",
         "titleEnglish": "Explain any one of the quotes:",
         "marks": 4,
-        "optionsNepali": [
-          {
-            "id": "क",
-            "quote": "शङ्काको डोरीमा पिङ खेल्नु नादानी हो।"
-          },
-          {
-            "id": "ख",
-            "quote": "तिनै मान्छेहरू बन्छन् विश्वका निम्ति गौरव।"
-          }
-        ],
-        "optionsEnglish": [
+        "options": [
           {
             "id": "क",
             "quote": "शङ्काको डोरीमा पिङ खेल्नु नादानी हो।"
@@ -777,23 +748,7 @@
         "titleNepali": "कुनै एक प्रश्नको समीक्षात्मक उत्तर दिनुहोस् :",
         "titleEnglish": "Give a critical answer to any one question:",
         "marks": 7,
-        "optionsNepali": [
-          {
-            "id": "क",
-            "passageNepali": "बडो मुस्किलसँग नजरबन्दबाट छुटेपछि लामो सास फेरेर राजेन्द्रलक्ष्मीले भनिन्, “दयाको फल मैले पाएँ। कुपात्रमा परेको अमृत पनि विष बन्दोरहेछ। देवर भनेर यी बहादुर शाहलाई मैले हुनेसम्म गरेकी हुँ। घरमा पनि यी बाघ बने, अस्मानमा पुऱ्याउँदा पनि बाजको रूप लिए। अब पातालमा पुऱ्याउँदा के हुने हुन्, हेरौँ। ... खास आफ्नो बच्चामाथि अरूले जाइलाग्न लागेको देखेपछि कुन चाहिँ सिंहिनी कानमा तेल हालेर बस्ली? यदि बसी भने पनि साराले उसलाई थुकिदिनेछन्। मेरो उही हालत हो।",
-            "passageEnglish": "After being released from house arrest with great difficulty, Rajendralakshmi took a long breath and said, “I got the fruit of mercy. Nectar falling into a bad vessel becomes poison. I did whatever I could for this Bahadur Shah considering him my brother-in-law. In the house also he became a tiger, when raised to the sky he took the form of a hawk. Now let's see what he will become when sent to hell. ... Which lioness would sit ignoring when she sees others attacking her own child? Even if she sat, everyone would spit on her. My condition is the same.",
-            "questionNepali": "माथिको कथांशका आधारमा राजेन्द्रलक्ष्मीको चरित्रमा रहेको वात्सल्य प्रेम र राजनीतिक महत्त्वाकाङ्क्षाबीचको द्वन्द्वको समीक्षा गर्नुहोस्।",
-            "questionEnglish": "Review the conflict between maternal love and political ambition in Rajendralakshmi's character based on the excerpt above."
-          },
-          {
-            "id": "ख",
-            "passageNepali": "लौ हेर त, १२ पो बजिसकेछ! (घडी हेर्दै) अब त निदाउनुपर्यो। 'हुने हार दैव नटार' भन्छन्। पाँच लाख डुब्यो भनेर अब मैले त्यसैमा चिन्ता लिएर मेरो ज्यान सुकाउनुभन्दा आत्मविश्वासका ऊर्जाले ज्यान बचाउनतिर लाग्नुपर्छ। दुई वर्ष अरबको खाडीमा बसेर कमाएको धन गोलखाडीमा गयो त के गर्ने? आफ्नै बुद्धिले गयो। ... अब अरू कोही पनि नफसुन् र नडुबुन् भन्नका लागि अब साइबर अपराध शाखामा जान्छु।",
-            "passageEnglish": "Look, it's already 12 o'clock! (Looking at the watch) Now I must sleep. They say 'what is destined cannot be avoided'. Rather than drying up my life worrying about the lost five lakhs, I should focus on saving my life with the energy of self-confidence. What to do if the money earned by staying in the Gulf for two years went down the drain? It went due to my own intellect. ... Now I will go to the Cyber Crime Branch so that no one else gets trapped and sinks.",
-            "questionNepali": "'यस्तो कहिल्यै नहोस्' मनोवादमा पात्र शुकमानले भोगेको पीडा र त्यसबाट उत्पन्न सामाजिक चेतनाको समीक्षा गर्नुहोस्।",
-            "questionEnglish": "Review the pain suffered by the character Shukaman in the monologue 'May this never happen' and the social consciousness arising from it."
-          }
-        ],
-        "optionsEnglish": [
+        "options": [
           {
             "id": "क",
             "passageNepali": "बडो मुस्किलसँग नजरबन्दबाट छुटेपछि लामो सास फेरेर राजेन्द्रलक्ष्मीले भनिन्, “दयाको फल मैले पाएँ। कुपात्रमा परेको अमृत पनि विष बन्दोरहेछ। देवर भनेर यी बहादुर शाहलाई मैले हुनेसम्म गरेकी हुँ। घरमा पनि यी बाघ बने, अस्मानमा पुऱ्याउँदा पनि बाजको रूप लिए। अब पातालमा पुऱ्याउँदा के हुने हुन्, हेरौँ। ... खास आफ्नो बच्चामाथि अरूले जाइलाग्न लागेको देखेपछि कुन चाहिँ सिंहिनी कानमा तेल हालेर बस्ली? यदि बसी भने पनि साराले उसलाई थुकिदिनेछन्। मेरो उही हालत हो।",

@@ -2,28 +2,25 @@
   {
     "_id": "see_2081_english_practice_1_generated_verified",
     "titleNepali": "SEE २०८१ अंग्रेजी अभ्यास परीक्षा १",
-    "subject": "english",
-    "year": 2081,
-    "totalMarks": 75,
-    "duration": 180,
+    "titleEnglish": "SEE 2081 English Practice Test 1",
+    "subjectNepali": "अंग्रेजी",
+    "subjectEnglish": "english",
+    "totalMarksNepali": "७५",
+    "totalMarksEnglish": 75,
+    "durationNepali": "१८०",
+    "durationEnglish": 180,
     "instructionsNepali": "उम्मेदवारहरूलाई सकेसम्म आफ्नै शब्दमा उत्तर दिन आग्रह गरिन्छ। किनारामा रहेका अङ्कहरूले पूर्ण अङ्कलाई जनाउँछन्। सबै प्रश्नहरूको उत्तर दिनुहोस्।",
-    "instructionsEnglish": "Candidates are required to answer the questions in their own words as far as practicable. Figures in the margin indicate the full marks. Attempt all the questions.",
-    "isActive": true,
-    "createdAt": {
-      "$date": "2025-09-07T14:43:09.000Z"
-    },
-    "updatedAt": {
-      "$date": "2025-09-07T14:43:09.000Z"
-    },
-    "titleEnglish": "SEE 2081 English Practice Test 1"
+    "instructionsEnglish": "Candidates are required to answer the questions in their own words as far as practicable. Figures in the margin indicate the full marks. Attempt all the questions."
   },
   {
     "testId": "see_2081_english_practice_1_generated_verified",
     "questions": [
       {
-        "questionNumber": 1,
+        "questionNumberNepali": "१",
+        "questionNumberEnglish": 1,
         "type": "reading_comprehension",
-        "marks": 5,
+        "marksNepali": "५",
+        "marksEnglish": 5,
         "passage": {
           "contentNepali": "यदि तिमी आफ्नो शिर ठाडो राख्न सक्छौ जब तिम्रो वरपरका सबैले\nआफ्नो गुमाइरहेका छन् र दोष तिमीलाई दिइरहेका छन्,\nयदि तिमी आफैलाई विश्वास गर्न सक्छौ जब सबै मानिसहरूले तिमीलाई शंका गर्छन्,\nतर तिनीहरूको शंकालाई पनि स्थान दिन्छौ;\nयदि तिमी पर्खन सक्छौ र पर्खाइबाट थकित हुँदैनौ,\nवा तिम्रो बारेमा झूट बोलिँदा, झूटको व्यवहार गर्दैनौ,\nवा घृणा गरिँदा, घृणालाई बाटो दिँदैनौ,\nर तैपनि धेरै राम्रो देखिदैनौ, न त धेरै बुद्धिमानी कुरा गर्छौ:\n\nयदि तिमी सपना देख्न सक्छौ—र सपनालाई आफ्नो मालिक बनाउँदैनौ;\nयदि तिमी सोच्न सक्छौ—र विचारहरूलाई आफ्नो लक्ष्य बनाउँदैनौ;\nयदि तिमी विजय र विपत्तिलाई भेट्न सक्छौ\nर ती दुई ढोंगीहरूलाई उस्तै व्यवहार गर्न सक्छौ;\nयदि तिमीले बोलेको सत्य सुन्न सहन सक्छौ\nजसलाई धूर्तहरूले मूर्खहरूको लागि पासो बनाउन बङ्ग्याएका छन्,\nवा तिमीले आफ्नो जीवन दिएका चीजहरू, टुटेको देख्छौ,\nर निहुरिएर तिनीहरूलाई थोत्रो औजारहरूले फेरि बनाउँछौ:",
           "contentEnglish": "If you can keep your head when all about you\nAre losing theirs and blaming it on you,\nIf you can trust yourself when all men doubt you,\nBut make allowance for their doubting too;\nIf you can wait and not be tired by waiting,\nOr being lied about, don’t deal in lies,\nOr being hated, don’t give way to hating,\nAnd yet don’t look too good, nor talk too wise:\n\nIf you can dream—and not make dreams your master;\nIf you can think—and not make thoughts your aim;\nIf you can meet with Triumph and Disaster\nAnd treat those two impostors just the same;\nIf you can bear to hear the truth you’ve spoken\nTwisted by knaves to make a trap for fools,\nOr watch the things you gave your life to, broken,\nAnd stoop and build ’em up with worn-out tools:",
@@ -34,11 +31,13 @@
         },
         "subSections": [
           {
-            "id": "A",
+            "idNepali": "क",
+            "idEnglish": "A",
             "type": "true_false",
             "subQuestions": [
               {
-                "id": "i",
+                "idNepali": "i",
+                "idEnglish": "i",
                 "questionNepali": "कविताले हामीलाई अरूले दोष दिँदा रिस देखाउन सल्लाह दिन्छ।",
                 "questionEnglish": "The poem advises us to lose our temper when others are blaming us.",
                 "correctAnswerNepali": "गलत",
@@ -47,7 +46,8 @@
                 "explanationEnglish": "The first line of the poem says, \"If you can keep your head when all about you / Are losing theirs and blaming it on you,\" which means one should remain calm and not lose their temper even when being blamed by others. \nCitation: Lesson 16."
               },
               {
-                "id": "ii",
+                "idNepali": "ii",
+                "idEnglish": "ii",
                 "questionNepali": "कविका अनुसार, हामीलाई घृणा गर्नेहरूलाई हामीले घृणा गर्नु हुँदैन।",
                 "questionEnglish": "According to the poet, we should not hate those who hate us.",
                 "correctAnswerNepali": "सही (TRUE)",
@@ -56,7 +56,8 @@
                 "explanationEnglish": "The poem states, \"Or being hated, don’t give way to hating,\" which directly advises not to hate those who hate you. \nCitation: Lesson 16."
               },
               {
-                "id": "iii",
+                "idNepali": "iii",
+                "idEnglish": "iii",
                 "questionNepali": "कविले सुझाव दिन्छन् कि हामीले सफलता र असफलतालाई फरक व्यवहार गर्नुपर्छ।",
                 "questionEnglish": "The poet suggests that we should treat success and failure differently.",
                 "correctAnswerNepali": "गलत",
@@ -65,7 +66,8 @@
                 "explanationEnglish": "The poem advises to \"meet with Triumph and Disaster / And treat those two impostors just the same,\" meaning that success (Triumph) and failure (Disaster) should be treated equally. \nCitation: Lesson 16."
               },
               {
-                "id": "iv",
+                "idNepali": "iv",
+                "idEnglish": "iv",
                 "questionNepali": "बेइमान मानिसहरूले हामीले बोलेका शब्दहरूको गलत व्याख्या गर्न सक्छन्।",
                 "questionEnglish": "Dishonest people might misinterpret the words we have spoken.",
                 "correctAnswerNepali": "सही (TRUE)",
@@ -74,7 +76,8 @@
                 "explanationEnglish": "The poem mentions, \"If you can bear to hear the truth you’ve spoken / Twisted by knaves to make a trap for fools,\" where 'knaves' are dishonest people. This indicates that dishonest people might twist our truths. \nCitation: Lesson 16."
               },
               {
-                "id": "v",
+                "idNepali": "v",
+                "idEnglish": "v",
                 "questionNepali": "कविताले हाम्रा सिर्जनाहरू नष्ट हुँदा हार मान्त्नु बुद्धिमानी हो भनेर सुझाव दिन्छ।",
                 "questionEnglish": "The poem suggests that it is wise to give up when our creations are destroyed.",
                 "correctAnswerNepali": "गलत",
@@ -91,9 +94,11 @@
         "titleEnglish": "Read the poem and do the tasks."
       },
       {
-        "questionNumber": 2,
+        "questionNumberNepali": "२",
+        "questionNumberEnglish": 2,
         "type": "reading_comprehension",
-        "marks": 10,
+        "marksNepali": "१०",
+        "marksEnglish": 10,
         "passage": {
           "contentNepali": "आधुनिक जीवन आधारभूत रूपमा इन्टरनेटसँग जोडिएको छ। लगभग हरेक दैनिक कार्यमा अब अनलाइन एकीकरणको अवसर छ, र लगभग सबैजनासँग ल्यापटप, फोन, ट्याब्लेट र स्मार्टवाचहरू लगायत धेरै उपकरणहरू छन्। तपाइँसँग अनलाइन जति धेरै खाताहरू र उपकरणहरू हुन्छन्, अपराधीहरूले तपाइँको व्यक्तिगत जानकारीमा पहुँच गर्ने र तपाइँको फाइदा उठाउने सम्भावना त्यति नै बढी हुन्छ।\n\nअनलाइन सुरक्षा तपाईंको उमेर वा जीवनको चरण जस्तोसुकै भए पनि महत्त्वपूर्ण छ, तर बालबालिका, किशोरकिशोरी र ज्येष्ठ नागरिकहरू जस्ता निश्चित कमजोर समूहहरूका लागि विशेष चिन्ताहरू छन्। जब इन्टरनेट सुरक्षाको कुरा आउँछ, आधारभूत कुराहरूबाट सुरु गर्नु राम्रो हुन्छ। यहाँ तपाईंलाई मार्गदर्शन गर्न केही सुझावहरू छन्।\n\nनयाँ पासवर्ड बनाउँदा, बलियो पासवर्ड आवश्यकताहरूमा ध्यान दिनुहोस्। विभिन्न खाताहरूको लागि फरक प्रयोगकर्ता आईडी वा पासवर्ड संयोजनहरू प्रयोग गर्नुहोस्। अक्षरहरू, सङ्ख्याहरू र विशेष क्यारेक्टरहरू (special characters) मिलाएर पासवर्डलाई थप जटिल बनाउनुहोस् र अनुमान गर्न गाह्रो पासवर्डहरू सिर्जना गर्नुहोस्। आफ्नो पासवर्डहरू बारम्बार परिवर्तन गर्नुहोस्। आफ्ना पासवर्डहरू अरू मानिसहरूसँग साझा नगर्नुहोस्। पासवर्डहरू तपाईंको कम्प्युटरमा इन्क्रिप्टेड फाइलमा रेकर्ड गर्नुहोस्, वा अर्को सुरक्षित पासवर्ड भण्डारण विधि छान्नुहोस्। तिनीहरूलाई लेखेर नराख्नुहोस्।\n\n\"Keep me signed in\" र \"Remember my password\" विकल्पहरू अनचेक गरेर \"auto-login\" रोक्नुहोस्।\n\nतपाईंको व्यक्तिगत जानकारी अफलाइन पनि सुरक्षित गर्नु महत्त्वपूर्ण छ। खरिद गर्दा व्यक्तिगत पहिचान नम्बर (PIN) प्याड छोप्ने जस्ता सुझावहरू सम्झनुहोस्। चिप डेबिट कार्ड प्रयोग गर्नु तपाईंको आर्थिक जानकारी सुरक्षित गर्ने अर्को तरिका हो। परम्परागत चुम्बकीय स्ट्रिप डेबिट कार्ड भन्दा चिप कार्ड बढी सुरक्षित हुनुको एउटा कारण यसको परिष्कृत चिप प्रविधि हो।\n\nतपाईं अनलाइन कुनै कुराको लागि साइन अप गर्दा, सधैं नियम र सर्तहरू (terms and conditions) पढ्नुहोस्। सुरक्षित नभएको वेबसाइटमा आफ्नो आर्थिक जानकारी कहिल्यै प्रविष्ट नगर्नुहोस्।\n\nअन्त्यमा, ह्याकरहरूलाई तपाईंको व्यक्तिगत खाताहरू र जानकारीमा पहुँच गर्नबाट रोक्नको लागि दुई-तह प्रमाणीकरण (two-factor authentication) सक्षम गर्नुहोस्। कसैलाई तपाईंको पासवर्ड थाहा भए पनि तपाईंको खाताहरू सुरक्षित राख्न सुरक्षाको अतिरिक्त तह थप्नुहोस्।",
           "contentEnglish": "Modern life is fundamentally intertwined with the internet. Nearly every daily task now has the opportunity for online integration, and almost everyone owns multiple devices, including laptops, phones, tablets, and smartwatches. The more accounts and devices you have online, the greater the potential is for criminals to access your personal information and take advantage of you.\n\nOnline safety is important no matter your age or life stage, but there are particular concerns for certain vulnerable groups like children, teenagers, and senior citizens. When it comes to internet safety, it's best to start with the basics. Here are some tips to guide you.\n\nWhile creating a new password, pay attention to strong password requirements. Use different user IDs or password combinations for different accounts. Make the password more complicated by combining letters, numbers, and special characters and create hard-to-guess passwords. Change your passwords quite often. Don't share your passwords with other people. Record passwords in an encrypted file on your computer, or select another secure password storage method. Avoid writing them down.\n\nPrevent \"auto-login\" by unchecking \"Keep me signed in\" and \"Remember my password\" options.\n\nIt's also important to protect your personal information offline. Remember tips like shielding the personal identification number (PIN) pad when you make purchases. Using a chip debit card is another way to protect your financial information. The more sophisticated chip technology is just one reason why the chip card is more secure than the traditional magnetic strip debit card.\n\nWhen you sign up for something online, always read the terms and conditions. Never enter your financial information on a website that is not secure.\n\nFinally, enable two-factor authentication in order to prevent hackers from accessing your personal accounts and information. Add the extra layer of security to keep your accounts safe even if someone knows your password.",
@@ -102,12 +107,15 @@
         },
         "subSections": [
           {
-            "id": "A",
+            "idNepali": "क",
+            "idEnglish": "A",
             "type": "fill_in_the_blanks",
-            "marks": 5,
+            "marksNepali": "५",
+            "marksEnglish": 5,
             "subQuestions": [
               {
-                "id": "i",
+                "idNepali": "i",
+                "idEnglish": "i",
                 "questionNepali": "हाम्रो दैनिक जीवन __________ सँग गहिरो रूपमा जोडिएको छ।",
                 "questionEnglish": "Our daily lives are deeply connected with the __________.",
                 "correctAnswerNepali": "इन्टरनेट",
@@ -116,7 +124,8 @@
                 "explanationEnglish": "The first sentence of the text states, \"Modern life is fundamentally intertwined with the internet,\" meaning modern life is deeply connected with the internet. \nCitation: Lesson 7."
               },
               {
-                "id": "ii",
+                "idNepali": "ii",
+                "idEnglish": "ii",
                 "questionNepali": "बालबालिका र __________ जस्ता समूहहरू अनलाइनमा विशेष जोखिममा छन्।",
                 "questionEnglish": "Groups such as children and __________ are particularly at risk online.",
                 "correctAnswerNepali": "किशोर/ज्येष्ठ नागरिकहरू",
@@ -125,7 +134,8 @@
                 "explanationEnglish": "The text mentions that \"there are particular concerns for certain vulnerable groups like children, teenagers and senior citizens,\" indicating these groups are at risk. \nCitation: Lesson 7."
               },
               {
-                "id": "iii",
+                "idNepali": "iii",
+                "idEnglish": "iii",
                 "questionNepali": "पासवर्ड बलियो बनाउन, अक्षर, अङ्क र __________ मिलाउनुपर्छ।",
                 "questionEnglish": "To make a password stronger, one should combine letters, numbers, and __________.",
                 "correctAnswerNepali": "विशेष क्यारेक्टर र (special characters)",
@@ -134,7 +144,8 @@
                 "explanationEnglish": "The text suggests making a password more complicated by \"combining letters, numbers, and special characters.\" \nCitation: Lesson 7."
               },
               {
-                "id": "iv",
+                "idNepali": "iv",
+                "idEnglish": "iv",
                 "questionNepali": "__________ प्रविधि भएको डेबिट कार्ड म्याग्नेटिक स्ट्रिप भएको भन्दा बढी सुरक्षित हुन्छ।",
                 "questionEnglish": "A debit card with __________ technology is safer than one with a magnetic strip.",
                 "correctAnswerNepali": "चिप",
@@ -143,7 +154,8 @@
                 "explanationEnglish": "The text states, \"The more sophisticated chip technology is just one reason why the chip card is more secure than the traditional magnetic strip debit card.\" \nCitation: Lesson 7."
               },
               {
-                "id": "v",
+                "idNepali": "v",
+                "idEnglish": "v",
                 "questionNepali": "__________ सक्षम गरेर सुरक्षाको अतिरिक्त तह थप्न सकिन्छ।",
                 "questionEnglish": "An extra layer of security can be added by enabling __________.",
                 "correctAnswerNepali": "दुई-तह प्रमाणीकरण (two-factor authentication)",
@@ -156,12 +168,15 @@
             "titleEnglish": "Fill in the blanks with the correct information from the text."
           },
           {
-            "id": "B",
+            "idNepali": "ख",
+            "idEnglish": "B",
             "type": "short_answer",
-            "marks": 5,
+            "marksNepali": "५",
+            "marksEnglish": 5,
             "subQuestions": [
               {
-                "id": "i",
+                "idNepali": "i",
+                "idEnglish": "i",
                 "questionNepali": "आज अपराधीहरूले व्यक्तिगत जानकारीमा पहुँच पुर्याउने जोखिम किन बढी छ?",
                 "questionEnglish": "Why is there a greater risk of criminals accessing personal information today?",
                 "correctAnswerNepali": "त्यहाँ धेरै जोखिम छ किनभने लगभग सबैजनासँग धेरै अनलाइन खाताहरू र उपकरणहरू छन्।",
@@ -170,7 +185,8 @@
                 "explanationEnglish": "The text states, \"The more accounts and devices you have online, the greater the potential is for criminals to access your personal information.\" \nCitation: Lesson 7."
               },
               {
-                "id": "ii",
+                "idNepali": "ii",
+                "idEnglish": "ii",
                 "questionNepali": "पासवर्डहरू गोप्य र सुरक्षित राख्ने एउटा उपाय के हो?",
                 "questionEnglish": "What is one way to keep your passwords private and secure?",
                 "correctAnswerNepali": "एउटा तरिका भनेको पासवर्डहरू तपाईंको कम्प्युटरमा इन्क्रिप्टेड फाइलमा रेकर्ड गर्नु हो र तिनीहरूलाई अरूसँग साझा नगर्नु हो।",
@@ -179,7 +195,8 @@
                 "explanationEnglish": "The text suggests to \"Record passwords in an encrypted file on your computer\" and \"Don't share your passwords with other people.\" \nCitation: Lesson 7."
               },
               {
-                "id": "iii",
+                "idNepali": "iii",
+                "idEnglish": "iii",
                 "questionNepali": "पाठ अनुसार, अनलाइन सेवाका लागि साइन अप गर्नु अघि तपाईँले के गर्नु पर्छ?",
                 "questionEnglish": "According to the text, what should you do before signing up for an online service?",
                 "correctAnswerNepali": "तपाईंले सधैं नियम र सर्तहरू पढ्नुपर्छ।",
@@ -188,7 +205,8 @@
                 "explanationEnglish": "The text advises, \"When you sign up for something online, always read the terms and conditions.\" \nCitation: Lesson 7."
               },
               {
-                "id": "iv",
+                "idNepali": "iv",
+                "idEnglish": "iv",
                 "questionNepali": "खरिद गर्दा तपाईँले आफ्नो PIN कसरी सुरक्षित गर्न सक्नुहुन्छ?",
                 "questionEnglish": "How can you protect your PIN when making a purchase?",
                 "correctAnswerNepali": "तपाईंले खरिद गर्दा PIN प्याड छोपेर आफ्नो PIN सुरक्षित गर्न सक्नुहुन्छ।",
@@ -197,7 +215,8 @@
                 "explanationEnglish": "The text mentions \"shielding the personal identification number (PIN) pad when you make purchases\" as a method of protection. \nCitation: Lesson 7."
               },
               {
-                "id": "v",
+                "idNepali": "v",
+                "idEnglish": "v",
                 "questionNepali": "टु-फ्याक्टर अथेन्टिकेसनको मुख्य उद्देश्य के हो?",
                 "questionEnglish": "What is the main purpose of two-factor authentication?",
                 "correctAnswerNepali": "यसको मुख्य उद्देश्य ह्याकरहरूलाई तपाईंको व्यक्तिगत खाताहरूमा पहुँच गर्नबाट रोक्नु हो।",
@@ -214,9 +233,11 @@
         "titleEnglish": "Read the text and do the tasks."
       },
       {
-        "questionNumber": 3,
+        "questionNumberNepali": "३",
+        "questionNumberEnglish": 3,
         "type": "reading_comprehension",
-        "marks": 10,
+        "marksNepali": "१०",
+        "marksEnglish": 10,
         "passage": {
           "contentNepali": "जनस्वास्थ्यको क्षेत्रमा काम गर्ने एक प्रतिष्ठित राष्ट्रिय गैरसरकारी संस्थाले सिन्धुली जिल्लाका ग्रामीण नगरपालिकाहरूमा सञ्चालित आफ्नो नयाँ परियोजनाका लागि निम्नलिखित पदहरूमा गतिशील र स्व-प्रेरित नेपाली नागरिकहरूको खोजी गरिरहेको छ।\n\n१. पद: फिल्ड अफिसर\n- आवश्यक संख्या: २\n- आवश्यक योग्यता: जनस्वास्थ्य, सामाजिक कार्य वा सम्बन्धित क्षेत्रमा कम्तीमा स्नातक तह।\n- अनुभव: सामुदायिक परिचालन र परियोजना कार्यान्वयनमा कम्तीमा २ वर्षको अनुभव।\n- सीपहरू: अङ्ग्रेजी र नेपाली दुवैमा उत्कृष्ट सञ्चार र प्रतिवेदन लेखन सीप। वैध मोटरसाइकल लाइसेन्स भएको र ग्रामीण क्षेत्रहरूमा व्यापक यात्रा गर्न इच्छुक हुनुपर्ने।\n\n२. पद: फाइनान्स असिस्टेन्ट\n- आवश्यक संख्या: १\n- आवश्यक योग्यता: व्यवस्थापन/वाणिज्यमा कम्तीमा प्रमाणपत्र तह (+२)।\n- अनुभव: समान भूमिकामा अनुभव भए थप लाभ हुनेछ।\n- सीपहरू: लेखा सफ्टवेयर, एमएस एक्सेल र बहीखाताको राम्रो ज्ञान। विवरण-उन्मुख र व्यवस्थित हुनुपर्ने।\n\nमाथिका मापदण्ड पूरा गर्ने इच्छुक उम्मेदवारहरूलाई आफ्नो आवेदन र अद्यावधिक बायोडाटा vacancy.health@ngo.org.np मा ३० मार्च, २०२५ भित्र पठाउन अनुरोध गरिन्छ।\n\nछनोट गरिएका उम्मेदवारहरूलाई मात्र अन्तर्वार्ताका लागि सम्पर्क गरिनेछ। टेलिफोन सोधपुछलाई स्थान दिइने छैन। कुनै कारण नखुलाई कुनै वा सबै आवेदनहरू अस्वीकार गर्ने अधिकार संस्थामा सुरक्षित छ।",
           "contentEnglish": "A well-established national NGO working in the field of public health is looking for dynamic and self-motivated Nepali citizens for the following positions for its new project in the rural municipalities of Sindhuli district.\n\n1. Position: Field Officer\n- Required Number: 2\n- Required Qualification: At least Bachelor’s Degree in Public Health, Social Work, or a related field.\n- Experience: Minimum 2 years of experience in community mobilization and project implementation.\n- Skills: Excellent communication and reporting skills in both English and Nepali. Must have a valid motorcycle license and be willing to travel extensively in rural areas.\n\n2. Position: Finance Assistant\n- Required Number: 1\n- Required Qualification: At least Intermediate level (+2) in Management/Commerce.\n- Experience: Experience in a similar role will be an added advantage.\n- Skills: Good knowledge of accounting software, MS Excel, and bookkeeping. Should be detail-oriented and organized.\n\nInterested candidates who meet the above criteria are requested to send their application along with an updated CV to vacancy.health@ngo.org.np by 30th March, 2025.\n\nOnly shortlisted candidates will be contacted for an interview. Telephone inquiries will not be entertained. The organization reserves the right to reject any or all applications without assigning any reason whatsoever.",
@@ -225,12 +246,15 @@
         },
         "subSections": [
           {
-            "id": "A",
+            "idNepali": "क",
+            "idEnglish": "A",
             "type": "true_false_not_given",
-            "marks": 5,
+            "marksNepali": "५",
+            "marksEnglish": 5,
             "subQuestions": [
               {
-                "id": "i",
+                "idNepali": "i",
+                "idEnglish": "i",
                 "questionNepali": "उक्त NGO एक अन्तर्राष्ट्रिय संस्था हो।",
                 "questionEnglish": "The NGO is an international organization.",
                 "correctAnswerNepali": "गलत",
@@ -239,7 +263,8 @@
                 "explanationEnglish": "The announcement clearly states, \"A well-established national NGO,\" which means it is a national non-governmental organization, not an international one. \nCitation: Lesson 8."
               },
               {
-                "id": "ii",
+                "idNepali": "ii",
+                "idEnglish": "ii",
                 "questionNepali": "परियोजना सिन्धुलीको सहरी क्षेत्रमा अवस्थित छ।",
                 "questionEnglish": "The project is located in the urban areas of Sindhuli.",
                 "correctAnswerNepali": "गलत",
@@ -248,7 +273,8 @@
                 "explanationEnglish": "The text specifies that the project is in the \"rural municipalities of Sindhuli district,\" not urban areas. \nCitation: Lesson 8."
               },
               {
-                "id": "iii",
+                "idNepali": "iii",
+                "idEnglish": "iii",
                 "questionNepali": "फाइनान्स असिस्टेन्ट पदका लागि मोटरसाइकल लाइसेन्स अनिवार्य छ।",
                 "questionEnglish": "A motorcycle license is mandatory for the Finance Assistant position.",
                 "correctAnswerNepali": "दिइएको छैन (NOT GIVEN)",
@@ -257,7 +283,8 @@
                 "explanationEnglish": "The text mentions that a motorcycle license is mandatory for the Field Officer, but no such requirement is mentioned for the Finance Assistant position. \nCitation: Lesson 8."
               },
               {
-                "id": "iv",
+                "idNepali": "iv",
+                "idEnglish": "iv",
                 "questionNepali": "संस्थाले सबै आवेदकहरूलाई उनीहरूको स्थितिको जानकारी दिन सम्पर्क गर्नेछ।",
                 "questionEnglish": "The organization will contact all applicants to inform them of their status.",
                 "correctAnswerNepali": "गलत",
@@ -266,7 +293,8 @@
                 "explanationEnglish": "The notice says, \"Only shortlisted candidates will be contacted for an interview,\" which means that only the candidates who are shortlisted will be contacted, not all applicants. \nCitation: Lesson 8."
               },
               {
-                "id": "v",
+                "idNepali": "v",
+                "idEnglish": "v",
                 "questionNepali": "उम्मेदवारहरूले आफ्नो आवेदनको बारेमा सोध्न कार्यालयमा फोन गर्न सक्छन्।",
                 "questionEnglish": "Candidates can call the office to ask about their application.",
                 "correctAnswerNepali": "गलत",
@@ -279,12 +307,15 @@
             "titleEnglish": "Write 'TRUE' for true, 'FALSE' for false, or 'NOT GIVEN' if the information is not in the text."
           },
           {
-            "id": "B",
+            "idNepali": "ख",
+            "idEnglish": "B",
             "type": "short_answer",
-            "marks": 5,
+            "marksNepali": "५",
+            "marksEnglish": 5,
             "subQuestions": [
               {
-                "id": "i",
+                "idNepali": "i",
+                "idEnglish": "i",
                 "questionNepali": "कस्तो संस्थाले विज्ञापन गरिरहेको छ?",
                 "questionEnglish": "What kind of organization is advertising the vacancy?",
                 "correctAnswerNepali": "जनस्वास्थ्यको क्षेत्रमा काम गर्ने एक प्रतिष्ठित राष्ट्रिय गैरसरकारी संस्थाले विज्ञापन गरिरहेको छ।",
@@ -293,7 +324,8 @@
                 "explanationEnglish": "The beginning of the text introduces the organization as \"A well-established national NGO working in the field of public health.\" \nCitation: Lesson 8."
               },
               {
-                "id": "ii",
+                "idNepali": "ii",
+                "idEnglish": "ii",
                 "questionNepali": "फिल्ड अफिसर पदको लागि न्यूनतम शैक्षिक योग्यता के हो?",
                 "questionEnglish": "What is the minimum academic qualification for the post of Field Officer?",
                 "correctAnswerNepali": "न्यूनतम शैक्षिक योग्यता जनस्वास्थ्य, सामाजिक कार्य वा सम्बन्धित क्षेत्रमा स्नातक डिग्री हो।",
@@ -302,7 +334,8 @@
                 "explanationEnglish": "Under the \"Required Qualification\" for the Field Officer post, it is mentioned, \"At least Bachelor’s Degree in Public Health, Social Work, or a related field.\" \nCitation: Lesson 8."
               },
               {
-                "id": "iii",
+                "idNepali": "iii",
+                "idEnglish": "iii",
                 "questionNepali": "जम्मा कतिवटा पदहरू खाली छन्?",
                 "questionEnglish": "How many vacancies are there in total?",
                 "correctAnswerNepali": "कुल तीनवटा रिक्त पदहरू छन् (२ फिल्ड अफिसरका लागि र १ फाइनान्स असिस्टेन्टका लागि)।",
@@ -311,7 +344,8 @@
                 "explanationEnglish": "It is mentioned \"Required Number: 2\" for Field Officer and \"Required Number: 1\" for Finance Assistant, which totals 3. \nCitation: Lesson 8."
               },
               {
-                "id": "iv",
+                "idNepali": "iv",
+                "idEnglish": "iv",
                 "questionNepali": "फाइनान्स असिस्टेन्ट भूमिकाको लागि कुन सीप आवश्यक छ?",
                 "questionEnglish": "What skill is required for the Finance Assistant role?",
                 "correctAnswerNepali": "लेखा सफ्टवेयर, एमएस एक्सेल र बहीखाताको राम्रो ज्ञान आवश्यक छ।",
@@ -320,7 +354,8 @@
                 "explanationEnglish": "In the \"Skills\" section for the Finance Assistant post, \"Good knowledge of accounting software, MS Excel, and bookkeeping\" is mentioned. \nCitation: Lesson 8."
               },
               {
-                "id": "v",
+                "idNepali": "v",
+                "idEnglish": "v",
                 "questionNepali": "इच्छुक उम्मेदवारहरूले पदका लागि कसरी आवेदन दिनुपर्छ?",
                 "questionEnglish": "How should interested candidates apply for the positions?",
                 "correctAnswerNepali": "इच्छुक उम्मेद्वारहरूले आफ्नो आवेदन र अद्यावधिक बायोडाटा उपलब्ध गराइएको इमेल ठेगानामा पठाउनु पर्छ।",
@@ -337,9 +372,11 @@
         "titleEnglish": "Read the following text and do the tasks."
       },
       {
-        "questionNumber": 4,
+        "questionNumberNepali": "४",
+        "questionNumberEnglish": 4,
         "type": "reading_comprehension",
-        "marks": 15,
+        "marksNepali": "१५",
+        "marksEnglish": 15,
         "passage": {
           "contentNepali": "यो एउटा यस्तो विषय हो जुन कहिल्यै मिडियाबाट बाहिर हुँदैन, जसमा कार्बोहाइड्रेट, बोसो, चिनी वा प्रोटिन राम्रो वा नराम्रो हो भन्ने बारे अनन्त भिन्नताहरू हुन्छन्, वा हामीलाई लामो समयसम्म बाँच्न मद्दत गर्ने नवीनतम अद्भुत खाना (wonderfood) मा रिपोर्टहरू आउँछन्। अब हामी आहार र जीवनशैली सम्बन्धित रोगहरू जस्तै अधिक तौल र मोटोपना जस्ता नयाँ जनस्वास्थ्य चुनौतीहरूको सामना गर्न मद्दतका लागि विज्ञान र नवीनतामा भर परिरहेका छौं।\n\nयो धेरै देशहरूले सामना गरिरहेको चुनौती हो। पछिल्लो तीन दशकमा, अधिक तौल र मोटोपनाको स्तर नाटकीय रूपमा बढेको छ, विशेष गरी बालबालिकाहरूमा, र खराब आहार तथा कम शारीरिक गतिविधि गर्ने प्रवृत्ति अझ खराब हुँदै गइरहेको छ। क्यान्सर, हृदय रोग, मोटोपना र टाइप २ मधुमेह जस्ता धेरै दीर्घकालीन अवस्थाहरूलाई राम्रो जीवनशैली र स्वस्थ आहार मार्फत रोक्न वा सुधार गर्न सकिन्छ।\n\nदुर्भाग्यवश, स्वस्थकर खानालाई प्रोत्साहन गर्ने विभिन्न प्रयासहरूले अझै पनि खाना खरिद र उपभोगको ढाँचामा ठूलो परिवर्तन ल्याउन सकेका छैनन्। त्यहीँनेर बहुविषयक दृष्टिकोण (multidisciplinary approach) काम लाग्छ, जसमा सामाजिक विज्ञान समावेश भएको स्वास्थ्य र पोषण अनुसन्धान पर्दछ। उदाहरणका लागि, हामी सबैलाई थाहा छ कि मानिसहरूको व्यवहार र खाना तथा व्यायामसँग उनीहरूको सम्बन्ध बुझ्नु उनीहरूलाई स्वस्थकर छनौटहरू गर्न मद्दत गर्नको लागि महत्त्वपूर्ण छ।\n\nकार्यान्वयन महत्त्वपूर्ण छ, र यो पहिले राष्ट्रिय अनुसन्धान कार्यक्रमहरू र गतिविधिहरू समन्वय गरेर प्राप्त गरिनेछ। कार्यान्वयनको यो महत्वपूर्ण चरणमा, अनुसन्धानका लागि राष्ट्रिय कोष (funding) खोल्नु र राष्ट्रिय अनुसन्धान कार्यक्रम तथा नवीनता नीतिहरूलाई मिलाउन सक्रिय रूपमा संलग्न हुनु महत्त्वपूर्ण छ।",
           "contentEnglish": "It’s a topic that’s never out of the media, with endless variations on whether carbs, fat, sugar or protein are good or bad, or reports on the latest wonderfood that will help us live longer. We are now relying on science and innovation to help us tackle the new public health challenge that is diet and lifestyle-related diseases such as overweight and obesity.\n\nIt's a challenge that many countries are facing. In the last three decades, the levels of overweight and obesity have risen dramatically, particularly among children, and the trend of poor diet and low physical activity is getting even worse. Many chronic conditions such as cancer, cardiovascular diseases, obesity and type 2 diabetes can be prevented or modified through better lifestyles and healthier diets.\n\nUnfortunately, different attempts to encourage healthier eating have not yet led to major changes in patterns of food purchase and consumption. That's where a multidisciplinary approach comes in, with health and nutrition research that includes the social sciences. We all know, for example, that understanding people's behaviours and their relationship to food and exercise is vital in helping them to make healthier choices.\n\nImplementation is important, and this will be achieved first by coordinating national research programmes and activities. In this critical phase of implementation, it is important to unlock national funding for research and to actively engage in aligning national research programmes and innovation policies.",
@@ -348,65 +385,78 @@
         },
         "subSections": [
           {
-            "id": "A",
+            "idNepali": "क",
+            "idEnglish": "A",
             "type": "matching",
-            "marks": 5,
+            "marksNepali": "५",
+            "marksEnglish": 5,
             "columns": {
               "A": [
                 {
-                  "id": "i",
+                  "idNepali": "i",
+                  "idEnglish": "i",
                   "textNepali": "सामना गर्नु (tackle)",
                   "textEnglish": "tackle"
                 },
                 {
-                  "id": "ii",
+                  "idNepali": "ii",
+                  "idEnglish": "ii",
                   "textNepali": "दीर्घकालीन (chronic)",
                   "textEnglish": "chronic"
                 },
                 {
-                  "id": "iii",
+                  "idNepali": "iii",
+                  "idEnglish": "iii",
                   "textNepali": "परिमार्जन (modify)",
                   "textEnglish": "modify"
                 },
                 {
-                  "id": "iv",
+                  "idNepali": "iv",
+                  "idEnglish": "iv",
                   "textNepali": "महत्त्वपूर्ण/जीवन्त",
                   "textEnglish": "vital"
                 },
                 {
-                  "id": "v",
+                  "idNepali": "v",
+                  "idEnglish": "v",
                   "textNepali": "महसुस गर्नु",
                   "textEnglish": "realize"
                 }
               ],
               "B": [
                 {
-                  "id": "a",
+                  "idNepali": "क",
+                  "idEnglish": "a",
                   "textNepali": "कुनै कुरालाई नयाँ उद्देश्यका लागि उपयुक्त बनाउनु",
                   "textEnglish": "to make something suitable for a new purpose"
                 },
                 {
-                  "id": "b",
+                  "idNepali": "ख",
+                  "idEnglish": "b",
                   "textNepali": "कठिन समस्याको सामना गर्नु",
                   "textEnglish": "to deal with a difficult problem"
                 },
                 {
-                  "id": "c",
+                  "idNepali": "ग",
+                  "idEnglish": "c",
                   "textNepali": "कुनै कुरा बुझ्नु वा सचेत हुनु",
                   "textEnglish": "to understand or become aware of something"
                 },
                 {
-                  "id": "d",
+                  "idNepali": "घ",
+                  "idEnglish": "d",
                   "textNepali": "लामो समयसम्म रहने",
                   "textEnglish": "lasting for a long time"
                 },
                 {
-                  "id": "e",
+                  "idNepali": "ङ",
+                  "idEnglish": "e",
                   "textNepali": "अत्यन्त महत्त्वपूर्ण वा आवश्यक",
                   "textEnglish": "extremely important or necessary"
                 },
                 {
-                  "id": "f",
+                  "idNepali": "च",
+                  "idEnglish": "f",
                   "textNepali": "केहि नयाँ सिर्जना गर्नु",
                   "textEnglish": "to create something new"
                 }
@@ -440,32 +490,39 @@
             "titleEnglish": "Match the words in Column ‘A’ with their meanings in Column ‘B’."
           },
           {
-            "id": "B",
+            "idNepali": "ख",
+            "idEnglish": "B",
             "type": "ordering",
-            "marks": 5,
+            "marksNepali": "५",
+            "marksEnglish": 5,
             "sentences": [
               {
-                "id": "i",
+                "idNepali": "i",
+                "idEnglish": "i",
                 "textNepali": "अस्वस्थ जीवनशैलीले धेरै रोकथाम गर्न सकिने दीर्घकालीन रोगहरू निम्त्याउन सक्छ।",
                 "textEnglish": "Unhealthy lifestyles can lead to many preventable chronic diseases."
               },
               {
-                "id": "ii",
+                "idNepali": "ii",
+                "idEnglish": "ii",
                 "textNepali": "स्वस्थ विकल्पहरूलाई प्रवर्द्धन गर्न मानव व्यवहार बुझ्नु मुख्य कुरा हो।",
                 "textEnglish": "Understanding human behaviour is key to promoting healthier choices."
               },
               {
-                "id": "iii",
+                "idNepali": "iii",
+                "idEnglish": "iii",
                 "textNepali": "आहार र जीवनशैली-सम्बन्धित रोगहरू एक प्रमुख जनस्वास्थ्य चुनौती बनेका छन्।",
                 "textEnglish": "Diet and lifestyle-related diseases have become a major public health challenge."
               },
               {
-                "id": "iv",
+                "idNepali": "iv",
+                "idEnglish": "iv",
                 "textNepali": "स्वस्थ खानपानलाई प्रोत्साहित गर्ने प्रयासहरू धेरै सफल भएका छैनन्।",
                 "textEnglish": "Efforts to encourage healthy eating have not been very successful."
               },
               {
-                "id": "v",
+                "idNepali": "v",
+                "idEnglish": "v",
                 "textNepali": "स्वास्थ्य नीतिहरूको प्रभावकारी कार्यान्वयनका लागि समन्वित राष्ट्रिय अनुसन्धान आवश्यक छ।",
                 "textEnglish": "Coordinated national research is necessary for effective implementation of health policies."
               }
@@ -483,12 +540,15 @@
             "titleEnglish": "Put the following sentences in the correct order."
           },
           {
-            "id": "C",
+            "idNepali": "ग",
+            "idEnglish": "C",
             "type": "short_answer",
-            "marks": 5,
+            "marksNepali": "५",
+            "marksEnglish": 5,
             "subQuestions": [
               {
-                "id": "i",
+                "idNepali": "i",
+                "idEnglish": "i",
                 "questionNepali": "नयाँ जनस्वास्थ्य चुनौतीको रूपमा के वर्णन गरिएको छ?",
                 "questionEnglish": "What is described as a new public health challenge?",
                 "correctAnswerNepali": "अधिक तौल र मोटोपना जस्ता आहार र जीवनशैली-सम्बन्धित रोगहरूलाई नयाँ जनस्वास्थ्य चुनौतीको रूपमा वर्णन गरिएको छ।",
@@ -497,7 +557,8 @@
                 "explanationEnglish": "The first paragraph of the text states, \"the new public health challenge that is diet and lifestyle-related diseases such as overweight and obesity.\" \nCitation: Lesson 3."
               },
               {
-                "id": "ii",
+                "idNepali": "ii",
+                "idEnglish": "ii",
                 "questionNepali": "राम्रो जीवनशैलीबाट रोकथाम गर्न सकिने दुई दीर्घकालीन रोगहरूको नाम लेख्नुहोस्।",
                 "questionEnglish": "Name two chronic conditions that can be prevented with a better lifestyle.",
                 "correctAnswerNepali": "क्यान्सर र मुटु रोगहरू, र मोटोपना, टाइप २ मधुमेह जस्ता रोगहरूलाई राम्रो जीवनशैलीबाट रोकथाम गर्न सकिन्छ।",
@@ -506,7 +567,8 @@
                 "explanationEnglish": "The second paragraph mentions that \"Many chronic conditions such as cancer, ... cardiovascular diseases, obesity and type 2 diabetes can be prevented.\" \nCitation: Lesson 3."
               },
               {
-                "id": "iii",
+                "idNepali": "iii",
+                "idEnglish": "iii",
                 "questionNepali": "स्वस्थ खानपानलाई प्रोत्साहित गर्न बहु-विषयक दृष्टिकोण किन आवश्यक छ?",
                 "questionEnglish": "Why is a multidisciplinary approach necessary to encourage healthier eating?",
                 "correctAnswerNepali": "यो आवश्यक छ किनभने अघिल्ला प्रयासहरू असफल भएका छन् र मानिसहरूको व्यवहार र खानासँगको उनीहरूको सम्बन्ध बुझ्न महत्त्वपूर्ण छ।",
@@ -515,7 +577,8 @@
                 "explanationEnglish": "The text notes that \"different attempts to encourage healthier eating have not yet led to major changes\" and that \"understanding people's behaviours ... is vital in helping them to make healthier choices,\" which is why a multidisciplinary approach is needed. \nCitation: Lesson 3."
               },
               {
-                "id": "iv",
+                "idNepali": "iv",
+                "idEnglish": "iv",
                 "questionNepali": "स्वास्थ्य नीतिहरू प्रभावकारी रूपमा कार्यान्वयन गर्ने पहिलो कदम के हो?",
                 "questionEnglish": "What is the first step towards implementing health policies effectively?",
                 "correctAnswerNepali": "पहिलो चरण भनेको राष्ट्रिय अनुसन्धान कार्यक्रम र गतिविधिहरू समन्वय गर्नु हो।",
@@ -524,7 +587,8 @@
                 "explanationEnglish": "The last paragraph states, \"implementation is important, and this will be achieved first by coordinating national research programmes and activities.\" \nCitation: Lesson 3."
               },
               {
-                "id": "v",
+                "idNepali": "v",
+                "idEnglish": "v",
                 "questionNepali": "पाठ अनुसार, बालबालिकाहरूमा के कुरा बिग्रँदै गएको छ?",
                 "questionEnglish": "According to the text, what is getting worse among children?",
                 "correctAnswerNepali": "कमजोर आहार र कम शारीरिक गतिविधिको प्रवृत्ति बालबालिकाहरूमाझ झन् खराब हुँदै गइरहेको छ।",
@@ -541,9 +605,11 @@
         "titleEnglish": "Read the following text and do the tasks."
       },
       {
-        "questionNumber": 5,
+        "questionNumberNepali": "५",
+        "questionNumberEnglish": 5,
         "type": "free_writing",
-        "marks": 5,
+        "marksNepali": "५",
+        "marksEnglish": 5,
         "wordCount": 100,
         "sampleAnswer": {
           "explanationNepali": "यो उत्तरले कम्प्युटर ल्याबमा पालना गर्नुपर्ने नियम र विनियमहरूको एक सेट प्रस्तुत गर्दछ, जुन दिइएको संकेतहरूमा आधारित छ। यसले विद्यार्थीहरूलाई शान्तपूर्वक प्रवेश गर्न, जुत्ता खोल्न, खानेकुरा र पेय पदार्थहरू नल्याउन, र तोकिएको कम्प्युटर मात्र प्रयोग गर्न निर्देशन दिन्छ। नियमहरूले सेटिङहरू परिवर्तन नगर्न, काम राम्ररी सेभ गर्न, र बाहिर निस्कनु अघि लग अफ गर्न पनि निर्दिष्ट गर्दछ। अन्तमा, यसले समस्याहरू रिपोर्ट गर्ने र ल्याब सफा राख्ने महत्त्वलाई जोड दिन्छ।\nउद्धरण: पाठ ४",
@@ -577,9 +643,11 @@
         ]
       },
       {
-        "questionNumber": 6,
+        "questionNumberNepali": "६",
+        "questionNumberEnglish": 6,
         "type": "free_writing",
-        "marks": 5,
+        "marksNepali": "५",
+        "marksEnglish": 5,
         "wordCount": 100,
         "sampleAnswer": {
           "explanationNepali": "यो उत्तरले 'अभिभावक दिवस' को लागि अभिभावकहरूलाई पठाइने एक औपचारिक निमन्त्रणा सन्देश प्रस्तुत गर्दछ, दिइएको संकेतहरू प्रयोग गर्दै। यसले कार्यक्रमको मिति, समय, र स्थान स्पष्ट रूपमा उल्लेख गर्दछ। यसले प्रमुख अतिथि, सांस्कृतिक कार्यक्रमहरू, र पुरस्कार वितरण जस्ता मुख्य आकर्षणहरूलाई हाइलाइट गर्दछ। निमन्त्रणाले अभिभावकहरूलाई उपस्थित हुन अनुरोध गर्दछ र व्यवस्थापनको लागि उनीहरूको उपस्थिति पुष्टि गर्न आग्रह गर्दछ, जसले यसलाई एक पूर्ण र औपचारिक सन्देश बनाउँछ।\nउद्धरण: पाठ १६",
@@ -609,9 +677,11 @@
         ]
       },
       {
-        "questionNumber": 7,
+        "questionNumberNepali": "७",
+        "questionNumberEnglish": 7,
         "type": "free_writing",
-        "marks": 6,
+        "marksNepali": "६",
+        "marksEnglish": 6,
         "wordCount": 150,
         "sampleAnswer": {
           "explanationNepali": "यो उत्तरले युवाहरूमा फास्ट फुडको बढ्दो प्रवृत्तिको कारण र प्रभावहरूमा दुई अनुच्छेदमा विचार प्रस्तुत गर्दछ। पहिलो अनुच्छेदले सुविधा, विज्ञापन, र पश्चिमी संस्कृतिको प्रभाव जस्ता कारणहरूलाई सम्बोधन गर्दछ। दोस्रो अनुच्छेदले मोटोपना र मधुमेह जस्ता स्वास्थ्य समस्याहरू, र परम्परागत खाना र पारिवारिक भोजनको संस्कृतिमा ह्रास जस्ता नकारात्मक प्रभावहरूमा केन्द्रित छ। उत्तरले सन्तुलित दृष्टिकोण प्रस्तुत गर्दछ र लगभग १५० शब्दहरूको शब्द सीमाभित्र रहन्छ।\nउद्धरण: पाठ ६",
@@ -623,9 +693,11 @@
         "titleEnglish": "Many young people in our society prefer fast food over traditional home-cooked meals. Write two paragraphs in about 150 words expressing your views on this trend and its effects."
       },
       {
-        "questionNumber": 8,
+        "questionNumberNepali": "८",
+        "questionNumberEnglish": 8,
         "type": "free_writing",
-        "marks": 8,
+        "marksNepali": "८",
+        "marksEnglish": 8,
         "wordCount": 200,
         "sampleAnswer": {
           "explanationNepali": "यो उत्तरले झमक घिमिरेको आत्मकथा 'जीवन काँडा कि फूल' को समीक्षा प्रस्तुत गर्दछ। यसले पुस्तकको शीर्षक, लेखक, मुख्य कथाको सारांश, यसको शक्ति र कमजोरीहरूको विश्लेषण, र एक सिफारिस समावेश गर्दछ, जुन प्रश्नमा माग गरिएको थियो। समीक्षाले घिमिरेको संघर्ष र दृढतालाई हाइलाइट गर्दछ, उनको लेखनको इमानदारीलाई पुस्तकको मुख्य शक्तिको रूपमा उल्लेख गर्दछ। यसले पुस्तकको भावनात्मक गहनतालाई सम्भावित कमजोरीको रूपमा पनि स्वीकार गर्दछ। अन्त्यमा, यसले मानव आत्माको शक्तिको प्रमाणको रूपमा पुस्तकलाई दृढतापूर्वक सिफारिस गर्दछ, जुन लगभग २०० शब्दहरूको शब्द सीमा भित्र छ।\nउद्धरण: पाठ १५",
@@ -651,12 +723,15 @@
         ]
       },
       {
-        "questionNumber": 9,
+        "questionNumberNepali": "९",
+        "questionNumberEnglish": 9,
         "type": "grammar",
-        "marks": 6,
+        "marksNepali": "६",
+        "marksEnglish": 6,
         "subQuestions": [
           {
-            "id": "i",
+            "idNepali": "i",
+            "idEnglish": "i",
             "type": "reproduce",
             "questionNepali": "She seldom visits her grandparents, __________? (सही question tag थप्नुहोस्।)",
             "questionEnglish": "She seldom visits her grandparents, __________? (Add a correct question tag.)",
@@ -666,7 +741,8 @@
             "explanationEnglish": "'Seldom' is a negative adverb, so the question tag must be positive. The auxiliary verb for the main verb 'visits' (v5) is 'does'. \nCitation: Lesson 14."
           },
           {
-            "id": "ii",
+            "idNepali": "ii",
+            "idEnglish": "ii",
             "type": "reproduce",
             "questionNepali": "We are planning a trip for the holidays. (नकारात्मकमा बदल्नुहोस्।)",
             "questionEnglish": "We are planning a trip for the holidays. (Change into negative.)",
@@ -676,7 +752,8 @@
             "explanationEnglish": "A present continuous tense sentence is made negative by adding 'not' after the auxiliary verb 'are'. \nCitation: Lesson 11."
           },
           {
-            "id": "iii",
+            "idNepali": "iii",
+            "idEnglish": "iii",
             "type": "reproduce",
             "questionNepali": "He had finished his homework before the guests arrived. ('When' प्रयोग गरी प्रश्नमा बदल्नुहोस्।)",
             "questionEnglish": "He had finished his homework before the guests arrived. (Change into 'When' question.)",
@@ -686,7 +763,8 @@
             "explanationEnglish": "To ask about the time phrase 'before the guests arrived' using 'When', we form a Wh-question using the past perfect structure (Wh-word + had + subject + v3?). \nCitation: Lesson 18."
           },
           {
-            "id": "iv",
+            "idNepali": "iv",
+            "idEnglish": "iv",
             "type": "reproduce",
             "questionNepali": "By next year, they __________ (build) the new bridge. (वाक्य पूरा गर्न 'build' क्रियाको सही रूप प्रयोग गर्नुहोस्।)",
             "questionEnglish": "By next year, they __________ (build) the new bridge. (Use the correct form of the verb 'build' to complete the sentence.)",
@@ -696,7 +774,8 @@
             "explanationEnglish": "The phrase 'By next year' indicates an action that will be completed by a certain time in the future, which requires the use of the future perfect tense (will have + v3). \nCitation: Lesson 12."
           },
           {
-            "id": "v",
+            "idNepali": "v",
+            "idEnglish": "v",
             "type": "reproduce",
             "questionNepali": "The teacher said to the students, \"Work hard to achieve success.\" (अप्रत्यक्ष कथन (indirect speech) मा बदल्नुहोस्।)",
             "questionEnglish": "The teacher said to the students, \"Work hard to achieve success.\" (Change into indirect speech.)",
@@ -706,7 +785,8 @@
             "explanationEnglish": "When changing an imperative sentence to indirect speech, the reporting verb (like 'advised', 'told') is followed by 'to' + infinitive. \nCitation: Lesson 3."
           },
           {
-            "id": "vi",
+            "idNepali": "vi",
+            "idEnglish": "vi",
             "type": "reproduce",
             "questionNepali": "Someone has stolen my bicycle. (कर्मवाच्य (passive voice) मा बदल्नुहोस्।)",
             "questionEnglish": "Someone has stolen my bicycle. (Change into passive voice.)",
@@ -720,76 +800,88 @@
         "titleEnglish": "Reproduce the following sentences as instructed in the brackets."
       },
       {
-        "questionNumber": 10,
+        "questionNumberNepali": "१०",
+        "questionNumberEnglish": 10,
         "type": "cloze_test",
-        "marks": 5,
+        "marksNepali": "५",
+        "marksEnglish": 5,
         "passage": "Once upon a time, there lived (a) _____ (a/an/the/no article) honest farmer in a village. He (b) _____ (is/was/are/were) very poor, but he never complained. He worked hard on his farm every day. One day, while he (c) _____ (worked/was working/had worked/has worked) in the field, he found a pot of gold. He was a very honest man, (d) _____ (was he/wasn't he/is he/isn't he)? (e) _____ (Although/Because/So/In spite of) being poor, he decided to take the pot to the king. The king asked him (f) _____ (how he find/how did he find/how he found/how had he found) the pot. The farmer explained everything. The king was very pleased (g) _____ (by/with/at/for) his honesty. The pot of gold (h) _____ (was given/given/is given/had given) to the farmer as a reward by the king. If the farmer had been greedy, he (i) _____ (will not get/would not get/would not have gotten/had not gotten) such a great reward. The king made the villagers (j) _____ (to understand/understand/understood/understanding) the importance of honesty.",
         "gaps": [
           {
-            "id": "a",
+            "idNepali": "क",
+            "idEnglish": "a",
             "correctAnswerNepali": "एउटा (an)",
             "correctAnswerEnglish": "an",
             "explanationNepali": "'honest' शब्द 'h' बाट सुरु भए तापनि यसको उच्चारण स्वर ध्वनि /ɒ/ बाट हुन्छ, त्यसैले 'an' प्रयोग हुन्छ।\nउद्धरण: पाठ ७",
             "explanationEnglish": "The word 'honest' begins with a vowel sound /ɒ/, even though it starts with the letter 'h', so 'an' is used. \nCitation: Lesson 7."
           },
           {
-            "id": "b",
+            "idNepali": "ख",
+            "idEnglish": "b",
             "correctAnswerNepali": "थियो (was)",
             "correctAnswerEnglish": "was",
             "explanationNepali": "'One of them' एकवचन हो, र कथा भूतकालमा छ, त्यसैले 'was' सही छ।\nउद्धरण: पाठ ९",
             "explanationEnglish": "'One of them' is a singular subject, and the story is in the past tense, so 'was' is the correct verb. \nCitation: Lesson 9."
           },
           {
-            "id": "c",
+            "idNepali": "ग",
+            "idEnglish": "c",
             "correctAnswerNepali": "काम गरिरहेको थियो (was working)",
             "correctAnswerEnglish": "was working",
             "explanationNepali": "यहाँ 'while' ले एक लामो कार्य (काम गरिरहेको) लाई जनाउँछ जुन अर्को छोटो कार्य (सुनको भाँडो भेट्टाएको) हुँदा भइरहेको थियो। त्यसैले, भूत निरन्तर काल सही छ।\nउद्धरण: पाठ ९",
             "explanationEnglish": "The use of 'while' indicates a longer background action (was working) that was interrupted by a shorter action (found a pot of gold). Therefore, the past continuous tense is correct. \nCitation: Lesson 9."
           },
           {
-            "id": "d",
+            "idNepali": "घ",
+            "idEnglish": "d",
             "correctAnswerNepali": "होइन र (wasn't he)",
             "correctAnswerEnglish": "wasn't he",
             "explanationNepali": "वाक्य \"He was a very honest man\" सकारात्मक छ र भूतकालमा छ, त्यसैले प्रश्न ट्याग नकारात्मक (wasn't) र सर्वनाम (he) हुनुपर्छ।\nउद्धरण: पाठ १४",
             "explanationEnglish": "The statement \"He was a very honest man\" is positive and in the past tense, so the question tag should be negative (wasn't) with the corresponding pronoun (he). \nCitation: Lesson 14."
           },
           {
-            "id": "e",
+            "idNepali": "ङ",
+            "idEnglish": "e",
             "correctAnswerNepali": "को बाबजुद (In spite of)",
             "correctAnswerEnglish": "In spite of",
             "explanationNepali": "'In spite of' पछि एक संज्ञा वाक्यांश ('being poor') आउँछ र यसले विरोधाभास देखाउँछ।\nउद्धरण: पाठ १३",
             "explanationEnglish": "'In spite of' is followed by a noun phrase ('being poor') and shows contrast. \nCitation: Lesson 13."
           },
           {
-            "id": "f",
+            "idNepali": "च",
+            "idEnglish": "f",
             "correctAnswerNepali": "उसले कसरी भेट्टायो (how he found)",
             "correctAnswerEnglish": "how he found",
             "explanationNepali": "अप्रत्यक्ष प्रश्नमा, Wh-शब्द पछि कर्ता + क्रियाको संरचना हुन्छ, प्रश्नवाचक संरचना होइन।\nउद्धरण: पाठ २",
             "explanationEnglish": "In an indirect question, the structure is Wh-word + subject + verb, not an interrogative structure. \nCitation: Lesson 2."
           },
           {
-            "id": "g",
+            "idNepali": "छ",
+            "idEnglish": "g",
             "correctAnswerNepali": "संग (with)",
             "correctAnswerEnglish": "with",
             "explanationNepali": "'pleased' क्रिया पछि सामान्यतया 'with' preposition आउँछ जब कसैको गुण वा कार्यको कुरा हुन्छ।\nउद्धरण: पाठ १५",
             "explanationEnglish": "The adjective 'pleased' is typically followed by the preposition 'with' when referring to a quality or action of someone. \nCitation: Lesson 15."
           },
           {
-            "id": "h",
+            "idNepali": "ज",
+            "idEnglish": "h",
             "correctAnswerNepali": "दिइएको थियो (was given)",
             "correctAnswerEnglish": "was given",
             "explanationNepali": "यो वाक्य passive voice मा छ, जहाँ सुनको भाँडो (object) लाई किसानलाई (subject) राजाद्वारा दिइएको थियो। भूतकालको लागि passive संरचना 'was + v3' हो।\nउद्धरण: पाठ ८",
             "explanationEnglish": "This is a passive voice sentence, where the pot of gold (object) was the recipient of the action. The past passive structure is 'was + v3'. \nCitation: Lesson 8."
           },
           {
-            "id": "i",
+            "idNepali": "i",
+            "idEnglish": "i",
             "correctAnswerNepali": "पाउने थिएन (would not have gotten)",
             "correctAnswerEnglish": "would not have gotten",
             "explanationNepali": "यो तेस्रो प्रकारको conditional वाक्य हो (If + past perfect, ...would have + v3), जसले भूतकालको एक असम्भव अवस्थालाई जनाउँछ।\nउद्धरण: पाठ ५",
             "explanationEnglish": "This is a Type 3 conditional sentence (If + past perfect, ...would have + v3), which refers to an unreal past condition. \nCitation: Lesson 5."
           },
           {
-            "id": "j",
+            "idNepali": "ञ",
+            "idEnglish": "j",
             "correctAnswerNepali": "बुझ्नु (understand)",
             "correctAnswerEnglish": "understand",
             "explanationNepali": "'make' को causative रूपमा, यसपछि object ('the villagers') र bare infinitive ('understand') आउँछ।\nउद्धरण: पाठ १८",

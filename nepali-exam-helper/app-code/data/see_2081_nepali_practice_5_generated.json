@@ -1,21 +1,14 @@
 [
   {
     "_id": "see_2081_nepali_practice_5_generated",
-    "title": "SEE 2081 Nepali Practice Test 5",
     "titleNepali": "SEE २०८१ नेपाली अभ्यास परीक्षा ५",
+    "titleEnglish": "SEE 2081 Nepali Practice Test 5",
     "subject": "nepali",
     "year": 2081,
     "totalMarks": 75,
     "duration": 180,
     "instructionsNepali": "दिइएका निर्देशनका आधारमा आफ्नै शैलीमा सिर्जनात्मक उत्तर दिनुहोस् :",
-    "instructionsEnglish": "Give creative answers in your own style based on the given instructions:",
-    "isActive": true,
-    "createdAt": {
-      "$date": "2025-09-02T09:00:00.000Z"
-    },
-    "updatedAt": {
-      "$date": "2025-09-02T09:00:00.000Z"
-    }
+    "instructionsEnglish": "Give creative answers in your own style based on the given instructions:"
   },
   {
     "_id": {
@@ -84,7 +77,9 @@
             }
           ]
         },
-        "correctAnswer": [
+        "explanationNepali": "यी शब्दहरू पाठ्यपुस्तकको पाठ ७ 'शत्रु' र पाठ ६ 'अधिकार ठुलो कि कर्तव्य ठुलो ?' बाट लिइएका हुन्। विद्यार्थीको शब्द ज्ञान परीक्षण गर्न यो प्रश्न महत्त्वपूर्ण छ।\nउद्धरण: कक्षा १०, पाठ ७; पाठ ६, पृष्ठ ७१।",
+        "explanationEnglish": "These words are taken from Lesson 7 'Shatru' and Lesson 6 'Adhikar Thulo Ki Kartavya Thulo?' of the textbook. This question is important for testing the student's word knowledge.\nCitation: Class 10, Lesson 7; Lesson 6, Page 71.",
+        "correctAnswerEnglish": [
           {
             "A": "i",
             "B": "c"
@@ -102,8 +97,24 @@
             "B": "d"
           }
         ],
-        "explanationNepali": "यी शब्दहरू पाठ्यपुस्तकको पाठ ७ 'शत्रु' र पाठ ६ 'अधिकार ठुलो कि कर्तव्य ठुलो ?' बाट लिइएका हुन्। विद्यार्थीको शब्द ज्ञान परीक्षण गर्न यो प्रश्न महत्त्वपूर्ण छ।\nउद्धरण: कक्षा १०, पाठ ७; पाठ ६, पृष्ठ ७१।",
-        "explanationEnglish": "These words are taken from Lesson 7 'Shatru' and Lesson 6 'Adhikar Thulo Ki Kartavya Thulo?' of the textbook. This question is important for testing the student's word knowledge.\nCitation: Class 10, Lesson 7; Lesson 6, Page 71."
+        "correctAnswerNepali": [
+          {
+            "A": "अ",
+            "B": "ग"
+          },
+          {
+            "A": "आ",
+            "B": "क"
+          },
+          {
+            "A": "इ",
+            "B": "ख"
+          },
+          {
+            "A": "ई",
+            "B": "घ"
+          }
+        ]
       },
       {
         "questionNumber": 2,
@@ -201,37 +212,25 @@
             "choices": [
               {
                 "id": "अ",
-                "optionsNepali": [
+                "correctAnswerNepali": "सिद्धान्त",
+                "correctAnswerEnglish": "Principle",
+                "options": [
                   "सिद्धान्त",
                   "सिद्दान्त",
                   "सिद्धान्त",
                   "सिदान्त"
-                ],
-                "optionsEnglish": [
-                  "Principle",
-                  "Principle (Incorrect Spelling)",
-                  "Principle",
-                  "Principle (Incorrect Spelling)"
-                ],
-                "correctAnswerNepali": "सिद्धान्त",
-                "correctAnswerEnglish": "Principle"
+                ]
               },
               {
                 "id": "आ",
-                "optionsNepali": [
+                "correctAnswerNepali": "प्रतियोगिता",
+                "correctAnswerEnglish": "Competition",
+                "options": [
                   "प्रतियोगिता",
                   "प्रतियोगीता",
                   "प्रतियोगिता",
                   "प्रतियोगिता"
-                ],
-                "optionsEnglish": [
-                  "Competition",
-                  "Competition (Incorrect Spelling)",
-                  "Competition",
-                  "Competition"
-                ],
-                "correctAnswerNepali": "प्रतियोगिता",
-                "correctAnswerEnglish": "Competition"
+                ]
               }
             ],
             "explanationNepali": "सही वर्णविन्यास क्रमशः 'सिद्धान्त' र 'प्रतियोगिता' हुन्।\nउद्धरण: कक्षा १०, पाठ ७; पाठ ६, पृष्ठ ६८।",
@@ -612,41 +611,7 @@
         "titleNepali": "कुनै एक प्रश्नको उत्तर दिनुहोस् :",
         "titleEnglish": "Answer any one question:",
         "marks": 4,
-        "optionsNepali": [
-          {
-            "id": "क",
-            "titleNepali": "दिइएका बुँदाका आधारमा कथा तयार पारी शीर्षकसमेत दिनुहोस् :",
-            "titleEnglish": "Prepare a story based on the given points and also give a title:",
-            "cluesNepali": [
-              "एउटा गाउँमा एकजना लोभी व्यापारी हुनु",
-              "सधैँ सामानमा मिसावट गरेर बेच्नु",
-              "एकदिन गाउँमा ठुलो भोज हुनु",
-              "व्यापारीले भोजका लागि घिउ बेच्नु",
-              "घिउमा वनस्पती तेल मिसाएर बेच्नु",
-              "भोज खाएका सबैजना बिरामी पर्नु",
-              "गाउँलेहरूले व्यापारीलाई समातेर सजाय दिनु",
-              "व्यापारीले आफ्नो गल्ती स्वीकार गरी माफी माग्नु",
-              "लोभको फल नराम्रो हुने ज्ञान पाउनु"
-            ],
-            "cluesEnglish": [
-              "A greedy merchant lived in a village",
-              "Always selling adulterated goods",
-              "One day there was a big feast in the village",
-              "The merchant sold ghee for the feast",
-              "Selling ghee mixed with vegetable oil",
-              "Everyone who ate the feast fell ill",
-              "The villagers caught the merchant and punished him",
-              "The merchant admitted his mistake and apologized",
-              "Realizing that the fruit of greed is bad"
-            ]
-          },
-          {
-            "id": "ख",
-            "titleNepali": "'वन्यजन्तु संरक्षण' शीर्षकमा दुई जना साथीबिच भएको संवाद तयार पार्नुहोस्।",
-            "titleEnglish": "Prepare a dialogue between two friends on the topic 'Wildlife Conservation'."
-          }
-        ],
-        "optionsEnglish": [
+        "options": [
           {
             "id": "क",
             "titleNepali": "दिइएका बुँदाका आधारमा कथा तयार पारी शीर्षकसमेत दिनुहोस् :",
@@ -687,19 +652,7 @@
         "titleNepali": "कुनै एक प्रश्नको उत्तर दिनुहोस् :",
         "titleEnglish": "Answer any one question:",
         "marks": 4,
-        "optionsNepali": [
-          {
-            "id": "क",
-            "titleNepali": "आफ्नो विद्यालयको सरसफाइका लागि आवश्यक सामग्री उपलब्ध गराइदिन अनुरोध गर्दै नगरपालिकाका प्रमुखलाई निवेदन लेख्नुहोस्।",
-            "titleEnglish": "Write an application to the Mayor of the Municipality requesting to provide necessary materials for the cleaning of your school."
-          },
-          {
-            "id": "ख",
-            "titleNepali": "आफ्नो विद्यालयमा आयोजित रक्तदान कार्यक्रमको विषयमा एक समाचारको नमुना तयार पार्नुहोस्।",
-            "titleEnglish": "Prepare a sample news report on the blood donation program organized in your school."
-          }
-        ],
-        "optionsEnglish": [
+        "options": [
           {
             "id": "क",
             "titleNepali": "आफ्नो विद्यालयको सरसफाइका लागि आवश्यक सामग्री उपलब्ध गराइदिन अनुरोध गर्दै नगरपालिकाका प्रमुखलाई निवेदन लेख्नुहोस्।",
@@ -720,11 +673,17 @@
         "marks": 2,
         "passageNepali": "भाषाले भाषिक समुदायको संस्कृति र जीवनपद्धतिलाई प्रतिबिम्बित गर्छ। भाषाको मुख्य काम समाजको तथा व्यक्तिको आवश्यकता पूर्ति गर्नु हो। नेपाली भाषामा प्रखर अभिव्यक्ति क्षमता छ अनि अत्याधुनिक आविष्कारका साथै विविध भाषामा प्रयोग भइरहेका नयाँ नयाँ शब्दलाई आत्मसात् गर्ने र सहज रूपमा पचाउने क्षमता पनि छ। देशको भाषिक मौलिकताको रक्षा राष्ट्रको अस्मितासँग नै गाँसिएको हुन्छ। मौलिक नेपाली शब्दले भाव सम्प्रेषण गर्न सक्ने अवस्था रहेसम्म सजिलाका लागि अरू भाषाका शब्द प्रयोग नगर्ने प्रतिबद्धता यसका वक्तामा रहनुपर्छ।",
         "passageEnglish": "Language reflects the culture and lifestyle of the linguistic community. The main function of language is to fulfill the needs of society and the individual. Nepali language has sharp expression capacity and also the capacity to assimilate and digest new words being used in diverse languages along with state-of-the-art inventions. The protection of the country's linguistic originality is linked with the national identity itself. As long as original Nepali words can communicate the meaning, the commitment not to use words from other languages for ease should remain in its speakers.",
-        "correctAnswer": [
+        "correctAnswerNepali": [
           "भाषाले संस्कृति र जीवनपद्धतिलाई प्रतिबिम्बित गर्नु।",
           "भाषाको मुख्य काम समाज र व्यक्तिको आवश्यकता पूर्ति गर्नु हुनु।",
           "नेपाली भाषामा नयाँ शब्दलाई आत्मसात् गर्ने क्षमता हुनु।",
           "राष्ट्रको अस्मिताका लागि भाषिक मौलिकताको रक्षा गर्नु आवश्यक हुनु।"
+        ],
+        "correctAnswerEnglish": [
+          "Language reflecting culture and way of life.",
+          "The main function of language being to fulfill the needs of society and individuals.",
+          "Nepali language having the ability to assimilate new words.",
+          "Protecting linguistic originality being necessary for the nation's identity."
         ]
       },
       {
@@ -806,28 +765,18 @@
         "titleNepali": "कुनै एक उद्धरणको व्याख्या गर्नुहोस् :",
         "titleEnglish": "Explain any one of the quotes:",
         "marks": 4,
-        "optionsNepali": [
-          {
-            "id": "क",
-            "quote": "दुनियाँमा कोही पनि मित्र हुँदैनन् सबै शत्रु, सबै बैरी नै हुन्छन्।"
-          },
-          {
-            "id": "ख",
-            "quote": "भएमा उच्च सङ्कल्प छैन केही असम्भव।"
-          }
-        ],
-        "optionsEnglish": [
-          {
-            "id": "क",
-            "quote": "दुनियाँमा कोही पनि मित्र हुँदैनन् सबै शत्रु, सबै बैरी नै हुन्छन्।"
-          },
-          {
-            "id": "ख",
-            "quote": "भएमा उच्च सङ्कल्प छैन केही असम्भव।"
-          }
-        ],
         "sampleAnswerId": "क",
-        "sampleAnswer": "प्रस्तुत कथांश विश्वेश्वरप्रसाद कोइरालाद्वारा लिखित 'शत्रु' कथाबाट लिइएको हो। यस भनाइले मानिसको मनमा शत्रुताको भावना कसरी व्यापक हुँदै जान्छ भन्ने मनोवैज्ञानिक यथार्थलाई देखाउँछ। कथाको पात्र कृष्ण राय, जो आफूलाई शत्रुविहीन ठान्थे, उनीमाथि आक्रमण भएपछि उनले आफ्ना विगतका हरेक सामान्य व्यवहार र सम्बन्धलाई शङ्काको दृष्टिले हेर्न थाल्छन्। उनले गरेको सामान्य हप्की, निष्पक्ष देखिने मध्यस्थता वा नचाहिँदो उपदेशले पनि कसै न कसैको मन दुखाएको हुन सक्ने कुराले उनलाई पोल्छ। यही मानसिक द्वन्द्वको उत्कर्षमा पुगेपछि उनलाई संसारमा कोही पनि मित्र नभएको र हरेक व्यक्ति कुनै न कुनै कारणले शत्रु बन्न सक्ने रहेछ भन्ने ज्ञान हुन्छ। यसले मानिसको मनभित्र लुकेको अविश्वास र डरलाई प्रकट गर्दछ।"
+        "sampleAnswer": "प्रस्तुत कथांश विश्वेश्वरप्रसाद कोइरालाद्वारा लिखित 'शत्रु' कथाबाट लिइएको हो। यस भनाइले मानिसको मनमा शत्रुताको भावना कसरी व्यापक हुँदै जान्छ भन्ने मनोवैज्ञानिक यथार्थलाई देखाउँछ। कथाको पात्र कृष्ण राय, जो आफूलाई शत्रुविहीन ठान्थे, उनीमाथि आक्रमण भएपछि उनले आफ्ना विगतका हरेक सामान्य व्यवहार र सम्बन्धलाई शङ्काको दृष्टिले हेर्न थाल्छन्। उनले गरेको सामान्य हप्की, निष्पक्ष देखिने मध्यस्थता वा नचाहिँदो उपदेशले पनि कसै न कसैको मन दुखाएको हुन सक्ने कुराले उनलाई पोल्छ। यही मानसिक द्वन्द्वको उत्कर्षमा पुगेपछि उनलाई संसारमा कोही पनि मित्र नभएको र हरेक व्यक्ति कुनै न कुनै कारणले शत्रु बन्न सक्ने रहेछ भन्ने ज्ञान हुन्छ। यसले मानिसको मनभित्र लुकेको अविश्वास र डरलाई प्रकट गर्दछ।",
+        "options": [
+          {
+            "id": "क",
+            "quote": "दुनियाँमा कोही पनि मित्र हुँदैनन् सबै शत्रु, सबै बैरी नै हुन्छन्।"
+          },
+          {
+            "id": "ख",
+            "quote": "भएमा उच्च सङ्कल्प छैन केही असम्भव।"
+          }
+        ]
       },
       {
         "questionNumber": 19,
@@ -835,23 +784,7 @@
         "titleNepali": "कुनै एक प्रश्नको समीक्षात्मक उत्तर दिनुहोस् :",
         "titleEnglish": "Give a critical answer to any one question:",
         "marks": 7,
-        "optionsNepali": [
-          {
-            "id": "क",
-            "passageNepali": "अधिकार नदिई कर्तव्य मात्र पूरा गर् भन्नु बिना हतियार लडाइँमा पठाउनु जस्तै हो। खुट्टामा नेल लगाएर हिँड् भन्नु जस्तै हो। हातमा हत्कडी लगाएर काम गर् भन्नु जस्तै हो। तसर्थ अधिकारबिना कर्तव्य पूरा गर्न कदापि सकिँदैन। ... त्यसैले अधिकार जन्मसिद्ध हुन्छ भने कर्तव्य पछि मात्र जोडिने विषय भएकाले कर्तव्यभन्दा अधिकारको महत्ता स्वतः सिद्ध हुन्छ।",
-            "passageEnglish": "Asking to fulfill duty without giving rights is like sending to war without weapons. It is like asking to walk with shackles on legs. It is like asking to work with handcuffs on hands. Therefore, duty can never be fulfilled without rights. ... Therefore, since rights are birthrights and duty is a subject added only later, the importance of rights over duty is self-evident.",
-            "questionNepali": "'अधिकार ठुलो कि कर्तव्य ठुलो?' वादविवाद पाठका आधारमा अधिकारको महत्त्वलाई कसरी पुष्टि गरिएको छ? समीक्षा गर्नुहोस्।",
-            "questionEnglish": "How is the importance of rights confirmed based on the debate text 'Are Rights Bigger or Duties Bigger?' Review it."
-          },
-          {
-            "id": "ख",
-            "passageNepali": "लौ हेर त, १२ पो बजिसकेछ! (घडी हेर्दै) अब त निदाउनुपर्यो। 'हुने हार दैव नटार' भन्छन्। पाँच लाख डुब्यो भनेर अब मैले त्यसैमा चिन्ता लिएर मेरो ज्यान सुकाउनुभन्दा आत्मविश्वासका ऊर्जाले ज्यान बचाउनतिर लाग्नुपर्छ। दुई वर्ष अरबको खाडीमा बसेर कमाएको धन गोलखाडीमा गयो त के गर्ने? आफ्नै बुद्धिले गयो। ... अब अरू कोही पनि नफसुन् र नडुबुन् भन्नका लागि अब साइबर अपराध शाखामा जान्छु।",
-            "passageEnglish": "Look, it's already 12 o'clock! (Looking at the watch) Now I must sleep. They say 'what is destined cannot be avoided'. Rather than drying up my life worrying about the lost five lakhs, I should focus on saving my life with the energy of self-confidence. What to do if the money earned by staying in the Gulf for two years went down the drain? It went due to my own intellect. ... Now I will go to the Cyber Crime Branch so that no one else gets trapped and sinks.",
-            "questionNepali": "'यस्तो कहिल्यै नहोस्' मनोवादमा पात्र शुकमानले भोगेको पीडा र त्यसबाट उत्पन्न सामाजिक चेतनाको समीक्षा गर्नुहोस्।",
-            "questionEnglish": "Review the pain suffered by the character Shukaman in the monologue 'May this never happen' and the social consciousness arising from it."
-          }
-        ],
-        "optionsEnglish": [
+        "options": [
           {
             "id": "क",
             "passageNepali": "अधिकार नदिई कर्तव्य मात्र पूरा गर् भन्नु बिना हतियार लडाइँमा पठाउनु जस्तै हो। खुट्टामा नेल लगाएर हिँड् भन्नु जस्तै हो। हातमा हत्कडी लगाएर काम गर् भन्नु जस्तै हो। तसर्थ अधिकारबिना कर्तव्य पूरा गर्न कदापि सकिँदैन। ... त्यसैले अधिकार जन्मसिद्ध हुन्छ भने कर्तव्य पछि मात्र जोडिने विषय भएकाले कर्तव्यभन्दा अधिकारको महत्ता स्वतः सिद्ध हुन्छ।",

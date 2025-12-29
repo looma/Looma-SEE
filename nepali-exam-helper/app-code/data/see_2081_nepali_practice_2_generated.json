@@ -1,21 +1,14 @@
 [
   {
     "_id": "see_2081_nepali_practice_2_generated",
-    "title": "SEE 2081 Nepali Practice Test 2",
     "titleNepali": "SEE २०८१ नेपाली अभ्यास परीक्षा २",
+    "titleEnglish": "SEE 2081 Nepali Practice Test 2",
     "subject": "nepali",
     "year": 2081,
     "totalMarks": 75,
     "duration": 180,
     "instructionsNepali": "दिइएका निर्देशनका आधारमा आफ्नै शैलीमा सिर्जनात्मक उत्तर दिनुहोस् :",
-    "instructionsEnglish": "Give creative answers in your own style based on the given instructions:",
-    "isActive": true,
-    "createdAt": {
-      "$date": "2025-08-31T18:00:00.000Z"
-    },
-    "updatedAt": {
-      "$date": "2025-08-31T18:00:00.000Z"
-    }
+    "instructionsEnglish": "Give creative answers in your own style based on the given instructions:"
   },
   {
     "_id": {
@@ -84,7 +77,9 @@
             }
           ]
         },
-        "correctAnswer": [
+        "explanationNepali": "यी शब्दहरू पाठ्यपुस्तकका विभिन्न पाठहरू (चिकित्सा विज्ञान, घरझगडा, लक्ष्मीप्रसाद देवकोटा) बाट लिइएका हुन्। विद्यार्थीको शब्द ज्ञान परीक्षण गर्न यो प्रश्न महत्त्वपूर्ण छ।\nउद्धरण: कक्षा १०, पाठ २; पाठ ३, पृष्ठ ३१; पाठ ५, पृष्ठ ५१।",
+        "explanationEnglish": "These words are taken from various lessons of the textbook (Medical Science, Gharjhagda, Laxmi Prasad Devkota). This question is important for testing the student's word knowledge.\nCitation: Class 10, Lesson 2; Lesson 3, Page 31; Lesson 5, Page 51.",
+        "correctAnswerEnglish": [
           {
             "A": "i",
             "B": "b"
@@ -102,8 +97,24 @@
             "B": "a"
           }
         ],
-        "explanationNepali": "यी शब्दहरू पाठ्यपुस्तकका विभिन्न पाठहरू (चिकित्सा विज्ञान, घरझगडा, लक्ष्मीप्रसाद देवकोटा) बाट लिइएका हुन्। विद्यार्थीको शब्द ज्ञान परीक्षण गर्न यो प्रश्न महत्त्वपूर्ण छ।\nउद्धरण: कक्षा १०, पाठ २; पाठ ३, पृष्ठ ३१; पाठ ५, पृष्ठ ५१।",
-        "explanationEnglish": "These words are taken from various lessons of the textbook (Medical Science, Gharjhagda, Laxmi Prasad Devkota). This question is important for testing the student's word knowledge.\nCitation: Class 10, Lesson 2; Lesson 3, Page 31; Lesson 5, Page 51."
+        "correctAnswerNepali": [
+          {
+            "A": "अ",
+            "B": "ख"
+          },
+          {
+            "A": "आ",
+            "B": "घ"
+          },
+          {
+            "A": "इ",
+            "B": "ग"
+          },
+          {
+            "A": "ई",
+            "B": "क"
+          }
+        ]
       },
       {
         "questionNumber": 2,
@@ -201,37 +212,25 @@
             "choices": [
               {
                 "id": "अ",
-                "optionsNepali": [
+                "correctAnswerNepali": "व्यक्तित्व",
+                "correctAnswerEnglish": "Personality",
+                "options": [
                   "ब्यक्तित्व",
                   "व्यक्तित्व",
                   "व्यक्त्तित्व",
                   "बेक्तित्व"
-                ],
-                "optionsEnglish": [
-                  "Personality (Incorrect Spelling)",
-                  "Personality",
-                  "Personality (Incorrect Spelling)",
-                  "Personality (Incorrect Spelling)"
-                ],
-                "correctAnswerNepali": "व्यक्तित्व",
-                "correctAnswerEnglish": "Personality"
+                ]
               },
               {
                 "id": "आ",
-                "optionsNepali": [
+                "correctAnswerNepali": "षड्यन्त्र",
+                "correctAnswerEnglish": "Conspiracy",
+                "options": [
                   "षडयन्त्र",
                   "सड्यन्त्र",
                   "सडयन्त्र",
                   "षड्यन्त्र"
-                ],
-                "optionsEnglish": [
-                  "Conspiracy (Incorrect Spelling)",
-                  "Conspiracy (Incorrect Spelling)",
-                  "Conspiracy (Incorrect Spelling)",
-                  "Conspiracy"
-                ],
-                "correctAnswerNepali": "षड्यन्त्र",
-                "correctAnswerEnglish": "Conspiracy"
+                ]
               }
             ],
             "explanationNepali": "सही वर्णविन्यास क्रमशः 'व्यक्तित्व' र 'षड्यन्त्र' हुन्।\nउद्धरण: कक्षा १०, पाठ २; पाठ ५, पृष्ठ ५१।",
@@ -600,41 +599,7 @@
         "titleNepali": "कुनै एक प्रश्नको उत्तर दिनुहोस् :",
         "titleEnglish": "Answer any one question:",
         "marks": 4,
-        "optionsNepali": [
-          {
-            "id": "क",
-            "titleNepali": "दिइएका बुँदाका आधारमा कथा तयार पारी शीर्षकसमेत दिनुहोस् :",
-            "titleEnglish": "Prepare a story based on the given points and also give a title:",
-            "cluesNepali": [
-              "एउटा गाउँमा एकजना अल्छी किसान हुनु",
-              "हरेक दिन चौतारीमा बसेर गफ गरेर दिन बिताउनु",
-              "एकदिन गाउँमा एकजना साधु आउनु",
-              "किसानले साधुसँग सजिलै धनी बन्ने उपाय सोध्नु",
-              "साधुले खेतको बीचमा सुनको घैँटो गाडिएको र मिहिनेत गरेमा मात्र भेटिने कुरा बताउनु",
-              "किसानले दिनरात नभनी खेत खन्नु तर घैँटो नभेट्नु",
-              "श्रीमतीको सल्लाहमा खेतमा मकै छर्नु",
-              "मकैको राम्रो उत्पादन हुनु र धेरै पैसा कमाउनु",
-              "मिहिनेत नै सुनको घैँटो रहेछ भन्ने ज्ञान प्राप्त हुनु"
-            ],
-            "cluesEnglish": [
-              "A lazy farmer lived in a village",
-              "Spending time gossiping sitting on Chautari every day",
-              "One day a sage came to the village",
-              "The farmer asked the sage for a way to become rich easily",
-              "The sage told that a pot of gold is buried in the middle of the field and can be found only by working hard",
-              "The farmer dug the field day and night but did not find the pot",
-              "Sowing maize in the field on the advice of his wife",
-              "Good maize production and earning a lot of money",
-              "Realizing that hard work itself is the pot of gold"
-            ]
-          },
-          {
-            "id": "ख",
-            "titleNepali": "'परिश्रमको फल मिठो हुन्छ' शीर्षकमा शिक्षक र विद्यार्थीबिच भएको संवाद तयार पार्नुहोस्।",
-            "titleEnglish": "Prepare a dialogue between a teacher and a student on the topic 'The Fruit of Hard Work is Sweet'."
-          }
-        ],
-        "optionsEnglish": [
+        "options": [
           {
             "id": "क",
             "titleNepali": "दिइएका बुँदाका आधारमा कथा तयार पारी शीर्षकसमेत दिनुहोस् :",
@@ -675,19 +640,7 @@
         "titleNepali": "कुनै एक प्रश्नको उत्तर दिनुहोस् :",
         "titleEnglish": "Answer any one question:",
         "marks": 4,
-        "optionsNepali": [
-          {
-            "id": "क",
-            "titleNepali": "आफ्नो भाइको व्रतबन्धको अवसरमा आफन्तलाई निमन्त्रणा गर्न निमन्त्रणा पत्रको नमुना तयार पार्नुहोस्।",
-            "titleEnglish": "Prepare a sample invitation card to invite relatives on the occasion of your brother's Bratabandha."
-          },
-          {
-            "id": "ख",
-            "titleNepali": "आफ्नो विद्यालयले आयोजना गरेको विज्ञान प्रदर्शनीको विषयमा एउटा समाचारको नमुना तयार पार्नुहोस्।",
-            "titleEnglish": "Prepare a sample news report on the science exhibition organized by your school."
-          }
-        ],
-        "optionsEnglish": [
+        "options": [
           {
             "id": "क",
             "titleNepali": "आफ्नो भाइको व्रतबन्धको अवसरमा आफन्तलाई निमन्त्रणा गर्न निमन्त्रणा पत्रको नमुना तयार पार्नुहोस्।",
@@ -708,11 +661,17 @@
         "marks": 2,
         "passageNepali": "देवकोटाले जे लेखे र जुन जुन जिम्मेवारी पाए, प्रायः ती सबैमा उनले राष्ट्रको हितमा काम गरेर आफ्नो अब्बलता प्रदर्शन गरे। देवकोटा आफूले हात हालेका हरेक क्षेत्रमा एक असल व्यक्तित्वका रूपमा चिनिए। शिक्षामन्त्री हुँदा नेपाली भाषालाई पठनपाठनमा अनिवार्य विषयका रूपमा लागु गर्ने गराउने कार्यमा उनैको विशेष पहलकदमी रह्यो। तत्कालीन नेपाल राजकीय प्रज्ञा प्रतिष्ठानको स्थापनामा सक्रिय संलग्न भएर संस्थागत रूपमा साहित्य र संस्कृतिको विकासको ढोका खोल्ने कार्यमा उनको योगदान चिरस्मरणीय रहेकै छ।",
         "passageEnglish": "Whatever Devkota wrote and whatever responsibilities he got, he demonstrated his excellence by working in the interest of the nation in almost all of them. Devkota was known as a good personality in every field he ventured into. When he was the Education Minister, his special initiative remained in implementing Nepali language as a compulsory subject in teaching and learning. By being actively involved in the establishment of the then Royal Nepal Academy, his contribution to opening the door for the development of literature and culture institutionally remains memorable.",
-        "correctAnswer": [
+        "correctAnswerNepali": [
           "देवकोटाले पाएको हरेक जिम्मेवारीमा राष्ट्रहितमा काम गरी अब्बलता देखाउनु।",
           "एक असल व्यक्तित्वका रूपमा चिनिनु।",
           "शिक्षामन्त्री हुँदा नेपाली भाषालाई अनिवार्य विषय बनाउन पहल गर्नु।",
           "प्रज्ञा प्रतिष्ठानको स्थापनामा सक्रिय भई साहित्य र संस्कृतिको विकासमा योगदान दिनु।"
+        ],
+        "correctAnswerEnglish": [
+          "Devkota showing excellence by working for national interest in every responsibility he got.",
+          "Being known as a good personality.",
+          "Taking initiative to make Nepali language a compulsory subject while being the Education Minister.",
+          "Contributing to the development of literature and culture by being active in the establishment of Pragya Pratishthan."
         ]
       },
       {
@@ -794,17 +753,7 @@
         "titleNepali": "कुनै एक उद्धरणको व्याख्या गर्नुहोस् :",
         "titleEnglish": "Explain any one of the quotes:",
         "marks": 4,
-        "optionsNepali": [
-          {
-            "id": "क",
-            "quote": "कर्ममा छ भने शक्ति जङ्गलै बन्छ नन्दन।"
-          },
-          {
-            "id": "ख",
-            "quote": "कुकुर अज्ञानी पशु हुनाले बोलाएपछि मात्र जान्छ, मानिस चाहिँ ज्ञानवान् हुनाले बखतमौका विचार गरेर आफैँ पनि जानुपर्छ।"
-          }
-        ],
-        "optionsEnglish": [
+        "options": [
           {
             "id": "क",
             "quote": "कर्ममा छ भने शक्ति जङ्गलै बन्छ नन्दन।"
@@ -821,23 +770,7 @@
         "titleNepali": "कुनै एक प्रश्नको समीक्षात्मक उत्तर दिनुहोस् :",
         "titleEnglish": "Give a critical answer to any one question:",
         "marks": 7,
-        "optionsNepali": [
-          {
-            "id": "क",
-            "passageNepali": "देवकोटाको महासागर जस्तो प्रतिभा राणाहरूको निरङ्कुशताको साँघुरो सुरुङभित्र कसरी बग्न सक्थ्यो र? मुलुकमा जति वेला प्रजातन्त्र प्राप्तिका लागि क्रान्तिको आगो सल्कँदै थियो, त्यति वेला उनले पनि विद्रोहको बाटो समाते। उनी वि.सं. २००४ मा प्रजातान्त्रिक आन्दोलनमा संलग्न भए। उनी घरपरिवार कसैलाई थाहा नदिई बनारसतर्फ प्रवासिए। त्यहाँबाट निस्किने 'युगवाणी' पत्रिकामार्फत निरङ्कुशता विरुद्ध युगले चाहेको विद्रोहको वाणी फुके।",
-            "passageEnglish": "How could Devkota's ocean-like talent flow inside the narrow tunnel of Rana tyranny? When the fire of revolution was igniting in the country for obtaining democracy, he also took the path of rebellion. He got involved in the democratic movement in 2004 BS. He migrated to Banaras without informing anyone in his family. Through the 'Yugvani' newspaper published from there, he blew the voice of rebellion desired by the era against tyranny.",
-            "questionNepali": "लक्ष्मीप्रसाद देवकोटाको साहित्यिक व्यक्तित्वमा रहेको क्रान्तिकारी चेतनालाई माथिको जीवनीको अंशका आधारमा समीक्षा गर्नुहोस्।",
-            "questionEnglish": "Review the revolutionary consciousness in the literary personality of Laxmi Prasad Devkota based on the excerpt of the biography above."
-          },
-          {
-            "id": "ख",
-            "passageNepali": "अधिकार नदिई कर्तव्य मात्र पूरा गर् भन्नु बिना हतियार लडाइँमा पठाउनु जस्तै हो। खुट्टामा नेल लगाएर हिँड् भन्नु जस्तै हो। हातमा हत्कडी लगाएर काम गर् भन्नु जस्तै हो। तसर्थ अधिकारबिना कर्तव्य पूरा गर्न कदापि सकिँदैन। ... त्यसैले अधिकार जन्मसिद्ध हुन्छ भने कर्तव्य पछि मात्र जोडिने विषय भएकाले कर्तव्यभन्दा अधिकारको महत्ता स्वतः सिद्ध हुन्छ।",
-            "passageEnglish": "Asking to fulfill duty without giving rights is like sending to war without weapons. It is like asking to walk with shackles on legs. It is like asking to work with handcuffs on hands. Therefore, duty can never be fulfilled without rights. ... Therefore, since rights are birthrights and duty is a subject added only later, the importance of rights over duty is self-evident.",
-            "questionNepali": "'अधिकार ठुलो कि कर्तव्य ठुलो?' वादविवाद पाठका आधारमा अधिकारको महत्त्वलाई कसरी पुष्टि गरिएको छ? समीक्षा गर्नुहोस्।",
-            "questionEnglish": "How is the importance of rights confirmed based on the debate text 'Are Rights Bigger or Duties Bigger?' Review it."
-          }
-        ],
-        "optionsEnglish": [
+        "options": [
           {
             "id": "क",
             "passageNepali": "देवकोटाको महासागर जस्तो प्रतिभा राणाहरूको निरङ्कुशताको साँघुरो सुरुङभित्र कसरी बग्न सक्थ्यो र? मुलुकमा जति वेला प्रजातन्त्र प्राप्तिका लागि क्रान्तिको आगो सल्कँदै थियो, त्यति वेला उनले पनि विद्रोहको बाटो समाते। उनी वि.सं. २००४ मा प्रजातान्त्रिक आन्दोलनमा संलग्न भए। उनी घरपरिवार कसैलाई थाहा नदिई बनारसतर्फ प्रवासिए। त्यहाँबाट निस्किने 'युगवाणी' पत्रिकामार्फत निरङ्कुशता विरुद्ध युगले चाहेको विद्रोहको वाणी फुके।",

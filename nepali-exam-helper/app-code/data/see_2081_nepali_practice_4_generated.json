@@ -1,21 +1,14 @@
 [
   {
     "_id": "see_2081_nepali_practice_4_generated",
-    "title": "SEE 2081 Nepali Practice Test 4",
     "titleNepali": "SEE २०८१ नेपाली अभ्यास परीक्षा ४",
+    "titleEnglish": "SEE 2081 Nepali Practice Test 4",
     "subject": "nepali",
     "year": 2081,
     "totalMarks": 75,
     "duration": 180,
     "instructionsNepali": "दिइएका निर्देशनका आधारमा आफ्नै शैलीमा सिर्जनात्मक उत्तर दिनुहोस् :",
-    "instructionsEnglish": "Give creative answers in your own style based on the given instructions:",
-    "isActive": true,
-    "createdAt": {
-      "$date": "2025-09-01T11:00:00.000Z"
-    },
-    "updatedAt": {
-      "$date": "2025-09-01T11:00:00.000Z"
-    }
+    "instructionsEnglish": "Give creative answers in your own style based on the given instructions:"
   },
   {
     "_id": {
@@ -84,7 +77,9 @@
             }
           ]
         },
-        "correctAnswer": [
+        "explanationNepali": "यी शब्दहरू पाठ्यपुस्तकको पाठ ९ ('मेरो देशको शिक्षा') र पाठ १२ ('पाब्लो पिकासो') बाट लिइएका हुन्। विद्यार्थीको शब्दभण्डारको परीक्षण गर्नु यसको उद्देश्य हो।\nउद्धरण: कक्षा १०, पाठ ९; पाठ १२, पृष्ठ १६६।",
+        "explanationEnglish": "These words are taken from Lesson 9 ('Mero Deshko Shiksha') and Lesson 12 ('Pablo Picasso') of the textbook. The purpose is to test the student's vocabulary.\nCitation: Class 10, Lesson 9; Lesson 12, Page 166.",
+        "correctAnswerEnglish": [
           {
             "A": "i",
             "B": "d"
@@ -102,8 +97,24 @@
             "B": "c"
           }
         ],
-        "explanationNepali": "यी शब्दहरू पाठ्यपुस्तकको पाठ ९ ('मेरो देशको शिक्षा') र पाठ १२ ('पाब्लो पिकासो') बाट लिइएका हुन्। विद्यार्थीको शब्दभण्डारको परीक्षण गर्नु यसको उद्देश्य हो।\nउद्धरण: कक्षा १०, पाठ ९; पाठ १२, पृष्ठ १६६।",
-        "explanationEnglish": "These words are taken from Lesson 9 ('Mero Deshko Shiksha') and Lesson 12 ('Pablo Picasso') of the textbook. The purpose is to test the student's vocabulary.\nCitation: Class 10, Lesson 9; Lesson 12, Page 166."
+        "correctAnswerNepali": [
+          {
+            "A": "अ",
+            "B": "घ"
+          },
+          {
+            "A": "आ",
+            "B": "ख"
+          },
+          {
+            "A": "इ",
+            "B": "क"
+          },
+          {
+            "A": "ई",
+            "B": "ग"
+          }
+        ]
       },
       {
         "questionNumber": 2,
@@ -201,37 +212,25 @@
             "choices": [
               {
                 "id": "अ",
-                "optionsNepali": [
+                "correctAnswerNepali": "विश्वविद्यालय",
+                "correctAnswerEnglish": "University",
+                "options": [
                   "विश्वबिद्यालय",
                   "विश्वविद्यालय",
                   "विश्वविध्यालय",
                   "बिस्वबिध्यालय"
-                ],
-                "optionsEnglish": [
-                  "University (Incorrect Spelling)",
-                  "University",
-                  "University (Incorrect Spelling)",
-                  "University (Incorrect Spelling)"
-                ],
-                "correctAnswerNepali": "विश्वविद्यालय",
-                "correctAnswerEnglish": "University"
+                ]
               },
               {
                 "id": "आ",
-                "optionsNepali": [
+                "correctAnswerNepali": "स्वच्छन्दतावादी",
+                "correctAnswerEnglish": "Romanticist",
+                "options": [
                   "स्वछन्दतावादी",
                   "स्वच्छन्दतावादि",
                   "स्वच्छन्दतावादी",
                   "स्वछन्दतावादि"
-                ],
-                "optionsEnglish": [
-                  "Romanticist (Incorrect Spelling)",
-                  "Romanticist (Incorrect Spelling)",
-                  "Romanticist",
-                  "Romanticist (Incorrect Spelling)"
-                ],
-                "correctAnswerNepali": "स्वच्छन्दतावादी",
-                "correctAnswerEnglish": "Romanticist"
+                ]
               }
             ],
             "explanationNepali": "सही वर्णविन्यास क्रमशः 'विश्वविद्यालय' र 'स्वच्छन्दतावादी' हुन्।\nउद्धरण: कक्षा १०, पाठ ५।",
@@ -602,19 +601,7 @@
         "titleNepali": "कुनै एक प्रश्नको उत्तर दिनुहोस् :",
         "titleEnglish": "Answer any one question:",
         "marks": 4,
-        "optionsNepali": [
-          {
-            "id": "क",
-            "titleNepali": "'वातावरण संरक्षणमा विद्यार्थीको भूमिका' शीर्षकमा दुई जना साथीबिच भएको संवाद तयार पार्नुहोस्।",
-            "titleEnglish": "Prepare a dialogue between two friends on the topic 'Role of Students in Environmental Conservation'."
-          },
-          {
-            "id": "ख",
-            "titleNepali": "'पुरस्कृत हुँदाको क्षण' शीर्षकमा एक विद्यार्थीले मनमा खेलाएका कुराहरू समेटेर मनोवाद तयार पार्नुहोस्।",
-            "titleEnglish": "Prepare a monologue incorporating the thoughts of a student on the topic 'The Moment of Being Awarded'."
-          }
-        ],
-        "optionsEnglish": [
+        "options": [
           {
             "id": "क",
             "titleNepali": "'वातावरण संरक्षणमा विद्यार्थीको भूमिका' शीर्षकमा दुई जना साथीबिच भएको संवाद तयार पार्नुहोस्।",
@@ -633,19 +620,7 @@
         "titleNepali": "कुनै एक प्रश्नको उत्तर दिनुहोस् :",
         "titleEnglish": "Answer any one question:",
         "marks": 4,
-        "optionsNepali": [
-          {
-            "id": "क",
-            "titleNepali": "आफ्नो विद्यालयबाट चारित्रिक प्रमाणपत्र पाउनका लागि प्रधानाध्यापकलाई लेख्ने निवेदनको नमुना तयार पार्नुहोस्।",
-            "titleEnglish": "Prepare a sample application to the Principal to obtain a character certificate from your school."
-          },
-          {
-            "id": "ख",
-            "titleNepali": "आफ्नो टोलमा भएको सडक दुर्घटनाको विषयमा एउटा रिपोर्ट तयार पार्नुहोस्।",
-            "titleEnglish": "Prepare a report on a road accident that occurred in your neighborhood."
-          }
-        ],
-        "optionsEnglish": [
+        "options": [
           {
             "id": "क",
             "titleNepali": "आफ्नो विद्यालयबाट चारित्रिक प्रमाणपत्र पाउनका लागि प्रधानाध्यापकलाई लेख्ने निवेदनको नमुना तयार पार्नुहोस्।",
@@ -666,11 +641,17 @@
         "marks": 2,
         "passageNepali": "अधिकारभन्दा कर्तव्य महान् छ। कर्तव्यभन्दा ठुलो अर्को कुनै वस्तु हुन सक्दैन। त्यसैले त हाम्रा धर्मग्रन्थ र उपनिषद्‌मा कर्तव्यको महिमा र सर्वोच्चताको चर्चा छ। हाम्रा मात्र होइन संसारका सबै धर्मग्रन्थमा कर्तव्यलाई महान् ठानिएको पाइन्छ। आफ्ना माता, पिता र गुरुप्रतिको कर्तव्यलाई हाम्रा ग्रन्थले 'मातृ देवो भव, पितृ देवो भव, आचार्य देवो भव' भनेर उल्लेख गरेका छन्।",
         "passageEnglish": "Duty is greater than right. There can be no other object greater than duty. That is why the glory and supremacy of duty are discussed in our scriptures and Upanishads. Not only ours, but duty is found to be considered great in all scriptures of the world. Our scriptures have mentioned the duty towards one's mother, father, and teacher as 'Matru Devo Bhava, Pitru Devo Bhava, Acharya Devo Bhava'.",
-        "correctAnswer": [
+        "correctAnswerNepali": [
           "अधिकारभन्दा कर्तव्य महान् हुनु।",
           "सबै धर्मग्रन्थमा कर्तव्यको महिमा र सर्वोच्चताको चर्चा हुनु।",
           "माता, पिता र गुरुप्रतिको कर्तव्य महत्त्वपूर्ण हुनु।",
           "माता, पिता र गुरुलाई देवता समान मान्नुपर्ने सन्देश प्रवाह गरिनु।"
+        ],
+        "correctAnswerEnglish": [
+          "Duty being greater than rights.",
+          "Discussion of the glory and supremacy of duty in all religious scriptures.",
+          "Duty towards mother, father, and teacher being important.",
+          "Conveying the message that mother, father, and teacher should be treated like gods."
         ]
       },
       {
@@ -752,17 +733,7 @@
         "titleNepali": "कुनै एक उद्धरणको व्याख्या गर्नुहोस् :",
         "titleEnglish": "Explain any one of the quotes:",
         "marks": 4,
-        "optionsNepali": [
-          {
-            "id": "क",
-            "quote": "मानिसको सेवा नै ईश्वरको सच्चा सेवा र पाचन पूजा हो।"
-          },
-          {
-            "id": "ख",
-            "quote": "अधिकार बिनाको कर्तव्य नुनबिनाको तरकारी र अमिलोबिनाको अचार जस्तै हो।"
-          }
-        ],
-        "optionsEnglish": [
+        "options": [
           {
             "id": "क",
             "quote": "मानिसको सेवा नै ईश्वरको सच्चा सेवा र पाचन पूजा हो।"
@@ -779,23 +750,7 @@
         "titleNepali": "कुनै एक प्रश्नको समीक्षात्मक उत्तर दिनुहोस् :",
         "titleEnglish": "Give a critical answer to any one question:",
         "marks": 7,
-        "optionsNepali": [
-          {
-            "id": "क",
-            "passageNepali": "छाँगो छङ्छङाए झैँ बिजुली वेगमा कविता लेख्ने देवकोटा नेपाली भाषा साहित्यका स्वच्छन्दतावादी साहित्यकार हुन्। ... वास्तवमा उनले लगातार चार दशकसम्म विभिन्न विधाका दर्जनौँ साहित्यिक कृति रचना गरी नेपाली साहित्यलाई समृद्ध तुल्याए। जति वेला ताते गर्दै नेपाली साहित्य क्रमशः किशोर वयतिर चढ्दै थियो, ठिक त्यति वेला नेपाली साहित्यले उनको कलमको जादुमय स्पर्श पायो। त्यसपछि नेपाली साहित्यले विश्व साहित्यकै हाराहारीको प्रौढताको शिखर छुन पुग्यो। ... तीन महिनामा 'शाकुन्तल' महाकाव्य, १० दिनभित्रका ६० घण्टामा 'सुलोचना' महाकाव्य र एकै रातमा 'कुञ्जिनी' खण्डकाव्य लेख्नु जोसुकैका लागि सम्भव हुने कुरा कहाँ थियो र!",
-            "passageEnglish": "Devkota, who wrote poems at lightning speed like a waterfall cascading, is a romantic litterateur of Nepali language and literature. ... In fact, he enriched Nepali literature by composing dozens of literary works in various genres continuously for four decades. Just when Nepali literature was toddling and gradually climbing towards adolescence, exactly at that time Nepali literature got the magical touch of his pen. After that, Nepali literature reached the peak of maturity comparable to world literature. ... writing 'Shakuntala' epic in three months, 'Sulochana' epic in 60 hours within 10 days, and 'Kunjini' minor epic in a single night was not something possible for just anyone!",
-            "questionNepali": "लक्ष्मीप्रसाद देवकोटाले नेपाली साहित्यलाई समृद्ध बनाउन पुऱ्याएको योगदानको समीक्षा माथिको जीवनीको अंशका आधारमा गर्नुहोस्।",
-            "questionEnglish": "Review the contribution made by Laxmi Prasad Devkota to enrich Nepali literature based on the excerpt of the biography above."
-          },
-          {
-            "id": "ख",
-            "passageNepali": "मुरलीधरको मनमा त्रासको भाउ उठ्यो। ... ‘कसको मरण होस् त यसप्रकारको होस्।’ गङ्गाधरका दुई छोरा थिए; जेठा मुरलीधर र कान्छा श्रीधर। मुरलीधर पण्डित थिए। सबैरे नुहाउँथे, आधा दिनसम्म पूजापाठ गर्थे। उनी आफ्नो धर्म र संस्कृतिका उपर असीम श्रद्धा राख्थे। ... यता श्रीधर चाहिँ राजनीतिक पार्टीका सदस्य र ग्राम विकासका प्रधान थिए। ... यी दुवै दाजुभाइको बिचमा केही दिनपछि जिउनी खेतको विषयमा विवाद उत्पन्न भयो।",
-            "passageEnglish": "An emotion of fear arose in Muralidhar's mind. ... 'May anyone's death be like this.' Gangadhar had two sons; elder Muralidhar and younger Shridhar. Muralidhar was a priest. He used to bathe early, perform prayers for half a day. He had immense reverence for his religion and culture. ... On the other hand, Shridhar was a member of a political party and the head of village development. ... After a few days, a dispute arose between these two brothers regarding the inheritance field.",
-            "questionNepali": "'कर्तव्य' कथामा दाजुभाइ मुरलीधर र श्रीधरका बिचको वैचारिक भिन्नताले कसरी द्वन्द्व सिर्जना गर्यो? कथांशका आधारमा समीक्षा गर्नुहोस्।",
-            "questionEnglish": "How did the ideological difference between brothers Murlidhar and Shridhar create conflict in the story 'Kartabya'? Review based on the excerpt."
-          }
-        ],
-        "optionsEnglish": [
+        "options": [
           {
             "id": "क",
             "passageNepali": "छाँगो छङ्छङाए झैँ बिजुली वेगमा कविता लेख्ने देवकोटा नेपाली भाषा साहित्यका स्वच्छन्दतावादी साहित्यकार हुन्। ... वास्तवमा उनले लगातार चार दशकसम्म विभिन्न विधाका दर्जनौँ साहित्यिक कृति रचना गरी नेपाली साहित्यलाई समृद्ध तुल्याए। जति वेला ताते गर्दै नेपाली साहित्य क्रमशः किशोर वयतिर चढ्दै थियो, ठिक त्यति वेला नेपाली साहित्यले उनको कलमको जादुमय स्पर्श पायो। त्यसपछि नेपाली साहित्यले विश्व साहित्यकै हाराहारीको प्रौढताको शिखर छुन पुग्यो। ... तीन महिनामा 'शाकुन्तल' महाकाव्य, १० दिनभित्रका ६० घण्टामा 'सुलोचना' महाकाव्य र एकै रातमा 'कुञ्जिनी' खण्डकाव्य लेख्नु जोसुकैका लागि सम्भव हुने कुरा कहाँ थियो र!",
