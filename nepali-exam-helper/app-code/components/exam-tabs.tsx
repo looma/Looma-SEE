@@ -12,6 +12,7 @@ import { NepaliQuestionRenderer } from "./nepali-question-renderer"
 import { MathQuestionRenderer } from "./math-question-renderer"
 import { useQuestions } from "@/lib/use-questions"
 import { loadStudentProgress, saveStudentProgress, saveAttemptHistory, syncProgressToServer, loadProgressFromServer } from "@/lib/storage"
+import { useLanguage } from "@/lib/language-context"
 
 interface ExamTabsProps {
   studentId: string
@@ -24,11 +25,13 @@ interface ExamTabsProps {
 
 export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onShowResults, onBackToTestSelection }: ExamTabsProps) {
   const { questions, loading, error } = useQuestions(testId)
+  const { language } = useLanguage()
   const [answers, setAnswers] = useState<Record<string, any>>({})
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [lastSaved, setLastSaved] = useState<Date | null>(null)
   const [showSubmitWarning, setShowSubmitWarning] = useState(false)
   const [currentTab, setCurrentTab] = useState("")
+
 
   const getFirstAvailableSection = () => {
     if (!questions) return "groupA"
@@ -1335,12 +1338,24 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
 
         // Grade each sub-question in each Math question
         questions.mathQuestions.forEach((question: any) => {
-          const questionAnswers = answers.math?.[question.question_number] || {}
+          const qNum = question.question_numberEnglish
+          const questionAnswers = answers.math?.[qNum] || {}
+          const contextEnglish = question.context.English
+          const contextNepali = question.context.Nepali
 
           question.sub_questions.forEach((subQ: any) => {
-            const userAnswer = questionAnswers[subQ.label] || ""
-            const questionText = `${question.context.english}\n\nPart (${subQ.label}): ${subQ.question_english || 'Solve the above problem.'}`
-            const marksPerQuestion = 5 // Default marks per sub-question
+            const label = subQ.labelEnglish
+            const subQEnglish = subQ.questionEnglish || 'Solve the above problem.'
+            const subQNepali = subQ.questionNepali || 'माथिको समस्या समाधान गर्नुहोस्।'
+            const answerEnglish = subQ.answerEnglish
+            const answerNepali = subQ.answerNepali
+            const explanationEnglish = subQ.explanationEnglish
+            const explanationNepali = subQ.explanationNepali
+            const marks = subQ.marksEnglish
+
+            const userAnswer = questionAnswers[label] || ""
+            const questionTextEnglish = `${contextEnglish}\n\nPart (${label}): ${subQEnglish}`
+            const questionTextNepali = `${contextNepali}\n\nभाग (${label}): ${subQNepali}`
 
             if (userAnswer.trim()) {
               gradingPromises.push(
@@ -1348,10 +1363,10 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                   method: "POST",
                   headers: { "Content-Type": "application/json" },
                   body: JSON.stringify({
-                    question: questionText,
+                    question: questionTextEnglish,
                     answer: userAnswer,
-                    marks: marksPerQuestion,
-                    sampleAnswer: subQ.answer,
+                    marks: marks,
+                    sampleAnswer: answerEnglish,
                   }),
                 })
                   .then(async (res) => {
@@ -1361,62 +1376,78 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                     if (result.error || result.code === "AI_UNAVAILABLE" || result.code === "AI_ERROR") {
                       console.warn("AI grading unavailable for Math question:", result.error)
                       return {
-                        id: `q${question.question_number}_${subQ.label}`,
+                        id: `q${qNum}_${label}`,
                         score: null, // null indicates "not graded"
-                        maxScore: marksPerQuestion,
+                        maxScore: marks,
                         feedback: "⚠️ AI grading unavailable. Please review your answer manually against the expected answer below.",
-                        question: questionText,
+                        feedbackNepali: "⚠️ AI ग्रेडिङ उपलब्ध छैन। कृपया तल अपेक्षित उत्तरसँग आफ्नो उत्तर म्यानुअल रूपमा समीक्षा गर्नुहोस्।",
+                        question: questionTextEnglish,
+                        questionNepali: questionTextNepali,
                         studentAnswer: userAnswer,
-                        expectedAnswer: subQ.answer,
-                        explanation: subQ.explanation,
-                        questionNumber: question.question_number,
-                        subLabel: subQ.label,
+                        expectedAnswer: answerEnglish,
+                        expectedAnswerNepali: answerNepali,
+                        explanation: explanationEnglish,
+                        explanationNepali: explanationNepali,
+                        questionNumber: qNum,
+                        subLabel: label,
                         aiUnavailable: true,
                       }
                     }
 
                     return {
-                      id: `q${question.question_number}_${subQ.label}`,
+                      id: `q${qNum}_${label}`,
                       score: result.score ?? 0,
-                      maxScore: marksPerQuestion,
+                      maxScore: marks,
                       feedback: result.feedback || "Grading complete",
-                      question: questionText,
+                      feedbackNepali: result.feedback || "ग्रेडिङ पूर्ण भयो",
+                      question: questionTextEnglish,
+                      questionNepali: questionTextNepali,
                       studentAnswer: userAnswer,
-                      expectedAnswer: subQ.answer,
-                      explanation: subQ.explanation,
-                      questionNumber: question.question_number,
-                      subLabel: subQ.label,
+                      expectedAnswer: answerEnglish,
+                      expectedAnswerNepali: answerNepali,
+                      explanation: explanationEnglish,
+                      explanationNepali: explanationNepali,
+                      questionNumber: qNum,
+                      subLabel: label,
                     }
                   })
                   .catch((err) => {
                     console.error("Math grading error:", err)
                     return {
-                      id: `q${question.question_number}_${subQ.label}`,
+                      id: `q${qNum}_${label}`,
                       score: null, // null indicates "not graded"
-                      maxScore: marksPerQuestion,
+                      maxScore: marks,
                       feedback: "⚠️ AI grading failed. Please review your answer manually against the expected answer below.",
-                      question: questionText,
+                      feedbackNepali: "⚠️ AI ग्रेडिङ असफल भयो। कृपया तल अपेक्षित उत्तरसँग आफ्नो उत्तर म्यानुअल रूपमा समीक्षा गर्नुहोस्।",
+                      question: questionTextEnglish,
+                      questionNepali: questionTextNepali,
                       studentAnswer: userAnswer,
-                      expectedAnswer: subQ.answer,
-                      explanation: subQ.explanation,
-                      questionNumber: question.question_number,
-                      subLabel: subQ.label,
+                      expectedAnswer: answerEnglish,
+                      expectedAnswerNepali: answerNepali,
+                      explanation: explanationEnglish,
+                      explanationNepali: explanationNepali,
+                      questionNumber: qNum,
+                      subLabel: label,
                       aiUnavailable: true,
                     }
                   })
               )
             } else {
               mathFeedback.push({
-                id: `q${question.question_number}_${subQ.label}`,
+                id: `q${qNum}_${label}`,
                 score: 0,
-                maxScore: marksPerQuestion,
+                maxScore: marks,
                 feedback: "", // Empty - it's obvious no answer was provided
-                question: questionText,
+                feedbackNepali: "",
+                question: questionTextEnglish,
+                questionNepali: questionTextNepali,
                 studentAnswer: "",
-                expectedAnswer: subQ.answer,
-                explanation: subQ.explanation,
-                questionNumber: question.question_number,
-                subLabel: subQ.label,
+                expectedAnswer: answerEnglish,
+                expectedAnswerNepali: answerNepali,
+                explanation: explanationEnglish,
+                explanationNepali: explanationNepali,
+                questionNumber: qNum,
+                subLabel: label,
                 noAnswer: true,
               })
             }
@@ -1741,7 +1772,9 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
       <div className="flex items-center justify-center p-6 sm:p-8">
         <div className="text-center">
           <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-yellow-600 mx-auto mb-4"></div>
-          <p className="text-sm sm:text-base">Loading questions...</p>
+          <p className="text-sm sm:text-base">
+            {language === "english" ? "Loading questions..." : "प्रश्नहरू लोड गर्दै..."}
+          </p>
         </div>
       </div>
     )
@@ -1753,10 +1786,14 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
       <div className="fixed inset-0 bg-white/90 backdrop-blur-sm z-50 flex items-center justify-center">
         <div className="bg-white rounded-xl p-8 shadow-lg border border-slate-200 text-center max-w-md mx-4">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-6"></div>
-          <h3 className="text-lg font-semibold text-slate-800 mb-2">Submitting Test</h3>
-          <p className="text-slate-600 text-sm">Please wait while we grade your answers...</p>
+          <h3 className="text-lg font-semibold text-slate-800 mb-2">
+            {language === "english" ? "Submitting Test" : "परीक्षा पेश गर्दै"}
+          </h3>
+          <p className="text-slate-600 text-sm">
+            {language === "english" ? "Please wait while we grade your answers..." : "तपाईंको उत्तर ग्रेड गर्दै कृपया पर्खनुहोस्..."}
+          </p>
           <div className="mt-4 text-xs text-slate-500">
-            This may take a few moments
+            {language === "english" ? "This may take a few moments" : "यसमा केही क्षण लाग्न सक्छ"}
           </div>
         </div>
       </div>
@@ -1766,12 +1803,18 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
   if (error) {
     return (
       <div className="text-center p-6 sm:p-8 text-red-600 mx-3 sm:mx-0">
-        <p className="text-sm sm:text-base">Error loading questions: {error}</p>
+        <p className="text-sm sm:text-base">
+          {language === "english" ? "Error loading questions:" : "प्रश्नहरू लोड गर्दा त्रुटि:"} {error}
+        </p>
       </div>
     )
   }
 
-  if (!questions) return <div className="text-center p-6">No questions available</div>
+  if (!questions) return (
+    <div className="text-center p-6">
+      {language === "english" ? "No questions available" : "कुनै प्रश्नहरू उपलब्ध छैनन्"}
+    </div>
+  )
 
   const isEnglishTest = questions.englishQuestions && questions.englishQuestions.length > 0
   const isSocialStudiesTest = questions.socialStudiesGroups && questions.socialStudiesGroups.length > 0
@@ -1792,8 +1835,12 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
       <div className="mx-3 sm:mx-0">
         <div className="bg-white/90 backdrop-blur-sm rounded-xl p-6 sm:p-8 shadow-lg border border-white/20 text-center">
           <Trophy className="h-12 w-12 sm:h-16 sm:w-16 text-yellow-500 mx-auto mb-4" />
-          <h3 className="text-xl sm:text-2xl font-bold text-slate-800 mb-2">Test Coming Soon</h3>
-          <p className="text-slate-600 text-sm sm:text-base">This practice test is being prepared.</p>
+          <h3 className="text-xl sm:text-2xl font-bold text-slate-800 mb-2">
+            {language === "english" ? "Test Coming Soon" : "परीक्षा छिट्टै आउँदैछ"}
+          </h3>
+          <p className="text-slate-600 text-sm sm:text-base">
+            {language === "english" ? "This practice test is being prepared." : "यो अभ्यास परीक्षा तयार भइरहेको छ।"}
+          </p>
         </div>
       </div>
     )
@@ -1806,14 +1853,18 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
         <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4 sm:p-6 shadow-lg border border-white/20 mb-4 sm:mb-6">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-3 sm:gap-0">
             <div className="flex items-center gap-2">
-              <h3 className="font-semibold text-slate-800 text-sm sm:text-base">📐 Math Test Progress</h3>
-              <span className="text-xs text-slate-600">{calculateOverallProgress()}% Complete</span>
+              <h3 className="font-semibold text-slate-800 text-sm sm:text-base">
+                📐 {language === "english" ? "Math Test Progress" : "गणित परीक्षा प्रगति"}
+              </h3>
+              <span className="text-xs text-slate-600">
+                {calculateOverallProgress()}% {language === "english" ? "Complete" : "पूर्ण"}
+              </span>
             </div>
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
               {lastSaved && (
                 <div className="flex items-center gap-1 text-xs text-green-600">
                   <Save className="h-3 w-3" />
-                  <span>Saved {formatSavedTime(lastSaved)}</span>
+                  <span>{language === "english" ? "Saved" : "सुरक्षित"} {formatSavedTime(lastSaved)}</span>
                 </div>
               )}
             </div>
@@ -1833,9 +1884,9 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                   return count + Object.values(q).filter((a: any) => a && String(a).trim()).length
                 }
                 return count
-              }, 0)} sub-questions answered
+              }, 0)} {language === "english" ? "sub-questions answered" : "उप-प्रश्नहरू उत्तर दिइयो"}
             </span>
-            <span>{questions.mathQuestions.reduce((total, q) => total + q.sub_questions.length, 0)} total sub-questions</span>
+            <span>{questions.mathQuestions.reduce((total, q) => total + q.sub_questions.length, 0)} {language === "english" ? "total sub-questions" : "जम्मा उप-प्रश्नहरू"}</span>
           </div>
         </div>
 
@@ -1845,7 +1896,6 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
             questions={questions.mathQuestions}
             answers={answers.math || {}}
             onAnswerChange={handleMathAnswerChange}
-            language="english"
             showExplanations={false}
           />
         </div>
@@ -1860,12 +1910,12 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
             {isSubmitting ? (
               <>
                 <Loader2 className="mr-2 h-5 w-5 animate-spin" />
-                Submitting...
+                {language === "english" ? "Submitting..." : "पेश गर्दै..."}
               </>
             ) : (
               <>
                 <Trophy className="mr-2 h-5 w-5" />
-                Submit Test ({(() => {
+                {language === "english" ? "Submit Test" : "परीक्षा पेश गर्नुहोस्"} ({(() => {
                   const answered = Object.values(answers.math || {}).reduce((count: number, q: any) => {
                     if (typeof q === 'object') {
                       return count + Object.values(q).filter((a: any) => a && String(a).trim()).length
@@ -1885,24 +1935,29 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
             <div className="bg-white rounded-xl p-6 max-w-md w-full shadow-2xl">
               <div className="text-center">
                 <Trophy className="h-12 w-12 text-amber-500 mx-auto mb-4" />
-                <h3 className="text-xl font-bold text-slate-800 mb-2">Incomplete Test</h3>
+                <h3 className="text-xl font-bold text-slate-800 mb-2">
+                  {language === "english" ? "Incomplete Test" : "अपूर्ण परीक्षा"}
+                </h3>
                 <p className="text-slate-600 mb-4">
-                  You have {getIncompleteQuestions().incomplete} unanswered questions out of{" "}
-                  {getIncompleteQuestions().total} total questions.
+                  {language === "english"
+                    ? `You have ${getIncompleteQuestions().incomplete} unanswered questions out of ${getIncompleteQuestions().total} total questions.`
+                    : `तपाईंले ${getIncompleteQuestions().total} मध्ये ${getIncompleteQuestions().incomplete} प्रश्नहरूको उत्तर दिनुभएको छैन।`}
                 </p>
                 <p className="text-sm text-slate-500 mb-6">
-                  Are you sure you want to submit your test now? You can still go back and answer more questions.
+                  {language === "english"
+                    ? "Are you sure you want to submit your test now? You can still go back and answer more questions."
+                    : "के तपाईं अहिले परीक्षा पेश गर्न चाहनुहुन्छ? तपाईं अझै फर्केर थप प्रश्नहरूको उत्तर दिन सक्नुहुन्छ।"}
                 </p>
                 <div className="flex gap-3">
                   <Button onClick={() => setShowSubmitWarning(false)} variant="outline" className="flex-1">
-                    Go Back
+                    {language === "english" ? "Go Back" : "फिर्ता जानुहोस्"}
                   </Button>
                   <Button
                     onClick={submitTest}
                     disabled={isSubmitting}
                     className="flex-1 bg-amber-600 hover:bg-amber-700"
                   >
-                    {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin" /> : "Submit Anyway"}
+                    {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin" /> : (language === "english" ? "Submit Anyway" : "पेश गर्नुहोस्")}
                   </Button>
                 </div>
               </div>
@@ -2366,14 +2421,18 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
       <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4 sm:p-6 shadow-lg border border-white/20 mb-4 sm:mb-6">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-3 sm:gap-0">
           <div className="flex items-center gap-2">
-            <h3 className="font-semibold text-slate-800 text-sm sm:text-base">Overall Progress</h3>
-            <span className="text-xs text-slate-600">{calculateOverallProgress()}% Complete</span>
+            <h3 className="font-semibold text-slate-800 text-sm sm:text-base">
+              {language === "english" ? "Overall Progress" : "समग्र प्रगति"}
+            </h3>
+            <span className="text-xs text-slate-600">
+              {calculateOverallProgress()}% {language === "english" ? "Complete" : "पूरा"}
+            </span>
           </div>
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
             {lastSaved && (
               <div className="flex items-center gap-1 text-xs text-green-600">
                 <Save className="h-3 w-3" />
-                <span>Saved {formatSavedTime(lastSaved)}</span>
+                <span>{language === "english" ? "Saved" : "सुरक्षित"} {formatSavedTime(lastSaved)}</span>
               </div>
             )}
           </div>
@@ -2396,7 +2455,9 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
               const totalAnswered = groupAAnswered + groupBAnswered + groupCAnswered + groupDAnswered
               const totalQuestions =
                 questions.groupA.length + questions.groupB.length + questions.groupC.length + questions.groupD.length
-              return `${totalAnswered} of ${totalQuestions} questions answered`
+              return language === "english"
+                ? `${totalAnswered} of ${totalQuestions} questions answered`
+                : `${totalQuestions} मध्ये ${totalAnswered} प्रश्नहरूको उत्तर दिइयो`
             })()}
           </span>
           <span className="font-medium">{calculateOverallProgress()}%</span>
@@ -2407,22 +2468,22 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
         <TabsList className="grid w-full grid-cols-4 mb-6">
           {questions.groupA.length > 0 && (
             <TabsTrigger value="groupA" className="text-xs sm:text-sm">
-              Group A ({questions.groupA.length})
+              {language === "english" ? "Group A" : "समूह क"} ({questions.groupA.length})
             </TabsTrigger>
           )}
           {questions.groupB.length > 0 && (
             <TabsTrigger value="groupB" className="text-xs sm:text-sm">
-              Group B ({questions.groupB.length})
+              {language === "english" ? "Group B" : "समूह ख"} ({questions.groupB.length})
             </TabsTrigger>
           )}
           {questions.groupC.length > 0 && (
             <TabsTrigger value="groupC" className="text-xs sm:text-sm">
-              Group C ({questions.groupC.length})
+              {language === "english" ? "Group C" : "समूह ग"} ({questions.groupC.length})
             </TabsTrigger>
           )}
           {questions.groupD.length > 0 && (
             <TabsTrigger value="groupD" className="text-xs sm:text-sm">
-              Group D ({questions.groupD.length})
+              {language === "english" ? "Group D" : "समूह घ"} ({questions.groupD.length})
             </TabsTrigger>
           )}
         </TabsList>
@@ -2486,21 +2547,25 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
           {isSubmitting ? (
             <>
               <Loader2 className="mr-2 h-4 w-4 sm:h-5 sm:w-5 animate-spin" />
-              {isLastSection() ? "Submitting..." : "Grading..."}
+              {isLastSection()
+                ? (language === "english" ? "Submitting..." : "पेश गर्दै...")
+                : (language === "english" ? "Grading..." : "मूल्याङ्कन गर्दै...")}
             </>
           ) : (
             <>
               <Trophy className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-              {isLastSection() ? "Submit Test" : "Submit & Grade"} ({(() => {
-                const groupAAnswered = questions.groupA.filter((q: any) => answers.groupA?.[q.id]).length
-                const groupBAnswered = questions.groupB.filter((q: any) => answers.groupB?.[q.id]?.trim()).length
-                const groupCAnswered = questions.groupC.filter((q: any) => answers.groupC?.[q.id]?.trim()).length
-                const groupDAnswered = questions.groupD.filter((q: any) => answers.groupD?.[q.id]?.trim()).length
-                const totalAnswered = groupAAnswered + groupBAnswered + groupCAnswered + groupDAnswered
-                const totalQuestions =
-                  questions.groupA.length + questions.groupB.length + questions.groupC.length + questions.groupD.length
-                return `${totalAnswered}/${totalQuestions}`
-              })()})
+              {isLastSection()
+                ? (language === "english" ? "Submit Test" : "परीक्षा पेश गर्नुहोस्")
+                : (language === "english" ? "Submit & Grade" : "पेश गर्नुहोस् र मूल्याङ्कन")} ({(() => {
+                  const groupAAnswered = questions.groupA.filter((q: any) => answers.groupA?.[q.id]).length
+                  const groupBAnswered = questions.groupB.filter((q: any) => answers.groupB?.[q.id]?.trim()).length
+                  const groupCAnswered = questions.groupC.filter((q: any) => answers.groupC?.[q.id]?.trim()).length
+                  const groupDAnswered = questions.groupD.filter((q: any) => answers.groupD?.[q.id]?.trim()).length
+                  const totalAnswered = groupAAnswered + groupBAnswered + groupCAnswered + groupDAnswered
+                  const totalQuestions =
+                    questions.groupA.length + questions.groupB.length + questions.groupC.length + questions.groupD.length
+                  return `${totalAnswered}/${totalQuestions}`
+                })()})
             </>
           )}
         </Button>
@@ -2512,7 +2577,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
             variant="outline"
             className="bg-blue-600 hover:bg-blue-700 !text-white border-blue-600 hover:border-blue-700 px-6 sm:px-8 py-4 sm:py-3 rounded-xl w-full sm:w-auto min-h-[56px] text-sm sm:text-base"
           >
-            Next Section →
+            {language === "english" ? "Next Section →" : "अर्को खण्ड →"}
           </Button>
         )}
       </div>
@@ -2523,25 +2588,31 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
           <div className="bg-white rounded-xl p-6 max-w-md w-full shadow-2xl">
             <div className="text-center">
               <Trophy className="h-12 w-12 text-amber-500 mx-auto mb-4" />
-              <h3 className="text-xl font-bold text-slate-800 mb-2">Incomplete Test</h3>
+              <h3 className="text-xl font-bold text-slate-800 mb-2">
+                {language === "english" ? "Incomplete Test" : "अपूर्ण परीक्षा"}
+              </h3>
               <p className="text-slate-600 mb-4">
-                You have {getIncompleteQuestions().incomplete} unanswered questions out of{" "}
-                {getIncompleteQuestions().total} total questions.
+                {language === "english"
+                  ? `You have ${getIncompleteQuestions().incomplete} unanswered questions out of ${getIncompleteQuestions().total} total questions.`
+                  : `${getIncompleteQuestions().total} कुल प्रश्नहरू मध्ये ${getIncompleteQuestions().incomplete} प्रश्नहरूको उत्तर दिइएको छैन।`}
               </p>
               <p className="text-sm text-slate-500 mb-6">
-                Are you sure you want to submit your test now? You can still go back and answer more questions.
+                {language === "english"
+                  ? "Are you sure you want to submit your test now? You can still go back and answer more questions."
+                  : "के तपाईं अहिले आफ्नो परीक्षा पेश गर्न चाहनुहुन्छ? तपाईं अझै पछाडि फर्किएर थप प्रश्नहरूको उत्तर दिन सक्नुहुन्छ।"}
               </p>
               <div className="flex gap-3">
                 <Button onClick={() => setShowSubmitWarning(false)} variant="outline" className="flex-1">
-                  Go Back
+                  {language === "english" ? "Go Back" : "पछाडि जानुहोस्"}
                 </Button>
                 <Button onClick={submitTest} disabled={isSubmitting} className="flex-1 bg-amber-600 hover:bg-amber-700">
                   {isSubmitting ? (
                     <>
-                      <Loader2 className="mr-2 h-4 w-4 animate-spin" /> Submitting...
+                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                      {language === "english" ? "Submitting..." : "पेश गर्दै..."}
                     </>
                   ) : (
-                    "Submit Anyway"
+                    language === "english" ? "Submit Anyway" : "जे होस् पेश गर्नुहोस्"
                   )}
                 </Button>
               </div>
@@ -2552,3 +2623,4 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
     </div>
   )
 }
+

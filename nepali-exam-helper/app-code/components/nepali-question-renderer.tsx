@@ -1,5 +1,6 @@
 "use client"
 
+import { useState } from "react"
 import { Textarea } from "@/components/ui/textarea"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -7,13 +8,47 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import type { NepaliQuestion } from "@/lib/nepali-types"
+import type { NepaliQuestion, NepaliSubQuestion } from "@/lib/nepali-types"
 
 interface NepaliQuestionRendererProps {
     question: NepaliQuestion
     answer: any
     onAnswerChange: (questionId: string, value: any) => void
     questionIndex: number
+    showExplanation?: boolean
+}
+
+// Helper component for rendering sub-question explanations and correct answers
+function SubQuestionExplanation({ subQuestion, show }: { subQuestion: NepaliSubQuestion; show?: boolean }) {
+    const hasExplanation = subQuestion.explanation && subQuestion.explanation.trim()
+    const hasCorrectAnswer = subQuestion.correctAnswer && (
+        typeof subQuestion.correctAnswer === 'string'
+            ? subQuestion.correctAnswer.trim()
+            : subQuestion.correctAnswer
+    )
+
+    if (!show || (!hasExplanation && !hasCorrectAnswer)) return null
+
+    return (
+        <div className="mt-2 space-y-2">
+            {hasCorrectAnswer && (
+                <div className="p-2 bg-green-50 rounded border border-green-200 text-sm">
+                    <span className="font-medium text-green-800">नमूना उत्तर: </span>
+                    <span className="text-green-700">
+                        {typeof subQuestion.correctAnswer === 'string'
+                            ? subQuestion.correctAnswer
+                            : JSON.stringify(subQuestion.correctAnswer)}
+                    </span>
+                </div>
+            )}
+            {hasExplanation && (
+                <div className="p-2 bg-blue-50 rounded border border-blue-200 text-sm">
+                    <span className="font-medium text-blue-800">व्याख्या: </span>
+                    <span className="text-blue-700">{subQuestion.explanation}</span>
+                </div>
+            )}
+        </div>
+    )
 }
 
 // Matching Question - dropdowns to match columns
@@ -57,7 +92,7 @@ function MatchingQuestion({ question, answer, onAnswerChange, questionIndex }: N
 }
 
 // Fill in the Blanks - passage with text inputs
-function FillInTheBlanksQuestion({ question, answer, onAnswerChange, questionIndex }: NepaliQuestionRendererProps) {
+function FillInTheBlanksQuestion({ question, answer, onAnswerChange, questionIndex, showExplanation }: NepaliQuestionRendererProps) {
     const currentAnswer = answer || {}
 
     return (
@@ -69,17 +104,20 @@ function FillInTheBlanksQuestion({ question, answer, onAnswerChange, questionInd
             )}
             <div className="space-y-3">
                 {question.subQuestions?.map((sub) => (
-                    <div key={sub.id} className="flex items-start gap-3">
-                        <Badge variant="outline" className="shrink-0 mt-2">({sub.id})</Badge>
-                        <div className="flex-1">
-                            <Label className="text-slate-700 mb-2 block">{sub.questionNepali}</Label>
-                            <Input
-                                value={currentAnswer[sub.id] || ""}
-                                onChange={(e) => onAnswerChange(`q${question.questionNumber}`, { ...currentAnswer, [sub.id]: e.target.value })}
-                                placeholder="उत्तर लेख्नुहोस्..."
-                                className="border-slate-300"
-                            />
+                    <div key={sub.id} className="space-y-1">
+                        <div className="flex items-start gap-3">
+                            <Badge variant="outline" className="shrink-0 mt-2">({sub.id})</Badge>
+                            <div className="flex-1">
+                                <Label className="text-slate-700 mb-2 block">{sub.questionNepali}</Label>
+                                <Input
+                                    value={currentAnswer[sub.id] || ""}
+                                    onChange={(e) => onAnswerChange(`q${question.questionNumber}`, { ...currentAnswer, [sub.id]: e.target.value })}
+                                    placeholder="उत्तर लेख्नुहोस्..."
+                                    className="border-slate-300"
+                                />
+                            </div>
                         </div>
+                        <SubQuestionExplanation subQuestion={sub} show={showExplanation} />
                     </div>
                 ))}
             </div>
@@ -150,7 +188,7 @@ function MultipleChoiceQuestion({ question, answer, onAnswerChange, questionInde
 }
 
 // Spelling Correction - mixed multiple choice and text
-function SpellingCorrectionQuestion({ question, answer, onAnswerChange, questionIndex }: NepaliQuestionRendererProps) {
+function SpellingCorrectionQuestion({ question, answer, onAnswerChange, questionIndex, showExplanation }: NepaliQuestionRendererProps) {
     const currentAnswer = answer || {}
 
     return (
@@ -200,6 +238,7 @@ function SpellingCorrectionQuestion({ question, answer, onAnswerChange, question
                             />
                         </div>
                     )}
+                    <SubQuestionExplanation subQuestion={sub} show={showExplanation} />
                 </div>
             ))}
         </div>
@@ -239,7 +278,7 @@ function PartsOfSpeechQuestion({ question, answer, onAnswerChange, questionIndex
 }
 
 // Word Formation - complex sub-questions
-function WordFormationQuestion({ question, answer, onAnswerChange, questionIndex }: NepaliQuestionRendererProps) {
+function WordFormationQuestion({ question, answer, onAnswerChange, questionIndex, showExplanation }: NepaliQuestionRendererProps) {
     const currentAnswer = answer || {}
 
     return (
@@ -258,6 +297,7 @@ function WordFormationQuestion({ question, answer, onAnswerChange, questionIndex
                         placeholder="उत्तर लेख्नुहोस्..."
                         className="min-h-[100px]"
                     />
+                    <SubQuestionExplanation subQuestion={sub} show={showExplanation} />
                 </div>
             ))}
         </div>
@@ -284,8 +324,9 @@ function TenseChangeQuestion({ question, answer, onAnswerChange, questionIndex }
 }
 
 // Grammar Choice - choose one question to answer
-function GrammarChoiceQuestion({ question, answer, onAnswerChange, questionIndex }: NepaliQuestionRendererProps) {
+function GrammarChoiceQuestion({ question, answer, onAnswerChange, questionIndex, showExplanation }: NepaliQuestionRendererProps) {
     const currentAnswer = answer || { selectedOption: "", response: "" }
+    const selectedSub = question.subQuestions?.find(sub => sub.id === currentAnswer.selectedOption)
 
     return (
         <div className="space-y-4">
@@ -307,19 +348,22 @@ function GrammarChoiceQuestion({ question, answer, onAnswerChange, questionIndex
             </RadioGroup>
 
             {currentAnswer.selectedOption && (
-                <Textarea
-                    value={currentAnswer.response}
-                    onChange={(e) => onAnswerChange(`q${question.questionNumber}`, { ...currentAnswer, response: e.target.value })}
-                    placeholder="उत्तर लेख्नुहोस्..."
-                    className="min-h-[120px]"
-                />
+                <>
+                    <Textarea
+                        value={currentAnswer.response}
+                        onChange={(e) => onAnswerChange(`q${question.questionNumber}`, { ...currentAnswer, response: e.target.value })}
+                        placeholder="उत्तर लेख्नुहोस्..."
+                        className="min-h-[120px]"
+                    />
+                    {selectedSub && <SubQuestionExplanation subQuestion={selectedSub} show={showExplanation} />}
+                </>
             )}
         </div>
     )
 }
 
 // Sentence Transformation - multiple sub-questions with hints
-function SentenceTransformationQuestion({ question, answer, onAnswerChange, questionIndex }: NepaliQuestionRendererProps) {
+function SentenceTransformationQuestion({ question, answer, onAnswerChange, questionIndex, showExplanation }: NepaliQuestionRendererProps) {
     const currentAnswer = answer || {}
 
     return (
@@ -336,6 +380,7 @@ function SentenceTransformationQuestion({ question, answer, onAnswerChange, ques
                         placeholder="रूपान्तरित वाक्य लेख्नुहोस्..."
                         className="min-h-[80px]"
                     />
+                    <SubQuestionExplanation subQuestion={sub} show={showExplanation} />
                 </div>
             ))}
         </div>
@@ -343,7 +388,7 @@ function SentenceTransformationQuestion({ question, answer, onAnswerChange, ques
 }
 
 // Reading Comprehension - passage with sub-questions
-function ReadingComprehensionQuestion({ question, answer, onAnswerChange, questionIndex }: NepaliQuestionRendererProps) {
+function ReadingComprehensionQuestion({ question, answer, onAnswerChange, questionIndex, showExplanation }: NepaliQuestionRendererProps) {
     const currentAnswer = answer || {}
 
     return (
@@ -366,6 +411,7 @@ function ReadingComprehensionQuestion({ question, answer, onAnswerChange, questi
                             placeholder="उत्तर लेख्नुहोस्..."
                             className="min-h-[80px]"
                         />
+                        <SubQuestionExplanation subQuestion={sub} show={showExplanation} />
                     </div>
                 ))}
             </div>
@@ -466,14 +512,14 @@ function SummarizationQuestion({ question, answer, onAnswerChange, questionIndex
 }
 
 // Literature Short Answer - passage sections with sub-questions
-function LiteratureShortAnswerQuestion({ question, answer, onAnswerChange, questionIndex }: NepaliQuestionRendererProps) {
+function LiteratureShortAnswerQuestion({ question, answer, onAnswerChange, questionIndex, showExplanation }: NepaliQuestionRendererProps) {
     const currentAnswer = answer || {}
 
     return (
         <div className="space-y-6">
             {question.subSections?.map((section) => (
                 <div key={section.id} className="p-4 bg-slate-50 rounded-lg border border-slate-200">
-                    <Badge variant="outline" className="mb-3">({section.id}) {section.marks} marks</Badge>
+                    <Badge variant="outline" className="mb-3">({section.id}) {section.marks} अंक</Badge>
                     {section.passage && (
                         <div className="p-3 bg-white rounded border border-slate-200 mb-4 italic leading-relaxed whitespace-pre-line">
                             {section.passage}
@@ -489,6 +535,7 @@ function LiteratureShortAnswerQuestion({ question, answer, onAnswerChange, quest
                                     placeholder="उत्तर लेख्नुहोस्..."
                                     className="min-h-[80px]"
                                 />
+                                <SubQuestionExplanation subQuestion={sub} show={showExplanation} />
                             </div>
                         ))}
                     </div>
@@ -622,6 +669,7 @@ function EssayQuestion({ question, answer, onAnswerChange, questionIndex }: Nepa
 // Main renderer component
 export function NepaliQuestionRenderer(props: NepaliQuestionRendererProps) {
     const { question } = props
+    const [showExplanation, setShowExplanation] = useState(false)
 
     // Question type renderer mapping
     const renderers: Record<string, React.ComponentType<NepaliQuestionRendererProps>> = {
@@ -650,6 +698,31 @@ export function NepaliQuestionRenderer(props: NepaliQuestionRendererProps) {
 
     const Renderer = renderers[question.type] || ShortAnswerQuestion
 
+    // Check for explanation or sample answer (at question level or subquestion level)
+    const hasExplanation = question.explanation && question.explanation.trim()
+    const hasSampleAnswer = question.sampleAnswer && (
+        typeof question.sampleAnswer === 'string'
+            ? question.sampleAnswer.trim()
+            : question.sampleAnswer
+    )
+    const hasCorrectAnswer = question.correctAnswer && (
+        typeof question.correctAnswer === 'string'
+            ? question.correctAnswer.trim()
+            : question.correctAnswer
+    )
+    // Check for subQuestion explanations or correctAnswers (direct or in subSections)
+    const hasSubQuestionHelp = question.subQuestions?.some(sub =>
+        (sub.explanation && sub.explanation.trim()) ||
+        (sub.correctAnswer && (typeof sub.correctAnswer === 'string' ? sub.correctAnswer.trim() : sub.correctAnswer))
+    )
+    const hasSubSectionHelp = question.subSections?.some(section =>
+        section.subQuestions?.some(sub =>
+            (sub.explanation && sub.explanation.trim()) ||
+            (sub.correctAnswer && (typeof sub.correctAnswer === 'string' ? sub.correctAnswer.trim() : sub.correctAnswer))
+        )
+    )
+    const hasHelp = hasExplanation || hasSampleAnswer || hasCorrectAnswer || hasSubQuestionHelp || hasSubSectionHelp
+
     return (
         <Card className="mb-6 bg-white/90 backdrop-blur-sm shadow-lg border border-white/20">
             <CardHeader className="pb-4">
@@ -668,14 +741,63 @@ export function NepaliQuestionRenderer(props: NepaliQuestionRendererProps) {
                             )}
                         </div>
                     </div>
-                    <Badge variant="outline" className="ml-3 shrink-0">
-                        {question.marks} mark{question.marks !== 1 ? "s" : ""}
-                    </Badge>
+                    <div className="flex items-center gap-2 ml-3 shrink-0">
+                        {hasHelp && (
+                            <button
+                                onClick={() => setShowExplanation(!showExplanation)}
+                                className="text-xs px-2 py-1 rounded bg-blue-100 text-blue-700 hover:bg-blue-200 transition-colors"
+                            >
+                                {showExplanation ? "लुकाउनुहोस्" : "सहायता"}
+                            </button>
+                        )}
+                        <Badge variant="outline">
+                            {question.marks} अंक
+                        </Badge>
+                    </div>
                 </div>
             </CardHeader>
             <CardContent className="pt-0">
-                <Renderer {...props} />
+                <Renderer {...props} showExplanation={showExplanation} />
+
+                {/* Show explanation/sample answer when toggled */}
+                {showExplanation && hasHelp && (
+                    <div className="mt-4 space-y-3">
+                        {hasSampleAnswer && (
+                            <div className="p-3 bg-green-50 rounded-lg border border-green-200">
+                                <div className="text-sm">
+                                    <span className="font-medium text-green-800">नमूना उत्तर:</span>
+                                    <p className="text-green-700 mt-1 whitespace-pre-line">
+                                        {typeof question.sampleAnswer === 'string'
+                                            ? question.sampleAnswer
+                                            : JSON.stringify(question.sampleAnswer)}
+                                    </p>
+                                </div>
+                            </div>
+                        )}
+                        {hasCorrectAnswer && !hasSampleAnswer && (
+                            <div className="p-3 bg-green-50 rounded-lg border border-green-200">
+                                <div className="text-sm">
+                                    <span className="font-medium text-green-800">नमूना उत्तर:</span>
+                                    <p className="text-green-700 mt-1 whitespace-pre-line">
+                                        {typeof question.correctAnswer === 'string'
+                                            ? question.correctAnswer
+                                            : JSON.stringify(question.correctAnswer, null, 2)}
+                                    </p>
+                                </div>
+                            </div>
+                        )}
+                        {hasExplanation && (
+                            <div className="p-3 bg-blue-50 rounded-lg border border-blue-200">
+                                <div className="text-sm">
+                                    <span className="font-medium text-blue-800">व्याख्या:</span>
+                                    <p className="text-blue-700 mt-1 whitespace-pre-line">{question.explanation}</p>
+                                </div>
+                            </div>
+                        )}
+                    </div>
+                )}
             </CardContent>
         </Card>
     )
 }
+

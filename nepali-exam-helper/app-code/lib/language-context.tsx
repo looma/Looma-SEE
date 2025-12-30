@@ -1,0 +1,258 @@
+"use client"
+
+import { createContext, useContext, useState, useEffect, type ReactNode } from "react"
+
+export type AppLanguage = "english" | "nepali"
+
+interface LanguageContextType {
+    language: AppLanguage
+    setLanguage: (lang: AppLanguage) => void
+    isLanguageSwitchEnabled: boolean
+    setLanguageSwitchEnabled: (enabled: boolean) => void
+    disabledReason: string | null
+    setDisabledReason: (reason: string | null) => void
+}
+
+const LanguageContext = createContext<LanguageContextType>({
+    language: "english",
+    setLanguage: () => { },
+    isLanguageSwitchEnabled: true,
+    setLanguageSwitchEnabled: () => { },
+    disabledReason: null,
+    setDisabledReason: () => { },
+})
+
+const LANGUAGE_STORAGE_KEY = "see_app_language"
+
+export function LanguageProvider({ children }: { children: ReactNode }) {
+    const [language, setLanguageState] = useState<AppLanguage>("english")
+    const [isLanguageSwitchEnabled, setLanguageSwitchEnabled] = useState(true)
+    const [disabledReason, setDisabledReason] = useState<string | null>(null)
+    const [isHydrated, setIsHydrated] = useState(false)
+
+    // Load saved language preference on mount
+    useEffect(() => {
+        try {
+            const saved = localStorage.getItem(LANGUAGE_STORAGE_KEY)
+            if (saved === "english" || saved === "nepali") {
+                setLanguageState(saved)
+            }
+        } catch (error) {
+            console.error("Error loading language preference:", error)
+        }
+        setIsHydrated(true)
+    }, [])
+
+    // Save language preference when changed
+    const setLanguage = (lang: AppLanguage) => {
+        setLanguageState(lang)
+        try {
+            localStorage.setItem(LANGUAGE_STORAGE_KEY, lang)
+        } catch (error) {
+            console.error("Error saving language preference:", error)
+        }
+    }
+
+    // Prevent hydration mismatch by using default until hydrated
+    const value: LanguageContextType = {
+        language: isHydrated ? language : "english",
+        setLanguage,
+        isLanguageSwitchEnabled,
+        setLanguageSwitchEnabled,
+        disabledReason,
+        setDisabledReason,
+    }
+
+    return (
+        <LanguageContext.Provider value={value}>
+            {children}
+        </LanguageContext.Provider>
+    )
+}
+
+export function useLanguage() {
+    const context = useContext(LanguageContext)
+    if (!context) {
+        throw new Error("useLanguage must be used within a LanguageProvider")
+    }
+    return context
+}
+
+/**
+ * Determine if language switching should be enabled based on test ID
+ * Only Math and Science tests are language-neutral and support switching
+ */
+export function getLanguageSwitchEnabled(testId: string | null): boolean {
+    if (!testId) return true // Enable for non-test UI (login, test selection)
+
+    // Parse test ID format: see_2081_<subject>_practice_N
+    if (testId.includes("_math_")) return true
+    if (testId.includes("_science_")) return true
+
+    // Disable for language-specific tests
+    // English, Nepali, and Social Studies tests are in their respective languages
+    if (testId.includes("_english_")) return false
+    if (testId.includes("_nepali_")) return false
+    if (testId.includes("_social_")) return false
+
+    // Default: enable (for unknown test types, allow switching)
+    return true
+}
+
+/**
+ * Get a reason message for why language switching is disabled
+ * Returns null if switching is enabled
+ */
+export function getDisabledReason(testId: string | null, language: AppLanguage): string | null {
+    if (!testId) return null
+
+    if (testId.includes("_english_")) {
+        return language === "english"
+            ? "This test is only available in English (as it appears on the actual exam)"
+            : "यो परीक्षा अंग्रेजीमा मात्र उपलब्ध छ (वास्तविक परीक्षामा जस्तो देखिन्छ)"
+    }
+    if (testId.includes("_nepali_")) {
+        return language === "english"
+            ? "This test is only available in Nepali (as it appears on the actual exam)"
+            : "यो परीक्षा नेपालीमा मात्र उपलब्ध छ (वास्तविक परीक्षामा जस्तो देखिन्छ)"
+    }
+    if (testId.includes("_social_")) {
+        return language === "english"
+            ? "This test is only available in Nepali (as it appears on the actual exam)"
+            : "यो परीक्षा नेपालीमा मात्र उपलब्ध छ (वास्तविक परीक्षामा जस्तो देखिन्छ)"
+    }
+
+    return null
+}
+
+/**
+ * UI translations for common strings
+ */
+export const translations = {
+    // App header
+    "SEE Exam Practice": {
+        english: "SEE Exam Practice",
+        nepali: "SEE परीक्षा अभ्यास",
+    },
+    // Header/buttons
+    "Change Test": {
+        english: "Change Test",
+        nepali: "परीक्षा परिवर्तन गर्नुहोस्",
+    },
+    "Log Out": {
+        english: "Log Out",
+        nepali: "लग आउट",
+    },
+    "Submit Test": {
+        english: "Submit Test",
+        nepali: "परीक्षा पेश गर्नुहोस्",
+    },
+    "Next Section": {
+        english: "Next Section",
+        nepali: "अर्को खण्ड",
+    },
+    "Previous Section": {
+        english: "Previous Section",
+        nepali: "अघिल्लो खण्ड",
+    },
+    // Results page
+    "Your Results": {
+        english: "Your Results",
+        nepali: "तपाईंको परिणाम",
+    },
+    "Take Test Again": {
+        english: "Take Test Again",
+        nepali: "फेरि परीक्षा दिनुहोस्",
+    },
+    "Edit Answers": {
+        english: "Edit Answers",
+        nepali: "उत्तरहरू सम्पादन गर्नुहोस्",
+    },
+    "Your Answer": {
+        english: "Your Answer",
+        nepali: "तपाईंको उत्तर",
+    },
+    "Correct Answer": {
+        english: "Correct Answer",
+        nepali: "सही उत्तर",
+    },
+    "Explanation": {
+        english: "Explanation",
+        nepali: "व्याख्या",
+    },
+    "Feedback": {
+        english: "Feedback",
+        nepali: "प्रतिक्रिया",
+    },
+    "Sample Answer": {
+        english: "Sample Answer",
+        nepali: "नमूना उत्तर",
+    },
+    "No answer provided": {
+        english: "No answer provided",
+        nepali: "कुनै उत्तर प्रदान गरिएको छैन",
+    },
+    "Question": {
+        english: "Question",
+        nepali: "प्रश्न",
+    },
+    // Loading states
+    "Loading...": {
+        english: "Loading...",
+        nepali: "लोड हुँदैछ...",
+    },
+    // Test selection
+    "Select a Test": {
+        english: "Select a Test",
+        nepali: "परीक्षा छान्नुहोस्",
+    },
+    "Continue": {
+        english: "Continue",
+        nepali: "जारी राख्नुहोस्",
+    },
+    "Start Test": {
+        english: "Start Test",
+        nepali: "परीक्षा सुरु गर्नुहोस्",
+    },
+    // Groups
+    "Group A - Multiple Choice": {
+        english: "Group A - Multiple Choice",
+        nepali: "समूह 'क' - बहुविकल्पीय",
+    },
+    "Group B - Short Answer": {
+        english: "Group B - Short Answer",
+        nepali: "समूह 'ख' - छोटो उत्तर",
+    },
+    "Group C - Long Answer": {
+        english: "Group C - Long Answer",
+        nepali: "समूह 'ग' - लामो उत्तर",
+    },
+    "Group D - Essay": {
+        english: "Group D - Essay",
+        nepali: "समूह 'घ' - निबन्ध",
+    },
+    // Previous attempts
+    "Previous Attempts": {
+        english: "Previous Attempts",
+        nepali: "अघिल्लो प्रयासहरू",
+    },
+    "Latest": {
+        english: "Latest",
+        nepali: "पछिल्लो",
+    },
+    "Attempt": {
+        english: "Attempt",
+        nepali: "प्रयास",
+    },
+} as const
+
+export type TranslationKey = keyof typeof translations
+
+/**
+ * Helper function to get translated string
+ */
+export function t(key: TranslationKey, language: AppLanguage): string {
+    const translation = translations[key]
+    if (!translation) return key
+    return translation[language] || translation.english || key
+}

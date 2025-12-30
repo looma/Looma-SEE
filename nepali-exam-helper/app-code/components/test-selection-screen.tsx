@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Clock, Trophy, ArrowRight, Loader2, AlertTriangle, GraduationCap, LogOut, Mail, UserX } from "lucide-react"
 import { loadStudentProgress, loadProgressFromServer, saveStudentProgress, type StudentProgress } from "@/lib/storage"
+import { useLanguage } from "@/lib/language-context"
 
 type TestMeta = {
   id: string
@@ -28,6 +29,7 @@ interface TestSelectionScreenProps {
 }
 
 export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isAuthenticated, userEmail }: TestSelectionScreenProps) {
+  const { language } = useLanguage()
   const [tests, setTests] = useState<TestMeta[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
@@ -162,18 +164,18 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
   const getSubjectDisplayName = (subject: string) => {
     switch (subject?.toLowerCase()) {
       case "science":
-        return "Science and Technology"
+        return language === "english" ? "Science and Technology" : "विज्ञान र प्रविधि"
       case "mathematics":
-        return "Mathematics"
+        return language === "english" ? "Mathematics" : "गणित"
       case "english":
-        return "English"
+        return language === "english" ? "English" : "अंग्रेजी"
       case "nepali":
-        return "Nepali"
+        return language === "english" ? "Nepali" : "नेपाली"
       case "social":
       case "social_studies":
-        return "Social Studies"
+        return language === "english" ? "Social Studies" : "सामाजिक अध्ययन"
       default:
-        return subject?.charAt(0).toUpperCase() + subject?.slice(1).replace(/_/g, ' ') || "General"
+        return subject?.charAt(0).toUpperCase() + subject?.slice(1).replace(/_/g, ' ') || (language === "english" ? "General" : "सामान्य")
     }
   }
 
@@ -252,8 +254,9 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
 
         <div className="text-center relative z-10">
           <Loader2 className="h-10 w-10 sm:h-12 sm:w-12 animate-spin text-yellow-600 mx-auto mb-4" />
-          <p className="text-lg sm:text-xl text-slate-700">Loading practice tests...</p>
-          <p className="text-sm sm:text-base text-slate-600">अभ्यास परीक्षाहरू लोड गर्दै...</p>
+          <p className="text-lg sm:text-xl text-slate-700">
+            {language === "english" ? "Loading practice tests..." : "अभ्यास परीक्षाहरू लोड गर्दै..."}
+          </p>
         </div>
       </div>
     )
@@ -272,15 +275,18 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
         <Card className="w-full max-w-sm sm:max-w-md shadow-xl relative z-10">
           <CardHeader className="text-center bg-gradient-to-r from-red-500 to-orange-500 text-white p-4 sm:p-6">
             <AlertTriangle className="h-12 w-12 sm:h-16 sm:w-16 mx-auto mb-4" />
-            <CardTitle className="text-xl sm:text-2xl">No Tests Available</CardTitle>
-            <p className="text-red-100 text-sm sm:text-base">कुनै परीक्षा उपलब्ध छैन</p>
+            <CardTitle className="text-xl sm:text-2xl">
+              {language === "english" ? "No Tests Available" : "कुनै परीक्षा उपलब्ध छैन"}
+            </CardTitle>
           </CardHeader>
           <CardContent className="text-center p-4 sm:p-8">
             <p className="text-slate-700 mb-4 text-sm sm:text-base">
-              {error ? `Error: ${error}` : "No practice tests found in the database."}
+              {error
+                ? (language === "english" ? `Error: ${error}` : `त्रुटि: ${error}`)
+                : (language === "english" ? "No practice tests found in the database." : "डाटाबेसमा कुनै अभ्यास परीक्षा फेला परेन।")}
             </p>
             <p className="text-xs sm:text-sm text-slate-600 bg-slate-100 p-3 rounded-lg">
-              Add test data using:{" "}
+              {language === "english" ? "Add test data using:" : "परीक्षा डाटा थप्नुहोस्:"}{" "}
               <code className="bg-slate-200 px-2 py-1 rounded text-xs">node scripts/import-all-tests.mjs</code>
             </p>
             {onSwitchUser && (
@@ -292,7 +298,7 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
                   className="text-amber-700 hover:text-amber-800 bg-amber-50 border-amber-300 hover:bg-amber-100 transition-all duration-200 shadow-sm hover:shadow-md font-medium w-full sm:w-auto min-h-[44px]"
                 >
                   <LogOut className="h-4 w-4 mr-2" />
-                  Switch Student
+                  {language === "english" ? "Switch Student" : "विद्यार्थी परिवर्तन गर्नुहोस्"}
                 </Button>
               </div>
             )}
@@ -317,8 +323,9 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div className="flex items-center gap-3 sm:gap-4">
               <div>
-                <h1 className="text-2xl sm:text-3xl font-bold text-slate-800">Choose Your Practice Test</h1>
-                <p className="text-base sm:text-lg text-slate-600">आफ्नो अभ्यास परीक्षा छान्नुहोस्</p>
+                <h1 className="text-2xl sm:text-3xl font-bold text-slate-800">
+                  {language === "english" ? "Choose Your Practice Test" : "आफ्नो अभ्यास परीक्षा छान्नुहोस्"}
+                </h1>
               </div>
             </div>
             <div className="flex items-center justify-between sm:justify-end gap-4">
@@ -334,13 +341,17 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
                       <p className="font-semibold text-slate-800 text-sm sm:text-base">{userEmail}</p>
                       <p className="text-xs text-green-600 flex items-center gap-1">
                         <span className="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
-                        Signed in
+                        {language === "english" ? "Signed in" : "साइन इन भयो"}
                       </p>
                     </>
                   ) : (
                     <>
-                      <p className="font-semibold text-slate-800 text-sm sm:text-base">Guest Mode</p>
-                      <p className="text-xs text-amber-600">Progress saved locally only</p>
+                      <p className="font-semibold text-slate-800 text-sm sm:text-base">
+                        {language === "english" ? "Guest Mode" : "अतिथि मोड"}
+                      </p>
+                      <p className="text-xs text-amber-600">
+                        {language === "english" ? "Progress saved locally only" : "प्रगति स्थानीय रूपमा मात्र सुरक्षित"}
+                      </p>
                     </>
                   )}
                 </div>
@@ -353,19 +364,25 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
                   className="text-amber-700 hover:text-amber-800 bg-amber-50 border-amber-300 hover:bg-amber-100 transition-all duration-200 shadow-sm hover:shadow-md font-medium text-xs sm:text-sm min-h-[40px]"
                 >
                   <LogOut className="h-3 w-3 sm:h-4 sm:w-4 mr-1 sm:mr-2" />
-                  <span className="hidden sm:inline">{isAuthenticated ? "Sign Out" : "Exit Guest"}</span>
-                  <span className="sm:hidden">{isAuthenticated ? "Out" : "Exit"}</span>
+                  <span className="hidden sm:inline">
+                    {isAuthenticated
+                      ? (language === "english" ? "Sign Out" : "साइन आउट")
+                      : (language === "english" ? "Exit Guest" : "अतिथि बाहिर")}
+                  </span>
+                  <span className="sm:hidden">
+                    {isAuthenticated
+                      ? (language === "english" ? "Out" : "बाहिर")
+                      : (language === "english" ? "Exit" : "बाहिर")}
+                  </span>
                 </Button>
               )}
             </div>
           </div>
           <div className="mt-3 sm:mt-4">
             <p className="text-slate-600 text-sm sm:text-base">
-              Select a practice test below to start your preparation. Your progress will be automatically saved and you
-              can continue where you left off.
-            </p>
-            <p className="text-slate-500 text-xs sm:text-sm mt-1">
-              तलबाट अभ्यास परीक्षा छानेर आफ्नो तयारी सुरु गर्नुहोस्। तपाईंको प्रगति स्वचालित रूपमा सुरक्षित हुनेछ।
+              {language === "english"
+                ? "Select a practice test below to start your preparation. Your progress will be automatically saved and you can continue where you left off."
+                : "तलबाट अभ्यास परीक्षा छानेर आफ्नो तयारी सुरु गर्नुहोस्। तपाईंको प्रगति स्वचालित रूपमा सुरक्षित हुनेछ।"}
             </p>
           </div>
         </div>
@@ -395,16 +412,8 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
                 <div className="flex-1">
                   <h2 className="text-xl sm:text-2xl font-bold text-slate-800 capitalize flex items-center gap-2">
                     <GraduationCap className="h-5 w-5 sm:h-6 sm:w-6" />
-                    {getSubjectDisplayName(subject)} Tests
+                    {getSubjectDisplayName(subject)} {language === "english" ? "Tests" : "परीक्षाहरू"}
                   </h2>
-                  <p className="text-slate-600 text-sm sm:text-base">
-                    {subject === "science" && "विज्ञान र प्रविधि परीक्षाहरू"}
-                    {subject === "mathematics" && "गणित परीक्षाहरू"}
-                    {subject === "english" && "अंग्रेजी परीक्षाहरू"}
-                    {subject === "nepali" && "नेपाली परीक्षाहरू"}
-                    {(subject === "social" || subject === "social_studies") && "सामाजिक अध्ययन परीक्षाहरू"}
-                    {subject === "general" && "सामान्य परीक्षाहरू"}
-                  </p>
                 </div>
                 <div className="hidden sm:block flex-1 h-px bg-gradient-to-r from-slate-300 to-transparent ml-4"></div>
               </div>
@@ -430,14 +439,15 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
                         <div className="relative z-10">
                           <div className="flex items-start justify-between mb-2">
                             <div className="flex-1 pr-2">
-                              <CardTitle className="text-lg sm:text-xl font-bold leading-tight">{test.title}</CardTitle>
-                              {test.titleNepali && <p className="text-white/90 mt-2 text-sm">{test.titleNepali}</p>}
+                              <CardTitle className="text-lg sm:text-xl font-bold leading-tight">
+                                {language === "english" ? test.title : (test.titleNepali || test.title)}
+                              </CardTitle>
                             </div>
                             <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5 opacity-75 group-hover:translate-x-1 transition-transform flex-shrink-0" />
                           </div>
                           {test.year && (
                             <Badge variant="secondary" className="bg-white/20 text-white border-white/30 text-xs">
-                              Year {test.year}
+                              {language === "english" ? "Year" : "वर्ष"} {test.year}
                             </Badge>
                           )}
                         </div>
@@ -449,11 +459,11 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
                           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-3">
                             <Badge variant="outline" className="text-xs">
                               <Trophy className="h-3 w-3 mr-1" />
-                              {test.totalMarks || 0} marks
+                              {test.totalMarks || 0} {language === "english" ? "marks" : "अंक"}
                             </Badge>
                             <Badge variant="outline" className="text-xs">
                               <Clock className="h-3 w-3 mr-1" />
-                              {test.duration || 180} min
+                              {test.duration || 180} {language === "english" ? "min" : "मिनेट"}
                             </Badge>
                           </div>
                         </div>
@@ -466,9 +476,11 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
                             <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-3 sm:p-4 h-full flex items-center">
                               <div className="flex items-center justify-between w-full">
                                 <div>
-                                  <p className="text-sm font-semibold text-emerald-800">✅ Completed</p>
+                                  <p className="text-sm font-semibold text-emerald-800">
+                                    ✅ {language === "english" ? "Completed" : "पूरा भयो"}
+                                  </p>
                                   <p className="text-xs text-emerald-600">
-                                    पूरा भयो • Score: {progress.lastAttempt.totalScore}/{progress.lastAttempt.maxScore}
+                                    {language === "english" ? "Score" : "अंक"}: {progress.lastAttempt.totalScore}/{progress.lastAttempt.maxScore}
                                   </p>
                                 </div>
                                 <div className="text-right">
@@ -479,7 +491,7 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
                                     variant={progress.lastAttempt.grade === "E" ? "destructive" : "default"}
                                     className="text-xs"
                                   >
-                                    Grade {progress.lastAttempt.grade}
+                                    {language === "english" ? "Grade" : "ग्रेड"} {progress.lastAttempt.grade}
                                   </Badge>
                                 </div>
                               </div>
@@ -489,16 +501,20 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
                             <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 sm:p-4 h-full flex items-center">
                               <div className="flex items-center justify-between w-full">
                                 <div>
-                                  <p className="text-sm font-semibold text-blue-800">📝 In Progress</p>
+                                  <p className="text-sm font-semibold text-blue-800">
+                                    📝 {language === "english" ? "In Progress" : "प्रगतिमा छ"}
+                                  </p>
                                   <p className="text-xs text-blue-600">
-                                    प्रगतिमा छ • {progress.answeredCount} questions answered
+                                    {progress.answeredCount} {language === "english" ? "questions answered" : "प्रश्नहरू उत्तर दिइयो"}
                                   </p>
                                 </div>
                                 <div className="text-right">
                                   <div className="text-xl sm:text-2xl font-bold text-blue-800">
                                     {progress.percentage}%
                                   </div>
-                                  <p className="text-xs text-blue-600">estimated</p>
+                                  <p className="text-xs text-blue-600">
+                                    {language === "english" ? "estimated" : "अनुमानित"}
+                                  </p>
                                 </div>
                               </div>
                             </div>
@@ -506,8 +522,9 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
                           {!progress.hasProgress && !progress.completed && (
                             <div className="bg-slate-50 border border-slate-200 rounded-lg p-3 sm:p-4 h-full flex items-center justify-center">
                               <div className="text-center">
-                                <p className="text-sm font-semibold text-slate-600">🚀 Ready to Start</p>
-                                <p className="text-xs text-slate-500">सुरु गर्न तयार</p>
+                                <p className="text-sm font-semibold text-slate-600">
+                                  🚀 {language === "english" ? "Ready to Start" : "सुरु गर्न तयार"}
+                                </p>
                               </div>
                             </div>
                           )}
@@ -521,10 +538,10 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
                           }}
                         >
                           {progress.completed
-                            ? "🔄 Retake Test"
+                            ? (language === "english" ? "🔄 Retake Test" : "🔄 फेरि परीक्षा दिनुहोस्")
                             : progress.hasProgress
-                              ? "▶️ Continue Test"
-                              : "🚀 Start Test"}
+                              ? (language === "english" ? "▶️ Continue Test" : "▶️ जारी राख्नुहोस्")
+                              : (language === "english" ? "🚀 Start Test" : "🚀 परीक्षा सुरु गर्नुहोस्")}
                         </Button>
                       </CardContent>
                     </Card>
@@ -534,6 +551,6 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
             </div>
           ))}
       </div>
-    </div>
+    </div >
   )
 }

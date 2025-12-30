@@ -3,7 +3,9 @@ import type { Metadata } from "next"
 import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
 import { ThemeProvider } from "@/components/theme-provider"
+import { LanguageProvider } from "@/lib/language-context"
 import { VersionIndicator } from "@/components/version-indicator"
+import { LanguageSwitch } from "@/components/language-switch"
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -26,8 +28,11 @@ export default function RootLayout({
           enableSystem={false}
           disableTransitionOnChange
         >
-          {children}
-          <VersionIndicator />
+          <LanguageProvider>
+            {children}
+            <VersionIndicator />
+            <LanguageSwitch />
+          </LanguageProvider>
         </ThemeProvider>
       </body>
     </html>

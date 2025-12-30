@@ -147,25 +147,32 @@ export function adaptDatabaseQuestions(dbQuestions: Record<string, any>) {
 
     questions.forEach((q: any) => {
       if (groupKey === "groupA" || groupKey === "A") {
+        // Adapt options to use lowercase 'id', 'nepali', 'english' format
+        const adaptedOptions = (q.options || []).map((opt: any) => ({
+          id: opt.idEnglish || opt.id || '',
+          nepali: opt.Nepali || opt.nepali || '',
+          english: opt.English || opt.english || '',
+        }))
+
         adapted.groupA.push({
-          id: q.id || q.questionNumber?.toString() || q.questionId || q._id || Math.random().toString(),
+          id: q.idEnglish || q.id || q.questionNumber?.toString() || q.questionId || q._id || Math.random().toString(),
           nepali: q.questionNepali || q.question?.nepali || "",
           english: q.questionEnglish || q.question?.english || "",
-          options: q.options || [],
-          correctAnswer: q.correctAnswer || "",
-          marks: q.marks,
-          explanation: q.explanation,
+          options: adaptedOptions,
+          correctAnswer: q.correctAnswerEnglish || q.correctAnswer || "",
+          marks: q.marksEnglish || q.marks || 1,
+          explanation: q.explanationEnglish || q.explanation,
           explanationNepali: q.explanationNepali,
         })
       } else {
         // Groups B, C, D are free response
         const freeResponseQuestion: FreeResponseQuestion = {
-          id: q.id || q.questionNumber?.toString() || q.questionId || q._id || Math.random().toString(),
+          id: q.idEnglish || q.id || q.questionNumber?.toString() || q.questionId || q._id || Math.random().toString(),
           nepali: q.questionNepali || q.question?.nepali || "",
           english: q.questionEnglish || q.question?.english || "",
-          marks: q.marks,
-          sampleAnswer: q.sampleAnswer,
-          explanation: q.explanation,
+          marks: q.marksEnglish || q.marks || 1,
+          sampleAnswer: q.sampleAnswerEnglish || q.sampleAnswer,
+          explanation: q.explanationEnglish || q.explanation,
           explanationNepali: q.explanationNepali,
         }
 

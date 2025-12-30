@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Progress } from "@/components/ui/progress"
 import { CheckCircle2, Circle, Eye, EyeOff, Lightbulb } from "lucide-react"
 import { MathText } from "./math-text"
+import { useLanguage } from "@/lib/language-context"
 import type { FreeResponseQuestion } from "@/lib/use-questions"
 
 interface FreeResponseGroupProps {
@@ -16,7 +17,6 @@ interface FreeResponseGroupProps {
   answers: Record<string, string>
   onAnswerChange: (group: "B" | "C" | "D", id: string, answer: string) => void
   progress: number
-  language?: "english" | "nepali"
 }
 
 export function FreeResponseGroup({
@@ -25,44 +25,35 @@ export function FreeResponseGroup({
   answers,
   onAnswerChange,
   progress,
-  language = "english",
 }: FreeResponseGroupProps) {
+  const { language } = useLanguage()
   const [showExplanations, setShowExplanations] = useState(false)
-
-  // Strip English text in parentheses from Nepali strings
-  // e.g., "यो हावाभन्दा गह्रौं हुन्छ (It is heavier than air)" -> "यो हावाभन्दा गह्रौं हुन्छ"
-  const cleanNepaliText = (text: string) => {
-    if (!text) return text
-    return text.replace(/\s*\([0-9A-Za-z][^)]*\)\s*$/g, '').trim()
-  }
 
   const renderExplanation = (question: FreeResponseQuestion) => {
     if (!showExplanations) return null
 
-    const hasExplanation = question.explanation && question.explanation.trim()
-    const hasSampleAnswer = question.sampleAnswer && question.sampleAnswer.trim()
+    const explanation = language === "english"
+      ? question.explanation
+      : (question.explanationNepali || question.explanation)
+    const sampleAnswer = question.sampleAnswer
+
+    const hasExplanation = explanation && explanation.trim()
+    const hasSampleAnswer = sampleAnswer && sampleAnswer.trim()
 
     // If we have an explanation, show that and ignore sample answer
     if (hasExplanation) {
-      // Clean up the explanation text by removing "English:" prefix if it exists
-      let cleanExplanation = question.explanation.trim()
-      if (cleanExplanation.startsWith("English:")) {
-        cleanExplanation = cleanExplanation.replace(/^English:\s*/, "")
-      }
-      if (cleanExplanation.startsWith("Explanation (English):")) {
-        cleanExplanation = cleanExplanation.replace(/^Explanation \$English\$:\s*/, "")
-      }
-
       return (
         <div className="mt-3">
           <div className="p-3 bg-blue-50 rounded-lg border border-blue-200">
             <div className="text-sm">
               <div className="flex items-start gap-2 mb-2">
                 <Lightbulb className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
-                <span className="font-medium text-blue-800">Explanation / व्याख्या:</span>
+                <span className="font-medium text-blue-800">
+                  {language === "english" ? "Explanation" : "व्याख्या"}:
+                </span>
               </div>
               <div className="ml-6">
-                <MathText text={cleanExplanation} className="text-blue-700 whitespace-pre-line leading-relaxed" />
+                <MathText text={explanation} className="text-blue-700 whitespace-pre-line leading-relaxed" />
               </div>
             </div>
           </div>
@@ -78,10 +69,12 @@ export function FreeResponseGroup({
             <div className="text-sm">
               <div className="flex items-start gap-2 mb-2">
                 <Lightbulb className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
-                <span className="font-medium text-blue-800">Sample Answer / नमूना उत्तर:</span>
+                <span className="font-medium text-blue-800">
+                  {language === "english" ? "Sample Answer" : "नमूना उत्तर"}:
+                </span>
               </div>
               <div className="ml-6">
-                <MathText text={question.sampleAnswer || ""} className="text-blue-700 whitespace-pre-line leading-relaxed" />
+                <MathText text={sampleAnswer || ""} className="text-blue-700 whitespace-pre-line leading-relaxed" />
               </div>
             </div>
           </div>
@@ -93,31 +86,61 @@ export function FreeResponseGroup({
   }
 
   const getGroupInfo = (group: string) => {
-    switch (group) {
-      case "B":
-        return {
-          title: "Group B - Short Answer Questions",
-          description: "Provide brief, clear answers",
-          color: "from-green-500 to-green-600",
-        }
-      case "C":
-        return {
-          title: "Group C - Long Answer Questions",
-          description: "Write detailed explanations",
-          color: "from-purple-500 to-purple-600",
-        }
-      case "D":
-        return {
-          title: "Group D - Applied Questions",
-          description: "Apply concepts to solve problems",
-          color: "from-orange-500 to-orange-600",
-        }
-      default:
-        return {
-          title: "Free Response Questions",
-          description: "Write your answers clearly",
-          color: "from-slate-500 to-slate-600",
-        }
+    if (language === "english") {
+      switch (group) {
+        case "B":
+          return {
+            title: "Group B - Short Answer Questions",
+            description: "Provide brief, clear answers",
+            color: "from-green-500 to-green-600",
+          }
+        case "C":
+          return {
+            title: "Group C - Long Answer Questions",
+            description: "Write detailed explanations",
+            color: "from-purple-500 to-purple-600",
+          }
+        case "D":
+          return {
+            title: "Group D - Applied Questions",
+            description: "Apply concepts to solve problems",
+            color: "from-orange-500 to-orange-600",
+          }
+        default:
+          return {
+            title: "Free Response Questions",
+            description: "Write your answers clearly",
+            color: "from-slate-500 to-slate-600",
+          }
+      }
+    } else {
+      // Nepali
+      switch (group) {
+        case "B":
+          return {
+            title: "समूह ख - छोटो उत्तर प्रश्नहरू",
+            description: "संक्षिप्त र स्पष्ट उत्तर दिनुहोस्",
+            color: "from-green-500 to-green-600",
+          }
+        case "C":
+          return {
+            title: "समूह ग - लामो उत्तर प्रश्नहरू",
+            description: "विस्तृत व्याख्या लेख्नुहोस्",
+            color: "from-purple-500 to-purple-600",
+          }
+        case "D":
+          return {
+            title: "समूह घ - प्रयोगात्मक प्रश्नहरू",
+            description: "अवधारणाहरू लागू गरी समस्या समाधान गर्नुहोस्",
+            color: "from-orange-500 to-orange-600",
+          }
+        default:
+          return {
+            title: "खुला उत्तर प्रश्नहरू",
+            description: "आफ्नो उत्तर स्पष्ट रूपमा लेख्नुहोस्",
+            color: "from-slate-500 to-slate-600",
+          }
+      }
     }
   }
 
@@ -129,7 +152,11 @@ export function FreeResponseGroup({
     return (
       <Card className="bg-white/90 backdrop-blur-sm shadow-lg border border-white/20">
         <CardContent className="flex items-center justify-center py-8">
-          <p className="text-slate-600">No Group {group} questions available</p>
+          <p className="text-slate-600">
+            {language === "english"
+              ? `No Group ${group} questions available`
+              : `समूह ${group === "B" ? "ख" : group === "C" ? "ग" : "घ"} प्रश्नहरू उपलब्ध छैनन्`}
+          </p>
         </CardContent>
       </Card>
     )
@@ -153,7 +180,11 @@ export function FreeResponseGroup({
                 className="bg-white/20 text-white border-white/30 hover:bg-white/30"
               >
                 {showExplanations ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
-                <span className="ml-1 hidden sm:inline">{showExplanations ? "Hide" : "Show"} Help</span>
+                <span className="ml-1 hidden sm:inline">
+                  {showExplanations
+                    ? (language === "english" ? "Hide" : "लुकाउनुहोस्")
+                    : (language === "english" ? "Show" : "देखाउनुहोस्")} {language === "english" ? "Help" : "सहायता"}
+                </span>
               </Button>
               <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
                 {answeredCount}/{questions.length}
@@ -162,7 +193,9 @@ export function FreeResponseGroup({
           </div>
           <div className="mt-4">
             <Progress value={progressPercentage} className="h-2 bg-white/30" />
-            <p className="text-xs text-white/90 mt-1">{Math.round(progressPercentage)}% complete</p>
+            <p className="text-xs text-white/90 mt-1">
+              {Math.round(progressPercentage)}% {language === "english" ? "complete" : "पूर्ण"}
+            </p>
           </div>
         </CardHeader>
       </Card>
@@ -172,6 +205,7 @@ export function FreeResponseGroup({
         {questions.map((question, index) => {
           const currentAnswer = answers[question.id] || ""
           const isAnswered = currentAnswer.trim().length > 0
+          const questionText = language === "english" ? question.english : question.nepali
 
           return (
             <Card key={question.id} className="bg-white/90 backdrop-blur-sm shadow-lg border border-white/20">
@@ -186,19 +220,16 @@ export function FreeResponseGroup({
                       )}
                     </div>
                     <div className="flex-1">
-                      <CardTitle className="text-base font-semibold text-slate-800">Question {index + 1}</CardTitle>
+                      <CardTitle className="text-base font-semibold text-slate-800">
+                        {language === "english" ? "Question" : "प्रश्न"} {index + 1}
+                      </CardTitle>
                       <div className="text-slate-700 mt-2 leading-relaxed">
-                        <MathText text={question.english} />
+                        <MathText text={questionText} />
                       </div>
-                      {question.nepali && question.nepali !== question.english && (
-                        <div className="text-slate-700 mt-1 leading-relaxed">
-                          <MathText text={cleanNepaliText(question.nepali)} />
-                        </div>
-                      )}
                     </div>
                   </div>
                   <Badge variant="outline" className="ml-3">
-                    {question.marks} mark{question.marks !== 1 ? "s" : ""}
+                    {question.marks} {language === "english" ? "mark" : "अंक"}{question.marks !== 1 ? (language === "english" ? "s" : "") : ""}
                   </Badge>
                 </div>
               </CardHeader>
@@ -207,19 +238,31 @@ export function FreeResponseGroup({
                 <Textarea
                   value={currentAnswer}
                   onChange={(e) => onAnswerChange(group, question.id, e.target.value)}
-                  placeholder={`Write your answer here... ${group === "B" ? "(Brief answer)" : group === "C" ? "(Detailed explanation)" : "(Apply concepts)"}`}
+                  placeholder={language === "english"
+                    ? `Write your answer here... ${group === "B" ? "(Brief answer)" : group === "C" ? "(Detailed explanation)" : "(Apply concepts)"}`
+                    : `यहाँ आफ्नो उत्तर लेख्नुहोस्... ${group === "B" ? "(संक्षिप्त उत्तर)" : group === "C" ? "(विस्तृत व्याख्या)" : "(अवधारणा प्रयोग)"}`}
                   className="min-h-[120px] resize-none"
                   rows={group === "B" ? 4 : group === "C" ? 6 : 5}
                 />
 
                 <div className="flex justify-between items-center mt-2 text-xs text-slate-500">
                   <span>
-                    {group === "B" && "Keep it concise but complete"}
-                    {group === "C" && "Provide detailed explanations with examples"}
-                    {group === "D" && "Show your working and reasoning"}
+                    {language === "english" ? (
+                      <>
+                        {group === "B" && "Keep it concise but complete"}
+                        {group === "C" && "Provide detailed explanations with examples"}
+                        {group === "D" && "Show your working and reasoning"}
+                      </>
+                    ) : (
+                      <>
+                        {group === "B" && "संक्षिप्त तर पूर्ण राख्नुहोस्"}
+                        {group === "C" && "उदाहरणसहित विस्तृत व्याख्या दिनुहोस्"}
+                        {group === "D" && "आफ्नो कार्यविधि र तर्क देखाउनुहोस्"}
+                      </>
+                    )}
                   </span>
                   <span className={currentAnswer.length > 20 ? "text-green-600" : "text-slate-400"}>
-                    {currentAnswer.length} characters
+                    {currentAnswer.length} {language === "english" ? "characters" : "अक्षरहरू"}
                   </span>
                 </div>
 

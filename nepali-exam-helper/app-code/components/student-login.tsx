@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Mail, ArrowLeft, Loader2, CheckCircle2, AlertCircle, UserX } from "lucide-react"
 import { setAuthState } from "@/lib/storage"
+import { useLanguage } from "@/lib/language-context"
 
 type LoginStep = "choice" | "email" | "otp" | "verifying"
 
@@ -16,6 +17,7 @@ interface StudentLoginProps {
 }
 
 export function StudentLogin({ onLogin }: StudentLoginProps) {
+  const { language } = useLanguage()
   const [step, setStep] = useState<LoginStep>("choice")
   const [email, setEmail] = useState("")
   const [otpCode, setOtpCode] = useState("")
@@ -176,9 +178,10 @@ export function StudentLogin({ onLogin }: StudentLoginProps) {
       <Card className="w-full max-w-sm sm:max-w-md bg-white/90 backdrop-blur-sm shadow-2xl border border-white/20 relative z-10">
         <CardHeader className="text-center bg-gradient-to-r from-yellow-500 to-amber-500 text-white rounded-t-lg p-4 sm:p-6">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 mb-2">
-            <CardTitle className="text-xl sm:text-2xl font-bold">SEE Exam Practice</CardTitle>
+            <CardTitle className="text-xl sm:text-2xl font-bold">
+              {language === "english" ? "SEE Exam Practice" : "SEE परीक्षा अभ्यास"}
+            </CardTitle>
           </div>
-          <p className="text-yellow-100 text-sm sm:text-base">SEE परीक्षा अभ्यास</p>
         </CardHeader>
 
         <CardContent className="p-4 sm:p-6">
@@ -186,8 +189,12 @@ export function StudentLogin({ onLogin }: StudentLoginProps) {
           {step === "choice" && (
             <div className="space-y-4">
               <div className="text-center mb-6">
-                <h3 className="text-lg font-semibold text-slate-700 mb-2">Welcome! / स्वागत छ!</h3>
-                <p className="text-sm text-slate-500">Choose how you'd like to continue</p>
+                <h3 className="text-lg font-semibold text-slate-700 mb-2">
+                  {language === "english" ? "Welcome!" : "स्वागत छ!"}
+                </h3>
+                <p className="text-sm text-slate-500">
+                  {language === "english" ? "Choose how you'd like to continue" : "तपाईं कसरी जारी राख्न चाहनुहुन्छ छनौट गर्नुहोस्"}
+                </p>
               </div>
 
               <Button
@@ -195,10 +202,10 @@ export function StudentLogin({ onLogin }: StudentLoginProps) {
                 className="w-full bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-white py-6 text-base rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <Mail className="mr-2 h-5 w-5" />
-                Sign in with Email
+                {language === "english" ? "Sign in with Email" : "इमेलमार्फत साइन इन गर्नुहोस्"}
               </Button>
               <p className="text-xs text-center text-slate-500 -mt-1">
-                We'll send you a login code / हामी तपाईंलाई कोड पठाउनेछौं
+                {language === "english" ? "We'll send you a login code" : "हामी तपाईंलाई कोड पठाउनेछौं"}
               </p>
 
               <div className="relative my-4">
@@ -206,7 +213,9 @@ export function StudentLogin({ onLogin }: StudentLoginProps) {
                   <div className="w-full border-t border-slate-200"></div>
                 </div>
                 <div className="relative flex justify-center text-xs">
-                  <span className="bg-white px-2 text-slate-400">or / वा</span>
+                  <span className="bg-white px-2 text-slate-400">
+                    {language === "english" ? "or" : "वा"}
+                  </span>
                 </div>
               </div>
 
@@ -216,10 +225,10 @@ export function StudentLogin({ onLogin }: StudentLoginProps) {
                 className="w-full border-2 border-slate-200 hover:border-amber-300 hover:bg-amber-50 py-6 text-base rounded-xl transition-all duration-300"
               >
                 <UserX className="mr-2 h-5 w-5 text-slate-500" />
-                Continue without signing in
+                {language === "english" ? "Continue without signing in" : "साइन इन नगरी जारी राख्नुहोस्"}
               </Button>
               <p className="text-xs text-center text-slate-400 -mt-1">
-                Progress saved only in this browser
+                {language === "english" ? "Progress saved only in this browser" : "प्रगति यस ब्राउजरमा मात्र सुरक्षित"}
               </p>
             </div>
           )}
@@ -235,18 +244,18 @@ export function StudentLogin({ onLogin }: StudentLoginProps) {
                 className="text-slate-500 hover:text-slate-700 -ml-2"
               >
                 <ArrowLeft className="mr-1 h-4 w-4" />
-                Back
+                {language === "english" ? "Back" : "पछाडि"}
               </Button>
 
               <div className="space-y-3">
                 <Label htmlFor="email" className="text-base font-semibold flex items-center gap-2">
                   <Mail className="h-4 w-4" />
-                  Email Address
+                  {language === "english" ? "Email Address" : "इमेल ठेगाना"}
                 </Label>
                 <Input
                   id="email"
                   type="email"
-                  placeholder="Enter your email"
+                  placeholder={language === "english" ? "Enter your email" : "आफ्नो इमेल प्रविष्ट गर्नुहोस्"}
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
@@ -254,7 +263,9 @@ export function StudentLogin({ onLogin }: StudentLoginProps) {
                   disabled={isLoading}
                 />
                 <p className="text-xs text-slate-500">
-                  We'll send you a one-time code to verify (expires in 15 min)
+                  {language === "english"
+                    ? "We'll send you a one-time code to verify (expires in 15 min)"
+                    : "हामी तपाईंलाई एकपटक प्रयोग हुने कोड पठाउनेछौं (१५ मिनेटमा समाप्त)"}
                 </p>
               </div>
 
@@ -273,10 +284,10 @@ export function StudentLogin({ onLogin }: StudentLoginProps) {
                 {isLoading ? (
                   <>
                     <Loader2 className="mr-2 h-5 w-5 animate-spin" />
-                    Sending...
+                    {language === "english" ? "Sending..." : "पठाउँदै..."}
                   </>
                 ) : (
-                  "Send Code"
+                  language === "english" ? "Send Code" : "कोड पठाउनुहोस्"
                 )}
               </Button>
             </form>
@@ -294,16 +305,18 @@ export function StudentLogin({ onLogin }: StudentLoginProps) {
                 disabled={step === "verifying"}
               >
                 <ArrowLeft className="mr-1 h-4 w-4" />
-                Back
+                {language === "english" ? "Back" : "पछाडि"}
               </Button>
 
               <div className="text-center mb-2">
                 <p className="text-sm text-slate-600">
-                  Enter the 6-digit code sent to
+                  {language === "english" ? "Enter the 6-digit code sent to" : "यो इमेलमा पठाइएको ६ अंकको कोड प्रविष्ट गर्नुहोस्"}
                 </p>
                 <p className="font-medium text-slate-800">{email}</p>
                 <p className="text-xs text-amber-600 mt-2 bg-amber-50 p-2 rounded-lg">
-                  ⚠️ Check your spam/junk folder if you don't see it!
+                  ⚠️ {language === "english"
+                    ? "Check your spam/junk folder if you don't see it!"
+                    : "तपाईंले देख्नुभएन भने स्प्याम/जंक फोल्डर जाँच गर्नुहोस्!"}
                 </p>
               </div>
 
@@ -345,10 +358,10 @@ export function StudentLogin({ onLogin }: StudentLoginProps) {
                 {step === "verifying" ? (
                   <>
                     <Loader2 className="mr-2 h-5 w-5 animate-spin" />
-                    Verifying...
+                    {language === "english" ? "Verifying..." : "प्रमाणित गर्दै..."}
                   </>
                 ) : (
-                  "Verify Code"
+                  language === "english" ? "Verify Code" : "कोड प्रमाणित गर्नुहोस्"
                 )}
               </Button>
 
@@ -360,11 +373,13 @@ export function StudentLogin({ onLogin }: StudentLoginProps) {
                     className="text-amber-600 hover:text-amber-700 text-sm font-medium"
                     disabled={step === "verifying"}
                   >
-                    Resend code
+                    {language === "english" ? "Resend code" : "कोड पुन: पठाउनुहोस्"}
                   </button>
                 ) : (
                   <p className="text-slate-400 text-sm">
-                    Resend code in {resendTimer}s
+                    {language === "english"
+                      ? `Resend code in ${resendTimer}s`
+                      : `${resendTimer} सेकेन्डमा पुन: पठाउनुहोस्`}
                   </p>
                 )}
               </div>

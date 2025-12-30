@@ -6,6 +6,7 @@ import { StudentLogin } from "@/components/student-login"
 import { StudentHeader } from "@/components/student-header"
 import { TestSelectionScreen } from "@/components/test-selection-screen"
 import { ResultsCard } from "@/components/results-card"
+import { useLanguage, getLanguageSwitchEnabled, getDisabledReason } from "@/lib/language-context"
 import {
   loadStudentProgress,
   saveStudentProgress,
@@ -27,6 +28,19 @@ export default function SeePrepPage() {
   const [isHydrated, setIsHydrated] = useState(false)
   const [isAuthenticated, setIsAuthenticated] = useState(false)
   const [userEmail, setUserEmail] = useState<string | null>(null)
+
+  // Get language context to control switch enabled state
+  const { language, setLanguageSwitchEnabled, setDisabledReason } = useLanguage()
+
+  // Update language switch enabled state based on current test
+  useEffect(() => {
+    const enabled = getLanguageSwitchEnabled(currentTestId)
+    setLanguageSwitchEnabled(enabled)
+
+    // Set the reason message if disabled
+    const reason = getDisabledReason(currentTestId, language)
+    setDisabledReason(reason)
+  }, [currentTestId, language, setLanguageSwitchEnabled, setDisabledReason])
 
   // Fetch test title when test ID changes
   useEffect(() => {
@@ -284,9 +298,8 @@ export default function SeePrepPage() {
           <header className="mb-8 pt-2">
             <div className="text-center py-2">
               <h1 className="text-3xl sm:text-4xl font-bold text-slate-800 bg-gradient-to-r from-yellow-600 to-amber-600 bg-clip-text text-transparent">
-                SEE Exam Practice
+                {language === "english" ? "SEE Exam Practice" : "SEE परीक्षा अभ्यास"}
               </h1>
-              <h2 className="text-xl font-medium text-slate-700 mt-1">SEE परीक्षा अभ्यास</h2>
             </div>
           </header>
 

@@ -119,7 +119,28 @@ async function processTestFile(filePath) {
     }
 
     const docs = input.map(normalizeExtendedJSON)
-    const practiceDoc = docs.find((d) => d.title && d.subject && typeof d._id === "string")
+
+    // Find practice doc - support both old format (title, subject) and new bilingual format (titleEnglish, subjectEnglish)
+    let practiceDoc = docs.find((d) => d.title && d.subject && typeof d._id === "string")
+
+    // If not found, try new bilingual format for Math tests
+    if (!practiceDoc) {
+      practiceDoc = docs.find((d) => (d.titleEnglish || d.titleNepali) && (d.subjectEnglish || d.subjectNepali) && typeof d._id === "string")
+
+      if (practiceDoc) {
+        // Normalize bilingual fields to standard format for database storage
+        console.log(`    [BILINGUAL] Found bilingual metadata format, normalizing...`)
+        practiceDoc.title = practiceDoc.titleEnglish || practiceDoc.titleNepali
+        practiceDoc.titleNepali = practiceDoc.titleNepali || practiceDoc.titleEnglish
+        practiceDoc.subject = practiceDoc.subjectEnglish?.toLowerCase().includes('math') ? 'mathematics' :
+          practiceDoc.subjectEnglish?.toLowerCase() || 'mathematics'
+        practiceDoc.totalMarks = practiceDoc.totalMarksEnglish || practiceDoc.totalMarks || 75
+        practiceDoc.duration = practiceDoc.durationEnglish || practiceDoc.duration || 180
+        practiceDoc.year = parseInt(practiceDoc.title?.match(/\d{4}/)?.[0] || '2081')
+        practiceDoc.isActive = true
+      }
+    }
+
     const questionsDoc = docs.find((d) => (d.testId && d.questions) || (d.testId && Array.isArray(d.questions)) || (d.testId && Array.isArray(d.groups)))
 
     if (!practiceDoc) {
@@ -164,6 +185,22 @@ async function processTestFile(filePath) {
           }
 
           console.log(`    Nepali test detected with ${questionCount} questions`)
+        } else if (subject === "mathematics" ||
+          // Check for bilingual math format: questions have context.Nepali/English and sub_questions
+          (questionsDoc.questions[0]?.context?.Nepali || questionsDoc.questions[0]?.context?.English ||
+            questionsDoc.questions[0]?.sub_questions)) {
+          // New bilingual Math format - array of questions with sub_questions
+          testType = "mathematics"
+          questionCount = questionsDoc.questions.reduce(
+            (count, q) => count + (q.sub_questions?.length || 1), 0
+          )
+
+          // Transform to mathQuestions format
+          questionsDoc.questions = {
+            mathQuestions: questionsDoc.questions
+          }
+
+          console.log(`    [MATH] Bilingual Math test detected with ${questionCount} sub-questions`)
         } else {
           // English format - array of questions
           questionCount = questionsDoc.questions.length

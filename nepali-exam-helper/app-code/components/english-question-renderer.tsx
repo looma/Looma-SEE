@@ -74,36 +74,24 @@ export function EnglishQuestionRenderer({
     if (!explanation || !showExplanations) return null
 
     let english = ""
-    let nepali = ""
 
     // Handle both old format (string) and new format (object with explanationEnglish/explanationNepali)
+    // For English tests, we only show English explanations
     if (typeof explanation === "string") {
       const parsed = parseExplanation(explanation)
       english = parsed.english
-      nepali = parsed.nepali
     } else if (typeof explanation === "object") {
       english = explanation.explanationEnglish || ""
-      nepali = explanation.explanationNepali || ""
     }
 
-    // Don't render if both are empty
-    if (!english && !nepali) return null
+    // Don't render if empty
+    if (!english) return null
 
     return (
       <div className="mt-3 p-3 bg-blue-50 rounded-lg border border-blue-200">
         <div className="text-sm">
-          {english && (
-            <div className="mb-2">
-              <span className="font-medium text-blue-800">English:</span>
-              <p className="text-blue-700 mt-1 whitespace-pre-line">{english}</p>
-            </div>
-          )}
-          {nepali && (
-            <div>
-              <span className="font-medium text-blue-800">नेपाली:</span>
-              <p className="text-blue-700 mt-1 whitespace-pre-line">{nepali}</p>
-            </div>
-          )}
+          <span className="font-medium text-blue-800">Explanation:</span>
+          <p className="text-blue-700 mt-1 whitespace-pre-line">{english}</p>
         </div>
       </div>
     )

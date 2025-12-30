@@ -40,8 +40,21 @@ export async function POST(req: Request) {
       )
     }
 
-    // Simplified, more reliable prompt
+    // Detect the language of the student's answer
+    // Nepali uses Devanagari script (Unicode range: 0900-097F)
+    const hasDevanagari = /[\u0900-\u097F]/.test(answer)
+    const answerLanguage = hasDevanagari ? 'nepali' : 'english'
+
+    console.log("🌐 Detected answer language:", answerLanguage, "(hasDevanagari:", hasDevanagari, ")")
+
+    // Simplified, more reliable prompt with language-aware feedback
+    const languageInstruction = answerLanguage === 'nepali'
+      ? 'The student answered in Nepali. Provide your feedback in Nepali (नेपाली भाषामा प्रतिक्रिया दिनुहोस्).'
+      : 'The student answered in English. Provide your feedback in English.'
+
     const systemPrompt = `You are a SEE examiner. Grade the student's answer and provide brief feedback.
+
+${languageInstruction}
 
 IMPORTANT: You must respond with ONLY valid JSON in this exact format:
 {"score": <number>, "feedback": "<string>"}
@@ -51,6 +64,7 @@ Rules:
 - Award partial credit when appropriate
 - Keep feedback to 1-2 sentences maximum
 - Be constructive and specific
+- Respond in the SAME LANGUAGE as the student's answer
 - For English questions, focus on content understanding rather than exact wording
 - Recognize equivalent answers that convey the same meaning
 - Accept both American English (e.g., "gotten", "gotten") and British English (e.g., "got", "got") as correct
@@ -71,8 +85,9 @@ IMPORTANT GRADING GUIDELINES:
 - Award full marks if the answer demonstrates complete understanding, even if worded differently
 - Award partial marks for partially correct answers that show some understanding
 - Focus on whether key concepts are addressed, not exact word matching
+- IMPORTANT: Provide feedback in ${answerLanguage === 'nepali' ? 'Nepali (नेपाली)' : 'English'} since the student answered in that language
 
-Respond with JSON only: {"score": <0-${marks}>, "feedback": "<brief feedback>"}`
+Respond with JSON only: {"score": <0-${marks}>, "feedback": "<brief feedback in ${answerLanguage === 'nepali' ? 'Nepali' : 'English'}>"}`
 
     console.log("🤖 Making OpenAI API call with improved settings...")
 
