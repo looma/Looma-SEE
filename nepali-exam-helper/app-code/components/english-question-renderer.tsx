@@ -101,7 +101,7 @@ export function EnglishQuestionRenderer({
     return (
       <div className="space-y-4">
         {subQuestions.map((subQ, index) => {
-          const questionId = parentId ? `${parentId}_${subQ.id}` : subQ.id
+          const questionId = parentId ? `${(question as any).id}_${parentId}_${subQ.id}` : `${(question as any).id}_${subQ.id}`
           const currentAnswer = parentId ? answers[(question as any).id]?.[parentId]?.[subQ.id] : answers[(question as any).id]?.[subQ.id]
 
           // Calculate marks for sub-question: use subQ.marks if available, otherwise divide section marks by number of sub-questions
@@ -200,7 +200,7 @@ export function EnglishQuestionRenderer({
     return (
       <div className="space-y-4">
         {subQuestions.map((subQ, index) => {
-          const questionId = parentId ? `${parentId}_${subQ.id}` : subQ.id
+          const questionId = parentId ? `${(question as any).id}_${parentId}_${subQ.id}` : `${(question as any).id}_${subQ.id}`
           const currentAnswer = parentId ? answers[(question as any).id]?.[parentId]?.[subQ.id] : answers[(question as any).id]?.[subQ.id]
 
           // Calculate marks for sub-question: use subQ.marks if available, otherwise divide section marks by number of sub-questions

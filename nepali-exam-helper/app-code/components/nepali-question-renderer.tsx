@@ -174,8 +174,8 @@ function MultipleChoiceQuestion({ question, answer, onAnswerChange, questionInde
                             onClick={() => onAnswerChange(`q${question.questionNumber}`, optionValue)}
                         >
                             <div className="flex items-center gap-3">
-                                <RadioGroupItem value={optionValue} id={`opt-${questionIndex}-${idx}`} />
-                                <Label htmlFor={`opt-${questionIndex}-${idx}`} className="cursor-pointer flex-1">
+                                <RadioGroupItem value={optionValue} id={`q${question.questionNumber}-opt-${questionIndex}-${idx}`} />
+                                <Label htmlFor={`q${question.questionNumber}-opt-${questionIndex}-${idx}`} className="cursor-pointer flex-1">
                                     {optionText}
                                 </Label>
                             </div>
@@ -215,8 +215,8 @@ function SpellingCorrectionQuestion({ question, answer, onAnswerChange, question
                                     >
                                         {choice.options.map((opt, optIdx) => (
                                             <div key={optIdx} className="flex items-center space-x-2">
-                                                <RadioGroupItem value={opt} id={`${sub.id}-${choice.id}-${optIdx}`} />
-                                                <Label htmlFor={`${sub.id}-${choice.id}-${optIdx}`} className="cursor-pointer">{opt}</Label>
+                                                <RadioGroupItem value={opt} id={`q${question.questionNumber}-${sub.id}-${choice.id}-${optIdx}`} />
+                                                <Label htmlFor={`q${question.questionNumber}-${sub.id}-${choice.id}-${optIdx}`} className="cursor-pointer">{opt}</Label>
                                             </div>
                                         ))}
                                     </RadioGroup>
@@ -338,8 +338,8 @@ function GrammarChoiceQuestion({ question, answer, onAnswerChange, questionIndex
                 {question.subQuestions?.map((sub) => (
                     <div key={sub.id} className={`p-4 rounded-lg border ${currentAnswer.selectedOption === sub.id ? 'bg-amber-50 border-amber-300' : 'bg-slate-50 border-slate-200'}`}>
                         <div className="flex items-start gap-3">
-                            <RadioGroupItem value={sub.id} id={`choice-${sub.id}`} className="mt-1" />
-                            <Label htmlFor={`choice-${sub.id}`} className="cursor-pointer flex-1">
+                            <RadioGroupItem value={sub.id} id={`q${question.questionNumber}-choice-${sub.id}`} className="mt-1" />
+                            <Label htmlFor={`q${question.questionNumber}-choice-${sub.id}`} className="cursor-pointer flex-1">
                                 <span className="font-medium">({sub.id})</span> {sub.title || sub.questionNepali}
                             </Label>
                         </div>
@@ -433,8 +433,8 @@ function FreeWritingChoiceQuestion({ question, answer, onAnswerChange, questionI
                 {question.options?.map((opt) => (
                     <div key={opt.id} className={`p-4 rounded-lg border ${currentAnswer.selectedOption === opt.id ? 'bg-amber-50 border-amber-300' : 'bg-slate-50 border-slate-200'}`}>
                         <div className="flex items-start gap-3">
-                            <RadioGroupItem value={opt.id} id={`opt-${opt.id}`} className="mt-1" />
-                            <Label htmlFor={`opt-${opt.id}`} className="cursor-pointer flex-1">
+                            <RadioGroupItem value={opt.id} id={`q${question.questionNumber}-opt-${opt.id}`} className="mt-1" />
+                            <Label htmlFor={`q${question.questionNumber}-opt-${opt.id}`} className="cursor-pointer flex-1">
                                 <span className="font-medium">({opt.id})</span> {opt.title}
                                 {opt.clues && (
                                     <ul className="mt-2 text-sm text-slate-600 list-disc list-inside">
@@ -571,8 +571,8 @@ function LiteratureExplanationQuestion({ question, answer, onAnswerChange, quest
                 {question.options?.map((opt) => (
                     <div key={opt.id} className={`p-4 rounded-lg border ${currentAnswer.selectedOption === opt.id ? 'bg-amber-50 border-amber-300' : 'bg-slate-50 border-slate-200'}`}>
                         <div className="flex items-start gap-3">
-                            <RadioGroupItem value={opt.id} id={`quote-${opt.id}`} className="mt-1" />
-                            <Label htmlFor={`quote-${opt.id}`} className="cursor-pointer flex-1 italic">
+                            <RadioGroupItem value={opt.id} id={`q${question.questionNumber}-quote-${opt.id}`} className="mt-1" />
+                            <Label htmlFor={`q${question.questionNumber}-quote-${opt.id}`} className="cursor-pointer flex-1 italic">
                                 <span className="font-medium not-italic">({opt.id})</span> "{(opt as any).quote}"
                             </Label>
                         </div>
@@ -606,8 +606,8 @@ function LiteratureCriticalAnalysisQuestion({ question, answer, onAnswerChange, 
                 {question.options?.map((opt) => (
                     <div key={opt.id} className={`p-4 rounded-lg border ${currentAnswer.selectedOption === opt.id ? 'bg-amber-50 border-amber-300' : 'bg-slate-50 border-slate-200'}`}>
                         <div className="flex items-start gap-3">
-                            <RadioGroupItem value={opt.id} id={`analysis-${opt.id}`} className="mt-1" />
-                            <Label htmlFor={`analysis-${opt.id}`} className="cursor-pointer flex-1">
+                            <RadioGroupItem value={opt.id} id={`q${question.questionNumber}-analysis-${opt.id}`} className="mt-1" />
+                            <Label htmlFor={`q${question.questionNumber}-analysis-${opt.id}`} className="cursor-pointer flex-1">
                                 <span className="font-medium">({opt.id})</span>
                                 {opt.passage && (
                                     <div className="mt-2 p-3 bg-white rounded border text-sm italic leading-relaxed">
@@ -647,8 +647,8 @@ function EssayQuestion({ question, answer, onAnswerChange, questionIndex }: Nepa
                 {question.topics?.map((topic, idx) => (
                     <div key={idx} className={`p-3 rounded-lg border ${currentAnswer.selectedTopic === topic ? 'bg-amber-50 border-amber-300' : 'bg-slate-50 border-slate-200'}`}>
                         <div className="flex items-center gap-3">
-                            <RadioGroupItem value={topic} id={`topic-${idx}`} />
-                            <Label htmlFor={`topic-${idx}`} className="cursor-pointer flex-1">{topic}</Label>
+                            <RadioGroupItem value={topic} id={`q${question.questionNumber}-topic-${idx}`} />
+                            <Label htmlFor={`q${question.questionNumber}-topic-${idx}`} className="cursor-pointer flex-1">{topic}</Label>
                         </div>
                     </div>
                 ))}

@@ -40,7 +40,7 @@ export function LanguageSwitch() {
             <span className={`text-sm font-medium ${isLanguageSwitchEnabled ? "text-slate-700" : "text-slate-400"}`}>
                 {language === "english" ? (
                     <>
-                        <span className="text-blue-600 font-black text-base underline underline-offset-2">EN</span>
+                        <span className="text-blue-600 font-black underline underline-offset-2">EN</span>
                         <span className="text-slate-400 mx-1">|</span>
                         <span className="text-slate-400 font-normal">नेपाली</span>
                     </>
@@ -48,7 +48,7 @@ export function LanguageSwitch() {
                     <>
                         <span className="text-slate-400 font-normal">EN</span>
                         <span className="text-slate-400 mx-1">|</span>
-                        <span className="text-blue-600 font-black text-base underline underline-offset-2">नेपाली</span>
+                        <span className="text-blue-600 font-black underline underline-offset-2">नेपाली</span>
                     </>
                 )}
             </span>
