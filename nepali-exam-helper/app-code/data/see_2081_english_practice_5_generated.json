@@ -405,17 +405,17 @@
                 "correctAnswerEnglish": "non-profit",
                 "explanationNepali": "पहिलो अनुच्छेदमा तिनीहरूलाई \"non-profit organizations\" भनेर चिनाइएको छ।\nउद्धरण: पाठ १५",
                 "explanationEnglish": "The first paragraph identifies them as \"non-profit organizations.\" \nCitation: Lesson 15.",
-                "optionsEnglish": [
-                  "profit",
-                  "non-profit",
-                  "national",
-                  "international"
-                ],
                 "optionsNepali": [
                   "नाफा",
                   "गैर नाफा",
                   "राष्ट्रिय",
                   "अन्तर्राष्ट्रिय"
+                ],
+                "optionsEnglish": [
+                  "profit",
+                  "non-profit",
+                  "national",
+                  "international"
                 ]
               },
               {
@@ -427,17 +427,17 @@
                 "correctAnswerEnglish": "2016",
                 "explanationNepali": "पाठमा भनिएको छ, \"She has won the super Hero Award in 2016.\"\nउद्धरण: पाठ १५",
                 "explanationEnglish": "The text states, \"She has won the super Hero Award in 2016.\" \nCitation: Lesson 15.",
-                "optionsEnglish": [
-                  "1984",
-                  "2005",
-                  "2007",
-                  "2016"
-                ],
                 "optionsNepali": [
                   "१९८४",
                   "२००५",
                   "२००७",
                   "२०१६"
+                ],
+                "optionsEnglish": [
+                  "1984",
+                  "2005",
+                  "2007",
+                  "2016"
                 ]
               },
               {
@@ -449,17 +449,17 @@
                 "correctAnswerEnglish": "career",
                 "explanationNepali": "पाठमा उल्लेख छ, \"Basnet started her career at the age of 21...\"\nउद्धरण: पाठ १५",
                 "explanationEnglish": "The text mentions, \"Basnet started her career at the age of 21...\" \nCitation: Lesson 15.",
-                "optionsEnglish": [
-                  "social work",
-                  "college",
-                  "career",
-                  "organization"
-                ],
                 "optionsNepali": [
                   "सामाजिक कार्य",
                   "कलेज",
                   "करियर",
                   "सङ्घसंस्था"
+                ],
+                "optionsEnglish": [
+                  "social work",
+                  "college",
+                  "career",
+                  "organization"
                 ]
               },
               {
@@ -471,17 +471,17 @@
                 "correctAnswerEnglish": "close friends and sister",
                 "explanationNepali": "उनले \"raised 70,000 rupees from her close friends and sister\" भनेर उल्लेख गरिएको छ।\nउद्धरण: पाठ १५",
                 "explanationEnglish": "It is mentioned that she \"raised 70,000 rupees from her close friends and sister.\" \nCitation: Lesson 15.",
-                "optionsEnglish": [
-                  "close friends",
-                  "her sister",
-                  "close friends and sister",
-                  "women in prison"
-                ],
                 "optionsNepali": [
                   "करीबका साथीहरू",
                   "उनको बहिनी",
                   "करीबका साथीहरू र बहिनी",
                   "जेलमा रहेका महिलाहरू"
+                ],
+                "optionsEnglish": [
+                  "close friends",
+                  "her sister",
+                  "close friends and sister",
+                  "women in prison"
                 ]
               },
               {
@@ -493,17 +493,17 @@
                 "correctAnswerEnglish": "alternative residence",
                 "explanationNepali": "तेस्रो अनुच्छेदमा उनले \"provide alternative residence...\" भनेर भनिएको छ।\nउद्धरण: पाठ १५",
                 "explanationEnglish": "In the third paragraph, it says she helped to \"provide alternative residence...\" \nCitation: Lesson 15.",
-                "optionsEnglish": [
-                  "alternative residence",
-                  "alternative school",
-                  "paid meals",
-                  "awards"
-                ],
                 "optionsNepali": [
                   "वैकल्पिक निवास",
                   "वैकल्पिक विद्यालय",
                   "सशुल्क खाना",
                   "पुरस्कारहरू"
+                ],
+                "optionsEnglish": [
+                  "alternative residence",
+                  "alternative school",
+                  "paid meals",
+                  "awards"
                 ]
               }
             ],

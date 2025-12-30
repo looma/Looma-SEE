@@ -1,19 +1,18 @@
 [
   {
     "_id": "see_2081_social_practice_1_generated",
-    "title": "SEE 2081 Social Practice Test 1",
     "titleNepali": "SEE २०८१ सामाजिक अध्ययन अभ्यास परीक्षा १",
-    "subject": "social_studies",
-    "year": 2081,
-    "totalMarks": 75,
-    "duration": 180,
-    "instructionsEnglish": "Candidates are required to give creative answers in their own style based on the given instructions.",
-    "instructionsNepali": "दिइएका निर्देशनका आधारमा आफ्नै शैलीमा सिर्जनात्मक उत्तर दिनुहोस् :"
+    "titleEnglish": "SEE 2081 Social Practice Test 1",
+    "subjectNepali": "सामाजिक अध्ययन",
+    "subjectEnglish": "social_studies",
+    "totalMarksNepali": "७५",
+    "totalMarksEnglish": 75,
+    "durationNepali": "१८०",
+    "durationEnglish": 180,
+    "instructionsNepali": "दिइएका निर्देशनका आधारमा आफ्नै शैलीमा सिर्जनात्मक उत्तर दिनुहोस् :",
+    "instructionsEnglish": "Candidates are required to give creative answers in their own style based on the given instructions."
   },
   {
-    "_id": {
-      "$oid": "688b809a2f3df9d071c52111"
-    },
     "testId": "see_2081_social_practice_1_generated",
     "groups": [
       {
@@ -22,125 +21,147 @@
         "marksSchema": "(११×१=११)",
         "questions": [
           {
-            "questionNumber": "१",
             "type": "very_short_answer",
-            "marks": 1,
             "questionNepali": "सामाजिकीकरणको एक उद्देश्य लेख्नुहोस् ।",
             "questionEnglish": "Write one objective of socialization.",
             "answerNepali": "समाजका मूल्यमान्यता, संस्कार र नियमहरू सिक्दै समाजमा अन्तरघुलन हुनु सामाजिकीकरणको उद्देश्य हो ।",
             "answerEnglish": "The objective of socialization is to integrate into society by learning its values, traditions, and rules.",
             "explanationNepali": "सामाजिकीकरणले व्यक्तिलाई समाजको असल र जिम्मेवार सदस्य बन्न सिकाउँछ । यस प्रक्रियाबाट व्यक्तिले सामाजिक मूल्यमान्यताहरू ग्रहण गर्दछ र समाजमा सफल जीवनयापनका लागि आवश्यक पर्ने सीप र व्यवहार सिक्दछ ।\nउद्धरण: एकाइ १, पाठ १।",
-            "explanationEnglish": "Socialization teaches a person to become a good and responsible member of society. Through this process, a person acquires social values and learns skills and behaviors necessary for a successful life in society.\nCitation: Unit 1, Lesson 1."
+            "explanationEnglish": "Socialization teaches a person to become a good and responsible member of society. Through this process, a person acquires social values and learns skills and behaviors necessary for a successful life in society.\nCitation: Unit 1, Lesson 1",
+            "questionNumberNepali": "१",
+            "questionNumberEnglish": "1",
+            "marksNepali": "१",
+            "marksEnglish": 1
           },
           {
-            "questionNumber": "२",
             "type": "very_short_answer",
-            "marks": 1,
             "questionNepali": "मानव विकास सूचकाङ्क (HDI) गणना गर्ने कुनै एक सूचक उल्लेख गर्नुहोस् ।",
             "questionEnglish": "Mention any one indicator for calculating the Human Development Index (HDI).",
             "answerNepali": "मानव विकास सूचकाङ्क गणना गर्ने एक सूचक 'औसत आयु' हो ।",
             "answerEnglish": "One indicator used to calculate the Human Development Index is 'Life Expectancy'.",
             "explanationNepali": "मानव विकास सूचकाङ्कले कुनै पनि देशको विकासको स्तर मापन गर्दछ । यसको गणना प्रतिव्यक्ति आय, औसत आयु र शिक्षाको स्तर जस्ता तीन प्रमुख सूचकहरूको आधारमा गरिन्छ ।\nउद्धरण: एकाइ २, पाठ १।",
-            "explanationEnglish": "The Human Development Index measures the level of development of any country. It is calculated based on three major indicators: per capita income, life expectancy, and education level.\nCitation: Unit 2, Lesson 1."
+            "explanationEnglish": "The Human Development Index measures the level of development of any country. It is calculated based on three major indicators: per capita income, life expectancy, and education level.\nCitation: Unit 2, Lesson 1",
+            "questionNumberNepali": "२",
+            "questionNumberEnglish": "2",
+            "marksNepali": "१",
+            "marksEnglish": 1
           },
           {
-            "questionNumber": "३",
             "type": "very_short_answer",
-            "marks": 1,
             "questionNepali": "दाइजो प्रथा विरुद्ध जनचेतना जगाउने एउटा नारा तयार पार्नुहोस् ।",
             "questionEnglish": "Prepare a slogan to raise public awareness against the dowry system.",
             "answerNepali": "“दाइजो होइन, छोरीलाई शिक्षा देऊ; सभ्य समाजको निर्माणमा टेवा देऊ ।”",
             "answerEnglish": "No to dowry, educate the daughter; contribute to building a civilized society.",
             "explanationNepali": "यो नाराले दाइजो जस्तो सामाजिक कुप्रथाको अन्त्य गर्न र छोरीलाई शिक्षित बनाएर आत्मनिर्भर बनाउनुपर्छ भन्ने सन्देश दिन्छ, जसले सभ्य समाज निर्माणमा सहयोग पुग्छ ।\nउद्धरण: एकाइ ४, पाठ ५।",
-            "explanationEnglish": "This slogan gives the message that social evils like dowry should be ended and daughters should be educated and made self-reliant, which helps in building a civilized society.\nCitation: Unit 4, Lesson 5."
+            "explanationEnglish": "This slogan gives the message that social evils like dowry should be ended and daughters should be educated and made self-reliant, which helps in building a civilized society.\nCitation: Unit 4, Lesson 5",
+            "questionNumberNepali": "३",
+            "questionNumberEnglish": "3",
+            "marksNepali": "१",
+            "marksEnglish": 1
           },
           {
-            "questionNumber": "४",
             "type": "very_short_answer",
-            "marks": 1,
             "questionNepali": "घरेलु हिंसा भनेको के हो? एक वाक्यमा परिभाषित गर्नुहोस् ।",
             "questionEnglish": "What is domestic violence? Define in one sentence.",
             "answerNepali": "परिवारभित्र परिवारकै कुनै सदस्यले अर्को सदस्यमाथि गर्ने शारीरिक, मानसिक, आर्थिक तथा यौनिक दुर्व्यवहार नै घरेलु हिंसा हो ।",
             "answerEnglish": "Domestic violence is physical, mental, economic, and sexual abuse committed by one family member against another within the family.",
             "explanationNepali": "घरेलु हिंसाले पीडितको शारीरिक र मानसिक स्वास्थ्यमा गम्भीर असर पार्नुका साथै उसको व्यक्तित्व विकासमा समेत बाधा पुऱ्याउँछ । यो एक सामाजिक अपराध हो ।\nउद्धरण: एकाइ ४, पाठ ३।",
-            "explanationEnglish": "Domestic violence has a serious impact on the physical and mental health of the victim and also hinders their personality development. It is a social crime.\nCitation: Unit 4, Lesson 3."
+            "explanationEnglish": "Domestic violence has a serious impact on the physical and mental health of the victim and also hinders their personality development. It is a social crime.\nCitation: Unit 4, Lesson 3",
+            "questionNumberNepali": "४",
+            "questionNumberEnglish": "4",
+            "marksNepali": "१",
+            "marksEnglish": 1
           },
           {
-            "questionNumber": "५",
             "type": "very_short_answer",
-            "marks": 1,
             "questionNepali": "नेपालको राष्ट्रिय गानका रचनाकार को हुन्?",
             "questionEnglish": "Who is the composer of Nepal's national anthem?",
             "answerNepali": "नेपालको राष्ट्रिय गानका रचनाकार प्रदीपकुमार राई (व्याकुल माइला) हुन् ।",
             "answerEnglish": "The composer of Nepal's national anthem is Pradeep Kumar Rai (Byakul Maila).",
             "explanationNepali": "“सयौं थुँगा फूलका हामी...” बोलको नेपालको राष्ट्रिय गान व्याकुल माइलाले रचना गरेका हुन् र यसमा अम्बर गुरुङले सङ्गीत भरेका छन् ।\nउद्धरण: एकाइ १, पाठ ४।",
-            "explanationEnglish": "The national anthem of Nepal with the lyrics “Sayaun Thunga Phool Ka Hami...” was composed by Byakul Maila and music was composed by Ambar Gurung.\nCitation: Unit 1, Lesson 4."
+            "explanationEnglish": "The national anthem of Nepal with the lyrics “Sayaun Thunga Phool Ka Hami...” was composed by Byakul Maila and music was composed by Ambar Gurung.\nCitation: Unit 1, Lesson 4",
+            "questionNumberNepali": "५",
+            "questionNumberEnglish": "5",
+            "marksNepali": "१",
+            "marksEnglish": 1
           },
           {
-            "questionNumber": "६",
             "type": "very_short_answer",
-            "marks": 1,
             "questionNepali": "'घुस लिन्या र घुस दिन्या दुवै देशका महासतुर हुन्।' यो भनाइ कसको हो?",
             "questionEnglish": "'Those who take bribes and those who give bribes are both great enemies of the nation.' Whose saying is this?",
             "answerNepali": "यो भनाइ पृथ्वीनारायण शाहको हो ।",
             "answerEnglish": "This statement belongs to Prithvi Narayan Shah.",
             "explanationNepali": "पृथ्वीनारायण शाहले आफ्नो दिव्योपदेशमा भ्रष्टाचारले देशलाई कमजोर बनाउँछ भन्ने कुरामा जोड दिँदै घुस लिने र दिने दुवैलाई देशको शत्रु मानेका थिए ।\nउद्धरण: एकाइ ४, पाठ ४।",
-            "explanationEnglish": "Prithvi Narayan Shah, in his Divyopadesh, emphasized that corruption makes the country weak and considered both bribe takers and bribe givers as enemies of the nation.\nCitation: Unit 4, Lesson 4."
+            "explanationEnglish": "Prithvi Narayan Shah, in his Divyopadesh, emphasized that corruption makes the country weak and considered both bribe takers and bribe givers as enemies of the nation.\nCitation: Unit 4, Lesson 4",
+            "questionNumberNepali": "६",
+            "questionNumberEnglish": "6",
+            "marksNepali": "१",
+            "marksEnglish": 1
           },
           {
-            "questionNumber": "७",
             "type": "very_short_answer",
-            "marks": 1,
             "questionNepali": "नेपालको संविधानअनुसार प्रदेश व्यवस्थापिकालाई के भनिन्छ?",
             "questionEnglish": "What is the Provincial Legislature called according to the Constitution of Nepal?",
             "answerNepali": "नेपालको संविधानअनुसार प्रदेश व्यवस्थापिकालाई 'प्रदेश सभा' भनिन्छ ।",
             "answerEnglish": "According to the Constitution of Nepal, the State Legislature is called 'Pradesh Sabha' (Provincial Assembly).",
             "explanationNepali": "सङ्घीय संरचना अनुसार नेपालका सातवटै प्रदेशमा कानून निर्माण गर्ने निकायको रूपमा एक सदनात्मक प्रदेश सभाको व्यवस्था गरिएको छ ।\nउद्धरण: एकाइ ५, पाठ १।",
-            "explanationEnglish": "According to the federal structure, a unicameral Provincial Assembly has been arranged as the law-making body in all seven provinces of Nepal.\nCitation: Unit 5, Lesson 1."
+            "explanationEnglish": "According to the federal structure, a unicameral Provincial Assembly has been arranged as the law-making body in all seven provinces of Nepal.\nCitation: Unit 5, Lesson 1",
+            "questionNumberNepali": "७",
+            "questionNumberEnglish": "7",
+            "marksNepali": "१",
+            "marksEnglish": 1
           },
           {
-            "questionNumber": "८",
             "type": "very_short_answer",
-            "marks": 1,
             "questionNepali": "उपभोक्ता अधिकारको कुनै एक महत्त्व उल्लेख गर्नुहोस् ।",
             "questionEnglish": "Mention any one importance of consumer rights.",
             "answerNepali": "उपभोक्ता अधिकारले नागरिकलाई गुणस्तरहीन वस्तु तथा सेवाबाट सुरक्षित रहन मद्दत गर्छ ।",
             "answerEnglish": "Consumer rights help citizens to remain safe from low-quality goods and services.",
             "explanationNepali": "उपभोक्ता अधिकारले बजारलाई स्वच्छ र प्रतिस्पर्धी बनाउँछ । यसले गर्दा उपभोक्ताहरू ठगिनबाट बच्छन् र आफ्नो पैसाको सही मूल्य प्राप्त गर्न सक्छन् ।\nउद्धरण: एकाइ ५, पाठ ८।",
-            "explanationEnglish": "Consumer rights make the market clean and competitive. This saves consumers from being cheated and allows them to get the right value for their money.\nCitation: Unit 5, Lesson 8."
+            "explanationEnglish": "Consumer rights make the market clean and competitive. This saves consumers from being cheated and allows them to get the right value for their money.\nCitation: Unit 5, Lesson 8",
+            "questionNumberNepali": "८",
+            "questionNumberEnglish": "8",
+            "marksNepali": "१",
+            "marksEnglish": 1
           },
           {
-            "questionNumber": "९",
             "type": "very_short_answer",
-            "marks": 1,
             "questionNepali": "भूकम्पको तीव्रता नाप्ने यन्त्रलाई के भनिन्छ?",
             "questionEnglish": "What is the instrument used to measure the intensity of an earthquake called?",
             "answerNepali": "भूकम्पको तीव्रता नाप्ने यन्त्रलाई सिस्मोग्राफ (Seismograph) भनिन्छ ।",
             "answerEnglish": "The instrument used to measure the intensity of an earthquake is called a Seismograph.",
             "explanationNepali": "सिस्मोग्राफले भूकम्पीय तरङ्गहरूलाई रेकर्ड गर्दछ, जसको आधारमा भूकम्पको म्याग्निच्युड (शक्ति) र केन्द्रबिन्दु पत्ता लगाउन सकिन्छ ।\nउद्धरण: एकाइ ६, पाठ ७।",
-            "explanationEnglish": "A seismograph records seismic waves, based on which the magnitude (power) and epicenter of an earthquake can be determined.\nCitation: Unit 6, Lesson 7."
+            "explanationEnglish": "A seismograph records seismic waves, based on which the magnitude (power) and epicenter of an earthquake can be determined.\nCitation: Unit 6, Lesson 7",
+            "questionNumberNepali": "९",
+            "questionNumberEnglish": "9",
+            "marksNepali": "१",
+            "marksEnglish": 1
           },
           {
-            "questionNumber": "१०",
             "type": "very_short_answer",
-            "marks": 1,
             "questionNepali": "उत्तर अमेरिका महादेशलाई किन 'नयाँ संसार' भनिन्छ?",
             "questionEnglish": "Why is the North American continent called the 'New World'?",
             "answerNepali": "सन् १४९२ मा क्रिस्टोफर कोलम्बसले पत्ता लगाएका हुनाले उत्तर अमेरिका महादेशलाई 'नयाँ संसार' भनिन्छ ।",
             "answerEnglish": "Because it was discovered by Christopher Columbus in 1492.",
             "explanationNepali": "युरोपेलीहरूका लागि यो महादेश पहिले अज्ञात थियो । कोलम्बसको यात्रापछि मात्र यसको अस्तित्वबारे युरोपमा जानकारी भयो, त्यसैले यसलाई 'नयाँ संसार' भनिएको हो ।\nउद्धरण: एकाइ ६, पाठ ६।",
-            "explanationEnglish": "For Europeans, this continent was previously unknown. Information about its existence became available in Europe only after Columbus's voyage, hence it is called the 'New World'.\nCitation: Unit 6, Lesson 6."
+            "explanationEnglish": "For Europeans, this continent was previously unknown. Information about its existence became available in Europe only after Columbus's voyage, hence it is called the 'New World'.\nCitation: Unit 6, Lesson 6",
+            "questionNumberNepali": "१०",
+            "questionNumberEnglish": "10",
+            "marksNepali": "१",
+            "marksEnglish": 1
           },
           {
-            "questionNumber": "११",
             "type": "very_short_answer",
-            "marks": 1,
             "questionNepali": "तपाईंले आफ्नो स्वास्थ्यलाई राम्रो बनाउन अपनाएको कुनै एक उपाय लेख्नुहोस् ।",
             "questionEnglish": "Write any one measure you have adopted to improve your health.",
             "answerNepali": "मैले आफ्नो स्वास्थ्यलाई राम्रो बनाउन नियमित रूपमा सन्तुलित भोजन खाने गरेको छु ।",
             "answerEnglish": "I have been eating a balanced diet regularly to improve my health.",
-            "explanationNepali": "यो एक व्यक्तिगत प्रश्न हो र विद्यार्थीले आफ्नो जीवनशैलीअनुसार उत्तर दिन सक्छन् । नियमित व्यायाम, सन्तुलित भोजन, सरसफाइ जस्ता कुनै पनि स्वस्थ बानी यसको सही उत्तर हुन सक्छ ।",
-            "explanationEnglish": "This is a personal question and students can answer according to their lifestyle. Any healthy habit like regular exercise, balanced diet, hygiene can be the correct answer."
+            "explanationNepali": "यो एक व्यक्तिगत प्रश्न र विद्यार्थीले आफ्नो जीवनशैलीअनुसार उत्तर दिन सक्छन् । नियमित व्यायाम, सन्तुलित भोजन, सरसफाइ जस्ता कुनै पनि स्वस्थ बानी यसको सही उत्तर हुन सक्छ ।",
+            "explanationEnglish": "This is a personal question and students can answer according to their lifestyle. Any healthy habit like regular exercise, balanced diet, hygiene can be the correct answer.",
+            "questionNumberNepali": "११",
+            "questionNumberEnglish": "11",
+            "marksNepali": "१",
+            "marksEnglish": 1
           }
         ]
       },
@@ -150,103 +171,121 @@
         "marksSchema": "(९×४=३६)",
         "questions": [
           {
-            "questionNumber": "१२",
             "type": "short_answer",
-            "marks": 4,
             "questionNepali": "व्यक्तित्व विकासमा विद्यालय र दौतरी समूहको भूमिकालाई चार बुँदामा प्रस्ट पार्नुहोस् ।",
             "questionEnglish": "Clarify the role of school and peer group in personality development in four points.",
             "answerNepali": "व्यक्तित्व विकासमा विद्यालय र दौतरी समूहको भूमिका निम्नअनुसार छन्:\n• विद्यालय: विद्यालयले औपचारिक ज्ञान, सीप र अनुशासन सिकाएर व्यक्तिको बौद्धिक विकासमा मद्दत गर्दछ ।\n• विद्यालय: विभिन्न जातजाति, धर्म र संस्कृतिका विद्यार्थीहरूसँग घुलमिल हुने अवसर प्रदान गरी सामाजिक सद्भाव र सहकार्यको भावना विकास गराउँछ ।\n• दौतरी समूह: दौतरी समूहमा एकआपसमा सहयोग, प्रतिस्पर्धा र भावना साटासाट गर्ने अवसर मिल्छ, जसले सामाजिक व्यवहार र भावनात्मक सन्तुलन विकास गर्न सघाउँछ ।\n• दौतरी समूह: दौतरी समूहबाट नयाँ विचार, रुचि र व्यवहार सिक्न सकिन्छ, जसले व्यक्तिको पहिचान निर्माणमा महत्त्वपूर्ण भूमिका खेल्छ ।",
             "answerEnglish": "The role of school and peer group in personality development are as follows:\n• School: School helps in intellectual development by teaching formal knowledge, skills, and discipline.\n• School: It provides an opportunity to mix with students of different castes, religions, and cultures, fostering social harmony and cooperation.\n• Peer Group: Peer groups provide opportunities for mutual help, competition, and sharing of emotions, which helps develop social behavior and emotional balance.\n• Peer Group: New ideas, interests, and behaviors can be learned from peer groups, which play an important role in identity formation.",
             "explanationNepali": "विद्यालयले बौद्धिक र अनुशासित पक्षको विकासमा जोड दिन्छ भने दौतरी समूहले सामाजिक र भावनात्मक पक्षको विकासमा महत्त्वपूर्ण भूमिका खेल्छ । यी दुवै सामाजिकीकरणका महत्त्वपूर्ण माध्यम हुन् ।\nउद्धरण: एकाइ १, पाठ १।",
-            "explanationEnglish": "While school emphasizes the development of intellectual and disciplined aspects, peer groups play an important role in the development of social and emotional aspects. Both are important agents of socialization.\nCitation: Unit 1, Lesson 1."
+            "explanationEnglish": "While school emphasizes the development of intellectual and disciplined aspects, peer groups play an important role in the development of social and emotional aspects. Both are important agents of socialization.\nCitation: Unit 1, Lesson 1",
+            "questionNumberNepali": "१२",
+            "questionNumberEnglish": "12",
+            "marksNepali": "४",
+            "marksEnglish": 4
           },
           {
-            "questionNumber": "१३",
             "type": "short_answer",
-            "marks": 4,
             "questionNepali": "'अव्यवस्थित विकासले विनाश निम्त्याउँछ ।' यस भनाइलाई दिगो विकासको अवधारणाको आधारमा पुष्टि गर्नुहोस् ।",
             "questionEnglish": "'Unplanned development brings destruction.' Justify this statement based on the concept of sustainable development.",
             "answerNepali": "“अव्यवस्थित विकासले विनाश निम्त्याउँछ” भन्ने भनाइ दिगो विकासको अवधारणासँग मेल खान्छ । दिगो विकासले वर्तमानको आवश्यकता पूरा गर्दा भावी पुस्ताको आवश्यकतामा सम्झौता गर्नुहुँदैन भन्ने मान्यता राख्छ । अव्यवस्थित विकासले प्राकृतिक स्रोतको जथाभाबी दोहन गर्छ, वातावरणीय सन्तुलन बिगार्छ र भविष्यका लागि स्रोत साधन बाँकी राख्दैन । उदाहरणका लागि, वातावरणीय प्रभाव मूल्याङ्कन नगरी पहाडमा सडक खन्दा पहिरो जाने, पानीका मुहान सुक्ने र जैविक विविधता नष्ट हुने जस्ता विनाशकारी परिणामहरू देखिन्छन् । यसले क्षणिक लाभ दिए पनि दीर्घकालमा ठूलो सामाजिक र आर्थिक क्षति पुऱ्याउँछ । तसर्थ, दिगो र सन्तुलित विकास नै दिगोपनाको आधार हो ।",
             "answerEnglish": "'Unplanned development brings destruction' aligns with the concept of sustainable development. Sustainable development believes that meeting present needs should not compromise the needs of future generations. Unplanned development exploits natural resources indiscriminately, disrupts environmental balance, and leaves no resources for the future. For example, digging roads in hills without environmental impact assessment leads to landslides, drying up of water sources, and loss of biodiversity. While it may provide short-term benefits, it causes huge social and economic damage in the long run. Therefore, sustainable and balanced development is the basis of sustainability.",
             "explanationNepali": "यस प्रश्नले विद्यार्थीलाई दिगो विकासको मर्म बुझ्न र विकासका नकारात्मक असरहरूबारे सचेत हुन प्रेरित गर्छ । वातावरणीय संरक्षण र विकासबीच सन्तुलन कायम राख्नुपर्ने आवश्यकतालाई यस उत्तरले जोड दिन्छ ।\nउद्धरण: एकाइ २, पाठ २।",
-            "explanationEnglish": "This question inspires students to understand the essence of sustainable development and become aware of the negative effects of development. This answer emphasizes the need to maintain a balance between environmental conservation and development.\nCitation: Unit 2, Lesson 2."
+            "explanationEnglish": "This question inspires students to understand the essence of sustainable development and become aware of the negative effects of development. This answer emphasizes the need to maintain a balance between environmental conservation and development.\nCitation: Unit 2, Lesson 2",
+            "questionNumberNepali": "१३",
+            "questionNumberEnglish": "13",
+            "marksNepali": "४",
+            "marksEnglish": 4
           },
           {
-            "questionNumber": "१४",
             "type": "creative_writing_editorial",
-            "marks": 4,
             "questionNepali": "'राष्ट्रिय सम्पदा संरक्षणमा समुदायको भूमिका' शीर्षकमा एक सम्पादकीयको नमुना तयार गर्नुहोस् ।",
             "questionEnglish": "Prepare a sample editorial on the title 'Role of Community in the Conservation of National Heritage'.",
             "answerNepali": "सम्पादकीय\n\nराष्ट्रिय सम्पदा संरक्षणमा समुदायको भूमिका\n\nहाम्रा राष्ट्रिय सम्पदाहरू केवल ढुङ्गा, माटो वा काठका संरचना मात्र होइनन्, यिनीहरू हाम्रो गौरवपूर्ण इतिहास, संस्कृति र पहिचानका जीवन्त प्रतीक हुन् । पशुपतिनाथ, लुम्बिनीदेखि लिएर हाम्रा मौलिक लोकगीत र नृत्यसम्मका मूर्त र अमूर्त सम्पदाहरूले हामीलाई विश्वमाझ चिनाएका छन् । तर, यी अमूल्य सम्पदाहरूको संरक्षण केवल सरकारको एकल प्रयासले मात्र सम्भव छैन । यसमा स्थानीय समुदायको भूमिका सबैभन्दा महत्त्वपूर्ण हुन्छ ।\n\nसम्पदाहरू समुदायको आँगनमा हुन्छन् । तिनको प्रत्यक्ष रेखदेख र संरक्षण गर्ने पहिलो दायित्व पनि समुदायकै हो । समुदायले आफ्ना सम्पदाप्रति अपनत्व महसुस गर्नुपर्छ । सम्पदा क्षेत्रमा हुने फोहोरमैला व्यवस्थापन, अतिक्रमण रोकथाम तथा सरसफाइ जस्ता कार्यमा समुदायको सक्रियता अनिवार्य छ । यसका साथै, नयाँ पुस्तालाई सम्पदाको महत्त्वबारे जानकारी गराई उनीहरूमा संरक्षणको भावना जागृत गराउन समुदायले नै अग्रसरता लिनुपर्छ । स्थानीय जात्रा, पर्व र सांस्कृतिक कार्यक्रमहरू आयोजना गरी सम्पदाको जीवन्तता कायम राख्न पनि समुदायको भूमिका अपरिहार्य छ । जब समुदाय आफैँ सचेत र सक्रिय हुन्छ, तब मात्र हाम्रा राष्ट्रिय सम्पदाहरू युगौँयुगसम्म सुरक्षित रहन सक्छन् ।",
             "answerEnglish": "Editorial\n\nRole of Community in Conservation of National Heritage\n\nOur national heritages are not just structures of stone, soil, or wood; they are living symbols of our glorious history, culture, and identity. From Pashupatinath and Lumbini to our original folk songs and dances, tangible and intangible heritages introduced us to the world. But the conservation of these priceless heritages is not possible with the government's effort alone. The role of the local community is most important in this.\n\nHeritages are in the community's courtyard. The primary responsibility for their direct supervision and conservation lies with the community. The community must feel ownership towards its heritage. Community activism is essential in tasks like waste management, encroachment prevention, and cleanliness in heritage areas. In addition, the community itself must take the lead in informing the new generation about the importance of heritage and awakening the feeling of conservation in them. The role of the community is indispensable in maintaining the liveliness of heritage by organizing local fairs, festivals, and cultural programs. Only when the community itself is aware and active can our national heritages remain safe for ages.",
             "explanationNepali": "यो प्रश्नले विद्यार्थीमा रचनात्मक लेखन सीपको विकास गराउँछ । यसले राष्ट्रिय सम्पदाको महत्त्व र यसको संरक्षणमा नागरिकको दायित्वबोध गराउन मद्दत गर्छ ।\nउद्धरण: एकाइ ३, पाठ १।",
-            "explanationEnglish": "This question develops creative writing skills in students. It helps to make them aware of the importance of national heritage and the citizen's duty in its conservation.\nCitation: Unit 3, Lesson 1."
+            "explanationEnglish": "This question develops creative writing skills in students. It helps to make them aware of the importance of national heritage and the citizen's duty in its conservation.\nCitation: Unit 3, Lesson 1",
+            "questionNumberNepali": "१४",
+            "questionNumberEnglish": "14",
+            "marksNepali": "४",
+            "marksEnglish": 4
           },
           {
-            "questionNumber": "१५",
             "type": "short_answer",
-            "marks": 4,
             "questionNepali": "लोकनृत्य र शास्त्रीय नृत्यबिच पाइने चारवटा भिन्नताहरू लेख्नुहोस् ।",
             "questionEnglish": "Write four differences found between Folk Dance and Classical Dance.",
             "answerNepali": "लोकनृत्य र शास्त्रीय नृत्यबिचका भिन्नताहरू निम्न छन्:\n\n| लोकनृत्य | शास्त्रीय नृत्य |\n| :--- | :--- |\n| १. यो समुदायको दैनिक जीवन, सुखदुःख र संस्कृतिसँग सम्बन्धित हुन्छ । | १. यो धर्म, शास्त्र र देवीदेवताको चरित्रमा आधारित हुन्छ । |\n| २. यसका नियमहरू सरल र लचिला हुन्छन् । | २. यसका नियम, मुद्रा र अभिनय कठोर र शास्त्रीय व्याकरणमा बाँधिएका हुन्छन् । |\n| ३. यो सामूहिक रूपमा रमाइलोका लागि नाचिने गरिन्छ । | ३. यो विशेष तालिम प्राप्त कलाकारद्वारा मञ्चमा प्रदर्शन गरिन्छ । |\n| ४. उदाहरण: देउडा नाच, धान नाच, मारुनी नाच । | ४. उदाहरण: कार्तिक नाच, चर्या नृत्य, पञ्चबुद्ध नृत्य । |",
             "answerEnglish": "Differences between Folk Dance and Classical Dance are as follows:\n\n| Folk Dance | Classical Dance |\n| :--- | :--- |\n| 1. It is related to the daily life, joys, sorrows, and culture of the community. | 1. It is based on religion, scriptures, and the character of deities. |\n| 2. Its rules are simple and flexible. | 2. Its rules, postures, and acting are rigid and bound by classical grammar. |\n| 3. It is danced collectively for entertainment. | 3. It is performed on stage by specially trained artists. |\n| 4. Examples: Deuda dance, Dhan dance, Maruni dance. | 4. Examples: Kartik dance, Charya dance, Panchabuddha dance. |",
             "explanationNepali": "यो उत्तरले दुई प्रकारका नृत्यहरूको आधारभूत भिन्नतालाई स्पष्ट पार्छ । यसले विद्यार्थीलाई नेपाली नृत्यकलाको विविधता र विशेषता बुझ्न मद्दत गर्दछ ।\nउद्धरण: एकाइ ३, पाठ ४।",
-            "explanationEnglish": "This answer clarifies the basic difference between the two types of dances. It helps students understand the diversity and characteristics of Nepali dance art.\nCitation: Unit 3, Lesson 4."
+            "explanationEnglish": "This answer clarifies the basic difference between the two types of dances. It helps students understand the diversity and characteristics of Nepali dance art.\nCitation: Unit 3, Lesson 4",
+            "questionNumberNepali": "१५",
+            "questionNumberEnglish": "15",
+            "marksNepali": "४",
+            "marksEnglish": 4
           },
           {
-            "questionNumber": "१६",
             "type": "short_answer",
-            "marks": 4,
             "questionNepali": "मानव बेचबिखनका कुनै चार कारणहरू उल्लेख गर्नुहोस् ।",
             "questionEnglish": "Mention any four causes of human trafficking.",
             "answerNepali": "मानव बेचबिखनका प्रमुख चार कारणहरू निम्नअनुसार छन्:\n• गरिबी र बेरोजगारी: आर्थिक अवस्था कमजोर हुँदा राम्रो काम र कमाइको प्रलोभनमा परेर मानिसहरू बेचबिखनमा पर्ने गर्दछन् ।\n• अशिक्षा र चेतनाको कमी: बेचबिखनका तरिका, जोखिम र कानुनी व्यवस्थाबारे जानकारी नहुँदा मानिसहरू सजिलै दलालको फन्दामा पर्छन् ।\n• सामाजिक विभेद: लैङ्गिक वा जातीय विभेदका कारण महिला तथा सीमान्तकृत समुदायका व्यक्तिहरू बेचबिखनको उच्च जोखिममा हुन्छन् ।\n• खुला सिमाना र कमजोर कानुन: नेपालको भारतसँगको खुला सिमानाले गर्दा बेचबिखनका लागि मानिस ओसारपसार गर्न सजिलो भएको छ र कानुनको फितलो कार्यान्वयनले अपराधीलाई प्रोत्साहन मिलेको छ ।",
             "answerEnglish": "The four main causes of human trafficking are as follows:\n• Poverty and Unemployment: When the economic condition is weak, people fall into trafficking due to the temptation of good jobs and earnings.\n• Illiteracy and Lack of Awareness: Due to lack of information about the methods, risks, and legal provisions of trafficking, people easily fall into the trap of brokers.\n• Social Discrimination: Due to gender or caste discrimination, women and people from marginalized communities are at high risk of trafficking.\n• Open Border and Weak Laws: Nepal's open border with India has made it easy to transport people for trafficking, and weak implementation of laws has encouraged criminals.",
             "explanationNepali": "यो प्रश्नले मानव बेचबिखन जस्तो गम्भीर सामाजिक अपराधको जरो केलाउन मद्दत गर्छ । कारणहरू थाहा पाएपछि समाधानका उपायहरू खोज्न सहज हुन्छ ।\nउद्धरण: एकाइ ४, पाठ १।",
-            "explanationEnglish": "This question helps to dig out the root of serious social crimes like human trafficking. Once the causes are known, it becomes easier to find solutions.\nCitation: Unit 4, Lesson 1."
+            "explanationEnglish": "This question helps to dig out the root of serious social crimes like human trafficking. Once the causes are known, it becomes easier to find solutions.\nCitation: Unit 4, Lesson 1",
+            "questionNumberNepali": "१६",
+            "questionNumberEnglish": "16",
+            "marksNepali": "४",
+            "marksEnglish": 4
           },
           {
-            "questionNumber": "१७",
             "type": "short_answer",
-            "marks": 4,
             "questionNepali": "निर्वाचन प्रक्रियामा निर्वाचन आयोगको काम, कर्तव्य र अधिकार चार बुँदामा उल्लेख गर्नुहोस् ।",
             "questionEnglish": "Mention the functions, duties, and powers of the Election Commission in the election process in four points.",
             "answerNepali": "निर्वाचन प्रक्रियामा निर्वाचन आयोगका काम, कर्तव्य र अधिकार निम्न छन्:\n• स्वतन्त्र र निष्पक्ष रूपमा राष्ट्रपति, उपराष्ट्रपति, सङ्घीय संसद, प्रदेश सभा र स्थानीय तहको निर्वाचन सञ्चालन, रेखदेख, निर्देशन र नियन्त्रण गर्नु ।\n• निर्वाचनको प्रयोजनका लागि मतदाता नामावली तयार गर्ने, अद्यावधिक गर्ने र मतदाता परिचयपत्रको व्यवस्था गर्नु ।\n• राजनीतिक दलहरूलाई दर्ता गर्ने, मान्यता दिने र निर्वाचन चिह्न प्रदान गर्नु ।\n• निर्वाचन आचारसंहिता बनाई लागू गर्ने र उल्लङ्घन गर्ने व्यक्ति वा संस्थालाई कारबाही गर्नु ।",
             "answerEnglish": "The functions, duties, and powers of the Election Commission in the election process are as follows:\n• Conducting, supervising, directing, and controlling the elections of the President, Vice-President, Federal Parliament, Provincial Assembly, and Local Level in a free and fair manner.\n• Preparing and updating voter lists and arranging voter ID cards for the purpose of the election.\n• Registering, recognizing, and providing election symbols to political parties.\n• Making and implementing the election code of conduct and taking action against individuals or institutions violating it.",
             "explanationNepali": "निर्वाचन आयोग लोकतन्त्रको एक महत्त्वपूर्ण स्तम्भ हो । यसको निष्पक्ष भूमिकाले मात्रै निर्वाचन स्वतन्त्र र धाँधलीरहित हुन सक्छ, जसले गर्दा नागरिकले आफ्नो सार्वभौमसत्ताको सही प्रयोग गर्न पाउँछन् ।\nउद्धरण: एकाइ ५, पाठ ५।",
-            "explanationEnglish": "The Election Commission is an important pillar of democracy. Only its impartial role can make the election free and fair, allowing citizens to correctly exercise their sovereignty.\nCitation: Unit 5, Lesson 5."
+            "explanationEnglish": "The Election Commission is an important pillar of democracy. Only its impartial role can make the election free and fair, allowing citizens to correctly exercise their sovereignty.\nCitation: Unit 5, Lesson 5",
+            "questionNumberNepali": "१७",
+            "questionNumberEnglish": "17",
+            "marksNepali": "४",
+            "marksEnglish": 4
           },
           {
-            "questionNumber": "१८",
             "type": "short_answer",
-            "marks": 4,
             "questionNepali": "भूमध्यरेखीय र उष्ण मौसमी हावापानीमा पाइने चार भिन्नताहरू प्रस्तुत गर्नुहोस् ।",
             "questionEnglish": "Present four differences found between Equatorial and Tropical Monsoon climates.",
             "answerNepali": "भूमध्यरेखीय र उष्ण मौसमी हावापानीबिचका भिन्नताहरू:\n\n| भूमध्यरेखीय हावापानी | उष्ण मौसमी हावापानी |\n| :--- | :--- |\n| १. वर्षैभरि उच्च तापक्रम र वर्षा हुन्छ, ऋतु परिवर्तन हुँदैन । | १. गृष्ममा गर्मी र वर्षा तथा हिउँदमा सुख्खा र ठण्डा हुन्छ, स्पष्ट ऋतु परिवर्तन हुन्छ । |\n| २. दैनिक दिउँसोपछि संवाहनिक वर्षा हुन्छ । | २. गृष्ममा मनसुनी वायुका कारण अधिकांश वर्षा हुन्छ । |\n| ३. बाक्लो, सदाबहार उष्ण प्रदेशीय वर्षा वन (Rainforest) पाइन्छ । | ३. पतझर प्रकृतिका वनस्पति पाइन्छन् । |\n| ४. यो क्षेत्र भूमध्यरेखाको ५° उत्तर र दक्षिण अक्षांशमा पाइन्छ । | ४. यो क्षेत्र ५° देखि ३०° अक्षांशमा महादेशको पूर्वी भागमा पाइन्छ । |",
             "answerEnglish": "Differences between Equatorial and Tropical Monsoon Climate:\n\n| Equatorial Climate | Tropical Monsoon Climate |\n| :--- | :--- |\n| 1. High temperature and rainfall throughout the year, no change in seasons. | 1. Hot and rainy in summer and dry and cold in winter, distinct change in seasons. |\n| 2. Convectional rainfall occurs daily in the afternoon. | 2. Most rainfall occurs in summer due to monsoon winds. |\n| 3. Dense, evergreen tropical rainforests are found. | 3. Deciduous types of vegetation are found. |\n| 4. This region is found in 5° North and South latitudes of the equator. | 4. This region is found in the eastern part of the continent between 5° to 30° latitudes. |",
             "explanationNepali": "यो उत्तरले हावापानीका दुई प्रमुख प्रकारहरूको तुलनात्मक अध्ययन गर्न मद्दत गर्छ । यसले हावापानीले वनस्पति र मौसममा पार्ने प्रभावलाई स्पष्ट पार्दछ ।\nउद्धरण: एकाइ ६, पाठ ३।",
-            "explanationEnglish": "This answer helps in the comparative study of two major types of climates. It clarifies the effect of climate on vegetation and weather.\nCitation: Unit 6, Lesson 3, 137."
+            "explanationEnglish": "This answer helps in the comparative study of two major types of climates. It clarifies the effect of climate on vegetation and weather.\nCitation: Unit 6, Lesson 3",
+            "questionNumberNepali": "१८",
+            "questionNumberEnglish": "18",
+            "marksNepali": "४",
+            "marksEnglish": 4
           },
           {
-            "questionNumber": "१९",
             "type": "creative_writing_dialogue",
-            "marks": 4,
             "questionNepali": "'सूचना प्रविधिको सही उपयोग' भन्ने शीर्षकमा दुई साथीबिचको एक छोटो संवादको नमुना तयार पार्नुहोस् ।",
             "questionEnglish": "Prepare a sample short dialogue between two friends on the title 'Correct Use of Information Technology'.",
             "answerNepali": "संवाद: सूचना प्रविधिको सही उपयोग\n\nसुनिता: के छ विशाल, आजभोलि मोबाइलमा मात्रै व्यस्त देख्छु नि !\nविशाल: हो सुनिता, अनलाइन कक्षाले गर्दा मोबाइल चलाउने बानी नै परिसक्यो । तर कहिलेकाहीँ सामाजिक सञ्जाल र गेम खेल्दा समय बितेको पत्तै हुँदैन ।\nसुनिता: हो, त्यही त ! सूचना प्रविधि हाम्रो लागि ज्ञानको भण्डार हो तर हामीले यसको सही उपयोग गर्न जान्नुपर्छ । मैले त आजकल मोबाइलबाटै विभिन्न शैक्षिक वेबसाइटहरू हेरेर नयाँ-नयाँ कुरा सिक्ने गरेकी छु ।\nविशाल: हो र? त्यो त राम्रो बानी हो । मैले पनि अबदेखि सामाजिक सञ्जालमा समय खेर फाल्नुको सट्टा पढाइमा सहयोगी हुने सामग्री खोज्नुपर्छ । सूचना प्रविधिको दुरुपयोगले हाम्रो भविष्य बिगार्न सक्छ ।\nसुनिता: हो विशाल, हामीले यसलाई अवसरको रूपमा लिनुपर्छ, कुलतको रूपमा होइन ।",
             "answerEnglish": "Dialogue: Correct Use of Information Technology\n\nSunita: What's up Vishal, I see you busy only on mobile these days!\nVishal: Yes Sunita, online classes have made me habitual of using mobile. But sometimes I don't realize time passing while using social media and playing games.\nSunita: Yes, exactly! Information technology is a storehouse of knowledge for us, but we must know how to use it correctly. I have started learning new things by looking at various educational websites on mobile these days.\nVishal: Is it? That's a good habit. From now on, I should also search for materials helpful in studies instead of wasting time on social media. Misuse of information technology can ruin our future.\nSunita: Yes Vishal, we should take it as an opportunity, not as an addiction.",
             "explanationNepali": "यो प्रश्नले विद्यार्थीहरूलाई सूचना प्रविधिको सकारात्मक र नकारात्मक पक्षबारे सचेत गराउँछ र यसको सही उपयोग गर्न प्रेरित गर्छ । यो एक व्यावहारिक र समसामयिक विषय हो ।\nउद्धरण: एकाइ ४, पाठ २।",
-            "explanationEnglish": "This question makes students aware of the positive and negative aspects of information technology and inspires them to use it correctly. This is a practical and contemporary topic.\nCitation: Unit 4, Lesson 2."
+            "explanationEnglish": "This question makes students aware of the positive and negative aspects of information technology and inspires them to use it correctly. This is a practical and contemporary topic.\nCitation: Unit 4, Lesson 2",
+            "questionNumberNepali": "१९",
+            "questionNumberEnglish": "19",
+            "marksNepali": "४",
+            "marksEnglish": 4
           },
           {
-            "questionNumber": "२०",
             "type": "short_answer",
-            "marks": 4,
             "questionNepali": "अपाङ्गता भएका व्यक्तिहरूको जीवन सहज बनाउन तपाईंको समुदायले गर्न सक्ने चारवटा कामहरू लेख्नुहोस् ।",
             "questionEnglish": "Write four things your community can do to make the lives of people with disabilities easier.",
             "answerNepali": "अपाङ्गता भएका व्यक्तिहरूको जीवन सहज बनाउन मेरो समुदायले निम्न कामहरू गर्न सक्छ:\n• सार्वजनिक स्थानहरू (जस्तै: विद्यालय, स्वास्थ्य चौकी, वडा कार्यालय) मा ह्वीलचेयर जान मिल्ने र्‍याम्प र अपाङ्गता-मैत्री शौचालय निर्माण गर्ने ।\n• उनीहरूको सीप र क्षमताअनुसारको रोजगारीका अवसरहरू सिर्जना गर्न स्थानीय स्तरमा पहल गर्ने र भेदभाव विरुद्ध जनचेतना फैलाउने ।\n• सामुदायिक कार्यक्रमहरूमा उनीहरूको सक्रिय सहभागिता सुनिश्चित गर्ने र उनीहरूका विचार र आवश्यकतालाई सम्मान गर्ने ।\n• उनीहरूलाई आवश्यक पर्ने सहयोगी सामग्री (जस्तै: ह्वीलचेयर, सेतो छडी, श्रवण यन्त्र) वितरणका लागि स्थानीय सरकार र सङ्घसंस्थासँग समन्वय गर्ने ।",
             "answerEnglish": "To make the lives of people with disabilities easier, my community can do the following things:\n• Constructing wheelchair-accessible ramps and disability-friendly toilets in public places (e.g., schools, health posts, ward offices).\n• Taking initiative at the local level to create employment opportunities according to their skills and abilities and spreading public awareness against discrimination.\n• Ensuring their active participation in community programs and respecting their views and needs.\n• Coordinating with the local government and organizations for the distribution of assistive devices (e.g., wheelchairs, white canes, hearing aids) needed by them.",
             "explanationNepali": "यो प्रश्नले विद्यार्थीहरूमा अपाङ्गता भएका व्यक्तिहरूप्रति समानुभूति, सम्मान र सहयोगको भावना जागृत गराउँछ । यसले उनीहरूलाई सामाजिक दायित्वप्रति सचेत बनाउँछ ।\nउद्धरण: एकाइ ३, पाठ ८।",
-            "explanationEnglish": "This question awakens a sense of empathy, respect, and cooperation towards people with disabilities in students. It makes them aware of social responsibility.\nCitation: Unit 3, Lesson 8."
+            "explanationEnglish": "This question awakens a sense of empathy, respect, and cooperation towards people with disabilities in students. It makes them aware of social responsibility.\nCitation: Unit 3, Lesson 8",
+            "questionNumberNepali": "२०",
+            "questionNumberEnglish": "20",
+            "marksNepali": "४",
+            "marksEnglish": 4
           }
         ]
       },
@@ -256,20 +295,20 @@
         "marksSchema": "(४×७=२८)",
         "questions": [
           {
-            "questionNumber": "२१",
             "type": "long_answer",
-            "marks": 7,
             "questionNepali": "मानव अधिकार भनेको के हो? नेपालमा मानव अधिकार संरक्षणका लागि भएका प्रयासहरूको समीक्षा गर्नुहोस् ।",
             "questionEnglish": "What is human right? Review the efforts made for the protection of human rights in Nepal.",
             "answerNepali": "मानव अधिकारको अवधारणा\nमानिसले मानिस भएकै नाताले जन्मसिद्ध रूपमा प्राप्त गर्ने नैसर्गिक, अविभाज्य र आधारभूत अधिकारलाई मानव अधिकार भनिन्छ । यी अधिकारहरू कुनै पनि व्यक्तिलाई जाति, धर्म, लिङ्ग, भाषा, राष्ट्रियता वा अन्य कुनै आधारमा भेदभावबिना समान रूपमा प्राप्त हुन्छन् । जीवन, स्वतन्त्रता र समानताको अधिकार, विचार र अभिव्यक्तिको स्वतन्त्रता, शिक्षा र स्वास्थ्यको अधिकार, यातना विरुद्धको अधिकार आदि मानव अधिकारका केही उदाहरण हुन् । मानव अधिकारको विश्वव्यापी घोषणापत्र, १९४८ ले मानव अधिकारलाई अन्तर्राष्ट्रिय स्तरमा स्थापित गरेको छ ।\n\nनेपालमा मानव अधिकार संरक्षणका प्रयासहरू\nनेपालले मानव अधिकार संरक्षणका लागि विभिन्न महत्त्वपूर्ण प्रयासहरू गरेको छ, जसको समीक्षा निम्नअनुसार गर्न सकिन्छ:\n\n• संवैधानिक व्यवस्था: नेपालको संविधानले ३१ वटा मौलिक हकको व्यवस्था गरेको छ, जसमा समानताको हक, स्वतन्त्रताको हक, छुवाछुत विरुद्धको हक, महिलाको हक, बालबालिकाको हक आदि पर्दछन् । यी हकहरू मानव अधिकारका महत्त्वपूर्ण पक्ष हुन् ।\n• कानुनी व्यवस्था: मानव अधिकार संरक्षणका लागि मानव अधिकार ऐन, घरेलु हिंसा (कसुर र सजाय) ऐन, जातीय भेदभाव तथा छुवाछुत (कसुर र सजाय) ऐन जस्ता विशेष कानुनहरू निर्माण गरी कार्यान्वयनमा ल्याइएको छ ।\n• संस्थागत व्यवस्था: मानव अधिकारको संरक्षण र प्रवर्धन गर्न 'राष्ट्रिय मानव अधिकार आयोग' जस्तो स्वतन्त्र संवैधानिक निकायको स्थापना गरिएको छ । यसबाहेक राष्ट्रिय महिला आयोग, राष्ट्रिय दलित आयोग जस्ता आयोगहरू पनि क्रियाशील छन् ।\n• अन्तर्राष्ट्रिय प्रतिबद्धता: नेपालले मानव अधिकारसम्बन्धी विभिन्न अन्तर्राष्ट्रिय महासन्धिहरूलाई अनुमोदन गरी ती प्रावधानहरूलाई राष्ट्रिय कानुनमा समावेश गर्न प्रतिबद्धता जनाएको छ ।\n\nप्रभावकारिता र चुनौतीहरू:\nयी प्रयासहरूका बाबजुद नेपालमा मानव अधिकारको अवस्था अझै सन्तोषजनक छैन । विशेषगरी महिला, दलित, सीमान्तकृत समुदाय र ग्रामीण क्षेत्रका नागरिकहरू अझै पनि आफ्ना अधिकारबाट वञ्चित छन् । घरेलु हिंसा, जातीय भेदभाव, दाइजो प्रथा जस्ता समस्याहरू विद्यमान छन् । कानुनी व्यवस्थाको प्रभावकारी कार्यान्वयन नहुनु, दण्डहीनताको अवस्था रहनु र नागरिकमा चेतनाको कमी हुनु प्रमुख चुनौतीहरू हुन् । यी चुनौतीहरूलाई सम्बोधन गर्न राज्य र नागरिक समाज दुवैको एकीकृत प्रयास आवश्यक छ ।",
             "answerEnglish": "Concept of Human Rights\nThe inherent, indivisible, and basic rights that a person obtains by birth simply by virtue of being a human are called human rights. These rights are obtained equally by any person without discrimination on the basis of caste, religion, gender, language, nationality, or any other ground. Right to life, liberty, and equality, freedom of thought and expression, right to education and health, right against torture, etc. are some examples of human rights. The Universal Declaration of Human Rights, 1948 has established human rights at the international level.\n\nEfforts for Protection of Human Rights in Nepal\nNepal has made various significant efforts for the protection of human rights, which can be reviewed as follows:\n\n• Constitutional Provision: The Constitution of Nepal has arranged for 31 fundamental rights, which include the right to equality, right to freedom, right against untouchability, rights of women, rights of children, etc. These rights are important aspects of human rights.\n• Legal Provision: Special laws like the Human Rights Act, Domestic Violence (Crime and Punishment) Act, Caste-based Discrimination and Untouchability (Crime and Punishment) Act have been enacted and implemented for the protection of human rights.\n• Institutional Arrangement: An independent constitutional body like the 'National Human Rights Commission' has been established to protect and promote human rights. Besides this, commissions like the National Women Commission and National Dalit Commission are also active.\n• International Commitment: Nepal has ratified various international conventions related to human rights and expressed commitment to include those provisions in national laws.\n\nEffectiveness and Challenges:\nDespite these efforts, the state of human rights in Nepal is still not satisfactory. Especially women, Dalits, marginalized communities, and citizens of rural areas are still deprived of their rights. Problems like domestic violence, caste-based discrimination, and dowry system exist. Lack of effective implementation of legal provisions, existence of impunity, and lack of awareness among citizens are major challenges. To address these challenges, integrated efforts of both the state and civil society are necessary.",
             "explanationNepali": "यो प्रश्नले मानव अधिकारको विश्वव्यापी अवधारणा र नेपालको सन्दर्भमा यसको कार्यान्वयनको अवस्थाबारे विद्यार्थीको ज्ञान परीक्षण गर्छ । यसले विद्यार्थीलाई संवैधानिक र कानुनी व्यवस्थाहरूको विश्लेषण गर्न र विद्यमान चुनौतीहरू पहिचान गर्न सक्षम बनाउँछ ।\nउद्धरण: एकाइ ५, पाठ ६।",
-            "explanationEnglish": "This question tests the student's knowledge about the universal concept of human rights and the state of its implementation in the context of Nepal. It enables students to analyze constitutional and legal provisions and identify existing challenges.\nCitation: Unit 5, Lesson 6."
+            "explanationEnglish": "This question tests the student's knowledge about the universal concept of human rights and the state of its implementation in the context of Nepal. It enables students to analyze constitutional and legal provisions and identify existing challenges.\nCitation: Unit 5, Lesson 6",
+            "questionNumberNepali": "२१",
+            "questionNumberEnglish": "21",
+            "marksNepali": "७",
+            "marksEnglish": 7
           },
           {
-            "questionNumber": "२२",
             "type": "map_drawing",
-            "marks": 7,
             "alternatives": [
               {
                 "type": "main",
@@ -290,29 +329,37 @@
             "answerNepali": "(विद्यार्थीले उपयुक्त सङ्केत प्रयोग गरी सफा र स्पष्ट नक्सा बनाउनुपर्छ ।)\n• नेपालको नक्साका लागि: पशुपति क्षेत्रलाई धार्मिक चिह्न (ॐ वा स्वस्तिक), कोशी टप्पुलाई आरक्षको चिह्न, गण्डकी प्रदेशको सिमाना र महेन्द्र राजमार्गलाई राष्ट्रिय राजमार्गको सङ्केतले देखाउनुपर्छ ।\n• अफ्रिकाको नक्साका लागि: सहारा मरुभूमिलाई मरुभूमिको सङ्केत (डट-डट), कङ्गो नदीलाई नदीको चिह्न, भिक्टोरिया ताललाई तालको चिह्न र माडागास्कर टापुलाई सही स्थानमा देखाउनुपर्छ ।",
             "answerEnglish": "(Students should draw a clean and clear map using appropriate symbols.)\n• For the map of Nepal: Pashupati Area should be shown with a religious symbol (Om or Swastika), Koshi Tappu with a reserve symbol, the border of Gandaki Province, and Mahendra Highway with a national highway symbol.\n• For the map of Africa: The Sahara Desert should be shown with a desert symbol (dots), Congo River with a river symbol, Lake Victoria with a lake symbol, and Madagascar Island in the correct location.",
             "explanationNepali": "यो प्रश्नले विद्यार्थीको नक्सा बनाउने र त्यसमा विभिन्न भौगोलिक तथा सांस्कृतिक तथ्यहरू भर्ने सीपको परीक्षण गर्छ । यसले उनीहरूको भौगोलिक ज्ञानलाई पनि जाँच्दछ ।\nउद्धरण: एकाइ ६, पाठ ८।",
-            "explanationEnglish": "This question tests the student's skill in map making and filling in various geographical and cultural facts. It also assesses their geographical knowledge.\nCitation: Unit 6, Lesson 8."
+            "explanationEnglish": "This question tests the student's skill in map making and filling in various geographical and cultural facts. It also assesses their geographical knowledge.\nCitation: Unit 6, Lesson 8",
+            "questionNumberNepali": "२२",
+            "questionNumberEnglish": "22",
+            "marksNepali": "७",
+            "marksEnglish": 7
           },
           {
-            "questionNumber": "२३",
             "type": "long_answer",
-            "marks": 7,
             "questionNepali": "वि.सं. २०४६ सालको जनआन्दोलनका कारण र परिणामहरू उल्लेख गर्नुहोस् ।",
             "questionEnglish": "Mention the causes and consequences of the People's Movement of 2046 B.S.",
             "answerNepali": "वि.सं. २०४६ सालको जनआन्दोलनका कारणहरू:\nनेपालमा निर्दलीय पञ्चायती व्यवस्थाको अन्त्य गरी बहुदलीय प्रजातन्त्रको पुनर्स्थापना गर्न वि.सं. २०४६ सालमा ऐतिहासिक जनआन्दोलन भएको थियो । यसका प्रमुख कारणहरू निम्न थिए:\n\n• निरङ्कुश पञ्चायती व्यवस्था: पञ्चायती व्यवस्थाले जनताका राजनीतिक अधिकारहरू खोसेको थियो, राजनीतिक दलहरूमाथि प्रतिबन्ध लगाएको थियो र राजाको प्रत्यक्ष शासन लादेको थियो ।\n• जनताको अधिकारको हनन: विचार र अभिव्यक्तिको स्वतन्त्रता, सङ्गठन खोल्ने स्वतन्त्रता जस्ता आधारभूत अधिकारहरू जनताले पाएका थिएनन् ।\n• आर्थिक असमानता र भ्रष्टाचार: पञ्चायती व्यवस्थामा भ्रष्टाचार र नातावाद-कृपावाद मौलाएको थियो, जसले गर्दा देशको आर्थिक विकास हुन सकेको थिएन र जनता गरिबीमा बाँचिरहेका थिए ।\n• राजनीतिक दलहरूको संयुक्त आन्दोलन: नेपाली काँग्रेस र संयुक्त वाममोर्चाको संयुक्त आह्वानमा दलहरूले पञ्चायती व्यवस्थाविरुद्ध निर्णायक आन्दोलनको घोषणा गरेका थिए ।\n• अन्तर्राष्ट्रिय प्रभाव: विश्वभरि नै शीतयुद्धको अन्त्य र प्रजातन्त्रको लहर चलेको थियो, जसले नेपालका प्रजातन्त्रवादीहरूलाई थप हौसला प्रदान गरेको थियो ।\n\nजनआन्दोलनका परिणामहरू:\n४९ दिनसम्म चलेको यो शान्तिपूर्ण आन्दोलनका प्रमुख परिणामहरू निम्न थिए:\n\n• पञ्चायती व्यवस्थाको अन्त्य: ३० वर्षे लामो निरङ्कुश पञ्चायती व्यवस्थाको अन्त्य भयो ।\n• बहुदलीय प्रजातन्त्रको पुनर्स्थापना: देशमा बहुदलीय प्रजातान्त्रिक व्यवस्थाको पुनर्स्थापना भयो र राजनीतिक दलहरूमाथिको प्रतिबन्ध हट्यो ।\n• नेपाल अधिराज्यको संविधान, २०४७ को घोषणा: नयाँ संविधान जारी भयो, जसले संवैधानिक राजतन्त्र र जनताको सार्वभौमसत्तालाई स्वीकार गर्‍यो ।\n• नागरिक अधिकारको प्रत्याभूति: संविधानले जनताका मौलिक हक र स्वतन्त्रताको सुनिश्चितता गर्‍यो ।\n• आम निर्वाचनको घोषणा: देशमा संसदीय निर्वाचनको घोषणा भयो, जसले जनतालाई आफ्ना प्रतिनिधि आफैँ छान्ने अधिकार दियो ।",
             "answerEnglish": "Causes of the People's Movement of 2046 B.S.:\nThe historic People's Movement took place in 2046 B.S. to end the party-less Panchayat system and restore multi-party democracy in Nepal. Its main causes were:\n\n• Autocratic Panchayat System: The Panchayat system had snatched away people's political rights, banned political parties, and imposed the King's direct rule.\n• Violation of People's Rights: People did not have basic rights like freedom of thought and expression, and freedom to open organizations.\n• Economic Inequality and Corruption: Corruption and nepotism flourished in the Panchayat system, preventing the country's economic development and keeping people in poverty.\n• Joint Movement of Political Parties: At the joint call of the Nepali Congress and the United Left Front, parties declared a decisive movement against the Panchayat system.\n• International Influence: The end of the Cold War and the wave of democracy worldwide gave further encouragement to Nepal's democrats.\n\nConsequences of the People's Movement:\nThe main consequences of this peaceful movement that lasted for 49 days were:\n\n• End of Panchayat System: The 30-year-long autocratic Panchayat system ended.\n• Restoration of Multi-Party Democracy: The multi-party democratic system was restored in the country and the ban on political parties was removed.\n• Promulgation of the Constitution of the Kingdom of Nepal, 2047: A new constitution was issued, accepting constitutional monarchy and people's sovereignty.\n• Guarantee of Civil Rights: The constitution ensured the fundamental rights and freedom of the people.\n• Announcement of General Election: Parliamentary elections were announced in the country, giving people the right to choose their representatives themselves.",
             "explanationNepali": "यो प्रश्न नेपालको आधुनिक इतिहासको एक महत्त्वपूर्ण घटनासँग सम्बन्धित छ । यसले विद्यार्थीलाई प्रजातन्त्र स्थापनाका लागि भएका सङ्घर्ष, त्यसका कारण र उपलब्धिहरूबारे ज्ञान प्रदान गर्छ ।\nउद्धरण: एकाइ ५, पाठ ४।",
-            "explanationEnglish": "This question is related to an important event in the modern history of Nepal. It provides knowledge to students about the struggles for the establishment of democracy, its causes, and achievements.\nCitation: Unit 5, Lesson 4."
+            "explanationEnglish": "This question is related to an important event in the modern history of Nepal. It provides knowledge to students about the struggles for the establishment of democracy, its causes, and achievements.\nCitation: Unit 5, Lesson 4",
+            "questionNumberNepali": "२३",
+            "questionNumberEnglish": "23",
+            "marksNepali": "७",
+            "marksEnglish": 7
           },
           {
-            "questionNumber": "२४",
             "type": "creative_writing_speech",
-            "marks": 7,
             "questionNepali": "'नेपालको आर्थिक विकासमा पर्यटन उद्योगको भूमिका' शीर्षकमा एक वक्तृताको नमुना तयार पार्नुहोस् ।",
             "questionEnglish": "Prepare a sample speech on the title 'The Role of Tourism Industry in the Economic Development of Nepal'.",
             "answerNepali": "वक्तृता\n\n'नेपालको आर्थिक विकासमा पर्यटन उद्योगको भूमिका'\n\nआदरणीय सभाध्यक्षज्यू, प्रमुख अतिथिज्यू, गुरुवर्ग तथा मेरा प्यारा साथीहरू !\n\nआज म 'नेपालको आर्थिक विकासमा पर्यटन उद्योगको भूमिका' जस्तो महत्त्वपूर्ण विषयमा आफ्ना केही विचार राख्न उपस्थित भएको छु ।\n\nनेपाल, प्राकृतिक सौन्दर्य र सांस्कृतिक सम्पदाले भरिपूर्ण एक अनुपम देश हो । विश्वको सर्वोच्च शिखर सगरमाथादेखि गौतम बुद्धको जन्मस्थल लुम्बिनीसम्म, हाम्रा हिमाल, पहाड, नदीनाला, ताल र झरनादेखि हाम्रा जीवन्त संस्कृति, चाडपर्व र मठमन्दिरसम्म, यी सबै पर्यटनका लागि अमूल्य खजाना हुन् । यही खजानालाई सही रूपमा उपयोग गर्न सके पर्यटन उद्योग नेपालको आर्थिक विकासको मेरुदण्ड बन्न सक्छ ।\n\nपर्यटन उद्योगले देशमा विदेशी मुद्रा भित्र्याउँछ, जसले हाम्रो व्यापार घाटा कम गर्न र विदेशी विनिमय सञ्चिति बढाउन मद्दत गर्छ । जब एक पर्यटक नेपाल आउँछ, उसले होटल, यातायात, खाना र स्थानीय हस्तकलाका सामानहरूमा खर्च गर्छ । यसले होटल व्यवसायीदेखि ट्रेकिङ गाइड, भरिया र स्थानीय किसानसम्मले रोजगारी पाउँछन् । यसरी पर्यटनले रोजगारी सिर्जना गरी गरिबी न्यूनीकरणमा प्रत्यक्ष योगदान पुऱ्याउँछ ।\n\nसाथीहरू, पर्यटनले केवल आर्थिक विकास मात्र गर्दैन, यसले हाम्रा कला, संस्कृति र सम्पदाको संरक्षणमा समेत टेवा पुऱ्याउँछ । पर्यटकहरू हाम्रा मौलिक संस्कृति र सम्पदा हेर्न आउँछन्, जसले गर्दा हामीलाई ती सम्पदाको संरक्षण गर्न थप प्रेरणा मिल्छ । यसले ग्रामीण क्षेत्रमा पूर्वाधार विकास, जस्तै: सडक, सञ्चार र स्वास्थ्य सेवाको विस्तारमा पनि सहयोग पुऱ्याउँछ ।\n\nअन्त्यमा, पर्यटन उद्योगको प्रचुर सम्भावनालाई यथार्थमा बदल्न सरकार, निजी क्षेत्र र हामी सबै नागरिक मिलेर काम गर्नुपर्छ । हाम्रा पर्यटकीय स्थलहरूको प्रचारप्रसार गर्ने, पर्यटकलाई सुरक्षित र मैत्रीपूर्ण वातावरण प्रदान गर्ने तथा “अतिथि देवो भव:” को भावनालाई व्यवहारमा उतार्ने हो भने पर्यटन उद्योग हाम्रो समृद्धिको आधार बन्नेछ ।\n\nयति भन्दै मेरा भनाइ यहीँ अन्त्य गर्दछु । धन्यवाद !",
             "answerEnglish": "Speech\n\n'Role of Tourism Industry in the Economic Development of Nepal'\n\nRespected Chairperson, Chief Guest, Teachers, and my dear friends!\n\nToday I am present to express some of my views on an important topic like 'The Role of Tourism Industry in the Economic Development of Nepal'.\n\nNepal is a unique country full of natural beauty and cultural heritage. From the world's highest peak Mount Everest to Lord Buddha's birthplace Lumbini, from our mountains, hills, rivers, lakes, and waterfalls to our vibrant culture, festivals, and temples, all these are invaluable treasures for tourism. If we can utilize this treasure correctly, the tourism industry can become the backbone of Nepal's economic development.\n\nThe tourism industry brings foreign currency into the country, which helps reduce our trade deficit and increase foreign exchange reserves. When a tourist comes to Nepal, they spend on hotels, transportation, food, and local handicrafts. This provides employment to everyone from hotel business owners to trekking guides, porters, and local farmers. Thus, tourism contributes directly to poverty alleviation by creating employment.\n\nFriends, tourism not only brings economic development but also supports the conservation of our art, culture, and heritage. Tourists come to see our original culture and heritage, which gives us further inspiration to conserve those heritages. It also helps in infrastructure development in rural areas, such as the expansion of roads, communication, and health services.\n\nIn conclusion, to turn the immense potential of the tourism industry into reality, the government, private sector, and we all citizens must work together. If we promote our tourist destinations, provide a safe and friendly environment for tourists, and put the spirit of \"Atithi Devo Bhava\" (Guest is God) into practice, the tourism industry will become the foundation of our prosperity.\n\nSaying this, I end my speech here. Thank you!",
             "explanationNepali": "यो प्रश्नले विद्यार्थीलाई नेपालको आर्थिक सम्भावनाबारे सोच्न र आफ्नो विचारलाई तार्किक तथा प्रभावकारी रूपमा प्रस्तुत गर्न अभिप्रेरित गर्छ । यसले उनीहरूको सार्वजनिक बोल्ने कला (Public Speaking) र लेखन सीपको विकासमा मद्दत गर्दछ ।\nउद्धरण: एकाइ १, पाठ ४।",
-            "explanationEnglish": "This question inspires students to think about Nepal's economic potential and present their ideas logically and effectively. It helps in the development of their public speaking and writing skills.\nCitation: Unit 1, Lesson 4."
+            "explanationEnglish": "This question inspires students to think about Nepal's economic potential and present their ideas logically and effectively. It helps in the development of their public speaking and writing skills.\nCitation: Unit 1, Lesson 4",
+            "questionNumberNepali": "२४",
+            "questionNumberEnglish": "24",
+            "marksNepali": "७",
+            "marksEnglish": 7
           }
         ]
       }

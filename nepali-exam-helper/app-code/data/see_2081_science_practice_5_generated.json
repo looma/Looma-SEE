@@ -1,13 +1,21 @@
 [
   {
     "_id": "see_2081_science_practice_5_generated",
-    "title": "SEE 2081 Science Practice Test 5",
     "titleNepali": "SEE २०८१ विज्ञान अभ्यास परीक्षा ५",
-    "subject": "science",
-    "year": 2081,
-    "totalMarks": 75,
-    "duration": 180,
-    "sections": [
+    "titleEnglish": "SEE 2081 Science Practice Test 5",
+    "subjectNepali": "विज्ञान",
+    "subjectEnglish": "science",
+    "totalMarksNepali": "७५",
+    "totalMarksEnglish": 75,
+    "durationNepali": "१८०",
+    "durationEnglish": 180,
+    "sectionsNepali": [
+      "क",
+      "ख",
+      "ग",
+      "घ"
+    ],
+    "sectionsEnglish": [
       "A",
       "B",
       "C",
@@ -15,605 +23,732 @@
     ]
   },
   {
-    "_id": {
-      "$oid": "66d6c1a1b3e4f5a6b7c8d9e5"
-    },
     "testId": "see_2081_science_practice_5_generated",
     "questions": {
       "groupA": [
         {
-          "id": "a",
+          "idNepali": "क",
+          "idEnglish": "a",
           "type": "multiple_choice",
           "questionNepali": "तलका मध्ये कुन आधारभूत एकाइ हो?",
           "questionEnglish": "Which of the following is a fundamental unit?",
           "options": [
             {
-              "id": "i",
-              "nepali": "न्युटन (Newton)",
-              "english": "Newton"
+              "idNepali": "i",
+              "idEnglish": "i",
+              "Nepali": "न्युटन (Newton)",
+              "English": "Newton"
             },
             {
-              "id": "ii",
-              "nepali": "पास्कल (Pascal)",
-              "english": "Pascal"
+              "idNepali": "ii",
+              "idEnglish": "ii",
+              "Nepali": "पास्कल (Pascal)",
+              "English": "Pascal"
             },
             {
-              "id": "iii",
-              "nepali": "जुल (Joule)",
-              "english": "Joule"
+              "idNepali": "iii",
+              "idEnglish": "iii",
+              "Nepali": "जुल (Joule)",
+              "English": "Joule"
             },
             {
-              "id": "iv",
-              "nepali": "एम्पियर (Ampere)",
-              "english": "Ampere"
+              "idNepali": "iv",
+              "idEnglish": "iv",
+              "Nepali": "एम्पियर (Ampere)",
+              "English": "Ampere"
             }
           ],
-          "correctAnswer": "iv",
-          "marks": 1,
+          "correctAnswerNepali": "iv",
+          "correctAnswerEnglish": "iv",
+          "marksNepali": "१",
+          "marksEnglish": 1,
           "explanationNepali": "एम्पियर (विद्युतीय करेन्ट) SI प्रणालीमा सात आधारभूत एकाइहरूमध्ये एक हो । न्युटन, पास्कल र जुल तत्जन्य एकाइहरू हुन् ।\nउद्धरण: पाठ १",
           "explanationEnglish": "Ampere (electric current) is one of the seven fundamental units in the SI system. Newton, Pascal, and Joule are derived units.\nCitation: Lesson 1"
         },
         {
-          "id": "b",
+          "idNepali": "ख",
+          "idEnglish": "b",
           "type": "multiple_choice",
           "questionNepali": "फाइलम इकाइनोडर्माटा (Echinodermata) को विशेषता कुन हो?",
           "questionEnglish": "Which is a characteristic of Phylum Echinodermata?",
           "options": [
             {
-              "id": "i",
-              "nepali": "शरीरमा छिद्रहरू हुनु (Body has pores)",
-              "english": "Body has pores"
+              "idNepali": "i",
+              "idEnglish": "i",
+              "Nepali": "शरीरमा छिद्रहरू हुनु (Body has pores)",
+              "English": "Body has pores"
             },
             {
-              "id": "ii",
-              "nepali": "जोर्नीयुक्त खुट्टाहरू हुनु (Having jointed legs)",
-              "english": "Having jointed legs"
+              "idNepali": "ii",
+              "idEnglish": "ii",
+              "Nepali": "जोर्नीयुक्त खुट्टाहरू हुनु (Having jointed legs)",
+              "English": "Having jointed legs"
             },
             {
-              "id": "iii",
-              "nepali": "ट्युब फिटको सहायताले हिँड्नु (Moves with the help of tube feet)",
-              "english": "Moves with the help of tube feet"
+              "idNepali": "iii",
+              "idEnglish": "iii",
+              "Nepali": "ट्युब फिटको सहायताले हिँड्नु (Moves with the help of tube feet)",
+              "English": "Moves with the help of tube feet"
             },
             {
-              "id": "iv",
-              "nepali": "शरीर खण्ड-खण्डमा विभाजित हुनु (Body is segmented)",
-              "english": "Body is segmented"
+              "idNepali": "iv",
+              "idEnglish": "iv",
+              "Nepali": "शरीर खण्ड-खण्डमा विभाजित हुनु (Body is segmented)",
+              "English": "Body is segmented"
             }
           ],
-          "correctAnswer": "iii",
-          "marks": 1,
+          "correctAnswerNepali": "iii",
+          "correctAnswerEnglish": "iii",
+          "marksNepali": "१",
+          "marksEnglish": 1,
           "explanationNepali": "इकाइनोडर्माटा फाइलमका जीवहरू ट्युब फिटको सहायताले हिँड्छन् र तिनीहरूको शरीर काँडादार छालाले ढाकिएको हुन्छ ।\nउद्धरण: पाठ २",
           "explanationEnglish": "Animals in Phylum Echinodermata move with the help of tube feet and their bodies are externally covered by hard calcareous spines.\nCitation: Lesson 2"
         },
         {
-          "id": "c",
+          "idNepali": "ग",
+          "idEnglish": "c",
           "type": "multiple_choice",
           "questionNepali": "रगत जमाउन मद्दत गर्ने रक्तकोष कुन हो?",
           "questionEnglish": "Which blood cell helps in the clotting of blood?",
           "options": [
             {
-              "id": "i",
-              "nepali": "रातो रक्तकोष (Red Blood Cell)",
-              "english": "Red Blood Cell"
+              "idNepali": "i",
+              "idEnglish": "i",
+              "Nepali": "रातो रक्तकोष (Red Blood Cell)",
+              "English": "Red Blood Cell"
             },
             {
-              "id": "ii",
-              "nepali": "सेतो रक्तकोष (White Blood Cell)",
-              "english": "White Blood Cell"
+              "idNepali": "ii",
+              "idEnglish": "ii",
+              "Nepali": "सेतो रक्तकोष (White Blood Cell)",
+              "English": "White Blood Cell"
             },
             {
-              "id": "iii",
-              "nepali": "प्लेटलेट्स (Platelets)",
-              "english": "Platelets"
+              "idNepali": "iii",
+              "idEnglish": "iii",
+              "Nepali": "प्लेटलेट्स (Platelets)",
+              "English": "Platelets"
             },
             {
-              "id": "iv",
-              "nepali": "लिम्फोसाइट (Lymphocyte)",
-              "english": "Lymphocyte"
+              "idNepali": "iv",
+              "idEnglish": "iv",
+              "Nepali": "लिम्फोसाइट (Lymphocyte)",
+              "English": "Lymphocyte"
             }
           ],
-          "correctAnswer": "iii",
-          "marks": 1,
+          "correctAnswerNepali": "iii",
+          "correctAnswerEnglish": "iii",
+          "marksNepali": "१",
+          "marksEnglish": 1,
           "explanationNepali": "प्लेटलेट्सले फाइब्रिनोजेनसँग मिलेर चोटपटक लागेको ठाउँमा रगत जमाउन मद्दत गर्छ ।\nउद्धरण: पाठ ५",
           "explanationEnglish": "Platelets combine with fibrinogen to clot blood during cuts and injuries.\nCitation: Lesson 5"
         },
         {
-          "id": "d",
+          "idNepali": "घ",
+          "idEnglish": "d",
           "type": "multiple_choice",
           "questionNepali": "पृथ्वीको सतहमा गुरुत्व प्रवेग (g) को मान कहाँ सबैभन्दा बढी हुन्छ?",
           "questionEnglish": "Where is the value of acceleration due to gravity (g) maximum on the Earth's surface?",
           "options": [
             {
-              "id": "i",
-              "nepali": "भूमध्यरेखामा (At the equator)",
-              "english": "At the equator"
+              "idNepali": "i",
+              "idEnglish": "i",
+              "Nepali": "भूमध्यरेखामा (At the equator)",
+              "English": "At the equator"
             },
             {
-              "id": "ii",
-              "nepali": "ध्रुवमा (At the poles)",
-              "english": "At the poles"
+              "idNepali": "ii",
+              "idEnglish": "ii",
+              "Nepali": "ध्रुवमा (At the poles)",
+              "English": "At the poles"
             },
             {
-              "id": "iii",
-              "nepali": "पहाडको टुप्पोमा (At the top of a mountain)",
-              "english": "At the top of a mountain"
+              "idNepali": "iii",
+              "idEnglish": "iii",
+              "Nepali": "पहाडको टुप्पोमा (At the top of a mountain)",
+              "English": "At the top of a mountain"
             },
             {
-              "id": "iv",
-              "nepali": "सबै ठाउँमा बराबर (Equal everywhere)",
-              "english": "Equal everywhere"
+              "idNepali": "iv",
+              "idEnglish": "iv",
+              "Nepali": "सबै ठाउँमा बराबर (Equal everywhere)",
+              "English": "Equal everywhere"
             }
           ],
-          "correctAnswer": "ii",
-          "marks": 1,
+          "correctAnswerNepali": "ii",
+          "correctAnswerEnglish": "ii",
+          "marksNepali": "१",
+          "marksEnglish": 1,
           "explanationNepali": "पृथ्वी ध्रुवमा चेप्टो भएकोले त्यहाँ अर्धव्यास कम हुन्छ । $g \\propto 1/R^2$ अनुसार, अर्धव्यास कम भएको ठाउँमा '$g$' को मान बढी हुन्छ ।\nउद्धरण: पाठ ७",
           "explanationEnglish": "Since the Earth is flattened at the poles, its radius is less there. According to $g \\propto 1/R^2$, the value of '$g$' is more where the radius is less.\nCitation: Lesson 7"
         },
         {
-          "id": "e",
+          "idNepali": "ङ",
+          "idEnglish": "e",
           "type": "multiple_choice",
           "questionNepali": "हाइड्रोलिक ब्रेक कुन नियममा आधारित छ?",
           "questionEnglish": "A hydraulic brake is based on which law?",
           "options": [
             {
-              "id": "i",
-              "nepali": "आर्किमिडिजको सिद्धान्त (Archimedes' principle)",
-              "english": "Archimedes' principle"
+              "idNepali": "i",
+              "idEnglish": "i",
+              "Nepali": "आर्किमिडिजको सिद्धान्त (Archimedes' principle)",
+              "English": "Archimedes' principle"
             },
             {
-              "id": "ii",
-              "nepali": "तैरिने नियम (Law of floatation)",
-              "english": "Law of floatation"
+              "idNepali": "ii",
+              "idEnglish": "ii",
+              "Nepali": "तैरिने नियम (Law of floatation)",
+              "English": "Law of floatation"
             },
             {
-              "id": "iii",
-              "nepali": "पास्कलको नियम (Pascal's law)",
-              "english": "Pascal's law"
+              "idNepali": "iii",
+              "idEnglish": "iii",
+              "Nepali": "पास्कलको नियम (Pascal's law)",
+              "English": "Pascal's law"
             },
             {
-              "id": "iv",
-              "nepali": "न्युटनको गतिको नियम (Newton's law of motion)",
-              "english": "Newton's law of motion"
+              "idNepali": "iv",
+              "idEnglish": "iv",
+              "Nepali": "न्युटनको गतिको नियम (Newton's law of motion)",
+              "English": "Newton's law of motion"
             }
           ],
-          "correctAnswer": "iii",
-          "marks": 1,
+          "correctAnswerNepali": "iii",
+          "correctAnswerEnglish": "iii",
+          "marksNepali": "१",
+          "marksEnglish": 1,
           "explanationNepali": "हाइड्रोलिक ब्रेक, हाइड्रोलिक लिफ्ट जस्ता उपकरणहरू पास्कलको नियममा आधारित हुन्छन्, जसले तरल पदार्थमा चाप समान रूपले प्रसारण हुने सिद्धान्तको उपयोग गर्छ ।\nउद्धरण: पाठ ८",
           "explanationEnglish": "Hydraulic machines such as hydraulic brakes and hydraulic lifts are based on Pascal's law.\nCitation: Lesson 8"
         },
         {
-          "id": "f",
+          "idNepali": "च",
+          "idEnglish": "f",
           "type": "multiple_choice",
           "questionNepali": "अदूरदृष्टि (myopia) हटाउन कुन प्रकारको लेन्स प्रयोग गरिन्छ?",
           "questionEnglish": "Which type of lens is used to correct myopia?",
           "options": [
             {
-              "id": "i",
-              "nepali": "कन्भेक्स लेन्स (Convex lens)",
-              "english": "Convex lens"
+              "idNepali": "i",
+              "idEnglish": "i",
+              "Nepali": "कन्भेक्स लेन्स (Convex lens)",
+              "English": "Convex lens"
             },
             {
-              "id": "ii",
-              "nepali": "कन्केभ लेन्स (Concave lens)",
-              "english": "Concave lens"
+              "idNepali": "ii",
+              "idEnglish": "ii",
+              "Nepali": "कन्केभ लेन्स (Concave lens)",
+              "English": "Concave lens"
             },
             {
-              "id": "iii",
-              "nepali": "सिलिन्ड्रिकल लेन्स (Cylindrical lens)",
-              "english": "Cylindrical lens"
+              "idNepali": "iii",
+              "idEnglish": "iii",
+              "Nepali": "सिलिन्ड्रिकल लेन्स (Cylindrical lens)",
+              "English": "Cylindrical lens"
             },
             {
-              "id": "iv",
-              "nepali": "बाइफोकल लेन्स (Bifocal lens)",
-              "english": "Bifocal lens"
+              "idNepali": "iv",
+              "idEnglish": "iv",
+              "Nepali": "बाइफोकल लेन्स (Bifocal lens)",
+              "English": "Bifocal lens"
             }
           ],
-          "correctAnswer": "ii",
-          "marks": 1,
+          "correctAnswerNepali": "ii",
+          "correctAnswerEnglish": "ii",
+          "marksNepali": "१",
+          "marksEnglish": 1,
           "explanationNepali": "अदूरदृष्टिमा, प्रकाशका किरणहरू रेटिनाको अगाडि केन्द्रित हुन्छन् । कन्केभ लेन्सले किरणहरूलाई विकेन्द्रित गरी रेटिनामा ठीकसँग केन्द्रित गर्न मद्दत गर्छ ।\nउद्धरण: पाठ १०",
           "explanationEnglish": "In myopia, light rays focus in front of the retina. A concave lens diverges the light rays before they enter the eye, helping them to focus correctly on the retina.\nCitation: Lesson 10"
         },
         {
-          "id": "g",
+          "idNepali": "छ",
+          "idEnglish": "g",
           "type": "multiple_choice",
           "questionNepali": "तलका मध्ये कुन यौगिक असंतृप्त हाइड्रोकार्बन हो?",
           "questionEnglish": "Which of the following compounds is an unsaturated hydrocarbon?",
           "options": [
             {
-              "id": "i",
-              "nepali": "इथेन ($C_2H_6$)",
-              "english": "Ethane ($C_2H_6$)"
+              "idNepali": "i",
+              "idEnglish": "i",
+              "Nepali": "इथेन ($C_2H_6$)",
+              "English": "Ethane ($C_2H_6$)"
             },
             {
-              "id": "ii",
-              "nepali": "मिथेन ($CH_4$)",
-              "english": "Methane ($CH_4$)"
+              "idNepali": "ii",
+              "idEnglish": "ii",
+              "Nepali": "मिथेन ($CH_4$)",
+              "English": "Methane ($CH_4$)"
             },
             {
-              "id": "iii",
-              "nepali": "इथिन ($C_2H_4$)",
-              "english": "Ethene ($C_2H_4$)"
+              "idNepali": "iii",
+              "idEnglish": "iii",
+              "Nepali": "इथिन ($C_2H_4$)",
+              "English": "Ethene ($C_2H_4$)"
             },
             {
-              "id": "iv",
-              "nepali": "प्रोपेन ($C_3H_8$)",
-              "english": "Propane ($C_3H_8$)"
+              "idNepali": "iv",
+              "idEnglish": "iv",
+              "Nepali": "प्रोपेन ($C_3H_8$)",
+              "English": "Propane ($C_3H_8$)"
             }
           ],
-          "correctAnswer": "iii",
-          "marks": 1,
+          "correctAnswerNepali": "iii",
+          "correctAnswerEnglish": "iii",
+          "marksNepali": "१",
+          "marksEnglish": 1,
           "explanationNepali": "इथिन ($C_2H_4$) एक असंतृप्त हाइड्रोकार्बन (अल्किन) हो किनभने यसमा कार्बन परमाणुहरूबीच दोहोरो बन्धन ($C=C$) हुन्छ । अन्य सबै विकल्पहरू संतृप्त हाइड्रोकार्बन (अल्केन) हुन् ।\nउद्धरण: पाठ १८",
           "explanationEnglish": "Ethene ($C_2H_4$) is an unsaturated hydrocarbon (alkene) because it has a double bond ($C=C$) between carbon atoms. All other options are saturated hydrocarbons (alkanes).\nCitation: Lesson 18"
         },
         {
-          "id": "h",
+          "idNepali": "ज",
+          "idEnglish": "h",
           "type": "multiple_choice",
           "questionNepali": "चन्द्रमाको सतहमा गुरुत्व प्रवेग (g) को मान कति हुन्छ?",
           "questionEnglish": "What is the value of acceleration due to gravity (g) on the surface of the moon?",
           "options": [
             {
-              "id": "i",
-              "nepali": "$9.8 \\text{ m/s}^2$",
-              "english": "$9.8 \\text{ m/s}^2$"
+              "idNepali": "i",
+              "idEnglish": "i",
+              "Nepali": "$9.8 \\text{ m/s}^2$",
+              "English": "$9.8 \\text{ m/s}^2$"
             },
             {
-              "id": "ii",
-              "nepali": "$1.67 \\text{ m/s}^2$",
-              "english": "$1.67 \\text{ m/s}^2$"
+              "idNepali": "ii",
+              "idEnglish": "ii",
+              "Nepali": "$1.67 \\text{ m/s}^2$",
+              "English": "$1.67 \\text{ m/s}^2$"
             },
             {
-              "id": "iii",
-              "nepali": "$25 \\text{ m/s}^2$",
-              "english": "$25 \\text{ m/s}^2$"
+              "idNepali": "iii",
+              "idEnglish": "iii",
+              "Nepali": "$25 \\text{ m/s}^2$",
+              "English": "$25 \\text{ m/s}^2$"
             },
             {
-              "id": "iv",
-              "nepali": "$10 \\text{ m/s}^2$",
-              "english": "$10 \\text{ m/s}^2$"
+              "idNepali": "iv",
+              "idEnglish": "iv",
+              "Nepali": "$10 \\text{ m/s}^2$",
+              "English": "$10 \\text{ m/s}^2$"
             }
           ],
-          "correctAnswer": "ii",
-          "marks": 1,
+          "correctAnswerNepali": "ii",
+          "correctAnswerEnglish": "ii",
+          "marksNepali": "१",
+          "marksEnglish": 1,
           "explanationNepali": "चन्द्रमाको पिण्ड र अर्धव्यास पृथ्वीको भन्दा कम भएकोले, त्यहाँ गुरुत्व प्रवेगको मान कम हुन्छ, जुन लगभग $1.67 \\text{ m/s}^2$ (पृथ्वीको १/६ भाग) छ ।\nउद्धरण: पाठ ७",
           "explanationEnglish": "Since the mass and radius of the moon are less than that of the earth, the value of acceleration due to gravity is less there, which is about $1.67 \\text{ m/s}^2$ (1/6th of earth).\nCitation: Lesson 7"
         },
         {
-          "id": "i",
+          "idNepali": "i",
+          "idEnglish": "i",
           "type": "multiple_choice",
           "questionNepali": "कुन हर्मोनले रगतमा चिनीको मात्रा नियन्त्रण गर्छ?",
           "questionEnglish": "Which hormone controls the sugar level in blood?",
           "options": [
             {
-              "id": "i",
-              "nepali": "थाइरोक्सिन (Thyroxine)",
-              "english": "Thyroxine"
+              "idNepali": "i",
+              "idEnglish": "i",
+              "Nepali": "थाइरोक्सिन (Thyroxine)",
+              "English": "Thyroxine"
             },
             {
-              "id": "ii",
-              "nepali": "इन्सुलिन (Insulin)",
-              "english": "Insulin"
+              "idNepali": "ii",
+              "idEnglish": "ii",
+              "Nepali": "इन्सुलिन (Insulin)",
+              "English": "Insulin"
             },
             {
-              "id": "iii",
-              "nepali": "एड्रेनालिन (Adrenaline)",
-              "english": "Adrenaline"
+              "idNepali": "iii",
+              "idEnglish": "iii",
+              "Nepali": "एड्रेनालिन (Adrenaline)",
+              "English": "Adrenaline"
             },
             {
-              "id": "iv",
-              "nepali": "टेस्टोस्टेरोन (Testosterone)",
-              "english": "Testosterone"
+              "idNepali": "iv",
+              "idEnglish": "iv",
+              "Nepali": "टेस्टोस्टेरोन (Testosterone)",
+              "English": "Testosterone"
             }
           ],
-          "correctAnswer": "ii",
-          "marks": 1,
+          "correctAnswerNepali": "ii",
+          "correctAnswerEnglish": "ii",
+          "marksNepali": "१",
+          "marksEnglish": 1,
           "explanationNepali": "इन्सुलिन हर्मोन प्यान्क्रियाजबाट उत्पादन हुन्छ र यसले रगतमा ग्लुकोज (चिनी) को मात्रालाई नियन्त्रण गर्छ ।\nउद्धरण: पाठ ५",
           "explanationEnglish": "Insulin is produced by the pancreas and it controls the level of glucose (sugar) in the blood.\nCitation: Lesson 5"
         },
         {
-          "id": "j",
+          "idNepali": "ञ",
+          "idEnglish": "j",
           "type": "multiple_choice",
           "questionNepali": "सबैभन्दा बढी इलेक्ट्रोन एफिनिटी भएको तत्त्व कुन हो?",
           "questionEnglish": "Which element has the highest electron affinity?",
           "options": [
             {
-              "id": "i",
-              "nepali": "फ्लोरिन (Fluorine)",
-              "english": "Fluorine"
+              "idNepali": "i",
+              "idEnglish": "i",
+              "Nepali": "फ्लोरिन (Fluorine)",
+              "English": "Fluorine"
             },
             {
-              "id": "ii",
-              "nepali": "क्लोरीन (Chlorine)",
-              "english": "Chlorine"
+              "idNepali": "ii",
+              "idEnglish": "ii",
+              "Nepali": "क्लोरीन (Chlorine)",
+              "English": "Chlorine"
             },
             {
-              "id": "iii",
-              "nepali": "ब्रोमिन (Bromine)",
-              "english": "Bromine"
+              "idNepali": "iii",
+              "idEnglish": "iii",
+              "Nepali": "ब्रोमिन (Bromine)",
+              "English": "Bromine"
             },
             {
-              "id": "iv",
-              "nepali": "आयोडिन (Iodine)",
-              "english": "Iodine"
+              "idNepali": "iv",
+              "idEnglish": "iv",
+              "Nepali": "आयोडिन (Iodine)",
+              "English": "Iodine"
             }
           ],
-          "correctAnswer": "ii",
-          "marks": 1,
+          "correctAnswerNepali": "ii",
+          "correctAnswerEnglish": "ii",
+          "marksNepali": "१",
+          "marksEnglish": 1,
           "explanationNepali": "ह्यालोजन समूहमा क्लोरीनको इलेक्ट्रोन एफिनिटी सबैभन्दा बढी हुन्छ ।\nउद्धरण: पाठ १४",
           "explanationEnglish": "Chlorine has the highest electron affinity among the halogens.\nCitation: Lesson 14"
         }
       ],
       "groupB": [
         {
-          "id": "a",
+          "idNepali": "क",
+          "idEnglish": "a",
           "type": "short_answer",
           "questionNepali": "भौतिक परिमाण भनेको के हो?",
           "questionEnglish": "What is a physical quantity?",
-          "marks": 1,
+          "marksNepali": "१",
+          "marksEnglish": 1,
           "sampleAnswerNepali": "उत्तर: नाप्न सकिने परिमाणलाई भौतिक परिमाण भनिन्छ, जस्तै लम्बाइ, पिण्ड, समय ।\nउद्धरण: पाठ १",
           "sampleAnswerEnglish": "Answer: The quantity which can be measured is called a physical quantity, e.g., length, mass, time.\nCitation: Lesson 1"
         },
         {
-          "id": "b",
+          "idNepali": "ख",
+          "idEnglish": "b",
           "type": "short_answer",
           "questionNepali": "माइटोसिस कोष विभाजन कुन प्रकारको कोषमा हुन्छ?",
           "questionEnglish": "In which type of cell does mitosis cell division occur?",
-          "marks": 1,
+          "marksNepali": "१",
+          "marksEnglish": 1,
           "sampleAnswerNepali": "उत्तर: माइटोसिस कोष विभाजन सोमाटिक (शारीरिक) कोषमा हुन्छ ।\nउद्धरण: पाठ ४",
           "sampleAnswerEnglish": "Answer: Mitosis cell division occurs in somatic (vegetative) cells.\nCitation: Lesson 4"
         },
         {
-          "id": "c",
+          "idNepali": "ग",
+          "idEnglish": "c",
           "type": "short_answer",
           "questionNepali": "वायुमण्डलमा ओजन तहको मुख्य कार्य के हो?",
           "questionEnglish": "What is the main function of the ozone layer in the atmosphere?",
-          "marks": 1,
+          "marksNepali": "१",
+          "marksEnglish": 1,
           "sampleAnswerNepali": "उत्तर: ओजन तहले सूर्यबाट आउने हानिकारक अल्ट्राभ्वाइलेट (UV) किरणहरूलाई सोसेर पृथ्वीका जीवहरूको रक्षा गर्छ ।\nउद्धरण: पाठ ६",
           "sampleAnswerEnglish": "Answer: The ozone layer absorbs harmful ultraviolet (UV) rays coming from the sun and protects living beings on Earth.\nCitation: Lesson 6"
         },
         {
-          "id": "d",
+          "idNepali": "घ",
+          "idEnglish": "d",
           "type": "short_answer",
           "questionNepali": "१ पास्कल चाप भनेको के हो?",
           "questionEnglish": "What is 1 Pascal pressure?",
-          "marks": 1,
+          "marksNepali": "१",
+          "marksEnglish": 1,
           "sampleAnswerNepali": "उत्तर: $1 \\text{ m}^2$ क्षेत्रफलमा $1 \\text{ N}$ बल लम्ब रूपमा लाग्दा उत्पन्न हुने चापलाई १ पास्कल ($1 \\text{ Pa}$) भनिन्छ ।\nउद्धरण: पाठ ८",
           "sampleAnswerEnglish": "Answer: The pressure exerted when a force of $1 \\text{ N}$ acts normally on an area of $1 \\text{ m}^2$ is called 1 Pascal ($1 \\text{ Pa}$).\nCitation: Lesson 8"
         },
         {
-          "id": "e",
+          "idNepali": "ङ",
+          "idEnglish": "e",
           "type": "short_answer",
           "questionNepali": "क्यालोरीमिट्रीको सिद्धान्त लेख्नुहोस् ।",
           "questionEnglish": "State the principle of calorimetry.",
-          "marks": 1,
+          "marksNepali": "१",
+          "marksEnglish": 1,
           "sampleAnswerNepali": "उत्तर: क्यालोरीमिट्रीको सिद्धान्त अनुसार, तातो वस्तुले गुमाएको ताप र चिसो वस्तुले सोसेको ताप बराबर हुन्छ (गुमाएको ताप = पाएको ताप) ।\nउद्धरण: पाठ ९",
           "sampleAnswerEnglish": "Answer: The principle of calorimetry states that the heat lost by a hot body is equal to the heat gained by a cold body (Heat lost = Heat gained).\nCitation: Lesson 9"
         },
         {
-          "id": "f",
+          "idNepali": "च",
+          "idEnglish": "f",
           "type": "short_answer",
           "questionNepali": "अप्टिकल फाइबर कुन सिद्धान्तमा काम गर्छ?",
           "questionEnglish": "On which principle does optical fiber work?",
-          "marks": 1,
+          "marksNepali": "१",
+          "marksEnglish": 1,
           "sampleAnswerNepali": "उत्तर: अप्टिकल फाइबर पूर्ण आन्तरिक परावर्तन (Total Internal Reflection) को सिद्धान्तमा काम गर्छ ।\nउद्धरण: पाठ १०",
           "sampleAnswerEnglish": "Answer: Optical fiber works on the principle of Total Internal Reflection.\nCitation: Lesson 10"
         },
         {
-          "id": "g",
+          "idNepali": "छ",
+          "idEnglish": "g",
           "type": "short_answer",
           "questionNepali": "लेन्सको सामर्थ्यको परिभाषा दिनुहोस् ।",
           "questionEnglish": "Define the power of a lens.",
-          "marks": 1,
+          "marksNepali": "१",
+          "marksEnglish": 1,
           "sampleAnswerNepali": "उत्तर: लेन्सले प्रकाशका किरणहरूलाई केन्द्रित वा विकेन्द्रित गर्ने क्षमतालाई त्यसको सामर्थ्य भनिन्छ ।\nउद्धरण: पाठ १०",
           "sampleAnswerEnglish": "Answer: The ability of a lens to converge or diverge light rays is called the power of that lens.\nCitation: Lesson 10"
         },
         {
-          "id": "h",
+          "idNepali": "ज",
+          "idEnglish": "h",
           "type": "short_answer",
           "questionNepali": "निराकरण प्रतिक्रिया (neutralization reaction) को परिभाषा दिनुहोस् ।",
           "questionEnglish": "Define neutralization reaction.",
-          "marks": 1,
+          "marksNepali": "१",
+          "marksEnglish": 1,
           "sampleAnswerNepali": "उत्तर: जुन प्रतिक्रियामा अम्ल र क्षारले एकअर्काको गुणलाई नष्ट गरी लवण र पानी बनाउँछन्, त्यसलाई निराकरण प्रतिक्रिया भनिन्छ ।\nउद्धरण: पाठ १५",
           "sampleAnswerEnglish": "Answer: The reaction in which acid and base react to form salt and water, where both properties are lost, is known as a neutralization reaction.\nCitation: Lesson 15"
         },
         {
-          "id": "i",
+          "idNepali": "i",
+          "idEnglish": "i",
           "type": "short_answer",
           "questionNepali": "सजीवन (Sajiban) को एउटा उपयोगिता लेख्नुहोस् ।",
           "questionEnglish": "Write one use of Sajiban.",
-          "marks": 1,
+          "marksNepali": "१",
+          "marksEnglish": 1,
           "sampleAnswerNepali": "उत्तर: सजीवनको रस जलेको ठाउँमा लगाउन, यसको हाँगाले दाँत माझ्न, र यसको तेल साबुन बनाउन प्रयोग गरिन्छ ।\nउद्धरण: पाठ १९",
           "sampleAnswerEnglish": "Answer: Its juice is used to cure burns, its twigs can be used for brushing teeth, and its oil can be used to make soaps.\nCitation: Lesson 19"
         }
       ],
       "groupC": [
         {
-          "id": "3",
+          "idNepali": "3",
+          "idEnglish": "3",
           "type": "long_answer",
           "questionNepali": "स्वतन्त्र चर र आश्रित चर बिच दुईओटा फरक लेख्नुहोस् ।",
           "questionEnglish": "Write two differences between independent and dependent variables.",
-          "marks": 2,
+          "marksNepali": "२",
+          "marksEnglish": 2,
           "sampleAnswerNepali": "उत्तर: स्वतन्त्र चर र आश्रित चर बिचका भिन्नताहरू:\n* स्वतन्त्र चरलाई अनुसन्धानकर्ताले चाहेअनुसार परिवर्तन गर्न सक्छन्, जबकि आश्रित चर स्वतन्त्र चरमा आएको परिवर्तनमा निर्भर रहन्छ ।\n* ग्राफ बनाउँदा, स्वतन्त्र चरलाई x-अक्षमा र आश्रित चरलाई y-अक्षमा राखिन्छ ।\nउद्धरण: पाठ १",
           "sampleAnswerEnglish": "Answer: Differences between independent and dependent variables:\n* The independent variable is manipulated by the researcher, whereas the dependent variable's value depends on the value of the independent variable.\n* While plotting a graph, the independent variable is plotted on the x-axis and the dependent variable is plotted on the y-axis.\nCitation: Lesson 1"
         },
         {
-          "id": "4",
+          "idNepali": "4",
+          "idEnglish": "4",
           "type": "long_answer",
           "questionNepali": "पिसेस र एम्फिबिया वर्गबिच दुईओटा भिन्नता लेख्नुहोस् ।",
           "questionEnglish": "Write two differences between class Pisces and Amphibia.",
-          "marks": 2,
+          "marksNepali": "२",
+          "marksEnglish": 2,
           "sampleAnswerNepali": "उत्तर: पिसेस र एम्फिबिया वर्गबिचका भिन्नताहरू:\n* पिसेस (माछा) हरू पानीमा मात्र बस्छन्, जबकि एम्फिबिया (उभयचर) हरू पानी र जमिन दुवैमा बस्न सक्छन् ।\n* पिसेसको शरीर कत्ला (scales) ले ढाकिएको हुन्छ, जबकि एम्फिबियाको छाला ओसिलो र चिप्लो हुन्छ, कत्ला हुँदैन ।\nउद्धरण: पाठ २",
           "sampleAnswerEnglish": "Answer: Differences between Pisces and Amphibia:\n* Pisces live only in water, while Amphibia can live both on land and in water.\n* The body of Pisces is covered with scales, whereas the skin of Amphibia is moist and smooth without scales.\nCitation: Lesson 2"
         },
         {
-          "id": "5",
+          "idNepali": "5",
+          "idEnglish": "5",
           "type": "long_answer",
           "questionNepali": "मौरीको घारमा रानी मौरीको मुख्य कार्य के हो?",
           "questionEnglish": "What is the main function of a queen bee in a beehive?",
-          "marks": 2,
+          "marksNepali": "२",
+          "marksEnglish": 2,
           "sampleAnswerNepali": "उत्तर: रानी मौरीको मुख्य कार्य अण्डा पार्नु र आफ्नो वंश वृद्धि गर्नु हो । उसले एक दिनमा ३००० सम्म अण्डा पार्न सक्छिन् । साथै, उसले 'फेरोमोन' रसायन उत्पादन गरेर घारका अन्य सदस्यहरूलाई नियन्त्रण गर्छिन् ।\nउद्धरण: पाठ ३",
           "sampleAnswerEnglish": "Answer: The main function of a queen bee is to lay eggs and increase her population. She can lay up to 3000 eggs in a day. Also, she produces a chemical substance called 'pheromone' to control other members of the hive.\nCitation: Lesson 3"
         },
         {
-          "id": "6",
+          "idNepali": "6",
+          "idEnglish": "6",
           "type": "long_answer",
           "questionNepali": "रक्तसञ्चार प्रणालीका कुनै दुई कार्यहरू लेख्नुहोस् ।",
           "questionEnglish": "Write any two functions of the blood circulatory system.",
-          "marks": 2,
+          "marksNepali": "२",
+          "marksEnglish": 2,
           "sampleAnswerNepali": "उत्तर: रक्तसञ्चार प्रणालीका कार्यहरू:\n* यसले अक्सिजन, हर्मोन र पचेको खानालाई शरीरका विभिन्न कोषहरूमा पुर्याउँछ ।\n* यसले कार्बन डाइअक्साइड र युरिया जस्ता काम नलाग्ने पदार्थहरूलाई निष्कासनका लागि सम्बन्धित अङ्गहरूमा पुर्याउँछ ।\nउद्धरण: पाठ ५",
           "sampleAnswerEnglish": "Answer: Functions of the circulatory system:\n* It transports oxygen, hormones, and digested food to various cells of the body.\n* It transports waste products like carbon dioxide and urea to the respective organs for excretion.\nCitation: Lesson 5"
         },
         {
-          "id": "7",
+          "idNepali": "7",
+          "idEnglish": "7",
           "type": "long_answer",
           "questionNepali": "गुरुत्व बल र गुरुत्वाकर्षण बल बिच के फरक छ?",
           "questionEnglish": "What is the difference between gravity and gravitational force?",
-          "marks": 2,
+          "marksNepali": "२",
+          "marksEnglish": 2,
           "sampleAnswerNepali": "उत्तर: गुरुत्वाकर्षण बल ब्रह्माण्डका कुनै दुई वस्तुहरूबीच लाग्ने आकर्षण बल हो । तर, गुरुत्व बल भनेको ग्रह वा उपग्रहले कुनै वस्तुलाई आफ्नो केन्द्रतिर तान्ने बल हो । गुरुत्व बल गुरुत्वाकर्षण बलको एक विशेष अवस्था हो ।\nउद्धरण: पाठ ७",
           "sampleAnswerEnglish": "Answer: Gravitational force is the force of attraction between any two bodies in the universe. Gravity, however, is the force with which a planet or satellite pulls an object towards its center. Gravity is a special case of gravitational force.\nCitation: Lesson 7"
         },
         {
-          "id": "8",
+          "idNepali": "8",
+          "idEnglish": "8",
           "type": "long_answer",
           "questionNepali": "वायुमण्डलीय चाप भनेको के हो? समुन्द्री सतहमा यसको मान कति हुन्छ?",
           "questionEnglish": "What is atmospheric pressure? What is its value at sea level?",
-          "marks": 2,
+          "marksNepali": "२",
+          "marksEnglish": 2,
           "sampleAnswerNepali": "उत्तर: पृथ्वीको सतहको प्रति एकाइ क्षेत्रफलमा हावाको तौलले दिने चापलाई वायुमण्डलीय चाप भनिन्छ । समुन्द्री सतहमा वायुमण्डलीय चापको मान $1.01 \\times 10^5 \\text{ Pa}$ वा $760 \\text{ mmHg}$ हुन्छ ।\nउद्धरण: पाठ ८",
           "sampleAnswerEnglish": "Answer: The pressure exerted by the weight of air on per unit area of the earth's surface is called atmospheric pressure. Its value at sea level is $1.01 \\times 10^5 \\text{ Pa}$ or $760 \\text{ mmHg}$.\nCitation: Lesson 8"
         },
         {
-          "id": "9",
+          "idNepali": "9",
+          "idEnglish": "9",
           "type": "long_answer",
           "questionNepali": "पानीको विशिष्ट ताप धारण क्षमता $4200 \\text{ J/kg}^\\circ\\text{C}$ हुनुको अर्थ के हो?",
           "questionEnglish": "What is the meaning of the specific heat capacity of water being $4200 \\text{ J/kg}^\\circ\\text{C}$?",
-          "marks": 2,
+          "marksNepali": "२",
+          "marksEnglish": 2,
           "sampleAnswerNepali": "उत्तर: यसको अर्थ हो कि १ केजी पानीको तापक्रम $1^\\circ\\text{C}$ ले बढाउन वा घटाउन $4200$ जुल तापशक्ति आवश्यक पर्छ ।\nउद्धरण: पाठ ९",
           "sampleAnswerEnglish": "Answer: It means that 4200 Joules of heat energy is required to change the temperature of 1 kg of water by $1^\\circ\\text{C}$.\nCitation: Lesson 9"
         },
         {
-          "id": "10",
+          "idNepali": "10",
+          "idEnglish": "10",
           "type": "long_answer",
           "questionNepali": "फलामको कचौरा पानीमा तैरन्छ तर फलामको काँटी डुब्छ, किन?",
           "questionEnglish": "An iron bowl floats on water, but an iron nail sinks. Why?",
-          "marks": 2,
+          "marksNepali": "२",
+          "marksEnglish": 2,
           "sampleAnswerNepali": "उत्तर: फलामको कचौराको खोक्रो बनावटले गर्दा यसले आफ्नो तौल बराबरको पानी विस्थापित गर्न सक्छ, जसले गर्दा यसमा लाग्ने उर्ध्वचापले यसको तौललाई सन्तुलनमा राख्छ र यो तैरन्छ । तर, फलामको काँटीले आफ्नो तौल बराबरको पानी विस्थापित गर्न सक्दैन, त्यसैले यो डुब्छ ।\nउद्धरण: पाठ ८",
           "sampleAnswerEnglish": "Answer: An iron bowl, due to its shape, can displace water equal to its weight, so it floats. An iron block (like a nail), however, cannot displace water equal to its weight and thus sinks.\nCitation: Lesson 8"
         },
         {
-          "id": "11",
+          "idNepali": "11",
+          "idEnglish": "11",
           "type": "long_answer",
           "questionNepali": "यदि कुनै लेन्सको केन्द्रीकरण दूरी २५ से.मि. छ भने, त्यसको सामर्थ्य कति होला?",
           "questionEnglish": "If the focal length of a lens is 25 cm, what is its power?",
-          "marks": 2,
+          "marksNepali": "२",
+          "marksEnglish": 2,
           "sampleAnswerNepali": "उत्तर: यहाँ, केन्द्रीकरण दूरी ($f$) = $25 \\text{ cm} = 0.25 \\text{ m}$\nसामर्थ्य ($P$) = $1/f \\text{ (in meter)} = 1 / 0.25 = +4 \\text{ D}$\nयो कन्भेक्स लेन्स हो ।\nउद्धरण: पाठ १०",
           "sampleAnswerEnglish": "Answer: Here, focal length ($f$) = $25 \\text{ cm} = 0.25 \\text{ m}$\nPower ($P$) = $1/f \\text{ (in meters)} = 1 / 0.25 = +4 \\text{ D}$\nThis is a convex lens.\nCitation: Lesson 10"
         },
         {
-          "id": "12",
+          "idNepali": "12",
+          "idEnglish": "12",
           "type": "long_answer",
           "questionNepali": "AC र DC करेन्ट बिच दुईओटा भिन्नता लेख्नुहोस् ।",
           "questionEnglish": "Write two differences between AC and DC.",
-          "marks": 2,
+          "marksNepali": "२",
+          "marksEnglish": 2,
           "sampleAnswerNepali": "उत्तर: AC र DC करेन्ट बिचका भिन्नताहरू:\n* AC को दिशा र परिमाण निरन्तर परिवर्तन हुन्छ, जबकि DC को दिशा र परिमाण स्थिर रहन्छ ।\n* AC को फ्रिक्वेन्सी हुन्छ (नेपालमा ५० Hz), जबकि DC को फ्रिक्वेन्सी शून्य हुन्छ ।\nउद्धरण: पाठ ११",
           "sampleAnswerEnglish": "Answer: Differences between AC and DC:\n* The direction and magnitude of AC change continuously, while the direction and magnitude of DC remain constant.\n* AC has a frequency (50 Hz in Nepal), whereas DC has a frequency of zero.\nCitation: Lesson 11"
         },
         {
-          "id": "13",
+          "idNepali": "13",
+          "idEnglish": "13",
           "type": "long_answer",
           "questionNepali": "बन्द ब्रह्माण्ड (closed universe) को अवधारणालाई छोटकरीमा व्याख्या गर्नुहोस् ।",
           "questionEnglish": "Explain the concept of a closed universe briefly.",
-          "marks": 2,
+          "marksNepali": "२",
+          "marksEnglish": 2,
           "sampleAnswerNepali": "उत्तर: यदि ब्रह्माण्डको औसत घनत्व क्रिटिकल घनत्वभन्दा बढी छ भने, गुरुत्वाकर्षणले ब्रह्माण्डको विस्तारलाई रोकेर यसलाई फेरि एउटै बिन्दुमा खुम्च्याउँछ । ब्रह्माण्डको यो जीवनचक्र, जसमा 'बिग ब्याङ्ग' र 'बिग क्रन्च' पालैपालो आउँछन्, त्यसलाई बन्द ब्रह्माण्ड भनिन्छ ।\nउद्धरण: पाठ १२",
           "sampleAnswerEnglish": "Answer: If the average density of the universe is greater than the critical density, the universe will stop expanding and eventually collapse back to a single point (Big Crunch). This cyclical nature of the universe (Big Bang followed by Big Crunch) is called a closed universe.\nCitation: Lesson 12"
         },
         {
-          "id": "14",
+          "idNepali": "14",
+          "idEnglish": "14",
           "type": "long_answer",
           "questionNepali": "ह्यालोजन (halogens) का दुईओटा गुणहरू लेख्नुहोस् ।",
           "questionEnglish": "Write two properties of halogens.",
-          "marks": 2,
+          "marksNepali": "२",
+          "marksEnglish": 2,
           "sampleAnswerNepali": "उत्तर: ह्यालोजनका गुणहरू:\n* यिनीहरू अधातु हुन् र यिनीहरूको बाहिरी सेलमा ७ इलेक्ट्रोन हुन्छन् ।\n* यिनीहरूले धातुसँग प्रतिक्रिया गरेर लवण (salt) बनाउँछन् (जस्तै NaCl) ।\n* यिनीहरू डायटोमिक अणु (जस्तै $F_2, Cl_2$) को रूपमा पाइन्छन् ।\nउद्धरण: पाठ १४",
           "sampleAnswerEnglish": "Answer: Properties of halogens:\n* They are non-metals and have 7 electrons in their valence shell.\n* They react with metals to form salts (e.g., NaCl).\n* They exist as diatomic molecules (e.g., $F_2, Cl_2$).\nCitation: Lesson 14"
         },
         {
-          "id": "15",
+          "idNepali": "15",
+          "idEnglish": "15",
           "type": "long_answer",
           "questionNepali": "रासायनिक प्रतिक्रियाको दरलाई असर गर्ने दुईओटा कारकहरू लेख्नुहोस् ।",
           "questionEnglish": "Write two factors that affect the rate of a chemical reaction.",
-          "marks": 2,
+          "marksNepali": "२",
+          "marksEnglish": 2,
           "sampleAnswerNepali": "उत्तर: रासायनिक प्रतिक्रियाको दरलाई असर गर्ने कारकहरू:\n* **तापक्रम:** तापक्रम बढाउँदा सामान्यतया प्रतिक्रियाको दर बढ्छ ।\n* **उत्प्रेरक:** सकारात्मक उत्प्रेरकले प्रतिक्रियाको दर बढाउँछ भने नकारात्मक उत्प्रेरकले घटाउँछ ।\n* **सतहको क्षेत्रफल:** अभिकारकको सतहको क्षेत्रफल बढी भएमा प्रतिक्रियाको दर बढ्छ ।\nउद्धरण: पाठ १५",
           "sampleAnswerEnglish": "Answer: Factors affecting the rate of a chemical reaction:\n* **Temperature:** Generally, increasing the temperature increases the rate of reaction.\n* **Catalyst:** A positive catalyst increases the rate, while a negative one decreases it.\n* **Surface Area:** Larger surface area of reactants increases the rate of reaction.\nCitation: Lesson 15"
         },
         {
-          "id": "16",
+          "idNepali": "16",
+          "idEnglish": "16",
           "type": "long_answer",
           "questionNepali": "सिमेन्ट क्लिङ्कर भनेको के हो? यसलाई कसरी सिमेन्टमा परिणत गरिन्छ?",
           "questionEnglish": "What is cement clinker? How is it converted into cement?",
-          "marks": 2,
+          "marksNepali": "२",
+          "marksEnglish": 2,
           "sampleAnswerNepali": "उत्तर: चुनाढुङ्गा र माटोको मिश्रणलाई उच्च तापक्रममा तताउँदा बन्ने मस्याउरा जस्ता साना डल्लाहरूलाई सिमेन्ट क्लिङ्कर भनिन्छ । क्लिङ्करलाई २-३% जिप्समसँग मिसाएर धुलो बनाउँदा (grinding) सिमेन्ट बन्छ ।\nउद्धरण: पाठ १९",
           "sampleAnswerEnglish": "Answer: The small pea-sized balls formed by heating the mixture of limestone and clay at high temperatures are called cement clinker. Cement is made by grinding clinker with 2-3% gypsum.\nCitation: Lesson 19"
         }
       ],
       "groupD": [
         {
-          "id": "17",
+          "idNepali": "17",
+          "idEnglish": "17",
           "type": "essay",
           "questionNepali": "मोनोकोट र डाइकोट बिरुवाहरूका चारओटा मुख्य विशेषताहरू वर्णन गर्नुहोस् ।",
           "questionEnglish": "Describe four main characteristics of monocot and dicot plants.",
-          "marks": 4,
+          "marksNepali": "४",
+          "marksEnglish": 4,
           "sampleAnswerNepali": "उत्तर: \n**मोनोकोट (Monocotyledon):**\n* **बीउ:** बीउमा एउटा मात्र कोपिला (cotyledon) हुन्छ ।\n* **जरा:** गुच्छे जरा (fibrous root) हुन्छ ।\n* **पात:** पातमा समानान्तर भेनेसन (parallel venation) हुन्छ ।\n* **फूल:** फूलका भागहरू तीन वा तीनको गुणनमा हुन्छन् ।\n\n**डाइकोट (Dicotyledon):**\n* **बीउ:** बीउमा दुईओटा कोपिला (cotyledons) हुन्छन् ।\n* **जरा:** मूल जरा (taproot) प्रणाली हुन्छ ।\n* **पात:** पातमा जालीदार भेनेसन (reticulate venation) हुन्छ ।\n* **फूल:** फूलका भागहरू चार वा पाँचको गुणनमा हुन्छन् ।\nउद्धरण: पाठ २",
           "sampleAnswerEnglish": "Answer:\n**Monocotyledon:**\n* **Seed:** The seed consists of only one cotyledon.\nCitation: Lesson 2"
         },
         {
-          "id": "18",
+          "idNepali": "18",
+          "idEnglish": "18",
           "type": "essay",
           "questionNepali": "कृत्रिम गर्भाधान (Artificial Insemination) र इन भिट्रो फर्टिलाइजेसन (IVF) बीच के फरक छ? दुवैका एक-एक फाइदा लेख्नुहोस् ।",
           "questionEnglish": "What is the difference between Artificial Insemination (AI) and In-Vitro Fertilization (IVF)? Write one advantage of each.",
-          "marks": 4,
+          "marksNepali": "४",
+          "marksEnglish": 4,
           "sampleAnswerNepali": "उत्तर: **फरक:**\nकृत्रिम गर्भाधानमा, उन्नत जातको भालेबाट सङ्कलन गरिएको वीर्यलाई उपकरणको माध्यमबाट पोथीको गर्भाशयमा राखेर गर्भाधान गराइन्छ ।\nइन भिट्रो फर्टिलाइजेसनमा, पोथीको डिम्ब र भालेको शुक्रकीटलाई प्रयोगशालामा पेट्रीडिसमा निषेचन गराई बनेको भ्रूणलाई पोथीको गर्भाशयमा प्रत्यारोपण गरिन्छ ।\n\n**फाइदाहरू:**\n* **कृत्रिम गर्भाधानको फाइदा:** यसले गर्भाधानको दर बढाउँछ र भाले जनावर पाल्नुपर्ने खर्च बचाउँछ ।\n* **IVF को फाइदा:** यसले बाँझोपनको समस्या भएका दम्पतीहरूलाई सन्तान जन्माउन मद्दत गर्छ ।\nउद्धरण: पाठ ४",
           "sampleAnswerEnglish": "Answer: **Difference:**\nIn Artificial Insemination, semen collected from a male is introduced into the female's uterus using instruments.\nIn IVF, fertilization of the egg and sperm takes place outside the body in a laboratory dish, and the embryo is then implanted in the uterus.\n\n**Advantages:**\n* **Advantage of AI:** It increases the conception rate and saves the cost of rearing a male animal.\nCitation: Lesson 4"
         },
         {
-          "id": "19",
+          "idNepali": "19",
+          "idEnglish": "19",
           "type": "essay",
           "questionNepali": "अल्कोहलले मानव स्वास्थ्यमा पार्ने चारओटा नकारात्मक असरहरू वर्णन गर्नुहोस् ।",
           "questionEnglish": "Describe four negative effects of alcohol on human health.",
-          "marks": 4,
+          "marksNepali": "४",
+          "marksEnglish": 4,
           "sampleAnswerNepali": "उत्तर: अल्कोहलले मानव स्वास्थ्यमा पार्ने नकारात्मक असरहरू:\n1. **कलेजोमा क्षति:** अत्यधिक रक्सी सेवनले कलेजो सुन्निने, कलेजोमा बोसो जम्ने र कलेजोको क्यान्सर (liver cirrhosis) हुन सक्छ ।\n2. **स्नायु प्रणालीमा असर:** यसले मस्तिष्कको कार्यक्षमता घटाउँछ, जसले गर्दा सोच्ने शक्ति, निर्णय लिने क्षमता र शारीरिक सन्तुलनमा ह्रास आउँछ ।\n3. **मुटु रोग:** लामो समयसम्म रक्सी पिउँदा उच्च रक्तचाप र हृदयघातको जोखिम बढ्छ ।\n4. **पाचन प्रणालीमा समस्या:** यसले ग्यास्ट्राइटिस, अल्सर र पेटको क्यान्सर निम्त्याउन सक्छ ।\nउद्धरण: पाठ ५",
           "sampleAnswerEnglish": "Answer: Negative effects of alcohol on human health:\n1. **Liver Damage:** Excessive alcohol consumption can cause liver inflammation, fatty liver, and liver cirrhosis.\nCitation: Lesson 5"
         },
         {
-          "id": "20",
+          "idNepali": "20",
+          "idEnglish": "20",
           "type": "essay",
           "questionNepali": "वायुमण्डलीय चापको महत्त्व दर्शाउने कुनै चारओटा उदाहरण दिनुहोस् ।",
           "questionEnglish": "Give any four examples showing the importance of atmospheric pressure.",
-          "marks": 4,
+          "marksNepali": "४",
+          "marksEnglish": 4,
           "sampleAnswerNepali": "उत्तर: वायुमण्डलीय चापको महत्त्व दर्शाउने उदाहरणहरू:\n1. **सिरिन्ज भर्न:** सिरिन्जको पिस्टन तान्दा भित्र कम चाप उत्पन्न हुन्छ र वायुमण्डलीय चापले औषधिलाई भित्र धकेल्छ ।\n2. **पानी तान्ने पम्प:** ह्यान्ड पम्प वा लिफ्ट पम्पले वायुमण्डलीय चापको कारणले नै पानी माथि तान्छ ।\n3. **स्ट्रले जुस पिउन:** स्ट्रबाट हावा तान्दा भित्र कम चाप हुन्छ र बाहिरको वायुमण्डलीय चापले जुसलाई स्ट्रमा माथि धकेल्छ ।\n4. **मसी भर्न:** फाउन्टेन पेनमा मसी भर्न पनि वायुमण्डलीय चापको प्रयोग हुन्छ ।\nउद्धरण: पाठ ८",
           "sampleAnswerEnglish": "Answer: Examples showing the importance of atmospheric pressure:\n1. **Filling a syringe:** Pulling the piston creates low pressure inside, and atmospheric pressure pushes the medicine in.\nCitation: Lesson 8"
         },
         {
-          "id": "21",
+          "idNepali": "21",
+          "idEnglish": "21",
           "type": "essay",
           "questionNepali": "पिरियडिक तालिकामा बायाँबाट दायाँ जाँदा तत्त्वहरूको पारमाणविक आकार, धात्विक गुण र रासायनिक सक्रियतामा कस्तो परिवर्तन हुन्छ? कारणसहित व्याख्या गर्नुहोस् ।",
           "questionEnglish": "How do atomic size, metallic character, and chemical reactivity of elements change on moving from left to right in the periodic table? Explain with reasons.",
-          "marks": 4,
+          "marksNepali": "४",
+          "marksEnglish": 4,
           "sampleAnswerNepali": "उत्तर: पिरियडमा बायाँबाट दायाँ जाँदा:\n* **पारमाणविक आकार (Atomic Size):** घट्दै जान्छ । किनभने, सेलहरूको सङ्ख्या उही रहन्छ तर न्युक्लियसमा प्रोटोनको सङ्ख्या बढ्छ, जसले गर्दा न्युक्लियसको आकर्षण बल बढ्छ र परमाणु खुम्चिन्छ ।\n* **धात्विक गुण (Metallic Character/Electropositivity):** घट्दै जान्छ । किनभने, पारमाणविक आकार घट्दा इलेक्ट्रोन गुमाउने क्षमता घट्छ ।\n* **रासायनिक सक्रियता (Chemical Reactivity):** पहिले घट्छ (धातुहरूमा) र त्यसपछि बढ्छ (अधातुहरूमा) । सोडियम (Na) सबैभन्दा बढी सक्रिय धातु हो भने क्लोरीन (Cl) सबैभन्दा बढी सक्रिय अधातु हो (तेस्रो पिरियडमा) ।\nउद्धरण: पाठ १४",
           "sampleAnswerEnglish": "Answer: Moving from left to right in a period:\n* **Atomic Size:** Decreases. This is because the number of shells remains the same, but the number of protons in the nucleus increases, leading to a stronger nuclear attraction force that contracts the atom.\nCitation: Lesson 14"
         },
         {
-          "id": "22",
+          "idNepali": "22",
+          "idEnglish": "22",
           "type": "essay",
           "questionNepali": "प्रयोगशालामा कार्बन डाइअक्साइड ग्यास बनाउने विधिको नामाङ्कित चित्रसहित वर्णन गर्नुहोस् । यसका दुई उपयोगिताहरू लेख्नुहोस् ।",
           "questionEnglish": "Describe the laboratory preparation of carbon dioxide gas with a labeled diagram. Write two of its uses.",
-          "marks": 4,
+          "marksNepali": "४",
+          "marksEnglish": 4,
           "sampleAnswerNepali": "उत्तर: **प्रयोगशालामा कार्बन डाइअक्साइड ग्यास बनाउने विधि:**\nप्रयोगशालामा कार्बन डाइअक्साइड ग्यास चुनढुङ्गा ($CaCO_3$) र फिक्का हाइड्रोक्लोरिक एसिड (dil. HCl) बीचको रासायनिक प्रतिक्रियाबाट बनाइन्छ ।\n**रासायनिक समीकरण:** $CaCO_3(s) + 2HCl(aq) \\rightarrow CaCl_2(aq) + H_2O(l) + CO_2(g)$\n\n**विधि:** उल्फको बोतलमा चुनढुङ्गाका टुक्राहरू राखेर त्यसमाथि थिसल फनेलबाट फिक्का HCl खन्याइन्छ । उत्पन्न भएको ग्यासलाई डेलिभरी ट्युबमार्फत हावाको माथिल्लो विस्थापन (upward displacement of air) विधिद्वारा ग्यास जारमा जम्मा गरिन्छ किनभने यो हावाभन्दा गह्रौं हुन्छ ।\n\n(Note: A neat, labeled diagram of the laboratory preparation of $CO_2$ must be drawn.)\n\n**उपयोगिताहरू:**\n* यो आगो निभाउन प्रयोग गरिन्छ (fire extinguisher) ।\n* यो कोक, फ्यान्टा जस्ता नरम पेय पदार्थहरूमा मिसाइन्छ ।\n* बोटबिरुवाहरूले प्रकाश संश्लेषणका लागि यसलाई प्रयोग गर्छन् ।\nउद्धरण: पाठ १६",
           "sampleAnswerEnglish": "Answer: **Laboratory preparation of Carbon Dioxide Gas:**\nIn the laboratory, carbon dioxide gas is prepared by the chemical reaction of limestone ($CaCO_3$) with dilute hydrochloric acid (dil. HCl).\nCitation: Lesson 16"
         },
         {
-          "id": "23",
+          "idNepali": "23",
+          "idEnglish": "23",
           "type": "essay",
           "questionNepali": "रासायनिक मल र कीटनाशक विषादीको अत्यधिक प्रयोगले हुने रासायनिक प्रदूषण र यसका असरहरूलाई वर्णन गर्नुहोस् । यसलाई व्यवस्थापन गर्ने उपायहरू के-के हुन्?",
           "questionEnglish": "Describe the chemical pollution caused by the excessive use of chemical fertilizers and pesticides and its effects. What are the measures to manage it?",
-          "marks": 4,
+          "marksNepali": "४",
+          "marksEnglish": 4,
           "sampleAnswerNepali": "उत्तर: **रासायनिक प्रदूषण र असरहरू:**\nरासायनिक मल र कीटनाशक विषादीको अत्यधिक प्रयोगले माटोको गुणस्तर घटाउँछ र त्यहाँका सूक्ष्मजीवहरूलाई नष्ट गर्छ । यी रसायनहरू वर्षाको पानीसँग बगेर पानीका स्रोतहरूमा मिसिन्छन्, जसले जल प्रदूषण गर्छ र जलीय जीवहरूलाई हानि पुर्‍याउँछ । यस्ता रसायनहरू खाद्य शृङ्खला (food chain) मा प्रवेश गरेर मानव स्वास्थ्यमा पनि नकारात्मक असर पार्छन्, जसले क्यान्सर जस्ता गम्भीर रोगहरू निम्त्याउन सक्छ ।\n\n**व्यवस्थापनका उपायहरू:**\n* **जैविक मलको प्रयोग:** रासायनिक मलको सट्टा कम्पोस्ट मल जस्ता जैविक मलको प्रयोग गर्ने ।\n* **एकीकृत कीट व्यवस्थापन (IPM):** रासायनिक विषादीको सट्टा जैविक र स्थानीय विधिहरू अपनाउने ।\n* **जनचेतना:** किसानहरूलाई रासायनिक मल र विषादीको सही प्रयोग र त्यसका असरहरूबारे सचेत गराउने ।\n* **नियमन:** सरकारले हानिकारक विषादीहरूको प्रयोगमा प्रतिबन्ध लगाउने र नियमन गर्ने ।\nउद्धरण: पाठ १९",
           "sampleAnswerEnglish": "Answer: **Chemical Pollution and its Effects:**\nExcessive use of pesticides and fertilizers pollutes the soil. These insecticides and fertilizers reach the sources of water on getting mixed with rainwater and affect the ecosystem there, destroying aquatic animals. These chemicals also enter the food chain, causing negative impacts on human health.\nCitation: Lesson 19"
         }
