@@ -1,0 +1,609 @@
+[
+  {
+    "_id": "see_2081_english_practice_3_generated_verified",
+    "title": "SEE 2081 English Practice Test 3",
+    "titleNepali": "SEE २०८१ अंग्रेजी अभ्यास परीक्षा ३",
+    "subject": "english",
+    "year": 2081,
+    "totalMarks": 75,
+    "duration": 180,
+    "instructionsEnglish": "Candidates are required to answer the questions in their own words as far as practicable. Figures in the margin indicate the full marks. Attempt all the questions.",
+    "isActive": true,
+    "createdAt": {
+      "$date": "2025-09-07T15:05:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-09-07T15:05:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "687d809a2f3df9d071c52114"
+    },
+    "testId": "see_2081_english_practice_3_generated_verified",
+    "questions": [
+      {
+        "questionNumber": 1,
+        "type": "reading_comprehension",
+        "title": "Read the poem and do the tasks.",
+        "marks": 5,
+        "passage": {
+          "title": "The Country Mouse and the City Mouse",
+          "author": "Richard Scrafton Sharpe",
+          "content": "In a snug little cot lived a fat little mouse,\nWho enjoyed, unmolested, the range of the house;\nWith plain food content, she would breakfast on cheese,\nShe dined upon bacon, and supped on grey peas.\n\nA friend from the town to the cottage did stray,\nAnd he said he was come a short visit to pay;\nSo the mouse spread her table as gay as you please,\nAnd brought the nice bacon and charming grey peas.\n\nThe visitor frowned, and he thought to be witty:\nCried he, “You must know, I come from the city,\nWhere we all should be shocked at provisions like these,\nFor we never eat bacon and horrid grey peas.”"
+        },
+        "subSections": [
+          {
+            "id": "A",
+            "type": "short_answer",
+            "title": "Answer the following questions in full sentences.",
+            "subQuestions": [
+              {
+                "id": "i",
+                "questionEnglish": "Where did the country mouse live?",
+                "correctAnswer": "The country mouse lived in a snug little cot (cottage).",
+                "explanationNepali": "कविताको पहिलो पङ्क्तिमा भनिएको छ, \"In a snug little cot lived a fat little mouse,\" जसको अर्थ हो कि ग्रामीण मुसा एउटा सानो, आरामदायी कुटीमा बस्थ्यो।",
+                "explanationEnglish": "The first line of the poem states, \"In a snug little cot lived a fat little mouse,\" which means the country mouse lived in a small, comfortable cottage. \nCitation: Lesson 17."
+              },
+              {
+                "id": "ii",
+                "questionEnglish": "What did the country mouse eat for her meals?",
+                "correctAnswer": "She ate cheese for breakfast, bacon for dinner, and grey peas for supper.",
+                "explanationNepali": "कविताले उल्लेख गर्छ, \"she would breakfast on cheese, / She dined upon bacon, and supped on grey peas.\" ",
+                "explanationEnglish": "The poem mentions, \"she would breakfast on cheese, / She dined upon bacon, and supped on grey peas.\" \nCitation: Lesson 17."
+              },
+              {
+                "id": "iii",
+                "questionEnglish": "Why did the city mouse visit the country mouse?",
+                "correctAnswer": "He came to pay a short visit.",
+                "explanationNepali": "कवितामा शहरी मुसाले भन्छ, \"he was come a short visit to pay,\" जसको अर्थ हो कि ऊ छोटो भेटघाटको लागि आएको थियो।",
+                "explanationEnglish": "The city mouse says in the poem that \"he was come a short visit to pay,\" meaning he came for a brief visit. \nCitation: Lesson 17."
+              },
+              {
+                "id": "iv",
+                "questionEnglish": "How did the city mouse react to the food he was offered?",
+                "correctAnswer": "He frowned and said that the food was shocking and horrid.",
+                "explanationNepali": "कविताले भन्छ, \"The visitor frowned... Cried he... 'we all should be shocked at provisions like these, / For we never eat bacon and horrid grey peas.'\" ",
+                "explanationEnglish": "The poem states, \"The visitor frowned... Cried he... 'we all should be shocked at provisions like these, / For we never eat bacon and horrid grey peas.'\" \nCitation: Lesson 17."
+              },
+              {
+                "id": "v",
+                "questionEnglish": "What does the word 'unmolested' mean in the second line?",
+                "correctAnswer": "It means undisturbed or not bothered.",
+                "explanationNepali": "'Unmolested' को अर्थ हो कसैले दुःख नदिएको वा बाधा नपुर्याएको। मुसाले घरमा स्वतन्त्र रूपमा घुम्न पाउँथ्यो।",
+                "explanationEnglish": "'Unmolested' means being left alone, undisturbed, or not bothered. The mouse enjoyed the range of the house without interference. \nCitation: Lesson 17."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "questionNumber": 2,
+        "type": "reading_comprehension",
+        "title": "Read the text and do the tasks that follow.",
+        "marks": 10,
+        "passage": {
+          "title": "Pratap Malla",
+          "content": "Pratap Malla was one of the most famous kings of Malla Dynasty. He constructed some magnificent and beautiful architectural structure around Kathmandu. The way he came to the throne is very interesting and controversial at the same time. He had the experience of administration even when his father was alive. When his father Laxmi Nara Singh's madness grew worse, he imprisoned his father and he himself ruled as a regent of his father in Kantipur.\n\nHe was an able administrator. Kantipur was highly developed during his reign. Trade with Lhasa (Tibet) was also going on well. By his tact he was making the kings of Lalitpur and Bhaktapur play against each other. Sometimes he sided with Bhaktapur and posed a threat to Lalitpur. On other occasions, he aligned with Lalitpur and fell upon Bhaktapur.\n\nPratap Malla was a religious-minded person. He built a beautiful temple at Guhyeshwari and fenced it. He renovated the temple of Pashupatinath and raised a pinnacle over it. At Swayambhu he built Pratappur, Kabeendrapur and many other temples and also set up a copper gilt 'Bajra'. He also renovated the temples and Basuki Bhimsen, Taleju and Degutale. With a view to warding off evils, he erected an image of Hanuman, the monkey god, by the side of his palace gate and called the palace Hanumandhoka. He erected the golden gate of the palace, set up an image of Nri Simha, Kal Bhairab and Vishwaroop at Layaku Bahi. Inside the palace, he also set up Sundari Chowk and Mohan Chowk. A pond was dug at Bhandarkhal and filled with water brought from Budhanilkantha. He installed an image of Narayan lying in the pond, an exact replica from Budhanilkantha Temple."
+        },
+        "subSections": [
+          {
+            "id": "A",
+            "type": "fill_in_the_blanks",
+            "title": "Fill in the gaps with the correct information from the text.",
+            "marks": 5,
+            "subQuestions": [
+              {
+                "id": "i",
+                "questionEnglish": "Pratap Malla constructed beautiful __________ in the Kathmandu Valley.",
+                "correctAnswer": "architectural structures",
+                "explanationNepali": "पाठको दोस्रो वाक्यमा भनिएको छ, \"He constructed some magnificent and beautiful architectural structure around Kathmandu.\"",
+                "explanationEnglish": "The second sentence of the text states, \"He constructed some magnificent and beautiful architectural structure around Kathmandu.\" \nCitation: Lesson 9."
+              },
+              {
+                "id": "ii",
+                "questionEnglish": "Pratap Malla declared himself a regent of his father after he __________ his father.",
+                "correctAnswer": "imprisoned",
+                "explanationNepali": "पाठमा भनिएको छ, \"...he imprisoned his father and he himself ruled as a regent...\"",
+                "explanationEnglish": "The text states, \"...he imprisoned his father and he himself ruled as a regent...\" \nCitation: Lesson 9."
+              },
+              {
+                "id": "iii",
+                "questionEnglish": "During Pratap Malla's reign, __________ was a highly developed state.",
+                "correctAnswer": "Kantipur",
+                "explanationNepali": "पाठमा उल्लेख छ, \"Kantipur was highly developed during his reign.\"",
+                "explanationEnglish": "The text mentions, \"Kantipur was highly developed during his reign.\" \nCitation: Lesson 9."
+              },
+              {
+                "id": "iv",
+                "questionEnglish": "On the top of Pashupatinath Temple Pratap Malla raised a/an __________.",
+                "correctAnswer": "pinnacle",
+                "explanationNepali": "पाठमा भनिएको छ, \"He renovated the temple of Pashupatinath and raised a pinnacle over it.\"",
+                "explanationEnglish": "The text states, \"He renovated the temple of Pashupatinath and raised a pinnacle over it.\" \nCitation: Lesson 9."
+              },
+              {
+                "id": "v",
+                "questionEnglish": "The image of Hanuman at the side of the __________ was erected to ward off evils.",
+                "correctAnswer": "palace gate",
+                "explanationNepali": "पाठमा उल्लेख छ, \"...he erected an image of Hanuman... by the side of his palace gate...\"",
+                "explanationEnglish": "The text mentions, \"...he erected an image of Hanuman... by the side of his palace gate...\" \nCitation: Lesson 9."
+              }
+            ]
+          },
+          {
+            "id": "B",
+            "type": "short_answer",
+            "title": "Answer the following questions in full sentences.",
+            "marks": 5,
+            "subQuestions": [
+              {
+                "id": "i",
+                "questionEnglish": "Why did Pratap Malla imprison his father?",
+                "correctAnswer": "He imprisoned his father because his father's madness grew worse.",
+                "explanationNepali": "पाठमा भनिएको छ, \"When his father Laxmi Nara Singh's madness grew worse, he imprisoned his father...\"",
+                "explanationEnglish": "The text states, \"When his father Laxmi Nara Singh's madness grew worse, he imprisoned his father...\" \nCitation: Lesson 9."
+              },
+              {
+                "id": "ii",
+                "questionEnglish": "How can you say that Pratap Malla was a clever ruler?",
+                "correctAnswer": "He was clever because he made the kings of Lalitpur and Bhaktapur play against each other by sometimes siding with one and sometimes with the other.",
+                "explanationNepali": "उनले ललितपुर र भक्तपुरका राजाहरूलाई एकअर्काको विरुद्धमा खेलाएर नियन्त्रणमा राखेका थिए, कहिले एकातिर त कहिले अर्कोतिर लागेर।",
+                "explanationEnglish": "He kept the kings of Lalitpur and Bhaktapur under control by making them play against each other, siding with one and then the other. \nCitation: Lesson 9."
+              },
+              {
+                "id": "iii",
+                "questionEnglish": "Why did Pratap Malla renovate mostly the religious sites?",
+                "correctAnswer": "He renovated religious sites because he was a religious-minded person.",
+                "explanationNepali": "पाठले भन्छ, \"Pratap Malla was a religious-minded person,\" र त्यसपछि उनले गरेका धेरै धार्मिक निर्माण र नवीकरणहरूको सूची दिन्छ।",
+                "explanationEnglish": "The text describes him as a \"religious-minded person,\" followed by a list of his religious constructions and renovations. \nCitation: Lesson 9."
+              },
+              {
+                "id": "iv",
+                "questionEnglish": "What did Pratap Malla build at Bhandarkhal?",
+                "correctAnswer": "At Bhandarkhal, he dug a pond and filled it with water brought from Budhanilakantha.",
+                "explanationNepali": "पाठमा उल्लेख छ, \"A pond was dug at Bhandarkhal and filled with water brought from Budhanilkantha.\"",
+                "explanationEnglish": "The text mentions, \"A pond was dug at Bhandarkhal and filled with water brought from Budhanilkantha.\" \nCitation: Lesson 9."
+              },
+              {
+                "id": "v",
+                "questionEnglish": "Do you think people were happy with Pratap Malla's reign? Give a reason.",
+                "correctAnswer": "Yes, I think people were likely happy because Kantipur was highly developed and trade was going well during his reign.",
+                "explanationNepali": "पाठले भन्छ, \"Kantipur was highly developed during his reign\" र \"Trade with Lhasa (Tibet) was also going on well,\" जसले समृद्धिलाई सङ्केत गर्छ।",
+                "explanationEnglish": "The text states, \"Kantipur was highly developed during his reign\" and \"Trade with Lhasa (Tibet) was also going on well,\" indicating prosperity. \nCitation: Lesson 9."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "questionNumber": 3,
+        "type": "reading_comprehension",
+        "title": "Read the text and do the tasks that follow.",
+        "marks": 10,
+        "passage": {
+          "title": "Call for Expression of Interest for Video Production",
+          "content": "Call for Expression of Interest for Video Production for Child Fund Japan - Nepal Office, Lalitpur, Nepal\nNotice Publication date: 03 Janaury, 2025\n\nChild Fund Japan Nepal Office (CFJNO) is a child-focused international development organization committed to promoting the rights of children through international development cooperation in the spirit of harmonious coexistence. Child Fund Japan Nepal Office is seeking interested and eligible External Individual Consultants or Consulting Firms in Nepal to provide video production services:\n1. to document the transformative impact and capture the achievement and milestones of the sponsorship programme, showcasing their role in driving sustainable educational development in Dhading and Sindhupalchowk districts and,\n2. documenting the impact of migration on children, schools and community in Baglung district.\n\nThe proposals for both assignments must be written in English and submitted through a single application. Interested Nepali firms/organizations or individuals can submit their Expression of Interest (EOI). Please submit your EOI and the required documents electronically to info@childfund.org.np. The proposal received after the deadline will not be considered for evaluation.\n\nDeadline for submission: 12 January, 2025 before 17:00 hours Nepal Time\n\nAll rights are reserved with CFJNO either to approve or disapprove any proposal without giving reasons whatsoever. If needed, the applicants will be asked for modifications and presentations of the application/proposal before approval."
+        },
+        "subSections": [
+          {
+            "id": "A",
+            "type": "fill_in_the_blanks",
+            "title": "Fill in the blanks with the correct information from the text and complete the sentences.",
+            "marks": 5,
+            "subQuestions": [
+              {
+                "id": "i",
+                "questionEnglish": "The advertisement was published on __________.",
+                "correctAnswer": "03 January, 2025",
+                "explanationNepali": "सूचनाको सुरुमा \"Notice Publication date: 03 Janaury, 2025\" उल्लेख छ।",
+                "explanationEnglish": "The notice starts with \"Notice Publication date: 03 Janaury, 2025.\" \nCitation: Lesson 8."
+              },
+              {
+                "id": "ii",
+                "questionEnglish": "Child Fund Japan-Nepal promotes __________.",
+                "correctAnswer": "the rights of children",
+                "explanationNepali": "पाठले बताउँछ कि संस्था \"committed to promoting the rights of children\" हो।",
+                "explanationEnglish": "The text states the organization is \"committed to promoting the rights of children.\" \nCitation: Lesson 8."
+              },
+              {
+                "id": "iii",
+                "questionEnglish": "EOI stands for __________.",
+                "correctAnswer": "Expression of Interest",
+                "explanationNepali": "पाठले \"Expression of Interest (EOI)\" को उल्लेख गरेको छ।",
+                "explanationEnglish": "The text mentions \"Expression of Interest (EOI).\" \nCitation: Lesson 8."
+              },
+              {
+                "id": "iv",
+                "questionEnglish": "Interested firms and individuals can submit their proposal to __________.",
+                "correctAnswer": "info@childfund.org.np",
+                "explanationNepali": "प्रस्ताव पेश गर्ने इमेल ठेगाना \"info@childfund.org.np\" दिइएको छ।",
+                "explanationEnglish": "The email address to submit the proposal is given as \"info@childfund.org.np\". \nCitation: Lesson 8."
+              },
+              {
+                "id": "v",
+                "questionEnglish": "The applicants may be called for the __________ of their proposal if necessary.",
+                "correctAnswer": "modifications and presentations",
+                "explanationNepali": "अन्तिम वाक्यमा भनिएको छ, \"the applicants will be asked for modifications and presentations... before approval.\"",
+                "explanationEnglish": "The last sentence states, \"the applicants will be asked for modifications and presentations... before approval.\" \nCitation: Lesson 8."
+              }
+            ]
+          },
+          {
+            "id": "B",
+            "type": "short_answer",
+            "title": "Answer the following questions in full sentences.",
+            "marks": 5,
+            "subQuestions": [
+              {
+                "id": "i",
+                "questionEnglish": "Where is the advertiser's office located?",
+                "correctAnswer": "The advertiser's office is located in Lalitpur, Nepal.",
+                "explanationNepali": "शीर्षकमा \"Child Fund Japan - Nepal Office, Lalitpur, Nepal\" लेखिएको छ।",
+                "explanationEnglish": "The heading says \"Child Fund Japan - Nepal Office, Lalitpur, Nepal.\" \nCitation: Lesson 8."
+              },
+              {
+                "id": "ii",
+                "questionEnglish": "What does CFJNO stand for?",
+                "correctAnswer": "CFJNO stands for Child Fund Japan Nepal Office.",
+                "explanationNepali": "पाठले \"Child Fund Japan Nepal Office (CFJNO)\" भनेर पूर्ण रूप दिएको छ।",
+                "explanationEnglish": "The text gives the full form as \"Child Fund Japan Nepal Office (CFJNO).\" \nCitation: Lesson 8."
+              },
+              {
+                "id": "iii",
+                "questionEnglish": "What will the video production service document in Baglung?",
+                "correctAnswer": "It will document the impact of migration on children, schools, and community in Baglung district.",
+                "explanationNepali": "दोस्रो बुँदामा \"documenting the impact of migration on children, schools and community in Baglung district\" उल्लेख छ।",
+                "explanationEnglish": "Point 2 mentions \"documenting the impact of migration on children, schools and community in Baglung district.\" \nCitation: Lesson 8."
+              },
+              {
+                "id": "iv",
+                "questionEnglish": "What is the last date to submit the proposal?",
+                "correctAnswer": "The last date to submit the proposal is 12 January, 2025.",
+                "explanationNepali": "पेश गर्ने अन्तिम म्याद \"Deadline for submission: 12 January, 2025\" हो।",
+                "explanationEnglish": "The submission deadline is stated as \"12 January, 2025.\" \nCitation: Lesson 8."
+              },
+              {
+                "id": "v",
+                "questionEnglish": "Who has the right for approval of the proposal?",
+                "correctAnswer": "CFJNO reserves the right for approval or disapproval of the proposal.",
+                "explanationNepali": "सूचनामा भनिएको छ, \"All rights are reserved with CFJNO either to approve or disapprove any proposal...\"",
+                "explanationEnglish": "The notice states, \"All rights are reserved with CFJNO either to approve or disapprove any proposal...\" \nCitation: Lesson 8."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "questionNumber": 4,
+        "type": "reading_comprehension",
+        "title": "Read the following text and do the tasks that follow.",
+        "marks": 15,
+        "passage": {
+          "title": "The Nobel Prize",
+          "content": "Nobel Prize is any of the prizes (five in number until 1969, when a sixth was added) awarded annually from a fund bequeathed for that purpose by the Swedish inventor and industrialist Alfred Nobel. The Nobel Prizes are widely regarded as the world's most prestigious awards for intellectual achievement.\n\nIn his will drafted in 1895, Nobel instructed that most of his fortune be set aside as a fund for the awarding of five annual prizes \"to those who, during the preceding year, shall have conferred the greatest benefit on mankind?\" These prizes as established by his will are the Nobel Prize for Physics, Chemistry, Physiology or Medicine, Literature and Peace respectively.\n\nThe first distribution of the prizes took place on December 10, 1901, the fifth anniversary of Nobel's death. An additional award, in Economic Sciences in memory of Alfred Nobel, was established in 1968 by the Bank of Sweden and was first awarded in 1969. Although not technically a Nobel Prize, it is identified with the award; its winners are announced with the Nobel Prize recipients and the Prize in Economic Sciences is presented at the Nobel Prize Award Ceremony.\n\nAfter Nobel's death, the Nobel Foundation was set up to carry out the provisions of his will and to administer his funds. In his will, he had stipulated that four different institutions three Swedish and one Norwegian should award the prizes. From Stockholm, the Royal Swedish Academy of Sciences confers the prizes for Physics, Chemistry and Economic Sciences, the Karolinska Institute confers the prize for Physiology or Medicine, and the Swedish Academy confers the prize for Literature. The Norwegian Nobel Committee based on Oslo, Norway confers the prize for peace. The Nobel Foundation is the legal owner and functional administrator of the funds and serves as the joint administrative body of the price awarding institutions, but it is not concerned with prize deliberations or decisions."
+        },
+        "subSections": [
+          {
+            "id": "A",
+            "type": "fill_in_the_blanks",
+            "title": "Fill in the gaps with the correct words underlined in the text.",
+            "marks": 5,
+            "subQuestions": [
+              {
+                "id": "i",
+                "questionEnglish": "An honorary degree was __________ to her for her outstanding contribution.",
+                "correctAnswer": "conferred",
+                "explanationNepali": "पाठबाट 'conferred' शब्द (प्रदान गरियो) यहाँ उपयुक्त हुन्छ।",
+                "explanationEnglish": "The word 'conferred' from the text fits here, meaning granted or bestowed. \nCitation: Lesson 15."
+              },
+              {
+                "id": "ii",
+                "questionEnglish": "Rajesh's father __________ him not only a fortune but also a legacy of integrity and hard work.",
+                "correctAnswer": "bequeathed",
+                "explanationNepali": "पाठबाट 'bequeathed' शब्द (वसीयतमा दिनु) यहाँ उपयुक्त हुन्छ।",
+                "explanationEnglish": "The word 'bequeathed' from the text fits here, meaning left by will. \nCitation: Lesson 15."
+              },
+              {
+                "id": "iii",
+                "questionEnglish": "The council's __________ focused on how to address the city's growing traffic issues.",
+                "correctAnswer": "deliberations",
+                "explanationNepali": "पाठबाट 'deliberations' शब्द (छलफल/विचार विमर्श) यहाँ उपयुक्त हुन्छ।",
+                "explanationEnglish": "The word 'deliberations' from the text fits here, referring to detailed discussions. \nCitation: Lesson 15."
+              },
+              {
+                "id": "iv",
+                "questionEnglish": "To ensure quality education to all the school has been __________ working tirelessly for the last few years.",
+                "correctAnswer": "technically",
+                "explanationNepali": "सन्दर्भ अनुसार यहाँ 'technically' शब्द प्रयोग गर्न सकिन्छ, यद्यपि यो पाठमा 'technically a Nobel Prize' को सन्दर्भमा छ।",
+                "explanationEnglish": "Based on the options from the text, 'technically' fits the grammatical structure, though contextually slightly different. \nCitation: Lesson 15."
+              },
+              {
+                "id": "v",
+                "questionEnglish": "The teacher reminded all the students of the __________ before starting a new one.",
+                "correctAnswer": "provisions",
+                "explanationNepali": "यहाँ 'provisions' (नियम/प्रावधान) शब्द उपयुक्त हुन सक्छ।",
+                "explanationEnglish": "The word 'provisions' fits here, referring to conditions or rules. \nCitation: Lesson 15."
+              }
+            ]
+          },
+          {
+            "id": "B",
+            "type": "ordering",
+            "title": "Put the following sentences in the correct order as they appear in the text.",
+            "marks": 5,
+            "sentences": [
+              {
+                "id": "i",
+                "text": "Nobel Prize for Peace is granted in Norway."
+              },
+              {
+                "id": "ii",
+                "text": "The Nobel Prizes firstly distributed at the beginning of the 20th century."
+              },
+              {
+                "id": "iii",
+                "text": "Nobel Prizes are awarded every year to those who have contributed for mankind."
+              },
+              {
+                "id": "iv",
+                "text": "The Nobel foundation manages the provisions related to the prizes."
+              },
+              {
+                "id": "v",
+                "text": "Bank of Sweden established the prize for Economic Sciences."
+              }
+            ],
+            "correctAnswer": [
+              "iii",
+              "ii",
+              "v",
+              "iv",
+              "i"
+            ],
+            "explanationNepali": "वाक्यहरूलाई पाठमा जानकारीको प्रवाह अनुसार क्रमबद्ध गरिएको छ: पुरस्कारको उद्देश्य, पहिलो वितरण, अर्थशास्त्र पुरस्कारको स्थापना, नोबेल फाउन्डेशनको भूमिका, र विशिष्ट पुरस्कार वितरण गर्ने संस्थाहरू।",
+            "explanationEnglish": "The sentences are ordered according to the flow of information in the text: purpose of the prize, first distribution, establishment of the Economics prize, role of the Nobel Foundation, and specific awarding bodies. \nCitation: Lesson 15."
+          },
+          {
+            "id": "C",
+            "type": "short_answer",
+            "title": "Answer the following questions in full sentences.",
+            "marks": 5,
+            "subQuestions": [
+              {
+                "id": "i",
+                "questionEnglish": "Who was Alfred Nobel?",
+                "correctAnswer": "Alfred Nobel was a Swedish inventor and industrialist.",
+                "explanationNepali": "पहिलो अनुच्छेदले उनलाई \"Swedish inventor and industrialist\" भनेर चिनाउँछ।",
+                "explanationEnglish": "The first paragraph identifies him as a \"Swedish inventor and industrialist.\" \nCitation: Lesson 15."
+              },
+              {
+                "id": "ii",
+                "questionEnglish": "What prizes were established based on Nobel's will, drafted in 1895?",
+                "correctAnswer": "The prizes for Physics, Chemistry, Physiology or Medicine, Literature, and Peace were established based on his will.",
+                "explanationNepali": "पाठले १९८५ को इच्छापत्र अनुसार स्थापित पाँच पुरस्कारहरू सूचीबद्ध गर्दछ: भौतिकशास्त्र, रसायनशास्त्र, चिकित्सा, साहित्य र शान्ति।",
+                "explanationEnglish": "The text lists the five prizes established by his 1895 will: Physics, Chemistry, Physiology or Medicine, Literature, and Peace. \nCitation: Lesson 15."
+              },
+              {
+                "id": "iii",
+                "questionEnglish": "Which is the youngest among Nobel Prizes?",
+                "correctAnswer": "The Prize in Economic Sciences is the youngest, established in 1968.",
+                "explanationNepali": "पाठले बताउँछ कि अर्थशास्त्रको पुरस्कार १९६८ मा स्थापना गरिएको थियो, जुन अन्य भन्दा धेरै पछि हो।",
+                "explanationEnglish": "The text states the Economic Sciences prize was established in 1968, making it the newest. \nCitation: Lesson 15."
+              },
+              {
+                "id": "iv",
+                "questionEnglish": "As per Nobel's will, how many institutions should award the prizes?",
+                "correctAnswer": "Four different institutions (three Swedish and one Norwegian) should award the prizes.",
+                "explanationNepali": "पाठमा भनिएको छ, \"four different institutions three Swedish and one Norwegian should award the prizes.\"",
+                "explanationEnglish": "The text says, \"four different institutions three Swedish and one Norwegian should award the prizes.\" \nCitation: Lesson 15."
+              },
+              {
+                "id": "v",
+                "questionEnglish": "Which organization distributes the Nobel Prize for literature?",
+                "correctAnswer": "The Swedish Academy confers the prize for Literature.",
+                "explanationNepali": "पाठमा उल्लेख छ, \"the Swedish Academy confers the prize for Literature.\"",
+                "explanationEnglish": "The text mentions, \"the Swedish Academy confers the prize for Literature.\" \nCitation: Lesson 15."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "questionNumber": 5,
+        "type": "free_writing",
+        "title": "Your school is going to organize Parents Day on July 10. Write a notice in about 100 words on behalf of your Head teacher using the given clues.",
+        "marks": 5,
+        "wordCount": 100,
+        "clues": [
+          "Parents Day",
+          "at school premises",
+          "all staff and students",
+          "awards and prizes for winners of sports and other activities",
+          "chief guest - ward chairperson"
+        ],
+        "sampleAnswer": {
+          "title": "NOTICE: PARENTS DAY CELEBRATION",
+          "content": "Adarsha Secondary School\nKathmandu\n\nDate: July 1, 2025\n\nNOTICE\n\nThis is to inform all students, staff, and parents that our school is organizing the annual 'Parents Day' celebration on July 10, 2025. The program will be held at the school premises starting from 11:00 AM.\n\nThe Ward Chairperson has kindly consented to be the Chief Guest for the occasion. The event will include cultural performances by students and the distribution of awards and prizes to the winners of sports and other extra-curricular activities held throughout the year.\n\nAll students and staff are requested to attend the function on time. Parents are cordially invited to grace the occasion.\n\n(Head Teacher)\nAdarsha Secondary School",
+          "explanationNepali": "यो उत्तरले विद्यालयमा अभिभावक दिवसको बारेमा जानकारी दिने सूचनाको ढाँचामा छ। यसले मिति, समय, स्थान, प्रमुख अतिथि, र कार्यक्रमका मुख्य आकर्षणहरू (पुरस्कार वितरण) समावेश गर्दछ।",
+          "explanationEnglish": "This answer is in the format of a notice informing about the Parents Day celebration. It includes the date, time, venue, chief guest, and main attractions (prize distribution). \nCitation: Lesson 2."
+        }
+      },
+      {
+        "questionNumber": 6,
+        "type": "free_writing",
+        "title": "Develop a readable story in about 100 words with the help of the given clues. Also supply a suitable title and a moral.",
+        "marks": 5,
+        "wordCount": 100,
+        "clues": [
+          "four cows in a jungle",
+          "close to each other",
+          "do everything together",
+          "no predators can attack",
+          "a lion makes a plan to attack",
+          "not possible to kill",
+          "thinks of a new idea",
+          "spreads rumours with the help of other animals",
+          "able to create a rivalry among them",
+          "go in different directions",
+          "attacks one after another"
+        ],
+        "sampleAnswer": {
+          "title": "Unity is Strength",
+          "content": "Once upon a time, four cows lived in a dense jungle. They were very close friends and did everything together. Whenever they grazed, they stayed together. Because of their unity, no predator, not even the lion, dared to attack them. The lion wanted to eat them but knew he couldn't fight them all at once. So, he thought of a cunning plan. He spread rumours about one cow to another with the help of other animals. Slowly, the cows started doubting each other and quarreled. They eventually separated and went in different directions. Taking this opportunity, the lion attacked them one by one and killed them all.\n\nMoral: Unity is strength, division is weakness.",
+          "explanationNepali": "यो उत्तरले दिइएको संकेतहरू प्रयोग गरेर चार गाई र सिंहको कथा विकास गर्दछ। यसले कसरी एकताले उनीहरूलाई सुरक्षित राख्यो र कसरी फूटले उनीहरूको विनाश निम्त्यायो भन्ने देखाउँछ।",
+          "explanationEnglish": "This answer develops the story of four cows and a lion using the provided clues. It shows how unity kept them safe and how division led to their destruction. \nCitation: Lesson 11."
+        }
+      },
+      {
+        "questionNumber": 7,
+        "type": "free_writing",
+        "title": "Salina and Rabi are two students of Adarsha Secondary School. They are planning for a school picnic. Write a conversation between them in not less than six exchanges in about 150 words.",
+        "marks": 6,
+        "wordCount": 150,
+        "sampleAnswer": {
+          "content": "Salina: Hi Rabi! Have you heard about our class picnic next month? We need to start planning.\n\nRabi: Hello Salina! Yes, I heard. I'm really excited. Where do you think we should go this time?\n\nSalina: I was thinking about Godawari. It's beautiful and has plenty of open space for games. What do you say?\n\nRabi: Godawari is nice, but we went there two years ago. How about Chandragiri Hills? The cable car ride would be fun for everyone.\n\nSalina: That's a great idea! But it might be a bit expensive for some students. We need to check the budget.\n\nRabi: True. We can ask the class teacher about the budget. Also, we should organize some food and music.\n\nSalina: Definitely. Let's make a list of things we need and potential costs, then we can present both options to the class.\n\nRabi: Sounds like a plan. I'll ask about the transportation costs tomorrow.",
+          "explanationNepali": "यो उत्तरले दुई साथीहरू, सलिना र रवि, बीचको कुराकानी प्रस्तुत गर्दछ जसले स्कूल पिकनिकको योजना बनाइरहेका छन्। उनीहरूले स्थान, बजेट, र गतिविधिहरूको बारेमा छलफल गर्छन्।",
+          "explanationEnglish": "This answer presents a conversation between two friends, Salina and Rabi, planning a school picnic. They discuss the location, budget, and logistics. \nCitation: Lesson 5."
+        }
+      },
+      {
+        "questionNumber": 8,
+        "type": "free_writing",
+        "title": "You are studying English abroad. Your sister in Nepal has asked you how she can improve her English. Write a letter to her in about 200 words suggesting the effective ways for learning English.",
+        "marks": 8,
+        "wordCount": 200,
+        "sampleAnswer": {
+          "content": "Sydney, Australia\n20th March 2025\n\nDear Sister,\n\nI hope this letter finds you in good health and high spirits. I was delighted to receive your letter and to know that you are keen on improving your English. Since I am studying here in an English-speaking environment, I can definitely share some tips that have helped me.\n\nFirst and foremost, immersion is key. Try to surround yourself with the language as much as possible. You can do this by watching English movies, listening to English songs, or even listening to podcasts on topics you enjoy. This helps with listening skills and pronunciation.\n\nSecondly, reading is incredibly beneficial. Start with simple storybooks or newspapers and gradually move to novels. This will expand your vocabulary and help you understand sentence structures. Don't be afraid to speak, even if you make mistakes. Practice speaking with your friends or even in front of a mirror.\n\nFinally, writing a diary in English every day is a great habit. It forces you to think in English. Consistency is the secret. Dedicate at least 30 minutes every day to practice.\n\nI am sure with your dedication, you will master the language in no time. Keep working hard!\n\nWith love,\nYour brother,\nSuren",
+          "explanationNepali": "यो उत्तरले विदेशमा रहेका दाइले बहिनीलाई अंग्रेजी सुधार्ने तरिकाहरू सुझाउँदै लेखेको पत्र हो। यसले सुन्ने, पढ्ने, बोल्ने र लेख्ने अभ्यासहरूमा जोड दिन्छ।",
+          "explanationEnglish": "This answer is a letter from a brother abroad to his sister, suggesting ways to improve English. It emphasizes listening, reading, speaking, and writing practices. \nCitation: Lesson 13."
+        }
+      },
+      {
+        "questionNumber": 9,
+        "type": "grammar",
+        "title": "Reproduce the following sentences as indicated in the brackets.",
+        "marks": 6,
+        "subQuestions": [
+          {
+            "id": "i",
+            "type": "reproduce",
+            "questionEnglish": "Everything is all right, __________? (Add a correct question tag.)",
+            "correctAnswer": "Everything is all right, isn't it?",
+            "explanationNepali": "'Everything' जस्ता अनिश्चित सर्वनामहरूको लागि ट्यागमा 'it' प्रयोग गरिन्छ। वाक्य सकारात्मक भएकोले ट्याग नकारात्मक हुन्छ।",
+            "explanationEnglish": "For indefinite pronouns like 'Everything', 'it' is used in the tag. Since the statement is positive, the tag is negative. \nCitation: Lesson 14."
+          },
+          {
+            "id": "ii",
+            "type": "reproduce",
+            "questionEnglish": "Chadani likes ice cream. (Change into negative.)",
+            "correctAnswer": "Chadani does not like ice cream.",
+            "explanationNepali": "साधारण वर्तमान काल (likes - v5) लाई नकारात्मक बनाउन 'does not' + v1 (like) को प्रयोग गरिन्छ।",
+            "explanationEnglish": "To make the simple present tense (likes - v5) negative, 'does not' + v1 (like) is used. \nCitation: Lesson 11."
+          },
+          {
+            "id": "iii",
+            "type": "reproduce",
+            "questionEnglish": "The competitors painted the picture beautifully. (Change into 'How' question.)",
+            "correctAnswer": "How did the competitors paint the picture?",
+            "explanationNepali": "'beautifully' (adverb of manner) बारे प्रश्न सोध्न 'How' को प्रयोग गरिन्छ।",
+            "explanationEnglish": "To ask about 'beautifully' (adverb of manner), 'How' is used. \nCitation: Lesson 18."
+          },
+          {
+            "id": "iv",
+            "type": "reproduce",
+            "questionEnglish": "The municipality __________ (repair) road by the end of this month. (Use the correct form of the verb 'repair' in the brackets to complete the sentence.)",
+            "correctAnswer": "The municipality will have repaired the road by the end of this month.",
+            "explanationNepali": "'by the end of this month' ले भविष्यको एक समयसीमा जनाउँछ, त्यसैले Future Perfect Tense (will have repaired) उपयुक्त हुन्छ।",
+            "explanationEnglish": "'by the end of this month' indicates a deadline in the future, so the Future Perfect Tense (will have repaired) is appropriate. \nCitation: Lesson 12."
+          },
+          {
+            "id": "v",
+            "type": "reproduce",
+            "questionEnglish": "Sunaina said, \"I'm knitting a sweater now.\" (Change into indirect speech.)",
+            "correctAnswer": "Sunaina said that she was knitting a sweater then.",
+            "explanationNepali": "Indirect speech मा, 'I' -> 'she', 'am' -> 'was', र 'now' -> 'then' मा परिवर्तन हुन्छ।",
+            "explanationEnglish": "In indirect speech, 'I' changes to 'she', 'am' changes to 'was', and 'now' changes to 'then'. \nCitation: Lesson 2."
+          },
+          {
+            "id": "vi",
+            "type": "reproduce",
+            "questionEnglish": "Kumari threw the garbage into the container. (Change into passive voice.)",
+            "correctAnswer": "The garbage was thrown into the container by Kumari.",
+            "explanationNepali": "भूतकालको वाक्य (threw - v2) लाई passive मा लैजाँदा 'was/were + v3' (was thrown) को प्रयोग हुन्छ।",
+            "explanationEnglish": "When changing a past tense sentence (threw - v2) to passive, 'was/were + v3' (was thrown) is used. \nCitation: Lesson 8."
+          }
+        ]
+      },
+      {
+        "questionNumber": 10,
+        "type": "cloze_test",
+        "title": "Choose and copy the correct alternatives from the brackets to complete the given text. (Rewriting the text is not compulsory.)",
+        "marks": 5,
+        "passage": "Chitwan National Park is one of the most popular tourist destinations in Nepal known for its rich biodiversity. It is (a) _____ (a/an/the/no article) UNESCO World Heritage Site. The Park (b) _____ (is established/established/has been established/was established) in 1973. It is a home to rare species of animals and birds, (c) _____ (isn't it/aren't they/hasn't it/haven't they)? Visitors are often amazed by the sight of one horned rhinos bathing (d) _____ (at/by/on/in) the Narayani River. The guides (e) _____ (whom/which/who/whose) are highly trained provide detailed information to the visitors. Visitors who want to have the full experience (f) _____ (should/could/would/might) book a jungle safari in advance. If the park (g) _____ (is not protected/was not protected/had not been protected/will not be protected), these species might face extinction. The park authorities make the visitors (h) _____ (following/follow/to follow/followed) strict rules to ensure the park's safety. Tourists often ask, \"(i) _____ (Why is the Park famous/Why the park is famous/Why was the Park famous/Why the Park had been famous)?\" The guides explain that it is famous for its natural beauty and wildlife. Visitors enjoy activities such as jungle safaris and canoe rides. (j) _____ (However/Therefore/Because/Although), they return with unforgettable memories.",
+        "gaps": [
+          {
+            "id": "a",
+            "correctAnswer": "a",
+            "explanationNepali": "'UNESCO' को उच्चारण 'yu' (consonant sound) बाट सुरु हुन्छ, त्यसैले 'a' प्रयोग गरिन्छ।",
+            "explanationEnglish": "'UNESCO' starts with a consonant sound 'yu', so 'a' is used. \nCitation: Lesson 7."
+          },
+          {
+            "id": "b",
+            "correctAnswer": "was established",
+            "explanationNepali": "सन् १९७३ मा स्थापना भएको (भूतकालको निश्चित समय), त्यसैले simple past passive प्रयोग गरिन्छ।",
+            "explanationEnglish": "It was established in 1973 (a specific past time), so simple past passive is used. \nCitation: Lesson 10."
+          },
+          {
+            "id": "c",
+            "correctAnswer": "isn't it",
+            "explanationNepali": "वाक्य 'It is a home...' सकारात्मक छ, त्यसैले ट्याग 'isn't it' हुन्छ।",
+            "explanationEnglish": "The statement 'It is a home...' is positive, so the tag is 'isn't it'. \nCitation: Lesson 14."
+          },
+          {
+            "id": "d",
+            "correctAnswer": "in",
+            "explanationNepali": "नदीमा नुहाउने कार्यको लागि 'in' preposition प्रयोग गरिन्छ।",
+            "explanationEnglish": "The preposition 'in' is used for bathing in the river. \nCitation: Lesson 7."
+          },
+          {
+            "id": "e",
+            "correctAnswer": "who",
+            "explanationNepali": "'Guides' मानिस हुन्, त्यसैले relative pronoun 'who' प्रयोग गरिन्छ।",
+            "explanationEnglish": "'Guides' are people, so the relative pronoun 'who' is used. \nCitation: Lesson 15."
+          },
+          {
+            "id": "f",
+            "correctAnswer": "should",
+            "explanationNepali": "सल्लाह दिनको लागि 'should' को प्रयोग गरिन्छ।",
+            "explanationEnglish": "'Should' is used to give advice. \nCitation: Lesson 8."
+          },
+          {
+            "id": "g",
+            "correctAnswer": "is not protected",
+            "explanationNepali": "यो Type 1 Conditional जस्तो देखिन्छ (If + present... might/will), वा एक सामान्य सत्य। यहाँ 'is not protected' ले वर्तमान अवस्थालाई जनाउँछ जसले भविष्यमा लोप हुने खतरा निम्त्याउँछ।",
+            "explanationEnglish": "This implies a real possibility (Type 1 Conditional structure). If it is not protected now, species might face extinction. \nCitation: Lesson 10."
+          },
+          {
+            "id": "h",
+            "correctAnswer": "follow",
+            "explanationNepali": "'make' causative verb हो, जसले active voice मा bare infinitive (v1) लिन्छ।",
+            "explanationEnglish": "'make' is a causative verb that takes the bare infinitive (v1) in the active voice. \nCitation: Lesson 18."
+          },
+          {
+            "id": "i",
+            "correctAnswer": "Why is the Park famous",
+            "explanationNepali": "यो प्रत्यक्ष प्रश्न (Direct Question) हो (इन्भर्टेड कमा भित्र), त्यसैले 'Wh + auxiliary + subject' को संरचना हुन्छ।",
+            "explanationEnglish": "This is a direct question (inside inverted commas), so it follows the 'Wh + auxiliary + subject' structure. \nCitation: Lesson 2."
+          },
+          {
+            "id": "j",
+            "correctAnswer": "Therefore",
+            "explanationNepali": "पर्यटकहरूले रमाइलो गर्ने भएकाले (कारण), उनीहरू अविष्मरणीय यादहरू लिएर फर्कन्छन् (परिणाम)। त्यसैले 'Therefore' उपयुक्त छ।",
+            "explanationEnglish": "Since visitors enjoy the activities (cause), they return with memories (result). 'Therefore' fits best. \nCitation: Lesson 13."
+          }
+        ]
+      }
+    ]
+  }
+]
+
