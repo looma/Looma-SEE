@@ -875,10 +875,15 @@
         "type": "essay",
         "titleNepali": "कुनै एक शीर्षकमा १५० शब्द नघटाई निबन्ध लेख्नुहोस् :",
         "titleEnglish": "Write an essay on any one topic in not less than 150 words:",
-        "topics": [
+        "topicsNepali": [
           "असल मित्रको महत्त्व",
           "नेपालको जलसम्पदा र यसको उपयोग",
           "मोबाइल फोनका फाइदा र बेफाइदा"
+        ],
+        "topicsEnglish": [
+          "Importance of a Good Friend",
+          "Water Resources of Nepal and Their Utilization",
+          "Advantages and Disadvantages of Mobile Phones"
         ],
         "questionNumberNepali": "२०",
         "questionNumberEnglish": 20,

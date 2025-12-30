@@ -873,10 +873,15 @@
         "type": "essay",
         "titleNepali": "कुनै एक शीर्षकमा १५० शब्द नघटाई निबन्ध लेख्नुहोस् :",
         "titleEnglish": "Write an essay on any one topic in not less than 150 words:",
-        "topics": [
+        "topicsNepali": [
           "विज्ञान र प्रविधिले ल्याएको परिवर्तन",
           "मेरो अविस्मरणीय यात्रा",
           "भ्रष्टाचार : एक सामाजिक समस्या"
+        ],
+        "topicsEnglish": [
+          "Changes Brought by Science and Technology",
+          "My Unforgettable Journey",
+          "Corruption: A Social Problem"
         ],
         "questionNumberNepali": "२०",
         "questionNumberEnglish": 20,

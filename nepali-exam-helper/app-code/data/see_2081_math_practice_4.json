@@ -5,10 +5,10 @@
     "titleEnglish": "SEE 2081 Math Practice Test 4",
     "subjectNepali": "अनिवार्य गणित",
     "subjectEnglish": "Compulsory Mathematics",
-    "durationNepali": "१८०",
-    "durationEnglish": 180,
     "totalMarksNepali": "७५",
-    "totalMarksEnglish": 75
+    "totalMarksEnglish": 75,
+    "durationNepali": "१८०",
+    "durationEnglish": 180
   },
   {
     "testId": "see_2081_math_practice_4_generated_verified",

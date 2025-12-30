@@ -895,10 +895,15 @@
         "type": "essay",
         "titleNepali": "कुनै एक शीर्षकमा १५० शब्द नघटाई निबन्ध लेख्नुहोस् :",
         "titleEnglish": "Write an essay on any one topic in not less than 150 words:",
-        "topics": [
+        "topicsNepali": [
           "नेपालमा पर्यटनको सम्भावना",
           "मेरो जीवनको लक्ष्य",
           "समयको महत्त्व"
+        ],
+        "topicsEnglish": [
+          "Potential of Tourism in Nepal",
+          "Aim of My Life",
+          "Importance of Time"
         ],
         "questionNumberNepali": "२०",
         "questionNumberEnglish": 20,

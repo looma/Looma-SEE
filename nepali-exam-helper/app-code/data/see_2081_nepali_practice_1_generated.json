@@ -905,10 +905,15 @@
         "type": "essay",
         "titleNepali": "कुनै एक शीर्षकमा १५० शब्द नघटाई निबन्ध लेख्नुहोस् :",
         "titleEnglish": "Write an essay on any one topic in not less than 150 words:",
-        "topics": [
+        "topicsNepali": [
           "विद्यार्थी जीवनमा अनुशासनको महत्त्व",
           "सामाजिक सञ्जालको सदुपयोग",
           "मेरो देश मेरो गौरव"
+        ],
+        "topicsEnglish": [
+          "Importance of Discipline in Student Life",
+          "Proper Use of Social Media",
+          "My Country My Pride"
         ],
         "questionNumberNepali": "२०",
         "questionNumberEnglish": 20,

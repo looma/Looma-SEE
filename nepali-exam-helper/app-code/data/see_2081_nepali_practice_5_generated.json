@@ -911,10 +911,15 @@
         "type": "essay",
         "titleNepali": "कुनै एक शीर्षकमा १५० शब्द नघटाई निबन्ध लेख्नुहोस् :",
         "titleEnglish": "Write an essay on any one topic in not less than 150 words:",
-        "topics": [
+        "topicsNepali": [
           "विद्यार्थी जीवनमा समयको सदुपयोग",
           "मेरो अविस्मरणीय यात्रा",
           "विज्ञान : अवसर र चुनौती"
+        ],
+        "topicsEnglish": [
+          "Proper Utilization of Time in Student Life",
+          "My Unforgettable Journey",
+          "Science: Opportunities and Challenges"
         ],
         "questionNumberNepali": "२०",
         "questionNumberEnglish": 20,
