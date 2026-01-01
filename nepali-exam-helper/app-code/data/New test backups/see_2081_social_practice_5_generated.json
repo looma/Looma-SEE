@@ -1,0 +1,368 @@
+[
+  {
+    "_id": "see_2081_social_practice_5_generated",
+    "titleNepali": "SEE २०८१ सामाजिक अध्ययन अभ्यास परीक्षा ५",
+    "titleEnglish": "SEE 2081 Social Practice Test 5",
+    "subjectNepali": "सामाजिक अध्ययन",
+    "subjectEnglish": "social_studies",
+    "totalMarksNepali": "७५",
+    "totalMarksEnglish": 75,
+    "durationNepali": "१८०",
+    "durationEnglish": 180,
+    "instructionsNepali": "दिइएका निर्देशनका आधारमा आफ्नै शैलीमा सिर्जनात्मक उत्तर दिनुहोस् :",
+    "instructionsEnglish": "Candidates are required to give creative answers in their own style based on the given instructions."
+  },
+  {
+    "testId": "see_2081_social_practice_5_generated",
+    "groups": [
+      {
+        "groupName": "समूह 'क'",
+        "groupInstruction": "तलका प्रश्नहरूको अति छोटो उत्तर दिनुहोस् :",
+        "marksSchema": "(११×१=११)",
+        "questions": [
+          {
+            "type": "very_short_answer",
+            "questionNepali": "राउटे समुदायको कुनै एक विशेषता लेख्नुहोस् ।",
+            "questionEnglish": "Write any one characteristic of the Raute community.",
+            "answerNepali": "राउटे समुदायको एक विशेषता फिरन्ते जीवनयापन गर्नु हो ।",
+            "answerEnglish": "One characteristic of the Raute community is living a nomadic life.",
+            "explanationNepali": "राउटे समुदाय नेपालको एक लोपोन्मुख जाति हो, जो कर्णाली प्रदेशका जङ्गलहरूमा स्थायी बसोबास नगरी घुमन्ते जीवन बिताउँछन् ।\nउद्धरण: एकाइ १, पाठ १।",
+            "explanationEnglish": "The Raute community is an endangered tribe of Nepal, who live a nomadic life in the forests of Karnali Province without permanent settlement.\nCitation: Unit 1, Lesson 1",
+            "questionNumberNepali": "१",
+            "questionNumberEnglish": "1",
+            "marksNepali": "१",
+            "marksEnglish": 1
+          },
+          {
+            "type": "very_short_answer",
+            "questionNepali": "दिगो विकासलाई एक वाक्यमा परिभाषित गर्नुहोस् ।",
+            "questionEnglish": "Define sustainable development in one sentence.",
+            "answerNepali": "विकासका क्रममा साधनस्रोतको समुचित उपयोग गरी भावी पुस्ताले पनि स्रोतको प्रयोग गर्न पाउने अवस्था निर्माण गर्नु दिगो विकास हो ।",
+            "answerEnglish": "The main basis of national unity is the feeling of mutual respect and harmony among diverse cultures, languages, and religions.",
+            "explanationNepali": "दिगो विकासले वर्तमानको आवश्यकता पूरा गर्दा भविष्यको पुस्ताको आवश्यकतामा सम्झौता नगरी गरिने सन्तुलित विकासलाई जनाउँछ ।\nउद्धरण: एकाइ २, पाठ २।",
+            "explanationEnglish": "Sustainable development refers to balanced development carried out without compromising the needs of future generations while meeting the needs of the present.\nCitation: Unit 2, Lesson 2",
+            "questionNumberNepali": "२",
+            "questionNumberEnglish": "2",
+            "marksNepali": "१",
+            "marksEnglish": 1
+          },
+          {
+            "type": "very_short_answer",
+            "questionNepali": "बालविवाह विरुद्ध जनचेतना फैलाउने एउटा नारा लेख्नुहोस् ।",
+            "questionEnglish": "Write a slogan to spread public awareness against child marriage.",
+            "answerNepali": "\"बीस वर्ष नपुगी विवाह नगरौँ, पढाइ र भविष्य सुनिश्चित गरौँ ।\"",
+            "answerEnglish": "\"Let's not marry before twenty, let's ensure education and future.\"",
+            "explanationNepali": "यो नाराले बालविवाहका नकारात्मक असरबारे सचेत गराउँदै शिक्षाको महत्त्वलाई जोड दिन्छ र विवाह गर्ने कानुनी उमेरबारे जानकारी दिन्छ ।\nउद्धरण: एकाइ ४, पाठ ६।",
+            "explanationEnglish": "This slogan emphasizes the importance of education while raising awareness about the negative effects of child marriage and informs about the legal age for marriage.\nCitation: Unit 4, Lesson 6",
+            "questionNumberNepali": "३",
+            "questionNumberEnglish": "3",
+            "marksNepali": "१",
+            "marksEnglish": 1
+          },
+          {
+            "type": "very_short_answer",
+            "questionNepali": "देउडा नाच नेपालको कुन क्षेत्रमा प्रचलित छ?",
+            "questionEnglish": "In which region of Nepal is the Deuda dance prevalent?",
+            "answerNepali": "देउडा नाच मुख्यतया नेपालको कर्णाली तथा सुदूरपश्चिम प्रदेशका पहाडी समुदायमा प्रचलित छ ।",
+            "answerEnglish": "Deuda dance is mainly prevalent in the hilly communities of Karnali and Far-Western provinces of Nepal.",
+            "explanationNepali": "यो एक सामूहिक नृत्य हो जसमा एकअर्काको हात र कुम जोडेर गोलो घेरामा गीत गाउँदै नाचिने गरिन्छ ।\nउद्धरण: एकाइ ३, पाठ ४।",
+            "explanationEnglish": "This is a group dance in which people dance in a circle holding each other's hands and shoulders while singing songs.\nCitation: Unit 3, Lesson 4",
+            "questionNumberNepali": "४",
+            "questionNumberEnglish": "4",
+            "marksNepali": "१",
+            "marksEnglish": 1
+          },
+          {
+            "type": "very_short_answer",
+            "questionNepali": "सगरमाथाको नामकरण कसले गरेका हुन्?",
+            "questionEnglish": "Who named Mount Everest (Sagarmatha)?",
+            "answerNepali": "इतिहास शिरोमणि बाबुराम आचार्यले वि.सं. २०१२ मा सगरमाथाको नामकरण गरेका हुन् ।",
+            "answerEnglish": "Itihas Shiromani Baburam Acharya named Sagarmatha (Mt. Everest) in 2012 B.S.",
+            "explanationNepali": "त्यसअघि यसलाई विभिन्न स्थानीय नामले चिनिन्थ्यो । 'सगरमाथा' को शाब्दिक अर्थ 'आकाश छुने शिखर' भन्ने हुन्छ ।\nउद्धरण: एकाइ १, पाठ ४।",
+            "explanationEnglish": "Before that, it was known by various local names. The literal meaning of 'Sagarmatha' is 'Summit Touching the Sky'.\nCitation: Unit 1, Lesson 4",
+            "questionNumberNepali": "५",
+            "questionNumberEnglish": "5",
+            "marksNepali": "१",
+            "marksEnglish": 1
+          },
+          {
+            "type": "very_short_answer",
+            "questionNepali": "संयुक्त राष्ट्र सङ्घीय जनसङ्ख्या कोष (UNFPA) को कुनै एक कार्यक्षेत्र उल्लेख गर्नुहोस् ।",
+            "questionEnglish": "Mention any one area of work of the United Nations Population Fund (UNFPA).",
+            "answerNepali": "संयुक्त राष्ट्र सङ्घीय जनसङ्ख्या कोष (UNFPA) को एक कार्यक्षेत्र प्रजनन र मातृ स्वास्थ्यको सुधार गर्नु हो ।",
+            "answerEnglish": "Climate change refers to significant changes in global temperature, precipitation, wind patterns and other measures of climate that occur over several decades or longer.",
+            "explanationNepali": "यो संस्थाले विश्वव्यापी रूपमा परिवार नियोजन, सुरक्षित मातृत्व र यौन तथा प्रजनन स्वास्थ्यसम्बन्धी कार्यक्रमहरूमा सहयोग गर्दछ ।\nउद्धरण: एकाइ ४, पाठ ७।",
+            "explanationEnglish": "This organization supports family planning, safe motherhood, and sexual and reproductive health programs globally.\nCitation: Unit 4, Lesson 7",
+            "questionNumberNepali": "६",
+            "questionNumberEnglish": "6",
+            "marksNepali": "१",
+            "marksEnglish": 1
+          },
+          {
+            "type": "very_short_answer",
+            "questionNepali": "नेपालको न्यायपालिकाको सर्वोच्च निकाय कुन हो?",
+            "questionEnglish": "What is the supreme body of Nepal's judiciary?",
+            "answerNepali": "नेपालको न्यायपालिकाको सर्वोच्च निकाय सर्वोच्च अदालत हो ।",
+            "answerEnglish": "The supreme body of the judiciary of Nepal is the Supreme Court.",
+            "explanationNepali": "नेपालमा तीन तहका अदालतहरू छन्: जिल्ला अदालत, उच्च अदालत र सर्वोच्च अदालत, जसमध्ये सर्वोच्च अदालत सबैभन्दा माथिल्लो तहको अदालत हो ।\nउद्धरण: एकाइ ५, पाठ ३।",
+            "explanationEnglish": "There are three levels of courts in Nepal: District Court, High Court, and Supreme Court, of which the Supreme Court is the highest level court.\nCitation: Unit 5, Lesson 3",
+            "questionNumberNepali": "७",
+            "questionNumberEnglish": "7",
+            "marksNepali": "१",
+            "marksEnglish": 1
+          },
+          {
+            "type": "very_short_answer",
+            "questionNepali": "उपभोक्ताको क्षतिपूर्ति पाउने अधिकार भनेको के हो?",
+            "questionEnglish": "What is the consumer's right to compensation?",
+            "answerNepali": "गुणस्तरहीन वस्तु तथा सेवाको प्रयोगबाट भएको हानि-नोक्सानी बापत बिक्रेता वा उत्पादकबाट क्षतिपूर्ति पाउने अधिकार नै उपभोक्ताको क्षतिपूर्ति पाउने अधिकार हो ।",
+            "answerEnglish": "The right to get compensation from the seller or producer for the loss or damage caused by the use of low-quality goods and services is the consumer's right to compensation.",
+            "explanationNepali": "नेपालको संविधानको धारा ४४ मा यो हकलाई मौलिक हकको रूपमा व्यवस्था गरिएको छ, जसले उपभोक्तालाई सुरक्षित महसुस गराउँछ ।\nउद्धरण: एकाइ ५, पाठ ८।",
+            "explanationEnglish": "Article 44 of the Constitution of Nepal has provided for this right as a fundamental right, which makes consumers feel safe.\nCitation: Unit 5, Lesson 8",
+            "questionNumberNepali": "८",
+            "questionNumberEnglish": "8",
+            "marksNepali": "१",
+            "marksEnglish": 1
+          },
+          {
+            "type": "very_short_answer",
+            "questionNepali": "अमेजन बेसिन क्षेत्रमा कस्तो प्रकारको हावापानी पाइन्छ?",
+            "questionEnglish": "What type of climate is found in the Amazon Basin region?",
+            "answerNepali": "अमेजन बेसिन क्षेत्रमा भूमध्यरेखीय हावापानी पाइन्छ ।",
+            "answerEnglish": "Equatorial climate is found in the Amazon Basin region.",
+            "explanationNepali": "यो क्षेत्र भूमध्यरेखाको नजिक पर्ने भएकाले यहाँ वर्षैभरि गर्मी हुने र प्रशस्त संवाहनिक वर्षा हुने गर्दछ ।\nउद्धरण: एकाइ ६, पाठ ३।",
+            "explanationEnglish": "As this region lies near the equator, it is hot throughout the year and receives abundant convectional rainfall.\nCitation: Unit 6, Lesson 3",
+            "questionNumberNepali": "९",
+            "questionNumberEnglish": "9",
+            "marksNepali": "१",
+            "marksEnglish": 1
+          },
+          {
+            "type": "very_short_answer",
+            "questionNepali": "भूकम्पको उद्गमविन्दु (Hypocenter) भनेको के हो?",
+            "questionEnglish": "What is the Hypocenter of an earthquake?",
+            "answerNepali": "पृथ्वीको सतहभन्दा भित्री भागमा जहाँबाट भूकम्पको उत्पत्ति हुन्छ, त्यस भागलाई उद्गमविन्दु (Hypocenter) भनिन्छ ।",
+            "answerEnglish": "The part inside the earth's surface from where the earthquake originates is called the Hypocenter.",
+            "explanationNepali": "यही बिन्दुबाट भूकम्पीय तरङ्गहरू चारैतिर फैलिन्छन् र पृथ्वीको सतहमा कम्पन महसुस हुन्छ ।\nउद्धरण: एकाइ ६, पाठ ७।",
+            "explanationEnglish": "From this point, seismic waves spread in all directions and tremors are felt on the Earth's surface.\nCitation: Unit 6, Lesson 7",
+            "questionNumberNepali": "१०",
+            "questionNumberEnglish": "10",
+            "marksNepali": "१",
+            "marksEnglish": 1
+          },
+          {
+            "type": "very_short_answer",
+            "questionNepali": "ज्येष्ठ नागरिकप्रति तपाईंको कुनै एक सामाजिक दायित्व उल्लेख गर्नुहोस् ।",
+            "questionEnglish": "Mention any one of your social obligations towards senior citizens.",
+            "answerNepali": "ज्येष्ठ नागरिकप्रति मेरो एक सामाजिक दायित्व उहाँहरूलाई उचित सम्मान र आदर गर्नु हो ।",
+            "answerEnglish": "One of my social responsibilities towards senior citizens is to give them proper respect and honor.",
+            "explanationNepali": "यो एक व्यावहारिक प्रश्न हो । विद्यार्थीले ज्येष्ठ नागरिकलाई सहयोग गर्ने, उहाँहरूको अनुभव सुन्ने, स्याहार गर्ने जस्ता कुनै पनि सकारात्मक दायित्व उल्लेख गर्न सक्छन् ।\nउद्धरण: एकाइ ३, पाठ ८।",
+            "explanationEnglish": "This is a practical question. Students can mention any positive obligation like helping senior citizens, listening to their experiences, caring for them.\nCitation: Unit 3, Lesson 8",
+            "questionNumberNepali": "११",
+            "questionNumberEnglish": "11",
+            "marksNepali": "१",
+            "marksEnglish": 1
+          }
+        ]
+      },
+      {
+        "groupName": "समूह 'ख'",
+        "groupInstruction": "तलका प्रश्नहरूको छोटो उत्तर दिनुहोस् :",
+        "marksSchema": "(९×४=३६)",
+        "questions": [
+          {
+            "type": "short_answer",
+            "questionNepali": "नेल्सन मण्डेलाको जीवनीबाट युवाहरूले सिक्न सक्ने चारवटा प्रेरणाहरू उल्लेख गर्नुहोस् ।",
+            "questionEnglish": "Mention four inspirations that youths can learn from the biography of Nelson Mandela.",
+            "answerNepali": "नेल्सन मण्डेलाको जीवनीबाट युवाहरूले निम्न प्रेरणाहरू सिक्न सक्छन्:\n• **समानता र न्यायप्रतिको प्रतिबद्धता:** उनले दक्षिण अफ्रिकाको रङ्गभेदी शासन अन्त्यका लागि जीवनभर सङ्घर्ष गरे । यसले हामीलाई समाजमा भएको कुनै पनि अन्याय र भेदभावविरुद्ध आवाज उठाउन प्रेरित गर्छ ।\n• **अदम्य साहस र धैर्य:** रङ्गभेदविरुद्ध लड्दा उनले २७ वर्ष लामो जेल जीवन बिताउनु पर्यो, तर कहिल्यै हरेस खाएनन् । यसले हामीलाई आफ्नो लक्ष्य प्राप्तिका लागि जस्तोसुकै कठिनाइमा पनि धैर्य र साहसी बन्न सिकाउँछ ।\n• **क्षमा र मेलमिलापको भावना:** राष्ट्रपति भएपछि उनले आफूलाई जेल हाल्नेहरूलाई बदला लिनुको सट्टा क्षमा दिएर सबैलाई मिलाएर देश विकासमा अघि बढे । यसले हामीलाई प्रतिशोधभन्दा मेलमिलाप र सहकार्य ठूलो हो भन्ने सिकाउँछ ।\n• **शिक्षाको महत्त्व:** उनले भनेका थिए, \"शिक्षा एउटा त्यस्तो सशक्त हतियार हो, जसले विश्व बदल्न सक्छ ।\" यसले हामीलाई आफ्नो र समाजको परिवर्तनका लागि शिक्षालाई सबैभन्दा बढी महत्त्व दिनुपर्छ भन्ने प्रेरणा दिन्छ ।",
+            "answerEnglish": "Youth can learn the following inspirations from the life of Nelson Mandela:\n• **Commitment to Equality and Justice:** He struggled all his life to end the apartheid regime in South Africa. This inspires us to raise our voice against any injustice and discrimination in society.\n• **Indomitable Courage and Patience:** He had to spend 27 years in prison fighting against apartheid, but he never gave up. This teaches us to be patient and courageous in any difficulty to achieve our goals.\n• **Spirit of Forgiveness and Reconciliation:** After becoming President, instead of taking revenge on those who imprisoned him, he forgave them and moved forward in the country's development by uniting everyone. This teaches us that reconciliation and cooperation are greater than revenge.\n• **Importance of Education:** He said, \"Education is the most powerful weapon which you can use to change the world.\" This inspires us to give the highest importance to education for personal and social change.",
+            "explanationNepali": "यो प्रश्नले विद्यार्थीलाई अन्तर्राष्ट्रिय व्यक्तित्वहरूको जीवनी पढेर त्यसबाट सकारात्मक गुणहरू सिक्न र आफ्नो जीवनमा लागू गर्न प्रोत्साहित गर्दछ ।\nउद्धरण: एकाइ ३, पाठ ६।",
+            "explanationEnglish": "This question encourages students to read the biographies of international personalities, learn positive qualities from them, and apply them in their lives.\nCitation: Unit 3, Lesson 6",
+            "questionNumberNepali": "१२",
+            "questionNumberEnglish": "12",
+            "marksNepali": "४",
+            "marksEnglish": 4
+          },
+          {
+            "type": "short_answer",
+            "questionNepali": "राष्ट्रिय गौरवका आयोजनाहरू देश विकासका लागि किन महत्त्वपूर्ण मानिन्छन्? चार कारणसहित प्रस्ट पार्नुहोस् ।",
+            "questionEnglish": "Why are National Pride Projects considered important for the development of the country? Clarify with four reasons.",
+            "answerNepali": "राष्ट्रिय गौरवका आयोजनाहरू देश विकासका लागि महत्त्वपूर्ण मानिनुका कारणहरू निम्न छन्:\n• **पूर्वाधार विकासको आधार:** यी आयोजनाहरूले सडक, विमानस्थल, सिँचाइ र जलविद्युत् जस्ता ठुला पूर्वाधारहरूको विकास गर्दछन्, जसले देशको समग्र आर्थिक विकासको आधार तयार पार्छ ।\n• **रोजगारी सिर्जना:** ठुला आयोजनाहरूको निर्माण कार्यमा हजारौँले रोजगारी पाउँछन्, जसले गरिबी न्यूनीकरणमा मद्दत गर्छ र युवाहरूलाई विदेश पलायन हुनबाट रोक्छ ।\n• **आर्थिक वृद्धिमा योगदान:** यी आयोजनाहरूले देशको आर्थिक वृद्धि र सामाजिक रूपान्तरणमा महत्त्वपूर्ण योगदान पुऱ्याउँछन् । उदाहरणका लागि, जलविद्युत् आयोजनाले ऊर्जा उत्पादन बढाउँछ भने राजमार्गले व्यापार र व्यवसायलाई सहज बनाउँछ ।\n• **राष्ट्रिय पहिचान र गौरवमा वृद्धि:** लुम्बिनी क्षेत्र विकास कोष र पशुपति क्षेत्र विकास कोष जस्ता आयोजनाले देशको सांस्कृतिक र धार्मिक पहिचानलाई विश्वमाझ चिनाउँछन् भने सगरमाथा जस्ता प्राकृतिक सम्पदासँग जोडिएका आयोजनाले राष्ट्रिय गौरव बढाउँछन् ।",
+            "answerEnglish": "The reasons why National Pride Projects are considered important for the country's development are as follows:\n• **Basis of Infrastructure Development:** These projects develop large infrastructures like roads, airports, irrigation, and hydropower, which prepare the basis for the overall economic development of the country.\n• **Job Creation:** Thousands get employment in the construction work of large projects, which helps in poverty alleviation and prevents youth from migrating abroad.\n• **Contribution to Economic Growth:** These projects contribute significantly to the country's economic growth and social transformation. For example, hydropower projects increase energy production while highways make trade and business easier.\n• **Increase in National Identity and Pride:** Projects like Lumbini Area Development Trust and Pashupati Area Development Trust introduce the country's cultural and religious identity to the world, while projects related to natural heritage like Sagarmatha increase national pride.",
+            "explanationNepali": "यो प्रश्नले विद्यार्थीलाई ठुला विकास आयोजनाहरूको बहुआयामिक महत्त्व बुझ्न र त्यसले देशको भविष्यमा पार्ने प्रभावबारे विश्लेषण गर्न सक्षम बनाउँछ ।\nउद्धरण: एकाइ २, पाठ ४।",
+            "explanationEnglish": "This question enables students to understand the multidimensional importance of large development projects and analyze their impact on the country's future.\nCitation: Unit 2, Lesson 4",
+            "questionNumberNepali": "१३",
+            "questionNumberEnglish": "13",
+            "marksNepali": "४",
+            "marksEnglish": 4
+          },
+          {
+            "type": "creative_writing_letter",
+            "questionNepali": "तपाईंको समुदायमा प्रचलित कुनै अमूर्त सांस्कृतिक सम्पदा (जस्तै: लोकनृत्य, जात्रा) को संरक्षण गर्नुपर्ने आवश्यकता औँल्याउँदै आफ्नो स्थानीय तहको वडा अध्यक्षलाई एक पत्र लेख्नुहोस् ।",
+            "questionEnglish": "Write a letter to the Ward Chairperson of your local level pointing out the necessity of preserving any intangible cultural heritage (e.g., folk dance, fair) prevalent in your community.",
+            "answerNepali": "मिति: २०८१/०५/१५\n\nश्री वडा अध्यक्षज्यू,\n(आफ्नो वडा कार्यालयको नाम र ठेगाना)\n\n**विषय: अमूर्त सांस्कृतिक सम्पदा संरक्षण सम्बन्धमा ।**\n\nमहोदय,\nम यसै वडाको एक सचेत नागरिकको हैसियतले यो पत्र लेख्दैछु । हाम्रो समुदायमा परापूर्वकालदेखि चल्दै आएको 'मारुनी नाच' जस्तो महत्त्वपूर्ण अमूर्त सांस्कृतिक सम्पदा आजभोलि लोप हुने अवस्थामा पुगेको छ ।\n\nयसको संरक्षणका लागि वडा कार्यालयको तर्फबाट निम्न कार्यहरू गरिदिनुहुन अनुरोध गर्दछु:\n१. नयाँ पुस्तालाई मारुनी नाच सिकाउन तालिमको व्यवस्था गर्ने ।\n२. स्थानीय चाडपर्व र कार्यक्रमहरूमा यो नाचलाई प्राथमिकताका साथ प्रदर्शन गर्ने वातावरण मिलाउने ।\n३. पुराना कलाकारहरूलाई सम्मान र प्रोत्साहनको व्यवस्था गर्ने ।\n\nभवदीय,\n(आफ्नो नाम)\n(आफ्नो ठेगाना)",
+            "answerEnglish": "Date: 2081/05/15\n\nTo The Ward Chairperson,\n(Name and Address of your Ward Office)\n\n**Subject: Regarding Preservation of Intangible Cultural Heritage.**\n\nSir/Madam,\nI am writing this letter as a conscious citizen of this ward. Important intangible cultural heritage like 'Maruni Dance', which has been practiced in our community since ancient times, is on the verge of extinction nowadays.\n\nI request you to do the following on behalf of the Ward Office for its preservation:\n1. Arranging training to teach Maruni dance to the new generation.\n2. Creating an environment to display this dance with priority in local festivals and programs.\n3. Arranging respect and encouragement for old artists.\n\nSincerely,\n(Your Name)\n(Your Address)",
+            "explanationNepali": "यो प्रश्नले विद्यार्थीलाई आफ्नो समुदायको सांस्कृतिक सम्पदाप्रति सचेत गराउँछ र त्यसको संरक्षणका लागि स्थानीय सरकारसँग कसरी पहल गर्ने भन्ने व्यावहारिक सीप सिकाउँछ ।\nउद्धरण: एकाइ ३, पाठ १।",
+            "explanationEnglish": "This question makes students aware of the cultural heritage of their community and teaches practical skills on how to initiate efforts with the local government for its conservation.\nCitation: Unit 3, Lesson 1",
+            "questionNumberNepali": "१४",
+            "questionNumberEnglish": "14",
+            "marksNepali": "४",
+            "marksEnglish": 4
+          },
+          {
+            "type": "short_answer",
+            "questionNepali": "'भ्रष्टाचार एक सामाजिक र राजनीतिक अपराध हो ।' यस भनाइलाई नेपालको सन्दर्भमा विश्लेषण गर्नुहोस् ।",
+            "questionEnglish": "'Corruption is a social and political crime.' Analyze this statement in the context of Nepal.",
+            "answerNepali": "भ्रष्टाचार केवल आर्थिक अपराध मात्र नभई यो एक गम्भीर सामाजिक र राजनीतिक अपराध पनि हो ।\n• **सामाजिक अपराध:** भ्रष्टाचारले समाजमा नैतिक पतन गराउँछ र सामाजिक असमानता बढाउँछ ।\n• **राजनीतिक अपराध:** भ्रष्टाचारले प्रजातान्त्रिक प्रणालीलाई कमजोर बनाउँछ र सुशासन कायम हुन सक्दैन ।",
+            "answerEnglish": "Corruption is not only a financial crime but also a serious social and political crime.\n• **Social Crime:** Corruption causes moral degradation in society and increases social inequality.\n• **Political Crime:** Corruption weakens the democratic system and good governance cannot be maintained.",
+            "explanationNepali": "यो प्रश्नले विद्यार्थीलाई भ्रष्टाचारको बहुआयामिक असरबारे गहिरो विश्लेषण गर्न लगाउँछ ।\nउद्धरण: एकाइ ४, पाठ ४।",
+            "explanationEnglish": "This question asks students to deeply analyze the multidimensional effects of corruption.\nCitation: Unit 4, Lesson 4",
+            "questionNumberNepali": "१५",
+            "questionNumberEnglish": "15",
+            "marksNepali": "४",
+            "marksEnglish": 4
+          },
+          {
+            "type": "short_answer",
+            "questionNepali": "नेपालको सङ्घीय संसदमा विधेयक कानुन बन्ने प्रक्रियाका चारवटा चरणहरू उल्लेख गर्नुहोस् ।",
+            "questionEnglish": "Mention four stages of the process of a bill becoming a law in the Federal Parliament of Nepal.",
+            "answerNepali": "नेपालको सङ्घीय संसदमा विधेयक कानुन बन्ने प्रक्रियाका चरणहरू निम्न छन्:\n• **विधेयक प्रस्तुति:** विधेयकलाई सङ्घीय संसदको कुनै पनि सदनमा प्रस्तुत गरिन्छ ।\n• **सदनमा छलफल र पारित:** प्रस्तुत विधेयकमाथि सदनमा दफावार छलफल हुन्छ र बहुमतले पारित गरिन्छ ।\n• **अर्को सदनमा पठाइने:** एउटा सदनले पारित गरेपछि सो विधेयकलाई अर्को सदनमा पठाइन्छ ।\n• **राष्ट्रपतिद्वारा प्रमाणीकरण:** दुवै सदनबाट पारित भएको विधेयकलाई राष्ट्रपतिले प्रमाणीकरण गरेपछि कानुनको रूप लिन्छ ।",
+            "answerEnglish": "The steps of the process of a bill becoming a law in the Federal Parliament of Nepal are as follows:\n• **Bill Presentation:** The bill is presented in any house of the Federal Parliament.\n• **Discussion and Passage in the House:** Clause-wise discussion is held on the presented bill in the House and it is passed by a majority.\n• **Sent to Another House:** After one house passes the bill, it is sent to the other house.\n• **Authentication by President:** After the bill passed by both houses is authenticated by the President, it takes the form of a law.",
+            "explanationNepali": "यो प्रश्नले विद्यार्थीलाई देशको कानुन निर्माण प्रक्रियाबारे जानकारी दिन्छ ।\nउद्धरण: एकाइ ५, पाठ १।",
+            "explanationEnglish": "This question informs students about the country's law-making process.\nCitation: Unit 5, Lesson 1",
+            "questionNumberNepali": "१६",
+            "questionNumberEnglish": "16",
+            "marksNepali": "४",
+            "marksEnglish": 4
+          },
+          {
+            "type": "short_answer",
+            "questionNepali": "नागरिकहरूले आफ्नो उपभोक्ता अधिकारको संरक्षणका लागि अपनाउन सक्ने चारवटा उपायहरू लेख्नुहोस् ।",
+            "questionEnglish": "Write four measures that citizens can adopt for the protection of their consumer rights.",
+            "answerNepali": "आफ्नो उपभोक्ता अधिकारको संरक्षणका लागि नागरिकहरूले निम्न उपायहरू अपनाउन सक्छन्:\n• **सचेत बन्ने:** वस्तुको गुणस्तर, मूल्य, म्याद समाप्त हुने मिति जस्ता कुराहरूमा ध्यान दिने ।\n• **बिल लिने:** हरेक पटक सामान किन्दा बिक्रेतासँग बिल माग्ने बानी बसाल्ने ।\n• **जानकारी राख्ने:** उपभोक्ता अधिकारसम्बन्धी कानुनी व्यवस्थाहरू बारे जानकारी राख्ने ।\n• **उजुरी गर्ने:** ठगिएको थाहा पाउनासाथ सम्बन्धित निकायमा तुरुन्त उजुरी गर्ने ।",
+            "answerEnglish": "To protect their consumer rights, citizens can adopt the following measures:\n• **Be Aware:** Paying attention to things like the quality, price, and expiry date of the goods.\n• **Take Bill:** Developing the habit of asking for a bill from the seller every time goods are bought.\n• **Keep Knowledge:** Keeping information about legal provisions related to consumer rights.\n• **Complain:** Complaining immediately to the concerned authority as soon as one knows they have been cheated.",
+            "explanationNepali": "यो प्रश्नले विद्यार्थीलाई आफ्नो उपभोक्ता अधिकारप्रति सचेत र जिम्मेवार बन्न सिकाउँछ ।\nउद्धरण: एकाइ ५, पाठ ८।",
+            "explanationEnglish": "This question teaches students to be aware and responsible regarding their consumer rights.\nCitation: Unit 5, Lesson 8",
+            "questionNumberNepali": "१७",
+            "questionNumberEnglish": "17",
+            "marksNepali": "४",
+            "marksEnglish": 4
+          },
+          {
+            "type": "short_answer",
+            "questionNepali": "टाइगा र टुन्ड्रा हावापानीबिच चारवटा भिन्नताहरू प्रस्तुत गर्नुहोस् ।",
+            "questionEnglish": "Present four differences between Taiga and Tundra climates.",
+            "answerNepali": "टाइगा र टुन्ड्रा हावापानीबिचका भिन्नताहरू:\n• टाइगा ६०°-७०° उत्तरी अक्षांशमा पाइन्छ, टुन्ड्रा ७०°-९०° मा पाइन्छ ।\n• टाइगामा गृष्म छोटो र न्यानो हुन्छ, टुन्ड्रामा गृष्म नाम मात्रको हुन्छ ।\n• टाइगामा कोणधारी घना जङ्गल पाइन्छ, टुन्ड्रामा रुखहरू हुँदैनन् ।\n• टाइगाको मुख्य आर्थिक क्रियाकलाप नरम काठको व्यवसाय हो, टुन्ड्रामा सिकार र माछा मार्ने काम हो ।",
+            "answerEnglish": "Differences between Taiga and Tundra Climate:\n• Taiga is found in 60°-70° North latitudes, Tundra is found in 70°-90°.\n• Summer is short and warm in Taiga, Summer is only nominal in Tundra.\n• Coniferous dense forests are found in Taiga, there are no trees in Tundra.\n• The main economic activity of Taiga is soft wood business, in Tundra it is hunting and fishing.",
+            "explanationNepali": "यो प्रश्नले शीत प्रदेशका दुई प्रमुख हावापानीका प्रकारहरूको तुलनात्मक अध्ययन गर्न मद्दत गर्छ ।\nउद्धरण: एकाइ ६, पाठ ५।",
+            "explanationEnglish": "This question helps in the comparative study of two major climate types of the cold region.\nCitation: Unit 6, Lesson 5",
+            "questionNumberNepali": "१८",
+            "questionNumberEnglish": "18",
+            "marksNepali": "४",
+            "marksEnglish": 4
+          },
+          {
+            "type": "short_answer",
+            "questionNepali": "नेपालमा राष्ट्रिय गौरवका आयोजनाहरूको कार्यान्वयनमा देखिएका चारवटा प्रमुख चुनौतीहरू उल्लेख गर्नुहोस् ।",
+            "questionEnglish": "Mention four major challenges seen in the implementation of National Pride Projects in Nepal.",
+            "answerNepali": "नेपालमा राष्ट्रिय गौरवका आयोजनाहरूको कार्यान्वयनमा देखिएका प्रमुख चुनौतीहरू निम्न छन्:\n• **वित्तीय स्रोतको अभाव:** ठूलो बजेट जुटाउन कठिनाइ ।\n• **जग्गा प्राप्तिमा समस्या:** मुआब्जाको विषयमा विवाद ।\n• **कमजोर निर्माण व्यवस्थापन:** ठेकेदारको कमजोर क्षमता र ढिलासुस्ती ।\n• **राजनीतिक र प्रशासनिक अस्थिरता:** सरकार र आयोजना प्रमुखहरू छिटो-छिटो फेरिने ।",
+            "answerEnglish": "Major challenges seen in the implementation of National Pride Projects in Nepal are as follows:\n• **Lack of Financial Resources:** Difficulty in raising large budgets.\n• **Problem in Land Acquisition:** Dispute regarding compensation.\n• **Weak Construction Management:** Weak capacity of contractors and delays.\n• **Political and Administrative Instability:** Frequent changes of government and project heads.",
+            "explanationNepali": "यो प्रश्नले विद्यार्थीलाई देशको विकास निर्माणका ठुला परियोजनाहरूमा देखिने व्यावहारिक समस्या र चुनौतीहरूबारे जानकारी गराउँछ ।\nउद्धरण: एकाइ २, पाठ ४।",
+            "explanationEnglish": "This question informs students about the practical problems and challenges seen in major development projects of the country.\nCitation: Unit 2, Lesson 4",
+            "questionNumberNepali": "१९",
+            "questionNumberEnglish": "19",
+            "marksNepali": "४",
+            "marksEnglish": 4
+          },
+          {
+            "type": "short_answer",
+            "questionNepali": "भूकम्पका बेला अपनाउनुपर्ने चारवटा सुरक्षात्मक उपायहरू लेख्नुहोस् ।",
+            "questionEnglish": "Write four safety measures to be adopted during an earthquake.",
+            "answerNepali": "भूकम्पका बेला अपनाउनुपर्ने सुरक्षात्मक उपायहरू निम्न छन्:\n• **नआत्तिने र सुरक्षित स्थान खोज्ने:** बलियो टेबलमुनि 'Drop, Cover, and Hold On' विधि अपनाउने ।\n• **खुला ठाउँमा जाने:** अग्ला घर र बिजुलीका तारबाट टाढा रहने ।\n• **लिफ्टको प्रयोग नगर्ने:** भऱ्याङको प्रयोग गरेर बाहिर निस्किने ।\n• **भित्रै सुरक्षित बस्ने:** घरको कुना वा बलियो फर्निचरको छेउमा बस्ने ।",
+            "answerEnglish": "Protective measures to be adopted during an earthquake are as follows:\n• **Do not panic and find a safe place:** Adopting the 'Drop, Cover, and Hold On' method under a strong table.\n• **Go to open space:** Staying away from tall houses and electric wires.\n• **Do not use lift:** Using stairs to get out.\n• **Stay safe inside:** Sitting in the corner of the house or near strong furniture.",
+            "explanationNepali": "यो प्रश्नले विद्यार्थीलाई भूकम्प जस्तो प्राकृतिक विपद्को समयमा आफ्नो ज्यान कसरी बचाउने भन्ने जीवनोपयोगी सीपहरू सिकाउँछ ।\nउद्धरण: एकाइ ६, पाठ ७।",
+            "explanationEnglish": "This question teaches students life-saving skills on how to save their lives during natural disasters like earthquakes.\nCitation: Unit 6, Lesson 7",
+            "questionNumberNepali": "२०",
+            "questionNumberEnglish": "20",
+            "marksNepali": "४",
+            "marksEnglish": 4
+          }
+        ]
+      },
+      {
+        "groupName": "समूह 'ग'",
+        "groupInstruction": "तलका प्रश्नहरूको लामो उत्तर दिनुहोस् :",
+        "marksSchema": "(४×७=२८)",
+        "questions": [
+          {
+            "type": "long_answer",
+            "questionNepali": "लोकतान्त्रिक शासन प्रणालीमा राजनीतिक दलको भूमिका र जिम्मेवारीबारे विस्तृत विवेचना गर्नुहोस् ।",
+            "questionEnglish": "Discuss in detail the role and responsibility of political parties in a democratic governance system.",
+            "answerNepali": "**भूमिका:**\nलोकतन्त्र र राजनीतिक दल एकअर्काका परिपूरक हुन् । राजनीतिक दलहरू समान राजनीतिक विचार, सिद्धान्त र कार्यक्रममा आधारित भई जनताको समर्थन प्राप्त गरी राज्यसत्ता सञ्चालन गर्ने उद्देश्यले संगठित भएका नागरिकहरूको समूह हो ।\n\n**राजनीतिक दलको भूमिका र जिम्मेवारी:**\n१. **जनमत निर्माण र राजनीतिक सचेतना:** दलहरूले आफ्ना विचार, नीति र कार्यक्रमहरू जनतासमक्ष लगेर जनमत निर्माण गर्छन् ।\n२. **निर्वाचनमा सहभागिता:** राजनीतिक दलहरूले निर्वाचनमा आफ्ना उम्मेदवारहरू खडा गर्छन् र सरकार बनाउने प्रयास गर्छन् ।\n३. **सरकारको निर्माण र सञ्चालन:** बहुमत प्राप्त गर्ने दलले सरकार गठन गरी देशको शासन व्यवस्था सञ्चालन गर्दछ ।\n४. **रचनात्मक प्रतिपक्षको भूमिका:** प्रतिपक्षले सरकारका गलत कामहरूको खबरदारी गर्ने भूमिका खेल्छ ।\n५. **सामाजिक सद्भाव र राष्ट्रिय एकताको प्रवर्धन:** दलहरूले सबै नागरिकलाई एकताको सूत्रमा बाँध्ने जिम्मेवारी निर्वाह गर्नुपर्छ ।\n\n**निष्कर्ष:**\nराजनीतिक दलहरू लोकतन्त्रका आधारस्तम्भ हुन् ।",
+            "answerEnglish": "**Introduction:**\nDemocracy and political parties are complementary to each other. Political parties are groups of citizens organized with the objective of running the state power by obtaining the support of the people based on similar political ideologies, principles, and programs.\n\n**Role and Responsibility of Political Party:**\n1. **Building Public Opinion and Political Awareness:** Parties build public opinion by taking their ideas, policies, and programs to the people.\n2. **Participation in Election:** Political parties field their candidates in elections and try to form the government.\n3. **Formation and Operation of Government:** The party obtaining the majority forms the government and operates the governance system of the country.\n4. **Role of Constructive Opposition:** The opposition plays the role of warning against the wrong deeds of the government.\n5. **Promotion of Social Harmony and National Unity:** Parties should fulfill the responsibility of binding all citizens in a thread of unity.\n\n**Conclusion:**\nPolitical parties are the pillars of democracy.",
+            "explanationNepali": "यो प्रश्नले विद्यार्थीलाई लोकतान्त्रिक शासन प्रणालीमा राजनीतिक दलहरूको अपरिहार्यता, भूमिका र जिम्मेवारीबारे गहिरो विश्लेषण गर्न लगाउँछ ।\nउद्धरण: एकाइ ५, पाठ ४।",
+            "explanationEnglish": "This question asks students to deeply analyze the indispensability, role, and responsibility of political parties in a democratic governance system.\nCitation: Unit 5, Lesson 4",
+            "questionNumberNepali": "२१",
+            "questionNumberEnglish": "21",
+            "marksNepali": "७",
+            "marksEnglish": 7
+          },
+          {
+            "type": "map_drawing",
+            "alternatives": [
+              {
+                "type": "main",
+                "questionNepali": "पृष्ठ भरिने गरी नेपालको नक्सा बनाएर निम्न तथ्यलाई उपयुक्त सङ्केत प्रयोग गरी भर्नुहोस् :\nकर्णाली प्रदेश, फेवा ताल, जनकपुरधाम, सगरमाथा राष्ट्रिय निकुञ्ज",
+                "questionEnglish": "Draw a map of Nepal filling the page and fill in the following facts using appropriate symbols:\nKarnali Province, Phewa Lake, Janakpurdham, Sagarmatha National Park"
+              },
+              {
+                "type": "alternative",
+                "questionNepali": "पृष्ठ भरिने गरी अफ्रिका महादेशको नक्सा बनाएर उपयुक्त सङ्केत प्रयोग गरी निम्न तथ्य भर्नुहोस् :\nसहारा मरुभूमि, कङ्गो नदी, भिक्टोरिया फल्स, किलिमन्जारो पर्वत",
+                "questionEnglish": "Draw a map of the African continent filling the page and fill in the following facts using appropriate symbols:\nSahara Desert, Congo River, Victoria Falls, Mount Kilimanjaro"
+              },
+              {
+                "type": "for_visually_impaired",
+                "questionNepali": "(दृष्टिविहीनहरूका लागि मात्र)\nअफ्रिका महादेशको प्रमुख प्राकृतिक सम्पदाहरू को वर्णन गर्दै त्यसले त्यहाँको जनजीवनमा पारेको प्रभावबारे लेख्नुहोस् ।",
+                "questionEnglish": "(For Visually Impaired Only)\nDescribe the major natural resources of the African continent and write about their impact on the life there."
+              }
+            ],
+            "answerNepali": "(विद्यार्थीले उपयुक्त सङ्केत प्रयोग गरी सफा र स्पष्ट नक्सा बनाउनुपर्छ ।)",
+            "answerEnglish": "(Students should draw a clean and clear map using appropriate symbols.)",
+            "explanationNepali": "यो प्रश्नले विद्यार्थीको नक्सा बनाउने सीप र भूगोलसम्बन्धी ज्ञानको परीक्षण गर्दछ ।\nउद्धरण: एकाइ ६, पाठ ८।",
+            "explanationEnglish": "This question tests the student's map making skills and knowledge regarding geography.\nCitation: Unit 6, Lesson 8",
+            "questionNumberNepali": "२२",
+            "questionNumberEnglish": "22",
+            "marksNepali": "७",
+            "marksEnglish": 7
+          },
+          {
+            "type": "long_answer",
+            "questionNepali": "वि.सं. २००७ सालको क्रान्तिका कारणहरू र परिणामहरू विस्तृत रूपमा लेख्नुहोस् ।",
+            "questionEnglish": "Write the causes and consequences of the Revolution of 2007 B.S. in detail.",
+            "answerNepali": "**कारणहरू:**\n• निरङ्कुश र जहानियाँ राणा शासन\n• जनताको अधिकारको हनन\n• राजनीतिक दलहरूको स्थापना र प्रजातन्त्रको चाहना\n• भारतको स्वतन्त्रता सङ्ग्रामको प्रभाव\n• राजा त्रिभुवनको भारतीय दूतावासमा शरण\n\n**परिणामहरू:**\n• १०४ वर्षे राणा शासनको अन्त्य\n• प्रजातन्त्रको स्थापना\n• अन्तरिम शासन विधान, २००७ को घोषणा\n• नेपालको विश्वसँग सम्बन्ध विस्तार\n• शिक्षा र विकासको ढोका खुल्ला",
+            "answerEnglish": "**Causes:**\n• Autocratic and hereditary Rana regime\n• Violation of people's rights\n• Establishment of political parties and desire for democracy\n• Influence of India's freedom struggle\n• King Tribhuvan taking refuge in the Indian Embassy\n\n**Consequences:**\n• End of 104-year Rana regime\n• Establishment of Democracy\n• Declaration of Interim Government Act, 2007\n• Expansion of Nepal's relations with the world\n• Opening of doors for education and development",
+            "explanationNepali": "यो प्रश्न नेपालको आधुनिक इतिहासको एक महत्त्वपूर्ण कोशेढुङ्गासँग सम्बन्धित छ ।\nउद्धरण: एकाइ ५, पाठ ४र एकाइ ७, पृष्ठ १७३।",
+            "explanationEnglish": "This question is related to an important milestone in the modern history of Nepal.\nCitation: Unit 5, Lesson 4",
+            "questionNumberNepali": "२३",
+            "questionNumberEnglish": "23",
+            "marksNepali": "७",
+            "marksEnglish": 7
+          },
+          {
+            "type": "long_answer",
+            "questionNepali": "'समृद्ध नेपाल निर्माणमा युवाको भूमिका' शीर्षकमा एक वक्तृताको नमुना तयार पार्नुहोस् ।",
+            "questionEnglish": "Prepare a sample speech on the title 'Role of Youth in Building a Prosperous Nepal'.",
+            "answerNepali": "वक्तृता\n\n**'समृद्ध नेपाल निर्माणमा युवाको भूमिका'**\n\nआदरणीय सभाध्यक्षज्यू, गुरुवर्ग तथा मेरा ऊर्जाशील युवा साथीहरू !\n\nयुवाहरू कुनै पनि राष्ट्रका वर्तमानका साझेदार र भविष्यका कर्णधार हुन् । 'समृद्ध नेपाल, सुखी नेपाली' को राष्ट्रिय आकाङ्क्षालाई साकार पार्ने ठूलो जिम्मेवारी हामी युवाहरूकै काँधमा छ ।\n\nहामी युवाले:\n• गुणस्तरीय र व्यावहारिक शिक्षा हासिल गर्नुपर्छ\n• उद्यमशीलताको विकास गर्नुपर्छ\n• भ्रष्टाचार र अन्यायविरुद्धको अभियानका अगुवा बन्नुपर्छ\n• आफ्नो गाउँठाउँको विकासमा सक्रिय हुनुपर्छ\n\nआउनुहोस्, हामी सबै युवाहरू समृद्ध नेपाल निर्माणको महाअभियानमा लाग्ने प्रतिबद्धता व्यक्त गरौँ ।\n\nधन्यवाद !",
+            "answerEnglish": "Problems of Foreign Employment:\n• Exploitation and Fraud: Workers are often cheated by manpower agencies and employers.\n• Unsafe Working Conditions: Many face dangerous working environments without safety measures.\n• Social Costs: Long separation from family leads to social and psychological problems.\n• Brain Drain: Loss of skilled youth power from the country.\n\nSolutions:\n• Regulation: Strict monitoring of manpower agencies and foreign employment sector.\n• Skill Training: Providing proper skill training to workers before sending them abroad.\n• Bilateral Agreements: Signing labor agreements with destination countries to ensure worker safety.\n• Job Creation: Creating employment opportunities within the country to reduce dependency on foreign jobs.",
+            "explanationNepali": "यो प्रश्नले विद्यार्थीलाई देश विकासमा आफ्नो भूमिका र जिम्मेवारीबारे सोच्न र आफ्नो विचारलाई प्रस्तुत गर्न अभिप्रेरित गर्छ ।\nउद्धरण: एकाइ १, पाठ १।",
+            "explanationEnglish": "This question inspires students to think about their role and responsibility in the development of the country and present their ideas.\nCitation: Unit 1, Lesson 1",
+            "questionNumberNepali": "२४",
+            "questionNumberEnglish": "24",
+            "marksNepali": "७",
+            "marksEnglish": 7
+          }
+        ]
+      }
+    ]
+  }
+]
