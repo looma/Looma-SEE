@@ -297,6 +297,14 @@
   /* Darker red */
 }
 
+/* Nepali Question Headers - Red gradients */
+.from-red-500 {
+  --tw-gradient-from: #ef4444 !important;
+  /* Red 500 */
+  --tw-gradient-to: rgb(239 68 68 / 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
 /* Social - Amber gradients (darker for better contrast) */
 .from-amber-500 {
   --tw-gradient-from: #d97706 !important;
@@ -358,6 +366,93 @@
 .to-orange-600 {
   --tw-gradient-to: #ea580c !important;
   /* Darker orange */
+}
+
+/* Additional missing gradient classes */
+/* Indigo gradients */
+.from-indigo-500 {
+  --tw-gradient-from: #6366f1 !important;
+  --tw-gradient-to: rgb(99 102 241 / 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.to-indigo-500 {
+  --tw-gradient-to: #6366f1 !important;
+}
+
+.to-indigo-700 {
+  --tw-gradient-to: #4338ca !important;
+}
+
+/* Blue 600 from */
+.from-blue-600 {
+  --tw-gradient-from: #2563eb !important;
+  --tw-gradient-to: rgb(37 99 235 / 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.from-blue-700 {
+  --tw-gradient-from: #1d4ed8 !important;
+  --tw-gradient-to: rgb(29 78 216 / 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+/* Yellow 600/700 from */
+.from-yellow-600 {
+  --tw-gradient-from: #ca8a04 !important;
+  --tw-gradient-to: rgb(202 138 4 / 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.from-yellow-700 {
+  --tw-gradient-from: #a16207 !important;
+  --tw-gradient-to: rgb(161 98 7 / 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.to-amber-600 {
+  --tw-gradient-to: #d97706 !important;
+}
+
+.to-amber-700 {
+  --tw-gradient-to: #b45309 !important;
+}
+
+/* Light backgrounds for subtle gradients */
+.from-blue-50 {
+  --tw-gradient-from: #eff6ff !important;
+  --tw-gradient-to: rgb(239 246 255 / 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.to-indigo-50 {
+  --tw-gradient-to: #eef2ff !important;
+}
+
+.from-amber-50 {
+  --tw-gradient-from: #fffbeb !important;
+  --tw-gradient-to: rgb(255 251 235 / 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.to-yellow-50 {
+  --tw-gradient-to: #fefce8 !important;
+}
+
+/* Slate gradients */
+.from-slate-300 {
+  --tw-gradient-from: #cbd5e1 !important;
+  --tw-gradient-to: rgb(203 213 225 / 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.to-slate-600 {
+  --tw-gradient-to: #475569 !important;
+}
+
+/* Orange to red error state gradients */
+.to-orange-500 {
+  --tw-gradient-to: #f97316 !important;
 }
 
 /* Fix yellow text colors */
