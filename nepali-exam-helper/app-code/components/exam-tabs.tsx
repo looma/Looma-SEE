@@ -1896,7 +1896,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
             questions={questions.mathQuestions}
             answers={answers.math || {}}
             onAnswerChange={handleMathAnswerChange}
-            showExplanations={false}
+            showExplanations={true}
           />
         </div>
 

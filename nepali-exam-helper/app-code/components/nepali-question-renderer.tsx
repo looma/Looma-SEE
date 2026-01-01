@@ -8,7 +8,41 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { Eye, EyeOff } from "lucide-react"
 import type { NepaliQuestion, NepaliSubQuestion } from "@/lib/nepali-types"
+
+// Helper function to format answers for display (avoid raw JSON)
+function formatAnswerForDisplay(answer: any): string {
+    if (typeof answer === 'string') return answer
+    if (answer === null || answer === undefined) return ''
+
+    // Handle matching question arrays: [{ A: "i", B: "c" }, ...]
+    if (Array.isArray(answer)) {
+        return answer.map((item, idx) => {
+            if (item && typeof item === 'object') {
+                // Matching format: { A: "i", B: "c" }
+                if (item.A && item.B) return `(${item.A}) → (${item.B})`
+                // General object format
+                return Object.entries(item).map(([k, v]) => `${k}: ${v}`).join(', ')
+            }
+            return String(item)
+        }).join('\n')
+    }
+
+    // Handle objects
+    if (typeof answer === 'object') {
+        // Filter out 'selected' keys and format entries
+        const entries = Object.entries(answer).filter(([k]) => !k.startsWith('selected'))
+        return entries.map(([k, v]) => {
+            if (typeof v === 'object' && v !== null) {
+                return `${k}: ${formatAnswerForDisplay(v)}`
+            }
+            return `${k} → ${v}`
+        }).join('\n')
+    }
+
+    return String(answer)
+}
 
 interface NepaliQuestionRendererProps {
     question: NepaliQuestion
@@ -30,23 +64,23 @@ function SubQuestionExplanation({ subQuestion, show }: { subQuestion: NepaliSubQ
     if (!show || (!hasExplanation && !hasCorrectAnswer)) return null
 
     return (
-        <div className="mt-2 space-y-2">
-            {hasCorrectAnswer && (
-                <div className="p-2 bg-green-50 rounded border border-green-200 text-sm">
-                    <span className="font-medium text-green-800">नमूना उत्तर: </span>
-                    <span className="text-green-700">
-                        {typeof subQuestion.correctAnswer === 'string'
-                            ? subQuestion.correctAnswer
-                            : JSON.stringify(subQuestion.correctAnswer)}
-                    </span>
-                </div>
-            )}
-            {hasExplanation && (
-                <div className="p-2 bg-blue-50 rounded border border-blue-200 text-sm">
-                    <span className="font-medium text-blue-800">व्याख्या: </span>
-                    <span className="text-blue-700">{subQuestion.explanation}</span>
-                </div>
-            )}
+        <div className="mt-2 bg-amber-50 border-l-4 border-amber-500 p-2 rounded-r-lg">
+            <div className="text-sm space-y-2">
+                {hasCorrectAnswer && (
+                    <div>
+                        <span className="font-medium text-amber-800">नमूना उत्तर: </span>
+                        <span className="text-amber-700 whitespace-pre-line">
+                            {formatAnswerForDisplay(subQuestion.correctAnswer)}
+                        </span>
+                    </div>
+                )}
+                {hasExplanation && (
+                    <div>
+                        <span className="font-medium text-amber-800">व्याख्या: </span>
+                        <span className="text-amber-700">{subQuestion.explanation}</span>
+                    </div>
+                )}
+            </div>
         </div>
     )
 }
@@ -724,18 +758,18 @@ export function NepaliQuestionRenderer(props: NepaliQuestionRendererProps) {
     const hasHelp = hasExplanation || hasSampleAnswer || hasCorrectAnswer || hasSubQuestionHelp || hasSubSectionHelp
 
     return (
-        <Card className="mb-6 bg-white/90 backdrop-blur-sm shadow-lg border border-white/20">
-            <CardHeader className="pb-4">
+        <Card className="mb-6 overflow-hidden shadow-lg border border-white/20">
+            <CardHeader className="bg-gradient-to-r from-red-500 to-red-600 text-white">
                 <div className="flex items-start justify-between">
                     <div className="flex items-start gap-3">
                         <div className="flex-1">
-                            <CardTitle className="text-base font-semibold text-slate-800 flex items-center gap-2">
-                                <Badge variant="secondary">{question.questionNumber}</Badge>
+                            <CardTitle className="text-lg font-semibold text-white flex items-center gap-2">
+                                <Badge variant="secondary" className="bg-white/20 text-white">{question.questionNumber}</Badge>
                                 {question.title}
                             </CardTitle>
                             {/* Display the actual question text if present */}
                             {question.questionNepali && (
-                                <p className="mt-2 text-slate-700 leading-relaxed">
+                                <p className="mt-2 text-white/90 leading-relaxed">
                                     {question.questionNepali}
                                 </p>
                             )}
@@ -745,55 +779,48 @@ export function NepaliQuestionRenderer(props: NepaliQuestionRendererProps) {
                         {hasHelp && (
                             <button
                                 onClick={() => setShowExplanation(!showExplanation)}
-                                className="text-xs px-2 py-1 rounded bg-blue-100 text-blue-700 hover:bg-blue-200 transition-colors"
+                                className="flex items-center gap-1 text-xs px-2 py-1 rounded bg-white/20 text-white hover:bg-white/30 transition-colors"
                             >
-                                {showExplanation ? "लुकाउनुहोस्" : "सहायता"}
+                                {showExplanation ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+                                <span className="hidden sm:inline">{showExplanation ? "लुकाउनुहोस्" : "सहायता"}</span>
                             </button>
                         )}
-                        <Badge variant="outline">
+                        <Badge variant="secondary" className="bg-white/20 text-white">
                             {question.marks} अंक
                         </Badge>
                     </div>
                 </div>
             </CardHeader>
-            <CardContent className="pt-0">
+            <CardContent className="p-4">
                 <Renderer {...props} showExplanation={showExplanation} />
 
                 {/* Show explanation/sample answer when toggled */}
                 {showExplanation && hasHelp && (
-                    <div className="mt-4 space-y-3">
-                        {hasSampleAnswer && (
-                            <div className="p-3 bg-green-50 rounded-lg border border-green-200">
-                                <div className="text-sm">
-                                    <span className="font-medium text-green-800">नमूना उत्तर:</span>
-                                    <p className="text-green-700 mt-1 whitespace-pre-line">
-                                        {typeof question.sampleAnswer === 'string'
-                                            ? question.sampleAnswer
-                                            : JSON.stringify(question.sampleAnswer)}
+                    <div className="mt-4 bg-amber-50 border-l-4 border-amber-500 p-3 rounded-r-lg">
+                        <div className="text-sm space-y-3">
+                            {hasSampleAnswer && (
+                                <div>
+                                    <span className="font-medium text-amber-800">नमूना उत्तर:</span>
+                                    <div className="text-amber-700 mt-1 whitespace-pre-line">
+                                        {formatAnswerForDisplay(question.sampleAnswer)}
+                                    </div>
+                                </div>
+                            )}
+                            {hasCorrectAnswer && !hasSampleAnswer && (
+                                <div>
+                                    <span className="font-medium text-amber-800">सही उत्तर:</span>
+                                    <p className="text-amber-700 mt-1 whitespace-pre-line">
+                                        {formatAnswerForDisplay(question.correctAnswer)}
                                     </p>
                                 </div>
-                            </div>
-                        )}
-                        {hasCorrectAnswer && !hasSampleAnswer && (
-                            <div className="p-3 bg-green-50 rounded-lg border border-green-200">
-                                <div className="text-sm">
-                                    <span className="font-medium text-green-800">नमूना उत्तर:</span>
-                                    <p className="text-green-700 mt-1 whitespace-pre-line">
-                                        {typeof question.correctAnswer === 'string'
-                                            ? question.correctAnswer
-                                            : JSON.stringify(question.correctAnswer, null, 2)}
-                                    </p>
+                            )}
+                            {hasExplanation && (
+                                <div>
+                                    <span className="font-medium text-amber-800">व्याख्या:</span>
+                                    <p className="text-amber-700 mt-1 whitespace-pre-line">{question.explanation}</p>
                                 </div>
-                            </div>
-                        )}
-                        {hasExplanation && (
-                            <div className="p-3 bg-blue-50 rounded-lg border border-blue-200">
-                                <div className="text-sm">
-                                    <span className="font-medium text-blue-800">व्याख्या:</span>
-                                    <p className="text-blue-700 mt-1 whitespace-pre-line">{question.explanation}</p>
-                                </div>
-                            </div>
-                        )}
+                            )}
+                        </div>
                     </div>
                 )}
             </CardContent>

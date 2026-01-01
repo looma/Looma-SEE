@@ -53,72 +53,82 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply text-foreground;
     background: transparent !important;
-    color: hsl(222.2 84% 4.9%) !important; /* Explicit dark text color */
+    color: hsl(222.2 84% 4.9%) !important;
+    /* Explicit dark text color */
   }
-  
+
   /* Force text colors to be readable */
   .text-foreground {
-    color: hsl(222.2 84% 4.9%) !important; /* Dark text */
+    color: hsl(222.2 84% 4.9%) !important;
+    /* Dark text */
   }
-  
+
   .text-muted-foreground {
-    color: hsl(215.4 16.3% 46.9%) !important; /* Muted text */
+    color: hsl(215.4 16.3% 46.9%) !important;
+    /* Muted text */
   }
-  
+
   /* Ensure input fields have proper colors */
-  input, textarea {
-    color: hsl(222.2 84% 4.9%) !important; /* Dark text in inputs */
-    background-color: hsl(0 0% 100%) !important; /* White background */
-    border: 1px solid hsl(214.3 31.8% 91.4%) !important; /* Light gray border */
+  input,
+  textarea {
+    color: hsl(222.2 84% 4.9%) !important;
+    /* Dark text in inputs */
+    background-color: hsl(0 0% 100%) !important;
+    /* White background */
+    border: 1px solid hsl(214.3 31.8% 91.4%) !important;
+    /* Light gray border */
   }
-  
+
   /* Fix specific input field classes */
   .border-input {
     border-color: hsl(214.3 31.8% 91.4%) !important;
   }
-  
+
   .bg-background {
     background-color: hsl(0 0% 100%) !important;
   }
-  
+
   .text-foreground {
     color: hsl(222.2 84% 4.9%) !important;
   }
-  
+
   .text-muted-foreground {
     color: hsl(215.4 16.3% 46.9%) !important;
   }
-  
+
   .ring-offset-background {
     --tw-ring-offset-color: hsl(0 0% 100%) !important;
   }
-  
+
   .ring-ring {
     --tw-ring-color: hsl(222.2 84% 4.9%) !important;
   }
-  
+
   /* Fix focus states for input fields */
-  input:focus, textarea:focus {
+  input:focus,
+  textarea:focus {
     outline: none !important;
     border-color: hsl(222.2 84% 4.9%) !important;
     box-shadow: 0 0 0 2px hsl(222.2 84% 4.9% / 0.2) !important;
   }
-  
+
   /* Fix disabled states */
-  input:disabled, textarea:disabled {
+  input:disabled,
+  textarea:disabled {
     opacity: 0.5 !important;
     cursor: not-allowed !important;
   }
-  
+
   /* Fix file input styling */
   input[type="file"] {
     border: 0 !important;
     background: transparent !important;
   }
-  
+
   input[type="file"]::file-selector-button {
     border: 0 !important;
     background: transparent !important;
@@ -126,44 +136,52 @@
     font-weight: 500 !important;
     color: hsl(222.2 84% 4.9%) !important;
   }
-  
+
   /* Ensure cards have proper colors */
   .bg-white {
     background-color: hsl(0 0% 100%) !important;
   }
-  
+
   .bg-white\/90 {
     background-color: rgba(255, 255, 255, 0.9) !important;
   }
-  
+
   .bg-white\/95 {
     background-color: rgba(255, 255, 255, 0.95) !important;
   }
-  
+
   /* Ensure all text elements are readable */
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: hsl(222.2 84% 4.9%) !important;
   }
-  
-  p, span, div {
+
+  p,
+  span,
+  div {
     color: hsl(222.2 84% 4.9%) !important;
   }
-  
+
   /* Ensure buttons have proper text colors */
   button {
     color: inherit !important;
   }
-  
+
   /* Ensure labels are readable */
   label {
     color: hsl(222.2 84% 4.9%) !important;
   }
-  
+
   /* Ensure placeholders are visible */
-  input::placeholder, textarea::placeholder {
+  input::placeholder,
+  textarea::placeholder {
     color: hsl(215.4 16.3% 46.9%) !important;
   }
-  
+
   /* Ensure fonts are properly loaded */
   body {
     font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
@@ -221,57 +239,75 @@
 /* Fix subject-specific gradients */
 /* Science - Green gradients (darker for better contrast) */
 .from-emerald-500 {
-  --tw-gradient-from: #059669 !important; /* Darker emerald */
+  --tw-gradient-from: #059669 !important;
+  /* Darker emerald */
   --tw-gradient-to: rgb(5 150 105 / 0) !important;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
 }
 
 .to-teal-600 {
-  --tw-gradient-to: #0f766e !important; /* Darker teal */
+  --tw-gradient-to: #0f766e !important;
+  /* Darker teal */
 }
 
 /* English - Purple gradients (darker for better contrast) */
 .from-purple-500 {
-  --tw-gradient-from: #7c3aed !important; /* Darker purple */
+  --tw-gradient-from: #7c3aed !important;
+  /* Darker purple */
   --tw-gradient-to: rgb(124 58 237 / 0) !important;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
 }
 
 .to-violet-600 {
-  --tw-gradient-to: #5b21b6 !important; /* Even darker violet */
+  --tw-gradient-to: #5b21b6 !important;
+  /* Even darker violet */
 }
 
 /* Mathematics - Blue gradients (darker for better contrast) */
 .from-blue-500 {
-  --tw-gradient-from: #2563eb !important; /* Darker blue */
+  --tw-gradient-from: #2563eb !important;
+  /* Darker blue */
   --tw-gradient-to: rgb(37 99 235 / 0) !important;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
 }
 
 .to-indigo-600 {
-  --tw-gradient-to: #3730a3 !important; /* Darker indigo */
+  --tw-gradient-to: #3730a3 !important;
+  /* Darker indigo */
+}
+
+/* Mathematics - Cyan to Blue gradients */
+.from-cyan-500 {
+  --tw-gradient-from: #06b6d4 !important;
+  /* Cyan */
+  --tw-gradient-to: rgb(6 182 212 / 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
 }
 
 /* Nepali - Orange gradients (darker for better contrast) */
 .from-orange-500 {
-  --tw-gradient-from: #ea580c !important; /* Darker orange */
+  --tw-gradient-from: #ea580c !important;
+  /* Darker orange */
   --tw-gradient-to: rgb(234 88 12 / 0) !important;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
 }
 
 .to-red-600 {
-  --tw-gradient-to: #b91c1c !important; /* Darker red */
+  --tw-gradient-to: #b91c1c !important;
+  /* Darker red */
 }
 
 /* Social - Amber gradients (darker for better contrast) */
 .from-amber-500 {
-  --tw-gradient-from: #d97706 !important; /* Darker amber */
+  --tw-gradient-from: #d97706 !important;
+  /* Darker amber */
   --tw-gradient-to: rgb(217 119 6 / 0) !important;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
 }
 
 .to-yellow-600 {
-  --tw-gradient-to: #a16207 !important; /* Darker yellow */
+  --tw-gradient-to: #a16207 !important;
+  /* Darker yellow */
 }
 
 /* Default - Slate gradients */
@@ -288,34 +324,40 @@
 /* Fix English question type gradients */
 /* Reading Comprehension - Blue gradients */
 .from-blue-500 {
-  --tw-gradient-from: #2563eb !important; /* Darker blue */
+  --tw-gradient-from: #2563eb !important;
+  /* Darker blue */
   --tw-gradient-to: rgb(37 99 235 / 0) !important;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
 }
 
 .to-blue-600 {
-  --tw-gradient-to: #1d4ed8 !important; /* Darker blue */
+  --tw-gradient-to: #1d4ed8 !important;
+  /* Darker blue */
 }
 
 /* Free Writing - Green gradients */
 .from-green-500 {
-  --tw-gradient-from: #059669 !important; /* Darker green */
+  --tw-gradient-from: #059669 !important;
+  /* Darker green */
   --tw-gradient-to: rgb(5 150 105 / 0) !important;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
 }
 
 .to-green-600 {
-  --tw-gradient-to: #047857 !important; /* Darker green */
+  --tw-gradient-to: #047857 !important;
+  /* Darker green */
 }
 
 /* Grammar - Purple gradients (already defined above, but ensuring consistency) */
 .to-purple-600 {
-  --tw-gradient-to: #7c3aed !important; /* Darker purple */
+  --tw-gradient-to: #7c3aed !important;
+  /* Darker purple */
 }
 
 /* Cloze Test - Orange gradients (already defined above, but ensuring consistency) */
 .to-orange-600 {
-  --tw-gradient-to: #ea580c !important; /* Darker orange */
+  --tw-gradient-to: #ea580c !important;
+  /* Darker orange */
 }
 
 /* Fix yellow text colors */
@@ -490,6 +532,21 @@
   color: white !important;
 }
 
+/* Ensure elements with solid blue background have white text */
+.bg-blue-600,
+.bg-blue-600 *,
+.bg-blue-600 h1,
+.bg-blue-600 h2,
+.bg-blue-600 h3,
+.bg-blue-600 h4,
+.bg-blue-600 h5,
+.bg-blue-600 h6,
+.bg-blue-600 p,
+.bg-blue-600 span,
+.bg-blue-600 div {
+  color: white !important;
+}
+
 .bg-white\/20.text-white:hover {
   background-color: rgba(255, 255, 255, 0.3) !important;
 }
@@ -498,15 +555,18 @@
 .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops)) !important;
 }
+
 .from-yellow-50 {
   --tw-gradient-from: #fefce8 !important;
   --tw-gradient-to: rgb(254 252 232 / 0) !important;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
 }
+
 .via-orange-50 {
   --tw-gradient-to: rgb(255 247 237 / 0) !important;
   --tw-gradient-stops: var(--tw-gradient-from), #fff7ed, var(--tw-gradient-to) !important;
 }
+
 .to-amber-50 {
   --tw-gradient-to: #fffbeb !important;
 }
@@ -516,38 +576,49 @@
   0% {
     transform: translate(0px, 0px) scale(1);
   }
+
   33% {
     transform: translate(30px, -50px) scale(1.1);
   }
+
   66% {
     transform: translate(-20px, 20px) scale(0.9);
   }
+
   100% {
     transform: translate(0px, 0px) scale(1);
   }
 }
+
 .animate-blob {
   animation: blob 7s infinite;
 }
+
 .animation-delay-2000 {
   animation-delay: 2s;
 }
+
 .animation-delay-4000 {
   animation-delay: 4s;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: #f1f5f9;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #cbd5e1;
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: #94a3b8;
 }

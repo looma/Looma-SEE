@@ -141,7 +141,30 @@ async function processTestFile(filePath) {
       }
     }
 
-    const questionsDoc = docs.find((d) => (d.testId && d.questions) || (d.testId && Array.isArray(d.questions)) || (d.testId && Array.isArray(d.groups)))
+    // Find questions doc - check for split-root format first (separate testId doc)
+    // Support both array-style questions (Math/English) and object-style questions (Science with groupA/B/C/D)
+    let questionsDoc = docs.find((d) => d.testId && d.questions && (
+      (Array.isArray(d.questions) && d.questions.length > 0) ||
+      (typeof d.questions === 'object' && (d.questions.groupA || d.questions.groupB || d.questions.groupC || d.questions.groupD))
+    ))
+
+    // If not found, check for split-root format with groups
+    if (!questionsDoc) {
+      questionsDoc = docs.find((d) => d.testId && Array.isArray(d.groups))
+    }
+
+    // If still not found, check if practiceDoc itself contains the questions (single-object format)
+    // This is the format where metadata and questions are in the same document
+    if (!questionsDoc && practiceDoc && Array.isArray(practiceDoc.questions) && practiceDoc.questions.length > 0) {
+      console.log(`    [SINGLE-OBJECT] Questions found directly in metadata document`)
+      // Create a synthetic questionsDoc from the practiceDoc
+      questionsDoc = {
+        testId: practiceDoc._id,
+        questions: practiceDoc.questions
+      }
+      // Remove questions from practiceDoc to avoid storing them twice
+      delete practiceDoc.questions
+    }
 
     if (!practiceDoc) {
       console.warn(`     Skipping ${path.basename(filePath)} - missing practice_tests document with string _id`)

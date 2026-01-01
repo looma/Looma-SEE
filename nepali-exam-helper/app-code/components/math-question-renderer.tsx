@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Textarea } from "@/components/ui/textarea"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { ChevronDown, ChevronUp, Lightbulb } from "lucide-react"
+import { Eye, EyeOff, Lightbulb } from "lucide-react"
 import { MathText } from "./math-text"
 import { useLanguage } from "@/lib/language-context"
 import type { MathQuestion, MathSubQuestion } from "@/lib/math-types"
@@ -21,15 +21,15 @@ export function MathQuestionRenderer({
     questions,
     answers,
     onAnswerChange,
-    showExplanations = false,
+    showExplanations = true,
 }: MathQuestionRendererProps) {
     const { language } = useLanguage()
-    const [expandedExplanations, setExpandedExplanations] = useState<Record<string, boolean>>({})
+    const [showHelpForQuestion, setShowHelpForQuestion] = useState<Record<number, boolean>>({})
 
-    const toggleExplanation = (key: string) => {
-        setExpandedExplanations((prev) => ({
+    const toggleQuestionHelp = (qNum: number) => {
+        setShowHelpForQuestion((prev) => ({
             ...prev,
-            [key]: !prev[key],
+            [qNum]: !prev[qNum],
         }))
     }
 
@@ -46,14 +46,31 @@ export function MathQuestionRenderer({
 
                 return (
                     <Card key={qNum} className="overflow-hidden">
-                        <CardHeader className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
+                        <CardHeader className="bg-blue-600 text-white [&_*]:text-white">
                             <div className="flex items-center justify-between">
-                                <CardTitle className="text-lg">
+                                <CardTitle className="text-lg text-white" style={{ color: 'white' }}>
                                     {language === "english" ? "Question" : "प्रश्न"} {displayQNum}
                                 </CardTitle>
-                                <Badge variant="secondary" className="bg-white/20 text-white">
-                                    {question.sub_questions.length} {language === "english" ? "part" : "भाग"}{question.sub_questions.length > 1 ? (language === "english" ? "s" : "हरू") : ""}
-                                </Badge>
+                                <div className="flex items-center gap-2">
+                                    {showExplanations && (
+                                        <Button
+                                            variant="secondary"
+                                            size="sm"
+                                            onClick={() => toggleQuestionHelp(qNum)}
+                                            className="bg-white/20 text-white border-white/30 hover:bg-white/30"
+                                        >
+                                            {showHelpForQuestion[qNum] ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+                                            <span className="ml-1 hidden sm:inline">
+                                                {showHelpForQuestion[qNum]
+                                                    ? (language === "english" ? "Hide" : "लुकाउनुहोस्")
+                                                    : (language === "english" ? "Show" : "देखाउनुहोस्")} {language === "english" ? "Help" : "सहायता"}
+                                            </span>
+                                        </Button>
+                                    )}
+                                    <Badge variant="secondary" className="bg-white/20 text-white">
+                                        {question.sub_questions.length} {language === "english" ? "part" : "भाग"}{question.sub_questions.length > 1 ? (language === "english" ? "s" : "हरू") : ""}
+                                    </Badge>
+                                </div>
                             </div>
                         </CardHeader>
                         <CardContent className="p-4 space-y-4">
@@ -74,8 +91,7 @@ export function MathQuestionRenderer({
 
                                     const questionKey = `${qNum}`
                                     const currentAnswer = answers[questionKey]?.[labelKey] || ""
-                                    const explanationKey = `${qNum}-${labelKey}`
-                                    const isExplanationExpanded = expandedExplanations[explanationKey]
+                                    const isHelpVisible = showHelpForQuestion[qNum]
 
                                     // Handle questions with empty sub-question text (single-part questions)
                                     const hasSubQuestionText = !!subQuestionText
@@ -101,8 +117,8 @@ export function MathQuestionRenderer({
                                                         </p>
                                                     )}
                                                 </div>
-                                                <Badge variant="secondary" className="text-xs">
-                                                    {marks} {language === "english" ? "mark" : "अंक"}{marks > 1 ? (language === "english" ? "s" : "") : ""}
+                                                <Badge variant="outline" className="text-xs bg-blue-50 text-blue-700 border-blue-200">
+                                                    {language === "english" ? marks : (language === "nepali" ? subQ.marksNepali : marks)} {language === "english" ? "mark" : "अंक"}{marks > 1 ? (language === "english" ? "s" : "") : ""}
                                                 </Badge>
                                             </div>
 
@@ -118,41 +134,20 @@ export function MathQuestionRenderer({
                                                 className="min-h-[80px] mt-2"
                                             />
 
-                                            {/* Explanation toggle (for review/study mode) */}
-                                            {showExplanations && (
-                                                <div className="mt-3">
-                                                    <Button
-                                                        variant="ghost"
-                                                        size="sm"
-                                                        onClick={() => toggleExplanation(explanationKey)}
-                                                        className="text-amber-600 hover:text-amber-700 hover:bg-amber-50"
-                                                    >
-                                                        <Lightbulb className="h-4 w-4 mr-2" />
-                                                        {isExplanationExpanded
-                                                            ? (language === "english" ? "Hide" : "लुकाउनुहोस्")
-                                                            : (language === "english" ? "Show" : "देखाउनुहोस्")} {language === "english" ? "Explanation" : "व्याख्या"}
-                                                        {isExplanationExpanded ? (
-                                                            <ChevronUp className="h-4 w-4 ml-1" />
-                                                        ) : (
-                                                            <ChevronDown className="h-4 w-4 ml-1" />
-                                                        )}
-                                                    </Button>
-
-                                                    {isExplanationExpanded && (
-                                                        <div className="mt-2 bg-amber-50 border-l-4 border-amber-500 p-3 rounded-r-lg">
-                                                            <div className="flex items-start gap-2">
-                                                                <Lightbulb className="h-5 w-5 text-amber-600 mt-0.5 flex-shrink-0" />
-                                                                <div>
-                                                                    <p className="font-semibold text-amber-800 mb-1">
-                                                                        {language === "english" ? "Answer" : "उत्तर"}: <MathText text={language === "english" ? subQ.answerEnglish : subQ.answerNepali} />
-                                                                    </p>
-                                                                    <div className="text-amber-700 text-sm leading-relaxed whitespace-pre-line">
-                                                                        <MathText text={language === "english" ? subQ.explanationEnglish : subQ.explanationNepali} />
-                                                                    </div>
-                                                                </div>
+                                            {/* Explanation content (shows when help is toggled on) */}
+                                            {isHelpVisible && (
+                                                <div className="mt-2 bg-amber-50 border-l-4 border-amber-500 p-3 rounded-r-lg">
+                                                    <div className="flex items-start gap-2">
+                                                        <Lightbulb className="h-5 w-5 text-amber-600 mt-0.5 flex-shrink-0" />
+                                                        <div>
+                                                            <p className="font-semibold text-amber-800 mb-1">
+                                                                {language === "english" ? "Answer" : "उत्तर"}: <MathText text={language === "english" ? subQ.answerEnglish : subQ.answerNepali} />
+                                                            </p>
+                                                            <div className="text-amber-700 text-sm leading-relaxed whitespace-pre-line">
+                                                                <MathText text={language === "english" ? subQ.explanationEnglish : subQ.explanationNepali} />
                                                             </div>
                                                         </div>
-                                                    )}
+                                                    </div>
                                                 </div>
                                             )}
                                         </div>
