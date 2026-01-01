@@ -49,13 +49,17 @@ export default function SeePrepPage() {
         .then((res) => res.json())
         .then((data) => {
           const test = data.tests?.find((t: any) => t.id === currentTestId)
-          setCurrentTestTitle(test?.title || currentTestId)
+          // Use bilingual title based on current language
+          const title = language === 'english'
+            ? (test?.titleEnglish || test?.title)
+            : (test?.titleNepali || test?.title)
+          setCurrentTestTitle(title || currentTestId)
         })
         .catch(() => setCurrentTestTitle(currentTestId))
     } else {
       setCurrentTestTitle(null)
     }
-  }, [currentTestId])
+  }, [currentTestId, language])
 
   // Mark as hydrated and load saved state
   useEffect(() => {
