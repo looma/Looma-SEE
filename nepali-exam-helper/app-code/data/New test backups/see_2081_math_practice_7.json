@@ -1,8 +1,8 @@
 [
   {
     "_id": "see_2081_math_practice_7_generated_verified",
-    "titleNepali": "SEE २०८१ अनिवार्य गणित अभ्यास परीक्षा ७",
-    "titleEnglish": "SEE 2081 Math Practice Test 7",
+    "titleNepali": "SEE २०८१ अनिवार्य गणित अभ्यास परीक्षा ७ (कठिन)",
+    "titleEnglish": "SEE 2081 Math Practice Test 7 (Harder)",
     "subjectNepali": "अनिवार्य गणित",
     "subjectEnglish": "Compulsory Mathematics",
     "totalMarksNepali": "७५",
@@ -258,8 +258,8 @@
             "questionEnglish": "Find the total surface area of the object.",
             "marksNepali": "३",
             "marksEnglish": 3,
-            "explanationNepali": "पूरा सतहको क्षेत्रफल ($TSA$) = सोलीको वक्र सतह ($\u03c0 rl$) + अर्धगोलाको वक्र सतह ($2\\pi r^2$)।\n$TSA = \\frac{22}{7}(7)(9.9) + 2(\\frac{22}{7})(7^2) = 217.8 + 308 = 525.8$ वर्ग से.मि.।\nउद्धरण: पाठ ५",
-            "explanationEnglish": "Total Surface Area ($TSA$) = CSA of Cone ($\u03c0 rl$) + CSA of Hemisphere ($2\\pi r^2$). Calculation: $217.8 + 308 = 525.8$ sq. cm.\nCitation: Lesson 5",
+            "explanationNepali": "पूरा सतहको क्षेत्रफल ($TSA$) = सोलीको वक्र सतह ($π rl$) + अर्धगोलाको वक्र सतह ($2\\pi r^2$)।\n$TSA = \\frac{22}{7}(7)(9.9) + 2(\\frac{22}{7})(7^2) = 217.8 + 308 = 525.8$ वर्ग से.मि.।\nउद्धरण: पाठ ५",
+            "explanationEnglish": "Total Surface Area ($TSA$) = CSA of Cone ($π rl$) + CSA of Hemisphere ($2\\pi r^2$). Calculation: $217.8 + 308 = 525.8$ sq. cm.\nCitation: Lesson 5",
             "answerNepali": "५२५.८ वर्ग से.मि.",
             "answerEnglish": "525.8 sq. cm"
           }

@@ -183,8 +183,8 @@
         "type": "short_answer",
         "titleNepali": "दिइएको अनुच्छेदबाट एउटा टुक्का र एउटा पारिभाषिक शब्द पहिचान गरी अनुच्छेदको भन्दा फरक वाक्यमा प्रयोग गर्नुहोस् :",
         "titleEnglish": "Identify one idiom and one technical term from the given paragraph and use them in a sentence different from the paragraph:",
-        "passageNepali": "राजेन्द्रलक्ष्मीले बहादुर शाहलाई नायबीमा राल चुहाएर सोझी भाउजूलाई छक्याउन खोजेको आरोप लगाइन्। उनले भनिन्, “सुतेकी सिंहको टाउकामा टेक्नु के बुद्धिमानी हो?” बहादुर शाहले भने नायबी सिनोका लागि मरिमेट्ने गिद्ध म होइन। हाम्रो आपसी घात प्रतिघातले मातृभूमिको भविष्य अँध्यारो देखिन्छ।",
-        "passageEnglish": "Rajendralakshmi accused Bahadur Shah of trying to deceive the simple sister-in-law by drooling over the regency. She said, 'Is it wise to step on the head of a sleeping lion?' Bahadur Shah said, 'I am not a vulture dying for the carcass of regency. The future of the motherland looks dark due to our mutual counter-attacks.'",
+        "passageNepali": "राजेन्द्रलक्ष्मीले बहादुर शाहलाई नायबीमा राल चुहाएर सोझी भाउजूलाई छक्याउन खोजेको आरोप लगाइन्। उनले भनिन्, “सुतेकी सिंहको टाउकामा टेक्नु के बुद्धिमानी हो?”\nबहादुर शाहले भने नायबी सिनोका लागि मरिमेट्ने गिद्ध म होइन। हाम्रो आपसी घात प्रतिघातले मातृभूमिको भविष्य अँध्यारो देखिन्छ।",
+        "passageEnglish": "Rajendralakshmi accused Bahadur Shah of trying to deceive the simple sister-in-law by drooling over the regency. She said, 'Is it wise to step on the head of a sleeping lion?'\nBahadur Shah said, 'I am not a vulture dying for the carcass of regency. The future of the motherland looks dark due to our mutual counter-attacks.'",
         "sampleAnswerNepali": {
           "टुक्का": {
             "term": "राल चुहाउनु",
@@ -207,8 +207,8 @@
             "sentence": "When the king was a minor, the Regency Council ran the country's administration."
           }
         ],
-        "explanationNepali": "'राल चुहाउनु' एक प्रचलित टुक्का हो जसको अर्थ 'अत्यधिक लोभ गर्नु' हो। 'नायबी' एक ऐतिहासिक र राजनीतिक पारिभाषिक शब्द हो जसले शासकको अनुपस्थितिमा गरिने शासनलाई बुझाउँछ। प्रश्नले विद्यार्थीको टुक्का र पारिभाषिक शब्द पहिचान गरी तिनलाई मौलिक वाक्यमा प्रयोग गर्ने क्षमता जाँच्छ।\nउद्धरण: कक्षा १०, पाठ २; पाठ ३, पृष्ठ ३१।",
-        "explanationEnglish": "'Ral Chuhanu' (Drooling) is a common idiom meaning 'to be extremely greedy'. 'Nayabi' (Regency) is a historical and political technical term referring to the rule conducted in the absence of a ruler. The question tests the student's ability to identify idioms and technical terms and use them in original sentences.\nCitation: Class 10, Lesson 2; Lesson 3, Page 31.",
+        "explanationNepali": "'राल चुहाउनु' एक प्रचलित टुक्का हो जसको अर्थ 'अत्यधिक लोभ गर्नु' हो। 'नायबी' एक ऐतिहासिक र राजनीतिक पारिभाषिक शब्द हो जसले शासकको अनुपस्थितिमा गरिने शासनलाई बुझाउँछ। प्रश्नले विद्यार्थीको टुक्का र पारिभाषिक शब्द पहिचान गरी तिनलाई मौलिक वाक्यमा प्रयोग गर्ने क्षमता जाँच्छ।\nउद्धरण: कक्षा १०, पाठ २; पाठ ३।",
+        "explanationEnglish": "'Ral Chuhanu' (Drooling) is a common idiom meaning 'to be extremely greedy'. 'Nayabi' (Regency) is a historical and political technical term referring to the rule conducted in the absence of a ruler. The question tests the student's ability to identify idioms and technical terms and use them in original sentences.\nCitation: Class 10, Lesson 2; Lesson 3.",
         "questionNumberNepali": "३",
         "questionNumberEnglish": 3,
         "marksNepali": "२",
@@ -491,6 +491,8 @@
             "idEnglish": "a",
             "titleNepali": "इच्छार्थक भाव बुझाउने फरक फरक क्रियापदको प्रयोग गरी चार वाक्यमा आफ्नो देशको उन्नतिको कामना गर्नुहोस्।",
             "titleEnglish": "Wish for the progress of your country in four sentences using different verbs denoting the optative mood.",
+            "correctAnswerNepali": "१. मेरो देश सधैँ शान्त र समृद्ध रहोस्।\n२. सबै नेपालीहरू मिलिजुली बसून्।\n३. देशमा विकासको मूल फुटोस्।\n४. हामी सधैँ स्वाभिमानी भएर बाँच्न पाऔँ।",
+            "correctAnswerEnglish": "1. May my country always remain peaceful and prosperous.\n2. May all Nepalis live together in harmony.\n3. May the fountain of development spring forth in the country.\n4. May we always live with dignity.",
             "explanationNepali": "इच्छार्थक भावले वक्ताको इच्छा, कामना वा आशीर्वाद बुझाउँछ। यसका क्रियापदहरू 'होस्', 'जाऊन्', 'गरून्', 'खाएस्' जस्ता हुन्छन्। देशको उन्नतिको कामना गर्दा 'मेरो देशले प्रगति गरोस्', 'सबै नेपाली सुखी होऊन्' जस्ता वाक्य बनाउन सकिन्छ।\nउद्धरण: कक्षा १०, पाठ ७।",
             "explanationEnglish": "The optative mood expresses the speaker's wish, desire, or blessing. Its verbs are like 'hos', 'jaun', 'garun', 'khaes'. When wishing for the progress of the country, sentences like 'Mero deshle pragati garos' (May my country progress), 'Sabai Nepali sukhi houn' (May all Nepalis be happy) can be made.\nCitation: Class 10, Lesson 7."
           },
@@ -499,7 +501,7 @@
             "idEnglish": "b",
             "titleNepali": "दिइएको वाक्यलाई निम्न र उच्च आदरमा परिवर्तन गर्नुहोस् :",
             "titleEnglish": "Change the given sentence to low and high respect:",
-            "questionNepali": "तिमी घर जाऊ। (सामान्य आदर)",
+            "questionNepali": "तँ घर जा। (सामान्य आदर)",
             "questionEnglish": "You go home. (Normal respect)",
             "correctAnswerNepali": {
               "निम्न आदर": "तँ घर जा।",
@@ -853,8 +855,6 @@
         "type": "literature_explanation",
         "titleNepali": "कुनै एक उद्धरणको व्याख्या गर्नुहोस् :",
         "titleEnglish": "Explain any one of the quotes:",
-        "sampleAnswerId": "क",
-        "sampleAnswer": "प्रस्तुत गद्यांश 'घरझगडा' कथाबाट लिइएको हो। यसमा घरभित्रको एकता र मेलमिलाप राष्ट्रिय सुरक्षाका लागि कति महत्त्वपूर्ण हुन्छ भन्ने गहिरो सन्देश लुकेको छ।\nकुनै पनि देश वा समुदाय तबसम्म बलियो रहन्छ, जबसम्म त्यसभित्रका मानिसहरू एकताबद्ध हुन्छन्। जब घरभित्र अर्थात् देशका शासक वा परिवारका सदस्यहरूबीच नै झगडा, अविश्वास र फुट हुन्छ, तब त्यो देश कमजोर बन्छ। यही कमजोरीको फाइदा उठाएर बाहिरी शत्रुहरूले आक्रमण गर्ने मौका पाउँछन्। 'घरझगडा' कथामा राजेन्द्रलक्ष्मी र बहादुर शाहबीचको आपसी कलहले गर्दा चौबिसी राज्यहरू सङ्गठित भएर नेपालमाथि आक्रमण गर्ने अवसर पाएको देखाइएको छ। यदि उनीहरू मिलेर बसेका भए बाहिरी शक्तिले आँखा लगाउने हिम्मत गर्ने थिएनन्। तसर्थ, राष्ट्रिय एकता र सुरक्षाका लागि आन्तरिक कलह र फुट सबैभन्दा ठुलो खतरा हो भन्ने यथार्थलाई यस भनाइले चरितार्थ गरेको छ।",
         "questionNumberNepali": "१८",
         "questionNumberEnglish": 18,
         "marksNepali": "४",
@@ -886,7 +886,7 @@
           {
             "idNepali": "क",
             "idEnglish": "a",
-            "passageNepali": "कृष्ण राय धेरै झगडामा मध्यस्थ भएका थिए। यो बडो गर्वको कुरा हो। गाउँले तिनीमाथि नै विश्वास गरी तिनलाई झगडामा मध्यस्थ तुल्याउँथे। यसैले पनि तिनको गाउँमा धेरै सम्मान थियो। निश्चय नै यो कामले तिनलाई धेरैको मन नपरेको बनायो होला। ... तिनीहरू मिल्न मानेनन् र बिचरा मध्यस्थलाई कर लागेर गोरे जमदारको पक्षमा न्याय दिनुपर्यो। यस झगडामा मध्यस्थ भएर तिनले निश्चय नै गोविन्द पण्डितलाई आफ्नो शत्रु बनाए होलान्। ... मध्यस्थले एउटा न एउटाको शत्रु हुनैपर्छ, कृष्ण रायले बिउँझे झैँ यो ज्ञान आर्जन गरे।",
+            "passageNepali": "कृष्ण राय धेरै झगडामा मध्यस्थ भएका थिए। यो बडो गर्वको कुरा हो। गाउँले तिनीमाथि नै विश्वास गरी तिनलाई झगडामा मध्यस्थ तुल्याउँथे। यसैले पनि तिनको गाउँमा धेरै सम्मान थियो। निश्चय नै यो कामले तिनलाई धेरैको मन नपरेको बनायो होला। ... तिनीहरू मिल्न मानेनन् र बिचरा मध्यस्थलाई कर लागेर गोरे जमदारको पक्षमा न्याय दिनुपर्यो। यस झगडामा मध्यस्थ भएर तिनले निश्चय नै गोविन्द पण्डितलाई आफ्नो शत्रु बनाए होलान्। ... मध्यस्थले एउटा न एउटाको शत्रु हुनैपर्छ, कृष्ण रायले बिउँझे झैँ यो ज्ञान आर्जन गरे。",
             "passageEnglish": "Krishna Raya had been a mediator in many quarrels. This is a matter of great pride. The villagers trusted him and made him a mediator in quarrels. That's why he had a lot of respect in the village. Surely this work must have made him disliked by many. ... They didn't agree to reconcile and the poor mediator was forced to give justice in favor of Gore Jamdar. Being a mediator in this quarrel, he must have surely made Govinda Pandit his enemy. ... A mediator must become an enemy of one or the other, Krishna Raya acquired this knowledge as if waking up.",
             "questionNepali": "कृष्ण रायको चरित्रमा आएको मनोवैज्ञानिक परिवर्तनलाई 'शत्रु' कथा र माथिको कथांशका आधारमा समीक्षा गर्नुहोस्।",
             "questionEnglish": "Review the psychological change in Krishna Raya's character based on the story 'Shatru' and the excerpt above."

@@ -83,8 +83,8 @@
             }
           ]
         },
-        "explanationNepali": "यी शब्दहरू पाठ्यपुस्तकको पाठ ९ ('मेरो देशको शिक्षा') र पाठ १२ ('पाब्लो पिकासो') बाट लिइएका हुन्। विद्यार्थीको शब्दभण्डारको परीक्षण गर्नु यसको उद्देश्य हो।\nउद्धरण: कक्षा १०, पाठ ९; पाठ १२, पृष्ठ १६६।",
-        "explanationEnglish": "These words are taken from Lesson 9 ('Mero Deshko Shiksha') and Lesson 12 ('Pablo Picasso') of the textbook. The purpose is to test the student's vocabulary.\nCitation: Class 10, Lesson 9; Lesson 12, Page 166.",
+        "explanationNepali": "यी शब्दहरू पाठ्यपुस्तकको पाठ ९ ('मेरो देशको शिक्षा') र पाठ १२ ('पाब्लो पिकासो') बाट लिइएका हुन्। विद्यार्थीको शब्दभण्डारको परीक्षण गर्नु यसको उद्देश्य हो।\nउद्धरण: कक्षा १०, पाठ ९; पाठ १२।",
+        "explanationEnglish": "These words are taken from Lesson 9 ('Mero Deshko Shiksha') and Lesson 12 ('Pablo Picasso') of the textbook. The purpose is to test the student's vocabulary.\nCitation: Class 10, Lesson 9; Lesson 12.",
         "correctAnswerNepali": [
           {
             "A": "अ",
@@ -207,8 +207,8 @@
             "sentence": "He had worked very hard for the exam but failed due to illness; truly, 'what is destined cannot be avoided'."
           }
         ],
-        "explanationNepali": "'आँखामा राखे पनि नबिझाउने' एक टुक्का हो जसको अर्थ 'सबैको प्रिय हुनु' हो। 'हुने हार दैव नटार' एक प्रसिद्ध उखान हो जसको अर्थ 'भाग्यमा लेखेको कुरा टार्न सकिँदैन' भन्ने हो।\nउद्धरण: कक्षा १०, पाठ २; पाठ ४, पृष्ठ ४४।",
-        "explanationEnglish": "'Aankhama Rakhe Pani Nabijhaune' (Not irritating even if kept in the eye) is an idiom meaning 'to be everyone's favorite'. 'Hune Har Daiva Natar' is a famous proverb meaning 'what is destined cannot be avoided'.\nCitation: Class 10, Lesson 2; Lesson 4, Page 44.",
+        "explanationNepali": "'आँखामा राखे पनि नबिझाउने' एक टुक्का हो जसको अर्थ 'सबैको प्रिय हुनु' हो। 'हुने हार दैव नटार' एक प्रसिद्ध उखान हो जसको अर्थ 'भाग्यमा लेखेको कुरा टार्न सकिँदैन' भन्ने हो।\nउद्धरण: कक्षा १०, पाठ २; पाठ ४।",
+        "explanationEnglish": "'Aankhama Rakhe Pani Nabijhaune' (Not irritating even if kept in the eye) is an idiom meaning 'to be everyone's favorite'. 'Hune Har Daiva Natar' is a famous proverb meaning 'what is destined cannot be avoided'.\nCitation: Class 10, Lesson 2; Lesson 4.",
         "questionNumberNepali": "३",
         "questionNumberEnglish": 3,
         "marksNepali": "२",
@@ -493,22 +493,38 @@
           {
             "idNepali": "क",
             "idEnglish": "a",
-            "titleNepali": "सङ्केतार्थ भाव बुझाउने फरक फरक क्रियापदको प्रयोग गरी चार वाक्यमा 'मिहिनेतको फल' बारे लेख्नुहोस्।",
-            "titleEnglish": "Write about 'The Fruit of Hard Work' in four sentences using different verbs denoting the indicative mood.",
-            "explanationNepali": "सङ्केतार्थ भावले एउटा काम र अर्को कामको बिचमा कार्य-कारणको सम्बन्ध देखाउँछ। 'यदि...भने', '...ए...हुन्थ्यो' जस्ता संरचना प्रयोग हुन्छन्। जस्तै: 'यदि उसले मिहिनेत गरेमा सफल हुने थियो'।\nउद्धरण: कक्षा १०, पाठ ७।",
-            "explanationEnglish": "The conditional mood (Sanketartha Bhav) shows a cause-and-effect relationship between one action and another. Structures like 'if...then', '...would have...' are used. For example: 'If he had worked hard, he would have succeeded'.\nCitation: Class 10, Lesson 7."
+            "titleNepali": "सङ्केतार्थ भाव बुझाउने फरक फरक क्रियापदको प्रयोग गरी चार वाक्यमा 'वर्षा र खेती' बारे लेख्नुहोस्।",
+            "titleEnglish": "Write about 'Rain and Farming' in four sentences using different verbs denoting the indicative mood.",
+            "correctAnswerNepali": "१. यदि समयमा पानी परे बाली सप्रने थियो।\n२. पानी नपरे खेत बाँझै रहने छ।\n३. सिँचाइ भए किसानले सुख पाउने थिए।\n४. असिना नपरेको भए मकै राम्रो हुने थियो।",
+            "correctAnswerEnglish": "1. If it rained on time, the crops would flourish.\n2. If it doesn't rain, the field will remain barren.\n3. If there was irrigation, farmers would get relief.\n4. If it hadn't hailed, the maize would have been good.",
+            "explanationNepali": "सङ्केतार्थ भावले एउटा काम र अर्को कामको बिचमा कार्य-कारणको सम्बन्ध देखाउँछ। 'यदि...भने', '...ए...हुन्थ्यो' जस्ता संरचना प्रयोग हुन्छन्। जस्तै: 'यदि पानी परेमा बाली सप्रने थियो'।\nउद्धरण: कक्षा १०, पाठ ७।",
+            "explanationEnglish": "The conditional mood shows a cause-and-effect relationship between one action and another. Structures like 'if...then', '...would have...' are used. For example: 'If it had rained, the crops would have flourished'.\nCitation: Class 10, Lesson 7."
           },
           {
             "idNepali": "ख",
             "idEnglish": "b",
-            "titleNepali": "दिइएका वाक्यहरूलाई मध्यम आदरबाट उच्च आदरमा परिवर्तन गर्नुहोस् :",
-            "titleEnglish": "Change the given sentences from medium respect to high respect:",
-            "questionNepali": "तिमी आफ्नो काम आफैँ गर। तिमी अरूलाई नसताऊ।",
-            "questionEnglish": "Do your work yourself. Do not annoy others.",
-            "correctAnswerNepali": "तपाईं आफ्नो काम आफैँ गर्नुहोस्। तपाईं अरूलाई नसताउनुहोस्।",
-            "correctAnswerEnglish": "You do your work yourself. You do not annoy others.",
-            "explanationNepali": "मध्यम आदर ('तिमी') लाई उच्च आदर ('तपाईं') मा बदल्दा क्रियापदहरू पनि क्रमशः 'गर' बाट 'गर्नुहोस्' र 'नसताऊ' बाट 'नसताउनुहोस्' मा परिवर्तन हुन्छन्।\nउद्धरण: कक्षा १०, पाठ १३।",
-            "explanationEnglish": "When changing Medium Respect ('Timi') to High Respect ('Tapai'), the verbs also change from 'Gara' to 'Garnuhos' and from 'Nasatau' to 'Nasataunuhos' respectively.\nCitation: Class 10, Lesson 13."
+            "titleNepali": "दिइएको वाक्यलाई निम्न र उच्च आदरमा परिवर्तन गर्नुहोस् :",
+            "titleEnglish": "Change the given sentence to low and high respect:",
+            "questionNepali": "तिमी घर जाऊ। (सामान्य आदर)",
+            "questionEnglish": "You go home. (Normal respect)",
+            "correctAnswerNepali": {
+              "निम्न आदर": "तँ घर जा।",
+              "उच्च आदर": "तपाईं घर जानुहोस्।"
+            },
+            "correctAnswerEnglish": [
+              {
+                "type": "Low Respect",
+                "contentNepali": "You go home. (Low Respect)",
+                "contentEnglish": "You go home. (Low Respect)"
+              },
+              {
+                "type": "High Respect",
+                "contentNepali": "You go home. (High Respect)",
+                "contentEnglish": "You go home. (High Respect)"
+              }
+            ],
+            "explanationNepali": "नेपाली भाषामा आदरार्थी क्रियापदहरू महत्त्वपूर्ण छन्। 'तँ' (निम्न आदर), 'तिमी' (सामान्य आदर), र 'तपाईं' (उच्च आदर) अनुसार क्रियापद परिवर्तन हुन्छ। 'जा' (निम्न), 'जाऊ' (सामान्य), 'जानुहोस्' (उच्च) हुन्छ।\nउद्धरण: कक्षा १०, पाठ १३।",
+            "explanationEnglish": "Honorific verbs are important in the Nepali language. The verb changes according to 'Tan' (Low Respect), 'Timi' (Medium Respect), and 'Tapai' (High Respect). It becomes 'Ja' (Low), 'Jau' (Medium), 'Januhos' (High).\nCitation: Class 10, Lesson 13."
           }
         ],
         "questionNumberNepali": "८",
@@ -524,42 +540,42 @@
           {
             "idNepali": "क",
             "idEnglish": "a",
-            "questionNepali": "जो मिहिनेत गर्छ, त्यो सफल हुन्छ। (सरल वाक्य)",
-            "questionEnglish": "He who works hard succeeds. (Simple Sentence)",
-            "correctAnswerNepali": "मिहिनेत गर्ने सफल हुन्छ।",
-            "correctAnswerEnglish": "One who works hard succeeds.",
-            "explanationNepali": "मिश्र वाक्यको सापेक्ष संयोजक 'जो...त्यो' हटाएर पहिलो क्रियालाई कृदन्त ('गर्ने') मा परिवर्तन गरी सरल वाक्य बनाइएको छ।\nउद्धरण: कक्षा १०, पाठ ८।",
-            "explanationEnglish": "The simple sentence is made by removing the relative conjunction 'jo...tyo' of the complex sentence and changing the first verb to a participle ('garne').\nCitation: Class 10, Lesson 8."
+            "questionNepali": "उनी घर गए र खाना खाए। (वाक्य संश्लेषण)",
+            "questionEnglish": "He went home and ate food. (Sentence Synthesis)",
+            "correctAnswerNepali": "उनी घर गएर खाना खाए।",
+            "correctAnswerEnglish": "He went home and ate food.",
+            "explanationNepali": "संयुक्त वाक्यलाई सरल वाक्यमा संश्लेषण गर्दा 'र' संयोजक हटाई पहिलो क्रियालाई कृदन्त ('गएर') बनाइन्छ।\nउद्धरण: कक्षा १०, पाठ ८।",
+            "explanationEnglish": "When synthesizing a compound sentence into a simple sentence, the 'ra' conjunction is removed and the first verb is made into a participle ('gaera').\nCitation: Class 10, Lesson 8."
           },
           {
             "idNepali": "ख",
             "idEnglish": "b",
-            "questionNepali": "विद्यार्थीहरूद्वारा निबन्ध लेखिन्छ। (कर्तृवाच्य)",
-            "questionEnglish": "An essay is written by students. (Active Voice)",
-            "correctAnswerNepali": "विद्यार्थीहरू निबन्ध लेख्छन्।",
-            "correctAnswerEnglish": "Students write essays.",
-            "explanationNepali": "कर्मवाच्यको कर्तामा रहेको 'द्वारा' विभक्ति हटाएर कर्ताअनुसार क्रियापद परिवर्तन गर्दा कर्तृवाच्य बन्छ।\nउद्धरण: कक्षा १०, पाठ ९।",
-            "explanationEnglish": "By removing the 'dwara' case marker in the subject of passive voice and changing the verb according to the subject, active voice is formed.\nCitation: Class 10, Lesson 9."
+            "questionNepali": "आमाले खाना पकाउनुभयो। (कर्मवाच्य)",
+            "questionEnglish": "Mother cooked food. (Passive Voice)",
+            "correctAnswerNepali": "आमाद्वारा खाना पकाइयो।",
+            "correctAnswerEnglish": "Food was cooked by mother.",
+            "explanationNepali": "कर्तृवाच्यको कर्तामा 'द्वारा' वा 'बाट' विभक्ति लगाई कर्मवाच्य बनाइन्छ र क्रियापद कर्मअनुसार परिवर्तन हुन्छ।\nउद्धरण: कक्षा १०, पाठ ९।",
+            "explanationEnglish": "Passive voice is formed by adding 'dwara' or 'bata' case marker to the subject of active voice, and the verb changes according to the object.\nCitation: Class 10, Lesson 9."
           },
           {
             "idNepali": "ग",
             "idEnglish": "c",
-            "questionNepali": "मैले किताब पढें। (प्रेरणार्थक)",
-            "questionEnglish": "I read a book. (Causative)",
-            "correctAnswerNepali": "शिक्षकले मलाई किताब पढाउनुभयो।",
-            "correctAnswerEnglish": "The teacher taught me the book.",
-            "explanationNepali": "कसैले अरूलाई काम गर्न लगाउने अर्थमा प्रेरणार्थक क्रियाको प्रयोग हुन्छ। 'पढ्नु' बाट 'पढाउनु' प्रेरणार्थक क्रिया बनेको छ।\nउद्धरण: कक्षा १०, पाठ ११।",
-            "explanationEnglish": "Causative verbs are used in the sense of someone making someone else do work. 'Padhaunu' (to cause to read/teach) has become a causative verb from 'Padhnu' (to read).\nCitation: Class 10, Lesson 11."
+            "questionNepali": "भाइ हाँस्छ। (प्रेरणार्थक)",
+            "questionEnglish": "Brother laughs. (Causative)",
+            "correctAnswerNepali": "दिदीले भाइलाई हँसाउँछिन्।",
+            "correctAnswerEnglish": "Sister makes brother laugh.",
+            "explanationNepali": "कुनै काम कर्ता आफैँले नगरी अरूलाई गर्न लगाउने अर्थ बुझाउने क्रियालाई प्रेरणार्थक क्रिया भनिन्छ। 'हाँस्नु' अकर्मक क्रियाबाट 'हँसाउनु' सकर्मक प्रेरणार्थक क्रिया बनेको छ।\nउद्धरण: कक्षा १०, पाठ ११।",
+            "explanationEnglish": "A verb that indicates the meaning of getting someone else to do the work instead of the doer doing it themselves is called a causative verb. 'Hasaunu' (to make laugh) is a transitive causative verb formed from the intransitive verb 'Hasnu' (to laugh).\nCitation: Class 10, Lesson 11."
           },
           {
             "idNepali": "घ",
             "idEnglish": "d",
-            "questionNepali": "रामले श्यामलाई भन्यो, “म तिमीलाई भोलि भेट्छु।” (अप्रत्यक्ष कथन)",
-            "questionEnglish": "Ram said to Shyam, “I will meet you tomorrow.” (Indirect Speech)",
-            "correctAnswerNepali": "रामले श्यामलाई भोलिपल्ट भेट्ने कुरा बतायो।",
-            "correctAnswerEnglish": "Ram told Shyam that he would meet him the next day.",
-            "explanationNepali": "प्रत्यक्ष कथनको उद्धरण चिह्न हटाएर 'भनी' वा 'भनेर' संयोजक प्रयोग गरी, पुरुष र काल परिवर्तन गरी अप्रत्यक्ष कथन बनाइन्छ।\nउद्धरण: कक्षा १०, पाठ १२।",
-            "explanationEnglish": "Indirect speech is formed by removing the quotation marks of direct speech and using conjunctions like 'bhani' or 'bhanera', and changing person and tense.\nCitation: Class 10, Lesson 12."
+            "questionNepali": "शिक्षकले भन्नुभयो, “सधैँ मिहिनेत गरेर पढ्नुपर्छ।” (अप्रत्यक्ष कथन)",
+            "questionEnglish": "The teacher said, “One should always study hard.” (Indirect Speech)",
+            "correctAnswerNepali": "शिक्षकले सधैँ मिहिनेत गरेर पढ्नुपर्छ भनी भन्नुभयो।",
+            "correctAnswerEnglish": "The teacher said that one should always study hard.",
+            "explanationNepali": "प्रत्यक्ष कथनमा वक्ताको भनाइलाई जस्ताको तस्तै उद्धरण चिह्नभित्र राखिन्छ भने अप्रत्यक्ष कथनमा त्यसको सारलाई 'भनी' संयोजक प्रयोग गरी प्रस्तुत गरिन्छ।\nउद्धरण: कक्षा १०, पाठ १२।",
+            "explanationEnglish": "In direct speech, the speaker's statement is kept as it is within quotation marks, while in indirect speech, its essence is presented using the conjunction 'bhani'.\nCitation: Class 10, Lesson 12."
           }
         ],
         "questionNumberNepali": "९",
@@ -611,8 +627,8 @@
             "questionEnglish": "'After all, everyone waits.' Change this sentence into an interrogative sentence.",
             "correctAnswerNepali": "आखिर पर्खन को पर्खन्छन्?",
             "correctAnswerEnglish": "After all, who waits?",
-            "explanationNepali": "सामान्य वाक्यलाई प्रश्नवाचकमा बदल्दा 'के', 'किन', 'को', 'कहाँ' जस्ता प्रश्नवाचक शब्द प्रयोग गरी अन्त्यमा प्रश्नवाचक चिह्न (?) राखिन्छ।",
-            "explanationEnglish": "When changing a simple sentence into an interrogative one, question words like 'Ke', 'Kina', 'Ko', 'Kahan' are used and a question mark (?) is placed at the end."
+            "explanationNepali": "सामान्य वाक्यलाई प्रश्नवाचकमा बदल्दा 'के', 'किन', 'को', 'कहाँ' जस्ता प्रश्नवाचक शब्द प्रयोग गरी अन्त्यमा प्रश्नवाचक चिह्न (?) राखिन्छ।\nउद्धरण: कक्षा १०, पाठ १३।",
+            "explanationEnglish": "When changing a simple sentence into an interrogative one, question words like 'Ke', 'Kina', 'Ko', 'Kahan' are used and a question mark (?) is placed at the end.\nCitation: Class 10, Lesson 13."
           }
         ],
         "questionNumberNepali": "१०",
@@ -865,7 +881,7 @@
             "idNepali": "ख",
             "idEnglish": "b",
             "passageNepali": "मुरलीधरको मनमा त्रासको भाउ उठ्यो। ... ‘कसको मरण होस् त यसप्रकारको होस्।’ गङ्गाधरका दुई छोरा थिए; जेठा मुरलीधर र कान्छा श्रीधर। मुरलीधर पण्डित थिए। सबैरे नुहाउँथे, आधा दिनसम्म पूजापाठ गर्थे। उनी आफ्नो धर्म र संस्कृतिका उपर असीम श्रद्धा राख्थे। ... यता श्रीधर चाहिँ राजनीतिक पार्टीका सदस्य र ग्राम विकासका प्रधान थिए। ... यी दुवै दाजुभाइको बिचमा केही दिनपछि जिउनी खेतको विषयमा विवाद उत्पन्न भयो।",
-            "passageEnglish": "An emotion of fear arose in Muralidhar's mind. ... 'May anyone's death be like this.' Gangadhar had two sons; elder Muralidhar and younger Shridhar. Muralidhar was a priest. He used to bathe early, perform prayers for half a day. He had immense reverence for his religion and culture. ... On the other hand, Shridhar was a member of a political party and the head of village development. ... After a few days, a dispute arose between these two brothers regarding the inheritance field.",
+            "passageEnglish": "An emotion of fear arose in Muralidhar's mind. ... 'May anyone's death be like this.'\nGangadhar had two sons; elder Muralidhar and younger Shridhar. Muralidhar was a priest. He used to bathe early, perform prayers for half a day. He had immense reverence for his religion and culture. ... On the other hand, Shridhar was a member of a political party and the head of village development. ... After a few days, a dispute arose between these two brothers regarding the inheritance field.",
             "questionNepali": "'कर्तव्य' कथामा दाजुभाइ मुरलीधर र श्रीधरका बिचको वैचारिक भिन्नताले कसरी द्वन्द्व सिर्जना गर्यो? कथांशका आधारमा समीक्षा गर्नुहोस्।",
             "questionEnglish": "How did the ideological difference between brothers Murlidhar and Shridhar create conflict in the story 'Kartabya'? Review based on the excerpt."
           }

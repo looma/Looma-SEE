@@ -130,7 +130,7 @@
             "questionEnglish": "What are the temperate grasslands of North America called?",
             "answerNepali": "उत्तर अमेरिकाको समशीतोष्ण घाँसे मैदानलाई प्रेरिज (Prairies) भनिन्छ ।",
             "answerEnglish": "The temperate grassland of North America is called Prairies.",
-            "explanationNepali": "यो विशाल घाँसे मैदान गहुँ खेती र व्यावसायिक पशुपालनका लागि विश्वभर प्रसिद्ध छ ।\nउद्धरण: एकाइ ६, पाठ ४र एकाइ ६, पाठ ६, पृष्ठ १५३।",
+            "explanationNepali": "यो विशाल घाँसे मैदान गहुँ खेती र व्यावसायिक पशुपालनका लागि विश्वभर प्रसिद्ध छ ।\nउद्धरण: एकाइ ६, पाठ ४र एकाइ ६, पाठ ६।",
             "explanationEnglish": "This vast grassland is famous worldwide for wheat farming and commercial animal husbandry.\nCitation: Unit 6, Lesson 4",
             "questionNumberNepali": "९",
             "questionNumberEnglish": "9",
@@ -308,28 +308,13 @@
             "marksEnglish": 7
           },
           {
-            "type": "map_drawing",
-            "alternatives": [
-              {
-                "type": "main",
-                "questionNepali": "पृष्ठ भरिने गरी नेपालको नक्सा बनाएर निम्न तथ्यलाई उपयुक्त सङ्केत प्रयोग गरी भर्नुहोस् :\nमाउन्ट एभरेस्ट (सगरमाथा), कर्णाली नदी, चितवन राष्ट्रिय निकुञ्ज, कोशी प्रदेश",
-                "questionEnglish": "Draw a map of Nepal filling the page and fill in the following facts using appropriate symbols:\nMount Everest (Sagarmatha), Karnali River, Chitwan National Park, Koshi Province"
-              },
-              {
-                "type": "alternative",
-                "questionNepali": "पृष्ठ भरिने गरी दक्षिण अमेरिका महादेशको नक्सा बनाएर उपयुक्त सङ्केत प्रयोग गरी निम्न तथ्य भर्नुहोस् :\nब्राजिल, एन्डिज पर्वतमाला, अमेजन नदी, टिटिकाका ताल",
-                "questionEnglish": "Draw a map of the South American continent filling the page and fill in the following facts using appropriate symbols:\nBrazil, Andes Mountain Range, Amazon River, Lake Titicaca"
-              },
-              {
-                "type": "for_visually_impaired",
-                "questionNepali": "(दृष्टिविहीनहरूका लागि मात्र)\nदक्षिण अमेरिका महादेशको हावापानी र प्राकृतिक वनस्पतिको वर्णन गर्नुहोस् ।",
-                "questionEnglish": "(For Visually Impaired Only)\nDescribe the climate and natural vegetation of the South American continent."
-              }
-            ],
-            "answerNepali": "(विद्यार्थीले उपयुक्त सङ्केत प्रयोग गरी सफा र स्पष्ट नक्सा बनाउनुपर्छ ।)\n• नेपालको नक्साका लागि: माउन्ट एभरेस्टलाई हिमालको चिह्न (▲), कर्णाली नदीलाई नदीको चिह्न, चितवन राष्ट्रिय निकुञ्जलाई राष्ट्रिय निकुञ्जको चिह्न र कोशी प्रदेशको सिमाना स्पष्ट रूपमा देखाउनुपर्छ ।\n• दक्षिण अमेरिकाको नक्साका लागि: ब्राजिल देशलाई घेरा लगाएर, एन्डिज पर्वतमालालाई पर्वत श्रेणीको चिह्न, अमेजन नदीलाई नदीको चिह्न र टिटिकाका ताललाई तालको चिह्नले सही स्थानमा देखाउनुपर्छ ।",
-            "answerEnglish": "(Students should draw a clean and clear map using appropriate symbols.)\n• For the map of Nepal: Mount Everest should be shown with a mountain symbol (▲), Karnali River with a river symbol, Chitwan National Park with a national park symbol, and the border of Koshi Province clearly.\n• For the map of South America: Brazil should be shown by circling it, the Andes Mountain Range with a mountain range symbol, the Amazon River with a river symbol, and Lake Titicaca with a lake symbol in the correct location.",
-            "explanationNepali": "यो प्रश्नले विद्यार्थीको नक्सा बनाउने सीप र नेपाल तथा विश्वको भूगोलसम्बन्धी ज्ञानको परीक्षण गर्दछ ।\nउद्धरण: एकाइ ६, पाठ ८।",
-            "explanationEnglish": "This question tests the student's map making skills and knowledge regarding the geography of Nepal and the world.\nCitation: Unit 6, Lesson 8",
+            "type": "long_answer",
+            "questionNepali": "निम्न भौगोलिक तथा साँस्कृतिक सम्पदाहरूको अवस्थिति (प्रदेश वा स्थान) र एक-एकवटा विशेषता लेख्नुहोस् :\n1. माउन्ट एभरेस्ट (सगरमाथा)\n2. कर्णाली नदी\n3. चितवन राष्ट्रिय निकुञ्ज\n4. कोशी प्रदेश",
+            "questionEnglish": "Write the location (Province or Place) and one characteristic for each of the following geographical and cultural facts:\n1. Mount Everest (Sagarmatha)\n2. Karnali River\n3. Chitwan National Park\n4. Koshi Province",
+            "answerNepali": "१. माउन्ट एभरेस्ट (सगरमाथा): कोशी प्रदेश, सोलुखुम्बु । विश्वको सर्वोच्च शिखर (८८४८.८६ मिटर) ।\n२. कर्णाली नदी: कर्णाली प्रदेश । नेपालको सबैभन्दा लामो नदी ।\n३. चितवन राष्ट्रिय निकुञ्ज: बागमती प्रदेश, चितवन । एकसिङ्गे गैँडाका लागि प्रसिद्ध नेपालको पहिलो राष्ट्रिय निकुञ्ज ।\n४. कोशी प्रदेश: पूर्वी नेपाल । सगरमाथा हिमाल र कोशी नदी रहेको प्रदेश ।",
+            "answerEnglish": "1. Mount Everest (Sagarmatha): Koshi Province, Solukhumbu. The highest peak in the world (8848.86m).\n2. Karnali River: Karnali Province. The longest river of Nepal.\n3. Chitwan National Park: Bagmati Province, Chitwan. Nepal's first national park, famous for the One-horned Rhinoceros.\n4. Koshi Province: Eastern Nepal. The province containing the highest peak Everest and the largest river Koshi.",
+            "explanationNepali": "यो प्रश्नले विद्यार्थीको नेपालका महत्त्वपूर्ण स्थानहरूको अवस्थिति र विशेषतासम्बन्धी भौगोलिक ज्ञानको परीक्षण गर्दछ ।\nउद्धरण: एकाइ ६, पाठ ८।",
+            "explanationEnglish": "This question tests the student's geographical knowledge about the location and characteristics of important places in Nepal.\nCitation: Unit 6, Lesson 8",
             "questionNumberNepali": "२२",
             "questionNumberEnglish": "22",
             "marksNepali": "७",

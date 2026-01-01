@@ -308,28 +308,13 @@
             "marksEnglish": 7
           },
           {
-            "type": "map_drawing",
-            "alternatives": [
-              {
-                "type": "main",
-                "questionNepali": "पृष्ठ भरिने गरी नेपालको नक्सा बनाएर निम्न तथ्यलाई उपयुक्त सङ्केत प्रयोग गरी भर्नुहोस् :\nकर्णाली प्रदेश, फेवा ताल, जनकपुरधाम, सगरमाथा राष्ट्रिय निकुञ्ज",
-                "questionEnglish": "Draw a map of Nepal filling the page and fill in the following facts using appropriate symbols:\nKarnali Province, Phewa Lake, Janakpurdham, Sagarmatha National Park"
-              },
-              {
-                "type": "alternative",
-                "questionNepali": "पृष्ठ भरिने गरी अफ्रिका महादेशको नक्सा बनाएर उपयुक्त सङ्केत प्रयोग गरी निम्न तथ्य भर्नुहोस् :\nसहारा मरुभूमि, कङ्गो नदी, भिक्टोरिया फल्स, किलिमन्जारो पर्वत",
-                "questionEnglish": "Draw a map of the African continent filling the page and fill in the following facts using appropriate symbols:\nSahara Desert, Congo River, Victoria Falls, Mount Kilimanjaro"
-              },
-              {
-                "type": "for_visually_impaired",
-                "questionNepali": "(दृष्टिविहीनहरूका लागि मात्र)\nअफ्रिका महादेशको प्रमुख प्राकृतिक सम्पदाहरू को वर्णन गर्दै त्यसले त्यहाँको जनजीवनमा पारेको प्रभावबारे लेख्नुहोस् ।",
-                "questionEnglish": "(For Visually Impaired Only)\nDescribe the major natural resources of the African continent and write about their impact on the life there."
-              }
-            ],
-            "answerNepali": "(विद्यार्थीले उपयुक्त सङ्केत प्रयोग गरी सफा र स्पष्ट नक्सा बनाउनुपर्छ ।)",
-            "answerEnglish": "(Students should draw a clean and clear map using appropriate symbols.)",
-            "explanationNepali": "यो प्रश्नले विद्यार्थीको नक्सा बनाउने सीप र भूगोलसम्बन्धी ज्ञानको परीक्षण गर्दछ ।\nउद्धरण: एकाइ ६, पाठ ८।",
-            "explanationEnglish": "This question tests the student's map making skills and knowledge regarding geography.\nCitation: Unit 6, Lesson 8",
+            "type": "long_answer",
+            "questionNepali": "निम्न भौगोलिक तथा साँस्कृतिक सम्पदाहरूको अवस्थिति (प्रदेश वा स्थान) र एक-एकवटा विशेषता लेख्नुहोस् :\n1. कर्णाली प्रदेश\n2. फेवा ताल\n3. जनकपुरधाम\n4. सगरमाथा राष्ट्रिय निकुञ्ज",
+            "questionEnglish": "Write the location (Province or Place) and one characteristic for each of the following geographical and cultural facts:\n1. Karnali Province\n2. Phewa Lake\n3. Janakpurdham\n4. Sagarmatha National Park",
+            "answerNepali": "१. कर्णाली प्रदेश: पश्चिमी नेपाल । क्षेत्रफलको हिसाबले सबैभन्दा ठुलो तर दुर्गम र प्राकृतिक सुन्दरताले भरिपूर्ण प्रदेश ।\n२. फेवा ताल: गण्डकी प्रदेश, पोखरा । तालबाराही मन्दिर रहेको प्रसिद्ध पर्यटकीय गन्तव्य ।\n३. जनकपुरधाम: मधेश प्रदेश, धनुषा । सीताको जन्मस्थल र जानकी मन्दिरका लागि प्रसिद्ध धार्मिक स्थल ।\n४. सगरमाथा राष्ट्रिय निकुञ्ज: कोशी प्रदेश, सोलुखुम्बु । सगरमाथा क्षेत्रको जैविक विविधता संरक्षण गर्ने विश्व सम्पदा क्षेत्र ।",
+            "answerEnglish": "1. Karnali Province: Western Nepal. The largest province by area, known for its remoteness and natural beauty.\n2. Phewa Lake: Gandaki Province, Pokhara. A famous tourist destination featuring the Tal Barahi Temple.\n3. Janakpurdham: Madhesh Province, Dhanusha. Birthplace of Goddess Sita and famous for the Janaki Temple.\n4. Sagarmatha National Park: Koshi Province, Solukhumbu. A World Heritage Site protecting the biodiversity of the Everest region.",
+            "explanationNepali": "यो प्रश्नले विद्यार्थीको नेपालका महत्त्वपूर्ण स्थानहरूको अवस्थिति र विशेषतासम्बन्धी भौगोलिक ज्ञानको परीक्षण गर्दछ ।\nउद्धरण: एकाइ ६, पाठ ८।",
+            "explanationEnglish": "This question tests the student's geographical knowledge about the location and characteristics of important places in Nepal.\nCitation: Unit 6, Lesson 8",
             "questionNumberNepali": "२२",
             "questionNumberEnglish": "22",
             "marksNepali": "७",
@@ -341,7 +326,7 @@
             "questionEnglish": "Write the causes and consequences of the Revolution of 2007 B.S. in detail.",
             "answerNepali": "**कारणहरू:**\n• निरङ्कुश र जहानियाँ राणा शासन\n• जनताको अधिकारको हनन\n• राजनीतिक दलहरूको स्थापना र प्रजातन्त्रको चाहना\n• भारतको स्वतन्त्रता सङ्ग्रामको प्रभाव\n• राजा त्रिभुवनको भारतीय दूतावासमा शरण\n\n**परिणामहरू:**\n• १०४ वर्षे राणा शासनको अन्त्य\n• प्रजातन्त्रको स्थापना\n• अन्तरिम शासन विधान, २००७ को घोषणा\n• नेपालको विश्वसँग सम्बन्ध विस्तार\n• शिक्षा र विकासको ढोका खुल्ला",
             "answerEnglish": "**Causes:**\n• Autocratic and hereditary Rana regime\n• Violation of people's rights\n• Establishment of political parties and desire for democracy\n• Influence of India's freedom struggle\n• King Tribhuvan taking refuge in the Indian Embassy\n\n**Consequences:**\n• End of 104-year Rana regime\n• Establishment of Democracy\n• Declaration of Interim Government Act, 2007\n• Expansion of Nepal's relations with the world\n• Opening of doors for education and development",
-            "explanationNepali": "यो प्रश्न नेपालको आधुनिक इतिहासको एक महत्त्वपूर्ण कोशेढुङ्गासँग सम्बन्धित छ ।\nउद्धरण: एकाइ ५, पाठ ४र एकाइ ७, पृष्ठ १७३।",
+            "explanationNepali": "यो प्रश्न नेपालको आधुनिक इतिहासको एक महत्त्वपूर्ण कोशेढुङ्गासँग सम्बन्धित छ ।\nउद्धरण: एकाइ ५, पाठ ४र एकाइ ७।",
             "explanationEnglish": "This question is related to an important milestone in the modern history of Nepal.\nCitation: Unit 5, Lesson 4",
             "questionNumberNepali": "२३",
             "questionNumberEnglish": "23",

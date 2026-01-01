@@ -308,28 +308,13 @@
             "marksEnglish": 7
           },
           {
-            "type": "map_drawing",
-            "alternatives": [
-              {
-                "type": "main",
-                "questionNepali": "पृष्ठ भरिने गरी नेपालको नक्सा बनाएर निम्न तथ्यलाई उपयुक्त सङ्केत प्रयोग गरी भर्नुहोस् :\nअन्नपूर्ण हिमाल, कोशी नदी, लुम्बिनी प्रदेश, पूर्व-पश्चिम राजमार्ग",
-                "questionEnglish": "Draw a map of Nepal filling the page and fill in the following facts using appropriate symbols:\nMt. Annapurna, Koshi River, Lumbini Province, East-West Highway"
-              },
-              {
-                "type": "alternative",
-                "questionNepali": "पृष्ठ भरिने गरी एसिया महादेशको नक्सा बनाएर निम्न तथ्यलाई उपयुक्त सङ्केतमा देखाउनुहोस् :\nहिमालय पर्वतमाला, गोबी मरुभूमि, जापान, सिन्धु नदी",
-                "questionEnglish": "Draw a map of the Asian continent filling the page and show the following facts in appropriate symbols:\nHimalaya Mountain Range, Gobi Desert, Japan, Indus River"
-              },
-              {
-                "type": "for_visually_impaired",
-                "questionNepali": "(दृष्टिविहीनहरूका लागि मात्र)\nनेपालको धरातलीय स्वरूपलाई हिमाल, पहाड र तराई गरी तीन भागमा विभाजन गरी प्रत्येकको विशेषता र जनजीवनको वर्णन गर्नुहोस् ।",
-                "questionEnglish": "(For Visually Impaired Only)\nDivide Nepal's topography into three parts: Himalayas, Hills, and Terai, and describe the characteristics and life of each."
-              }
-            ],
-            "answerNepali": "(विद्यार्थीले उपयुक्त सङ्केत प्रयोग गरी सफा र स्पष्ट नक्सा बनाउनुपर्छ ।)\n• नेपालको नक्साका लागि: अन्नपूर्ण हिमाललाई हिमालको चिह्न (▲), कोशी नदीलाई नदीको चिह्न, लुम्बिनी प्रदेशको सिमाना र पूर्व-पश्चिम राजमार्गलाई राष्ट्रिय राजमार्गको चिह्नले देखाउनुपर्छ ।\n• एसियाको नक्साका लागि: हिमालय पर्वतमालालाई पर्वत श्रेणीको चिह्न, गोबी मरुभूमिलाई मरुभूमिको चिह्न, जापान देशलाई घेरा लगाएर र सिन्धु नदीलाई नदीको चिह्नले सही स्थानमा देखाउनुपर्छ ।",
-            "answerEnglish": "(Students should draw a clean and clear map using appropriate symbols.)\n• For the map of Nepal: Mt. Annapurna should be shown with a mountain symbol (▲), Koshi River with a river symbol, the border of Lumbini Province, and the East-West Highway with a national highway symbol.\n• For the map of Asia: The Himalaya Mountain Range should be shown with a mountain range symbol, the Gobi Desert with a desert symbol, Japan by circling it, and the Indus River with a river symbol in the correct location.",
-            "explanationNepali": "यो प्रश्नले विद्यार्थीको नक्सा बनाउने सीप र नेपाल तथा विश्वको भूगोलसम्बन्धी ज्ञानको परीक्षण गर्दछ ।\nउद्धरण: एकाइ ६, पाठ ८।",
-            "explanationEnglish": "This question tests the student's map making skills and knowledge regarding the geography of Nepal and the world.\nCitation: Unit 6, Lesson 8",
+            "type": "long_answer",
+            "questionNepali": "निम्न भौगोलिक तथा साँस्कृतिक सम्पदाहरूको अवस्थिति (प्रदेश वा स्थान) र एक-एकवटा विशेषता लेख्नुहोस् :\n1. अन्नपूर्ण हिमाल\n2. कोशी नदी\n3. लुम्बिनी प्रदेश\n4. पूर्व-पश्चिम राजमार्ग",
+            "questionEnglish": "Write the location (Province or Place) and one characteristic for each of the following geographical and cultural facts:\n1. Mt. Annapurna\n2. Koshi River\n3. Lumbini Province\n4. East-West Highway",
+            "answerNepali": "१. अन्नपूर्ण हिमाल: गण्डकी प्रदेश । विश्वको १०औँ अग्लो हिमाल (८,०९१ मि.) ।\n२. कोशी नदी: कोशी प्रदेश । जलराशिका आधारमा नेपालको सबैभन्दा ठुलो नदी ।\n३. लुम्बिनी प्रदेश: पश्चिमी नेपाल । कृषि र उद्योगको सम्भावना बोकेको तथा बुद्धको जन्मस्थल रहेको प्रदेश ।\n४. पूर्व-पश्चिम राजमार्ग: नेपालको तराई क्षेत्र हुँदै पूर्व मेचीदेखि पश्चिम महाकाली जोड्ने मुख्य राजमार्ग ।",
+            "answerEnglish": "1. Mt. Annapurna: Gandaki Province. The 10th highest peak in the world (8,091m).\n2. Koshi River: Koshi Province. The largest river of Nepal in terms of water volume.\n3. Lumbini Province: Western Nepal. A province with high potential for agriculture and industry, birthplace of Buddha.\n4. East-West Highway: The main highway connecting the eastern and western borders of Nepal through the Terai region.",
+            "explanationNepali": "यो प्रश्नले विद्यार्थीको नेपालका महत्त्वपूर्ण स्थानहरूको अवस्थिति र विशेषतासम्बन्धी भौगोलिक ज्ञानको परीक्षण गर्दछ ।\nउद्धरण: एकाइ ६, पाठ ८।",
+            "explanationEnglish": "This question tests the student's geographical knowledge about the location and characteristics of important places in Nepal.\nCitation: Unit 6, Lesson 8",
             "questionNumberNepali": "२२",
             "questionNumberEnglish": "22",
             "marksNepali": "७",
