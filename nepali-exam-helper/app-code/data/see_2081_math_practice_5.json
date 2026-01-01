@@ -1,36 +1,74 @@
 [
   {
-    "_id": "see_2081_math_practice_5_generated_verified",
-    "titleNepali": "SEE २०८१ अनिवार्य गणित अभ्यास परीक्षा ५",
-    "titleEnglish": "SEE 2081 Math Practice Test 5",
+    "_id": "see_2081_math_practice_5_final_revised",
+    "titleNepali": "SEE २०८१ अनिवार्य गणित अभ्यास परीक्षा ५ (७५ पूर्णाङ्क)",
+    "titleEnglish": "SEE 2081 Math Practice Test 5 (75 Marks)",
     "subjectNepali": "अनिवार्य गणित",
     "subjectEnglish": "Compulsory Mathematics",
     "totalMarksNepali": "७५",
     "totalMarksEnglish": 75,
     "durationNepali": "१८०",
-    "durationEnglish": 180
+    "durationEnglish": 180,
+    "questions": []
   },
   {
-    "testId": "see_2081_math_practice_5_generated_verified",
+    "testId": "see_2081_math_practice_5_final_revised",
     "questions": [
       {
         "question_numberNepali": "१",
         "question_numberEnglish": 1,
         "context": {
-          "Nepali": "एउटा समूहमा 40 जना मानिसहरू छन् । जसमध्ये 18 जनाले फुटबल मात्र, 12 जनाले भलिबल मात्र र 5 जनाले दुवै खेल मन पराउँदैनन् ।",
-          "English": "There are 40 people in a group. Out of them 18 like Football only, 12 like Volleyball only and 5 like neither."
+          "Nepali": "१०० जना विद्यार्थीहरूको सर्वेक्षणमा, ६० जनाले दूध र ५० जनाले दही मन पराउँछन् । १० जनाले दुवैमध्ये कुनै पनि मन पराउँदैनन् ।",
+          "English": "In a survey of 100 students, 60 like milk and 50 like curd. 10 students like neither of them."
         },
         "sub_questions": [
           {
             "labelNepali": "क",
             "labelEnglish": "a",
-            "questionNepali": "दुवै खेल मन पराउने मानिसहरूको संख्या पत्ता लगाउनुहोस् ।",
-            "questionEnglish": "Find the number of people who like both games.",
-            "marksNepali": "६",
-            "marksEnglish": 6,
-            "explanationNepali": "$n(U) = n_0(F) + n_0(V) + n(F \\cap V) + n(\\overline{F \\cup V})$। $40 = 18 + 12 + x + 5 \\Rightarrow 40 = 35 + x \\Rightarrow x = 5$।\nउद्धरण: पाठ १",
-            "explanationEnglish": "Explanation: Using set formula: $40 = 18 + 12 + x + 5$, so $x = 5$.\nCitation: Lesson 1",
-            "answer": "5"
+            "questionNepali": "कम्तीमा एउटा परिकार मन पराउने विद्यार्थीको संख्या कति हुन्छ ?",
+            "questionEnglish": "What is the number of students who like at least one item?",
+            "marksNepali": "१",
+            "marksEnglish": 1,
+            "explanationNepali": "कम्तीमा एउटा परिकार मन पराउने विद्यार्थीहरूको संख्या ($n(M \\cup C)$) निकाल्न, जम्मा विद्यार्थी संख्या ($n(U)$) बाट कुनै पनि मन नपराउने विद्यार्थी संख्या ($n(\\overline{M \\cup C})$) घटाउनुपर्छ । तसर्थ, $100 - 10 = 90$ जना विद्यार्थीले कम्तीमा एउटा परिकार मन पराउँछन् ।\nउद्धरण: पाठ १",
+            "explanationEnglish": "To find the number of students who like at least one item, which is represented by the union of the sets ($n(M \\cup C)$), subtract the number of students who like neither ($n(\\overline{M \\cup C})$) from the total number of students ($n(U)$). Calculation: $100 - 10 = 90$.\nCitation: Lesson 1",
+            "answerNepali": "९०",
+            "answerEnglish": "90"
+          },
+          {
+            "labelNepali": "ख",
+            "labelEnglish": "b",
+            "questionNepali": "दुवै परिकार मन पराउने विद्यार्थीको संख्या निकाल्नुहोस् ।",
+            "questionEnglish": "Find the number of students who like both items.",
+            "marksNepali": "२",
+            "marksEnglish": 2,
+            "explanationNepali": "दुवै परिकार मन पराउने विद्यार्थीहरूको संख्या ($n(M \\cap C)$) निकाल्न समूहको सूत्र प्रयोग गर्दा: $n(M \\cup C) = n(M) + n(C) - n(M \\cap C)$ । मानहरू राख्दा: $90 = 60 + 50 - n(M \\cap C)$ । हल गर्दा: $n(M \\cap C) = 110 - 90 = 20$ ।\nउद्धरण: पाठ १",
+            "explanationEnglish": "Use the set formula for the union of two sets: $n(M \\cup C) = n(M) + n(C) - n(M \\cap C)$. Substitute the known values: $90 = 60 + 50 - n(M \\cap C)$. Solving for the intersection gives $n(M \\cap C) = 110 - 90 = 20$.\nCitation: Lesson 1",
+            "answerNepali": "२०",
+            "answerEnglish": "20"
+          },
+          {
+            "labelNepali": "ग",
+            "labelEnglish": "c",
+            "questionNepali": "दूध मात्र मन पराउने विद्यार्थीको संख्या पत्ता लगाउनुहोस् ।",
+            "questionEnglish": "Find the number of students who like milk only.",
+            "marksNepali": "२",
+            "marksEnglish": 2,
+            "explanationNepali": "दूध मात्र मन पराउने विद्यार्थीहरूको संख्या ($n_0(M)$) निकाल्न, दूध मन पराउने जम्मा संख्याबाट दुवै परिकार मन पराउने संख्या घटाउनुपर्छ । $n_0(M) = n(M) - n(M \\cap C) = 60 - 20 = 40$ ।\nउद्धरण: पाठ १",
+            "explanationEnglish": "To find the number of students who like only milk ($n_0(M)$), subtract the number of students who like both items from the total number who like milk. Calculation: $n_0(M) = 60 - 20 = 40$.\nCitation: Lesson 1",
+            "answerNepali": "४०",
+            "answerEnglish": "40"
+          },
+          {
+            "labelNepali": "घ",
+            "labelEnglish": "d",
+            "questionNepali": "दही मात्र मन पराउने र दूध मात्र मन पराउने विद्यार्थीको अनुपात निकाल्नुहोस् ।",
+            "questionEnglish": "Find the ratio of students liking curd only to milk only.",
+            "marksNepali": "१",
+            "marksEnglish": 1,
+            "explanationNepali": "पहिले दही मात्र मन पराउने संख्या निकालौँ: $n_0(C) = n(C) - n(M \\cap C) = 50 - 20 = 30$ । दूध मात्र मन पराउने संख्या ४० छ । अनुपात $30 : 40$ हुन्छ, जसलाई सरल गर्दा $3 : 4$ हुन्छ ।\nउद्धरण: पाठ १",
+            "explanationEnglish": "First, calculate the number of students who like curd only: $n_0(C) = 50 - 20 = 30$. We already know milk only is 40. The ratio is $30 : 40$, which simplifies to $3 : 4$.\nCitation: Lesson 1",
+            "answerNepali": "३:४",
+            "answerEnglish": "3:4"
           }
         ]
       },
@@ -38,20 +76,45 @@
         "question_numberNepali": "२",
         "question_numberEnglish": 2,
         "context": {
-          "Nepali": "रु. 20,000 को 2 वर्षमा 10% वार्षिक ब्याजदरले चक्रीय ब्याज र अर्ध-वार्षिक चक्रीय ब्याज बिचको फरक पत्ता लगाउनुहोस् ।",
-          "English": "Find the difference between annual compound interest and semi-annual compound interest on Rs. 20,000 for 2 years at 10% p.a."
+          "Nepali": "रु. २०,००० को २ वर्षको लागि १०% वार्षिक ब्याजदरमा:",
+          "English": "For Rs. 20,000 at 10% annual interest for 2 years:"
         },
         "sub_questions": [
           {
             "labelNepali": "क",
             "labelEnglish": "a",
-            "questionNepali": "",
-            "questionEnglish": "",
-            "marksNepali": "४",
-            "marksEnglish": 4,
-            "explanationNepali": "वार्षिक CI = $20000(1.1^2 - 1) = 4200$। अर्ध-वार्षिक CI = $20000(1.05^4 - 1) \\approx 4310.125$। फरक $\\approx 110.1$।\nउद्धरण: पाठ २",
-            "explanationEnglish": "Explanation: Annual CI = $4200$. Semi-annual CI = $20000[(1.05)^4 - 1] \\approx 4310.1$. Difference $\\approx 110.1$.\nCitation: Lesson 2",
-            "answer": "Rs. 110.10 (approx)"
+            "questionNepali": "वार्षिक चक्रीय ब्याज पत्ता लगाउनुहोस् ।",
+            "questionEnglish": "Find the annual compound interest.",
+            "marksNepali": "२",
+            "marksEnglish": 2,
+            "explanationNepali": "वार्षिक चक्रीय ब्याजको सूत्र $CI = P[(1 + R/100)^T - 1]$ प्रयोग गर्दा: $20000[(1 + 10/100)^2 - 1]$ । सरल गर्दा: $20000(1.21 - 1) = 20000 \\times 0.21 = 4200$ ।\nउद्धरण: पाठ २",
+            "explanationEnglish": "Using the annual compound interest formula $CI = P[(1 + R/100)^T - 1]$: Substitute the values to get $20000[(1.1)^2 - 1]$. Simplifying gives $20000(0.21)$, which equals Rs. 4,200.\nCitation: Lesson 2",
+            "answerNepali": "रु. ४,२००",
+            "answerEnglish": "Rs. 4,200"
+          },
+          {
+            "labelNepali": "ख",
+            "labelEnglish": "b",
+            "questionNepali": "अर्ध-वार्षिक चक्रीय ब्याज पत्ता लगाउनुहोस् ।",
+            "questionEnglish": "Find the semi-annual compound interest.",
+            "marksNepali": "२",
+            "marksEnglish": 2,
+            "explanationNepali": "अर्ध-वार्षिक ब्याजको लागि सूत्र $CI = P[(1 + R/200)^{2T} - 1]$ प्रयोग गरिन्छ । मान राख्दा: $20000[(1 + 10/200)^4 - 1] = 20000[(1.05)^4 - 1]$ । $1.05^4 \\approx 1.2155$ हुन्छ, त्यसैले $20000 \\times 0.2155 = 4310$ (दशमलवमा सानो फरक पर्न सक्छ, सही उत्तर रु ४३१०.१३) ।\nउद्धरण: पाठ २",
+            "explanationEnglish": "For semi-annual interest, use the formula $CI = P[(1 + R/200)^{2T} - 1]$. Substituting values: $20000[(1 + 0.05)^4 - 1]$. Since $1.05^4 \\approx 1.215506$, the interest is $20000 \\times 0.215506 \\approx 4310.13$.\nCitation: Lesson 2",
+            "answerNepali": "रु. ४,३१०.१३",
+            "answerEnglish": "Rs. 4,310.13"
+          },
+          {
+            "labelNepali": "ग",
+            "labelEnglish": "c",
+            "questionNepali": "अर्ध-वार्षिक ब्याज वार्षिक ब्याज भन्दा कतिले बढी छ ?",
+            "questionEnglish": "By how much is the semi-annual interest more than the annual interest?",
+            "marksNepali": "१",
+            "marksEnglish": 1,
+            "explanationNepali": "अर्ध-वार्षिक ब्याज र वार्षिक ब्याजको अन्तर निकाल्न घटाउनुहोस्: रु ४३१०.१३ - रु ४२०० = रु ११०.१३ ।\nउद्धरण: पाठ २",
+            "explanationEnglish": "Subtract the annual interest from the semi-annual interest to find the difference: Rs. 4310.13 - Rs. 4200 = Rs. 110.13.\nCitation: Lesson 2",
+            "answerNepali": "रु. ११०.१३",
+            "answerEnglish": "Rs. 110.13"
           }
         ]
       },
@@ -59,20 +122,33 @@
         "question_numberNepali": "३",
         "question_numberEnglish": 3,
         "context": {
-          "Nepali": "एउटा सहरको हालको जनसङ्ख्या 1,00,000 छ । यदि जनसङ्ख्या वृद्धिदर 2% छ भने 2 वर्षपछि जनसङ्ख्या कति हुन्छ ?",
-          "English": "The current population of a city is 1,00,000. If the growth rate is 2%, what will be the population after 2 years?"
+          "Nepali": "एउटा सहरको जनसङ्ख्या १,००,००० छ र वार्षिक वृद्धिदर १०% छ ।",
+          "English": "A city has population 1,00,000 and annual growth rate 10%."
         },
         "sub_questions": [
           {
             "labelNepali": "क",
             "labelEnglish": "a",
-            "questionNepali": "",
-            "questionEnglish": "",
-            "marksNepali": "४",
-            "marksEnglish": 4,
-            "explanationNepali": "सूत्र $P_T = P(1 + \\frac{R}{100})^T$। $100000(1.02)^2 = 100000 \\times 1.0404 = 104040$।\nउद्धरण: पाठ ३",
-            "explanationEnglish": "Explanation: Using growth formula: $100000(1.02)^2 = 104040$.\nCitation: Lesson 3",
-            "answer": "1,04,040"
+            "questionNepali": "२ वर्षपछिको जनसङ्ख्या कति हुन्छ ?",
+            "questionEnglish": "What will be the population after 2 years?",
+            "marksNepali": "२",
+            "marksEnglish": 2,
+            "explanationNepali": "जनसङ्ख्या वृद्धिको सूत्र $P_T = P(1 + R/100)^T$ हो । मान राख्दा: $100000(1 + 10/100)^2 = 100000(1.1)^2 = 100000 \\times 1.21 = 1,21,000$ ।\nउद्धरण: पाठ ३",
+            "explanationEnglish": "Using the population growth formula $P_T = P(1 + R/100)^T$: $100000(1 + 0.1)^2 = 100000(1.21) = 1,21,000$.\nCitation: Lesson 3",
+            "answerNepali": "१,२१,०००",
+            "answerEnglish": "1,21,000"
+          },
+          {
+            "labelNepali": "ख",
+            "labelEnglish": "b",
+            "questionNepali": "२ वर्षमा कति जनसङ्ख्या थपियो ?",
+            "questionEnglish": "How much population was added in 2 years?",
+            "marksNepali": "२",
+            "marksEnglish": 2,
+            "explanationNepali": "थपिएको जनसङ्ख्या निकाल्न २ वर्षपछिको जनसङ्ख्याबाट सुरुको जनसङ्ख्या घटाउनुपर्छ । $1,21,000 - 1,00,000 = 21,000$ ।\nउद्धरण: पाठ ३",
+            "explanationEnglish": "To find the added population, subtract the initial population from the population after 2 years: $1,21,000 - 1,00,000 = 21,000$.\nCitation: Lesson 3",
+            "answerNepali": "२१,०००",
+            "answerEnglish": "21,000"
           }
         ]
       },
@@ -80,20 +156,33 @@
         "question_numberNepali": "४",
         "question_numberEnglish": 4,
         "context": {
-          "Nepali": "यदि $1 = रु. 130 र $1 = €0.90 छ भने, €1 को विनिमय दर नेपाली रुपैयाँमा कति हुन्छ ?",
-          "English": "If $1 = Rs. 130 and $1 = €0.90, what is the exchange rate of €1 in Nepali Rupees?"
+          "Nepali": "विनिमय दर: १ अमेरिकी डलर = ने.रु. १३० छ ।",
+          "English": "Exchange rate: 1 US Dollar = NRs. 130."
         },
         "sub_questions": [
           {
             "labelNepali": "क",
             "labelEnglish": "a",
-            "questionNepali": "",
-            "questionEnglish": "",
-            "marksNepali": "५",
-            "marksEnglish": 5,
-            "explanationNepali": "चेन रुल अनुसार: $x \\text{ NRs} = 1 \\text{ Euro} \\times \\frac{1 \\text{ USD}}{0.90 \\text{ Euro}} \\times \\frac{130 \\text{ NRs}}{1 \\text{ USD}} = \\frac{130}{0.90} \\approx 144.44$।\nउद्धरण: पाठ २",
-            "explanationEnglish": "Explanation: Using Chain rule or unitary method: $1 Euro = 1/0.9 USD = 1.11 USD$. $1.11 \\times 130 \\approx 144.44$.\nCitation: Lesson 2",
-            "answer": "Rs. 144.44"
+            "questionNepali": "ने.रु. २६,००० सँग कति डलर साट्न सकिन्छ ?",
+            "questionEnglish": "How many dollars can be exchanged with NRs. 26,000?",
+            "marksNepali": "२",
+            "marksEnglish": 2,
+            "explanationNepali": "डलर किन्नका लागि ने.रु. लाई विनिमय दरले भाग गर्नुपर्छ: $26000 / 130 = 200$ डलर ।\nउद्धरण: पाठ ४",
+            "explanationEnglish": "To convert Nepali Rupees to Dollars, divide the amount by the exchange rate: $26000 / 130 = 200$ Dollars.\nCitation: Lesson 4",
+            "answerNepali": "$२००",
+            "answerEnglish": "$200"
+          },
+          {
+            "labelNepali": "ख",
+            "labelEnglish": "b",
+            "questionNepali": "यदि नेपाली रुपैयाँ १०% ले अधिमूल्यन भयो भने, ने.रु. २६,००० ले कति डलर साट्न सकिएला ?",
+            "questionEnglish": "If Nepali rupee is revalued by 10%, how many dollars can be exchanged with NRs. 26,000?",
+            "marksNepali": "२",
+            "marksEnglish": 2,
+            "explanationNepali": "अधिमूल्यन (Revaluation) ले डलरको विनिमय दर घटाउँछ । नयाँ दर = $130 - (130 \\text{ को } 10\\%) = 130 - 13 = 117$ । अब साट्न सकिने डलर = $26000 / 117 \\approx 222.22$ ।\nउद्धरण: पाठ ४",
+            "explanationEnglish": "Revaluation means the Nepali currency becomes stronger, so the exchange rate decreases. New Rate = $130 - 10\\% = 117$. The new amount of dollars = $26000 / 117 \\approx 222.22$.\nCitation: Lesson 4",
+            "answerNepali": "$२२२.२२",
+            "answerEnglish": "$222.22"
           }
         ]
       },
@@ -101,20 +190,45 @@
         "question_numberNepali": "५",
         "question_numberEnglish": 5,
         "context": {
-          "Nepali": "एउटा गोलाको सतहको क्षेत्रफल 616 वर्ग से.मि. छ ।",
-          "English": "The surface area of a sphere is 616 sq. cm."
+          "Nepali": "एउटा वर्ग आधार भएको पिरामिडको आधारको भुजा १० से.मि. र छड्के उचाइ १३ से.मि. छ ।",
+          "English": "A square-based pyramid has base side 10 cm and slant height 13 cm."
         },
         "sub_questions": [
           {
             "labelNepali": "क",
             "labelEnglish": "a",
-            "questionNepali": "गोलाको अर्धव्यास पत्ता लगाउनुहोस् ।",
-            "questionEnglish": "Find the radius of the sphere.",
-            "marksNepali": "४",
-            "marksEnglish": 4,
-            "explanationNepali": "$4\\pi r^2 = 616 \\Rightarrow 4 \\times \\frac{22}{7} \\times r^2 = 616 \\Rightarrow 88 r^2 = 4312 \\Rightarrow r^2 = 49 \\Rightarrow r = 7$।\nउद्धरण: पाठ ५",
-            "explanationEnglish": "Explanation: Formula $4\\pi r^2 = 616$, solving gives $r = 7$.\nCitation: Lesson 5",
-            "answer": "7 cm"
+            "questionNepali": "आधारको क्षेत्रफल निकाल्नुहोस् ।",
+            "questionEnglish": "Find the area of the base.",
+            "marksNepali": "१",
+            "marksEnglish": 1,
+            "explanationNepali": "वर्गाकार आधारको क्षेत्रफल $A = a^2$ हुन्छ । यहाँ भुजा $a = 10$ भएकाले $A = 10^2 = 100$ वर्ग से.मि. ।\nउद्धरण: पाठ ५",
+            "explanationEnglish": "The base is a square, so Area $A = a^2$. Given $a = 10$, Area = $10 \\times 10 = 100$ sq. cm.\nCitation: Lesson 5",
+            "answerNepali": "१०० वर्ग से.मि.",
+            "answerEnglish": "100 sq. cm"
+          },
+          {
+            "labelNepali": "ख",
+            "labelEnglish": "b",
+            "questionNepali": "ठाडो उचाइ (Vertical Height) पत्ता लगाउनुहोस् ।",
+            "questionEnglish": "Find the vertical height.",
+            "marksNepali": "२",
+            "marksEnglish": 2,
+            "explanationNepali": "ठाडो उचाइ ($h$) निकाल्न पाइथागोरस साध्य प्रयोग गरिन्छ: $h = \\sqrt{l^2 - (a/2)^2}$ । यहाँ $l=13$ र $a/2=5$ छ । $h = \\sqrt{13^2 - 5^2} = \\sqrt{169 - 25} = \\sqrt{144} = 12$ से.मि. ।\nउद्धरण: पाठ ५",
+            "explanationEnglish": "Using the Pythagorean theorem for the vertical height $h$: $h = \\sqrt{l^2 - (a/2)^2}$. Substituting $l=13$ and $a/2=5$: $h = \\sqrt{169 - 25} = \\sqrt{144} = 12$ cm.\nCitation: Lesson 5",
+            "answerNepali": "१२ से.मि.",
+            "answerEnglish": "12 cm"
+          },
+          {
+            "labelNepali": "ग",
+            "labelEnglish": "c",
+            "questionNepali": "पिरामिडको आयतन निकाल्नुहोस् ।",
+            "questionEnglish": "Calculate the volume of the pyramid.",
+            "marksNepali": "२",
+            "marksEnglish": 2,
+            "explanationNepali": "पिरामिडको आयतनको सूत्र $V = \\frac{1}{3} Ah$ हो । मान राख्दा: $V = \\frac{1}{3} \\times 100 \\times 12 = 100 \\times 4 = 400$ घन से.मि. ।\nउद्धरण: पाठ ५",
+            "explanationEnglish": "The volume formula is $V = \\frac{1}{3} Ah$. Calculating: $V = \\frac{1}{3} \\times 100 \\times 12 = 400$ cm³.\nCitation: Lesson 5",
+            "answerNepali": "४०० घन से.मि.",
+            "answerEnglish": "400 cm³"
           }
         ]
       },
@@ -122,20 +236,45 @@
         "question_numberNepali": "६",
         "question_numberEnglish": 6,
         "context": {
-          "Nepali": "एउटा वर्ग आधार भएको पिरामिडको आधारको भुजा 10 से.मि. र छड्के उचाइ 13 से.मि. छ ।",
-          "English": "The side of the base of a square-based pyramid is 10 cm and slant height is 13 cm."
+          "Nepali": "६ से.मि., ८ से.मि. र १० से.मि. अर्धव्यास भएका तीनवटा धातुका गोला पगालेर एउटा ठुलो गोला बनाइयो ।",
+          "English": "Three metallic spheres of radii 6 cm, 8 cm, and 10 cm are melted to form a single large sphere."
         },
         "sub_questions": [
           {
             "labelNepali": "क",
             "labelEnglish": "a",
-            "questionNepali": "पिरामिडको पूरा सतहको क्षेत्रफल निकाल्नुहोस् ।",
-            "questionEnglish": "Find the total surface area of the pyramid.",
-            "marksNepali": "५",
-            "marksEnglish": 5,
-            "explanationNepali": "$TSA = a^2 + 2al = 10^2 + 2(10)(13) = 100 + 260 = 360$।\nउद्धरण: पाठ ५",
-            "explanationEnglish": "Explanation: TSA = Base Area + Lateral Area = $100 + 2(10)(13) = 360$.\nCitation: Lesson 5",
-            "answer": "360 sq. cm"
+            "questionNepali": "तीनैवटा गोलाको कुल आयतन निकाल्नुहोस् ।",
+            "questionEnglish": "Calculate the total volume of all three spheres.",
+            "marksNepali": "१",
+            "marksEnglish": 1,
+            "explanationNepali": "कुल आयतन तिनवटै गोलाको आयतनको योग हो: $V = \\frac{4}{3}\\pi (r_1^3 + r_2^3 + r_3^3)$ । $V = \\frac{4}{3}\\pi (6^3 + 8^3 + 10^3) = \\frac{4}{3}\\pi (216 + 512 + 1000) = \\frac{4}{3}\\pi (1728) = 2304\\pi$ घन से.मि. ।\nउद्धरण: पाठ ५",
+            "explanationEnglish": "The total volume is the sum of the volumes of the three spheres: $V = \\frac{4}{3}\\pi (6^3 + 8^3 + 10^3) = \\frac{4}{3}\\pi (1728) = 2304\\pi$ cm³.\nCitation: Lesson 5",
+            "answerNepali": "$२३०४\\pi$ घन से.मि.",
+            "answerEnglish": "$2304\\pi$ cm³"
+          },
+          {
+            "labelNepali": "ख",
+            "labelEnglish": "b",
+            "questionNepali": "नयाँ ठुलो गोलाको अर्धव्यास पत्ता लगाउनुहोस् ।",
+            "questionEnglish": "Find the radius of the new large sphere.",
+            "marksNepali": "१",
+            "marksEnglish": 1,
+            "explanationNepali": "ठुलो गोलाको आयतन $\\frac{4}{3}\\pi R^3$ कुल आयतन $2304\\pi$ सँग बराबर हुन्छ । $\\frac{4}{3}\\pi R^3 = \\frac{4}{3}\\pi (1728)$ । दुवै तर्फबाट $\\frac{4}{3}\\pi$ हटाउँदा $R^3 = 1728$ हुन्छ । १७२८ को घनमूल १२ हो, त्यसैले $R = 12$ से.मि. ।\nउद्धरण: पाठ ५",
+            "explanationEnglish": "Set the volume of the large sphere equal to the total volume: $\\frac{4}{3}\\pi R^3 = \\frac{4}{3}\\pi (1728)$. Simplifying gives $R^3 = 1728$. The cube root of 1728 is 12, so the radius $R = 12$ cm.\nCitation: Lesson 5",
+            "answerNepali": "१२ से.मि.",
+            "answerEnglish": "12 cm"
+          },
+          {
+            "labelNepali": "ग",
+            "labelEnglish": "c",
+            "questionNepali": "नयाँ गोलाको सतहको क्षेत्रफल निकाल्नुहोस् ।",
+            "questionEnglish": "Find the surface area of the new sphere.",
+            "marksNepali": "२",
+            "marksEnglish": 2,
+            "explanationNepali": "सतहको क्षेत्रफल निकाल्ने सूत्र $A = 4\\pi R^2$ हो । $R=12$ राख्दा: $A = 4\\pi (12)^2 = 4\\pi (144) = 576\\pi$ वर्ग से.मि. ।\nउद्धरण: पाठ ५",
+            "explanationEnglish": "Using the surface area formula $A = 4\\pi R^2$ with $R=12$: $A = 4\\pi (144) = 576\\pi$ sq. cm.\nCitation: Lesson 5",
+            "answerNepali": "$५७६\\pi$ वर्ग से.मि.",
+            "answerEnglish": "$576\\pi$ sq. cm"
           }
         ]
       },
@@ -143,20 +282,33 @@
         "question_numberNepali": "७",
         "question_numberEnglish": 7,
         "context": {
-          "Nepali": "एउटा कोठाको लम्बाइ 5 मिटर र चौडाइ 4 मिटर छ । सिलिङमा प्लास्टर गर्दा प्रति वर्ग मिटर रु. 150 का दरले कति खर्च लाग्छ ?",
-          "English": "The length of a room is 5 m and breadth is 4 m. What is the cost of plastering the ceiling at Rs. 150 per sq. m?"
+          "Nepali": "एउटा कोठाको लम्बाइ ५ मि., चौडाइ ४ मि. र उचाइ ३ मि. छ । यसमा जम्मा १० वर्ग मि. क्षेत्रफल भएका झ्याल र ढोका छन् ।",
+          "English": "A room is 5m x 4m x 3m. It has windows and doors with total area 10 sq. m."
         },
         "sub_questions": [
           {
             "labelNepali": "क",
             "labelEnglish": "a",
-            "questionNepali": "",
-            "questionEnglish": "",
-            "marksNepali": "४",
-            "marksEnglish": 4,
-            "explanationNepali": "सिलिङको क्षेत्रफल = $l \\times b = 5 \\times 4 = 20$। खर्च = $20 \\times 150 = 3000$।\nउद्धरण: पाठ ५",
-            "explanationEnglish": "Explanation: Area of ceiling = $20$ sq m. Cost = $20 \\times 150 = 3000$.\nCitation: Lesson 5",
-            "answer": "Rs. 3,000"
+            "questionNepali": "झ्याल र ढोका बाहेक भित्ताको क्षेत्रफल निकाल्नुहोस् ।",
+            "questionEnglish": "Find the area of walls excluding windows and doors.",
+            "marksNepali": "२",
+            "marksEnglish": 2,
+            "explanationNepali": "पहिले चार भित्ताको क्षेत्रफल निकाल्नुहोस्: $2h(l+b) = 2(3)(5+4) = 6(9) = 54$ वर्ग मि. । अब झ्याल र ढोकाको क्षेत्रफल घटाउनुहोस्: $54 - 10 = 44$ वर्ग मि. ।\nउद्धरण: पाठ ५",
+            "explanationEnglish": "Calculate the gross area of the four walls: $2h(l+b) = 2(3)(9) = 54$ sq. m. Subtract the area of openings (10 sq. m) to get the net area: $54 - 10 = 44$ sq. m.\nCitation: Lesson 5",
+            "answerNepali": "४४ वर्ग मि.",
+            "answerEnglish": "44 sq. m"
+          },
+          {
+            "labelNepali": "ख",
+            "labelEnglish": "b",
+            "questionNepali": "प्रति वर्ग मि. रु. ५० का दरले रङ लगाउन कति खर्च लाग्छ ?",
+            "questionEnglish": "Find the cost of painting at Rs. 50 per sq. m.",
+            "marksNepali": "२",
+            "marksEnglish": 2,
+            "explanationNepali": "कुल खर्च = क्षेत्रफल $\\times$ दर । ४४ वर्ग मि. लाई रु. ५० ले गुणन गर्दा: $44 \\times 50 = 2200$ ।\nउद्धरण: पाठ ५",
+            "explanationEnglish": "Total Cost = Net Area $\\times$ Rate. $44 \\times 50 = 2200$.\nCitation: Lesson 5",
+            "answerNepali": "रु. २,२००",
+            "answerEnglish": "Rs. 2,200"
           }
         ]
       },
@@ -164,20 +316,45 @@
         "question_numberNepali": "८",
         "question_numberEnglish": 8,
         "context": {
-          "Nepali": "4 र 16 को बिचमा एउटा गुणोत्तर मध्यमा (GM) पत्ता लगाउनुहोस् ।",
-          "English": "Find one geometric mean (GM) between 4 and 16."
+          "Nepali": "अंकगणितीय श्रेणी: ५, १०, १५, ...",
+          "English": "Arithmetic Series: 5, 10, 15, ..."
         },
         "sub_questions": [
           {
             "labelNepali": "क",
             "labelEnglish": "a",
-            "questionNepali": "",
-            "questionEnglish": "",
-            "marksNepali": "५",
-            "marksEnglish": 5,
-            "explanationNepali": "$GM = \\sqrt{ab} = \\sqrt{4 \\times 16} = \\sqrt{64} = 8$।\nउद्धरण: पाठ ६",
-            "explanationEnglish": "Explanation: Formula $GM = \\sqrt{ab} = \\sqrt{64} = 8$.\nCitation: Lesson 6",
-            "answer": "8"
+            "questionNepali": "n औं पद निकाल्ने सूत्र लेख्नुहोस् ।",
+            "questionEnglish": "Write the formula for nth term.",
+            "marksNepali": "१",
+            "marksEnglish": 1,
+            "explanationNepali": "अंकगणितीय श्रेणीको n औं पदको सूत्र $t_n = a + (n-1)d$ हो ।\nउद्धरण: पाठ ६",
+            "explanationEnglish": "The formula for the nth term is $t_n = a + (n-1)d$.\nCitation: Lesson 6",
+            "answerNepali": "$t_n = a + (n-1)d$",
+            "answerEnglish": "$t_n = a + (n-1)d$"
+          },
+          {
+            "labelNepali": "ख",
+            "labelEnglish": "b",
+            "questionNepali": "१० औं पद पत्ता लगाउनुहोस् ।",
+            "questionEnglish": "Find the 10th term.",
+            "marksNepali": "२",
+            "marksEnglish": 2,
+            "explanationNepali": "यहाँ $a=5$ र $d=5$ छ । $t_{10} = 5 + (10-1)5 = 5 + 45 = 50$ ।\nउद्धरण: पाठ ६",
+            "explanationEnglish": "Here $a=5$ and $d=5$. Substituting into the formula: $t_{10} = 5 + 9(5) = 50$.\nCitation: Lesson 6",
+            "answerNepali": "५०",
+            "answerEnglish": "50"
+          },
+          {
+            "labelNepali": "ग",
+            "labelEnglish": "c",
+            "questionNepali": "पहिलो १० पदहरूको योगफल निकाल्नुहोस् ।",
+            "questionEnglish": "Find the sum of the first 10 terms.",
+            "marksNepali": "२",
+            "marksEnglish": 2,
+            "explanationNepali": "योगफलको सूत्र $S_n = \\frac{n}{2}(a+l)$ प्रयोग गर्दा: $S_{10} = \\frac{10}{2}(5 + 50) = 5(55) = 275$ ।\nउद्धरण: पाठ ६",
+            "explanationEnglish": "Using the sum formula $S_n = \\frac{n}{2}(a+l)$: $S_{10} = 5(5 + 50) = 275$.\nCitation: Lesson 6",
+            "answerNepali": "२७५",
+            "answerEnglish": "275"
           }
         ]
       },
@@ -185,20 +362,45 @@
         "question_numberNepali": "९",
         "question_numberEnglish": 9,
         "context": {
-          "Nepali": "म.स. (HCF) निकाल्नुहोस्: $a^2 - b^2$ र $a^3 - b^3$",
-          "English": "Find HCF: $a^2 - b^2$ and $a^3 - b^3$"
+          "Nepali": "हल गर्नुहोस्: $x^2 - 8x + 15 = 0$",
+          "English": "Solve: $x^2 - 8x + 15 = 0$"
         },
         "sub_questions": [
           {
             "labelNepali": "क",
             "labelEnglish": "a",
-            "questionNepali": "",
-            "questionEnglish": "",
-            "marksNepali": "५",
-            "marksEnglish": 5,
-            "explanationNepali": "पहिलो: $(a-b)(a+b)$। दोस्रो: $(a-b)(a^2+ab+b^2)$। साझा गुणनखण्ड $a-b$ हो।\nउद्धरण: पाठ ८",
-            "explanationEnglish": "Explanation: Factors: $(a-b)(a+b)$ and $(a-b)(a^2+ab+b^2)$. Common factor is $a-b$.\nCitation: Lesson 8",
-            "answer": "$a - b$"
+            "questionNepali": "समीकरणको प्रकार लेख्नुहोस् ।",
+            "questionEnglish": "Write the type of equation.",
+            "marksNepali": "१",
+            "marksEnglish": 1,
+            "explanationNepali": "यो वर्ग समीकरण (Quadratic Equation) हो ।\nउद्धरण: पाठ ७",
+            "explanationEnglish": "This is a Quadratic Equation.\nCitation: Lesson 7",
+            "answerNepali": "वर्ग समीकरण",
+            "answerEnglish": "Quadratic Equation"
+          },
+          {
+            "labelNepali": "ख",
+            "labelEnglish": "b",
+            "questionNepali": "x को मानहरू निकाल्नुहोस् ।",
+            "questionEnglish": "Find the values of x.",
+            "marksNepali": "२",
+            "marksEnglish": 2,
+            "explanationNepali": "खण्डीकरण गर्दा: $x^2 - 5x - 3x + 15 = 0 \\Rightarrow (x-5)(x-3) = 0$ । त्यसैले $x$ को मान ३ र ५ हुन्छ ।\nउद्धरण: पाठ ७",
+            "explanationEnglish": "Factorizing: $(x-5)(x-3) = 0$. Thus, $x = 3, 5$.\nCitation: Lesson 7",
+            "answerNepali": "३, ५",
+            "answerEnglish": "3, 5"
+          },
+          {
+            "labelNepali": "ग",
+            "labelEnglish": "c",
+            "questionNepali": "उत्तर जाँच गर्नुहोस् ।",
+            "questionEnglish": "Verify the answer.",
+            "marksNepali": "२",
+            "marksEnglish": 2,
+            "explanationNepali": "$x=3$ राख्दा: $9 - 24 + 15 = 0$ । $x=5$ राख्दा: $25 - 40 + 15 = 0$ । दुवै मान सही छन् ।\nउद्धरण: पाठ ७",
+            "explanationEnglish": "Substituting $x=3$: $9 - 24 + 15 = 0$. Substituting $x=5$: $25 - 40 + 15 = 0$. Both verified.\nCitation: Lesson 7",
+            "answerNepali": "प्रमाणित",
+            "answerEnglish": "Verified"
           }
         ]
       },
@@ -206,20 +408,33 @@
         "question_numberNepali": "१०",
         "question_numberEnglish": 10,
         "context": {
-          "Nepali": "यदि $5^{x+1} + 5^x = 150$ भए $x$ को मान कति हुन्छ ?",
-          "English": "If $5^{x+1} + 5^x = 150$, what is the value of $x$?"
+          "Nepali": "समीकरण: $5^{x+1} + 5^x = 150$",
+          "English": "Equation: $5^{x+1} + 5^x = 150$"
         },
         "sub_questions": [
           {
             "labelNepali": "क",
             "labelEnglish": "a",
-            "questionNepali": "",
-            "questionEnglish": "",
-            "marksNepali": "५",
-            "marksEnglish": 5,
-            "explanationNepali": "$5^x(5 + 1) = 150 \\Rightarrow 5^x(6) = 150 \\Rightarrow 5^x = 25 \\Rightarrow x=2$।\nउद्धरण: पाठ ९",
-            "explanationEnglish": "Explanation: Factoring $5^x$: $5^x(6) = 150 \\Rightarrow 5^x = 25 \\Rightarrow x=2$.\nCitation: Lesson 9",
-            "answer": "2"
+            "questionNepali": "समीकरणलाई सरल बनाउनुहोस् ।",
+            "questionEnglish": "Simplify the equation.",
+            "marksNepali": "२",
+            "marksEnglish": 2,
+            "explanationNepali": "$5^x$ साझा लिँदा: $5^x(5 + 1) = 150 \\Rightarrow 5^x(6) = 150$ ।\nउद्धरण: पाठ ९",
+            "explanationEnglish": "Factor out $5^x$: $5^x(5 + 1) = 150 \\Rightarrow 6 \\cdot 5^x = 150$.\nCitation: Lesson 9",
+            "answerNepali": "$६ \\times ५^x = १५०$",
+            "answerEnglish": "$6 \\times 5^x = 150$"
+          },
+          {
+            "labelNepali": "ख",
+            "labelEnglish": "b",
+            "questionNepali": "x को मान पत्ता लगाउनुहोस् ।",
+            "questionEnglish": "Find the value of x.",
+            "marksNepali": "३",
+            "marksEnglish": 3,
+            "explanationNepali": "$5^x = 150 / 6 = 25$ । $25 = 5^2$ भएकोले, $x = 2$ ।\nउद्धरण: पाठ ९",
+            "explanationEnglish": "$5^x = 25$. Since $25 = 5^2$, $x = 2$.\nCitation: Lesson 9",
+            "answerNepali": "२",
+            "answerEnglish": "2"
           }
         ]
       },
@@ -227,20 +442,33 @@
         "question_numberNepali": "११",
         "question_numberEnglish": 11,
         "context": {
-          "Nepali": "त्रिभुज ABC मा, मध्यिका AD ले त्रिभुजलाई दुई बराबर क्षेत्रफलमा विभाजन गर्छ भन्ने तथ्य प्रयोग गर्नुहोस् । यदि $\\triangle ABC$ को क्षेत्रफल 40 छ भने $\\triangle ABD$ को क्षेत्रफल कति हुन्छ ?",
-          "English": "In triangle ABC, median AD divides the triangle into two equal areas. If area of $\\triangle ABC$ is 40, what is the area of $\\triangle ABD$?"
+          "Nepali": "एउटा समानान्तर चतुर्भुजको क्षेत्रफल १०० वर्ग से.मि. छ । एउटै आधारमा बनेको त्रिभुज ABE छ ।",
+          "English": "A parallelogram has area 100 sq. cm. Triangle ABE stands on the same base."
         },
         "sub_questions": [
           {
             "labelNepali": "क",
             "labelEnglish": "a",
-            "questionNepali": "",
-            "questionEnglish": "",
-            "marksNepali": "४",
-            "marksEnglish": 4,
-            "explanationNepali": "मध्यिकाले क्षेत्रफल आधा गर्छ: $\\frac{40}{2} = 20$।\nउद्धरण: पाठ १०",
-            "explanationEnglish": "Explanation: Median bisects area: $40/2 = 20$.\nCitation: Lesson 10",
-            "answer": "20"
+            "questionNepali": "क्षेत्रफलको सम्बन्ध लेख्नुहोस् ।",
+            "questionEnglish": "Write the area relationship.",
+            "marksNepali": "१",
+            "marksEnglish": 1,
+            "explanationNepali": "एउटै आधार र उही समानान्तर रेखाहरू बिच बनेको त्रिभुजको क्षेत्रफल समानान्तर चतुर्भुजको क्षेत्रफलको आधा हुन्छ ।\nउद्धरण: पाठ १०",
+            "explanationEnglish": "The area of a triangle on the same base and between the same parallels is half the area of the parallelogram.\nCitation: Lesson 10",
+            "answerNepali": "त्रिभुज = १/२ समानान्तर चतुर्भुज",
+            "answerEnglish": "Triangle = 1/2 Parallelogram"
+          },
+          {
+            "labelNepali": "ख",
+            "labelEnglish": "b",
+            "questionNepali": "त्रिभुज ABE को क्षेत्रफल निकाल्नुहोस् ।",
+            "questionEnglish": "Find area of triangle ABE.",
+            "marksNepali": "३",
+            "marksEnglish": 3,
+            "explanationNepali": "त्रिभुजको क्षेत्रफल = $100 / 2 = 50$ वर्ग से.मि. ।\nउद्धरण: पाठ १०",
+            "explanationEnglish": "Triangle Area = $100 / 2 = 50$ sq. cm.\nCitation: Lesson 10",
+            "answerNepali": "५० वर्ग से.मि.",
+            "answerEnglish": "50 sq. cm"
           }
         ]
       },
@@ -248,21 +476,45 @@
         "question_numberNepali": "१२",
         "question_numberEnglish": 12,
         "context": {
-          "Nepali": "चित्रमा O वृत्तको केन्द्रबिन्दु हो । स्पर्शरेखा AB ले वृत्तलाई बिन्दु P मा छुन्छ । यदि $\\angle OPB$ को मान कति हुन्छ ?",
-          "English": "In figure, O is the center. Tangent AB touches the circle at P. What is the value of $\\angle OPB$?"
+          "Nepali": "चक्रीय चतुर्भुज ABCD मा $\\angle A = 2x$ र $\\angle C = 3x$ छ ।",
+          "English": "In cyclic quadrilateral ABCD, $\\angle A = 2x$ and $\\angle C = 3x$."
         },
         "sub_questions": [
           {
             "labelNepali": "क",
             "labelEnglish": "a",
-            "questionNepali": "",
-            "questionEnglish": "",
-            "marksNepali": "५",
-            "marksEnglish": 5,
-            "explanationNepali": "अर्धव्यास र स्पर्शरेखा स्पर्शबिन्दुमा लम्ब हुन्छन्।\nउद्धरण: पाठ १२",
-            "explanationEnglish": "Explanation: Radius is perpendicular to tangent at point of contact.\nCitation: Lesson 12",
-            "answerNepali": "$९०^\\circ$",
-            "answerEnglish": "$90^\\circ$"
+            "questionNepali": "चक्रीय चतुर्भुजको गुण लेख्नुहोस् ।",
+            "questionEnglish": "Write the property of cyclic quadrilateral.",
+            "marksNepali": "१",
+            "marksEnglish": 1,
+            "explanationNepali": "सम्मुख कोणहरूको योगफल १८० डिग्री हुन्छ (सम्पूरक हुन्छन्) ।\nउद्धरण: पाठ १२",
+            "explanationEnglish": "Opposite angles sum to 180 degrees (supplementary).\nCitation: Lesson 12",
+            "answerNepali": "सम्मुख कोणहरूको योग १८०",
+            "answerEnglish": "Opposite angles sum to 180"
+          },
+          {
+            "labelNepali": "ख",
+            "labelEnglish": "b",
+            "questionNepali": "x को मान पत्ता लगाउनुहोस् ।",
+            "questionEnglish": "Find value of x.",
+            "marksNepali": "२",
+            "marksEnglish": 2,
+            "explanationNepali": "$2x + 3x = 180 \\Rightarrow 5x = 180 \\Rightarrow x = 36$ ।\nउद्धरण: पाठ १२",
+            "explanationEnglish": "$5x = 180 \\Rightarrow x = 36$.\nCitation: Lesson 12",
+            "answerNepali": "३६",
+            "answerEnglish": "36"
+          },
+          {
+            "labelNepali": "ग",
+            "labelEnglish": "c",
+            "questionNepali": "$\\angle A$ को मान कति हुन्छ ?",
+            "questionEnglish": "Find measure of $\\angle A$.",
+            "marksNepali": "१",
+            "marksEnglish": 1,
+            "explanationNepali": "$\\angle A = 2x = 2 \\times 36 = 72^\\circ$ ।\nउद्धरण: पाठ १२",
+            "explanationEnglish": "$\\angle A = 2(36) = 72^\\circ$.\nCitation: Lesson 12",
+            "answerNepali": "$७२^\\circ$",
+            "answerEnglish": "$72^\\circ$"
           }
         ]
       },
@@ -270,21 +522,45 @@
         "question_numberNepali": "१३",
         "question_numberEnglish": 13,
         "context": {
-          "Nepali": "एउटा वृत्तको अर्धव्यास 5 से.मि. छ । केन्द्रबाट 3 से.मि. टाढा रहेको जीवाको लम्बाइ पत्ता लगाउनुहोस् ।",
-          "English": "The radius of a circle is 5 cm. Find the length of a chord which is 3 cm away from the center."
+          "Nepali": "एउटा समबाहु त्रिभुजको क्षेत्रफल $16\\sqrt{3}$ वर्ग से.मि. छ ।",
+          "English": "The area of an equilateral triangle is $16\\sqrt{3}$ sq. cm."
         },
         "sub_questions": [
           {
             "labelNepali": "क",
             "labelEnglish": "a",
-            "questionNepali": "",
-            "questionEnglish": "",
-            "marksNepali": "४",
-            "marksEnglish": 4,
-            "explanationNepali": "आधा जीवा $x = \\sqrt{5^2 - 3^2} = 4$। पूरा जीवा = $2 \\times 4 = 8$।\nउद्धरण: पाठ १२",
-            "explanationEnglish": "Explanation: Half chord = $\\sqrt{25-9} = 4$. Total length = 8.\nCitation: Lesson 12",
+            "questionNepali": "क्षेत्रफल निकाल्ने सूत्र लेख्नुहोस् ।",
+            "questionEnglish": "Write the area formula.",
+            "marksNepali": "१",
+            "marksEnglish": 1,
+            "explanationNepali": "समबाहु त्रिभुजको क्षेत्रफल = $\\frac{\\sqrt{3}}{4} a^2$ ।\nउद्धरण: पाठ १०",
+            "explanationEnglish": "Area formula is $\\frac{\\sqrt{3}}{4} a^2$.\nCitation: Lesson 10",
+            "answerNepali": "$\\frac{\\sqrt{3}}{4} a^2$",
+            "answerEnglish": "$\\frac{\\sqrt{3}}{4} a^2$"
+          },
+          {
+            "labelNepali": "ख",
+            "labelEnglish": "b",
+            "questionNepali": "भुजाको लम्बाइ पत्ता लगाउनुहोस् ।",
+            "questionEnglish": "Find the side length.",
+            "marksNepali": "२",
+            "marksEnglish": 2,
+            "explanationNepali": "$16\\sqrt{3} = \\frac{\\sqrt{3}}{4} a^2 \\Rightarrow a^2 = 64 \\Rightarrow a = 8$ से.मि. ।\nउद्धरण: पाठ १०",
+            "explanationEnglish": "Solving $\\frac{\\sqrt{3}}{4} a^2 = 16\\sqrt{3}$ gives $a^2 = 64$, so $a = 8$ cm.\nCitation: Lesson 10",
             "answerNepali": "८ से.मि.",
             "answerEnglish": "8 cm"
+          },
+          {
+            "labelNepali": "ग",
+            "labelEnglish": "c",
+            "questionNepali": "परिमिति निकाल्नुहोस् ।",
+            "questionEnglish": "Calculate the perimeter.",
+            "marksNepali": "२",
+            "marksEnglish": 2,
+            "explanationNepali": "परिमिति = $3a = 3 \\times 8 = 24$ से.मि. ।\nउद्धरण: पाठ १०",
+            "explanationEnglish": "Perimeter = $3a = 24$ cm.\nCitation: Lesson 10",
+            "answerNepali": "२४ से.मि.",
+            "answerEnglish": "24 cm"
           }
         ]
       },
@@ -292,20 +568,33 @@
         "question_numberNepali": "१४",
         "question_numberEnglish": 14,
         "context": {
-          "Nepali": "तथ्याङ्क 10, 20, 30, 40, 50 को प्रथम चतुर्थांश ($Q_1$) पत्ता लगाउनुहोस् ।",
-          "English": "Find the first quartile ($Q_1$) of the data: 10, 20, 30, 40, 50."
+          "Nepali": "एउटा टावरको उचाइ ३० मि. छ । ३० मि. टाढाबाट हेर्दा:",
+          "English": "A tower is 30m high. Observed from 30m away:"
         },
         "sub_questions": [
           {
             "labelNepali": "क",
             "labelEnglish": "a",
-            "questionNepali": "",
-            "questionEnglish": "",
-            "marksNepali": "४",
-            "marksEnglish": 4,
-            "explanationNepali": "$N=5$। पद स्थान $\\frac{N+1}{4} = 1.5$ औं पद। $1.5$ औं पद भनेको 10 र 20 को बिचको मान (Interpolation) वा सामान्य स्कूल तहमा $2$nd item मान्न सकिन्छ (निकटतम पूर्णांक)। यदि Interpolation गर्ने हो भने 15 हुन्छ, तर SEE तहमा साधारणतया $\\frac{5+1}{4}$ प्रयोग गर्दा दशमलव आए पनि नजिकको पद लिने चलन छ वा प्रश्न स्पष्ट हुन्छ। यहाँ $Q_1$ स्थान 1.5, मान 15. (Optional: school level usually uses discrete precise position). Let's assume discrete formula gives 1.5th item, average of 1st and 2nd = 15. (SEE answer keys usually look for distinct value, let's adjust data for integer result). Data: 10, 20, 30, 40, 50, 60, 70 ($N=7$). Pos = $(7+1)/4 = 2$nd item = 20. Updated Answer: 20 based on $N=7$. (Assuming standard discrete series).\nउद्धरण: पाठ १३",
-            "explanationEnglish": "Explanation: $N=7$. Position of $Q_1$ is $(7+1)/4 = 2$nd item, which is 20.\nCitation: Lesson 13",
-            "answer": "20"
+            "questionNepali": "उन्नतांश कोण कति हुन्छ ? (शब्दमा वर्णन गर्नुहोस्)",
+            "questionEnglish": "What is the angle of elevation? (Describe)",
+            "marksNepali": "२",
+            "marksEnglish": 2,
+            "explanationNepali": "$\\tan \\theta = \\frac{30}{30} = 1$ । $\\tan 45^\\circ = 1$, त्यसैले कोण $45^\\circ$ हुन्छ ।\nउद्धरण: पाठ १५",
+            "explanationEnglish": "$\\tan \\theta = 1$, so the angle is $45^\\circ$.\nCitation: Lesson 15",
+            "answerNepali": "$४५^\\circ$",
+            "answerEnglish": "$45^\\circ$"
+          },
+          {
+            "labelNepali": "ख",
+            "labelEnglish": "b",
+            "questionNepali": "यदि कोण $30^\\circ$ बनाउनु छ भने कति टाढा जानुपर्छ ?",
+            "questionEnglish": "How far to move for $30^\\circ$ angle?",
+            "marksNepali": "२",
+            "marksEnglish": 2,
+            "explanationNepali": "$30^\\circ$ को लागि नयाँ दुरी $d = \\frac{30}{\\tan 30} = 30\\sqrt{3} \\approx 51.96$ । थप दुरी = $51.96 - 30 = 21.96$ मि. टाढा ।\nउद्धरण: पाठ १५",
+            "explanationEnglish": "New distance $d = 30\\sqrt{3} \\approx 51.96$. Must move $21.96$ m further.\nCitation: Lesson 15",
+            "answerNepali": "२१.९६ मि. टाढा",
+            "answerEnglish": "21.96 m further"
           }
         ]
       },
@@ -313,20 +602,45 @@
         "question_numberNepali": "१५",
         "question_numberEnglish": 15,
         "context": {
-          "Nepali": "एउटा वितरक (Distribution) मा सबैभन्दा धेरै बारम्बारता भएको श्रेणीलाई के भनिन्छ ?",
-          "English": "What is the class with the highest frequency in a distribution called?"
+          "Nepali": "तथ्याङ्क: १०, १२, १४, ११, २२, १५, २७, १४, १६, १३, २५",
+          "English": "Data: 10, 12, 14, 11, 22, 15, 27, 14, 16, 13, 25"
         },
         "sub_questions": [
           {
             "labelNepali": "क",
             "labelEnglish": "a",
-            "questionNepali": "",
-            "questionEnglish": "",
-            "marksNepali": "६",
-            "marksEnglish": 6,
-            "explanationNepali": "सबैभन्दा धेरै बारम्बारता भएको श्रेणीलाई रीत श्रेणी भनिन्छ।\nउद्धरण: पाठ १३",
-            "explanationEnglish": "Explanation: The class with maximum frequency is the Modal Class.\nCitation: Lesson 13",
-            "answer": "Modal Class (रीत श्रेणी)"
+            "questionNepali": "मध्यिकाको सूत्र लेख्नुहोस् ।",
+            "questionEnglish": "Write median formula.",
+            "marksNepali": "१",
+            "marksEnglish": 1,
+            "explanationNepali": "व्यक्तिगत श्रेणीको मध्यिका = $\\frac{N+1}{2}$ औं पद ।\nउद्धरण: पाठ १३",
+            "explanationEnglish": "Median position is $(N+1)/2$-th item.\nCitation: Lesson 13",
+            "answerNepali": "$(N+1)/2$ औं पद",
+            "answerEnglish": "$(N+1)/2$ th item"
+          },
+          {
+            "labelNepali": "ख",
+            "labelEnglish": "b",
+            "questionNepali": "प्रथम चतुर्थांश गणना गर्नुहोस् ।",
+            "questionEnglish": "Calculate Q1.",
+            "marksNepali": "२",
+            "marksEnglish": 2,
+            "explanationNepali": "तथ्याङ्क क्रमबद्ध गर्दा, $Q_1 = \\frac{11+1}{4} = 3$rd पद = १२ ।\nउद्धरण: पाठ १३",
+            "explanationEnglish": "Sorted data: 10, 11, 12... $Q_1$ is 3rd item = 12.\nCitation: Lesson 13",
+            "answerNepali": "१२",
+            "answerEnglish": "12"
+          },
+          {
+            "labelNepali": "ग",
+            "labelEnglish": "c",
+            "questionNepali": "चतुर्थांश विचलन निकाल्नुहोस् ।",
+            "questionEnglish": "Calculate Quartile Deviation.",
+            "marksNepali": "३",
+            "marksEnglish": 3,
+            "explanationNepali": "$Q_3 = 9$th पद = २२ । चतुर्थांश विचलन = $\\frac{22 - 12}{2} = 5$ ।\nउद्धरण: पाठ १३",
+            "explanationEnglish": "$Q_3 = 22$. Quartile Deviation = $(22-12)/2 = 5$.\nCitation: Lesson 13",
+            "answerNepali": "५",
+            "answerEnglish": "5"
           }
         ]
       },
@@ -334,20 +648,33 @@
         "question_numberNepali": "१६",
         "question_numberEnglish": 16,
         "context": {
-          "Nepali": "एउटा परिवारमा दुई सन्तान छन् । दुवै छोरा हुने सम्भाव्यता कति हुन्छ ?",
-          "English": "A family has two children. What is the probability that both are boys?"
+          "Nepali": "सिक्का ३ पटक उचाल्दा ।",
+          "English": "Coin tossed 3 times."
         },
         "sub_questions": [
           {
             "labelNepali": "क",
             "labelEnglish": "a",
-            "questionNepali": "",
-            "questionEnglish": "",
-            "marksNepali": "५",
-            "marksEnglish": 5,
-            "explanationNepali": "नमुना क्षेत्र S = {BB, BG, GB, GG}। दुवै छोरा (BB) आउने 1 वटा। सम्भाव्यता $\\frac{1}{4}$।\nउद्धरण: पाठ १४",
-            "explanationEnglish": "Explanation: Sample space {BB, BG, GB, GG}. Probability of BB is $1/4$.\nCitation: Lesson 14",
-            "answer": "$\\frac{1}{4}$"
+            "questionNepali": "नमुना क्षेत्रका परिणामहरू लेख्नुहोस् ।",
+            "questionEnglish": "List the sample space outcomes.",
+            "marksNepali": "२",
+            "marksEnglish": 2,
+            "explanationNepali": "कुल ८ परिणामहरू: {HHH, HHT, HTH, HTT, THH, THT, TTH, TTT} ।\nउद्धरण: पाठ १४",
+            "explanationEnglish": "The 8 outcomes are {HHH, HHT, HTH, HTT, THH, THT, TTH, TTT}.\nCitation: Lesson 14",
+            "answerNepali": "{HHH, HHT, HTH, HTT, THH, THT, TTH, TTT}",
+            "answerEnglish": "{HHH, HHT, HTH, HTT, THH, THT, TTH, TTT}"
+          },
+          {
+            "labelNepali": "ख",
+            "labelEnglish": "b",
+            "questionNepali": "कम्तीमा २ टाउको आउने सम्भाव्यता कति हुन्छ ?",
+            "questionEnglish": "Probability of at least 2 heads.",
+            "marksNepali": "३",
+            "marksEnglish": 3,
+            "explanationNepali": "कम्तीमा २ टाउको हुने ४ वटा घटना छन् ({HHH, HHT, HTH, THH})। सम्भाव्यता = $4/8 = 1/2$ ।\nउद्धरण: पाठ १४",
+            "explanationEnglish": "Favorable outcomes (at least 2 H) are 4. Probability = $4/8 = 1/2$.\nCitation: Lesson 14",
+            "answerNepali": "१/२",
+            "answerEnglish": "1/2"
           }
         ]
       }

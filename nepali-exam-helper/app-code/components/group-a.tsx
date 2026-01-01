@@ -33,16 +33,16 @@ export function GroupA({ questions, answers, onAnswerChange, progress }: GroupAP
     if (!explanation) return null
 
     return (
-      <div className="mt-3 p-3 bg-blue-50 rounded-lg border border-blue-200">
+      <div className="mt-3 bg-amber-50 border-l-4 border-amber-500 p-3 rounded-r-lg">
         <div className="text-sm">
           <div className="flex items-start gap-2 mb-2">
-            <Lightbulb className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
-            <span className="font-medium text-blue-800">
+            <Lightbulb className="h-4 w-4 text-amber-600 mt-0.5 flex-shrink-0" />
+            <span className="font-medium text-amber-800">
               {language === "english" ? "Explanation" : "व्याख्या"}:
             </span>
           </div>
           <div className="ml-6">
-            <MathText text={explanation} className="text-blue-700 whitespace-pre-line leading-relaxed" />
+            <MathText text={explanation} className="text-amber-700 whitespace-pre-line leading-relaxed" />
           </div>
         </div>
       </div>

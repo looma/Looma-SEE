@@ -72,33 +72,31 @@ export function SocialStudiesGroupRenderer({
         if (!hasAnswer && !hasExplanation) return null
 
         return (
-            <div className="mt-3 space-y-2">
-                {hasAnswer && (
-                    <div className="p-3 bg-green-50 rounded-lg border border-green-200">
-                        <div className="text-sm">
+            <div className="mt-3 bg-amber-50 border-l-4 border-amber-500 p-3 rounded-r-lg">
+                <div className="text-sm space-y-3">
+                    {hasAnswer && (
+                        <div>
                             <div className="flex items-start gap-2 mb-2">
-                                <Lightbulb className="h-4 w-4 text-green-600 mt-0.5 flex-shrink-0" />
-                                <span className="font-medium text-green-800">नमूना उत्तर:</span>
+                                <Lightbulb className="h-4 w-4 text-amber-600 mt-0.5 flex-shrink-0" />
+                                <span className="font-medium text-amber-800">नमूना उत्तर:</span>
                             </div>
                             <div className="ml-6">
-                                <p className="text-green-700 whitespace-pre-line leading-relaxed">{question.answerNepali}</p>
+                                <p className="text-amber-700 whitespace-pre-line leading-relaxed">{question.answerNepali}</p>
                             </div>
                         </div>
-                    </div>
-                )}
-                {hasExplanation && (
-                    <div className="p-3 bg-blue-50 rounded-lg border border-blue-200">
-                        <div className="text-sm">
+                    )}
+                    {hasExplanation && (
+                        <div>
                             <div className="flex items-start gap-2 mb-2">
-                                <Lightbulb className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
-                                <span className="font-medium text-blue-800">व्याख्या:</span>
+                                <Lightbulb className="h-4 w-4 text-amber-600 mt-0.5 flex-shrink-0" />
+                                <span className="font-medium text-amber-800">व्याख्या:</span>
                             </div>
                             <div className="ml-6">
-                                <p className="text-blue-700 whitespace-pre-line leading-relaxed">{question.explanationNepali}</p>
+                                <p className="text-amber-700 whitespace-pre-line leading-relaxed">{question.explanationNepali}</p>
                             </div>
                         </div>
-                    </div>
-                )}
+                    )}
+                </div>
             </div>
         )
     }

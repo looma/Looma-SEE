@@ -88,10 +88,10 @@ export function EnglishQuestionRenderer({
     if (!english) return null
 
     return (
-      <div className="mt-3 p-3 bg-blue-50 rounded-lg border border-blue-200">
+      <div className="mt-3 bg-amber-50 border-l-4 border-amber-500 p-3 rounded-r-lg">
         <div className="text-sm">
-          <span className="font-medium text-blue-800">Explanation:</span>
-          <p className="text-blue-700 mt-1 whitespace-pre-line">{english}</p>
+          <span className="font-medium text-amber-800">Explanation:</span>
+          <p className="text-amber-700 mt-1 whitespace-pre-line">{english}</p>
         </div>
       </div>
     )

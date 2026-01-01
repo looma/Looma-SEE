@@ -130,7 +130,7 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
       case "science":
         return "from-emerald-500 to-teal-600"
       case "mathematics":
-        return "from-blue-500 to-indigo-600"
+        return "from-cyan-500 to-blue-600"
       case "english":
         return "from-purple-500 to-violet-600"
       case "nepali":

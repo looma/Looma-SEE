@@ -23,6 +23,7 @@ import { useQuestions } from "@/lib/use-questions"
 import { loadStudentProgress } from "@/lib/storage"
 import { MathText } from "./math-text"
 import { useLanguage } from "@/lib/language-context"
+import { formatAnswerForDisplay } from "@/lib/format-answer"
 import type { GroupAQuestion } from "@/lib/use-questions"
 
 interface GradedFeedback {
@@ -429,12 +430,7 @@ export function ResultsCard({
                         <span className="font-semibold text-slate-800">Your Answer / तपाईंको उत्तर:</span>
                       </p>
                       <p className="mt-1 text-slate-700 whitespace-pre-wrap break-words">
-                        {typeof fb.studentAnswer === "object"
-                          ? Object.entries(fb.studentAnswer as Record<string, string>)
-                            .filter(([key]) => !key.startsWith("selected"))
-                            .map(([key, value]) => `${key} → ${value}`)
-                            .join("\n") || "No answer provided"
-                          : fb.studentAnswer || "No answer provided"}
+                        {formatAnswerForDisplay(fb.studentAnswer) || "No answer provided"}
                       </p>
                     </div>
                     <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
@@ -639,12 +635,7 @@ export function ResultsCard({
                                     >
                                       <p className="font-semibold text-slate-800 mb-1">तपाईंको उत्तर:</p>
                                       <p className="text-slate-700 whitespace-pre-wrap">
-                                        {typeof fb.studentAnswer === "object"
-                                          ? Object.entries(fb.studentAnswer as Record<string, string>)
-                                            .filter(([key]) => !key.startsWith("selected"))
-                                            .map(([key, value]) => `${key} → ${value}`)
-                                            .join("\n") || "कुनै उत्तर प्रदान गरिएको छैन"
-                                          : fb.studentAnswer || "कुनै उत्तर प्रदान गरिएको छैन"}
+                                        {formatAnswerForDisplay(fb.studentAnswer) || "कुनै उत्तर प्रदान गरिएको छैन"}
                                       </p>
                                     </div>
 
@@ -813,12 +804,7 @@ export function ResultsCard({
                               <div className="bg-slate-50 p-4 rounded-lg">
                                 <p className="font-semibold text-slate-700 mb-2">तपाईंको उत्तर:</p>
                                 <p className="text-slate-700 whitespace-pre-wrap">
-                                  {typeof fb.studentAnswer === "object"
-                                    ? Object.entries(fb.studentAnswer as Record<string, string>)
-                                      .filter(([key]) => !key.startsWith("selected"))
-                                      .map(([key, value]) => `${key} → ${value}`)
-                                      .join("\n") || "कुनै उत्तर प्रदान गरिएको छैन"
-                                    : fb.studentAnswer || "कुनै उत्तर प्रदान गरिएको छैन"}
+                                  {formatAnswerForDisplay(fb.studentAnswer) || "कुनै उत्तर प्रदान गरिएको छैन"}
                                 </p>
                               </div>
 
@@ -838,9 +824,7 @@ export function ResultsCard({
                                 <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg">
                                   <p className="font-semibold text-amber-800 mb-1">नमुना उत्तर / Sample Answer:</p>
                                   <p className="text-amber-700 leading-relaxed whitespace-pre-wrap">
-                                    {typeof (fb.sampleAnswer || originalQuestion?.sampleAnswer || originalQuestion?.correctAnswer) === 'object'
-                                      ? JSON.stringify(fb.sampleAnswer || originalQuestion?.sampleAnswer || originalQuestion?.correctAnswer, null, 2)
-                                      : (fb.sampleAnswer || originalQuestion?.sampleAnswer || originalQuestion?.correctAnswer)}
+                                    {formatAnswerForDisplay(fb.sampleAnswer || originalQuestion?.sampleAnswer || originalQuestion?.correctAnswer)}
                                   </p>
                                 </div>
                               )}
@@ -875,9 +859,7 @@ export function ResultsCard({
                                             ? sub.choices.map((c: any) => `${c.id}: ${c.correctAnswer}`).join(", ")
                                             : typeof sub.correctAnswer === 'string'
                                               ? sub.correctAnswer
-                                              : typeof sub.correctAnswer === 'object' && sub.correctAnswer !== null
-                                                ? JSON.stringify(sub.correctAnswer, null, 2)
-                                                : sub.explanation || ""}
+                                              : formatAnswerForDisplay(sub.correctAnswer) || sub.explanation || ""}
                                         </span>
                                       </div>
                                     ))}
@@ -897,11 +879,7 @@ export function ResultsCard({
                                           <div key={sub.id} className="ml-4 mb-1">
                                             <span className="font-medium text-purple-600">({sub.id}) {sub.questionNepali}: </span>
                                             <span className="text-purple-500 whitespace-pre-wrap">
-                                              {typeof sub.correctAnswer === 'string'
-                                                ? sub.correctAnswer
-                                                : sub.correctAnswer
-                                                  ? JSON.stringify(sub.correctAnswer, null, 2)
-                                                  : sub.explanation || ""}
+                                              {formatAnswerForDisplay(sub.correctAnswer) || sub.explanation || ""}
                                             </span>
                                           </div>
                                         ))}
