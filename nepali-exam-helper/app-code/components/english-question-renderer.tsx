@@ -25,10 +25,53 @@ export function EnglishQuestionRenderer({
 }: EnglishQuestionRendererProps) {
   const [showExplanations, setShowExplanations] = useState(false)
 
-  // Helper functions to safely access question properties
-  const getQuestionId = (q: EnglishQuestion) => (q as any).id || `q${(q as any).questionNumber}`
-  const getQuestionTitle = (q: EnglishQuestion) => (q as any).title || 'Question'
-  const getQuestionMarks = (q: EnglishQuestion) => (q as any).marks || 1
+  // Helper function for bilingual text - prioritize selected language, fallback to other
+  const getText = (englishText?: string, nepaliText?: string): string => {
+    if (language === 'nepali') {
+      return nepaliText || englishText || ''
+    }
+    return englishText || nepaliText || ''
+  }
+
+  // UI text translations
+  const uiText = {
+    explanation: language === 'nepali' ? 'व्याख्या:' : 'Explanation:',
+    marks: language === 'nepali' ? 'अंक' : 'marks',
+    mark: language === 'nepali' ? 'अंक' : 'mark',
+    showHelp: language === 'nepali' ? 'सहायता देखाउनुहोस्' : 'Show Help',
+    hideHelp: language === 'nepali' ? 'सहायता लुकाउनुहोस्' : 'Hide Help',
+    true: language === 'nepali' ? 'सत्य' : 'TRUE',
+    false: language === 'nepali' ? 'गलत' : 'FALSE',
+    notGiven: language === 'nepali' ? 'दिइएको छैन' : 'NOT GIVEN',
+    writeAnswer: language === 'nepali' ? 'तपाईंको उत्तर यहाँ लेख्नुहोस्...' : 'Write your answer here...',
+    fillBlank: language === 'nepali' ? 'तपाईंको उत्तर लेख्नुहोस्...' : 'Type your answer...',
+    selectMatch: language === 'nepali' ? 'मिलान छान्नुहोस्' : 'Select match',
+    dragOrder: language === 'nepali' ? 'नम्बर छान्नुहोस्' : 'Select order',
+    // Free writing labels
+    cluesTitle: language === 'nepali' ? 'सहायक संकेतहरू:' : 'Clues to help you:',
+    yourAnswer: language === 'nepali' ? 'तपाईंको उत्तर:' : 'Your Answer:',
+    writeApprox: language === 'nepali' ? 'लगभग' : 'Write approximately',
+    wordsLabel: language === 'nepali' ? 'शब्दहरू' : 'words',
+    writeClearly: language === 'nepali' ? 'स्पष्ट रूपमा लेख्नुहोस् र विचारहरू व्यवस्थित गर्नुहोस्' : 'Write clearly and organize your thoughts',
+    sampleAnswer: language === 'nepali' ? 'नमूना उत्तर:' : 'Sample Answer:',
+    // Grammar labels
+    writeCorrected: language === 'nepali' ? 'सही वाक्य यहाँ लेख्नुहोस्...' : 'Write the corrected sentence here...',
+    // Reading note
+    readingNote: language === 'nepali'
+      ? 'नोट: तलका प्रश्नहरूको उत्तर दिँदा तपाईं माथिको परिच्छेद हेर्न सक्नुहुन्छ। ग्रेडिङ्ले शब्दभन्दा साम्ग्रीको बुझाइमा ध्यान दिन्छ।'
+      : 'Note: You may refer back to the passage above while answering the questions below. The grading focuses on understanding the content rather than exact wording.',
+    chooseMatch: language === 'nepali' ? 'सही मिलान छान्नुहोस्:' : 'Choose the correct match:',
+    matchInstruction: language === 'nepali' ? 'तल दिइएको उपयुक्त विकल्प छानेर प्रत्येक वस्तुलाई मिलाउनुहोस्।' : 'Match each item with the correct option by selecting the appropriate choice below.',
+    // Ordering labels
+    orderInstruction: language === 'nepali' ? 'तलका वस्तुहरूलाई सही क्रममा मिलाउनुहोस् (१, २, ३, आदि)।' : 'Arrange the following items in the correct order by selecting a number (1, 2, 3, etc.) for each item.',
+    // Error messages
+    dataIncomplete: language === 'nepali' ? '⚠️ प्रश्न डाटा अपूर्ण छ। कृपया परीक्षा डाटा जाँच गर्नुहोस्।' : '⚠️ Question data is incomplete. Please check the test data.',
+  }
+
+  // Helper functions to safely access question properties with bilingual support
+  const getQuestionId = (q: EnglishQuestion) => (q as any).id || `q${(q as any).questionNumber || (q as any).questionNumberEnglish}`
+  const getQuestionTitle = (q: EnglishQuestion) => getText((q as any).titleEnglish || (q as any).title, (q as any).titleNepali)
+  const getQuestionMarks = (q: EnglishQuestion) => (q as any).marksEnglish || (q as any).marks || 1
 
   const getQuestionIcon = (type: string) => {
     switch (type) {
@@ -70,28 +113,27 @@ export function EnglishQuestionRenderer({
     return { english, nepali }
   }
 
-  const renderExplanation = (explanation?: string | { explanationEnglish?: string; explanationNepali?: string }) => {
-    if (!explanation || !showExplanations) return null
+  const renderExplanation = (subQ?: any) => {
+    if (!subQ || !showExplanations) return null
 
-    let english = ""
+    let displayText = ""
 
     // Handle both old format (string) and new format (object with explanationEnglish/explanationNepali)
-    // For English tests, we only show English explanations
-    if (typeof explanation === "string") {
-      const parsed = parseExplanation(explanation)
-      english = parsed.english
-    } else if (typeof explanation === "object") {
-      english = explanation.explanationEnglish || ""
+    if (typeof subQ === "string") {
+      const parsed = parseExplanation(subQ)
+      displayText = language === 'nepali' ? (parsed.nepali || parsed.english) : parsed.english
+    } else if (typeof subQ === "object") {
+      displayText = getText(subQ.explanationEnglish, subQ.explanationNepali)
     }
 
     // Don't render if empty
-    if (!english) return null
+    if (!displayText) return null
 
     return (
       <div className="mt-3 bg-amber-50 border-l-4 border-amber-500 p-3 rounded-r-lg">
         <div className="text-sm">
-          <span className="font-medium text-amber-800">Explanation:</span>
-          <p className="text-amber-700 mt-1 whitespace-pre-line">{english}</p>
+          <span className="font-medium text-amber-800">{uiText.explanation}</span>
+          <p className="text-amber-700 mt-1 whitespace-pre-line">{displayText}</p>
         </div>
       </div>
     )
@@ -121,10 +163,10 @@ export function EnglishQuestionRenderer({
                   <div className="flex-1">
                     <div className="flex justify-between items-start mb-3">
                       <p className="font-medium text-slate-800">
-                        ({subQ.id}) {subQ.questionEnglish}
+                        ({getText(subQ.idEnglish || subQ.id, subQ.idNepali)}) {getText(subQ.questionEnglish, subQ.questionNepali)}
                       </p>
                       <Badge variant="secondary" className="ml-2 bg-blue-100 text-blue-800 whitespace-nowrap">
-                        {subQuestionMarks} mark{subQuestionMarks !== 1 ? "s" : ""}
+                        {subQuestionMarks} {subQuestionMarks !== 1 ? uiText.marks : uiText.mark}
                       </Badge>
                     </div>
 
@@ -160,7 +202,7 @@ export function EnglishQuestionRenderer({
                       >
                         <RadioGroupItem value="TRUE" id={`${questionId}_true`} />
                         <Label htmlFor={`${questionId}_true`} className="font-medium text-green-700 cursor-pointer">
-                          TRUE
+                          {uiText.true}
                         </Label>
                       </div>
                       <div
@@ -180,7 +222,7 @@ export function EnglishQuestionRenderer({
                       >
                         <RadioGroupItem value="FALSE" id={`${questionId}_false`} />
                         <Label htmlFor={`${questionId}_false`} className="font-medium text-red-700 cursor-pointer">
-                          FALSE
+                          {uiText.false}
                         </Label>
                       </div>
                     </RadioGroup>
@@ -220,10 +262,10 @@ export function EnglishQuestionRenderer({
                   <div className="flex-1">
                     <div className="flex justify-between items-start mb-3">
                       <p className="font-medium text-slate-800">
-                        ({subQ.id}) {subQ.questionEnglish}
+                        ({getText(subQ.idEnglish || subQ.id, subQ.idNepali)}) {getText(subQ.questionEnglish, subQ.questionNepali)}
                       </p>
                       <Badge variant="secondary" className="ml-2 bg-blue-100 text-blue-800 whitespace-nowrap">
-                        {subQuestionMarks} mark{subQuestionMarks !== 1 ? "s" : ""}
+                        {subQuestionMarks} {subQuestionMarks !== 1 ? uiText.marks : uiText.mark}
                       </Badge>
                     </div>
 
@@ -259,7 +301,7 @@ export function EnglishQuestionRenderer({
                       >
                         <RadioGroupItem value="TRUE" id={`${questionId}_true`} />
                         <Label htmlFor={`${questionId}_true`} className="font-medium text-green-700 cursor-pointer">
-                          TRUE
+                          {uiText.true}
                         </Label>
                       </div>
                       <div
@@ -279,7 +321,7 @@ export function EnglishQuestionRenderer({
                       >
                         <RadioGroupItem value="FALSE" id={`${questionId}_false`} />
                         <Label htmlFor={`${questionId}_false`} className="font-medium text-red-700 cursor-pointer">
-                          FALSE
+                          {uiText.false}
                         </Label>
                       </div>
                       <div
@@ -299,7 +341,7 @@ export function EnglishQuestionRenderer({
                       >
                         <RadioGroupItem value="NOT GIVEN" id={`${questionId}_not_given`} />
                         <Label htmlFor={`${questionId}_not_given`} className="font-medium text-yellow-700 cursor-pointer">
-                          NOT GIVEN
+                          {uiText.notGiven}
                         </Label>
                       </div>
                     </RadioGroup>
@@ -340,10 +382,10 @@ export function EnglishQuestionRenderer({
                   <div className="flex-1">
                     <div className="flex justify-between items-start mb-3">
                       <p className="font-medium text-slate-800">
-                        ({subQ.id}) {subQ.questionEnglish}
+                        ({getText(subQ.idEnglish || subQ.id, subQ.idNepali)}) {getText(subQ.questionEnglish, subQ.questionNepali)}
                       </p>
                       <Badge variant="secondary" className="ml-2 bg-blue-100 text-blue-800 whitespace-nowrap">
-                        {subQuestionMarks} mark{subQuestionMarks !== 1 ? "s" : ""}
+                        {subQuestionMarks} {subQuestionMarks !== 1 ? uiText.marks : uiText.mark}
                       </Badge>
                     </div>
 
@@ -360,7 +402,7 @@ export function EnglishQuestionRenderer({
                           onAnswerChange((question as any).id, subQ.id, e.target.value)
                         }
                       }}
-                      placeholder="Write your answer here..."
+                      placeholder={uiText.writeAnswer}
                       className="min-h-[80px] resize-none"
                       rows={3}
                     />
@@ -401,10 +443,10 @@ export function EnglishQuestionRenderer({
                   <div className="flex-1">
                     <div className="flex justify-between items-start mb-3">
                       <p className="font-medium text-slate-800">
-                        ({subQ.id}) {subQ.questionEnglish}
+                        ({getText(subQ.idEnglish || subQ.id, subQ.idNepali)}) {getText(subQ.questionEnglish, subQ.questionNepali)}
                       </p>
                       <Badge variant="secondary" className="ml-2 bg-blue-100 text-blue-800 whitespace-nowrap">
-                        {subQuestionMarks} mark{subQuestionMarks !== 1 ? "s" : ""}
+                        {subQuestionMarks} {subQuestionMarks !== 1 ? uiText.marks : uiText.mark}
                       </Badge>
                     </div>
 
@@ -427,7 +469,7 @@ export function EnglishQuestionRenderer({
                             onAnswerChange((question as any).id, subQ.id, e.target.value)
                           }
                         }}
-                        placeholder="Type your answer here..."
+                        placeholder={uiText.fillBlank}
                         className="w-full px-3 py-2 border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       />
                     </div>
@@ -450,7 +492,7 @@ export function EnglishQuestionRenderer({
     if (!section.columns || !section.columns.A || !section.columns.B) {
       return (
         <div className="p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
-          <p className="text-yellow-800">⚠️ Matching question data is incomplete. Please check the test data.</p>
+          <p className="text-yellow-800">{uiText.dataIncomplete}</p>
         </div>
       )
     }
@@ -459,16 +501,16 @@ export function EnglishQuestionRenderer({
     return (
       <div className="space-y-6">
         <div className="flex justify-between items-start mb-4">
-          <p className="text-sm text-slate-600">{section.title}</p>
+          <p className="text-sm text-slate-600">{getText(section.titleEnglish || section.title, section.titleNepali)}</p>
           <Badge variant="secondary" className="ml-2 bg-green-100 text-green-800 whitespace-nowrap">
-            {section.marks} mark{section.marks !== 1 ? "s" : ""}
+            {section.marksEnglish || section.marks} {(section.marksEnglish || section.marks) !== 1 ? uiText.marks : uiText.mark}
           </Badge>
         </div>
 
         {/* Instructions */}
         <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
           <p className="text-sm text-blue-800 font-medium">
-            Match each item with the correct option by selecting the appropriate choice below.
+            {uiText.matchInstruction}
           </p>
         </div>
 
@@ -484,9 +526,9 @@ export function EnglishQuestionRenderer({
                     </div>
                   </div>
                   <div className="flex-1">
-                    <p className="font-medium text-slate-800 mb-3">{item.text}</p>
+                    <p className="font-medium text-slate-800 mb-3">{getText(item.textEnglish || item.text, item.textNepali)}</p>
                     <div className="flex items-center gap-2 mb-3">
-                      <span className="text-sm text-slate-600 font-medium">Choose the correct match:</span>
+                      <span className="text-sm text-slate-600 font-medium">{uiText.chooseMatch}</span>
                     </div>
                     <RadioGroup
                       value={currentAnswers[item.id] || ""}
@@ -511,7 +553,7 @@ export function EnglishQuestionRenderer({
                           <RadioGroupItem value={bItem.id} id={`${item.id}-${bItem.id}`} />
                           <Label htmlFor={`${item.id}-${bItem.id}`} className="cursor-pointer flex-1">
                             <span className="font-medium text-blue-700 mr-2">({bItem.id})</span>
-                            <span className="text-slate-700">{bItem.text}</span>
+                            <span className="text-slate-700">{getText(bItem.textEnglish || bItem.text, bItem.textNepali)}</span>
                           </Label>
                         </div>
                       ))}
@@ -536,7 +578,7 @@ export function EnglishQuestionRenderer({
     if (items.length === 0) {
       return (
         <div className="p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
-          <p className="text-yellow-800">⚠️ Ordering question data is incomplete. Please check the test data.</p>
+          <p className="text-yellow-800">{uiText.dataIncomplete}</p>
         </div>
       )
     }
@@ -544,16 +586,16 @@ export function EnglishQuestionRenderer({
     return (
       <div className="space-y-6">
         <div className="flex justify-between items-start mb-4">
-          <p className="text-sm text-slate-600">{section.title}</p>
+          <p className="text-sm text-slate-600">{getText(section.titleEnglish || section.title, section.titleNepali)}</p>
           <Badge variant="secondary" className="ml-2 bg-orange-100 text-orange-800 whitespace-nowrap">
-            {section.marks} mark{section.marks !== 1 ? "s" : ""}
+            {section.marksEnglish || section.marks} {(section.marksEnglish || section.marks) !== 1 ? uiText.marks : uiText.mark}
           </Badge>
         </div>
 
         {/* Instructions */}
         <div className="bg-orange-50 border border-orange-200 rounded-lg p-4">
           <p className="text-sm text-orange-800 font-medium">
-            Arrange the following items in the correct order by selecting a number (1, 2, 3, etc.) for each item.
+            {uiText.orderInstruction}
           </p>
         </div>
 
@@ -581,7 +623,7 @@ export function EnglishQuestionRenderer({
                     </select>
                   </div>
                   <div className="flex-1">
-                    <p className="text-slate-700">{item.text || item.sentence}</p>
+                    <p className="text-slate-700">{getText(item.textEnglish || item.text || item.sentence, item.textNepali)}</p>
                   </div>
                 </div>
               </CardContent>
@@ -601,21 +643,30 @@ export function EnglishQuestionRenderer({
         {(question as any).passage && (
           <Card className="bg-slate-50 border-slate-200">
             <CardContent className="p-6">
-              {(question as any).passage.title && (
-                <h3 className="text-xl font-bold text-slate-800 mb-2">{(question as any).passage.title}</h3>
+              {((question as any).passage.titleEnglish || (question as any).passage.title) && (
+                <h3 className="text-xl font-bold text-slate-800 mb-2">
+                  {getText((question as any).passage.titleEnglish || (question as any).passage.title, (question as any).passage.titleNepali)}
+                </h3>
               )}
-              {(question as any).passage.author && <p className="text-sm text-slate-600 mb-4">by {(question as any).passage.author}</p>}
+              {((question as any).passage.authorEnglish || (question as any).passage.author) && (
+                <p className="text-sm text-slate-600 mb-4">
+                  {language === 'nepali' ? 'लेखक:' : 'by'} {getText((question as any).passage.authorEnglish || (question as any).passage.author, (question as any).passage.authorNepali)}
+                </p>
+              )}
               <div className="prose prose-slate max-w-none">
-                <p className="whitespace-pre-line leading-relaxed">{(question as any).passage.content}</p>
+                <p className="whitespace-pre-line leading-relaxed">
+                  {getText((question as any).passage.contentEnglish || (question as any).passage.content, (question as any).passage.contentNepali)}
+                </p>
               </div>
             </CardContent>
           </Card>
         )}
 
+
         {/* Instruction about looking back */}
         <div className="bg-blue-50 border border-blue-200 rounded-lg p-3">
           <p className="text-sm text-blue-800">
-            <strong>Note:</strong> You may refer back to the passage above while answering the questions below. The grading focuses on understanding the content rather than exact wording.
+            {uiText.readingNote}
           </p>
         </div>
 
@@ -626,7 +677,7 @@ export function EnglishQuestionRenderer({
         {(question as any).subSections?.map((section: any, index: number) => (
           <div key={section.id} className="space-y-4">
             <h4 className="text-lg font-semibold text-slate-800">
-              {section.id}. {section.title}
+              {getText(section.idEnglish || section.id, section.idNepali)}. {getText(section.titleEnglish || section.title, section.titleNepali)}
             </h4>
             {section.type === "true_false" &&
               section.subQuestions &&
@@ -660,7 +711,7 @@ export function EnglishQuestionRenderer({
         {(question as any).clues && (
           <Card className="bg-blue-50 border-blue-200">
             <CardContent className="p-4">
-              <h4 className="font-semibold text-blue-800 mb-2">Clues to help you:</h4>
+              <h4 className="font-semibold text-blue-800 mb-2">{uiText.cluesTitle}</h4>
               <div className="flex flex-wrap gap-2">
                 {(question as any).clues.map((clue: any, index: number) => (
                   <Badge key={index} variant="secondary" className="bg-blue-100 text-blue-800">
@@ -674,23 +725,23 @@ export function EnglishQuestionRenderer({
 
         <div>
           <Label htmlFor={`writing-${(question as any).id}`} className="text-base font-medium text-slate-800">
-            Your Answer:
+            {uiText.yourAnswer}
           </Label>
           {(question as any).wordCount && (
-            <p className="text-sm text-slate-600 mb-2">Write approximately {(question as any).wordCount} words.</p>
+            <p className="text-sm text-slate-600 mb-2">{uiText.writeApprox} {(question as any).wordCount} {uiText.wordsLabel}.</p>
           )}
           <Textarea
             id={`writing-${(question as any).id}`}
             value={currentAnswer}
             onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => onAnswerChange((question as any).id, "content", e.target.value)}
-            placeholder="Write your answer here..."
+            placeholder={uiText.writeAnswer}
             className="min-h-[200px] resize-none"
             rows={10}
           />
           <div className="flex justify-between items-center mt-2 text-xs text-slate-500">
-            <span>Write clearly and organize your thoughts</span>
+            <span>{uiText.writeClearly}</span>
             <span className={currentAnswer.trim().split(/\s+/).filter(Boolean).length > 20 ? "text-green-600" : "text-slate-400"}>
-              {currentAnswer.trim() ? currentAnswer.trim().split(/\s+/).filter(Boolean).length : 0} words
+              {currentAnswer.trim() ? currentAnswer.trim().split(/\s+/).filter(Boolean).length : 0} {uiText.wordsLabel}
             </span>
           </div>
         </div>
@@ -698,7 +749,7 @@ export function EnglishQuestionRenderer({
         {(question as any).sampleAnswer && showExplanations && (
           <Card className="bg-green-50 border-green-200">
             <CardContent className="p-4">
-              <h4 className="font-semibold text-green-800 mb-2">Sample Answer:</h4>
+              <h4 className="font-semibold text-green-800 mb-2">{uiText.sampleAnswer}</h4>
               <div className="text-sm whitespace-pre-line text-green-700">
                 {typeof (question as any).sampleAnswer === "string" ? (question as any).sampleAnswer : (question as any).sampleAnswer.content}
               </div>
@@ -732,16 +783,16 @@ export function EnglishQuestionRenderer({
                   <div className="flex-1">
                     <div className="flex justify-between items-start mb-3">
                       <p className="font-medium text-slate-800">
-                        ({subQ.id}) {subQ.questionEnglish}
+                        ({getText(subQ.idEnglish || subQ.id, subQ.idNepali)}) {getText(subQ.questionEnglish, subQ.questionNepali)}
                       </p>
                       <Badge variant="secondary" className="ml-2 bg-blue-100 text-blue-800 whitespace-nowrap">
-                        {subQuestionMarks} mark{subQuestionMarks !== 1 ? "s" : ""}
+                        {subQuestionMarks} {subQuestionMarks !== 1 ? uiText.marks : uiText.mark}
                       </Badge>
                     </div>
                     <Textarea
                       value={currentAnswer}
                       onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => onAnswerChange((question as any).id, subQ.id, e.target.value)}
-                      placeholder="Write the corrected sentence here..."
+                      placeholder={uiText.writeCorrected}
                       className="min-h-[60px] resize-none"
                       rows={2}
                     />
@@ -789,7 +840,7 @@ export function EnglishQuestionRenderer({
                       rows={1}
                     />
                     <Badge variant="secondary" className="ml-2 bg-purple-100 text-purple-800 whitespace-nowrap">
-                      {gapMarks} mark{gapMarks !== 1 ? "s" : ""}
+                      {gapMarks} {gapMarks !== 1 ? uiText.marks : uiText.mark}
                     </Badge>
                   </div>
 
@@ -810,8 +861,10 @@ export function EnglishQuestionRenderer({
           <div className="flex items-center gap-3">
             {getQuestionIcon(question.type)}
             <div>
-              <CardTitle className="text-lg sm:text-xl font-bold">Question {(question as any).questionNumber}</CardTitle>
-              <p className="text-white/90 text-sm sm:text-base">{(question as any).title}</p>
+              <CardTitle className="text-lg sm:text-xl font-bold">
+                {language === 'nepali' ? 'प्रश्न' : 'Question'} {(question as any).questionNumberEnglish || (question as any).questionNumber}
+              </CardTitle>
+              <p className="text-white/90 text-sm sm:text-base">{getQuestionTitle(question)}</p>
             </div>
           </div>
           <div className="flex items-center gap-2">
@@ -822,10 +875,10 @@ export function EnglishQuestionRenderer({
               className="bg-white/20 text-white border-white/30 hover:bg-white/30"
             >
               {showExplanations ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
-              <span className="ml-1 hidden sm:inline">{showExplanations ? "Hide" : "Show"} Help</span>
+              <span className="ml-1 hidden sm:inline">{showExplanations ? uiText.hideHelp : uiText.showHelp}</span>
             </Button>
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30 whitespace-nowrap">
-              {(question as any).marks} marks
+              {getQuestionMarks(question)} {uiText.marks}
             </Badge>
           </div>
         </div>

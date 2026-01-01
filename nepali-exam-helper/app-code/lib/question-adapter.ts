@@ -102,16 +102,26 @@ export function adaptDatabaseQuestions(dbQuestions: Record<string, any>) {
   if (dbQuestions.socialStudiesGroups && Array.isArray(dbQuestions.socialStudiesGroups)) {
     adapted.socialStudiesGroups = dbQuestions.socialStudiesGroups.map((group: any) => ({
       groupName: group.groupName || '',
+      groupNameEnglish: group.groupNameEnglish || '',
       groupInstruction: group.groupInstruction || '',
+      groupInstructionEnglish: group.groupInstructionEnglish || '',
       marksSchema: group.marksSchema || '',
+      marksSchemaEnglish: group.marksSchemaEnglish || '',
       questions: (group.questions || []).map((q: any): SocialStudiesQuestion => ({
-        id: q.questionNumber?.toString() || q._id || Math.random().toString(),
-        questionNumber: q.questionNumber || '',
+        id: q.questionNumber?.toString() || q.questionNumberEnglish?.toString() || q._id || Math.random().toString(),
+        questionNumber: q.questionNumber || q.questionNumberNepali || '',
+        questionNumberNepali: q.questionNumberNepali || q.questionNumber || '',
+        questionNumberEnglish: q.questionNumberEnglish || '',
         type: q.type,
-        marks: q.marks,
+        marks: q.marks || q.marksNepali || 0,
+        marksNepali: q.marksNepali || q.marks || 0,
+        marksEnglish: q.marksEnglish || q.marks || 0,
         questionNepali: q.questionNepali || '',
-        answerNepali: q.answerNepali,
-        explanationNepali: q.explanationNepali,
+        questionEnglish: q.questionEnglish || '',
+        answerNepali: q.answerNepali || '',
+        answerEnglish: q.answerEnglish || '',
+        explanationNepali: q.explanationNepali || '',
+        explanationEnglish: q.explanationEnglish || '',
         alternatives: q.alternatives,
       }))
     }))
@@ -121,12 +131,21 @@ export function adaptDatabaseQuestions(dbQuestions: Record<string, any>) {
   // Handle English questions if they exist
   if (dbQuestions.englishQuestions) {
     adapted.englishQuestions = dbQuestions.englishQuestions.map((q: any) => ({
-      id: q.questionNumber?.toString() || q._id || Math.random().toString(),
-      questionNumber:
-        typeof q.questionNumber === "number" ? q.questionNumber : Number.parseInt(q.questionNumber || "0"),
+      // Pass through the entire question object to preserve all bilingual fields
+      ...q,
+      // Ensure standard fields are set
+      id: q.questionNumber?.toString() || q.questionNumberEnglish?.toString() || q._id || Math.random().toString(),
+      questionNumber: typeof q.questionNumber === "number" ? q.questionNumber :
+        (q.questionNumberEnglish || Number.parseInt(q.questionNumber || "0")),
+      questionNumberNepali: q.questionNumberNepali || q.questionNumber,
+      questionNumberEnglish: q.questionNumberEnglish || q.questionNumber,
       type: q.type,
-      title: q.title || "",
-      marks: q.marks,
+      title: q.title || q.titleEnglish || "",
+      titleNepali: q.titleNepali || q.title || "",
+      titleEnglish: q.titleEnglish || q.title || "",
+      marks: q.marks || q.marksEnglish || 0,
+      marksNepali: q.marksNepali || q.marks,
+      marksEnglish: q.marksEnglish || q.marks,
       passage: q.passage,
       subQuestions: q.subQuestions,
       subSections: q.subSections,
@@ -134,8 +153,9 @@ export function adaptDatabaseQuestions(dbQuestions: Record<string, any>) {
       clues: q.clues,
       sampleAnswer: q.sampleAnswer,
       gaps: q.gaps,
-      explanation: q.explanation,
+      explanation: q.explanation || q.explanationEnglish,
       explanationNepali: q.explanationNepali,
+      explanationEnglish: q.explanationEnglish || q.explanation,
     }))
   }
 

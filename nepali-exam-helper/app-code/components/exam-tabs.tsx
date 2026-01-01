@@ -2038,6 +2038,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
               question={question}
               answers={answers}
               onAnswerChange={handleAnswerChange}
+              language={language}
             />
           ))}
         </div>

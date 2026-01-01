@@ -80,7 +80,8 @@ export function useLanguage() {
 
 /**
  * Determine if language switching should be enabled based on test ID
- * Only Math and Science tests are language-neutral and support switching
+ * Math, Science, English, and Social Studies tests support bilingual switching
+ * Only Nepali tests remain restricted (content is Nepali-only)
  */
 export function getLanguageSwitchEnabled(testId: string | null): boolean {
     if (!testId) return true // Enable for non-test UI (login, test selection)
@@ -88,12 +89,11 @@ export function getLanguageSwitchEnabled(testId: string | null): boolean {
     // Parse test ID format: see_2081_<subject>_practice_N
     if (testId.includes("_math_")) return true
     if (testId.includes("_science_")) return true
+    if (testId.includes("_english_")) return true  // Now bilingual
+    if (testId.includes("_social_")) return true   // Now bilingual
 
-    // Disable for language-specific tests
-    // English, Nepali, and Social Studies tests are in their respective languages
-    if (testId.includes("_english_")) return false
+    // Disable for Nepali tests (content is Nepali-only, bilingual not yet implemented)
     if (testId.includes("_nepali_")) return false
-    if (testId.includes("_social_")) return false
 
     // Default: enable (for unknown test types, allow switching)
     return true
@@ -106,22 +106,14 @@ export function getLanguageSwitchEnabled(testId: string | null): boolean {
 export function getDisabledReason(testId: string | null, language: AppLanguage): string | null {
     if (!testId) return null
 
-    if (testId.includes("_english_")) {
-        return language === "english"
-            ? "This test is only available in English (as it appears on the actual exam)"
-            : "यो परीक्षा अंग्रेजीमा मात्र उपलब्ध छ (वास्तविक परीक्षामा जस्तो देखिन्छ)"
-    }
+    // Only Nepali tests have language switching disabled (bilingual not yet implemented)
     if (testId.includes("_nepali_")) {
         return language === "english"
             ? "This test is only available in Nepali (as it appears on the actual exam)"
             : "यो परीक्षा नेपालीमा मात्र उपलब्ध छ (वास्तविक परीक्षामा जस्तो देखिन्छ)"
     }
-    if (testId.includes("_social_")) {
-        return language === "english"
-            ? "This test is only available in Nepali (as it appears on the actual exam)"
-            : "यो परीक्षा नेपालीमा मात्र उपलब्ध छ (वास्तविक परीक्षामा जस्तो देखिन्छ)"
-    }
 
+    // English and Social Studies now support bilingual content
     return null
 }
 

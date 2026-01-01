@@ -1,15 +1,14 @@
 [
   {
     "_id": "see_2081_math_practice_6_generated_verified",
-    "titleNepali": "SEE २०८१ अनिवार्य गणित अभ्यास परीक्षा ६",
-    "titleEnglish": "SEE 2081 Math Practice Test 6",
+    "titleNepali": "SEE २०८१ अनिवार्य गणित अभ्यास परीक्षा ६ (कठिन)",
+    "titleEnglish": "SEE 2081 Math Practice Test 6 (Harder)",
     "subjectNepali": "अनिवार्य गणित",
     "subjectEnglish": "Compulsory Mathematics",
     "totalMarksNepali": "७५",
     "totalMarksEnglish": 75,
     "durationNepali": "१८०",
-    "durationEnglish": 180,
-    "questions": []
+    "durationEnglish": 180
   },
   {
     "testId": "see_2081_math_practice_6_generated_verified",
@@ -144,7 +143,7 @@
         "question_numberNepali": "४",
         "question_numberEnglish": 4,
         "context": {
-          "Nepali": "एउटा पसलेले ५०० अमेरिकी डलर साट्दा रु. ६६,००० प्राप्त गर्यो । (विनिमय दर: १ डलर = रु. १३२)",
+          "Nepali": "एउटा पसलेले $500 अमेरिकी डलर साट्दा रु. 66,000 प्राप्त गर्यो । (विनिमय दर: $1 = रु. 132)",
           "English": "A shopkeeper exchanged $500 US Dollars and got Rs. 66,000. (Exchange rate: $1 = Rs. 132)"
         },
         "sub_questions": [

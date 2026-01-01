@@ -1,20 +1,16 @@
 [
   {
     "_id": "see_2081_english_practice_2_generated_verified",
-    "title": "SEE 2081 English Practice Test 2",
     "titleNepali": "SEE २०८१ अंग्रेजी अभ्यास परीक्षा २",
-    "subject": "english",
-    "year": 2081,
-    "totalMarks": 75,
-    "duration": 180,
-    "instructionsEnglish": "Candidates are required to answer the questions in their own words as far as practicable. Figures in the margin indicate the full marks. Attempt all the questions.",
-    "isActive": true,
-    "createdAt": {
-      "$date": "2025-09-07T15:00:00.000Z"
-    },
-    "updatedAt": {
-      "$date": "2025-09-07T15:00:00.000Z"
-    }
+    "titleEnglish": "SEE 2081 English Practice Test 2",
+    "subjectNepali": "अंग्रेजी",
+    "subjectEnglish": "english",
+    "totalMarksNepali": "७५",
+    "totalMarksEnglish": 75,
+    "durationNepali": "१८०",
+    "durationEnglish": 180,
+    "instructionsNepali": "उम्मेदवारहरूलाई सकेसम्म आफ्नै शब्दमा उत्तर दिन आग्रह गरिन्छ। किनारामा रहेका अङ्कहरूले पूर्ण अङ्कलाई जनाउँछन्। सबै प्रश्नहरूको उत्तर दिनुहोस्।",
+    "instructionsEnglish": "Candidates are required to answer the questions in their own words as far as practicable. Figures in the margin indicate the full marks. Attempt all the questions."
   },
   {
     "_id": {
@@ -23,318 +19,449 @@
     "testId": "see_2081_english_practice_2_generated_verified",
     "questions": [
       {
-        "questionNumber": 1,
+        "questionNumberNepali": "१",
+        "questionNumberEnglish": 1,
         "type": "reading_comprehension",
-        "title": "Read the poem and do the tasks.",
-        "marks": 5,
+        "marksNepali": "५",
+        "marksEnglish": 5,
         "passage": {
-          "title": "Leisure",
-          "author": "William Henry Davies",
-          "content": "What is this life if, full of care,\nWe have no time to stand and stare.\nNo time to stand beneath the boughs\nAnd stare as long as sheep or cows.\nNo time to see, when woods we pass,\nWhere squirrels hide their nuts in grass.\nNo time to see, in broad daylight,\nStreams full of stars, like skies at night.\nNo time to turn at Beauty’s glance,\nAnd watch her feet, how they can dance.\nNo time to wait till her mouth can\nEnrich that smile her eyes began.\nA poor life this if, full of care,\nWe have no time to stand and stare."
+          "contentNepali": "यो जीवन के हो यदि, चिन्ताले भरिएको छ,\nहामीसँग उभिएर हेर्ने समय छैन।\nहाँगाहरूको तल उभिने समय छैन\nर भेडा वा गाईहरू जति लामो समय एकटक हेर्ने।\nहामी जंगल हुँदै जाँदा, देख्ने समय छैन,\nजहाँ लोखर्केहरूले घाँसमा आफ्ना बदाम लुकाउँछन्।\nदिउँसै देख्ने समय छैन,\nरातिको आकाश जस्तै, ताराहरूले भरिएका खोलाहरू।\nसुन्दरताको झलकमा फर्कने समय छैन,\nर उनको खुट्टाहरू हेर्ने, तिनीहरू कसरी नाच्छन्।\nउनको मुखले, उनको आँखाहरूले सुरु गरेको मुस्कानलाई\nसमृद्ध बनाउनुन्जेल पर्खने समय छैन।\nयो एक दयनीय जीवन हो यदि, चिन्ताले भरिएको छ,\nहामीसँग उभिएर हेर्ने समय छैन।",
+          "contentEnglish": "What is this life if, full of care,\nWe have no time to stand and stare.\nNo time to stand beneath the boughs\nAnd stare as long as sheep or cows.\nNo time to see, when woods we pass,\nWhere squirrels hide their nuts in grass.\nNo time to see, in broad daylight,\nStreams full of stars, like skies at night.\nNo time to turn at Beauty’s glance,\nAnd watch her feet, how they can dance.\nNo time to wait till her mouth can\nEnrich that smile her eyes began.\nA poor life this if, full of care,\nWe have no time to stand and stare.",
+          "titleNepali": "फुर्सद",
+          "titleEnglish": "Leisure",
+          "authorNepali": "विलियम हेनरी डेभिस",
+          "authorEnglish": "William Henry Davies"
         },
         "subSections": [
           {
-            "id": "A",
+            "idNepali": "क",
+            "idEnglish": "A",
             "type": "true_false",
-            "title": "Write ‘TRUE’ for true and ‘FALSE’ for the false statements.",
             "subQuestions": [
               {
-                "id": "i",
+                "idNepali": "i",
+                "idEnglish": "i",
+                "questionNepali": "कवि विश्वास गर्छन् कि चिन्ताले भरिएको र फुर्सद नभएको जीवन राम्रो जीवन हो।",
                 "questionEnglish": "The poet believes a life full of worries and without leisure is a good life.",
-                "correctAnswer": "FALSE",
-                "explanationNepali": "कविताको अन्तिम दुई पङ्क्तिले भन्छ, \"A poor life this if, full of care, / We have no time to stand and stare,\" जसको अर्थ हो कि फुर्सद बिनाको चिन्ताले भरिएको जीवन खराब (poor) जीवन हो।",
+                "correctAnswerNepali": "गलत",
+                "correctAnswerEnglish": "FALSE",
+                "explanationNepali": "कविताको अन्तिम दुई पङ्क्तिले भन्छ, \"A poor life this if, full of care, / We have no time to stand and stare,\" जसको अर्थ हो कि फुर्सद बिनाको चिन्ताले भरिएको जीवन खराब जीवन हो।\nउद्धरण: पाठ ४",
                 "explanationEnglish": "The last two lines of the poem state, \"A poor life this if, full of care, / We have no time to stand and stare,\" which means a life full of worries without leisure is a poor life. \nCitation: Lesson 4."
               },
               {
-                "id": "ii",
+                "idNepali": "ii",
+                "idEnglish": "ii",
+                "questionNepali": "कविताले हामीलाई भेडा र गाईजस्तै फुर्सदिलो हुनुपर्छ भनेर सुझाव दिन्छ।",
                 "questionEnglish": "The poem suggests we should be as leisurely as sheep and cows.",
-                "correctAnswer": "TRUE",
-                "explanationNepali": "कवितामा भनिएको छ, \"No time to stand beneath the boughs / And stare as long as sheep or cows,\" जसले हामीलाई भेडा र गाईवस्तु जस्तै फुर्सदमा प्रकृतिलाई हेर्न समय निकाल्न सुझाव दिन्छ।",
+                "correctAnswerNepali": "सही",
+                "correctAnswerEnglish": "TRUE",
+                "explanationNepali": "कवितामा भनिएको छ, \"No time to stand beneath the boughs / And stare as long as sheep or cows,\" जसले हामीलाई भेडा र गाईवस्तु जस्तै फुर्सदमा प्रकृतिलाई हेर्न समय निकाल्न सुझाव दिन्छ।\nउद्धरण: पाठ ४",
                 "explanationEnglish": "The poem says, \"No time to stand beneath the boughs / And stare as long as sheep or cows,\" suggesting we should take time to observe nature leisurely, like those animals. \nCitation: Lesson 4."
               },
               {
-                "id": "iii",
+                "idNepali": "iii",
+                "idEnglish": "iii",
+                "questionNepali": "कवितामा उल्लेख छ कि लोखर्केले आफ्नो खाना रूखहरूमा भण्डार गर्छन्।",
                 "questionEnglish": "The poem mentions that squirrels store their food in trees.",
-                "correctAnswer": "FALSE",
-                "explanationNepali": "कविताले \"Where squirrels hide their nuts in grass\" भन्छ, जसको अर्थ हो कि लोखर्केहरूले आफ्नो खाना घाँसमा लुकाउँछन्, रूखमा होइन।",
+                "correctAnswerNepali": "गलत",
+                "correctAnswerEnglish": "FALSE",
+                "explanationNepali": "कविताले \"Where squirrels hide their nuts in grass\" भन्छ, जसको अर्थ हो कि लोखर्केहरूले आफ्नो खाना घाँसमा लुकाउँछन्, रूखमा होइन।\nउद्धरण: पाठ ४",
                 "explanationEnglish": "The poem states, \"Where squirrels hide their nuts in grass,\" meaning squirrels hide their food in the grass, not in trees. \nCitation: Lesson 4."
               },
               {
-                "id": "iv",
+                "idNepali": "iv",
+                "idEnglish": "iv",
+                "questionNepali": "खोलामा उल्लेख गरिएका 'ताराहरू' वास्तविक आकाशीय पिण्डहरू हुन्।",
                 "questionEnglish": "The 'stars' mentioned in the streams are actual celestial bodies.",
-                "correctAnswer": "FALSE",
-                "explanationNepali": "कवितामा \"Streams full of stars, like skies at night\" एक उपमा (simile) हो। यसले खोलामा सूर्यको प्रकाश चम्किरहेको दृश्यलाई रातको आकाशको तारासँग तुलना गर्दछ, वास्तविक ताराहरू होइन।",
+                "correctAnswerNepali": "गलत",
+                "correctAnswerEnglish": "FALSE",
+                "explanationNepali": "कवितामा \"Streams full of stars, like skies at night\" एक उपमा हो। यसले खोलामा सूर्यको प्रकाश चम्किरहेको दृश्यलाई रातको आकाशको तारासँग तुलना गर्दछ, वास्तविक ताराहरू होइन।\nउद्धरण: पाठ ४",
                 "explanationEnglish": "The phrase \"Streams full of stars, like skies at night\" is a simile. It compares the reflection of sunlight on the water's surface to stars in the night sky, not actual stars. \nCitation: Lesson 4."
               },
               {
-                "id": "v",
+                "idNepali": "v",
+                "idEnglish": "v",
+                "questionNepali": "कविले सुन्दरतालाई नाच्ने स्त्रीको रूपमा मानवीकरण गरेका छन्।",
                 "questionEnglish": "The poet personifies Beauty as a dancing woman.",
-                "correctAnswer": "TRUE",
-                "explanationNepali": "कविताले \"No time to turn at Beauty’s glance, / And watch her feet, how they can dance\" भन्छ, जहाँ 'Beauty' लाई नाच्ने महिलाको रूपमा प्रस्तुत गरिएको छ, जुन मानवीकरण (personification) हो।",
+                "correctAnswerNepali": "सही",
+                "correctAnswerEnglish": "TRUE",
+                "explanationNepali": "कविताले \"No time to turn at Beauty’s glance, / And watch her feet, how they can dance\" भन्छ, जहाँ 'Beauty' लाई नाच्ने महिलाको रूपमा प्रस्तुत गरिएको छ, जुन मानवीकरण हो।\nउद्धरण: पाठ ४",
                 "explanationEnglish": "The poem says, \"No time to turn at Beauty’s glance, / And watch her feet, how they can dance,\" where 'Beauty' is described as a dancing woman, which is a form of personification. \nCitation: Lesson 4."
               }
-            ]
+            ],
+            "titleNepali": "सही कथनका लागि 'TRUE' र गलत कथनका लागि 'FALSE' लेख्नुहोस्।",
+            "titleEnglish": "Write ‘TRUE’ for true and ‘FALSE’ for the false statements."
           }
-        ]
+        ],
+        "titleNepali": "कविता पढ्नुहोस् र कार्यहरू गर्नुहोस्।",
+        "titleEnglish": "Read the poem and do the tasks."
       },
       {
-        "questionNumber": 2,
+        "questionNumberNepali": "२",
+        "questionNumberEnglish": 2,
         "type": "reading_comprehension",
-        "title": "Read the text and do the tasks.",
-        "marks": 10,
+        "marksNepali": "१०",
+        "marksEnglish": 10,
         "passage": {
-          "title": "Walt Disney: An Example of Struggle and Success",
-          "content": "Walt Disney is known as an extraordinarily successful and creative person whose visions as an animator and filmmaker changed the entertainment world. Yet, his road to success was paved by an unhappy childhood and countless business failures.\n\nBorn in 1901, Disney's father was a domineering figure. To escape from his stressful circumstances, young Disney found solace in drawing. When he was 16, he dropped out of school to join the Army but was rejected for being underage. He then joined the Red Cross and was sent to France for a year to drive an ambulance.\n\nHe and his brother, Roy, launched their own cartoon business, Laugh-O-Gram Studios, in 1920, but the company went bankrupt. With just forty dollars, Disney took off to Los Angeles to try acting, but failed at that, too. Noticing there were no animation studios in California, Disney convinced Roy to join him to set up a shop. Soon, he found success with Oswald the Lucky Rabbit.\n\nHowever, his producer took his team of animators and the legal rights to Oswald. Instead of fighting, Disney started over again. On the train ride back to California, he created Mickey Mouse. Investors rejected the concept over 300 times before one accepted it. Even with Mickey's success, Disney faced challenges. Tensions with his employer led to a nervous breakdown. After recovering, he developed 'Snow White and the Seven Dwarfs' (1937), a huge success. But the films that followed, like 'Pinocchio' and 'Bambi', were duds.\n\nCommenting on failure, Disney once said: \"All the adversity I've had in my life, all the troubles and obstacles have strengthened me.\""
+          "contentNepali": "वाल्ट डिज्नीलाई एक असाध्यै सफल र रचनात्मक व्यक्तिको रूपमा चिनिन्छ जसको एनिमेटर र फिल्म निर्माताको रूपमा दर्शनले मनोरञ्जनको संसारलाई परिवर्तन गर्यो। तैपनि, उनको सफलताको बाटो दुखी बाल्यकाल र अनगिन्ती व्यापारिक असफलताहरूबाट बनेको थियो।\n\n१९०१ मा जन्मेका डिज्नीका बुबा एक हैकमवादी व्यक्तित्व थिए। आफ्नो तनावपूर्ण परिस्थितिबाट बच्न, युवा डिज्नीले चित्रकलामा सान्त्वना पाए। जब उनी १६ वर्षका थिए, उनी सेनामा भर्ती हुन स्कूल छोडे तर कम उमेरको कारण अस्वीकृत भए। त्यसपछि उनी रेड क्रसमा सामेल भए र एम्बुलेन्स चलाउन एक वर्ष फ्रान्स पठाइए।\n\nउनले र उनका भाइ रोयले १९२० मा आफ्नै कार्टुन व्यवसाय, लाफ-ओ-ग्राम स्टुडियो सुरु गरे, तर कम्पनी टाट पल्टियो। केवल चालीस डलर लिएर, डिज्नी अभिनय गर्न लस एन्जलस गए, तर त्यसमा पनि असफल भए। क्यालिफोर्नियामा कुनै एनिमेसन स्टुडियो नभएको देखेर, डिज्नीले रोयलाई पसल स्थापना गर्न आफूसँग सामेल हुन मनाए। छिट्टै, उनले ओसवाल्ड द लकी र्याबिट सँग सफलता पाए।\n\nयद्यपि, उनको निर्माताले उसको एनिमेटरहरूको टोली र ओसवाल्डको कानूनी अधिकार खोस्यो। लड्नुको सट्टा, डिज्नीले फेरि सुरु गरे। क्यालिफोर्निया फर्कने रेल यात्रामा, उनले मिकी माउस सिर्जना गरे। लगानीकर्ताहरूले यसलाई स्वीकार गर्नु अघि ३०० भन्दा बढी पटक अस्वीकार गरे। मिकीको सफलताको बावजुद पनि, डिज्नीले चुनौतीहरूको सामना गरे। आफ्नो रोजगारदातासँगको तनावले स्नायु बिग्रने अवस्था निम्त्यायो। निको भएपछि, उनले 'स्नो ह्वाइट एण्ड द सेभेन ड्वार्फ्स' (१९३७) विकास गरे, जुन ठूलो सफल भयो। तर त्यसपछि आएका फिल्महरू, जस्तै 'पिनोकियो' र 'बाम्बी', असफल भए।\n\nअसफलताको बारेमा टिप्पणी गर्दै, डिज्नीले एकपटक भनेका थिए: \"मैले मेरो जीवनमा भोगेका सबै प्रतिकूलता, सबै समस्या र बाधाहरूले मलाई बलियो बनाएका छन्।\"",
+          "contentEnglish": "Walt Disney is known as an extraordinarily successful and creative person whose visions as an animator and filmmaker changed the entertainment world. Yet, his road to success was paved by an unhappy childhood and countless business failures.\n\nBorn in 1901, Disney's father was a domineering figure. To escape from his stressful circumstances, young Disney found solace in drawing. When he was 16, he dropped out of school to join the Army but was rejected for being underage. He then joined the Red Cross and was sent to France for a year to drive an ambulance.\n\nHe and his brother, Roy, launched their own cartoon business, Laugh-O-Gram Studios, in 1920, but the company went bankrupt. With just forty dollars, Disney took off to Los Angeles to try acting, but failed at that, too. Noticing there were no animation studios in California, Disney convinced Roy to join him to set up a shop. Soon, he found success with Oswald the Lucky Rabbit.\n\nHowever, his producer took his team of animators and the legal rights to Oswald. Instead of fighting, Disney started over again. On the train ride back to California, he created Mickey Mouse. Investors rejected the concept over 300 times before one accepted it. Even with Mickey's success, Disney faced challenges. Tensions with his employer led to a nervous breakdown. After recovering, he developed 'Snow White and the Seven Dwarfs' (1937), a huge success. But the films that followed, like 'Pinocchio' and 'Bambi', were duds.\n\nCommenting on failure, Disney once said: \"All the adversity I've had in my life, all the troubles and obstacles have strengthened me.\"",
+          "titleNepali": "वाल्ट डिज्नी: सङ्घर्ष र सफलताको उदाहरण",
+          "titleEnglish": "Walt Disney: An Example of Struggle and Success"
         },
         "subSections": [
           {
-            "id": "A",
+            "idNepali": "क",
+            "idEnglish": "A",
             "type": "fill_in_the_blanks",
-            "title": "Fill in the blanks with the correct information from the text.",
-            "marks": 5,
+            "marksNepali": "५",
+            "marksEnglish": 5,
             "subQuestions": [
               {
-                "id": "i",
+                "idNepali": "i",
+                "idEnglish": "i",
+                "questionNepali": "वाल्ट डिज्नीले आफ्नो तनावपूर्ण बाल्यकालबाट __________ मार्फत सान्त्वना पाए।",
                 "questionEnglish": "Walt Disney found comfort from his stressful childhood through __________.",
-                "correctAnswer": "drawing",
-                "explanationNepali": "पाठमा भनिएको छ, \"To escape from his stressful circumstances, Young Disney found solace in drawing,\" जसको अर्थ हो कि उनले चित्रकलामा सान्त्वना पाए।",
+                "correctAnswerNepali": "चित्रकला",
+                "correctAnswerEnglish": "drawing",
+                "explanationNepali": "पाठमा भनिएको छ, \"To escape from his stressful circumstances, Young Disney found solace in drawing,\" जसको अर्थ हो कि उनले चित्रकलामा सान्त्वना पाए।\nउद्धरण: पाठ १६",
                 "explanationEnglish": "The text states, \"To escape from his stressful circumstances, Young Disney found solace in drawing,\" which means he found comfort in drawing. \nCitation: Lesson 16."
               },
               {
-                "id": "ii",
+                "idNepali": "ii",
+                "idEnglish": "ii",
+                "questionNepali": "डिज्नीको पहिलो कार्टुन व्यवसाय, लाफ-ओ-ग्राम स्टुडियो, अन्ततः __________ भयो।",
                 "questionEnglish": "Disney's first cartoon business, Laugh-O-Gram Studios, eventually went __________.",
-                "correctAnswer": "bankrupt",
-                "explanationNepali": "पाठमा उल्लेख छ, \"...the company went bankrupt a couple of years later,\" जसको अर्थ हो कि कम्पनी टाट पल्टियो।",
+                "correctAnswerNepali": "टाट पल्टिएको/दिवालिया",
+                "correctAnswerEnglish": "bankrupt",
+                "explanationNepali": "पाठमा उल्लेख छ, \"...the company went bankrupt a couple of years later,\" जसको अर्थ हो कि कम्पनी टाट पल्टियो।\nउद्धरण: पाठ १६",
                 "explanationEnglish": "The text mentions, \"...the company went bankrupt a couple of years later,\" meaning the company failed financially. \nCitation: Lesson 16."
               },
               {
-                "id": "iii",
+                "idNepali": "iii",
+                "idEnglish": "iii",
+                "questionNepali": "क्यालिफोर्निया जाने रेल यात्रामा सिर्जना गरिएको पात्र __________ थियो।",
                 "questionEnglish": "The character created on a train ride to California was __________.",
-                "correctAnswer": "Mickey Mouse",
-                "explanationNepali": "पाठमा भनिएको छ, \"It was on the train ride back to California that he created Mickey Mouse.\" ",
+                "correctAnswerNepali": "मिकी माउस",
+                "correctAnswerEnglish": "Mickey Mouse",
+                "explanationNepali": "पाठमा भनिएको छ, \"It was on the train ride back to California that he created Mickey Mouse.\"\nउद्धरण: पाठ १६",
                 "explanationEnglish": "The text states, \"It was on the train ride back to California that he created Mickey Mouse.\" \nCitation: Lesson 16."
               },
               {
-                "id": "iv",
+                "idNepali": "iv",
+                "idEnglish": "iv",
+                "questionNepali": "मानसिक तनावपछि, डिज्नीको पहिलो ठुलो सफल चलचित्र __________ थियो।",
                 "questionEnglish": "After a nervous breakdown, Disney's first major successful film was __________.",
-                "correctAnswer": "Snow White and the Seven Dwarfs",
-                "explanationNepali": "पाठमा उल्लेख छ कि निको भएपछि, डिज्नीले \"a full-length animation feature, which he would call Snow White and the Seven Dwarfs (1937)\" विकसित गरे, जुन एक ठूलो सफलता थियो।",
+                "correctAnswerNepali": "स्नो ह्वाइट एण्ड द सेभेन ड्वार्फ्स",
+                "correctAnswerEnglish": "Snow White and the Seven Dwarfs",
+                "explanationNepali": "पाठमा उल्लेख छ कि निको भएपछि, डिज्नीले \"a full-length animation feature, which he would call Snow White and the Seven Dwarfs (1937)\" विकसित गरे, जुन एक ठूलो सफलता थियो।\nउद्धरण: पाठ १६",
                 "explanationEnglish": "The text mentions that after recovering, Disney developed \"a full-length animation feature, which he would call Snow White and the Seven Dwarfs (1937),\" which became a huge success. \nCitation: Lesson 16."
               },
               {
-                "id": "v",
+                "idNepali": "v",
+                "idEnglish": "v",
+                "questionNepali": "डिज्नीका अनुसार, उनको जीवनका सबै __________ ले उनलाई बलियो बनाएका थिए।",
                 "questionEnglish": "According to Disney, all the __________ in his life had strengthened him.",
-                "correctAnswer": "adversity/troubles/obstacles",
-                "explanationNepali": "डिज्नीको भनाइ उद्धृत गरिएको छ: \"All the adversity I've had in my life, all the troubles and obstacles have strengthened me.\" ",
+                "correctAnswerNepali": "प्रतिकूलता/समस्या/अवरोधहरू",
+                "correctAnswerEnglish": "adversity/troubles/obstacles",
+                "explanationNepali": "डिज्नीको भनाइ उद्धृत गरिएको छ: \"All the adversity I've had in my life, all the troubles and obstacles have strengthened me.\"\nउद्धरण: पाठ १६",
                 "explanationEnglish": "Disney is quoted as saying: \"All the adversity I've had in my life, all the troubles and obstacles have strengthened me.\" \nCitation: Lesson 16."
               }
-            ]
+            ],
+            "titleNepali": "पाठबाट सही जानकारी लिई खाली ठाउँहरू भर्नुहोस्।",
+            "titleEnglish": "Fill in the blanks with the correct information from the text."
           },
           {
-            "id": "B",
+            "idNepali": "ख",
+            "idEnglish": "B",
             "type": "short_answer",
-            "title": "Answer the following questions in full sentences.",
-            "marks": 5,
+            "marksNepali": "५",
+            "marksEnglish": 5,
             "subQuestions": [
               {
-                "id": "i",
+                "idNepali": "i",
+                "idEnglish": "i",
+                "questionNepali": "डिज्नीले १६ वर्षको उमेरमा किन स्कुल छोडे?",
                 "questionEnglish": "Why did Disney drop out of school at age 16?",
-                "correctAnswer": "He dropped out of school to join the Army.",
-                "explanationNepali": "पाठले बताउँछ, \"When Disney was 16, he dropped out of school to join the Army...\"",
+                "correctAnswerNepali": "सेनामा भर्ती हुन उनले स्कूल छोडे।",
+                "correctAnswerEnglish": "He dropped out of school to join the Army.",
+                "explanationNepali": "पाठले बताउँछ, \"When Disney was 16, he dropped out of school to join the Army...\"\nउद्धरण: पाठ १६",
                 "explanationEnglish": "The text says, \"When Disney was 16, he dropped out of school to join the Army...\" \nCitation: Lesson 16."
               },
               {
-                "id": "ii",
+                "idNepali": "ii",
+                "idEnglish": "ii",
+                "questionNepali": "डिज्नीको पहिलो सफल पात्र, ओसवाल्ड द लक्की राबिटलाई के भयो?",
                 "questionEnglish": "What happened to Disney's first successful character, Oswald the Lucky Rabbit?",
-                "correctAnswer": "His producer took his team of animators and the legal rights to the character.",
-                "explanationNepali": "पाठले बताउँछ कि उनको निर्माताले \"taken his team of animators from him and that he no longer had any legal rights to Oswald the Lucky Rabbit.\" ",
+                "correctAnswerNepali": "उनका निर्माताले एनिमेटरहरूको टोली र चरित्रको कानूनी अधिकार लिए।",
+                "correctAnswerEnglish": "His producer took his team of animators and the legal rights to the character.",
+                "explanationNepali": "पाठले बताउँछ कि उनको निर्माताले \"taken his team of animators from him and that he no longer had any legal rights to Oswald the Lucky Rabbit.\"\nउद्धरण: पाठ १६",
                 "explanationEnglish": "The text states his producer had \"taken his team of animators from him and that he no longer had any legal rights to Oswald the Lucky Rabbit.\" \nCitation: Lesson 16."
               },
               {
-                "id": "iii",
+                "idNepali": "iii",
+                "idEnglish": "iii",
+                "questionNepali": "मिकी माउसको अवधारणा लगानीकर्ताहरूद्वारा कति पटक अस्वीकार गरिएको थियो?",
                 "questionEnglish": "How many times was the Mickey Mouse concept rejected by investors?",
-                "correctAnswer": "It was rejected over 300 times.",
-                "explanationNepali": "पाठमा उल्लेख छ, \"Investors rejected the concept of his famous mouse over 300 times before one accepted it.\" ",
+                "correctAnswerNepali": "यो ३०० भन्दा बढी पटक अस्वीकार गरियो।",
+                "correctAnswerEnglish": "It was rejected over 300 times.",
+                "explanationNepali": "पाठमा उल्लेख छ, \"Investors rejected the concept of his famous mouse over 300 times before one accepted it.\"\nउद्धरण: पाठ १६",
                 "explanationEnglish": "The text mentions, \"Investors rejected the concept of his famous mouse over 300 times before one accepted it.\" \nCitation: Lesson 16."
               },
               {
-                "id": "iv",
+                "idNepali": "iv",
+                "idEnglish": "iv",
+                "questionNepali": "'पिनोकिओ' र 'बाम्बी' चलचित्रको सन्दर्भमा 'duds' शब्दको अर्थ के हो?",
                 "questionEnglish": "What does the word 'duds' mean in the context of the films 'Pinocchio' and 'Bambi'?",
-                "correctAnswer": "It means they were failures or unsuccessful at the box office.",
-                "explanationNepali": "पाठले 'Snow White' को सफलताको विपरीत 'Pinocchio', 'Fantasia' र 'Bambi' लाई 'duds' भनेको छ, जसको अर्थ हो कि तिनीहरू व्यावसायिक रूपमा असफल भए।",
+                "correctAnswerNepali": "यसको अर्थ बक्स अफिसमा तिनीहरू असफल वा नाकाम थिए।",
+                "correctAnswerEnglish": "It means they were failures or unsuccessful at the box office.",
+                "explanationNepali": "पाठले 'Snow White' को सफलताको विपरीत 'Pinocchio', 'Fantasia' र 'Bambi' लाई 'duds' भनेको छ, जसको अर्थ हो कि तिनीहरू व्यावसायिक रूपमा असफल भए।\nउद्धरण: पाठ १६",
                 "explanationEnglish": "The text contrasts the success of 'Snow White' with 'Pinocchio', 'Fantasia' and 'Bambi', calling them 'duds', which implies they were commercial failures. \nCitation: Lesson 16."
               },
               {
-                "id": "v",
+                "idNepali": "v",
+                "idEnglish": "v",
+                "questionNepali": "असफलताप्रति डिज्नीको दृष्टिकोण के थियो?",
                 "questionEnglish": "What was Disney's perspective on failure?",
-                "correctAnswer": "He believed that failures, troubles, and obstacles ultimately made him stronger.",
-                "explanationNepali": "डिज्नीले भने, \"All the adversity I've had in my life... have strengthened me,\" जसले देखाउँछ कि उनले असफलतालाई शक्तिको स्रोतको रूपमा हेरे।",
+                "correctAnswerNepali": "उनले विश्वास गरे कि असफलता, समस्या र अवरोधहरूले अन्ततः उनलाई बलियो बनायो।",
+                "correctAnswerEnglish": "He believed that failures, troubles, and obstacles ultimately made him stronger.",
+                "explanationNepali": "डिज्नीले भने, \"All the adversity I've had in my life... have strengthened me,\" जसले देखाउँछ कि उनले असफलतालाई शक्तिको स्रोतको रूपमा हेरे।\nउद्धरण: पाठ १६",
                 "explanationEnglish": "Disney said, \"All the adversity I've had in my life... have strengthened me,\" showing he viewed failure as a source of strength. \nCitation: Lesson 16."
               }
-            ]
+            ],
+            "titleNepali": "तलका प्रश्नहरूको पूर्ण वाक्यमा उत्तर दिनुहोस्।",
+            "titleEnglish": "Answer the following questions in full sentences."
           }
-        ]
+        ],
+        "titleNepali": "पाठ पढ्नुहोस् र कार्यहरू गर्नुहोस्।",
+        "titleEnglish": "Read the text and do the tasks."
       },
       {
-        "questionNumber": 3,
+        "questionNumberNepali": "३",
+        "questionNumberEnglish": 3,
         "type": "reading_comprehension",
-        "title": "Read the following text and do the tasks.",
-        "marks": 10,
+        "marksNepali": "१०",
+        "marksEnglish": 10,
         "passage": {
-          "title": "JOB ADVERTISEMENT",
-          "content": "A well-established English medium boarding school in Pokhara invites applications from qualified, dynamic, and dedicated candidates for the following post.\n\nPosition: Secondary Level Science Teacher (Physics/Chemistry)\n\nRequired Number: 1 (One)\n\nRequired Qualification: Master’s Degree in Science (M.Sc.) in the relevant subject from a recognized university.\n\nExperience: At least 3 years of teaching experience in a similar position is required. Experience in a boarding school will be an added advantage.\n\nSkills & Competencies:\n- Excellent command of spoken and written English.\n- Ability to use modern teaching methodologies and IT tools.\n- Strong classroom management skills.\n- Must be a team player and willing to participate in extracurricular activities.\n\nSalary: Negotiable, but no bar for deserving candidates.\n\nApplying Procedure: Interested candidates are requested to submit a handwritten application, a recent CV, copies of academic credentials, and a passport-sized photograph to the school reception by 4:00 PM, 25th March, 2025.\n\nNote: Only shortlisted candidates will be called for a written test and interview. The school reserves the right to accept or reject any application without assigning any reason."
+          "contentNepali": "पोखरामा अवस्थित एक प्रतिष्ठित अङ्ग्रेजी माध्यमको बोर्डिङ स्कूलले निम्नलिखित पदका लागि योग्य, गतिशील र समर्पित उम्मेदवारहरूबाट आवेदन आह्वान गर्दछ।\n\nपद: माध्यमिक तह विज्ञान शिक्षक (भौतिकशास्त्र/रसायनशास्त्र)\n\nआवश्यक संख्या: १ (एक)\n\nआवश्यक योग्यता: मान्यता प्राप्त विश्वविद्यालयबाट सम्बन्धित विषयमा विज्ञानमा स्नातकोत्तर गरेको।\n\nअनुभव: समान पदमा कम्तीमा ३ वर्षको शिक्षण अनुभव आवश्यक छ। बोर्डिङ स्कूलको अनुभव थप लाभ हुनेछ।\n\nसीप र क्षमताहरू:\n- लिखित र मौखिक अङ्ग्रेजीमा उत्कृष्ट पकड।\n- आधुनिक शिक्षण विधि र आईटी उपकरणहरू प्रयोग गर्न सक्ने क्षमता।\n- कक्षाकोठा व्यवस्थापनमा बलियो सीप।\n- समूहमा काम गर्न सक्ने र अतिरिक्त क्रियाकलापहरूमा सहभागी हुन इच्छुक।\n\nतलब: आपसी समझदारीमा, तर योग्य उम्मेदवारहरूका लागि कुनै सीमा छैन।\n\nआवेदन प्रक्रिया: इच्छुक उम्मेदवारहरूलाई हस्तलिखित निवेदन, हालसालैको बायोडाटा, शैक्षिक प्रमाणपत्रका प्रतिलिपिहरु र पासपोर्ट साइजको फोटो सहित २५ मार्च, २०२५ को दिउँसो ४:०० बजेभित्र विद्यालयको रिसेप्सनमा बुझाउन अनुरोध गरिन्छ।\n\nनोट: छनोट गरिएका उम्मेदवारहरूलाई मात्र लिखित परीक्षा र अन्तर्वार्ताका लागि बोलाइनेछ। कुनै कारण नखुलाई कुनै पनि आवेदन स्वीकार वा अस्वीकार गर्ने अधिकार विद्यालयमा सुरक्षित छ।",
+          "contentEnglish": "A well-established English medium boarding school in Pokhara invites applications from qualified, dynamic, and dedicated candidates for the following post.\n\nPosition: Secondary Level Science Teacher (Physics/Chemistry)\n\nRequired Number: 1 (One)\n\nRequired Qualification: Master’s Degree in Science (M.Sc.) in the relevant subject from a recognized university.\n\nExperience: At least 3 years of teaching experience in a similar position is required. Experience in a boarding school will be an added advantage.\n\nSkills & Competencies:\n- Excellent command of spoken and written English.\n- Ability to use modern teaching methodologies and IT tools.\n- Strong classroom management skills.\n- Must be a team player and willing to participate in extracurricular activities.\n\nSalary: Negotiable, but no bar for deserving candidates.\n\nApplying Procedure: Interested candidates are requested to submit a handwritten application, a recent CV, copies of academic credentials, and a passport-sized photograph to the school reception by 4:00 PM, 25th March, 2025.\n\nNote: Only shortlisted candidates will be called for a written test and interview. The school reserves the right to accept or reject any application without assigning any reason.",
+          "titleNepali": "रोजगारी विज्ञापन",
+          "titleEnglish": "JOB ADVERTISEMENT"
         },
         "subSections": [
           {
-            "id": "A",
+            "idNepali": "क",
+            "idEnglish": "A",
             "type": "true_false_not_given",
-            "title": "Write 'TRUE' for true, 'FALSE' for false, or 'NOT GIVEN' if the information is not in the text.",
-            "marks": 5,
+            "marksNepali": "५",
+            "marksEnglish": 5,
             "subQuestions": [
               {
-                "id": "i",
+                "idNepali": "i",
+                "idEnglish": "i",
+                "questionNepali": "विद्यालयले प्राथमिक तहका लागि शिक्षक खोजिरहेको छ।",
                 "questionEnglish": "The school is looking for a teacher for the primary level.",
-                "correctAnswer": "FALSE",
-                "explanationNepali": "विज्ञापनमा स्पष्ट रूपमा \"Secondary Level Science Teacher\" भनिएको छ, प्राथमिक तहको होइन।",
+                "correctAnswerNepali": "गलत",
+                "correctAnswerEnglish": "FALSE",
+                "explanationNepali": "विज्ञापनमा स्पष्ट रूपमा \"Secondary Level Science Teacher\" भनिएको छ, प्राथमिक तहको होइन।\nउद्धरण: पाठ ८",
                 "explanationEnglish": "The advertisement clearly states \"Secondary Level Science Teacher,\" not primary level. \nCitation: Lesson 8."
               },
               {
-                "id": "ii",
+                "idNepali": "ii",
+                "idEnglish": "ii",
+                "questionNepali": "यस पदको लागि विज्ञानमा स्नातक तह उत्तीर्ण हुनु पर्याप्त छ।",
                 "questionEnglish": "A Bachelor's Degree in Science is sufficient for this post.",
-                "correctAnswer": "FALSE",
-                "explanationNepali": "आवश्यक योग्यतामा \"Master’s Degree in Science (M.Sc.)\" उल्लेख गरिएको छ, स्नातक तह होइन।",
+                "correctAnswerNepali": "गलत",
+                "correctAnswerEnglish": "FALSE",
+                "explanationNepali": "आवश्यक योग्यतामा \"Master’s Degree in Science\" उल्लेख गरिएको छ, स्नातक तह होइन।\nउद्धरण: पाठ ८",
                 "explanationEnglish": "The required qualification is mentioned as \"Master’s Degree in Science (M.Sc.),\" not a Bachelor's degree. \nCitation: Lesson 8."
               },
               {
-                "id": "iii",
+                "idNepali": "iii",
+                "idEnglish": "iii",
+                "questionNepali": "उम्मेदवारहरूसँग बोर्डिङ स्कुलमा काम गरेको पूर्व अनुभव हुनुपर्छ।",
                 "questionEnglish": "Candidates must have prior experience of working in a boarding school.",
-                "correctAnswer": "FALSE",
-                "explanationNepali": "विज्ञापनमा भनिएको छ, \"Experience in a boarding school will be an added advantage,\" जसको अर्थ यो फाइदाजनक छ, तर अनिवार्य होइन। ३ वर्षको शिक्षण अनुभव अनिवार्य छ।",
+                "correctAnswerNepali": "गलत",
+                "correctAnswerEnglish": "FALSE",
+                "explanationNepali": "विज्ञापनमा भनिएको छ, \"Experience in a boarding school will be an added advantage,\" जसको अर्थ यो फाइदाजनक छ, तर अनिवार्य होइन। ३ वर्षको शिक्षण अनुभव अनिवार्य छ।\nउद्धरण: पाठ ८",
                 "explanationEnglish": "The advertisement says, \"Experience in a boarding school will be an added advantage,\" which means it's beneficial but not mandatory. The 3 years of teaching experience is mandatory. \nCitation: Lesson 8."
               },
               {
-                "id": "iv",
+                "idNepali": "iv",
+                "idEnglish": "iv",
+                "questionNepali": "पदको लागि तलब निश्चित छ।",
                 "questionEnglish": "The salary for the post is fixed.",
-                "correctAnswer": "FALSE",
-                "explanationNepali": "तलबको बारेमा \"Negotiable\" (वार्तालापयोग्य) भनिएको छ, जसको अर्थ यो निश्चित छैन।",
+                "correctAnswerNepali": "गलत",
+                "correctAnswerEnglish": "FALSE",
+                "explanationNepali": "तलबको बारेमा \"Negotiable\" (वार्तालापयोग्य) भनिएको छ, जसको अर्थ यो निश्चित छैन।\nउद्धरण: पाठ ४",
                 "explanationEnglish": "The salary is mentioned as \"Negotiable,\" which means it is not fixed. \nCitation: Lesson 4."
               },
               {
-                "id": "v",
+                "idNepali": "v",
+                "idEnglish": "v",
+                "questionNepali": "आवेदकहरूले इमेल मार्फत अनलाइन आवेदन बुझाउन सक्छन्।",
                 "questionEnglish": "Applicants can submit their applications online via email.",
-                "correctAnswer": "FALSE",
-                "explanationNepali": "आवेदन प्रक्रियामा \"submit a handwritten application ... to the school reception\" भनिएको छ, इमेल मार्फत होइन।",
+                "correctAnswerNepali": "गलत",
+                "correctAnswerEnglish": "FALSE",
+                "explanationNepali": "आवेदन प्रक्रियामा \"submit a handwritten application ... to the school reception\" भनिएको छ, इमेल मार्फत होइन।\nउद्धरण: पाठ ८",
                 "explanationEnglish": "The applying procedure states to \"submit a handwritten application ... to the school reception,\" not via email. \nCitation: Lesson 8."
               }
-            ]
+            ],
+            "titleNepali": "सही भए 'TRUE', गलत भए 'FALSE', वा पाठमा जानकारी नभए 'NOT GIVEN' लेख्नुहोस्।",
+            "titleEnglish": "Write 'TRUE' for true, 'FALSE' for false, or 'NOT GIVEN' if the information is not in the text."
           },
           {
-            "id": "B",
+            "idNepali": "ख",
+            "idEnglish": "B",
             "type": "short_answer",
-            "title": "Answer the following questions in full sentences.",
-            "marks": 5,
+            "marksNepali": "५",
+            "marksEnglish": 5,
             "subQuestions": [
               {
-                "id": "i",
+                "idNepali": "i",
+                "idEnglish": "i",
+                "questionNepali": "विद्यालयले कुन पदका लागि विज्ञापन गरिरहेको छ?",
                 "questionEnglish": "What position is the school advertising for?",
-                "correctAnswer": "The school is advertising for the position of a Secondary Level Science Teacher (Physics/Chemistry).",
-                "explanationNepali": "विज्ञापनको 'Position' खण्डमा \"Secondary Level Science Teacher (Physics/Chemistry)\" उल्लेख छ।",
+                "correctAnswerNepali": "विद्यालयले माध्यमिक तहको विज्ञान शिक्षक (भौतिकशास्त्र/रसायनशास्त्र) पदका लागि विज्ञापन गरिरहेको छ।",
+                "correctAnswerEnglish": "The school is advertising for the position of a Secondary Level Science Teacher (Physics/Chemistry).",
+                "explanationNepali": "विज्ञापनको 'Position' खण्डमा \"Secondary Level Science Teacher\" उल्लेख छ।\nउद्धरण: पाठ ८",
                 "explanationEnglish": "The 'Position' section of the advertisement mentions \"Secondary Level Science Teacher (Physics/Chemistry).\" \nCitation: Lesson 8."
               },
               {
-                "id": "ii",
+                "idNepali": "ii",
+                "idEnglish": "ii",
+                "questionNepali": "विद्यालय कहाँ अवस्थित छ?",
                 "questionEnglish": "Where is the school located?",
-                "correctAnswer": "The school is located in Pokhara.",
-                "explanationNepali": "विज्ञापनको पहिलो वाक्यमा \"A well-established English medium boarding school in Pokhara\" भनिएको छ।",
+                "correctAnswerNepali": "विद्यालय पोखरामा अवस्थित छ।",
+                "correctAnswerEnglish": "The school is located in Pokhara.",
+                "explanationNepali": "विज्ञापनको पहिलो वाक्यमा \"A well-established English medium boarding school in Pokhara\" भनिएको छ।\nउद्धरण: पाठ १५",
                 "explanationEnglish": "The first sentence of the ad says, \"A well-established English medium boarding school in Pokhara.\" \nCitation: Lesson 15."
               },
               {
-                "id": "iii",
+                "idNepali": "iii",
+                "idEnglish": "iii",
+                "questionNepali": "आवश्यक न्यूनतम शिक्षण अनुभव कति हो?",
                 "questionEnglish": "What is the minimum teaching experience required?",
-                "correctAnswer": "At least 3 years of teaching experience is required.",
-                "explanationNepali": "अनुभवको आवश्यकतामा \"At least 3 years of teaching experience in a similar position is required\" भनिएको छ।",
+                "correctAnswerNepali": "कम्तीमा ३ वर्षको शिक्षण अनुभव आवश्यक छ।",
+                "correctAnswerEnglish": "At least 3 years of teaching experience is required.",
+                "explanationNepali": "अनुभवको आवश्यकतामा \"At least 3 years of teaching experience in a similar position is required\" भनिएको छ।\nउद्धरण: पाठ ८",
                 "explanationEnglish": "The experience requirement states, \"At least 3 years of teaching experience in a similar position is required.\" \nCitation: Lesson 8."
               },
               {
-                "id": "iv",
+                "idNepali": "iv",
+                "idEnglish": "iv",
+                "questionNepali": "आवेदनको साथमा कुन कागजातहरू पेश गर्नुपर्छ?",
                 "questionEnglish": "What documents should be submitted with the application?",
-                "correctAnswer": "A handwritten application, a recent CV, copies of academic credentials, and a passport-sized photograph should be submitted.",
-                "explanationNepali": "आवेदन प्रक्रियामा आवश्यक कागजातहरूको सूची दिइएको छ: \"a handwritten application, a recent CV, copies of academic credentials, and a passport-sized photograph.\" ",
+                "correctAnswerNepali": "हस्तलिखित निवेदन, हालसालैको बायोडाटा, शैक्षिक प्रमाणपत्रका प्रतिलिपिहरु र पासपोर्ट साइजको फोटो बुझाउनुपर्छ।",
+                "correctAnswerEnglish": "A handwritten application, a recent CV, copies of academic credentials, and a passport-sized photograph should be submitted.",
+                "explanationNepali": "आवेदन प्रक्रियामा आवश्यक कागजातहरूको सूची दिइएको छ: \"a handwritten application, a recent CV, copies of academic credentials, and a passport-sized photograph.\"\nउद्धरण: पाठ ८",
                 "explanationEnglish": "The applying procedure lists the required documents: \"a handwritten application, a recent CV, copies of academic credentials, and a passport-sized photograph.\" \nCitation: Lesson 8."
               },
               {
-                "id": "v",
+                "idNepali": "v",
+                "idEnglish": "v",
+                "questionNepali": "सर्टलिस्टमा परेका उम्मेदवारहरूलाई के हुन्छ?",
                 "questionEnglish": "What will happen to the shortlisted candidates?",
-                "correctAnswer": "They will be called for a written test and interview.",
-                "explanationNepali": "नोटमा भनिएको छ, \"Only shortlisted candidates will be called for a written test and interview.\" ",
+                "correctAnswerNepali": "उनीहरूलाई लिखित परीक्षा र अन्तर्वार्ताका लागि बोलाइनेछ।",
+                "correctAnswerEnglish": "They will be called for a written test and interview.",
+                "explanationNepali": "नोटमा भनिएको छ, \"Only shortlisted candidates will be called for a written test and interview.\"\nउद्धरण: पाठ ४",
                 "explanationEnglish": "The note states, \"Only shortlisted candidates will be called for a written test and interview.\" \nCitation: Lesson 4."
               }
-            ]
+            ],
+            "titleNepali": "तलका प्रश्नहरूको पूर्ण वाक्यमा उत्तर दिनुहोस्।",
+            "titleEnglish": "Answer the following questions in full sentences."
           }
-        ]
+        ],
+        "titleNepali": "तलको पाठ पढ्नुहोस् र कार्यहरू गर्नुहोस्।",
+        "titleEnglish": "Read the following text and do the tasks."
       },
       {
-        "questionNumber": 4,
+        "questionNumberNepali": "४",
+        "questionNumberEnglish": 4,
         "type": "reading_comprehension",
-        "title": "Read the following text and do the tasks.",
-        "marks": 15,
+        "marksNepali": "१५",
+        "marksEnglish": 15,
         "passage": {
-          "title": "Strange Food from Around the World",
-          "content": "You have to challenge yourself with food when you travel. The food stuff that seems so strange to you is actually so delicious to many others.\n\nHaggis, Scotland: When you take all of the parts of a sheep that no one else wants—the heart, the liver, and the lungs—grind it up, and mix it with mutton fat, oatmeal and spices, then pack it in a sheep's stomach and boil it, it tastes really good.\n\nJellyfish, China: This dish can appear challenging. There's a rubbery texture to jellyfish that some find a little challenging. However, the Chinese know what they're doing. They mix jellyfish into salads, pair it with chicken, or stir it through sesame oil. It’s all tasty, and it’s all low-fat.\n\nGreen ants, Australia: If I'm going for bush food, it's definitely green ants, little insects that are pulled from trees, lightly crushed, and then eaten. They're lemony, peppery and delicious. Local producers are even putting them on top of goat's cheeses now.\n\nCrickets, Thailand: In northern Thailand, deep-fried crickets are a staple, and they're delicious. They're nutty and crunchy, perfect with salt. I still struggle, however, with the larger insects. Anything that requires more than one bite is a bridge too far for this guy.\n\nBun rieu, Vietnam: Everything about bun rieu, a traditional Vietnamese soup, sounds good. It's a crab-based soup mixed with noodles. It's then topped with roasted tomatoes, crab meat, stewed pork, lime juice, and fresh herbs. Then, however, you drop in a large piece of congealed pig's blood, which is a serious challenge for the unsuspecting diner. My advice: give it a try."
+          "contentNepali": "यात्रा गर्दा तपाईंले आफैलाई खानाको साथ चुनौती दिनुपर्छ। तपाईंलाई धेरै अनौठो लाग्ने खाद्य सामग्री वास्तवमा अरू धेरैका लागि धेरै स्वादिष्ट हुन्छ।\n\nहगिस, स्कटल्याण्ड: जब तपाईं भेडाका ती सबै अंगहरू लिनुहुन्छ जुन अरू कसैले चाहँदैन—मुटु, कलेजो, र फोक्सो—यसलाई पिस्नुहोस्, र भेडाको बोसो, जईको पीठो र मसलाहरूसँग मिसाउनुहोस्, त्यसपछि यसलाई भेडाको पेटमा प्याक गर्नुहोस् र उमाल्नुहोस्, यो वास्तवमै मीठो हुन्छ।\n\nजेलीफिस, चीन: यो परिकार चुनौतीपूर्ण लाग्न सक्छ। जेलीफिसमा रबर जस्तो बनावट हुन्छ जुन कसै-कसैलाई अलि चुनौतीपूर्ण लाग्छ। यद्यपि, चिनियाँहरूलाई उनीहरूले के गर्दैछन् भन्ने थाहा छ। तिनीहरू सलादमा जेलीफिस मिसाउँछन्, यसलाई कुखुराको मासुसँग जोड्छन्, वा तिलको तेलमा पकाउँछन्। यो सबै स्वादिष्ट छ, र यो सबै कम बोसो युक्त छ।\n\nहरियो कमिला, अष्ट्रेलिया: यदि म बुश फूड (जंगली खाना) को लागि जाँदैछु भने, यो पक्कै पनि हरियो कमिला हो, साना कीराहरू जुन रूखहरूबाट तानिन्छन्, हल्का कुचाइन्छन्, र त्यसपछि खाइन्छन्। तिनीहरू कागती जस्तै, मरिच जस्तै र स्वादिष्ट हुन्छन्। स्थानीय उत्पादकहरू अहिले बाख्राको चीज (goat's cheese) मा पनि यिनीहरूलाई राखिरहेका छन्।\n\nक्रिकेट्स, थाइल्याण्ड: उत्तरी थाइल्याण्डमा, गहिरो भुटेको क्रिकेट्स (फट्याङ्ग्रा प्रजाति) मुख्य खाना हो, र तिनीहरू स्वादिष्ट हुन्छन्। तिनीहरू नटी र क्रन्ची हुन्छन्, नुनसँग एकदमै उपयुक्त। म अझै पनि, ठूला कीराहरूसँग संघर्ष गर्छु। एक बाइट भन्दा बढी चाहिने कुनै पनि कुरा यो मान्छे (मेरो) लागि धेरै कठिन छ।\n\nबन रियु, भियतनाम: बन रियु, एक परम्परागत भियतनामी सुपको बारेमा सबै कुरा राम्रो सुनिन्छ। यो चाउचाउमा मिसाइएको क्र्याब (गँगटो) मा आधारित सुप हो। त्यसपछि यसलाई पोलेको गोलभेडा, क्र्याबको मासु, पकाएको बंगुरको मासु, कागतीको रस, र ताजा जडीबुटीहरूले सजाइन्छ। त्यसपछि, तथापि, तपाईं जमेको सुँगुरको रगतको ठूलो टुक्रा खसाल्नुहुन्छ, जुन थाहा नभएका भोजनकर्ताका लागि गम्भीर चुनौती हो। मेरो सल्लाह: यसलाई एक पटक चाख्नुहोस्।",
+          "contentEnglish": "You have to challenge yourself with food when you travel. The food stuff that seems so strange to you is actually so delicious to many others.\n\nHaggis, Scotland: When you take all of the parts of a sheep that no one else wants—the heart, the liver, and the lungs—grind it up, and mix it with mutton fat, oatmeal and spices, then pack it in a sheep's stomach and boil it, it tastes really good.\n\nJellyfish, China: This dish can appear challenging. There's a rubbery texture to jellyfish that some find a little challenging. However, the Chinese know what they're doing. They mix jellyfish into salads, pair it with chicken, or stir it through sesame oil. It’s all tasty, and it’s all low-fat.\n\nGreen ants, Australia: If I'm going for bush food, it's definitely green ants, little insects that are pulled from trees, lightly crushed, and then eaten. They're lemony, peppery and delicious. Local producers are even putting them on top of goat's cheeses now.\n\nCrickets, Thailand: In northern Thailand, deep-fried crickets are a staple, and they're delicious. They're nutty and crunchy, perfect with salt. I still struggle, however, with the larger insects. Anything that requires more than one bite is a bridge too far for this guy.\n\nBun rieu, Vietnam: Everything about bun rieu, a traditional Vietnamese soup, sounds good. It's a crab-based soup mixed with noodles. It's then topped with roasted tomatoes, crab meat, stewed pork, lime juice, and fresh herbs. Then, however, you drop in a large piece of congealed pig's blood, which is a serious challenge for the unsuspecting diner. My advice: give it a try.",
+          "titleNepali": "संसारभरका अनौठा खानाहरू",
+          "titleEnglish": "Strange Food from Around the World"
         },
         "subSections": [
           {
-            "id": "A",
+            "idNepali": "क",
+            "idEnglish": "A",
             "type": "matching",
-            "title": "Match the food items in Column ‘A’ with their main ingredients in Column ‘B’.",
-            "marks": 5,
+            "marksNepali": "५",
+            "marksEnglish": 5,
             "columns": {
               "A": [
                 {
-                  "id": "i",
-                  "text": "Haggis"
+                  "idNepali": "i",
+                  "idEnglish": "i",
+                  "textNepali": "ह्यागिस",
+                  "textEnglish": "Haggis"
                 },
                 {
-                  "id": "ii",
-                  "text": "Bun rieu"
+                  "idNepali": "ii",
+                  "idEnglish": "ii",
+                  "textNepali": "बन रियु",
+                  "textEnglish": "Bun rieu"
                 },
                 {
-                  "id": "iii",
-                  "text": "Crickets"
+                  "idNepali": "iii",
+                  "idEnglish": "iii",
+                  "textNepali": "क्रिकेट्स",
+                  "textEnglish": "Crickets"
                 },
                 {
-                  "id": "iv",
-                  "text": "Green ants"
+                  "idNepali": "iv",
+                  "idEnglish": "iv",
+                  "textNepali": "हरियो कमिला",
+                  "textEnglish": "Green ants"
                 },
                 {
-                  "id": "v",
-                  "text": "Jellyfish"
+                  "idNepali": "v",
+                  "idEnglish": "v",
+                  "textNepali": "जेलीफिस",
+                  "textEnglish": "Jellyfish"
                 }
               ],
               "B": [
                 {
-                  "id": "a",
-                  "text": "insects with a lemony and peppery taste"
+                  "idNepali": "क",
+                  "idEnglish": "a",
+                  "textNepali": "कागती र मरिचको स्वाद भएका कीराहरू",
+                  "textEnglish": "insects with a lemony and peppery taste"
                 },
                 {
-                  "id": "b",
-                  "text": "a sea creature with a rubbery texture"
+                  "idNepali": "ख",
+                  "idEnglish": "b",
+                  "textNepali": "रबर जस्तो बनावट भएको समुद्री जीव",
+                  "textEnglish": "a sea creature with a rubbery texture"
                 },
                 {
-                  "id": "c",
-                  "text": "a crab-based soup with congealed pig's blood"
+                  "idNepali": "ग",
+                  "idEnglish": "c",
+                  "textNepali": "जमेको सुँगुरको रगत भएको गँगटोमा आधारित सुप",
+                  "textEnglish": "a crab-based soup with congealed pig's blood"
                 },
                 {
-                  "id": "d",
-                  "text": "deep-fried insects that are nutty and crunchy"
+                  "idNepali": "घ",
+                  "idEnglish": "d",
+                  "textNepali": "नटी र क्रन्ची हुने गहिरो भुटेका कीराहरू",
+                  "textEnglish": "deep-fried insects that are nutty and crunchy"
                 },
                 {
-                  "id": "e",
-                  "text": "sheep's organs boiled in its stomach"
+                  "idNepali": "ङ",
+                  "idEnglish": "e",
+                  "textNepali": "भेडाको पेटमा उमालिएका भेडाका अंगहरू",
+                  "textEnglish": "sheep's organs boiled in its stomach"
                 },
                 {
-                  "id": "f",
-                  "text": "fermented horse milk"
+                  "idNepali": "च",
+                  "idEnglish": "f",
+                  "textNepali": "घोडाको किण्वित दूध (ज्यादै अमिल्याइएको)",
+                  "textEnglish": "fermented horse milk"
                 }
               ]
             },
@@ -360,34 +487,47 @@
                 "B": "b"
               }
             ],
-            "explanationNepali": "यो मिलान पाठमा वर्णन गरिएका विभिन्न परिकारहरू र तिनका मुख्य सामग्रीहरूमा आधारित छ।",
-            "explanationEnglish": "This matching is based on the descriptions of the various dishes and their main ingredients provided in the text. \nCitation: Lesson 6."
+            "explanationNepali": "यो मिलान पाठमा वर्णन गरिएका विभिन्न परिकारहरू र तिनका मुख्य सामग्रीहरूमा आधारित छ।\nउद्धरण: पाठ ६",
+            "explanationEnglish": "This matching is based on the descriptions of the various dishes and their main ingredients provided in the text. \nCitation: Lesson 6.",
+            "titleNepali": "स्तम्भ 'A' मा रहेका खाद्य वस्तुहरूलाई स्तम्भ 'B' मा रहेका तिनीहरूका मुख्य सामग्रीहरूसँग मिलाउनुहोस्।",
+            "titleEnglish": "Match the food items in Column ‘A’ with their main ingredients in Column ‘B’."
           },
           {
-            "id": "B",
+            "idNepali": "ख",
+            "idEnglish": "B",
             "type": "ordering",
-            "title": "The steps to prepare Haggis are jumbled. Put them in the correct order.",
-            "marks": 5,
+            "marksNepali": "५",
+            "marksEnglish": 5,
             "sentences": [
               {
-                "id": "i",
-                "text": "Mix it with mutton fat, oatmeal, and spices."
+                "idNepali": "i",
+                "idEnglish": "i",
+                "textNepali": "यसलाई भेडाको बोसो, जईको पीठो र मसलासँग मिसाउनुहोस्।",
+                "textEnglish": "Mix it with mutton fat, oatmeal, and spices."
               },
               {
-                "id": "ii",
-                "text": "Boil it for a few hours."
+                "idNepali": "ii",
+                "idEnglish": "ii",
+                "textNepali": "यसलाई केही घण्टा उमाल्नुहोस्।",
+                "textEnglish": "Boil it for a few hours."
               },
               {
-                "id": "iii",
-                "text": "Grind up the sheep's heart, liver, and lungs."
+                "idNepali": "iii",
+                "idEnglish": "iii",
+                "textNepali": "भेडाको मुटु, कलेजो र फोक्सो पिस्नुहोस्।",
+                "textEnglish": "Grind up the sheep's heart, liver, and lungs."
               },
               {
-                "id": "iv",
-                "text": "Take the parts of a sheep that no one wants."
+                "idNepali": "iv",
+                "idEnglish": "iv",
+                "textNepali": "भेडाका ती अंगहरू लिनुहोस् जुन कसैले चाहँदैन।",
+                "textEnglish": "Take the parts of a sheep that no one wants."
               },
               {
-                "id": "v",
-                "text": "Pack the mixture into a sheep's stomach."
+                "idNepali": "v",
+                "idEnglish": "v",
+                "textNepali": "मिश्रणलाई भेडाको पेटमा भर्नुहोस्।",
+                "textEnglish": "Pack the mixture into a sheep's stomach."
               }
             ],
             "correctAnswer": [
@@ -397,251 +537,360 @@
               "v",
               "ii"
             ],
-            "explanationNepali": "ह्यागिस बनाउने सही क्रम हो: अनावश्यक अंगहरू लिने, तिनीहरूलाई पिस्ने, मसला र अन्य सामग्रीसँग मिसाउने, पेटमा भर्ने, र अन्त्यमा उमाल्ने।",
-            "explanationEnglish": "The correct order to prepare Haggis is: take the unwanted organs, grind them up, mix with spices and other ingredients, pack it into the stomach, and finally boil it. \nCitation: Lesson 6."
+            "explanationNepali": "ह्यागिस बनाउने सही क्रम हो: अनावश्यक अंगहरू लिने, तिनीहरूलाई पिस्ने, मसला र अन्य सामग्रीसँग मिसाउने, पेटमा भर्ने, र अन्त्यमा उमाल्ने।\nउद्धरण: पाठ ६",
+            "explanationEnglish": "The correct order to prepare Haggis is: take the unwanted organs, grind them up, mix with spices and other ingredients, pack it into the stomach, and finally boil it. \nCitation: Lesson 6.",
+            "titleNepali": "ह्यागिस तयार गर्ने चरणहरू मिलेका छैनन्। तिनीहरूलाई सही क्रममा राख्नुहोस्।",
+            "titleEnglish": "The steps to prepare Haggis are jumbled. Put them in the correct order."
           },
           {
-            "id": "C",
+            "idNepali": "ग",
+            "idEnglish": "C",
             "type": "short_answer",
-            "title": "Answer the following questions in full sentences.",
-            "marks": 5,
+            "marksNepali": "५",
+            "marksEnglish": 5,
             "subQuestions": [
               {
-                "id": "i",
+                "idNepali": "i",
+                "idEnglish": "i",
+                "questionNepali": "लेखकका अनुसार, यात्रा गर्दा खानाको सम्बन्धमा के गर्नु पर्छ?",
                 "questionEnglish": "According to the writer, what must one do with food when travelling?",
-                "correctAnswer": "One must challenge oneself with food when travelling.",
-                "explanationNepali": "पाठको पहिलो अनुच्छेदमा भनिएको छ, \"You have to challenge yourself with food when you travel.\" ",
+                "correctAnswerNepali": "यात्रा गर्दा खानाको साथ आफैलाई चुनौती दिनुपर्छ।",
+                "correctAnswerEnglish": "One must challenge oneself with food when travelling.",
+                "explanationNepali": "पाठको पहिलो अनुच्छेदमा भनिएको छ, \"You have to challenge yourself with food when you travel.\"\nउद्धरण: पाठ ६",
                 "explanationEnglish": "The first paragraph of the text states, \"You have to challenge yourself with food when you travel.\" \nCitation: Lesson 6."
               },
               {
-                "id": "ii",
+                "idNepali": "ii",
+                "idEnglish": "ii",
+                "questionNepali": "पाठमा उल्लेख गरिएको 'bush food' के हो?",
                 "questionEnglish": "What is 'bush food' mentioned in the text?",
-                "correctAnswer": "Green ants are mentioned as a type of bush food.",
-                "explanationNepali": "पाठले हरियो कमिलाको वर्णन गर्दा भन्छ, \"If I'm going for bush food, it's definitely green ants...\"",
+                "correctAnswerNepali": "हरियो कमिलालाई बुश फूडको एक प्रकारको रूपमा उल्लेख गरिएको छ।",
+                "correctAnswerEnglish": "Green ants are mentioned as a type of bush food.",
+                "explanationNepali": "पाठले हरियो कमिलाको वर्णन गर्दा भन्छ, \"If I'm going for bush food, it's definitely green ants...\"\nउद्धरण: पाठ ६",
                 "explanationEnglish": "When describing green ants, the text says, \"If I'm going for bush food, it's definitely green ants...\" \nCitation: Lesson 6."
               },
               {
-                "id": "iii",
+                "idNepali": "iii",
+                "idEnglish": "iii",
+                "questionNepali": "उत्तरी थाइल्याण्डमा फट्याङ्ग्र्राहरू सामान्यतया कसरी पस्किइन्छ?",
                 "questionEnglish": "How are crickets typically served in northern Thailand?",
-                "correctAnswer": "They are deep-fried and served with salt.",
-                "explanationNepali": "पाठले बताउँछ, \"In northern Thailand, deep-fried crickets are a staple... perfect with salt.\" ",
+                "correctAnswerNepali": "तिनीहरूलाई तेलमा तारिन्छ र नूनको साथ पस्किइन्छ।",
+                "correctAnswerEnglish": "They are deep-fried and served with salt.",
+                "explanationNepali": "पाठले बताउँछ, \"In northern Thailand, deep-fried crickets are a staple... perfect with salt.\"\nउद्धरण: पाठ ६",
                 "explanationEnglish": "The text states, \"In northern Thailand, deep-fried crickets are a staple... perfect with salt.\" \nCitation: Lesson 6."
               },
               {
-                "id": "iv",
+                "idNepali": "iv",
+                "idEnglish": "iv",
+                "questionNepali": "नजान्ने खाना खाने व्यक्तिका लागि 'bun rieu' किन चुनौतीपूर्ण परिकार बन्छ?",
                 "questionEnglish": "What makes 'bun rieu' a challenging dish for an unsuspecting diner?",
-                "correctAnswer": "The addition of a large piece of congealed pig's blood makes it challenging.",
-                "explanationNepali": "पाठले 'bun rieu' को बारेमा भन्छ कि जमेको सुँगुरको रगतको टुक्रा \"is a serious challenge for the unsuspecting diner.\" ",
+                "correctAnswerNepali": "सुँगुरको जमेको रगतको ठूलो टुक्रा थप्नाले यसलाई चुनौतीपूर्ण बनाउँछ।",
+                "correctAnswerEnglish": "The addition of a large piece of congealed pig's blood makes it challenging.",
+                "explanationNepali": "पाठले 'bun rieu' को बारेमा भन्छ कि जमेको सुँगुरको रगतको टुक्रा \"is a serious challenge for the unsuspecting diner.\"\nउद्धरण: पाठ ६",
                 "explanationEnglish": "The text says about 'bun rieu' that the piece of congealed pig's blood \"is a serious challenge for the unsuspecting diner.\" \nCitation: Lesson 6."
               },
               {
-                "id": "v",
+                "idNepali": "v",
+                "idEnglish": "v",
+                "questionNepali": "'A bridge too far' वाक्यांशको अर्थ के हो?",
                 "questionEnglish": "What does the phrase 'a bridge too far' mean?",
-                "correctAnswer": "It means something that is too extreme or difficult to attempt.",
-                "explanationNepali": "यो वाक्यांशको अर्थ हो कि कुनै कुरा प्रयास गर्नको लागि धेरै गाह्रो वा चरम छ। पाठमा, लेखकले ठूला कीराहरू खानलाई 'a bridge too far' भनेका छन्।",
+                "correctAnswerNepali": "यसको अर्थ कुनै कुरा जुन प्रयास गर्न धेरै चरम वा गाह्रो छ।",
+                "correctAnswerEnglish": "It means something that is too extreme or difficult to attempt.",
+                "explanationNepali": "यो वाक्यांशको अर्थ हो कि कुनै कुरा प्रयास गर्नको लागि धेरै गाह्रो वा चरम छ। पाठमा, लेखकले ठूला कीराहरू खानलाई 'a bridge too far' भनेका छन्।\nउद्धरण: पाठ ६",
                 "explanationEnglish": "The phrase means something is too difficult or extreme to attempt. In the text, the writer finds eating larger insects to be 'a bridge too far'. \nCitation: Lesson 6."
               }
-            ]
+            ],
+            "titleNepali": "तलका प्रश्नहरूको पूर्ण वाक्यमा उत्तर दिनुहोस्।",
+            "titleEnglish": "Answer the following questions in full sentences."
           }
-        ]
+        ],
+        "titleNepali": "तलको पाठ पढ्नुहोस् र कार्यहरू गर्नुहोस्।",
+        "titleEnglish": "Read the following text and do the tasks."
       },
       {
-        "questionNumber": 5,
+        "questionNumberNepali": "५",
+        "questionNumberEnglish": 5,
         "type": "free_writing",
-        "title": "Write a recipe to prepare your favourite dish.",
-        "marks": 5,
-        "wordCount": 100,
-        "clues": [
+        "marksNepali": "५",
+        "marksEnglish": 5,
+        "wordCountNepali": "१००",
+        "wordCountEnglish": 100,
+        "sampleAnswer": {
+          "explanationNepali": "यो उत्तरले तरकारी मो:मो बनाउने विधि प्रस्तुत गर्दछ, दिइएको संकेतहरू प्रयोग गर्दै। यसमा परिकारको नाम, आवश्यक सामग्री, बनाउने विधि, र कसरी प्रस्तुत गर्ने भन्ने सुझाव समावेश छ। चरणहरू स्पष्ट र क्रमबद्ध छन्, जसले पाठकलाई सजिलै पछ्याउन मद्दत गर्दछ।\nउद्धरण: पाठ ६",
+          "explanationEnglish": "This answer provides a recipe for making vegetable mo:mo, using the given clues. It includes the name of the dish, the necessary ingredients, the preparation method, and a serving suggestion. The steps are clear and sequential, making it easy for the reader to follow. \nCitation: Lesson 6.",
+          "contentNepali": "भेज म:म एक लोकप्रिय नेपाली खाजा हो। यहाँ तपाईं यसलाई कसरी तयार गर्न सक्नुहुन्छ भन्ने दिइएको छ।\n\nसामग्रीहरू:\nपिठोको लागि: २ कप मैदा, पानी।\nकिमा को लागि: १ कप कोरेको बन्दागोभी, ½ कप कोरेको गाजर, ¼ कप काटेको प्याज, १ ठूलो चम्चा अदुवा-लसुनको पेस्ट, नुन, मरिच, र म:म मसला।\n\nविधि:\nपहिले, मैदा र पानी मिसाएर कडा नहुन्जेल मुसेर पिठो तयार गर्नुहोस्। यसलाई एकछिन राख्नुहोस्। किमाको लागि, एउटा कचौरामा सबै तरकारी र मसलाहरू मिलाउनुहोस्। अब, मुसेको पिठोबाट साना, पातलो, गोलाकार रोटीहरू बनाउनुहोस्। प्रत्येक रोटीको बीचमा एक चम्चा किमा राख्नुहोस् र यसलाई आफ्नो मनपर्ने आकारमा मोड्नुहोस्। अन्त्यमा, म:मलाई स्टिमर (म:म पकाउने भाँडो) मा करिब १०-१२ मिनेटसम्म बफ्याउनुहोस्।\n\nपस्कने सुझाव:\nतातो म:मलाई गोलभेडा-तिलको अचारसँग तुरुन्तै पस्कनुहोस्।",
+          "contentEnglish": "Vegetable Mo:Mo is a popular Nepali snack. Here is how you can prepare it.\n\nIngredients:\nFor dough: 2 cups of all-purpose flour, water.\nFor filling: 1 cup grated cabbage, ½ cup grated carrots, ¼ cup chopped onions, 1 tbsp ginger-garlic paste, salt, pepper, and mo:mo masala.\n\nMethod:\nFirst, prepare the dough by mixing flour and water until it is firm. Let it rest. For the filling, mix all the vegetables and spices in a bowl. Now, make small, thin, round wrappers from the dough. Place a spoonful of filling in the center of each wrapper and fold it into your desired shape. Finally, steam the mo:mos in a steamer for about 10-12 minutes.\n\nServing Suggestion:\nServe the hot mo:mos immediately with tomato-sesame pickle (achar).",
+          "titleNepali": "भेज मो:मो बनाउने विधि",
+          "titleEnglish": "Recipe for Vegetable Mo:Mo"
+        },
+        "titleNepali": "तपाईंको मनपर्ने परिकार तयार गर्ने विधि लेख्नुहोस्।",
+        "titleEnglish": "Write a recipe to prepare your favourite dish.",
+        "cluesNepali": [
+          "परिकारको नाम",
+          "सामग्रीहरू",
+          "विधि/चरणहरू",
+          "पस्कने सुझाव"
+        ],
+        "cluesEnglish": [
           "name of the dish",
           "ingredients",
           "method/steps",
           "serving suggestion"
-        ],
-        "sampleAnswer": {
-          "title": "Recipe for Vegetable Mo:Mo",
-          "content": "Vegetable Mo:Mo is a popular Nepali snack. Here is how you can prepare it.\n\nIngredients:\nFor dough: 2 cups of all-purpose flour, water.\nFor filling: 1 cup grated cabbage, ½ cup grated carrots, ¼ cup chopped onions, 1 tbsp ginger-garlic paste, salt, pepper, and mo:mo masala.\n\nMethod:\nFirst, prepare the dough by mixing flour and water until it is firm. Let it rest. For the filling, mix all the vegetables and spices in a bowl. Now, make small, thin, round wrappers from the dough. Place a spoonful of filling in the center of each wrapper and fold it into your desired shape. Finally, steam the mo:mos in a steamer for about 10-12 minutes.\n\nServing Suggestion:\nServe the hot mo:mos immediately with tomato-sesame pickle (achar).",
-          "explanationNepali": "यो उत्तरले तरकारी मो:मो बनाउने विधि प्रस्तुत गर्दछ, दिइएको संकेतहरू प्रयोग गर्दै। यसमा परिकारको नाम, आवश्यक सामग्री, बनाउने विधि, र कसरी प्रस्तुत गर्ने भन्ने सुझाव समावेश छ। चरणहरू स्पष्ट र क्रमबद्ध छन्, जसले पाठकलाई सजिलै पछ्याउन मद्दत गर्दछ।",
-          "explanationEnglish": "This answer provides a recipe for making vegetable mo:mo, using the given clues. It includes the name of the dish, the necessary ingredients, the preparation method, and a serving suggestion. The steps are clear and sequential, making it easy for the reader to follow. \nCitation: Lesson 6."
-        }
+        ]
       },
       {
-        "questionNumber": 6,
+        "questionNumberNepali": "६",
+        "questionNumberEnglish": 6,
         "type": "free_writing",
-        "title": "Write a message of congratulation to a friend who has won a national-level essay writing competition. Write it in about 100 words.",
-        "marks": 5,
-        "wordCount": 100,
-        "clues": [
+        "marksNepali": "५",
+        "marksEnglish": 5,
+        "wordCountNepali": "१००",
+        "wordCountEnglish": 100,
+        "sampleAnswer": {
+          "explanationNepali": "यो उत्तरले राष्ट्रिय निबन्ध प्रतियोगिता जित्ने साथीलाई बधाई सन्देश प्रस्तुत गर्दछ। यसले दिइएको संकेतहरू समावेश गर्दछ: साथीको नाम, प्रतियोगिताको नाम, खुसी र गर्व व्यक्त गर्ने, कडा परिश्रम र प्रतिभाको प्रशंसा गर्ने, र भविष्यको लागि शुभकामना दिने। सन्देशको टोन न्यानो र उत्साहजनक छ, जुन यस्तो अवसरको लागि उपयुक्त छ।\nउद्धरण: पाठ १६",
+          "explanationEnglish": "This answer presents a congratulatory message to a friend who has won a national essay competition. It incorporates the given clues: the friend's name, the competition's name, expressing happiness and pride, acknowledging hard work and talent, and wishing future success. The tone is warm and encouraging, appropriate for the occasion. \nCitation: Lesson 16.",
+          "contentNepali": "प्रिय अनुप,\n\nबधाई छ!\n\nतिमीले राष्ट्रिय स्तरको निबन्ध लेखन प्रतियोगिता २०८१ मा प्रथम पुरस्कार जितेको सुन्दा म धेरै हर्षित भएँ। म तिम्रो लागि अविश्वसनीय रूपमा खुसी र गर्व गर्छु। यो एउटा उत्कृष्ट उपलब्धि हो र तिम्रो कडा परिश्रम, लगनशीलता र लेखनमा अद्भुत प्रतिभाको साँचो प्रमाण हो। तिमी साँच्चै यो मान्यताको हकदार छौ।\n\nतिम्रो सफलता हामी सबैका लागि प्रेरणा हो। मैले सधैं तिम्रो शब्दहरू प्रयोग गर्ने शैलीको प्रशंसा गरेको छु, र अब सम्पूर्ण राष्ट्रलाई थाहा छ तिमी कति प्रतिभाशाली छौ। म तिम्रो आगामी प्रयासहरूको लागि शुभकामना दिन्छु। आगामी दिनमा तिमीले अझ ठूलो सफलता प्राप्त गर। चम्किरहू!\n\nतिम्रो गर्व गर्ने साथी,\nसुनिल",
+          "contentEnglish": "Dear Anup,\n\nCongratulations!\n\nI was overjoyed to hear that you have won the first prize in the National-Level Essay Writing Competition 2081. I am so incredibly happy and proud of you. This is a fantastic achievement and a true testament to your hard work, dedication, and amazing talent in writing. You truly deserve this recognition.\n\nYour success is an inspiration to all of us. I have always admired your way with words, and now the whole nation knows how brilliant you are. I wish you all the very best for your future endeavors. May you achieve even greater success in the days to come. Keep shining!\n\nYour proud friend,\nSunil",
+          "titleNepali": "बधाई सन्देश",
+          "titleEnglish": "Message of Congratulation"
+        },
+        "titleNepali": "राष्ट्रिय स्तरको निबन्ध लेखन प्रतियोगिता जितेको साथीलाई बधाई सन्देश लेख्नुहोस्। यो करिब १०० शब्दमा लेख्नुहोस्।",
+        "titleEnglish": "Write a message of congratulation to a friend who has won a national-level essay writing competition. Write it in about 100 words.",
+        "cluesNepali": [
+          "साथीको नाम",
+          "प्रतियोगिताको नाम",
+          "खुशी र गर्व व्यक्त गर्नुहोस्",
+          "कडा परिश्रम र प्रतिभाको उल्लेख गर्नुहोस्",
+          "भविष्यको सफलताको कामना"
+        ],
+        "cluesEnglish": [
           "friend's name",
           "name of the competition",
           "express happiness and pride",
           "mention hard work and talent",
           "wish for future success"
+        ]
+      },
+      {
+        "questionNumberNepali": "७",
+        "questionNumberEnglish": 7,
+        "type": "free_writing",
+        "marksNepali": "६",
+        "marksEnglish": 6,
+        "wordCountNepali": "१५०",
+        "wordCountEnglish": 150,
+        "sampleAnswer": {
+          "explanationNepali": "यो उत्तरले काम र फुर्सदबीच सन्तुलनको महत्त्वबारे दुई अनुच्छेदमा विचार प्रस्तुत गर्दछ। पहिलो अनुच्छेदले सन्तुलनको आवश्यकता र निरन्तर कामको नकारात्मक प्रभावहरूलाई जोड दिन्छ। दोस्रो अनुच्छेदले फुर्सदका फाइदाहरू, जस्तै तनाव कम गर्ने, रचनात्मकता बढाउने, र समग्र उत्पादकत्वमा सुधार गर्ने बारेमा छलफल गर्दछ। उत्तरले एक संरचित तर्क प्रस्तुत गर्दछ र लगभग १५० शब्दहरूको शब्द सीमा भित्र रहन्छ।\nउद्धरण: पाठ ४",
+          "explanationEnglish": "This answer presents views on the importance of balancing work and leisure in two paragraphs. The first paragraph emphasizes the need for balance and the negative consequences of constant work. The second paragraph discusses the benefits of leisure, such as stress reduction, enhanced creativity, and improved overall productivity. The response provides a structured argument and stays within the word limit of about 150 words. \nCitation: Lesson 4.",
+          "contentNepali": "हाम्रो आधुनिक, प्रतिस्पर्धात्मक विश्वमा, काम र जिम्मेवारीहरूको अनन्त चक्रमा फस्नु सजिलो छ, प्रायः फुर्सदको महत्त्वलाई बेवास्ता गर्दै। यद्यपि, हाम्रो व्यावसायिक जीवन र व्यक्तिगत समय बीच स्वस्थ सन्तुलन कायम राख्नु समग्र कल्याणको लागि महत्त्वपूर्ण छ। पर्याप्त आराम बिना निरन्तर काम गर्दा तनाव, थकान, र उत्पादकत्वमा ह्रास आउँछ। यसले हाम्रो मानसिक र शारीरिक स्वास्थ्य दुवैमा नकारात्मक प्रभाव पार्न सक्छ। तसर्थ, यो सन्तुलनको आवश्यकता पहिचान गर्नु भनेको थप सन्तोषजनक र दिगो जीवनशैलीतर्फको पहिलो कदम हो।\n\nफुर्सद भनेको केवल कामको अनुपस्थिति मात्र होइन; यो स्वस्थ जीवनको लागि एक आवश्यक घटक हो। रुचि मा संलग्न हुनु, परिवार र साथीहरूसँग समय बिताउनु, वा केवल आराम गर्नाले हाम्रो दिमाग र शरीरलाई पुनर्जीवित गर्न मद्दत गर्दछ। यसले रचनात्मकता बढाउँछ, तनाव कम गर्छ, र काममा फर्कँदा हाम्रो मुड र एकाग्रतामा सुधार ल्याउँछ। पढ्ने, खेलकुद खेल्ने, वा यात्रा गर्ने जस्ता गतिविधिहरूले नयाँ दृष्टिकोण र अनुभवहरू प्रदान गर्छन् जसले हाम्रो जीवनलाई समृद्ध बनाउँछन्। फुर्सदको समय तालिका बनाउन सचेत प्रयास गरेर, हामी हाम्रो स्वास्थ्यमा मात्र सुधार गर्दैनौं तर हाम्रो दक्षता र कामप्रतिको लगाव लाई पनि बढाउँछौं, जसले जीवनका सबै क्षेत्रमा ठूलो सफलता दिलाउँछ।",
+          "contentEnglish": "In our modern, competitive world, it is easy to get caught up in the endless cycle of work and responsibilities, often neglecting the importance of leisure. However, maintaining a healthy balance between our professional lives and personal time is crucial for overall well-being. Constant work without adequate rest leads to stress, burnout, and a decline in productivity. It can negatively impact both our mental and physical health. Therefore, recognizing the need for this balance is the first step towards a more fulfilling and sustainable lifestyle.\n\nLeisure is not merely an absence of work; it is an essential component for a healthy life. Engaging in hobbies, spending time with family and friends, or simply relaxing helps to recharge our minds and bodies. It fosters creativity, reduces stress, and improves our mood and concentration when we return to work. Activities like reading, playing sports, or travelling provide new perspectives and experiences that enrich our lives. By making a conscious effort to schedule leisure time, we not only improve our health but also enhance our efficiency and passion for our work, leading to greater success in all aspects of life."
+        },
+        "titleNepali": "काम र फुर्सदको सन्तुलनको महत्त्वमा आफ्नो विचार व्यक्त गर्दै करिब १००-१५० शब्दमा दुई अनुच्छेद लेख्नुहोस्।",
+        "titleEnglish": "Write two paragraphs in about 150 words expressing your views on the importance of balancing work and leisure."
+      },
+      {
+        "questionNumberNepali": "८",
+        "questionNumberEnglish": 8,
+        "type": "free_writing",
+        "marksNepali": "८",
+        "marksEnglish": 8,
+        "wordCountNepali": "२००",
+        "wordCountEnglish": 200,
+        "sampleAnswer": {
+          "explanationNepali": "यो उत्तरले 'Hachi: A Dog's Tale' फिल्मको समीक्षा प्रस्तुत गर्दछ। यसले फिल्मको शीर्षक, निर्देशक, मुख्य कथाको सारांश, अभिनय र संगीत जस्ता शक्तिहरू, र एक सिफारिस समावेश गर्दछ, प्रश्नमा माग गरिए अनुसार। समीक्षाले फिल्मको भावनात्मक शक्ति र यसले दर्शकमा पार्ने प्रभावलाई जोड दिन्छ। यो लगभग २०० शब्दको छ।\nउद्धरण: पाठ १८",
+          "explanationEnglish": "This answer provides a review of the film 'Hachi: A Dog's Tale'. It includes the film's title, director, a summary of the main plot, its strengths like acting and music, and a recommendation, as requested. The review emphasizes the film's emotional power and its impact on the audience. It is approximately 200 words. \nCitation: Lesson 18.",
+          "contentNepali": "लास हलस्ट्रोमको 'हाची: अ डग्स टेल' एउटा गहिरो मर्मस्पर्शी चलचित्र हो जसले अटुट वफादारीको कथालाई सुन्दर ढंगले चित्रण गर्दछ। यो चलचित्र सत्य कथामा आधारित छ र यसले कलेजका प्रोफेसर पार्कर विल्सनलाई पछ्याउँछ, जसले रेल स्टेशनमा एउटा बेवारिसे अकिता कुकुरको छाउरो फेला पार्छन् र उसलाई घर लैजान्छन्। उनीहरू वीच कहिल्यै नटुट्ने बन्धन बन्छ, र कुकुर, हाची, हरेक बिहान आफ्नो मालिकलाई स्टेशनसम्म पुर्याउन जान्छ र हरेक साँझ उनको फिर्तीको पर्खाइमा बस्छ। दुःखद रूपमा, एक दिन पार्करको काममा नै मृत्यु हुन्छ र उनी कहिल्यै फर्कदैनन्, तर हाची अर्को नौ वर्षसम्म सोही ठाउँमा पर्खिरहन्छ।\n\nचलचित्रको सबैभन्दा ठूलो शक्ति यसको भावनात्मक गहिराइ हो, जुन पार्कर र हाची बीचको शक्तिशाली, अव्यक्त सम्बन्धले निर्देशित छ। रिचर्ड गेरेको अभिनय हृदयस्पर्शी छ, र हाचीको भूमिका निर्वाह गर्ने कुकुर कलाकारहरू अविश्वसनीय रूपमा भावुक छन्। निर्देशक लास हलस्ट्रोमले प्रयोग गरेको नरम पियानो सङ्गीतले चलचित्रको करुणालाई बढाउँछ, र हाचीको दृष्टिकोणबाट देखाइने सिर्जनात्मक श्यामश्वेत दृश्यहरू उत्कृष्ट छन्। कसैले तर्क गर्न सक्छ कि कथावस्तु सरल छ र सायद अत्यधिक भावुक छ, तर यसको सरलता नै यसलाई शक्तिशाली बनाउने कुरा हो। गति सुस्त छ, जसले कथाको भावनात्मक आधारलाई स्वाभाविक रूपमा विकास गर्न अनुमति दिन्छ।\n\nम 'हाची: अ डग्स टेल' प्रेम र समर्पणको हृदयस्पर्शी कथा मन पराउने जो कोहीलाई सिफारिस गर्छु। यो आँसु झार्ने खालको छ, त्यसैले टिस्यु बक्स साथमा राख्नुहोला।",
+          "contentEnglish": "Lasse Hallström's 'Hachi: A Dog's Tale' is a deeply moving film that beautifully portrays a story of unwavering loyalty. The film is based on a true story and follows a college professor, Parker Wilson, who finds an abandoned Akita puppy at a train station and takes him home. They form an unbreakable bond, and the dog, Hachi, accompanies his master to the station every morning and waits for his return every evening. Tragically, Parker dies at work one day and never returns, but Hachi continues to wait at the same spot for the next nine years.\n\nThe film's greatest strength is its emotional depth, driven by the powerful, unspoken connection between Parker and Hachi. Richard Gere's performance is heartwarming, and the dog actors playing Hachi are incredibly expressive. Director Lasse Hallström’s use of soft piano music enhances the film's pathos, and the creative black-and-white shots from Hachi's perspective are a brilliant touch. One might argue that the plot is simple and perhaps overly sentimental, but its simplicity is precisely what makes it so powerful. The pacing is slow, which allows the emotional core of the story to develop organically.\n\nI highly recommend 'Hachi: A Dog's Tale' to anyone who appreciates a touching story about love and devotion. It's a tearjerker, so keep a box of tissues handy.",
+          "titleNepali": "चलचित्र समीक्षा: हाची: ए डग्स टेल",
+          "titleEnglish": "Film Review: Hachi: A Dog's Tale"
+        },
+        "titleNepali": "तपाईंले भर्खरै हेर्नुभएको चलचित्रको समीक्षा करिब २०० शब्दमा लेख्नुहोस्।",
+        "titleEnglish": "Write a review of a film you have recently watched in about 200 words.",
+        "cluesNepali": [
+          "चलचित्रको शीर्षक",
+          "निर्देशक",
+          "मुख्य कथानकको सारांश",
+          "सबल र दुर्बल पक्षहरू (अभिनय, दृश्य, संगीत)",
+          "सिफारिस/सुझाव"
         ],
-        "sampleAnswer": {
-          "title": "Message of Congratulation",
-          "content": "Dear Anup,\n\nCongratulations!\n\nI was overjoyed to hear that you have won the first prize in the National-Level Essay Writing Competition 2081. I am so incredibly happy and proud of you. This is a fantastic achievement and a true testament to your hard work, dedication, and amazing talent in writing. You truly deserve this recognition.\n\nYour success is an inspiration to all of us. I have always admired your way with words, and now the whole nation knows how brilliant you are. I wish you all the very best for your future endeavors. May you achieve even greater success in the days to come. Keep shining!\n\nYour proud friend,\nSunil",
-          "explanationNepali": "यो उत्तरले राष्ट्रिय निबन्ध प्रतियोगिता जित्ने साथीलाई बधाई सन्देश प्रस्तुत गर्दछ। यसले दिइएको संकेतहरू समावेश गर्दछ: साथीको नाम, प्रतियोगिताको नाम, खुसी र गर्व व्यक्त गर्ने, कडा परिश्रम र प्रतिभाको प्रशंसा गर्ने, र भविष्यको लागि शुभकामना दिने। सन्देशको टोन न्यानो र उत्साहजनक छ, जुन यस्तो अवसरको लागि उपयुक्त छ।",
-          "explanationEnglish": "This answer presents a congratulatory message to a friend who has won a national essay competition. It incorporates the given clues: the friend's name, the competition's name, expressing happiness and pride, acknowledging hard work and talent, and wishing future success. The tone is warm and encouraging, appropriate for the occasion. \nCitation: Lesson 16."
-        }
-      },
-      {
-        "questionNumber": 7,
-        "type": "free_writing",
-        "title": "Write two paragraphs in about 150 words expressing your views on the importance of balancing work and leisure.",
-        "marks": 6,
-        "wordCount": 150,
-        "sampleAnswer": {
-          "content": "In our modern, competitive world, it is easy to get caught up in the endless cycle of work and responsibilities, often neglecting the importance of leisure. However, maintaining a healthy balance between our professional lives and personal time is crucial for overall well-being. Constant work without adequate rest leads to stress, burnout, and a decline in productivity. It can negatively impact both our mental and physical health. Therefore, recognizing the need for this balance is the first step towards a more fulfilling and sustainable lifestyle.\n\nLeisure is not merely an absence of work; it is an essential component for a healthy life. Engaging in hobbies, spending time with family and friends, or simply relaxing helps to recharge our minds and bodies. It fosters creativity, reduces stress, and improves our mood and concentration when we return to work. Activities like reading, playing sports, or travelling provide new perspectives and experiences that enrich our lives. By making a conscious effort to schedule leisure time, we not only improve our health but also enhance our efficiency and passion for our work, leading to greater success in all aspects of life.",
-          "explanationNepali": "यो उत्तरले काम र फुर्सदबीच सन्तुलनको महत्त्वबारे दुई अनुच्छेदमा विचार प्रस्तुत गर्दछ। पहिलो अनुच्छेदले सन्तुलनको आवश्यकता र निरन्तर कामको नकारात्मक प्रभावहरूलाई जोड दिन्छ। दोस्रो अनुच्छेदले फुर्सदका फाइदाहरू, जस्तै तनाव कम गर्ने, रचनात्मकता बढाउने, र समग्र उत्पादकत्वमा सुधार गर्ने बारेमा छलफल गर्दछ। उत्तरले एक संरचित तर्क प्रस्तुत गर्दछ र लगभग १५० शब्दहरूको शब्द सीमा भित्र रहन्छ।",
-          "explanationEnglish": "This answer presents views on the importance of balancing work and leisure in two paragraphs. The first paragraph emphasizes the need for balance and the negative consequences of constant work. The second paragraph discusses the benefits of leisure, such as stress reduction, enhanced creativity, and improved overall productivity. The response provides a structured argument and stays within the word limit of about 150 words. \nCitation: Lesson 4."
-        }
-      },
-      {
-        "questionNumber": 8,
-        "type": "free_writing",
-        "title": "Write a review of a film you have recently watched in about 200 words.",
-        "marks": 8,
-        "wordCount": 200,
-        "clues": [
+        "cluesEnglish": [
           "film title",
           "director",
           "main plot summary",
           "strengths and weaknesses (acting, visuals, music)",
           "recommendation"
-        ],
-        "sampleAnswer": {
-          "title": "Film Review: Hachi: A Dog's Tale",
-          "content": "Lasse Hallström's 'Hachi: A Dog's Tale' is a deeply moving film that beautifully portrays a story of unwavering loyalty. The film is based on a true story and follows a college professor, Parker Wilson, who finds an abandoned Akita puppy at a train station and takes him home. They form an unbreakable bond, and the dog, Hachi, accompanies his master to the station every morning and waits for his return every evening. Tragically, Parker dies at work one day and never returns, but Hachi continues to wait at the same spot for the next nine years.\n\nThe film's greatest strength is its emotional depth, driven by the powerful, unspoken connection between Parker and Hachi. Richard Gere's performance is heartwarming, and the dog actors playing Hachi are incredibly expressive. Director Lasse Hallström’s use of soft piano music enhances the film's pathos, and the creative black-and-white shots from Hachi's perspective are a brilliant touch. One might argue that the plot is simple and perhaps overly sentimental, but its simplicity is precisely what makes it so powerful. The pacing is slow, which allows the emotional core of the story to develop organically.\n\nI highly recommend 'Hachi: A Dog's Tale' to anyone who appreciates a touching story about love and devotion. It's a tearjerker, so keep a box of tissues handy.",
-          "explanationNepali": "यो उत्तरले 'Hachi: A Dog's Tale' फिल्मको समीक्षा प्रस्तुत गर्दछ। यसले फिल्मको शीर्षक, निर्देशक, मुख्य कथाको सारांश, अभिनय र संगीत जस्ता शक्तिहरू, र एक सिफारिस समावेश गर्दछ, प्रश्नमा माग गरिए अनुसार। समीक्षाले फिल्मको भावनात्मक शक्ति र यसले दर्शकमा पार्ने प्रभावलाई जोड दिन्छ। यो लगभग २०० शब्दको छ।",
-          "explanationEnglish": "This answer provides a review of the film 'Hachi: A Dog's Tale'. It includes the film's title, director, a summary of the main plot, its strengths like acting and music, and a recommendation, as requested. The review emphasizes the film's emotional power and its impact on the audience. It is approximately 200 words. \nCitation: Lesson 18."
-        }
+        ]
       },
       {
-        "questionNumber": 9,
+        "questionNumberNepali": "९",
+        "questionNumberEnglish": 9,
         "type": "grammar",
-        "title": "Reproduce the following sentences as instructed in the brackets.",
-        "marks": 6,
+        "marksNepali": "६",
+        "marksEnglish": 6,
         "subQuestions": [
           {
-            "id": "i",
+            "idNepali": "i",
+            "idEnglish": "i",
             "type": "reproduce",
+            "questionNepali": "Let's go for a walk, __________? (सही question tag थप्नुहोस्।)",
             "questionEnglish": "Let's go for a walk, __________? (Add a correct question tag.)",
-            "correctAnswer": "Let's go for a walk, shall we?",
-            "explanationNepali": "'Let's' बाट सुरु हुने वाक्यले सुझावलाई जनाउँछ, र यसको लागि प्रश्न ट्याग सधैं 'shall we?' हुन्छ।",
+            "correctAnswerNepali": "हामी हिड्न जाऔं, हुन्छ?",
+            "correctAnswerEnglish": "Let's go for a walk, shall we?",
+            "explanationNepali": "'Let's' बाट सुरु हुने वाक्यले सुझावलाई जनाउँछ, र यसको लागि प्रश्न ट्याग सधैं 'shall we?' हुन्छ।\nउद्धरण: पाठ १४",
             "explanationEnglish": "A sentence beginning with 'Let's' expresses a suggestion, and its question tag is always 'shall we?'. \nCitation: Lesson 14."
           },
           {
-            "id": "ii",
+            "idNepali": "ii",
+            "idEnglish": "ii",
             "type": "reproduce",
+            "questionNepali": "Somebody has to clean the room. (कर्मवाच्य मा बदल्नुहोस्।)",
             "questionEnglish": "Somebody has to clean the room. (Change into passive voice.)",
-            "correctAnswer": "The room has to be cleaned.",
-            "explanationNepali": "Modal verb 'has to' भएको वाक्यलाई passive मा परिवर्तन गर्दा, संरचना 'object + has to + be + v3' हुन्छ। 'by somebody' लाई हटाइन्छ।",
+            "correctAnswerNepali": "कोठा सफा गर्नुपर्छ।",
+            "correctAnswerEnglish": "The room has to be cleaned.",
+            "explanationNepali": "Modal verb 'has to' भएको वाक्यलाई passive मा परिवर्तन गर्दा, संरचना 'object + has to + be + v3' हुन्छ। 'by somebody' लाई हटाइन्छ।\nउद्धरण: पाठ ८",
             "explanationEnglish": "When changing a sentence with the modal verb 'has to' into the passive, the structure is 'object + has to + be + v3'. 'by somebody' is omitted. \nCitation: Lesson 8."
           },
           {
-            "id": "iii",
+            "idNepali": "iii",
+            "idEnglish": "iii",
             "type": "reproduce",
+            "questionNepali": "The teacher said, \"Why are you late?\" (अप्रत्यक्ष कथन मा बदल्नुहोस्।)",
             "questionEnglish": "The teacher said, \"Why are you late?\" (Change into indirect speech.)",
-            "correctAnswer": "The teacher asked why I was late.",
-            "explanationNepali": "Wh-प्रश्नलाई अप्रत्यक्ष बोलीमा परिवर्तन गर्दा, 'asked' जस्ता रिपोर्टिङ क्रिया प्रयोग गरिन्छ र प्रश्नको संरचनालाई Wh-शब्द + कर्ता + क्रियाको संरचनामा परिवर्तन गरिन्छ।",
+            "correctAnswerNepali": "शिक्षकले म किन ढिलो भएँ भनेर सोधे।",
+            "correctAnswerEnglish": "The teacher asked why I was late.",
+            "explanationNepali": "Wh-प्रश्नलाई अप्रत्यक्ष बोलीमा परिवर्तन गर्दा, 'asked' जस्ता रिपोर्टिङ क्रिया प्रयोग गरिन्छ र प्रश्नको संरचनालाई Wh-शब्द + कर्ता + क्रियाको संरचनामा परिवर्तन गरिन्छ।\nउद्धरण: पाठ २",
             "explanationEnglish": "When changing a Wh-question to indirect speech, a reporting verb like 'asked' is used, and the question structure is changed to Wh-word + subject + verb. \nCitation: Lesson 2."
           },
           {
-            "id": "iv",
+            "idNepali": "iv",
+            "idEnglish": "iv",
             "type": "reproduce",
+            "questionNepali": "If she had studied harder, she ________ the exam. (वाक्य पूरा गर्न 'pass' क्रियाको सही रूप प्रयोग गर्नुहोस्।)",
             "questionEnglish": "If she had studied harder, she ________ (pass) the exam. (Use the correct form of the verb 'pass' to complete the sentence.)",
-            "correctAnswer": "If she had studied harder, she would have passed the exam.",
-            "explanationNepali": "यो तेस्रो प्रकारको conditional वाक्य हो, जसले भूतकालको एक असम्भव अवस्थालाई जनाउँछ। संरचना If + past perfect, ...would have + v3 हो।",
+            "correctAnswerNepali": "यदि उनले अझ कडा अध्ययन गरेकी भए, उनी परीक्षामा उत्तीर्ण हुने थिइन्।",
+            "correctAnswerEnglish": "If she had studied harder, she would have passed the exam.",
+            "explanationNepali": "यो तेस्रो प्रकारको conditional वाक्य हो, जसले भूतकालको एक असम्भव अवस्थालाई जनाउँछ। संरचना If + past perfect, ...would have + v3 हो।\nउद्धरण: पाठ ५",
             "explanationEnglish": "This is a Type 3 conditional sentence, which refers to an unreal past condition. The structure is If + past perfect, ...would have + v3. \nCitation: Lesson 5."
           },
           {
-            "id": "v",
+            "idNepali": "v",
+            "idEnglish": "v",
             "type": "reproduce",
+            "questionNepali": "I saw him cross the road. ('What' प्रयोग गरी प्रश्नमा बदल्नुहोस्।)",
             "questionEnglish": "I saw him cross the road. (Change into 'What' question.)",
-            "correctAnswer": "What did you see him do?",
-            "explanationNepali": "क्रिया 'cross the road' बारे प्रश्न सोध्न, 'What' प्रयोग गरिन्छ र भूतकालको लागि सहायक क्रिया 'did' को साथ प्रश्न बनाइन्छ।",
+            "correctAnswerNepali": "तिमीले उसलाई के गरेको देख्यौ?",
+            "correctAnswerEnglish": "What did you see him do?",
+            "explanationNepali": "क्रिया 'cross the road' बारे प्रश्न सोध्न, 'What' प्रयोग गरिन्छ र भूतकालको लागि सहायक क्रिया 'did' को साथ प्रश्न बनाइन्छ।\nउद्धरण: पाठ १८",
             "explanationEnglish": "To ask about the action 'cross the road', 'What' is used, and a question is formed with the auxiliary verb 'did' for the simple past. \nCitation: Lesson 18."
           },
           {
-            "id": "vi",
+            "idNepali": "vi",
+            "idEnglish": "vi",
             "type": "reproduce",
+            "questionNepali": "He likes both tea and coffee. (नकारात्मकमा बदल्नुहोस्।)",
             "questionEnglish": "He likes both tea and coffee. (Change into negative.)",
-            "correctAnswer": "He likes neither tea nor coffee.",
-            "explanationNepali": "'both...and' को नकारात्मक रूप 'neither...nor' हो, जसले दुवै विकल्पहरूलाई अस्वीकार गर्दछ।",
+            "correctAnswerNepali": "उनी न चिया मन पराउँछन् न कफी।",
+            "correctAnswerEnglish": "He likes neither tea nor coffee.",
+            "explanationNepali": "'both...and' को नकारात्मक रूप 'neither...nor' हो, जसले दुवै विकल्पहरूलाई अस्वीकार गर्दछ।\nउद्धरण: पाठ ११",
             "explanationEnglish": "The negative form of 'both...and' is 'neither...nor', which negates both options. \nCitation: Lesson 11."
           }
-        ]
+        ],
+        "titleNepali": "कोष्ठकमा निर्देशन दिइए अनुसार तलका वाक्यहरू पुनः लेख्नुहोस्।",
+        "titleEnglish": "Reproduce the following sentences as instructed in the brackets."
       },
       {
-        "questionNumber": 10,
+        "questionNumberNepali": "१०",
+        "questionNumberEnglish": 10,
         "type": "cloze_test",
-        "title": "Choose and copy the correct answers from the brackets to complete the given text. (Rewriting the text is not compulsory.)",
-        "marks": 5,
-        "passage": "Last week, I went to (a) _____ (a/an/the/no article) historical place called Gorkha Palace. It (b) _____ (is/was/has been/had been) built in the 16th century. It is a home to a rich history, (c) _____ (is it/isn't it/was it/wasn't it)? I was amazed by the architecture. The guide, (d) _____ (who/whom/which/whose) knowledge was impressive, told us many stories. If I had known about its beauty earlier, I (e) _____ (will visit/would visit/would have visited/had visited) it long ago. Visitors (f) _____ (must/can/may/might) not touch the ancient artifacts. I asked the guide, \"(g) _____ (Why this palace is important/Why is this palace important/Why was this palace important/Why the palace was important)?\" He explained that it was the place (h) _____ (which/that/where/when) King Prithvi Narayan Shah began his unification campaign. The local people make the visitors (i) _____ (feel/to feel/felt/feeling) very welcome. (j) _____ (Therefore/However/Although/Because) the climb was steep, the view from the top was worth it.",
+        "marksNepali": "५",
+        "marksEnglish": 5,
+        "passageNepali": "गएको हप्ता, म गोर्खा दरबार भनिने (क) _____ (a/an/the/no article) ऐतिहासिक ठाउँमा गएँ। यो १६ औं शताब्दीमा (ख) _____ (is/was/has been/had been)। यो समृद्ध इतिहासको घर हो, (ग) _____ (is it/isn't it/was it/wasn't it)? म वास्तुकला देखेर चकित परें। गाइड, (घ) _____ (who/whom/which/whose) ज्ञान प्रभावशाली थियो, उनले हामीलाई धेरै कथाहरू सुनाए। यदि मलाई यसको सुन्दरताको बारेमा पहिले नै थाहा भएको भए, म धेरै पहिले नै (ङ) _____ (will visit/would visit/would have visited/had visited)। आगन्तुकहरूले प्राचीन कलाकृतिहरू छुन (च) _____ (must/can/may/might)। मैले गाइडलाई सोधें, \"(छ) _____ (Why this palace is important/Why is this palace important/Why was this palace important/Why the palace was important)?\" उनले बताए कि यो त्यो ठाउँ हो (ज) _____ (which/that/where/when) राजा पृथ्वीनारायण शाहले आफ्नो एकीकरण अभियान सुरु गरेका थिए। स्थानीय मानिसहरूले आगन्तुकहरूलाई धेरै स्वागत (झ) _____ (feel/to feel/felt/feeling) गराउँछन्। उकालो ठाडो (ञ) _____ (Therefore/However/Although/Because) पनि, माथिबाट देखिने दृश्य हेर्न लायक थियो।",
+        "passageEnglish": "Last week, I went to (a) _____ (a/an/the/no article) historical place called Gorkha Palace. It (b) _____ (is/was/has been/had been) built in the 16th century. It is a home to a rich history, (c) _____ (is it/isn't it/was it/wasn't it)? I was amazed by the architecture. The guide, (d) _____ (who/whom/which/whose) knowledge was impressive, told us many stories. If I had known about its beauty earlier, I (e) _____ (will visit/would visit/would have visited/had visited) it long ago. Visitors (f) _____ (must/can/may/might) not touch the ancient artifacts. I asked the guide, \"(g) _____ (Why this palace is important/Why is this palace important/Why was this palace important/Why the palace was important)?\" He explained that it was the place (h) _____ (which/that/where/when) King Prithvi Narayan Shah began his unification campaign. The local people make the visitors (i) _____ (feel/to feel/felt/feeling) very welcome. (j) _____ (Therefore/However/Although/Because) the climb was steep, the view from the top was worth it.",
         "gaps": [
           {
-            "id": "a",
-            "correctAnswer": "a",
-            "explanationNepali": "'historical' शब्द व्यञ्जन ध्वनि /h/ बाट सुरु हुन्छ, त्यसैले 'a' प्रयोग हुन्छ।",
+            "idNepali": "क",
+            "idEnglish": "a",
+            "correctAnswerNepali": "एउटा",
+            "correctAnswerEnglish": "a",
+            "explanationNepali": "'historical' शब्द व्यञ्जन ध्वनि /h/ बाट सुरु हुन्छ, त्यसैले 'a' प्रयोग हुन्छ।\nउद्धरण: पाठ ७",
             "explanationEnglish": "The word 'historical' begins with a consonant sound /h/, so 'a' is used. \nCitation: Lesson 7."
           },
           {
-            "id": "b",
-            "correctAnswer": "was",
-            "explanationNepali": "कार्य (निर्माण) भूतकालमा एक निश्चित समय (16th century) मा भएको हो, त्यसैले simple past passive ('was built') को प्रयोग हुन्छ।",
+            "idNepali": "ख",
+            "idEnglish": "b",
+            "correctAnswerNepali": "थियो",
+            "correctAnswerEnglish": "was",
+            "explanationNepali": "कार्य (निर्माण) भूतकालमा एक निश्चित समय (16th century) मा भएको हो, त्यसैले simple past passive ('was built') को प्रयोग हुन्छ।\nउद्धरण: पाठ ८",
             "explanationEnglish": "The action (building) happened at a specific time in the past (16th century), so the simple past passive ('was built') is used. \nCitation: Lesson 8."
           },
           {
-            "id": "c",
-            "correctAnswer": "isn't it",
-            "explanationNepali": "वाक्य 'It is a home...' सकारात्मक र वर्तमान कालमा छ, त्यसैले प्रश्न ट्याग नकारात्मक ('isn't') र सर्वनाम ('it') हुनुपर्छ।",
+            "idNepali": "ग",
+            "idEnglish": "c",
+            "correctAnswerNepali": "होइन त (isn't it)",
+            "correctAnswerEnglish": "isn't it",
+            "explanationNepali": "वाक्य 'It is a home...' सकारात्मक र वर्तमान कालमा छ, त्यसैले प्रश्न ट्याग नकारात्मक ('isn't') र सर्वनाम ('it') हुनुपर्छ।\nउद्धरण: पाठ १४",
             "explanationEnglish": "The statement 'It is a home...' is positive and in the present tense, so the tag must be negative ('isn't') with the pronoun ('it'). \nCitation: Lesson 14."
           },
           {
-            "id": "d",
-            "correctAnswer": "whose",
-            "explanationNepali": "'Whose' एक possessive relative pronoun हो, जसले यहाँ गाइडको ज्ञान ('knowledge') लाई जनाउँछ।",
+            "idNepali": "घ",
+            "idEnglish": "d",
+            "correctAnswerNepali": "कसको",
+            "correctAnswerEnglish": "whose",
+            "explanationNepali": "'Whose' एक possessive relative pronoun हो, जसले यहाँ गाइडको ज्ञान ('knowledge') लाई जनाउँछ।\nउद्धरण: पाठ १५",
             "explanationEnglish": "'Whose' is a possessive relative pronoun, referring to the guide's possession of 'knowledge'. \nCitation: Lesson 15."
           },
           {
-            "id": "e",
-            "correctAnswer": "would have visited",
-            "explanationNepali": "यो तेस्रो प्रकारको conditional वाक्य हो (If + past perfect, ...would have + v3), जसले भूतकालको एक असम्भव अवस्थालाई जनाउँछ।",
+            "idNepali": "ङ",
+            "idEnglish": "e",
+            "correctAnswerNepali": "भ्रमण गरेको हुने थियो",
+            "correctAnswerEnglish": "would have visited",
+            "explanationNepali": "यो तेस्रो प्रकारको conditional वाक्य हो (If + past perfect, ...would have + v3), जसले भूतकालको एक असम्भव अवस्थालाई जनाउँछ।\nउद्धरण: पाठ ५",
             "explanationEnglish": "This is a Type 3 conditional sentence (If + past perfect, ...would have + v3), referring to an unreal past condition. \nCitation: Lesson 5."
           },
           {
-            "id": "f",
-            "correctAnswer": "must",
-            "explanationNepali": "'Must not' को प्रयोग यहाँ एक कडा नियम वा निषेध (prohibition) लाई जनाउन गरिएको छ। 'must' को नकारात्मक रूप 'must not' हो।",
+            "idNepali": "च",
+            "idEnglish": "f",
+            "correctAnswerNepali": "पर्छ",
+            "correctAnswerEnglish": "must",
+            "explanationNepali": "'Must not' को प्रयोग यहाँ एक कडा नियम वा निषेध लाई जनाउन गरिएको छ। 'must' को नकारात्मक रूप 'must not' हो।\nउद्धरण: पाठ ४",
             "explanationEnglish": "The use of 'must not' here indicates a strong rule or prohibition. The sentence requires the modal 'must' in its negative form. \nCitation: Lesson 4."
           },
           {
-            "id": "g",
-            "correctAnswer": "Why is this palace important",
-            "explanationNepali": "प्रत्यक्ष प्रश्नमा, Wh-शब्द पछि सहायक क्रिया ('is') + कर्ता ('this palace') को संरचना हुन्छ।",
+            "idNepali": "छ",
+            "idEnglish": "g",
+            "correctAnswerNepali": "यो दरबार किन महत्त्वपूर्ण छ",
+            "correctAnswerEnglish": "Why is this palace important",
+            "explanationNepali": "प्रत्यक्ष प्रश्नमा, Wh-शब्द पछि सहायक क्रिया ('is') + कर्ता ('this palace') को संरचना हुन्छ।\nउद्धरण: पाठ १८",
             "explanationEnglish": "In a direct question, the structure is Wh-word + auxiliary verb ('is') + subject ('this palace'). \nCitation: Lesson 18."
           },
           {
-            "id": "h",
-            "correctAnswer": "where",
-            "explanationNepali": "'Where' ले स्थान ('the place') लाई जनाउँछ जहाँ कुनै कार्य भएको थियो।",
+            "idNepali": "ज",
+            "idEnglish": "h",
+            "correctAnswerNepali": "कहाँ",
+            "correctAnswerEnglish": "where",
+            "explanationNepali": "'Where' ले स्थान ('the place') लाई जनाउँछ जहाँ कुनै कार्य भएको थियो।\nउद्धरण: पाठ १५",
             "explanationEnglish": "'Where' is a relative adverb used to refer to a place ('the place') where an action occurred. \nCitation: Lesson 15."
           },
           {
-            "id": "i",
-            "correctAnswer": "feel",
-            "explanationNepali": "'make' को causative रूपमा, यसपछि object ('the visitors') र bare infinitive ('feel') आउँछ।",
+            "idNepali": "i",
+            "idEnglish": "i",
+            "correctAnswerNepali": "महसुस गर्नु",
+            "correctAnswerEnglish": "feel",
+            "explanationNepali": "'make' को causative रूपमा, यसपछि object ('the visitors') र bare infinitive ('feel') आउँछ।\nउद्धरण: पाठ १८",
             "explanationEnglish": "In the causative form with 'make', it is followed by an object ('the visitors') and the bare infinitive ('feel'). \nCitation: Lesson 18."
           },
           {
-            "id": "j",
-            "correctAnswer": "Although",
-            "explanationNepali": "'Although' ले विरोधाभास देखाउँछ: उकालो ठाडो भए तापनि, माथिको दृश्य राम्रो थियो।",
+            "idNepali": "ञ",
+            "idEnglish": "j",
+            "correctAnswerNepali": "यद्यपि",
+            "correctAnswerEnglish": "Although",
+            "explanationNepali": "'Although' ले विरोधाभास देखाउँछ: उकालो ठाडो भए तापनि, माथिको दृश्य राम्रो थियो।\nउद्धरण: पाठ १३",
             "explanationEnglish": "'Although' introduces a contrast: despite the climb being steep, the view was worth it. \nCitation: Lesson 13."
           }
-        ]
+        ],
+        "titleNepali": "दिइएको पाठ पूरा गर्न कोष्ठकबाट सही उत्तरहरू छान्नुहोस् र प्रतिलिपि गर्नुहोस्। (पाठ पुनः लेख्न अनिवार्य छैन।)",
+        "titleEnglish": "Choose and copy the correct answers from the brackets to complete the given text. (Rewriting the text is not compulsory.)"
       }
     ]
   }
 ]
-
