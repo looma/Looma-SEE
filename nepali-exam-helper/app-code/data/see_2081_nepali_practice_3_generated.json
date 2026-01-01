@@ -1,5 +1,18 @@
 [
   {
+    "_id": "see_2081_nepali_practice_3_generated",
+    "titleNepali": "SEE २०८१ नेपाली अभ्यास परीक्षा ३",
+    "titleEnglish": "SEE 2081 Nepali Practice Test 3",
+    "subjectNepali": "nepali",
+    "subjectEnglish": "Nepali",
+    "totalMarksNepali": "७५",
+    "totalMarksEnglish": 75,
+    "durationNepali": "१८०",
+    "durationEnglish": 180,
+    "instructionsNepali": "दिइएका निर्देशनका आधारमा आफ्नै शैलीमा सिर्जनात्मक उत्तर दिनुहोस् :",
+    "instructionsEnglish": "Give creative answers in your own style based on the given instructions:"
+  },
+  {
     "testId": "see_2081_nepali_practice_3_generated",
     "questions": [
       {
