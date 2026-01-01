@@ -23,6 +23,9 @@ export function LanguageSwitch() {
             onClick={handleToggle}
             variant="outline"
             size="sm"
+            role="switch"
+            aria-checked={language === "nepali"}
+            aria-label={`Language: ${language === "english" ? "English" : "Nepali"}. Click to switch.`}
             className={`
         flex items-center gap-2
         px-3 py-2
@@ -30,25 +33,27 @@ export function LanguageSwitch() {
         shadow-lg
         border-2
         transition-all duration-300
+        select-none
         ${isLanguageSwitchEnabled
                     ? "bg-white/95 backdrop-blur-sm hover:bg-slate-50 border-slate-300 hover:border-slate-400 hover:shadow-xl cursor-pointer"
-                    : "bg-slate-100 border-slate-200 cursor-not-allowed opacity-60 pointer-events-none"
+                    : "bg-slate-100 border-slate-200 cursor-not-allowed opacity-60"
                 }
       `}
+            disabled={!isLanguageSwitchEnabled}
         >
-            <Globe className={`h-4 w-4 ${isLanguageSwitchEnabled ? "text-blue-600" : "text-slate-400"}`} />
-            <span className={`text-sm font-medium ${isLanguageSwitchEnabled ? "text-slate-700" : "text-slate-400"}`}>
+            <Globe className={`h-4 w-4 pointer-events-none ${isLanguageSwitchEnabled ? "text-blue-600" : "text-slate-400"}`} />
+            <span className={`text-sm font-medium pointer-events-none ${isLanguageSwitchEnabled ? "text-slate-700" : "text-slate-400"}`}>
                 {language === "english" ? (
                     <>
-                        <span className="text-blue-600 font-black underline underline-offset-2">EN</span>
-                        <span className="text-slate-400 mx-1">|</span>
-                        <span className="text-slate-400 font-normal">नेपाली</span>
+                        <span className="text-blue-600 font-black underline underline-offset-2 pointer-events-none">EN</span>
+                        <span className="text-slate-400 mx-1 pointer-events-none">|</span>
+                        <span className="text-slate-400 font-normal pointer-events-none">नेपाली</span>
                     </>
                 ) : (
                     <>
-                        <span className="text-slate-400 font-normal">EN</span>
-                        <span className="text-slate-400 mx-1">|</span>
-                        <span className="text-blue-600 font-black underline underline-offset-2">नेपाली</span>
+                        <span className="text-slate-400 font-normal pointer-events-none">EN</span>
+                        <span className="text-slate-400 mx-1 pointer-events-none">|</span>
+                        <span className="text-blue-600 font-black underline underline-offset-2 pointer-events-none">नेपाली</span>
                     </>
                 )}
             </span>

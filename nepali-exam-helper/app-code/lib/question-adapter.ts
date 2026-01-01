@@ -80,20 +80,43 @@ export function adaptDatabaseQuestions(dbQuestions: Record<string, any>) {
   // Handle Nepali questions if they exist
   if (dbQuestions.nepaliQuestions && Array.isArray(dbQuestions.nepaliQuestions)) {
     adapted.nepaliQuestions = dbQuestions.nepaliQuestions.map((q: any): NepaliQuestion => ({
-      questionNumber: q.questionNumber || 0,
+      // Spread to preserve all bilingual fields
+      ...q,
+      // Ensure standard fields are set with fallbacks
+      questionNumber: q.questionNumberEnglish || q.questionNumber || 0,
+      questionNumberNepali: q.questionNumberNepali || '',
+      questionNumberEnglish: q.questionNumberEnglish || q.questionNumber || 0,
       type: q.type,
-      title: q.title || '',
-      marks: q.marks,
-      explanation: q.explanation,
+      title: q.titleNepali || q.title || '',
+      titleNepali: q.titleNepali || q.title || '',
+      titleEnglish: q.titleEnglish || '',
+      marks: q.marksEnglish || q.marks || 0,
+      marksNepali: q.marksNepali || '',
+      marksEnglish: q.marksEnglish || q.marks || 0,
+      explanation: q.explanationNepali || q.explanation || '',
+      explanationNepali: q.explanationNepali || q.explanation || '',
+      explanationEnglish: q.explanationEnglish || '',
+      passage: q.passageNepali || q.passage || '',
+      passageNepali: q.passageNepali || q.passage || '',
+      passageEnglish: q.passageEnglish || '',
+      // Preserve all other fields (columns, subQuestions, etc. with their bilingual content)
       columns: q.columns,
-      correctAnswer: q.correctAnswer,
-      passage: q.passage,
+      correctAnswer: q.correctAnswerNepali || q.correctAnswer,
+      correctAnswerNepali: q.correctAnswerNepali || q.correctAnswer,
+      correctAnswerEnglish: q.correctAnswerEnglish,
       subQuestions: q.subQuestions,
-      sampleAnswer: q.sampleAnswer,
+      sampleAnswer: q.sampleAnswerNepali || q.sampleAnswer,
+      sampleAnswerNepali: q.sampleAnswerNepali || q.sampleAnswer,
+      sampleAnswerEnglish: q.sampleAnswerEnglish,
       subSections: q.subSections,
       options: q.options,
-      topics: q.topics,
+      topics: q.topicsNepali || q.topics,
+      topicsNepali: q.topicsNepali || q.topics,
+      topicsEnglish: q.topicsEnglish,
       sampleAnswerId: q.sampleAnswerId,
+      quote: q.quoteNepali || q.quote,
+      quoteNepali: q.quoteNepali || q.quote,
+      quoteEnglish: q.quoteEnglish,
     }))
     return adapted // Nepali tests are self-contained
   }
@@ -113,9 +136,9 @@ export function adaptDatabaseQuestions(dbQuestions: Record<string, any>) {
         questionNumberNepali: q.questionNumberNepali || q.questionNumber || '',
         questionNumberEnglish: q.questionNumberEnglish || '',
         type: q.type,
-        marks: q.marks || q.marksNepali || 0,
-        marksNepali: q.marksNepali || q.marks || 0,
-        marksEnglish: q.marksEnglish || q.marks || 0,
+        marks: q.marksEnglish || q.marks || 1,
+        marksNepali: q.marksNepali || '',
+        marksEnglish: q.marksEnglish || q.marks || 1,
         questionNepali: q.questionNepali || '',
         questionEnglish: q.questionEnglish || '',
         answerNepali: q.answerNepali || '',
@@ -143,7 +166,7 @@ export function adaptDatabaseQuestions(dbQuestions: Record<string, any>) {
       title: q.title || q.titleEnglish || "",
       titleNepali: q.titleNepali || q.title || "",
       titleEnglish: q.titleEnglish || q.title || "",
-      marks: q.marks || q.marksEnglish || 0,
+      marks: q.marksEnglish || q.marks || 0,
       marksNepali: q.marksNepali || q.marks,
       marksEnglish: q.marksEnglish || q.marks,
       passage: q.passage,
@@ -183,18 +206,21 @@ export function adaptDatabaseQuestions(dbQuestions: Record<string, any>) {
           marks: q.marksEnglish || q.marks || 1,
           explanation: q.explanationEnglish || q.explanation,
           explanationNepali: q.explanationNepali,
-        })
+        } as any)
       } else {
         // Groups B, C, D are free response
-        const freeResponseQuestion: FreeResponseQuestion = {
+        const freeResponseQuestion = {
           id: q.idEnglish || q.id || q.questionNumber?.toString() || q.questionId || q._id || Math.random().toString(),
           nepali: q.questionNepali || q.question?.nepali || "",
           english: q.questionEnglish || q.question?.english || "",
           marks: q.marksEnglish || q.marks || 1,
           sampleAnswer: q.sampleAnswerEnglish || q.sampleAnswer,
+          sampleAnswerNepali: q.sampleAnswerNepali,
+          sampleAnswerEnglish: q.sampleAnswerEnglish || q.sampleAnswer,
           explanation: q.explanationEnglish || q.explanation,
           explanationNepali: q.explanationNepali,
-        }
+          explanationEnglish: q.explanationEnglish || q.explanation,
+        } as FreeResponseQuestion
 
         if (groupKey === "groupB" || groupKey === "B") adapted.groupB.push(freeResponseQuestion)
         if (groupKey === "groupC" || groupKey === "C") adapted.groupC.push(freeResponseQuestion)

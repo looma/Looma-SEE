@@ -1976,14 +1976,14 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
         <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4 sm:p-6 shadow-lg border border-white/20 mb-4 sm:mb-6">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-3 sm:gap-0">
             <div className="flex items-center gap-2">
-              <h3 className="font-semibold text-slate-800 text-sm sm:text-base">English Test Progress</h3>
-              <span className="text-xs text-slate-600">{calculateOverallProgress()}% Complete</span>
+              <h3 className="font-semibold text-slate-800 text-sm sm:text-base">{language === "english" ? "English Test Progress" : "अंग्रेजी परीक्षा प्रगति"}</h3>
+              <span className="text-xs text-slate-600">{calculateOverallProgress()}% {language === "english" ? "Complete" : "पूर्ण"}</span>
             </div>
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
               {lastSaved && (
                 <div className="flex items-center gap-1 text-xs text-green-600">
                   <Save className="h-3 w-3" />
-                  <span>Saved {formatSavedTime(lastSaved)}</span>
+                  <span>{language === "english" ? "Saved" : "सुरक्षित"} {formatSavedTime(lastSaved)}</span>
                 </div>
               )}
             </div>
@@ -2024,7 +2024,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                   return answer !== undefined && answer !== null && answer !== ""
                 }).length
               }{" "}
-              of {questions.englishQuestions.length} questions answered
+              {language === "english" ? `of ${questions.englishQuestions.length} questions answered` : `मध्ये ${questions.englishQuestions.length} प्रश्नहरूको उत्तर दिइयो`}
             </span>
             <span className="font-medium">{calculateOverallProgress()}%</span>
           </div>
@@ -2053,11 +2053,11 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
           >
             {isSubmitting ? (
               <>
-                <Loader2 className="mr-2 h-4 w-4 sm:h-5 sm:w-5 animate-spin" /> Submitting...
+                <Loader2 className="mr-2 h-4 w-4 sm:h-5 sm:w-5 animate-spin" /> {language === "english" ? "Submitting..." : "पेश गर्दै..."}
               </>
             ) : (
               <>
-                <Trophy className="mr-2 h-4 w-4 sm:h-5 sm:w-5" /> Submit Test ({(() => {
+                <Trophy className="mr-2 h-4 w-4 sm:h-5 sm:w-5" /> {language === "english" ? "Submit Test" : "परीक्षा पेश गर्नुहोस्"} ({(() => {
                   const answered = questions.englishQuestions.filter((q: any) => {
                     const answer = answers[q.id]
                     if (!answer) return false
@@ -2095,17 +2095,20 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
             <div className="bg-white rounded-xl p-6 max-w-md w-full shadow-2xl">
               <div className="text-center">
                 <Trophy className="h-12 w-12 text-amber-500 mx-auto mb-4" />
-                <h3 className="text-xl font-bold text-slate-800 mb-2">Incomplete Test</h3>
+                <h3 className="text-xl font-bold text-slate-800 mb-2">{language === "english" ? "Incomplete Test" : "अपूर्ण परीक्षा"}</h3>
                 <p className="text-slate-600 mb-4">
-                  You have {getIncompleteQuestions().incomplete} unanswered questions out of{" "}
-                  {getIncompleteQuestions().total} total questions.
+                  {language === "english"
+                    ? `You have ${getIncompleteQuestions().incomplete} unanswered questions out of ${getIncompleteQuestions().total} total questions.`
+                    : `तपाईंले ${getIncompleteQuestions().total} मध्ये ${getIncompleteQuestions().incomplete} प्रश्नहरूको उत्तर दिनुभएको छैन।`}
                 </p>
                 <p className="text-sm text-slate-500 mb-6">
-                  Are you sure you want to submit your test now? You can still go back and answer more questions.
+                  {language === "english"
+                    ? "Are you sure you want to submit your test now? You can still go back and answer more questions."
+                    : "के तपाईं अहिले परीक्षा पेश गर्न चाहनुहुन्छ? तपाईं अझै फर्केर थप प्रश्नहरूको उत्तर दिन सक्नुहुन्छ।"}
                 </p>
                 <div className="flex gap-3">
                   <Button onClick={() => setShowSubmitWarning(false)} variant="outline" className="flex-1">
-                    Go Back
+                    {language === "english" ? "Go Back" : "पछाडि जानुहोस्"}
                   </Button>
                   <Button
                     onClick={submitTest}
@@ -2114,10 +2117,10 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                   >
                     {isSubmitting ? (
                       <>
-                        <Loader2 className="mr-2 h-4 w-4 animate-spin" /> Submitting...
+                        <Loader2 className="mr-2 h-4 w-4 animate-spin" /> {language === "english" ? "Submitting..." : "पेश गर्दै..."}
                       </>
                     ) : (
-                      "Submit Anyway"
+                      language === "english" ? "Submit Anyway" : "जे होस् पेश गर्नुहोस्"
                     )}
                   </Button>
                 </div>
@@ -2154,14 +2157,14 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
         <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4 sm:p-6 shadow-lg border border-white/20 mb-4 sm:mb-6">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-3 sm:gap-0">
             <div className="flex items-center gap-2">
-              <h3 className="font-semibold text-slate-800 text-sm sm:text-base">नेपाली परीक्षा प्रगति</h3>
-              <span className="text-xs text-slate-600">{calculateOverallProgress()}% पूर्ण</span>
+              <h3 className="font-semibold text-slate-800 text-sm sm:text-base">{language === "english" ? "Nepali Test Progress" : "नेपाली परीक्षा प्रगति"}</h3>
+              <span className="text-xs text-slate-600">{calculateOverallProgress()}% {language === "english" ? "Complete" : "पूर्ण"}</span>
             </div>
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
               {lastSaved && (
                 <div className="flex items-center gap-1 text-xs text-green-600">
                   <Save className="h-3 w-3" />
-                  <span>सुरक्षित {formatSavedTime(lastSaved)}</span>
+                  <span>{language === "english" ? "Saved" : "सुरक्षित"} {formatSavedTime(lastSaved)}</span>
                 </div>
               )}
             </div>
@@ -2175,7 +2178,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
             />
           </div>
           <div className="flex justify-between items-center mt-2 text-xs text-slate-600">
-            <span>{answeredQuestions} / {totalQuestions} प्रश्नहरू उत्तर दिइएको</span>
+            <span>{language === "english" ? `${answeredQuestions} of ${totalQuestions} questions answered` : `${answeredQuestions} / ${totalQuestions} प्रश्नहरू उत्तर दिइएको`}</span>
             <span className="font-medium">{calculateOverallProgress()}%</span>
           </div>
         </div>
@@ -2184,11 +2187,12 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
         <div className="space-y-6">
           {questions.nepaliQuestions.map((question: any, index: number) => (
             <NepaliQuestionRenderer
-              key={question.questionNumber}
+              key={question.questionNumberEnglish || question.questionNumber}
               question={question}
-              answer={answers.nepali?.[`q${question.questionNumber}`]}
+              answer={answers.nepali?.[`q${question.questionNumberEnglish || question.questionNumber}`]}
               onAnswerChange={handleNepaliAnswerChange}
               questionIndex={index}
+              language={language}
             />
           ))}
         </div>
@@ -2203,11 +2207,11 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
           >
             {isSubmitting ? (
               <>
-                <Loader2 className="mr-2 h-4 w-4 sm:h-5 sm:w-5 animate-spin" /> पेश गर्दै...
+                <Loader2 className="mr-2 h-4 w-4 sm:h-5 sm:w-5 animate-spin" /> {language === "english" ? "Submitting..." : "पेश गर्दै..."}
               </>
             ) : (
               <>
-                <Trophy className="mr-2 h-4 w-4 sm:h-5 sm:w-5" /> परीक्षा पेश गर्नुहोस् ({answeredQuestions}/{totalQuestions})
+                <Trophy className="mr-2 h-4 w-4 sm:h-5 sm:w-5" /> {language === "english" ? "Submit Test" : "परीक्षा पेश गर्नुहोस्"} ({answeredQuestions}/{totalQuestions})
               </>
             )}
           </Button>
@@ -2219,16 +2223,20 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
             <div className="bg-white rounded-xl p-6 max-w-md w-full shadow-2xl">
               <div className="text-center">
                 <Trophy className="h-12 w-12 text-amber-500 mx-auto mb-4" />
-                <h3 className="text-xl font-bold text-slate-800 mb-2">अपूर्ण परीक्षा</h3>
+                <h3 className="text-xl font-bold text-slate-800 mb-2">{language === "english" ? "Incomplete Test" : "अपूर्ण परीक्षा"}</h3>
                 <p className="text-slate-600 mb-4">
-                  तपाईंले {getIncompleteQuestions().incomplete} प्रश्नहरू उत्तर दिनुभएको छैन ({getIncompleteQuestions().total} मध्ये)।
+                  {language === "english"
+                    ? `You have ${getIncompleteQuestions().incomplete} unanswered questions out of ${getIncompleteQuestions().total}.`
+                    : `तपाईंले ${getIncompleteQuestions().incomplete} प्रश्नहरू उत्तर दिनुभएको छैन (${getIncompleteQuestions().total} मध्ये)।`}
                 </p>
                 <p className="text-sm text-slate-500 mb-6">
-                  के तपाईं अहिले आफ्नो परीक्षा पेश गर्न चाहनुहुन्छ?
+                  {language === "english"
+                    ? "Are you sure you want to submit now?"
+                    : "के तपाईं अहिले आफ्नो परीक्षा पेश गर्न चाहनुहुन्छ?"}
                 </p>
                 <div className="flex gap-3">
                   <Button onClick={() => setShowSubmitWarning(false)} variant="outline" className="flex-1">
-                    फिर्ता जानुहोस्
+                    {language === "english" ? "Go Back" : "फिर्ता जानुहोस्"}
                   </Button>
                   <Button
                     onClick={submitTest}
@@ -2237,10 +2245,10 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                   >
                     {isSubmitting ? (
                       <>
-                        <Loader2 className="mr-2 h-4 w-4 animate-spin" /> पेश गर्दै...
+                        <Loader2 className="mr-2 h-4 w-4 animate-spin" /> {language === "english" ? "Submitting..." : "पेश गर्दै..."}
                       </>
                     ) : (
-                      "पेश गर्नुहोस्"
+                      language === "english" ? "Submit Anyway" : "पेश गर्नुहोस्"
                     )}
                   </Button>
                 </div>
@@ -2270,14 +2278,14 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
         <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4 sm:p-6 shadow-lg border border-white/20 mb-4 sm:mb-6">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-3 sm:gap-0">
             <div className="flex items-center gap-2">
-              <h3 className="font-semibold text-slate-800 text-sm sm:text-base">सामाजिक अध्ययन परीक्षा</h3>
-              <span className="text-xs text-slate-600">{calculateOverallProgress()}% पूरा भयो</span>
+              <h3 className="font-semibold text-slate-800 text-sm sm:text-base">{language === "english" ? "Social Studies Test" : "सामाजिक अध्ययन परीक्षा"}</h3>
+              <span className="text-xs text-slate-600">{calculateOverallProgress()}% {language === "english" ? "Complete" : "पूरा भयो"}</span>
             </div>
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
               {lastSaved && (
                 <div className="flex items-center gap-1 text-xs text-green-600">
                   <Save className="h-3 w-3" />
-                  <span>सुरक्षित {formatSavedTime(lastSaved)}</span>
+                  <span>{language === "english" ? "Saved" : "सुरक्षित"} {formatSavedTime(lastSaved)}</span>
                 </div>
               )}
             </div>
@@ -2291,7 +2299,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
             />
           </div>
           <div className="flex justify-between items-center mt-2 text-xs text-slate-600">
-            <span>{answeredQuestions} मध्ये {totalQuestions} प्रश्नहरूको उत्तर दिइयो</span>
+            <span>{language === "english" ? `${answeredQuestions} of ${totalQuestions} questions answered` : `${answeredQuestions} मध्ये ${totalQuestions} प्रश्नहरूको उत्तर दिइयो`}</span>
             <span className="font-medium">{calculateOverallProgress()}%</span>
           </div>
         </div>
@@ -2314,7 +2322,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                   className={`text-xs sm:text-sm ${tabBgColors[index % tabBgColors.length]} font-medium`}
                   style={{ color: isActive ? 'white' : undefined }}
                 >
-                  {group.groupName}
+                  {language === "english" ? (group.groupNameEnglish || group.groupName) : group.groupName}
                 </TabsTrigger>
               )
             })}
@@ -2350,7 +2358,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                   variant="outline"
                   className="px-6 sm:px-8 py-4 sm:py-3 rounded-xl w-full sm:w-auto min-h-[56px] text-sm sm:text-base"
                 >
-                  अर्को खण्ड →
+                  {language === "english" ? "Next Section →" : "अर्को खण्ड →"}
                 </Button>
               )
             }
@@ -2366,11 +2374,11 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
           >
             {isSubmitting ? (
               <>
-                <Loader2 className="mr-2 h-4 w-4 sm:h-5 sm:w-5 animate-spin" /> पठाउँदै छ...
+                <Loader2 className="mr-2 h-4 w-4 sm:h-5 sm:w-5 animate-spin" /> {language === "english" ? "Submitting..." : "पठाउँदै छ..."}
               </>
             ) : (
               <>
-                <Trophy className="mr-2 h-4 w-4 sm:h-5 sm:w-5" /> परीक्षा पठाउनुहोस् ({answeredQuestions}/{totalQuestions})
+                <Trophy className="mr-2 h-4 w-4 sm:h-5 sm:w-5" /> {language === "english" ? "Submit Test" : "परीक्षा पठाउनुहोस्"} ({answeredQuestions}/{totalQuestions})
               </>
             )}
           </Button>
@@ -2382,16 +2390,16 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
             <div className="bg-white rounded-xl p-6 max-w-md w-full shadow-2xl">
               <div className="text-center">
                 <Trophy className="h-12 w-12 text-blue-500 mx-auto mb-4" />
-                <h3 className="text-xl font-bold text-slate-800 mb-2">अपूर्ण परीक्षा</h3>
+                <h3 className="text-xl font-bold text-slate-800 mb-2">{language === "english" ? "Incomplete Test" : "अपूर्ण परीक्षा"}</h3>
                 <p className="text-slate-600 mb-4">
-                  तपाईंले {getIncompleteQuestions().incomplete} प्रश्नहरूको उत्तर दिनुभएको छैन।
+                  {language === "english" ? `You have ${getIncompleteQuestions().incomplete} unanswered questions.` : `तपाईंले ${getIncompleteQuestions().incomplete} प्रश्नहरूको उत्तर दिनुभएको छैन।`}
                 </p>
                 <p className="text-sm text-slate-500 mb-6">
-                  के तपाईं अहिले आफ्नो परीक्षा पठाउन चाहनुहुन्छ?
+                  {language === "english" ? "Are you sure you want to submit now?" : "के तपाईं अहिले आफ्नो परीक्षा पठाउन चाहनुहुन्छ?"}
                 </p>
                 <div className="flex gap-3">
                   <Button onClick={() => setShowSubmitWarning(false)} variant="outline" className="flex-1">
-                    पछाडि जानुहोस्
+                    {language === "english" ? "Go Back" : "पछाडि जानुहोस्"}
                   </Button>
                   <Button
                     onClick={submitTest}
@@ -2400,10 +2408,10 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                   >
                     {isSubmitting ? (
                       <>
-                        <Loader2 className="mr-2 h-4 w-4 animate-spin" /> पठाउँदै छ...
+                        <Loader2 className="mr-2 h-4 w-4 animate-spin" /> {language === "english" ? "Submitting..." : "पठाउँदै छ..."}
                       </>
                     ) : (
-                      "पठाउनुहोस्"
+                      language === "english" ? "Submit Anyway" : "पठाउनुहोस्"
                     )}
                   </Button>
                 </div>

@@ -1,393 +1,902 @@
-[
-  {
-    "_id": "see_2081_nepali_practice_2_generated",
-    "title": "SEE 2081 Nepali Practice Test 2",
-    "titleNepali": "SEE २०८१ नेपाली अभ्यास परीक्षा २",
-    "subject": "nepali",
-    "year": 2081,
-    "totalMarks": 75,
-    "duration": 180,
-    "instructionsNepali": "दिइएका निर्देशनका आधारमा आफ्नै शैलीमा सिर्जनात्मक उत्तर दिनुहोस् :",
-    "isActive": true,
-    "createdAt": {
-      "$date": "2025-08-31T18:00:00.000Z"
-    },
-    "updatedAt": {
-      "$date": "2025-08-31T18:00:00.000Z"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "687e1a2b3c4d5e6f7a8b9c02"
-    },
-    "testId": "see_2081_nepali_practice_2_generated",
-    "questions": [
-      {
-        "questionNumber": 1,
-        "type": "matching",
-        "title": "समूह 'क' मा दिइएका शब्दको अर्थ समूह 'ख' बाट पहिचान गरी जोडा मिलाउनुहोस् :",
-        "marks": 2,
-        "columns": {
-          "A_header": "समूह 'क'",
-          "B_header": "समूह 'ख'",
-          "A": [
-            {"id": "i", "text": "प्रादुर्भाव"},
-            {"id": "ii", "text": "षड्यन्त्र"},
-            {"id": "iii", "text": "चिरस्मरणीय"},
-            {"id": "iv", "text": "वैमनस्य"}
-          ],
-          "B": [
-            {"id": "a", "text": "शत्रुता, दुश्मनी"},
-            {"id": "b", "text": "कुनै वस्तु वा विषयको उत्पत्ति"},
-            {"id": "c", "text": "पछिसम्म सम्झनयोग्य"},
-            {"id": "d", "text": "खराब नियतले रचिएको जाल"},
-            {"id": "e", "text": "सुगन्ध"}
-          ]
-        },
-        "correctAnswer": [
-          {"A": "i", "B": "b"},
-          {"A": "ii", "B": "d"},
-          {"A": "iii", "B": "c"},
-          {"A": "iv", "B": "a"}
+{
+  "testId": "see_2081_nepali_practice_2_generated",
+  "questions": [
+    {
+      "type": "matching",
+      "titleNepali": "समूह 'क' मा दिइएका शब्दको अर्थ समूह 'ख' बाट पहिचान गरी जोडा मिलाउनुहोस् :",
+      "titleEnglish": "Match the meanings of the words given in Group 'A' by identifying them from Group 'B':",
+      "columns": {
+        "A_headerNepali": "समूह 'क'",
+        "A_headerEnglish": "Group 'A'",
+        "B_headerNepali": "समूह 'ख'",
+        "B_headerEnglish": "Group 'B'",
+        "A": [
+          {
+            "idNepali": "i",
+            "idEnglish": "i",
+            "textNepali": "प्रादुर्भाव",
+            "textEnglish": "Emergence"
+          },
+          {
+            "idNepali": "ii",
+            "idEnglish": "ii",
+            "textNepali": "षड्यन्त्र",
+            "textEnglish": "Conspiracy"
+          },
+          {
+            "idNepali": "iii",
+            "idEnglish": "iii",
+            "textNepali": "चिरस्मरणीय",
+            "textEnglish": "Memorable"
+          },
+          {
+            "idNepali": "iv",
+            "idEnglish": "iv",
+            "textNepali": "वैमनस्य",
+            "textEnglish": "Hostility"
+          }
         ],
-        "explanation": "यी शब्दहरू पाठ्यपुस्तकका विभिन्न पाठहरू (चिकित्सा विज्ञान, घरझगडा, लक्ष्मीप्रसाद देवकोटा) बाट लिइएका हुन्। विद्यार्थीको शब्द ज्ञान परीक्षण गर्न यो प्रश्न महत्त्वपूर्ण छ। उद्धरण: नेपाली, कक्षा १०, पाठ २, पृष्ठ १४; पाठ ३, पृष्ठ ३१; पाठ ५, पृष्ठ ५१।"
-      },
-      {
-        "questionNumber": 2,
-        "type": "fill_in_the_blanks",
-        "title": "दिइएको अनुच्छेदबाट उपयुक्त शब्द पहिचान गरी खाली ठाउँ भर्नुहोस् :",
-        "marks": 2,
-        "passage": "कमिलाको ताँती मौरीको घारमा पसेछ। कागको बथान कराउँदै आयो। बाँदर केराको कोसो मुखमा च्यापेर रुखमा चढ्यो। तिर्खाएको कागले पानीको थोपो पनि खान पाएन।",
-        "subQuestions": [
+        "B": [
           {
-            "id": "क",
-            "questionNepali": "'थोपा' को लघुतावाची शब्द ______ हो।",
-            "correctAnswer": "थोपो",
-            "explanation": "लघुतावाची शब्दले सानो आकारलाई जनाउँछ। अनुच्छेदमा 'थोपो' शब्द प्रयोग भएको छ। उद्धरण: नेपाली, कक्षा १०, पाठ ४, पृष्ठ ४४।"
+            "idNepali": "a",
+            "idEnglish": "a",
+            "textNepali": "शत्रुता, दुश्मनी",
+            "textEnglish": "Enmity, Hostility"
           },
           {
-            "id": "ख",
-            "questionNepali": "'पंक्ति' अर्थ दिने समूहवाची शब्द ______ हो।",
-            "correctAnswer": "ताँती",
-            "explanation": "समूहवाची शब्दले समूहलाई जनाउँछ। 'कमिलाको ताँती' ले कमिलाको पंक्तिलाई बुझाउँछ। उद्धरण: नेपाली, कक्षा १०, पाठ ४, पृष्ठ ४४।"
+            "idNepali": "b",
+            "idEnglish": "b",
+            "textNepali": "कुनै वस्तु वा विषयको उत्पत्ति",
+            "textEnglish": "Origin of an object or subject"
           },
           {
-            "id": "ग",
-            "questionNepali": "'दिन' को श्रुतिसमभिन्नार्थी शब्द ______ हो।",
-            "correctAnswer": "दीन",
-            "explanation": "'दिन' (दिवस) र 'दीन' (गरिब) सुन्दा उस्तै लाग्ने तर फरक अर्थ दिने शब्द हुन्। उद्धरण: नेपाली, कक्षा १०, पाठ ६, पृष्ठ ७९।"
+            "idNepali": "c",
+            "idEnglish": "c",
+            "textNepali": "पछिसम्म सम्झनयोग्य",
+            "textEnglish": "memorable for a long time"
           },
           {
-            "id": "घ",
-            "questionNepali": "'तिर्खाएको' को विपरीतार्थी शब्द ______ हो।",
-            "correctAnswer": "अघाएको",
-            "explanation": "अनुच्छेदमा 'तिर्खाएको' शब्द छ, जसको विपरीत अर्थ 'अघाएको' हुन्छ। उद्धरण: नेपाली, कक्षा १०, पाठ १, पृष्ठ ३।"
+            "idNepali": "d",
+            "idEnglish": "d",
+            "textNepali": "खराब नियतले रचिएको जाल",
+            "textEnglish": "Trap set with bad intention"
+          },
+          {
+            "idNepali": "e",
+            "idEnglish": "e",
+            "textNepali": "सुगन्ध",
+            "textEnglish": "Fragrance"
           }
         ]
       },
-      {
-        "questionNumber": 3,
-        "type": "short_answer",
-        "title": "दिइएको अनुच्छेदबाट एउटा उखान र एउटा प्राविधिक शब्द पहिचान गरी अनुच्छेदको भन्दा फरक वाक्यमा प्रयोग गर्नुहोस् :",
-        "marks": 2,
-        "passage": "शुकमानले २५ लाखको चिट्ठा परेको सन्देश देख्दा लोभले लाभ, लाभले विलाप भनेझैँ आफ्नो खाताको सबै पैसा गुमायो। उसले समयमै साइबर अपराध शाखामा खबर गरेको भए उसको पैसा बच्न सक्थ्यो। यस्ता इमेल वा सन्देशको भ्रममा कहिल्यै पर्नु हुँदैन।",
-        "sampleAnswer": {
-          "उखान": {
-            "term": "लोभले लाभ, लाभले विलाप",
-            "sentence": "जुवामा एकपटक जितेको पैसाले घर किन्ने सोच्नु 'लोभले लाभ, लाभले विलाप' हुनु हो।"
-          },
-          "प्राविधिक शब्द": {
-            "term": "साइबर अपराध",
-            "sentence": "अहिलेको समयमा सामाजिक सञ्जालबाट हुने 'साइबर अपराध' बाट बच्न सबै सचेत हुनुपर्छ।"
-          }
+      "explanationNepali": "यी शब्दहरू पाठ्यपुस्तकको पाठ २ (चिकित्सा विज्ञान), पाठ ३ (घरझगडा) र पाठ ५ (लक्ष्मीप्रसाद देवकोटा) बाट लिइएका हुन्। विद्यार्थीको शब्द ज्ञान परीक्षण गर्न यो प्रश्न महत्त्वपूर्ण छ।\nउद्धरण: कक्षा १०, पाठ २; पाठ ३; पाठ ५।",
+      "explanationEnglish": "These words are taken from Lesson 2 (Medical Science), Lesson 3 (Gharjhagda), and Lesson 5 (Laxmi Prasad Devkota) of the textbook. This question is important for testing the student's word knowledge.\nCitation: Class 10, Lesson 2; Lesson 3; Lesson 5.",
+      "correctAnswerNepali": [
+        {
+          "A": "अ",
+          "B": "ख"
         },
-        "explanation": "'लोभले लाभ, लाभले विलाप' एक प्रसिद्ध नेपाली उखान हो। 'साइबर अपराध' सूचना प्रविधिसँग सम्बन्धित एक प्राविधिक शब्द हो। उद्धरण: नेपाली, कक्षा १०, पाठ ४, पृष्ठ ४१-४२; पाठ ३, पृष्ठ ३१।"
+        {
+          "A": "आ",
+          "B": "घ"
+        },
+        {
+          "A": "इ",
+          "B": "ग"
+        },
+        {
+          "A": "ई",
+          "B": "क"
+        }
+      ],
+      "correctAnswerEnglish": [
+        {
+          "A": "i",
+          "B": "b"
+        },
+        {
+          "A": "ii",
+          "B": "d"
+        },
+        {
+          "A": "iii",
+          "B": "c"
+        },
+        {
+          "A": "iv",
+          "B": "a"
+        }
+      ],
+      "questionNumberNepali": "१",
+      "questionNumberEnglish": 1,
+      "marksNepali": "२",
+      "marksEnglish": 2
+    },
+    {
+      "type": "fill_in_the_blanks",
+      "titleNepali": "दिइएको अनुच्छेदबाट उपयुक्त शब्द पहिचान गरी खाली ठाउँ भर्नुहोस् :",
+      "titleEnglish": "Identify the appropriate word from the given paragraph and fill in the blanks:",
+      "passageNepali": "कमिलाको ताँती मौरीको घारमा पसेछ। कागको बथान कराउँदै आयो। बाँदर केराको कोसो मुखमा च्यापेर रुखमा चढ्यो। तिर्खाएको कागले पानीको थोपो पनि खान पाएन।",
+      "passageEnglish": "A line of ants entered the beehive. A flock of crows came cawing. The monkey climbed the tree holding a banana bunch in its mouth. The thirsty crow didn't even get a drop of water to drink.",
+      "subQuestions": [
+        {
+          "idNepali": "क",
+          "idEnglish": "a",
+          "questionNepali": "'थोपा' को लघुतावाची शब्द ______ हो।",
+          "questionEnglish": "The diminutive word for 'drop' is ______.",
+          "correctAnswerNepali": "थोपो",
+          "correctAnswerEnglish": "Drop",
+          "explanationNepali": "लघुतावाची शब्दले सानो आकारलाई जनाउँछ। अनुच्छेदमा 'थोपो' शब्द प्रयोग भएको छ।\nउद्धरण: कक्षा १०, पाठ ४।",
+          "explanationEnglish": "Diminutive words indicate small size. Included in the paragraph is the word 'Thopo'.\nCitation: Class 10, Lesson 4."
+        },
+        {
+          "idNepali": "ख",
+          "idEnglish": "b",
+          "questionNepali": "'पंक्ति' अर्थ दिने समूहवाची शब्द ______ हो।",
+          "questionEnglish": "The collective word giving the meaning 'row' is ______.",
+          "correctAnswerNepali": "ताँती",
+          "correctAnswerEnglish": "Queue/Line",
+          "explanationNepali": "समूहवाची शब्दले समूहलाई जनाउँछ। 'कमिलाको ताँती' ले कमिलाको पंक्तिलाई बुझाउँछ।\nउद्धरण: कक्षा १०, पाठ ४।",
+          "explanationEnglish": "Collective words indicate a group. 'Kamilako Tanti' refers to a column/line of ants.\nCitation: Class 10, Lesson 4."
+        },
+        {
+          "idNepali": "ग",
+          "idEnglish": "c",
+          "questionNepali": "'दिन' को श्रुतिसमभिन्नार्थी शब्द ______ हो।",
+          "questionEnglish": "The homophone of 'Din' is ______.",
+          "correctAnswerNepali": "दीन",
+          "correctAnswerEnglish": "Din",
+          "explanationNepali": "'दिन' (दिवस) र 'दीन' (गरिब) सुन्दा उस्तै लाग्ने तर फरक अर्थ दिने शब्द हुन्।\nउद्धरण: कक्षा १०, पाठ ६।",
+          "explanationEnglish": "'Din' (Day) and 'Deen' (Poor) are words that sound similar but give different meanings.\nCitation: Class 10, Lesson 6."
+        },
+        {
+          "idNepali": "घ",
+          "idEnglish": "d",
+          "questionNepali": "'तिर्खाएको' को विपरीतार्थी शब्द ______ हो।",
+          "questionEnglish": "The antonym of 'thirsty' is ______.",
+          "correctAnswerNepali": "अघाएको",
+          "correctAnswerEnglish": "Satiated/Full",
+          "explanationNepali": "अनुच्छेदमा 'तिर्खाएको' शब्द छ, जसको विपरीत अर्थ 'अघाएको' हुन्छ।\nउद्धरण: कक्षा १०, पाठ १।",
+          "explanationEnglish": "The word 'Tirkhaeko' (Thirsty) is in the paragraph, the opposite meaning of which is 'Aghaeko' (Satiated/Full).\nCitation: Class 10, Lesson 1."
+        }
+      ],
+      "questionNumberNepali": "२",
+      "questionNumberEnglish": 2,
+      "marksNepali": "२",
+      "marksEnglish": 2
+    },
+    {
+      "type": "short_answer",
+      "titleNepali": "दिइएको अनुच्छेदबाट एउटा उखान र एउटा प्राविधिक शब्द पहिचान गरी अनुच्छेदको भन्दा फरक वाक्यमा प्रयोग गर्नुहोस् :",
+      "titleEnglish": "Identify one proverb and one technical word from the given paragraph and use them in a sentence different from the paragraph:",
+      "passageNepali": "शुकमानले २५ लाखको चिट्ठा परेको सन्देश देख्दा लोभले लाभ, लाभले विलाप भनेझैँ आफ्नो खाताको सबै पैसा गुमायो। उसले समयमै साइबर अपराध शाखामा खबर गरेको भए उसको पैसा बच्न सक्थ्यो। यस्ता इमेल वा सन्देशको भ्रममा कहिल्यै पर्नु हुँदैन।",
+      "passageEnglish": "When Shukaman saw the message of winning a lottery of 25 lakhs, like 'Greed leads to gain, gain leads to grief', he lost all the money in his account. If he had informed the Cyber Crime Branch in time, his money could have been saved. One should never fall for the illusion of such emails or messages.",
+      "sampleAnswerNepali": {
+        "उखान": {
+          "term": "लोभले लाभ, लाभले विलाप",
+          "sentence": "जुवामा एकपटक जितेको पैसाले घर किन्ने सोच्नु 'लोभले लाभ, लाभले विलाप' हुनु हो।"
+        },
+        "प्राविधिक शब्द": {
+          "term": "साइबर अपराध",
+          "sentence": "अहिलेको समयमा सामाजिक सञ्जालबाट हुने 'साइबर अपराध' बाट बच्न सबै सचेत हुनुपर्छ।"
+        }
       },
-      {
-        "questionNumber": 4,
-        "type": "spelling_correction",
-        "title": "शुद्ध लेखन",
-        "marks": 3,
-        "subQuestions": [
-          {
-            "id": "क",
-            "type": "multiple_choice",
-            "title": "दिइएका शब्द समूहबाट शुद्ध शब्द छानी लेख्नुहोस् :",
-            "marks": 1,
-            "choices": [
-              {
-                "id": "अ",
-                "options": ["ब्यक्तित्व", "व्यक्तित्व", "व्यक्त्तित्व", "बेक्तित्व"],
-                "correctAnswer": "व्यक्तित्व"
-              },
-              {
-                "id": "आ",
-                "options": ["षडयन्त्र", "सड्यन्त्र", "सडयन्त्र", "षड्यन्त्र"],
-                "correctAnswer": "षड्यन्त्र"
-              }
-            ],
-            "explanation": "सही वर्णविन्यास क्रमशः 'व्यक्तित्व' र 'षड्यन्त्र' हुन्। उद्धरण: नेपाली, कक्षा १०, पाठ २, पृष्ठ १३; पाठ ५, पृष्ठ ५१।"
-          },
-          {
-            "id": "ख",
-            "type": "sentence_correction",
-            "title": "दिइएको वाक्यलाई शुद्ध पारी लेख्नुहोस् :",
-            "marks": 2,
-            "questionNepali": "लक्ष्मी प्रसाध देवकोटा नेपाली साहित्यका शिखर पुरुष हुन।",
-            "correctAnswer": "लक्ष्मीप्रसाद देवकोटा नेपाली साहित्यका शिखर पुरुष हुन्।",
-            "explanation": "'लक्ष्मी प्रसाध' लाई 'लक्ष्मीप्रसाद' लेख्नुपर्छ र 'हुन' को अन्त्यमा पूर्णविराम (।) आवश्यक छ। उद्धरण: नेपाली, कक्षा १०, पाठ ५, पृष्ठ ५१; पाठ ६, पृष्ठ ८७।"
-          }
-        ]
-      },
-      {
-        "questionNumber": 5,
-        "type": "parts_of_speech",
-        "title": "दिइएको अनुच्छेदमा रेखाङ्कन गरिएका शब्दको पदवर्ग पहिचान गर्नुहोस् :",
-        "marks": 3,
-        "passage": "**घरझगडाले** गर्दा देश **भित्र** संकट आयो **र** धेरै मानिस **दुःखी** भए, **अहो**!",
-        "correctAnswer": [
-          {"word": "घरझगडाले", "pos": "नाम"},
-          {"word": "भित्र", "pos": "नामयोगी"},
-          {"word": "र", "pos": "संयोजक"},
-          {"word": "दुःखी", "pos": "विशेषण"},
-          {"word": "अहो", "pos": "विस्मयादिबोधक"}
-        ],
-        "explanation": "'घरझगडाले' नाम हो। 'देश' (नाम) सँग जोडिएर आएकोले 'भित्र' नामयोगी हो। 'र' ले दुई वाक्यलाई जोडेकोले संयोजक हो। 'दुःखी' ले 'मानिस' को अवस्था बुझाएकोले विशेषण हो। 'अहो' ले दुःखको भाव प्रकट गरेकोले विस्मयादिबोधक हो। उद्धरण: नेपाली, कक्षा १०, पाठ १, पृष्ठ ९-१०।"
-      },
-      {
-        "questionNumber": 6,
-        "type": "word_formation",
-        "title": "दिइएका प्रश्नको उत्तर दिनुहोस् :",
-        "marks": 4,
-        "subQuestions": [
-          {
-            "id": "क",
-            "title": "दिइएको अनुच्छेदबाट उपसर्ग लागेका दुईओटा र प्रत्यय लागेका दुईओटा शब्द पहिचान गरी निर्माण प्रक्रियासमेत देखाउनुहोस् :",
-            "marks": 2,
-            "passage": "आयुर्वेदिक औषधीले शरीरमा प्रतिकूल असर कम गर्छ। यसको प्रयोगले मानिसको शारीरिक क्षमता बढ्छ र सामाजिक जीवनमा पनि सकारात्मक प्रभाव पर्छ।",
-            "correctAnswer": {
-              "उपसर्ग": [
-                {"word": "प्रतिकूल", "formation": "प्रति + कूल"},
-                {"word": "प्रभाव", "formation": "प्र + भाव"}
+      "sampleAnswerEnglish": [
+        {
+          "type": "Proverb",
+          "term": "Lobhle laabh, laabhle bilaap (Greed leads to grief)",
+          "sentence": "Thinking of buying a house with money won once in gambling is 'greed leads to grief'."
+        },
+        {
+          "type": "Technical Term",
+          "term": "Cyber Crime",
+          "sentence": "In the current time, everyone should be aware to avoid 'Cyber Crime' through social media."
+        }
+      ],
+      "explanationNepali": "'लोभले लाभ, लाभले विलाप' एक प्रसिद्ध नेपाली उखान हो। 'साइबर अपराध' सूचना प्रविधिसँग सम्बन्धित एक प्राविधिक शब्द हो।\nउद्धरण: कक्षा १०, पाठ ४; पाठ ३।",
+      "explanationEnglish": "'Lobhale Labh, Labhale Vilap' is a famous Nepali proverb. 'Cyber Apradh' (Cyber Crime) is a technical term related to information technology.\nCitation: Class 10, Lesson 4; Lesson 3.",
+      "questionNumberNepali": "३",
+      "questionNumberEnglish": 3,
+      "marksNepali": "२",
+      "marksEnglish": 2
+    },
+    {
+      "type": "spelling_correction",
+      "titleNepali": "शुद्ध लेखन",
+      "titleEnglish": "Correct Writing",
+      "subQuestions": [
+        {
+          "idNepali": "क",
+          "idEnglish": "a",
+          "type": "multiple_choice",
+          "titleNepali": "दिइएका शब्द समूहबाट शुद्ध शब्द छानी लेख्नुहोस् :",
+          "titleEnglish": "Choose and write the correct word from the given word groups:",
+          "choices": [
+            {
+              "idNepali": "अ",
+              "idEnglish": "a",
+              "correctAnswerNepali": "व्यक्तित्व",
+              "correctAnswerEnglish": "Personality",
+              "optionsNepali": [
+                "ब्यक्तित्व",
+                "व्यक्तित्व",
+                "व्यक्त्तित्व",
+                "बेक्तित्व"
               ],
-              "प्रत्यय": [
-                {"word": "आयुर्वेदिक", "formation": "आयुर्वेद + इक"},
-                {"word": "शारीरिक", "formation": "शरीर + इक"}
+              "optionsEnglish": [
+                "bayakataitawa",
+                "wayakataitawa",
+                "wayakatataitawa",
+                "baekataitawa"
               ]
             },
-            "explanation": "शब्दको अगाडि जोडिने अव्ययलाई उपसर्ग र पछाडि जोडिनेलाई प्रत्यय भनिन्छ। 'प्रतिकूल' मा 'प्रति' र 'प्रभाव' मा 'प्र' उपसर्ग हुन् भने 'आयुर्वेदिक' र 'शारीरिक' मा 'इक' प्रत्यय लागेको छ। उद्धरण: नेपाली, कक्षा १०, पाठ ३, पृष्ठ ३७।"
+            {
+              "idNepali": "आ",
+              "idEnglish": "b",
+              "correctAnswerNepali": "षड्यन्त्र",
+              "correctAnswerEnglish": "Conspiracy",
+              "optionsNepali": [
+                "षडयन्त्र",
+                "सड्यन्त्र",
+                "सडयन्त्र",
+                "षड्यन्त्र"
+              ],
+              "optionsEnglish": [
+                "shadayanatara",
+                "sadayanatara",
+                "sadayanatara",
+                "shadayanatara"
+              ]
+            }
+          ],
+          "explanationNepali": "सही वर्णविन्यास क्रमशः 'व्यक्तित्व' र 'षड्यन्त्र' हुन्।\nउद्धरण: कक्षा १०, पाठ २; पाठ ५।",
+          "explanationEnglish": "The correct spellings are 'Vyaktitva' (Personality) and 'Shadyantra' (Conspiracy) respectively.\nCitation: Class 10, Lesson 2; Lesson 5.",
+          "marksNepali": "१",
+          "marksEnglish": 1
+        },
+        {
+          "idNepali": "ख",
+          "idEnglish": "b",
+          "type": "sentence_correction",
+          "titleNepali": "दिइएको वाक्यलाई शुद्ध पारी लेख्नुहोस् :",
+          "titleEnglish": "Write the given sentence correctly:",
+          "questionNepali": "लक्ष्मी प्रसाध देवकोटा नेपाली साहित्यका शिखर पुरुष हुन।",
+          "questionEnglish": "Laxmi Prasad Devkota is a towering figure of Nepali literature.",
+          "correctAnswerNepali": "लक्ष्मीप्रसाद देवकोटा नेपाली साहित्यका शिखर पुरुष हुन्।",
+          "correctAnswerEnglish": "Laxmi Prasad Devkota is a towering figure of Nepali literature.",
+          "explanationNepali": "'लक्ष्मी प्रसाध' लाई 'लक्ष्मीप्रसाद' लेख्नुपर्छ र 'हुन' को अन्त्यमा पूर्णविराम (।) आवश्यक छ।\nउद्धरण: कक्षा १०, पाठ ५; पाठ ६।",
+          "explanationEnglish": "'Laxmi Prasadh' should be written as 'Laxmi Prasad' and a full stop is required at the end of 'hun'.\nCitation: Class 10, Lesson 5; Lesson 6.",
+          "marksNepali": "२",
+          "marksEnglish": 2
+        }
+      ],
+      "questionNumberNepali": "४",
+      "questionNumberEnglish": 4,
+      "marksNepali": "३",
+      "marksEnglish": 3
+    },
+    {
+      "type": "parts_of_speech",
+      "titleNepali": "दिइएको अनुच्छेदमा रेखाङ्कन गरिएका शब्दको पदवर्ग पहिचान गर्नुहोस् :",
+      "titleEnglish": "Identify the word class of the underlined words in the given paragraph:",
+      "passageNepali": "**घरझगडाले** गर्दा देश **भित्र** संकट आयो **र** धेरै मानिस **दुःखी** भए, **अहो**!",
+      "passageEnglish": "Due to **domestic conflict**, crisis arose **within** the country **and** many people became **sad**, **oh**!",
+      "correctAnswerNepali": [
+        {
+          "word": "घरझगडाले",
+          "pos": "नाम"
+        },
+        {
+          "word": "भित्र",
+          "pos": "नामयोगी"
+        },
+        {
+          "word": "र",
+          "pos": "संयोजक"
+        },
+        {
+          "word": "दुःखी",
+          "pos": "विशेषण"
+        },
+        {
+          "word": "अहो",
+          "pos": "विस्मयादिबोधक"
+        }
+      ],
+      "correctAnswerEnglish": [
+        {
+          "word": "Due to domestic conflict",
+          "pos": "Noun"
+        },
+        {
+          "word": "Inside",
+          "pos": "Postposition"
+        },
+        {
+          "word": "And",
+          "pos": "Conjunction"
+        },
+        {
+          "word": "Sad",
+          "pos": "Adjective"
+        },
+        {
+          "word": "Oh",
+          "pos": "Interjection"
+        }
+      ],
+      "explanationNepali": "'घरझगडाले' नाम हो। 'देश' (नाम) सँग जोडिएर आएकोले 'भित्र' नामयोगी हो। 'र' ले दुई वाक्यलाई जोडेकोले संयोजक हो। 'दुःखी' ले 'मानिस' को अवस्था बुझाएकोले विशेषण हो। 'अहो' ले दुःखको भाव प्रकट गरेकोले विस्मयादिबोधक हो।\nउद्धरण: कक्षा १०, पाठ १।",
+      "explanationEnglish": "'Gharjhagadale' is a noun. 'Bhitra' is a postposition as it comes attached with 'Desh' (Country - Noun). 'Ra' is a conjunction as it connects two sentences. 'Dukhi' (Sad) is an adjective as it describes the condition of 'Manis' (Man). 'Aho' is an interjection as it expresses a sense of sorrow.\nCitation: Class 10, Lesson 1.",
+      "questionNumberNepali": "५",
+      "questionNumberEnglish": 5,
+      "marksNepali": "३",
+      "marksEnglish": 3
+    },
+    {
+      "type": "word_formation",
+      "titleNepali": "दिइएका प्रश्नको उत्तर दिनुहोस् :",
+      "titleEnglish": "Answer the given questions:",
+      "subQuestions": [
+        {
+          "idNepali": "क",
+          "idEnglish": "a",
+          "titleNepali": "दिइएको अनुच्छेदबाट उपसर्ग लागेका दुईओटा र प्रत्यय लागेका दुईओटा शब्द पहिचान गरी निर्माण प्रक्रियासमेत देखाउनुहोस् :",
+          "titleEnglish": "Identify two words with prefixes and two words with suffixes from the given paragraph and also show the formation process:",
+          "passageNepali": "आयुर्वेदिक औषधीले शरीरमा प्रतिकूल असर कम गर्छ। यसको प्रयोगले मानिसको शारीरिक क्षमता बढ्छ र सामाजिक जीवनमा पनि सकारात्मक प्रभाव पर्छ।",
+          "passageEnglish": "Ayurvedic medicine reduces adverse effects on the body. Its use increases a person's physical capacity and also has a positive impact on social life.",
+          "correctAnswerNepali": {
+            "उपसर्ग": [
+              {
+                "word": "प्रतिकूल",
+                "formation": "प्रति + कूल"
+              },
+              {
+                "word": "प्रभाव",
+                "formation": "प्र + भाव"
+              }
+            ],
+            "प्रत्यय": [
+              {
+                "word": "आयुर्वेदिक",
+                "formation": "आयुर्वेद + इक"
+              },
+              {
+                "word": "शारीरिक",
+                "formation": "शरीर + इक"
+              }
+            ]
           },
-          {
-            "id": "ख",
-            "title": "दिइएको अनुच्छेदबाट एउटा समस्त शब्द पहिचान गरी विग्रह गर्नुहोस्, एउटा विग्रह पदावली पहिचान गरी समस्त शब्द बनाउनुहोस् र दुईओटा द्वित्व शब्द पहिचान गर्नुहोस् :",
-            "marks": 2,
-            "passage": "कृष्ण राय घरबाट कम निस्किन्थे। घर-आँगन सफा राख्थे। गाउँमा दिन-रात नभनी सेवा गर्थे। तर उनलाई एक रात लट्ठीले प्रहार भयो र उनी छटपट-छटपट गर्न थाले।",
-            "correctAnswer": {
-              "समस्त": {"word": "दिन-रात", "split": "दिन र रात"},
-              "विग्रह": {"phrase": "घर र आँगन", "compound": "घरआँगन"},
-              "द्वित्व": ["घर-घर", "छटपट-छटपट"]
+          "correctAnswerEnglish": [
+            {
+              "type": "Prefix",
+              "items": [
+                {
+                  "word": "Pratikul (Adverse)",
+                  "formation": "Prati + Kul"
+                },
+                {
+                  "word": "Prabhaav (Effect)",
+                  "formation": "Pra + Bhaav"
+                }
+              ]
             },
-          	"explanation": "दुई वा दुईभन्दा बढी शब्द मिलेर बनेको शब्दलाई समस्त शब्द भनिन्छ। शब्द वा पदको पुनरावृत्ति भई बनेको शब्दलाई द्वित्व भनिन्छ। यहाँ 'दिन-रात' समस्त शब्द र 'छटपट-छटपट' द्वित्व शब्द हो। उद्धरण: नेपाली, कक्षा १०, पाठ ४, पृष्ठ ४९-५०।"
-          }
-        ]
-      },
-      {
-        "questionNumber": 7,
-        "type": "tense_change",
-        "title": "दिइएको अनुच्छेदलाई पूर्ण भूतकालमा परिवर्तन गर्नुहोस् :",
-        "marks": 2,
-        "passage": "विद्यार्थीहरू पढ्छन्। उनीहरू गृहकार्य गर्छन्। शिक्षकलाई प्रश्न सोध्छन्। उनीहरू परीक्षामा सफल हुन्छन्।",
-        "correctAnswer": "विद्यार्थीहरूले पढेका थिए। उनीहरूले गृहकार्य गरेका थिए। शिक्षकलाई प्रश्न सोधेका थिए। उनीहरू परीक्षामा सफल भएका थिए।",
-        "explanation": "सामान्य वर्तमान कालका क्रियापदहरूलाई पूर्ण भूतकालमा परिवर्तन गर्दा 'एका थिए/एकी थिइन्/एका थिए' जस्ता रूप प्रयोग हुन्छन्। उद्धरण: नेपाली, कक्षा १०, पाठ ६, पृष्ठ ८५-८६।"
-      },
-      {
-        "questionNumber": 8,
-        "type": "grammar_choice",
-        "title": "कुनै एक प्रश्नको उत्तर दिनुहोस् :",
-        "marks": 2,
-        "subQuestions": [
-          {
-            "id": "क",
-            "title": "आज्ञार्थक भाव बुझाउने फरक फरक क्रियापदको प्रयोग गरी आफ्ना साथीलाई चार वाक्यमा सल्लाह दिनुहोस्।",
-          	"explanation": "आज्ञार्थक भावले आदेश, अनुरोध, सल्लाह जस्ता अर्थ बुझाउँछ। क्रियापदहरू 'गर', 'जाऊ', 'पढ्नुहोस्' जस्ता हुन्छन्। उद्धरण: नेपाली, कक्षा १०, पाठ ७, पृष्ठ १००।"
-          },
-          {
-            "id": "ख",
-            "title": "दिइएका वाक्यहरूलाई मध्यम आदरमा परिवर्तन गर्नुहोस् :",
-            "questionNepali": "तपाईं विद्यालय जानुहोस्। तपाईं राम्ररी पढ्नुहोस्।",
-            "correctAnswer": "तिमी विद्यालय जाऊ। तिमी राम्ररी पढ।",
-            "explanation": "उच्च आदर ('तपाईं') लाई मध्यम आदर ('तिमी') मा बदल्दा क्रियापद पनि क्रमशः 'जानुहोस्' बाट 'जाऊ' र 'पढ्नुहोस्' बाट 'पढ' मा परिवर्तन हुन्छ। उद्धरण: नेपाली, कक्षा १०, पाठ १३, पृष्ठ १८६।"
-          }
-        ]
-      },
-      {
-        "questionNumber": 9,
-        "type": "sentence_transformation",
-        "title": "कोष्ठकमा दिइएका सङ्केतका आधारमा वाक्य परिवर्तन गर्नुहोस् :",
-        "marks": 4,
-        "subQuestions": [
-          { "id": "क", "questionNepali": "उनी बिरामी परे। उनी विद्यालय गएनन्। (वाक्य संश्लेषण)", "correctAnswer": "उनी बिरामी परेकाले विद्यालय गएनन्।","explanation": "यहाँ कारण-कार्य सम्बन्ध देखाउन '-एकाले' कृदन्तको प्रयोग गरी दुई वाक्यलाई एउटै सरल वाक्यमा संश्लेषण गरिएको छ। उद्धरण: नेपाली, कक्षा १०, पाठ ८, पृष्ठ ११२।" },
-          { "id": "ख", "questionNepali": "मैले काम गरें। (भाववाच्य)", "correctAnswer": "मद्वारा काम गरियो।", "explanation": "'लाई' विभक्ति नलागेको कर्मपद भएको सकर्मक कर्तृवाच्यलाई भाववाच्यमा बदल्दा कर्तामा 'द्वारा' वा 'बाट' विभक्ति लाग्छ र क्रियापद '-इयो' रूपमा परिवर्तन हुन्छ। उद्धरण: नेपाली, कक्षा १०, पाठ ९, पृष्ठ १२७।"},
-          { "id": "ग", "questionNepali": "बहिनी रुन्छिन्। (प्रेरणार्थक)", "correctAnswer": "आमा बहिनीलाई रुवाउनुहुन्छ।","explanation": "अरूलाई काम गर्न लगाउने अर्थ बुझाउन क्रियाको धातुमा '-आउ' प्रत्यय जोडेर प्रेरणार्थक क्रिया बनाइन्छ। उद्धरण: नेपाली, कक्षा १०, पाठ ११, पृष्ठ १५७।" },
-          { "id": "घ", "questionNepali": "उनले भने, “म भोलि आउँछु।” (अप्रत्यक्ष कथन)", "correctAnswer": "उनले भोलिपल्ट आउने कुरा बताए।","explanation": "प्रत्यक्ष कथनको उद्धरण चिह्न हटाएर 'भनी' वा 'भनेर' संयोजक प्रयोग गरी र पुरुष तथा काल परिवर्तन गरी अप्रत्यक्ष कथन बनाइन्छ। यहाँ 'भोलि' लाई 'भोलिपल्ट' मा परिवर्तन गरिएको छ। उद्धरण: नेपाली, कक्षा १०, पाठ १२, पृष्ठ १७३।" }
-        ]
-      },
-      {
-        "questionNumber": 10,
-        "type": "reading_comprehension_grammar",
-        "title": "दिइएको अनुच्छेद पढी सोधिएका प्रश्नको उत्तर लेख्नुहोस् :",
-        "marks": 4,
-        "passage": "शिक्षित परिवारमा जन्मेका र बाल्यकाल निकै स्नेहमय वातावरणमा बिताएका देवकोटा आमाबुबा, दाजु र दिदी सबैका मुटुका धुकधुकी थिए। देवकोटा स्वयम्ले आफ्नो बाल्यकालको स्मरण गर्दै 'कवि हुने धुनमा' भन्ने निबन्धमा आफू शान्त, सुशील, आज्ञाकारी र सन्तोषी स्वभावको रहेको कुरा व्यक्त गरेका छन्। पठित र शिक्षित परिवार भएकाले उनले घरबाटै पठनपाठनको राम्रो वातावरण पाए।",
-        "subQuestions": [
-          { "id": "क", "questionNepali": "'देवकोटा शान्त स्वभावका थिए।' यस वाक्यलाई अकरणमा बदल्नुहोस्।", "correctAnswer": "देवकोटा शान्त स्वभावका थिएनन्।","explanation": "करण वाक्यलाई अकरणमा बदल्दा क्रियापदमा 'न' उपसर्ग वा 'छैन', 'थिएन' जस्ता नकारात्मक शब्द जोडिन्छ। उद्धरण: नेपाली, कक्षा १०, पाठ १३, पृष्ठ १३९।" },
-          { "id": "ख", "questionNepali": "रेखाङ्कित 'घरबाटै' शब्दको कारक र विभक्तिको नाम लेख्नुहोस्।", "correctAnswer": "कारक: अपादान कारक; विभक्ति: बाट (पञ्चमी)।", "explanation": "छुट्टिने वा अलग हुने अर्थ बुझाउने नाम पदलाई अपादान कारक भनिन्छ। 'बाट', 'देखि' जस्ता विभक्ति यसमा लाग्छन्। उद्धरण: नेपाली, कक्षा १०, पाठ ५, पृष्ठ ६४-६५।"},
-          { "id": "ग", "questionNepali": "'उनले राम्रो वातावरण पाए।' यस वाक्यको उद्देश्य र विधेय छुट्याउनुहोस्।", "correctAnswer": "उद्देश्य: उनले; विधेय: राम्रो वातावरण पाए।","explanation": "वाक्यमा जसको बारेमा केही भनिन्छ, त्यो उद्देश्य हो र उद्देश्यका बारेमा जे भनिन्छ, त्यो विधेय हो। उद्धरण: नेपाली, कक्षा १०, पाठ ८, पृष्ठ १११।" },
-          { "id": "घ", "questionNepali": "'उनी शिक्षित परिवारमा जन्मे र स्नेहमय वातावरणमा हुर्के।' यस वाक्यलाई सरल वाक्यमा परिवर्तन गर्नुहोस्।", "correctAnswer": "शिक्षित परिवारमा जन्मेका उनी स्नेहमय वातावरणमा हुर्के।","explanation": "संयुक्त वाक्यमा 'र', 'अनि' जस्ता संयोजक हुन्छन्। सरल वाक्यमा एउटा मात्र मुख्य क्रिया हुन्छ र संयोजक हटाइन्छ। उद्धरण: नेपाली, कक्षा १०, पाठ ८, पृष्ठ ११२।" }
-        ]
-      },
-      {
-        "questionNumber": 11,
-        "type": "reading_comprehension",
-        "title": "दिइएको अनुच्छेद पढी सोधिएका प्रश्नको उत्तर लेख्नुहोस् :",
-        "marks": 4,
-        "passage": "नेपालको तराई क्षेत्र अन्नको भण्डार मानिन्छ। यहाँका उर्बर भूमिमा धान, गहुँ, मकै जस्ता प्रमुख अन्नबालीका साथै उखु, जुट जस्ता नगदे बालीको पनि प्रशस्त उत्पादन हुन्छ। तर, परम्परागत खेती प्रणाली, सिँचाइको अभाव र बजारको अनिश्चितताले गर्दा किसानहरूले आफ्नो मिहिनेतको उचित प्रतिफल पाउन सकेका छैनन्। कृषिमा आधुनिकीकरण, मल, बिउ र सिँचाइको सहज उपलब्धता तथा उत्पादित वस्तुको उचित बजार व्यवस्थापन गर्न सकेमा मात्र तराईको कृषिले देशको अर्थतन्त्रमा कायापलट गर्न सक्छ। यसका लागि सरकारी, सहकारी र निजी क्षेत्रको समन्वयात्मक प्रयास आवश्यक देखिन्छ।",
-        "subQuestions": [
-          { "id": "क", "questionNepali": "नेपालको कुन क्षेत्रलाई अन्नको भण्डार मानिन्छ?", "correctAnswer": "नेपालको तराई क्षेत्रलाई अन्नको भण्डार मानिन्छ।" },
-          { "id": "ख", "questionNepali": "तराईका किसानहरूले कस्ता समस्या भोगिरहेका छन्?", "correctAnswer": "तराईका किसानहरूले परम्परागत खेती प्रणाली, सिँचाइको अभाव र बजारको अनिश्चितता जस्ता समस्या भोगिरहेका छन्।" },
-          { "id": "ग", "questionNepali": "तराईको कृषिले देशको अर्थतन्त्रमा कसरी कायापलट गर्न सक्छ?", "correctAnswer": "कृषिमा आधुनिकीकरण, सिँचाइको व्यवस्था र उत्पादित वस्तुको उचित बजार व्यवस्थापन गर्न सके तराईको कृषिले देशको अर्थतन्त्रमा कायापलट गर्न सक्छ।" },
-          { "id": "घ", "questionNepali": "माथिको अनुच्छेदको मूल भाव के हो?", "correctAnswer": "माथिको अनुच्छेदको मूल भाव तराई क्षेत्रको कृषि सम्भावना र त्यहाँका किसानहरूले भोग्नुपरेका चुनौतीलाई देखाउँदै समाधानका लागि समन्वयात्मक प्रयासको आवश्यकतामा जोड दिनु हो।" }
-        ]
-      },
-      {
-        "questionNumber": 12,
-        "type": "free_writing_choice",
-        "title": "कुनै एक प्रश्नको उत्तर दिनुहोस् :",
-        "marks": 4,
-        "options": [
-          {
-            "id": "क",
-            "title": "दिइएका बुँदाका आधारमा कथा तयार पारी शीर्षकसमेत दिनुहोस् :",
-            "clues": [
-              "एउटा गाउँमा एकजना अल्छी किसान हुनु",
-              "हरेक दिन चौतारीमा बसेर गफ गरेर दिन बिताउनु",
-            	"एकदिन गाउँमा एकजना साधु आउनु",
-            	"किसानले साधुसँग सजिलै धनी बन्ने उपाय सोध्नु",
-            	"साधुले खेतको बीचमा सुनको घैँटो गाडिएको र मिहिनेत गरेमा मात्र भेटिने कुरा बताउनु",
-            	"किसानले दिनरात नभनी खेत खन्नु तर घैँटो नभेट्नु",
-            	"श्रीमतीको सल्लाहमा खेतमा मकै छर्नु",
-            	"मकैको राम्रो उत्पादन हुनु र धेरै पैसा कमाउनु",
-            	"मिहिनेत नै सुनको घैँटो रहेछ भन्ने ज्ञान प्राप्त हुनु"
+            {
+              "type": "Suffix",
+              "items": [
+                {
+                  "word": "Ayurvedic",
+                  "formation": "Ayurved + Ik"
+                },
+                {
+                  "word": "Sharirik (Physical)",
+                  "formation": "Sharir + Ik"
+                }
+              ]
+            }
+          ],
+          "explanationNepali": "शब्दको अगाडि जोडिने अव्ययलाई उपसर्ग र पछाडि जोडिनेलाई प्रत्यय भनिन्छ। 'प्रतिकूल' मा 'प्रति' र 'प्रभाव' मा 'प्र' उपसर्ग हुन् भने 'आयुर्वेदिक' र 'शारीरिक' मा 'इक' प्रत्यय लागेको छ।\nउद्धरण: कक्षा १०, पाठ ३।",
+          "explanationEnglish": "An indeclinable added before a word is called a prefix and one added after is called a suffix. In 'Pratikul', 'Prati' and in 'Prabhav', 'Pra' are prefixes, while in 'Ayurvedic' and 'Sharirik', 'Ik' suffix is added.\nCitation: Class 10, Lesson 3.",
+          "marksNepali": "२",
+          "marksEnglish": 2
+        },
+        {
+          "idNepali": "ख",
+          "idEnglish": "b",
+          "titleNepali": "दिइएको अनुच्छेदबाट एउटा समस्त शब्द पहिचान गरी विग्रह गर्नुहोस्, एउटा विग्रह पदावली पहिचान गरी समस्त शब्द बनाउनुहोस् र दुईओटा द्वित्व शब्द पहिचान गर्नुहोस् :",
+          "titleEnglish": "Identify one compound word from the given paragraph and break it down, identify one phrase and make a compound word, and identify two duplicate words:",
+          "passageNepali": "कृष्ण राय घरबाट कम निस्किन्थे। घर-आँगन सफा राख्थे। गाउँमा दिन-रात नभनी सेवा गर्थे। तर उनलाई एक रात लट्ठीले प्रहार भयो र उनी छटपट-छटपट गर्न थाले।",
+          "passageEnglish": "Krishna Raya rarely went out of the house. He kept his house and courtyard clean. He served the village day and night. But one night he was hit with a stick and he started writhing in pain.",
+          "correctAnswerNepali": {
+            "समस्त": {
+              "word": "दिन-रात",
+              "split": "दिन र रात"
+            },
+            "विग्रह": {
+              "phrase": "घर र आँगन",
+              "compound": "घरआँगन"
+            },
+            "द्वित्व": [
+              "घर-घर",
+              "छटपट-छटपट"
             ]
           },
-          {
-            "id": "ख",
-            "title": "'परिश्रमको फल मिठो हुन्छ' शीर्षकमा शिक्षक र विद्यार्थीबिच भएको संवाद तयार पार्नुहोस्।"
-          }
-        ]
-      },
-      {
-        "questionNumber": 13,
-        "type": "functional_writing_choice",
-        "title": "कुनै एक प्रश्नको उत्तर दिनुहोस् :",
-        "marks": 4,
-        "options": [
-          { "id": "क", "title": "आफ्नो भाइको व्रतबन्धको अवसरमा आफन्तलाई निमन्त्रणा गर्न निमन्त्रणा पत्रको नमुना तयार पार्नुहोस्।" },
-          { "id": "ख", "title": "आफ्नो विद्यालयले आयोजना गरेको विज्ञान प्रदर्शनीको विषयमा एउटा समाचारको नमुना तयार पार्नुहोस्।" }
-        ]
-      },
-      {
-        "questionNumber": 14,
-        "type": "note_taking",
-        "title": "दिइएको अनुच्छेदबाट मुख्य मुख्य चारओटा बुँदा टिप्नुहोस् :",
-        "marks": 2,
-        "passage": "देवकोटाले जे लेखे र जुन जुन जिम्मेवारी पाए, प्रायः ती सबैमा उनले राष्ट्रको हितमा काम गरेर आफ्नो अब्बलता प्रदर्शन गरे। देवकोटा आफूले हात हालेका हरेक क्षेत्रमा एक असल व्यक्तित्वका रूपमा चिनिए। शिक्षामन्त्री हुँदा नेपाली भाषालाई पठनपाठनमा अनिवार्य विषयका रूपमा लागु गर्ने गराउने कार्यमा उनैको विशेष पहलकदमी रह्यो। तत्कालीन नेपाल राजकीय प्रज्ञा प्रतिष्ठानको स्थापनामा सक्रिय संलग्न भएर संस्थागत रूपमा साहित्य र संस्कृतिको विकासको ढोका खोल्ने कार्यमा उनको योगदान चिरस्मरणीय रहेकै छ।",
-        "correctAnswer": [
-          "देवकोटाले पाएको हरेक जिम्मेवारीमा राष्ट्रहितमा काम गरी अब्बलता देखाउनु।",
-          "एक असल व्यक्तित्वका रूपमा चिनिनु।",
-          "शिक्षामन्त्री हुँदा नेपाली भाषालाई अनिवार्य विषय बनाउन पहल गर्नु।",
-          "प्रज्ञा प्रतिष्ठानको स्थापनामा सक्रिय भई साहित्य र संस्कृतिको विकासमा योगदान दिनु।"
-        ]
-      },
-      {
-        "questionNumber": 15,
-        "type": "summarization",
-        "title": "दिइएको अनुच्छेदको एक तृतीयांशमा सारांश लेख्नुहोस् :",
-        "marks": 3,
-        "passage": "कृष्ण रायलाई सब प्रकारको सुख थियो, धनको, यशको र सम्मानको। तिनका सन्तान थिएनन्, तर यस अभावलाई तिनले आफ्नो एउटा टाढाको भतिजोलाई पाली पूर्ति गरेका थिए। एक रात तिनी खाइपिई सुत्ने यत्न गरिरहेका थिए। तिनका मनमा धेरै प्रकारका विचार आउन थाले। तिनको जीवन कसैले असफल भन्न सक्दैन। सानोतिनो पुँजी पनि कमाइ हालेका थिए। रुपियाँ जम्मा गर्दा अरू कसैलाई पिर पनि पारेनन्। तिनको कोही बैरी थिएन, यही तिनको सन्तोषको ठुलो कारण थियो। ४५ वर्षको यत्रो लामो जीवनमा तिनले कसैलाई आफ्नो शत्रु बनाएनन्।",
-        "correctAnswer": "धन, यश र सम्मानले सुखी कृष्ण राय सन्तान नभए पनि भतिजो पालेर सन्तुष्ट थिए। एक रात सुत्ने बेलामा उनले आफ्नो जीवन सफल भएको र कसैलाई दुःख नदिई पैसा कमाएको सम्झिए। आफ्नो कोही पनि शत्रु नभएको कुरा नै उनको सबैभन्दा ठुलो सन्तोषको कारण थियो।"
-      },
-      {
-        "questionNumber": 16,
-        "type": "literature_short_answer",
-        "title": "दिइएका प्रश्नको उत्तर दिनुहोस् :",
-        "marks": 8,
-        "subSections": [
-          {
-            "id": "क",
-            "marks": 4,
-            "passage": "पहाड भन्छ पसिना पाए म स्वर्ग भुलाउँथें\nतराई भन्छ सिँचाइ पाए म सुन फलाउँथें\nके छ र गाह्रो होस्टेमा हैंसे सबैले मिलाए\nसबैले चोखो श्रम र सिप स्वदेशमै लगाए।",
-            "subQuestions": [
-              { "id": "i", "questionNepali": "पहाड र तराईले के पाएमा के गर्ने कुरा गरेका छन्?", "correctAnswer": "पहाडले पसिना (श्रम) पाएमा स्वर्गलाई नै भुलाउने र तराईले सिँचाइ पाएमा सुन फलाउने (प्रशस्त उत्पादन गर्ने) कुरा गरेका छन्।" },
-              { "id": "ii", "questionNepali": "कवितांशको मूल भाव के हो?", "correctAnswer": "कवितांशको मूल भाव हो, नेपालको पहाड र तराई दुवैमा प्रशस्त सम्भावनाहरू छन् र यदि हामी सबैले मिलेर आफ्नो श्रम र सिप स्वदेशमै लगायौँ भने देशलाई समृद्ध बनाउन सकिन्छ।" }
-            ]
-          },
-          {
-            "id": "ख",
-            "marks": 4,
-            "passage": "जनक्रान्तिदेखि यता श्रीधरले अड्डाखानामा पनि आफ्नो रोबरवाफ प्रशस्त जमाइराखेका थिए। भने जस्तो भएन भने बजारमा ढ्वाङ फुकेर पर्चा बाँड्दै हिँड्थे। त्यसो हुनाले अदालतका डिट्ठाविचारी श्रीधरसँग अलि झस्कन्थे। उसमाथि अदालतमा मामिलाको निरोपण हुँदा बकितम्लाई भन्दा लिखितम्लाई बर्ता महत्त्व दिने रीति छ।",
-            "subQuestions": [
-              { "id": "i", "questionNepali": "अदालतका डिट्ठाविचारीहरू श्रीधरसँग किन झस्कन्थे?", "correctAnswer": "श्रीधरले आफ्नो रोबरवाफ र भनेजस्तो नहुँदा बजारमा पर्चा बाँड्ने बानीले गर्दा अदालतका डिट्ठाविचारीहरू उनीसँग झस्कन्थे।" },
-              { "id": "ii", "questionNepali": "अदालतमा कस्तो रीति थियो?", "correctAnswer": "अदालतमा कुनै पनि मामिलाको टुङ्गो लगाउँदा मौखिक कुरा (बकितम्) लाई भन्दा लिखित प्रमाण (लिखितम्) लाई बढी महत्त्व दिने रीति थियो।" }
-            ]
-          }
-        ]
-      },
-      {
-        "questionNumber": 17,
-        "type": "literature_argumentative",
-        "title": "'शत्रु' कथाले कसरी मानिसको सामान्य व्यवहार र निर्णयले पनि अनजानमा शत्रुहरू जन्माउन सक्छ भन्ने देखाउँछ? कथाका आधारमा तर्क दिनुहोस्।",
-        "marks": 4,
-        "correctAnswer": "'शत्रु' कथाले देखाउँछ कि मानिसले आफूलाई जति नै भद्र र शत्रुविहीन ठाने पनि उसका सामान्य व्यवहारले नै शत्रु जन्माइरहेको हुन्छ। कृष्ण राय आफूलाई कसैको शत्रु नभएको ठान्थे, तर जब उनीमाथि आक्रमण भयो, उनले आफ्ना विगतका घटनाहरू सम्झिन थाले। उनले नोकरलाई हप्काएको, झगडामा मध्यस्थता गर्दा एक पक्षको मात्र चित्त दुखाएको, र अरूलाई अनावश्यक उपदेश दिएको जस्ता सामान्य कार्यहरूले पनि कसै न कसैको मनमा आफूप्रति इख पैदा गराएको हुन सक्ने उनले महसुस गरे। यसबाट के देखिन्छ भने, कुनै पनि कार्य वा निर्णयले सबैलाई सन्तुष्ट पार्न सक्दैन र निर्दोष देखिने व्यवहारले पनि कसैका लागि शत्रुताको बीउ रोपिदिन सक्छ। तसर्थ, शत्रुता जानीजानी मात्र होइन, अनजानमा गरिने सामान्य व्यवहारबाट पनि जन्मिन्छ भन्ने नै कथाको मूल तर्क हो।"
-      },
-      {
-        "questionNumber": 18,
-        "type": "literature_explanation",
-        "title": "कुनै एक उद्धरणको व्याख्या गर्नुहोस् :",
-        "marks": 4,
-        "options": [
-          { "id": "क", "quote": "कर्ममा छ भने शक्ति जङ्गलै बन्छ नन्दन।" },
-          { "id": "ख", "quote": "कुकुर अज्ञानी पशु हुनाले बोलाएपछि मात्र जान्छ, मानिस चाहिँ ज्ञानवान् हुनाले बखतमौका विचार गरेर आफैँ पनि जानुपर्छ।" }
-        ]
-      },
-      {
-        "questionNumber": 19,
-        "type": "literature_critical_analysis_choice",
-        "title": "कुनै एक प्रश्नको समीक्षात्मक उत्तर दिनुहोस् :",
-        "marks": 7,
-        "options": [
-          {
-            "id": "क",
-            "passage": "देवकोटाको महासागर जस्तो प्रतिभा राणाहरूको निरङ्कुशताको साँघुरो सुरुङभित्र कसरी बग्न सक्थ्यो र? मुलुकमा जति वेला प्रजातन्त्र प्राप्तिका लागि क्रान्तिको आगो सल्कँदै थियो, त्यति वेला उनले पनि विद्रोहको बाटो समाते। उनी वि.सं. २००४ मा प्रजातान्त्रिक आन्दोलनमा संलग्न भए। उनी घरपरिवार कसैलाई थाहा नदिई बनारसतर्फ प्रवासिए। त्यहाँबाट निस्किने 'युगवाणी' पत्रिकामार्फत निरङ्कुशता विरुद्ध युगले चाहेको विद्रोहको वाणी फुके।",
-            "questionNepali": "लक्ष्मीप्रसाद देवकोटाको साहित्यिक व्यक्तित्वमा रहेको क्रान्तिकारी चेतनालाई माथिको जीवनीको अंशका आधारमा समीक्षा गर्नुहोस्।"
-          },
-          {
-            "id": "ख",
-            "passage": "अधिकार नदिई कर्तव्य मात्र पूरा गर् भन्नु बिना हतियार लडाइँमा पठाउनु जस्तै हो। खुट्टामा नेल लगाएर हिँड् भन्नु जस्तै हो। हातमा हत्कडी लगाएर काम गर् भन्नु जस्तै हो। तसर्थ अधिकारबिना कर्तव्य पूरा गर्न कदापि सकिँदैन। ... त्यसैले अधिकार जन्मसिद्ध हुन्छ भने कर्तव्य पछि मात्र जोडिने विषय भएकाले कर्तव्यभन्दा अधिकारको महत्ता स्वतः सिद्ध हुन्छ।",
-            "questionNepali": "'अधिकार ठुलो कि कर्तव्य ठुलो?' वादविवाद पाठका आधारमा अधिकारको महत्त्वलाई कसरी पुष्टि गरिएको छ? समीक्षा गर्नुहोस्।"
-          }
-        ]
-      },
-      {
-        "questionNumber": 20,
-        "type": "essay",
-        "title": "कुनै एक शीर्षकमा १५० शब्द नघटाई निबन्ध लेख्नुहोस् :",
-        "marks": 7,
-        "topics": [
-          "नेपालमा पर्यटनको सम्भावना",
-          "मेरो जीवनको लक्ष्य",
-          "समयको महत्त्व"
-        ]
-      }
-    ]
-  }
-]
+          "correctAnswerEnglish": [
+            {
+              "type": "Compound",
+              "items": {
+                "word": "Din-Raat (Day and Night)",
+                "split": "Din ra Raat"
+              }
+            },
+            {
+              "type": "Split",
+              "items": {
+                "phrase": "Ghar ra Aangan",
+                "compound": "Gharaangan (Home and Courtyard)"
+              }
+            },
+            {
+              "type": "Reduplication",
+              "items": [
+                "Ghar-Ghar (Every house)",
+                "Chatpat-Chatpat (Restless)"
+              ]
+            }
+          ],
+          "explanationNepali": "दुई वा दुईभन्दा बढी शब्द मिलेर बनेको शब्दलाई समस्त शब्द भनिन्छ। शब्द वा पदको पुनरावृत्ति भई बनेको शब्दलाई द्वित्व भनिन्छ। यहाँ 'दिन-रात' समस्त शब्द र 'छटपट-छटपट' द्वित्व शब्द हो।\nउद्धरण: कक्षा १०, पाठ ४।",
+          "explanationEnglish": "A word formed by combining two or more words is called a compound word. A word formed by the repetition of a word or phrase is called a reduplicated word. Here, 'Din-Rat' is a compound word and 'Chhatpat-Chhatpat' is a reduplicated word.\nCitation: Class 10, Lesson 4.",
+          "marksNepali": "२",
+          "marksEnglish": 2
+        }
+      ],
+      "questionNumberNepali": "६",
+      "questionNumberEnglish": 6,
+      "marksNepali": "४",
+      "marksEnglish": 4
+    },
+    {
+      "type": "tense_change",
+      "titleNepali": "दिइएको अनुच्छेदलाई पूर्ण भूतकालमा परिवर्तन गर्नुहोस् :",
+      "titleEnglish": "Change the given paragraph to past perfect tense:",
+      "passageNepali": "विद्यार्थीहरू पढ्छन्। उनीहरू गृहकार्य गर्छन्। शिक्षकलाई प्रश्न सोध्छन्। उनीहरू परीक्षामा सफल हुन्छन्।",
+      "passageEnglish": "Students study. They do homework. They ask questions to the teacher. They succeed in exams.",
+      "correctAnswerNepali": "विद्यार्थीहरूले पढेका थिए। उनीहरूले गृहकार्य गरेका थिए। शिक्षकलाई प्रश्न सोधेका थिए। उनीहरू परीक्षामा सफल भएका थिए।",
+      "correctAnswerEnglish": "The students had studied. They had done homework. They had asked questions to the teacher. They had succeeded in the examination.",
+      "explanationNepali": "सामान्य वर्तमान कालका क्रियापदहरूलाई पूर्ण भूतकालमा परिवर्तन गर्दा 'एका थिए/एकी थिइन्/एका थिए' जस्ता रूप प्रयोग हुन्छन्।\nउद्धरण: कक्षा १०, पाठ ६।",
+      "explanationEnglish": "When changing verbs of simple present tense to past perfect tense, forms like 'eka thie/eki thiin/eka thie' are used.\nCitation: Class 10, Lesson 6.",
+      "questionNumberNepali": "७",
+      "questionNumberEnglish": 7,
+      "marksNepali": "२",
+      "marksEnglish": 2
+    },
+    {
+      "type": "grammar_choice",
+      "titleNepali": "कुनै एक प्रश्नको उत्तर दिनुहोस् :",
+      "titleEnglish": "Answer any one question:",
+      "subQuestions": [
+        {
+          "idNepali": "क",
+          "idEnglish": "a",
+          "titleNepali": "सम्भावनार्थक भाव बुझाउने फरक फरक क्रियापदको प्रयोग गरी चार वाक्यमा आफ्नो पढाइका वारेमा वर्णन गर्नुहोस् ।",
+          "titleEnglish": "Describe your studies in four sentences using different verbs denoting the presumptive/potential mood.",
+          "correctAnswerNepali": "१. म मेहनत गरेर पढूँला।\n२. परीक्षामा राम्रो अंक ल्याउँला।\n३. उच्च शिक्षाका लागि विदेश जाउँला।\n४. असल मान्छे बनेर देशको सेवा गरूँला।",
+          "correctAnswerEnglish": "1. I might study hard.\n2. I might get good marks in the exam.\n3. I might go abroad for higher education.\n4. I might serve the country by becoming a good person.",
+          "explanationNepali": "सम्भावनार्थक भावले कुनै काम हुने सम्भावना वा अड्कललाई जनाउँछ। यसमा 'होला', 'ला' जस्ता प्रत्ययहरू प्रयोग हुन्छन्। उदाहरणका लागि: 'म पढूँला', 'तिमी पास होला' आदि।\nउद्धरण: कक्षा १०, पाठ ७।",
+          "explanationEnglish": "The presumptive mood indicates the possibility or conjecture of an action happening. Suffixes like 'hola', 'la' are used. For example: 'I might study', 'You might pass'.\nCitation: Class 10, Lesson 7."
+        },
+        {
+          "idNepali": "ख",
+          "idEnglish": "b",
+          "titleNepali": "दिइएका वाक्यहरूलाई मध्यम आदरमा परिवर्तन गर्नुहोस् :",
+          "titleEnglish": "Change the given sentences to medium respect:",
+          "questionNepali": "तपाईं विद्यालय जानुहोस्। तपाईं राम्ररी पढ्नुहोस्।",
+          "questionEnglish": "You go to school. You study well.",
+          "correctAnswerNepali": "तिमी विद्यालय जाऊ। तिमी राम्ररी पढ।",
+          "correctAnswerEnglish": "You go to school. You study well.",
+          "explanationNepali": "उच्च आदर ('तपाईं') लाई मध्यम आदर ('तिमी') मा बदल्दा क्रियापद पनि क्रमशः 'जानुहोस्' बाट 'जाऊ' र 'पढ्नुहोस्' बाट 'पढ' मा परिवर्तन हुन्छ।\nउद्धरण: कक्षा १०, पाठ १३।",
+          "explanationEnglish": "When changing High Respect ('Tapai') to Medium Respect ('Timi'), the verb also changes from 'Januhos' to 'Jau' and 'Padhnuhos' to 'Padh' respectively.\nCitation: Class 10, Lesson 13."
+        }
+      ],
+      "questionNumberNepali": "८",
+      "questionNumberEnglish": 8,
+      "marksNepali": "२",
+      "marksEnglish": 2
+    },
+    {
+      "type": "sentence_transformation",
+      "titleNepali": "कोष्ठकमा दिइएका सङ्केतका आधारमा वाक्य परिवर्तन गर्नुहोस् :",
+      "titleEnglish": "Change the sentences based on the clues given in the brackets:",
+      "subQuestions": [
+        {
+          "idNepali": "क",
+          "idEnglish": "a",
+          "questionNepali": "उनी बिरामी परे। उनी विद्यालय गएनन्। (वाक्य संश्लेषण)",
+          "questionEnglish": "He fell ill. He did not go to school. (Sentence Synthesis)",
+          "correctAnswerNepali": "उनी बिरामी परेकाले विद्यालय गएनन्।",
+          "correctAnswerEnglish": "He did not go to school because he fell ill.",
+          "explanationNepali": "यहाँ कारण-कार्य सम्बन्ध देखाउन '-एकाले' कृदन्तको प्रयोग गरी दुई वाक्यलाई एउटै सरल वाक्यमा संश्लेषण गरिएको छ।\nउद्धरण: कक्षा १०, पाठ ८।",
+          "explanationEnglish": "Here, two sentences have been synthesized into a single simple sentence using the participle '-ekale' to show a cause-effect relationship.\nCitation: Class 10, Lesson 8."
+        },
+        {
+          "idNepali": "ख",
+          "idEnglish": "b",
+          "questionNepali": "मैले काम गरें। (भाववाच्य)",
+          "questionEnglish": "I worked. (Impersonal Voice)",
+          "correctAnswerNepali": "मद्वारा काम गरियो।",
+          "correctAnswerEnglish": "Work was done by me.",
+          "explanationNepali": "'लाई' विभक्ति नलागेको कर्मपद भएको सकर्मक कर्तृवाच्यलाई भाववाच्यमा बदल्दा कर्तामा 'द्वारा' वा 'बाट' विभक्ति लाग्छ र क्रियापद '-इयो' रूपमा परिवर्तन हुन्छ।\nउद्धरण: कक्षा १०, पाठ ९।",
+          "explanationEnglish": "When changing a transitive active voice without the 'lai' case marker on the object to passive voice, the 'dwara' or 'bata' case marker is added to the subject and the verb changes to the '-iyo' form.\nCitation: Class 10, Lesson 9."
+        },
+        {
+          "idNepali": "ग",
+          "idEnglish": "c",
+          "questionNepali": "बहिनी रुन्छिन्। (प्रेरणार्थक)",
+          "questionEnglish": "Sister cries. (Causative)",
+          "correctAnswerNepali": "आमा बहिनीलाई रुवाउनुहुन्छ।",
+          "correctAnswerEnglish": "Mother makes sister cry.",
+          "explanationNepali": "अरूलाई काम गर्न लगाउने अर्थ बुझाउन क्रियाको धातुमा '-आउ' प्रत्यय जोडेर प्रेरणार्थक क्रिया बनाइन्छ।\nउद्धरण: कक्षा १०, पाठ ११।",
+          "explanationEnglish": "To indicate the meaning of making others do work, a causative verb is formed by adding the suffix '-aau' to the root of the verb.\nCitation: Class 10, Lesson 11."
+        },
+        {
+          "idNepali": "घ",
+          "idEnglish": "d",
+          "questionNepali": "उनले भने, “म भोलि आउँछु।” (अप्रत्यक्ष कथन)",
+          "questionEnglish": "He said, “I will come tomorrow.” (Indirect Speech)",
+          "correctAnswerNepali": "उनले भोलिपल्ट आउने कुरा बताए।",
+          "correctAnswerEnglish": "He said that he would come the next day.",
+          "explanationNepali": "प्रत्यक्ष कथनको उद्धरण चिह्न हटाएर 'भनी' वा 'भनेर' संयोजक प्रयोग गरी र पुरुष तथा काल परिवर्तन गरी अप्रत्यक्ष कथन बनाइन्छ। यहाँ 'भोलि' लाई 'भोलिपल्ट' मा परिवर्तन गरिएको छ।\nउद्धरण: कक्षा १०, पाठ १२।",
+          "explanationEnglish": "Indirect speech is formed by removing the quotation marks of direct speech and using conjunctions like 'bhani' or 'bhanera', and changing the person and tense. Here 'bholi' (tomorrow) has been changed to 'bholipalta' (the next day).\nCitation: Class 10, Lesson 12."
+        }
+      ],
+      "questionNumberNepali": "९",
+      "questionNumberEnglish": 9,
+      "marksNepali": "४",
+      "marksEnglish": 4
+    },
+    {
+      "type": "reading_comprehension_grammar",
+      "titleNepali": "दिइएको अनुच्छेद पढी सोधिएका प्रश्नको उत्तर लेख्नुहोस् :",
+      "titleEnglish": "Read the given paragraph and write the answer to the questions asked:",
+      "passageNepali": "शिक्षित परिवारमा जन्मेका र बाल्यकाल निकै स्नेहमय वातावरणमा बिताएका देवकोटा आमाबुबा, दाजु र दिदी सबैका मुटुका धुकधुकी थिए। देवकोटा स्वयम्ले आफ्नो बाल्यकालको स्मरण गर्दै 'कवि हुने धुनमा' भन्ने निबन्धमा आफू शान्त, सुशील, आज्ञाकारी र सन्तोषी स्वभावको रहेको कुरा व्यक्त गरेका छन्। पठित र शिक्षित परिवार भएकाले उनले घरबाटै पठनपाठनको राम्रो वातावरण पाए।",
+      "passageEnglish": "Born in an educated family and having spent his childhood in a very affectionate environment, Devkota was the heartbeat of his parents, elder brother, and sister. Devkota himself, recalling his childhood, has expressed in the essay 'In the tune of becoming a poet' that he was of a calm, well-behaved, obedient, and contented nature. Since it was a literate and educated family, he got a good environment for reading and learning from home itself.",
+      "subQuestions": [
+        {
+          "idNepali": "क",
+          "idEnglish": "a",
+          "questionNepali": "'देवकोटा शान्त स्वभावका थिए।' यस वाक्यलाई अकरणमा बदल्नुहोस्।",
+          "questionEnglish": "'Devkota was of a calm nature.' Change this sentence into negative.",
+          "correctAnswerNepali": "देवकोटा शान्त स्वभावका थिएनन्।",
+          "correctAnswerEnglish": "Devkota was not of a calm nature.",
+          "explanationNepali": "करण वाक्यलाई अकरणमा बदल्दा क्रियापदमा 'न' उपसर्ग वा 'छैन', 'थिएन' जस्ता नकारात्मक शब्द जोडिन्छ।\nउद्धरण: कक्षा १०, पाठ १३।",
+          "explanationEnglish": "When changing an affirmative sentence to negative, the prefix 'na' or negative words like 'chhaina', 'thiena' are added to the verb.\nCitation: Class 10, Lesson 13."
+        },
+        {
+          "idNepali": "ख",
+          "idEnglish": "b",
+          "questionNepali": "रेखाङ्कित 'घरबाटै' शब्दको कारक र विभक्तिको नाम लेख्नुहोस्।",
+          "questionEnglish": "Write the name of the case and case marker of the underlined word 'gharbatai' (from home itself).",
+          "correctAnswerNepali": "कारक: अपादान कारक; विभक्ति: बाट (पञ्चमी)।",
+          "correctAnswerEnglish": "Case: Ablative (Apadan); Case Marker: Bata (5th).",
+          "explanationNepali": "छुट्टिने वा अलग हुने अर्थ बुझाउने नाम पदलाई अपादान कारक भनिन्छ। 'बाट', 'देखि' जस्ता विभक्ति यसमा लाग्छन्।\nउद्धरण: कक्षा १०, पाठ ५।",
+          "explanationEnglish": "A noun indicating separation or moving away is called ablative case (Apadan Karak). Case markers like 'bata', 'dekhi' are used in this.\nCitation: Class 10, Lesson 5."
+        },
+        {
+          "idNepali": "ग",
+          "idEnglish": "c",
+          "questionNepali": "'उनले राम्रो वातावरण पाए।' यस वाक्यको उद्देश्य र विधेय छुट्याउनुहोस्।",
+          "questionEnglish": "'He got a good environment.' Separate the subject and predicate of this sentence.",
+          "correctAnswerNepali": "उद्देश्य: उनले; विधेय: राम्रो वातावरण पाए।",
+          "correctAnswerEnglish": "Subject: He; Predicate: got a good environment.",
+          "explanationNepali": "वाक्यमा जसको बारेमा केही भनिन्छ, त्यो उद्देश्य हो र उद्देश्यका बारेमा जे भनिन्छ, त्यो विधेय हो।\nउद्धरण: कक्षा १०, पाठ ८।",
+          "explanationEnglish": "In a sentence, what is talked about is the Subject (Uddheshya), and what is said about the subject is the Predicate (Vidheya).\nCitation: Class 10, Lesson 8."
+        },
+        {
+          "idNepali": "घ",
+          "idEnglish": "d",
+          "questionNepali": "'उनी शिक्षित परिवारमा जन्मे र स्नेहमय वातावरणमा हुर्के।' यस वाक्यलाई सरल वाक्यमा परिवर्तन गर्नुहोस्।",
+          "questionEnglish": "'He was born in an educated family and grew up in a loving environment.'\nChange this sentence into a simple sentence.",
+          "correctAnswerNepali": "शिक्षित परिवारमा जन्मेका उनी स्नेहमय वातावरणमा हुर्के।",
+          "correctAnswerEnglish": "Born in an educated family, he grew up in a loving environment.",
+          "explanationNepali": "संयुक्त वाक्यमा 'र', 'अनि' जस्ता संयोजक हुन्छन्। सरल वाक्यमा एउटा मात्र मुख्य क्रिया हुन्छ र संयोजक हटाइन्छ।\nउद्धरण: कक्षा १०, पाठ ८।",
+          "explanationEnglish": "Compound sentences have conjunctions like 'ra', 'ani'. A simple sentence has only one main verb and the conjunction is removed.\nCitation: Class 10, Lesson 8."
+        }
+      ],
+      "questionNumberNepali": "१०",
+      "questionNumberEnglish": 10,
+      "marksNepali": "४",
+      "marksEnglish": 4
+    },
+    {
+      "type": "reading_comprehension",
+      "titleNepali": "दिइएको अनुच्छेद पढी सोधिएका प्रश्नको उत्तर लेख्नुहोस् :",
+      "titleEnglish": "Read the given paragraph and write the answer to the questions asked:",
+      "passageNepali": "नेपालको तराई क्षेत्र अन्नको भण्डार मानिन्छ। यहाँका उर्बर भूमिमा धान, गहुँ, मकै जस्ता प्रमुख अन्नबालीका साथै उखु, जुट जस्ता नगदे बालीको पनि प्रशस्त उत्पादन हुन्छ। तर, परम्परागत खेती प्रणाली, सिँचाइको अभाव र बजारको अनिश्चितताले गर्दा किसानहरूले आफ्नो मिहिनेतको उचित प्रतिफल पाउन सकेका छैनन्। कृषिमा आधुनिकीकरण, मल, बिउ र सिँचाइको सहज उपलब्धता तथा उत्पादित वस्तुको उचित बजार व्यवस्थापन गर्न सकेमा मात्र तराईको कृषिले देशको अर्थतन्त्रमा कायापलट गर्न सक्छ। यसका लागि सरकारी, सहकारी र निजी क्षेत्रको समन्वयात्मक प्रयास आवश्यक देखिन्छ।",
+      "passageEnglish": "The Terai region of Nepal is considered the granary. In its fertile lands, along with major cereal crops like paddy, wheat, maize, cash crops like sugarcane, jute are also produced in abundance. But, due to traditional farming systems, lack of irrigation, and market uncertainty, farmers have not been able to get proper returns for their hard work. Only if modernization in agriculture, easy availability of fertilizers, seeds, and irrigation, and proper market management of produced goods can be achieved, Terai's agriculture can transform the country's economy. For this, a coordinated effort of government, cooperative, and private sectors seems necessary.",
+      "subQuestions": [
+        {
+          "idNepali": "क",
+          "idEnglish": "a",
+          "questionNepali": "नेपालको कुन क्षेत्रलाई अन्नको भण्डार मानिन्छ?",
+          "questionEnglish": "Which region of Nepal is considered the granary?",
+          "correctAnswerNepali": "नेपालको तराई क्षेत्रलाई अन्नको भण्डार मानिन्छ।",
+          "correctAnswerEnglish": "The Terai region of Nepal is considered the granary."
+        },
+        {
+          "idNepali": "ख",
+          "idEnglish": "b",
+          "questionNepali": "तराईका किसानहरूले कस्ता समस्या भोगिरहेका छन्?",
+          "questionEnglish": "What kind of problems are the farmers of Terai facing?",
+          "correctAnswerNepali": "तराईका किसानहरूले परम्परागत खेती प्रणाली, सिँचाइको अभाव र बजारको अनिश्चितता जस्ता समस्या भोगिरहेका छन्।",
+          "correctAnswerEnglish": "Farmers in the Terai are facing problems such as traditional farming systems, lack of irrigation, and market uncertainty."
+        },
+        {
+          "idNepali": "ग",
+          "idEnglish": "c",
+          "questionNepali": "तराईको कृषिले देशको अर्थतन्त्रमा कसरी कायापलट गर्न सक्छ?",
+          "questionEnglish": "How can the agriculture of Terai transform the country's economy?",
+          "correctAnswerNepali": "कृषिमा आधुनिकीकरण, सिँचाइको व्यवस्था र उत्पादित वस्तुको उचित बजार व्यवस्थापन गर्न सके तराईको कृषिले देशको अर्थतन्त्रमा कायापलट गर्न सक्छ।",
+          "correctAnswerEnglish": "Agriculture in the Terai can transform the country's economy if modernization in agriculture, irrigation facilities, and proper market management of produced goods can be managed."
+        },
+        {
+          "idNepali": "घ",
+          "idEnglish": "d",
+          "questionNepali": "माथिको अनुच्छेदको मूल भाव के हो?",
+          "questionEnglish": "What is the main theme of the above paragraph?",
+          "correctAnswerNepali": "माथिको अनुच्छेदको मूल भाव तराई क्षेत्रको कृषि सम्भावना र त्यहाँका किसानहरूले भोग्नुपरेका चुनौतीलाई देखाउँदै समाधानका लागि समन्वयात्मक प्रयासको आवश्यकतामा जोड दिनु हो।",
+          "correctAnswerEnglish": "The main theme of the above paragraph is to highlight the agricultural potential of the Terai region and the challenges faced by the farmers there, emphasizing the need for coordinated efforts for solutions."
+        }
+      ],
+      "questionNumberNepali": "११",
+      "questionNumberEnglish": 11,
+      "marksNepali": "४",
+      "marksEnglish": 4
+    },
+    {
+      "type": "free_writing_choice",
+      "titleNepali": "कुनै एक प्रश्नको उत्तर दिनुहोस् :",
+      "titleEnglish": "Answer any one question:",
+      "questionNumberNepali": "१२",
+      "questionNumberEnglish": 12,
+      "marksNepali": "४",
+      "marksEnglish": 4,
+      "options": [
+        {
+          "idNepali": "क",
+          "idEnglish": "a",
+          "titleNepali": "दिइएका बुँदाका आधारमा कथा तयार पारी शीर्षकसमेत दिनुहोस् :",
+          "titleEnglish": "Prepare a story based on the given points and also give a title:",
+          "cluesNepali": [
+            "एउटा गाउँमा एकजना अल्छी किसान हुनु",
+            "हरेक दिन चौतारीमा बसेर गफ गरेर दिन बिताउनु",
+            "एकदिन गाउँमा एकजना साधु आउनु",
+            "किसानले साधुसँग सजिलै धनी बन्ने उपाय सोध्नु",
+            "साधुले खेतको बीचमा सुनको घैँटो गाडिएको र मिहिनेत गरेमा मात्र भेटिने कुरा बताउनु",
+            "किसानले दिनरात नभनी खेत खन्नु तर घैँटो नभेट्नु",
+            "श्रीमतीको सल्लाहमा खेतमा मकै छर्नु",
+            "मकैको राम्रो उत्पादन हुनु र धेरै पैसा कमाउनु",
+            "मिहिनेत नै सुनको घैँटो रहेछ भन्ने ज्ञान प्राप्त हुनु"
+          ],
+          "cluesEnglish": [
+            "A lazy farmer lived in a village",
+            "Spending time gossiping sitting on Chautari every day",
+            "One day a sage came to the village",
+            "The farmer asked the sage for a way to become rich easily",
+            "The sage told that a pot of gold is buried in the middle of the field and can be found only by working hard",
+            "The farmer dug the field day and night but did not find the pot",
+            "Sowing maize in the field on the advice of his wife",
+            "Good maize production and earning a lot of money",
+            "Realizing that hard work itself is the pot of gold"
+          ]
+        },
+        {
+          "idNepali": "ख",
+          "idEnglish": "b",
+          "titleNepali": "'परिश्रमको फल मिठो हुन्छ' शीर्षकमा शिक्षक र विद्यार्थीबिच भएको संवाद तयार पार्नुहोस्।",
+          "titleEnglish": "Prepare a dialogue between a teacher and a student on the topic 'The Fruit of Hard Work is Sweet'."
+        }
+      ]
+    },
+    {
+      "type": "functional_writing_choice",
+      "titleNepali": "कुनै एक प्रश्नको उत्तर दिनुहोस् :",
+      "titleEnglish": "Answer any one question:",
+      "questionNumberNepali": "१३",
+      "questionNumberEnglish": 13,
+      "marksNepali": "४",
+      "marksEnglish": 4,
+      "options": [
+        {
+          "idNepali": "क",
+          "idEnglish": "a",
+          "titleNepali": "आफ्नो भाइको व्रतबन्धको अवसरमा आफन्तलाई निमन्त्रणा गर्न निमन्त्रणा पत्रको नमुना तयार पार्नुहोस्।",
+          "titleEnglish": "Prepare a sample invitation card to invite relatives on the occasion of your brother's Bratabandha."
+        },
+        {
+          "idNepali": "ख",
+          "idEnglish": "b",
+          "titleNepali": "आफ्नो विद्यालयले आयोजना गरेको विज्ञान प्रदर्शनीको विषयमा एउटा समाचारको नमुना तयार पार्नुहोस्।",
+          "titleEnglish": "Prepare a sample news report on the science exhibition organized by your school."
+        }
+      ]
+    },
+    {
+      "type": "note_taking",
+      "titleNepali": "दिइएको अनुच्छेदबाट मुख्य मुख्य चारओटा बुँदा टिप्नुहोस् :",
+      "titleEnglish": "Note down the four main points from the given paragraph:",
+      "passageNepali": "देवकोटाले जे लेखे र जुन जुन जिम्मेवारी पाए, प्रायः ती सबैमा उनले राष्ट्रको हितमा काम गरेर आफ्नो अब्बलता प्रदर्शन गरे। देवकोटा आफूले हात हालेका हरेक क्षेत्रमा एक असल व्यक्तित्वका रूपमा चिनिए। शिक्षामन्त्री हुँदा नेपाली भाषालाई पठनपाठनमा अनिवार्य विषयका रूपमा लागु गर्ने गराउने कार्यमा उनैको विशेष पहलकदमी रह्यो। तत्कालीन नेपाल राजकीय प्रज्ञा प्रतिष्ठानको स्थापनामा सक्रिय संलग्न भएर संस्थागत रूपमा साहित्य र संस्कृतिको विकासको ढोका खोल्ने कार्यमा उनको योगदान चिरस्मरणीय रहेकै छ।",
+      "passageEnglish": "Whatever Devkota wrote and whatever responsibilities he got, he demonstrated his excellence by working in the interest of the nation in almost all of them. Devkota was known as a good personality in every field he ventured into. When he was the Education Minister, his special initiative remained in implementing Nepali language as a compulsory subject in teaching and learning. By being actively involved in the establishment of the then Royal Nepal Academy, his contribution to opening the door for the development of literature and culture institutionally remains memorable.",
+      "correctAnswerNepali": [
+        "देवकोटाले पाएको हरेक जिम्मेवारीमा राष्ट्रहितमा काम गरी अब्बलता देखाउनु।",
+        "एक असल व्यक्तित्वका रूपमा चिनिनु।",
+        "शिक्षामन्त्री हुँदा नेपाली भाषालाई अनिवार्य विषय बनाउन पहल गर्नु।",
+        "प्रज्ञा प्रतिष्ठानको स्थापनामा सक्रिय भई साहित्य र संस्कृतिको विकासमा योगदान दिनु।"
+      ],
+      "correctAnswerEnglish": [
+        "Devkota showing excellence by working for national interest in every responsibility he got.",
+        "Being known as a good personality.",
+        "Taking initiative to make Nepali language a compulsory subject while being the Education Minister.",
+        "Contributing to the development of literature and culture by being active in the establishment of Pragya Pratishthan."
+      ],
+      "questionNumberNepali": "१४",
+      "questionNumberEnglish": 14,
+      "marksNepali": "२",
+      "marksEnglish": 2
+    },
+    {
+      "type": "summarization",
+      "titleNepali": "दिइएको अनुच्छेदको एक तृतीयांशमा सारांश लेख्नुहोस् :",
+      "titleEnglish": "Write a summary of the given paragraph in one-third of its length:",
+      "passageNepali": "कृष्ण रायलाई सब प्रकारको सुख थियो, धनको, यशको र सम्मानको। तिनका सन्तान थिएनन्, तर यस अभावलाई तिनले आफ्नो एउटा टाढाको भतिजोलाई पाली पूर्ति गरेका थिए। एक रात तिनी खाइपिई सुत्ने यत्न गरिरहेका थिए। तिनका मनमा धेरै प्रकारका विचार आउन थाले। तिनको जीवन कसैले असफल भन्न सक्दैन। सानोतिनो पुँजी पनि कमाइ हालेका थिए। रुपियाँ जम्मा गर्दा अरू कसैलाई पिर पनि पारेनन्। तिनको कोही बैरी थिएन, यही तिनको सन्तोषको ठुलो कारण थियो। ४५ वर्षको यत्रो लामो जीवनमा तिनले कसैलाई आफ्नो शत्रु बनाएनन्।",
+      "passageEnglish": "Krishna Raya had all kinds of happiness, of wealth, of fame, and of respect. He had no children, but he had filled this void by raising a distant nephew. One night he was trying to sleep after eating. Many kinds of thoughts started coming to his mind. No one can call his life unsuccessful. He had also earned a small capital. He didn't trouble anyone while collecting money. He had no enemy, this was the big reason for his satisfaction. In such a long life of 45 years, he didn't make anyone his enemy.",
+      "correctAnswerNepali": "धन, यश र सम्मानले सुखी कृष्ण राय सन्तान नभए पनि भतिजो पालेर सन्तुष्ट थिए। एक रात सुत्ने बेलामा उनले आफ्नो जीवन सफल भएको र कसैलाई दुःख नदिई पैसा कमाएको सम्झिए। आफ्नो कोही पनि शत्रु नभएको कुरा नै उनको सबैभन्दा ठुलो सन्तोषको कारण थियो।",
+      "correctAnswerEnglish": "Happy with wealth, fame, and respect, Krishna Raya was satisfied raising his nephew even though he had no children. One night while sleeping, he remembered that his life was successful and he earned money without hurting anyone. The fact that he had no enemies was the biggest reason for his satisfaction.",
+      "questionNumberNepali": "१५",
+      "questionNumberEnglish": 15,
+      "marksNepali": "३",
+      "marksEnglish": 3
+    },
+    {
+      "type": "literature_short_answer",
+      "titleNepali": "दिइएका प्रश्नको उत्तर दिनुहोस् :",
+      "titleEnglish": "Answer the given questions:",
+      "subSections": [
+        {
+          "idNepali": "क",
+          "idEnglish": "a",
+          "passageNepali": "पहाड भन्छ पसिना पाए म स्वर्ग भुलाउँथें\nतराई भन्छ सिँचाइ पाए म सुन फलाउँथें\nके छ र गाह्रो होस्टेमा हैंसे सबैले मिलाए\nसबैले चोखो श्रम र सिप स्वदेशमै लगाए।",
+          "passageEnglish": "The hill says if I get sweat, I would make one forget heaven\nThe Terai says if I get irrigation, I would grow gold\nWhat is difficult if everyone joins hands in effort\nIf everyone invested pure labor and skill in their own country.",
+          "subQuestions": [
+            {
+              "idNepali": "i",
+              "idEnglish": "i",
+              "questionNepali": "पहाड र तराईले के पाएमा के गर्ने कुरा गरेका छन्?",
+              "questionEnglish": "What have the Pahad (Hills) and Terai (Plains) talked about doing if they get what?",
+              "correctAnswerNepali": "पहाडले पसिना (श्रम) पाएमा स्वर्गलाई नै भुलाउने र तराईले सिँचाइ पाएमा सुन फलाउने (प्रशस्त उत्पादन गर्ने) कुरा गरेका छन्।",
+              "correctAnswerEnglish": "It is said that if the hills get sweat (labor), they make one forget heaven, and if the Terai gets irrigation, it grows gold (produces abundantly)."
+            },
+            {
+              "idNepali": "ii",
+              "idEnglish": "ii",
+              "questionNepali": "कवितांशको मूल भाव के हो?",
+              "questionEnglish": "What is the main theme of the poem excerpt?",
+              "correctAnswerNepali": "कवितांशको मूल भाव हो, नेपालको पहाड र तराई दुवैमा प्रशस्त सम्भावनाहरू छन् र यदि हामी सबैले मिलेर आफ्नो श्रम र सिप स्वदेशमै लगायौँ भने देशलाई समृद्ध बनाउन सकिन्छ।",
+              "correctAnswerEnglish": "The main theme of the poem excerpt is that both the hills and Terai of Nepal have ample possibilities, and if we all work together and use our labor and skills within the country, the country can be made prosperous."
+            }
+          ],
+          "marksNepali": "४",
+          "marksEnglish": 4
+        },
+        {
+          "idNepali": "ख",
+          "idEnglish": "b",
+          "passageNepali": "जनक्रान्तिदेखि यता श्रीधरले अड्डाखानामा पनि आफ्नो रोबरवाफ प्रशस्त जमाइराखेका थिए। भने जस्तो भएन भने बजारमा ढ्वाङ फुकेर पर्चा बाँड्दै हिँड्थे। त्यसो हुनाले अदालतका डिट्ठाविचारी श्रीधरसँग अलि झस्कन्थे। उसमाथि अदालतमा मामिलाको निरोपण हुँदा बकितम्लाई भन्दा लिखितम्लाई बर्ता महत्त्व दिने रीति छ।",
+          "passageEnglish": "Since the popular revolution, Shridhar had maintained a lot of influence in the government offices as well. If things didn't go as he said, he would walk around the market blowing his trumpet and distributing pamphlets. That's why the court clerks were a bit afraid of Shridhar. Moreover, when settling cases in court, there is a custom of giving more importance to written documents than to oral statements.",
+          "subQuestions": [
+            {
+              "idNepali": "i",
+              "idEnglish": "i",
+              "questionNepali": "अदालतका डिट्ठाविचारीहरू श्रीधरसँग किन झस्कन्थे?",
+              "questionEnglish": "Why did the court officials startle at Shridhar?",
+              "correctAnswerNepali": "श्रीधरले आफ्नो रोबरवाफ र भनेजस्तो नहुँदा बजारमा पर्चा बाँड्ने बानीले गर्दा अदालतका डिट्ठाविचारीहरू उनीसँग झस्कन्थे।",
+              "correctAnswerEnglish": "The court officials used to be startled by Shridhar due to his imposing manner and his habit of distributing pamphlets in the market when things didn't go his way."
+            },
+            {
+              "idNepali": "ii",
+              "idEnglish": "ii",
+              "questionNepali": "अदालतमा कस्तो रीति थियो?",
+              "questionEnglish": "What was the custom in the court?",
+              "correctAnswerNepali": "अदालतमा कुनै पनि मामिलाको टुङ्गो लगाउँदा मौखिक कुरा (बकितम्) लाई भन्दा लिखित प्रमाण (लिखितम्) लाई बढी महत्त्व दिने रीति थियो।",
+              "correctAnswerEnglish": "There was a custom in the court to give more importance to written evidence (Likhitam) than oral statements (Bakitam) when settling any matter."
+            }
+          ],
+          "marksNepali": "४",
+          "marksEnglish": 4
+        }
+      ],
+      "questionNumberNepali": "१६",
+      "questionNumberEnglish": 16,
+      "marksNepali": "८",
+      "marksEnglish": 8
+    },
+    {
+      "type": "literature_argumentative",
+      "titleNepali": "'शत्रु' कथाले कसरी मानिसको सामान्य व्यवहार र निर्णयले पनि अनजानमा शत्रुहरू जन्माउन सक्छ भन्ने देखाउँछ? कथाका आधारमा तर्क दिनुहोस्।",
+      "titleEnglish": "How does the story 'Shatru' show that a person's normal behavior and decisions can unknowingly create enemies? Give arguments based on the story.",
+      "correctAnswerNepali": "'शत्रु' कथाले देखाउँछ कि मानिसले आफूलाई जति नै भद्र र शत्रुविहीन ठाने पनि उसका सामान्य व्यवहारले नै शत्रु जन्माइरहेको हुन्छ। कृष्ण राय आफूलाई कसैको शत्रु नभएको ठान्थे, तर जब उनीमाथि आक्रमण भयो, उनले आफ्ना विगतका घटनाहरू सम्झिन थाले। उनले नोकरलाई हप्काएको, झगडामा मध्यस्थता गर्दा एक पक्षको मात्र चित्त दुखाएको, र अरूलाई अनावश्यक उपदेश दिएको जस्ता सामान्य कार्यहरूले पनि कसै न कसैको मनमा आफूप्रति इख पैदा गराएको हुन सक्ने उनले महसुस गरे। यसबाट के देखिन्छ भने, कुनै पनि कार्य वा निर्णयले सबैलाई सन्तुष्ट पार्न सक्दैन र निर्दोष देखिने व्यवहारले पनि कसैका लागि शत्रुताको बीउ रोपिदिन सक्छ। तसर्थ, शत्रुता जानीजानी मात्र होइन, अनजानमा गरिने सामान्य व्यवहारबाट पनि जन्मिन्छ भन्ने नै कथाको मूल तर्क हो।",
+      "correctAnswerEnglish": "The story 'Shatru' shows that no matter how gentle and enemy-free a person considers himself, his ordinary behavior creates enemies. Krishna Raya thought he had no enemies, but when he was attacked, he started remembering past events. He realized that ordinary actions like scolding a servant, hurting one party's feelings while mediating a dispute, and giving unnecessary advice to others might have created resentment in someone's mind towards him. This shows that no action or decision can satisfy everyone, and even innocent-looking behavior can sow the seeds of enmity for someone. Therefore, the main argument of the story is that enmity is born not only intentionally but also from ordinary behavior done unknowingly.",
+      "questionNumberNepali": "१७",
+      "questionNumberEnglish": 17,
+      "marksNepali": "४",
+      "marksEnglish": 4
+    },
+    {
+      "type": "literature_explanation",
+      "titleNepali": "कुनै एक उद्धरणको व्याख्या गर्नुहोस् :",
+      "titleEnglish": "Explain any one of the quotes:",
+      "questionNumberNepali": "१८",
+      "questionNumberEnglish": 18,
+      "marksNepali": "४",
+      "marksEnglish": 4,
+      "options": [
+        {
+          "idNepali": "क",
+          "idEnglish": "a",
+          "quoteNepali": "कर्ममा छ भने शक्ति जङ्गलै बन्छ नन्दन।",
+          "quoteEnglish": "If there is power in action, even a jungle becomes Nandan (heavenly garden)."
+        },
+        {
+          "idNepali": "ख",
+          "idEnglish": "b",
+          "quoteNepali": "कुकुर अज्ञानी पशु हुनाले बोलाएपछि मात्र जान्छ, मानिस चाहिँ ज्ञानवान् हुनाले बखतमौका विचार गरेर आफैँ पनि जानुपर्छ।",
+          "quoteEnglish": "Since a dog is an ignorant animal, it goes only when called, but a human being, being knowledgeable, should go by themselves considering the occasion."
+        }
+      ]
+    },
+    {
+      "type": "literature_critical_analysis_choice",
+      "titleNepali": "कुनै एक प्रश्नको समीक्षात्मक उत्तर दिनुहोस् :",
+      "titleEnglish": "Give a critical answer to any one question:",
+      "questionNumberNepali": "१९",
+      "questionNumberEnglish": 19,
+      "marksNepali": "७",
+      "marksEnglish": 7,
+      "options": [
+        {
+          "idNepali": "क",
+          "idEnglish": "a",
+          "passageNepali": "देवकोटाको महासागर जस्तो प्रतिभा राणाहरूको निरङ्कुशताको साँघुरो सुरुङभित्र कसरी बग्न सक्थ्यो र? मुलुकमा जति वेला प्रजातन्त्र प्राप्तिका लागि क्रान्तिको आगो सल्कँदै थियो, त्यति वेला उनले पनि विद्रोहको बाटो समाते। उनी वि.सं. २००४ मा प्रजातान्त्रिक आन्दोलनमा संलग्न भए। उनी घरपरिवार कसैलाई थाहा नदिई बनारसतर्फ प्रवासिए। त्यहाँबाट निस्किने 'युगवाणी' पत्रिकामार्फत निरङ्कुशता विरुद्ध युगले चाहेको विद्रोहको वाणी फुके।",
+          "passageEnglish": "How could Devkota's ocean-like talent flow inside the narrow tunnel of Rana tyranny? When the fire of revolution was igniting in the country for obtaining democracy, he also took the path of rebellion. He got involved in the democratic movement in 2004 BS. He migrated to Banaras without informing anyone in his family. Through the 'Yugvani' newspaper published from there, he blew the voice of rebellion desired by the era against tyranny.",
+          "questionNepali": "लक्ष्मीप्रसाद देवकोटाको साहित्यिक व्यक्तित्वमा रहेको क्रान्तिकारी चेतनालाई माथिको जीवनीको अंशका आधारमा समीक्षा गर्नुहोस्।",
+          "questionEnglish": "Review the revolutionary consciousness in the literary personality of Laxmi Prasad Devkota based on the excerpt of the biography above."
+        },
+        {
+          "idNepali": "ख",
+          "idEnglish": "b",
+          "passageNepali": "अधिकार नदिई कर्तव्य मात्र पूरा गर् भन्नु बिना हतियार लडाइँमा पठाउनु जस्तै हो। खुट्टामा नेल लगाएर हिँड् भन्नु जस्तै हो। हातमा हत्कडी लगाएर काम गर् भन्नु जस्तै हो। तसर्थ अधिकारबिना कर्तव्य पूरा गर्न कदापि सकिँदैन। ... त्यसैले अधिकार जन्मसिद्ध हुन्छ भने कर्तव्य पछि मात्र जोडिने विषय भएकाले कर्तव्यभन्दा अधिकारको महत्ता स्वतः सिद्ध हुन्छ।",
+          "passageEnglish": "Asking to fulfill duty without giving rights is like sending to war without weapons. It is like asking to walk with shackles on legs. It is like asking to work with handcuffs on hands. Therefore, duty can never be fulfilled without rights. ... Therefore, since rights are birthrights and duty is a subject added only later, the importance of rights over duty is self-evident.",
+          "questionNepali": "'अधिकार ठुलो कि कर्तव्य ठुलो?' वादविवाद पाठका आधारमा अधिकारको महत्त्वलाई कसरी पुष्टि गरिएको छ? समीक्षा गर्नुहोस्।",
+          "questionEnglish": "How is the importance of rights confirmed based on the debate text 'Are Rights Bigger or Duties Bigger?'\nReview it."
+        }
+      ]
+    },
+    {
+      "type": "essay",
+      "titleNepali": "कुनै एक शीर्षकमा १५० शब्द नघटाई निबन्ध लेख्नुहोस् :",
+      "titleEnglish": "Write an essay on any one topic in not less than 150 words:",
+      "topicsNepali": [
+        "नेपालमा पर्यटनको सम्भावना",
+        "मेरो जीवनको लक्ष्य",
+        "समयको महत्त्व"
+      ],
+      "topicsEnglish": [
+        "Potential of Tourism in Nepal",
+        "Aim of My Life",
+        "Importance of Time"
+      ],
+      "questionNumberNepali": "२०",
+      "questionNumberEnglish": 20,
+      "marksNepali": "७",
+      "marksEnglish": 7
+    }
+  ]
+}

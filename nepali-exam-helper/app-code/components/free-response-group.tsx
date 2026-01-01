@@ -33,9 +33,11 @@ export function FreeResponseGroup({
     if (!showExplanations) return null
 
     const explanation = language === "english"
-      ? question.explanation
-      : (question.explanationNepali || question.explanation)
-    const sampleAnswer = question.sampleAnswer
+      ? ((question as any).explanationEnglish || (question as any).explanation)
+      : ((question as any).explanationNepali || (question as any).explanation)
+    const sampleAnswer = language === "english"
+      ? ((question as any).sampleAnswerEnglish || question.sampleAnswer)
+      : ((question as any).sampleAnswerNepali || question.sampleAnswer)
 
     const hasExplanation = explanation && explanation.trim()
     const hasSampleAnswer = sampleAnswer && sampleAnswer.trim()
@@ -229,7 +231,7 @@ export function FreeResponseGroup({
                     </div>
                   </div>
                   <Badge variant="outline" className="ml-3">
-                    {question.marks} {language === "english" ? "mark" : "अंक"}{question.marks !== 1 ? (language === "english" ? "s" : "") : ""}
+                    {language === "english" ? ((question as any).marksEnglish || question.marks) : ((question as any).marksNepali || question.marks)} {language === "english" ? "mark" : "अंक"}{(language === "english" ? ((question as any).marksEnglish || question.marks) : ((question as any).marksNepali || question.marks)) !== 1 ? (language === "english" ? "s" : "") : ""}
                   </Badge>
                 </div>
               </CardHeader>

@@ -27,8 +27,8 @@ export function GroupA({ questions, answers, onAnswerChange, progress }: GroupAP
     if (!showExplanations) return null
 
     const explanation = language === "english"
-      ? question.explanation
-      : (question.explanationNepali || question.explanation)
+      ? ((question as any).explanationEnglish || question.explanation)
+      : ((question as any).explanationNepali || question.explanation)
 
     if (!explanation) return null
 
@@ -137,7 +137,7 @@ export function GroupA({ questions, answers, onAnswerChange, progress }: GroupAP
                     </div>
                   </div>
                   <Badge variant="outline" className="ml-3">
-                    {question.marks} {language === "english" ? "mark" : "अंक"}{question.marks !== 1 ? (language === "english" ? "s" : "") : ""}
+                    {language === "english" ? ((question as any).marksEnglish || question.marks) : ((question as any).marksNepali || question.marks)} {language === "english" ? "mark" : "अंक"}{(language === "english" ? ((question as any).marksEnglish || question.marks) : ((question as any).marksNepali || question.marks)) !== 1 ? (language === "english" ? "s" : "") : ""}
                   </Badge>
                 </div>
               </CardHeader>

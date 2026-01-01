@@ -112,7 +112,7 @@ export function ResultsCard({
     totalScore = results.scoreA || 0
 
     maxScoreA = questions.socialStudiesGroups.reduce((acc: number, group: any) => {
-      return acc + (group.questions?.reduce((qAcc: number, q: any) => qAcc + q.marks, 0) || 0)
+      return acc + (group.questions?.reduce((qAcc: number, q: any) => qAcc + (Number(q.marksEnglish) || Number(q.marks) || 1), 0) || 0)
     }, 0)
     maxScoreB = 0
     maxScoreC = 0
@@ -276,13 +276,13 @@ export function ResultsCard({
                     )}
 
                     {/* Explanation Section with better formatting */}
-                    {question.explanation && (
+                    {(language === 'english' ? ((question as any).explanationEnglish || question.explanation) : ((question as any).explanationNepali || question.explanation)) && (
                       <div className="bg-amber-50 border-l-4 border-amber-500 p-3 rounded-r-lg">
                         <div className="flex items-start gap-3">
                           <Lightbulb className="h-5 w-5 text-amber-600 mt-1 flex-shrink-0" />
                           <div className="flex-1">
                             <p className="font-semibold text-amber-800 mb-2">Explanation / व्याख्या:</p>
-                            <div className="text-amber-700 leading-relaxed whitespace-pre-line"><MathText text={question.explanation || ""} /></div>
+                            <div className="text-amber-700 leading-relaxed whitespace-pre-line"><MathText text={(language === 'english' ? ((question as any).explanationEnglish || question.explanation) : ((question as any).explanationNepali || question.explanation)) || ""} /></div>
                           </div>
                         </div>
                       </div>
@@ -443,14 +443,14 @@ export function ResultsCard({
                       </div>
                     </div>
                     {/* Show Sample Answer for Groups B, C, D questions */}
-                    {question.sampleAnswer && (
+                    {(language === 'english' ? ((question as any).sampleAnswerEnglish || question.sampleAnswer) : ((question as any).sampleAnswerNepali || question.sampleAnswer)) && (
                       <div className="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded-r-lg">
                         <div className="flex items-start gap-3">
                           <Lightbulb className="h-5 w-5 text-indigo-600 mt-1 flex-shrink-0" />
                           <div className="flex-1 min-w-0">
                             <p className="font-semibold text-indigo-800">Sample Answer / नमूना उत्तर:</p>
                             <div className="text-indigo-700 mt-1 text-sm leading-relaxed whitespace-pre-wrap break-words">
-                              <MathText text={question.sampleAnswer} />
+                              <MathText text={(language === 'english' ? ((question as any).sampleAnswerEnglish || question.sampleAnswer) : ((question as any).sampleAnswerNepali || question.sampleAnswer))} />
                             </div>
                           </div>
                         </div>
@@ -558,18 +558,18 @@ export function ResultsCard({
                     if (groupFeedback.length === 0) return null
 
                     const groupScore = groupFeedback.reduce((sum: number, fb: any) => sum + fb.score, 0)
-                    const groupMaxScore = group.questions?.reduce((sum: number, q: any) => sum + q.marks, 0) || 0
-                    const groupColors = ["bg-blue-50 border-blue-200", "bg-green-50 border-green-200", "bg-purple-50 border-purple-200"]
+                    const groupMaxScore = group.questions?.reduce((sum: number, q: any) => sum + (Number(q.marksEnglish) || Number(q.marks) || 1), 0) || 0
+                    const groupColors = ["bg-blue-100 border-blue-300 text-blue-800", "bg-green-100 border-green-300 text-green-800", "bg-purple-100 border-purple-300 text-purple-800"]
                     const groupBgColor = groupColors[groupIndex % groupColors.length]
 
                     return (
                       <div key={groupIndex} className="mb-6">
                         <div className={`flex items-center justify-between p-4 rounded-lg ${groupBgColor} mb-4`}>
-                          <h3 className="text-xl font-semibold text-slate-700">
+                          <h3 className="text-xl font-semibold">
                             {language === 'nepali' ? group.groupName : (group.groupNameEnglish || group.groupName)}
                           </h3>
                           <div className="text-right">
-                            <p className="text-2xl font-bold text-slate-800">{groupScore}/{groupMaxScore}</p>
+                            <p className="text-2xl font-bold">{groupScore}/{groupMaxScore}</p>
                           </div>
                         </div>
                         <Accordion type="single" collapsible className="w-full">
@@ -592,7 +592,9 @@ export function ResultsCard({
                                 <AccordionTrigger className="hover:bg-slate-50 px-4 py-3 text-left">
                                   <div className="flex justify-between w-full items-center min-h-[48px]">
                                     <span className="text-left font-medium pr-4 flex-1 leading-tight">
-                                      {idx + 1}. {fb.question?.substring(0, 80) || "प्रश्न"}...
+                                      {idx + 1}. {(language === 'nepali'
+                                        ? (question?.questionNepali || question?.questionEnglish || fb.question)
+                                        : (question?.questionEnglish || question?.questionNepali || fb.question))?.substring(0, 80) || (language === 'nepali' ? 'प्रश्न' : 'Question')}...
                                     </span>
                                     <div className="flex items-center gap-2 flex-shrink-0 ml-4">
                                       {isFullScore ? (
@@ -621,11 +623,9 @@ export function ResultsCard({
                                   <div className="space-y-4">
                                     {/* Full question */}
                                     <div className="text-slate-700 mb-3">
-                                      {typeof fb.question === "object"
-                                        ? Object.entries(fb.question as Record<string, string>)
-                                          .map(([key, value]) => `${key}: ${value}`)
-                                          .join("\n")
-                                        : fb.question || "प्रश्न"}
+                                      {language === 'nepali'
+                                        ? (question?.questionNepali || question?.questionEnglish || fb.question || 'प्रश्न')
+                                        : (question?.questionEnglish || question?.questionNepali || fb.question || 'Question')}
                                     </div>
 
                                     {/* Your Answer */}
@@ -706,19 +706,23 @@ export function ResultsCard({
                   <div className="flex items-center justify-between p-4 rounded-lg bg-orange-50 mb-4">
                     <h3 className="text-xl font-semibold text-orange-700 flex items-center gap-2">
                       <BookOpen className="h-5 w-5" />
-                      नेपाली परीक्षा नतिजा / Nepali Test Results
+                      {language === 'nepali' ? 'नेपाली परीक्षा नतिजा' : 'Nepali Test Results'}
                     </h3>
-                    <Badge variant="secondary">{questions.nepaliQuestions.length} प्रश्नहरू</Badge>
+                    <Badge variant="secondary">
+                      {questions.nepaliQuestions.length} {language === 'nepali' ? 'प्रश्नहरू' : 'questions'}
+                    </Badge>
                   </div>
                   <div className="bg-white p-4 rounded-lg border border-orange-200 mb-4">
                     <div className="flex items-center justify-between mb-4">
                       <div className="text-lg font-semibold text-orange-800">
-                        कुल अंक: {totalScore}/{maxTotalScore}
+                        {language === 'nepali' ? 'कुल अंक:' : 'Total Score:'} {totalScore}/{maxTotalScore}
                       </div>
                       <div className="text-2xl font-bold text-orange-600">{percentage}%</div>
                     </div>
                     <div className="text-sm text-orange-600">
-                      सबै प्रश्नहरू AI द्वारा ग्रेड गरिएको छ। केही प्रश्नहरू स्वत: ग्रेड गरिएको छ।
+                      {language === 'nepali'
+                        ? 'सबै प्रश्नहरू AI द्वारा ग्रेड गरिएको छ। केही प्रश्नहरू स्वत: ग्रेड गरिएको छ।'
+                        : 'All questions are graded by AI. Some questions may be auto-graded.'}
                     </div>
                   </div>
 
@@ -735,7 +739,7 @@ export function ResultsCard({
 
                       // Get question type display name
                       const getTypeDisplayName = (type: string) => {
-                        const typeNames: Record<string, string> = {
+                        const typeNamesNepali: Record<string, string> = {
                           matching: "मिलान",
                           fill_in_the_blanks: "खाली ठाउँ भर्नुहोस्",
                           fill_in_the_blanks_choices: "खाली ठाउँ भर्नुहोस्",
@@ -767,7 +771,40 @@ export function ResultsCard({
                           poem_question: "कविता",
                           essay: "निबन्ध",
                         }
-                        return typeNames[type] || type
+                        const typeNamesEnglish: Record<string, string> = {
+                          matching: "Matching",
+                          fill_in_the_blanks: "Fill in the Blanks",
+                          fill_in_the_blanks_choices: "Fill in the Blanks",
+                          short_answer: "Short Answer",
+                          spelling_correction: "Spelling Correction",
+                          parts_of_speech: "Parts of Speech",
+                          parts_of_speech_choices: "Parts of Speech",
+                          word_formation: "Word Formation",
+                          tense_change: "Tense Change",
+                          grammar_choice: "Grammar Choice",
+                          grammar_choices: "Grammar",
+                          sentence_transformation: "Sentence Transformation",
+                          reading_comprehension: "Reading Comprehension",
+                          reading_comprehension_grammar: "Grammar Reading",
+                          reading_comprehension_short: "Short Reading",
+                          reading_comprehension_long: "Long Reading",
+                          unseen_passage: "Unseen Passage",
+                          free_writing: "Free Writing",
+                          free_writing_choice: "Free Writing Choice",
+                          functional_writing: "Functional Writing",
+                          functional_writing_choice: "Functional Writing Choice",
+                          note_taking: "Note Taking",
+                          summarization: "Summary",
+                          literature_short_answer: "Literature Short Answer",
+                          literature_argumentative: "Literature Argumentative",
+                          literature_explanation: "Literature Explanation",
+                          literature_critical_analysis_choice: "Critical Analysis",
+                          literature_question: "Literature",
+                          poem_question: "Poetry",
+                          essay: "Essay",
+                        }
+                        const names = language === 'nepali' ? typeNamesNepali : typeNamesEnglish
+                        return names[type] || type
                       }
 
                       return (
@@ -810,21 +847,25 @@ export function ResultsCard({
                             <div className="space-y-4">
                               {/* Question */}
                               <div className="bg-slate-50 p-4 rounded-lg">
-                                <p className="font-semibold text-slate-700 mb-2">प्रश्न:</p>
+                                <p className="font-semibold text-slate-700 mb-2">
+                                  {language === 'nepali' ? 'प्रश्न:' : 'Question:'}
+                                </p>
                                 <p className="text-slate-700 whitespace-pre-wrap">
                                   {typeof fb.question === "object"
                                     ? Object.entries(fb.question as Record<string, string>)
                                       .map(([key, value]) => `${key}: ${value}`)
                                       .join("\n")
-                                    : fb.question || "प्रश्न"}
+                                    : fb.question || (language === 'nepali' ? 'प्रश्न' : 'Question')}
                                 </p>
                               </div>
 
                               {/* Student Answer */}
                               <div className="bg-slate-50 p-4 rounded-lg">
-                                <p className="font-semibold text-slate-700 mb-2">तपाईंको उत्तर:</p>
+                                <p className="font-semibold text-slate-700 mb-2">
+                                  {language === 'nepali' ? 'तपाईंको उत्तर:' : 'Your Answer:'}
+                                </p>
                                 <p className="text-slate-700 whitespace-pre-wrap">
-                                  {formatAnswerForDisplay(fb.studentAnswer) || "कुनै उत्तर प्रदान गरिएको छैन"}
+                                  {formatAnswerForDisplay(fb.studentAnswer) || (language === 'nepali' ? 'कुनै उत्तर प्रदान गरिएको छैन' : 'No answer provided')}
                                 </p>
                               </div>
 
@@ -833,31 +874,37 @@ export function ResultsCard({
                                 <div className="flex items-start gap-3">
                                   <Lightbulb className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
                                   <div className="flex-1">
-                                    <p className="font-semibold text-blue-800 mb-1">प्रतिक्रिया:</p>
+                                    <p className="font-semibold text-blue-800 mb-1">
+                                      {language === 'nepali' ? 'प्रतिक्रिया:' : 'Feedback:'}
+                                    </p>
                                     <p className="text-blue-700 leading-relaxed whitespace-pre-wrap break-words">{fb.feedback}</p>
                                   </div>
                                 </div>
                               </div>
 
                               {/* Sample answer if available */}
-                              {(fb.sampleAnswer || originalQuestion?.sampleAnswer || originalQuestion?.correctAnswer) && (
+                              {(fb.sampleAnswer || (language === 'english' ? (originalQuestion?.sampleAnswerEnglish || originalQuestion?.sampleAnswer) : (originalQuestion?.sampleAnswerNepali || originalQuestion?.sampleAnswer)) || (language === 'english' ? (originalQuestion?.correctAnswerEnglish || originalQuestion?.correctAnswer) : (originalQuestion?.correctAnswerNepali || originalQuestion?.correctAnswer))) && (
                                 <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg">
-                                  <p className="font-semibold text-amber-800 mb-1">नमुना उत्तर / Sample Answer:</p>
+                                  <p className="font-semibold text-amber-800 mb-1">
+                                    {language === 'nepali' ? 'नमुना उत्तर:' : 'Sample Answer:'}
+                                  </p>
                                   <p className="text-amber-700 leading-relaxed whitespace-pre-wrap">
-                                    {formatAnswerForDisplay(fb.sampleAnswer || originalQuestion?.sampleAnswer || originalQuestion?.correctAnswer)}
+                                    {formatAnswerForDisplay(fb.sampleAnswer || (language === 'english' ? (originalQuestion?.sampleAnswerEnglish || originalQuestion?.sampleAnswer) : (originalQuestion?.sampleAnswerNepali || originalQuestion?.sampleAnswer)) || (language === 'english' ? (originalQuestion?.correctAnswerEnglish || originalQuestion?.correctAnswer) : (originalQuestion?.correctAnswerNepali || originalQuestion?.correctAnswer)))}
                                   </p>
                                 </div>
                               )}
 
                               {/* Explanation if available */}
-                              {(fb.explanation || originalQuestion?.explanation) && (
+                              {(fb.explanation || (language === 'english' ? (originalQuestion?.explanationEnglish || originalQuestion?.explanation) : (originalQuestion?.explanationNepali || originalQuestion?.explanation))) && (
                                 <div className="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded-r-lg">
                                   <div className="flex items-start gap-3">
                                     <Lightbulb className="h-5 w-5 text-indigo-600 mt-1 flex-shrink-0" />
                                     <div className="flex-1">
-                                      <p className="font-semibold text-indigo-800 mb-1">व्याख्या / Explanation:</p>
+                                      <p className="font-semibold text-indigo-800 mb-1">
+                                        {language === 'nepali' ? 'व्याख्या:' : 'Explanation:'}
+                                      </p>
                                       <p className="text-indigo-700 leading-relaxed text-sm whitespace-pre-wrap">
-                                        {fb.explanation || originalQuestion?.explanation}
+                                        {fb.explanation || (language === 'english' ? (originalQuestion?.explanationEnglish || originalQuestion?.explanation) : (originalQuestion?.explanationNepali || originalQuestion?.explanation))}
                                       </p>
                                     </div>
                                   </div>
@@ -867,19 +914,21 @@ export function ResultsCard({
                               {/* SubQuestion correct answers if available */}
                               {originalQuestion?.subQuestions && originalQuestion.subQuestions.length > 0 && (
                                 <div className="bg-teal-50 border-l-4 border-teal-500 p-4 rounded-r-lg">
-                                  <p className="font-semibold text-teal-800 mb-2">उप-प्रश्न उत्तरहरू / Sub-Question Answers:</p>
+                                  <p className="font-semibold text-teal-800 mb-2">
+                                    {language === 'nepali' ? 'उप-प्रश्न उत्तरहरू:' : 'Sub-Question Answers:'}
+                                  </p>
                                   <div className="space-y-2">
                                     {originalQuestion.subQuestions.map((sub: any) => (
                                       <div key={sub.id} className="text-sm">
                                         <span className="font-medium text-teal-700">
-                                          ({sub.id}) {sub.questionNepali || sub.title || ""}:
+                                          ({language === 'nepali' ? (sub.idNepali || sub.id) : (sub.idEnglish || sub.id)}) {language === 'nepali' ? (sub.questionNepali || sub.title || "") : (sub.questionEnglish || sub.title || "")}:
                                         </span>
                                         <span className="text-teal-600 whitespace-pre-wrap">
                                           {sub.choices && sub.choices.length > 0
-                                            ? sub.choices.map((c: any) => `${c.id}: ${c.correctAnswer}`).join(", ")
-                                            : typeof sub.correctAnswer === 'string'
-                                              ? sub.correctAnswer
-                                              : formatAnswerForDisplay(sub.correctAnswer) || sub.explanation || ""}
+                                            ? sub.choices.map((c: any) => `${c.id}: ${language === 'english' ? (c.correctAnswerEnglish || c.correctAnswer) : (c.correctAnswerNepali || c.correctAnswer)}`).join(", ")
+                                            : typeof (language === 'english' ? (sub.correctAnswerEnglish || sub.correctAnswer) : (sub.correctAnswerNepali || sub.correctAnswer)) === 'string'
+                                              ? (language === 'english' ? (sub.correctAnswerEnglish || sub.correctAnswer) : (sub.correctAnswerNepali || sub.correctAnswer))
+                                              : formatAnswerForDisplay(language === 'english' ? (sub.correctAnswerEnglish || sub.correctAnswer) : (sub.correctAnswerNepali || sub.correctAnswer)) || (language === 'english' ? (sub.explanationEnglish || sub.explanation) : (sub.explanationNepali || sub.explanation)) || ""}
                                         </span>
                                       </div>
                                     ))}
@@ -897,9 +946,9 @@ export function ResultsCard({
                                         <p className="font-medium text-purple-700 mb-1">खण्ड {section.id}:</p>
                                         {section.subQuestions?.map((sub: any) => (
                                           <div key={sub.id} className="ml-4 mb-1">
-                                            <span className="font-medium text-purple-600">({sub.id}) {sub.questionNepali}: </span>
+                                            <span className="font-medium text-purple-600">({language === 'nepali' ? (sub.idNepali || sub.id) : (sub.idEnglish || sub.id)}) {language === 'nepali' ? (sub.questionNepali || sub.questionEnglish || sub.title) : (sub.questionEnglish || sub.questionNepali || sub.title)}: </span>
                                             <span className="text-purple-500 whitespace-pre-wrap">
-                                              {formatAnswerForDisplay(sub.correctAnswer) || sub.explanation || ""}
+                                              {formatAnswerForDisplay(language === 'english' ? (sub.correctAnswerEnglish || sub.correctAnswer) : (sub.correctAnswerNepali || sub.correctAnswer)) || (language === 'english' ? (sub.explanationEnglish || sub.explanation) : (sub.explanationNepali || sub.explanation)) || ""}
                                             </span>
                                           </div>
                                         ))}
@@ -1528,13 +1577,13 @@ export function ResultsCard({
                                     </div>
                                   )}
                                   {/* Show sample answer for free writing questions if available */}
-                                  {question.sampleAnswer && (
+                                  {(language === 'english' ? ((question as any).sampleAnswerEnglish || (question as any).sampleAnswer) : ((question as any).sampleAnswerNepali || (question as any).sampleAnswer)) && (
                                     <div className="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded-r-lg">
                                       <p className="font-semibold text-indigo-800 mb-2">Sample Answer / नमूना उत्तर:</p>
-                                      {question.sampleAnswer.title && (
-                                        <p className="font-medium text-indigo-700 mb-1">{question.sampleAnswer.title}</p>
+                                      {((language === 'english' ? ((question as any).sampleAnswerEnglish || (question as any).sampleAnswer) : ((question as any).sampleAnswerNepali || (question as any).sampleAnswer))?.title) && (
+                                        <p className="font-medium text-indigo-700 mb-1">{(language === 'english' ? ((question as any).sampleAnswerEnglish || (question as any).sampleAnswer) : ((question as any).sampleAnswerNepali || (question as any).sampleAnswer)).title}</p>
                                       )}
-                                      <p className="text-indigo-700 text-sm whitespace-pre-wrap">{question.sampleAnswer.content}</p>
+                                      <p className="text-indigo-700 text-sm whitespace-pre-wrap">{(language === 'english' ? ((question as any).sampleAnswerEnglish || (question as any).sampleAnswer) : ((question as any).sampleAnswerNepali || (question as any).sampleAnswer))?.content}</p>
                                     </div>
                                   )}
                                 </div>
@@ -1568,7 +1617,7 @@ export function ResultsCard({
                                       {gap.correctAnswer && !isCorrect && (
                                         <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded-r-lg">
                                           <p className="font-semibold text-blue-800 mb-1">Correct Answer / सही उत्तर:</p>
-                                          <p className="text-blue-700 font-medium">{gap.correctAnswer}</p>
+                                          <p className="text-blue-700 font-medium">{language === 'nepali' ? (gap.correctAnswerNepali || gap.correctAnswer) : (gap.correctAnswerEnglish || gap.correctAnswer)}</p>
                                         </div>
                                       )}
                                     </div>

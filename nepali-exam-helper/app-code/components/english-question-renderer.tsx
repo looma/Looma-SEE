@@ -64,6 +64,8 @@ export function EnglishQuestionRenderer({
     matchInstruction: language === 'nepali' ? 'तल दिइएको उपयुक्त विकल्प छानेर प्रत्येक वस्तुलाई मिलाउनुहोस्।' : 'Match each item with the correct option by selecting the appropriate choice below.',
     // Ordering labels
     orderInstruction: language === 'nepali' ? 'तलका वस्तुहरूलाई सही क्रममा मिलाउनुहोस् (१, २, ३, आदि)।' : 'Arrange the following items in the correct order by selecting a number (1, 2, 3, etc.) for each item.',
+    // Cloze test labels
+    fillBlanks: language === 'nepali' ? 'खाली ठाउँहरूमा भर्नुहोस्:' : 'Fill in the blanks:',
     // Error messages
     dataIncomplete: language === 'nepali' ? '⚠️ प्रश्न डाटा अपूर्ण छ। कृपया परीक्षा डाटा जाँच गर्नुहोस्।' : '⚠️ Question data is incomplete. Please check the test data.',
   }
@@ -143,14 +145,17 @@ export function EnglishQuestionRenderer({
     return (
       <div className="space-y-4">
         {subQuestions.map((subQ, index) => {
-          const questionId = parentId ? `${(question as any).id}_${parentId}_${subQ.id}` : `${(question as any).id}_${subQ.id}`
-          const currentAnswer = parentId ? answers[(question as any).id]?.[parentId]?.[subQ.id] : answers[(question as any).id]?.[subQ.id]
+          // Use bilingual ID - prefer idEnglish for consistent storage
+          const subQId = subQ.idEnglish || subQ.id || String(index + 1)
+          const displaySubQId = getText(subQ.idEnglish || subQ.id, subQ.idNepali)
+          const questionId = parentId ? `${(question as any).id}_${parentId}_${subQId}` : `${(question as any).id}_${subQId}`
+          const currentAnswer = parentId ? answers[(question as any).id]?.[parentId]?.[subQId] : answers[(question as any).id]?.[subQId]
 
           // Calculate marks for sub-question: use subQ.marks if available, otherwise divide section marks by number of sub-questions
-          const subQuestionMarks = subQ.marks || (sectionMarks ? Math.round((sectionMarks / subQuestions.length) * 10) / 10 : 1)
+          const subQuestionMarks = subQ.marksEnglish || subQ.marks || (sectionMarks ? Math.round((sectionMarks / subQuestions.length) * 10) / 10 : 1)
 
           return (
-            <Card key={subQ.id} className="border-slate-200">
+            <Card key={subQId} className="border-slate-200">
               <CardContent className="p-4">
                 <div className="flex items-start gap-3">
                   <div className="flex-shrink-0 mt-1">
@@ -163,7 +168,7 @@ export function EnglishQuestionRenderer({
                   <div className="flex-1">
                     <div className="flex justify-between items-start mb-3">
                       <p className="font-medium text-slate-800">
-                        ({getText(subQ.idEnglish || subQ.id, subQ.idNepali)}) {getText(subQ.questionEnglish, subQ.questionNepali)}
+                        ({displaySubQId}) {getText(subQ.questionEnglish, subQ.questionNepali)}
                       </p>
                       <Badge variant="secondary" className="ml-2 bg-blue-100 text-blue-800 whitespace-nowrap">
                         {subQuestionMarks} {subQuestionMarks !== 1 ? uiText.marks : uiText.mark}
@@ -177,10 +182,10 @@ export function EnglishQuestionRenderer({
                           const currentSection = answers[(question as any).id]?.[parentId] || {}
                           onAnswerChange((question as any).id, parentId, {
                             ...currentSection,
-                            [subQ.id]: value,
+                            [subQId]: value,
                           })
                         } else {
-                          onAnswerChange((question as any).id, subQ.id, value)
+                          onAnswerChange((question as any).id, subQId, value)
                         }
                       }}
                       className="flex gap-6"
@@ -193,10 +198,10 @@ export function EnglishQuestionRenderer({
                             const currentSection = answers[(question as any).id]?.[parentId] || {}
                             onAnswerChange((question as any).id, parentId, {
                               ...currentSection,
-                              [subQ.id]: value,
+                              [subQId]: value,
                             })
                           } else {
-                            onAnswerChange((question as any).id, subQ.id, value)
+                            onAnswerChange((question as any).id, subQId, value)
                           }
                         }}
                       >
@@ -213,10 +218,10 @@ export function EnglishQuestionRenderer({
                             const currentSection = answers[(question as any).id]?.[parentId] || {}
                             onAnswerChange((question as any).id, parentId, {
                               ...currentSection,
-                              [subQ.id]: value,
+                              [subQId]: value,
                             })
                           } else {
-                            onAnswerChange((question as any).id, subQ.id, value)
+                            onAnswerChange((question as any).id, subQId, value)
                           }
                         }}
                       >
@@ -242,14 +247,17 @@ export function EnglishQuestionRenderer({
     return (
       <div className="space-y-4">
         {subQuestions.map((subQ, index) => {
-          const questionId = parentId ? `${(question as any).id}_${parentId}_${subQ.id}` : `${(question as any).id}_${subQ.id}`
-          const currentAnswer = parentId ? answers[(question as any).id]?.[parentId]?.[subQ.id] : answers[(question as any).id]?.[subQ.id]
+          // Use bilingual ID - prefer idEnglish for consistent storage
+          const subQId = subQ.idEnglish || subQ.id || String(index + 1)
+          const displaySubQId = getText(subQ.idEnglish || subQ.id, subQ.idNepali)
+          const questionId = parentId ? `${(question as any).id}_${parentId}_${subQId}` : `${(question as any).id}_${subQId}`
+          const currentAnswer = parentId ? answers[(question as any).id]?.[parentId]?.[subQId] : answers[(question as any).id]?.[subQId]
 
           // Calculate marks for sub-question: use subQ.marks if available, otherwise divide section marks by number of sub-questions
-          const subQuestionMarks = subQ.marks || (sectionMarks ? Math.round((sectionMarks / subQuestions.length) * 10) / 10 : 1)
+          const subQuestionMarks = subQ.marksEnglish || subQ.marks || (sectionMarks ? Math.round((sectionMarks / subQuestions.length) * 10) / 10 : 1)
 
           return (
-            <Card key={subQ.id} className="border-slate-200">
+            <Card key={subQId} className="border-slate-200">
               <CardContent className="p-4">
                 <div className="flex items-start gap-3">
                   <div className="flex-shrink-0 mt-1">
@@ -262,7 +270,7 @@ export function EnglishQuestionRenderer({
                   <div className="flex-1">
                     <div className="flex justify-between items-start mb-3">
                       <p className="font-medium text-slate-800">
-                        ({getText(subQ.idEnglish || subQ.id, subQ.idNepali)}) {getText(subQ.questionEnglish, subQ.questionNepali)}
+                        ({displaySubQId}) {getText(subQ.questionEnglish, subQ.questionNepali)}
                       </p>
                       <Badge variant="secondary" className="ml-2 bg-blue-100 text-blue-800 whitespace-nowrap">
                         {subQuestionMarks} {subQuestionMarks !== 1 ? uiText.marks : uiText.mark}
@@ -276,10 +284,10 @@ export function EnglishQuestionRenderer({
                           const currentSection = answers[(question as any).id]?.[parentId] || {}
                           onAnswerChange((question as any).id, parentId, {
                             ...currentSection,
-                            [subQ.id]: value,
+                            [subQId]: value,
                           })
                         } else {
-                          onAnswerChange((question as any).id, subQ.id, value)
+                          onAnswerChange((question as any).id, subQId, value)
                         }
                       }}
                       className="grid grid-cols-1 sm:grid-cols-3 gap-3"
@@ -292,10 +300,10 @@ export function EnglishQuestionRenderer({
                             const currentSection = answers[(question as any).id]?.[parentId] || {}
                             onAnswerChange((question as any).id, parentId, {
                               ...currentSection,
-                              [subQ.id]: value,
+                              [subQId]: value,
                             })
                           } else {
-                            onAnswerChange((question as any).id, subQ.id, value)
+                            onAnswerChange((question as any).id, subQId, value)
                           }
                         }}
                       >
@@ -312,10 +320,10 @@ export function EnglishQuestionRenderer({
                             const currentSection = answers[(question as any).id]?.[parentId] || {}
                             onAnswerChange((question as any).id, parentId, {
                               ...currentSection,
-                              [subQ.id]: value,
+                              [subQId]: value,
                             })
                           } else {
-                            onAnswerChange((question as any).id, subQ.id, value)
+                            onAnswerChange((question as any).id, subQId, value)
                           }
                         }}
                       >
@@ -332,10 +340,10 @@ export function EnglishQuestionRenderer({
                             const currentSection = answers[(question as any).id]?.[parentId] || {}
                             onAnswerChange((question as any).id, parentId, {
                               ...currentSection,
-                              [subQ.id]: value,
+                              [subQId]: value,
                             })
                           } else {
-                            onAnswerChange((question as any).id, subQ.id, value)
+                            onAnswerChange((question as any).id, subQId, value)
                           }
                         }}
                       >
@@ -361,15 +369,18 @@ export function EnglishQuestionRenderer({
     return (
       <div className="space-y-4">
         {subQuestions.map((subQ, index) => {
+          // Use bilingual ID - prefer idEnglish for consistent storage
+          const subQId = subQ.idEnglish || subQ.id || String(index + 1)
+          const displaySubQId = getText(subQ.idEnglish || subQ.id, subQ.idNepali)
           const currentAnswer = parentId
-            ? answers[(question as any).id]?.[parentId]?.[subQ.id] || ""
-            : answers[(question as any).id]?.[subQ.id] || ""
+            ? answers[(question as any).id]?.[parentId]?.[subQId] || ""
+            : answers[(question as any).id]?.[subQId] || ""
 
           // Calculate marks for sub-question: use subQ.marks if available, otherwise divide section marks by number of sub-questions
-          const subQuestionMarks = subQ.marks || (sectionMarks ? Math.round((sectionMarks / subQuestions.length) * 10) / 10 : 1)
+          const subQuestionMarks = subQ.marksEnglish || subQ.marks || (sectionMarks ? Math.round((sectionMarks / subQuestions.length) * 10) / 10 : 1)
 
           return (
-            <Card key={subQ.id} className="border-slate-200">
+            <Card key={subQId} className="border-slate-200">
               <CardContent className="p-4">
                 <div className="flex items-start gap-3">
                   <div className="flex-shrink-0 mt-1">
@@ -382,7 +393,7 @@ export function EnglishQuestionRenderer({
                   <div className="flex-1">
                     <div className="flex justify-between items-start mb-3">
                       <p className="font-medium text-slate-800">
-                        ({getText(subQ.idEnglish || subQ.id, subQ.idNepali)}) {getText(subQ.questionEnglish, subQ.questionNepali)}
+                        ({displaySubQId}) {getText(subQ.questionEnglish, subQ.questionNepali)}
                       </p>
                       <Badge variant="secondary" className="ml-2 bg-blue-100 text-blue-800 whitespace-nowrap">
                         {subQuestionMarks} {subQuestionMarks !== 1 ? uiText.marks : uiText.mark}
@@ -396,10 +407,10 @@ export function EnglishQuestionRenderer({
                           const currentSection = answers[(question as any).id]?.[parentId] || {}
                           onAnswerChange((question as any).id, parentId, {
                             ...currentSection,
-                            [subQ.id]: e.target.value,
+                            [subQId]: e.target.value,
                           })
                         } else {
-                          onAnswerChange((question as any).id, subQ.id, e.target.value)
+                          onAnswerChange((question as any).id, subQId, e.target.value)
                         }
                       }}
                       placeholder={uiText.writeAnswer}
@@ -422,15 +433,18 @@ export function EnglishQuestionRenderer({
     return (
       <div className="space-y-4">
         {subQuestions.map((subQ, index) => {
+          // Use bilingual ID - prefer idEnglish for consistent storage
+          const subQId = subQ.idEnglish || subQ.id || String(index + 1)
+          const displaySubQId = getText(subQ.idEnglish || subQ.id, subQ.idNepali)
           const currentAnswer = parentId
-            ? answers[(question as any).id]?.[parentId]?.[subQ.id] || ""
-            : answers[(question as any).id]?.[subQ.id] || ""
+            ? answers[(question as any).id]?.[parentId]?.[subQId] || ""
+            : answers[(question as any).id]?.[subQId] || ""
 
           // Calculate marks for sub-question: use subQ.marks if available, otherwise divide section marks by number of sub-questions
-          const subQuestionMarks = subQ.marks || (sectionMarks ? Math.round((sectionMarks / subQuestions.length) * 10) / 10 : 1)
+          const subQuestionMarks = subQ.marksEnglish || subQ.marks || (sectionMarks ? Math.round((sectionMarks / subQuestions.length) * 10) / 10 : 1)
 
           return (
-            <Card key={subQ.id} className="border-slate-200">
+            <Card key={subQId} className="border-slate-200">
               <CardContent className="p-4">
                 <div className="flex items-start gap-3">
                   <div className="flex-shrink-0 mt-1">
@@ -443,7 +457,7 @@ export function EnglishQuestionRenderer({
                   <div className="flex-1">
                     <div className="flex justify-between items-start mb-3">
                       <p className="font-medium text-slate-800">
-                        ({getText(subQ.idEnglish || subQ.id, subQ.idNepali)}) {getText(subQ.questionEnglish, subQ.questionNepali)}
+                        ({displaySubQId}) {getText(subQ.questionEnglish, subQ.questionNepali)}
                       </p>
                       <Badge variant="secondary" className="ml-2 bg-blue-100 text-blue-800 whitespace-nowrap">
                         {subQuestionMarks} {subQuestionMarks !== 1 ? uiText.marks : uiText.mark}
@@ -451,11 +465,11 @@ export function EnglishQuestionRenderer({
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor={`fill-${subQ.id}`} className="text-sm font-medium text-slate-700">
-                        Fill in the blank:
+                      <Label htmlFor={`fill-${subQId}`} className="text-sm font-medium text-slate-700">
+                        {uiText.fillBlanks}
                       </Label>
                       <input
-                        id={`fill-${subQ.id}`}
+                        id={`fill-${subQId}`}
                         type="text"
                         value={currentAnswer}
                         onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
@@ -463,10 +477,10 @@ export function EnglishQuestionRenderer({
                             const currentSection = answers[(question as any).id]?.[parentId] || {}
                             onAnswerChange((question as any).id, parentId, {
                               ...currentSection,
-                              [subQ.id]: e.target.value,
+                              [subQId]: e.target.value,
                             })
                           } else {
-                            onAnswerChange((question as any).id, subQ.id, e.target.value)
+                            onAnswerChange((question as any).id, subQId, e.target.value)
                           }
                         }}
                         placeholder={uiText.fillBlank}
@@ -516,53 +530,65 @@ export function EnglishQuestionRenderer({
 
         {/* Matching Interface */}
         <div className="space-y-4">
-          {section.columns?.A?.map((item: any) => (
-            <Card key={item.id} className="border-slate-200">
-              <CardContent className="p-4">
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0">
-                    <div className="w-8 h-8 bg-blue-100 text-blue-800 rounded-full flex items-center justify-center font-semibold text-sm">
-                      {item.id}
+          {section.columns?.A?.map((item: any, idx: number) => {
+            // Use bilingual ID - prefer idEnglish for consistent storage
+            const itemId = item.idEnglish || item.id || String(idx + 1)
+            const displayItemId = getText(item.idEnglish || item.id, item.idNepali)
+
+            return (
+              <Card key={itemId} className="border-slate-200">
+                <CardContent className="p-4">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-8 h-8 bg-blue-100 text-blue-800 rounded-full flex items-center justify-center font-semibold text-sm">
+                        {displayItemId}
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <p className="font-medium text-slate-800 mb-3">{getText(item.textEnglish || item.text, item.textNepali)}</p>
+                      <div className="flex items-center gap-2 mb-3">
+                        <span className="text-sm text-slate-600 font-medium">{uiText.chooseMatch}</span>
+                      </div>
+                      <RadioGroup
+                        value={currentAnswers[itemId] || ""}
+                        onValueChange={(value: string) => {
+                          const newAnswers = { ...currentAnswers, [itemId]: value }
+                          onAnswerChange((question as any).id, section.id, newAnswers)
+                        }}
+                        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2"
+                      >
+                        {section.columns?.B?.map((bItem: any, bIdx: number) => {
+                          // Use bilingual ID for B column items too
+                          const bItemId = bItem.idEnglish || bItem.id || String.fromCharCode(97 + bIdx)
+                          const displayBItemId = getText(bItem.idEnglish || bItem.id, bItem.idNepali)
+
+                          return (
+                            <div
+                              key={bItemId}
+                              className={`flex items-center space-x-2 cursor-pointer p-3 rounded-lg border transition-colors ${currentAnswers[itemId] === bItemId
+                                ? "bg-blue-50 border-blue-300"
+                                : "bg-slate-50 border-slate-200 hover:bg-slate-100"
+                                }`}
+                              onClick={() => {
+                                const newAnswers = { ...currentAnswers, [itemId]: bItemId }
+                                onAnswerChange((question as any).id, section.id, newAnswers)
+                              }}
+                            >
+                              <RadioGroupItem value={bItemId} id={`${itemId}-${bItemId}`} />
+                              <Label htmlFor={`${itemId}-${bItemId}`} className="cursor-pointer flex-1">
+                                <span className="font-medium text-blue-700 mr-2">({displayBItemId})</span>
+                                <span className="text-slate-700">{getText(bItem.textEnglish || bItem.text, bItem.textNepali)}</span>
+                              </Label>
+                            </div>
+                          )
+                        })}
+                      </RadioGroup>
                     </div>
                   </div>
-                  <div className="flex-1">
-                    <p className="font-medium text-slate-800 mb-3">{getText(item.textEnglish || item.text, item.textNepali)}</p>
-                    <div className="flex items-center gap-2 mb-3">
-                      <span className="text-sm text-slate-600 font-medium">{uiText.chooseMatch}</span>
-                    </div>
-                    <RadioGroup
-                      value={currentAnswers[item.id] || ""}
-                      onValueChange={(value: string) => {
-                        const newAnswers = { ...currentAnswers, [item.id]: value }
-                        onAnswerChange((question as any).id, section.id, newAnswers)
-                      }}
-                      className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2"
-                    >
-                      {section.columns?.B?.map((bItem: any) => (
-                        <div
-                          key={bItem.id}
-                          className={`flex items-center space-x-2 cursor-pointer p-3 rounded-lg border transition-colors ${currentAnswers[item.id] === bItem.id
-                            ? "bg-blue-50 border-blue-300"
-                            : "bg-slate-50 border-slate-200 hover:bg-slate-100"
-                            }`}
-                          onClick={() => {
-                            const newAnswers = { ...currentAnswers, [item.id]: bItem.id }
-                            onAnswerChange((question as any).id, section.id, newAnswers)
-                          }}
-                        >
-                          <RadioGroupItem value={bItem.id} id={`${item.id}-${bItem.id}`} />
-                          <Label htmlFor={`${item.id}-${bItem.id}`} className="cursor-pointer flex-1">
-                            <span className="font-medium text-blue-700 mr-2">({bItem.id})</span>
-                            <span className="text-slate-700">{getText(bItem.textEnglish || bItem.text, bItem.textNepali)}</span>
-                          </Label>
-                        </div>
-                      ))}
-                    </RadioGroup>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+                </CardContent>
+              </Card>
+            )
+          })}
         </div>
 
         {renderExplanation(section)}
@@ -601,34 +627,43 @@ export function EnglishQuestionRenderer({
 
         {/* Ordering Interface */}
         <div className="space-y-3">
-          {items.map((item: any, idx: number) => (
-            <Card key={item.id || idx} className="border-slate-200">
-              <CardContent className="p-4">
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0">
-                    <select
-                      value={currentAnswers[item.id] || ""}
-                      onChange={(e) => {
-                        const newAnswers = { ...currentAnswers, [item.id]: e.target.value }
-                        onAnswerChange((question as any).id, section.id, newAnswers)
-                      }}
-                      className="w-16 h-10 px-3 border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent text-center font-semibold"
-                    >
-                      <option value="">--</option>
-                      {items.map((_: any, i: number) => (
-                        <option key={i + 1} value={String(i + 1)}>
-                          {i + 1}
-                        </option>
-                      ))}
-                    </select>
+          {items.map((item: any, idx: number) => {
+            // Use bilingual ID - prefer idEnglish for consistent storage
+            const itemId = item.idEnglish || item.id || String(idx + 1)
+            const displayItemId = getText(item.idEnglish || item.id, item.idNepali)
+
+            return (
+              <Card key={itemId} className="border-slate-200">
+                <CardContent className="p-4">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0">
+                      <select
+                        value={currentAnswers[itemId] || ""}
+                        onChange={(e) => {
+                          const newAnswers = { ...currentAnswers, [itemId]: e.target.value }
+                          onAnswerChange((question as any).id, section.id, newAnswers)
+                        }}
+                        className="w-16 h-10 px-3 border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent text-center font-semibold"
+                      >
+                        <option value="">--</option>
+                        {items.map((_: any, i: number) => (
+                          <option key={i + 1} value={String(i + 1)}>
+                            {i + 1}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+                    <div className="flex-1">
+                      <p className="text-slate-700">
+                        <span className="font-medium mr-2">({displayItemId})</span>
+                        {getText(item.textEnglish || item.text || item.sentence, item.textNepali)}
+                      </p>
+                    </div>
                   </div>
-                  <div className="flex-1">
-                    <p className="text-slate-700">{getText(item.textEnglish || item.text || item.sentence, item.textNepali)}</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+                </CardContent>
+              </Card>
+            )
+          })}
         </div>
 
         {renderExplanation(section)}
@@ -706,14 +741,24 @@ export function EnglishQuestionRenderer({
   const renderFreeWriting = () => {
     const currentAnswer = answers[(question as any).id]?.content || ""
 
+    // Get bilingual clues
+    const clues = language === 'nepali'
+      ? ((question as any).cluesNepali || (question as any).cluesEnglish || (question as any).clues)
+      : ((question as any).cluesEnglish || (question as any).cluesNepali || (question as any).clues)
+
+    // Get bilingual word count
+    const wordCount = language === 'nepali'
+      ? ((question as any).wordCountNepali || (question as any).wordCountEnglish || (question as any).wordCount)
+      : ((question as any).wordCountEnglish || (question as any).wordCountNepali || (question as any).wordCount)
+
     return (
       <div className="space-y-6">
-        {(question as any).clues && (
+        {clues && clues.length > 0 && (
           <Card className="bg-blue-50 border-blue-200">
             <CardContent className="p-4">
               <h4 className="font-semibold text-blue-800 mb-2">{uiText.cluesTitle}</h4>
               <div className="flex flex-wrap gap-2">
-                {(question as any).clues.map((clue: any, index: number) => (
+                {clues.map((clue: any, index: number) => (
                   <Badge key={index} variant="secondary" className="bg-blue-100 text-blue-800">
                     {clue}
                   </Badge>
@@ -727,8 +772,8 @@ export function EnglishQuestionRenderer({
           <Label htmlFor={`writing-${(question as any).id}`} className="text-base font-medium text-slate-800">
             {uiText.yourAnswer}
           </Label>
-          {(question as any).wordCount && (
-            <p className="text-sm text-slate-600 mb-2">{uiText.writeApprox} {(question as any).wordCount} {uiText.wordsLabel}.</p>
+          {wordCount && (
+            <p className="text-sm text-slate-600 mb-2">{uiText.writeApprox} {wordCount} {uiText.wordsLabel}.</p>
           )}
           <Textarea
             id={`writing-${(question as any).id}`}
@@ -751,7 +796,12 @@ export function EnglishQuestionRenderer({
             <CardContent className="p-4">
               <h4 className="font-semibold text-green-800 mb-2">{uiText.sampleAnswer}</h4>
               <div className="text-sm whitespace-pre-line text-green-700">
-                {typeof (question as any).sampleAnswer === "string" ? (question as any).sampleAnswer : (question as any).sampleAnswer.content}
+                {typeof (question as any).sampleAnswer === "string"
+                  ? (question as any).sampleAnswer
+                  : getText(
+                    (question as any).sampleAnswer.contentEnglish || (question as any).sampleAnswer.content,
+                    (question as any).sampleAnswer.contentNepali
+                  )}
               </div>
             </CardContent>
           </Card>
@@ -764,13 +814,16 @@ export function EnglishQuestionRenderer({
     return (
       <div className="space-y-4">
         {(question as any).subQuestions?.map((subQ: any, index: number) => {
-          const currentAnswer = answers[(question as any).id]?.[subQ.id] || ""
+          // Use bilingual ID - prefer idEnglish for consistent storage
+          const subQId = subQ.idEnglish || subQ.id || String(index + 1)
+          const displaySubQId = getText(subQ.idEnglish || subQ.id, subQ.idNepali)
+          const currentAnswer = answers[(question as any).id]?.[subQId] || ""
 
           // Calculate marks for sub-question: use subQ.marks if available, otherwise divide question marks by number of sub-questions
-          const subQuestionMarks = subQ.marks || ((question as any).marks && (question as any).subQuestions ? Math.round(((question as any).marks / (question as any).subQuestions.length) * 10) / 10 : 1)
+          const subQuestionMarks = subQ.marksEnglish || subQ.marks || ((question as any).marks && (question as any).subQuestions ? Math.round(((question as any).marks / (question as any).subQuestions.length) * 10) / 10 : 1)
 
           return (
-            <Card key={subQ.id} className="border-slate-200">
+            <Card key={subQId} className="border-slate-200">
               <CardContent className="p-4">
                 <div className="flex items-start gap-3">
                   <div className="flex-shrink-0 mt-1">
@@ -783,7 +836,7 @@ export function EnglishQuestionRenderer({
                   <div className="flex-1">
                     <div className="flex justify-between items-start mb-3">
                       <p className="font-medium text-slate-800">
-                        ({getText(subQ.idEnglish || subQ.id, subQ.idNepali)}) {getText(subQ.questionEnglish, subQ.questionNepali)}
+                        ({displaySubQId}) {getText(subQ.questionEnglish, subQ.questionNepali)}
                       </p>
                       <Badge variant="secondary" className="ml-2 bg-blue-100 text-blue-800 whitespace-nowrap">
                         {subQuestionMarks} {subQuestionMarks !== 1 ? uiText.marks : uiText.mark}
@@ -791,7 +844,7 @@ export function EnglishQuestionRenderer({
                     </div>
                     <Textarea
                       value={currentAnswer}
-                      onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => onAnswerChange((question as any).id, subQ.id, e.target.value)}
+                      onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => onAnswerChange((question as any).id, subQId, e.target.value)}
                       placeholder={uiText.writeCorrected}
                       className="min-h-[60px] resize-none"
                       rows={2}
@@ -809,33 +862,44 @@ export function EnglishQuestionRenderer({
   }
 
   const renderClozeTest = () => {
+    // Get the passage with bilingual support
+    const passageText = getText(
+      (question as any).passageEnglish || (question as any).passage,
+      (question as any).passageNepali
+    )
+
     return (
       <div className="space-y-6">
-        <Card className="bg-slate-50 border-slate-200">
-          <CardContent className="p-6">
-            <div className="prose prose-slate max-w-none">
-              <p className="whitespace-pre-line leading-relaxed">{(question as any).passage}</p>
-            </div>
-          </CardContent>
-        </Card>
+        {passageText && (
+          <Card className="bg-slate-50 border-slate-200">
+            <CardContent className="p-6">
+              <div className="prose prose-slate max-w-none">
+                <p className="whitespace-pre-line leading-relaxed">{passageText}</p>
+              </div>
+            </CardContent>
+          </Card>
+        )}
 
         <div className="space-y-4">
-          <h4 className="font-semibold text-slate-800">Fill in the blanks:</h4>
+          <h4 className="font-semibold text-slate-800">{uiText.fillBlanks}</h4>
           {(question as any).gaps?.map((gap: any, index: number) => {
-            const currentAnswer = answers[(question as any).id]?.[gap.id] || ""
+            // Use bilingual ID - prefer idEnglish for consistent storage, display based on language
+            const gapId = gap.idEnglish || gap.id || String.fromCharCode(97 + index) // fallback to a, b, c...
+            const displayGapId = getText(gap.idEnglish || gap.id, gap.idNepali)
+            const currentAnswer = answers[(question as any).id]?.[gapId] || ""
 
             // Calculate marks for each gap: divide question marks by number of gaps
-            const gapMarks = (question as any).marks && (question as any).gaps ? Math.round(((question as any).marks / (question as any).gaps.length) * 10) / 10 : 1
+            const gapMarks = (question as any).marks && (question as any).gaps ? Math.round(((question as any).marks / (question as any).gaps.length) * 10) / 10 : 0.5
 
             return (
-              <Card key={gap.id} className="border-slate-200">
+              <Card key={gapId} className="border-slate-200">
                 <CardContent className="p-4">
                   <div className="flex items-center gap-3 mb-2">
-                    <span className="font-medium text-slate-800">({gap.id})</span>
+                    <span className="font-medium text-slate-800">({displayGapId})</span>
                     <Textarea
                       value={currentAnswer}
-                      onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => onAnswerChange((question as any).id, gap.id, e.target.value)}
-                      placeholder="Your answer..."
+                      onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) => onAnswerChange((question as any).id, gapId, e.target.value)}
+                      placeholder={uiText.fillBlank}
                       className="min-h-[40px] resize-none flex-1"
                       rows={1}
                     />

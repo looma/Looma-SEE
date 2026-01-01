@@ -79,24 +79,11 @@ export function useLanguage() {
 }
 
 /**
- * Determine if language switching should be enabled based on test ID
- * Math, Science, English, and Social Studies tests support bilingual switching
- * Only Nepali tests remain restricted (content is Nepali-only)
+ * Language switching is always enabled since all test types now support bilingual content.
+ * This function is kept for API compatibility but always returns true.
  */
-export function getLanguageSwitchEnabled(testId: string | null): boolean {
-    if (!testId) return true // Enable for non-test UI (login, test selection)
-
-    // Parse test ID format: see_2081_<subject>_practice_N
-    if (testId.includes("_math_")) return true
-    if (testId.includes("_science_")) return true
-    if (testId.includes("_english_")) return true  // Now bilingual
-    if (testId.includes("_social_")) return true   // Now bilingual
-
-    // Disable for Nepali tests (content is Nepali-only, bilingual not yet implemented)
-    if (testId.includes("_nepali_")) return false
-
-    // Default: enable (for unknown test types, allow switching)
-    return true
+export function getLanguageSwitchEnabled(_testId: string | null): boolean {
+    return true // All test types now support bilingual switching
 }
 
 /**
@@ -106,14 +93,7 @@ export function getLanguageSwitchEnabled(testId: string | null): boolean {
 export function getDisabledReason(testId: string | null, language: AppLanguage): string | null {
     if (!testId) return null
 
-    // Only Nepali tests have language switching disabled (bilingual not yet implemented)
-    if (testId.includes("_nepali_")) {
-        return language === "english"
-            ? "This test is only available in Nepali (as it appears on the actual exam)"
-            : "यो परीक्षा नेपालीमा मात्र उपलब्ध छ (वास्तविक परीक्षामा जस्तो देखिन्छ)"
-    }
-
-    // English and Social Studies now support bilingual content
+    // All test types now support bilingual content
     return null
 }
 

@@ -394,12 +394,12 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
           .sort(([a], [b]) => {
             // Define a preferred order for subjects
             const subjectOrder: Record<string, number> = {
-              nepali: 1,
-              english: 2,
-              science: 3,
-              social: 4,
-              social_studies: 4,
-              mathematics: 5,
+              english: 1,
+              nepali: 2,
+              mathematics: 3,
+              science: 4,
+              social: 5,
+              social_studies: 5,
               general: 99,
             }
             return (subjectOrder[a] || 50) - (subjectOrder[b] || 50)
