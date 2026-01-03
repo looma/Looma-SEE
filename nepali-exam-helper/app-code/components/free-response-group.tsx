@@ -230,7 +230,7 @@ export function FreeResponseGroup({
                       </div>
                     </div>
                   </div>
-                  <Badge variant="outline" className="ml-3">
+                  <Badge variant="outline" className="ml-3 whitespace-nowrap flex-shrink-0">
                     {language === "english" ? ((question as any).marksEnglish || question.marks) : ((question as any).marksNepali || question.marks)} {language === "english" ? "mark" : "अंक"}{(language === "english" ? ((question as any).marksEnglish || question.marks) : ((question as any).marksNepali || question.marks)) !== 1 ? (language === "english" ? "s" : "") : ""}
                   </Badge>
                 </div>

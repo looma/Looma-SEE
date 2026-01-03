@@ -247,7 +247,7 @@ export function SocialStudiesGroupRenderer({
                                             </p>
                                         </div>
                                     </div>
-                                    <Badge variant="outline" className="ml-3">
+                                    <Badge variant="outline" className="ml-3 whitespace-nowrap flex-shrink-0">
                                         {marksValue} {uiText.marks[lang]}
                                     </Badge>
                                 </div>
