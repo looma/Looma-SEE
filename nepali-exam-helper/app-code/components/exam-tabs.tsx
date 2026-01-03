@@ -89,7 +89,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
 
       if (progress && progress.answers) {
         setAnswers(progress.answers)
-        setLastSaved(new Date(progress.lastUpdated))
+        setLastSaved(progress.lastUpdated ? new Date(progress.lastUpdated) : new Date())
       }
 
       // Always scroll to top when loading/resuming a test
@@ -263,7 +263,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
       // Nepali test format
       totalQuestions = questions.nepaliQuestions.length
       answeredQuestions = questions.nepaliQuestions.filter((q: any) => {
-        const answer = answers.nepali?.[`q${q.questionNumber}`]
+        const answer = answers.nepali?.[`q${q.questionNumberEnglish || q.questionNumber}`]
         if (!answer) return false
         if (typeof answer === 'string') return answer.trim().length > 0
         if (typeof answer === 'object') {
@@ -283,7 +283,8 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
       questions.mathQuestions.forEach((q: any) => {
         totalQuestions += q.sub_questions?.length || 0
         q.sub_questions?.forEach((subQ: any) => {
-          const answer = answers.math?.[q.question_number]?.[subQ.label]
+          // Use same keys as renderer: question_numberEnglish and labelEnglish
+          const answer = answers.math?.[q.question_numberEnglish]?.[subQ.labelEnglish]
           if (answer && answer.trim().length > 0) {
             answeredQuestions++
           }
@@ -368,7 +369,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
       // Nepali test format
       totalQuestions = questions.nepaliQuestions.length
       incompleteQuestions = questions.nepaliQuestions.filter((q: any) => {
-        const answer = answers.nepali?.[`q${q.questionNumber}`]
+        const answer = answers.nepali?.[`q${q.questionNumberEnglish || q.questionNumber}`]
         if (!answer) return true
         if (typeof answer === 'string') return answer.trim().length === 0
         if (typeof answer === 'object') {
@@ -388,7 +389,8 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
       questions.mathQuestions.forEach((q: any) => {
         totalQuestions += q.sub_questions?.length || 0
         q.sub_questions?.forEach((subQ: any) => {
-          const answer = answers.math?.[q.question_number]?.[subQ.label]
+          // Use same keys as renderer: question_numberEnglish and labelEnglish
+          const answer = answers.math?.[q.question_numberEnglish]?.[subQ.labelEnglish]
           if (!answer || answer.trim().length === 0) {
             incompleteQuestions++
           }
@@ -923,35 +925,28 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
         const gradingPromises: Promise<any>[] = []
         const socialStudiesFeedback: any[] = []
 
+
         // Grade each group's questions
         questions.socialStudiesGroups.forEach((group: any, groupIndex: number) => {
-          group.questions?.forEach((question: any) => {
+          console.log(`📋 Processing Group ${groupIndex}: ${group.groupName || 'Unknown'}, ${group.questions?.length || 0} questions`)
+          group.questions?.forEach((question: any, qIdx: number) => {
             const userAnswer = answers.socialStudies?.[question.id] || ""
+            console.log(`  📝 Q${qIdx + 1} (ID: ${question.id}, Type: ${question.type}): Answer length = ${userAnswer.length}, Has answer = ${userAnswer.trim().length > 0}`)
 
-            // Skip map_drawing questions (require manual grading)
-            if (question.type === "map_drawing") {
-              socialStudiesFeedback.push({
-                id: question.id,
-                score: 0,
-                feedback: "नक्सा प्रश्नहरू म्यानुअल ग्रेडिङ आवश्यक छ (Map questions require manual grading)",
-                question: question.questionNepali,
-                studentAnswer: userAnswer || "(कुनै चित्रण प्रदान गरिएको छैन)",
-                group: groupIndex,
-                marks: question.marks,
-              })
-              return
-            }
+            // Calculate marks early so we can use it in all cases
+            const questionMarks = question.marksEnglish || question.marks || parseInt(question.marksNepali) || 4
 
             if (userAnswer && userAnswer.trim().length > 0) {
+              // questionMarks is calculated earlier
               gradingPromises.push(
                 fetch("/api/grade", {
                   method: "POST",
                   headers: { "Content-Type": "application/json" },
                   body: JSON.stringify({
-                    question: question.questionNepali,
+                    question: question.questionNepali || question.questionEnglish,
                     answer: userAnswer,
-                    marks: question.marks,
-                    sampleAnswer: question.answerNepali,
+                    marks: questionMarks,
+                    sampleAnswer: question.answerNepali || question.answerEnglish,
                   }),
                 })
                   .then(async (res) => {
@@ -965,19 +960,19 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                     id: question.id,
                     score: result.score || 0,
                     feedback: result.feedback || "प्रतिक्रिया उपलब्ध छैन",
-                    question: question.questionNepali,
+                    question: question.questionNepali || question.questionEnglish,
                     studentAnswer: userAnswer,
                     group: groupIndex,
-                    marks: question.marks,
+                    marks: questionMarks,
                   }))
                   .catch((error) => ({
                     id: question.id,
                     score: 0,
                     feedback: `AI ग्रेडिङ असफल भयो: ${error.message || 'Unknown error'}`,
-                    question: question.questionNepali,
+                    question: question.questionNepali || question.questionEnglish,
                     studentAnswer: userAnswer,
                     group: groupIndex,
-                    marks: question.marks,
+                    marks: questionMarks,
                   }))
               )
             } else {
@@ -985,10 +980,10 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                 id: question.id,
                 score: 0,
                 feedback: "",
-                question: question.questionNepali,
+                question: question.questionNepali || question.questionEnglish,
                 studentAnswer: "",
                 group: groupIndex,
-                marks: question.marks,
+                marks: questionMarks,
               })
             }
           })
@@ -1040,13 +1035,23 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
       // Nepali test grading
       if (isNepaliTest && questions.nepaliQuestions) {
         console.log("🇳🇵 Grading Nepali test...")
+        console.log(`📊 Total Nepali questions: ${questions.nepaliQuestions.length}`)
         const nepaliFeedback: any[] = []
         const gradingPromises: Promise<any>[] = []
 
         questions.nepaliQuestions.forEach((question: any, qIndex: number) => {
-          const questionKey = `q${question.questionNumber || qIndex + 1}`
+          const questionKey = `q${question.questionNumberEnglish || question.questionNumber || qIndex + 1}`
           const userAnswer = answers.nepali?.[questionKey]
           const questionTitle = question.title || question.questionNepali || question.questionEnglish || `Question ${qIndex + 1}`
+
+          console.log(`📝 Q${qIndex + 1} [${questionKey}] Type: ${question.type}`)
+          console.log(`   Answer exists: ${!!userAnswer}, Answer type: ${typeof userAnswer}`)
+          if (typeof userAnswer === 'object' && userAnswer) {
+            console.log(`   Answer keys: [${Object.keys(userAnswer).join(', ')}]`)
+            if (userAnswer.selectedOption) console.log(`   Selected option: ${userAnswer.selectedOption}`)
+            if (userAnswer.selectedTopic) console.log(`   Selected topic: ${userAnswer.selectedTopic}`)
+            if (userAnswer.response) console.log(`   Response length: ${userAnswer.response?.length || 0}`)
+          }
 
           switch (question.type) {
             case "matching": {
@@ -1054,20 +1059,22 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
               // UI stores answers as: { "i": "c", "ii": "a", ... } using itemA.id as keys
               let score = 0
               const columns = question.columns?.A || question.columns?.a || []
-              const maxScore = question.marks || columns.length || 5
+              const maxScore = question.marksEnglish || question.marks || columns.length || 5
               const pointsPerMatch = columns.length > 0 ? maxScore / columns.length : maxScore
 
               if (userAnswer && columns.length > 0) {
                 // Get correct answers - could be array of {A, B} pairs or on items
-                const correctAnswers = question.correctAnswer || []
+                const correctAnswers = question.correctAnswer || question.correctAnswerNepali || question.correctAnswerEnglish || []
 
                 columns.forEach((item: any) => {
-                  const userChoice = userAnswer[item.id]
+                  // Use same ID pattern as renderer: idEnglish || idNepali || id
+                  const itemId = item.idEnglish || item.idNepali || item.id
+                  const userChoice = userAnswer[itemId]
                   // Check if correct answer is in correctAnswer array
                   const correctPair = Array.isArray(correctAnswers)
-                    ? correctAnswers.find((ca: any) => ca.A === item.id)
+                    ? correctAnswers.find((ca: any) => ca.A === itemId || ca.A === item.id)
                     : null
-                  const expectedAnswer = correctPair?.B || item.correctAnswer
+                  const expectedAnswer = correctPair?.B || item.correctAnswer || item.correctAnswerNepali || item.correctAnswerEnglish
 
                   if (userChoice && expectedAnswer && userChoice === expectedAnswer) {
                     score += pointsPerMatch
@@ -1093,14 +1100,17 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
               // Auto-grade fill in the blanks - UI stores as { "subId": "answer", ... }
               let score = 0
               const subQuestions = question.subQuestions || []
-              const maxScore = question.marks || subQuestions.length || 5
+              const maxScore = question.marksEnglish || question.marks || subQuestions.length || 5
               const pointsPerBlank = subQuestions.length > 0 ? maxScore / subQuestions.length : maxScore
 
               if (userAnswer && subQuestions.length > 0) {
                 subQuestions.forEach((sub: any) => {
-                  const userVal = userAnswer[sub.id]
-                  if (userVal && sub.correctAnswer) {
-                    if (userVal.toLowerCase().trim() === sub.correctAnswer.toLowerCase().trim()) {
+                  // Use same ID pattern as renderer: idEnglish || idNepali || id
+                  const subId = sub.idEnglish || sub.idNepali || sub.id
+                  const userVal = userAnswer[subId]
+                  const correctAnswer = sub.correctAnswer || sub.correctAnswerNepali || sub.correctAnswerEnglish
+                  if (userVal && correctAnswer) {
+                    if (userVal.toLowerCase().trim() === correctAnswer.toLowerCase().trim()) {
                       score += pointsPerBlank
                     }
                   }
@@ -1121,15 +1131,17 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
             }
 
             case "grammar_choice":
+            case "spelling_correction":
             case "parts_of_speech": {
               // These are mostly free-response, but if they have subQuestions with correctAnswer, we can auto-grade
               const subQuestions = question.subQuestions || []
-              const correctWords = Array.isArray(question.correctAnswer) ? question.correctAnswer : []
+              const correctAnswerData = question.correctAnswer || question.correctAnswerNepali || question.correctAnswerEnglish
+              const correctWords = Array.isArray(correctAnswerData) ? correctAnswerData : []
 
               // For parts_of_speech with correctAnswer array like [{word: "जो", pos: "सर्वनाम"}, ...]
               if (question.type === "parts_of_speech" && correctWords.length > 0 && userAnswer) {
                 let score = 0
-                const maxScore = question.marks || correctWords.length || 5
+                const maxScore = question.marksEnglish || question.marks || correctWords.length || 5
                 const pointsPerWord = correctWords.length > 0 ? maxScore / correctWords.length : maxScore
 
                 correctWords.forEach((pair: any) => {
@@ -1153,8 +1165,8 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                 })
               } else {
                 // Fall back to AI grading for complex grammar questions
-                const marks = question.marks || 5
-                const sampleAnswer = question.sampleAnswer || ""
+                const marks = question.marksEnglish || question.marks || 5
+                const sampleAnswer = question.sampleAnswer || question.sampleAnswerNepali || question.sampleAnswerEnglish || ""
 
                 let combinedAnswer = ""
                 if (typeof userAnswer === "string") {
@@ -1214,10 +1226,136 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
               break
             }
 
+            case "free_writing_choice":
+            case "functional_writing_choice":
+            case "literature_critical_analysis_choice": {
+              // Choice-based questions - need to find the selected option to get proper context
+              const marks = question.marksEnglish || question.marks || 4
+              let selectedOptionTitle = questionTitle
+              let sampleAnswer = ""
+
+              if (typeof userAnswer === "object" && userAnswer?.selectedOption) {
+                // Find the selected option in options or subQuestions
+                const options = question.options || question.subQuestions || []
+                const selectedOption = options.find((opt: any) =>
+                  (opt.idEnglish || opt.idNepali || opt.id) === userAnswer.selectedOption
+                )
+                if (selectedOption) {
+                  selectedOptionTitle = selectedOption.titleNepali || selectedOption.titleEnglish ||
+                    selectedOption.questionNepali || selectedOption.questionEnglish || questionTitle
+                  sampleAnswer = selectedOption.sampleAnswer || selectedOption.correctAnswer || ""
+                }
+              }
+
+              const response = typeof userAnswer === "object" ? userAnswer.response : userAnswer
+
+              if (response && response.trim()) {
+                gradingPromises.push(
+                  fetch("/api/grade", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+                      question: selectedOptionTitle,
+                      answer: response,
+                      marks: marks,
+                      sampleAnswer: sampleAnswer,
+                    }),
+                  })
+                    .then((res) => res.json())
+                    .then((result) => ({
+                      id: questionKey,
+                      type: question.type,
+                      score: result.score || 0,
+                      maxScore: marks,
+                      feedback: result.feedback || "प्रतिक्रिया उपलब्ध छैन",
+                      question: selectedOptionTitle,
+                      studentAnswer: response,
+                    }))
+                    .catch(() => ({
+                      id: questionKey,
+                      type: question.type,
+                      score: 0,
+                      maxScore: marks,
+                      feedback: "AI ग्रेडिङ असफल भयो",
+                      question: selectedOptionTitle,
+                      studentAnswer: response,
+                    }))
+                )
+              } else {
+                nepaliFeedback.push({
+                  id: questionKey,
+                  type: question.type,
+                  score: 0,
+                  maxScore: marks,
+                  feedback: "",
+                  question: questionTitle,
+                  studentAnswer: "",
+                })
+              }
+              break
+            }
+
+            case "essay": {
+              // Essay with topic selection
+              const marks = question.marksEnglish || question.marks || 8
+              let selectedTopic = questionTitle
+
+              if (typeof userAnswer === "object" && userAnswer?.selectedTopic) {
+                selectedTopic = userAnswer.selectedTopic
+              }
+
+              const response = typeof userAnswer === "object" ? userAnswer.response : userAnswer
+
+              if (response && response.trim()) {
+                gradingPromises.push(
+                  fetch("/api/grade", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+                      question: `${language === 'nepali' ? 'निबन्ध विषय:' : 'Essay topic:'} ${selectedTopic}`,
+                      answer: response,
+                      marks: marks,
+                      sampleAnswer: "",  // Essays don't have sample answers
+                    }),
+                  })
+                    .then((res) => res.json())
+                    .then((result) => ({
+                      id: questionKey,
+                      type: question.type,
+                      score: result.score || 0,
+                      maxScore: marks,
+                      feedback: result.feedback || "प्रतिक्रिया उपलब्ध छैन",
+                      question: `${selectedTopic} (${language === 'nepali' ? 'निबन्ध' : 'Essay'})`,
+                      studentAnswer: response,
+                    }))
+                    .catch(() => ({
+                      id: questionKey,
+                      type: question.type,
+                      score: 0,
+                      maxScore: marks,
+                      feedback: "AI ग्रेडिङ असफल भयो",
+                      question: `${selectedTopic} (${language === 'nepali' ? 'निबन्ध' : 'Essay'})`,
+                      studentAnswer: response,
+                    }))
+                )
+              } else {
+                nepaliFeedback.push({
+                  id: questionKey,
+                  type: question.type,
+                  score: 0,
+                  maxScore: marks,
+                  feedback: "",
+                  question: questionTitle,
+                  studentAnswer: "",
+                })
+              }
+              break
+            }
+
             default: {
               // AI grade all other question types (free response, essay, etc.)
-              const marks = question.marks || 5
-              const sampleAnswer = question.sampleAnswer || question.modelAnswer || ""
+              const marks = question.marksEnglish || question.marks || 5
+              const sampleAnswer = question.sampleAnswer || question.sampleAnswerNepali || question.sampleAnswerEnglish || question.modelAnswer || ""
 
               // Collect all sub-answers into a single response string for AI grading
               let combinedAnswer = ""
@@ -2136,7 +2274,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
   if (isNepaliTest) {
     const totalQuestions = questions.nepaliQuestions.length
     const answeredQuestions = questions.nepaliQuestions.filter((q: any) => {
-      const answer = answers.nepali?.[`q${q.questionNumber}`]
+      const answer = answers.nepali?.[`q${q.questionNumberEnglish || q.questionNumber}`]
       if (!answer) return false
       if (typeof answer === 'string') return answer.trim().length > 0
       if (typeof answer === 'object') {

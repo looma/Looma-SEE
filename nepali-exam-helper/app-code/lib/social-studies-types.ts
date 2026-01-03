@@ -8,13 +8,8 @@ export type SocialStudiesQuestionType =
     | "creative_writing_editorial"
     | "creative_writing_dialogue"
     | "creative_writing_speech"
-    | "map_drawing"
 
-export interface MapDrawingAlternative {
-    type: "main" | "alternative" | "for_visually_impaired"
-    questionNepali: string
-    questionEnglish?: string
-}
+// Note: map_drawing questions were removed as they require manual grading
 
 export interface SocialStudiesQuestion {
     id: string
@@ -36,8 +31,7 @@ export interface SocialStudiesQuestion {
     // Explanation
     explanationNepali?: string
     explanationEnglish?: string
-    // For map_drawing questions with alternatives
-    alternatives?: MapDrawingAlternative[]
+
 }
 
 export interface SocialStudiesGroup {

@@ -57,7 +57,7 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
     let totalAnswered = 0
     const estimatedTotal = 25 // Default estimate
 
-    // Count Group A answers (multiple choice)
+    // Count Group A answers (multiple choice) - Science format
     const groupAAnswers = Object.keys(progress.answers?.groupA || {}).filter(
       (key) => progress.answers?.groupA?.[key] && progress.answers.groupA[key].trim(),
     ).length
@@ -76,6 +76,45 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
     const groupDAnswers = Object.keys(progress.answers?.groupD || {}).filter(
       (key) => progress.answers?.groupD?.[key] && progress.answers.groupD[key].trim(),
     ).length
+
+    // Count Math answers (stored as answers.math.questionNumber.label)
+    let mathAnswers = 0
+    if (progress.answers?.math) {
+      Object.values(progress.answers.math).forEach((questionAnswers: any) => {
+        if (typeof questionAnswers === 'object' && questionAnswers !== null) {
+          mathAnswers += Object.values(questionAnswers).filter(
+            (val: any) => typeof val === 'string' && val.trim().length > 0
+          ).length
+        }
+      })
+    }
+
+    // Count Nepali answers (stored as answers.nepali.q1, q2, etc.)
+    let nepaliAnswers = 0
+    if (progress.answers?.nepali) {
+      Object.values(progress.answers.nepali).forEach((answer: any) => {
+        if (typeof answer === 'string' && answer.trim().length > 0) {
+          nepaliAnswers++
+        } else if (typeof answer === 'object' && answer !== null) {
+          // Handle structured answers (matching, fill_in_blanks, etc.)
+          const hasContent = Object.values(answer).some((val: any) => {
+            if (typeof val === 'string') return val.trim().length > 0
+            return val !== undefined && val !== null && val !== ''
+          })
+          if (hasContent) nepaliAnswers++
+        }
+      })
+    }
+
+    // Count Social Studies answers (stored as answers.socialStudies)
+    let socialStudiesAnswers = 0
+    if (progress.answers?.socialStudies) {
+      Object.values(progress.answers.socialStudies).forEach((answer: any) => {
+        if (typeof answer === 'string' && answer.trim().length > 0) {
+          socialStudiesAnswers++
+        }
+      })
+    }
 
     // Check for English test answers (stored differently)
     let englishAnswers = 0
@@ -110,8 +149,15 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
       }).length
     }
 
-    // Use the higher count (either science format or English format)
-    totalAnswered = Math.max(groupAAnswers + groupBAnswers + groupCAnswers + groupDAnswers, englishAnswers)
+    // Use the maximum of all subject counts
+    const scienceFormatCount = groupAAnswers + groupBAnswers + groupCAnswers + groupDAnswers
+    totalAnswered = Math.max(
+      scienceFormatCount,
+      mathAnswers,
+      nepaliAnswers,
+      socialStudiesAnswers,
+      englishAnswers
+    )
 
     const hasProgress = totalAnswered > 0
     const percentage = Math.round((totalAnswered / estimatedTotal) * 100)

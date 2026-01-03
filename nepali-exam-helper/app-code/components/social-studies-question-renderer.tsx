@@ -6,7 +6,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Progress } from "@/components/ui/progress"
-import { CheckCircle2, Circle, Eye, EyeOff, Lightbulb, MapPin, PenLine } from "lucide-react"
+import { CheckCircle2, Circle, Eye, EyeOff, Lightbulb, PenLine } from "lucide-react"
 import type { SocialStudiesGroup, SocialStudiesQuestion } from "@/lib/social-studies-types"
 import { useLanguage } from "@/lib/language-context"
 
@@ -36,7 +36,6 @@ const getQuestionTypeInfo = (type: string, lang: 'en' | 'np') => {
         creative_writing_editorial: { np: "सम्पादकीय", en: "Editorial" },
         creative_writing_dialogue: { np: "संवाद", en: "Dialogue" },
         creative_writing_speech: { np: "वक्तृता", en: "Speech" },
-        map_drawing: { np: "नक्सा", en: "Map" },
     }
     const rows = {
         very_short_answer: 2,
@@ -45,13 +44,12 @@ const getQuestionTypeInfo = (type: string, lang: 'en' | 'np') => {
         creative_writing_editorial: 10,
         creative_writing_dialogue: 8,
         creative_writing_speech: 10,
-        map_drawing: 6,
     }
     const info = labels[type as keyof typeof labels] || { np: "उत्तर", en: "Answer" }
     return {
         label: lang === 'np' ? info.np : info.en,
         rows: rows[type as keyof typeof rows] || 4,
-        icon: type === "map_drawing" ? MapPin : PenLine
+        icon: PenLine
     }
 }
 
@@ -75,7 +73,6 @@ const uiText = {
     shortHint: { np: "स्पष्ट र संक्षिप्त उत्तर दिनुहोस्", en: "Give a clear and concise answer" },
     longHint: { np: "विस्तृत उत्तर दिनुहोस्", en: "Give a detailed answer" },
     creativeHint: { np: "रचनात्मक र मौलिक लेखन गर्नुहोस्", en: "Be creative and original in your writing" },
-    mapHint: { np: "नक्सा वर्णन वा विवरण लेख्नुहोस्", en: "Describe or detail the map" },
 }
 
 export function SocialStudiesGroupRenderer({
@@ -143,33 +140,7 @@ export function SocialStudiesGroupRenderer({
         )
     }
 
-    const renderMapAlternatives = (question: SocialStudiesQuestion) => {
-        if (question.type !== "map_drawing" || !question.alternatives) return null
 
-        return (
-            <div className="mt-3 p-3 bg-amber-50 rounded-lg border border-amber-200">
-                <div className="text-sm">
-                    <span className="font-medium text-amber-800">{uiText.alternativeQuestions[lang]}</span>
-                    <div className="mt-2 space-y-2">
-                        {question.alternatives.map((alt, idx) => {
-                            const altText = getText(alt.questionNepali, alt.questionEnglish)
-                            const altLabel = alt.type === "main"
-                                ? uiText.main[lang]
-                                : alt.type === "alternative"
-                                    ? uiText.alternative[lang]
-                                    : uiText.forVisuallyImpaired[lang]
-                            return (
-                                <div key={idx} className="ml-2">
-                                    <span className="text-amber-700">• {altLabel}: </span>
-                                    <span className="text-amber-900 whitespace-pre-line">{altText}</span>
-                                </div>
-                            )
-                        })}
-                    </div>
-                </div>
-            </div>
-        )
-    }
 
     // Get group display text
     const groupName = getText(group.groupName, group.groupNameEnglish)
@@ -246,7 +217,6 @@ export function SocialStudiesGroupRenderer({
                         if (question.type === "short_answer") return uiText.shortHint[lang]
                         if (question.type === "long_answer") return uiText.longHint[lang]
                         if (question.type.startsWith("creative_writing")) return uiText.creativeHint[lang]
-                        if (question.type === "map_drawing") return uiText.mapHint[lang]
                         return ""
                     }
 
@@ -284,8 +254,6 @@ export function SocialStudiesGroupRenderer({
                             </CardHeader>
 
                             <CardContent className="pt-0">
-                                {/* Show alternatives for map_drawing questions */}
-                                {renderMapAlternatives(question)}
 
                                 <Textarea
                                     value={currentAnswer}

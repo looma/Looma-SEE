@@ -99,7 +99,7 @@ export function ResultsCard({
     totalScore = results.nepaliFeedback?.reduce((sum: number, f: any) => sum + (f.score || 0), 0) || results.scoreA || 0
 
     maxScoreA = results.nepaliFeedback?.reduce((sum: number, f: any) => sum + (f.maxScore || 0), 0) ||
-      questions.nepaliQuestions.reduce((acc: number, q: any) => acc + (q.marks || 5), 0)
+      questions.nepaliQuestions.reduce((acc: number, q: any) => acc + (q.marksEnglish || q.marks || 5), 0)
     maxScoreB = 0
     maxScoreC = 0
     maxScoreD = 0
@@ -734,7 +734,7 @@ export function ResultsCard({
 
                       // Find the original question for context
                       const originalQuestion = questions.nepaliQuestions.find(
-                        (q: any) => `q${q.questionNumber || idx + 1}` === fb.id
+                        (q: any) => `q${q.questionNumberEnglish || q.questionNumber || idx + 1}` === fb.id
                       )
 
                       // Get question type display name
@@ -1515,12 +1515,12 @@ export function ResultsCard({
                                     </div>
                                   )
                                 })
-                              ) : question.subQuestions ? (
+                              ) : (question as any).subQuestions ? (
                                 // Handle grammar questions with direct sub-questions
-                                question.subQuestions.map((subQ: any) => {
+                                (question as any).subQuestions.map((subQ: any) => {
                                   const answer = userAnswer?.[subQ.id]
                                   const feedback = questionFeedbacks.find((f: any) => f.subQuestionId === subQ.id)
-                                  const subQuestionMarks = subQ.marks || (question.marks ? Math.round((question.marks / question.subQuestions.length) * 10) / 10 : 1)
+                                  const subQuestionMarks = subQ.marks || ((question as any).marks ? Math.round(((question as any).marks / (question as any).subQuestions.length) * 10) / 10 : 1)
                                   const score = feedback?.score || 0
                                   const isCorrect = score === subQuestionMarks
 

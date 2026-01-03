@@ -163,10 +163,7 @@
             "marksNepali": "१",
             "marksEnglish": 1
           }
-        ],
-        "groupNameEnglish": "Group 'A'",
-        "groupInstructionEnglish": "Give very short answers to the following questions:",
-        "marksSchemaEnglish": "(11×1=11)"
+        ]
       },
       {
         "groupName": "समूह 'ख'",
@@ -290,10 +287,7 @@
             "marksNepali": "४",
             "marksEnglish": 4
           }
-        ],
-        "groupNameEnglish": "Group 'B'",
-        "groupInstructionEnglish": "Give short answers to the following questions:",
-        "marksSchemaEnglish": "(9×4=36)"
+        ]
       },
       {
         "groupName": "समूह 'ग'",
@@ -352,10 +346,7 @@
             "marksNepali": "७",
             "marksEnglish": 7
           }
-        ],
-        "groupNameEnglish": "Group 'C'",
-        "groupInstructionEnglish": "Give long answers to the following questions:",
-        "marksSchemaEnglish": "(4×7=28)"
+        ]
       }
     ]
   }

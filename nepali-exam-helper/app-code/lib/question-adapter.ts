@@ -145,7 +145,6 @@ export function adaptDatabaseQuestions(dbQuestions: Record<string, any>) {
         answerEnglish: q.answerEnglish || '',
         explanationNepali: q.explanationNepali || '',
         explanationEnglish: q.explanationEnglish || '',
-        alternatives: q.alternatives,
       }))
     }))
     return adapted // Social studies tests don't have other groups

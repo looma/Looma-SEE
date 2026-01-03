@@ -2,17 +2,22 @@ export interface StudentProgress {
   studentId: string
   testId: string
   answers: {
-    groupA: Record<string, string>
-    groupB: Record<string, string>
-    groupC: Record<string, string>
-    groupD: Record<string, string>
-    // English test answers stored as nested objects
+    // Science test format (optional - not all tests use this)
+    groupA?: Record<string, string>
+    groupB?: Record<string, string>
+    groupC?: Record<string, string>
+    groupD?: Record<string, string>
+    // Math/Nepali/English/Social Studies may use different structures
+    // Math: { [questionNumber]: { [subLabel]: answer } }
+    // Nepali/Social: { [questionId]: answer }
+    // English: { [questionId]: { ... } }
     [questionId: string]: any
   }
   currentTab: string
-  lastUpdated: string
+  lastUpdated?: string  // Optional since it's added by saveStudentProgress
   attempts: AttemptHistory[]
 }
+
 
 export interface AttemptHistory {
   id: string

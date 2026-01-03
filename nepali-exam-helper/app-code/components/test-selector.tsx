@@ -41,24 +41,25 @@ export function TestSelector({ currentTestId, onTestChange, onBackToSelection, s
     let totalAnswered = 0
 
     // Count Group A answers (multiple choice)
-    const groupAAnswers = Object.keys(progress.answersA || {}).filter(
-      (key) => progress.answersA[key] && progress.answersA[key].trim(),
+    const groupAAnswers = Object.keys(progress.answers?.groupA || {}).filter(
+      (key) => (progress.answers?.groupA as Record<string, string>)?.[key]?.trim?.(),
     ).length
 
     // Count Group B answers (free response)
-    const groupBAnswers = Object.keys(progress.answersB || {}).filter(
-      (key) => progress.answersB[key] && progress.answersB[key].trim(),
+    const groupBAnswers = Object.keys(progress.answers?.groupB || {}).filter(
+      (key) => (progress.answers?.groupB as Record<string, string>)?.[key]?.trim?.(),
     ).length
 
     // Count Group C answers (free response)
-    const groupCAnswers = Object.keys(progress.answersC || {}).filter(
-      (key) => progress.answersC[key] && progress.answersC[key].trim(),
+    const groupCAnswers = Object.keys(progress.answers?.groupC || {}).filter(
+      (key) => (progress.answers?.groupC as Record<string, string>)?.[key]?.trim?.(),
     ).length
 
     // Count Group D answers (free response)
-    const groupDAnswers = Object.keys(progress.answersD || {}).filter(
-      (key) => progress.answersD[key] && progress.answersD[key].trim(),
+    const groupDAnswers = Object.keys(progress.answers?.groupD || {}).filter(
+      (key) => (progress.answers?.groupD as Record<string, string>)?.[key]?.trim?.(),
     ).length
+
 
     // Check for English test answers (stored differently)
     let englishAnswers = 0
@@ -67,7 +68,7 @@ export function TestSelector({ currentTestId, onTestChange, onBackToSelection, s
       englishAnswers = Object.keys(progress.answers).filter((key) => {
         const answer = progress.answers[key]
         if (!answer) return false
-        
+
         // Handle different answer structures based on question type
         if (typeof answer === 'string') {
           return answer.trim().length > 0
@@ -82,7 +83,7 @@ export function TestSelector({ currentTestId, onTestChange, onBackToSelection, s
               return val.trim().length > 0
             } else if (typeof val === 'object' && val !== null) {
               // Handle nested objects (like reading comprehension sub-sections)
-              return Object.values(val).some((nestedVal) => 
+              return Object.values(val).some((nestedVal) =>
                 typeof nestedVal === 'string' && nestedVal.trim().length > 0
               )
             }

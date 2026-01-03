@@ -15,6 +15,10 @@ export async function connectToDatabase() {
   try {
     console.log("🔗 Connecting to MongoDB:", MONGODB_URI)
 
+    if (!MONGODB_URI) {
+      throw new Error("MONGODB_URI is not defined in environment variables or config")
+    }
+
     const client = new MongoClient(MONGODB_URI)
     await client.connect()
     console.log("✅ Connected to MongoDB")
