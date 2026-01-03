@@ -2444,26 +2444,14 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
 
         {/* Group Tabs */}
         <Tabs value={currentTab} onValueChange={setCurrentTab} className="w-full">
-          <TabsList className="grid w-full mb-4" style={{ gridTemplateColumns: `repeat(${questions.socialStudiesGroups.length}, 1fr)` }}>
-            {questions.socialStudiesGroups.map((group: any, index: number) => {
-              // Match colors to SocialStudiesGroupRenderer: blue, green, purple
-              const tabBgColors = [
-                "data-[state=active]:bg-blue-600",
-                "data-[state=active]:bg-green-600",
-                "data-[state=active]:bg-purple-600",
-              ]
-              const isActive = currentTab === `socialStudies_${index}`
-              return (
-                <TabsTrigger
-                  key={`socialStudies_${index}`}
-                  value={`socialStudies_${index}`}
-                  className={`text-xs sm:text-sm ${tabBgColors[index % tabBgColors.length]} font-medium`}
-                  style={{ color: isActive ? 'white' : undefined }}
-                >
-                  {language === "english" ? (group.groupNameEnglish || group.groupName) : group.groupName}
-                </TabsTrigger>
-              )
-            })}
+          <TabsList className="grid w-full grid-cols-3 mb-6">
+            {questions.socialStudiesGroups.map((group: any, index: number) => (
+              <TabsTrigger key={`socialStudies_${index}`} value={`socialStudies_${index}`} className="text-xs sm:text-sm">
+                {language === "english"
+                  ? `Group ${index === 0 ? 'A' : index === 1 ? 'B' : 'C'}`
+                  : `समूह ${index === 0 ? 'क' : index === 1 ? 'ख' : 'ग'}`} ({group.questions?.length || 0})
+              </TabsTrigger>
+            ))}
           </TabsList>
 
           {questions.socialStudiesGroups.map((group: any, index: number) => (

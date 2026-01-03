@@ -140,12 +140,39 @@ export function SocialStudiesGroupRenderer({
         )
     }
 
+    // Get group info with hardcoded English/Nepali labels like Science
+    const getGroupInfo = () => {
+        if (language === 'english') {
+            switch (groupIndex) {
+                case 0: return { title: "Group A - Very Short Answer Questions", description: "Answer in a few words or one sentence" }
+                case 1: return { title: "Group B - Short Answer Questions", description: "Provide brief, clear answers" }
+                case 2: return { title: "Group C - Long Answer Questions", description: "Write detailed explanations" }
+                default: return { title: `Group ${groupIndex + 1}`, description: "Answer the questions" }
+            }
+        } else {
+            switch (groupIndex) {
+                case 0: return { title: "समूह क - अति छोटो उत्तर प्रश्नहरू", description: "केही शब्द वा एक वाक्यमा उत्तर दिनुहोस्" }
+                case 1: return { title: "समूह ख - छोटो उत्तर प्रश्नहरू", description: "संक्षिप्त र स्पष्ट उत्तर दिनुहोस्" }
+                case 2: return { title: "समूह ग - लामो उत्तर प्रश्नहरू", description: "विस्तृत व्याख्या लेख्नुहोस्" }
+                default: return { title: group.groupName || `समूह ${groupIndex + 1}`, description: group.groupInstruction || "" }
+            }
+        }
+    }
 
+    const groupInfo = getGroupInfo()
 
-    // Get group display text
-    const groupName = getText(group.groupName, group.groupNameEnglish)
-    const groupInstruction = getText(group.groupInstruction, group.groupInstructionEnglish)
-    const marksSchema = getText(group.marksSchema, group.marksSchemaEnglish)
+    // Convert Nepali numerals to English numerals
+    const nepaliToEnglishNumerals = (text: string) => {
+        const nepaliDigits = ['०', '१', '२', '३', '४', '५', '६', '७', '८', '९']
+        let result = text
+        nepaliDigits.forEach((nepali, index) => {
+            result = result.replace(new RegExp(nepali, 'g'), index.toString())
+        })
+        return result
+    }
+
+    const marksSchemaRaw = group.marksSchema || ''
+    const marksSchema = language === 'english' ? nepaliToEnglishNumerals(marksSchemaRaw) : marksSchemaRaw
 
     if (group.questions.length === 0) {
         return (
@@ -164,8 +191,8 @@ export function SocialStudiesGroupRenderer({
                 <CardHeader className="pb-4">
                     <div className="flex items-center justify-between">
                         <div>
-                            <CardTitle className="text-xl font-bold">{groupName}</CardTitle>
-                            <p className="text-white/90 mt-1">{groupInstruction}</p>
+                            <CardTitle className="text-xl font-bold">{groupInfo.title}</CardTitle>
+                            <p className="text-white/90 mt-1">{groupInfo.description}</p>
                             {marksSchema && (
                                 <Badge variant="secondary" className="mt-2 bg-white/20 text-white border-white/30">
                                     {marksSchema}
