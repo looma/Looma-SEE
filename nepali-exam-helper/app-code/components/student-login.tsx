@@ -48,6 +48,10 @@ export function StudentLogin({ onLogin }: StudentLoginProps) {
   const handleContinueAsGuest = () => {
     const guestId = `guest_${Date.now()}_${Math.random().toString(36).substring(2, 8)}`
     setAuthState({ isAuthenticated: false, email: null })
+
+    // Track guest session for analytics
+    fetch("/api/admin/track-guest", { method: "POST" }).catch(() => { })
+
     onLogin(guestId, false)
   }
 

@@ -11,6 +11,8 @@ interface LanguageContextType {
     setLanguageSwitchEnabled: (enabled: boolean) => void
     disabledReason: string | null
     setDisabledReason: (reason: string | null) => void
+    currentTestId: string | null
+    setCurrentTestId: (testId: string | null) => void
 }
 
 const LanguageContext = createContext<LanguageContextType>({
@@ -20,6 +22,8 @@ const LanguageContext = createContext<LanguageContextType>({
     setLanguageSwitchEnabled: () => { },
     disabledReason: null,
     setDisabledReason: () => { },
+    currentTestId: null,
+    setCurrentTestId: () => { },
 })
 
 const LANGUAGE_STORAGE_KEY = "see_app_language"
@@ -28,6 +32,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     const [language, setLanguageState] = useState<AppLanguage>("english")
     const [isLanguageSwitchEnabled, setLanguageSwitchEnabled] = useState(true)
     const [disabledReason, setDisabledReason] = useState<string | null>(null)
+    const [currentTestId, setCurrentTestId] = useState<string | null>(null)
     const [isHydrated, setIsHydrated] = useState(false)
 
     // Load saved language preference on mount
@@ -61,6 +66,8 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
         setLanguageSwitchEnabled,
         disabledReason,
         setDisabledReason,
+        currentTestId,
+        setCurrentTestId,
     }
 
     return (
@@ -94,6 +101,49 @@ export function getDisabledReason(testId: string | null, language: AppLanguage):
     if (!testId) return null
 
     // All test types now support bilingual content
+    return null
+}
+
+/**
+ * Get the recommended language for a test based on how the actual SEE exam is administered.
+ * - Nepali and Social Studies tests are administered in Nepali
+ * - English tests are administered in English
+ * - Math and Science have no specific recommendation
+ * Returns null if no specific recommendation.
+ */
+export function getRecommendedLanguage(testId: string | null): AppLanguage | null {
+    if (!testId) return null
+
+    const testLower = testId.toLowerCase()
+
+    // Nepali and Social Studies tests should be done in Nepali
+    if (testLower.includes("nepali") || testLower.includes("social")) {
+        return "nepali"
+    }
+
+    // English tests should be done in English
+    if (testLower.includes("english")) {
+        return "english"
+    }
+
+    // No specific recommendation for Math, Science, etc.
+    return null
+}
+
+/**
+ * Get the subject name for display purposes
+ */
+export function getSubjectFromTestId(testId: string | null): string | null {
+    if (!testId) return null
+
+    const testLower = testId.toLowerCase()
+
+    if (testLower.includes("nepali")) return "Nepali"
+    if (testLower.includes("social")) return "Social Studies"
+    if (testLower.includes("english")) return "English"
+    if (testLower.includes("math")) return "Math"
+    if (testLower.includes("science")) return "Science"
+
     return null
 }
 

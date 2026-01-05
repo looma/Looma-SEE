@@ -96,15 +96,16 @@ function getUIText(language: AppLanguage | undefined, key: keyof typeof uiText):
 
 // Helper component for rendering sub-question explanations and correct answers
 function SubQuestionExplanation({ subQuestion, show, language }: { subQuestion: NepaliSubQuestion; show?: boolean; language?: AppLanguage }) {
-    // Get bilingual explanation
+    // Get bilingual explanation - prioritize language-specific fields
+    const sub = subQuestion as any
     const explanation = language === 'english'
-        ? ((subQuestion as any).explanationEnglish || subQuestion.explanation)
-        : (subQuestion.explanation || (subQuestion as any).explanationEnglish)
+        ? (sub.explanationEnglish || sub.explanation || sub.explanationNepali)
+        : (sub.explanationNepali || sub.explanation || sub.explanationEnglish)
 
-    // Get bilingual correct answer
+    // Get bilingual correct answer - prioritize language-specific fields
     const correctAnswer = language === 'english'
-        ? ((subQuestion as any).correctAnswerEnglish || subQuestion.correctAnswer)
-        : (subQuestion.correctAnswer || (subQuestion as any).correctAnswerEnglish)
+        ? (sub.correctAnswerEnglish || sub.correctAnswer || sub.correctAnswerNepali)
+        : (sub.correctAnswerNepali || sub.correctAnswer || sub.correctAnswerEnglish)
 
     const hasExplanation = explanation && (typeof explanation === 'string' ? explanation.trim() : true)
     const hasCorrectAnswer = correctAnswer && (

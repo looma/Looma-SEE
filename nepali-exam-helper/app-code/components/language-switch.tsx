@@ -2,7 +2,7 @@
 
 import { Globe } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { useLanguage } from "@/lib/language-context"
+import { useLanguage, getRecommendedLanguage, getSubjectFromTestId } from "@/lib/language-context"
 import {
     Tooltip,
     TooltipContent,
@@ -11,12 +11,17 @@ import {
 } from "@/components/ui/tooltip"
 
 export function LanguageSwitch() {
-    const { language, setLanguage, isLanguageSwitchEnabled, disabledReason } = useLanguage()
+    const { language, setLanguage, isLanguageSwitchEnabled, disabledReason, currentTestId } = useLanguage()
 
     const handleToggle = () => {
         if (!isLanguageSwitchEnabled) return
         setLanguage(language === "english" ? "nepali" : "english")
     }
+
+    // Get recommendation for current test
+    const recommendedLang = getRecommendedLanguage(currentTestId)
+    const subject = getSubjectFromTestId(currentTestId)
+    const showRecommendation = recommendedLang && recommendedLang !== language
 
     const buttonElement = (
         <Button
@@ -60,21 +65,42 @@ export function LanguageSwitch() {
         </Button>
     )
 
-    // Show tooltip when disabled explaining why
-    if (!isLanguageSwitchEnabled) {
+    // Build tooltip content
+    const getTooltipContent = () => {
+        if (!isLanguageSwitchEnabled) {
+            return disabledReason || "Language switching is disabled for this test."
+        }
+        if (showRecommendation && subject) {
+            const langName = recommendedLang === "nepali" ? "Nepali" : "English"
+            return `Tip: ${subject} tests are given in ${langName} on the actual SEE exam. Click to switch.`
+        }
+        return null
+    }
+
+    const tooltipContent = getTooltipContent()
+
+    // Show tooltip when disabled OR when there's a recommendation
+    if (!isLanguageSwitchEnabled || tooltipContent) {
         return (
             <TooltipProvider>
                 <Tooltip delayDuration={0}>
                     <TooltipTrigger asChild>
-                        <div className="fixed bottom-4 left-4 z-50">
+                        <div className="fixed bottom-4 left-4 z-50 flex flex-col items-start gap-1">
+                            {showRecommendation && (
+                                <div className="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full border border-amber-300 shadow-sm">
+                                    {recommendedLang === "nepali"
+                                        ? "नेपाली — matches actual SEE exam"
+                                        : "EN — matches actual SEE exam"}
+                                </div>
+                            )}
                             {buttonElement}
                         </div>
                     </TooltipTrigger>
-                    <TooltipContent side="top" className="max-w-xs">
-                        <p className="text-sm">
-                            {disabledReason || "Language switching is disabled for this test."}
-                        </p>
-                    </TooltipContent>
+                    {tooltipContent && (
+                        <TooltipContent side="top" className="max-w-xs">
+                            <p className="text-sm">{tooltipContent}</p>
+                        </TooltipContent>
+                    )}
                 </Tooltip>
             </TooltipProvider>
         )
@@ -86,4 +112,3 @@ export function LanguageSwitch() {
         </div>
     )
 }
-
