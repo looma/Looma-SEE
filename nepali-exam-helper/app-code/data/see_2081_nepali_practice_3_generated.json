@@ -128,8 +128,8 @@
       },
       {
         "type": "fill_in_the_blanks",
-        "titleNepali": "दिइएको अनुच्छेदबाट उपयुक्त शब्द पहिचान गरी खाली ठाउँ भर्नुहोस् :",
-        "titleEnglish": "Identify the appropriate word from the given paragraph and fill in the blanks:",
+        "titleNepali": "तलका प्रश्नहरूको उत्तर दिनुहोस् :",
+        "titleEnglish": "Answer the questions below:",
         "passageNepali": "सीताकी एउटी सानी बहिनी छे। ऊ बहिनीलाई खुब माया गर्छ। आज बिदाको दिन भएकाले सीता बहिनीसित नदी किनारमा खेल्दै छे। नदी किनारको बगैंचामा आँपका दाना बिस्कुन सुकाए झैँ भुइँमा छरिएका थिए।",
         "passageEnglish": "Sita has a little sister. She loves her sister very much. Since today is a holiday, Sita is playing with her sister on the river bank. In the garden on the river bank, mangoes were scattered on the ground like grain drying in the sun.",
         "subQuestions": [
@@ -223,8 +223,8 @@
             "idNepali": "क",
             "idEnglish": "a",
             "type": "multiple_choice",
-            "titleNepali": "दिइएका शब्द समूहबाट शुद्ध शब्द छानी लेख्नुहोस् :",
-            "titleEnglish": "Choose and write the correct word from the given word groups:",
+            "titleNepali": "दिइएका शब्द समूहहरूबाट सही शब्द छान्नुहोस् :",
+            "titleEnglish": "Choose the correct word from the given word groups:",
             "choices": [
               {
                 "idNepali": "अ",
@@ -298,37 +298,37 @@
         "correctAnswerNepali": [
           {
             "word": "जो",
-            "pos": "सर्वनाम (सम्बन्धवाचक)"
+            "part of speech": "सर्वनाम (सम्बन्धवाचक)"
           },
           {
             "word": "त्यसलाई",
-            "pos": "सर्वनाम"
+            "part of speech": "सर्वनाम"
           },
           {
             "word": "त्यसैले",
-            "pos": "संयोजक"
+            "part of speech": "संयोजक"
           },
           {
             "word": "निरन्तर",
-            "pos": "क्रियायोगी"
+            "part of speech": "क्रियायोगी"
           }
         ],
         "correctAnswerEnglish": [
           {
             "word": "Who/He",
-            "pos": "Pronoun (Relative)"
+            "part of speech": "Pronoun (Relative)"
           },
           {
             "word": "Him",
-            "pos": "Pronoun"
+            "part of speech": "Pronoun"
           },
           {
             "word": "Therefore",
-            "pos": "Conjunction"
+            "part of speech": "Conjunction"
           },
           {
             "word": "Continuously",
-            "pos": "Adverb"
+            "part of speech": "Adverb"
           }
         ],
         "explanationNepali": "'जो' र 'त्यसलाई' सर्वनाम हुन्। 'त्यसैले' ले दुई वाक्यलाई जोड्ने काम गरेकोले संयोजक हो। 'निरन्तर' ले 'बनौं' क्रियाको विशेषता बुझाएकोले क्रियायोगी हो।\nउद्धरण: कक्षा १०, पाठ १।",

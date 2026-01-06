@@ -128,8 +128,8 @@
       },
       {
         "type": "fill_in_the_blanks",
-        "titleNepali": "दिइएको अनुच्छेदबाट उपयुक्त शब्द पहिचान गरी खाली ठाउँ भर्नुहोस् :",
-        "titleEnglish": "Identify the appropriate word from the given paragraph and fill in the blanks:",
+        "titleNepali": "तलका प्रश्नहरूको उत्तर दिनुहोस् :",
+        "titleEnglish": "Answer the questions below:",
         "passageNepali": "हरेक दिन दीनदुःखीको सेवा गर्नु हाम्रो कुल धर्म हो। चाडपर्वको सुर र तालमा नाचगान गर्दा छुट्टै आनन्द आउँछ। जित र हार खेलका दुई पाटा हुन्।",
         "passageEnglish": "Serving the poor and miserable every day is our clan duty. Dancing and singing in the tune and rhythm of festivals gives a different joy. Victory and defeat are two sides of the game.",
         "subQuestions": [
@@ -223,8 +223,8 @@
             "idNepali": "क",
             "idEnglish": "a",
             "type": "multiple_choice",
-            "titleNepali": "दिइएका शब्द समूहबाट शुद्ध शब्द छानी लेखनुहोस् :",
-            "titleEnglish": "Choose and write the correct word from the given word groups:",
+            "titleNepali": "दिइएका शब्द समूहहरूबाट सही शब्द छान्नुहोस् :",
+            "titleEnglish": "Choose the correct word from the given word groups:",
             "choices": [
               {
                 "idNepali": "अ",
@@ -298,45 +298,45 @@
         "correctAnswerNepali": [
           {
             "word": "अहो",
-            "pos": "विस्मयादिबोधक"
+            "part of speech": "विस्मयादिबोधक"
           },
           {
             "word": "असल",
-            "pos": "विशेषण"
+            "part of speech": "विशेषण"
           },
           {
             "word": "सधैँ",
-            "pos": "क्रियायोगी"
+            "part of speech": "क्रियायोगी"
           },
           {
             "word": "र",
-            "pos": "संयोजक"
+            "part of speech": "संयोजक"
           },
           {
             "word": "उसले",
-            "pos": "सर्वनाम"
+            "part of speech": "सर्वनाम"
           }
         ],
         "correctAnswerEnglish": [
           {
             "word": "Oh",
-            "pos": "Interjection"
+            "part of speech": "Interjection"
           },
           {
             "word": "Good/Virtuous",
-            "pos": "Adjective"
+            "part of speech": "Adjective"
           },
           {
             "word": "Always",
-            "pos": "Adverb"
+            "part of speech": "Adverb"
           },
           {
             "word": "And",
-            "pos": "Conjunction"
+            "part of speech": "Conjunction"
           },
           {
             "word": "He",
-            "pos": "Pronoun"
+            "part of speech": "Pronoun"
           }
         ],
         "explanationNepali": "'अहो' ले आश्चर्यको भाव बुझाएकोले विस्मयादिबोधक हो। 'असल' ले 'मानिस' (नाम) को विशेषता बुझाएकोले विशेषण हो। 'सधैँ' ले क्रियाको समय बुझाएकोले क्रियायोगी हो। 'र' ले दुई वाक्यलाई जोडेकोले संयोजक हो। 'उसले' नामको सट्टामा आएकोले सर्वनाम हो।\nउद्धरण: कक्षा १०, पाठ १।",

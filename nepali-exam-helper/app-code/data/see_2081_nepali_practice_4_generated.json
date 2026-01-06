@@ -128,8 +128,8 @@
       },
       {
         "type": "fill_in_the_blanks",
-        "titleNepali": "दिइएको अनुच्छेदबाट उपयुक्त शब्द पहिचान गरी खाली ठाउँ भर्नुहोस् :",
-        "titleEnglish": "Identify the appropriate word from the given paragraph and fill in the blanks:",
+        "titleNepali": "तलका प्रश्नहरूको उत्तर दिनुहोस् :",
+        "titleEnglish": "Answer the questions below:",
         "passageNepali": "मुरलीधरको मनमा एक किसिमको भाउ उठ्यो। ऊ घर बाहिर निस्कियो। आँगनमा मानिसहरूको ठुलो भिड थियो। उसले त्यो मानिसहरूको हुललाई छिचोल्दै अगाडि बढ्यो। त्यहाँ एउटा सानो केटो बसेको थियो।",
         "passageEnglish": "A kind of emotion arose in Muralidhar's mind. He went out of the house. There was a large crowd of people in the courtyard. He moved forward piercing through that crowd of people. A small boy was sitting there.",
         "subQuestions": [
@@ -223,8 +223,8 @@
             "idNepali": "क",
             "idEnglish": "a",
             "type": "multiple_choice",
-            "titleNepali": "दिइएका शब्द समूहबाट शुद्ध शब्द छानी लेख्नुहोस् :",
-            "titleEnglish": "Choose and write the correct word from the given word groups:",
+            "titleNepali": "दिइएका शब्द समूहहरूबाट सही शब्द छान्नुहोस् :",
+            "titleEnglish": "Choose the correct word from the given word groups:",
             "choices": [
               {
                 "idNepali": "अ",
@@ -298,45 +298,45 @@
         "correctAnswerNepali": [
           {
             "word": "बिस्तारै",
-            "pos": "क्रियायोगी"
+            "part of speech": "क्रियायोगी"
           },
           {
             "word": "नत्र",
-            "pos": "संयोजक"
+            "part of speech": "संयोजक"
           },
           {
             "word": "स्याबास",
-            "pos": "विस्मयादिबोधक"
+            "part of speech": "विस्मयादिबोधक"
           },
           {
             "word": "धेरै",
-            "pos": "विशेषण"
+            "part of speech": "विशेषण"
           },
           {
             "word": "त",
-            "pos": "निपात"
+            "part of speech": "निपात"
           }
         ],
         "correctAnswerEnglish": [
           {
             "word": "Slowly",
-            "pos": "Adverb"
+            "part of speech": "Adverb"
           },
           {
             "word": "Otherwise",
-            "pos": "Conjunction"
+            "part of speech": "Conjunction"
           },
           {
             "word": "Well done",
-            "pos": "Interjection"
+            "part of speech": "Interjection"
           },
           {
             "word": "Very",
-            "pos": "Adjective"
+            "part of speech": "Adjective"
           },
           {
             "word": "Indeed",
-            "pos": "Particle"
+            "part of speech": "Particle"
           }
         ],
         "explanationNepali": "'बिस्तारै' ले क्रियाको विशेषता बुझाएकोले क्रियायोगी हो। 'नत्र' ले दुई वाक्यलाई जोडेकोले संयोजक हो। 'स्याबास' ले प्रशंसाको भाव बुझाएकोले विस्मयाdiबोधक हो। 'धेरै' ले 'राम्रो' (विशेषण) को पनि विशेषता बुझाएकोले क्रियाविशेषण वा परिमाणवाचक विशेषण हो। 'त' वाक्यमा जोर दिन आएकोले निपात हो।\nउद्धरण: कक्षा १०, पाठ १।",

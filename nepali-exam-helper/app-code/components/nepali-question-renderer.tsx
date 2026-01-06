@@ -27,6 +27,7 @@ const uiText = {
     writeEssay: { np: "निबन्ध लेख्नुहोस् (१५० शब्द नघटाई)...", en: "Write your essay (minimum 150 words)..." },
     point: { np: "बुँदा", en: "Point" },
     marks: { np: "अंक", en: "marks" },
+    mark: { np: "अंक", en: "mark" },
     sampleAnswer: { np: "नमूना उत्तर:", en: "Sample Answer:" },
     explanation: { np: "व्याख्या:", en: "Explanation:" },
     hide: { np: "लुकाउनुहोस्", en: "Hide" },
@@ -107,12 +108,16 @@ function SubQuestionExplanation({ subQuestion, show, language }: { subQuestion: 
         ? (sub.correctAnswerEnglish || sub.correctAnswer || sub.correctAnswerNepali)
         : (sub.correctAnswerNepali || sub.correctAnswer || sub.correctAnswerEnglish)
 
-    const hasExplanation = explanation && (typeof explanation === 'string' ? explanation.trim() : true)
-    const hasCorrectAnswer = correctAnswer && (
-        typeof correctAnswer === 'string'
-            ? correctAnswer.trim()
-            : correctAnswer
-    )
+    // More robust empty check - handle whitespace-only strings
+    const isEmptyValue = (val: any): boolean => {
+        if (!val) return true
+        if (typeof val === 'string') return !val.trim()
+        if (Array.isArray(val)) return val.length === 0
+        return false
+    }
+
+    const hasExplanation = explanation && !isEmptyValue(explanation)
+    const hasCorrectAnswer = correctAnswer && !isEmptyValue(correctAnswer)
 
     if (!show || (!hasExplanation && !hasCorrectAnswer)) return null
 
@@ -692,7 +697,7 @@ function LiteratureShortAnswerQuestion({ question, answer, onAnswerChange, quest
                 return (
                     <div key={sectionId} className="p-4 bg-slate-50 rounded-lg border border-slate-200">
                         <Badge variant="outline" className="mb-3">
-                            ({getText(language, section.idNepali, section.idEnglish) || section.id}) {sectionMarks} {getUIText(language, 'marks')}
+                            ({getText(language, section.idNepali, section.idEnglish) || section.id}) {sectionMarks} {sectionMarks === 1 ? getUIText(language, 'mark') : getUIText(language, 'marks')}
                         </Badge>
                         {sectionPassage && (
                             <div className="p-3 bg-white rounded border border-slate-200 mb-4 italic leading-relaxed whitespace-pre-line">
@@ -955,7 +960,7 @@ export function NepaliQuestionRenderer(props: NepaliQuestionRendererProps) {
                             </button>
                         )}
                         <Badge variant="secondary" className="bg-white/20 text-white">
-                            {question.marksEnglish || question.marks} {getUIText(props.language, 'marks')}
+                            {(question.marksEnglish || question.marks)} {(question.marksEnglish || question.marks) === 1 ? getUIText(props.language, 'mark') : getUIText(props.language, 'marks')}
                         </Badge>
                     </div>
                 </div>

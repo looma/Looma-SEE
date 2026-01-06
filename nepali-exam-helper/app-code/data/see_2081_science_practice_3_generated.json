@@ -413,8 +413,8 @@
           "correctAnswerEnglish": "ii",
           "marksNepali": "१",
           "marksEnglish": 1,
-          "explanationNepali": "आल्मुनियमका धेरै धाउहरूमध्ये, बक्साइट ($\\text{2Al}_2\\text{O}_3 \\cdot \\text{2H}_2\\text{O}$) मुख्य धाउ हो, जसमा लगभग ४०-६०% आल्मुनियम हुन्छ ।\nउद्धरण: पाठ १७",
-          "explanationEnglish": "Among the ores of aluminum, Bauxite ($\\text{2Al}_2\\text{O}_3 \\cdot \\text{2H}_2\\text{O}$) is the chief ore, which contains about 40-60% of aluminum.\nCitation: Lesson 17"
+          "explanationNepali": "आल्मुनियमको मुख्य धाउ बक्साइट ($\\text{2Al}_2\\text{O}_3 \\cdot \\text{2H}_2\\text{O}$) हो, जसमा लगभग ४०-६०% आल्मुनियम हुन्छ ।\nउद्धरण: पाठ १७",
+          "explanationEnglish": "Bauxite ($\\text{2Al}_2\\text{O}_3 \\cdot \\text{2H}_2\\text{O}$) is the chief ore of aluminum, which contains about 40-60% of aluminum.\nCitation: Lesson 17"
         }
       ],
       "groupB": [
@@ -437,8 +437,8 @@
           "questionEnglish": "Give an example of the division Algae.",
           "marksNepali": "१",
           "marksEnglish": 1,
-          "sampleAnswerNepali": "उत्तर: स्पाइरोगाइरा (Spirogyra), भोलभोक्स (Volvox), फ्युकस (Fucus) ।\nउद्धरण: पाठ २",
-          "sampleAnswerEnglish": "Answer: Spirogyra, Volvox, Fucus.\nCitation: Lesson 2"
+          "sampleAnswerNepali": "उत्तर: स्पाइरोगाइरा (Spirogyra), भोलभोक्स (Volvox), फ्युकस (Fucus), क्लामिडोमोनास (Chlamydomonas), युलोथ्रिक्स (Ulothrix) ।\nउद्धरण: पाठ २",
+          "sampleAnswerEnglish": "Answer: Spirogyra, Volvox, Fucus, Chlamydomonas, Ulothrix.\nCitation: Lesson 2"
         },
         {
           "idNepali": "ग",
@@ -459,8 +459,8 @@
           "questionEnglish": "Write one reason for the rise in sea level.",
           "marksNepali": "१",
           "marksEnglish": 1,
-          "sampleAnswerNepali": "उत्तर: विश्वव्यापी उष्णता (global warming) का कारण हिमाल र हिमनदीहरूको हिउँ पग्लिएर समुद्रको सतह बढिरहेको छ ।\nउद्धरण: पाठ ६",
-          "sampleAnswerEnglish": "Answer: An increase in temperature due to global warming causes the melting of snow, which contributes to the rise of sea level.\nCitation: Lesson 6"
+          "sampleAnswerNepali": "उत्तर: विश्वव्यापी उष्णता (global warming) का कारण हिमाल र हिमनदीहरूको हिउँ पग्लिएर, साथै तापक्रम वृद्धिले गर्दा समुद्री पानीको आयतनमा वृद्धि भएर समुद्रको सतह बढिरहेको छ ।\nउद्धरण: पाठ ६",
+          "sampleAnswerEnglish": "Answer: An increase in temperature due to global warming causes the melting of snow, and also causes an increase in the volume of seawater (thermal expansion), which contributes to the rise of sea level.\nCitation: Lesson 6"
         },
         {
           "idNepali": "ङ",
@@ -523,12 +523,12 @@
           "idNepali": "३",
           "idEnglish": "3",
           "type": "long_answer",
-          "questionNepali": "आधारभूत एकाइ र तत्जन्य एकाइबिच दुईओटा फरक लेख्नुहोस् ।",
-          "questionEnglish": "Write two differences between fundamental units and derived units.",
+          "questionNepali": "तापक्रम ($T_1$) मा रहेको $m_1$ पिण्ड भएको तातो पानी र तापक्रम ($T_2$) मा रहेको $m_2$ पिण्ड भएको चिसो पानी मिसाउँदा बन्ने मिश्रणको अन्तिम तापक्रम ($T$) निकाल्ने सूत्र पत्ता लगाउनुहोस् ।",
+          "questionEnglish": "Derive the formula to find the final temperature ($T$) of a mixture formed by mixing hot water of mass $m_1$ at temperature $T_1$ and cold water of mass $m_2$ at temperature $T_2$.",
           "marksNepali": "२",
           "marksEnglish": 2,
-          "sampleAnswerNepali": "उत्तर: आधारभूत एकाइ र तत्जन्य एकाइबिचका फरकहरू:\n* आधारभूत एकाइ अन्य एकाइहरूमा निर्भर हुँदैन, तर तत्जन्य एकाइ आधारभूत एकाइहरूमा निर्भर हुन्छ ।\n* अहिलेसम्म सातओटा आधारभूत एकाइहरू प्रयोगमा छन्, तर सातओटा आधारभूत एकाइहरूबाट धेरै तत्जन्य एकाइहरू बनाइन्छन् ।\nउद्धरण: पाठ १",
-          "sampleAnswerEnglish": "Answer: Differences between fundamental and derived units are:\n* A fundamental unit does not depend upon other units, whereas a derived unit depends upon fundamental units.\n* There are seven fundamental units used till now, whereas many derived units are formed from the seven fundamental units.\nCitation: Lesson 1"
+          "sampleAnswerNepali": "उत्तर: क्यालोरीमिट्रीको सिद्धान्त अनुसार, तातो वस्तुले गुमाएको ताप = चिसो वस्तुले पाएको ताप ।\nमानौं, मिश्रणको अन्तिम तापक्रम $T$ छ । पानीको विशिष्ट ताप धारण क्षमता $s$ हो ।\nतातो पानीले गुमाएको ताप = $m_1 s (T_1 - T)$\nचिसो पानीले पाएको ताप = $m_2 s (T - T_2)$\nत्यसैले, $m_1 s (T_1 - T) = m_2 s (T - T_2)$\n$m_1 T_1 - m_1 T = m_2 T - m_2 T_2$\n$m_1 T_1 + m_2 T_2 = T (m_1 + m_2)$\n$T = \\frac{m_1 T_1 + m_2 T_2}{m_1 + m_2}$\nउद्धरण: पाठ ९",
+          "sampleAnswerEnglish": "Answer: According to the principle of calorimetry, Heat lost by hot water = Heat gained by cold water.\nLet the final temperature be $T$ and specific heat capacity of water be $s$.\nHeat lost = $m_1 s (T_1 - T)$\nHeat gained = $m_2 s (T - T_2)$\nSo, $m_1 s (T_1 - T) = m_2 s (T - T_2)$\n$m_1 T_1 - m_1 T = m_2 T - m_2 T_2$\n$m_1 T_1 + m_2 T_2 = T (m_1 + m_2)$\n$T = \\frac{m_1 T_1 + m_2 T_2}{m_1 + m_2}$\nCitation: Lesson 9"
         },
         {
           "idNepali": "४",
@@ -538,8 +538,8 @@
           "questionEnglish": "Write two differences between a fish and a whale.",
           "marksNepali": "२",
           "marksEnglish": 2,
-          "sampleAnswerNepali": "उत्तर: माछा र ह्वेलबिचका भिन्नताहरू:\n* माछा पिसेस (Pisces) वर्गमा पर्छ, जबकि ह्वेल स्तनधारी (Mammalia) वर्गमा पर्छ ।\n* माछाले गिल्सबाट श्वास फेर्छ, जबकि ह्वेलले फोक्सोबाट श्वास फेर्छ ।\n* माछाको मुटुमा दुई कोठा हुन्छन्, जबकि ह्वेलको मुटुमा चार कोठा हुन्छन् ।\n* माछा पोइकिलोथर्मिक (चिसो रगत भएको) हुन्छ, जबकि ह्वेल होमियोथर्मिक (तातो रगत भएको) हुन्छ ।\nउद्धरण: पाठ २",
-          "sampleAnswerEnglish": "Answer: Differences between a fish and a whale:\n* A fish belongs to the class Pisces, while a whale belongs to the class Mammalia.\n* A fish respires through gills, whereas a whale respires through lungs.\n* A fish has a two-chambered heart, while a whale has a four-chambered heart.\n* A fish is poikilothermic (cold-blooded), while a whale is homeothermic (warm-blooded).\nCitation: Lesson 2"
+          "sampleAnswerNepali": "उत्तर: माछा र ह्वेलबिचका भिन्नताहरू:\n* माछा पिसेस (Pisces) वर्गमा पर्छ, जबकि ह्वेल स्तनधारी (Mammalia) वर्गमा पर्छ ।\n* माछाले गिल्स (gills) बाट श्वास फेर्छ, जबकि ह्वेलले फोक्सो (lungs) बाट श्वास फेर्छ ।\n* माछाको मुटुमा दुई कोठा हुन्छन्, जबकि ह्वेलको मुटुमा चार कोठा हुन्छन् ।\n* माछा पोइकिलोथर्मिक (चिसो रगत भएको) हुन्छ, जबकि ह्वेल होमियोथर्मिक (तातो रगत भएको) हुन्छ ।\n* माछाले अण्डा पार्छ (oviparous) र बाह्य गर्भाधान गर्छ, जबकि ह्वेलले बच्चा जन्माउँछ (viviparous), दूध चुसाउँछ र आन्तरिक गर्भाधान गर्छ ।\n* माछाको शरीर कत्ला (scales) ले ढाकिएको हुन्छ, जबकि ह्वेलको शरीरमा कत्ला हुँदैन (रौँ हुन सक्छ) ।\nउद्धरण: पाठ २",
+          "sampleAnswerEnglish": "Answer: Differences between a fish and a whale:\n* A fish belongs to the class Pisces, while a whale belongs to the class Mammalia.\n* A fish respires through gills, whereas a whale respires through lungs.\n* A fish has a two-chambered heart, while a whale has a four-chambered heart.\n* A fish is poikilothermic (cold-blooded), while a whale is homeothermic (warm-blooded).\n* Fishes are oviparous (lay eggs) and perform external fertilization, whereas whales are viviparous (give birth to young ones), suckle milk, and perform internal fertilization.\n* The body of a fish is covered by scales, whereas a whale's body is not covered by scales (may have hair).\nCitation: Lesson 2"
         },
         {
           "idNepali": "५",
@@ -582,8 +582,8 @@
           "questionEnglish": "Write any two uses of Neem.",
           "marksNepali": "२",
           "marksEnglish": 2,
-          "sampleAnswerNepali": "उत्तर: नीमका उपयोगिताहरू:\n* यसको रस छाला सम्बन्धी स्वास्थ्य समस्याहरूमा धेरै उपयोगी हुन्छ ।\n* यसलाई रगतको प्राकृतिक शुद्धिकारकको रूपमा चिनिन्छ, जसले शरीरमा खराब कोलेस्ट्रोल घटाउँछ ।\n* उच्च रक्तचाप कम गर्न यसको रस सेवन गरिन्छ ।\nउद्धरण: पाठ ६",
-          "sampleAnswerEnglish": "Answer: Uses of Neem:\n* Its juice is very useful in skin-related health problems.\n* It is known to be a natural purifier of blood, destroying and reducing bad cholesterol in the body.\n* To minimize high blood pressure, neem juice is consumed.\nCitation: Lesson 6"
+          "sampleAnswerNepali": "उत्तर: नीमका उपयोगिताहरू:\n* यसको रस छाला सम्बन्धी स्वास्थ्य समस्याहरूमा धेरै उपयोगी हुन्छ ।\n* यसलाई रगतको प्राकृतिक शुद्धिकारकको रूपमा चिनिन्छ, जसले शरीरमा खराब कोलेस्ट्रोल घटाउँछ ।\n* उच्च रक्तचाप कम गर्न यसको रस सेवन गरिन्छ ।\n* ठेउला (chickenpox) निको पार्न यसको धुलोको लेप लगाइन्छ वा पातहरू ओछ्यानमा राखिन्छ ।\nउद्धरण: पाठ ६",
+          "sampleAnswerEnglish": "Answer: Uses of Neem:\n* Its juice is very useful in skin-related health problems.\n* It is known to be a natural purifier of blood, destroying and reducing bad cholesterol in the body.\n* To minimize high blood pressure, neem juice is consumed.\n* Neem powder paste and leaves are used to help heal chickenpox.\nCitation: Lesson 6"
         },
         {
           "idNepali": "९",
@@ -604,8 +604,8 @@
           "questionEnglish": "Write two differences between a convex and a concave lens.",
           "marksNepali": "२",
           "marksEnglish": 2,
-          "sampleAnswerNepali": "उत्तर: कन्भेक्स र कन्केभ लेन्सबिचका भिन्नताहरू:\n* कन्भेक्स लेन्स बिचमा बाक्लो र छेउमा पातलो हुन्छ, जबकि कन्केभ लेन्स बिचमा पातलो र छेउमा बाक्लो हुन्छ ।\n* कन्भेक्स लेन्सले समानान्तर प्रकाशका किरणहरूलाई एकै ठाउँमा केन्द्रित गर्छ (converging), जबकि कन्केभ लेन्सले तिनीहरूलाई विकेन्द्रित गर्छ (diverging) ।\nउद्धरण: पाठ १०",
-          "sampleAnswerEnglish": "Answer: Differences between a convex and a concave lens:\n* A convex lens is thicker at the middle part than at the edges, whereas a concave lens is thinner in the middle part than at the edges.\n* A convex lens converges parallel light rays, whereas a concave lens diverges them.\nCitation: Lesson 10"
+          "sampleAnswerNepali": "उत्तर: कन्भेक्स र कन्केभ लेन्सबिचका भिन्नताहरू:\n* कन्भेक्स लेन्स बिचमा बाक्लो र छेउमा पातलो हुन्छ, जबकि कन्केभ लेन्स बिचमा पातलो र छेउमा बाक्लो हुन्छ ।\n* कन्भेक्स लेन्सले समानान्तर प्रकाशका किरणहरूलाई एकै ठाउँमा केन्द्रित गर्छ (converging), जबकि कन्केभ लेन्सले तिनीहरूलाई विकेन्द्रित गर्छ (diverging) ।\n* कन्भेक्स लेन्सको केन्द्रीकरण दूरी (focal length) र सामर्थ्य (power) धनात्मक हुन्छ, जबकि कन्केभ लेन्सको ऋणात्मक हुन्छ ।\n* कन्भेक्स लेन्सले वास्तविक र अवास्तविक दुवै प्रकारका आकृति बनाउन सक्छ, जबकि कन्केभ लेन्सले सधैं अवास्तविक आकृति मात्र बनाउँछ ।\nउद्धरण: पाठ १०",
+          "sampleAnswerEnglish": "Answer: Differences between a convex and a concave lens:\n* A convex lens is thicker at the middle part than at the edges, whereas a concave lens is thinner in the middle part than at the edges.\n* A convex lens converges parallel light rays (converging lens), whereas a concave lens diverges them (diverging lens).\n* The focal length and power of a convex lens are positive, whereas they are negative for a concave lens.\n* A convex lens can form both real and virtual images, whereas a concave lens always forms a virtual image.\nCitation: Lesson 10"
         },
         {
           "idNepali": "११",
@@ -679,78 +679,78 @@
           "idNepali": "१७",
           "idEnglish": "17",
           "type": "essay",
-          "questionNepali": "पाँच जगत वर्गीकरण प्रणालीलाई वर्णन गर्नुहोस् ।",
-          "questionEnglish": "Describe the five kingdom classification system.",
+          "questionNepali": "टेरिडोफाइटा (Pteridophyta) सब-डिभिजनका मुख्य विशेषताहरू वर्णन गर्नुहोस् ।",
+          "questionEnglish": "Describe the main characteristics of subdivision Pteridophyta.",
           "marksNepali": "४",
           "marksEnglish": 4,
-          "sampleAnswerNepali": "उत्तर: पाँच जगत वर्गीकरण प्रणालीले जीवहरूलाई तिनीहरूको कोषको संरचना, शरीरको बनोट, पोषणको तरिका, र कोष भित्ताको उपस्थिति वा अनुपस्थितिको आधारमा पाँच जगतमा विभाजन गर्दछ ।\n१. **मोनेरा (Monera):** प्रोक्यारियोटिक र एककोषीय जीवहरू (जस्तै, ब्याक्टेरिया) ।\n२. **प्रोटिस्टा (Protista):** युकेरियोटिक र एककोषीय जीवहरू (जस्तै, युग्लेना) ।\n३. **फन्जाई (Fungi):** युकेरियोटिक, कोष भित्ता भएको तर क्लोरोफिल नभएको स्याप्रोट्रोफिक जीवहरू (जस्तै, च्याउ) ।\n४. **प्लान्टी (Plantae):** युकेरियोटिक, कोष भित्ता र क्लोरोफिल भएको स्वपोषी जीवहरू (जस्तै, फर्न, सल्ला) ।\n५. **एनिमलिया (Animalia):** युकेरियोटिक, कोष भित्ता नभएको परपोषी जीवहरू (जस्तै, मानिस, माछा) ।\nउद्धरण: पाठ २",
-          "sampleAnswerEnglish": "Answer: The five kingdom classification system classifies organisms into five kingdoms based on the structure of the cell, body structure, mode of nutrition, and presence or absence of a cell wall.\n1. **Monera:** Prokaryotic and unicellular organisms (e.g., bacteria). \n2. **Protista:** Eukaryotic and unicellular organisms (e.g., Euglena). \n3. **Fungi:** Eukaryotic, saprotrophic organisms with a cell wall but no chlorophyll (e.g., mushroom). \n4. **Plantae:** Eukaryotic, autotrophic organisms with a cell wall and chlorophyll (e.g., fern, pinus). \n5. **Animalia:** Eukaryotic, heterotrophic organisms without a cell wall (e.g., human, fish).\nCitation: Lesson 2"
+          "sampleAnswerNepali": "उत्तर: टेरिडोफाइटाका मुख्य विशेषताहरू:\n* **बासस्थान:** यिनीहरू ओसिलो र छायादार ठाउँमा पाइन्छन् ।\n* **शारीरिक बनोट:** यिनीहरूको शरीर जरा, काण्ड र पातमा विभाजित हुन्छ । काण्ड राइजोमको रूपमा जमिनमुनि हुन्छ ।\n* **भास्कुलर तन्तु:** यिनीहरूमा जाइलम र फ्लोएम जस्ता विकसित भास्कुलर तन्तुहरू हुन्छन् ।\n* **प्रजनन:** यिनीहरूको पातको तल्लो सतहमा सोरी (sori) हुन्छन् जसभित्र स्पोरहरू बन्छन् । स्पोरहरू उम्रिएर प्रोथ्यालस (gametophyte) बन्छ, जसमा भाले र पोथी ग्यामेटहरू उत्पादन हुन्छन् ।\n* **जीवनचक्र:** यिनीहरूको जीवनचक्रमा स्पष्ट अल्टरनेसन अफ जेनेरेसन हुन्छ, जसमा स्पोरोफाइटिक पुस्ता प्रबल हुन्छ ।\nउद्धरण: पाठ २",
+          "sampleAnswerEnglish": "Answer: Main characteristics of Pteridophyta:\n* **Habitat:** They are found in moist and shady places.\n* **Body Structure:** The plant body is differentiated into root, stem, and leaf. The stem is usually a rhizome lying underground.\n* **Vascular Tissue:** They have developed vascular tissues like xylem and phloem.\n* **Reproduction:** They produce spores in sporangia located in sori on the underside of leaves. Spores germinate into a prothallus (gametophyte).\n* **Life Cycle:** Their life cycle shows alternation of generation, with the sporophytic phase being dominant.\nCitation: Lesson 2"
         },
         {
           "idNepali": "१८",
           "idEnglish": "18",
           "type": "essay",
-          "questionNepali": "मौरीको जीवनचक्रलाई वर्णन गर्नुहोस् ।",
-          "questionEnglish": "Describe the life cycle of a honey bee.",
+          "questionNepali": "क्रोमोजोमका प्रकारहरू (अटोजोम र सेक्स क्रोमोजोम) वर्णन गर्नुहोस् ।",
+          "questionEnglish": "Describe the types of chromosomes (autosomes and sex chromosomes).",
           "marksNepali": "४",
           "marksEnglish": 4,
-          "sampleAnswerNepali": "उत्तर: मौरीको जीवनचक्र पूर्ण मेटामोर्फोसिस (complete metamorphosis) हो, जसमा चार चरणहरू हुन्छन्: अण्डा, लार्भा, प्युपा र वयस्क ।\n* **अण्डा (Egg):** रानी मौरीले कोठामा सेतो र लाम्चो अण्डा पार्छिन् । यो चरण ३ दिनको हुन्छ ।\n* **लार्भा (Larva):** ३ दिनपछि अण्डाबाट लार्भा निस्किन्छ । यो चरणमा लार्भाले सक्रिय रूपमा खान्छ । यो चरण रानीको लागि ५.५ दिन, कर्मीको लागि ६ दिन, र भालेको लागि ७ दिनको हुन्छ ।\n* **प्युपा (Pupa):** यो एक निष्क्रिय चरण हो जसमा लार्भा वयस्कमा परिणत हुन्छ । यो चरण रानीको लागि ८ दिन, कर्मीको लागि १२ दिन, र भालेको लागि १४ दिनको हुन्छ ।\n* **वयस्क (Adult):** प्युपाबाट पूर्ण रूपमा विकसित वयस्क मौरी निस्किन्छ ।\nउद्धरण: पाठ ३",
-          "sampleAnswerEnglish": "Answer: All bees complete their life cycle in four stages: egg, larva, pupa, and adult, which is called complete metamorphosis.\n* **Egg:** The queen bee lays white, elongated eggs in brood cells. This stage lasts for three days. \n* **Larva:** After three days, the eggs hatch into larvae. The larva actively feeds in this stage. This stage lasts for about 5.5 days for queens, 6 days for workers, and 7 days for drones. \n* **Pupa:** This is an inactive phase in which the larva transforms into an adult. This stage lasts for 8 days for the queen, 12 days for the worker, and 14 days for the drone. \n* **Adult:** After many changes, the pupa is transformed into an adult.\nCitation: Lesson 3"
+          "sampleAnswerNepali": "उत्तर: क्रोमोजोमहरू दुई प्रकारका हुन्छन्:\n1. **अटोजोम (Autosomes):** यी क्रोमोजोमहरूले जीवको शारीरिक गुणहरू (जस्तै उचाइ, रङ) निर्धारण गर्छन् । मानिसमा २२ जोडी अटोजोम हुन्छन् । अटोजोमको प्रत्येक जोडीमा दुवै क्रोमोजोम उस्तै हुन्छन् ।\n2. **सेक्स क्रोमोजोम (Sex Chromosomes):** यी क्रोमोजोमहरूले जीवको लिङ्ग (भाले वा पोथी) निर्धारण गर्छन् । मानिसमा १ जोडी सेक्स क्रोमोजोम हुन्छ । पुरुषमा XY र महिलामा XX हुन्छन् । यी क्रोमोजोमहरूलाई हेटेरोजोम (heterosomes) पनि भनिन्छ किनभने X र Y को बनोट फरक हुन्छ ।\nउद्धरण: पाठ ४",
+          "sampleAnswerEnglish": "Answer: Chromosomes are of two types:\n1. **Autosomes (Somatic chromosomes):** These determine the physical characteristics of an individual. Humans have 22 pairs of autosomes. In a pair, each member has the same morphology.\n2. **Sex Chromosomes (Heterosomes):** These determine the sex of an individual. Humans have 1 pair (XX in females, XY in males). The structure of each member of a pair is different.\nCitation: Lesson 4"
         },
         {
           "idNepali": "१९",
           "idEnglish": "19",
           "type": "essay",
-          "questionNepali": "गुरुत्व प्रवेग ($g$) पृथ्वीको अर्धव्यास ($R$) को वर्गसँग व्युत्क्रमानुपातिक हुन्छ ($g \\propto 1/R^2$) भनी प्रमाणित गर्नुहोस् र पृथ्वीमा यसको मानमा आउने भिन्नताको व्याख्या गर्नुहोस् ।",
-          "questionEnglish": "Prove that the acceleration due to gravity ($g$) is inversely proportional to the square of the Earth's radius ($R$) ($g \\propto 1/R^2$) and explain its variation on Earth.",
+          "questionNepali": "मानव मुटुको आन्तरिक संरचनाको वर्णन गर्नुहोस् ।",
+          "questionEnglish": "Describe the internal structure of the human heart.",
           "marksNepali": "४",
           "marksEnglish": 4,
-          "sampleAnswerNepali": "उत्तर: **प्रमाण:**\nपृथ्वीको पिण्ड '$M$' र अर्धव्यास '$R$' छ । '$m$' पिण्ड भएको वस्तु पृथ्वीको सतहमा छ ।\nगुरुत्वाकर्षण बल, $F = \\frac{GMm}{R^2}$ ... (i)\nन्युटनको दोस्रो नियम अनुसार, $F = mg$ ... (ii)\nसमीकरण (i) र (ii) बाट, $mg = \\frac{GMm}{R^2}$\nत्यसैले, $g = \\frac{GM}{R^2}$\nयहाँ, $G$ र $M$ स्थिर छन्, त्यसैले $g \\propto \\frac{1}{R^2}$ ।\n\n**पृथ्वीमा भिन्नता:**\nपृथ्वी पूर्ण रूपमा गोलो छैन; यो ध्रुवमा चेप्टो र भूमध्यरेखामा फैलिएको छ ।\nत्यसैले, ध्रुवमा अर्धव्यास ($R$) कम हुन्छ र भूमध्यरेखामा बढी हुन्छ ।\nचूंकि $g \\propto \\frac{1}{R^2}$, ध्रुवमा '$g$' को मान बढी ($9.83\\text{ m/s}^2$) हुन्छ र भूमध्यरेखामा '$g$' को मान कम ($9.78\\text{ m/s}^2$) हुन्छ ।\nउद्धरण: पाठ ७",
-          "sampleAnswerEnglish": "Answer: **Proof:**\nLet the mass of the Earth be '$M$' and its radius be '$R$'. An object of mass '$m$' is on its surface.\nGravitational force, $F = \\frac{GMm}{R^2}$ ... (i)\nAccording to Newton's second law, $F = mg$ ... (ii)\nFrom equations (i) and (ii), $mg = \\frac{GMm}{R^2}$\nTherefore, $g = \\frac{GM}{R^2}$\nHere, $G$ and $M$ are constants, so $g \\propto \\frac{1}{R^2}$. \n\n**Variation on Earth:**\nThe Earth is not perfectly round; it is flattened at the poles and bulged at the equator. \nTherefore, the radius ($R$) is less at the poles and more at the equator. Since $g \\propto \\frac{1}{R^2}$, the value of '$g$' is more at the poles ($9.83\\text{ m/s}^2$) and less at the equator ($9.78\\text{ m/s}^2$).\nCitation: Lesson 7"
+          "sampleAnswerNepali": "उत्तर: मानव मुटु चार कोठामा विभाजित हुन्छ: माथिल्लो दुई कोठालाई अरिकल (Auricles) र तल्लो दुई कोठालाई भेन्ट्रिकल (Ventricles) भनिन्छ ।\n* **कोठाहरू:** दाहिने अरिकल र दाहिने भेन्ट्रिकलमा अशुद्ध (deoxygenated) रगत हुन्छ, जबकि बायाँ अरिकल र बायाँ भेन्ट्रिकलमा शुद्ध (oxygenated) रगत हुन्छ । बायाँ भेन्ट्रिकलको भित्ता सबैभन्दा बाक्लो हुन्छ किनभने यसले शरीरभरि रगत पम्प गर्छ ।\n* **भल्भहरू:** दाहिने अरिकल र भेन्ट्रिकलको बीचमा ट्राइकस्पिड भल्भ हुन्छ । बायाँ अरिकल र भेन्ट्रिकलको बीचमा बाइकस्पिड (मिट्रल) भल्भ हुन्छ । यी भल्भहरूले रगतलाई उल्टो बग्न दिँदैनन् ।\n* **रगत नलीहरू:** सुपेरियर र इन्फेरियर भेनाकाभाले अशुद्ध रगत दाहिने अरिकलमा ल्याउँछन् । पल्मोनरी धमनीले अशुद्ध रगत फोक्सोमा लैजान्छ । पल्मोनरी शिराले शुद्ध रगत बायाँ अरिकलमा ल्याउँछ र एओर्टाले शुद्ध रगत शरीरभरि पठाउँछ ।\nउद्धरण: पाठ ५",
+          "sampleAnswerEnglish": "Answer: The human heart is four-chambered: upper two auricles and lower two ventricles.\n* **Chambers:** A muscular septum divides the heart into left and right sides. The right side contains deoxygenated blood, and the left side contains oxygenated blood. The left ventricle has the thickest wall to pump blood to the whole body.\n* **Valves:** The tricuspid valve is between the right auricle and ventricle. The bicuspid (mitral) valve is between the left auricle and ventricle. These valves prevent backflow of blood.\n* **Vessels:** Vena cavae bring impure blood to the right auricle. The pulmonary artery takes impure blood to the lungs. Pulmonary veins bring pure blood to the left auricle, and the aorta pumps it to the body.\nCitation: Lesson 5"
         },
         {
           "idNepali": "२०",
           "idEnglish": "20",
           "type": "essay",
-          "questionNepali": "दूरदृष्टि (Hypermetropia) भनेको के हो? यसका कारणहरू र हटाउने उपायलाई व्याख्या गर्नुहोस् ।",
-          "questionEnglish": "What is longsightedness (hypermetropia)? Explain its causes and correction method.",
+          "questionNepali": "आर्किमिडिजको सिद्धान्त लेख्नुहोस् र यसलाई प्रमाणित गर्ने प्रयोग वर्णन गर्नुहोस् ।",
+          "questionEnglish": "State Archimedes' principle and describe an experiment to verify it.",
           "marksNepali": "४",
           "marksEnglish": 4,
-          "sampleAnswerNepali": "उत्तर: **दूरदृष्टि:** यो आँखाको यस्तो कमजोरी हो जसमा व्यक्तिले टाढाका वस्तुहरू स्पष्ट देख्न सक्छ तर नजिकका वस्तुहरू धमिलो देख्छ ।\n**कारणहरू:**\n* आँखाको नानी धेरै गोलो (छोटो) हुनु ।\n* आँखाको लेन्स आवश्यकभन्दा पातलो हुनु (यसको केन्द्रीकरण दूरी बढ्नु) ।\nयी कारणहरूले गर्दा नजिकको वस्तुबाट आएका प्रकाशका किरणहरू रेटिनाको पछाडि केन्द्रित हुन्छन् ।\n**हटाउने उपाय:** दूरदृष्टि हटाउन उपयुक्त केन्द्रीकरण दूरी भएको कन्भेक्स लेन्स (converging lens) को प्रयोग गरिन्छ, जसले किरणहरूलाई ठीक रेटिनामा केन्द्रित गर्न मद्दत गर्छ ।\nउद्धरण: पाठ १०",
-          "sampleAnswerEnglish": "Answer: **Longsightedness:** It is the problem in which one sees distant objects clearly but the nearby objects appear blurry. \n**Causes:**\n* The eyeball becomes too circular (shorter).\n* The eye lens cannot be made thick enough (its focal length increases).\nDue to these reasons, light rays from nearby objects are focused behind the retina. \n**Correction Method:** To correct longsightedness, a converging lens, i.e., a convex lens of suitable focal length is used. This lens converges the rays before they enter the eye, allowing the eye's lens to focus them correctly on the retina.\nCitation: Lesson 10"
+          "sampleAnswerNepali": "उत्तर: **आर्किमिडिजको सिद्धान्त:** \"जब कुनै वस्तुलाई तरल पदार्थमा आंशिक वा पूर्ण रूपमा डुबाइन्छ, त्यसले विस्थापित गरेको तरलको तौल बराबरको उर्ध्वचाप उक्त वस्तुमा लाग्छ ।\" (उर्ध्वचाप = विस्थापित तरलको तौल)\n**प्रमाणित गर्ने प्रयोग:**\n१. एउटा ढुङ्गालाई स्प्रिङ ब्यालेन्समा झुन्ड्याएर हावामा तौल ($W_1$) लिनुहोस् ।\n२. युरेका क्यान (Eureka can) मा पानी भरेर, त्यसको टुटीमुनि एउटा खाली बिकर ($W_2$) राख्नुहोस् ।\n३. ढुङ्गालाई बिस्तारै युरेका क्यानको पानीमा डुबाउनुहोस् र पानीमा तौल ($W_3$) लिनुहोस् ।\n४. विस्थापित पानी बिकरमा जम्मा हुन्छ । पानीसहितको बिकरको तौल ($W_4$) लिनुहोस् ।\n५. हिसाब गर्दा, उर्ध्वचाप ($W_1 - W_3$) र विस्थापित पानीको तौल ($W_4 - W_2$) बराबर देखिन्छ । यसले आर्किमिडिजको सिद्धान्त प्रमाणित गर्छ ।\nउद्धरण: पाठ ८",
+          "sampleAnswerEnglish": "Answer: **Archimedes' Principle:** \"When an object is partially or completely immersed in a liquid, the upthrust exerted on it is equal to the weight of the liquid displaced by it.\"\n**Verification:**\n1. Weigh a stone in air using a spring balance ($W_1$).\n2. Place a beaker ($W_2$) under the spout of a Eureka can filled with water.\n3. Immerse the stone in the can and note its weight in water ($W_3$). Collect the displaced water.\n4. Weigh the beaker with displaced water ($W_4$).\n5. Calculate Upthrust ($W_1 - W_3$) and Weight of displaced water ($W_4 - W_2$). They will be equal, verifying the principle.\nCitation: Lesson 8"
         },
         {
           "idNepali": "२१",
           "idEnglish": "21",
           "type": "essay",
-          "questionNepali": "इलेक्ट्रोम्याग्नेट (electromagnet) भनेको के हो? यसको शक्तिलाई असर पार्ने तत्त्वहरू के-के हुन्?",
-          "questionEnglish": "What is an electromagnet? What are the factors affecting its strength?",
+          "questionNepali": "प्रकाशको विच्छेदन (Dispersion of light) भनेको के हो? प्रिज्मबाट हुने प्रकाशको विच्छेदन चित्रसहित व्याख्या गर्नुहोस् ।",
+          "questionEnglish": "What is dispersion of light? Explain dispersion of light through a prism with a diagram.",
           "marksNepali": "४",
           "marksEnglish": 4,
-          "sampleAnswerNepali": "उत्तर: **इलेक्ट्रोम्याग्नेट:** सोलेनोइड भित्र नरम फलामको कोर राखेर बनाइएको अस्थायी चुम्बकलाई इलेक्ट्रोम्याग्नेट भनिन्छ, जसमा करेन्ट प्रवाह हुँदा मात्र चुम्बकीय गुण देखिन्छ ।\n\n**शक्तिलाई असर पार्ने तत्त्वहरू:**\n* **सोलेनोइडमा करेन्टको परिमाण:** करेन्टको परिमाण बढाउँदा चुम्बकीय क्षेत्रको शक्ति बढ्छ ।\n* **सोलेनोइडको क्वाइलमा फन्काको सङ्ख्या:** क्वाइलमा फन्काको सङ्ख्या बढाउँदा चुम्बकीय क्षेत्रको शक्ति बढ्छ ।\n* **कोर पदार्थ:** सोलेनोइड भित्र नरम फलाम जस्तो पदार्थ राख्दा चुम्बकीय क्षेत्रको शक्ति बढ्छ ।\nउद्धरण: पाठ ११",
-          "sampleAnswerEnglish": "Answer: **Electromagnet:** An electromagnet is a temporary magnet made by placing a soft iron core inside a solenoid, which shows magnetic properties only when an electric current flows through it. \n\n**Factors affecting its strength:**\n* **Magnitude of the current in the solenoid:** Increasing the current increases the strength of the magnetic field.\n* **Number of turns in the coil of the solenoid:** Increasing the number of turns increases the strength of the magnetic field.\n* **Material placed inside the solenoid (core):** Placing a material like a soft iron cylinder increases the strength of the magnetic field.\nCitation: Lesson 11"
+          "sampleAnswerNepali": "उत्तर: **प्रकाशको विच्छेदन:** सेतो प्रकाश (सूर्यको प्रकाश) प्रिज्म जस्तो पारदर्शी माध्यमबाट पास हुँदा सात रङहरूमा टुक्रिने प्रक्रियालाई प्रकाशको विच्छेदन भनिन्छ । यी सात रङहरू VIBGYOR (Violet, Indigo, Blue, Green, Yellow, Orange, Red) हुन् ।\n**व्याख्या:** जब सेतो प्रकाश प्रिज्ममा प्रवेश गर्छ, यो अपवर्तित हुन्छ । विभिन्न रङको प्रकाशको गति र तरंग लम्बाइ फरक हुने भएकोले, तिनीहरू फरक-फरक कोणमा बाङ्गिन्छन् । रातो रङको तरंग लम्बाइ सबैभन्दा बढी हुने भएकोले यो सबैभन्दा कम बाङ्गिन्छ (माथि देखिन्छ), जबकि बैजनी रङको तरंग लम्बाइ सबैभन्दा कम हुने भएकोले यो सबैभन्दा बढी बाङ्गिन्छ (तल देखिन्छ) । यसरी पर्दामा सात रङको स्पेक्ट्रम बन्छ ।\n(नोट: विद्यार्थीले प्रिज्मबाट प्रकाश सात रङमा छुट्टिएको चित्र बनाउनुपर्छ ।)\nउद्धरण: पाठ १०",
+          "sampleAnswerEnglish": "Answer: **Dispersion:** The process in which white light splits into its seven constituent colors (VIBGYOR) while passing through a transparent medium like a prism is called dispersion of light.\n**Explanation:** When white light enters a prism, it refracts. Different colors have different wavelengths and speeds in glass. Red light has the longest wavelength and deviates the least (appears at the top). Violet light has the shortest wavelength and deviates the most (appears at the bottom). This separation creates a spectrum of seven colors.\n(Note: A diagram showing white light splitting into 7 colors through a prism is required).\nCitation: Lesson 10"
         },
         {
           "idNepali": "२२",
           "idEnglish": "22",
           "type": "essay",
-          "questionNepali": "डिजिटल आरोग्यता (digital wellbeing) भनेको के हो र यो किन महत्त्वपूर्ण छ? यसलाई हासिल गर्ने दुई तरिकाहरू लेख्नुहोस् ।",
-          "questionEnglish": "What is digital wellbeing and why is it important? Write two ways to achieve it.",
+          "questionNepali": "AC जेनेरेटरको बनोट र कार्य सिद्धान्त वर्णन गर्नुहोस् ।",
+          "questionEnglish": "Describe the construction and working principle of an AC generator.",
           "marksNepali": "४",
           "marksEnglish": 4,
-          "sampleAnswerNepali": "उत्तर: **डिजिटल आरोग्यता:** अनलाइन र अफलाइन गतिविधिहरूमा बिताउने समयलाई सन्तुलनमा राखेर मानसिक, शारीरिक, सामाजिक र भावनात्मक रूपमा स्वस्थ रहने अवस्थालाई डिजिटल आरोग्यता भनिन्छ ।\n\n**महत्त्व:** यो महत्त्वपूर्ण छ किनभने यसले डिजिटल प्रविधिको अत्यधिक प्रयोगबाट हुने मोटोपना, अनिद्रा, मानसिक तनाव, र सामाजिक एक्लोपन जस्ता नकारात्मक प्रभावहरूबाट बच्न मद्दत गर्छ ।\n\n**हासिल गर्ने तरिकाहरू:**\n* **स्क्रिन समय छुट्याउने:** काम र मनोरञ्जनका लागि स्क्रिन समय छुट्याएर सन्तुलन कायम गर्ने ।\n* **समय सीमा निर्धारण गर्ने:** सामाजिक सञ्जाल र अन्य एपहरूको प्रयोगका लागि समय सीमा निर्धारण गर्ने ।\n* **मोबाइल सूचनाहरू बन्द गर्ने:** कामको समयमा मोबाइल सूचनाहरू बन्द गरेर ध्यान केन्द्रित गर्ने ।\nउद्धरण: पाठ १३",
-          "sampleAnswerEnglish": "Answer: **Digital Wellbeing:** The state of being healthy mentally, physically, socially, and emotionally by balancing the time spent on online and offline activities is called digital well-being. \n\n**Importance:** It is important because it helps to avoid the negative effects of the unnecessary use of digital technology, such as obesity, insomnia, mental stress, and social isolation. \n\n**Ways to achieve it:**\n* **Separating screen time:** Balancing work and entertainment by allocating specific screen times.\n* **Setting time limits:** Setting time limits for social media and other application use.\n* **Turning off mobile notifications:** Staying focused by turning off mobile notifications at work.\nCitation: Lesson 13"
+          "sampleAnswerNepali": "उत्तर: **बनोट:** AC जेनेरेटरमा चुम्बकीय क्षेत्र सिर्जना गर्न शक्तिशाली स्थायी चुम्बक (concave poles), तामाको तारले बनेको आयताकार क्वाइल (armature), स्लिप रिङहरू (slip rings) र कार्बन ब्रसहरू हुन्छन् ।\n**कार्य सिद्धान्त:** यो विद्युत चुम्बकीय उपपादन (Electromagnetic Induction) को सिद्धान्तमा आधारित छ । जब चुम्बकीय क्षेत्रभित्र क्वाइललाई घुमाइन्छ, क्वाइलसँग सम्बन्धित चुम्बकीय फ्लक्स (magnetic flux) मा परिवर्तन आउँछ । फ्याराडेको नियम अनुसार, यो परिवर्तनले क्वाइलमा ई.एम.एफ. (induced e.m.f.) पैदा गर्छ, जसले गर्दा करेन्ट बग्छ । स्लिप रिङहरूको प्रयोगले गर्दा उत्पादन हुने करेन्टको दिशा हरेक आधा फन्कोमा परिवर्तन हुन्छ, जसले अल्टरनेटिङ करेन्ट (AC) दिन्छ ।\nउद्धरण: पाठ ११",
+          "sampleAnswerEnglish": "Answer: **Construction:** An AC generator consists of a permanent magnet to create a strong magnetic field, a rectangular coil (armature) of insulated copper wire, slip rings, and carbon brushes.\n**Working Principle:** It works on the principle of electromagnetic induction. When the coil is rotated inside the magnetic field, the magnetic flux linked with the coil changes continuously. According to Faraday's law, this change induces an e.m.f. in the coil, generating current. The use of slip rings ensures that the direction of the induced current changes every half rotation, producing Alternating Current (AC).\nCitation: Lesson 11"
         },
         {
           "idNepali": "२३",
           "idEnglish": "23",
           "type": "essay",
-          "questionNepali": "तिनीहरूले असर गर्ने कीराको आधारमा विभिन्न प्रकारका कीटनाशक विषादीहरूको एक-एक उदाहरणसहित व्याख्या गर्नुहोस् ।",
-          "questionEnglish": "Explain different types of pesticides based on the pests they affect, with one example for each type.",
+          "questionNepali": "मानव स्वास्थ्यमा डिजिटल प्रविधिको प्रयोगका दुईओटा सकारात्मक र दुईओटा नकारात्मक प्रभावहरू व्याख्या गर्नुहोस् ।",
+          "questionEnglish": "Explain two positive and two negative effects of the use of digital technology on human health.",
           "marksNepali": "४",
           "marksEnglish": 4,
-          "sampleAnswerNepali": "उत्तर: कीटनाशक विषादीहरूलाई तिनीहरूले असर गर्ने कीराको आधारमा निम्न प्रकारमा विभाजन गर्न सकिन्छ:\n* **कीटनाशक (Insecticides):** हानिकारक कीराहरू मार्न र नियन्त्रण गर्न प्रयोग गरिन्छ । उदाहरण: मालाथियन (Malathion) ।\n* **ढुसीनाशक (Fungicides):** ढुसी र त्यसबाट लाग्ने रोगहरूविरुद्ध प्रयोग गरिन्छ । उदाहरण: म्यान्कोजेब (Mancozeb) ।\n* **झारनाशक (Herbicides):** खेतबारीमा अनावश्यक झारपात र बोटबिरुवा नष्ट गर्न वा नियन्त्रण गर्न प्रयोग गरिन्छ । उदाहरण: बुटाक्लोर (Butachlor) ।\n* **मुसानाशक (Rodenticides):** मुसा र मुसा प्रजातिका जीवहरू मार्न प्रयोग गरिन्छ । उदाहरण: जिंक फस्फाइड (Zinc phosphide) ।\n* **सुल्सुलेनाशक (Miticides):** सुल्सुले (mites) मार्न प्रयोग गरिन्छ । उदाहरण: प्रोपारगाइट (propargite) ।\nउद्धरण: पाठ १९",
-          "sampleAnswerEnglish": "Answer: Pesticides are classified into different groups based on the pests they affect:\n* **Insecticides:** Used to kill and control harmful insects. Example: Malathion.\n* **Fungicides:** Used against fungi and the diseases caused by them. Example: Mancozeb.\n* **Herbicides:** Used to destroy or control unwanted herbs and plants in crop fields. Example: Butachlor.\n* **Rodenticides:** Used to kill rats and rodents. Example: Zinc phosphide.\n* **Miticides:** Used to kill mites. Example: propargite.\nCitation: Lesson 19"
+          "sampleAnswerNepali": "उत्तर: **सकारात्मक प्रभावहरू:**\n1. **स्वास्थ्य निगरानी (Health Monitoring):** डिजिटल घडी र अन्य उपकरणहरूले मुटुको धड्कन, निद्रा र शारीरिक गतिविधि ट्र्याक गर्न मद्दत गर्छन्, जसले स्वास्थ्य अवस्थाबारे सचेत गराउँछ ।\n2. **डिजिटल वेलबिइङ (Digital Wellbeing):** एपहरूले स्क्रिन समय व्यवस्थापन गर्न र स्वास्थ्य सन्तुलन कायम राख्न मद्दत गर्छन् ।\n\n**नकारात्मक प्रभावहरू:**\n1. **शारीरिक समस्याहरू:** डिजिटल उपकरणहरूको अत्यधिक प्रयोगले मोटोपना (Obesity), आँखाको समस्या र अनिद्रा (Insomnia) निम्त्याउन सक्छ ।\n2. **मानसिक स्वास्थ्य:** सामाजिक सञ्जालको अत्यधिक प्रयोगले मानसिक तनाव, चिन्ता (Anxiety), र डिप्रेसनको जोखिम बढाउँछ ।\nउद्धरण: पाठ १३",
+          "sampleAnswerEnglish": "Answer: **Positive Effects:**\n1. **Health Monitoring:** Devices like smartwatches help track heart rate, sleep, and activity, keeping people aware of their health.\n2. **Digital Wellbeing:** Apps help manage screen time and maintain a healthy balance.\n\n**Negative Effects:**\n1. **Physical Problems:** Excessive use leads to obesity, vision problems, and insomnia.\n2. **Mental Health:** Overuse of social media increases the risk of stress, anxiety, and depression.\nCitation: Lesson 13"
         }
       ]
     }

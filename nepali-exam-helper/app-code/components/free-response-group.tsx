@@ -263,9 +263,6 @@ export function FreeResponseGroup({
                       </>
                     )}
                   </span>
-                  <span className={currentAnswer.length > 20 ? "text-green-600" : "text-slate-400"}>
-                    {currentAnswer.length} {language === "english" ? "characters" : "अक्षरहरू"}
-                  </span>
                 </div>
 
                 {renderExplanation(question)}

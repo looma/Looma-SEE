@@ -128,8 +128,8 @@
       },
       {
         "type": "fill_in_the_blanks",
-        "titleNepali": "दिइएको अनुच्छेदबाट उपयुक्त शब्द पहिचान गरी खाली ठाउँ भर्नुहोस् :",
-        "titleEnglish": "Identify the appropriate word from the given paragraph and fill in the blanks:",
+        "titleNepali": "तलका प्रश्नहरूको उत्तर दिनुहोस् :",
+        "titleEnglish": "Answer the questions below:",
         "passageNepali": "फुर्वा असल विद्यार्थी हुन्। उनी मिहिनेतपूर्वक पढ्छन्। कक्षामा गुरुले दिएको काम सधैँ गर्छन्। उनी बिहान सबेरै उठ्छन् र नियमित रूपमा पढ्छन्। उनको यो बानी देखेर सबै खुसी छन्।",
         "passageEnglish": "Phurba is a good student. He studies diligently. He always does the work given by the teacher in class. He gets up early in the morning and studies regularly. Everyone is happy seeing this habit of his.",
         "subQuestions": [
@@ -223,8 +223,8 @@
             "idNepali": "क",
             "idEnglish": "a",
             "type": "multiple_choice",
-            "titleNepali": "दिइएका शब्द समूहबाट शुद्ध शब्द छानी लेख्नुहोस् :",
-            "titleEnglish": "Choose and write the correct word from the given word groups:",
+            "titleNepali": "दिइएका शब्द समूहहरूबाट सही शब्द छान्नुहोस् :",
+            "titleEnglish": "Choose the correct word from the given word groups:",
             "choices": [
               {
                 "idNepali": "अ",
@@ -298,45 +298,45 @@
         "correctAnswerNepali": [
           {
             "word": "जो",
-            "pos": "सर्वनाम (सम्बन्धवाचक)"
+            "part of speech": "सर्वनाम (सम्बन्धवाचक)"
           },
           {
             "word": "ऊ",
-            "pos": "सर्वनाम (पुरुषवाचक)"
+            "part of speech": "सर्वनाम (पुरुषवाचक)"
           },
           {
             "word": "आहा",
-            "pos": "विस्मयादिबोधक"
+            "part of speech": "विस्मयादिबोधक"
           },
           {
             "word": "कस्तो",
-            "pos": "विशेषण (प्रश्नवाचक)"
+            "part of speech": "विशेषण (प्रश्नवाचक)"
           },
           {
             "word": "तर",
-            "pos": "संयोजक"
+            "part of speech": "संयोजक"
           }
         ],
         "correctAnswerEnglish": [
           {
             "word": "He/Who",
-            "pos": "Pronoun (Relative)"
+            "part of speech": "Pronoun (Relative)"
           },
           {
             "word": "He",
-            "pos": "Pronoun (Personal)"
+            "part of speech": "Pronoun (Personal)"
           },
           {
             "word": "Wow",
-            "pos": "Interjection"
+            "part of speech": "Interjection"
           },
           {
             "word": "How/What",
-            "pos": "Adjective (Interrogative)"
+            "part of speech": "Adjective (Interrogative)"
           },
           {
             "word": "But",
-            "pos": "Conjunction"
+            "part of speech": "Conjunction"
           }
         ],
         "explanationNepali": "'जो' र 'ऊ' ले नामको सट्टामा आएर सम्बन्ध देखाएकाले सर्वनाम हुन्। 'आहा' ले मनको भाव (आश्चर्य) प्रकट गरेकाले विस्मयादिबोधक हो। 'कस्तो' ले 'विचार' (नाम) को विशेषता बुझाएको वा प्रश्न गरेको हुनाले विशेषण हो। 'तर' ले दुई वाक्यलाई जोडेको हुनाले संयोजक हो।\nउद्धरण: कक्षा १०, पाठ १।",

@@ -67,6 +67,7 @@ const uiText = {
     completed: { np: "पूरा भयो", en: "completed" },
     question: { np: "प्रश्न", en: "Question" },
     marks: { np: "अंक", en: "marks" },
+    mark: { np: "अंक", en: "mark" },
     characters: { np: "अक्षर", en: "characters" },
     writeAnswerHere: { np: "यहाँ आफ्नो उत्तर लेख्नुहोस्...", en: "Write your answer here..." },
     veryShortHint: { np: "छोटो र सटीक उत्तर दिनुहोस्", en: "Give a short and precise answer" },
@@ -275,7 +276,7 @@ export function SocialStudiesGroupRenderer({
                                         </div>
                                     </div>
                                     <Badge variant="outline" className="ml-3 whitespace-nowrap flex-shrink-0">
-                                        {marksValue} {uiText.marks[lang]}
+                                        {marksValue} {marksValue === 1 ? uiText.mark[lang] : uiText.marks[lang]}
                                     </Badge>
                                 </div>
                             </CardHeader>
@@ -292,9 +293,6 @@ export function SocialStudiesGroupRenderer({
 
                                 <div className="flex justify-between items-center mt-2 text-xs text-slate-500">
                                     <span>{getHintText()}</span>
-                                    <span className={currentAnswer.length > 10 ? "text-green-600" : "text-slate-400"}>
-                                        {currentAnswer.length} {uiText.characters[lang]}
-                                    </span>
                                 </div>
 
                                 {renderExplanation(question)}

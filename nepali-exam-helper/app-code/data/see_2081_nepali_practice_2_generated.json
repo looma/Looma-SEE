@@ -67,7 +67,7 @@
               "idNepali": "c",
               "idEnglish": "c",
               "textNepali": "पछिसम्म सम्झनयोग्य",
-              "textEnglish": "memorable for a long time"
+              "textEnglish": "Memorable for a long time"
             },
             {
               "idNepali": "d",
@@ -128,8 +128,8 @@
       },
       {
         "type": "fill_in_the_blanks",
-        "titleNepali": "दिइएको अनुच्छेदबाट उपयुक्त शब्द पहिचान गरी खाली ठाउँ भर्नुहोस् :",
-        "titleEnglish": "Identify the appropriate word from the given paragraph and fill in the blanks:",
+        "titleNepali": "तलका प्रश्नहरूको उत्तर दिनुहोस् :",
+        "titleEnglish": "Answer the questions below:",
         "passageNepali": "कमिलाको ताँती मौरीको घारमा पसेछ। कागको बथान कराउँदै आयो। बाँदर केराको कोसो मुखमा च्यापेर रुखमा चढ्यो। तिर्खाएको कागले पानीको थोपो पनि खान पाएन।",
         "passageEnglish": "A line of ants entered the beehive. A flock of crows came cawing. The monkey climbed the tree holding a banana bunch in its mouth. The thirsty crow didn't even get a drop of water to drink.",
         "subQuestions": [
@@ -223,8 +223,8 @@
             "idNepali": "क",
             "idEnglish": "a",
             "type": "multiple_choice",
-            "titleNepali": "दिइएका शब्द समूहबाट शुद्ध शब्द छानी लेख्नुहोस् :",
-            "titleEnglish": "Choose and write the correct word from the given word groups:",
+            "titleNepali": "दिइएका शब्द समूहहरूबाट सही शब्द छान्नुहोस् :",
+            "titleEnglish": "Choose the correct word from the given word groups:",
             "choices": [
               {
                 "idNepali": "अ",
@@ -298,45 +298,45 @@
         "correctAnswerNepali": [
           {
             "word": "घरझगडाले",
-            "pos": "नाम"
+            "part of speech": "नाम"
           },
           {
             "word": "भित्र",
-            "pos": "नामयोगी"
+            "part of speech": "नामयोगी"
           },
           {
             "word": "र",
-            "pos": "संयोजक"
+            "part of speech": "संयोजक"
           },
           {
             "word": "दुःखी",
-            "pos": "विशेषण"
+            "part of speech": "विशेषण"
           },
           {
             "word": "अहो",
-            "pos": "विस्मयादिबोधक"
+            "part of speech": "विस्मयादिबोधक"
           }
         ],
         "correctAnswerEnglish": [
           {
             "word": "Due to domestic conflict",
-            "pos": "Noun"
+            "part of speech": "Noun"
           },
           {
             "word": "Inside",
-            "pos": "Postposition"
+            "part of speech": "Postposition"
           },
           {
             "word": "And",
-            "pos": "Conjunction"
+            "part of speech": "Conjunction"
           },
           {
             "word": "Sad",
-            "pos": "Adjective"
+            "part of speech": "Adjective"
           },
           {
             "word": "Oh",
-            "pos": "Interjection"
+            "part of speech": "Interjection"
           }
         ],
         "explanationNepali": "'घरझगडाले' नाम हो। 'देश' (नाम) सँग जोडिएर आएकोले 'भित्र' नामयोगी हो। 'र' ले दुई वाक्यलाई जोडेकोले संयोजक हो। 'दुःखी' ले 'मानिस' को अवस्था बुझाएकोले विशेषण हो। 'अहो' ले दुःखको भाव प्रकट गरेकोले विस्मयादिबोधक हो।\nउद्धरण: कक्षा १०, पाठ १।",
