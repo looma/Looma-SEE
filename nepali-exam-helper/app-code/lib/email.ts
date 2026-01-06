@@ -23,7 +23,7 @@ export async function sendOTPEmail(
 
   try {
     const { data, error } = await resend.emails.send({
-      from: config.emailFromAddress || "SEE Practice <noreply@resend.dev>",
+      from: config.emailFromAddress || "SEE Practice <donotreply@testprep.looma.website>",
       to: email,
       subject: "Your SEE Practice Login Code / तपाईंको SEE अभ्यास लगइन कोड",
       html: generateOTPEmailHTML(code),
