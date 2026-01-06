@@ -1,8 +1,8 @@
 [
   {
-    "_id": "see_2081_science_practice_5_revised",
-    "titleNepali": "SEE २०८१ विज्ञान अभ्यास परीक्षा ५ (संशोधित)",
-    "titleEnglish": "SEE 2081 Science Practice Test 5 (Revised)",
+    "_id": "see_2081_science_practice_5_generated",
+    "titleNepali": "SEE २०८१ विज्ञान अभ्यास परीक्षा ५",
+    "titleEnglish": "SEE 2081 Science Practice Test 5",
     "subjectNepali": "विज्ञान",
     "subjectEnglish": "science",
     "totalMarksNepali": "७५",
@@ -23,7 +23,7 @@
     ]
   },
   {
-    "testId": "see_2081_science_practice_5_revised",
+    "testId": "see_2081_science_practice_5_generated",
     "questions": {
       "groupA": [
         {
