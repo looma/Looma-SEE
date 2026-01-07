@@ -465,11 +465,11 @@ export function EnglishQuestionRenderer({
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor={`fill-${subQId}`} className="text-sm font-medium text-slate-700">
+                      <Label htmlFor={`fill-${(question as any).id}-${parentId || 'direct'}-${subQId}`} className="text-sm font-medium text-slate-700">
                         {uiText.fillBlanks}
                       </Label>
                       <input
-                        id={`fill-${subQId}`}
+                        id={`fill-${(question as any).id}-${parentId || 'direct'}-${subQId}`}
                         type="text"
                         value={currentAnswer}
                         onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
@@ -574,8 +574,8 @@ export function EnglishQuestionRenderer({
                                 onAnswerChange((question as any).id, section.id, newAnswers)
                               }}
                             >
-                              <RadioGroupItem value={bItemId} id={`${itemId}-${bItemId}`} />
-                              <Label htmlFor={`${itemId}-${bItemId}`} className="cursor-pointer flex-1">
+                              <RadioGroupItem value={bItemId} id={`${(question as any).id}-${section.id}-${itemId}-${bItemId}`} />
+                              <Label htmlFor={`${(question as any).id}-${section.id}-${itemId}-${bItemId}`} className="cursor-pointer flex-1">
                                 <span className="font-medium text-blue-700 mr-2">({displayBItemId})</span>
                                 <span className="text-slate-700">{getText(bItem.textEnglish || bItem.text, bItem.textNepali)}</span>
                               </Label>

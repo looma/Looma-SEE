@@ -485,9 +485,11 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                     // Convert user answers to match format
                     if (section.columns && section.columns.A) {
                       section.columns.A.forEach((itemA: any) => {
-                        const userMatch = sectionAnswer[itemA.id]
+                        // Use same ID pattern as renderer: idEnglish || id
+                        const itemAId = itemA.idEnglish || itemA.id
+                        const userMatch = sectionAnswer[itemAId]
                         if (userMatch) {
-                          userMatches.push({ A: itemA.id, B: userMatch })
+                          userMatches.push({ A: itemAId, B: userMatch })
                         }
                       })
                     }
@@ -539,10 +541,12 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                     // Convert user answers (item.id -> position) to ordered array
                     const userOrderArray: string[] = []
                     sentences.forEach((item: any) => {
-                      const position = sectionAnswer[item.id]
+                      // Use same ID pattern as renderer: idEnglish || id
+                      const itemId = item.idEnglish || item.id
+                      const position = sectionAnswer[itemId]
                       if (position) {
                         const posIndex = parseInt(position) - 1 // Convert 1-based to 0-based
-                        userOrderArray[posIndex] = item.id
+                        userOrderArray[posIndex] = itemId
                       }
                     })
 
@@ -591,7 +595,9 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                   section.subQuestions.forEach((subQ: any) => {
                     const sectionAnswer = userAnswer[section.id]
                     if (sectionAnswer && typeof sectionAnswer === 'object') {
-                      const userSubAnswer = sectionAnswer[subQ.id]
+                      // Use same ID pattern as renderer: idEnglish || id
+                      const subQId = subQ.idEnglish || subQ.id
+                      const userSubAnswer = sectionAnswer[subQId]
                       if (userSubAnswer && typeof userSubAnswer === 'string' && userSubAnswer.trim().length > 0) {
                         // Calculate marks for sub-question
                         const subQuestionMarks = subQ.marks || (section.marks ? Math.round((section.marks / section.subQuestions.length) * 10) / 10 : 1)
@@ -671,7 +677,9 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
             } else if (question.subQuestions) {
               // Handle questions with direct sub-questions (like grammar questions)
               question.subQuestions.forEach((subQ: any) => {
-                const userSubAnswer = userAnswer[subQ.id]
+                // Use same ID pattern as renderer: idEnglish || id
+                const subQId = subQ.idEnglish || subQ.id
+                const userSubAnswer = userAnswer[subQId]
                 if (userSubAnswer && typeof userSubAnswer === 'string' && userSubAnswer.trim().length > 0) {
                   // Calculate marks for sub-question
                   const subQuestionMarks = subQ.marks || (question.marks ? Math.round((question.marks / question.subQuestions.length) * 10) / 10 : 1)
@@ -772,7 +780,8 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                 const gaps = (question as any).gaps || []
                 Object.entries(userAnswer).forEach(([gapId, gapAnswer]) => {
                   if (gapAnswer && typeof gapAnswer === 'string' && gapAnswer.trim().length > 0) {
-                    const gap = gaps.find((g: any) => g.id === gapId)
+                    // Use same ID pattern as renderer: idEnglish || id
+                    const gap = gaps.find((g: any) => (g.idEnglish || g.id) === gapId)
                     if (gap) {
                       const gapMarks = (question as any).marks && gaps.length ? Math.round(((question as any).marks / gaps.length) * 10) / 10 : 1
                       const trimmedAnswer = gapAnswer.trim()
