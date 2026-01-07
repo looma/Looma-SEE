@@ -27,6 +27,7 @@ export function StudentLogin({ onLogin }: StudentLoginProps) {
   const [canResend, setCanResend] = useState(false)
   const [resendTimer, setResendTimer] = useState(60)
   const otpInputRef = useRef<HTMLInputElement>(null)
+  const emailInputRef = useRef<HTMLInputElement>(null)
 
   // Handle resend timer
   useEffect(() => {
@@ -37,6 +38,13 @@ export function StudentLogin({ onLogin }: StudentLoginProps) {
       setCanResend(true)
     }
   }, [step, resendTimer])
+
+  // Focus email input when entering email step
+  useEffect(() => {
+    if (step === "email" && emailInputRef.current) {
+      emailInputRef.current.focus()
+    }
+  }, [step])
 
   // Focus OTP input when entering OTP step
   useEffect(() => {
@@ -257,6 +265,7 @@ export function StudentLogin({ onLogin }: StudentLoginProps) {
                   {language === "english" ? "Email Address" : "इमेल ठेगाना"}
                 </Label>
                 <Input
+                  ref={emailInputRef}
                   id="email"
                   type="email"
                   placeholder={language === "english" ? "Enter your email" : "आफ्नो इमेल प्रविष्ट गर्नुहोस्"}
