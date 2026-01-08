@@ -95,7 +95,7 @@ export function SocialStudiesGroupRenderer({
     }
 
     const answeredCount = group.questions.filter(
-        (q) => answers[q.id] && answers[q.id].trim().length > 0
+        (q) => answers[q.id] && typeof answers[q.id] === 'string' && answers[q.id].trim().length > 0
     ).length
     const progressPercentage = group.questions.length > 0
         ? (answeredCount / group.questions.length) * 100

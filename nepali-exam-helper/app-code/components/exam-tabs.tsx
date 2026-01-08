@@ -254,7 +254,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
         totalQuestions += group.questions?.length || 0
         group.questions?.forEach((q: any) => {
           const answer = answers.socialStudies?.[q.id]
-          if (answer && answer.trim().length > 0) {
+          if (answer && (typeof answer === 'string' ? answer.trim().length > 0 : true)) {
             answeredQuestions++
           }
         })
@@ -285,7 +285,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
         q.sub_questions?.forEach((subQ: any) => {
           // Use same keys as renderer: question_numberEnglish and labelEnglish
           const answer = answers.math?.[q.question_numberEnglish]?.[subQ.labelEnglish]
-          if (answer && answer.trim().length > 0) {
+          if (answer && (typeof answer === 'string' ? answer.trim().length > 0 : true)) {
             answeredQuestions++
           }
         })
@@ -301,19 +301,19 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
       // Count Group B answers
       const groupBAnswered = questions.groupB.filter((q: any) => {
         const answer = answers.groupB?.[q.id]
-        return answer && answer.trim().length > 0
+        return answer && (typeof answer === 'string' ? answer.trim().length > 0 : true)
       }).length
 
       // Count Group C answers
       const groupCAnswered = questions.groupC.filter((q: any) => {
         const answer = answers.groupC?.[q.id]
-        return answer && answer.trim().length > 0
+        return answer && (typeof answer === 'string' ? answer.trim().length > 0 : true)
       }).length
 
       // Count Group D answers
       const groupDAnswered = questions.groupD.filter((q: any) => {
         const answer = answers.groupD?.[q.id]
-        return answer && answer.trim().length > 0
+        return answer && (typeof answer === 'string' ? answer.trim().length > 0 : true)
       }).length
 
       answeredQuestions = groupAAnswered + groupBAnswered + groupCAnswered + groupDAnswered
@@ -360,7 +360,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
         totalQuestions += group.questions?.length || 0
         group.questions?.forEach((q: any) => {
           const answer = answers.socialStudies?.[q.id]
-          if (!answer || answer.trim().length === 0) {
+          if (!answer || (typeof answer === 'string' && answer.trim().length === 0)) {
             incompleteQuestions++
           }
         })
@@ -391,7 +391,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
         q.sub_questions?.forEach((subQ: any) => {
           // Use same keys as renderer: question_numberEnglish and labelEnglish
           const answer = answers.math?.[q.question_numberEnglish]?.[subQ.labelEnglish]
-          if (!answer || answer.trim().length === 0) {
+          if (!answer || (typeof answer === 'string' && answer.trim().length === 0)) {
             incompleteQuestions++
           }
         })
@@ -407,19 +407,19 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
       // Count Group B incomplete answers
       const groupBIncomplete = questions.groupB.filter((q: any) => {
         const answer = answers.groupB?.[q.id]
-        return !answer || answer.trim().length === 0
+        return !answer || (typeof answer === 'string' && answer.trim().length === 0)
       }).length
 
       // Count Group C incomplete answers
       const groupCIncomplete = questions.groupC.filter((q: any) => {
         const answer = answers.groupC?.[q.id]
-        return !answer || answer.trim().length === 0
+        return !answer || (typeof answer === 'string' && answer.trim().length === 0)
       }).length
 
       // Count Group D incomplete answers
       const groupDIncomplete = questions.groupD.filter((q: any) => {
         const answer = answers.groupD?.[q.id]
-        return !answer || answer.trim().length === 0
+        return !answer || (typeof answer === 'string' && answer.trim().length === 0)
       }).length
 
       incompleteQuestions = groupAIncomplete + groupBIncomplete + groupCIncomplete + groupDIncomplete
@@ -589,7 +589,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                       score: score,
                       feedback: feedback,
                       question: section.title || 'Ordering question',
-                      studentAnswer: userAnswerDisplay || 'No answer provided',
+                      studentAnswer: userAnswerDisplay || (language === 'english' ? 'No answer provided' : 'कुनै उत्तर प्रदान गरिएको छैन'),
                       group: "English",
                       questionId: (question as any).id,
                       sectionId: sectionId,
@@ -638,7 +638,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                           // Build comprehensive context with passage and correct answer
                           let aiContext = subQ.correctAnswerEnglish || subQ.correctAnswer || subQ.correctAnswerNepali || ''
                           const passageContent = (question as any).passageEnglish || (question as any).passage || (question as any).passageNepali
-                          if (passageContent && !aiContext.includes(passageContent)) {
+                          if (passageContent && typeof aiContext === 'string' && !aiContext.includes(passageContent)) {
                             aiContext = aiContext ? `${aiContext}\n\nReference passage:\n${passageContent}` : `Reference passage:\n${passageContent}`
                           }
 
@@ -962,12 +962,12 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
           console.log(`📋 Processing Group ${groupIndex}: ${group.groupName || 'Unknown'}, ${group.questions?.length || 0} questions`)
           group.questions?.forEach((question: any, qIdx: number) => {
             const userAnswer = answers.socialStudies?.[question.id] || ""
-            console.log(`  📝 Q${qIdx + 1} (ID: ${question.id}, Type: ${question.type}): Answer length = ${userAnswer.length}, Has answer = ${userAnswer.trim().length > 0}`)
+            console.log(`  📝 Q${qIdx + 1} (ID: ${question.id}, Type: ${question.type}): Answer length = ${typeof userAnswer === 'string' ? userAnswer.length : 0}, Has answer = ${typeof userAnswer === 'string' ? userAnswer.trim().length > 0 : !!userAnswer}`)
 
             // Calculate marks early so we can use it in all cases
             const questionMarks = question.marksEnglish || question.marks || (question.marksNepali ? parseInt(question.marksNepali, 10) : 0) || 4
 
-            if (userAnswer && userAnswer.trim().length > 0) {
+            if (userAnswer && (typeof userAnswer === 'string' ? userAnswer.trim().length > 0 : true)) {
               // Build comprehensive context with answer and explanation
               const answerText = question.answerNepali || question.answerEnglish || ''
               const explanation = question.explanationNepali || question.explanationEnglish || ''
@@ -995,8 +995,10 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                   .then((result) => ({
                     id: question.id,
                     score: result.score || 0,
-                    feedback: result.feedback || "प्रतिक्रिया उपलब्ध छैन",
+                    feedback: result.feedback || "No feedback available (प्रतिक्रिया उपलब्ध छैन)",
                     question: question.questionNepali || question.questionEnglish,
+                    questionEnglish: question.questionEnglish || question.questionNepali,
+                    questionNepali: question.questionNepali || question.questionEnglish,
                     studentAnswer: userAnswer,
                     group: groupIndex,
                     marks: questionMarks,
@@ -1004,8 +1006,10 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                   .catch((error) => ({
                     id: question.id,
                     score: 0,
-                    feedback: `AI ग्रेडिङ असफल भयो: ${error.message || 'Unknown error'}`,
+                    feedback: `AI grading failed (AI ग्रेडिङ असफल भयो): ${error.message || 'Unknown error'}`,
                     question: question.questionNepali || question.questionEnglish,
+                    questionEnglish: question.questionEnglish || question.questionNepali,
+                    questionNepali: question.questionNepali || question.questionEnglish,
                     studentAnswer: userAnswer,
                     group: groupIndex,
                     marks: questionMarks,
@@ -1017,6 +1021,8 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                 score: 0,
                 feedback: "",
                 question: question.questionNepali || question.questionEnglish,
+                questionEnglish: question.questionEnglish || question.questionNepali,
+                questionNepali: question.questionNepali || question.questionEnglish,
                 studentAnswer: "",
                 group: groupIndex,
                 marks: questionMarks,
@@ -1078,7 +1084,9 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
         questions.nepaliQuestions.forEach((question: any, qIndex: number) => {
           const questionKey = `q${question.questionNumberEnglish || question.questionNumber || qIndex + 1}`
           const userAnswer = answers.nepali?.[questionKey]
-          const questionTitle = question.title || question.questionNepali || question.questionEnglish || `Question ${qIndex + 1}`
+          const questionTitleNepali = question.questionNepali || question.title || question.questionEnglish || `प्रश्न ${qIndex + 1}`
+          const questionTitleEnglish = question.questionEnglish || question.title || question.questionNepali || `Question ${qIndex + 1}`
+          const questionTitle = questionTitleNepali // Default for backward compat
 
           console.log(`📝 Q${qIndex + 1} [${questionKey}] Type: ${question.type}`)
           console.log(`   Answer exists: ${!!userAnswer}, Answer type: ${typeof userAnswer}`)
@@ -1098,7 +1106,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
               const maxScore = question.marksEnglish || question.marks || columns.length || 5
               const pointsPerMatch = columns.length > 0 ? maxScore / columns.length : maxScore
 
-              if (userAnswer && columns.length > 0) {
+              if (userAnswer && typeof userAnswer === 'object' && columns.length > 0) {
                 // Get correct answers - could be array of {A, B} pairs or on items
                 const correctAnswers = question.correctAnswer || question.correctAnswerNepali || question.correctAnswerEnglish || []
 
@@ -1126,6 +1134,8 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                 feedback: score >= maxScore ? "सबै मिल्यो! (All correct!)" :
                   score > 0 ? `${Math.round(score)}/${maxScore} सही (correct)` : "केही मिलेन (None correct)",
                 question: questionTitle,
+                questionEnglish: questionTitleEnglish,
+                questionNepali: questionTitleNepali,
                 studentAnswer: userAnswer,
               })
               break
@@ -1139,7 +1149,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
               const maxScore = question.marksEnglish || question.marks || subQuestions.length || 5
               const pointsPerBlank = subQuestions.length > 0 ? maxScore / subQuestions.length : maxScore
 
-              if (userAnswer && subQuestions.length > 0) {
+              if (userAnswer && typeof userAnswer === 'object' && subQuestions.length > 0) {
                 subQuestions.forEach((sub: any) => {
                   // Use same ID pattern as renderer: idEnglish || idNepali || id
                   const subId = sub.idEnglish || sub.idNepali || sub.id
@@ -1161,6 +1171,8 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                 feedback: score >= maxScore ? "सबै सही! (All correct!)" :
                   score > 0 ? `${Math.round(score)}/${maxScore} सही (correct)` : "केही सही छैन (None correct)",
                 question: questionTitle,
+                questionEnglish: questionTitleEnglish,
+                questionNepali: questionTitleNepali,
                 studentAnswer: userAnswer,
               })
               break
@@ -1175,7 +1187,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
               const correctWords = Array.isArray(correctAnswerData) ? correctAnswerData : []
 
               // For parts_of_speech with correctAnswer array like [{word: "जो", pos: "सर्वनाम"}, ...]
-              if (question.type === "parts_of_speech" && correctWords.length > 0 && userAnswer) {
+              if (question.type === "parts_of_speech" && correctWords.length > 0 && userAnswer && typeof userAnswer === 'object') {
                 let score = 0
                 const maxScore = question.marksEnglish || question.marks || correctWords.length || 5
                 const pointsPerWord = correctWords.length > 0 ? maxScore / correctWords.length : maxScore
@@ -1197,6 +1209,8 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                   feedback: score >= maxScore ? "सबै सही! (All correct!)" :
                     score > 0 ? `${Math.round(score)}/${maxScore} सही (correct)` : "केही सही छैन (None correct)",
                   question: questionTitle,
+                  questionEnglish: questionTitleEnglish,
+                  questionNepali: questionTitleNepali,
                   studentAnswer: userAnswer,
                 })
               } else {
@@ -1211,7 +1225,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                   combinedAnswer = Object.entries(userAnswer)
                     .filter(([key]) => !key.includes("selected"))
                     .map(([key, val]) => typeof val === "string" ? `${key}: ${val}` : "")
-                    .filter(val => val.trim())
+                    .filter(val => typeof val === 'string' && val.trim())
                     .join("\n")
                 }
 
@@ -1222,6 +1236,8 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                       headers: { "Content-Type": "application/json" },
                       body: JSON.stringify({
                         question: questionTitle,
+                        questionEnglish: questionTitleEnglish,
+                        questionNepali: questionTitleNepali,
                         answer: combinedAnswer,
                         marks: marks,
                         sampleAnswer: sampleAnswer,
@@ -1233,8 +1249,10 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                         type: question.type,
                         score: result.score || 0,
                         maxScore: marks,
-                        feedback: result.feedback || "प्रतिक्रिया उपलब्ध छैन",
+                        feedback: result.feedback || "No feedback available (प्रतिक्रिया उपलब्ध छैन)",
                         question: questionTitle,
+                        questionEnglish: questionTitleEnglish,
+                        questionNepali: questionTitleNepali,
                         studentAnswer: combinedAnswer,
                       }))
                       .catch(() => ({
@@ -1242,8 +1260,10 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                         type: question.type,
                         score: 0,
                         maxScore: marks,
-                        feedback: "AI ग्रेडिङ असफल भयो",
+                        feedback: "AI grading failed (AI ग्रेडिङ असफल भयो)",
                         question: questionTitle,
+                        questionEnglish: questionTitleEnglish,
+                        questionNepali: questionTitleNepali,
                         studentAnswer: combinedAnswer,
                       }))
                   )
@@ -1253,8 +1273,10 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                     type: question.type,
                     score: 0,
                     maxScore: marks,
-                    feedback: "कुनै उत्तर प्रदान गरिएको छैन",
+                    feedback: "No answer provided (कुनै उत्तर प्रदान गरिएको छैन)",
                     question: questionTitle,
+                    questionEnglish: questionTitleEnglish,
+                    questionNepali: questionTitleNepali,
                     studentAnswer: "",
                   })
                 }
@@ -1304,7 +1326,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
 
               const response = typeof userAnswer === "object" ? userAnswer.response : userAnswer
 
-              if (response && response.trim()) {
+              if (response && typeof response === 'string' && response.trim()) {
                 gradingPromises.push(
                   fetch("/api/grade", {
                     method: "POST",
@@ -1322,7 +1344,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                       type: question.type,
                       score: result.score || 0,
                       maxScore: marks,
-                      feedback: result.feedback || "प्रतिक्रिया उपलब्ध छैन",
+                      feedback: result.feedback || "No feedback available (प्रतिक्रिया उपलब्ध छैन)",
                       question: selectedOptionTitle,
                       studentAnswer: response,
                     }))
@@ -1331,7 +1353,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                       type: question.type,
                       score: 0,
                       maxScore: marks,
-                      feedback: "AI ग्रेडिङ असफल भयो",
+                      feedback: "AI grading failed (AI ग्रेडिङ असफल भयो)",
                       question: selectedOptionTitle,
                       studentAnswer: response,
                     }))
@@ -1344,6 +1366,8 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                   maxScore: marks,
                   feedback: "",
                   question: questionTitle,
+                  questionEnglish: questionTitleEnglish,
+                  questionNepali: questionTitleNepali,
                   studentAnswer: "",
                 })
               }
@@ -1361,7 +1385,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
 
               const response = typeof userAnswer === "object" ? userAnswer.response : userAnswer
 
-              if (response && response.trim()) {
+              if (response && typeof response === 'string' && response.trim()) {
                 gradingPromises.push(
                   fetch("/api/grade", {
                     method: "POST",
@@ -1379,7 +1403,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                       type: question.type,
                       score: result.score || 0,
                       maxScore: marks,
-                      feedback: result.feedback || "प्रतिक्रिया उपलब्ध छैन",
+                      feedback: result.feedback || "No feedback available (प्रतिक्रिया उपलब्ध छैन)",
                       question: `${selectedTopic} (${language === 'nepali' ? 'निबन्ध' : 'Essay'})`,
                       studentAnswer: response,
                     }))
@@ -1388,7 +1412,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                       type: question.type,
                       score: 0,
                       maxScore: marks,
-                      feedback: "AI ग्रेडिङ असफल भयो",
+                      feedback: "AI grading failed (AI ग्रेडिङ असफल भयो)",
                       question: `${selectedTopic} (${language === 'nepali' ? 'निबन्ध' : 'Essay'})`,
                       studentAnswer: response,
                     }))
@@ -1401,6 +1425,8 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                   maxScore: marks,
                   feedback: "",
                   question: questionTitle,
+                  questionEnglish: questionTitleEnglish,
+                  questionNepali: questionTitleNepali,
                   studentAnswer: "",
                 })
               }
@@ -1416,7 +1442,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
 
               // Include passage context for reading comprehension, note taking, etc.
               const passage = question.passageNepali || question.passageEnglish
-              if (passage && !sampleAnswer.includes(passage)) {
+              if (passage && typeof sampleAnswer === 'string' && !sampleAnswer.includes(passage)) {
                 const passageContext = `Reference passage:\n${passage}`
                 sampleAnswer = sampleAnswer ? `${sampleAnswer}\n\n${passageContext}` : passageContext
               }
@@ -1445,7 +1471,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                 combinedAnswer = Object.entries(userAnswer)
                   .filter(([key]) => !key.includes("selected"))
                   .map(([key, val]) => typeof val === "string" ? val : JSON.stringify(val))
-                  .filter(val => val && val.trim())
+                  .filter(val => typeof val === 'string' && val.trim())
                   .join("\n")
               }
 
@@ -1456,6 +1482,8 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({
                       question: questionTitle,
+                      questionEnglish: questionTitleEnglish,
+                      questionNepali: questionTitleNepali,
                       answer: combinedAnswer,
                       marks: marks,
                       sampleAnswer: sampleAnswer,
@@ -1469,6 +1497,8 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                       maxScore: marks,
                       feedback: result.feedback || "प्रतिक्रिया उपलब्ध छैन (No feedback available)",
                       question: questionTitle,
+                      questionEnglish: questionTitleEnglish,
+                      questionNepali: questionTitleNepali,
                       studentAnswer: combinedAnswer,
                       sampleAnswer: sampleAnswer,
                     }))
@@ -1479,6 +1509,8 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                       maxScore: marks,
                       feedback: "AI ग्रेडिङ असफल भयो (AI grading failed)",
                       question: questionTitle,
+                      questionEnglish: questionTitleEnglish,
+                      questionNepali: questionTitleNepali,
                       studentAnswer: combinedAnswer,
                       sampleAnswer: sampleAnswer,
                     }))
@@ -1491,6 +1523,8 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                   maxScore: marks,
                   feedback: "",
                   question: questionTitle,
+                  questionEnglish: questionTitleEnglish,
+                  questionNepali: questionTitleNepali,
                   studentAnswer: "",
                   sampleAnswer: sampleAnswer,
                 })
@@ -1509,8 +1543,8 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
 
         // Sort feedback by question ID
         nepaliFeedback.sort((a, b) => {
-          const numA = parseInt(a.id.replace("q", ""))
-          const numB = parseInt(b.id.replace("q", ""))
+          const numA = parseInt(a.id.replace("q", ""), 10) || 0
+          const numB = parseInt(b.id.replace("q", ""), 10) || 0
           return numA - numB
         })
 
@@ -1574,7 +1608,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
             const questionTextEnglish = `${contextEnglish}\n\nPart (${label}): ${subQEnglish}`
             const questionTextNepali = `${contextNepali}\n\nभाग (${label}): ${subQNepali}`
 
-            if (userAnswer.trim()) {
+            if (typeof userAnswer === 'string' && userAnswer.trim()) {
               // Build comprehensive context with answer and explanation
               const sampleAnswerContext = explanationEnglish
                 ? `${answerEnglish || answerNepali || ''}\n\nExplanation: ${explanationEnglish || explanationNepali || ''}`
@@ -1738,7 +1772,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
       if (questions.groupB && questions.groupB.length > 0) {
         questions.groupB.forEach((question: any) => {
           const userAnswer = answers.groupB?.[question.id] || ""
-          if (userAnswer.trim()) {
+          if (typeof userAnswer === 'string' && userAnswer.trim()) {
             gradingPromises.push(
               fetch("/api/grade", {
                 method: "POST",
@@ -1784,7 +1818,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
       if (questions.groupC && questions.groupC.length > 0) {
         questions.groupC.forEach((question: any) => {
           const userAnswer = answers.groupC?.[question.id] || ""
-          if (userAnswer.trim()) {
+          if (typeof userAnswer === 'string' && userAnswer.trim()) {
             gradingPromises.push(
               fetch("/api/grade", {
                 method: "POST",
@@ -1830,7 +1864,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
       if (questions.groupD && questions.groupD.length > 0) {
         questions.groupD.forEach((question: any) => {
           const userAnswer = answers.groupD?.[question.id] || ""
-          if (userAnswer.trim()) {
+          if (typeof userAnswer === 'string' && userAnswer.trim()) {
             gradingPromises.push(
               fetch("/api/grade", {
                 method: "POST",

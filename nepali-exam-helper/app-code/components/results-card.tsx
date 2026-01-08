@@ -75,7 +75,7 @@ export function ResultsCard({
     return text.replace(/\s*\([0-9A-Za-z][^)]*\)\s*$/g, '').trim()
   }
 
-  if (!questions) return <div>Loading...</div>
+  if (!questions) return <div>{language === 'english' ? 'Loading...' : 'लोड हुँदैछ...'}</div>
 
   // Check if this is an English test
   const isEnglishTest = questions.englishQuestions && questions.englishQuestions.length > 0
@@ -185,12 +185,16 @@ export function ResultsCard({
     return (
       <div className="mb-8">
         <div className="flex items-center justify-between p-4 rounded-lg bg-blue-50 mb-4">
-          <h3 className="text-xl font-semibold text-slate-700">Group 'A' - Multiple Choice Review</h3>
+          <h3 className="text-xl font-semibold text-slate-700">
+            {language === 'english' ? "Group 'A' - Multiple Choice Review" : "समूह 'क' - बहुविकल्पीय समीक्षा"}
+          </h3>
           <div className="text-right">
             <p className="text-2xl font-bold text-slate-800">
               {results.scoreA}/{maxScoreA}
             </p>
-            <p className="text-sm text-slate-600">समूह 'क' - बहुविकल्पीय</p>
+            <p className="text-sm text-slate-600">
+              {language === 'english' ? 'Multiple Choice' : 'बहुविकल्पीय'}
+            </p>
           </div>
         </div>
         <Accordion type="single" collapsible className="w-full">
@@ -207,7 +211,7 @@ export function ResultsCard({
                 className="border border-slate-200 rounded-lg mb-2 overflow-hidden"
               >
                 <AccordionTrigger className="hover:bg-slate-50 px-4 py-3 text-left">
-                  <div className="flex justify-between w-full items-center min-h-[48px]">
+                  <div className="flex justify-between w-full items-center min-h-[48px] pr-4">
                     <span className="text-left font-medium pr-4 flex-1 leading-tight">
                       {index + 1}.{" "}
                       {question.english.length > 80 ? `${question.english.substring(0, 80)}...` : question.english}
@@ -241,7 +245,7 @@ export function ResultsCard({
                         : "bg-slate-50 border-l-4 border-slate-400"
                         }`}
                     >
-                      <p className="font-semibold text-slate-800 mb-2">Your Answer / तपाईंको उत्तर:</p>
+                      <p className="font-semibold text-slate-800 mb-2">{language === 'english' ? 'Your Answer:' : 'तपाईंको उत्तर:'}</p>
                       {userAnswer ? (
                         <div className="space-y-1">
                           <p className="text-slate-700 font-medium">
@@ -254,7 +258,7 @@ export function ResultsCard({
                           )}
                         </div>
                       ) : (
-                        <p className="text-slate-500 italic">No answer provided / कुनै उत्तर प्रदान गरिएको छैन</p>
+                        <p className="text-slate-500 italic">{language === 'english' ? 'No answer provided' : 'कुनै उत्तर प्रदान गरिएको छैन'}</p>
                       )}
                     </div>
 
@@ -281,7 +285,7 @@ export function ResultsCard({
                         <div className="flex items-start gap-3">
                           <Lightbulb className="h-5 w-5 text-amber-600 mt-1 flex-shrink-0" />
                           <div className="flex-1">
-                            <p className="font-semibold text-amber-800 mb-2">Explanation / व्याख्या:</p>
+                            <p className="font-semibold text-amber-800 mb-2">{language === 'english' ? 'Explanation:' : 'व्याख्या:'}</p>
                             <div className="text-amber-700 leading-relaxed whitespace-pre-line"><MathText text={(language === 'english' ? ((question as any).explanationEnglish || question.explanation) : ((question as any).explanationNepali || question.explanation)) || ""} /></div>
                           </div>
                         </div>
@@ -385,12 +389,12 @@ export function ResultsCard({
     return (
       <div>
         <div className={`flex items-center justify-between p-4 rounded-lg ${color} mb-4`}>
-          <h3 className="text-xl font-semibold text-slate-700">{title}</h3>
+          <h3 className="text-xl font-semibold text-slate-700">{language === 'english' ? title : titleNp}</h3>
           <div className="text-right">
             <p className="text-2xl font-bold text-slate-800">
               {score}/{maxScore}
             </p>
-            <p className="text-sm text-slate-600">{titleNp}</p>
+            <p className="text-sm text-slate-600">{language === 'english' ? 'Long Answer' : 'लामो उत्तर'}</p>
           </div>
         </div>
         <Accordion type="single" collapsible className="w-full">
@@ -427,21 +431,24 @@ export function ResultsCard({
                     <div className="text-slate-600 mb-3"><MathText text={cleanNepaliText(question.nepali)} /></div>
                     <div className="bg-slate-50 p-3 rounded-lg">
                       <p className="text-slate-600">
-                        <span className="font-semibold text-slate-800">Your Answer / तपाईंको उत्तर:</span>
+                        <span className="font-semibold text-slate-800">{language === 'english' ? 'Your Answer:' : 'तपाईंको उत्तर:'}</span>
                       </p>
                       <p className="mt-1 text-slate-700 whitespace-pre-wrap break-words">
-                        {formatAnswerForDisplay(fb.studentAnswer) || "No answer provided"}
+                        {formatAnswerForDisplay(fb.studentAnswer) || (language === 'english' ? "No answer provided" : "कुनै उत्तर प्रदान गरिएको छैन")}
                       </p>
                     </div>
-                    <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
-                      <div className="flex items-start gap-3">
-                        <MessageSquareQuote className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
-                        <div className="flex-1 min-w-0">
-                          <p className="font-semibold text-blue-800">Feedback / प्रतिक्रिया:</p>
-                          <div className="text-blue-700 mt-1 leading-relaxed whitespace-pre-wrap break-words"><MathText text={fb.feedback} /></div>
+                    {/* Feedback - only show if student provided an answer */}
+                    {formatAnswerForDisplay(fb.studentAnswer) && fb.feedback && !fb.feedback.includes('No answer provided') && !fb.feedback.includes('कुनै उत्तर') && (
+                      <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
+                        <div className="flex items-start gap-3">
+                          <MessageSquareQuote className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
+                          <div className="flex-1 min-w-0">
+                            <p className="font-semibold text-blue-800">{language === 'english' ? 'Feedback:' : 'प्रतिक्रिया:'}</p>
+                            <div className="text-blue-700 mt-1 leading-relaxed whitespace-pre-wrap break-words"><MathText text={fb.feedback} /></div>
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    )}
                     {/* Show Sample Answer for Groups B, C, D questions */}
                     {(language === 'english' ? ((question as any).sampleAnswerEnglish || question.sampleAnswer) : ((question as any).sampleAnswerNepali || question.sampleAnswer)) && (
                       <div className="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded-r-lg">
@@ -566,7 +573,7 @@ export function ResultsCard({
                       <div key={groupIndex} className="mb-6">
                         <div className={`flex items-center justify-between p-4 rounded-lg ${groupBgColor} mb-4`}>
                           <h3 className="text-xl font-semibold">
-                            {language === 'nepali' ? group.groupName : (group.groupNameEnglish || group.groupName)}
+                            {language === 'english' ? (group.groupNameEnglish || group.groupName) : (group.groupName || group.groupNameEnglish)}
                           </h3>
                           <div className="text-right">
                             <p className="text-2xl font-bold">{groupScore}/{groupMaxScore}</p>
@@ -590,11 +597,11 @@ export function ResultsCard({
                                 className="border border-slate-200 rounded-lg mb-2 overflow-hidden"
                               >
                                 <AccordionTrigger className="hover:bg-slate-50 px-4 py-3 text-left">
-                                  <div className="flex justify-between w-full items-center min-h-[48px]">
+                                  <div className="flex justify-between w-full items-center min-h-[48px] pr-4">
                                     <span className="text-left font-medium pr-4 flex-1 leading-tight">
                                       {idx + 1}. {(language === 'nepali'
-                                        ? (question?.questionNepali || question?.questionEnglish || fb.question)
-                                        : (question?.questionEnglish || question?.questionNepali || fb.question))?.substring(0, 80) || (language === 'nepali' ? 'प्रश्न' : 'Question')}...
+                                        ? (question?.questionNepali || question?.questionEnglish || fb.questionNepali || fb.question)
+                                        : (question?.questionEnglish || question?.questionNepali || fb.questionEnglish || fb.question))?.substring(0, 80) || (language === 'nepali' ? 'प्रश्न' : 'Question')}...
                                     </span>
                                     <div className="flex items-center gap-2 flex-shrink-0 ml-4">
                                       {isFullScore ? (
@@ -645,18 +652,20 @@ export function ResultsCard({
                                       </p>
                                     </div>
 
-                                    {/* Feedback */}
-                                    <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
-                                      <div className="flex items-start gap-3">
-                                        <Lightbulb className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
-                                        <div className="flex-1">
-                                          <p className="font-semibold text-blue-800 mb-1">
-                                            {language === 'nepali' ? 'प्रतिक्रिया:' : 'Feedback:'}
-                                          </p>
-                                          <p className="text-blue-700 leading-relaxed whitespace-pre-wrap break-words">{fb.feedback}</p>
+                                    {/* Feedback - only show if student provided an answer */}
+                                    {formatAnswerForDisplay(fb.studentAnswer) && fb.feedback && !fb.feedback.includes('No answer provided') && !fb.feedback.includes('कुनै उत्तर') && (
+                                      <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
+                                        <div className="flex items-start gap-3">
+                                          <Lightbulb className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
+                                          <div className="flex-1">
+                                            <p className="font-semibold text-blue-800 mb-1">
+                                              {language === 'nepali' ? 'प्रतिक्रिया:' : 'Feedback:'}
+                                            </p>
+                                            <p className="text-blue-700 leading-relaxed whitespace-pre-wrap break-words">{fb.feedback}</p>
+                                          </div>
                                         </div>
                                       </div>
-                                    </div>
+                                    )}
 
                                     {/* Sample answer if available */}
                                     {(question?.answerNepali || question?.answerEnglish) && (
@@ -732,10 +741,14 @@ export function ResultsCard({
                       const isFullScore = fb.score >= fb.maxScore
                       const isPartialScore = fb.score > 0 && fb.score < fb.maxScore
 
-                      // Find the original question for context
+                      // Find the original question for context - try multiple ID patterns
                       const originalQuestion = questions.nepaliQuestions.find(
-                        (q: any) => `q${q.questionNumberEnglish || q.questionNumber || idx + 1}` === fb.id
-                      )
+                        (q: any, qIdx: number) =>
+                          `q${q.questionNumberEnglish || q.questionNumber || qIdx + 1}` === fb.id ||
+                          `q${qIdx + 1}` === fb.id ||
+                          String(q.questionNumberEnglish) === fb.id?.replace('q', '') ||
+                          qIdx === idx
+                      ) || questions.nepaliQuestions[idx]
 
                       // Get question type display name
                       const getTypeDisplayName = (type: string) => {
@@ -814,9 +827,11 @@ export function ResultsCard({
                           className="border border-slate-200 rounded-lg mb-2 overflow-hidden"
                         >
                           <AccordionTrigger className="hover:bg-slate-50 px-4 py-3 text-left">
-                            <div className="flex justify-between w-full items-center min-h-[48px]">
+                            <div className="flex justify-between w-full items-center min-h-[48px] pr-4">
                               <span className="text-left font-medium pr-4 flex-1 leading-tight">
-                                {idx + 1}. {fb.question?.substring(0, 80) || "प्रश्न"}...
+                                {idx + 1}. {((language === 'english'
+                                  ? (originalQuestion?.titleEnglish || originalQuestion?.questionEnglish || originalQuestion?.title || fb.questionEnglish || fb.question)
+                                  : (originalQuestion?.titleNepali || originalQuestion?.questionNepali || originalQuestion?.title || fb.questionNepali || fb.question))?.substring(0, 80) || (language === 'english' ? "Question" : "प्रश्न"))}...
                                 <Badge variant="outline" className="ml-2 text-xs">{getTypeDisplayName(fb.type)}</Badge>
                               </span>
                               <div className="flex items-center gap-2 flex-shrink-0 ml-4">
@@ -851,11 +866,9 @@ export function ResultsCard({
                                   {language === 'nepali' ? 'प्रश्न:' : 'Question:'}
                                 </p>
                                 <p className="text-slate-700 whitespace-pre-wrap">
-                                  {typeof fb.question === "object"
-                                    ? Object.entries(fb.question as Record<string, string>)
-                                      .map(([key, value]) => `${key}: ${value}`)
-                                      .join("\n")
-                                    : fb.question || (language === 'nepali' ? 'प्रश्न' : 'Question')}
+                                  {language === 'english'
+                                    ? (originalQuestion?.titleEnglish || originalQuestion?.questionEnglish || fb.questionEnglish || originalQuestion?.title || fb.question || 'Question')
+                                    : (originalQuestion?.titleNepali || originalQuestion?.questionNepali || fb.questionNepali || originalQuestion?.title || fb.question || 'प्रश्न')}
                                 </p>
                               </div>
 
@@ -869,18 +882,20 @@ export function ResultsCard({
                                 </p>
                               </div>
 
-                              {/* Feedback */}
-                              <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
-                                <div className="flex items-start gap-3">
-                                  <Lightbulb className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
-                                  <div className="flex-1">
-                                    <p className="font-semibold text-blue-800 mb-1">
-                                      {language === 'nepali' ? 'प्रतिक्रिया:' : 'Feedback:'}
-                                    </p>
-                                    <p className="text-blue-700 leading-relaxed whitespace-pre-wrap break-words">{fb.feedback}</p>
+                              {/* Feedback - only show if student provided an answer */}
+                              {formatAnswerForDisplay(fb.studentAnswer) && fb.feedback && !fb.feedback.includes('No answer provided') && !fb.feedback.includes('कुनै उत्तर') && (
+                                <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
+                                  <div className="flex items-start gap-3">
+                                    <Lightbulb className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
+                                    <div className="flex-1">
+                                      <p className="font-semibold text-blue-800 mb-1">
+                                        {language === 'nepali' ? 'प्रतिक्रिया:' : 'Feedback:'}
+                                      </p>
+                                      <p className="text-blue-700 leading-relaxed whitespace-pre-wrap break-words">{fb.feedback}</p>
+                                    </div>
                                   </div>
                                 </div>
-                              </div>
+                              )}
 
                               {/* Sample answer if available */}
                               {(fb.sampleAnswer || (language === 'english' ? (originalQuestion?.sampleAnswerEnglish || originalQuestion?.sampleAnswer) : (originalQuestion?.sampleAnswerNepali || originalQuestion?.sampleAnswer)) || (language === 'english' ? (originalQuestion?.correctAnswerEnglish || originalQuestion?.correctAnswer) : (originalQuestion?.correctAnswerNepali || originalQuestion?.correctAnswer))) && (
@@ -1049,8 +1064,8 @@ export function ResultsCard({
                                 </p>
                               </div>
 
-                              {/* Feedback - only show if there's actual feedback */}
-                              {fb.feedback && (
+                              {/* Feedback - only show if there's actual feedback and student answered */}
+                              {fb.studentAnswer && fb.feedback && !fb.feedback.includes('No answer provided') && !fb.feedback.includes('कुनै उत्तर') && (
                                 <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
                                   <div className="flex items-start gap-3">
                                     <Lightbulb className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
@@ -1166,8 +1181,8 @@ export function ResultsCard({
 
                       const fallbackFeedback = !hasAIFeedback
                         ? hasAnswer
-                          ? "AI grading not available"
-                          : "No answer provided"
+                          ? (language === 'english' ? "AI grading not available" : "AI ग्रेडिङ उपलब्ध छैन")
+                          : (language === 'english' ? "No answer provided" : "कुनै उत्तर प्रदान गरिएको छैन")
                         : ""
 
                       const questionMarks = (question as any).marksEnglish || question.marks || 0
@@ -1575,7 +1590,8 @@ export function ResultsCard({
                                     <p className="font-semibold text-slate-800 mb-2">{language === 'nepali' ? 'तपाईंको उत्तर:' : 'Your Answer:'}</p>
                                     <p className="text-slate-700 whitespace-pre-wrap">{userAnswer?.content || (language === 'nepali' ? 'उत्तर दिइएको छैन' : 'No answer provided')}</p>
                                   </div>
-                                  {(hasAIFeedback || fallbackFeedback) && (
+                                  {/* Feedback - only show if student provided an answer */}
+                                  {hasAnswer && (hasAIFeedback || (fallbackFeedback && !fallbackFeedback.includes('No answer') && !fallbackFeedback.includes('उत्तर'))) && (
                                     <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
                                       <div className="flex items-start gap-2">
                                         <Lightbulb className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
@@ -1622,12 +1638,12 @@ export function ResultsCard({
                                         </Badge>
                                       </div>
                                       <div className={`p-3 rounded-lg ${isCorrect ? "bg-green-50 border-l-4 border-green-500" : "bg-red-50 border-l-4 border-red-500"}`}>
-                                        <p className="font-semibold text-slate-800 mb-1">Your Answer / तपाईंको उत्तर:</p>
+                                        <p className="font-semibold text-slate-800 mb-1">{language === 'english' ? 'Your Answer:' : 'तपाईंको उत्तर:'}</p>
                                         <p className="text-slate-700 font-medium">{String(answer || 'No answer')}</p>
                                       </div>
                                       {feedback && (
                                         <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded-r-lg">
-                                          <p className="font-semibold text-blue-800 mb-1">Feedback / प्रतिक्रिया:</p>
+                                          <p className="font-semibold text-blue-800 mb-1">{language === 'english' ? 'Feedback:' : 'प्रतिक्रिया:'}</p>
                                           <p className="text-blue-700">{feedback.feedback}</p>
                                         </div>
                                       )}
@@ -1643,12 +1659,12 @@ export function ResultsCard({
                               ) : (
                                 <div className="space-y-3">
                                   <div className="p-3 rounded-lg bg-slate-50 border-l-4 border-slate-400">
-                                    <p className="font-semibold text-slate-800 mb-1">Your Answer / तपाईंको उत्तर:</p>
-                                    <p className="text-slate-500 italic">No answer provided / कुनै उत्तर दिइएको छैन</p>
+                                    <p className="font-semibold text-slate-800 mb-1">{language === 'english' ? 'Your Answer:' : 'तपाईंको उत्तर:'}</p>
+                                    <p className="text-slate-500 italic">{language === 'english' ? 'No answer provided' : 'कुनै उत्तर दिइएको छैन'}</p>
                                   </div>
                                   {!hasAIFeedback && (
                                     <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded-r-lg">
-                                      <p className="font-semibold text-blue-800 mb-1">Feedback / प्रतिक्रिया:</p>
+                                      <p className="font-semibold text-blue-800 mb-1">{language === 'english' ? 'Feedback:' : 'प्रतिक्रिया:'}</p>
                                       <p className="text-blue-700">{fallbackFeedback}</p>
                                     </div>
                                   )}

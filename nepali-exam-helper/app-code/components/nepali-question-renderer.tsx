@@ -467,7 +467,8 @@ function TenseChangeQuestion({ question, answer, onAnswerChange, questionIndex, 
 
 // Grammar Choice - choose one question to answer
 function GrammarChoiceQuestion({ question, answer, onAnswerChange, questionIndex, showExplanation, language }: NepaliQuestionRendererProps) {
-    const currentAnswer = answer || { selectedOption: "", response: "" }
+    const rawAnswer = typeof answer === 'object' && answer !== null ? answer : { response: typeof answer === 'string' ? answer : "" }
+    const currentAnswer = { selectedOption: rawAnswer.selectedOption || "", response: rawAnswer.response || "" }
     const qNum = question.questionNumberEnglish || question.questionNumber || 0
     const selectedSub = question.subQuestions?.find(sub =>
         (sub.idEnglish || sub.idNepali || sub.id) === currentAnswer.selectedOption
@@ -581,7 +582,8 @@ function ReadingComprehensionQuestion({ question, answer, onAnswerChange, questi
 
 // Free Writing Choice - pick one option to write
 function FreeWritingChoiceQuestion({ question, answer, onAnswerChange, questionIndex, language }: NepaliQuestionRendererProps) {
-    const currentAnswer = answer || { selectedOption: "", response: "" }
+    const rawAnswer = typeof answer === 'object' && answer !== null ? answer : { response: typeof answer === 'string' ? answer : "" }
+    const currentAnswer = { selectedOption: rawAnswer.selectedOption || "", response: rawAnswer.response || "" }
     const qNum = question.questionNumberEnglish || question.questionNumber || 0
 
     return (
@@ -747,7 +749,8 @@ function LiteratureArgumentativeQuestion({ question, answer, onAnswerChange, que
 
 // Literature Explanation - explain quotes
 function LiteratureExplanationQuestion({ question, answer, onAnswerChange, questionIndex, language }: NepaliQuestionRendererProps) {
-    const currentAnswer = answer || { selectedOption: "", response: "" }
+    const rawAnswer = typeof answer === 'object' && answer !== null ? answer : { response: typeof answer === 'string' ? answer : "" }
+    const currentAnswer = { selectedOption: rawAnswer.selectedOption || "", response: rawAnswer.response || "" }
     const qNum = question.questionNumberEnglish || question.questionNumber || 0
 
     return (
@@ -787,7 +790,8 @@ function LiteratureExplanationQuestion({ question, answer, onAnswerChange, quest
 
 // Literature Critical Analysis Choice - passage with analysis
 function LiteratureCriticalAnalysisQuestion({ question, answer, onAnswerChange, questionIndex, language }: NepaliQuestionRendererProps) {
-    const currentAnswer = answer || { selectedOption: "", response: "" }
+    const rawAnswer = typeof answer === 'object' && answer !== null ? answer : { response: typeof answer === 'string' ? answer : "" }
+    const currentAnswer = { selectedOption: rawAnswer.selectedOption || "", response: rawAnswer.response || "" }
     const qNum = question.questionNumberEnglish || question.questionNumber || 0
 
     return (
@@ -969,36 +973,61 @@ export function NepaliQuestionRenderer(props: NepaliQuestionRendererProps) {
                 <Renderer {...props} showExplanation={showExplanation} />
 
                 {/* Show explanation/sample answer when toggled */}
-                {showExplanation && hasHelp && (
-                    <div className="mt-4 bg-amber-50 border-l-4 border-amber-500 p-3 rounded-r-lg">
-                        <div className="text-sm space-y-3">
-                            {hasSampleAnswer && (
-                                <div>
-                                    <span className="font-medium text-amber-800">{getUIText(props.language, 'sampleAnswer')}</span>
-                                    <div className="text-amber-700 mt-1 whitespace-pre-line">
-                                        {formatAnswerForDisplay(getText(props.language, question.sampleAnswerNepali, question.sampleAnswerEnglish) || question.sampleAnswer)}
+                {showExplanation && hasHelp && (() => {
+                    // Get actual displayed text for each field based on current language
+                    const displayedSampleAnswer = getText(props.language, question.sampleAnswerNepali, question.sampleAnswerEnglish) || question.sampleAnswer
+                    const displayedCorrectAnswer = getText(props.language, question.correctAnswerNepali, question.correctAnswerEnglish) || question.correctAnswer
+                    const displayedExplanation = getText(props.language, question.explanationNepali, question.explanationEnglish) || question.explanation
+
+                    // Check if displayed text is non-empty (handles whitespace-only strings)
+                    const isNonEmpty = (val: any): boolean => {
+                        if (!val) return false
+                        if (typeof val === 'string') return val.trim().length > 0
+                        if (Array.isArray(val)) return val.length > 0
+                        return true
+                    }
+
+                    const showSampleAnswer = isNonEmpty(displayedSampleAnswer)
+                    const showCorrectAnswer = isNonEmpty(displayedCorrectAnswer) && !showSampleAnswer
+                    const showExplanationSection = isNonEmpty(displayedExplanation)
+
+                    // Only render the question-level box if there's actual question-level content
+                    // (SubQuestionExplanation handles subquestion hints separately inline)
+                    if (!showSampleAnswer && !showCorrectAnswer && !showExplanationSection) {
+                        return null
+                    }
+
+                    return (
+                        <div className="mt-4 bg-amber-50 border-l-4 border-amber-500 p-3 rounded-r-lg">
+                            <div className="text-sm space-y-3">
+                                {showSampleAnswer && (
+                                    <div>
+                                        <span className="font-medium text-amber-800">{getUIText(props.language, 'sampleAnswer')}</span>
+                                        <div className="text-amber-700 mt-1 whitespace-pre-line">
+                                            {formatAnswerForDisplay(displayedSampleAnswer)}
+                                        </div>
                                     </div>
-                                </div>
-                            )}
-                            {hasCorrectAnswer && !hasSampleAnswer && (
-                                <div>
-                                    <span className="font-medium text-amber-800">{props.language === 'english' ? 'Correct Answer:' : 'सही उत्तर:'}</span>
-                                    <p className="text-amber-700 mt-1 whitespace-pre-line">
-                                        {formatAnswerForDisplay(getText(props.language, question.correctAnswerNepali, question.correctAnswerEnglish) || question.correctAnswer)}
-                                    </p>
-                                </div>
-                            )}
-                            {hasExplanation && (
-                                <div>
-                                    <span className="font-medium text-amber-800">{getUIText(props.language, 'explanation')}</span>
-                                    <p className="text-amber-700 mt-1 whitespace-pre-line">
-                                        {getText(props.language, question.explanationNepali, question.explanationEnglish) || question.explanation}
-                                    </p>
-                                </div>
-                            )}
+                                )}
+                                {showCorrectAnswer && (
+                                    <div>
+                                        <span className="font-medium text-amber-800">{props.language === 'english' ? 'Correct Answer:' : 'सही उत्तर:'}</span>
+                                        <p className="text-amber-700 mt-1 whitespace-pre-line">
+                                            {formatAnswerForDisplay(displayedCorrectAnswer)}
+                                        </p>
+                                    </div>
+                                )}
+                                {showExplanationSection && (
+                                    <div>
+                                        <span className="font-medium text-amber-800">{getUIText(props.language, 'explanation')}</span>
+                                        <p className="text-amber-700 mt-1 whitespace-pre-line">
+                                            {displayedExplanation}
+                                        </p>
+                                    </div>
+                                )}
+                            </div>
                         </div>
-                    </div>
-                )}
+                    )
+                })()}
             </CardContent>
         </Card>
     )

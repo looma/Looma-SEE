@@ -146,7 +146,7 @@ export function FreeResponseGroup({
     }
   }
 
-  const answeredCount = Object.values(answers).filter((answer) => answer && answer.trim().length > 0).length
+  const answeredCount = Object.values(answers).filter((answer) => answer && typeof answer === 'string' && answer.trim().length > 0).length
   const progressPercentage = questions.length > 0 ? (answeredCount / questions.length) * 100 : 0
   const groupInfo = getGroupInfo(group)
 

@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { BookOpen, AlertTriangle, RotateCcw } from "lucide-react"
 import { loadStudentProgress } from "@/lib/storage"
+import { useLanguage } from "@/lib/language-context"
 
 type TestMeta = {
   id: string
@@ -27,6 +28,7 @@ interface TestSelectorProps {
 }
 
 export function TestSelector({ currentTestId, onTestChange, onBackToSelection, studentId }: TestSelectorProps) {
+  const { language } = useLanguage()
   const [tests, setTests] = useState<TestMeta[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
@@ -148,8 +150,9 @@ export function TestSelector({ currentTestId, onTestChange, onBackToSelection, s
         <div className="flex items-center gap-3">
           <BookOpen className="h-5 w-5 text-amber-600" />
           <div>
-            <p className="font-semibold text-slate-800">No Practice Tests Available</p>
-            <p className="text-sm text-slate-600">कुनै अभ्यास परीक्षा उपलब्ध छैन</p>
+            <p className="font-semibold text-slate-800">
+              {language === "english" ? "No Practice Tests Available" : "कुनै अभ्यास परीक्षा उपलब्ध छैन"}
+            </p>
           </div>
         </div>
         <div className="mt-3 p-3 bg-amber-50 rounded-lg border border-amber-200">
@@ -170,8 +173,9 @@ export function TestSelector({ currentTestId, onTestChange, onBackToSelection, s
         <div className="flex items-center gap-3">
           <BookOpen className="h-5 w-5 text-amber-600" />
           <div>
-            <p className="font-semibold text-slate-800">Current Practice Test</p>
-            <p className="text-sm text-slate-600">हालको अभ्यास परीक्षा</p>
+            <p className="font-semibold text-slate-800">
+              {language === "english" ? "Current Practice Test" : "हालको अभ्यास परीक्षा"}
+            </p>
           </div>
         </div>
 
