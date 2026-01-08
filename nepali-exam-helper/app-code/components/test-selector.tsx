@@ -99,8 +99,10 @@ export function TestSelector({ currentTestId, onTestChange, onBackToSelection, s
 
     const hasAttempts = (progress.attempts || []).length > 0
     const hasProgress = totalAnswered > 0
-    const estimatedTotal = 25
-    const percentage = Math.round((totalAnswered / estimatedTotal) * 100)
+    // Estimate total questions based on detected answer format
+    // Use actual answered count * 1.5 or a minimum of 10 to estimate progress reasonably
+    const estimatedTotal = Math.max(10, Math.ceil(totalAnswered * 1.5))
+    const percentage = totalAnswered > 0 ? Math.round((totalAnswered / estimatedTotal) * 100) : 0
 
     return {
       completed: hasAttempts,

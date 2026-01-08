@@ -474,10 +474,12 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
             // Handle different English question types
             if ((question as any).type === 'reading_comprehension' && (question as any).subSections) {
               // For reading comprehension, grade each sub-section separately
-              question.subSections.forEach((section: any) => {
+              question.subSections.forEach((section: any, sectionIndex: number) => {
+                // CRITICAL: Use idEnglish or idNepali for consistent storage keys, matching the renderer
+                const sectionId = section.idEnglish || section.idNepali || section.id || `section_${sectionIndex}`
                 if (section.type === 'matching' && section.columns && section.correctAnswer) {
                   // Grade matching questions automatically
-                  const sectionAnswer = userAnswer[section.id]
+                  const sectionAnswer = userAnswer[sectionId]
                   if (sectionAnswer && typeof sectionAnswer === 'object') {
                     const correctMatches = section.correctAnswer || []
                     const userMatches: Array<{ A: string; B: string }> = []
@@ -507,9 +509,10 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                       }
                     })
 
-                    // Calculate marks per match
-                    const marksPerMatch = section.marks && totalMatches > 0
-                      ? Math.round((section.marks / totalMatches) * 10) / 10
+                    // Calculate marks per match (use bilingual fallback)
+                    const matchingSectionMarks = section.marksEnglish || section.marks || 0
+                    const marksPerMatch = matchingSectionMarks && totalMatches > 0
+                      ? Math.round((matchingSectionMarks / totalMatches) * 10) / 10
                       : 1
                     const score = correctCount * marksPerMatch
                     const feedback = correctCount === totalMatches
@@ -521,19 +524,19 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                     console.log(`🎯 Auto-grading matching question: ${correctCount}/${totalMatches} correct`)
 
                     gradingPromises.push(Promise.resolve({
-                      id: `${(question as any).id}_${section.id}`,
+                      id: `${(question as any).id}_${sectionId}`,
                       score: score,
                       feedback: feedback,
                       question: section.title || 'Matching question',
                       studentAnswer: JSON.stringify(userMatches),
                       group: "English",
                       questionId: (question as any).id,
-                      sectionId: section.id,
+                      sectionId: sectionId,
                     }))
                   }
                 } else if (section.type === 'ordering' && section.sentences && section.correctAnswer) {
                   // Grade ordering questions automatically
-                  const sectionAnswer = userAnswer[section.id]
+                  const sectionAnswer = userAnswer[sectionId]
                   if (sectionAnswer && typeof sectionAnswer === 'object') {
                     const correctOrder = section.correctAnswer || [] // Array of item IDs in correct order
                     const sentences = section.sentences || section.items || []
@@ -545,7 +548,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                       const itemId = item.idEnglish || item.id
                       const position = sectionAnswer[itemId]
                       if (position) {
-                        const posIndex = parseInt(position) - 1 // Convert 1-based to 0-based
+                        const posIndex = parseInt(position, 10) - 1 // Convert 1-based to 0-based
                         userOrderArray[posIndex] = itemId
                       }
                     })
@@ -563,9 +566,10 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                       }
                     })
 
-                    // Calculate marks per item
-                    const marksPerItem = section.marks && totalItems > 0
-                      ? Math.round((section.marks / totalItems) * 10) / 10
+                    // Calculate marks per item (use bilingual fallback)
+                    const orderingSectionMarks = section.marksEnglish || section.marks || 0
+                    const marksPerItem = orderingSectionMarks && totalItems > 0
+                      ? Math.round((orderingSectionMarks / totalItems) * 10) / 10
                       : 1
                     const score = correctCount * marksPerItem
                     const feedback = correctCount === totalItems
@@ -576,66 +580,77 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
 
                     // Format user answer for display
                     const userAnswerDisplay = userOrder.map((id, idx) => {
-                      const sentence = sentences.find((s: any) => s.id === id)
-                      return `${idx + 1}. ${sentence?.text || id}`
+                      const sentence = sentences.find((s: any) => (s.idEnglish || s.id) === id || s.id === id)
+                      return `${idx + 1}. ${sentence?.textEnglish || sentence?.text || id}`
                     }).join('\n')
 
                     gradingPromises.push(Promise.resolve({
-                      id: `${(question as any).id}_${section.id}`,
+                      id: `${(question as any).id}_${sectionId}`,
                       score: score,
                       feedback: feedback,
                       question: section.title || 'Ordering question',
                       studentAnswer: userAnswerDisplay || 'No answer provided',
                       group: "English",
                       questionId: (question as any).id,
-                      sectionId: section.id,
+                      sectionId: sectionId,
                     }))
                   }
                 } else if (section.subQuestions) {
                   section.subQuestions.forEach((subQ: any) => {
-                    const sectionAnswer = userAnswer[section.id]
+                    const sectionAnswer = userAnswer[sectionId]
                     if (sectionAnswer && typeof sectionAnswer === 'object') {
                       // Use same ID pattern as renderer: idEnglish || id
                       const subQId = subQ.idEnglish || subQ.id
                       const userSubAnswer = sectionAnswer[subQId]
                       if (userSubAnswer && typeof userSubAnswer === 'string' && userSubAnswer.trim().length > 0) {
-                        // Calculate marks for sub-question
-                        const subQuestionMarks = subQ.marks || (section.marks ? Math.round((section.marks / section.subQuestions.length) * 10) / 10 : 1)
+                        // Calculate marks for sub-question (use bilingual fallback)
+                        const sectionMarks = section.marksEnglish || section.marks || 0
+                        const subQuestionMarks = subQ.marksEnglish || subQ.marks || (sectionMarks ? Math.round((sectionMarks / section.subQuestions.length) * 10) / 10 : 1)
 
                         if (section.type === 'true_false' || section.type === 'true_false_not_given') {
                           // Grade true/false and true/false/not given questions automatically
                           console.log(`🎯 Auto-grading ${section.type} question: ${subQ.questionEnglish}`)
-                          const isCorrect = userSubAnswer.toUpperCase() === subQ.correctAnswer.toUpperCase()
+                          // Use bilingual fallback for correct answer
+                          const correctAnswer = subQ.correctAnswerEnglish || subQ.correctAnswer || subQ.correctAnswerNepali || ''
+                          const isCorrect = correctAnswer && typeof correctAnswer === 'string' && userSubAnswer.toUpperCase() === correctAnswer.toUpperCase()
                           const score = isCorrect ? subQuestionMarks : 0
                           const feedback = isCorrect
                             ? "Correct! Well done."
-                            : `Incorrect. The correct answer is ${subQ.correctAnswer}.`
+                            : `Incorrect. The correct answer is ${correctAnswer}.`
 
                           console.log(`✅ Auto-graded result: ${isCorrect ? 'CORRECT' : 'INCORRECT'} - ${feedback}`)
 
                           gradingPromises.push(Promise.resolve({
-                            id: `${(question as any).id}_${section.id}_${subQ.id}`,
+                            id: `${(question as any).id}_${sectionId}_${subQ.idEnglish || subQ.id}`,
                             score: score,
                             feedback: feedback,
                             question: subQ.questionEnglish,
                             studentAnswer: userSubAnswer,
                             group: "English",
                             questionId: (question as any).id,
-                            sectionId: section.id,
-                            subQuestionId: subQ.id,
+                            sectionId: sectionId,
+                            subQuestionId: subQ.idEnglish || subQ.id,
                           }))
                         } else if (section.type === 'short_answer' || section.type === 'fill_in_the_blanks') {
                           // Grade open-ended questions with AI
                           console.log(`🤖 AI-grading ${section.type} question: ${subQ.questionEnglish}`)
+
+                          // Build comprehensive context with passage and correct answer
+                          let aiContext = subQ.correctAnswerEnglish || subQ.correctAnswer || subQ.correctAnswerNepali || ''
+                          const passageContent = (question as any).passageEnglish || (question as any).passage || (question as any).passageNepali
+                          if (passageContent && !aiContext.includes(passageContent)) {
+                            aiContext = aiContext ? `${aiContext}\n\nReference passage:\n${passageContent}` : `Reference passage:\n${passageContent}`
+                          }
+
                           gradingPromises.push(
                             fetch("/api/grade", {
                               method: "POST",
                               headers: { "Content-Type": "application/json" },
                               body: JSON.stringify({
-                                question: subQ.questionEnglish,
+                                question: subQ.questionEnglish || subQ.question || subQ.questionNepali,
                                 answer: userSubAnswer,
                                 marks: subQuestionMarks,
-                                sampleAnswer: subQ.correctAnswer,
+                                sampleAnswer: aiContext,
                               }),
                             })
                               .then(async (res) => {
@@ -646,26 +661,26 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                                 return result
                               })
                               .then((result) => ({
-                                id: `${question.id}_${section.id}_${subQ.id}`,
+                                id: `${question.id}_${sectionId}_${subQ.idEnglish || subQ.id}`,
                                 score: result.score || 0,
                                 feedback: result.feedback || "No feedback available",
                                 question: subQ.questionEnglish,
                                 studentAnswer: userSubAnswer,
                                 group: "English",
                                 questionId: question.id,
-                                sectionId: section.id,
-                                subQuestionId: subQ.id,
+                                sectionId: sectionId,
+                                subQuestionId: subQ.idEnglish || subQ.id,
                               }))
                               .catch((error) => ({
-                                id: `${question.id}_${section.id}_${subQ.id}`,
+                                id: `${question.id}_${sectionId}_${subQ.idEnglish || subQ.id}`,
                                 score: 0,
                                 feedback: `AI grading failed: ${error.message || 'Unknown error'}`,
                                 question: subQ.questionEnglish,
                                 studentAnswer: userSubAnswer,
                                 group: "English",
                                 questionId: question.id,
-                                sectionId: section.id,
-                                subQuestionId: subQ.id,
+                                sectionId: sectionId,
+                                subQuestionId: subQ.idEnglish || subQ.id,
                               }))
                           )
                         }
@@ -681,20 +696,26 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                 const subQId = subQ.idEnglish || subQ.id
                 const userSubAnswer = userAnswer[subQId]
                 if (userSubAnswer && typeof userSubAnswer === 'string' && userSubAnswer.trim().length > 0) {
-                  // Calculate marks for sub-question
-                  const subQuestionMarks = subQ.marks || (question.marks ? Math.round((question.marks / question.subQuestions.length) * 10) / 10 : 1)
+                  // Calculate marks for sub-question (use bilingual fallback)
+                  const questionMarks = question.marksEnglish || question.marks || 0
+                  const subQuestionMarks = subQ.marksEnglish || subQ.marks || (questionMarks ? Math.round((questionMarks / question.subQuestions.length) * 10) / 10 : 1)
 
                   if (subQ.type === 'reproduce') {
                     // Grade grammar/reproduce questions with AI
+                    // Build context with correct answer and grammar explanation
+                    const correctAnswer = subQ.correctAnswerEnglish || subQ.correctAnswer || subQ.correctAnswerNepali || ''
+                    const explanation = subQ.explanationEnglish || subQ.explanation || subQ.explanationNepali || ''
+                    const aiContext = explanation ? `${correctAnswer}\n\nGrammar rule: ${explanation}` : correctAnswer
+
                     gradingPromises.push(
                       fetch("/api/grade", {
                         method: "POST",
                         headers: { "Content-Type": "application/json" },
                         body: JSON.stringify({
-                          question: subQ.questionEnglish,
+                          question: subQ.questionEnglish || subQ.question || subQ.questionNepali,
                           answer: userSubAnswer,
                           marks: subQuestionMarks,
-                          sampleAnswer: subQ.correctAnswer,
+                          sampleAnswer: aiContext,
                         }),
                       })
                         .then(async (res) => {
@@ -705,24 +726,24 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                           return result
                         })
                         .then((result) => ({
-                          id: `${question.id}_${subQ.id}`,
+                          id: `${question.id}_${subQ.idEnglish || subQ.id}`,
                           score: result.score || 0,
                           feedback: result.feedback || "No feedback available",
                           question: subQ.questionEnglish,
                           studentAnswer: userSubAnswer,
                           group: "English",
                           questionId: question.id,
-                          subQuestionId: subQ.id,
+                          subQuestionId: subQ.idEnglish || subQ.id,
                         }))
                         .catch((error) => ({
-                          id: `${question.id}_${subQ.id}`,
+                          id: `${question.id}_${subQ.idEnglish || subQ.id}`,
                           score: 0,
                           feedback: `AI grading failed: ${error.message || 'Unknown error'}`,
                           question: subQ.questionEnglish,
                           studentAnswer: userSubAnswer,
                           group: "English",
                           questionId: question.id,
-                          subQuestionId: subQ.id,
+                          subQuestionId: subQ.idEnglish || subQ.id,
                         }))
                     )
                   }
@@ -741,10 +762,10 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({
-                      question: (question as any).title,
+                      question: (question as any).titleEnglish || (question as any).title || (question as any).titleNepali,
                       answer: userWritingAnswer,
-                      marks: (question as any).marks,
-                      sampleAnswer: (question as any).sampleAnswer?.content,
+                      marks: (question as any).marksEnglish || (question as any).marks,
+                      sampleAnswer: (question as any).sampleAnswerEnglish?.content || (question as any).sampleAnswer?.content || (question as any).sampleAnswerNepali?.content,
                     }),
                   })
                     .then(async (res) => {
@@ -758,7 +779,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                       id: (question as any).id,
                       score: result.score || 0,
                       feedback: result.feedback || "No feedback available",
-                      question: (question as any).title,
+                      question: (question as any).titleEnglish || (question as any).title,
                       studentAnswer: userWritingAnswer,
                       group: "English",
                       questionId: (question as any).id,
@@ -767,7 +788,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                       id: (question as any).id,
                       score: 0,
                       feedback: `AI grading failed: ${error.message || 'Unknown error'}`,
-                      question: (question as any).title,
+                      question: (question as any).titleEnglish || (question as any).title,
                       studentAnswer: userWritingAnswer,
                       group: "English",
                       questionId: (question as any).id,
@@ -785,7 +806,8 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                     if (gap) {
                       const gapMarks = (question as any).marks && gaps.length ? Math.round(((question as any).marks / gaps.length) * 10) / 10 : 1
                       const trimmedAnswer = gapAnswer.trim()
-                      const correctAnswer = gap.correctAnswer?.trim() || ""
+                      // Use bilingual fallback for correct answer
+                      const correctAnswer = (gap.correctAnswerEnglish || gap.correctAnswer)?.trim() || ""
 
                       // First try exact matching (case-insensitive)
                       const isExactMatch = trimmedAnswer.toLowerCase() === correctAnswer.toLowerCase()
@@ -840,10 +862,10 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                             method: "POST",
                             headers: { "Content-Type": "application/json" },
                             body: JSON.stringify({
-                              question: `Fill in the blank (${gapId}): ${(question as any).passage}`,
+                              question: `Fill in the blank (${gapId}): ${(question as any).passageEnglish || (question as any).passage || (question as any).passageNepali}`,
                               answer: gapAnswer,
                               marks: gapMarks,
-                              sampleAnswer: gap.correctAnswer,
+                              sampleAnswer: gap.correctAnswerEnglish || gap.correctAnswer || gap.correctAnswerNepali,
                             }),
                           })
                             .then(async (res) => {
@@ -901,7 +923,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
         // Save attempt to history (same format as Science tests)
         const totalScore = results.scoreA
         const maxScore = questions.englishQuestions.reduce((acc: number, q: any) => acc + q.marks, 0)
-        const percentage = Math.round((totalScore / maxScore) * 100)
+        const percentage = maxScore > 0 ? Math.round((totalScore / maxScore) * 100) : 0
         const grade = percentage >= 90 ? "A+" : percentage >= 80 ? "A" : percentage >= 70 ? "B+" : percentage >= 60 ? "B" : percentage >= 50 ? "C+" : percentage >= 40 ? "C" : percentage >= 32 ? "D" : "E"
 
         try {
@@ -943,9 +965,14 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
             console.log(`  📝 Q${qIdx + 1} (ID: ${question.id}, Type: ${question.type}): Answer length = ${userAnswer.length}, Has answer = ${userAnswer.trim().length > 0}`)
 
             // Calculate marks early so we can use it in all cases
-            const questionMarks = question.marksEnglish || question.marks || parseInt(question.marksNepali) || 4
+            const questionMarks = question.marksEnglish || question.marks || (question.marksNepali ? parseInt(question.marksNepali, 10) : 0) || 4
 
             if (userAnswer && userAnswer.trim().length > 0) {
+              // Build comprehensive context with answer and explanation
+              const answerText = question.answerNepali || question.answerEnglish || ''
+              const explanation = question.explanationNepali || question.explanationEnglish || ''
+              const aiContext = explanation ? `${answerText}\n\nContext/Citation: ${explanation}` : answerText
+
               // questionMarks is calculated earlier
               gradingPromises.push(
                 fetch("/api/grade", {
@@ -955,7 +982,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                     question: question.questionNepali || question.questionEnglish,
                     answer: userAnswer,
                     marks: questionMarks,
-                    sampleAnswer: question.answerNepali || question.answerEnglish,
+                    sampleAnswer: aiContext,
                   }),
                 })
                   .then(async (res) => {
@@ -1118,7 +1145,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                   const subId = sub.idEnglish || sub.idNepali || sub.id
                   const userVal = userAnswer[subId]
                   const correctAnswer = sub.correctAnswer || sub.correctAnswerNepali || sub.correctAnswerEnglish
-                  if (userVal && correctAnswer) {
+                  if (userVal && correctAnswer && typeof userVal === 'string' && typeof correctAnswer === 'string') {
                     if (userVal.toLowerCase().trim() === correctAnswer.toLowerCase().trim()) {
                       score += pointsPerBlank
                     }
@@ -1155,7 +1182,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
 
                 correctWords.forEach((pair: any) => {
                   const userVal = userAnswer[pair.word]
-                  if (userVal && pair.pos) {
+                  if (userVal && pair.pos && typeof userVal === 'string' && typeof pair.pos === 'string') {
                     if (userVal.toLowerCase().trim() === pair.pos.toLowerCase().trim()) {
                       score += pointsPerWord
                     }
@@ -1252,7 +1279,26 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                 if (selectedOption) {
                   selectedOptionTitle = selectedOption.titleNepali || selectedOption.titleEnglish ||
                     selectedOption.questionNepali || selectedOption.questionEnglish || questionTitle
-                  sampleAnswer = selectedOption.sampleAnswer || selectedOption.correctAnswer || ""
+
+                  // Build context from clues (for biography/dialogue questions)
+                  const clues = selectedOption.cluesNepali || selectedOption.cluesEnglish || []
+                  if (Array.isArray(clues) && clues.length > 0) {
+                    sampleAnswer = `Context/Clues to include:\n${clues.join('\n')}`
+                  }
+
+                  // Build context from passage (for literature analysis questions)
+                  const passage = selectedOption.passageNepali || selectedOption.passageEnglish
+                  if (passage) {
+                    const passageContext = `Reference passage:\n${passage}`
+                    sampleAnswer = sampleAnswer ? `${sampleAnswer}\n\n${passageContext}` : passageContext
+                  }
+
+                  // Fallback to explicit sampleAnswer/correctAnswer if no clues or passage
+                  if (!sampleAnswer) {
+                    sampleAnswer = selectedOption.sampleAnswerNepali || selectedOption.sampleAnswerEnglish ||
+                      selectedOption.sampleAnswer || selectedOption.correctAnswerNepali ||
+                      selectedOption.correctAnswerEnglish || selectedOption.correctAnswer || ""
+                  }
                 }
               }
 
@@ -1364,7 +1410,31 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
             default: {
               // AI grade all other question types (free response, essay, etc.)
               const marks = question.marksEnglish || question.marks || 5
-              const sampleAnswer = question.sampleAnswer || question.sampleAnswerNepali || question.sampleAnswerEnglish || question.modelAnswer || ""
+
+              // Build comprehensive context for AI grading
+              let sampleAnswer = question.sampleAnswer || question.sampleAnswerNepali || question.sampleAnswerEnglish || question.modelAnswer || ""
+
+              // Include passage context for reading comprehension, note taking, etc.
+              const passage = question.passageNepali || question.passageEnglish
+              if (passage && !sampleAnswer.includes(passage)) {
+                const passageContext = `Reference passage:\n${passage}`
+                sampleAnswer = sampleAnswer ? `${sampleAnswer}\n\n${passageContext}` : passageContext
+              }
+
+              // Include correctAnswer for subQuestions if available
+              if (question.subQuestions && Array.isArray(question.subQuestions)) {
+                const correctAnswers = question.subQuestions
+                  .filter((sub: any) => sub.correctAnswerNepali || sub.correctAnswerEnglish || sub.correctAnswer)
+                  .map((sub: any) => {
+                    const subId = sub.idNepali || sub.idEnglish || sub.id || ''
+                    const answer = sub.correctAnswerNepali || sub.correctAnswerEnglish || sub.correctAnswer
+                    return `${subId}: ${answer}`
+                  })
+                  .join('\n')
+                if (correctAnswers) {
+                  sampleAnswer = sampleAnswer ? `${sampleAnswer}\n\nExpected answers:\n${correctAnswers}` : `Expected answers:\n${correctAnswers}`
+                }
+              }
 
               // Collect all sub-answers into a single response string for AI grading
               let combinedAnswer = ""
@@ -1505,6 +1575,11 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
             const questionTextNepali = `${contextNepali}\n\nभाग (${label}): ${subQNepali}`
 
             if (userAnswer.trim()) {
+              // Build comprehensive context with answer and explanation
+              const sampleAnswerContext = explanationEnglish
+                ? `${answerEnglish || answerNepali || ''}\n\nExplanation: ${explanationEnglish || explanationNepali || ''}`
+                : (answerEnglish || answerNepali || '')
+
               gradingPromises.push(
                 fetch("/api/grade", {
                   method: "POST",
@@ -1513,7 +1588,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                     question: questionTextEnglish,
                     answer: userAnswer,
                     marks: marks,
-                    sampleAnswer: answerEnglish,
+                    sampleAnswer: sampleAnswerContext,
                   }),
                 })
                   .then(async (res) => {
@@ -1669,10 +1744,10 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
-                  question: question.english,
+                  question: question.english || question.nepali,
                   answer: userAnswer,
                   marks: question.marks,
-                  sampleAnswer: question.sampleAnswer,
+                  sampleAnswer: question.sampleAnswerEnglish || question.sampleAnswerNepali || question.sampleAnswer,
                 }),
               })
                 .then((res) => res.json())
@@ -1680,7 +1755,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                   id: question.id,
                   score: result.score || 0,
                   feedback: result.feedback || "No feedback available",
-                  question: question.english,
+                  question: question.english || question.nepali,
                   studentAnswer: userAnswer,
                   group: "B",
                 }))
@@ -1688,7 +1763,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                   id: question.id,
                   score: 0,
                   feedback: "AI grading failed",
-                  question: question.english,
+                  question: question.english || question.nepali,
                   studentAnswer: userAnswer,
                   group: "B",
                 }))
@@ -1698,7 +1773,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
               id: question.id,
               score: 0,
               feedback: "",
-              question: question.english,
+              question: question.english || question.nepali,
               studentAnswer: "",
             })
           }
@@ -1715,10 +1790,10 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
-                  question: question.english,
+                  question: question.english || question.nepali,
                   answer: userAnswer,
                   marks: question.marks,
-                  sampleAnswer: question.sampleAnswer,
+                  sampleAnswer: question.sampleAnswerEnglish || question.sampleAnswerNepali || question.sampleAnswer,
                 }),
               })
                 .then((res) => res.json())
@@ -1726,7 +1801,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                   id: question.id,
                   score: result.score || 0,
                   feedback: result.feedback || "No feedback available",
-                  question: question.english,
+                  question: question.english || question.nepali,
                   studentAnswer: userAnswer,
                   group: "C",
                 }))
@@ -1734,7 +1809,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                   id: question.id,
                   score: 0,
                   feedback: "AI grading failed",
-                  question: question.english,
+                  question: question.english || question.nepali,
                   studentAnswer: userAnswer,
                   group: "C",
                 }))
@@ -1744,7 +1819,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
               id: question.id,
               score: 0,
               feedback: "",
-              question: question.english,
+              question: question.english || question.nepali,
               studentAnswer: "",
             })
           }
@@ -1761,10 +1836,10 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
-                  question: question.english,
+                  question: question.english || question.nepali,
                   answer: userAnswer,
                   marks: question.marks,
-                  sampleAnswer: question.sampleAnswer,
+                  sampleAnswer: question.sampleAnswerEnglish || question.sampleAnswerNepali || question.sampleAnswer,
                 }),
               })
                 .then((res) => res.json())
@@ -1772,7 +1847,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                   id: question.id,
                   score: result.score || 0,
                   feedback: result.feedback || "No feedback available",
-                  question: question.english,
+                  question: question.english || question.nepali,
                   studentAnswer: userAnswer,
                   group: "D",
                 }))
@@ -1780,7 +1855,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                   id: question.id,
                   score: 0,
                   feedback: "AI grading failed",
-                  question: question.english,
+                  question: question.english || question.nepali,
                   studentAnswer: userAnswer,
                   group: "D",
                 }))
@@ -1790,7 +1865,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
               id: question.id,
               score: 0,
               feedback: "",
-              question: question.english,
+              question: question.english || question.nepali,
               studentAnswer: "",
             })
           }
@@ -1825,7 +1900,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
         (questions.groupC?.reduce((sum: number, q: any) => sum + q.marks, 0) || 0) +
         (questions.groupD?.reduce((sum: number, q: any) => sum + q.marks, 0) || 0)
 
-      const percentage = Math.round((totalScore / maxScore) * 100)
+      const percentage = maxScore > 0 ? Math.round((totalScore / maxScore) * 100) : 0
       const grade =
         percentage >= 90
           ? "A+"

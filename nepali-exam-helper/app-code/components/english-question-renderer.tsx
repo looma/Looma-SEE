@@ -500,7 +500,9 @@ export function EnglishQuestionRenderer({
   }
 
   const renderMatchingQuestion = (section: any) => {
-    const currentAnswers = answers[(question as any).id]?.[section.id] || {}
+    // CRITICAL: Use idEnglish or idNepali for consistent storage keys
+    const sectionId = section.idEnglish || section.idNepali || section.id || ''
+    const currentAnswers = answers[(question as any).id]?.[sectionId] || {}
 
     // Safety check: if columns data is missing, show a message
     if (!section.columns || !section.columns.A || !section.columns.B) {
@@ -553,7 +555,7 @@ export function EnglishQuestionRenderer({
                         value={currentAnswers[itemId] || ""}
                         onValueChange={(value: string) => {
                           const newAnswers = { ...currentAnswers, [itemId]: value }
-                          onAnswerChange((question as any).id, section.id, newAnswers)
+                          onAnswerChange((question as any).id, sectionId, newAnswers)
                         }}
                         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2"
                       >
@@ -571,11 +573,11 @@ export function EnglishQuestionRenderer({
                                 }`}
                               onClick={() => {
                                 const newAnswers = { ...currentAnswers, [itemId]: bItemId }
-                                onAnswerChange((question as any).id, section.id, newAnswers)
+                                onAnswerChange((question as any).id, sectionId, newAnswers)
                               }}
                             >
-                              <RadioGroupItem value={bItemId} id={`${(question as any).id}-${section.id}-${itemId}-${bItemId}`} />
-                              <Label htmlFor={`${(question as any).id}-${section.id}-${itemId}-${bItemId}`} className="cursor-pointer flex-1">
+                              <RadioGroupItem value={bItemId} id={`${(question as any).id}-${sectionId}-${itemId}-${bItemId}`} />
+                              <Label htmlFor={`${(question as any).id}-${sectionId}-${itemId}-${bItemId}`} className="cursor-pointer flex-1">
                                 <span className="font-medium text-blue-700 mr-2">({displayBItemId})</span>
                                 <span className="text-slate-700">{getText(bItem.textEnglish || bItem.text, bItem.textNepali)}</span>
                               </Label>
@@ -597,7 +599,9 @@ export function EnglishQuestionRenderer({
   }
 
   const renderOrderingQuestion = (section: any) => {
-    const currentAnswers = answers[(question as any).id]?.[section.id] || {}
+    // CRITICAL: Use idEnglish or idNepali for consistent storage keys
+    const sectionId = section.idEnglish || section.idNepali || section.id || ''
+    const currentAnswers = answers[(question as any).id]?.[sectionId] || {}
     const items = section.sentences || section.items || []
 
     // Safety check: if no items to order
@@ -641,7 +645,7 @@ export function EnglishQuestionRenderer({
                         value={currentAnswers[itemId] || ""}
                         onChange={(e) => {
                           const newAnswers = { ...currentAnswers, [itemId]: e.target.value }
-                          onAnswerChange((question as any).id, section.id, newAnswers)
+                          onAnswerChange((question as any).id, sectionId, newAnswers)
                         }}
                         className="w-16 h-10 px-3 border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent text-center font-semibold"
                       >
@@ -709,31 +713,35 @@ export function EnglishQuestionRenderer({
         {(question as any).subQuestions && renderTrueFalseQuestions((question as any).subQuestions)}
 
         {/* Sub-sections */}
-        {(question as any).subSections?.map((section: any, index: number) => (
-          <div key={section.id} className="space-y-4">
-            <h4 className="text-lg font-semibold text-slate-800">
-              {getText(section.idEnglish || section.id, section.idNepali)}. {getText(section.titleEnglish || section.title, section.titleNepali)}
-            </h4>
-            {section.type === "true_false" &&
-              section.subQuestions &&
-              renderTrueFalseQuestions(section.subQuestions, section.id, section.marks)}
-            {section.type === "true_false_not_given" &&
-              section.subQuestions &&
-              renderTrueFalseNotGivenQuestions(section.subQuestions, section.id, section.marks)}
-            {section.type === "short_answer" &&
-              section.subQuestions &&
-              renderShortAnswerQuestions(section.subQuestions, section.id, section.marks)}
-            {section.type === "fill_in_the_blanks" &&
-              section.subQuestions &&
-              renderFillInTheBlanksQuestions(section.subQuestions, section.id, section.marks)}
-            {section.type === "matching" && renderMatchingQuestion(section)}
-            {section.type === "ordering" && renderOrderingQuestion(section)}
-            {/* Fallback: render any unrecognized section type with subQuestions as short answer */}
-            {!["true_false", "true_false_not_given", "short_answer", "fill_in_the_blanks", "matching", "ordering"].includes(section.type) &&
-              section.subQuestions &&
-              renderShortAnswerQuestions(section.subQuestions, section.id, section.marks)}
-          </div>
-        ))}
+        {(question as any).subSections?.map((section: any, index: number) => {
+          // CRITICAL: Use idEnglish or idNepali for consistent storage keys, not section.id which may be undefined
+          const sectionId = section.idEnglish || section.idNepali || section.id || `section_${index}`
+          return (
+            <div key={sectionId} className="space-y-4">
+              <h4 className="text-lg font-semibold text-slate-800">
+                {getText(section.idEnglish || section.id, section.idNepali)}. {getText(section.titleEnglish || section.title, section.titleNepali)}
+              </h4>
+              {section.type === "true_false" &&
+                section.subQuestions &&
+                renderTrueFalseQuestions(section.subQuestions, sectionId, section.marksEnglish || section.marks)}
+              {section.type === "true_false_not_given" &&
+                section.subQuestions &&
+                renderTrueFalseNotGivenQuestions(section.subQuestions, sectionId, section.marksEnglish || section.marks)}
+              {section.type === "short_answer" &&
+                section.subQuestions &&
+                renderShortAnswerQuestions(section.subQuestions, sectionId, section.marksEnglish || section.marks)}
+              {section.type === "fill_in_the_blanks" &&
+                section.subQuestions &&
+                renderFillInTheBlanksQuestions(section.subQuestions, sectionId, section.marksEnglish || section.marks)}
+              {section.type === "matching" && renderMatchingQuestion(section)}
+              {section.type === "ordering" && renderOrderingQuestion(section)}
+              {/* Fallback: render any unrecognized section type with subQuestions as short answer */}
+              {!["true_false", "true_false_not_given", "short_answer", "fill_in_the_blanks", "matching", "ordering"].includes(section.type) &&
+                section.subQuestions &&
+                renderShortAnswerQuestions(section.subQuestions, sectionId, section.marksEnglish || section.marks)}
+            </div>
+          )
+        })}
       </div>
     )
   }

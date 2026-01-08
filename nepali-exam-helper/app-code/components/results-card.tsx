@@ -139,9 +139,9 @@ export function ResultsCard({
     scoreD = 0
     totalScore = results.mathFeedback?.reduce((sum: number, f: any) => sum + (f.score || 0), 0) || results.scoreA || 0
 
-    // Calculate max score from all sub-questions
+    // Calculate max score from all sub-questions using actual marks
     maxScoreA = questions.mathQuestions.reduce((acc: number, q: any) =>
-      acc + q.sub_questions.reduce((subAcc: number, sq: any) => subAcc + 5, 0), 0) // Assume 5 marks per sub-question
+      acc + q.sub_questions.reduce((subAcc: number, sq: any) => subAcc + (sq.marks || sq.marksEnglish || 5), 0), 0)
     maxScoreB = 0
     maxScoreC = 0
     maxScoreD = 0
@@ -160,7 +160,7 @@ export function ResultsCard({
     maxTotalScore = maxScoreA + maxScoreB + maxScoreC + maxScoreD
   }
 
-  const percentage = Math.round((totalScore / maxTotalScore) * 100)
+  const percentage = maxTotalScore > 0 ? Math.round((totalScore / maxTotalScore) * 100) : 0
   const getGrade = (p: number) =>
     p >= 90
       ? "A+"
@@ -919,13 +919,13 @@ export function ResultsCard({
                                   </p>
                                   <div className="space-y-2">
                                     {originalQuestion.subQuestions.map((sub: any) => (
-                                      <div key={sub.id} className="text-sm">
+                                      <div key={sub.idEnglish || sub.id} className="text-sm">
                                         <span className="font-medium text-teal-700">
                                           ({language === 'nepali' ? (sub.idNepali || sub.id) : (sub.idEnglish || sub.id)}) {language === 'nepali' ? (sub.questionNepali || sub.title || "") : (sub.questionEnglish || sub.title || "")}:
                                         </span>
                                         <span className="text-teal-600 whitespace-pre-wrap">
                                           {sub.choices && sub.choices.length > 0
-                                            ? sub.choices.map((c: any) => `${c.id}: ${language === 'english' ? (c.correctAnswerEnglish || c.correctAnswer) : (c.correctAnswerNepali || c.correctAnswer)}`).join(", ")
+                                            ? sub.choices.map((c: any) => `${c.idEnglish || c.id}: ${language === 'english' ? (c.correctAnswerEnglish || c.correctAnswer) : (c.correctAnswerNepali || c.correctAnswer)}`).join(", ")
                                             : typeof (language === 'english' ? (sub.correctAnswerEnglish || sub.correctAnswer) : (sub.correctAnswerNepali || sub.correctAnswer)) === 'string'
                                               ? (language === 'english' ? (sub.correctAnswerEnglish || sub.correctAnswer) : (sub.correctAnswerNepali || sub.correctAnswer))
                                               : formatAnswerForDisplay(language === 'english' ? (sub.correctAnswerEnglish || sub.correctAnswer) : (sub.correctAnswerNepali || sub.correctAnswer)) || (language === 'english' ? (sub.explanationEnglish || sub.explanation) : (sub.explanationNepali || sub.explanation)) || ""}
@@ -942,10 +942,10 @@ export function ResultsCard({
                                   <p className="font-semibold text-purple-800 mb-2">खण्ड उत्तरहरू / Section Answers:</p>
                                   <div className="space-y-3">
                                     {originalQuestion.subSections.map((section: any) => (
-                                      <div key={section.id} className="text-sm">
-                                        <p className="font-medium text-purple-700 mb-1">खण्ड {section.id}:</p>
+                                      <div key={section.idEnglish || section.id} className="text-sm">
+                                        <p className="font-medium text-purple-700 mb-1">खण्ड {section.idEnglish || section.id}:</p>
                                         {section.subQuestions?.map((sub: any) => (
-                                          <div key={sub.id} className="ml-4 mb-1">
+                                          <div key={sub.idEnglish || sub.id} className="ml-4 mb-1">
                                             <span className="font-medium text-purple-600">({language === 'nepali' ? (sub.idNepali || sub.id) : (sub.idEnglish || sub.id)}) {language === 'nepali' ? (sub.questionNepali || sub.questionEnglish || sub.title) : (sub.questionEnglish || sub.questionNepali || sub.title)}: </span>
                                             <span className="text-purple-500 whitespace-pre-wrap">
                                               {formatAnswerForDisplay(language === 'english' ? (sub.correctAnswerEnglish || sub.correctAnswer) : (sub.correctAnswerNepali || sub.correctAnswer)) || (language === 'english' ? (sub.explanationEnglish || sub.explanation) : (sub.explanationNepali || sub.explanation)) || ""}
@@ -1170,8 +1170,9 @@ export function ResultsCard({
                           : "No answer provided"
                         : ""
 
-                      const isFullyCorrect = questionScore === question.marks
-                      const isPartiallyCorrect = questionScore > 0 && questionScore < question.marks
+                      const questionMarks = (question as any).marksEnglish || question.marks || 0
+                      const isFullyCorrect = questionScore === questionMarks
+                      const isPartiallyCorrect = questionScore > 0 && questionScore < questionMarks
                       const isIncorrect = questionScore === 0
 
                       return (
@@ -1201,7 +1202,7 @@ export function ResultsCard({
                                   variant={isFullyCorrect ? "default" : isPartiallyCorrect ? "secondary" : "destructive"}
                                   className={isFullyCorrect ? "bg-green-500 text-white hover:bg-green-600" : ""}
                                 >
-                                  {questionScore}/{question.marks}
+                                  {questionScore}/{questionMarks}
                                 </Badge>
                               </div>
                             </div>
@@ -1233,14 +1234,16 @@ export function ResultsCard({
 
                               {question.type === 'reading_comprehension' && question.subSections && question.subSections.length > 0 ? (
                                 question.subSections.map((section: any) => {
-                                  const sectionAnswers = (userAnswer && typeof userAnswer === 'object') ? userAnswer[section.id] || {} : {}
+                                  // CRITICAL: Use idEnglish fallback for consistent storage keys
+                                  const sectionId = section.idEnglish || section.idNepali || section.id || ''
+                                  const sectionAnswers = (userAnswer && typeof userAnswer === 'object') ? userAnswer[sectionId] || {} : {}
 
                                   const sectionFeedbacks = questionFeedbacks.filter(
-                                    (f: any) => f.sectionId === section.id,
+                                    (f: any) => f.sectionId === sectionId,
                                   )
 
                                   return (
-                                    <div key={section.id} className="space-y-4">
+                                    <div key={sectionId} className="space-y-4">
                                       <h4 className="text-lg font-semibold text-slate-800 border-b border-slate-300 pb-2">
                                         {language === 'nepali' ? 'खण्ड' : 'Section'} {section.idEnglish || section.id}: {language === 'nepali'
                                           ? (section.titleNepali || section.title)
@@ -1256,7 +1259,7 @@ export function ResultsCard({
                                               <h5 className="font-semibold text-slate-700 mb-2">{language === 'nepali' ? 'स्तम्भ क' : 'Column A'}</h5>
                                               <ul className="space-y-1 text-sm">
                                                 {section.columns.A?.map((item: any) => (
-                                                  <li key={item.id} className="text-slate-600">({item.id}) {language === 'nepali' ? (item.textNepali || item.text) : (item.textEnglish || item.text)}</li>
+                                                  <li key={item.idEnglish || item.id} className="text-slate-600">({item.idEnglish || item.id}) {language === 'nepali' ? (item.textNepali || item.text) : (item.textEnglish || item.text)}</li>
                                                 ))}
                                               </ul>
                                             </div>
@@ -1264,7 +1267,7 @@ export function ResultsCard({
                                               <h5 className="font-semibold text-slate-700 mb-2">{language === 'nepali' ? 'स्तम्भ ख' : 'Column B'}</h5>
                                               <ul className="space-y-1 text-sm">
                                                 {section.columns.B?.map((item: any) => (
-                                                  <li key={item.id} className="text-slate-600">({item.id}) {language === 'nepali' ? (item.textNepali || item.text) : (item.textEnglish || item.text)}</li>
+                                                  <li key={item.idEnglish || item.id} className="text-slate-600">({item.idEnglish || item.id}) {language === 'nepali' ? (item.textNepali || item.text) : (item.textEnglish || item.text)}</li>
                                                 ))}
                                               </ul>
                                             </div>
@@ -1274,20 +1277,23 @@ export function ResultsCard({
                                           <div className="space-y-2">
                                             <h5 className="font-semibold text-slate-700">{language === 'nepali' ? 'तपाईंको मिलान:' : 'Your Matches:'}</h5>
                                             {section.columns.A?.map((itemA: any) => {
-                                              const userMatch = sectionAnswers?.[itemA.id]
-                                              const correctMatch = section.correctAnswer?.find((ca: any) => ca.A === itemA.id)?.B
+                                              // Use idEnglish fallback for item lookup
+                                              const itemAId = itemA.idEnglish || itemA.id
+                                              const userMatch = sectionAnswers?.[itemAId]
+                                              const correctMatch = section.correctAnswer?.find((ca: any) => ca.A === itemAId || ca.A === itemA.id)?.B
                                               const matchedB = section.columns.B?.find((b: any) => b.id === userMatch)
                                               const correctB = section.columns.B?.find((b: any) => b.id === correctMatch)
                                               const isCorrect = userMatch === correctMatch
                                               const matchFeedback = sectionFeedbacks.find((f: any) => f.matchId === itemA.id)
                                               const matchScore = matchFeedback?.score || (isCorrect ? 1 : 0)
-                                              const matchMaxScore = section.marks ? Math.round((section.marks / section.columns.A.length) * 10) / 10 : 1
+                                              const matchingMarks = section.marksEnglish || section.marks || 0
+                                              const matchMaxScore = matchingMarks ? Math.round((matchingMarks / section.columns.A.length) * 10) / 10 : 1
 
                                               return (
-                                                <div key={itemA.id} className={`p-3 rounded-lg ${isCorrect ? 'bg-green-50 border-l-4 border-green-500' : 'bg-red-50 border-l-4 border-red-500'}`}>
+                                                <div key={itemA.idEnglish || itemA.id} className={`p-3 rounded-lg ${isCorrect ? 'bg-green-50 border-l-4 border-green-500' : 'bg-red-50 border-l-4 border-red-500'}`}>
                                                   <div className="flex justify-between items-start">
                                                     <div className="flex-1">
-                                                      <p className="font-medium text-slate-800">({itemA.id}) {language === 'nepali' ? (itemA.textNepali || itemA.text) : (itemA.textEnglish || itemA.text)}</p>
+                                                      <p className="font-medium text-slate-800">({itemA.idEnglish || itemA.id}) {language === 'nepali' ? (itemA.textNepali || itemA.text) : (itemA.textEnglish || itemA.text)}</p>
                                                       <p className="text-sm mt-1">
                                                         <span className="text-slate-600">{language === 'nepali' ? 'तपाईंको उत्तर:' : 'Your answer:'} </span>
                                                         <span className={isCorrect ? 'text-green-700 font-medium' : 'text-red-700 font-medium'}>
@@ -1331,11 +1337,13 @@ export function ResultsCard({
                                           const sentences = section.sentences || []
 
                                           sentences.forEach((item: any) => {
-                                            const position = sectionAnswers?.[item.id]
+                                            // Use idEnglish fallback for item lookup
+                                            const itemId = item.idEnglish || item.id
+                                            const position = sectionAnswers?.[itemId]
                                             if (position) {
-                                              const posIndex = parseInt(position) - 1
+                                              const posIndex = parseInt(position, 10) - 1
                                               if (posIndex >= 0) {
-                                                userOrderArray[posIndex] = item.id
+                                                userOrderArray[posIndex] = itemId
                                               }
                                             }
                                           })
@@ -1359,8 +1367,8 @@ export function ResultsCard({
                                                 <h5 className="font-semibold text-slate-700 mb-3">{language === 'nepali' ? 'क्रमबद्ध गर्नुपर्ने वाक्यहरू:' : 'Sentences to Order:'}</h5>
                                                 <ul className="space-y-2 text-sm">
                                                   {sentences?.map((sentence: any) => (
-                                                    <li key={sentence.id} className="text-slate-600">
-                                                      <span className="font-medium">({sentence.id})</span> {language === 'nepali' ? (sentence.textNepali || sentence.text) : (sentence.textEnglish || sentence.text)}
+                                                    <li key={sentence.idEnglish || sentence.id} className="text-slate-600">
+                                                      <span className="font-medium">({sentence.idEnglish || sentence.id})</span> {language === 'nepali' ? (sentence.textNepali || sentence.text) : (sentence.textEnglish || sentence.text)}
                                                     </li>
                                                   ))}
                                                 </ul>
@@ -1376,7 +1384,7 @@ export function ResultsCard({
                                                   {hasUserOrder ? (
                                                     <ol className="list-decimal list-inside space-y-1 text-sm">
                                                       {userOrder.map((id: string, idx: number) => {
-                                                        const sentence = sentences?.find((s: any) => s.id === id)
+                                                        const sentence = sentences?.find((s: any) => (s.idEnglish || s.id) === id || s.id === id)
                                                         const isPositionCorrect = correctOrder[idx] === id
                                                         return (
                                                           <li key={id} className={isPositionCorrect ? 'text-green-700' : 'text-red-700'}>
@@ -1397,7 +1405,7 @@ export function ResultsCard({
                                                     <p className="font-semibold text-amber-800 mb-2">{language === 'nepali' ? 'सही क्रम:' : 'Correct Order:'}</p>
                                                     <ol className="list-decimal list-inside space-y-1 text-sm">
                                                       {correctOrder.map((id: string) => {
-                                                        const sentence = sentences?.find((s: any) => s.id === id)
+                                                        const sentence = sentences?.find((s: any) => (s.idEnglish || s.id) === id || s.id === id)
                                                         return (
                                                           <li key={id} className="text-amber-700">
                                                             <span className="font-medium">({id})</span> {language === 'nepali' ? (sentence?.textNepali || sentence?.text || 'अज्ञात') : (sentence?.textEnglish || sentence?.text || 'Unknown')}
@@ -1417,7 +1425,7 @@ export function ResultsCard({
                                                     ? 'bg-green-500 text-white'
                                                     : 'bg-red-500 text-white'
                                                     }`}>
-                                                    {sectionFeedbacks[0]?.score || 0}/{section.marks || 5}
+                                                    {sectionFeedbacks[0]?.score || 0}/{section.marksEnglish || section.marks || 5}
                                                   </Badge>
                                                 </div>
                                               ) : (
@@ -1426,7 +1434,7 @@ export function ResultsCard({
                                                     ? 'bg-green-500 text-white'
                                                     : 'bg-red-500 text-white'
                                                     }`}>
-                                                    {isAllCorrect ? section.marks || 5 : correctCount}/{section.marks || 5}
+                                                    {isAllCorrect ? (section.marksEnglish || section.marks || 5) : correctCount}/{section.marksEnglish || section.marks || 5}
                                                   </Badge>
                                                 </div>
                                               )}
@@ -1444,15 +1452,19 @@ export function ResultsCard({
                                           )
                                         })()
                                       ) : section.subQuestions?.map((subQ: any) => {
-                                        const answer = sectionAnswers[subQ.id]
-                                        const feedback = sectionFeedbacks.find((f: any) => f.subQuestionId === subQ.id)
-                                        const subQuestionMarks = subQ.marks || (section.marks ? Math.round((section.marks / section.subQuestions.length) * 10) / 10 : 1)
+                                        // Use idEnglish fallback for subQuestion lookup
+                                        const subQId = subQ.idEnglish || subQ.id
+                                        const answer = sectionAnswers[subQId]
+                                        const feedback = sectionFeedbacks.find((f: any) => f.subQuestionId === subQId)
+                                        const subQMarks = subQ.marksEnglish || subQ.marks
+                                        const subSectionMarks = section.marksEnglish || section.marks || 0
+                                        const subQuestionMarks = subQMarks || (subSectionMarks ? Math.round((subSectionMarks / section.subQuestions.length) * 10) / 10 : 1)
                                         const score = feedback?.score || 0
                                         const isCorrect = score === subQuestionMarks
                                         const isPartiallyCorrect = score > 0 && score < subQuestionMarks
 
                                         return (
-                                          <div key={subQ.id} className="border border-slate-200 rounded-lg p-4 space-y-3">
+                                          <div key={subQId} className="border border-slate-200 rounded-lg p-4 space-y-3">
                                             {/* Question */}
                                             <div className="flex items-start justify-between">
                                               <p className="font-medium text-slate-800 flex-1">
@@ -1518,14 +1530,16 @@ export function ResultsCard({
                               ) : (question as any).subQuestions ? (
                                 // Handle grammar questions with direct sub-questions
                                 (question as any).subQuestions.map((subQ: any) => {
-                                  const answer = userAnswer?.[subQ.id]
-                                  const feedback = questionFeedbacks.find((f: any) => f.subQuestionId === subQ.id)
+                                  // Use idEnglish fallback for subQuestion lookup
+                                  const subQId = subQ.idEnglish || subQ.id
+                                  const answer = userAnswer?.[subQId]
+                                  const feedback = questionFeedbacks.find((f: any) => f.subQuestionId === subQId)
                                   const subQuestionMarks = subQ.marks || ((question as any).marks ? Math.round(((question as any).marks / (question as any).subQuestions.length) * 10) / 10 : 1)
                                   const score = feedback?.score || 0
                                   const isCorrect = score === subQuestionMarks
 
                                   return (
-                                    <div key={subQ.id} className="border border-slate-200 rounded-lg p-4 space-y-3">
+                                    <div key={subQId} className="border border-slate-200 rounded-lg p-4 space-y-3">
                                       <div className="flex items-start justify-between">
                                         <p className="font-medium text-slate-800 flex-1">
                                           ({subQ.idEnglish || subQ.id}) {language === 'nepali' ? (subQ.questionNepali || subQ.questionEnglish) : (subQ.questionEnglish || subQ.questionNepali)}
@@ -1590,16 +1604,19 @@ export function ResultsCard({
                               ) : question.type === 'cloze_test' && question.gaps ? (
                                 // Handle cloze test questions
                                 question.gaps.map((gap: any) => {
-                                  const answer = userAnswer?.[gap.id]
-                                  const feedback = questionFeedbacks.find((f: any) => f.gapId === gap.id)
-                                  const gapMarks = question.marks && question.gaps ? Math.round((question.marks / question.gaps.length) * 10) / 10 : 1
+                                  // Use idEnglish fallback for gap lookup
+                                  const gapId = gap.idEnglish || gap.id
+                                  const answer = userAnswer?.[gapId]
+                                  const feedback = questionFeedbacks.find((f: any) => f.gapId === gapId)
+                                  const clozeMarks = (question as any).marksEnglish || question.marks || 0
+                                  const gapMarks = clozeMarks && question.gaps ? Math.round((clozeMarks / question.gaps.length) * 10) / 10 : 1
                                   const score = feedback?.score || 0
                                   const isCorrect = score === gapMarks
 
                                   return (
-                                    <div key={gap.id} className="border border-slate-200 rounded-lg p-4 space-y-3">
+                                    <div key={gapId} className="border border-slate-200 rounded-lg p-4 space-y-3">
                                       <div className="flex items-start justify-between">
-                                        <p className="font-medium text-slate-800">Gap ({gap.id})</p>
+                                        <p className="font-medium text-slate-800">Gap ({gapId})</p>
                                         <Badge className={`ml-4 ${isCorrect ? "bg-green-500 text-white" : "bg-red-500 text-white"}`}>
                                           {score}/{gapMarks}
                                         </Badge>

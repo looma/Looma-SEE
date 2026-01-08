@@ -55,7 +55,6 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
 
     // Count actual answered questions from their progress
     let totalAnswered = 0
-    const estimatedTotal = 25 // Default estimate
 
     // Count Group A answers (multiple choice) - Science format
     const groupAAnswers = Object.keys(progress.answers?.groupA || {}).filter(
@@ -160,7 +159,9 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
     )
 
     const hasProgress = totalAnswered > 0
-    const percentage = Math.round((totalAnswered / estimatedTotal) * 100)
+    // Estimate total questions dynamically based on answered count
+    const estimatedTotal = Math.max(10, Math.ceil(totalAnswered * 1.5))
+    const percentage = totalAnswered > 0 ? Math.round((totalAnswered / estimatedTotal) * 100) : 0
 
     return {
       completed: hasAttempts,
