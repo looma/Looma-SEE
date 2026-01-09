@@ -402,6 +402,11 @@ export function ResultsCard({
             const fb = feedbackMap.get(question.id)
             if (!fb) return null // Skip if no feedback for this question
 
+            const hasAnswer = fb.studentAnswer && (typeof fb.studentAnswer === 'string' ? fb.studentAnswer.trim().length > 0 : !!fb.studentAnswer)
+            const isNoAnswer = !hasAnswer
+            const isFullScore = hasAnswer && fb.score === question.marks
+            const isPartialScore = hasAnswer && fb.score > 0 && fb.score < question.marks
+
             return (
               <AccordionItem
                 value={`item-${question.id}`}
@@ -409,27 +414,51 @@ export function ResultsCard({
                 className="border border-slate-200 rounded-lg mb-2 overflow-hidden"
               >
                 <AccordionTrigger className="hover:bg-slate-50 px-4 py-3 text-left">
-                  <div className="flex justify-between w-full items-center min-h-[48px]">
+                  <div className="flex justify-between w-full items-center min-h-[48px] pr-4">
                     <span className="text-left font-medium pr-4 flex-1 leading-tight">
                       {index + 1}.{" "}
                       {question.english.length > 80 ? `${question.english.substring(0, 80)}...` : question.english}
                     </span>
-                    <Badge
-                      className={`ml-4 flex-shrink-0 ${fb.score === question.marks
-                        ? "bg-green-500 text-white hover:bg-green-600"
-                        : fb.score > 0
-                          ? "bg-yellow-500 text-white hover:bg-yellow-600"
-                          : "bg-red-500 text-white hover:bg-red-600"
-                        }`}
-                    >
-                      {fb.score}/{question.marks}
-                    </Badge>
+                    <div className="flex items-center gap-2 flex-shrink-0 ml-4">
+                      {isNoAnswer ? (
+                        <div className="h-5 w-5 rounded-full border-2 border-slate-400 bg-slate-100 flex items-center justify-center">
+                          <span className="text-xs font-bold text-slate-500">-</span>
+                        </div>
+                      ) : isFullScore ? (
+                        <CheckCircle className="h-5 w-5 text-green-500" />
+                      ) : isPartialScore ? (
+                        <div className="h-5 w-5 rounded-full border-2 border-yellow-500 bg-yellow-100 flex items-center justify-center">
+                          <span className="text-xs font-bold text-yellow-700">!</span>
+                        </div>
+                      ) : (
+                        <XCircle className="h-5 w-5 text-red-500" />
+                      )}
+                      <Badge
+                        className={`${isNoAnswer
+                          ? "bg-slate-400 text-white hover:bg-slate-500"
+                          : isFullScore
+                            ? "bg-green-500 text-white hover:bg-green-600"
+                            : isPartialScore
+                              ? "bg-yellow-500 text-white hover:bg-yellow-600"
+                              : "bg-red-500 text-white hover:bg-red-600"
+                          }`}
+                      >
+                        {fb.score}/{question.marks}
+                      </Badge>
+                    </div>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="px-4 pb-4">
                   <div className="space-y-4">
                     <div className="text-slate-600 mb-3"><MathText text={cleanNepaliText(question.nepali)} /></div>
-                    <div className="bg-slate-50 p-3 rounded-lg">
+                    <div className={`p-3 rounded-lg ${isNoAnswer
+                      ? "bg-slate-50 border-l-4 border-slate-400"
+                      : isFullScore
+                        ? "bg-green-50 border-l-4 border-green-500"
+                        : isPartialScore
+                          ? "bg-yellow-50 border-l-4 border-yellow-500"
+                          : "bg-red-50 border-l-4 border-red-500"
+                      }`}>
                       <p className="text-slate-600">
                         <span className="font-semibold text-slate-800">{language === 'english' ? 'Your Answer:' : 'तपाईंको उत्तर:'}</span>
                       </p>
@@ -562,7 +591,8 @@ export function ResultsCard({
                     const groupFeedback = (results.socialStudiesFeedback || []).filter(
                       (fb: any) => fb.group === groupIndex
                     )
-                    if (groupFeedback.length === 0) return null
+                    // Don't skip groups - show all questions even if no feedback yet
+                    if (!group.questions || group.questions.length === 0) return null
 
                     const groupScore = groupFeedback.reduce((sum: number, fb: any) => sum + fb.score, 0)
                     const groupMaxScore = group.questions?.reduce((sum: number, q: any) => sum + (Number(q.marksEnglish) || Number(q.marks) || 1), 0) || 0
@@ -573,38 +603,51 @@ export function ResultsCard({
                       <div key={groupIndex} className="mb-6">
                         <div className={`flex items-center justify-between p-4 rounded-lg ${groupBgColor} mb-4`}>
                           <h3 className="text-xl font-semibold">
-                            {language === 'english' ? (group.groupNameEnglish || group.groupName) : (group.groupName || group.groupNameEnglish)}
+                            {language === 'english'
+                              ? (group.groupNameEnglish || {
+                                "समूह 'क'": "Group 'A'",
+                                "समूह 'ख'": "Group 'B'",
+                                "समूह 'ग'": "Group 'C'",
+                                "समूह 'घ'": "Group 'D'"
+                              }[group.groupName] || group.groupName)
+                              : group.groupName}
                           </h3>
                           <div className="text-right">
                             <p className="text-2xl font-bold">{groupScore}/{groupMaxScore}</p>
                           </div>
                         </div>
                         <Accordion type="single" collapsible className="w-full">
-                          {groupFeedback.map((fb: any, idx: number) => {
-                            // Find question by questionNumber (e.g., "१") or by matching index
-                            const question = group.questions?.find((q: any) =>
-                              q.questionNumber === fb.questionNumber ||
-                              q.id === fb.id ||
-                              group.questions?.indexOf(q) === idx
-                            )
-                            const isFullScore = fb.score === fb.marks
-                            const isPartialScore = fb.score > 0 && fb.score < fb.marks
+                          {(group.questions || []).map((question: any, idx: number) => {
+                            // Find matching feedback by question ID
+                            const fb = groupFeedback.find((f: any) => f.id === question.id)
+                            // Get the stored answer for this question
+                            const storedAnswer = answers?.socialStudies?.[question.id] || ""
+                            const hasAnswer = typeof storedAnswer === 'string' ? storedAnswer.trim().length > 0 : !!storedAnswer
+                            const questionMarks = Number(question.marksEnglish) || Number(question.marks) || 1
+
+                            const isFullScore = fb && fb.score === fb.marks
+                            const isPartialScore = fb && fb.score > 0 && fb.score < fb.marks
+                            const isNoAnswer = !hasAnswer
 
                             return (
                               <AccordionItem
                                 value={`social-${groupIndex}-${idx}`}
-                                key={fb.id}
+                                key={question.id || idx}
                                 className="border border-slate-200 rounded-lg mb-2 overflow-hidden"
                               >
                                 <AccordionTrigger className="hover:bg-slate-50 px-4 py-3 text-left">
                                   <div className="flex justify-between w-full items-center min-h-[48px] pr-4">
                                     <span className="text-left font-medium pr-4 flex-1 leading-tight">
                                       {idx + 1}. {(language === 'nepali'
-                                        ? (question?.questionNepali || question?.questionEnglish || fb.questionNepali || fb.question)
-                                        : (question?.questionEnglish || question?.questionNepali || fb.questionEnglish || fb.question))?.substring(0, 80) || (language === 'nepali' ? 'प्रश्न' : 'Question')}...
+                                        ? (question.questionNepali || question.questionEnglish)
+                                        : (question.questionEnglish || question.questionNepali))?.substring(0, 80) || (language === 'nepali' ? 'प्रश्न' : 'Question')}...
                                     </span>
                                     <div className="flex items-center gap-2 flex-shrink-0 ml-4">
-                                      {isFullScore ? (
+                                      {isNoAnswer ? (
+                                        <div className="h-5 w-5 rounded-full border-2 border-slate-400 bg-slate-100 flex items-center justify-center">
+                                          <span className="text-xs font-bold text-slate-500">-</span>
+                                        </div>
+                                      ) : isFullScore ? (
                                         <CheckCircle className="h-5 w-5 text-green-500" />
                                       ) : isPartialScore ? (
                                         <div className="h-5 w-5 rounded-full border-2 border-yellow-500 bg-yellow-100 flex items-center justify-center">
@@ -614,14 +657,16 @@ export function ResultsCard({
                                         <XCircle className="h-5 w-5 text-red-500" />
                                       )}
                                       <Badge
-                                        className={`${isFullScore
-                                          ? "bg-green-500 text-white"
-                                          : isPartialScore
-                                            ? "bg-yellow-500 text-white"
-                                            : "bg-red-500 text-white"
+                                        className={`${isNoAnswer
+                                          ? "bg-slate-400 text-white"
+                                          : isFullScore
+                                            ? "bg-green-500 text-white"
+                                            : isPartialScore
+                                              ? "bg-yellow-500 text-white"
+                                              : "bg-red-500 text-white"
                                           }`}
                                       >
-                                        {fb.score}/{fb.marks}
+                                        {fb?.score ?? 0}/{questionMarks}
                                       </Badge>
                                     </div>
                                   </div>
@@ -631,29 +676,31 @@ export function ResultsCard({
                                     {/* Full question */}
                                     <div className="text-slate-700 mb-3">
                                       {language === 'nepali'
-                                        ? (question?.questionNepali || question?.questionEnglish || fb.question || 'प्रश्न')
-                                        : (question?.questionEnglish || question?.questionNepali || fb.question || 'Question')}
+                                        ? (question.questionNepali || question.questionEnglish || 'प्रश्न')
+                                        : (question.questionEnglish || question.questionNepali || 'Question')}
                                     </div>
 
                                     {/* Your Answer */}
                                     <div
-                                      className={`p-3 rounded-lg ${isFullScore
-                                        ? "bg-green-50 border-l-4 border-green-500"
-                                        : isPartialScore
-                                          ? "bg-yellow-50 border-l-4 border-yellow-500"
-                                          : "bg-red-50 border-l-4 border-red-500"
+                                      className={`p-3 rounded-lg ${isNoAnswer
+                                        ? "bg-slate-50 border-l-4 border-slate-400"
+                                        : isFullScore
+                                          ? "bg-green-50 border-l-4 border-green-500"
+                                          : isPartialScore
+                                            ? "bg-yellow-50 border-l-4 border-yellow-500"
+                                            : "bg-red-50 border-l-4 border-red-500"
                                         }`}
                                     >
                                       <p className="font-semibold text-slate-800 mb-1">
                                         {language === 'nepali' ? 'तपाईंको उत्तर:' : 'Your Answer:'}
                                       </p>
                                       <p className="text-slate-700 whitespace-pre-wrap">
-                                        {formatAnswerForDisplay(fb.studentAnswer) || (language === 'nepali' ? 'कुनै उत्तर प्रदान गरिएको छैन' : 'No answer provided')}
+                                        {hasAnswer ? formatAnswerForDisplay(storedAnswer) : (language === 'nepali' ? 'कुनै उत्तर प्रदान गरिएको छैन' : 'No answer provided')}
                                       </p>
                                     </div>
 
-                                    {/* Feedback - only show if student provided an answer */}
-                                    {formatAnswerForDisplay(fb.studentAnswer) && fb.feedback && !fb.feedback.includes('No answer provided') && !fb.feedback.includes('कुनै उत्तर') && (
+                                    {/* Feedback - only show if student provided an answer and got feedback */}
+                                    {hasAnswer && fb?.feedback && !fb.feedback.includes('No answer provided') && !fb.feedback.includes('कुनै उत्तर') && (
                                       <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
                                         <div className="flex items-start gap-3">
                                           <Lightbulb className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
@@ -668,7 +715,7 @@ export function ResultsCard({
                                     )}
 
                                     {/* Sample answer if available */}
-                                    {(question?.answerNepali || question?.answerEnglish) && (
+                                    {(question.answerNepali || question.answerEnglish) && (
                                       <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg">
                                         <p className="font-semibold text-amber-800 mb-1">
                                           {language === 'nepali' ? 'नमुना उत्तर:' : 'Sample Answer:'}
@@ -682,7 +729,7 @@ export function ResultsCard({
                                     )}
 
                                     {/* Explanation if available */}
-                                    {(question?.explanationNepali || question?.explanationEnglish) && (
+                                    {(question.explanationNepali || question.explanationEnglish) && (
                                       <div className="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded-r-lg">
                                         <div className="flex items-start gap-3">
                                           <Lightbulb className="h-5 w-5 text-indigo-600 mt-1 flex-shrink-0" />
@@ -738,8 +785,10 @@ export function ResultsCard({
                   {/* Nepali question feedback */}
                   <Accordion type="single" collapsible className="w-full">
                     {(results.nepaliFeedback || []).map((fb: any, idx: number) => {
-                      const isFullScore = fb.score >= fb.maxScore
-                      const isPartialScore = fb.score > 0 && fb.score < fb.maxScore
+                      const hasAnswer = fb.studentAnswer && (typeof fb.studentAnswer === 'string' ? fb.studentAnswer.trim().length > 0 : Object.keys(fb.studentAnswer).length > 0)
+                      const isNoAnswer = !hasAnswer
+                      const isFullScore = hasAnswer && fb.score >= fb.maxScore
+                      const isPartialScore = hasAnswer && fb.score > 0 && fb.score < fb.maxScore
 
                       // Find the original question for context - try multiple ID patterns
                       const originalQuestion = questions.nepaliQuestions.find(
@@ -831,11 +880,15 @@ export function ResultsCard({
                               <span className="text-left font-medium pr-4 flex-1 leading-tight">
                                 {idx + 1}. {((language === 'english'
                                   ? (originalQuestion?.titleEnglish || originalQuestion?.questionEnglish || originalQuestion?.title || fb.questionEnglish || fb.question)
-                                  : (originalQuestion?.titleNepali || originalQuestion?.questionNepali || originalQuestion?.title || fb.questionNepali || fb.question))?.substring(0, 80) || (language === 'english' ? "Question" : "प्रश्न"))}...
+                                  : (originalQuestion?.titleNepali || originalQuestion?.questionNepali || originalQuestion?.title || fb.questionNepali || fb.question))?.substring(0, 60) || (language === 'english' ? "Question" : "प्रश्न"))}...
                                 <Badge variant="outline" className="ml-2 text-xs">{getTypeDisplayName(fb.type)}</Badge>
                               </span>
                               <div className="flex items-center gap-2 flex-shrink-0 ml-4">
-                                {isFullScore ? (
+                                {isNoAnswer ? (
+                                  <div className="h-5 w-5 rounded-full border-2 border-slate-400 bg-slate-100 flex items-center justify-center">
+                                    <span className="text-xs font-bold text-slate-500">-</span>
+                                  </div>
+                                ) : isFullScore ? (
                                   <CheckCircle className="h-5 w-5 text-green-500" />
                                 ) : isPartialScore ? (
                                   <div className="h-5 w-5 rounded-full border-2 border-yellow-500 bg-yellow-100 flex items-center justify-center">
@@ -845,12 +898,13 @@ export function ResultsCard({
                                   <XCircle className="h-5 w-5 text-red-500" />
                                 )}
                                 <Badge
-                                  variant={isFullScore ? "default" : isPartialScore ? "secondary" : "destructive"}
-                                  className={`min-w-[60px] text-center ${isFullScore
-                                    ? "bg-green-500 hover:bg-green-600"
-                                    : isPartialScore
-                                      ? "bg-yellow-500 text-yellow-900 hover:bg-yellow-600"
-                                      : ""
+                                  className={`min-w-[60px] text-center ${isNoAnswer
+                                    ? "bg-slate-400 text-white hover:bg-slate-500"
+                                    : isFullScore
+                                      ? "bg-green-500 text-white hover:bg-green-600"
+                                      : isPartialScore
+                                        ? "bg-yellow-500 text-yellow-900 hover:bg-yellow-600"
+                                        : "bg-red-500 text-white hover:bg-red-600"
                                     }`}
                                 >
                                   {fb.score}/{fb.maxScore}
@@ -1007,9 +1061,11 @@ export function ResultsCard({
                   {/* Math question feedback */}
                   <Accordion type="single" collapsible className="w-full">
                     {(results.mathFeedback || []).map((fb: any, idx: number) => {
+                      const hasAnswer = fb.studentAnswer && fb.studentAnswer.trim && fb.studentAnswer.trim().length > 0
+                      const isNoAnswer = !hasAnswer
                       const isAIUnavailable = fb.score === null || fb.aiUnavailable
-                      const isFullScore = !isAIUnavailable && fb.score >= fb.maxScore
-                      const isPartialScore = !isAIUnavailable && fb.score > 0 && fb.score < fb.maxScore
+                      const isFullScore = hasAnswer && !isAIUnavailable && fb.score >= fb.maxScore
+                      const isPartialScore = hasAnswer && !isAIUnavailable && fb.score > 0 && fb.score < fb.maxScore
 
                       return (
                         <AccordionItem key={fb.id || idx} value={fb.id || `math-${idx}`} className="border rounded-lg mb-2 overflow-hidden">
@@ -1020,8 +1076,12 @@ export function ResultsCard({
                                   {language === "english" ? "Q" : "प्र"}{fb.questionNumber} ({fb.subLabel})
                                 </span>
                               </div>
-                              <div className="flex items-center gap-2">
-                                {isAIUnavailable ? (
+                              <div className="flex items-center gap-2 ml-4">
+                                {isNoAnswer ? (
+                                  <div className="h-5 w-5 rounded-full border-2 border-slate-400 bg-slate-100 flex items-center justify-center">
+                                    <span className="text-xs font-bold text-slate-500">-</span>
+                                  </div>
+                                ) : isAIUnavailable ? (
                                   <AlertCircle className="h-5 w-5 text-amber-500" />
                                 ) : isFullScore ? (
                                   <CheckCircle className="h-5 w-5 text-green-500" />
@@ -1030,10 +1090,12 @@ export function ResultsCard({
                                 ) : (
                                   <XCircle className="h-5 w-5 text-red-500" />
                                 )}
-                                <span className={`font-semibold ${isAIUnavailable ? "text-amber-600" : isFullScore ? "text-green-600" : isPartialScore ? "text-yellow-600" : "text-red-600"}`}>
-                                  {isAIUnavailable
-                                    ? (language === "english" ? "Pending Review" : "समीक्षा बाँकी")
-                                    : `${fb.score}/${fb.maxScore}`}
+                                <span className={`font-semibold ${isNoAnswer ? "text-slate-500" : isAIUnavailable ? "text-amber-600" : isFullScore ? "text-green-600" : isPartialScore ? "text-yellow-600" : "text-red-600"}`}>
+                                  {isNoAnswer
+                                    ? `0/${fb.maxScore}`
+                                    : isAIUnavailable
+                                      ? (language === "english" ? "Pending Review" : "समीक्षा बाँकी")
+                                      : `${fb.score}/${fb.maxScore}`}
                                 </span>
                               </div>
                             </div>
@@ -1047,13 +1109,15 @@ export function ResultsCard({
 
                               {/* Your Answer */}
                               <div
-                                className={`p-3 rounded-lg ${isAIUnavailable
-                                  ? "bg-amber-50 border-l-4 border-amber-500"
-                                  : isFullScore
-                                    ? "bg-green-50 border-l-4 border-green-500"
-                                    : isPartialScore
-                                      ? "bg-yellow-50 border-l-4 border-yellow-500"
-                                      : "bg-red-50 border-l-4 border-red-500"
+                                className={`p-3 rounded-lg ${isNoAnswer
+                                  ? "bg-slate-50 border-l-4 border-slate-400"
+                                  : isAIUnavailable
+                                    ? "bg-amber-50 border-l-4 border-amber-500"
+                                    : isFullScore
+                                      ? "bg-green-50 border-l-4 border-green-500"
+                                      : isPartialScore
+                                        ? "bg-yellow-50 border-l-4 border-yellow-500"
+                                        : "bg-red-50 border-l-4 border-red-500"
                                   }`}
                               >
                                 <p className="font-semibold text-slate-800 mb-1">
@@ -1197,14 +1261,18 @@ export function ResultsCard({
                           className="border border-slate-200 rounded-lg mb-2 overflow-hidden"
                         >
                           <AccordionTrigger className="hover:bg-slate-50 px-4 py-3 text-left">
-                            <div className="flex justify-between w-full items-center min-h-[48px]">
+                            <div className="flex justify-between w-full items-center min-h-[48px] pr-4">
                               <span className="text-left font-medium pr-4 flex-1 leading-tight">
                                 {index + 1}. {language === 'nepali'
                                   ? ((question as any).titleNepali || (question as any).title)
                                   : ((question as any).titleEnglish || (question as any).title)}
                               </span>
                               <div className="flex items-center gap-2 flex-shrink-0 ml-4">
-                                {isFullyCorrect ? (
+                                {!hasAnswer ? (
+                                  <div className="h-5 w-5 rounded-full border-2 border-slate-400 bg-slate-100 flex items-center justify-center">
+                                    <span className="text-xs font-bold text-slate-500">-</span>
+                                  </div>
+                                ) : isFullyCorrect ? (
                                   <CheckCircle className="h-5 w-5 text-green-500" />
                                 ) : isPartiallyCorrect ? (
                                   <div className="h-5 w-5 rounded-full border-2 border-yellow-500 bg-yellow-100 flex items-center justify-center">
@@ -1214,8 +1282,14 @@ export function ResultsCard({
                                   <XCircle className="h-5 w-5 text-red-500" />
                                 )}
                                 <Badge
-                                  variant={isFullyCorrect ? "default" : isPartiallyCorrect ? "secondary" : "destructive"}
-                                  className={isFullyCorrect ? "bg-green-500 text-white hover:bg-green-600" : ""}
+                                  className={`${!hasAnswer
+                                    ? "bg-slate-400 text-white hover:bg-slate-500"
+                                    : isFullyCorrect
+                                      ? "bg-green-500 text-white hover:bg-green-600"
+                                      : isPartiallyCorrect
+                                        ? "bg-yellow-500 text-white hover:bg-yellow-600"
+                                        : "bg-red-500 text-white hover:bg-red-600"
+                                    }`}
                                 >
                                   {questionScore}/{questionMarks}
                                 </Badge>

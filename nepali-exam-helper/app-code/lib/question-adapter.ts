@@ -123,15 +123,16 @@ export function adaptDatabaseQuestions(dbQuestions: Record<string, any>) {
 
   // Handle Social Studies format if it exists
   if (dbQuestions.socialStudiesGroups && Array.isArray(dbQuestions.socialStudiesGroups)) {
-    adapted.socialStudiesGroups = dbQuestions.socialStudiesGroups.map((group: any) => ({
+    adapted.socialStudiesGroups = dbQuestions.socialStudiesGroups.map((group: any, groupIndex: number) => ({
       groupName: group.groupName || '',
       groupNameEnglish: group.groupNameEnglish || '',
       groupInstruction: group.groupInstruction || '',
       groupInstructionEnglish: group.groupInstructionEnglish || '',
       marksSchema: group.marksSchema || '',
       marksSchemaEnglish: group.marksSchemaEnglish || '',
-      questions: (group.questions || []).map((q: any): SocialStudiesQuestion => ({
-        id: q.questionNumber?.toString() || q.questionNumberEnglish?.toString() || q._id || Math.random().toString(),
+      questions: (group.questions || []).map((q: any, qIndex: number): SocialStudiesQuestion => ({
+        // Use group index + question index/number to ensure unique IDs across all groups
+        id: `g${groupIndex}-${q.questionNumberEnglish?.toString() || q.questionNumber?.toString() || qIndex}`,
         questionNumber: q.questionNumber || q.questionNumberNepali || '',
         questionNumberNepali: q.questionNumberNepali || q.questionNumber || '',
         questionNumberEnglish: q.questionNumberEnglish || '',
