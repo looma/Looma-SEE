@@ -62,8 +62,8 @@
           "correctAnswerEnglish": "iv",
           "marksNepali": "१",
           "marksEnglish": 1,
-          "explanationNepali": "कम्प्युटर मेमोरीको क्षमता बाइट (Byte), किलो बाइट (KB), मेगा बाइट (MB), गिगा बाइट (GB) आदिमा नापिन्छ । हर्ज (Hz) ले फ्रिक्वेन्सी नाप्छ ।\nउद्धरण: एकाइ १३",
-          "explanationEnglish": "Computer memory capacity is measured in Bytes, KB, MB, GB, etc. Hertz (Hz) measures frequency.\nCitation: Unit 13"
+          "explanationNepali": "कम्प्युटर मेमोरीको क्षमता बाइट (Byte), किलो बाइट (KB), मेगा बाइट (MB), गिगा बाइट (GB) आदिमा नापिन्छ । हर्ज (Hz) ले फ्रिक्वेन्सी नाप्छ ।\nउद्धरण: पाठ १३",
+          "explanationEnglish": "Computer memory capacity is measured in Bytes, KB, MB, GB, etc. Hertz (Hz) measures frequency.\nCitation: Chapter 13"
         },
         {
           "idNepali": "ख",
@@ -101,8 +101,8 @@
           "correctAnswerEnglish": "ii",
           "marksNepali": "१",
           "marksEnglish": 1,
-          "explanationNepali": "मेन्डलको मोनोहाइब्रिड क्रसको दोस्रो वंश (F2) मा फिनोटाइपिक अनुपात ३ प्रवल (Dominant) : १ लुप्त (Recessive) हुन्छ ।\nउद्धरण: एकाइ ४",
-          "explanationEnglish": "In Mendel's monohybrid cross, the phenotypic ratio in the F2 generation is 3 Dominant : 1 Recessive.\nCitation: Unit 4"
+          "explanationNepali": "मेन्डलको मोनोहाइब्रिड क्रसको दोस्रो वंश (F2) मा फिनोटाइपिक अनुपात ३ प्रवल (Dominant) : १ लुप्त (Recessive) हुन्छ ।\nउद्धरण: पाठ ४",
+          "explanationEnglish": "In Mendel's monohybrid cross, the phenotypic ratio in the F2 generation is 3 Dominant : 1 Recessive.\nCitation: Chapter 4"
         },
         {
           "idNepali": "ग",
@@ -140,8 +140,8 @@
           "correctAnswerEnglish": "i",
           "marksNepali": "१",
           "marksEnglish": 1,
-          "explanationNepali": "उनिउँको प्रोथ्यालसमा एन्थेरिडियमले भाले ग्यामेट र आर्किगोनियमले पोथी ग्यामेट उत्पादन गर्छ ।\nउद्धरण: एकाइ २",
-          "explanationEnglish": "In the prothallus of a fern, the Antheridium produces male gametes and the Archegonium produces female gametes.\nCitation: Unit 2"
+          "explanationNepali": "उनिउँको प्रोथ्यालसमा एन्थेरिडियमले भाले ग्यामेट र आर्किगोनियमले पोथी ग्यामेट उत्पादन गर्छ ।\nउद्धरण: पाठ २",
+          "explanationEnglish": "In the prothallus of a fern, the Antheridium produces male gametes and the Archegonium produces female gametes.\nCitation: Chapter 2"
         },
         {
           "idNepali": "घ",
@@ -179,8 +179,8 @@
           "correctAnswerEnglish": "i",
           "marksNepali": "१",
           "marksEnglish": 1,
-          "explanationNepali": "घ्युकुमारी (Aloe vera) को प्रयोग पेट र छाला सम्बन्धी समस्याहरू, साथै जलेको घाउ निको पार्न गरिन्छ ।\nउद्धरण: एकाइ ६",
-          "explanationEnglish": "Aloe vera is used to cure stomach and skin problems, as well as to heal burns.\nCitation: Unit 6"
+          "explanationNepali": "घ्युकुमारी (Aloe vera) को प्रयोग पेट र छाला सम्बन्धी समस्याहरू, साथै जलेको घाउ निको पार्न गरिन्छ ।\nउद्धरण: पाठ ६",
+          "explanationEnglish": "Aloe vera is used to cure stomach and skin problems, as well as to heal burns.\nCitation: Chapter 6"
         },
         {
           "idNepali": "ङ",
@@ -218,8 +218,8 @@
           "correctAnswerEnglish": "iii",
           "marksNepali": "१",
           "marksEnglish": 1,
-          "explanationNepali": "चन्द्रमामा गुरुत्व प्रवेग पृथ्वीको भन्दा लगभग १/६ गुणा हुन्छ । त्यसैले तौल = $294/6 = 49 \\text{ N}$ ।\nउद्धरण: एकाइ ७",
-          "explanationEnglish": "Gravity on the Moon is about 1/6th of that on Earth. Therefore, weight = $294/6 = 49 \\text{ N}$.\nCitation: Unit 7"
+          "explanationNepali": "चन्द्रमामा गुरुत्व प्रवेग पृथ्वीको भन्दा लगभग १/६ गुणा हुन्छ । त्यसैले तौल = $294/6 = 49 \\text{ N}$ ।\nउद्धरण: पाठ ७",
+          "explanationEnglish": "Gravity on the Moon is about 1/6th of that on Earth. Therefore, weight = $294/6 = 49 \\text{ N}$.\nCitation: Chapter 7"
         },
         {
           "idNepali": "च",
@@ -257,8 +257,8 @@
           "correctAnswerEnglish": "ii",
           "marksNepali": "१",
           "marksEnglish": 1,
-          "explanationNepali": "समुन्द्रको पानीमा नुन घुलेको हुनाले यसको घनत्व नदीको पानीभन्दा बढी हुन्छ । बढी घनत्व भएको तरलले बढी उर्ध्वचाप दिन्छ, त्यसैले जहाज समुन्द्रमा कम डुब्छ र नदीमा (कम घनत्व हुँदा) बढी डुब्छ ।\nउद्धरण: एकाइ ८",
-          "explanationEnglish": "Seawater contains salt, so its density is higher than river water. A liquid with higher density exerts more upthrust, so the ship sinks less in the sea and more in the river.\nCitation: Unit 8"
+          "explanationNepali": "समुन्द्रको पानीमा नुन घुलेको हुनाले यसको घनत्व नदीको पानीभन्दा बढी हुन्छ । बढी घनत्व भएको तरलले बढी उर्ध्वचाप दिन्छ, त्यसैले जहाज समुन्द्रमा कम डुब्छ र नदीमा (कम घनत्व हुँदा) बढी डुब्छ ।\nउद्धरण: पाठ ८",
+          "explanationEnglish": "Seawater contains salt, so its density is higher than river water. A liquid with higher density exerts more upthrust, so the ship sinks less in the sea and more in the river.\nCitation: Chapter 8"
         },
         {
           "idNepali": "छ",
@@ -296,8 +296,8 @@
           "correctAnswerEnglish": "i",
           "marksNepali": "१",
           "marksEnglish": 1,
-          "explanationNepali": "यहाँ, आपतित कोण ($30^{\\circ}$) भन्दा आवर्तित कोण ($52^{\\circ}$) ठूलो छ । प्रकाश सघन माध्यमबाट विरल माध्यममा जाँदा 'नर्मल' भन्दा टाढा बाङ्गिन्छ (कोण बढ्छ) । त्यसैले माध्यम १ सघन र माध्यम २ विरल हो ।\nउद्धरण: एकाइ १०",
-          "explanationEnglish": "Here, the angle of refraction ($52^{\\circ}$) is greater than the angle of incidence ($30^{\\circ}$). Light bends away from the normal when travelling from a denser to a rarer medium. Thus, Medium 1 is denser and Medium 2 is rarer.\nCitation: Unit 10"
+          "explanationNepali": "यहाँ, आपतित कोण ($30^{\\circ}$) भन्दा आवर्तित कोण ($52^{\\circ}$) ठूलो छ । प्रकाश सघन माध्यमबाट विरल माध्यममा जाँदा 'नर्मल' भन्दा टाढा बाङ्गिन्छ (कोण बढ्छ) । त्यसैले माध्यम १ सघन र माध्यम २ विरल हो ।\nउद्धरण: पाठ १०",
+          "explanationEnglish": "Here, the angle of refraction ($52^{\\circ}$) is greater than the angle of incidence ($30^{\\circ}$). Light bends away from the normal when travelling from a denser to a rarer medium. Thus, Medium 1 is denser and Medium 2 is rarer.\nCitation: Chapter 10"
         },
         {
           "idNepali": "ज",
@@ -335,8 +335,8 @@
           "correctAnswerEnglish": "iv",
           "marksNepali": "१",
           "marksEnglish": 1,
-          "explanationNepali": "हबल कन्स्ट्यान्ट (H) को हालको स्वीकार्य मान लगभग $73 \\text{ km/s/Mpc}$ हो ।\nउद्धरण: एकाइ १२",
-          "explanationEnglish": "The currently accepted value of Hubble's constant (H) is approximately $73 \\text{ km/s/Mpc}$.\nCitation: Unit 12"
+          "explanationNepali": "हबल कन्स्ट्यान्ट (H) को हालको स्वीकार्य मान लगभग $73 \\text{ km/s/Mpc}$ हो ।\nउद्धरण: पाठ १२",
+          "explanationEnglish": "The currently accepted value of Hubble's constant (H) is approximately $73 \\text{ km/s/Mpc}$.\nCitation: Chapter 12"
         },
         {
           "idNepali": "i",
@@ -374,8 +374,8 @@
           "correctAnswerEnglish": "iii",
           "marksNepali": "१",
           "marksEnglish": 1,
-          "explanationNepali": "उत्पादन $YCl_3$ मा, क्लोरिन (Cl) को संयुज्यता १ हुन्छ । तीनओटा क्लोरिन परमाणुसँग एउटा Y परमाणु मिलेको छ, त्यसैले Y को संयुज्यता ३ हुनुपर्छ (सूत्र अनुसार क्रिस-क्रस विधि) ।\nउद्धरण: एकाइ १५",
-          "explanationEnglish": "In the product $YCl_3$, Chlorine (Cl) has a valency of 1. Since one atom of Y combines with three atoms of Cl, the valency of Y must be 3.\nCitation: Unit 15"
+          "explanationNepali": "उत्पादन $YCl_3$ मा, क्लोरिन (Cl) को संयुज्यता १ हुन्छ । तीनओटा क्लोरिन परमाणुसँग एउटा Y परमाणु मिलेको छ, त्यसैले Y को संयुज्यता ३ हुनुपर्छ (सूत्र अनुसार क्रिस-क्रस विधि) ।\nउद्धरण: पाठ १५",
+          "explanationEnglish": "In the product $YCl_3$, Chlorine (Cl) has a valency of 1. Since one atom of Y combines with three atoms of Cl, the valency of Y must be 3.\nCitation: Chapter 15"
         },
         {
           "idNepali": "ञ",
@@ -413,8 +413,8 @@
           "correctAnswerEnglish": "i",
           "marksNepali": "१",
           "marksEnglish": 1,
-          "explanationNepali": "साबुनले कडा पानीमा फिँज दिँदैन र 'स्कम' बनाउँछ, तर डिटर्जेन्टले कडा पानीमा पनि सजिलै फिँज दिन्छ र सफाइ राम्रो गर्छ ।\nउद्धरण: एकाइ १९",
-          "explanationEnglish": "Soap forms scum with hard water and does not lather easily, whereas detergents lather well in both hard and soft water, making them more effective for washing.\nCitation: Unit 19"
+          "explanationNepali": "साबुनले कडा पानीमा फिँज दिँदैन र 'स्कम' बनाउँछ, तर डिटर्जेन्टले कडा पानीमा पनि सजिलै फिँज दिन्छ र सफाइ राम्रो गर्छ ।\nउद्धरण: पाठ १९",
+          "explanationEnglish": "Soap forms scum with hard water and does not lather easily, whereas detergents lather well in both hard and soft water, making them more effective for washing.\nCitation: Chapter 19"
         }
       ],
       "groupB": [
@@ -426,8 +426,8 @@
           "questionEnglish": "Which is the dependent variable in the experiment where solubility of salt is measured at different temperatures?",
           "marksNepali": "१",
           "marksEnglish": 1,
-          "sampleAnswerNepali": "नुनको घुलनशीलता आश्रित चर हो।\nउद्धरण: एकाइ १",
-          "sampleAnswerEnglish": "The solubility of salt is the dependent variable.\nCitation: Unit 1"
+          "sampleAnswerNepali": "नुनको घुलनशीलता आश्रित चर हो।\nउद्धरण: पाठ १",
+          "sampleAnswerEnglish": "The solubility of salt is the dependent variable.\nCitation: Chapter 1"
         },
         {
           "idNepali": "ख",
@@ -437,8 +437,8 @@
           "questionEnglish": "Write the relation between up-thrust and density of liquid.",
           "marksNepali": "१",
           "marksEnglish": 1,
-          "sampleAnswerNepali": "उर्ध्वचाप तरल पदार्थको घनत्वसँग सोझै समानुपातिक हुन्छ ($U \\propto \\rho$)।\nउद्धरण: एकाइ ८",
-          "sampleAnswerEnglish": "Upthrust is directly proportional to the density of the liquid ($U \\propto \\rho$).\nCitation: Unit 8"
+          "sampleAnswerNepali": "उर्ध्वचाप तरल पदार्थको घनत्वसँग सोझै समानुपातिक हुन्छ ($U \\propto \\rho$)।\nउद्धरण: पाठ ८",
+          "sampleAnswerEnglish": "Upthrust is directly proportional to the density of the liquid ($U \\propto \\rho$).\nCitation: Chapter 8"
         },
         {
           "idNepali": "ग",
@@ -448,8 +448,8 @@
           "questionEnglish": "Write an application of total internal reflection of light in daily life.",
           "marksNepali": "१",
           "marksEnglish": 1,
-          "sampleAnswerNepali": "अप्टिकल फाइबर मा सञ्चारका लागि वा एन्डोस्कोपीमा शरीरको भित्री अंग हेर्नका लागि।\nउद्धरण: एकाइ १०",
-          "sampleAnswerEnglish": "It is used in Optical Fibers for communication or in endoscopy to view internal organs.\nCitation: Unit 10"
+          "sampleAnswerNepali": "अप्टिकल फाइबर मा सञ्चारका लागि वा एन्डोस्कोपीमा शरीरको भित्री अंग हेर्नका लागि।\nउद्धरण: पाठ १०",
+          "sampleAnswerEnglish": "It is used in Optical Fibers for communication or in endoscopy to view internal organs.\nCitation: Chapter 10"
         },
         {
           "idNepali": "घ",
@@ -459,8 +459,8 @@
           "questionEnglish": "Write any one way for the correction of defect of vision without using spectacles.",
           "marksNepali": "१",
           "marksEnglish": 1,
-          "sampleAnswerNepali": "कन्ट्याक्ट लेन्सको प्रयोग वा लेजर सर्जरी।\nउद्धरण: एकाइ १०",
-          "sampleAnswerEnglish": "Use of contact lenses or laser surgery.\nCitation: Unit 10"
+          "sampleAnswerNepali": "कन्ट्याक्ट लेन्सको प्रयोग वा लेजर सर्जरी।\nउद्धरण: पाठ १०",
+          "sampleAnswerEnglish": "Use of contact lenses or laser surgery.\nCitation: Chapter 10"
         },
         {
           "idNepali": "ङ",
@@ -470,8 +470,8 @@
           "questionEnglish": "When an alternating current of 60 Hz frequency is connected to the primary coil of a transformer, what will be the frequency of alternating current in the secondary coil?",
           "marksNepali": "१",
           "marksEnglish": 1,
-          "sampleAnswerNepali": "सेकेन्डरी क्वाइलमा पनि करेन्टको आवृति 60 Hz नै हुन्छ (ट्रान्सफर्मरले आवृति परिवर्तन गर्दैन)।\nउद्धरण: एकाइ ११",
-          "sampleAnswerEnglish": "The frequency of the alternating current in the secondary coil will also be 60 Hz (Transformer does not change frequency).\nCitation: Unit 11"
+          "sampleAnswerNepali": "सेकेन्डरी क्वाइलमा पनि करेन्टको आवृति 60 Hz नै हुन्छ (ट्रान्सफर्मरले आवृति परिवर्तन गर्दैन)।\nउद्धरण: पाठ ११",
+          "sampleAnswerEnglish": "The frequency of the alternating current in the secondary coil will also be 60 Hz (Transformer does not change frequency).\nCitation: Chapter 11"
         },
         {
           "idNepali": "च",
@@ -481,8 +481,8 @@
           "questionEnglish": "Write the definition of flat universe.",
           "marksNepali": "१",
           "marksEnglish": 1,
-          "sampleAnswerNepali": "यदि ब्रह्माण्डको औसत घनत्व र क्रिटिकल घनत्व बराबर छ भने, त्यस्तो ब्रह्माण्डलाई समतल ब्रह्माण्ड भनिन्छ, जहाँ ब्रह्माण्डको विस्तार दर विस्तारै घट्दै जान्छ तर कहिल्यै रोकिँदैन।\nउद्धरण: एकाइ १२",
-          "sampleAnswerEnglish": "If the average density of the universe is equal to the critical density, it is called a flat universe. In this scenario, the expansion slows down but never stops.\nCitation: Unit 12"
+          "sampleAnswerNepali": "यदि ब्रह्माण्डको औसत घनत्व र क्रिटिकल घनत्व बराबर छ भने, त्यस्तो ब्रह्माण्डलाई समतल ब्रह्माण्ड भनिन्छ, जहाँ ब्रह्माण्डको विस्तार दर विस्तारै घट्दै जान्छ तर कहिल्यै रोकिँदैन।\nउद्धरण: पाठ १२",
+          "sampleAnswerEnglish": "If the average density of the universe is equal to the critical density, it is called a flat universe. In this scenario, the expansion slows down but never stops.\nCitation: Chapter 12"
         },
         {
           "idNepali": "छ",
@@ -492,8 +492,8 @@
           "questionEnglish": "Write the name of an ore of copper.",
           "marksNepali": "१",
           "marksEnglish": 1,
-          "sampleAnswerNepali": "चाल्कोपाइराइट, क्युप्राइट।\nउद्धरण: एकाइ १७",
-          "sampleAnswerEnglish": "Chalcopyrite ($CuFeS_2$), Cuprite ($Cu_2O$).\nCitation: Unit 17"
+          "sampleAnswerNepali": "चाल्कोपाइराइट, क्युप्राइट।\nउद्धरण: पाठ १७",
+          "sampleAnswerEnglish": "Chalcopyrite ($CuFeS_2$), Cuprite ($Cu_2O$).\nCitation: Chapter 17"
         },
         {
           "idNepali": "ज",
@@ -503,8 +503,8 @@
           "questionEnglish": "Gold is found in pure state in nature, why?",
           "marksNepali": "१",
           "marksEnglish": 1,
-          "sampleAnswerNepali": "सुन अति कम सक्रिय धातु हो, त्यसैले यसले हावा, पानी वा अन्य रसायनसँग सजिलै प्रतिक्रिया गर्दैन र प्रकृतिमा शुद्ध अवस्थामा पाइन्छ।\nउद्धरण: एकाइ १७",
-          "sampleAnswerEnglish": "Gold is a very less reactive (noble) metal. It does not react easily with air, water, or other chemicals, so it is found in the native or pure state in nature.\nCitation: Unit 17"
+          "sampleAnswerNepali": "सुन अति कम सक्रिय धातु हो, त्यसैले यसले हावा, पानी वा अन्य रसायनसँग सजिलै प्रतिक्रिया गर्दैन र प्रकृतिमा शुद्ध अवस्थामा पाइन्छ।\nउद्धरण: पाठ १७",
+          "sampleAnswerEnglish": "Gold is a very less reactive (noble) metal. It does not react easily with air, water, or other chemicals, so it is found in the native or pure state in nature.\nCitation: Chapter 17"
         },
         {
           "idNepali": "i",
@@ -514,8 +514,8 @@
           "questionEnglish": "Write the structural formula of glycerol.",
           "marksNepali": "१",
           "marksEnglish": 1,
-          "sampleAnswerNepali": "उत्तर:\n``` H H H | | |\nH--C---C---C--H | | | OH OH OH\n```\nउद्धरण: एकाइ १८",
-          "sampleAnswerEnglish": "The structural formula shows three carbon atoms, each bonded to an OH group.\nCitation: Unit 18"
+          "sampleAnswerNepali": "उत्तर:\n``` H H H | | |\nH--C---C---C--H | | | OH OH OH\n```\nउद्धरण: पाठ १८",
+          "sampleAnswerEnglish": "The structural formula shows three carbon atoms, each bonded to an OH group.\nCitation: Chapter 18"
         }
       ],
       "groupC": [
@@ -527,8 +527,8 @@
           "questionEnglish": "Check the correctness of the equation $s=t+\\frac{1}{2}at^{2}$ by using unit-wise analysis.",
           "marksNepali": "२",
           "marksEnglish": 2,
-          "sampleAnswerNepali": "बायाँतर्फको एकाइ ($s$) = मिटर (m)।\nदायाँतर्फ: $t$ को एकाइ सेकेन्ड (s) हो, र $\\frac{1}{2}at^2$ को एकाइ $m/s^2 \\times s^2 = m$ हो।\nयहाँ, बायाँतर्फ 'm' र दायाँतर्फ 's + m' भयो। समान एकाइ नभएकोले ($s \\neq m$), यो समीकरण गलत छ। (सही समीकरण $s = ut + \\frac{1}{2}at^2$ हुनुपर्छ)\nउद्धरण: एकाइ १",
-          "sampleAnswerEnglish": "Unit of LHS ($s$) = meter (m).\nUnit of RHS: Unit of $t$ is second (s). Unit of $1/2 at^2$ is $(m/s^2) \\times s^2 = m$.\nSince we cannot add 'seconds' and 'meters' (units are inconsistent), the equation is incorrect.\nCitation: Unit 1"
+          "sampleAnswerNepali": "बायाँतर्फको एकाइ ($s$) = मिटर (m)।\nदायाँतर्फ: $t$ को एकाइ सेकेन्ड (s) हो, र $\\frac{1}{2}at^2$ को एकाइ $m/s^2 \\times s^2 = m$ हो।\nयहाँ, बायाँतर्फ 'm' र दायाँतर्फ 's + m' भयो। समान एकाइ नभएकोले ($s \\neq m$), यो समीकरण गलत छ। (सही समीकरण $s = ut + \\frac{1}{2}at^2$ हुनुपर्छ)\nउद्धरण: पाठ १",
+          "sampleAnswerEnglish": "Unit of LHS ($s$) = meter (m).\nUnit of RHS: Unit of $t$ is second (s). Unit of $1/2 at^2$ is $(m/s^2) \\times s^2 = m$.\nSince we cannot add 'seconds' and 'meters' (units are inconsistent), the equation is incorrect.\nCitation: Chapter 1"
         },
         {
           "idNepali": "४",
@@ -538,8 +538,8 @@
           "questionEnglish": "Write the name of an animal having two chambered heart, write one characteristics of this animal.",
           "marksNepali": "२",
           "marksEnglish": 2,
-          "sampleAnswerNepali": "मुटुमा दुई कोठा हुने जीव: माछा (जस्तै: रहु)।\nविशेषता: यिनीहरू गिल्स द्वारा पानीमा घुलेको अक्सिजन लिई श्वासप्रश्वास गर्छन्।\nउद्धरण: एकाइ २",
-          "sampleAnswerEnglish": "Animal with a two-chambered heart: Fish (e.g., Rohu).\nCharacteristic: They respire through gills by taking oxygen dissolved in water.\nCitation: Unit 2"
+          "sampleAnswerNepali": "मुटुमा दुई कोठा हुने जीव: माछा (जस्तै: रहु)।\nविशेषता: यिनीहरू गिल्स द्वारा पानीमा घुलेको अक्सिजन लिई श्वासप्रश्वास गर्छन्।\nउद्धरण: पाठ २",
+          "sampleAnswerEnglish": "Animal with a two-chambered heart: Fish (e.g., Rohu).\nCharacteristic: They respire through gills by taking oxygen dissolved in water.\nCitation: Chapter 2"
         },
         {
           "idNepali": "५",
@@ -549,8 +549,8 @@
           "questionEnglish": "Write any two characteristics which distinguishes queen bee and drone bee.",
           "marksNepali": "२",
           "marksEnglish": 2,
-          "sampleAnswerNepali": "रानी र भाले मौरीका भिन्नताहरू:\n1. रानी मौरी आकारमा सबैभन्दा ठूलो हुन्छ र यसको पेट लामो हुन्छ, जबकि भाले मौरी रानीभन्दा सानो तर कर्मीभन्दा ठूलो र मोटो हुन्छ।\n2. रानी मौरीको काम अण्डा पार्नु हो, जबकि भाले मौरीको मुख्य काम रानीलाई गर्भाधान गराउनु हो।\nउद्धरण: एकाइ ३",
-          "sampleAnswerEnglish": "Differences between Queen and Drone:\n1. The queen is the largest bee with an elongated abdomen, while the drone is smaller than the queen but stouter/broader than workers.\n2. The queen's function is to lay eggs, whereas the drone's main function is to fertilize the queen.\nCitation: Unit 3"
+          "sampleAnswerNepali": "रानी र भाले मौरीका भिन्नताहरू:\n1. रानी मौरी आकारमा सबैभन्दा ठूलो हुन्छ र यसको पेट लामो हुन्छ, जबकि भाले मौरी रानीभन्दा सानो तर कर्मीभन्दा ठूलो र मोटो हुन्छ।\n2. रानी मौरीको काम अण्डा पार्नु हो, जबकि भाले मौरीको मुख्य काम रानीलाई गर्भाधान गराउनु हो।\nउद्धरण: पाठ ३",
+          "sampleAnswerEnglish": "Differences between Queen and Drone:\n1. The queen is the largest bee with an elongated abdomen, while the drone is smaller than the queen but stouter/broader than workers.\n2. The queen's function is to lay eggs, whereas the drone's main function is to fertilize the queen.\nCitation: Chapter 3"
         },
         {
           "idNepali": "६",
@@ -560,8 +560,8 @@
           "questionEnglish": "Write any two differences between DNA and RNA.",
           "marksNepali": "२",
           "marksEnglish": 2,
-          "sampleAnswerNepali": "DNA र RNA का भिन्नताहरू:\n1. DNA सामान्यतया न्युक्लियसभित्र पाइन्छ, जबकि RNA साइटोप्लाज्म र न्युक्लियस दुवैमा पाइन्छ।\n2. DNA मा डिअक्सिराइबोज सुगर हुन्छ, जबकि RNA मा राइबोज सुगर हुन्छ।\nउद्धरण: एकाइ ४",
-          "sampleAnswerEnglish": "Differences between DNA and RNA:\n1. DNA is mainly found inside the nucleus, while RNA is found in both the nucleus and cytoplasm.\n2. DNA contains deoxyribose sugar, whereas RNA contains ribose sugar.\nCitation: Unit 4"
+          "sampleAnswerNepali": "DNA र RNA का भिन्नताहरू:\n1. DNA सामान्यतया न्युक्लियसभित्र पाइन्छ, जबकि RNA साइटोप्लाज्म र न्युक्लियस दुवैमा पाइन्छ।\n2. DNA मा डिअक्सिराइबोज सुगर हुन्छ, जबकि RNA मा राइबोज सुगर हुन्छ।\nउद्धरण: पाठ ४",
+          "sampleAnswerEnglish": "Differences between DNA and RNA:\n1. DNA is mainly found inside the nucleus, while RNA is found in both the nucleus and cytoplasm.\n2. DNA contains deoxyribose sugar, whereas RNA contains ribose sugar.\nCitation: Chapter 4"
         },
         {
           "idNepali": "७",
@@ -571,8 +571,8 @@
           "questionEnglish": "How is sex determined in human?",
           "marksNepali": "२",
           "marksEnglish": 2,
-          "sampleAnswerNepali": "मानिसमा २३ जोडी क्रोमोजोममध्ये १ जोडी सेक्स क्रोमोजोम हुन्छ (पुरुषमा XY, महिलामा XX)। पुरुषको Y क्रोमोजोमले छोरा ($XY$) र X क्रोमोजोमले छोरी ($XX$) निर्धारण गर्छ।\nउद्धरण: एकाइ ४",
-          "sampleAnswerEnglish": "Humans have one pair of sex chromosomes: XY in males and XX in females. The fusion of a sperm containing a Y chromosome with an ovum results in a male child (XY), while an X-bearing sperm results in a female child (XX).\nCitation: Unit 4"
+          "sampleAnswerNepali": "मानिसमा २३ जोडी क्रोमोजोममध्ये १ जोडी सेक्स क्रोमोजोम हुन्छ (पुरुषमा XY, महिलामा XX)। पुरुषको Y क्रोमोजोमले छोरा ($XY$) र X क्रोमोजोमले छोरी ($XX$) निर्धारण गर्छ।\nउद्धरण: पाठ ४",
+          "sampleAnswerEnglish": "Humans have one pair of sex chromosomes: XY in males and XX in females. The fusion of a sperm containing a Y chromosome with an ovum results in a male child (XY), while an X-bearing sperm results in a female child (XX).\nCitation: Chapter 4"
         },
         {
           "idNepali": "८",
@@ -582,8 +582,8 @@
           "questionEnglish": "(i) Which chamber of the human heart receives pure blood? (ii) Write the name of the main artery that takes pure blood from heart to different parts of the body.",
           "marksNepali": "२",
           "marksEnglish": 2,
-          "sampleAnswerNepali": "(i) बायाँ अरिकल ले फोक्सोबाट शुद्ध रगत प्राप्त गर्दछ।\n(ii) एओर्टा ले शरीरका विभिन्न भागमा शुद्ध रगत लैजान्छ।\nउद्धरण: एकाइ ५",
-          "sampleAnswerEnglish": "(i) The Left Auricle receives oxygenated (pure) blood.\n(ii) The Aorta carries oxygenated blood from the heart to various parts of the body.\nCitation: Unit 5"
+          "sampleAnswerNepali": "(i) बायाँ अरिकल ले फोक्सोबाट शुद्ध रगत प्राप्त गर्दछ।\n(ii) एओर्टा ले शरीरका विभिन्न भागमा शुद्ध रगत लैजान्छ।\nउद्धरण: पाठ ५",
+          "sampleAnswerEnglish": "(i) The Left Auricle receives oxygenated (pure) blood.\n(ii) The Aorta carries oxygenated blood from the heart to various parts of the body.\nCitation: Chapter 5"
         },
         {
           "idNepali": "९",
@@ -593,8 +593,8 @@
           "questionEnglish": "Write any two uses of Yarsagumba.",
           "marksNepali": "२",
           "marksEnglish": 2,
-          "sampleAnswerNepali": "यार्सागुम्बाका उपयोगिताहरू:\n1. यसलाई शरीरमा शक्ति र स्टामिना बढाउन टनिकको रूपमा प्रयोग गरिन्छ।\n2. यसलाई फोक्सो र मृगौला सम्बन्धी रोगहरूको उपचारमा पनि प्रयोग गरिन्छ।\nउद्धरण: एकाइ ६",
-          "sampleAnswerEnglish": "Uses of Yarsagumba:\n1. It is used as a tonic to increase energy and stamina.\n2. It is used in the treatment of lung and kidney diseases.\nCitation: Unit 6"
+          "sampleAnswerNepali": "यार्सागुम्बाका उपयोगिताहरू:\n1. यसलाई शरीरमा शक्ति र स्टामिना बढाउन टनिकको रूपमा प्रयोग गरिन्छ।\n2. यसलाई फोक्सो र मृगौला सम्बन्धी रोगहरूको उपचारमा पनि प्रयोग गरिन्छ।\nउद्धरण: पाठ ६",
+          "sampleAnswerEnglish": "Uses of Yarsagumba:\n1. It is used as a tonic to increase energy and stamina.\n2. It is used in the treatment of lung and kidney diseases.\nCitation: Chapter 6"
         },
         {
           "idNepali": "१०",
@@ -604,8 +604,8 @@
           "questionEnglish": "Write any two differences between the fall of a parachute in air and the fall of an object on the Moon.",
           "marksNepali": "२",
           "marksEnglish": 2,
-          "sampleAnswerNepali": "1. हावामा प्यारासुट खस्दा हावाको अवरोधले गर्दा यो विस्तारै र समान गति ले खस्न सक्छ, तर चन्द्रमामा हावा नहुने भएकाले वस्तु स्वतन्त्र खसाइ को रूपमा खस्छ र यसको गति बढ्दै जान्छ।\n2. प्यारासुटको खसाइमा गुरुत्व प्रवेग कम हुन्छ, जबकि चन्द्रमामा वस्तु $1.67 m/s^2$ को प्रवेगले खस्छ।\nउद्धरण: एकाइ ७",
-          "sampleAnswerEnglish": "Answer:\n1. A parachute falls slowly due to air resistance on Earth, whereas on the Moon (vacuum), an object falls freely with increasing velocity.\n2. The parachute attains terminal velocity, while an object on the Moon experiences continuous acceleration ($g \\approx 1.67 m/s^2$).\nCitation: Unit 7"
+          "sampleAnswerNepali": "1. हावामा प्यारासुट खस्दा हावाको अवरोधले गर्दा यो विस्तारै र समान गति ले खस्न सक्छ, तर चन्द्रमामा हावा नहुने भएकाले वस्तु स्वतन्त्र खसाइ को रूपमा खस्छ र यसको गति बढ्दै जान्छ।\n2. प्यारासुटको खसाइमा गुरुत्व प्रवेग कम हुन्छ, जबकि चन्द्रमामा वस्तु $1.67 m/s^2$ को प्रवेगले खस्छ।\nउद्धरण: पाठ ७",
+          "sampleAnswerEnglish": "Answer:\n1. A parachute falls slowly due to air resistance on Earth, whereas on the Moon (vacuum), an object falls freely with increasing velocity.\n2. The parachute attains terminal velocity, while an object on the Moon experiences continuous acceleration ($g \\approx 1.67 m/s^2$).\nCitation: Chapter 7"
         },
         {
           "idNepali": "११",
@@ -615,8 +615,8 @@
           "questionEnglish": "If a cricket ball is thrown vertically upward into the sky with velocity of $18~m/s$. Calculate the maximum height attained by the ball.",
           "marksNepali": "२",
           "marksEnglish": 2,
-          "sampleAnswerNepali": "सुरुको गति ($u$) = $18 \\text{ m/s}$, अन्तिम गति ($v$) = 0 (अधिकतम उचाइमा), $g = -9.8 \\text{ m/s}^2$।\nसूत्र: $v^2 = u^2 + 2gh$\n$0 = (18)^2 + 2(-9.8)h$\n$19.6h = 324$\n$h = 16.53 \\text{ m}$।\nउद्धरण: एकाइ ७",
-          "sampleAnswerEnglish": "Initial velocity ($u$) = $18 \\text{ m/s}$, Final velocity ($v$) = 0, $g = -9.8 \\text{ m/s}^2$.\nUsing $v^2 = u^2 + 2gh$:\n$0 = 18^2 - 2 \\times 9.8 \\times h$\n$h = 324 / 19.6 = 16.53 \\text{ m}$.\nCitation: Unit 7"
+          "sampleAnswerNepali": "सुरुको गति ($u$) = $18 \\text{ m/s}$, अन्तिम गति ($v$) = 0 (अधिकतम उचाइमा), $g = -9.8 \\text{ m/s}^2$।\nसूत्र: $v^2 = u^2 + 2gh$\n$0 = (18)^2 + 2(-9.8)h$\n$19.6h = 324$\n$h = 16.53 \\text{ m}$।\nउद्धरण: पाठ ७",
+          "sampleAnswerEnglish": "Initial velocity ($u$) = $18 \\text{ m/s}$, Final velocity ($v$) = 0, $g = -9.8 \\text{ m/s}^2$.\nUsing $v^2 = u^2 + 2gh$:\n$0 = 18^2 - 2 \\times 9.8 \\times h$\n$h = 324 / 19.6 = 16.53 \\text{ m}$.\nCitation: Chapter 7"
         },
         {
           "idNepali": "१२",
@@ -626,8 +626,8 @@
           "questionEnglish": "Describe the process of producing electric current using a magnet and a coil.",
           "marksNepali": "२",
           "marksEnglish": 2,
-          "sampleAnswerNepali": "एउटा बन्द क्वाइल र चुम्बकलाई एकअर्काको नजिक वा टाढा लग्दा (सापेक्ष चाल हुँदा), क्वाइलसँग सम्बन्धित चुम्बकीय फ्लक्समा परिवर्तन आउँछ। फ्याराडेको नियम अनुसार, यस परिवर्तनले क्वाइलमा ई.एम.एफ. (e.m.f.) र करेन्ट प्रेरित गर्छ। यसरी चुम्बकीय शक्ति विद्युतीय शक्तिमा परिणत हुन्छ।\nउद्धरण: एकाइ ११",
-          "sampleAnswerEnglish": "When there is relative motion between a magnet and a closed coil, the magnetic flux linked with the coil changes. According to Faraday's law of electromagnetic induction, this change induces an e.m.f. and current in the coil. This process converts magnetic/mechanical energy into electrical energy.\nCitation: Unit 11"
+          "sampleAnswerNepali": "एउटा बन्द क्वाइल र चुम्बकलाई एकअर्काको नजिक वा टाढा लग्दा (सापेक्ष चाल हुँदा), क्वाइलसँग सम्बन्धित चुम्बकीय फ्लक्समा परिवर्तन आउँछ। फ्याराडेको नियम अनुसार, यस परिवर्तनले क्वाइलमा ई.एम.एफ. (e.m.f.) र करेन्ट प्रेरित गर्छ। यसरी चुम्बकीय शक्ति विद्युतीय शक्तिमा परिणत हुन्छ।\nउद्धरण: पाठ ११",
+          "sampleAnswerEnglish": "When there is relative motion between a magnet and a closed coil, the magnetic flux linked with the coil changes. According to Faraday's law of electromagnetic induction, this change induces an e.m.f. and current in the coil. This process converts magnetic/mechanical energy into electrical energy.\nCitation: Chapter 11"
         },
         {
           "idNepali": "१३",
@@ -637,8 +637,8 @@
           "questionEnglish": "Write any two differences between alternating current and direct current.",
           "marksNepali": "२",
           "marksEnglish": 2,
-          "sampleAnswerNepali": "1. अल्टरनेटिङ करेन्ट (AC) को दिशा समयसँगै परिवर्तन भइरहन्छ, जबकि डाइरेक्ट करेन्ट (DC) को दिशा सधैं एउटै हुन्छ।\n2. AC लाई ट्रान्सफर्मरबाट भोल्टेज कम वा बढी गर्न सकिन्छ, तर DC लाई सकिँदैन।\nउद्धरण: एकाइ ११",
-          "sampleAnswerEnglish": "Answer:\n1. The polarity of Alternating Current (AC) changes periodically, whereas Direct Current (DC) flows in one direction only.\n2. The voltage of AC can be changed using a transformer, but DC voltage cannot be changed by a transformer.\nCitation: Unit 11"
+          "sampleAnswerNepali": "1. अल्टरनेटिङ करेन्ट (AC) को दिशा समयसँगै परिवर्तन भइरहन्छ, जबकि डाइरेक्ट करेन्ट (DC) को दिशा सधैं एउटै हुन्छ।\n2. AC लाई ट्रान्सफर्मरबाट भोल्टेज कम वा बढी गर्न सकिन्छ, तर DC लाई सकिँदैन।\nउद्धरण: पाठ ११",
+          "sampleAnswerEnglish": "Answer:\n1. The polarity of Alternating Current (AC) changes periodically, whereas Direct Current (DC) flows in one direction only.\n2. The voltage of AC can be changed using a transformer, but DC voltage cannot be changed by a transformer.\nCitation: Chapter 11"
         },
         {
           "idNepali": "१४",
@@ -648,8 +648,8 @@
           "questionEnglish": "Identify the compound X in the given chemical equation and balance the equation: $X + HCl \\rightarrow ZnCl_{2} + H_{2}O$",
           "marksNepali": "२",
           "marksEnglish": 2,
-          "sampleAnswerNepali": "यहाँ उत्पादनमा $ZnCl_2$ र $H_2O$ बनेको छ। अभिकारकमा HCl (अम्ल) छ। त्यसैले X जिंक अक्साइड ($ZnO$) वा जिंक हाइड्रोअक्साइड ($Zn(OH)_2$) हुनुपर्छ।\nसन्तुलित समीकरण: $ZnO + 2HCl \\rightarrow ZnCl_2 + H_2O$\n(तसर्थ, X = $ZnO$)\nउद्धरण: एकाइ १५",
-          "sampleAnswerEnglish": "Since the products are zinc chloride and water, and one reactant is acid, X must be a base containing Zinc. Let X be Zinc Oxide ($ZnO$).\nBalanced Equation: $ZnO + 2HCl \\rightarrow ZnCl_2 + H_2O$\nSo, X is Zinc Oxide.\nCitation: Unit 15"
+          "sampleAnswerNepali": "यहाँ उत्पादनमा $ZnCl_2$ र $H_2O$ बनेको छ। अभिकारकमा HCl (अम्ल) छ। त्यसैले X जिंक अक्साइड ($ZnO$) वा जिंक हाइड्रोअक्साइड ($Zn(OH)_2$) हुनुपर्छ।\nसन्तुलित समीकरण: $ZnO + 2HCl \\rightarrow ZnCl_2 + H_2O$\n(तसर्थ, X = $ZnO$)\nउद्धरण: पाठ १५",
+          "sampleAnswerEnglish": "Since the products are zinc chloride and water, and one reactant is acid, X must be a base containing Zinc. Let X be Zinc Oxide ($ZnO$).\nBalanced Equation: $ZnO + 2HCl \\rightarrow ZnCl_2 + H_2O$\nSo, X is Zinc Oxide.\nCitation: Chapter 15"
         },
         {
           "idNepali": "१५",
@@ -659,8 +659,8 @@
           "questionEnglish": "Write general molecular formula of the compound ($H-C\\equiv C-H$). Also write the IUPAC name of the compound.",
           "marksNepali": "२",
           "marksEnglish": 2,
-          "sampleAnswerNepali": "यो यौगिक इथाइन हो।\nयसको समूह अल्काइन हो र सामान्य सूत्र $C_nH_{2n-2}$ हो।\nIUPAC नाम: इथाइन।\nउद्धरण: एकाइ १८",
-          "sampleAnswerEnglish": "The compound is Ethyne ($C_2H_2$).\nIt belongs to the Alkyne group with the general formula $C_nH_{2n-2}$.\nIUPAC Name: Ethyne.\nCitation: Unit 18"
+          "sampleAnswerNepali": "यो यौगिक इथाइन हो।\nयसको समूह अल्काइन हो र सामान्य सूत्र $C_nH_{2n-2}$ हो।\nIUPAC नाम: इथाइन।\nउद्धरण: पाठ १८",
+          "sampleAnswerEnglish": "The compound is Ethyne ($C_2H_2$).\nIt belongs to the Alkyne group with the general formula $C_nH_{2n-2}$.\nIUPAC Name: Ethyne.\nCitation: Chapter 18"
         },
         {
           "idNepali": "१६",
@@ -670,8 +670,8 @@
           "questionEnglish": "Which food preservative is better between the natural food preservatives and the chemical food preservative? Why?",
           "marksNepali": "२",
           "marksEnglish": 2,
-          "sampleAnswerNepali": "प्राकृतिक खाद्य परिरक्षी (जस्तै नुन, चिनी, तेल) राम्रो हुन्छ किनभने यिनीहरूले मानव स्वास्थ्यमा कुनै हानिकारक असर गर्दैनन्। रासायनिक परिरक्षीहरूले लामो समयसम्म प्रयोग गर्दा क्यान्सर, अल्सर जस्ता स्वास्थ्य समस्याहरू निम्त्याउन सक्छन्।\nउद्धरण: एकाइ १९",
-          "sampleAnswerEnglish": "Natural food preservatives (like salt, sugar, oil) are better because they are safe for health. Chemical preservatives can cause health issues like ulcers and cancer if consumed for a long time.\nCitation: Unit 19"
+          "sampleAnswerNepali": "प्राकृतिक खाद्य परिरक्षी (जस्तै नुन, चिनी, तेल) राम्रो हुन्छ किनभने यिनीहरूले मानव स्वास्थ्यमा कुनै हानिकारक असर गर्दैनन्। रासायनिक परिरक्षीहरूले लामो समयसम्म प्रयोग गर्दा क्यान्सर, अल्सर जस्ता स्वास्थ्य समस्याहरू निम्त्याउन सक्छन्।\nउद्धरण: पाठ १९",
+          "sampleAnswerEnglish": "Natural food preservatives (like salt, sugar, oil) are better because they are safe for health. Chemical preservatives can cause health issues like ulcers and cancer if consumed for a long time.\nCitation: Chapter 19"
         }
       ],
       "groupD": [
@@ -683,8 +683,8 @@
           "questionEnglish": "What is a digital communication channel? Write its two characteristics and one example of its use.",
           "marksNepali": "४",
           "marksEnglish": 4,
-          "sampleAnswerNepali": "डिजिटल सञ्चार च्यानल: यो एउटा माध्यम हो जसबाट डिजिटल सिग्नलहरू (० र १ को रूपमा) एउटा यन्त्रबाट अर्को यन्त्रमा प्रसारण गरिन्छ।\nविशेषताहरू:\n1. यसमा डाटाको प्रसारण छिटो र सुरक्षित हुन्छ।\n2. यसमा न्वाइज वा अवरोधको प्रभाव कम हुन्छ, जसले गर्दा सिग्नलको गुणस्तर राम्रो हुन्छ।\nउदाहरण: अप्टिकल फाइबर केबल।\nउद्धरण: एकाइ १३",
-          "sampleAnswerEnglish": "Digital Communication Channel: It is a medium through which digital signals (in the form of 0s and 1s) are transmitted from a sender to a receiver.\nCharacteristics:\n1. Data transmission is faster and more secure.\n2. It is less affected by noise, ensuring better signal quality.\nExample: Optical Fiber Cable.\nCitation: Unit 13"
+          "sampleAnswerNepali": "डिजिटल सञ्चार च्यानल: यो एउटा माध्यम हो जसबाट डिजिटल सिग्नलहरू (० र १ को रूपमा) एउटा यन्त्रबाट अर्को यन्त्रमा प्रसारण गरिन्छ।\nविशेषताहरू:\n1. यसमा डाटाको प्रसारण छिटो र सुरक्षित हुन्छ।\n2. यसमा न्वाइज वा अवरोधको प्रभाव कम हुन्छ, जसले गर्दा सिग्नलको गुणस्तर राम्रो हुन्छ।\nउदाहरण: अप्टिकल फाइबर केबल।\nउद्धरण: पाठ १३",
+          "sampleAnswerEnglish": "Digital Communication Channel: It is a medium through which digital signals (in the form of 0s and 1s) are transmitted from a sender to a receiver.\nCharacteristics:\n1. Data transmission is faster and more secure.\n2. It is less affected by noise, ensuring better signal quality.\nExample: Optical Fiber Cable.\nCitation: Chapter 13"
         },
         {
           "idNepali": "१८",
@@ -694,8 +694,8 @@
           "questionEnglish": "Write two advantages and two disadvantages of cross-breeding between local buffalos with high quality he-buffalo (ranga).",
           "marksNepali": "४",
           "marksEnglish": 4,
-          "sampleAnswerNepali": "फाइदाहरू:\n1. उन्नत जातको भैंसीले स्थानीय भैंसीभन्दा धेरै दूध दिन्छ।\n2. यिनीहरू छिटो बढ्छन् र रोग प्रतिरोधात्मक क्षमता राम्रो हुन सक्छ।\nबेफाइदाहरू:\n1. स्थानीय हावापानीमा घुलमिल हुन गाह्रो हुन सक्छ।\n2. यिनीहरूलाई बढी स्याहारसुसार र पोषिलो दानाको आवश्यकता पर्छ, जुन महँगो हुन सक्छ।\nउद्धरण: एकाइ ४",
-          "sampleAnswerEnglish": "Advantages:\n1. Cross-bred buffaloes yield more milk than local ones.\n2. They may have better growth rates and improved characteristics.\nDisadvantages:\n1. They might have difficulty adapting to the local climate.\n2. They require more care and nutritious feed, which can be expensive.\nCitation: Unit 4"
+          "sampleAnswerNepali": "फाइदाहरू:\n1. उन्नत जातको भैंसीले स्थानीय भैंसीभन्दा धेरै दूध दिन्छ।\n2. यिनीहरू छिटो बढ्छन् र रोग प्रतिरोधात्मक क्षमता राम्रो हुन सक्छ।\nबेफाइदाहरू:\n1. स्थानीय हावापानीमा घुलमिल हुन गाह्रो हुन सक्छ।\n2. यिनीहरूलाई बढी स्याहारसुसार र पोषिलो दानाको आवश्यकता पर्छ, जुन महँगो हुन सक्छ।\nउद्धरण: पाठ ४",
+          "sampleAnswerEnglish": "Advantages:\n1. Cross-bred buffaloes yield more milk than local ones.\n2. They may have better growth rates and improved characteristics.\nDisadvantages:\n1. They might have difficulty adapting to the local climate.\n2. They require more care and nutritious feed, which can be expensive.\nCitation: Chapter 4"
         },
         {
           "idNepali": "१९",
@@ -705,8 +705,8 @@
           "questionEnglish": "Write any two causes and two preventive measures of heart-attack.",
           "marksNepali": "४",
           "marksEnglish": 4,
-          "sampleAnswerNepali": "कारणहरू:\n1. उच्च रक्तचाप र उच्च कोलेस्ट्रोल।\n2. धुम्रपान, मद्यपान र मोटोपना।\nरोकथामका उपायहरू:\n1. नियमित व्यायाम गर्ने र सन्तुलित भोजन खाने (कम चिल्लो र नुन भएको)।\n2. तनाव व्यवस्थापन गर्ने र धुम्रपान/मद्यपान त्याग गर्ने।\nउद्धरण: एकाइ ५",
-          "sampleAnswerEnglish": "Causes:\n1. High blood pressure and high cholesterol.\n2. Smoking, alcohol consumption, and obesity. \nPreventive Measures:\n1. Regular exercise and balanced diet (low fat and salt).\n2. Stress management and quitting smoking/alcohol.\nCitation: Unit 5"
+          "sampleAnswerNepali": "कारणहरू:\n1. उच्च रक्तचाप र उच्च कोलेस्ट्रोल।\n2. धुम्रपान, मद्यपान र मोटोपना।\nरोकथामका उपायहरू:\n1. नियमित व्यायाम गर्ने र सन्तुलित भोजन खाने (कम चिल्लो र नुन भएको)।\n2. तनाव व्यवस्थापन गर्ने र धुम्रपान/मद्यपान त्याग गर्ने।\nउद्धरण: पाठ ५",
+          "sampleAnswerEnglish": "Causes:\n1. High blood pressure and high cholesterol.\n2. Smoking, alcohol consumption, and obesity. \nPreventive Measures:\n1. Regular exercise and balanced diet (low fat and salt).\n2. Stress management and quitting smoking/alcohol.\nCitation: Chapter 5"
         },
         {
           "idNepali": "२०",
@@ -716,8 +716,8 @@
           "questionEnglish": "Explain the anomalous expansion of water. How do aquatic animals survive in frozen ponds during winter due to this property? Mention one problem caused by this property in daily life.",
           "marksNepali": "४",
           "marksEnglish": 4,
-          "sampleAnswerNepali": "अस्वाभाविक प्रसार: पानीलाई $4^\\circ\\text{C}$ बाट $0^\\circ\\text{C}$ सम्म चिस्याउँदा यो खुम्चिनुको सट्टा फैलिन्छ। यसलाई पानीको अस्वाभाविक प्रसार भनिन्छ। $4^\\circ\\text{C}$ मा पानीको घनत्व सबैभन्दा बढी हुन्छ।\nजलचरको बचाउ: जाडोमा बाहिरको तापक्रम $0^\\circ\\text{C}$ भन्दा कम हुँदा, पोखरीको माथिल्लो सतहमा बरफ ($0^\\circ\\text{C}$) जम्छ, जुन पानीभन्दा हलुका हुन्छ। तर पिँधमा $4^\\circ\\text{C}$ को पानी (बढी घनत्व भएको) रहिरहन्छ, जसले गर्दा माछा र अन्य जलचरहरू त्यहाँ जीवित रहन सक्छन्। बरफले तापरोधकको काम गर्छ।\nसमस्या: जाडोमा पानी जम्दा आयतन बढ्ने हुनाले खानेपानीका पाइपहरू फुट्ने समस्या हुन्छ।\nउद्धरण: एकाइ ९",
-          "sampleAnswerEnglish": "Anomalous Expansion: Water expands instead of contracting when cooled from $4^\\circ\\text{C}$ to $0^\\circ\\text{C}$. Water has maximum density at $4^\\circ\\text{C}$.\nSurvival of Aquatic Life: In winter, ice (density < water) floats on top at $0^\\circ\\text{C}$, acting as an insulator. The water at the bottom remains at $4^\\circ\\text{C}$, allowing aquatic animals to survive.\nProblem: Water pipes burst in winter because water expands when it freezes into ice.\nCitation: Unit 9"
+          "sampleAnswerNepali": "अस्वाभाविक प्रसार: पानीलाई $4^\\circ\\text{C}$ बाट $0^\\circ\\text{C}$ सम्म चिस्याउँदा यो खुम्चिनुको सट्टा फैलिन्छ। यसलाई पानीको अस्वाभाविक प्रसार भनिन्छ। $4^\\circ\\text{C}$ मा पानीको घनत्व सबैभन्दा बढी हुन्छ।\nजलचरको बचाउ: जाडोमा बाहिरको तापक्रम $0^\\circ\\text{C}$ भन्दा कम हुँदा, पोखरीको माथिल्लो सतहमा बरफ ($0^\\circ\\text{C}$) जम्छ, जुन पानीभन्दा हलुका हुन्छ। तर पिँधमा $4^\\circ\\text{C}$ को पानी (बढी घनत्व भएको) रहिरहन्छ, जसले गर्दा माछा र अन्य जलचरहरू त्यहाँ जीवित रहन सक्छन्। बरफले तापरोधकको काम गर्छ।\nसमस्या: जाडोमा पानी जम्दा आयतन बढ्ने हुनाले खानेपानीका पाइपहरू फुट्ने समस्या हुन्छ।\nउद्धरण: पाठ ९",
+          "sampleAnswerEnglish": "Anomalous Expansion: Water expands instead of contracting when cooled from $4^\\circ\\text{C}$ to $0^\\circ\\text{C}$. Water has maximum density at $4^\\circ\\text{C}$.\nSurvival of Aquatic Life: In winter, ice (density < water) floats on top at $0^\\circ\\text{C}$, acting as an insulator. The water at the bottom remains at $4^\\circ\\text{C}$, allowing aquatic animals to survive.\nProblem: Water pipes burst in winter because water expands when it freezes into ice.\nCitation: Chapter 9"
         },
         {
           "idNepali": "२१",
@@ -727,8 +727,8 @@
           "questionEnglish": "(i) Write any two differences between convex and concave lens. (ii) The power of the lens used in the spectacles worn by a student is 4 D. Calculate the focal length of the lens. Also mention the type of the lens.",
           "marksNepali": "४",
           "marksEnglish": 4,
-          "sampleAnswerNepali": "(i) भिन्नताहरू:\n* कन्भेक्स लेन्स बीचमा मोटो र छेउमा पातलो हुन्छ; यसले प्रकाश केन्द्रित गर्छ। कन्केभ लेन्स बीचमा पातलो र छेउमा मोटो हुन्छ; यसले प्रकाश विकेन्द्रित गर्छ।\n(ii) हिसाब:\nसामर्थ्य ($P$) = +4 D\nसूत्र: $f = 1/P$\n$f = 1/4 = 0.25 \\text{ m} = 25 \\text{ cm}$।\nलेन्सको प्रकार: कन्भेक्स लेन्स (किनभने सामर्थ्य धनात्मक छ)।\nउद्धरण: एकाइ १०",
-          "sampleAnswerEnglish": "(i) A convex lens is thicker in the middle and converges light, while a concave lens is thinner in the middle and diverges light. \n(ii) $P = +4 \\text{ D}$. Focal length $f = 1/P = 1/4 = 0.25 \\text{ m} = 25 \\text{ cm}$. Since power is positive, it is a Convex Lens.\nCitation: Unit 10"
+          "sampleAnswerNepali": "(i) भिन्नताहरू:\n* कन्भेक्स लेन्स बीचमा मोटो र छेउमा पातलो हुन्छ; यसले प्रकाश केन्द्रित गर्छ। कन्केभ लेन्स बीचमा पातलो र छेउमा मोटो हुन्छ; यसले प्रकाश विकेन्द्रित गर्छ।\n(ii) हिसाब:\nसामर्थ्य ($P$) = +4 D\nसूत्र: $f = 1/P$\n$f = 1/4 = 0.25 \\text{ m} = 25 \\text{ cm}$।\nलेन्सको प्रकार: कन्भेक्स लेन्स (किनभने सामर्थ्य धनात्मक छ)।\nउद्धरण: पाठ १०",
+          "sampleAnswerEnglish": "(i) A convex lens is thicker in the middle and converges light, while a concave lens is thinner in the middle and diverges light. \n(ii) $P = +4 \\text{ D}$. Focal length $f = 1/P = 1/4 = 0.25 \\text{ m} = 25 \\text{ cm}$. Since power is positive, it is a Convex Lens.\nCitation: Chapter 10"
         },
         {
           "idNepali": "२२",
@@ -738,8 +738,8 @@
           "questionEnglish": "Study the given table: P ($2,7$), Q ($2,8,2$), R ($2,8,7$). (i) Write the valency of element Q. (ii) Between P and R which one is more reactive? Why? (iii) Write the balanced chemical equation of the reaction between elements Q and R.",
           "marksNepali": "४",
           "marksEnglish": 4,
-          "sampleAnswerNepali": "(i) Q को बाहिरी सेलमा २ इलेक्ट्रोन छन्, त्यसैले यसको संयुज्यता २ हुन्छ। (यो म्याग्नेसियम हो)।\n(ii) P ($2,7$ - फ्लोरिन) र R ($2,8,7$ - क्लोरीन) दुवै ह्यालोजन हुन्। P को पारमाणविक आकार सानो भएकोले यसले इलेक्ट्रोन तान्ने क्षमता R को भन्दा बढी हुन्छ। त्यसैले P बढी सक्रिय हुन्छ।\n(iii) Q (Mg) र R (Cl) बीचको प्रतिक्रिया:\n$Mg + Cl_2 \\rightarrow MgCl_2$ (वा $Q + R_2 \\rightarrow QR_2$)\nउद्धरण: एकाइ १४",
-          "sampleAnswerEnglish": "(i) Valency of Q is 2. \n(ii) P is more reactive than R. Both are non-metals (halogens), and reactivity decreases down the group as atomic size increases. P is smaller, so it attracts electrons more strongly. \n(iii) Reaction: $Q + 2R \\rightarrow QR_2$ (e.g., $Mg + Cl_2 \\rightarrow MgCl_2$).\nCitation: Unit 14"
+          "sampleAnswerNepali": "(i) Q को बाहिरी सेलमा २ इलेक्ट्रोन छन्, त्यसैले यसको संयुज्यता २ हुन्छ। (यो म्याग्नेसियम हो)।\n(ii) P ($2,7$ - फ्लोरिन) र R ($2,8,7$ - क्लोरीन) दुवै ह्यालोजन हुन्। P को पारमाणविक आकार सानो भएकोले यसले इलेक्ट्रोन तान्ने क्षमता R को भन्दा बढी हुन्छ। त्यसैले P बढी सक्रिय हुन्छ।\n(iii) Q (Mg) र R (Cl) बीचको प्रतिक्रिया:\n$Mg + Cl_2 \\rightarrow MgCl_2$ (वा $Q + R_2 \\rightarrow QR_2$)\nउद्धरण: पाठ १४",
+          "sampleAnswerEnglish": "(i) Valency of Q is 2. \n(ii) P is more reactive than R. Both are non-metals (halogens), and reactivity decreases down the group as atomic size increases. P is smaller, so it attracts electrons more strongly. \n(iii) Reaction: $Q + 2R \\rightarrow QR_2$ (e.g., $Mg + Cl_2 \\rightarrow MgCl_2$).\nCitation: Chapter 14"
         },
         {
           "idNepali": "२३",
@@ -749,8 +749,8 @@
           "questionEnglish": "Describe the laboratory preparation of Carbon Dioxide gas. Why is dilute Sulphuric acid not used? Why is the gas collected in an erect gas jar?",
           "marksNepali": "४",
           "marksEnglish": 4,
-          "sampleAnswerNepali": "विधि: प्रयोगशालामा चुनढुङ्गा ($CaCO_3$) मा फिक्का हाइड्रोक्लोरिक एसिड ($HCl$) राखेर कार्बन डाइअक्साइड बनाइन्छ।\n$CaCO_3 + 2HCl \\rightarrow CaCl_2 + H_2O + CO_2$\nसल्फ्युरिक एसिड प्रयोग नगरिनुको कारण: यदि $H_2SO_4$ प्रयोग गरियो भने, चुनढुङ्गाको सतहमा क्याल्सियम सल्फेट ($CaSO_4$) को अघुलनशील तह बन्छ, जसले थप प्रतिक्रिया हुन दिँदैन।\nजम्मा गर्ने तरिका: $CO_2$ हावाभन्दा गह्रौं हुने भएकाले यसलाई हावाको माथिल्लो विस्थापन विधिद्वारा सुल्टो (ठाडो) ग्यास जारमा जम्मा गरिन्छ।\nउद्धरण: एकाइ १६",
-          "sampleAnswerEnglish": "Preparation: $CO_2$ is prepared by reacting limestone with dilute HCl. ($CaCO_3 + 2HCl \\rightarrow CaCl_2 + H_2O + CO_2$).\nWhy no $H_2SO_4$: It forms insoluble Calcium Sulphate over the limestone, stopping further reaction. \nCollection: Being heavier than air, it is collected in an erect gas jar by upward displacement of air.\nCitation: Unit 16"
+          "sampleAnswerNepali": "विधि: प्रयोगशालामा चुनढुङ्गा ($CaCO_3$) मा फिक्का हाइड्रोक्लोरिक एसिड ($HCl$) राखेर कार्बन डाइअक्साइड बनाइन्छ।\n$CaCO_3 + 2HCl \\rightarrow CaCl_2 + H_2O + CO_2$\nसल्फ्युरिक एसिड प्रयोग नगरिनुको कारण: यदि $H_2SO_4$ प्रयोग गरियो भने, चुनढुङ्गाको सतहमा क्याल्सियम सल्फेट ($CaSO_4$) को अघुलनशील तह बन्छ, जसले थप प्रतिक्रिया हुन दिँदैन।\nजम्मा गर्ने तरिका: $CO_2$ हावाभन्दा गह्रौं हुने भएकाले यसलाई हावाको माथिल्लो विस्थापन विधिद्वारा सुल्टो (ठाडो) ग्यास जारमा जम्मा गरिन्छ।\nउद्धरण: पाठ १६",
+          "sampleAnswerEnglish": "Preparation: $CO_2$ is prepared by reacting limestone with dilute HCl. ($CaCO_3 + 2HCl \\rightarrow CaCl_2 + H_2O + CO_2$).\nWhy no $H_2SO_4$: It forms insoluble Calcium Sulphate over the limestone, stopping further reaction. \nCollection: Being heavier than air, it is collected in an erect gas jar by upward displacement of air.\nCitation: Chapter 16"
         }
       ]
     }

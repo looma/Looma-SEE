@@ -27,8 +27,8 @@
             "marksEnglish": 1,
             "answerNepali": "४५०",
             "answerEnglish": "450",
-            "explanationNepali": "कम्तीमा एउटा मन पराउने भनेको समूहहरूको मिलन ($T \\cup C$) हो । सूत्र $n(T \\cup C) = n(T) + n(C) - n(T \\cap C)$ प्रयोग गर्दा: $250 + 300 - 100 = 450$ ।\nउद्धरण: पाठ १",
-            "explanationEnglish": "To find the number of people who like at least one drink, we calculate the union of the sets using the formula $n(T \\cup C) = n(T) + n(C) - n(T \\cap C)$. Substituting the values: $250 + 300 - 100 = 450$.\nCitation: Lesson 1"
+            "explanationNepali": "कम्तीमा एउटा मन पराउने भनेको समूहहरूको मिलन ($T \\cup C$) हो । सूत्र $n(T \\cup C) = n(T) + n(C) - n(T \\cap C)$ प्रयोग गर्दा: $250 + 300 - 100 = 450$ ।\nउद्धरण: अध्याय १",
+            "explanationEnglish": "To find the number of people who like at least one drink, we calculate the union of the sets using the formula $n(T \\cup C) = n(T) + n(C) - n(T \\cap C)$. Substituting the values: $250 + 300 - 100 = 450$.\nCitation: Chapter 1"
           },
           {
             "labelEnglish": "b",
@@ -37,8 +37,8 @@
             "marksEnglish": 1,
             "answerNepali": "५०",
             "answerEnglish": "50",
-            "explanationNepali": "कुनै पनि मन नपराउने संख्या निकाल्न, जम्मा संख्या ($U$) बाट कम्तीमा एउटा मन पराउने ($T \\cup C$) घटाउनुपर्छ । $n(U) - n(T \\cup C) = 500 - 450 = 50$ ।\nउद्धरण: पाठ १",
-            "explanationEnglish": "The number of people who like neither is the complement of the union. Subtract the union from the total population: $n(U) - n(T \\cup C) = 500 - 450 = 50$.\nCitation: Lesson 1"
+            "explanationNepali": "कुनै पनि मन नपराउने संख्या निकाल्न, जम्मा संख्या ($U$) बाट कम्तीमा एउटा मन पराउने ($T \\cup C$) घटाउनुपर्छ । $n(U) - n(T \\cup C) = 500 - 450 = 50$ ।\nउद्धरण: अध्याय १",
+            "explanationEnglish": "The number of people who like neither is the complement of the union. Subtract the union from the total population: $n(U) - n(T \\cup C) = 500 - 450 = 50$.\nCitation: Chapter 1"
           },
           {
             "labelEnglish": "c",
@@ -47,8 +47,8 @@
             "marksEnglish": 2,
             "answerNepali": "१५०",
             "answerEnglish": "150",
-            "explanationNepali": "चिया मात्र ($n_0(T)$) निकाल्न, चिया मन पराउने जम्मा संख्याबाट दुवै मन पराउने संख्या घटाउनुपर्छ । $n(T) - n(T \\cap C) = 250 - 100 = 150$ ।\nउद्धरण: पाठ १",
-            "explanationEnglish": "To find the number of people who like only tea ($n_0(T)$), subtract those who like both from the total number of people who like tea: $250 - 100 = 150$.\nCitation: Lesson 1"
+            "explanationNepali": "चिया मात्र ($n_0(T)$) निकाल्न, चिया मन पराउने जम्मा संख्याबाट दुवै मन पराउने संख्या घटाउनुपर्छ । $n(T) - n(T \\cap C) = 250 - 100 = 150$ ।\nउद्धरण: अध्याय १",
+            "explanationEnglish": "To find the number of people who like only tea ($n_0(T)$), subtract those who like both from the total number of people who like tea: $250 - 100 = 150$.\nCitation: Chapter 1"
           },
           {
             "labelEnglish": "d",
@@ -57,8 +57,8 @@
             "marksEnglish": 2,
             "answerNepali": "३:४",
             "answerEnglish": "3:4",
-            "explanationNepali": "पहिलो, कफी मात्र = $300 - 100 = 200$ । चिया मात्र = $150$ । अनुपात $150 : 200$ हुन्छ । यसलाई ५० ले भाग गरेर सरल गर्दा $3 : 4$ हुन्छ ।\nउद्धरण: पाठ १",
-            "explanationEnglish": "First calculate Coffee Only: $300 - 100 = 200$. We know Tea Only is $150$. The ratio is $150 : 200$, which simplifies to $3 : 4$.\nCitation: Lesson 1"
+            "explanationNepali": "पहिलो, कफी मात्र = $300 - 100 = 200$ । चिया मात्र = $150$ । अनुपात $150 : 200$ हुन्छ । यसलाई ५० ले भाग गरेर सरल गर्दा $3 : 4$ हुन्छ ।\nउद्धरण: अध्याय १",
+            "explanationEnglish": "First calculate Coffee Only: $300 - 100 = 200$. We know Tea Only is $150$. The ratio is $150 : 200$, which simplifies to $3 : 4$.\nCitation: Chapter 1"
           }
         ]
       },
@@ -76,8 +76,8 @@
             "marksEnglish": 1,
             "answerNepali": "$CA = P(1 + \\frac{R}{100})^T$",
             "answerEnglish": "$CA = P(1 + \\frac{R}{100})^T$",
-            "explanationNepali": "चक्रीय मिश्रधन ($CA$) निकाल्ने मानक सूत्र $P(1 + R/100)^T$ हो, जहाँ P मूलधन, R ब्याजदर र T समय हो ।\nउद्धरण: पाठ २",
-            "explanationEnglish": "The standard formula for Compound Amount is $CA = P(1 + R/100)^T$, where P is Principal, R is Rate, and T is Time.\nCitation: Lesson 2"
+            "explanationNepali": "चक्रीय मिश्रधन ($CA$) निकाल्ने मानक सूत्र $P(1 + R/100)^T$ हो, जहाँ P मूलधन, R ब्याजदर र T समय हो ।\nउद्धरण: अध्याय २",
+            "explanationEnglish": "The standard formula for Compound Amount is $CA = P(1 + R/100)^T$, where P is Principal, R is Rate, and T is Time.\nCitation: Chapter 2"
           },
           {
             "labelEnglish": "b",
@@ -86,8 +86,8 @@
             "marksEnglish": 2,
             "answerNepali": "रु. २०,३५२",
             "answerEnglish": "Rs. 20,352",
-            "explanationNepali": "सूत्र $CI = P[(1 + R/100)^T - 1]$ प्रयोग गरौँ । $80000[(1 + 12/100)^2 - 1] = 80000[(1.12)^2 - 1] = 80000(1.2544 - 1) = 80000 \\times 0.2544 = 20,352$ ।\nउद्धरण: पाठ २",
-            "explanationEnglish": "Using the formula $CI = P[(1 + R/100)^T - 1]$: Substitute values to get $80000[(1.12)^2 - 1]$. This simplifies to $80000(0.2544)$, which equals Rs. 20,352.\nCitation: Lesson 2"
+            "explanationNepali": "सूत्र $CI = P[(1 + R/100)^T - 1]$ प्रयोग गरौँ । $80000[(1 + 12/100)^2 - 1] = 80000[(1.12)^2 - 1] = 80000(1.2544 - 1) = 80000 \\times 0.2544 = 20,352$ ।\nउद्धरण: अध्याय २",
+            "explanationEnglish": "Using the formula $CI = P[(1 + R/100)^T - 1]$: Substitute values to get $80000[(1.12)^2 - 1]$. This simplifies to $80000(0.2544)$, which equals Rs. 20,352.\nCitation: Chapter 2"
           },
           {
             "labelEnglish": "c",
@@ -96,8 +96,8 @@
             "marksEnglish": 2,
             "answerNepali": "रु. १,१५२",
             "answerEnglish": "Rs. 1,152",
-            "explanationNepali": "पहिले साधारण ब्याज निकालौँ: $SI = (80000 \\times 2 \\times 12)/100 = 19,200$ । अब अन्तर निकालौँ: $CI - SI = 20,352 - 19,200 = 1,152$ ।\nउद्धरण: पाठ २",
-            "explanationEnglish": "First, calculate Simple Interest: $SI = (P \\times T \\times R)/100 = 19,200$. Then find the difference: $CI - SI = 20,352 - 19,200 = 1,152$.\nCitation: Lesson 2"
+            "explanationNepali": "पहिले साधारण ब्याज निकालौँ: $SI = (80000 \\times 2 \\times 12)/100 = 19,200$ । अब अन्तर निकालौँ: $CI - SI = 20,352 - 19,200 = 1,152$ ।\nउद्धरण: अध्याय २",
+            "explanationEnglish": "First, calculate Simple Interest: $SI = (P \\times T \\times R)/100 = 19,200$. Then find the difference: $CI - SI = 20,352 - 19,200 = 1,152$.\nCitation: Chapter 2"
           }
         ]
       },
@@ -115,8 +115,8 @@
             "marksEnglish": 2,
             "answerNepali": "रु. २,०२,५००",
             "answerEnglish": "Rs. 2,02,500",
-            "explanationNepali": "मिश्र ह्रासको सूत्र $V_T = V_0(1 - R/100)^T$ प्रयोग गरौँ । $250000(1 - 10/100)^2 = 250000(0.9)^2 = 250000 \\times 0.81 = 2,02,500$ ।\nउद्धरण: पाठ ३",
-            "explanationEnglish": "Using the compound depreciation formula $V_T = V_0(1 - R/100)^T$: $250000(0.9)^2 = 250000 \\times 0.81 = 2,02,500$.\nCitation: Lesson 3"
+            "explanationNepali": "मिश्र ह्रासको सूत्र $V_T = V_0(1 - R/100)^T$ प्रयोग गरौँ । $250000(1 - 10/100)^2 = 250000(0.9)^2 = 250000 \\times 0.81 = 2,02,500$ ।\nउद्धरण: अध्याय ३",
+            "explanationEnglish": "Using the compound depreciation formula $V_T = V_0(1 - R/100)^T$: $250000(0.9)^2 = 250000 \\times 0.81 = 2,02,500$.\nCitation: Chapter 3"
           },
           {
             "labelEnglish": "b",
@@ -125,8 +125,8 @@
             "marksEnglish": 1,
             "answerNepali": "रु. ४७,५००",
             "answerEnglish": "Rs. 47,500",
-            "explanationNepali": "ह्रास रकम निकाल्न सुरुको मूल्यबाट अन्तिम मूल्य घटाउनुपर्छ । $2,50,000 - 2,02,500 = 47,500$ ।\nउद्धरण: पाठ ३",
-            "explanationEnglish": "To find the depreciated amount, subtract the final price from the initial price: $2,50,000 - 2,02,500 = 47,500$.\nCitation: Lesson 3"
+            "explanationNepali": "ह्रास रकम निकाल्न सुरुको मूल्यबाट अन्तिम मूल्य घटाउनुपर्छ । $2,50,000 - 2,02,500 = 47,500$ ।\nउद्धरण: अध्याय ३",
+            "explanationEnglish": "To find the depreciated amount, subtract the final price from the initial price: $2,50,000 - 2,02,500 = 47,500$.\nCitation: Chapter 3"
           },
           {
             "labelEnglish": "c",
@@ -135,8 +135,8 @@
             "marksEnglish": 1,
             "answerNepali": "३ वर्ष",
             "answerEnglish": "3 years",
-            "explanationNepali": "$182250 = 250000(0.9)^T \\Rightarrow 0.729 = (0.9)^T$ । हामीलाई थाहा छ $0.9^3 = 0.729$, त्यसैले $T = 3$ वर्ष ।\nउद्धरण: पाठ ३",
-            "explanationEnglish": "Using the formula: $182250 = 250000(0.9)^T$. Dividing gives $0.729 = (0.9)^T$. Since $0.9^3 = 0.729$, the time is $T = 3$ years.\nCitation: Lesson 3"
+            "explanationNepali": "$182250 = 250000(0.9)^T \\Rightarrow 0.729 = (0.9)^T$ । हामीलाई थाहा छ $0.9^3 = 0.729$, त्यसैले $T = 3$ वर्ष ।\nउद्धरण: अध्याय ३",
+            "explanationEnglish": "Using the formula: $182250 = 250000(0.9)^T$. Dividing gives $0.729 = (0.9)^T$. Since $0.9^3 = 0.729$, the time is $T = 3$ years.\nCitation: Chapter 3"
           }
         ]
       },
@@ -154,8 +154,8 @@
             "marksEnglish": 2,
             "answerNepali": "ने.रु. १३८.६०",
             "answerEnglish": "NRs. 138.60",
-            "explanationNepali": "अवमूल्यनको अर्थ ने.रु. कमजोर हुनु हो, जसले गर्दा डलरको मूल्य बढ्छ । नयाँ दर = $132 + (5\\% \\text{ of } 132) = 132 + 6.60 = 138.60$ ।\nउद्धरण: पाठ २",
-            "explanationEnglish": "Devaluation means the currency gets weaker, so the exchange rate increases. New Rate = $132 + 5\\% \\text{ of } 132 = 132 + 6.60 = 138.60$.\nCitation: Lesson 2"
+            "explanationNepali": "अवमूल्यनको अर्थ ने.रु. कमजोर हुनु हो, जसले गर्दा डलरको मूल्य बढ्छ । नयाँ दर = $132 + (5\\% \\text{ of } 132) = 132 + 6.60 = 138.60$ ।\nउद्धरण: अध्याय २",
+            "explanationEnglish": "Devaluation means the currency gets weaker, so the exchange rate increases. New Rate = $132 + 5\\% \\text{ of } 132 = 132 + 6.60 = 138.60$.\nCitation: Chapter 2"
           },
           {
             "labelEnglish": "b",
@@ -164,8 +164,8 @@
             "marksEnglish": 2,
             "answerNepali": "रु. ५,२८०",
             "answerEnglish": "Rs. 5,280",
-            "explanationNepali": "प्रति डलर नाफा = $138.60 - 132 = 6.60$ । कुल नाफा = $800 \\times 6.60 = 5,280$ ।\nउद्धरण: पाठ २",
-            "explanationEnglish": "Profit per dollar is the difference in rates: $138.60 - 132 = 6.60$. Total Profit = $800 \\times 6.60 = 5,280$.\nCitation: Lesson 2"
+            "explanationNepali": "प्रति डलर नाफा = $138.60 - 132 = 6.60$ । कुल नाफा = $800 \\times 6.60 = 5,280$ ।\nउद्धरण: अध्याय २",
+            "explanationEnglish": "Profit per dollar is the difference in rates: $138.60 - 132 = 6.60$. Total Profit = $800 \\times 6.60 = 5,280$.\nCitation: Chapter 2"
           }
         ]
       },
@@ -183,8 +183,8 @@
             "marksEnglish": 1,
             "answerNepali": "८ से.मि.",
             "answerEnglish": "8 cm",
-            "explanationNepali": "आधार वर्गाकार छ, त्यसैले $Area = a^2$ । $64 = a^2$ हुँदा, भुजा $a = \\sqrt{64} = 8$ से.मि. हुन्छ ।\nउद्धरण: पाठ ५",
-            "explanationEnglish": "Since the base is square, $Area = a^2$. Given $a^2 = 64$, the side length is $a = \\sqrt{64} = 8$ cm.\nCitation: Lesson 5"
+            "explanationNepali": "आधार वर्गाकार छ, त्यसैले $Area = a^2$ । $64 = a^2$ हुँदा, भुजा $a = \\sqrt{64} = 8$ से.मि. हुन्छ ।\nउद्धरण: अध्याय ५",
+            "explanationEnglish": "Since the base is square, $Area = a^2$. Given $a^2 = 64$, the side length is $a = \\sqrt{64} = 8$ cm.\nCitation: Chapter 5"
           },
           {
             "labelEnglish": "b",
@@ -193,8 +193,8 @@
             "marksEnglish": 2,
             "answerNepali": "३२० घन से.मि.",
             "answerEnglish": "320 cm³",
-            "explanationNepali": "पिरामिडको आयतनको सूत्र $V = \\frac{1}{3} \\times A \\times h$ हो । मान राख्दा: $\\frac{1}{3} \\times 64 \\times 15 = 320$ घन से.मि. ।\nउद्धरण: पाठ ५",
-            "explanationEnglish": "The volume formula is $V = \\frac{1}{3} \\times \\text{Base Area} \\times \\text{Height}$. Calculating: $\\frac{1}{3} \\times 64 \\times 15 = 320$ cm³.\nCitation: Lesson 5"
+            "explanationNepali": "पिरामिडको आयतनको सूत्र $V = \\frac{1}{3} \\times A \\times h$ हो । मान राख्दा: $\\frac{1}{3} \\times 64 \\times 15 = 320$ घन से.मि. ।\nउद्धरण: अध्याय ५",
+            "explanationEnglish": "The volume formula is $V = \\frac{1}{3} \\times \\text{Base Area} \\times \\text{Height}$. Calculating: $\\frac{1}{3} \\times 64 \\times 15 = 320$ cm³.\nCitation: Chapter 5"
           },
           {
             "labelEnglish": "c",
@@ -203,8 +203,8 @@
             "marksEnglish": 2,
             "answerNepali": "१५.५२ से.मि.",
             "answerEnglish": "15.52 cm",
-            "explanationNepali": "छड्के उचाइ ($l$) को सम्बन्ध $l^2 = h^2 + (a/2)^2$ हो । $l = \\sqrt{15^2 + 4^2} = \\sqrt{225 + 16} = \\sqrt{241} \\approx 15.52$ से.मि. ।\nउद्धरण: पाठ ५",
-            "explanationEnglish": "Use the relation $l^2 = h^2 + (a/2)^2$. Substituting values: $l = \\sqrt{15^2 + 4^2} = \\sqrt{241} \\approx 15.52$ cm.\nCitation: Lesson 5"
+            "explanationNepali": "छड्के उचाइ ($l$) को सम्बन्ध $l^2 = h^2 + (a/2)^2$ हो । $l = \\sqrt{15^2 + 4^2} = \\sqrt{225 + 16} = \\sqrt{241} \\approx 15.52$ से.मि. ।\nउद्धरण: अध्याय ५",
+            "explanationEnglish": "Use the relation $l^2 = h^2 + (a/2)^2$. Substituting values: $l = \\sqrt{15^2 + 4^2} = \\sqrt{241} \\approx 15.52$ cm.\nCitation: Chapter 5"
           }
         ]
       },
@@ -222,8 +222,8 @@
             "marksEnglish": 1,
             "answerNepali": "$V = \\frac{1}{3}\\pi r^2 h + \\frac{2}{3}\\pi r^3$",
             "answerEnglish": "$V = \\frac{1}{3}\\pi r^2 h + \\frac{2}{3}\\pi r^3$",
-            "explanationNepali": "कुल आयतन भनेको सोलीको आयतन ($\\frac{1}{3}\\pi r^2 h$) र अर्धगोलाको आयतन ($\\frac{2}{3}\\pi r^3$) को योगफल हो ।\nउद्धरण: पाठ ५",
-            "explanationEnglish": "The total volume is the sum of the volume of the cone ($\\frac{1}{3}\\pi r^2 h$) and the volume of the hemisphere ($\\frac{2}{3}\\pi r^3$).\nCitation: Lesson 5"
+            "explanationNepali": "कुल आयतन भनेको सोलीको आयतन ($\\frac{1}{3}\\pi r^2 h$) र अर्धगोलाको आयतन ($\\frac{2}{3}\\pi r^3$) को योगफल हो ।\nउद्धरण: अध्याय ५",
+            "explanationEnglish": "The total volume is the sum of the volume of the cone ($\\frac{1}{3}\\pi r^2 h$) and the volume of the hemisphere ($\\frac{2}{3}\\pi r^3$).\nCitation: Chapter 5"
           },
           {
             "labelEnglish": "b",
@@ -232,8 +232,8 @@
             "marksEnglish": 3,
             "answerNepali": "२८ से.मि.",
             "answerEnglish": "28 cm",
-            "explanationNepali": "सूत्र प्रयोग गर्दा: $32340 = \\frac{1}{3}\\pi (21)^2 (h + 2(21))$ । $32340 = 462(h + 42)$ । $70 = h + 42$, त्यसैले $h = 28$ से.मि. ।\nउद्धरण: पाठ ५",
-            "explanationEnglish": "Using the volume formula: $32340 = \\frac{1}{3}\\pi (21)^2 (h + 42)$. Solving for h: $32340 = 462(h+42) \\Rightarrow 70 = h+42 \\Rightarrow h=28$.\nCitation: Lesson 5"
+            "explanationNepali": "सूत्र प्रयोग गर्दा: $32340 = \\frac{1}{3}\\pi (21)^2 (h + 2(21))$ । $32340 = 462(h + 42)$ । $70 = h + 42$, त्यसैले $h = 28$ से.मि. ।\nउद्धरण: अध्याय ५",
+            "explanationEnglish": "Using the volume formula: $32340 = \\frac{1}{3}\\pi (21)^2 (h + 42)$. Solving for h: $32340 = 462(h+42) \\Rightarrow 70 = h+42 \\Rightarrow h=28$.\nCitation: Chapter 5"
           }
         ]
       },
@@ -251,8 +251,8 @@
             "marksEnglish": 1,
             "answerNepali": "९६ वर्ग मि.",
             "answerEnglish": "96 sq. m",
-            "explanationNepali": "भुइँको क्षेत्रफल निकाल्न लम्बाइ र चौडाइ गुणन गरिन्छ: $12 \\times 8 = 96$ वर्ग मिटर ।\nउद्धरण: पाठ ५",
-            "explanationEnglish": "Floor area is calculated as Length $\\times$ Breadth: $12 \\times 8 = 96$ sq. m.\nCitation: Lesson 5"
+            "explanationNepali": "भुइँको क्षेत्रफल निकाल्न लम्बाइ र चौडाइ गुणन गरिन्छ: $12 \\times 8 = 96$ वर्ग मिटर ।\nउद्धरण: अध्याय ५",
+            "explanationEnglish": "Floor area is calculated as Length $\\times$ Breadth: $12 \\times 8 = 96$ sq. m.\nCitation: Chapter 5"
           },
           {
             "labelEnglish": "b",
@@ -261,8 +261,8 @@
             "marksEnglish": 3,
             "answerNepali": "रु. १,८००",
             "answerEnglish": "Rs. 1,800",
-            "explanationNepali": "चार भित्ताको क्षेत्रफल $A = 2h(l+b) = 2(3)(12+8) = 6(20) = 120$ वर्ग मि. । जम्मा खर्च = क्षेत्रफल $\\times$ दर = $120 \\times 15 = 1,800$ ।\nउद्धरण: पाठ ५",
-            "explanationEnglish": "First, find the area of 4 walls: $2h(l+b) = 6(20) = 120$. Total Cost = Area $\\times$ Rate = $120 \\times 15 = 1,800$.\nCitation: Lesson 5"
+            "explanationNepali": "चार भित्ताको क्षेत्रफल $A = 2h(l+b) = 2(3)(12+8) = 6(20) = 120$ वर्ग मि. । जम्मा खर्च = क्षेत्रफल $\\times$ दर = $120 \\times 15 = 1,800$ ।\nउद्धरण: अध्याय ५",
+            "explanationEnglish": "First, find the area of 4 walls: $2h(l+b) = 6(20) = 120$. Total Cost = Area $\\times$ Rate = $120 \\times 15 = 1,800$.\nCitation: Chapter 5"
           }
         ]
       },
@@ -280,8 +280,8 @@
             "marksEnglish": 1,
             "answerNepali": "$S_n = \\frac{n}{2}[2a + (n-1)d]$",
             "answerEnglish": "$S_n = \\frac{n}{2}[2a + (n-1)d]$",
-            "explanationNepali": "अंकगणितीय श्रेणीको योगफल निकाल्ने मानक सूत्र $S_n = \\frac{n}{2}[2a + (n-1)d]$ हो ।\nउद्धरण: पाठ ६",
-            "explanationEnglish": "The standard formula for the sum of an arithmetic series is $S_n = \\frac{n}{2}[2a + (n-1)d]$.\nCitation: Lesson 6"
+            "explanationNepali": "अंकगणितीय श्रेणीको योगफल निकाल्ने मानक सूत्र $S_n = \\frac{n}{2}[2a + (n-1)d]$ हो ।\nउद्धरण: अध्याय ६",
+            "explanationEnglish": "The standard formula for the sum of an arithmetic series is $S_n = \\frac{n}{2}[2a + (n-1)d]$.\nCitation: Chapter 6"
           },
           {
             "labelEnglish": "b",
@@ -290,8 +290,8 @@
             "marksEnglish": 2,
             "answerNepali": "२१०",
             "answerEnglish": "210",
-            "explanationNepali": "यहाँ $a=1, d=1, n=20$ छ । $S_{20} = \\frac{20}{2}[2(1) + 19(1)] = 10(21) = 210$ ।\nउद्धरण: पाठ ६",
-            "explanationEnglish": "Substitute $a=1, d=1, n=20$ into the formula: $S_{20} = 10(2 + 19) = 210$.\nCitation: Lesson 6"
+            "explanationNepali": "यहाँ $a=1, d=1, n=20$ छ । $S_{20} = \\frac{20}{2}[2(1) + 19(1)] = 10(21) = 210$ ।\nउद्धरण: अध्याय ६",
+            "explanationEnglish": "Substitute $a=1, d=1, n=20$ into the formula: $S_{20} = 10(2 + 19) = 210$.\nCitation: Chapter 6"
           },
           {
             "labelEnglish": "c",
@@ -300,8 +300,8 @@
             "marksEnglish": 2,
             "answerNepali": "३०",
             "answerEnglish": "30",
-            "explanationNepali": "प्राकृतिक संख्याको योगफल $S_n = \\frac{n(n+1)}{2}$ प्रयोग गर्दा: $465 = \\frac{n(n+1)}{2} \\Rightarrow 930 = n^2 + n$ । $n^2 + n - 930 = 0$ हल गर्दा $n=30$ आउँछ ।\nउद्धरण: पाठ ६",
-            "explanationEnglish": "Using sum of natural numbers formula: $465 = n(n+1)/2 \\Rightarrow n^2 + n - 930 = 0$. Factoring gives $(n+31)(n-30)=0$, so $n=30$.\nCitation: Lesson 6"
+            "explanationNepali": "प्राकृतिक संख्याको योगफल $S_n = \\frac{n(n+1)}{2}$ प्रयोग गर्दा: $465 = \\frac{n(n+1)}{2} \\Rightarrow 930 = n^2 + n$ । $n^2 + n - 930 = 0$ हल गर्दा $n=30$ आउँछ ।\nउद्धरण: अध्याय ६",
+            "explanationEnglish": "Using sum of natural numbers formula: $465 = n(n+1)/2 \\Rightarrow n^2 + n - 930 = 0$. Factoring gives $(n+31)(n-30)=0$, so $n=30$.\nCitation: Chapter 6"
           }
         ]
       },
@@ -319,8 +319,8 @@
             "marksEnglish": 1,
             "answerNepali": "वर्ग समीकरण",
             "answerEnglish": "Quadratic Equation",
-            "explanationNepali": "चर राशि $x$ को उच्चतम घाताङ्क २ भएकोले यो वर्ग समीकरण हो ।\nउद्धरण: पाठ ७",
-            "explanationEnglish": "Since the highest power of the variable x is 2, it is a Quadratic Equation.\nCitation: Lesson 7"
+            "explanationNepali": "चर राशि $x$ को उच्चतम घाताङ्क २ भएकोले यो वर्ग समीकरण हो ।\nउद्धरण: अध्याय ७",
+            "explanationEnglish": "Since the highest power of the variable x is 2, it is a Quadratic Equation.\nCitation: Chapter 7"
           },
           {
             "labelEnglish": "b",
@@ -329,8 +329,8 @@
             "marksEnglish": 2,
             "answerNepali": "$x = ५, -२$",
             "answerEnglish": "$x = 5, -2$",
-            "explanationNepali": "मध्य पद $-3x$ लाई $-5x + 2x$ मा विच्छेद गरौँ । $x(x-5) + 2(x-5) = 0 \\Rightarrow (x-5)(x+2) = 0$ । त्यसैले $x=5$ वा $x=-2$ ।\nउद्धरण: पाठ ७",
-            "explanationEnglish": "Splitting the middle term: $x^2 - 5x + 2x - 10 = 0$. Factoring gives $(x-5)(x+2) = 0$. Thus, $x = 5$ or $x = -2$.\nCitation: Lesson 7"
+            "explanationNepali": "मध्य पद $-3x$ लाई $-5x + 2x$ मा विच्छेद गरौँ । $x(x-5) + 2(x-5) = 0 \\Rightarrow (x-5)(x+2) = 0$ । त्यसैले $x=5$ वा $x=-2$ ।\nउद्धरण: अध्याय ७",
+            "explanationEnglish": "Splitting the middle term: $x^2 - 5x + 2x - 10 = 0$. Factoring gives $(x-5)(x+2) = 0$. Thus, $x = 5$ or $x = -2$.\nCitation: Chapter 7"
           },
           {
             "labelEnglish": "c",
@@ -339,8 +339,8 @@
             "marksEnglish": 2,
             "answerNepali": "प्रमाणित",
             "answerEnglish": "Verified",
-            "explanationNepali": "$x=5$ को लागि: $25 - 15 - 10 = 0$ । $x=-2$ को लागि: $4 - (-6) - 10 = 4+6-10=0$ । दुवै सही छन् ।\nउद्धरण: पाठ ७",
-            "explanationEnglish": "Substitute $x=5$: $25 - 15 - 10 = 0$. Substitute $x=-2$: $4 + 6 - 10 = 0$. Both values satisfy the equation.\nCitation: Lesson 7"
+            "explanationNepali": "$x=5$ को लागि: $25 - 15 - 10 = 0$ । $x=-2$ को लागि: $4 - (-6) - 10 = 4+6-10=0$ । दुवै सही छन् ।\nउद्धरण: अध्याय ७",
+            "explanationEnglish": "Substitute $x=5$: $25 - 15 - 10 = 0$. Substitute $x=-2$: $4 + 6 - 10 = 0$. Both values satisfy the equation.\nCitation: Chapter 7"
           }
         ]
       },
@@ -358,8 +358,8 @@
             "marksEnglish": 2,
             "answerNepali": "$6^x = 6$",
             "answerEnglish": "$6^x = 6$",
-            "explanationNepali": "$3^{x+1}$ लाई $3^x \\times 3$ मा छुट्याउनुहोस् । $2^x \\times 3^x \\times 3 = 18 \\Rightarrow (2 \\times 3)^x = 18/3 \\Rightarrow 6^x = 6$ ।\nउद्धरण: पाठ ९",
-            "explanationEnglish": "Break $3^{x+1}$ into $3^x \\cdot 3$. Combine bases with same exponent: $(2 \\cdot 3)^x \\cdot 3 = 18$. Divide by 3 to get $6^x = 6$.\nCitation: Lesson 9"
+            "explanationNepali": "$3^{x+1}$ लाई $3^x \\times 3$ मा छुट्याउनुहोस् । $2^x \\times 3^x \\times 3 = 18 \\Rightarrow (2 \\times 3)^x = 18/3 \\Rightarrow 6^x = 6$ ।\nउद्धरण: अध्याय ९",
+            "explanationEnglish": "Break $3^{x+1}$ into $3^x \\cdot 3$. Combine bases with same exponent: $(2 \\cdot 3)^x \\cdot 3 = 18$. Divide by 3 to get $6^x = 6$.\nCitation: Chapter 9"
           },
           {
             "labelEnglish": "b",
@@ -368,8 +368,8 @@
             "marksEnglish": 3,
             "answerNepali": "१",
             "answerEnglish": "1",
-            "explanationNepali": "$6^x = 6^1$ । आधार समान भएकोले घाताङ्क पनि बराबर हुन्छ, त्यसैले $x = 1$ ।\nउद्धरण: पाठ ९",
-            "explanationEnglish": "Since $6^x = 6^1$, equating the exponents gives $x = 1$.\nCitation: Lesson 9"
+            "explanationNepali": "$6^x = 6^1$ । आधार समान भएकोले घाताङ्क पनि बराबर हुन्छ, त्यसैले $x = 1$ ।\nउद्धरण: अध्याय ९",
+            "explanationEnglish": "Since $6^x = 6^1$, equating the exponents gives $x = 1$.\nCitation: Chapter 9"
           }
         ]
       },
@@ -387,8 +387,8 @@
             "marksEnglish": 1,
             "answerNepali": "त्रिभुज = १/२ समानान्तर चतुर्भुज",
             "answerEnglish": "Triangle = 1/2 Parallelogram",
-            "explanationNepali": "एउटै आधार र उही समानान्तर रेखाहरू बिच बनेको त्रिभुजको क्षेत्रफल समानान्तर चतुर्भुजको आधा हुन्छ ।\nउद्धरण: पाठ १०",
-            "explanationEnglish": "A triangle on the same base and between the same parallels as a parallelogram has half the area of the parallelogram.\nCitation: Lesson 10"
+            "explanationNepali": "एउटै आधार र उही समानान्तर रेखाहरू बिच बनेको त्रिभुजको क्षेत्रफल समानान्तर चतुर्भुजको आधा हुन्छ ।\nउद्धरण: अध्याय १०",
+            "explanationEnglish": "A triangle on the same base and between the same parallels as a parallelogram has half the area of the parallelogram.\nCitation: Chapter 10"
           },
           {
             "labelEnglish": "b",
@@ -397,8 +397,8 @@
             "marksEnglish": 3,
             "answerNepali": "२४ वर्ग से.मि.",
             "answerEnglish": "24 sq. cm",
-            "explanationNepali": "त्रिभुजको क्षेत्रफल = $\\frac{1}{2} \\times 48 = 24$ वर्ग से.मि. ।\nउद्धरण: पाठ १०",
-            "explanationEnglish": "Area = $\\frac{1}{2} \\times$ Parallelogram Area = $\\frac{1}{2} \\times 48 = 24$ sq. cm.\nCitation: Lesson 10"
+            "explanationNepali": "त्रिभुजको क्षेत्रफल = $\\frac{1}{2} \\times 48 = 24$ वर्ग से.मि. ।\nउद्धरण: अध्याय १०",
+            "explanationEnglish": "Area = $\\frac{1}{2} \\times$ Parallelogram Area = $\\frac{1}{2} \\times 48 = 24$ sq. cm.\nCitation: Chapter 10"
           }
         ]
       },
@@ -416,8 +416,8 @@
             "marksEnglish": 1,
             "answerNepali": "सम्पूरक",
             "answerEnglish": "Supplementary",
-            "explanationNepali": "चक्रीय चतुर्भुजका सम्मुख कोणहरूको योगफल १८० डिग्री हुन्छ (सम्पूरक) ।\nउद्धरण: पाठ १२",
-            "explanationEnglish": "Opposite angles of a cyclic quadrilateral sum to 180 degrees (are supplementary).\nCitation: Lesson 12"
+            "explanationNepali": "चक्रीय चतुर्भुजका सम्मुख कोणहरूको योगफल १८० डिग्री हुन्छ (सम्पूरक) ।\nउद्धरण: अध्याय १२",
+            "explanationEnglish": "Opposite angles of a cyclic quadrilateral sum to 180 degrees (are supplementary).\nCitation: Chapter 12"
           },
           {
             "labelEnglish": "b",
@@ -426,8 +426,8 @@
             "marksEnglish": 2,
             "answerNepali": "३५",
             "answerEnglish": "35",
-            "explanationNepali": "$(2x+10) + (3x-5) = 180 \\Rightarrow 5x + 5 = 180 \\Rightarrow 5x = 175 \\Rightarrow x = 35$ ।\nउद्धरण: पाठ १२",
-            "explanationEnglish": "Summing the angles: $2x+10 + 3x-5 = 180$. Solving $5x+5=180$ gives $x=35$.\nCitation: Lesson 12"
+            "explanationNepali": "$(2x+10) + (3x-5) = 180 \\Rightarrow 5x + 5 = 180 \\Rightarrow 5x = 175 \\Rightarrow x = 35$ ।\nउद्धरण: अध्याय १२",
+            "explanationEnglish": "Summing the angles: $2x+10 + 3x-5 = 180$. Solving $5x+5=180$ gives $x=35$.\nCitation: Chapter 12"
           },
           {
             "labelEnglish": "c",
@@ -436,8 +436,8 @@
             "marksEnglish": 2,
             "answerNepali": "$८०^\\circ$",
             "answerEnglish": "$80^\\circ$",
-            "explanationNepali": "$\\angle A = 2x + 10 = 2(35) + 10 = 70 + 10 = 80^\\circ$ ।\nउद्धरण: पाठ १२",
-            "explanationEnglish": "Substitute $x=35$ into $2x+10$: $2(35)+10 = 80$ degrees.\nCitation: Lesson 12"
+            "explanationNepali": "$\\angle A = 2x + 10 = 2(35) + 10 = 70 + 10 = 80^\\circ$ ।\nउद्धरण: अध्याय १२",
+            "explanationEnglish": "Substitute $x=35$ into $2x+10$: $2(35)+10 = 80$ degrees.\nCitation: Chapter 12"
           }
         ]
       },
@@ -455,8 +455,8 @@
             "marksEnglish": 2,
             "answerNepali": "समकोण त्रिभुज",
             "answerEnglish": "Right-angled triangle",
-            "explanationNepali": "$6^2 + 8^2 = 36 + 64 = 100 = 10^2$ । पाइथागोरस साध्य ($a^2+b^2=c^2$) पूरा भएकोले यो समकोण त्रिभुज हो ।\nउद्धरण: पाठ १०",
-            "explanationEnglish": "Since $6^2 + 8^2 = 100 = 10^2$, the sides satisfy Pythagoras theorem. It is a right-angled triangle.\nCitation: Lesson 10"
+            "explanationNepali": "$6^2 + 8^2 = 36 + 64 = 100 = 10^2$ । पाइथागोरस साध्य ($a^2+b^2=c^2$) पूरा भएकोले यो समकोण त्रिभुज हो ।\nउद्धरण: अध्याय १०",
+            "explanationEnglish": "Since $6^2 + 8^2 = 100 = 10^2$, the sides satisfy Pythagoras theorem. It is a right-angled triangle.\nCitation: Chapter 10"
           },
           {
             "labelEnglish": "b",
@@ -465,8 +465,8 @@
             "marksEnglish": 2,
             "answerNepali": "२४ वर्ग से.मि.",
             "answerEnglish": "24 sq. cm",
-            "explanationNepali": "समकोण त्रिभुजको क्षेत्रफल = $\\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 6 \\times 8 = 24$ ।\nउद्धरण: पाठ १०",
-            "explanationEnglish": "Area = $\\frac{1}{2} \\times 6 \\times 8 = 24$ sq. cm.\nCitation: Lesson 10"
+            "explanationNepali": "समकोण त्रिभुजको क्षेत्रफल = $\\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 6 \\times 8 = 24$ ।\nउद्धरण: अध्याय १०",
+            "explanationEnglish": "Area = $\\frac{1}{2} \\times 6 \\times 8 = 24$ sq. cm.\nCitation: Chapter 10"
           }
         ]
       },
@@ -484,8 +484,8 @@
             "marksEnglish": 1,
             "answerNepali": "$४५^\\circ$",
             "answerEnglish": "$45^\\circ$",
-            "explanationNepali": "$\\tan \\theta = \\text{Height} / \\text{Base} = 1$ । $\\tan 45^\\circ = 1$ भएकोले कोण $45^\\circ$ हुन्छ ।\nउद्धरण: पाठ १५",
-            "explanationEnglish": "Since Height = Base, $\\tan \\theta = 1$. This implies $\\theta = 45^\\circ$.\nCitation: Lesson 15"
+            "explanationNepali": "$\\tan \\theta = \\text{Height} / \\text{Base} = 1$ । $\\tan 45^\\circ = 1$ भएकोले कोण $45^\\circ$ हुन्छ ।\nउद्धरण: अध्याय १५",
+            "explanationEnglish": "Since Height = Base, $\\tan \\theta = 1$. This implies $\\theta = 45^\\circ$.\nCitation: Chapter 15"
           },
           {
             "labelEnglish": "b",
@@ -494,8 +494,8 @@
             "marksEnglish": 3,
             "answerNepali": "३० मि.",
             "answerEnglish": "30 m",
-            "explanationNepali": "उचाइ र छाया बराबर भएकोले, उचाइ पनि ३० मिटर नै हुन्छ ।\nउद्धरण: पाठ १५",
-            "explanationEnglish": "Since height equals shadow length, the height is also 30 m.\nCitation: Lesson 15"
+            "explanationNepali": "उचाइ र छाया बराबर भएकोले, उचाइ पनि ३० मिटर नै हुन्छ ।\nउद्धरण: अध्याय १५",
+            "explanationEnglish": "Since height equals shadow length, the height is also 30 m.\nCitation: Chapter 15"
           }
         ]
       },
@@ -513,8 +513,8 @@
             "marksEnglish": 1,
             "answerNepali": "$(N+1)/2$ औं पद",
             "answerEnglish": "$(N+1)/2$ th item",
-            "explanationNepali": "व्यक्तिगत श्रेणीको लागि मध्यिकाको स्थान निकाल्ने सूत्र $(N+1)/2$ औं पद हो ।\nउद्धरण: पाठ १३",
-            "explanationEnglish": "For individual series, the median is the $(N+1)/2$-th item.\nCitation: Lesson 13"
+            "explanationNepali": "व्यक्तिगत श्रेणीको लागि मध्यिकाको स्थान निकाल्ने सूत्र $(N+1)/2$ औं पद हो ।\nउद्धरण: अध्याय १३",
+            "explanationEnglish": "For individual series, the median is the $(N+1)/2$-th item.\nCitation: Chapter 13"
           },
           {
             "labelEnglish": "b",
@@ -523,8 +523,8 @@
             "marksEnglish": 2,
             "answerNepali": "१२",
             "answerEnglish": "12",
-            "explanationNepali": "तथ्याङ्क क्रमबद्ध गर्दा: १०, ११, १२, ... । $N=11$ । $Q_1 = (11+1)/4 = 3$rd पद । तेस्रो पद १२ हो ।\nउद्धरण: पाठ १३",
-            "explanationEnglish": "Sort data: 10, 11, 12... N=11. $Q_1$ is the $(11+1)/4 = 3$rd item. The 3rd value is 12.\nCitation: Lesson 13"
+            "explanationNepali": "तथ्याङ्क क्रमबद्ध गर्दा: १०, ११, १२, ... । $N=11$ । $Q_1 = (11+1)/4 = 3$rd पद । तेस्रो पद १२ हो ।\nउद्धरण: अध्याय १३",
+            "explanationEnglish": "Sort data: 10, 11, 12... N=11. $Q_1$ is the $(11+1)/4 = 3$rd item. The 3rd value is 12.\nCitation: Chapter 13"
           },
           {
             "labelEnglish": "c",
@@ -533,8 +533,8 @@
             "marksEnglish": 3,
             "answerNepali": "५",
             "answerEnglish": "5",
-            "explanationNepali": "$Q_3 = 3(12)/4 = 9$th पद = २२ । $QD = (Q_3 - Q_1)/2 = (22 - 12)/2 = 5$ ।\nउद्धरण: पाठ १३",
-            "explanationEnglish": "First find $Q_3 = 22$. Quartile Deviation formula is $(Q_3 - Q_1)/2$. So, $(22 - 12)/2 = 5$.\nCitation: Lesson 13"
+            "explanationNepali": "$Q_3 = 3(12)/4 = 9$th पद = २२ । $QD = (Q_3 - Q_1)/2 = (22 - 12)/2 = 5$ ।\nउद्धरण: अध्याय १३",
+            "explanationEnglish": "First find $Q_3 = 22$. Quartile Deviation formula is $(Q_3 - Q_1)/2$. So, $(22 - 12)/2 = 5$.\nCitation: Chapter 13"
           }
         ]
       },
@@ -552,8 +552,8 @@
             "marksEnglish": 2,
             "answerNepali": "{HHH, HHT, ... TTT}",
             "answerEnglish": "{HHH, HHT, ... TTT}",
-            "explanationNepali": "३ सिक्काका कुल ८ परिणाम: {HHH, HHT, HTH, HTT, THH, THT, TTH, TTT} ।\nउद्धरण: पाठ १४",
-            "explanationEnglish": "The sample space consists of $2^3=8$ outcomes: {HHH, HHT, HTH, HTT, THH, THT, TTH, TTT}.\nCitation: Lesson 14"
+            "explanationNepali": "३ सिक्काका कुल ८ परिणाम: {HHH, HHT, HTH, HTT, THH, THT, TTH, TTT} ।\nउद्धरण: अध्याय १४",
+            "explanationEnglish": "The sample space consists of $2^3=8$ outcomes: {HHH, HHT, HTH, HTT, THH, THT, TTH, TTT}.\nCitation: Chapter 14"
           },
           {
             "labelEnglish": "b",
@@ -562,8 +562,8 @@
             "marksEnglish": 3,
             "answerNepali": "१/२",
             "answerEnglish": "1/2",
-            "explanationNepali": "अनुकूल परिणामहरू: {HHH, HHT, HTH, THH} (४ वटा) । सम्भाव्यता = $4/8 = 1/2$ ।\nउद्धरण: पाठ १४",
-            "explanationEnglish": "Favorable outcomes (at least 2 heads): {HHH, HHT, HTH, THH}. Count = 4. Probability = $4/8 = 1/2$.\nCitation: Lesson 14"
+            "explanationNepali": "अनुकूल परिणामहरू: {HHH, HHT, HTH, THH} (४ वटा) । सम्भाव्यता = $4/8 = 1/2$ ।\nउद्धरण: अध्याय १४",
+            "explanationEnglish": "Favorable outcomes (at least 2 heads): {HHH, HHT, HTH, THH}. Count = 4. Probability = $4/8 = 1/2$.\nCitation: Chapter 14"
           }
         ]
       }

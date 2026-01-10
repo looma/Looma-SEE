@@ -28,8 +28,8 @@
             "questionEnglish": "What is the number of students who like Management?",
             "marksNepali": "१",
             "marksEnglish": 1,
-            "explanationNepali": "जम्मा विद्यार्थी संख्या २०० छ । व्यवस्थापन मन पराउने विद्यार्थी ६०% छन् । संख्या निकाल्न: $200 \\text{ को } 60\\% = 200 \\times \\frac{60}{100} = 120$ जना ।\nउद्धरण: पाठ १",
-            "explanationEnglish": "Total students are 200. Students liking Management are 60%. Calculation: $60\\% \\text{ of } 200 = \\frac{60}{100} \\times 200 = 120$.\nCitation: Lesson 1",
+            "explanationNepali": "जम्मा विद्यार्थी संख्या २०० छ । व्यवस्थापन मन पराउने विद्यार्थी ६०% छन् । संख्या निकाल्न: $200 \\text{ को } 60\\% = 200 \\times \\frac{60}{100} = 120$ जना ।\nउद्धरण: अध्याय १",
+            "explanationEnglish": "Total students are 200. Students liking Management are 60%. Calculation: $60\\% \\text{ of } 200 = \\frac{60}{100} \\times 200 = 120$.\nCitation: Chapter 1",
             "answerNepali": "१२०",
             "answerEnglish": "120"
           },
@@ -40,8 +40,8 @@
             "questionEnglish": "Find the number of students who like Science only.",
             "marksNepali": "२",
             "marksEnglish": 2,
-            "explanationNepali": "पहिले विज्ञान मन पराउने जम्मा संख्या निकालौँ: $200 \\text{ को } 40\\% = 80$ जना । विज्ञान मात्र मन पराउने संख्या निकाल्न, विज्ञानको जम्मा संख्याबाट दुवै विषय मन पराउने संख्या (२०) घटाउनुपर्छ । विज्ञान मात्र = $80 - 20 = 60$ जना ।\nउद्धरण: पाठ १",
-            "explanationEnglish": "First, find total Science students: $40\\% \\text{ of } 200 = 80$. To find Science only, subtract those who like both subjects (20) from the total Science students. Science Only = $80 - 20 = 60$.\nCitation: Lesson 1",
+            "explanationNepali": "पहिले विज्ञान मन पराउने जम्मा संख्या निकालौँ: $200 \\text{ को } 40\\% = 80$ जना । विज्ञान मात्र मन पराउने संख्या निकाल्न, विज्ञानको जम्मा संख्याबाट दुवै विषय मन पराउने संख्या (२०) घटाउनुपर्छ । विज्ञान मात्र = $80 - 20 = 60$ जना ।\nउद्धरण: अध्याय १",
+            "explanationEnglish": "First, find total Science students: $40\\% \\text{ of } 200 = 80$. To find Science only, subtract those who like both subjects (20) from the total Science students. Science Only = $80 - 20 = 60$.\nCitation: Chapter 1",
             "answerNepali": "६०",
             "answerEnglish": "60"
           },
@@ -52,8 +52,8 @@
             "questionEnglish": "Calculate the number of students who like neither subject.",
             "marksNepali": "२",
             "marksEnglish": 2,
-            "explanationNepali": "पहिले कम्तीमा एउटा विषय मन पराउने ($M \\cup S$) निकालौँ: $n(M) + n(S) - n(M \\cap S) = 120 + 80 - 20 = 180$ । अब कुनै पनि मन नपराउने संख्या निकाल्न जम्मा संख्याबाट यो घटाउनुपर्छ: $200 - 180 = 20$ जना ।\nउद्धरण: पाठ १",
-            "explanationEnglish": "First, find the union ($M \\cup S$): $n(M) + n(S) - n(M \\cap S) = 120 + 80 - 20 = 180$. Then, subtract this from the total number of students to find those who like neither: $200 - 180 = 20$.\nCitation: Lesson 1",
+            "explanationNepali": "पहिले कम्तीमा एउटा विषय मन पराउने ($M \\cup S$) निकालौँ: $n(M) + n(S) - n(M \\cap S) = 120 + 80 - 20 = 180$ । अब कुनै पनि मन नपराउने संख्या निकाल्न जम्मा संख्याबाट यो घटाउनुपर्छ: $200 - 180 = 20$ जना ।\nउद्धरण: अध्याय १",
+            "explanationEnglish": "First, find the union ($M \\cup S$): $n(M) + n(S) - n(M \\cap S) = 120 + 80 - 20 = 180$. Then, subtract this from the total number of students to find those who like neither: $200 - 180 = 20$.\nCitation: Chapter 1",
             "answerNepali": "२०",
             "answerEnglish": "20"
           },
@@ -64,8 +64,8 @@
             "questionEnglish": "Find the ratio of students liking Science only to Management only.",
             "marksNepali": "१",
             "marksEnglish": 1,
-            "explanationNepali": "विज्ञान मात्र मन पराउने संख्या ६० हो । व्यवस्थापन मात्र मन पराउने संख्या = जम्मा व्यवस्थापन - दुवै = $120 - 20 = 100$ हो । अनुपात = $60 : 100$ । २० ले भाग गर्दा $3 : 5$ हुन्छ ।\nउद्धरण: पाठ १",
-            "explanationEnglish": "Number liking Science only is 60. Number liking Management only is Total Management - Both = $120 - 20 = 100$. The ratio is $60 : 100$, which simplifies to $3 : 5$.\nCitation: Lesson 1",
+            "explanationNepali": "विज्ञान मात्र मन पराउने संख्या ६० हो । व्यवस्थापन मात्र मन पराउने संख्या = जम्मा व्यवस्थापन - दुवै = $120 - 20 = 100$ हो । अनुपात = $60 : 100$ । २० ले भाग गर्दा $3 : 5$ हुन्छ ।\nउद्धरण: अध्याय १",
+            "explanationEnglish": "Number liking Science only is 60. Number liking Management only is Total Management - Both = $120 - 20 = 100$. The ratio is $60 : 100$, which simplifies to $3 : 5$.\nCitation: Chapter 1",
             "answerNepali": "३:५",
             "answerEnglish": "3:5"
           }
@@ -86,8 +86,8 @@
             "questionEnglish": "Find the Principal.",
             "marksNepali": "२",
             "marksEnglish": 2,
-            "explanationNepali": "चक्रीय मिश्रधनको सूत्र $CA = P(1 + \\frac{R}{100})^T$ प्रयोग गर्दा: $6050 = P(1 + \\frac{10}{100})^2$ । $6050 = P(1.1)^2 = P(1.21)$ । त्यसैले $P = \\frac{6050}{1.21} = 5000$ ।\nउद्धरण: पाठ २",
-            "explanationEnglish": "Using the compound amount formula $CA = P(1 + \\frac{R}{100})^T$: $6050 = P(1 + 0.1)^2$. This simplifies to $6050 = P(1.21)$. Solving for P, we get $P = 6050 / 1.21 = 5000$.\nCitation: Lesson 2",
+            "explanationNepali": "चक्रीय मिश्रधनको सूत्र $CA = P(1 + \\frac{R}{100})^T$ प्रयोग गर्दा: $6050 = P(1 + \\frac{10}{100})^2$ । $6050 = P(1.1)^2 = P(1.21)$ । त्यसैले $P = \\frac{6050}{1.21} = 5000$ ।\nउद्धरण: अध्याय २",
+            "explanationEnglish": "Using the compound amount formula $CA = P(1 + \\frac{R}{100})^T$: $6050 = P(1 + 0.1)^2$. This simplifies to $6050 = P(1.21)$. Solving for P, we get $P = 6050 / 1.21 = 5000$.\nCitation: Chapter 2",
             "answerNepali": "रु. ५,०००",
             "answerEnglish": "Rs. 5,000"
           },
@@ -98,8 +98,8 @@
             "questionEnglish": "What is the semi-annual compound interest on that principal at the same rate for 2 years?",
             "marksNepali": "२",
             "marksEnglish": 2,
-            "explanationNepali": "अर्ध-वार्षिक ब्याजको सूत्र $CI = P[(1 + \\frac{R}{200})^{2T} - 1]$ हो । मान राख्दा: $5000[(1 + \\frac{10}{200})^{4} - 1] = 5000[(1.05)^4 - 1]$ । $1.05^4 \\approx 1.2155$ हुन्छ । $5000(0.2155) = 1077.5$ (पूर्ण गणनामा १०७७.५३) ।\nउद्धरण: पाठ २",
-            "explanationEnglish": "Using the semi-annual interest formula $CI = P[(1 + \\frac{R}{200})^{2T} - 1]$: $5000[(1 + 0.05)^4 - 1]$. Since $1.05^4 \\approx 1.215506$, the interest is $5000 \\times 0.215506 \\approx 1077.53$.\nCitation: Lesson 2",
+            "explanationNepali": "अर्ध-वार्षिक ब्याजको सूत्र $CI = P[(1 + \\frac{R}{200})^{2T} - 1]$ हो । मान राख्दा: $5000[(1 + \\frac{10}{200})^{4} - 1] = 5000[(1.05)^4 - 1]$ । $1.05^4 \\approx 1.2155$ हुन्छ । $5000(0.2155) = 1077.5$ (पूर्ण गणनामा १०७७.५३) ।\nउद्धरण: अध्याय २",
+            "explanationEnglish": "Using the semi-annual interest formula $CI = P[(1 + \\frac{R}{200})^{2T} - 1]$: $5000[(1 + 0.05)^4 - 1]$. Since $1.05^4 \\approx 1.215506$, the interest is $5000 \\times 0.215506 \\approx 1077.53$.\nCitation: Chapter 2",
             "answerNepali": "रु. १,०७७.५३",
             "answerEnglish": "Rs. 1,077.53"
           }
@@ -120,8 +120,8 @@
             "questionEnglish": "Find the annual rate of depreciation.",
             "marksNepali": "२",
             "marksEnglish": 2,
-            "explanationNepali": "मिश्र ह्रासको सूत्र $V_T = V_0(1 - \\frac{R}{100})^T$ प्रयोग गर्दा: $121500 = 150000(1 - \\frac{R}{100})^2$ । भाग गर्दा: $0.81 = (1 - \\frac{R}{100})^2$ । वर्गमूल लिँदा: $0.9 = 1 - \\frac{R}{100}$, जसबाट $\\frac{R}{100} = 0.1$, अर्थात् $R = 10\\%$ ।\nउद्धरण: पाठ ३",
-            "explanationEnglish": "Using the depreciation formula $V_T = V_0(1 - \\frac{R}{100})^T$: $121500 = 150000(1 - \\frac{R}{100})^2$. Dividing gives $0.81 = (1 - \\frac{R}{100})^2$. Taking the square root gives $0.9 = 1 - \\frac{R}{100}$, so $R = 10\\%$.\nCitation: Lesson 3",
+            "explanationNepali": "मिश्र ह्रासको सूत्र $V_T = V_0(1 - \\frac{R}{100})^T$ प्रयोग गर्दा: $121500 = 150000(1 - \\frac{R}{100})^2$ । भाग गर्दा: $0.81 = (1 - \\frac{R}{100})^2$ । वर्गमूल लिँदा: $0.9 = 1 - \\frac{R}{100}$, जसबाट $\\frac{R}{100} = 0.1$, अर्थात् $R = 10\\%$ ।\nउद्धरण: अध्याय ३",
+            "explanationEnglish": "Using the depreciation formula $V_T = V_0(1 - \\frac{R}{100})^T$: $121500 = 150000(1 - \\frac{R}{100})^2$. Dividing gives $0.81 = (1 - \\frac{R}{100})^2$. Taking the square root gives $0.9 = 1 - \\frac{R}{100}$, so $R = 10\\%$.\nCitation: Chapter 3",
             "answerNepali": "१०%",
             "answerEnglish": "10%"
           },
@@ -132,8 +132,8 @@
             "questionEnglish": "What will be the price after 1 year (from now)?",
             "marksNepali": "२",
             "marksEnglish": 2,
-            "explanationNepali": "वर्तमान मूल्य रु. १,२१,५०० मा १०% ह्रास कट्टी गर्नुपर्छ । १ वर्षपछिको मूल्य = $121500(1 - 0.1) = 121500 \\times 0.9 = 109350$ ।\nउद्धरण: पाठ ३",
-            "explanationEnglish": "Apply the 10% depreciation to the current price of Rs. 1,21,500. Price after 1 year = $121500(1 - 0.10) = 121500 \\times 0.9 = 109350$.\nCitation: Lesson 3",
+            "explanationNepali": "वर्तमान मूल्य रु. १,२१,५०० मा १०% ह्रास कट्टी गर्नुपर्छ । १ वर्षपछिको मूल्य = $121500(1 - 0.1) = 121500 \\times 0.9 = 109350$ ।\nउद्धरण: अध्याय ३",
+            "explanationEnglish": "Apply the 10% depreciation to the current price of Rs. 1,21,500. Price after 1 year = $121500(1 - 0.10) = 121500 \\times 0.9 = 109350$.\nCitation: Chapter 3",
             "answerNepali": "रु. १,०९,३५०",
             "answerEnglish": "Rs. 1,09,350"
           }
@@ -154,8 +154,8 @@
             "questionEnglish": "If Nepali currency is devalued by 5% the next day, how much extra rupees will be received for $500?",
             "marksNepali": "२",
             "marksEnglish": 2,
-            "explanationNepali": "अवमूल्यन (Devaluation) ले विनिमय दर बढाउँछ । नयाँ दर = $132 + (132 \\text{ को } 5\\%) = 132 + 6.6 = 138.6$ । नयाँ रकम = $500 \\times 138.6 = 69,300$ । बढी रकम = $69300 - 66000 = 3,300$ ।\nउद्धरण: पाठ ४",
-            "explanationEnglish": "Devaluation increases the exchange rate. New rate = $132 \\times 1.05 = 138.6$. New amount received = $500 \\times 138.6 = 69,300$. Extra amount = $69300 - 66000 = 3,300$.\nCitation: Lesson 4",
+            "explanationNepali": "अवमूल्यन (Devaluation) ले विनिमय दर बढाउँछ । नयाँ दर = $132 + (132 \\text{ को } 5\\%) = 132 + 6.6 = 138.6$ । नयाँ रकम = $500 \\times 138.6 = 69,300$ । बढी रकम = $69300 - 66000 = 3,300$ ।\nउद्धरण: अध्याय ४",
+            "explanationEnglish": "Devaluation increases the exchange rate. New rate = $132 \\times 1.05 = 138.6$. New amount received = $500 \\times 138.6 = 69,300$. Extra amount = $69300 - 66000 = 3,300$.\nCitation: Chapter 4",
             "answerNepali": "रु. ३,३००",
             "answerEnglish": "Rs. 3,300"
           },
@@ -166,8 +166,8 @@
             "questionEnglish": "How many dollars are needed to exchange for Rs. 1,50,000 (at new rate)?",
             "marksNepali": "३",
             "marksEnglish": 3,
-            "explanationNepali": "नयाँ दर रु. १३८.६० प्रयोग गर्दा, आवश्यक डलर = $\\frac{1,50,000}{138.6} \\approx 1082.25$ डलर ।\nउद्धरण: पाठ ४",
-            "explanationEnglish": "Using the new rate of 138.6, Dollars needed = $1,50,000 / 138.6 \\approx 1082.25$.\nCitation: Lesson 4",
+            "explanationNepali": "नयाँ दर रु. १३८.६० प्रयोग गर्दा, आवश्यक डलर = $\\frac{1,50,000}{138.6} \\approx 1082.25$ डलर ।\nउद्धरण: अध्याय ४",
+            "explanationEnglish": "Using the new rate of 138.6, Dollars needed = $1,50,000 / 138.6 \\approx 1082.25$.\nCitation: Chapter 4",
             "answerNepali": "$१,०८२.२५",
             "answerEnglish": "$1,082.25"
           }
@@ -188,8 +188,8 @@
             "questionEnglish": "Find the area of the base (triangle).",
             "marksNepali": "२",
             "marksEnglish": 2,
-            "explanationNepali": "यो समकोण त्रिभुज हो (भुजाहरू ३, ४, ५)। क्षेत्रफल = $\\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 3 \\times 4 = 6$ वर्ग से.मि. ।\nउद्धरण: पाठ ५",
-            "explanationEnglish": "This is a right-angled triangle (3-4-5 sides). Area = $\\frac{1}{2} \\times 3 \\times 4 = 6$ sq. cm.\nCitation: Lesson 5",
+            "explanationNepali": "यो समकोण त्रिभुज हो (भुजाहरू ३, ४, ५)। क्षेत्रफल = $\\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 3 \\times 4 = 6$ वर्ग से.मि. ।\nउद्धरण: अध्याय ५",
+            "explanationEnglish": "This is a right-angled triangle (3-4-5 sides). Area = $\\frac{1}{2} \\times 3 \\times 4 = 6$ sq. cm.\nCitation: Chapter 5",
             "answerNepali": "६ वर्ग से.मि.",
             "answerEnglish": "6 sq. cm"
           },
@@ -200,8 +200,8 @@
             "questionEnglish": "Find the volume of the prism.",
             "marksNepali": "२",
             "marksEnglish": 2,
-            "explanationNepali": "प्रिज्मको आयतन = आधारको क्षेत्रफल $\\times$ लम्बाइ = $6 \\times 20 = 120$ घन से.मि. ।\nउद्धरण: पाठ ५",
-            "explanationEnglish": "Volume of prism = Base Area $\\times$ Length = $6 \\times 20 = 120$ cubic cm.\nCitation: Lesson 5",
+            "explanationNepali": "प्रिज्मको आयतन = आधारको क्षेत्रफल $\\times$ लम्बाइ = $6 \\times 20 = 120$ घन से.मि. ।\nउद्धरण: अध्याय ५",
+            "explanationEnglish": "Volume of prism = Base Area $\\times$ Length = $6 \\times 20 = 120$ cubic cm.\nCitation: Chapter 5",
             "answerNepali": "१२० घन से.मि.",
             "answerEnglish": "120 cm³"
           }
@@ -222,8 +222,8 @@
             "questionEnglish": "What is the ratio of the volume of the cylinder to the cone?",
             "marksNepali": "१",
             "marksEnglish": 1,
-            "explanationNepali": "बेलनाको आयतन $\\pi r^2 h$ र सोलीको आयतन $\\frac{1}{3}\\pi r^2 h$ हुन्छ । एउटै आधार र उचाइ हुँदा अनुपात $1 : \\frac{1}{3}$ वा $3 : 1$ हुन्छ ।\nउद्धरण: पाठ ५",
-            "explanationEnglish": "Cylinder volume is $\\pi r^2 h$ and Cone volume is $\\frac{1}{3}\\pi r^2 h$. With same r and h, the ratio is $1 : 1/3$ or $3 : 1$.\nCitation: Lesson 5",
+            "explanationNepali": "बेलनाको आयतन $\\pi r^2 h$ र सोलीको आयतन $\\frac{1}{3}\\pi r^2 h$ हुन्छ । एउटै आधार र उचाइ हुँदा अनुपात $1 : \\frac{1}{3}$ वा $3 : 1$ हुन्छ ।\nउद्धरण: अध्याय ५",
+            "explanationEnglish": "Cylinder volume is $\\pi r^2 h$ and Cone volume is $\\frac{1}{3}\\pi r^2 h$. With same r and h, the ratio is $1 : 1/3$ or $3 : 1$.\nCitation: Chapter 5",
             "answerNepali": "३:१",
             "answerEnglish": "3:1"
           },
@@ -234,8 +234,8 @@
             "questionEnglish": "Find the difference between their curved surface areas.",
             "marksNepali": "४",
             "marksEnglish": 4,
-            "explanationNepali": "सोलीको छड्के उचाइ $l = \\sqrt{24^2 + 7^2} = 25$ । सोलीको CSA = $\\pi rl = \\frac{22}{7} \\times 7 \\times 25 = 550$ । बेलनाको CSA = $2\\pi rh = 2 \\times \\frac{22}{7} \\times 7 \\times 24 = 1056$ । अन्तर = $1056 - 550 = 506$ वर्ग से.मि. ।\nउद्धरण: पाठ ५",
-            "explanationEnglish": "Cone slant height $l = \\sqrt{24^2 + 7^2} = 25$. Cone CSA = $\\pi rl = 550$. Cylinder CSA = $2\\pi rh = 1056$. Difference = $1056 - 550 = 506$ sq. cm.\nCitation: Lesson 5",
+            "explanationNepali": "सोलीको छड्के उचाइ $l = \\sqrt{24^2 + 7^2} = 25$ । सोलीको CSA = $\\pi rl = \\frac{22}{7} \\times 7 \\times 25 = 550$ । बेलनाको CSA = $2\\pi rh = 2 \\times \\frac{22}{7} \\times 7 \\times 24 = 1056$ । अन्तर = $1056 - 550 = 506$ वर्ग से.मि. ।\nउद्धरण: अध्याय ५",
+            "explanationEnglish": "Cone slant height $l = \\sqrt{24^2 + 7^2} = 25$. Cone CSA = $\\pi rl = 550$. Cylinder CSA = $2\\pi rh = 1056$. Difference = $1056 - 550 = 506$ sq. cm.\nCitation: Chapter 5",
             "answerNepali": "५०६ वर्ग से.मि.",
             "answerEnglish": "506 sq. cm"
           }
@@ -256,8 +256,8 @@
             "questionEnglish": "What is the length of the room?",
             "marksNepali": "२",
             "marksEnglish": 2,
-            "explanationNepali": "कोठा वर्गाकार भएकाले, लम्बाइ = $\\sqrt{\\text{क्षेत्रफल}} = \\sqrt{144} = 12$ फिट ।\nउद्धरण: पाठ ५",
-            "explanationEnglish": "Since the room is square, Length = $\\sqrt{\\text{Area}} = \\sqrt{144} = 12$ ft.\nCitation: Lesson 5",
+            "explanationNepali": "कोठा वर्गाकार भएकाले, लम्बाइ = $\\sqrt{\\text{क्षेत्रफल}} = \\sqrt{144} = 12$ फिट ।\nउद्धरण: अध्याय ५",
+            "explanationEnglish": "Since the room is square, Length = $\\sqrt{\\text{Area}} = \\sqrt{144} = 12$ ft.\nCitation: Chapter 5",
             "answerNepali": "१२ फिट",
             "answerEnglish": "12 ft"
           },
@@ -268,8 +268,8 @@
             "questionEnglish": "What is the cost of plastering 4 walls at Rs. 20 per sq. ft?",
             "marksNepali": "२",
             "marksEnglish": 2,
-            "explanationNepali": "चार भित्ताको क्षेत्रफल = $4 \\times l \\times h = 4 \\times 12 \\times 10 = 480$ वर्ग फिट । खर्च = $480 \\times 20 = 9600$ ।\nउद्धरण: पाठ ५",
-            "explanationEnglish": "Area of 4 walls = $4 \\times l \\times h$ (for square room) $= 4 \\times 12 \\times 10 = 480$ sq. ft. Cost = $480 \\times 20 = 9600$.\nCitation: Lesson 5",
+            "explanationNepali": "चार भित्ताको क्षेत्रफल = $4 \\times l \\times h = 4 \\times 12 \\times 10 = 480$ वर्ग फिट । खर्च = $480 \\times 20 = 9600$ ।\nउद्धरण: अध्याय ५",
+            "explanationEnglish": "Area of 4 walls = $4 \\times l \\times h$ (for square room) $= 4 \\times 12 \\times 10 = 480$ sq. ft. Cost = $480 \\times 20 = 9600$.\nCitation: Chapter 5",
             "answerNepali": "रु. ९,६००",
             "answerEnglish": "Rs. 9,600"
           }
@@ -290,8 +290,8 @@
             "questionEnglish": "What is the common difference ($d$)?",
             "marksNepali": "५",
             "marksEnglish": 5,
-            "explanationNepali": "सूत्र $t_n = a + (n-1)d$ प्रयोग गरौँ । $a + 4d = 19$ र $a + 7d = 31$ । घटाउँदा: $3d = 12$, त्यसैले $d = 4$ ।\nउद्धरण: पाठ ६",
-            "explanationEnglish": "Use $t_n = a + (n-1)d$. We have $a + 4d = 19$ and $a + 7d = 31$. Subtracting the equations gives $3d = 12$, so $d = 4$.\nCitation: Lesson 6",
+            "explanationNepali": "सूत्र $t_n = a + (n-1)d$ प्रयोग गरौँ । $a + 4d = 19$ र $a + 7d = 31$ । घटाउँदा: $3d = 12$, त्यसैले $d = 4$ ।\nउद्धरण: अध्याय ६",
+            "explanationEnglish": "Use $t_n = a + (n-1)d$. We have $a + 4d = 19$ and $a + 7d = 31$. Subtracting the equations gives $3d = 12$, so $d = 4$.\nCitation: Chapter 6",
             "answerNepali": "४",
             "answerEnglish": "4"
           }
@@ -312,8 +312,8 @@
             "questionEnglish": "Find the value of x.",
             "marksNepali": "५",
             "marksEnglish": 5,
-            "explanationNepali": "मानौँ $y = \\frac{x}{x-2}$ । समीकरण $y + \\frac{1}{y} = \\frac{5}{2}$ बन्छ । हल गर्दा $2y^2 - 5y + 2 = 0$ । $y = 2$ वा $y = 1/2$ ।\nयदि $y = 2$, $\\frac{x}{x-2} = 2 \\Rightarrow x = 2x - 4 \\Rightarrow x = 4$ ।\nयदि $y = 1/2$, $\\frac{x}{x-2} = \\frac{1}{2} \\Rightarrow 2x = x - 2 \\Rightarrow x = -2$ ।\nउद्धरण: पाठ ७",
-            "explanationEnglish": "Let $y = \\frac{x}{x-2}$. The equation becomes $y + 1/y = 5/2$, leading to $2y^2 - 5y + 2 = 0$. Roots are $y = 2, 1/2$. Solving for x: If $y=2$, $x=4$. If $y=1/2$, $x=-2$.\nCitation: Lesson 7",
+            "explanationNepali": "मानौँ $y = \\frac{x}{x-2}$ । समीकरण $y + \\frac{1}{y} = \\frac{5}{2}$ बन्छ । हल गर्दा $2y^2 - 5y + 2 = 0$ । $y = 2$ वा $y = 1/2$ ।\nयदि $y = 2$, $\\frac{x}{x-2} = 2 \\Rightarrow x = 2x - 4 \\Rightarrow x = 4$ ।\nयदि $y = 1/2$, $\\frac{x}{x-2} = \\frac{1}{2} \\Rightarrow 2x = x - 2 \\Rightarrow x = -2$ ।\nउद्धरण: अध्याय ७",
+            "explanationEnglish": "Let $y = \\frac{x}{x-2}$. The equation becomes $y + 1/y = 5/2$, leading to $2y^2 - 5y + 2 = 0$. Roots are $y = 2, 1/2$. Solving for x: If $y=2$, $x=4$. If $y=1/2$, $x=-2$.\nCitation: Chapter 7",
             "answerNepali": "$x = ४, -२$",
             "answerEnglish": "$x = 4, -2$"
           }
@@ -334,8 +334,8 @@
             "questionEnglish": "Find the value of x.",
             "marksNepali": "५",
             "marksEnglish": 5,
-            "explanationNepali": "मानौँ $3^x = a$ । समीकरण $a^2 - 4a + 3 = 0$ बन्छ । खण्डीकरण गर्दा $(a-3)(a-1) = 0$ ।\n$a=3$ हुँदा $3^x = 3^1 \\Rightarrow x = 1$ ।\n$a=1$ हुँदा $3^x = 3^0 \\Rightarrow x = 0$ ।\nउद्धरण: पाठ ९",
-            "explanationEnglish": "Let $3^x = a$. The equation is $a^2 - 4a + 3 = 0$. Factors are $(a-3)(a-1) = 0$. If $a=3$, $x=1$. If $a=1$, $x=0$.\nCitation: Lesson 9",
+            "explanationNepali": "मानौँ $3^x = a$ । समीकरण $a^2 - 4a + 3 = 0$ बन्छ । खण्डीकरण गर्दा $(a-3)(a-1) = 0$ ।\n$a=3$ हुँदा $3^x = 3^1 \\Rightarrow x = 1$ ।\n$a=1$ हुँदा $3^x = 3^0 \\Rightarrow x = 0$ ।\nउद्धरण: अध्याय ९",
+            "explanationEnglish": "Let $3^x = a$. The equation is $a^2 - 4a + 3 = 0$. Factors are $(a-3)(a-1) = 0$. If $a=3$, $x=1$. If $a=1$, $x=0$.\nCitation: Chapter 9",
             "answerNepali": "$x = १, ०$",
             "answerEnglish": "$x = 1, 0$"
           }
@@ -356,8 +356,8 @@
             "questionEnglish": "What is the area of the rectangle?",
             "marksNepali": "१",
             "marksEnglish": 1,
-            "explanationNepali": "आयतको क्षेत्रफल = लम्बाइ $\\times$ चौडाइ = $10 \\times 6 = 60$ वर्ग से.मि. ।\nउद्धरण: पाठ १०",
-            "explanationEnglish": "Rectangle Area = $10 \\times 6 = 60$ sq. cm.\nCitation: Lesson 10",
+            "explanationNepali": "आयतको क्षेत्रफल = लम्बाइ $\\times$ चौडाइ = $10 \\times 6 = 60$ वर्ग से.मि. ।\nउद्धरण: अध्याय १०",
+            "explanationEnglish": "Rectangle Area = $10 \\times 6 = 60$ sq. cm.\nCitation: Chapter 10",
             "answerNepali": "६० वर्ग से.मि.",
             "answerEnglish": "60 sq. cm"
           },
@@ -368,8 +368,8 @@
             "questionEnglish": "Calculate the area of the triangle.",
             "marksNepali": "३",
             "marksEnglish": 3,
-            "explanationNepali": "एउटै आधार र समानान्तर रेखा बिच बनेको त्रिभुजको क्षेत्रफल आयत (वा समानान्तर चतुर्भुज) को आधा हुन्छ । क्षेत्रफल = $60 / 2 = 30$ वर्ग से.मि. ।\nउद्धरण: पाठ १०",
-            "explanationEnglish": "The area of the triangle is half the area of the rectangle on the same base. Area = $60/2 = 30$ sq. cm.\nCitation: Lesson 10",
+            "explanationNepali": "एउटै आधार र समानान्तर रेखा बिच बनेको त्रिभुजको क्षेत्रफल आयत (वा समानान्तर चतुर्भुज) को आधा हुन्छ । क्षेत्रफल = $60 / 2 = 30$ वर्ग से.मि. ।\nउद्धरण: अध्याय १०",
+            "explanationEnglish": "The area of the triangle is half the area of the rectangle on the same base. Area = $60/2 = 30$ sq. cm.\nCitation: Chapter 10",
             "answerNepali": "३० वर्ग से.मि.",
             "answerEnglish": "30 sq. cm"
           }
@@ -390,8 +390,8 @@
             "questionEnglish": "Write the relation of opposite angles of a cyclic quadrilateral.",
             "marksNepali": "१",
             "marksEnglish": 1,
-            "explanationNepali": "चक्रीय चतुर्भुजका सम्मुख कोणहरू सम्पूरक हुन्छन् (जोड $180^\\circ$) ।\nउद्धरण: पाठ १२",
-            "explanationEnglish": "Opposite angles of a cyclic quadrilateral are supplementary (sum to $180^\\circ$).\nCitation: Lesson 12",
+            "explanationNepali": "चक्रीय चतुर्भुजका सम्मुख कोणहरू सम्पूरक हुन्छन् (जोड $180^\\circ$) ।\nउद्धरण: अध्याय १२",
+            "explanationEnglish": "Opposite angles of a cyclic quadrilateral are supplementary (sum to $180^\\circ$).\nCitation: Chapter 12",
             "answerNepali": "सम्पूरक",
             "answerEnglish": "Supplementary"
           },
@@ -402,8 +402,8 @@
             "questionEnglish": "Find the value of x.",
             "marksNepali": "२",
             "marksEnglish": 2,
-            "explanationNepali": "$3x + 2x = 180 \\Rightarrow 5x = 180 \\Rightarrow x = 36$ ।\nउद्धरण: पाठ १२",
-            "explanationEnglish": "$3x + 2x = 180 \\Rightarrow 5x = 180 \\Rightarrow x = 36$.\nCitation: Lesson 12",
+            "explanationNepali": "$3x + 2x = 180 \\Rightarrow 5x = 180 \\Rightarrow x = 36$ ।\nउद्धरण: अध्याय १२",
+            "explanationEnglish": "$3x + 2x = 180 \\Rightarrow 5x = 180 \\Rightarrow x = 36$.\nCitation: Chapter 12",
             "answerNepali": "३६",
             "answerEnglish": "36"
           },
@@ -414,8 +414,8 @@
             "questionEnglish": "What is the value of $\\angle P$?",
             "marksNepali": "२",
             "marksEnglish": 2,
-            "explanationNepali": "$\\angle P = 3x = 3 \\times 36 = 108^\\circ$ ।\nउद्धरण: पाठ १२",
-            "explanationEnglish": "$\\angle P = 3(36) = 108^\\circ$.\nCitation: Lesson 12",
+            "explanationNepali": "$\\angle P = 3x = 3 \\times 36 = 108^\\circ$ ।\nउद्धरण: अध्याय १२",
+            "explanationEnglish": "$\\angle P = 3(36) = 108^\\circ$.\nCitation: Chapter 12",
             "answerNepali": "$१०८^\\circ$",
             "answerEnglish": "$108^\\circ$"
           }
@@ -436,8 +436,8 @@
             "questionEnglish": "What is the length of the side of the triangle?",
             "marksNepali": "१",
             "marksEnglish": 1,
-            "explanationNepali": "परिमिति $3a = 30$, त्यसैले भुजा $a = 10$ से.मि. ।\nउद्धरण: पाठ १०",
-            "explanationEnglish": "Perimeter $3a = 30$, so side $a = 10$ cm.\nCitation: Lesson 10",
+            "explanationNepali": "परिमिति $3a = 30$, त्यसैले भुजा $a = 10$ से.मि. ।\nउद्धरण: अध्याय १०",
+            "explanationEnglish": "Perimeter $3a = 30$, so side $a = 10$ cm.\nCitation: Chapter 10",
             "answerNepali": "१० से.मि.",
             "answerEnglish": "10 cm"
           },
@@ -448,8 +448,8 @@
             "questionEnglish": "Calculate the area of the triangle.",
             "marksNepali": "३",
             "marksEnglish": 3,
-            "explanationNepali": "क्षेत्रफल = $\\frac{\\sqrt{3}}{4} a^2 = \\frac{\\sqrt{3}}{4} (100) = 25\\sqrt{3}$ वर्ग से.मि. ।\nउद्धरण: पाठ १०",
-            "explanationEnglish": "Area = $\\frac{\\sqrt{3}}{4} (10)^2 = 25\\sqrt{3}$ sq. cm.\nCitation: Lesson 10",
+            "explanationNepali": "क्षेत्रफल = $\\frac{\\sqrt{3}}{4} a^2 = \\frac{\\sqrt{3}}{4} (100) = 25\\sqrt{3}$ वर्ग से.मि. ।\nउद्धरण: अध्याय १०",
+            "explanationEnglish": "Area = $\\frac{\\sqrt{3}}{4} (10)^2 = 25\\sqrt{3}$ sq. cm.\nCitation: Chapter 10",
             "answerNepali": "$२५\\sqrt{3}$ वर्ग से.मि.",
             "answerEnglish": "$25\\sqrt{3}$ sq. cm"
           }
@@ -470,8 +470,8 @@
             "questionEnglish": "What is the height of the tower? (Ignore man's height)",
             "marksNepali": "४",
             "marksEnglish": 4,
-            "explanationNepali": "$\\tan(45^\\circ) = \\frac{\\text{Height}}{\\text{Base}}$ । $1 = \\frac{h}{50}$ । त्यसैले $h = 50$ मिटर ।\nउद्धरण: पाठ १५",
-            "explanationEnglish": "$\\tan(45^\\circ) = h/50$. Since $\\tan(45) = 1$, $h = 50$ m.\nCitation: Lesson 15",
+            "explanationNepali": "$\\tan(45^\\circ) = \\frac{\\text{Height}}{\\text{Base}}$ । $1 = \\frac{h}{50}$ । त्यसैले $h = 50$ मिटर ।\nउद्धरण: अध्याय १५",
+            "explanationEnglish": "$\\tan(45^\\circ) = h/50$. Since $\\tan(45) = 1$, $h = 50$ m.\nCitation: Chapter 15",
             "answerNepali": "५० मिटर",
             "answerEnglish": "50 m"
           }
@@ -492,8 +492,8 @@
             "questionEnglish": "Find the value of x.",
             "marksNepali": "२",
             "marksEnglish": 2,
-            "explanationNepali": "जम्मा संख्या ($N$) = ६ । योगफल = $20+x+40+30+20+40 = 150+x$ । मध्यक $\\frac{150+x}{6} = 30 \\Rightarrow 150+x = 180 \\Rightarrow x = 30$ ।\nउद्धरण: पाठ १३",
-            "explanationEnglish": "Sum = $150+x$. $N=6$. Mean equation: $(150+x)/6 = 30 \\Rightarrow 150+x=180 \\Rightarrow x=30$.\nCitation: Lesson 13",
+            "explanationNepali": "जम्मा संख्या ($N$) = ६ । योगफल = $20+x+40+30+20+40 = 150+x$ । मध्यक $\\frac{150+x}{6} = 30 \\Rightarrow 150+x = 180 \\Rightarrow x = 30$ ।\nउद्धरण: अध्याय १३",
+            "explanationEnglish": "Sum = $150+x$. $N=6$. Mean equation: $(150+x)/6 = 30 \\Rightarrow 150+x=180 \\Rightarrow x=30$.\nCitation: Chapter 13",
             "answerNepali": "३०",
             "answerEnglish": "30"
           },
@@ -504,8 +504,8 @@
             "questionEnglish": "Calculate the first quartile ($Q_1$).",
             "marksNepali": "२",
             "marksEnglish": 2,
-            "explanationNepali": "तथ्याङ्क क्रमबद्ध गर्दा (x=30 राखेर): 20, 20, 30, 30, 40, 40 । $Q_1$ को स्थान = $\\frac{6+1}{4} = 1.75$th पद । $Q_1 = 1st + 0.75(2nd - 1st) = 20 + 0.75(20-20) = 20$ ।\nउद्धरण: पाठ १३",
-            "explanationEnglish": "Sorted Data: 20, 20, 30, 30, 40, 40. $Q_1$ position is 1.75th. Value is $20 + 0.75(0) = 20$.\nCitation: Lesson 13",
+            "explanationNepali": "तथ्याङ्क क्रमबद्ध गर्दा (x=30 राखेर): 20, 20, 30, 30, 40, 40 । $Q_1$ को स्थान = $\\frac{6+1}{4} = 1.75$th पद । $Q_1 = 1st + 0.75(2nd - 1st) = 20 + 0.75(20-20) = 20$ ।\nउद्धरण: अध्याय १३",
+            "explanationEnglish": "Sorted Data: 20, 20, 30, 30, 40, 40. $Q_1$ position is 1.75th. Value is $20 + 0.75(0) = 20$.\nCitation: Chapter 13",
             "answerNepali": "२०",
             "answerEnglish": "20"
           },
@@ -516,8 +516,8 @@
             "questionEnglish": "Calculate the median.",
             "marksNepali": "२",
             "marksEnglish": 2,
-            "explanationNepali": "मध्यिका तेस्रो र चौथो पदको औसत हो: $\\frac{30+30}{2} = 30$ ।\nउद्धरण: पाठ १३",
-            "explanationEnglish": "Median is average of 3rd and 4th terms: $(30+30)/2 = 30$.\nCitation: Lesson 13",
+            "explanationNepali": "मध्यिका तेस्रो र चौथो पदको औसत हो: $\\frac{30+30}{2} = 30$ ।\nउद्धरण: अध्याय १३",
+            "explanationEnglish": "Median is average of 3rd and 4th terms: $(30+30)/2 = 30$.\nCitation: Chapter 13",
             "answerNepali": "३०",
             "answerEnglish": "30"
           }
@@ -538,8 +538,8 @@
             "questionEnglish": "Describe the sample space outcomes for the card being Red or Black.",
             "marksNepali": "२",
             "marksEnglish": 2,
-            "explanationNepali": "तासको गड्डीमा २६ वटा रातो र २६ वटा कालो तास हुन्छन्। नमुना क्षेत्रमा यी दुई समूह पर्छन्।\nउद्धरण: पाठ १४",
-            "explanationEnglish": "The deck has 26 Red cards and 26 Black cards. The outcomes are simply Red or Black.\nCitation: Lesson 14",
+            "explanationNepali": "तासको गड्डीमा २६ वटा रातो र २६ वटा कालो तास हुन्छन्। नमुना क्षेत्रमा यी दुई समूह पर्छन्।\nउद्धरण: अध्याय १४",
+            "explanationEnglish": "The deck has 26 Red cards and 26 Black cards. The outcomes are simply Red or Black.\nCitation: Chapter 14",
             "answerNepali": "{Red, Black}",
             "answerEnglish": "{Red, Black}"
           },
@@ -550,8 +550,8 @@
             "questionEnglish": "Find the probability of getting an Ace or a King.",
             "marksNepali": "३",
             "marksEnglish": 3,
-            "explanationNepali": "४ वटा एक्का र ४ वटा बादशाह हुन्छन्। यी परस्पर निशेधक (Mutually Exclusive) हुन्। सम्भाव्यता = $\\frac{4}{52} + \\frac{4}{52} = \\frac{8}{52} = \\frac{2}{13}$।\nउद्धरण: पाठ १४",
-            "explanationEnglish": "There are 4 Aces and 4 Kings. Probability = $P(A) + P(K) = 4/52 + 4/52 = 8/52 = 2/13$.\nCitation: Lesson 14",
+            "explanationNepali": "४ वटा एक्का र ४ वटा बादशाह हुन्छन्। यी परस्पर निशेधक (Mutually Exclusive) हुन्। सम्भाव्यता = $\\frac{4}{52} + \\frac{4}{52} = \\frac{8}{52} = \\frac{2}{13}$।\nउद्धरण: अध्याय १४",
+            "explanationEnglish": "There are 4 Aces and 4 Kings. Probability = $P(A) + P(K) = 4/52 + 4/52 = 8/52 = 2/13$.\nCitation: Chapter 14",
             "answerNepali": "$\\frac{2}{13}$",
             "answerEnglish": "2/13"
           }

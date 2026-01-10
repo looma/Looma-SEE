@@ -28,8 +28,8 @@
             "questionEnglish": "What percentage of people like Tea only? (Express in terms of x if needed, or find value)",
             "marksNepali": "१",
             "marksEnglish": 1,
-            "explanationNepali": "मानौँ जम्मा मानिसको संख्या $100$ प्रतिशत छ ।\nदुवै मन पराउने ($n(T \\cap C)$) = २०% र कुनै पनि मन नपराउने ($n(\\overline{T \\cup C})$) = १०% ।\nकम्तीमा एउटा मन पराउने ($n(T \\cup C)$) = $100\\% - 10\\% = 90\\%$ ।\nसूत्र अनुसार: $n(T \\cup C) = n(T) + n(C) - n(T \\cap C)$ ।\nमानौँ $n(T) = 4x$ र $n(C) = 3x$ ।\n$90 = 4x + 3x - 20 \\Rightarrow 7x = 110 \\Rightarrow x = 110/7$ ।\nचिया मात्र ($n_0(T)$) = $n(T) - n(T \\cap C) = 4(110/7) - 20 = 440/7 - 140/7 = 300/7 \\% \\approx 42.85\\%$ ।\nउद्धरण: पाठ १",
-            "explanationEnglish": "Let the total percentage be 100%. Given: Intersection = 20%, Neither = 10%. Thus, the Union = $100% - 10% = 90%$. Using the formula $n(T \\cup C) = n(T) + n(C) - n(T \\cap C)$, we substitute the ratio values $4x$ and $3x$ for Tea and Coffee respectively. $90 = 4x + 3x - 20$. Solving for $x$ gives $x = 110/7$. Percentage liking Tea Only = $4x - 20 = 4(110/7) - 20 = 300/7 \\% \\approx 42.85\\%$.\nCitation: Lesson 1",
+            "explanationNepali": "मानौँ जम्मा मानिसको संख्या $100$ प्रतिशत छ ।\nदुवै मन पराउने ($n(T \\cap C)$) = २०% र कुनै पनि मन नपराउने ($n(\\overline{T \\cup C})$) = १०% ।\nकम्तीमा एउटा मन पराउने ($n(T \\cup C)$) = $100\\% - 10\\% = 90\\%$ ।\nसूत्र अनुसार: $n(T \\cup C) = n(T) + n(C) - n(T \\cap C)$ ।\nमानौँ $n(T) = 4x$ र $n(C) = 3x$ ।\n$90 = 4x + 3x - 20 \\Rightarrow 7x = 110 \\Rightarrow x = 110/7$ ।\nचिया मात्र ($n_0(T)$) = $n(T) - n(T \\cap C) = 4(110/7) - 20 = 440/7 - 140/7 = 300/7 \\% \\approx 42.85\\%$ ।\nउद्धरण: अध्याय १",
+            "explanationEnglish": "Let the total percentage be 100%. Given: Intersection = 20%, Neither = 10%. Thus, the Union = $100% - 10% = 90%$. Using the formula $n(T \\cup C) = n(T) + n(C) - n(T \\cap C)$, we substitute the ratio values $4x$ and $3x$ for Tea and Coffee respectively. $90 = 4x + 3x - 20$. Solving for $x$ gives $x = 110/7$. Percentage liking Tea Only = $4x - 20 = 4(110/7) - 20 = 300/7 \\% \\approx 42.85\\%$.\nCitation: Chapter 1",
             "answerNepali": "४२.८५% (लगभग)",
             "answerEnglish": "42.85% (approx)"
           },
@@ -40,8 +40,8 @@
             "questionEnglish": "If 360 people like Tea only, what is the total number of people?",
             "marksNepali": "२",
             "marksEnglish": 2,
-            "explanationNepali": "माथिको प्रश्नबाट, चिया मात्र मन पराउने प्रतिशत $300/7 \\%$ छ ।\nमानौँ जम्मा संख्या $N$ हो ।\n$N \\text{ को } \\frac{300}{7}\\% = 360$ ।\n$N \\times \\frac{300}{700} = 360$ ।\n$N = \\frac{360 \\times 7}{3} = 120 \\times 7 = 840$ ।\nतसर्थ, जम्मा मानिसको संख्या ८४० हो ।\nउद्धरण: पाठ १",
-            "explanationEnglish": "From the previous calculation, the percentage of people liking Tea Only is $300/7 \\%$. Let total people be $N$. We set up the equation: $(300/7) \\% \\text{ of } N = 360$. Simplifying: $(300/700) \\times N = 360$. Solving for N gives $N = 840$.\nCitation: Lesson 1",
+            "explanationNepali": "माथिको प्रश्नबाट, चिया मात्र मन पराउने प्रतिशत $300/7 \\%$ छ ।\nमानौँ जम्मा संख्या $N$ हो ।\n$N \\text{ को } \\frac{300}{7}\\% = 360$ ।\n$N \\times \\frac{300}{700} = 360$ ।\n$N = \\frac{360 \\times 7}{3} = 120 \\times 7 = 840$ ।\nतसर्थ, जम्मा मानिसको संख्या ८४० हो ।\nउद्धरण: अध्याय १",
+            "explanationEnglish": "From the previous calculation, the percentage of people liking Tea Only is $300/7 \\%$. Let total people be $N$. We set up the equation: $(300/7) \\% \\text{ of } N = 360$. Simplifying: $(300/700) \\times N = 360$. Solving for N gives $N = 840$.\nCitation: Chapter 1",
             "answerNepali": "८४०",
             "answerEnglish": "840"
           },
@@ -52,8 +52,8 @@
             "questionEnglish": "Find the number of people who like Coffee only.",
             "marksNepali": "२",
             "marksEnglish": 2,
-            "explanationNepali": "कफी मन पराउने प्रतिशत ($n(C)$) = $3x = 3(110/7) = 330/7 \\%$ ।\nकफी मात्र मन पराउने प्रतिशत ($n_0(C)$) = $n(C) - 20 = 330/7 - 140/7 = 190/7 \\%$ ।\nसंख्या = $840 \\text{ को } \\frac{190}{7}\\% = 840 \\times \\frac{190}{700} = 84 \\times \\frac{19}{7} = 12 \\times 19 = 228$ जना ।\nउद्धरण: पाठ १",
-            "explanationEnglish": "Calculate the percentage for Coffee Only: $n_0(C) = n(C) - 20 = 3(110/7) - 20 = 190/7 \\%$. Then, find the number of people: $(190/7) \\% \\text{ of } 840 = (190/700) \\times 840 = 228$.\nCitation: Lesson 1",
+            "explanationNepali": "कफी मन पराउने प्रतिशत ($n(C)$) = $3x = 3(110/7) = 330/7 \\%$ ।\nकफी मात्र मन पराउने प्रतिशत ($n_0(C)$) = $n(C) - 20 = 330/7 - 140/7 = 190/7 \\%$ ।\nसंख्या = $840 \\text{ को } \\frac{190}{7}\\% = 840 \\times \\frac{190}{700} = 84 \\times \\frac{19}{7} = 12 \\times 19 = 228$ जना ।\nउद्धरण: अध्याय १",
+            "explanationEnglish": "Calculate the percentage for Coffee Only: $n_0(C) = n(C) - 20 = 3(110/7) - 20 = 190/7 \\%$. Then, find the number of people: $(190/7) \\% \\text{ of } 840 = (190/700) \\times 840 = 228$.\nCitation: Chapter 1",
             "answerNepali": "२२८",
             "answerEnglish": "228"
           },
@@ -64,8 +64,8 @@
             "questionEnglish": "What percent of people like Tea?",
             "marksNepali": "१",
             "marksEnglish": 1,
-            "explanationNepali": "चिया मन पराउने प्रतिशत ($n(T)$) = $4x = 4 \\times (110/7) = 440/7 \\% \\approx 62.85\\%$ ।\nउद्धरण: पाठ १",
-            "explanationEnglish": "Total percentage liking Tea is $4x$. Substituting $x=110/7$, we get $440/7 \\%$, which is approximately $62.85\\%$.\nCitation: Lesson 1",
+            "explanationNepali": "चिया मन पराउने प्रतिशत ($n(T)$) = $4x = 4 \\times (110/7) = 440/7 \\% \\approx 62.85\\%$ ।\nउद्धरण: अध्याय १",
+            "explanationEnglish": "Total percentage liking Tea is $4x$. Substituting $x=110/7$, we get $440/7 \\%$, which is approximately $62.85\\%$.\nCitation: Chapter 1",
             "answerNepali": "६२.८५%",
             "answerEnglish": "62.85%"
           }
@@ -86,8 +86,8 @@
             "questionEnglish": "Find the rate of interest.",
             "marksNepali": "२",
             "marksEnglish": 2,
-            "explanationNepali": "२ वर्षको साधारण ब्याज ४०० भएपछि, १ वर्षको साधारण ब्याज २०० हुन्छ ।\nसाधारण ब्याज र चक्रीय ब्याजको अन्तर (रु ४१० - ४०० = रु १०) भनेको पहिलो वर्षको ब्याज (रु २००) मा लागेको ब्याज हो ।\nब्याजदर $R = \\frac{\\text{अन्तर} \\times 100}{\\text{१ वर्षको ब्याज}} = \\frac{10 \\times 100}{200} = 5\\%$ ।\nउद्धरण: पाठ २",
-            "explanationEnglish": "Simple Interest for 1 year is Rs. 200 (half of 400). The difference between CI and SI (Rs. 410 - 400 = Rs. 10) represents the interest earned on the first year's interest. So, Rate $R = \\frac{10 \\times 100}{200} = 5\\%$.\nCitation: Lesson 2",
+            "explanationNepali": "२ वर्षको साधारण ब्याज ४०० भएपछि, १ वर्षको साधारण ब्याज २०० हुन्छ ।\nसाधारण ब्याज र चक्रीय ब्याजको अन्तर (रु ४१० - ४०० = रु १०) भनेको पहिलो वर्षको ब्याज (रु २००) मा लागेको ब्याज हो ।\nब्याजदर $R = \\frac{\\text{अन्तर} \\times 100}{\\text{१ वर्षको ब्याज}} = \\frac{10 \\times 100}{200} = 5\\%$ ।\nउद्धरण: अध्याय २",
+            "explanationEnglish": "Simple Interest for 1 year is Rs. 200 (half of 400). The difference between CI and SI (Rs. 410 - 400 = Rs. 10) represents the interest earned on the first year's interest. So, Rate $R = \\frac{10 \\times 100}{200} = 5\\%$.\nCitation: Chapter 2",
             "answerNepali": "५%",
             "answerEnglish": "5%"
           },
@@ -98,8 +98,8 @@
             "questionEnglish": "Calculate the Principal.",
             "marksNepali": "३",
             "marksEnglish": 3,
-            "explanationNepali": "साधारण ब्याजको सूत्र $SI = \\frac{P \\times T \\times R}{100}$ प्रयोग गरौँ ।\n$400 = \\frac{P \\times 2 \\times 5}{100}$\n$400 = \\frac{10P}{100} = \\frac{P}{10}$\n$P = 400 \\times 10 = 4000$ ।\nतसर्थ, मूलधन रु. ४,००० हो ।\nउद्धरण: पाठ २",
-            "explanationEnglish": "Using the Simple Interest formula $SI = \\frac{P \\times T \\times R}{100}$: $400 = \\frac{P \\times 2 \\times 5}{100}$. Simplifying gives $400 = P/10$, so $P = 4,000$.\nCitation: Lesson 2",
+            "explanationNepali": "साधारण ब्याजको सूत्र $SI = \\frac{P \\times T \\times R}{100}$ प्रयोग गरौँ ।\n$400 = \\frac{P \\times 2 \\times 5}{100}$\n$400 = \\frac{10P}{100} = \\frac{P}{10}$\n$P = 400 \\times 10 = 4000$ ।\nतसर्थ, मूलधन रु. ४,००० हो ।\nउद्धरण: अध्याय २",
+            "explanationEnglish": "Using the Simple Interest formula $SI = \\frac{P \\times T \\times R}{100}$: $400 = \\frac{P \\times 2 \\times 5}{100}$. Simplifying gives $400 = P/10$, so $P = 4,000$.\nCitation: Chapter 2",
             "answerNepali": "रु. ४,०००",
             "answerEnglish": "Rs. 4,000"
           }
@@ -120,8 +120,8 @@
             "questionEnglish": "Find the initial price.",
             "marksNepali": "२",
             "marksEnglish": 2,
-            "explanationNepali": "ह्रास कट्टी सूत्र $V_T = V_0(1 - R/100)^T$ प्रयोग गरौँ ।\n$7290 = V_0(1 - 10/100)^3$\n$7290 = V_0(0.9)^3$\n$7290 = V_0(0.729)$\n$V_0 = 7290 / 0.729 = 10,000$ ।\nउद्धरण: पाठ ३",
-            "explanationEnglish": "Use the depreciation formula $V_T = V_0(1 - R/100)^T$. Here $7290 = V_0(0.9)^3$. Solving for $V_0$: $V_0 = 7290 / 0.729 = 10,000$.\nCitation: Lesson 3",
+            "explanationNepali": "ह्रास कट्टी सूत्र $V_T = V_0(1 - R/100)^T$ प्रयोग गरौँ ।\n$7290 = V_0(1 - 10/100)^3$\n$7290 = V_0(0.9)^3$\n$7290 = V_0(0.729)$\n$V_0 = 7290 / 0.729 = 10,000$ ।\nउद्धरण: अध्याय ३",
+            "explanationEnglish": "Use the depreciation formula $V_T = V_0(1 - R/100)^T$. Here $7290 = V_0(0.9)^3$. Solving for $V_0$: $V_0 = 7290 / 0.729 = 10,000$.\nCitation: Chapter 3",
             "answerNepali": "रु. १०,०००",
             "answerEnglish": "Rs. 10,000"
           },
@@ -132,8 +132,8 @@
             "questionEnglish": "If the machine was bought 2 years ago (instead of 3), what would be its present value?",
             "marksNepali": "२",
             "marksEnglish": 2,
-            "explanationNepali": "यदि सुरुको मूल्य रु १०,००० हो र समय २ वर्ष हो भने:\nमूल्य = $10000(1 - 0.1)^2 = 10000(0.9)^2 = 10000 \\times 0.81 = 8,100$ ।\nउद्धरण: पाठ ३",
-            "explanationEnglish": "Assuming the initial price is Rs 10,000, calculate the value after 2 years: $10000(0.9)^2 = 10000 \\times 0.81 = 8,100$.\nCitation: Lesson 3",
+            "explanationNepali": "यदि सुरुको मूल्य रु १०,००० हो र समय २ वर्ष हो भने:\nमूल्य = $10000(1 - 0.1)^2 = 10000(0.9)^2 = 10000 \\times 0.81 = 8,100$ ।\nउद्धरण: अध्याय ३",
+            "explanationEnglish": "Assuming the initial price is Rs 10,000, calculate the value after 2 years: $10000(0.9)^2 = 10000 \\times 0.81 = 8,100$.\nCitation: Chapter 3",
             "answerNepali": "रु. ८,१००",
             "answerEnglish": "Rs. 8,100"
           }
@@ -154,8 +154,8 @@
             "questionEnglish": "How much NRs is needed to buy 500 Pounds? (Including commission)",
             "marksNepali": "२",
             "marksEnglish": 2,
-            "explanationNepali": "पाउण्डको मूल लागत = $500 \\times 160 = 80,000$ ।\nकमिसन = ८०,००० को २% = १,६०० ।\nजम्मा लागत = ८०,००० + १,६०० = रु ८१,६०० ।\nउद्धरण: पाठ ४",
-            "explanationEnglish": "Base cost = $500 \\times 160 = 80,000$. Commission = 2% of 80,000 = 1,600. Total Cost = $80,000 + 1,600 = 81,600$.\nCitation: Lesson 4",
+            "explanationNepali": "पाउण्डको मूल लागत = $500 \\times 160 = 80,000$ ।\nकमिसन = ८०,००० को २% = १,६०० ।\nजम्मा लागत = ८०,००० + १,६०० = रु ८१,६०० ।\nउद्धरण: अध्याय ४",
+            "explanationEnglish": "Base cost = $500 \\times 160 = 80,000$. Commission = 2% of 80,000 = 1,600. Total Cost = $80,000 + 1,600 = 81,600$.\nCitation: Chapter 4",
             "answerNepali": "रु. ८१,६००",
             "answerEnglish": "Rs. 81,600"
           },
@@ -166,8 +166,8 @@
             "questionEnglish": "How many Pounds can be bought with NRs. 1,00,000? (Consider commission)",
             "marksNepali": "२",
             "marksEnglish": 2,
-            "explanationNepali": "यहाँ १ पाउण्डको प्रभावकारी लागत (Effective Rate) निकाल्नु पर्छ ।\n१ पाउण्डको लागत = १६० + १६० को २% = १६० + ३.२ = रु १६३.२ ।\nअब १,००,००० मा आउने पाउण्ड = $1,00,000 / 163.2 \\approx 612.74$ पाउण्ड ।\nउद्धरण: पाठ ४",
-            "explanationEnglish": "First find the effective cost per pound including commission: $160 + 2\\% = 163.2$. Then divide the total amount by this rate: $1,00,000 / 163.2 \\approx 612.74$.\nCitation: Lesson 4",
+            "explanationNepali": "यहाँ १ पाउण्डको प्रभावकारी लागत (Effective Rate) निकाल्नु पर्छ ।\n१ पाउण्डको लागत = १६० + १६० को २% = १६० + ३.२ = रु १६३.२ ।\nअब १,००,००० मा आउने पाउण्ड = $1,00,000 / 163.2 \\approx 612.74$ पाउण्ड ।\nउद्धरण: अध्याय ४",
+            "explanationEnglish": "First find the effective cost per pound including commission: $160 + 2\\% = 163.2$. Then divide the total amount by this rate: $1,00,000 / 163.2 \\approx 612.74$.\nCitation: Chapter 4",
             "answerNepali": "६१२.७४ पाउण्ड",
             "answerEnglish": "612.74 Pounds"
           }
@@ -188,8 +188,8 @@
             "questionEnglish": "Find the slant height.",
             "marksNepali": "२",
             "marksEnglish": 2,
-            "explanationNepali": "कुल सतहको क्षेत्रफल ($TSA$) = आधारको क्षेत्रफल + छड्के सतहको क्षेत्रफल ।\n$96 = a^2 + 2al$\n$96 = 6^2 + 2(6)l$\n$96 = 36 + 12l$\n$60 = 12l \\Rightarrow l = 5$ से.मि. ।\nउद्धरण: पाठ ५",
-            "explanationEnglish": "Use the TSA formula: $96 = a^2 + 2al$. Substituting $a=6$: $96 = 36 + 12l$. Solving for $l$: $12l = 60 \\Rightarrow l = 5$ cm.\nCitation: Lesson 5",
+            "explanationNepali": "कुल सतहको क्षेत्रफल ($TSA$) = आधारको क्षेत्रफल + छड्के सतहको क्षेत्रफल ।\n$96 = a^2 + 2al$\n$96 = 6^2 + 2(6)l$\n$96 = 36 + 12l$\n$60 = 12l \\Rightarrow l = 5$ से.मि. ।\nउद्धरण: अध्याय ५",
+            "explanationEnglish": "Use the TSA formula: $96 = a^2 + 2al$. Substituting $a=6$: $96 = 36 + 12l$. Solving for $l$: $12l = 60 \\Rightarrow l = 5$ cm.\nCitation: Chapter 5",
             "answerNepali": "५ से.मि.",
             "answerEnglish": "5 cm"
           },
@@ -200,8 +200,8 @@
             "questionEnglish": "Calculate the volume of the pyramid.",
             "marksNepali": "३",
             "marksEnglish": 3,
-            "explanationNepali": "पहिले ठाडो उचाइ ($h$) निकालौँ: $h = \\sqrt{l^2 - (a/2)^2} = \\sqrt{5^2 - 3^2} = \\sqrt{25 - 9} = 4$ से.मि. ।\nअब आयतन $V = \\frac{1}{3} a^2 h = \\frac{1}{3} (36)(4) = 12 \\times 4 = 48$ घन से.मि. ।\nउद्धरण: पाठ ५",
-            "explanationEnglish": "Calculate vertical height: $h = \\sqrt{5^2 - 3^2} = 4$. Then volume: $V = \\frac{1}{3} \\times 36 \\times 4 = 48$ cm³.\nCitation: Lesson 5",
+            "explanationNepali": "पहिले ठाडो उचाइ ($h$) निकालौँ: $h = \\sqrt{l^2 - (a/2)^2} = \\sqrt{5^2 - 3^2} = \\sqrt{25 - 9} = 4$ से.मि. ।\nअब आयतन $V = \\frac{1}{3} a^2 h = \\frac{1}{3} (36)(4) = 12 \\times 4 = 48$ घन से.मि. ।\nउद्धरण: अध्याय ५",
+            "explanationEnglish": "Calculate vertical height: $h = \\sqrt{5^2 - 3^2} = 4$. Then volume: $V = \\frac{1}{3} \\times 36 \\times 4 = 48$ cm³.\nCitation: Chapter 5",
             "answerNepali": "४८ घन से.मि.",
             "answerEnglish": "48 cm³"
           }
@@ -222,8 +222,8 @@
             "questionEnglish": "What is the volume of the tank in cubic meters?",
             "marksNepali": "१",
             "marksEnglish": 1,
-            "explanationNepali": "१ घन मिटर = १००० लिटर हुन्छ ।\nत्यसैले, ६,१६० लिटर = $6160 / 1000 = 6.16$ घन मिटर ।\nउद्धरण: पाठ ५",
-            "explanationEnglish": "Convert liters to cubic meters by dividing by 1000. $6160 / 1000 = 6.16$ m³.\nCitation: Lesson 5",
+            "explanationNepali": "१ घन मिटर = १००० लिटर हुन्छ ।\nत्यसैले, ६,१६० लिटर = $6160 / 1000 = 6.16$ घन मिटर ।\nउद्धरण: अध्याय ५",
+            "explanationEnglish": "Convert liters to cubic meters by dividing by 1000. $6160 / 1000 = 6.16$ m³.\nCitation: Chapter 5",
             "answerNepali": "६.१६ घन मि.",
             "answerEnglish": "6.16 m³"
           },
@@ -234,8 +234,8 @@
             "questionEnglish": "Find the height of the tank.",
             "marksNepali": "३",
             "marksEnglish": 3,
-            "explanationNepali": "व्यास $d = 2.8$ मि. भए अर्धव्यास $r = 1.4$ मि. हुन्छ ।\nबेलनाको आयतन $V = \\pi r^2 h$ ।\n$6.16 = \\frac{22}{7} \\times (1.4)^2 \\times h$\n$6.16 = \\frac{22}{7} \\times 1.96 \\times h$\n$6.16 = 22 \\times 0.28 \\times h = 6.16 h$\n$h = 1$ मिटर ।\nउद्धरण: पाठ ५",
-            "explanationEnglish": "Radius $r = 1.4$ m. Using volume formula: $6.16 = (22/7) \\times (1.4)^2 \\times h$. This simplifies to $6.16 = 6.16h$, so $h = 1$ m.\nCitation: Lesson 5",
+            "explanationNepali": "व्यास $d = 2.8$ मि. भए अर्धव्यास $r = 1.4$ मि. हुन्छ ।\nबेलनाको आयतन $V = \\pi r^2 h$ ।\n$6.16 = \\frac{22}{7} \\times (1.4)^2 \\times h$\n$6.16 = \\frac{22}{7} \\times 1.96 \\times h$\n$6.16 = 22 \\times 0.28 \\times h = 6.16 h$\n$h = 1$ मिटर ।\nउद्धरण: अध्याय ५",
+            "explanationEnglish": "Radius $r = 1.4$ m. Using volume formula: $6.16 = (22/7) \\times (1.4)^2 \\times h$. This simplifies to $6.16 = 6.16h$, so $h = 1$ m.\nCitation: Chapter 5",
             "answerNepali": "१ मिटर",
             "answerEnglish": "1 m"
           }
@@ -256,8 +256,8 @@
             "questionEnglish": "What is the length of the carpet required?",
             "marksNepali": "२",
             "marksEnglish": 2,
-            "explanationNepali": "कार्पेटको लम्बाइ = जम्मा खर्च / प्रति मिटर दर ।\nलम्बाइ = $6000 / 150 = 40$ मिटर ।\nउद्धरण: पाठ ५",
-            "explanationEnglish": "Carpet Length = Total Cost / Rate per meter = $6000 / 150 = 40$ meters.\nCitation: Lesson 5",
+            "explanationNepali": "कार्पेटको लम्बाइ = जम्मा खर्च / प्रति मिटर दर ।\nलम्बाइ = $6000 / 150 = 40$ मिटर ।\nउद्धरण: अध्याय ५",
+            "explanationEnglish": "Carpet Length = Total Cost / Rate per meter = $6000 / 150 = 40$ meters.\nCitation: Chapter 5",
             "answerNepali": "४० मिटर",
             "answerEnglish": "40 m"
           },
@@ -268,8 +268,8 @@
             "questionEnglish": "Verify that the area of the room equals the area of the carpet.",
             "marksNepali": "२",
             "marksEnglish": 2,
-            "explanationNepali": "कोठाको क्षेत्रफल = $10 \\times 8 = 80$ वर्ग मि. ।\nकार्पेटको क्षेत्रफल = लम्बाइ $\\times$ चौडाइ = $40 \\times 2 = 80$ वर्ग मि. ।\nदुवै बराबर छन् ।\nउद्धरण: पाठ ५",
-            "explanationEnglish": "Room Area = $10 \\times 8 = 80$. Carpet Area = Length $\\times$ Width = $40 \\times 2 = 80$. They are equal.\nCitation: Lesson 5",
+            "explanationNepali": "कोठाको क्षेत्रफल = $10 \\times 8 = 80$ वर्ग मि. ।\nकार्पेटको क्षेत्रफल = लम्बाइ $\\times$ चौडाइ = $40 \\times 2 = 80$ वर्ग मि. ।\nदुवै बराबर छन् ।\nउद्धरण: अध्याय ५",
+            "explanationEnglish": "Room Area = $10 \\times 8 = 80$. Carpet Area = Length $\\times$ Width = $40 \\times 2 = 80$. They are equal.\nCitation: Chapter 5",
             "answerNepali": "दुवै ८० वर्ग मि.",
             "answerEnglish": "Both 80 sq. m"
           }
@@ -290,8 +290,8 @@
             "questionEnglish": "Find the 20th term.",
             "marksNepali": "२",
             "marksEnglish": 2,
-            "explanationNepali": "समान अन्तर ($d$) = $\\frac{t_7 - t_4}{7 - 4} = \\frac{20 - 11}{3} = \\frac{9}{3} = 3$ ।\nपहिलो पद ($a$) = $t_4 - 3d = 11 - 3(3) = 2$ ।\n२० औं पद ($t_{20}$) = $a + 19d = 2 + 19(3) = 2 + 57 = 59$ ।\nउद्धरण: पाठ ६",
-            "explanationEnglish": "First find $d = (20-11)/3 = 3$. Then find $a$ using $t_4$: $a = 11 - 3(3) = 2$. Finally, $t_{20} = a + 19d = 2 + 57 = 59$.\nCitation: Lesson 6",
+            "explanationNepali": "समान अन्तर ($d$) = $\\frac{t_7 - t_4}{7 - 4} = \\frac{20 - 11}{3} = \\frac{9}{3} = 3$ ।\nपहिलो पद ($a$) = $t_4 - 3d = 11 - 3(3) = 2$ ।\n२० औं पद ($t_{20}$) = $a + 19d = 2 + 19(3) = 2 + 57 = 59$ ।\nउद्धरण: अध्याय ६",
+            "explanationEnglish": "First find $d = (20-11)/3 = 3$. Then find $a$ using $t_4$: $a = 11 - 3(3) = 2$. Finally, $t_{20} = a + 19d = 2 + 57 = 59$.\nCitation: Chapter 6",
             "answerNepali": "५९",
             "answerEnglish": "59"
           },
@@ -302,8 +302,8 @@
             "questionEnglish": "Find the sum of the first 20 terms.",
             "marksNepali": "३",
             "marksEnglish": 3,
-            "explanationNepali": "योगफलको सूत्र $S_n = \\frac{n}{2}(a + l)$ प्रयोग गर्न सकिन्छ (किनकि $t_{20}$ निकालिसकियो)।\n$S_{20} = \\frac{20}{2}(2 + 59) = 10(61) = 610$ ।\nउद्धरण: पाठ ६",
-            "explanationEnglish": "Using the sum formula with the last term: $S_{20} = \\frac{20}{2}(2 + 59) = 10 \\times 61 = 610$.\nCitation: Lesson 6",
+            "explanationNepali": "योगफलको सूत्र $S_n = \\frac{n}{2}(a + l)$ प्रयोग गर्न सकिन्छ (किनकि $t_{20}$ निकालिसकियो)।\n$S_{20} = \\frac{20}{2}(2 + 59) = 10(61) = 610$ ।\nउद्धरण: अध्याय ६",
+            "explanationEnglish": "Using the sum formula with the last term: $S_{20} = \\frac{20}{2}(2 + 59) = 10 \\times 61 = 610$.\nCitation: Chapter 6",
             "answerNepali": "६१०",
             "answerEnglish": "610"
           }
@@ -324,8 +324,8 @@
             "questionEnglish": "Solve the equation to find x.",
             "marksNepali": "५",
             "marksEnglish": 5,
-            "explanationNepali": "ल.स. लिँदा: $\\frac{(x-1)(x-4) + (x-3)(x-2)}{(x-2)(x-4)} = \\frac{10}{3}$\n$\\frac{(x^2-5x+4) + (x^2-5x+6)}{x^2-6x+8} = \\frac{10}{3}$\n$\\frac{2x^2-10x+10}{x^2-6x+8} = \\frac{10}{3}$\nक्रस गुणन गर्दा: $3(2x^2-10x+10) = 10(x^2-6x+8)$\n$6x^2 - 30x + 30 = 10x^2 - 60x + 80$\n$4x^2 - 30x + 50 = 0$\n$2x^2 - 15x + 25 = 0$\n$(2x-5)(x-5) = 0$\n$x = 5$ वा $x = 2.5$ ।\nउद्धरण: पाठ ७",
-            "explanationEnglish": "Simplify the LHS: Numerator becomes $2x^2 - 10x + 10$, Denominator $x^2 - 6x + 8$. Cross multiply with $10/3$. This simplifies to the quadratic equation $2x^2 - 15x + 25 = 0$. Factoring gives $(2x-5)(x-5)=0$, so roots are $2.5$ and $5$.\nCitation: Lesson 7",
+            "explanationNepali": "ल.स. लिँदा: $\\frac{(x-1)(x-4) + (x-3)(x-2)}{(x-2)(x-4)} = \\frac{10}{3}$\n$\\frac{(x^2-5x+4) + (x^2-5x+6)}{x^2-6x+8} = \\frac{10}{3}$\n$\\frac{2x^2-10x+10}{x^2-6x+8} = \\frac{10}{3}$\nक्रस गुणन गर्दा: $3(2x^2-10x+10) = 10(x^2-6x+8)$\n$6x^2 - 30x + 30 = 10x^2 - 60x + 80$\n$4x^2 - 30x + 50 = 0$\n$2x^2 - 15x + 25 = 0$\n$(2x-5)(x-5) = 0$\n$x = 5$ वा $x = 2.5$ ।\nउद्धरण: अध्याय ७",
+            "explanationEnglish": "Simplify the LHS: Numerator becomes $2x^2 - 10x + 10$, Denominator $x^2 - 6x + 8$. Cross multiply with $10/3$. This simplifies to the quadratic equation $2x^2 - 15x + 25 = 0$. Factoring gives $(2x-5)(x-5)=0$, so roots are $2.5$ and $5$.\nCitation: Chapter 7",
             "answerNepali": "५, २.५",
             "answerEnglish": "5, 2.5"
           }
@@ -346,8 +346,8 @@
             "questionEnglish": "Find the value of x.",
             "marksNepali": "५",
             "marksEnglish": 5,
-            "explanationNepali": "समीकरणलाई $2^x$ को रूपमा लेखौँ: $(2^x)^2 - 3 \\times 2^x \\times 2^2 + 32 = 0$ ।\nमानौँ $2^x = a$ ।\n$a^2 - 12a + 32 = 0$\n$(a-8)(a-4) = 0$ ।\nयदि $a=8$, $2^x = 2^3 \\Rightarrow x=3$ ।\nयदि $a=4$, $2^x = 2^2 \\Rightarrow x=2$ ।\nउद्धरण: पाठ ९",
-            "explanationEnglish": "Rewrite the equation using $a = 2^x$: $a^2 - 12a + 32 = 0$. Factorizing gives $(a-8)(a-4)=0$. Solving for $x$ from $2^x=8$ and $2^x=4$ yields $x=3$ and $x=2$.\nCitation: Lesson 9",
+            "explanationNepali": "समीकरणलाई $2^x$ को रूपमा लेखौँ: $(2^x)^2 - 3 \\times 2^x \\times 2^2 + 32 = 0$ ।\nमानौँ $2^x = a$ ।\n$a^2 - 12a + 32 = 0$\n$(a-8)(a-4) = 0$ ।\nयदि $a=8$, $2^x = 2^3 \\Rightarrow x=3$ ।\nयदि $a=4$, $2^x = 2^2 \\Rightarrow x=2$ ।\nउद्धरण: अध्याय ९",
+            "explanationEnglish": "Rewrite the equation using $a = 2^x$: $a^2 - 12a + 32 = 0$. Factorizing gives $(a-8)(a-4)=0$. Solving for $x$ from $2^x=8$ and $2^x=4$ yields $x=3$ and $x=2$.\nCitation: Chapter 9",
             "answerNepali": "३, २",
             "answerEnglish": "3, 2"
           }
@@ -368,8 +368,8 @@
             "questionEnglish": "Theoretically confirm that perpendiculars from C and A to diagonal DB are equal.",
             "marksNepali": "४",
             "marksEnglish": 4,
-            "explanationNepali": "त्रिभुजको क्षेत्रफल = $1/2 \\times \\text{आधार} \\times \\text{उचाइ}$ हुन्छ ।\nयहाँ $\\triangle ABD$ र $\\triangle CBD$ को क्षेत्रफल बराबर छ र दुवैको आधार DB हो ।\n$1/2 \\times DB \\times h_1 = 1/2 \\times DB \\times h_2$\nयसबाट $h_1 = h_2$ पुष्टि हुन्छ ।\nउद्धरण: पाठ १०",
-            "explanationEnglish": "Since Area($\\triangle ABD$) = Area($\\triangle CBD$) and they share the same base DB, their corresponding heights (perpendiculars from A and C to DB) must be equal. $1/2 \\cdot base \\cdot h_1 = 1/2 \\cdot base \\cdot h_2 \\Rightarrow h_1 = h_2$.\nCitation: Lesson 10",
+            "explanationNepali": "त्रिभुजको क्षेत्रफल = $1/2 \\times \\text{आधार} \\times \\text{उचाइ}$ हुन्छ ।\nयहाँ $\\triangle ABD$ र $\\triangle CBD$ को क्षेत्रफल बराबर छ र दुवैको आधार DB हो ।\n$1/2 \\times DB \\times h_1 = 1/2 \\times DB \\times h_2$\nयसबाट $h_1 = h_2$ पुष्टि हुन्छ ।\nउद्धरण: अध्याय १०",
+            "explanationEnglish": "Since Area($\\triangle ABD$) = Area($\\triangle CBD$) and they share the same base DB, their corresponding heights (perpendiculars from A and C to DB) must be equal. $1/2 \\cdot base \\cdot h_1 = 1/2 \\cdot base \\cdot h_2 \\Rightarrow h_1 = h_2$.\nCitation: Chapter 10",
             "answerNepali": "उचाइ बराबर हुन्छ",
             "answerEnglish": "Heights are equal"
           }
@@ -390,8 +390,8 @@
             "questionEnglish": "Find the value of $\\angle OPT$.",
             "marksNepali": "२",
             "marksEnglish": 2,
-            "explanationNepali": "वृत्तको अर्धव्यास र स्पर्शरेखा बिचको कोण ($\\angle OTP$) $90^\\circ$ हुन्छ ।\nत्रिभुज OPT मा, तीन कोणको योग $180^\\circ$ हुन्छ ।\n$\\angle OPT = 180 - (90 + 50) = 40^\\circ$ ।\nउद्धरण: पाठ १२",
-            "explanationEnglish": "The angle between the radius and the tangent is $90^\\circ$. In $\\triangle OPT$, $\\angle OPT = 180 - (90 + 50) = 40^\\circ$.\nCitation: Lesson 12",
+            "explanationNepali": "वृत्तको अर्धव्यास र स्पर्शरेखा बिचको कोण ($\\angle OTP$) $90^\\circ$ हुन्छ ।\nत्रिभुज OPT मा, तीन कोणको योग $180^\\circ$ हुन्छ ।\n$\\angle OPT = 180 - (90 + 50) = 40^\\circ$ ।\nउद्धरण: अध्याय १२",
+            "explanationEnglish": "The angle between the radius and the tangent is $90^\\circ$. In $\\triangle OPT$, $\\angle OPT = 180 - (90 + 50) = 40^\\circ$.\nCitation: Chapter 12",
             "answerNepali": "$४०^\\circ$",
             "answerEnglish": "$40^\\circ$"
           },
@@ -402,8 +402,8 @@
             "questionEnglish": "Give reason for the relation between radius and tangent.",
             "marksNepali": "२",
             "marksEnglish": 2,
-            "explanationNepali": "स्पर्श विन्दुमा कोरिएको अर्धव्यास स्पर्शरेखासँग सधैं लम्ब ($90^\\circ$) हुन्छ ।\nउद्धरण: पाठ १२",
-            "explanationEnglish": "The radius drawn to the point of tangency is perpendicular to the tangent line.\nCitation: Lesson 12",
+            "explanationNepali": "स्पर्श विन्दुमा कोरिएको अर्धव्यास स्पर्शरेखासँग सधैं लम्ब ($90^\\circ$) हुन्छ ।\nउद्धरण: अध्याय १२",
+            "explanationEnglish": "The radius drawn to the point of tangency is perpendicular to the tangent line.\nCitation: Chapter 12",
             "answerNepali": "लम्ब हुन्छ",
             "answerEnglish": "Perpendicular"
           }
@@ -424,8 +424,8 @@
             "questionEnglish": "Calculate the area of the triangle.",
             "marksNepali": "३",
             "marksEnglish": 3,
-            "explanationNepali": "अर्ध-परिधि $s = (13+14+15)/2 = 21$ ।\nहिरोको सूत्र (Heron's Formula) अनुसार: $\\sqrt{21(21-13)(21-14)(21-15)}$\n$= \\sqrt{21 \\times 8 \\times 7 \\times 6} = \\sqrt{7056} = 84$ वर्ग से.मि. ।\nउद्धरण: पाठ १०",
-            "explanationEnglish": "First find semi-perimeter $s=21$. Then use Heron's Formula: Area = $\\sqrt{21(8)(7)(6)} = 84$ sq. cm.\nCitation: Lesson 10",
+            "explanationNepali": "अर्ध-परिधि $s = (13+14+15)/2 = 21$ ।\nहिरोको सूत्र (Heron's Formula) अनुसार: $\\sqrt{21(21-13)(21-14)(21-15)}$\n$= \\sqrt{21 \\times 8 \\times 7 \\times 6} = \\sqrt{7056} = 84$ वर्ग से.मि. ।\nउद्धरण: अध्याय १०",
+            "explanationEnglish": "First find semi-perimeter $s=21$. Then use Heron's Formula: Area = $\\sqrt{21(8)(7)(6)} = 84$ sq. cm.\nCitation: Chapter 10",
             "answerNepali": "८४ वर्ग से.मि.",
             "answerEnglish": "84 sq. cm"
           },
@@ -436,8 +436,8 @@
             "questionEnglish": "What is the length of the altitude drawn on the side 14 cm?",
             "marksNepali": "२",
             "marksEnglish": 2,
-            "explanationNepali": "क्षेत्रफल = $1/2 \\times \\text{base} \\times \\text{height}$ ।\n$84 = 1/2 \\times 14 \\times h$\n$84 = 7h$\n$h = 12$ से.मि. ।\nउद्धरण: पाठ १०",
-            "explanationEnglish": "Using Area = $1/2 \\times b \\times h$: $84 = 0.5 \\times 14 \\times h$, so $h = 12$ cm.\nCitation: Lesson 10",
+            "explanationNepali": "क्षेत्रफल = $1/2 \\times \\text{base} \\times \\text{height}$ ।\n$84 = 1/2 \\times 14 \\times h$\n$84 = 7h$\n$h = 12$ से.मि. ।\nउद्धरण: अध्याय १०",
+            "explanationEnglish": "Using Area = $1/2 \\times b \\times h$: $84 = 0.5 \\times 14 \\times h$, so $h = 12$ cm.\nCitation: Chapter 10",
             "answerNepali": "१२ से.मि.",
             "answerEnglish": "12 cm"
           }
@@ -458,8 +458,8 @@
             "questionEnglish": "Find the distance between the two cars.",
             "marksNepali": "४",
             "marksEnglish": 4,
-            "explanationNepali": "टावरको उचाइ $h=100$ ।\nपहिलो कारको दुरी ($30^\\circ$) = $h \\cot 30^\\circ = 100\\sqrt{3}$ ।\nदोस्रो कारको दुरी ($45^\\circ$) = $h \\cot 45^\\circ = 100(1) = 100$ ।\nकुल दुरी = $100\\sqrt{3} + 100 = 100(1.732) + 100 = 173.2 + 100 = 273.2$ मिटर ।\nउद्धरण: पाठ १५",
-            "explanationEnglish": "Calculate the horizontal distance for each side. Side 1: $100 \\cot(30) = 100\\sqrt{3} \\approx 173.2$. Side 2: $100 \\cot(45) = 100$. Total distance = $173.2 + 100 = 273.2$ m.\nCitation: Lesson 15",
+            "explanationNepali": "टावरको उचाइ $h=100$ ।\nपहिलो कारको दुरी ($30^\\circ$) = $h \\cot 30^\\circ = 100\\sqrt{3}$ ।\nदोस्रो कारको दुरी ($45^\\circ$) = $h \\cot 45^\\circ = 100(1) = 100$ ।\nकुल दुरी = $100\\sqrt{3} + 100 = 100(1.732) + 100 = 173.2 + 100 = 273.2$ मिटर ।\nउद्धरण: अध्याय १५",
+            "explanationEnglish": "Calculate the horizontal distance for each side. Side 1: $100 \\cot(30) = 100\\sqrt{3} \\approx 173.2$. Side 2: $100 \\cot(45) = 100$. Total distance = $173.2 + 100 = 273.2$ m.\nCitation: Chapter 15",
             "answerNepali": "२७३.२ मिटर",
             "answerEnglish": "273.2 m"
           }
@@ -480,8 +480,8 @@
             "questionEnglish": "Find values of $f_1$ and $f_2$.",
             "marksNepali": "६",
             "marksEnglish": 6,
-            "explanationNepali": "समीकरण १: $17 + f_1 + 32 + f_2 + 19 = 120 \\Rightarrow f_1 + f_2 = 52$ ।\nसमीकरण २: मध्यक सूत्र $\\frac{\\sum fm}{N} = 50$ ।\n$\\sum fm = 17(10) + f_1(30) + 32(50) + f_2(70) + 19(90)$ ।\n$6000 = 170 + 30f_1 + 1600 + 70f_2 + 1710$ ।\n$6000 = 3480 + 30f_1 + 70f_2 \\Rightarrow 2520 = 30f_1 + 70f_2 \\Rightarrow 252 = 3f_1 + 7f_2$ ।\nयी दुई समीकरण हल गर्दा: $f_1 = 28, f_2 = 24$ ।\nउद्धरण: पाठ १३",
-            "explanationEnglish": "Set up two equations. 1) Sum of frequencies: $f_1 + f_2 = 120 - (17+32+19) = 52$. 2) Mean formula: Sum($f \\times m$) = $50 \\times 120 = 6000$. Solving the resulting system $3f_1 + 7f_2 = 252$ and $f_1 + f_2 = 52$ gives $f_1 = 28, f_2 = 24$.\nCitation: Lesson 13",
+            "explanationNepali": "समीकरण १: $17 + f_1 + 32 + f_2 + 19 = 120 \\Rightarrow f_1 + f_2 = 52$ ।\nसमीकरण २: मध्यक सूत्र $\\frac{\\sum fm}{N} = 50$ ।\n$\\sum fm = 17(10) + f_1(30) + 32(50) + f_2(70) + 19(90)$ ।\n$6000 = 170 + 30f_1 + 1600 + 70f_2 + 1710$ ।\n$6000 = 3480 + 30f_1 + 70f_2 \\Rightarrow 2520 = 30f_1 + 70f_2 \\Rightarrow 252 = 3f_1 + 7f_2$ ।\nयी दुई समीकरण हल गर्दा: $f_1 = 28, f_2 = 24$ ।\nउद्धरण: अध्याय १३",
+            "explanationEnglish": "Set up two equations. 1) Sum of frequencies: $f_1 + f_2 = 120 - (17+32+19) = 52$. 2) Mean formula: Sum($f \\times m$) = $50 \\times 120 = 6000$. Solving the resulting system $3f_1 + 7f_2 = 252$ and $f_1 + f_2 = 52$ gives $f_1 = 28, f_2 = 24$.\nCitation: Chapter 13",
             "answerNepali": "$f_1=२८, f_2=२४$",
             "answerEnglish": "$f_1=28, f_2=24$"
           }
@@ -502,8 +502,8 @@
             "questionEnglish": "What could be the total number of balls?",
             "marksNepali": "५",
             "marksEnglish": 5,
-            "explanationNepali": "यो समस्या हल गर्न समीकरणहरू प्रयोग गर्नुपर्छ:\n१. $P(RR) = \\frac{x(x-1)}{n(n-1)} = \\frac{1}{7}$\n२. $P(RB \\text{ or } BR) = \\frac{2xy}{n(n-1)} = \\frac{8}{21}$\nसमीकरण १ र २ बाट, $\\frac{x(x-1)}{2xy} = \\frac{1/7}{8/21} = \\frac{3}{8}$ ।\nयसले $y = \\frac{4(x-1)}{3}$ सम्बन्ध दिन्छ ।\nयदि हामीले $x=6$ मान्यौ भने, $y = 20/3$ (पूर्णांक हैन)। यदि $x=10$ मान्यौ भने, $y=12$ हुन्छ । तब $n=22$ ।\nतर $n=22$ राख्दा $P(RR) = 90/462 = 15/77$ हुन्छ, जुन $1/7$ सँग बराबर छैन।\nअर्को सम्भावना: $x=6, n=15, y=9$ । यहाँ $P(RR) = 30/210 = 1/7$ (मिल्छ)।\nअनि $P(Mixed) = (2 \\times 6 \\times 9) / 210 = 108/210 = 18/35$ । प्रश्नमा $8/21$ ($=16/42=80/210$) दिएको छ जुन मिल्दैन ।\nतसर्थ, प्रश्नको तथ्याङ्कमा केही असङ्गति हुन सक्छ, तर $n=15$ ($x=6, y=9$) पहिलो सर्त पूरा गर्ने एक मात्र सरल समाधान हो ।\nउद्धरण: पाठ १४",
-            "explanationEnglish": "We have two probability equations derived from combinations. Dividing them gives a relationship between x and y: $y = 4(x-1)/3$. Testing integer values: if $x=10, y=12, n=22$, probabilities don't match exactly. If we strictly satisfy $P(RR)=1/7$, $n=15$ with $x=6$ and $y=9$ is a valid solution for the first condition. However, this gives $P(Mixed) = 18/35$, which differs from the given $8/21$. The most likely intended answer based on integer constraints is 15 balls (6 Red, 9 Black), assuming a slight error in the problem statement's second probability.\nCitation: Lesson 14",
+            "explanationNepali": "यो समस्या हल गर्न समीकरणहरू प्रयोग गर्नुपर्छ:\n१. $P(RR) = \\frac{x(x-1)}{n(n-1)} = \\frac{1}{7}$\n२. $P(RB \\text{ or } BR) = \\frac{2xy}{n(n-1)} = \\frac{8}{21}$\nसमीकरण १ र २ बाट, $\\frac{x(x-1)}{2xy} = \\frac{1/7}{8/21} = \\frac{3}{8}$ ।\nयसले $y = \\frac{4(x-1)}{3}$ सम्बन्ध दिन्छ ।\nयदि हामीले $x=6$ मान्यौ भने, $y = 20/3$ (पूर्णांक हैन)। यदि $x=10$ मान्यौ भने, $y=12$ हुन्छ । तब $n=22$ ।\nतर $n=22$ राख्दा $P(RR) = 90/462 = 15/77$ हुन्छ, जुन $1/7$ सँग बराबर छैन।\nअर्को सम्भावना: $x=6, n=15, y=9$ । यहाँ $P(RR) = 30/210 = 1/7$ (मिल्छ)।\nअनि $P(Mixed) = (2 \\times 6 \\times 9) / 210 = 108/210 = 18/35$ । प्रश्नमा $8/21$ ($=16/42=80/210$) दिएको छ जुन मिल्दैन ।\nतसर्थ, प्रश्नको तथ्याङ्कमा केही असङ्गति हुन सक्छ, तर $n=15$ ($x=6, y=9$) पहिलो सर्त पूरा गर्ने एक मात्र सरल समाधान हो ।\nउद्धरण: अध्याय १४",
+            "explanationEnglish": "We have two probability equations derived from combinations. Dividing them gives a relationship between x and y: $y = 4(x-1)/3$. Testing integer values: if $x=10, y=12, n=22$, probabilities don't match exactly. If we strictly satisfy $P(RR)=1/7$, $n=15$ with $x=6$ and $y=9$ is a valid solution for the first condition. However, this gives $P(Mixed) = 18/35$, which differs from the given $8/21$. The most likely intended answer based on integer constraints is 15 balls (6 Red, 9 Black), assuming a slight error in the problem statement's second probability.\nCitation: Chapter 14",
             "answerNepali": "१५ (सम्भावित)",
             "answerEnglish": "15 (Possible)"
           }

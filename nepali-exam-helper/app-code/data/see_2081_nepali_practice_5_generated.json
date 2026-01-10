@@ -1,5 +1,18 @@
 [
   {
+    "_id": "see_2081_nepali_practice_5_generated",
+    "titleNepali": "SEE २०८१ नेपाली अभ्यास परीक्षा ५",
+    "titleEnglish": "SEE 2081 Nepali Practice Test 5",
+    "subjectNepali": "nepali",
+    "subjectEnglish": "Nepali",
+    "totalMarksNepali": "७५",
+    "totalMarksEnglish": 75,
+    "durationNepali": "१८०",
+    "durationEnglish": 180,
+    "instructionsNepali": "दिइएका निर्देशनका आधारमा आफ्नै शैलीमा सिर्जनात्मक उत्तर दिनुहोस् :",
+    "instructionsEnglish": "Give creative answers in your own style based on the given instructions:"
+  },
+  {
     "testId": "see_2081_nepali_practice_5_generated",
     "questions": [
       {
@@ -70,8 +83,8 @@
             }
           ]
         },
-        "explanationNepali": "यी शब्दहरू पाठ्यपुस्तकको पाठ ७ 'शत्रु' र पाठ ६ 'अधिकार ठुलो कि कर्तव्य ठुलो ?' बाट लिइएका हुन्।",
-        "explanationEnglish": "These words are taken from Lesson 7 'Shatru' and Lesson 6 'Adhikar Thulo Ki Kartavya Thulo?' of the textbook.",
+        "explanationNepali": "यो प्रश्न विद्यार्थीको शब्दभण्डार र शब्दार्थ ज्ञानको परीक्षण गर्न डिजाइन गरिएको हो। 'सिद्धान्त', 'कर्तव्यपरायणता', 'फैसला' र 'विलक्षण' जस्ता शब्दहरू पाठ्यपुस्तकका विभिन्न पाठहरू (विशेष गरी 'शत्रु' र 'अधिकार ठुलो कि कर्तव्य ठुलो') बाट लिइएका हुन्।\nउद्धरण: पाठ ६; पाठ ७।",
+        "explanationEnglish": "This question is designed to test the student's vocabulary and knowledge of word meanings. Words like 'Principle', 'Dutifulness', 'Verdict', and 'Extraordinary' are taken from various lessons of the textbook (especially 'Shatru' and 'Adhikar Thulo Ki Kartavya Thulo').\nCitation: Chapter 6; Lesson 7",
         "correctAnswerNepali": [
           {
             "A": "अ",
@@ -127,8 +140,8 @@
             "questionEnglish": "The synonym of 'service' is ______.",
             "correctAnswerNepali": "सेवा",
             "correctAnswerEnglish": "Service",
-            "explanationNepali": "अनुच्छेदमा 'सेवा' शब्द नै प्रयोग भएको छ, जसको पर्यायवाची 'उपकार' वा 'सहायता' हो।",
-            "explanationEnglish": "The word 'Sewa' (Service) itself is used in the paragraph, which is a synonym for 'Upakar' or 'Sahayata'."
+            "explanationNepali": "अनुच्छेदमा 'सेवा' शब्द प्रयोग भएको छ। यसको पर्यायवाची 'सुसार' वा 'टहल' हुन सक्छ, तर यहाँ शब्द पहिचान गर्न भनिएकोले 'सेवा' नै उपयुक्त हुन्छ।\nउद्धरण: पाठ १।",
+            "explanationEnglish": "The word 'Sewa' (Service) is used in the paragraph. Its synonyms could be 'Susar' or 'Tahal', but since identification is asked, 'Sewa' is appropriate.\nCitation: Chapter 1"
           },
           {
             "idNepali": "ख",
@@ -137,8 +150,8 @@
             "questionEnglish": "The antonym of 'win' is ______.",
             "correctAnswerNepali": "हार",
             "correctAnswerEnglish": "Defeat",
-            "explanationNepali": "अनुच्छेदमा 'हार' शब्द प्रयोग भएको छ, जुन 'जित' को विपरीतार्थी हो।",
-            "explanationEnglish": "The word 'Haar' (Defeat) is used in the paragraph, which is the antonym of 'Jit' (Win)."
+            "explanationNepali": "अनुच्छेदमा 'जित' को उल्टो अर्थ दिने शब्द 'हार' प्रयोग भएको छ।\nउद्धरण: पाठ १।",
+            "explanationEnglish": "The word 'Haar' (Defeat) giving the opposite meaning of 'Jit' (Win) is used in the paragraph.\nCitation: Chapter 1"
           },
           {
             "idNepali": "ग",
@@ -147,8 +160,8 @@
             "questionEnglish": "The polysemous word is ______.",
             "correctAnswerNepali": "हार/कुल/सुर",
             "correctAnswerEnglish": "Haar/Kul/Sur",
-            "explanationNepali": "'हार' (पराजय/माला), 'कुल' (वंश/जम्मा), र 'सुर' (लय/देवता) अनेकार्थी शब्द हुन्।",
-            "explanationEnglish": "'Haar' (Defeat/Necklace), 'Kul' (Lineage/Total), and 'Sur' (Rhythm/Deity) are polysemous words."
+            "explanationNepali": "'हार' (पराजय/माला), 'कुल' (वंश/जम्मा), र 'सुर' (लय/देवता) अनेकार्थी शब्द हुन्। यी शब्दहरूले एकभन्दा बढी अर्थ दिन्छन्।\nउद्धरण: पाठ ७।",
+            "explanationEnglish": "'Haar' (Defeat/Necklace), 'Kul' (Lineage/Total), and 'Sur' (Rhythm/Deity) are polysemous words. These words give more than one meaning.\nCitation: Chapter 7"
           },
           {
             "idNepali": "घ",
@@ -156,9 +169,9 @@
             "questionNepali": "'दिन' को श्रुतिसमभिन्नार्थी शब्द ______ हो।",
             "questionEnglish": "The homophone of 'Din' is ______.",
             "correctAnswerNepali": "दीन",
-            "correctAnswerEnglish": "Din",
-            "explanationNepali": "'दिन' (दिवस) र 'दीन' (गरिब) सुन्दा उस्तै लाग्ने तर फरक अर्थ दिने शब्द हुन्।",
-            "explanationEnglish": "'Din' (Day) and 'Deen' (Poor) are words that sound similar but give different meanings."
+            "correctAnswerEnglish": "Deen (Poor)",
+            "explanationNepali": "'दिन' (दिवस) र 'दीन' (दुःखी/गरिब) सुन्दा उस्तै लाग्ने तर अर्थ र हिज्जे फरक भएका शब्द हुन्।\nउद्धरण: पाठ ६।",
+            "explanationEnglish": "'Din' (Day) and 'Deen' (Poor) are words that sound similar but have different meanings and spellings.\nCitation: Chapter 6"
           }
         ],
         "questionNumberNepali": "२",
@@ -194,8 +207,8 @@
             "sentence": "Neighbors are companions in life and pallbearers in death, so we must live together with everyone."
           }
         ],
-        "explanationNepali": "'आँखा छल्नु' को अर्थ 'नदेख्ने गरी काम गर्नु' हो। 'जिउँदाको जन्ती, मर्दाको मलामी' को अर्थ 'सुखदुःखको साथी' हो।",
-        "explanationEnglish": "'Aankha Chhalnu' means 'to do something without being seen'. 'Jiundako Janti, Mardako Malami' means 'companion in happiness and sorrow'.",
+        "explanationNepali": "'आँखा छल्नु' (नदेख्ने गरी काम गर्नु) एक टुक्का हो। 'जिउँदाको जन्ती, मर्दाको मलामी' (सुखदुःखको साथी) एक उखान हो।\nउद्धरण: पाठ ४; पाठ ७।",
+        "explanationEnglish": "'Aankha Chhalnu' (to do something without being seen) is an idiom. 'Jiundako Janti, Mardako Malami' (companion in happiness and sorrow) is a proverb.\nCitation: Chapter 4; Lesson 7",
         "questionNumberNepali": "३",
         "questionNumberEnglish": 3,
         "marksNepali": "२",
@@ -250,8 +263,8 @@
                 ]
               }
             ],
-            "explanationNepali": "सही वर्णविन्यास क्रमशः 'सिद्धान्त' र 'प्रतियोगिता' हुन्।",
-            "explanationEnglish": "The correct spellings are 'Siddhanta' (Principle) and 'Pratiyogita' (Competition) respectively.",
+            "explanationNepali": "'सिद्धान्त' मा 'द्ध' संयुक्त अक्षर र 'प्रतियोगिता' मा 'ति' र 'गि' दुवै रस्व हुन्छन्।\nउद्धरण: पाठ ७; पाठ ६।",
+            "explanationEnglish": "In 'Siddhanta', 'ddha' is a conjunct consonant and in 'Pratiyogita', both 'ti' and 'gi' are short vowels.\nCitation: Chapter 7; Lesson 6",
             "marksNepali": "१",
             "marksEnglish": 1
           },
@@ -265,8 +278,8 @@
             "questionEnglish": "Although named Laxmi Prasad for being born on Laxmi Puja, Devkota later became the blessed son of Saraswati.",
             "correctAnswerNepali": "लक्ष्मीपूजाका दिन जन्मेका देवकोटाको नाम लक्ष्मीप्रसाद राखिए पनि पछि उनी सरस्वतीका वरदपुत्र बने।",
             "correctAnswerEnglish": "Although named Laxmi Prasad for being born on Laxmi Puja, Devkota later became the blessed son of Saraswati.",
-            "explanationNepali": "'लक्ष्मी पूजाका' लाई पदयोग गरी 'लक्ष्मीपूजाका', 'राखिय' लाई 'राखिए' र 'बरदपुत्र' लाई 'वरदपुत्र' लेख्नुपर्छ। वाक्यको अन्त्यमा पूर्णविराम (।) आवश्यक छ।",
-            "explanationEnglish": "'Laxmi Pujaka' should be combined as 'Laxmipujaka', 'Rakhiya' should be written as 'Rakhie', and 'Baradputra' as 'Varadputra'. A full stop is required at the end of the sentence.",
+            "explanationNepali": "'लक्ष्मी पूजाका' लाई 'लक्ष्मीपूजाका' (पदयोग), 'राखिय' लाई 'राखिए' (क्रियापद), र 'बरदपुत्र' लाई 'वरदपुत्र' (व/ब भेद) शुद्ध गर्नुपर्छ।\nउद्धरण: पाठ ५।",
+            "explanationEnglish": "'Laxmi Pujaka' should be combined, 'Rakhiya' should be 'Rakhie', and 'Baradputra' should be 'Varadputra'.\nCitation: Chapter 5",
             "marksNepali": "२",
             "marksEnglish": 2
           }
@@ -326,8 +339,8 @@
             "pos": "Pronoun"
           }
         ],
-        "explanationNepali": "'अहो' ले आश्चर्यको भाव बुझाएकोले विस्मयादिबोधक हो। 'असल' ले 'मानिस' (नाम) को विशेषता बुझाएकोले विशेषण हो। 'सधैँ' ले क्रियाको समय बुझाएकोले क्रियायोगी हो। 'र' ले दुई वाक्यलाई जोडेकोले संयोजक हो। 'उसले' नामको सट्टामा आएकोले सर्वनाम हो।",
-        "explanationEnglish": "'Aho' is an interjection as it expresses a sense of surprise. 'Asal' is an adjective as it describes the characteristic of 'Manis' (noun). 'Sadhai' is an adverb as it indicates the time of the action. 'Ra' is a conjunction as it joins two sentences. 'Usle' is a pronoun as it replaces a noun.",
+        "explanationNepali": "'अहो' (विस्मयादिबोधक), 'असल' (विशेषण), 'सधैँ' (क्रियायोगी), 'र' (संयोजक), 'उसले' (सर्वनाम)।\nउद्धरण: पाठ १।",
+        "explanationEnglish": "'Aho' (Interjection), 'Asal' (Adjective), 'Sadhai' (Adverb), 'Ra' (Conjunction), 'Usle' (Pronoun).\nCitation: Chapter 1",
         "questionNumberNepali": "५",
         "questionNumberEnglish": 5,
         "marksNepali": "३",
@@ -395,8 +408,8 @@
                 ]
               }
             ],
-            "explanationNepali": "शब्दको अगाडि जोडिने अव्ययलाई उपसर्ग र पछाडि जोडिनेलाई प्रत्यय भनिन्छ। 'अपरिचित' र 'अधर्म' मा 'अ' उपसर्ग लागेको छ। 'व्यक्तिगत' मा 'गत' र 'सामाजिक' मा 'इक' प्रत्यय लागेको छ।",
-            "explanationEnglish": "An indeclinable added before a word is called a prefix and one added after is called a suffix. 'A' prefix is added in 'Aparichit' and 'Adharma'. 'Gat' suffix in 'Vyaktigat' and 'Ik' suffix in 'Samajik' are added.",
+            "explanationNepali": "उपसर्ग: अ (अपरिचित, अधर्म)। प्रत्यय: गत (व्यक्तिगत), इक (सामाजिक)।\nउद्धरण: पाठ ३।",
+            "explanationEnglish": "Prefix: A (Aparichit, Adharma). Suffix: Gat (Vyaktigat), Ik (Samajik).\nCitation: Chapter 3",
             "marksNepali": "२",
             "marksEnglish": 2
           },
@@ -444,8 +457,8 @@
                 ]
               }
             ],
-            "explanationNepali": "'दिनरात' समस्त शब्द हो जसको विग्रह 'दिन र रात' हुन्छ। 'घर र आँगन' विग्रह पदावली हो जसबाट 'घरआँगन' समस्त शब्द बन्छ। 'घर-घर' र 'कहिलेकाहीँ' द्वित्व शब्द हुन्।",
-            "explanationEnglish": "'Dinrat' is a compound word whose dissolution is 'Din ra Rat'. 'Ghar ra Aangan' is a phrase from which the compound word 'Gharaangan' is formed. 'Ghar-Ghar' and 'Kahilekahin' are reduplicated words.",
+            "explanationNepali": "समस्त: दिनरात (दिन र रात)। विग्रह पदावली: घर र आँगन (घरआँगन)। द्वित्व: घर-घर, कहिलेकाहीँ।\nउद्धरण: पाठ ४।",
+            "explanationEnglish": "Compound: Dinrat. Split phrase: Ghar ra Aangan. Reduplication: Ghar-Ghar, Kahilekahin.\nCitation: Chapter 4",
             "marksNepali": "२",
             "marksEnglish": 2
           }
@@ -457,14 +470,14 @@
       },
       {
         "type": "tense_change",
-        "titleNepali": "दिइएको अनुच्छेदलाई पूर्ण भूतकालमा परिवर्तन गर्नुहोस् :",
-        "titleEnglish": "Change the given paragraph to past perfect tense:",
-        "passageNepali": "विद्यार्थीहरू पढ्छन्। उनीहरू गृहकार्य गर्छन्। शिक्षकलाई प्रश्न सोध्छन्। उनीहरू परीक्षामा सफल हुन्छन्।",
-        "passageEnglish": "Students study. They do homework. They ask questions to the teacher. They succeed in exams.",
-        "correctAnswerNepali": "विद्यार्थीहरूले पढेका थिए। उनीहरूले गृहकार्य गरेका थिए। शिक्षकलाई प्रश्न सोधेका थिए। उनीहरू परीक्षामा सफल भएका थिए।",
-        "correctAnswerEnglish": "The students had studied. They had done homework. They had asked questions to the teacher. They had succeeded in the examination.",
-        "explanationNepali": "सामान्य वर्तमान कालका क्रियापदहरूलाई पूर्ण भूतकालमा परिवर्तन गर्दा 'एका थिए/एकी थिइन्/एका थिए' जस्ता रूप प्रयोग हुन्छन्।",
-        "explanationEnglish": "When changing verbs of simple present tense to past perfect tense, forms like 'eka thie/eki thiin/eka thie' are used.",
+        "titleNepali": "दिइएको अनुच्छेदलाई अज्ञात भूतकालमा परिवर्तन गर्नुहोस् :",
+        "titleEnglish": "Change the given paragraph to unknown past tense:",
+        "passageNepali": "हामी वनभोज जान्छौँ। त्यहाँ रमाइलो गर्छौँ। साथीहरू नाच्छन्। हामी बेलुका फर्कन्छौँ।",
+        "passageEnglish": "We go for a picnic. We have fun there. Friends dance. We return in the evening.",
+        "correctAnswerNepali": "हामी वनभोज गएछौँ। त्यहाँ रमाइलो गरेछौँ। साथीहरू नाचेछन्। हामी बेलुका फर्केछौँ।",
+        "correctAnswerEnglish": "We appeared to have gone for a picnic. We appeared to have had fun there. Friends appeared to have danced. We appeared to have returned in the evening.",
+        "explanationNepali": "अज्ञात भूतकालमा 'एछ/एछौँ/एछन्' जस्ता प्रत्यय प्रयोग हुन्छन्। (जस्तै: गएछौँ)।\nउद्धरण: पाठ ६।",
+        "explanationEnglish": "In Unknown Past Tense, suffixes like 'echa/echau/echan' are used. (e.g., gaechhau).\nCitation: Chapter 6",
         "questionNumberNepali": "७",
         "questionNumberEnglish": 7,
         "marksNepali": "२",
@@ -482,8 +495,8 @@
             "titleEnglish": "Describe your friend's work in four sentences using different verbs denoting the potential/presumptive mood.",
             "correctAnswerNepali": "१. मेरो साथीले विद्यालयमा राम्रोसँग पढाउला।\n२. उसले विद्यार्थीहरूलाई माया गर्ला।\n३. साथीले समाज सेवामा समय देला।\n४. उनी असल शिक्षक बन्लिन्।",
             "correctAnswerEnglish": "1. My friend might teach well in school.\n2. He might love the students.\n3. My friend might devote time to social service.\n4. She might become a good teacher.",
-            "explanationNepali": "सम्भावनार्थक भावले कुनै काम हुने सम्भावना वा अड्कललाई जनाउँछ। यसमा 'होला', 'ला', 'लिन्' जस्ता प्रत्ययहरू प्रयोग हुन्छन्।",
-            "explanationEnglish": "The potential mood indicates the possibility of an action happening. Its verbs are like 'garla', 'padhaula', 'banlin'."
+            "explanationNepali": "सम्भावनार्थक भावले अनुमान वा सम्भावना जनाउँछ। धातु + ला/लान्/लिन् प्रत्यय प्रयोग गरिन्छ।\nउद्धरण: पाठ ७।",
+            "explanationEnglish": "The potential mood indicates a guess or possibility. Root + la/lan/lin suffixes are used.\nCitation: Chapter 7"
           },
           {
             "idNepali": "ख",
@@ -494,8 +507,8 @@
             "questionEnglish": "He is good. He works very hard. He plays together. He enjoys with everyone.",
             "correctAnswerNepali": "म असल छु । म धेरै मिहिनेत गर्छु । म मिलेर खेल्छु । म सबैसँग रमाउँछु ।",
             "correctAnswerEnglish": "I am good. I work very hard. I play together. I enjoy with everyone.",
-            "explanationNepali": "तृतीय पुरुष ('उनी') लाई प्रथम पुरुष ('म') मा बदल्दा क्रियापदहरू पनि सोही अनुसार 'छन्'->'छु', 'गर्छन्'->'गर्छु', 'खेल्छन्'->'खेल्छु', 'रमाउँछन्'->'रमाउँछु' मा परिवर्तन हुन्छन्।",
-            "explanationEnglish": "When changing the third person ('Uni') to the first person ('Ma'), the verbs also change accordingly: 'chhan'->'chhu', 'garchhan'->'garchhu', 'khelchhan'->'khelchhu', 'ramaunchhan'->'ramaunchhu'."
+            "explanationNepali": "तृतीय पुरुष 'उनी' लाई प्रथम पुरुष 'म' मा बदल्दा क्रियापद 'छन्' बाट 'छु', 'गर्छन्' बाट 'गर्छु' आदिमा परिवर्तन हुन्छ।\nउद्धरण: पाठ १३।",
+            "explanationEnglish": "When changing the third person 'Uni' to the first person 'Ma', the verb changes from 'chhan' to 'chhu', 'garchhan' to 'garchhu', etc.\nCitation: Chapter 13"
           }
         ],
         "questionNumberNepali": "८",
@@ -515,8 +528,8 @@
             "questionEnglish": "He went home and ate food. (Sentence Synthesis)",
             "correctAnswerNepali": "उनी घर गएर खाना खाए।",
             "correctAnswerEnglish": "He went home and ate food.",
-            "explanationNepali": "संयुक्त वाक्यलाई सरल वाक्यमा संश्लेषण गर्दा 'र' संयोजक हटाई पहिलो क्रियालाई कृदन्त ('गएर') बनाइन्छ।",
-            "explanationEnglish": "When synthesizing a compound sentence into a simple sentence, the 'ra' conjunction is removed and the first verb is made into a participle ('gaera')."
+            "explanationNepali": "'र' संयोजक हटाएर पहिलो क्रिया 'गए' लाई असमापिका क्रिया 'गएर' बनाइएको छ।\nउद्धरण: पाठ ८।",
+            "explanationEnglish": "The conjunction 'ra' is removed and the first verb 'gae' is made into a non-finite verb 'gaera'.\nCitation: Chapter 8"
           },
           {
             "idNepali": "ख",
@@ -525,8 +538,8 @@
             "questionEnglish": "Mother cooked food. (Passive Voice)",
             "correctAnswerNepali": "आमाद्वारा खाना पकाइयो।",
             "correctAnswerEnglish": "Food was cooked by mother.",
-            "explanationNepali": "कर्तृवाच्यको कर्तामा 'द्वारा' वा 'बाट' विभक्ति लगाई कर्मवाच्य बनाइन्छ र क्रियापद कर्मअनुसार परिवर्तन हुन्छ。",
-            "explanationEnglish": "Passive voice is formed by adding 'dwara' or 'bata' case marker to the subject of active voice, and the verb changes according to the object."
+            "explanationNepali": "कर्तृवाच्यबाट कर्मवाच्य बनाउँदा कर्तामा 'द्वारा', कर्ममा 'लाई' (भए हटाउने), र क्रियामा 'इ' थपिन्छ।\nउद्धरण: पाठ ९।",
+            "explanationEnglish": "When changing from active to passive, 'dwara' is added to the subject, 'lai' is removed from the object (if present), and 'i' is added to the verb.\nCitation: Chapter 9"
           },
           {
             "idNepali": "ग",
@@ -535,8 +548,8 @@
             "questionEnglish": "Brother laughs. (Causative)",
             "correctAnswerNepali": "दिदीले भाइलाई हँसाउँछिन्।",
             "correctAnswerEnglish": "Sister makes brother laugh.",
-            "explanationNepali": "कुनै काम कर्ता आफैँले नगरी अरूलाई गर्न लगाउने अर्थ बुझाउने क्रियालाई प्रेरणार्थक क्रिया भनिन्छ। 'हाँस्नु' अकर्मक क्रियाबाट 'हँसाउनु' सकर्मक प्रेरणार्थक क्रिया बनेको छ。",
-            "explanationEnglish": "A verb that indicates the meaning of getting someone else to do the work instead of the doer doing it themselves is called a causative verb. 'Hasaunu' (to make laugh) is a transitive causative verb formed from the intransitive verb 'Hasnu' (to laugh)."
+            "explanationNepali": "प्रेरणार्थक बनाउँदा नयाँ प्रेरक कर्ता थप्ने र क्रियामा 'आउ' प्रत्यय लगाउने।\nउद्धरण: पाठ ११।",
+            "explanationEnglish": "When making causative, add a new causative agent and add 'aau' suffix to the verb.\nCitation: Chapter 11"
           },
           {
             "idNepali": "घ",
@@ -545,8 +558,8 @@
             "questionEnglish": "The teacher said, “One should always study hard.” (Indirect Speech)",
             "correctAnswerNepali": "शिक्षकले सधैँ मिहिनेत गरेर पढ्नुपर्छ भनी भन्नुभयो।",
             "correctAnswerEnglish": "The teacher said that one should always study hard.",
-            "explanationNepali": "प्रत्यक्ष कथनमा वक्ताको भनाइलाई जस्ताको तस्तै उद्धरण चिह्नभित्र राखिन्छ भने अप्रत्यक्ष कथनमा त्यसको सारलाई 'भनी' संयोजक प्रयोग गरी प्रस्तुत गरिन्छ。",
-            "explanationEnglish": "In direct speech, the speaker's statement is kept as it is within quotation marks, while in indirect speech, its essence is presented using the conjunction 'bhani'."
+            "explanationNepali": "अप्रत्यक्ष कथनमा उद्धरण चिह्न हटाएर 'भनी' संयोजकले जोडिन्छ।\nउद्धरण: पाठ १२।",
+            "explanationEnglish": "In indirect speech, quotation marks are removed and connected with the conjunction 'bhani'.\nCitation: Chapter 12"
           }
         ],
         "questionNumberNepali": "९",
@@ -558,48 +571,48 @@
         "type": "reading_comprehension_grammar",
         "titleNepali": "दिइएको अनुच्छेद पढी सोधिएका प्रश्नको उत्तर लेख्नुहोस् :",
         "titleEnglish": "Read the given paragraph and write the answer to the questions asked:",
-        "passageNepali": "जे होस् ल, आफ्नै कुरा गर्छु, धेरै पटक भइसक्यो, एउटा लेख तपाईंले मसित माग्नुभएको छ तर पटकैपिच्छे मैले ‘पख्नोस्’ भन्दै आएको छु। सम्पादक जस्तो मान्छेले पनि जमिनदारकहाँ ऋण माग्न गएको रैतीझैँ पटकैपिच्छे सुत्रे कान लगाएर फर्कनुपर्दा जङ चल्नु स्वाभाविकै हो। आखिर पर्खन सबै पर्खन्छन्, सबै पर्खाउँछन्।",
-        "passageEnglish": "Anyway, let me talk about myself, it's been many times, you have asked me for an article but every time I have been saying 'wait'. It is natural to get angry when a person like an editor has to return empty-handed every time like a tenant farmer going to ask for a loan from a landlord. After all, everyone waits, everyone makes others wait.",
+        "passageNepali": "नेपाल एक सुन्दर देश हो। यहाँ विश्वभर बाट पर्यटकहरू घुम्न आउँछन्। उनीहरूले हाम्रो कला र संस्कृतिको प्रशंसा गर्छन्। पर्यटनले देशको अर्थतन्त्रलाई बलियो बनाउँछ।",
+        "passageEnglish": "Nepal is a beautiful country. Tourists from all over the world come here to visit. They praise our art and culture. Tourism makes the country's economy strong.",
         "subQuestions": [
           {
             "idNepali": "क",
             "idEnglish": "a",
-            "questionNepali": "'जङ चल्नु स्वाभाविकै हो।' यस वाक्यलाई अकरणमा बदल्नुहोस्।",
-            "questionEnglish": "'Getting angry is natural.' Change this sentence into negative.",
-            "correctAnswerNepali": "जङ चल्नु स्वाभाविकै होइन।",
-            "correctAnswerEnglish": "Getting angry is not natural.",
-            "explanationNepali": "करण वाक्यलाई अकरणमा बदल्दा क्रियापद वा वाक्यको अर्थलाई नकारात्मक बनाइन्छ। यहाँ 'हो' लाई 'होइन' मा परिवर्तन गरिएको छ。",
-            "explanationEnglish": "When changing an affirmative sentence to negative, the verb or the meaning of the sentence is made negative. Here, 'ho' has been changed to 'hoina'."
+            "questionNepali": "'नेपाल एक सुन्दर देश हो।' यस वाक्यलाई अकरणमा बदल्नुहोस्।",
+            "questionEnglish": "'Nepal is a beautiful country.' Change this sentence into negative.",
+            "correctAnswerNepali": "नेपाल एक सुन्दर देश होइन।",
+            "correctAnswerEnglish": "Nepal is not a beautiful country.",
+            "explanationNepali": "'हो' क्रियापदलाई 'होइन' मा परिवर्तन गर्दा अकरण बन्छ।\nउद्धरण: पाठ १३।",
+            "explanationEnglish": "Changing the verb 'ho' to 'hoina' makes it negative.\nCitation: Chapter 13"
           },
           {
             "idNepali": "ख",
             "idEnglish": "b",
-            "questionNepali": "रेखाङ्कित 'मान्छेले' शब्दको कारक र विभक्तिको नाम लेख्नुहोस्।",
-            "questionEnglish": "Write the name of the case and case marker of the underlined word 'manchhele' (by man).",
-            "correctAnswerNepali": "कारक: कर्ता कारक; विभक्ति: ले (तृतीया)।",
-            "correctAnswerEnglish": "Case: Nominative (Karta); Case Marker: Le (3rd).",
-            "explanationNepali": "वाक्यमा काम गर्ने पदलाई कर्ता कारक भनिन्छ र यसमा 'ले' विभक्ति लाग्छ。",
-            "explanationEnglish": "The word that performs the action in a sentence is called the subject (Karta Karak) and the 'le' case marker is added to it."
+            "questionNepali": "रेखाङ्कित 'पर्यटकहरूले' शब्दको कारक र विभक्तिको नाम लेख्नुहोस्।",
+            "questionEnglish": "Write the name of the case and case marker of the underlined word 'paryatakharule' (tourists).",
+            "correctAnswerNepali": "कारक: कर्ता कारक; विभक्ति: ले (प्रथमा)।",
+            "correctAnswerEnglish": "Case: Subject (Karta); Case Marker: Le (1st).",
+            "explanationNepali": "काम गर्ने कर्तामा 'ले' विभक्ति लाग्दा कर्ता कारक हुन्छ।\nउद्धरण: पाठ ५।",
+            "explanationEnglish": "When 'le' marker is added to the doer, it becomes the subject case.\nCitation: Chapter 5"
           },
           {
             "idNepali": "ग",
             "idEnglish": "c",
-            "questionNepali": "'मैले 'पख्नोस्' भन्दै आएको छु।' यस वाक्यको उद्देश्य र विधेय छुट्याउनुहोस्।",
-            "questionEnglish": "'I have been saying 'wait'.' Separate the subject and predicate of this sentence.",
-            "correctAnswerNepali": "उद्देश्य: मैले; विधेय: 'पख्नोस्' भन्दै आएको छु।",
-            "correctAnswerEnglish": "Subject: I; Predicate: have been saying 'wait'.",
-            "explanationNepali": "वाक्यमा जसको बारेमा केही भनिन्छ, त्यो उद्देश्य हो र उद्देश्यका बारेमा जे भनिन्छ, त्यो विधेय हो。",
-            "explanationEnglish": "In a sentence, what is talked about is the Subject (Uddheshya), and what is said about the subject is the Predicate (Vidheya)."
+            "questionNepali": "'पर्यटनले देशको अर्थतन्त्रलाई बलियो बनाउँछ।' यस वाक्यको उद्देश्य र विधेय छुट्याउनुहोस्।",
+            "questionEnglish": "'Tourism makes the country's economy strong.' Separate the subject and predicate of this sentence.",
+            "correctAnswerNepali": "उद्देश्य: पर्यटनले; विधेय: देशको अर्थतन्त्रलाई बलियो बनाउँछ।",
+            "correctAnswerEnglish": "Subject: Tourism; Predicate: makes the country's economy strong.",
+            "explanationNepali": "कर्ता उद्देश्य हो र बाँकी भाग विधेय हो।\nउद्धरण: पाठ ८।",
+            "explanationEnglish": "The doer is the subject and the rest is the predicate.\nCitation: Chapter 8"
           },
           {
             "idNepali": "घ",
             "idEnglish": "d",
-            "questionNepali": "'आखिर पर्खन सबै पर्खन्छन्।' यस वाक्यलाई प्रश्नवाचक वाक्यमा बदल्नुहोस्।",
-            "questionEnglish": "'After all, everyone waits.' Change this sentence into an interrogative sentence.",
-            "correctAnswerNepali": "आखिर पर्खन को पर्खन्छन्?",
-            "correctAnswerEnglish": "After all, who waits?",
-            "explanationNepali": "सामान्य वाक्यलाई प्रश्नवाचकमा बदल्दा 'के', 'किन', 'को', 'कहाँ' जस्ता प्रश्नवाचक शब्द प्रयोग गरी अन्त्यमा प्रश्नवाचक चिह्न (?) राखिन्छ。",
-            "explanationEnglish": "When changing a simple sentence into an interrogative one, question words like 'Ke', 'Kina', 'Ko', 'Kahan' are used and a question mark (?) is placed at the end."
+            "questionNepali": "'उनीहरूले हाम्रो कला र संस्कृतिको प्रशंसा गर्छन्।' यस वाक्यलाई प्रश्नवाचक वाक्यमा बदल्नुहोस्।",
+            "questionEnglish": "'They praise our art and culture.' Change this sentence into an interrogative sentence.",
+            "correctAnswerNepali": "के उनीहरूले हाम्रो कला र संस्कृतिको प्रशंसा गर्छन्?",
+            "correctAnswerEnglish": "Do they praise our art and culture?",
+            "explanationNepali": "वाक्यको सुरुमा 'के' थपेर वा अन्त्यमा प्रश्नवाचक चिन्ह राखेर प्रश्नवाचक बनाइन्छ।\nउद्धरण: पाठ १३।",
+            "explanationEnglish": "Interrogative is made by adding 'Ke' at the beginning or a question mark at the end.\nCitation: Chapter 13"
           }
         ],
         "questionNumberNepali": "१०",
@@ -611,48 +624,48 @@
         "type": "reading_comprehension",
         "titleNepali": "दिइएको अनुच्छेद पढी सोधिएका प्रश्नको उत्तर लेख्नुहोस् :",
         "titleEnglish": "Read the given paragraph and write the answer to the questions asked:",
-        "passageNepali": "नेपाली समाजमा दसैँ र तिहार सबैभन्दा ठुला र महत्त्वपूर्ण चाडपर्व मानिन्छन्। दसैँ असत्यमाथि सत्यको विजयको प्रतीक हो भने तिहार दाजुभाइ र दिदीबहिनीबिचको स्नेहको पर्व हो। यी पर्वहरूले मानिसहरूलाई आफ्नो परिवार र आफन्तसँग भेटघाट गर्ने, रमाइलो गर्ने र आपसी सम्बन्धलाई प्रगाढ बनाउने अवसर प्रदान गर्छन्। पिङ खेल्ने, नयाँ लुगा लगाउने, मिठो खाने र मान्यजनबाट आशीर्वाद लिने चलनले यी पर्वहरूमा थप रौनकता थप्छ। यद्यपि, आजभोलि चाडपर्वमा तडकभडक र अनावश्यक खर्च गर्ने प्रवृत्ति पनि बढेको छ, जसले गर्दा पर्वको सांस्कृतिक महत्त्वभन्दा पनि आर्थिक भार बढी देखिन थालेको छ। चाडपर्वलाई आफ्नो गच्छेअनुसार मनाएर यसको मौलिकता जोगाउनु आवश्यक छ।",
-        "passageEnglish": "Dashain and Tihar are considered the biggest and most important festivals in Nepali society. While Dashain is a symbol of victory of truth over falsehood, Tihar is a festival of affection between brothers and sisters. These festivals provide opportunities for people to meet their family and relatives, have fun, and deepen mutual relationships. The custom of playing swings, wearing new clothes, eating delicious food, and taking blessings from elders adds more vibrancy to these festivals. However, nowadays the trend of ostentation and unnecessary spending in festivals has also increased, due to which economic burden has started to appear more than the cultural importance of the festival. It is necessary to preserve its originality by celebrating festivals according to one's capacity.",
+        "passageNepali": "प्राविधिक शिक्षा आजको आवश्यकता हो। सामान्य शिक्षाले मानिसलाई साक्षर र ज्ञानी बनाउँछ भने प्राविधिक शिक्षाले मानिसलाई आत्मनिर्भर र स्वावलम्बी बनाउँछ। देशमा व्याप्त बेरोजगारी समस्या समाधान गर्न सिपमूलक तालिम र प्राविधिक ज्ञानको ठुलो महत्त्व छ। हातमा सिप भएको मानिस भोकै बस्नु पर्दैन। कृषि, इन्जिनियरिङ, स्वास्थ्य, र पर्यटन जस्ता क्षेत्रमा प्राविधिक जनशक्तिको माग बढ्दो छ। तसर्थ, विद्यालय तहदेखि नै विद्यार्थीहरूलाई जीवनोपयोगी र व्यावहारिक सिप सिकाउनु आवश्यक देखिन्छ। यसले देशको आर्थिक समृद्धिमा समेत टेवा पुर्‍याउँछ।",
+        "passageEnglish": "Technical education is the need of today. While general education makes people literate and knowledgeable, technical education makes people self-reliant and independent. Skill-based training and technical knowledge are of great importance to solve the unemployment problem prevalent in the country. A person with skills in hand does not have to starve. The demand for technical manpower is increasing in sectors like agriculture, engineering, health, and tourism. Therefore, it seems necessary to teach students useful and practical life skills from the school level itself. This also supports the economic prosperity of the country.",
         "subQuestions": [
           {
             "idNepali": "क",
             "idEnglish": "a",
-            "questionNepali": "दसैँ र तिहारलाई के को प्रतीक मानिन्छ?",
-            "questionEnglish": "What are Dashain and Tihar considered symbols of?",
-            "correctAnswerNepali": "दसैँलाई असत्यमाथि सत्यको विजयको प्रतीक र तिहारलाई दाजुभाइ-दिदीबहिनीबिचको स्नेहको प्रतीक मानिन्छ।",
-            "correctAnswerEnglish": "Dashain is considered a symbol of the victory of truth over falsehood and Tihar as a symbol of affection between brothers and sisters.",
-            "explanationNepali": "यो प्रश्न अनुच्छेदको बोध क्षमता परीक्षण गर्नका लागि हो। अनुच्छेदमा दसैँ र तिहारको प्रतीक स्पष्ट रूपमा उल्लेख छ।\nउद्धरण: पाठ १०।",
-            "explanationEnglish": "This question is to test the comprehension ability of the paragraph. The symbols of Dashain and Tihar are clearly mentioned in the paragraph.\nCitation: Lesson 10."
+            "questionNepali": "प्राविधिक शिक्षाले मानिसलाई कस्तो बनाउँछ?",
+            "questionEnglish": "What does technical education make a person?",
+            "correctAnswerNepali": "प्राविधिक शिक्षाले मानिसलाई आत्मनिर्भर र स्वावलम्बी बनाउँछ।",
+            "correctAnswerEnglish": "Technical education makes a person self-reliant and independent.",
+            "explanationNepali": "अनुच्छेदको दोस्रो वाक्यमा प्राविधिक शिक्षाले मानिसलाई आत्मनिर्भर बनाउने कुरा उल्लेख छ।\nउद्धरण: पाठ ९।",
+            "explanationEnglish": "The second sentence of the paragraph mentions that technical education makes a person self-reliant.\nCitation: Chapter 9"
           },
           {
             "idNepali": "ख",
             "idEnglish": "b",
-            "questionNepali": "चाडपर्वले मानिसहरूलाई कस्तो अवसर प्रदान गर्छ?",
-            "questionEnglish": "What kind of opportunity do festivals provide to people?",
-            "correctAnswerNepali": "चाडपर्वले मानिसहरूलाई आफ्नो परिवार र आफन्तसँग भेटघाट गर्ने, रमाइलो गर्ने र आपसी सम्बन्धलाई प्रगाढ बनाउने अवसर प्रदान गर्छ।",
-            "correctAnswerEnglish": "Festivals provide people with the opportunity to meet family and relatives, have fun, and strengthen mutual relationships.",
-            "explanationNepali": "यो प्रश्न अनुच्छेदको बोध क्षमता परीक्षण गर्नका लागि हो। अनुच्छेदमा चाडपर्वले दिने अवसरहरू उल्लेख गरिएको छ।\nउद्धरण: पाठ १०।",
-            "explanationEnglish": "This question is to test the comprehension ability of the paragraph. The opportunities provided by festivals are mentioned in the paragraph.\nCitation: Lesson 10."
+            "questionNepali": "बेरोजगारी समस्या समाधान गर्न के को महत्त्व छ?",
+            "questionEnglish": "What is important to solve the unemployment problem?",
+            "correctAnswerNepali": "बेरोजगारी समस्या समाधान गर्न सिपमूलक तालिम र प्राविधिक ज्ञानको ठुलो महत्त्व छ।",
+            "correctAnswerEnglish": "Skill-based training and technical knowledge are of great importance to solve the unemployment problem.",
+            "explanationNepali": "अनुच्छेदमा बेरोजगारी हटाउन सिप र प्राविधिक ज्ञान आवश्यक रहेको बताइएको छ।\nउद्धरण: पाठ ९।",
+            "explanationEnglish": "The paragraph states that skills and technical knowledge are necessary to remove unemployment.\nCitation: Chapter 9"
           },
           {
             "idNepali": "ग",
             "idEnglish": "c",
-            "questionNepali": "आजभोलि चाडपर्वमा कस्तो नकारात्मक प्रवृत्ति देखिएको छ?",
-            "questionEnglish": "What kind of negative trend is seen in festivals nowadays?",
-            "correctAnswerNepali": "आजभोलि चाडपर्वमा तडकभडक गर्ने, अनावश्यक खर्च गर्ने र यसलाई प्रतिस्पर्धाको विषय बनाउने नकारात्मक प्रवृत्ति देखिएको छ।",
-            "correctAnswerEnglish": "Nowadays, a negative trend of extravagance, unnecessary spending, and making it a subject of competition has been seen in festivals.",
-            "explanationNepali": "यो प्रश्न अनुच्छेदको बोध क्षमता परीक्षण गर्नका लागि हो। अनुच्छेदमा चाडपर्वमा देखिएका विकृतिहरूको चर्चा छ।\nउद्धरण: पाठ १०।",
-            "explanationEnglish": "This question is to test the comprehension ability of the paragraph. The anomalies seen in festivals are discussed in the paragraph.\nCitation: Lesson 10."
+            "questionNepali": "कुन-कुन क्षेत्रमा प्राविधिक जनशक्तिको माग बढ्दो छ?",
+            "questionEnglish": "In which sectors is the demand for technical manpower increasing?",
+            "correctAnswerNepali": "कृषि, इन्जिनियरिङ, स्वास्थ्य र पर्यटन जस्ता क्षेत्रमा प्राविधिक जनशक्तिको माग बढ्दो छ।",
+            "correctAnswerEnglish": "The demand for technical manpower is increasing in sectors like agriculture, engineering, health, and tourism.",
+            "explanationNepali": "अनुच्छेदमा कृषि, इन्जिनियरिङ, स्वास्थ्य र पर्यटन क्षेत्रको नाम किटेरै उल्लेख गरिएको छ।\nउद्धरण: पाठ ९।",
+            "explanationEnglish": "The paragraph specifically mentions agriculture, engineering, health, and tourism sectors.\nCitation: Chapter 9"
           },
           {
             "idNepali": "घ",
             "idEnglish": "d",
-            "questionNepali": "चाडपर्वको मौलिकता कसरी जोगाउन सकिन्छ?",
-            "questionEnglish": "How can the originality of festivals be preserved?",
-            "correctAnswerNepali": "चाडपर्वलाई तडकभडक नगरी आफ्नो गच्छेअनुसार मनाएर यसको मौलिकता जोगाउन सकिन्छ।",
-            "correctAnswerEnglish": "The originality of festivals can be preserved by celebrating them according to one's capacity without extravagance.",
-            "explanationNepali": "यो प्रश्न अनुच्छेदको बोध क्षमता परीक्षण गर्नका लागि हो। मौलिकता जोगाउने उपाय अनुच्छेदको अन्तिम वाक्यमा छ।\nउद्धरण: पाठ १०।",
-            "explanationEnglish": "This question is to test the comprehension ability of the paragraph. The way to preserve originality is in the last sentence of the paragraph.\nCitation: Lesson 10."
+            "questionNepali": "माथिको अनुच्छेदको उपयुक्त शीर्षक लेख्नुहोस्।",
+            "questionEnglish": "Write a suitable title for the above paragraph.",
+            "correctAnswerNepali": "माथिको अनुच्छेदको उपयुक्त शीर्षक 'प्राविधिक शिक्षाको महत्त्व' हो।",
+            "correctAnswerEnglish": "A suitable title for the above paragraph is 'Importance of Technical Education'.",
+            "explanationNepali": "सम्पूर्ण अनुच्छेद प्राविधिक शिक्षा र यसको फाइदामा केन्द्रित भएकाले यो शीर्षक उपयुक्त हुन्छ।\nउद्धरण: पाठ ९।",
+            "explanationEnglish": "This title is suitable because the entire paragraph focuses on technical education and its benefits.\nCitation: Chapter 9"
           }
         ],
         "questionNumberNepali": "११",
@@ -672,22 +685,22 @@
           {
             "idNepali": "क",
             "idEnglish": "a",
-            "titleNepali": "'वातावरण संरक्षणमा विद्यार्थीको भूमिका' शीर्षकमा दुई जना साथीबिच भएको संवाद तयार पार्नुहोस्।",
-            "titleEnglish": "Prepare a dialogue between two friends on the topic 'Role of Students in Environmental Conservation'.",
-            "sampleAnswerNepali": "### वातावरण संरक्षणमा विद्यार्थीको भूमिका\n\n(स्थान: विद्यालयको चौर, समय: खाजा खाने समय)\nपात्रहरू: \nरमेश (वातावरणप्रेमी)\nसीता (जिज्ञासु विद्यार्थी)\n\nरमेश: ओहो सीता! तिमीले खाएको चाउचाउको खोल भुइँमा फाल्यौ नि? यस्तो गर्नु हुँदैन।\n\nसीता: एउटा सानो खोलले के बिग्रन्छ र रमेश? यहाँ त कति फोहोर छ।\n\nरमेश: थोपा थोपा मिलेर सागर बन्छ भनेझैँ, एउटा सानो फोहोरले पनि वातावरण दूषित बनाउँछ। हामी विद्यार्थीले नै वातावरण संरक्षणमा ध्यान दिएनौँ भने अरूले के गर्लान्?\n\nसीता: अनि हामी विद्यार्थीले चाहिँ वातावरण जोगाउन के गर्न सक्छौँ त?\n\nरमेश: धेरै गर्न सक्छौँ। पहिलो कुरा त हामीले विद्यालय र घरवरपर फोहोर नगर्ने, प्लास्टिकको कम प्रयोग गर्ने र वृक्षारोपण गर्ने बानी बसाल्नुपर्छ।\n\nसीता: तिमीले ठीक भन्यौ। हामीले 'एक विद्यार्थी, एक बिरुवा' अभियान पनि चलाउन सक्छौँ नि है?\n\nरमेश: हो, एकदम राम्रो विचार! साथै, हामीले समुदायमा गएर जनचेतना जगाउने काम पनि गर्न सक्छौँ। वातावरण स्वच्छ भए मात्र हामी स्वस्थ रहन सक्छौँ।\n\nसीता: मलाई माफ गर रमेश। म अबदेखि कहिल्यै जथाभावी फोहोर फाल्दिनँ र वातावरण संरक्षणमा सक्रिय हुन्छु। त्यो खोल म डस्टबिनमा हाल्छु।\n\nरमेश: स्याबास सीता! ल, अब कक्षातिर जाऔँ।",
-            "sampleAnswerEnglish": "### Role of Students in Environmental Conservation\n\n(Location: School playground, Time: Lunch break)\nCharacters:\nRamesh (Nature lover)\nSita (Curious student)\n\nRamesh: Oh Sita! You threw the noodle wrapper on the ground, didn't you? You shouldn't do that.\n\nSita: What harm does a small wrapper do, Ramesh? There is so much dirt here anyway.\n\nRamesh: Just as drops make an ocean, even a small piece of trash pollutes the environment. If we students don't pay attention to environmental conservation, what will others do?\n\nSita: So what can we students do to save the environment?\n\nRamesh: We can do a lot. First of all, we should develop the habit of not littering around school and home, using less plastic, and planting trees.\n\nSita: You are right. We can also run a 'One Student, One Plant' campaign, right?\n\nRamesh: Yes, a very good idea! Also, we can go to the community and raise awareness. Only if the environment is clean can we remain healthy.\n\nSita: Forgive me, Ramesh. From now on, I will never throw trash indiscriminately and will be active in environmental conservation. I will put that wrapper in the dustbin.\n\nRamesh: Well done Sita! Ok, let's go to class now.",
-            "explanationNepali": "यो प्रश्नले विद्यार्थीको संवाद लेखन सिप जाँच्छ। शीर्षक अनुसार पात्रहरूको कुराकानीलाई तार्किक र स्वाभाविक रूपमा अगाडि बढाउनुपर्छ। वातावरण संरक्षणको विषयवस्तु 'मेरो देशको शिक्षा' वा 'वातावरण' सम्बन्धी पाठहरूसँग मिल्दोजुल्दो छ।\nउद्धरण: पाठ ४।",
-            "explanationEnglish": "This question tests the student's dialogue writing skills. The conversation between the characters should be advanced logically and naturally according to the title. The theme of environmental conservation is similar to lessons like 'Mero Desh ko Shiksha' or 'Environment'.\nCitation: Lesson 4."
+            "titleNepali": "'अतिरिक्त क्रियाकलापको महत्त्व' शीर्षकमा दुई विद्यार्थीबिच भएको संवाद तयार पार्नुहोस्।",
+            "titleEnglish": "Prepare a dialogue between two students on the topic 'Importance of Extra-curricular Activities'.",
+            "sampleAnswerNepali": "अतिरिक्त क्रियाकलापको महत्त्व\n\n(स्थान: विद्यालयको क्यान्टिन, समय: खाजा खाने समय)\nपात्रहरू: \nसुमन (पढाइमा मात्र ध्यान दिने)\nरीमा (खेलकुदमा रुचि राख्ने)\n\nसुमन: रीमा, तिमी त सधैँ खेल मैदानमै हुन्छ्यौ। जाँच नजिकिँदै छ, पढ्नु पर्दैन?\n\nरीमा: पढ्दै छु नि सुमन। तर मलाई लाग्छ किताबी ज्ञान मात्र पर्याप्त हुँदैन। अतिरिक्त क्रियाकलापले पनि हामीलाई धेरै कुरा सिकाउँछ।\n\nसुमन: खेलकुद र नाचगानले के सिकाउँछ र? यसले त समय मात्र बर्बाद गर्छ जस्तो लाग्छ मलाई।\n\nरीमा: होइन सुमन। खेलकुदले हामीलाई अनुशासन, समूहमा काम गर्ने बानी र स्वस्थ रहन सिकाउँछ। वादविवाद र हाजिरीजवाफले हाम्रो बोल्ने कला र सामान्य ज्ञान बढाउँछ।\n\nसुमन: ए, मैले त यसरी सोचेकै थिइनँ। मलाई त कक्षामा सधैँ प्रथम हुनु मात्र ठुलो कुरा लाग्थ्यो।\n\nरीमा: पढाइ त मुख्य हो नै, तर असल र सक्षम मान्छे बन्न सर्वाङ्गीण विकास चाहिन्छ। त्यसैले त विद्यालयले शुक्रबार अतिरिक्त कार्यक्रम राख्छ नि।\n\nसुमन: तिम्रो कुरा सही हो रीमा। म पनि अबदेखि शुक्रबारको कार्यक्रममा भाग लिन्छु। मलाई चित्र बनाउन मन पर्छ।\n\nरीमा: ल, एकदम राम्रो! हामी दुवै पढाइ र अतिरिक्त क्रियाकलापमा सँगसँगै अघि बढ्नुपर्छ।\n\nसुमन: हुन्छ, धन्यवाद रीमा。",
+            "sampleAnswerEnglish": "Importance of Extra-curricular Activities\n\n(Location: School Canteen, Time: Break time)\nCharacters:\nSuman (Focuses only on studies)\nReema (Interested in sports)\n\nSuman: Reema, you are always on the playground. Exams are approaching, don't you need to study?\n\nReema: I am studying, Suman. But I think bookish knowledge alone is not enough. Extra-curricular activities also teach us a lot.\n\nSuman: What do sports and dancing teach? I feel it just wastes time.\n\nReema: No, Suman. Sports teach us discipline, teamwork, and keeping healthy. Debates and quizzes improve our speaking skills and general knowledge.\n\nSuman: Oh, I hadn't thought of it that way. I used to think standing first in class was the only big thing.\n\nReema: Studies are main, of course, but all-round development is needed to become a good and capable person. That's why the school organizes extra programs on Fridays.\n\nSuman: You are right, Reema. I will also participate in Friday's program from now on. I like drawing.\n\nReema: Wow, that's great! We both should move forward together in studies and extra-curricular activities.\n\nSuman: Okay, thank you Reema.",
+            "explanationNepali": "संवाद लेखनमा पात्रहरूको विचार आदानप्रदानमार्फत विषयवस्तुको महत्त्व प्रस्ट पारिएको छ।\nउद्धरण: पाठ ४।",
+            "explanationEnglish": "In dialogue writing, the importance of the subject matter is clarified through the exchange of ideas between the characters.\nCitation: Chapter 4"
           },
           {
             "idNepali": "ख",
             "idEnglish": "b",
-            "titleNepali": "'पुरस्कृत हुँदाको क्षण' शीर्षकमा एक विद्यार्थीले मनमा खेलाएका कुराहरू समेटेर मनोवाद तयार पार्नुहोस्।",
-            "titleEnglish": "Prepare a monologue incorporating the thoughts of a student on the topic 'The Moment of Being Awarded'.",
-            "sampleAnswerNepali": "### पुरस्कृत हुँदाको क्षण\n\n(स्थान: विद्यालयको मञ्च, समय: पुरस्कार वितरण समारोह)\nपात्र: सफल (कक्षा १० को छात्र)\n\n(मञ्चमा आफ्नो नाम बोलाइएको सुन्दा सफलको मनमा अनेक कुरा खेल्छन्।)\n\nओहो! अन्ततः त्यो पल आयो। उद्घोषकले मेरो नाम बोलाउँदै हुनुहुन्छ, \"यस वर्षको सर्वोत्कृष्ट विद्यार्थी... सफल शर्मा!\" मुटु ढुकढुक गरिरहेको छ। कस्तो अचम्म! मैले साँच्चै यो पुरस्कार पाएँ त? वर्षभरिको मिहिनेत आज सफल भएको महसुस भइरहेछ। ती रातहरू सम्झन्छु, जब निद्रा मारेर मैले गणित र विज्ञानका हिसाबहरू गरेको थिएँ। आज त्यो परिश्रमले सार्थकता पाएको छ।\n\n(मञ्चतर्फ अघि बढ्दै)\nसबै साथीहरू ताली बजाइरहेका छन्। मेरा बुबाआमाको अनुहारमा देखिएको त्यो खुसी र गर्वको चमक... आहा! त्योभन्दा ठुलो पुरस्कार मेरा लागि अरू केही हुन सक्दैन। गुरुहरूको आशीर्वाद र मार्गदर्शन नभएको भए म यहाँसम्म कहाँ आइपुग्थेँ र? यो पुरस्कार मेरो मात्र होइन, मलाई सहयोग गर्ने सबैको हो।\n\n(प्रधानाध्यापकको हातबाट पुरस्कार लिँदै)\nयो प्रमाण पत्र र ट्रफी हातमा लिँदा कति भारी महसुस भइरहेछ, यो त जिम्मेवारीको भारी हो। अब मैले अझ राम्रो गर्नुपर्छ। यो सफलतालाई निरन्तरता दिनुपर्छ। म घमण्ड गर्ने छैन, बरु अझ विनम्र भएर ज्ञानको सागरमा डुबुल्की मार्नेछु। धन्यवाद भगवान्, मलाई यो अवसर दिएकोमा। यो क्षण मेरो जीवनको अविष्मरणीय पल बनेर रहनेछ।",
-            "sampleAnswerEnglish": "### The Moment of Being Awarded\n\n(Location: School stage, Time: Prize distribution ceremony)\nCharacter: Safal (Grade 10 student)\n\n(Hearing his name called on stage, many thoughts play in Safal's mind.)\n\nOh! Finally, that moment has arrived. The announcer is calling my name, \"This year's best student... Safal Sharma!\" My heart is pounding. How amazing! Did I really get this award? I feel that the year-long hard work has succeeded today. I remember those nights when I sacrificed sleep to solve math and science problems. Today that hard work has found meaning.\n\n(Moving towards the stage)\nAll friends are clapping. That glow of happiness and pride on my parents' faces... Wow! There can be no greater reward for me than that. Where would I have reached without the blessings and guidance of my teachers? This award is not just mine, but everyone's who helped me.\n\n(Receiving the award from the Principal)\nHow heavy it feels holding this certificate and trophy in hand, this is the weight of responsibility. Now I have to do even better. I must continue this success. I will not be arrogant, but rather dive into the ocean of knowledge with more humility. Thank you God, for giving me this opportunity. This moment will remain an unforgettable moment of my life.",
-            "explanationNepali": "यो प्रश्नले विद्यार्थीको मनोवाद लेखन सिप जाँच्छ। मनोवादमा पात्रको भित्री मनको कुरालाई समेट्नुपर्छ। यो सिर्जनात्मक लेखनको अभ्यास हो।\nउद्धरण: पाठ ४।",
-            "explanationEnglish": "This question tests the student's monologue writing skills. A monologue should include the inner thoughts of the character. This is a creative writing exercise.\nCitation: Lesson 4."
+            "titleNepali": "आफ्नो जीवनको अविस्मरणीय क्षणको वर्णन गर्दै एउटा मनोवाद लेख्नुहोस्।",
+            "titleEnglish": "Write a monologue describing an unforgettable moment of your life.",
+            "sampleAnswerNepali": "मेरो जीवनको अविस्मरणीय क्षण\n\n(स्थान: घरको कौसी, समय: साँझपख)\nपात्र: विवेक (कक्षा १० को विद्यार्थी)\n\n(आकाशमा चम्किरहेका ताराहरू हेर्दै विवेक टोलाउँछ।)\n\nआहा! आजको दिन म कहिल्यै भुल्न सक्दिनँ। (लामो सास फेर्दै) त्यो क्षण कति डरलाग्दो थियो, तर अन्त्यमा कति सुखद! आज विद्यालयबाट फर्कंदा बाटोमा देखेको त्यो सानो कुकुरको छाउरो... बिचरा! नालीमा खसेर निस्कन नसक्दा कसरी चिच्याइरहेको थियो। सबै मानिसहरू हेर्दै गइरहेका थिए, कसैले वास्ता गरेनन्।\n\nमेरो मनले मानेन। मलाई डर पनि लागिरहेको थियो—कतै नालीमा पस्दा मलाई पनि केही हुने हो कि? वा लुगा फोहोर हुँदा आमाले गाली गर्नुहुन्छ कि? तर त्यसको आँखामा देखेको पीडाले मलाई रोक्न सकेन। मैले झोला बिसाएँ र नालीमा पसेँ। त्यसलाई बाहिर निकाल्दा उसले पुच्छर हल्लाउँदै मेरो खुट्टा चाटेको क्षण... ओहो! (मुस्कुराउँदै) त्यो स्पर्शमा कति धेरै कृतज्ञता थियो।\n\nघर आएर आमालाई भन्दा उहाँले गाली गर्नुको साटो 'बाबु, तिमीले धर्मको काम गर्यौ' भनेर मेरो टाउको सुम्सुम्याउँदा मलाई संसार जिते जस्तो लाग्यो। हो, अरूको सेवामा नै सच्चा आनन्द रहेछ। आज मैले जीवनको एउटा ठुलो पाठ सिकेँ। यो दिन मेरो स्मृतिमा सधैँ ताजा रहनेछ।",
+            "sampleAnswerEnglish": "My Life's Unforgettable Moment\n\n(Location: Terrace of the house, Time: Evening)\nCharacter: Vivek (Grade 10 student)\n\n(Vivek is lost in thought looking at the shining stars in the sky.)\n\nWow! I can never forget today. (Taking a deep breath) How scary that moment was, but how pleasant in the end! That small puppy I saw on the way back from school today... Poor thing! How it was screaming unable to get out after falling into the drain. Everyone was watching and passing by, no one cared.\n\nMy heart didn't agree. I was also scared—what if something happens to me while entering the drain? Or will mom scold me if my clothes get dirty? But the pain I saw in its eyes couldn't stop me. I put down my bag and entered the drain. The moment it wagged its tail and licked my leg when I took it out... Oh! (Smiling) How much gratitude was there in that touch.\n\nWhen I came home and told mom, instead of scolding, she patted my head saying 'Son, you did a virtuous deed', I felt like I conquered the world. Yes, true happiness lies in serving others. Today I learned a big lesson in life. This day will always remain fresh in my memory.",
+            "explanationNepali": "मनोवादमा पात्रले आफैँसँग कुरा गर्दै घटनाको विवरण र त्यसले पारेको प्रभावलाई भावनात्मक रूपमा व्यक्त गरेको छ।\nउद्धरण: पाठ ४।",
+            "explanationEnglish": "In the monologue, the character talks to himself, expressing the details of the event and its impact emotionally.\nCitation: Chapter 4"
           }
         ]
       },
@@ -703,22 +716,22 @@
           {
             "idNepali": "क",
             "idEnglish": "a",
-            "titleNepali": "आफ्नो विद्यालयबाट चारित्रिक प्रमाणपत्र पाउनका लागि प्रधानाध्यापकलाई लेख्ने निवेदनको नमुना तयार पार्नुहोस्।",
-            "titleEnglish": "Prepare a sample application to the Principal to obtain a character certificate from your school.",
-            "sampleAnswerNepali": "मिति: २०८१/०१/२०\n\nश्रीमान् प्रधानाध्यापकज्यू,\nहिमालयन माध्यमिक विद्यालय,\nदमक, झापा ।\n\nविषय: चारित्रिक प्रमाणपत्र पाउँ ।\n\nमहोदय,\n\nउपर्युक्त विषयमा निवेदन यो छ कि मैले यस विद्यालयबाट २०८० सालको एसईई (SEE) परीक्षा प्रथम श्रेणीमा उत्तीर्ण गरेको छु। अब उच्च शिक्षा अध्ययनका लागि अन्य कलेजमा भर्ना हुन मलाई चारित्रिक प्रमाणपत्रको आवश्यकता परेको छ। मैले विद्यालयमा अध्ययन गर्दा कुनै पनि अनुशासनात्मक कारबाहीमा नपरेको र विद्यालयका नियमहरूको पूर्ण पालना गरेको व्यहोरा अनुरोध गर्दछु।\n\nअतः मेरो शैक्षिक तथा चारित्रिक विवरण खुलाई चारित्रिक प्रमाणपत्र उपलब्ध गराइदिनुहुन विनम्र अनुरोध गर्दछु।\n\nतपाईंको आज्ञाकारी छात्र,\nसुमन कार्की\nरोल नं.: १०\nकक्षा: १० (२०८०)",
-            "sampleAnswerEnglish": "Date: 2081/01/20\n\nTo The Principal,\nHimalayan Secondary School,\nDamak, Jhapa.\n\nSubject: Request for Character Certificate.\n\nSir/Madam,\n\nRegarding the above subject, I would like to state that I have passed the SEE examination of 2080 B.S. in the first division from this school. Now, I need a character certificate to get admission to another college for higher studies. I request you to note that I was not involved in any disciplinary action while studying at the school and fully followed the school rules.\n\nTherefore, I humbly request you to provide me with a character certificate stating my academic and character details.\n\nYour obedient student,\nSuman Karki\nRoll No.: 10\nGrade: 10 (2080)",
-            "explanationNepali": "यो प्रश्नले व्यावहारिक लेखन अन्तर्गत निवेदन लेखन सिप परीक्षण गर्छ। निवेदनको औपचारिक ढाँचा (मिति, सम्बोधन, विषय, मुख्य व्यहोरा, समापन) पालना गर्नुपर्छ।\nउद्धरण: पाठ १०।",
-            "explanationEnglish": "This question tests functional writing skills, specifically application writing. The formal format of an application (date, address, subject, main body, closing) must be followed.\nCitation: Lesson 10."
+            "titleNepali": "आफ्नो मित्रको हजुरबुबाको निधनमा समवेदना प्रकट गर्दै एउटा समवेदना पत्र तयार पार्नुहोस्।",
+            "titleEnglish": "Prepare a condolence letter expressing condolences on the demise of your friend's grandfather.",
+            "sampleAnswerNepali": "**हार्दिक समवेदना**\n\nमिति: २०८१/११/१५\n\nप्रिय मित्र सुजन,\n\nतिम्रो ममतामयी हजुरबुबा **स्व. रामप्रसाद अधिकारी** (८५ वर्ष) को असामयिक निधनको खबर सुन्दा म लगायत मेरो सम्पूर्ण परिवार स्तब्ध र मर्माहत भएका छौँ। उहाँ एक समाजसेवी, मृदुभाषी र कर्तव्यनिष्ठ व्यक्तित्व हुनुहुन्थ्यो। उहाँको निधनले समाजलाई अपूरणीय क्षति पुगेको छ।\n\nयस दुःखद घडीमा दिवङ्गत आत्माको चिरशान्तिको कामना गर्दै तिमी र तिम्रो शोकाकुल परिवारजनमा धैर्यधारण गर्ने शक्ति ईश्वरले प्रदान गरून् भनी हार्दिक समवेदना प्रकट गर्दछु। उहाँको भौतिक शरीर हामीमाझ नरहे पनि उहाँका उपदेश र सत्कर्महरू सधैँ अमर रहनेछन्।\n\nउही तिम्रो मित्र,\nसन्दीप लामिछाने\nकाठमाडौँ",
+            "sampleAnswerEnglish": "**Heartfelt Condolence**\n\nDate: 2081/11/15\n\nDear friend Sujan,\n\nI and my entire family are shocked and saddened to hear the news of the untimely demise of your loving grandfather **Late Ram Prasad Adhikari** (85 years). He was a social worker, soft-spoken, and dutiful personality. His demise has caused irreparable loss to the society.\n\nIn this hour of grief, wishing for eternal peace to the departed soul, I express my heartfelt condolences praying to God to grant you and your bereaved family the strength to endure this loss. Although his physical body is no longer with us, his teachings and good deeds will always remain immortal.\n\nYours friend,\nSandeep Lamichhane\nKathmandu",
+            "explanationNepali": "समवेदना पत्रमा मृतकप्रति श्रद्धाञ्जली र शोकाकुल परिवारलाई सान्त्वना दिने भाषाशैली प्रयोग गर्नुपर्छ।\nउद्धरण: पाठ १०।",
+            "explanationEnglish": "In a condolence letter, language expressing tribute to the deceased and consolation to the bereaved family should be used.\nCitation: Chapter 10"
           },
           {
             "idNepali": "ख",
             "idEnglish": "b",
-            "titleNepali": "आफ्नो टोलमा भएको सडक दुर्घटनाको विषयमा एउटा रिपोर्ट तयार पार्नुहोस्।",
-            "titleEnglish": "Prepare a report on a road accident that occurred in your neighborhood.",
-            "sampleAnswerNepali": "**कलङ्की चोकमा बस र मोटरसाइकल ठोक्किँदा ५ जना घाइते**\n\nकाठमाडौँ, भदौ १० – आज बिहान ८:३० बजे काठमाडौँको व्यस्त कलङ्की चोकमा यात्रुवाहक बस र मोटरसाइकल एकआपसमा ठोक्किँदा एक गम्भीर दुर्घटना भएको छ। थानकोटबाट रत्नपार्क आउँदै गरेको बा ३ ख १२३४ नम्बरको बस र विपरित दिशाबाट जाँदै गरेको बा ५५ प ५६७८ नम्बरको मोटरसाइकल अनियन्त्रित भई ठोक्किएका थिए।\n\nप्रत्यक्षदर्शीका अनुसार, बस तीव्र गतिमा रहेको र मोटरसाइकलले गलत साइडबाट ओभरटेक गर्न खोज्दा दुर्घटना भएको हो। दुर्घटनामा मोटरसाइकल चालक र पछाडि बस्ने व्यक्ति गम्भीर घाइते भएका छन् भने बसमा सवार ३ जना यात्रुलाई पनि चोटपटक लागेको छ। घाइतेहरूलाई तत्कालै प्रहरी र स्थानीयको सहयोगमा नजिकैको सहिद मेमोरियल अस्पताल लगिएको छ।\n\nदुर्घटनापछि केही बेर सवारी आवागमन अवरुद्ध भए पनि ट्राफिक प्रहरीले क्रेनको सहायताले दुर्घटनाग्रस्त सवारी साधनहरू हटाएर बाटो खुलाएको छ। प्रहरीले बस चालकलाई नियन्त्रणमा लिई थप अनुसन्धान गरिरहेको छ। बढ्दो सवारी चाप र ट्राफिक नियमको उल्लङ्घनले यस्ता दुर्घटनाहरू निम्त्याइरहेको ट्राफिक प्रहरीको भनाइ छ।\n\n– समाचारदाता, रमेश विष्ट",
-            "sampleAnswerEnglish": "**5 Injured in Bus and Motorcycle Collision at Kalanki Chowk**\n\nKathmandu, Bhadra 10 – A serious accident occurred this morning at 8:30 AM at the busy Kalanki Chowk in Kathmandu when a passenger bus and a motorcycle collided with each other. The bus (Ba 3 Kha 1234) coming from Thankot to Ratnapark and the motorcycle (Ba 55 Pa 5678) going from the opposite direction collided uncontrollably.\n\nAccording to eyewitnesses, the accident happened because the bus was speeding and the motorcycle tried to overtake from the wrong side. The motorcycle driver and the pillion rider were seriously injured in the accident, while 3 passengers on the bus also sustained injuries. The injured were immediately taken to the nearby Sahid Memorial Hospital with the help of police and locals.\n\nAlthough traffic movement was obstructed for some time after the accident, the traffic police cleared the road by removing the crashed vehicles with the help of a crane. The police have taken the bus driver into custody and are investigating further. Traffic police stated that increasing traffic congestion and violation of traffic rules are inviting such accidents.\n\n– Reporter, Ramesh Bista",
-            "explanationNepali": "यो प्रश्नले व्यावहारिक लेखन अन्तर्गत प्रतिवेदन/समाचार लेखन सिप परीक्षण गर्छ। प्रतिवेदनमा शीर्षक, स्थान, मिति, घटनाको विवरण र कारण समावेश हुनुपर्छ।\nउद्धरण: पाठ १०।",
-            "explanationEnglish": "This question tests functional writing skills, specifically report/news writing. The report must include a headline, place, date, details of the event, and cause.\nCitation: Lesson 10."
+            "titleNepali": "तपाईंको समुदायमा आयोजना हुन लागेको 'सरसफाइ कार्यक्रम' मा उपस्थितिका लागि आह्वान गर्दै एउटा सूचना तयार पार्नुहोस्।",
+            "titleEnglish": "Prepare a notice calling for presence in the 'Cleanliness Program' to be organized in your community.",
+            "sampleAnswerNepali": "**सूचना! सूचना!! सूचना!!!**\n\n**बृहत् सरसफाइ कार्यक्रम**\n\nयस आदर्श टोल विकास समितिको आयोजनामा हाम्रो टोललाई 'स्वच्छ, सफा र हराभरा' बनाउने उद्देश्यले निम्न मिति, समय र स्थानमा बृहत् सरसफाइ कार्यक्रम आयोजना गरिएको हुँदा सम्पूर्ण टोलबासी महानुभावहरूलाई उपस्थितिका लागि हार्दिक अनुरोध गरिन्छ।\n\n**कार्यक्रम विवरण:**\nमिति: २०८१ साल चैत १० गते, शनिबार\nसमय: बिहान ७:०० बजेदेखि १०:०० बजेसम्म\nस्थान: आदर्श चोकदेखि मन्दिर परिसरसम्म\n\nनोट: आ-आफ्नो घरबाट कुचो, बेल्चा र बोरा लिएर आइदिनुहुन अनुरोध छ।\n\n**आयोजक:**\nआदर्श टोल विकास समिति\nभरतपुर-१०, चितवन",
+            "sampleAnswerEnglish": "**Notice! Notice!! Notice!!!**\n\n**Grand Cleanliness Program**\n\nSince a grand cleanliness program is being organized by this Adarsha Tole Development Committee with the objective of making our neighborhood 'Clean, Tidy and Green' on the following date, time and place, all the respected residents of the neighborhood are cordially requested to be present.\n\n**Program Details:**\nDate: Chaitra 10, 2081 B.S., Saturday\nTime: 7:00 AM to 10:00 AM\nLocation: From Adarsha Chowk to Temple premises\n\nNote: You are requested to bring brooms, shovels, and sacks from your respective homes.\n\n**Organizer:**\nAdarsha Tole Development Committee\nBharatpur-10, Chitwan",
+            "explanationNepali": "सूचना लेखनमा कार्यक्रमको उद्देश्य, मिति, समय र स्थान स्पष्ट रूपमा खुलेको हुनुपर्छ।\nउद्धरण: पाठ १०।",
+            "explanationEnglish": "In notice writing, the objective, date, time, and venue of the program should be clearly stated.\nCitation: Chapter 10"
           }
         ]
       },
@@ -726,22 +739,22 @@
         "type": "note_taking",
         "titleNepali": "दिइएको अनुच्छेदबाट मुख्य मुख्य चारओटा बुँदा टिप्नुहोस् :",
         "titleEnglish": "Note down the four main points from the given paragraph:",
-        "passageNepali": "अधिकारभन्दा कर्तव्य महान् छ। कर्तव्यभन्दा ठुलो अर्को कुनै वस्तु हुन सक्दैन। त्यसैले त हाम्रा धर्मग्रन्थ र उपनिषद्‌मा कर्तव्यको महिमा र सर्वोच्चताको चर्चा छ। हाम्रा मात्र होइन संसारका सबै धर्मग्रन्थमा कर्तव्यलाई महान् ठानिएको पाइन्छ। आफ्ना माता, पिता र गुरुप्रतिको कर्तव्यलाई हाम्रा ग्रन्थले 'मातृ देवो भव, पितृ देवो भव, आचार्य देवो भव' भनेर उल्लेख गरेका छन्।",
-        "passageEnglish": "Duty is greater than right. There can be no other object greater than duty. That is why the glory and supremacy of duty are discussed in our scriptures and Upanishads. Not only ours, but duty is found to be considered great in all scriptures of the world. Our scriptures have mentioned the duty towards one's mother, father, and teacher as 'Matru Devo Bhava, Pitru Devo Bhava, Acharya Devo Bhava'.",
+        "passageNepali": "नेपाली निबन्ध साहित्यमा भैरव अर्याल एक विशिष्ट प्रतिभा हुन्। उनले वि.सं. २०१३ देखि हास्यव्यङ्ग्यात्मक निबन्ध लेख्न सुरु गरेका हुन्। उनका निबन्धमा समाजमा व्याप्त विकृति, विसङ्गति र भ्रष्टाचारप्रति तीखो व्यङ्ग्य प्रहार गरिएको हुन्छ। 'जय भुँडी' उनको चर्चित निबन्ध सङ्ग्रह हो। उनले आफ्नो लेखनमार्फत नेपाली साहित्यलाई नयाँ उचाइमा पुऱ्याएका छन्। अर्यालको भाषा शैली सरल, रोचक र घोचक हुन्छ।",
+        "passageEnglish": "Bhairav Aryal is a distinguished talent in Nepali essay literature. He started writing humorous and satirical essays from 2013 BS. His essays deliver sharp satire on the anomalies, inconsistencies, and corruption prevalent in society. 'Jay Bhudi' is his famous essay collection. He has taken Nepali literature to new heights through his writing. Aryal's language style is simple, interesting, and piercing.",
         "correctAnswerNepali": [
-          "अधिकारभन्दा कर्तव्य महान् हुनु।",
-          "सबै धर्मग्रन्थमा कर्तव्यको महिमा र सर्वोच्चताको चर्चा हुनु।",
-          "माता, पिता र गुरुप्रतिको कर्तव्य महत्त्वपूर्ण हुनु।",
-          "माता, पिता र गुरुलाई देवता समान मान्नुपर्ने सन्देश प्रवाह गरिनु।"
+          "भैरव अर्याल नेपाली निबन्ध साहित्यका विशिष्ट हास्यव्यङ्ग्य निबन्धकार हुनु।",
+          "वि.सं. २०१३ देखि निबन्ध लेखन सुरु गरी समाजका विकृतिमाथि व्यङ्ग्य गर्नु।",
+          "'जय भुँडी' चर्चित सङ्ग्रह हुनु र साहित्यलाई नयाँ उचाइमा पुऱ्याउनु।",
+          "भाषा शैली सरल, रोचक र घोचक हुनु।"
         ],
         "correctAnswerEnglish": [
-          "Duty being greater than rights.",
-          "Discussion of the glory and supremacy of duty in all religious scriptures.",
-          "Duty towards mother, father, and teacher being important.",
-          "Conveying the message that mother, father, and teacher should be treated like gods."
+          "Bhairav Aryal being a distinguished humorous and satirical essayist of Nepali literature.",
+          "Starting essay writing from 2013 BS and satirizing societal anomalies.",
+          "'Jay Bhudi' being a famous collection and taking literature to new heights.",
+          "Language style being simple, interesting, and piercing."
         ],
-        "explanationNepali": "यो प्रश्न 'अधिकार ठुलो कि कर्तव्य ठुलो' पाठबाट लिइएको अनुच्छेदमा आधारित छ। यसले विद्यार्थीको मुख्य बुँदा टिपोट गर्ने क्षमता परीक्षण गर्छ।\nउद्धरण: पाठ ६।",
-        "explanationEnglish": "This question is based on a paragraph taken from the lesson 'Adhikar Thulo Ki Kartavya Thulo'. It tests the student's ability to note down main points.\nCitation: Lesson 6.",
+        "explanationNepali": "यो प्रश्न 'जय भुँडी' निबन्ध र भैरव अर्यालको परिचयमा आधारित छ। बुँदा टिपोट गर्दा असमापिका क्रियाको प्रयोग गर्नुपर्छ।\nउद्धरण: पाठ १०।",
+        "explanationEnglish": "This question is based on the essay 'Jay Bhudi' and the introduction of Bhairav Aryal. While taking notes, non-finite verbs should be used.\nCitation: Chapter 10",
         "questionNumberNepali": "१४",
         "questionNumberEnglish": 14,
         "marksNepali": "२",
@@ -751,12 +764,12 @@
         "type": "summarization",
         "titleNepali": "दिइएको अनुच्छेदको एक तृतीयांशमा सारांश लेख्नुहोस् :",
         "titleEnglish": "Write a summary of the given paragraph in one-third of its length:",
-        "passageNepali": "देवकोटाले जीवनमा पारिवारिक वियोगका असह्य पीडा खप्नुपर्यो। उनी २५ वर्षको हुँदा वि.सं. १९९१ असार २४ गते उनले आमा अमर राज्यलक्ष्मीदेवीलाई गुमाउनुपर्यो। त्यसको एक वर्षपछि वि.सं. १९९२ जेठ २५ गते बुबा तिलमाधव देवकोटाको पनि देहावसान भयो। वि.सं. १९९२ मै जन्मेकी लक्ष्मीप्रसाद देवकोटाकी माहिली छोरीको जन्मेको दुई महिनामै मृत्यु भयो। यसरी देवकोटाले २५/२६ वर्षको उमेरमा बुबा, आमा र छोरी गुमाउनु पर्दा उनको हृदय कति छिया छिया भयो होला! उनको जीवनमा आइपरेका यस्ता कहाली लाग्दा पीडाले उनलाई विह्वल बनायो तर पनि उनले साहित्य सिर्जना यात्रालाई अगि बढाइरहे।",
-        "passageEnglish": "Devkota had to endure unbearable pain of family separation in his life. When he was 25 years old, on Ashad 24, 1991 BS, he had to lose his mother Amar Rajyalakshmidevi. A year after that, on Jeth 25, 1992 BS, his father Tilmadhav Devkota also passed away. Laxmi Prasad Devkota's second daughter, born in 1992 BS itself, died within two months of birth. Thus, having to lose father, mother, and daughter at the age of 25/26, how shattered his heart must have been! Such terrible pains encountered in his life made him overwhelmed but still, he continued his literary creation journey.",
-        "correctAnswerNepali": "देवकोटाले आफ्नो युवावस्थामै ठुलो पारिवारिक वियोगको सामना गर्नुपर्यो। २५/२६ वर्षको कलिलो उमेरमा उनले क्रमशः आफ्नी आमा, बुबा र नाबालक छोरीलाई गुमाए। यस्ता निरन्तरका पीडाले उनलाई विह्वल बनाए तापनि उनले हरेस खाएनन् र आफ्नो साहित्य सिर्जनाको यात्रालाई निरन्तरता दिइरहे।",
-        "correctAnswerEnglish": "Devkota had to face great family loss in his youth itself. At the tender age of 25/26, he lost his mother, father, and infant daughter one after another. Although such continuous pain made him overwhelmed, he did not give up and continued his journey of literary creation.",
-        "explanationNepali": "यो प्रश्न 'लक्ष्मीप्रसाद देवकोटा' जीवनीबाट लिइएको अनुच्छेदमा आधारित छ। सारांश लेखनमा अनुच्छेदको मूल भाव नछुट्ने गरी एक तिहाइ शब्दमा लेख्नुपर्छ।\nउद्धरण: पाठ ५।",
-        "explanationEnglish": "This question is based on a paragraph taken from the biography 'Laxmi Prasad Devkota'. Summary writing involves writing in one-third of the words without missing the main essence of the paragraph.\nCitation: Lesson 5.",
+        "passageNepali": "शिक्षा मानव जीवनको ज्योति हो। यसले मानिसलाई अन्धकारबाट उज्यालोतर्फ डोऱ्याउँछ। असल शिक्षाले व्यक्तिमा ज्ञान, सिप र सकारात्मक सोचको विकास गराउँछ। शिक्षित जनशक्तिले मात्र देशको विकास र समृद्धिमा योगदान दिन सक्छन्। आजको युगमा वैज्ञानिक र प्राविधिक शिक्षाको महत्त्व बढ्दो छ। परम्परागत घोकन्ते शिक्षाभन्दा व्यवहारिक र जीवनोपयोगी शिक्षाले नै बेरोजगारी समस्या हल गर्न सक्छ। तसर्थ, राज्यले गुणस्तरीय शिक्षामा लगानी बढाउनुपर्छ।",
+        "passageEnglish": "Education is the light of human life. It leads humans from darkness to light. Good education develops knowledge, skills, and positive thinking in a person. Only educated manpower can contribute to the development and prosperity of the country. In today's era, the importance of scientific and technical education is increasing. Practical and life-useful education can solve the unemployment problem rather than traditional rote learning education. Therefore, the state should increase investment in quality education.",
+        "correctAnswerNepali": "मानव जीवनलाई अन्धकारबाट उज्यालोतर्फ लैजाने शिक्षाले ज्ञान र सिपको विकास गराउँछ। देश विकासका लागि वैज्ञानिक र व्यवहारिक शिक्षा आवश्यक भएकाले राज्यले गुणस्तरीय शिक्षामा लगानी गरी बेरोजगारी समस्या समाधान गर्नुपर्छ।",
+        "correctAnswerEnglish": "Education, which leads human life from darkness to light, develops knowledge and skills. Since scientific and practical education is necessary for the country's development, the state should invest in quality education to solve the unemployment problem.",
+        "explanationNepali": "यो प्रश्न 'मेरो देशको शिक्षा' निबन्धको विषयवस्तुसँग मिल्दोजुल्दो छ। सारांशमा शिक्षाको महत्त्व र राज्यको दायित्व समेटिएको छ।\nउद्धरण: पाठ ९।",
+        "explanationEnglish": "This question is similar to the subject matter of the essay 'Mero Deshko Shiksha'. The summary covers the importance of education and the state's responsibility.\nCitation: Chapter 9",
         "questionNumberNepali": "१५",
         "questionNumberEnglish": 15,
         "marksNepali": "३",
@@ -770,28 +783,28 @@
           {
             "idNepali": "क",
             "idEnglish": "a",
-            "passageNepali": "नेपाल बाँचे नेपाली हाम्रो गौरव बाँच्ने छ\nनेपाली भाषा संस्कृति कला साहित्य साँच्ने छ।\nयसैले आऊ नेपाललाई बलियो बनाऊँ\nनेपाली हाम्रो श्रम र सिप स्वदेशमै लगाऊँ।",
-            "passageEnglish": "If Nepal survives, our Nepali pride will survive\nNepali language, culture, art, literature will remain preserved.\nTherefore come, let's make Nepal strong\nLet's invest our Nepali labor and skill in our own country.",
+            "passageNepali": "मेरो अस्तित्वको खोजीमा म भौँतारिरहेछु। म को हुँ? मेरो पहिचान के हो? म केवल हाड र छालाको थुप्रो मात्र होइन। मसँग भावना छ, विचार छ र सपना छ। तर यो समाजले मलाई मेरो नामले होइन, मेरो काम र दामले चिन्छ। म चाहन्छु, मलाई 'म' भएर बाँच्न दिइयोस्।",
+            "passageEnglish": "I am wandering in search of my existence. Who am I? What is my identity? I am not just a heap of bones and skin. I have feelings, thoughts, and dreams. But this society recognizes me not by my name, but by my work and wealth. I want to be allowed to live as 'Me'.",
             "subQuestions": [
               {
                 "idNepali": "i",
                 "idEnglish": "i",
-                "questionNepali": "नेपाल बाँचेमा के के कुरा बाँच्छन्?",
-                "questionEnglish": "If Nepal survives, what other things will survive?",
-                "correctAnswerNepali": "नेपाल बाँचेमा नेपालीको गौरव, भाषा, संस्कृति, कला र साहित्य बाँच्छन्।",
-                "correctAnswerEnglish": "If Nepal survives, Nepali pride, language, culture, art, and literature will survive.",
-                "explanationNepali": "यो प्रश्न 'नेपाली हाम्रो श्रम र सिप' कवितामा आधारित छ। यसले राष्ट्रियताको भावनालाई उजागर गर्छ।\nउद्धरण: पाठ ८।",
-                "explanationEnglish": "This question is based on the poem 'Nepali Hamro Shram Ra Sip'. It highlights the feeling of nationalism.\nCitation: Lesson 8."
+                "questionNepali": "वक्ता के को खोजीमा भौँतारिरहेका छन्?",
+                "questionEnglish": "What is the speaker wandering in search of?",
+                "correctAnswerNepali": "वक्ता आफ्नो अस्तित्व र पहिचानको खोजीमा भौँतारिरहेका छन्।",
+                "correctAnswerEnglish": "The speaker is wandering in search of his existence and identity.",
+                "explanationNepali": "यो प्रश्न 'म' कविताको भावमा आधारित छ। अस्तित्ववादी चिन्तन यहाँ देखिन्छ।\nउद्धरण: पाठ १०।",
+                "explanationEnglish": "This question is based on the sentiment of the poem 'Ma'. Existentialist thinking is seen here.\nCitation: Chapter 10"
               },
               {
                 "idNepali": "ii",
                 "idEnglish": "ii",
-                "questionNepali": "नेपाललाई बलियो बनाउन कविले के गर्न आह्वान गरेका छन्?",
-                "questionEnglish": "What has the poet called for to make Nepal strong?",
-                "correctAnswerNepali": "नेपाललाई बलियो बनाउन कविले सबै नेपालीलाई आफ्नो श्रम र सिप स्वदेशमै लगाउन आह्वान गरेका छन्।",
-                "correctAnswerEnglish": "To make Nepal strong, the poet has called upon all Nepalis to use their labor and skills within the country.",
-                "explanationNepali": "यो प्रश्न 'नेपाली हाम्रो श्रम र सिप' कवितामा आधारित छ। यसले राष्ट्रियताको भावनालाई उजागर गर्छ।\nउद्धरण: पाठ ८।",
-                "explanationEnglish": "This question is based on the poem 'Nepali Hamro Shram Ra Sip'. It highlights the feeling of nationalism.\nCitation: Lesson 8."
+                "questionNepali": "समाजले व्यक्तिलाई कसरी चिन्छ?",
+                "questionEnglish": "How does society recognize a person?",
+                "correctAnswerNepali": "समाजले व्यक्तिलाई उसको नामले नभई काम र दाम (सम्पत्ति) ले चिन्छ।",
+                "correctAnswerEnglish": "Society recognizes a person not by their name but by their work and wealth.",
+                "explanationNepali": "यो प्रश्न 'म' कविताको भावमा आधारित छ। समाजको भौतिकवादी दृष्टिकोणको आलोचना गरिएको छ।\nउद्धरण: पाठ १०।",
+                "explanationEnglish": "This question is based on the sentiment of the poem 'Ma'. Criticism of society's materialistic view is made.\nCitation: Chapter 10"
               }
             ],
             "marksNepali": "४",
@@ -800,28 +813,28 @@
           {
             "idNepali": "ख",
             "idEnglish": "b",
-            "passageNepali": "कृष्ण रायले धेरैसँग सङ्गत गरेनन् तर जतिसँग गरे सबैलाई तिनीसँग 'बापवैर साध्ने' कुनै न कुनै निहुँ दिए। कस्तो अचम्म, निर्दोष कुरामा पनि विषालु साँप जस्तो बैरी बनाउने साधन लुकिरहेको देखिन्छ।",
-            "passageEnglish": "Krishna Raya didn't associate with many people, but whomever he associated with, he gave them some excuse to 'settle a score' (Baapwair Sadhne) with him. What a surprise, even in innocent things, the means to create an enemy like a venomous snake seems to be hidden.",
+            "passageNepali": "कृष्ण रायले सोचे, 'संसारमा कोही पनि मित्र छैन, सबै शत्रु हुन्।' उनलाई आफ्नै छायादेखि पनि डर लाग्न थाल्यो। हिजोसम्म जसलाई उनले उपकार गरेका थिए, आज तिनीहरू नै शङ्काको घेरामा थिए। उनले महसुस गरे कि भलो गर्नु पनि कहिलेकाहीँ शत्रु कमाउनु रहेछ।",
+            "passageEnglish": "Krishna Raya thought, 'No one is a friend in the world, everyone is an enemy.' He started getting scared even of his own shadow. Those whom he had helped until yesterday were in the circle of suspicion today. He realized that doing good is also sometimes earning enemies.",
             "subQuestions": [
               {
                 "idNepali": "i",
                 "idEnglish": "i",
-                "questionNepali": "कृष्ण रायको सङ्गत कस्तो थियो?",
-                "questionEnglish": "How was Krishna Raya's company?",
-                "correctAnswerNepali": "कृष्ण रायले धेरै मानिससँग सङ्गत गर्दैनथे तर जतिसँग गर्थे, उनीहरूसँग कुनै न कुनै निहुँमा शत्रुता मोल्थे।",
-                "correctAnswerEnglish": "Krishna Raya did not associate with many people, but with whomever he did, he would incur enmity on some pretext or another.",
-                "explanationNepali": "यो प्रश्न 'शत्रु' कथामा आधारित छ। यसले पात्रको व्यवहार र त्यसको परिणामलाई देखाउँछ।\nउद्धरण: पाठ ७।",
-                "explanationEnglish": "This question is based on the story 'Shatru'. It shows the character's behavior and its consequences.\nCitation: Lesson 7."
+                "questionNepali": "कृष्ण रायलाई किन आफ्नै छायादेखि डर लाग्न थाल्यो?",
+                "questionEnglish": "Why did Krishna Raya start fearing his own shadow?",
+                "correctAnswerNepali": "आफूमाथि भएको आक्रमणपछि कृष्ण रायको मनमा अविश्वास र त्रास बढेकाले उनलाई संसारमा सबै शत्रु हुन् भन्ने लागेर आफ्नै छायादेखि डर लाग्न थाल्यो।",
+                "correctAnswerEnglish": "After the attack on him, distrust and fear increased in Krishna Raya's mind, making him feel everyone in the world is an enemy, so he started fearing his own shadow.",
+                "explanationNepali": "यो प्रश्न 'शत्रु' कथामा आधारित छ। पात्रको मनोवैज्ञानिक विचलनलाई देखाइएको छ।\nउद्धरण: पाठ ७।",
+                "explanationEnglish": "This question is based on the story 'Shatru'. The character's psychological deviation is shown.\nCitation: Chapter 7"
               },
               {
                 "idNepali": "ii",
                 "idEnglish": "ii",
-                "questionNepali": "कथांशमा कस्तो अचम्मको कुरा उल्लेख गरिएको छ?",
-                "questionEnglish": "What strange thing is mentioned in the story excerpt?",
-                "correctAnswerNepali": "कथांशमा सामान्य र निर्दोष देखिने कुरामा पनि शत्रु बनाउने विषालु साधन लुकेको हुन सक्ने अचम्मको कुरा उल्लेख गरिएको छ।",
-                "correctAnswerEnglish": "The story excerpt mentions the strange thing that a poisonous means of creating enemies can be hidden even in things that look normal and innocent.",
-                "explanationNepali": "यो प्रश्न 'शत्रु' कथामा आधारित छ। यसले पात्रको व्यवहार र त्यसको परिणामलाई देखाउँछ।\nउद्धरण: पाठ ७।",
-                "explanationEnglish": "This question is based on the story 'Shatru'. It shows the character's behavior and its consequences.\nCitation: Lesson 7."
+                "questionNepali": "कृष्ण रायले अन्त्यमा के महसुस गरे?",
+                "questionEnglish": "What did Krishna Raya realize in the end?",
+                "correctAnswerNepali": "कृष्ण रायले अन्त्यमा महसुस गरे कि संसारमा कोही मित्र छैनन् र भलो गर्नु पनि शत्रु कमाउनु रहेछ।",
+                "correctAnswerEnglish": "Krishna Raya realized in the end that there are no friends in the world and doing good implies earning enemies.",
+                "explanationNepali": "यो प्रश्न 'शत्रु' कथामा आधारित छ। कथाको निष्कर्षतिरको पात्रको बुझाइलाई समेटिएको छ।\nउद्धरण: पाठ ७।",
+                "explanationEnglish": "This question is based on the story 'Shatru'. It covers the character's understanding towards the conclusion of the story.\nCitation: Chapter 7"
               }
             ],
             "marksNepali": "४",
@@ -835,12 +848,12 @@
       },
       {
         "type": "literature_argumentative",
-        "titleNepali": "‘घरको माया’ एकाङ्कीमा परदेशमा बस्ने नेपालीहरूको पीडा र स्वदेशप्रतिको मोहलाई कसरी देखाइएको छ? तर्क दिनुहोस्।",
-        "titleEnglish": "How is the pain of Nepalis living abroad and their love for their homeland shown in the one-act play 'Ghar Ko Maya'? Give arguments.",
-        "correctAnswerNepali": "‘घरको माया’ एकाङ्कीले परदेशमा बस्ने नेपालीहरूको पीडा र स्वदेशप्रतिको मोहलाई जीवन्त रूपमा प्रस्तुत गरेको छ। जमानसिंह र बतासे जस्ता पात्रहरूले परदेशको भौतिक सुखसुविधा भए तापनि त्यहाँको हावापानी, खाना र व्यवहारले उनीहरूलाई अघाएको देखाउँछन्। उनीहरू आफ्नो गाउँको भकारो, कुवाको चिसो पानी र चौतारीको शीतल हावालाई सम्झन्छन्, जसले उनीहरूको स्वदेशप्रतिको गहिरो मोहलाई दर्शाउँछ। परदेशमा भोग्नुपरेको हेला र आफ्नोपनको अभावले उनीहरूलाई 'मर्नुपरे पनि आफ्नै देशमा मरौँला' भन्ने भावनासम्म पुऱ्याउँछ। यसरी, एकाङ्कीले पराइको देशमा जतिसुकै सुख भए पनि आफ्नो माटोको माया सर्वोपरी हुन्छ भन्ने यथार्थलाई मार्मिक ढङ्गले प्रस्तुत गरेको छ।",
-        "correctAnswerEnglish": "The one-act play 'Gharko Maya' has vividly presented the pain of Nepalis living abroad and their love for their homeland. Characters like Jaman Singh and Batase show that despite the physical comforts abroad, the climate, food, and behavior there have satiated them. They remember the manure pile, the cold water of the well, and the cool breeze of the resting platform (Chautari) of their village, which shows their deep love for their homeland. The neglect faced abroad and the lack of belongingness drives them to the feeling of 'even if we have to die, let's die in our own country'. Thus, the one-act play poignantly presents the reality that no matter how much comfort there is in a foreign land, the love for one's own soil is supreme.",
-        "explanationNepali": "यो प्रश्न 'घरको माया' एकाङ्कीको मुख्य विषयवस्तु र सन्देशमा केन्द्रित छ। यसले विद्यार्थीको तर्क गर्ने क्षमता र पाठ बोधको परीक्षण गर्छ।\nउद्धरण: पाठ १४।",
-        "explanationEnglish": "This question focuses on the main theme and message of the one-act play 'Gharko Maya'. It tests the student's ability to argue and comprehend the text.\nCitation: Lesson 14.",
+        "titleNepali": "'अधिकार ठुलो कि कर्तव्य ठुलो?' वादविवादमा कर्तव्य पक्षका वक्ताले अधिकारलाई भन्दा कर्तव्यलाई किन महत्त्व दिएका छन्? तर्क दिनुहोस्।",
+        "titleEnglish": "Why has the speaker of the duty side given more importance to duty than rights in the debate 'Is Right Bigger or Duty Bigger?' Give arguments.",
+        "correctAnswerNepali": "'अधिकार ठुलो कि कर्तव्य ठुलो' वादविवादमा कर्तव्य पक्षका वक्ताले कर्तव्यलाई बढी महत्त्व दिएका छन् किनभने कर्तव्य पालनबिना अधिकारको प्राप्ति असम्भव छ। उनीहरूका अनुसार अधिकार माग्ने विषय होइन, कर्तव्य पूरा गरेपछि स्वतः प्राप्त हुने फल हो। बीउ नरोपी फलको आस गर्नु व्यर्थ भएझैँ, कर्तव्य पूरा नगरी अधिकार खोज्नु स्वार्थ मात्र हो। समाज र राष्ट्रको उन्नति नागरिकको कर्तव्य परायणतामा निर्भर हुन्छ। अधिकारले व्यक्तिलाई स्वार्थी बनाउन सक्छ तर कर्तव्यले त्यागी र जिम्मेवार बनाउँछ। तसर्थ, कर्तव्य नै अधिकारको जननी र समाज विकासको आधार हो भन्ने तर्क उनीहरूले पेस गरेका छन्।",
+        "correctAnswerEnglish": "In the debate 'Is Right Bigger or Duty Bigger?', the speaker of the duty side has given more importance to duty because obtaining rights is impossible without fulfilling duty. According to them, rights are not a subject to be demanded, but a fruit automatically obtained after fulfilling duty. Just as it is useless to hope for fruit without planting seeds, seeking rights without fulfilling duty is mere selfishness. The progress of society and the nation depends on the dutifulness of citizens. Rights can make a person selfish but duty makes one sacrificial and responsible. Therefore, they have presented the argument that duty is the mother of rights and the basis of social development.",
+        "explanationNepali": "यो प्रश्न 'अधिकार ठुलो कि कर्तव्य ठुलो' वादविवाद पाठमा आधारित छ। यसले विद्यार्थीको तर्क र विश्लेषण क्षमता जाँच्छ।\nउद्धरण: पाठ ६।",
+        "explanationEnglish": "This question is based on the debate text 'Adhikar Thulo Ki Kartavya Thulo'. It tests the student's reasoning and analysis skills.\nCitation: Chapter 6",
         "questionNumberNepali": "१७",
         "questionNumberEnglish": 17,
         "marksNepali": "४",
@@ -858,22 +871,22 @@
           {
             "idNepali": "क",
             "idEnglish": "a",
-            "quoteNepali": "मानिसको सेवा नै ईश्वरको सच्चा सेवा र पावन पूजा हो।",
-            "quoteEnglish": "Service to humanity is the true service and holy worship of God.",
-            "sampleAnswerNepali": "प्रस्तुत हरफ नेपाली साहित्यको एक महत्त्वपूर्ण नैतिक सन्देश दिने वाक्य हो। यसमा मानव सेवालाई नै ईश्वरको पूजा मानिएको छ।\n\nसंसारमा सबैभन्दा ठुलो धर्म भनेको परोपकार हो। मन्दिरमा गएर, फूलपाती चढाएर वा व्रत बसेर मात्र ईश्वर खुसी हुँदैनन्। ईश्वर त हरेक प्राणीको आत्मामा बास गर्छन्। त्यसैले, जब हामी दुःखी, गरिब र असहाय मानिसको सेवा गर्छौँ, त्यो नै वास्तवमा भगवान्को सेवा हो। 'सेवा नै धर्म हो' भन्ने भावनाले मानिसलाई महान् बनाउँछ। स्वामी विवेकानन्दले पनि 'नर सेवा नै नारायण सेवा हो' भन्नुभएको छ।\n\nतसर्थ, ढुङ्गाको मूर्तिलाई पूजा गर्नुभन्दा जिउँदो मानिसको आँसु पुछ्नु ठुलो धर्म हो। निस्वार्थ भावले गरिएको समाज सेवाले नै मानिसलाई ईश्वरको नजिक पुऱ्याउँछ र आत्मसन्तुष्टि दिन्छ भन्ने भाव यस पङ्क्तिले व्यक्त गरेको छ।",
-            "sampleAnswerEnglish": "The presented line is a sentence giving an important moral message of Nepali literature. In this, service to humanity is considered the worship of God.\n\nThe greatest religion in the world is philanthropy. God is not pleased only by going to the temple, offering flowers, or fasting. God resides in the soul of every being. Therefore, when we serve the sad, poor, and helpless people, that is actually the service of God. The feeling that 'Service is religion' makes a person great. Swami Vivekananda also said, 'Service to man is service to God'.\n\nTherefore, wiping the tears of a living person is a greater religion than worshipping a stone idol. This line expresses the sentiment that selfless social service brings a person closer to God and gives self-satisfaction.",
-            "explanationNepali": "(क) यो भनाइ मानव धर्म र सेवा भावसँग सम्बन्धित छ, जुन 'लक्ष्मीप्रसाद देवकोटा' को जीवनी वा 'कर्तव्य' कथाको सन्दर्भमा जोड्न सकिन्छ। (ख) यो भनाइ 'अधिकार ठुलो कि कर्तव्य ठुलो' पाठको हो।\nउद्धरण: पाठ ५; पाठ ६।",
-            "explanationEnglish": "(a) This statement relates to human religion and the spirit of service, which can be linked to the biography of 'Laxmi Prasad Devkota' or the context of the story 'Kartavya'. (b) This statement is from the lesson 'Adhikar Thulo Ki Kartavya Thulo'.\nCitation: Lesson 5; Lesson 6."
+            "quoteNepali": "मानिस ठुलो दिलले हुन्छ जातले हुँदैन।",
+            "quoteEnglish": "A man becomes great by heart, not by caste.",
+            "sampleAnswerNepali": "प्रस्तुत हरफ महाकवि लक्ष्मीप्रसाद देवकोटाको 'मुनामदन' खण्डकाव्यबाट लिइएको हो। यस पङ्क्तिले मानवता र समानताको भाव व्यक्त गरेको छ।\n\nसमाजमा मानिसको मूल्याङ्कन उसको जात, कुल वा धनसम्पत्तिले गर्ने चलन छ। तर कवि देवकोटा यसको विरोध गर्छन्। उनका अनुसार मानिस महान् बन्नका लागि उसको हृदय विशाल हुनुपर्छ। जसको मनमा दया, माया र परोपकारको भावना छ, उही नै वास्तविक ठुलो मानिस हो। जात वा जन्मले कोही सानो वा ठुलो हुँदैन। मदन भोट जाँदा बिरामी पर्छ र उसलाई एक भोटे (तल्लो जात मानिने) ले बचाउँछ। उसको निस्वार्थ सेवा देखेर मदनले यो उद्गार व्यक्त गर्छ।\n\nतसर्थ, मानवीय गुण र आचरण नै महानताको कसी हो। जातपात र छुवाछुत जस्ता भेदभाव अन्त्य गरी मानवीय प्रेमलाई सर्वोपरि ठान्नुपर्छ भन्ने सन्देश यस उद्धरणले दिएको छ।",
+            "sampleAnswerEnglish": "The presented line is taken from Mahakavi Laxmi Prasad Devkota's minor epic 'Muna Madan'. This line expresses the sentiment of humanity and equality.\n\nThere is a custom in society to evaluate a person by their caste, lineage, or wealth. But poet Devkota opposes this. According to him, to become great, a person's heart must be vast. One who has feelings of compassion, love, and philanthropy in their heart is the truly great person. No one becomes small or big by caste or birth. When Madan falls ill while going to Tibet, a Bhote (considered lower caste) saves him. Seeing his selfless service, Madan expresses this sentiment.\n\nTherefore, human qualities and conduct are the touchstone of greatness. This quote gives the message that discrimination like caste and untouchability should be ended and human love should be considered supreme.",
+            "explanationNepali": "यो व्याख्या 'लक्ष्मीप्रसाद देवकोटा' को मानवतावादी दृष्टिकोण र मुनामदनको सन्दर्भमा आधारित छ।\nउद्धरण: पाठ ५।",
+            "explanationEnglish": "This explanation is based on 'Laxmi Prasad Devkota's humanistic perspective and the context of Muna Madan.\nCitation: Chapter 5"
           },
           {
             "idNepali": "ख",
             "idEnglish": "b",
-            "quoteNepali": "अधिकार बिनाको कर्तव्य नुनबिनाको तरकारी र अमिलोबिनाको अचार जस्तै हो।",
-            "quoteEnglish": "Duty without right is like vegetable without salt and pickle without sourness.",
-            "sampleAnswerNepali": "प्रस्तुत हरफ 'अधिकार ठुलो कि कर्तव्य ठुलो?' भन्ने वादविवादबाट साभार गरिएको हो। यसमा अधिकार र कर्तव्यको अन्योन्याश्रित सम्बन्धलाई देखाइएको छ।\n\nजसरी नुनबिनाको तरकारी र अमिलोबिनाको अचार खल्लो र स्वादहीन हुन्छ, त्यसरी नै अधिकारबिनाको कर्तव्य पनि निरर्थक र अपुरो हुन्छ। मानिसलाई कर्तव्य पूरा गर्नका लागि केही अधिकार वा शक्ति चाहिन्छ। उदाहरणका लागि, एउटा कर्मचारीलाई काम गर्ने जिम्मेवारी (कर्तव्य) दिइन्छ तर निर्णय गर्ने अधिकार दिइँदैन भने उसले त्यो काम राम्ररी गर्न सक्दैन। अधिकारले मानिसलाई काम गर्ने उत्साह, स्वतन्त्रता र साधन प्रदान गर्छ।\n\nअधिकार नदिई केवल कर्तव्यको भारी बोकाउनु भनेको मानिसलाई दास बनाउनु सरह हो। अधिकार र कर्तव्य एक रथका दुई पाङ्ग्रा हुन्। पूर्ण र सफल जीवनका लागि कर्तव्य पालनासँगै अधिकारको उपभोग पनि आवश्यक छ भन्ने भाव यहाँ व्यक्त भएको छ।",
-            "sampleAnswerEnglish": "The presented line is taken from the debate 'Is Right Bigger or Duty Bigger?'. It shows the interdependent relationship between rights and duties.\n\nJust as vegetable without salt and pickle without sourness is bland and tasteless, similarly duty without right is meaningless and incomplete. A person needs some rights or power to fulfill their duty. For example, if an employee is given the responsibility (duty) to work but not the right to make decisions, he cannot do that work well. Rights provide enthusiasm, freedom, and means to work.\n\nLoading only the burden of duty without giving rights is like making a person a slave. Rights and duties are two wheels of the same chariot. The sentiment expressed here is that for a complete and successful life, along with the observance of duty, the enjoyment of rights is also necessary.",
-            "explanationNepali": "(क) यो भनाइ मानव धर्म र सेवा भावसँग सम्बन्धित छ, जुन 'लक्ष्मीप्रसाद देवकोटा' को जीवनी वा 'कर्तव्य' कथाको सन्दर्भमा जोड्न सकिन्छ। (ख) यो भनाइ 'अधिकार ठुलो कि कर्तव्य ठुलो' पाठको हो।\nउद्धरण: पाठ ५; पाठ ६।",
-            "explanationEnglish": "(a) This statement relates to human religion and the spirit of service, which can be linked to the biography of 'Laxmi Prasad Devkota' or the context of the story 'Kartavya'. (b) This statement is from the lesson 'Adhikar Thulo Ki Kartavya Thulo'.\nCitation: Lesson 5; Lesson 6."
+            "quoteNepali": "एकता नै बल हो।",
+            "quoteEnglish": "Unity is strength.",
+            "sampleAnswerNepali": "प्रस्तुत सूक्तिले सङ्गठन र मेलमिलापको शक्तिलाई उजागर गर्छ। यो विचार 'घरझगडा' कथाको सन्दर्भसँग पनि मेल खान्छ।\n\nएउटा सिन्कोलाई सजिलै भाँच्न सकिन्छ तर सिन्काको मुठोलाई भाँच्न गाह्रो हुन्छ। त्यसरी नै समाज वा राष्ट्रमा मानिसहरू एक्लाएक्लै हुँदा कमजोर हुन्छन्। जब उनीहरू एकताबद्ध हुन्छन्, तब जस्तोसुकै ठुलो शक्तिलाई पनि परास्त गर्न सक्छन्। हाम्रो देश नेपालको एकीकरण पनि एकताकै बलमा सम्भव भएको हो। तर जब 'घरझगडा' वा आन्तरिक कलह हुन्छ, तब एकता टुट्छ र बाहिरी शत्रुले फाइदा उठाउँछन्।\n\nतसर्थ, विकास र समृद्धिका लागि पारिवारिक, सामाजिक र राष्ट्रिय एकता अपरिहार्य छ। फुटेर होइन, जुटेर मात्र हामी बलियो बन्न सक्छौँ भन्ने भाव यसमा निहित छ।",
+            "sampleAnswerEnglish": "The presented proverb highlights the power of organization and harmony. This idea also aligns with the context of the story 'Gharjhagda'.\n\nA single stick can be easily broken, but a bundle of sticks is hard to break. Similarly, people in a society or nation are weak when alone. When they are united, they can defeat any great power. The unification of our country Nepal was also possible due to the strength of unity. But when there is 'domestic conflict' or internal discord, unity breaks and external enemies take advantage.\n\nTherefore, family, social, and national unity is inevitable for development and prosperity. The sentiment implied here is that we can be strong only by uniting, not by dividing.",
+            "explanationNepali": "यो व्याख्या 'घरझगडा' कथाको सन्देश र सामान्य नैतिक शिक्षामा आधारित छ।\nउद्धरण: पाठ २।",
+            "explanationEnglish": "This explanation is based on the message of the story 'Gharjhagda' and general moral education.\nCitation: Chapter 2"
           }
         ]
       },
@@ -889,26 +902,26 @@
           {
             "idNepali": "क",
             "idEnglish": "a",
-            "passageNepali": "छाँगो छङ्छङाए झैँ बिजुली वेगमा कविता लेख्ने देवकोटा नेपाली भाषा साहित्यका स्वच्छन्दतावादी साहित्यकार हुन्। ... वास्तवमा उनले लगातार चार दशकसम्म विभिन्न विधाका दर्जनौँ साहित्यिक कृति रचना गरी नेपाली साहित्यलाई समृद्ध तुल्याए। जति वेला ताते गर्दै नेपाली साहित्य क्रमशः किशोर वयतिर चढ्दै थियो, ठिक त्यति वेला नेपाली साहित्यले उनको कलमको जादुमय स्पर्श पायो। त्यसपछि नेपाली साहित्यले विश्व साहित्यकै हाराहारीको प्रौढताको शिखर छुन पुग्यो। ... तीन महिनामा 'शाकुन्तल' महाकाव्य, १० दिनभित्रका ६० घण्टामा 'सुलोचना' महाकाव्य र एकै रातमा 'कुञ्जिनी' खण्डकाव्य लेख्नु जोसुकैका लागि सम्भव हुने कुरा कहाँ थियो र!",
-            "passageEnglish": "Devkota, who wrote poems at lightning speed like a waterfall cascading, is a romantic litterateur of Nepali language and literature. ... In fact, he enriched Nepali literature by composing dozens of literary works in various genres continuously for four decades. Just when Nepali literature was toddling and gradually climbing towards adolescence, exactly at that time Nepali literature got the magical touch of his pen. After that, Nepali literature reached the peak of maturity comparable to world literature. ... writing 'Shakuntala' epic in three months, 'Sulochana' epic in 60 hours within 10 days, and 'Kunjini' minor epic in a single night was not something possible for just anyone!",
-            "questionNepali": "लक्ष्मीप्रसाद देवकोटाले नेपाली साहित्यलाई समृद्ध बनाउन पुऱ्याएको योगदानको समीक्षा माथिको जीवनीको अंशका आधारमा गर्नुहोस्।",
-            "questionEnglish": "Review the contribution made by Laxmi Prasad Devkota to enrich Nepali literature based on the excerpt of the biography above.",
-            "sampleAnswerNepali": "महाकवि लक्ष्मीप्रसाद देवकोटा नेपाली साहित्यका एक अद्वितीय प्रतिभा हुन्। माथिको जीवनीको अंशले उनको अलौकिक लेखन क्षमता र नेपाली साहित्यको विकासमा उनले पुऱ्याएको योगदानलाई प्रस्ट पारेको छ।\n\nदेवकोटाको लेखन शैली 'छाँगो छङ्छङाए झैँ' र 'बिजुली वेग' मा थियो। यसले उनको आशु कवित्व शक्तिलाई जनाउँछ। उनले नेपाली साहित्यको 'किशोर वय' मा प्रवेश गरेर यसलाई प्रौढता प्रदान गरे। उनको प्रवेशअघि नेपाली साहित्य सीमित घेरामा थियो, तर उनको 'जादुमय स्पर्श' ले यसलाई विश्व साहित्यको हाराहारीमा पुऱ्यायो। उनले साहित्यमा स्वच्छन्दतावादी धारको सुत्रपात गरे, जसले नेपाली साहित्यमा नयाँ युगको सुरुवात गर्यो।\n\nउनको सिर्जना शक्ति कति प्रबल थियो भन्ने कुरा उनले छोटो समयमा लेखेका महाकाव्यहरूबाट पुष्टि हुन्छ। तीन महिनामा 'शाकुन्तल', १० दिनमा 'सुलोचना' र एकै रातमा 'कुञ्जिनी' लेख्नु सामान्य मानिसको वशको कुरा होइन। उनले कविता, खण्डकाव्य, महाकाव्य, निबन्ध लगायत विभिन्न विधामा दर्जनौँ कृतिहरू रचना गरेर नेपाली साहित्यको भण्डार भरे। परिमाण र गुणस्तर दुवै दृष्टिले उनको योगदान अतुलनीय छ। तसर्थ, देवकोटा नेपाली साहित्यलाई समृद्ध बनाउने र यसलाई उचाइमा पुऱ्याउने एक युगपुरुष हुन्।",
-            "sampleAnswerEnglish": "Mahakavi Laxmi Prasad Devkota is a unique talent of Nepali literature. The excerpt of the biography above clarifies his supernatural writing ability and the contribution he made to the development of Nepali literature.\n\nDevkota's writing style was like 'a cascading waterfall' and at 'lightning speed'. This indicates his power of impromptu poetry. He entered Nepali literature in its 'adolescence' and gave it maturity. Before his entry, Nepali literature was in a limited circle, but his 'magical touch' brought it to the level of world literature. He initiated the Romanticist stream in literature, which started a new era in Nepali literature.\n\nHow strong his creative power was is confirmed by the epics he wrote in a short time. Writing 'Shakuntala' in three months, 'Sulochana' in 10 days, and 'Kunjini' in a single night is not within the control of a normal person. He filled the storehouse of Nepali literature by composing dozens of works in various genres including poetry, minor epics, epics, and essays. His contribution is incomparable in terms of both quantity and quality. Therefore, Devkota is an epoch-making figure who enriched Nepali literature and took it to heights.",
-            "explanationNepali": "(क) यो प्रश्न 'लक्ष्मीप्रसाद देवकोटा' को जीवनीमा आधारित छ। (ख) यो प्रश्न 'कर्तव्य' कथाको पात्र विश्लेषणमा आधारित छ। समीक्षात्मक उत्तरमा विषयवस्तुको गहिराइ, विश्लेषण र निष्कर्ष आवश्यक हुन्छ।\nउद्धरण: पाठ ५; पाठ ११।",
-            "explanationEnglish": "(a) This question is based on the biography of 'Laxmi Prasad Devkota'. (b) This question is based on the character analysis of the story 'Kartavya'. A critical answer requires depth of subject matter, analysis, and conclusion.\nCitation: Lesson 5; Lesson 11."
+            "passageNepali": "भैरव अर्यालका निबन्धमा हास्य र व्यङ्ग्यको दोभान पाइन्छ। उनले पेटको भोक र मानसिक भोकको द्वन्द्वलाई 'जय भुँडी' मा सटिक रूपमा उतारेका छन्। मानिस कसरी स्वार्थको पछि लागेर आफ्नो नैतिकता गुमाउँछ भन्ने कुरालाई उनले पेचिलो भाषामा प्रहार गरेका छन्। ... उनको विचारमा भुँडी केवल खाना पचाउने अङ्ग मात्र होइन, यो त भ्रष्टाचार र अनैतिकताको प्रतीक पनि हो।",
+            "passageEnglish": "A confluence of humor and satire is found in Bhairav Aryal's essays. He has accurately portrayed the conflict between physical hunger and mental hunger in 'Jay Bhudi'. He has attacked in piercing language how people lose their morality by chasing selfishness. ... In his view, the belly (Bhudi) is not just an organ to digest food, it is also a symbol of corruption and immorality.",
+            "questionNepali": "'जय भुँडी' निबन्धका आधारमा भैरव अर्यालको व्यङ्ग्य चेतनाको समीक्षा गर्नुहोस्।",
+            "questionEnglish": "Review the satirical consciousness of Bhairav Aryal based on the essay 'Jay Bhudi'.",
+            "sampleAnswerNepali": "भैरव अर्याल नेपाली साहित्यका 'हास्यव्यङ्ग्यका बादशाह' मानिन्छन्। 'जय भुँडी' निबन्धमा उनको व्यङ्ग्य चेतना शिखरमा पुगेको देखिन्छ। यस निबन्धमा उनले मानिसको बढ्दो भौतिकवादी मोह र नैतिक पतनलाई तीखो प्रहार गरेका छन्।\n\nअर्यालले 'भुँडी' लाई विम्ब बनाएर समाजको विकृतिको चिरफार गरेका छन्। उनका अनुसार मानिसले भुँडी भर्नका लागि जस्तोसुकै नीच काम गर्न पनि पछि पर्दैन। पद, पैसा र प्रतिष्ठाको भोगले मानिसलाई अन्धो बनाएको छ। उनले सोझासाझा जनतालाई शोषण गरेर आफ्नो भुँडी भर्ने नेता, कर्मचारी र व्यापारीहरूप्रति कडा व्यङ्ग्य गरेका छन्।\n\nनिबन्धमा हास्यको आवरणभित्र गहिरो पीडा र आक्रोश लुकेको छ। उनले 'भुँडी' लाई पूजा गर्ने नयाँ संस्कृतिको व्यङ्ग्यात्मक चित्रण गरेका छन्। उनको भाषा शैली रमाइलो भए पनि त्यसले दिने सन्देश गम्भीर छ। अर्यालको व्यङ्ग्य केवल हँसाउनका लागि मात्र होइन, समाजलाई सच्याउन र नैतिकताको पाठ सिकाउनका लागि हो। 'जय भुँडी' मार्फत उनले मानिसलाई पशुत्वबाट माथि उठेर मानवीय मूल्य मान्यतामा बाँच्न प्रेरित गरेका छन्। तसर्थ, अर्यालको व्यङ्ग्य चेतना समाज सुधारतर्फ लक्षित, सशक्त र अर्थपूर्ण छ।",
+            "sampleAnswerEnglish": "Bhairav Aryal is considered the 'King of Humor and Satire' in Nepali literature. His satirical consciousness seems to have reached its peak in the essay 'Jay Bhudi'. In this essay, he has sharply attacked man's increasing materialistic attachment and moral decline.\n\nAryal has dissected society's anomalies by making the 'belly' (Bhudi) a symbol. According to him, people do not hesitate to do any despicable act to fill their bellies. The hunger for position, money, and prestige has blinded people. He has severely satirized leaders, employees, and businessmen who fill their bellies by exploiting innocent people.\n\nDeep pain and anger are hidden within the cover of humor in the essay. He has satirically depicted the new culture of worshipping the 'belly'. Although his language style is amusing, the message it gives is serious. Aryal's satire is not just to make people laugh, but to correct society and teach the lesson of morality. Through 'Jay Bhudi', he has inspired humans to rise above animality and live in human values. Therefore, Aryal's satirical consciousness is aimed at social reform, powerful and meaningful.",
+            "explanationNepali": "यो प्रश्न 'जय भुँडी' निबन्धको विश्लेषणमा आधारित छ। यसले लेखकको मुख्य प्रवृत्ति र कृतिको सन्देशको समीक्षा माग गर्छ।\nउद्धरण: पाठ १०।",
+            "explanationEnglish": "This question is based on the analysis of the essay 'Jay Bhudi'. It demands a review of the author's main trend and the message of the work.\nCitation: Chapter 10"
           },
           {
             "idNepali": "ख",
             "idEnglish": "b",
-            "passageNepali": "मुरलीधरको मनमा त्रासको भाउ उठ्यो। ... ‘कसको मरण होस् त यसप्रकारको होस्।’ गङ्गाधरका दुई छोरा थिए; जेठा मुरलीधर र कान्छा श्रीधर। मुरलीधर पण्डित थिए। सबैरे नुहाउँथे, आधा दिनसम्म पूजापाठ गर्थे। उनी आफ्नो धर्म र संस्कृतिका उपर असीम श्रद्धा राख्थे। ... यता श्रीधर चाहिँ राजनीतिक पार्टीका सदस्य र ग्राम विकासका प्रधान थिए। ... यी दुवै दाजुभाइको बिचमा केही दिनपछि जिउनी खेतको विषयमा विवाद उत्पन्न भयो।",
-            "passageEnglish": "An emotion of fear arose in Muralidhar's mind. ... 'May anyone's death be like this.'\nGangadhar had two sons; elder Muralidhar and younger Shridhar. Muralidhar was a priest. He used to bathe early, perform prayers for half a day. He had immense reverence for his religion and culture. ... On the other hand, Shridhar was a member of a political party and the head of village development. ... After a few days, a dispute arose between these two brothers regarding the inheritance field.",
-            "questionNepali": "'कर्तव्य' कथामा दाजुभाइ मुरलीधर र श्रीधरका बिचको वैचारिक भिन्नताले कसरी द्वन्द्व सिर्जना गर्यो? कथांशका आधारमा समीक्षा गर्नुहोस्।",
-            "questionEnglish": "How did the ideological difference between brothers Murlidhar and Shridhar create conflict in the story 'Kartabya'? Review based on the excerpt.",
-            "sampleAnswerNepali": "गुरुप्रसाद मैनालीद्वारा लिखित 'कर्तव्य' कथामा दुई दाजुभाइ मुरलीधर र श्रीधरबिचको वैचारिक भिन्नता र त्यसले निम्त्याएको द्वन्द्वलाई देखाइएको छ। माथिको कथांशले उनीहरूको फरक स्वभाव र जीवनशैलीलाई चित्रण गरेको छ।\n\nजेठा मुरलीधर परम्परावादी र धार्मिक स्वभावका छन्। उनी पूजापाठ, धर्म र संस्कृतिमा असीम श्रद्धा राख्छन्। उनी पुरानो मूल्यमान्यता र पैतृक सम्पत्तिको संरक्षण गर्न चाहन्छन्। अर्कोतर्फ, कान्छा श्रीधर आधुनिक र राजनीतिक विचारका छन्। उनी गाउँ विकासका प्रधान र पार्टीका सदस्य हुन्। उनी समाजसेवा र राजनीतिमा बढी रुचि राख्छन्।\n\nयी दुई विपरित ध्रुव जस्ता विचारहरू जब 'जिउनी खेत' को विषयमा ठोक्किन्छन्, तब द्वन्द्व सुरु हुन्छ। मुरलीधर बुबाको शेषपछि घरको इज्जत र सम्पत्ति जोगाएर राख्न चाहन्छन् भने श्रीधर अंशबन्डा गरेर आफ्नो हिस्सा लिन चाहन्छन्। मुरलीधरको 'संयुक्त परिवार र धर्म' प्रतिको आस्था र श्रीधरको 'वैयक्तिक स्वतन्त्रता र अधिकार' प्रतिको मोहबिचको टकराव नै कथाको मुख्य द्वन्द्व हो। यही वैचारिक भिन्नताले रगतको नातामा पनि फाटो ल्याउँछ र उनीहरूलाई झगडाको मैदानमा उत्राउँछ। अन्त्यमा कर्तव्यबोधले उनीहरूलाई मिलाए पनि सुरुवाती द्वन्द्वको जग भने यही वैचारिक असमानता नै हो।",
-            "sampleAnswerEnglish": "The story 'Kartabya' written by Guruprasad Mainali shows the ideological difference between two brothers Muralidhar and Shridhar and the conflict invited by it. The excerpt above depicts their different natures and lifestyles.\n\nThe elder Muralidhar is traditional and of a religious nature. He holds immense reverence for prayers, religion, and culture. He wants to preserve old values and ancestral property. On the other hand, the younger Shridhar is of modern and political views. He is the village development head and a party member. He is more interested in social service and politics.\n\nWhen these two opposite pole-like views collide on the subject of 'Jiuni Khet' (inheritance land), the conflict begins. Muralidhar wants to save the family honor and property after his father's demise, while Shridhar wants to partition and take his share. The clash between Muralidhar's faith in 'joint family and religion' and Shridhar's attachment to 'individual freedom and rights' is the main conflict of the story. This ideological difference causes a rift even in blood relations and brings them to the battlefield of quarrel. Although the realization of duty reconciles them in the end, the foundation of the initial conflict is this ideological inequality itself.",
-            "explanationNepali": "(क) यो प्रश्न 'लक्ष्मीप्रसाद देवकोटा' को जीवनीमा आधारित छ। (ख) यो प्रश्न 'कर्तव्य' कथाको पात्र विश्लेषणमा आधारित छ। समीक्षात्मक उत्तरमा विषयवस्तुको गहिराइ, विश्लेषण र निष्कर्ष आवश्यक हुन्छ।\nउद्धरण: पाठ ५; पाठ ११।",
-            "explanationEnglish": "(a) This question is based on the biography of 'Laxmi Prasad Devkota'. (b) This question is based on the character analysis of the story 'Kartavya'. A critical answer requires depth of subject matter, analysis, and conclusion.\nCitation: Lesson 5; Lesson 11."
+            "passageNepali": "शिक्षाले मानिसको तेस्रो आँखा खोल्छ। तर हाम्रो देशको शिक्षा प्रणाली अझै पनि व्यवहारिक हुन सकेको छैन। घोकन्ते विद्यामा जोड दिइन्छ। प्रमाणपत्र हातमा छ तर सिप छैन। यसले गर्दा लाखौँ युवा विदेशिन बाध्य छन्। 'मेरो देशको शिक्षा' निबन्धमा लेखकले शिक्षालाई श्रम र उत्पादनसँग जोड्नुपर्ने कुरामा जोड दिएका छन्।",
+            "passageEnglish": "Education opens the third eye of man. But the education system of our country has not yet become practical. Rote learning is emphasized. Certificate is in hand but no skill. Due to this, millions of youths are forced to go abroad. In the essay 'Mero Deshko Shiksha', the author has emphasized connecting education with labor and production.",
+            "questionNepali": "'मेरो देशको शिक्षा' निबन्धका आधारमा नेपालको वर्तमान शिक्षा प्रणालीका समस्या र समाधानका उपायहरू केलाउनुहोस्।",
+            "questionEnglish": "Analyze the problems and solutions of Nepal's current education system based on the essay 'Mero Deshko Shiksha'.",
+            "sampleAnswerNepali": "'मेरो देशको शिक्षा' निबन्धले नेपालको शैक्षिक अवस्थाको यथार्थ चित्रण गरेको छ। निबन्धकारका अनुसार नेपालको वर्तमान शिक्षा प्रणालीमा थुप्रै समस्याहरू छन्। मुख्य समस्या भनेको यो सिद्धान्तमा आधारित हुनु र व्यवहारमा लागु नहुनु हो। विद्यार्थीहरूलाई केवल परीक्षा पास गर्न र प्रमाणपत्र लिनका लागि पढाइन्छ। सिपमूलक र प्राविधिक शिक्षाको अभावले गर्दा शिक्षित बेरोजगारको सङ्ख्या बढ्दो छ। शिक्षाले श्रमको सम्मान गर्न सिकाएको छैन, बरु टेबुलको काम खोज्ने प्रवृत्ति बढाएको छ।\n\nयसको समाधानका लागि निबन्धकारले शिक्षालाई श्रम, सिप र उत्पादनसँग जोड्नुपर्ने सुझाव दिएका छन्। शिक्षाले विद्यार्थीलाई आत्मनिर्भर बनाउनुपर्छ। कृषि, पर्यटन र जलस्रोत जस्ता देशको सम्भावना भएका क्षेत्रमा आधारित प्राविधिक शिक्षामा जोड दिनुपर्छ। साथै, नैतिक र चरित्रवान् नागरिक उत्पादन गर्ने शिक्षा आजको आवश्यकता हो। घोकन्ते विद्याको सट्टा सिर्जनात्मक र अन्वेषणात्मक शिक्षण विधि अपनाउनुपर्छ। जबसम्म शिक्षाले देशको माटोलाई चिनाउन सक्दैन, तबसम्म देशको विकास असम्भव छ भन्ने निष्कर्ष निबन्धमा पाइन्छ।",
+            "sampleAnswerEnglish": "The essay 'Mero Deshko Shiksha' portrays the reality of Nepal's educational status. According to the essayist, there are many problems in Nepal's current education system. The main problem is that it is based on theory and not applied in practice. Students are taught only to pass exams and get certificates. Due to the lack of skill-based and technical education, the number of educated unemployed is increasing. Education has not taught to respect labor, but rather increased the tendency to look for desk jobs.\n\nFor its solution, the essayist has suggested connecting education with labor, skills, and production. Education should make students self-reliant. Emphasis should be placed on technical education based on potential sectors of the country like agriculture, tourism, and water resources. Also, education that produces moral and characterful citizens is the need of the day. Instead of rote learning, creative and investigative teaching methods should be adopted. The essay concludes that until education can introduce the country's soil, the country's development is impossible.",
+            "explanationNepali": "यो प्रश्न 'मेरो देशको शिक्षा' निबन्धको विषयवस्तुमा आधारित छ। यसले समस्या र समाधानको विश्लेषणात्मक क्षमता परीक्षण गर्छ।\nउद्धरण: पाठ ९।",
+            "explanationEnglish": "This question is based on the subject matter of the essay 'Mero Deshko Shiksha'. It tests the analytical ability of problems and solutions.\nCitation: Chapter 9"
           }
         ]
       },
@@ -917,23 +930,23 @@
         "titleNepali": "कुनै एक शीर्षकमा १५० शब्द नघटाई निबन्ध लेख्नुहोस् :",
         "titleEnglish": "Write an essay on any one topic in not less than 150 words:",
         "topicsNepali": [
-          "असल मित्रको महत्त्व",
-          "नेपालको जलसम्पदा र यसको उपयोग",
-          "मोबाइल फोनका फाइदा र बेफाइदा"
+          "महिला सशक्तीकरण",
+          "प्रविधिको सदुपयोग",
+          "देशप्रेम"
         ],
         "topicsEnglish": [
-          "Importance of a Good Friend",
-          "Water Resources of Nepal and Their Utilization",
-          "Advantages and Disadvantages of Mobile Phones"
+          "Women Empowerment",
+          "Proper Use of Technology",
+          "Patriotism"
         ],
         "questionNumberNepali": "२०",
         "questionNumberEnglish": 20,
         "marksNepali": "७",
         "marksEnglish": 7,
-        "sampleAnswerNepali": "### नेपालको जलसम्पदा र यसको उपयोग\n\nनेपाल प्राकृतिक सम्पदाले भरिपूर्ण देश हो। यहाँका वनजङ्गल, जडीबुटी, खनिज र जलसम्पदा राष्ट्रका अमूल्य निधि हुन्। जलसम्पदाका दृष्टिले नेपाल विश्वकै दोस्रो र एसियाको पहिलो धनी राष्ट्र मानिन्छ। कोशी, गण्डकी, कर्णाली जस्ता ठुला नदीहरू र हजारौँ खोलानालाहरूले नेपाललाई 'जलस्रोतको देश' बनाएका छन्।\n\nनेपालमा करिब ६००० भन्दा बढी नदीनालाहरू छन्। यहाँबाट बग्ने पानीलाई 'सेतो सुन' पनि भनिन्छ। यदि यसको सही सदुपयोग गर्ने हो भने नेपालको कायापलट हुन सक्छ। जलसम्पदाको मुख्य उपयोग जलविद्युत् उत्पादन हो। नेपालमा करिब ८३,००० मेगावाट विद्युत् उत्पादन गर्ने क्षमता छ। उत्पादित बिजुलीले देशलाई लोडसेडिङ मुक्त बनाउनुका साथै छिमेकी देशलाई बेचेर विदेशी मुद्रा आर्जन गर्न सकिन्छ। यसले उद्योगधन्दाको विकासमा पनि टेवा पुर्‍याउँछ।\n\nजलसम्पदाको अर्को महत्त्वपूर्ण उपयोग सिँचाइ हो। नेपाल कृषिप्रधान देश भएकाले यहाँको कृषिको विकासमा सिँचाइको ठुलो भूमिका हुन्छ। आकाशे पानीको भर पर्नुपर्ने बाध्यता हटाएर वर्षैभरि खेती गर्न सके कृषि उत्पादनमा वृद्धि हुन्छ। यसबाहेक, र्‍याफ्टिङ, बन्जी जम्पिङ जस्ता साहसिक पर्यटनको विकासमा पनि नदीनालाको प्रयोग गर्न सकिन्छ। स्वच्छ खानेपानीको वितरणमा पनि जलस्रोतको भूमिका हुन्छ।\n\nतर विडम्बना, अपार सम्भावना हुँदाहुँदै पनि हामीले यसको उचित प्रयोग गर्न सकेका छैनौँ। पुँजी र प्रविधिको अभावले गर्दा हाम्रो पानी बगेर खेर गइरहेको छ। तसर्थ, सरकार र निजी क्षेत्र मिलेर जलसम्पदाको बहुआयामिक उपयोग गर्ने ठोस योजना ल्याउनुपर्छ। पानी नै हाम्रो समृद्धिको आधार हो। यसको सही उपयोग गरेर नेपाललाई विकसित र समृद्ध बनाउन सकिन्छ।",
-        "sampleAnswerEnglish": "### Water Resources of Nepal and Their Utilization\n\nNepal is a country full of natural resources. The forests, herbs, minerals, and water resources here are the priceless treasures of the nation. In terms of water resources, Nepal is considered the second richest nation in the world and the first in Asia. Large rivers like Koshi, Gandaki, Karnali, and thousands of streams have made Nepal a 'country of water resources'.\n\nThere are more than 6,000 rivers and streams in Nepal. The water flowing from here is also called 'White Gold'. If it is utilized correctly, Nepal can be transformed. The main use of water resources is hydroelectricity generation. Nepal has the potential to generate about 83,000 megawatts of electricity. The generated electricity can make the country load-shedding free and earn foreign currency by selling it to neighboring countries. It also supports industrial development.\n\nAnother important use of water resources is irrigation. Since Nepal is an agricultural country, irrigation plays a major role in the development of agriculture here. Agricultural production can be increased by removing the compulsion to rely on rainwater and farming throughout the year. Apart from this, rivers can also be used in the development of adventure tourism like rafting and bungee jumping. Water resources also play a role in the distribution of clean drinking water.\n\nBut ironically, despite having immense possibilities, we have not been able to use it properly. Due to a lack of capital and technology, our water is flowing away to waste. Therefore, the government and private sector should work together to bring a concrete plan for the multi-dimensional use of water resources. Water is the basis of our prosperity. By using it correctly, Nepal can be made developed and prosperous.",
-        "explanationNepali": "निबन्ध लेखनले विद्यार्थीको सिर्जनात्मक र तार्किक क्षमता परीक्षण गर्छ। दिइएका शीर्षकहरूमा 'नेपालको जलसम्पदा' विषय 'मेरो देशको शिक्षा' वा 'वातावरण' जस्ता पाठसँग सम्बन्धित छ।\nउद्धरण: पाठ ९।",
-        "explanationEnglish": "Essay writing tests the student's creative and logical ability. Among the given topics, 'Water Resources of Nepal' is related to lessons like 'Mero Deshko Shiksha' or 'Environment'.\nCitation: Lesson 9."
+        "sampleAnswerNepali": "महिला सशक्तीकरण\n\n'यत्र नार्यस्तु पूज्यन्ते रमन्ते तत्र देवता' अर्थात् जहाँ नारीको सम्मान हुन्छ, त्यहाँ देवता पनि रमाउँछन्। महिला सशक्तीकरण भनेको महिलाहरूलाई सामाजिक, आर्थिक, राजनीतिक र शैक्षिक रूपमा सबल र सक्षम बनाउनु हो। कुनै पनि देशको विकास तब मात्र सम्भव छ, जब त्यहाँका आधा हिस्सा ओगटेका महिलाहरू पुरुष सरह काँधमा काँध मिलाएर अघि बढ्छन्।\n\nहाम्रो समाजमा परम्परागत रूपमा महिलालाई घरको काममा मात्र सीमित राखिन्थ्यो। तर समय बदलिएको छ। शिक्षा र अवसर पाएमा महिलाले पनि राष्ट्र हाँक्न सक्छन् भन्ने उदाहरण नेपालकै प्रथम महिला राष्ट्रपति विद्यादेवी भण्डारी र साहसी आरोही पासाङ ल्हामु शेर्पाले देखाइसकेका छन्। महिला सशक्तीकरणका लागि सबैभन्दा ठुलो हतियार शिक्षा हो। शिक्षित महिलाले आफ्नो परिवारलाई स्वस्थ र शिक्षित बनाउन सक्छिन्।\n\nमहिलालाई आर्थिक रूपमा आत्मनिर्भर बनाउनु पनि उत्तिकै आवश्यक छ। सिपमूलक तालिम र रोजगारीमा अवसर दिएर उनीहरूलाई परनिर्भरताबाट मुक्त गर्न सकिन्छ। साथै, महिला हिंसा, दाइजो प्रथा र छाउपडी जस्ता कुरीतिहरू अन्त्य गर्न कडा कानुन र सामाजिक चेतनाको खाँचो छ। महिलालाई निर्णय प्रक्रियामा सहभागी गराएर नेतृत्व तहमा पुऱ्याउनुपर्छ।\n\nनिष्कर्षमा, महिला सशक्तीकरण केवल नारामा मात्र सीमित हुनु हुँदैन। यो घरबाटै सुरु हुनुपर्छ। जबसम्म महिलाले आफ्नो अधिकार र क्षमताको उपयोग गर्न पाउँदैनन्, तबसम्म सभ्य र समृद्ध समाजको परिकल्पना अधुरो रहन्छ। त्यसैले, महिला र पुरुष रथका दुई पाङ्ग्रा हुन् भन्ने भावनाका साथ महिलालाई सम्मान र अवसर दिनु आजको आवश्यकता हो।",
+        "sampleAnswerEnglish": "Women Empowerment\n\n'Yatra Naryastu Pujyante Ramante Tatra Devata', meaning where women are respected, gods also rejoice there. Women empowerment means making women strong and capable socially, economically, politically, and educationally. The development of any country is possible only when women, who occupy half the portion, move forward shoulder to shoulder with men.\n\nTraditionally in our society, women were confined to household chores. But times have changed. Nepal's first female President Bidya Devi Bhandari and brave climber Pasang Lhamu Sherpa have shown the example that if given education and opportunity, women can also lead the nation. The biggest weapon for women empowerment is education. An educated woman can make her family healthy and educated.\n\nIt is equally necessary to make women economically self-reliant. They can be freed from dependency by providing skill-based training and employment opportunities. Also, strict laws and social awareness are needed to end evil practices like violence against women, dowry system, and Chhaupadi. Women should be involved in decision-making processes and brought to leadership levels.\n\nIn conclusion, women empowerment should not be limited to slogans only. It must start from home. Until women get to use their rights and capabilities, the vision of a civilized and prosperous society remains incomplete. Therefore, giving respect and opportunity to women with the feeling that men and women are two wheels of a chariot is the need of today.",
+        "explanationNepali": "निबन्ध लेखनले विद्यार्थीको विचारको स्पष्टता र भाषा शैलीको परीक्षण गर्छ। 'महिला सशक्तीकरण' र 'देशप्रेम' जस्ता विषयहरू पाठ्यपुस्तकका विभिन्न पाठहरू ('पासाङ ल्हामु', 'नेपाली हाम्रो श्रम') सँग अन्तरसम्बन्धित छन्।\nउद्धरण: पाठ ३; पाठ ८।",
+        "explanationEnglish": "Essay writing tests the clarity of the student's ideas and language style. Topics like 'Women Empowerment' and 'Patriotism' are interconnected with various lessons of the textbook ('Pasang Lhamu', 'Nepali Hamro Shram').\nCitation: Chapter 3, Chapter 8"
       }
     ]
   }
