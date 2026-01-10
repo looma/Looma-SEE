@@ -2441,11 +2441,11 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
 
         {/* Questions */}
         <div className="space-y-6">
-          {questions.nepaliQuestions.map((question: any, index: number) => (
+          {questions.nepaliQuestions?.filter((q: any) => q != null).map((question: any, index: number) => (
             <NepaliQuestionRenderer
-              key={question.questionNumberEnglish || question.questionNumber}
+              key={question?.questionNumberEnglish || question?.questionNumber || `nepali-q-${index}`}
               question={question}
-              answer={answers.nepali?.[`q${question.questionNumberEnglish || question.questionNumber}`]}
+              answer={answers.nepali?.[`q${question?.questionNumberEnglish || question?.questionNumber}`]}
               onAnswerChange={handleNepaliAnswerChange}
               questionIndex={index}
               language={language}

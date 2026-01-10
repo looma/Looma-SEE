@@ -524,40 +524,40 @@
           {
             "idNepali": "क",
             "idEnglish": "a",
-            "questionNepali": "उनी घर गए र खाना खाए। (वाक्य संश्लेषण)",
-            "questionEnglish": "He went home and ate food. (Sentence Synthesis)",
-            "correctAnswerNepali": "उनी घर गएर खाना खाए।",
-            "correctAnswerEnglish": "He went home and ate food.",
-            "explanationNepali": "'र' संयोजक हटाएर पहिलो क्रिया 'गए' लाई असमापिका क्रिया 'गएर' बनाइएको छ।\nउद्धरण: पाठ ८।",
-            "explanationEnglish": "The conjunction 'ra' is removed and the first verb 'gae' is made into a non-finite verb 'gaera'.\nCitation: Chapter 8"
+            "questionNepali": "ऊ बजारमा गयो र साग किन्यो। (वाक्य संश्लेषण)",
+            "questionEnglish": "He went to the market and bought vegetables. (Sentence Synthesis)",
+            "correctAnswerNepali": "ऊ बजारमा गएर साग किन्यो।",
+            "correctAnswerEnglish": "He went to the market and bought vegetables.",
+            "explanationNepali": "'र' संयोजक हटाएर पहिलो क्रिया 'गयो' लाई असमापिका क्रिया 'गएर' बनाइएको छ।\nउद्धरण: पाठ ८।",
+            "explanationEnglish": "The conjunction 'ra' is removed and the first verb 'gayo' is made into a non-finite verb 'gaera'.\nCitation: Chapter 8"
           },
           {
             "idNepali": "ख",
             "idEnglish": "b",
-            "questionNepali": "आमाले खाना पकाउनुभयो। (कर्मवाच्य)",
-            "questionEnglish": "Mother cooked food. (Passive Voice)",
-            "correctAnswerNepali": "आमाद्वारा खाना पकाइयो।",
-            "correctAnswerEnglish": "Food was cooked by mother.",
-            "explanationNepali": "कर्तृवाच्यबाट कर्मवाच्य बनाउँदा कर्तामा 'द्वारा', कर्ममा 'लाई' (भए हटाउने), र क्रियामा 'इ' थपिन्छ।\nउद्धरण: पाठ ९।",
-            "explanationEnglish": "When changing from active to passive, 'dwara' is added to the subject, 'lai' is removed from the object (if present), and 'i' is added to the verb.\nCitation: Chapter 9"
+            "questionNepali": "किसानले धान रोप्यो। (कर्मवाच्य)",
+            "questionEnglish": "The farmer planted rice. (Passive Voice)",
+            "correctAnswerNepali": "किसानद्वारा धान रोपियो।",
+            "correctAnswerEnglish": "Rice was planted by the farmer.",
+            "explanationNepali": "कर्तृवाच्यबाट कर्मवाच्य बनाउँदा कर्तामा 'द्वारा' थपिन्छ र क्रियामा 'इ' थपेर 'रोपियो' बनाइन्छ।\nउद्धरण: पाठ ९।",
+            "explanationEnglish": "When changing from active to passive, 'dwara' is added to the subject and 'i' is added to the verb to form 'ropiyo'.\nCitation: Chapter 9"
           },
           {
             "idNepali": "ग",
             "idEnglish": "c",
-            "questionNepali": "भाइ हाँस्छ। (प्रेरणार्थक)",
-            "questionEnglish": "Brother laughs. (Causative)",
-            "correctAnswerNepali": "दिदीले भाइलाई हँसाउँछिन्।",
-            "correctAnswerEnglish": "Sister makes brother laugh.",
-            "explanationNepali": "प्रेरणार्थक बनाउँदा नयाँ प्रेरक कर्ता थप्ने र क्रियामा 'आउ' प्रत्यय लगाउने।\nउद्धरण: पाठ ११।",
-            "explanationEnglish": "When making causative, add a new causative agent and add 'aau' suffix to the verb.\nCitation: Chapter 11"
+            "questionNepali": "बच्चा रुन्छ। (प्रेरणार्थक)",
+            "questionEnglish": "The child cries. (Causative)",
+            "correctAnswerNepali": "आमाले बच्चालाई रुवाउँछिन्।",
+            "correctAnswerEnglish": "Mother makes the child cry.",
+            "explanationNepali": "प्रेरणार्थक बनाउँदा नयाँ प्रेरक कर्ता 'आमाले' थप्ने र क्रिया 'रुन्छ' मा 'आउ' प्रत्यय लगाएर 'रुवाउँछिन्' बनाउने।\nउद्धरण: पाठ ११।",
+            "explanationEnglish": "When making causative, add a new causative agent 'mother' and add 'aau' suffix to the verb 'runcha' to form 'ruwaunchin'.\nCitation: Chapter 11"
           },
           {
             "idNepali": "घ",
             "idEnglish": "d",
-            "questionNepali": "शिक्षकले भन्नुभयो, “सधैँ मिहिनेत गरेर पढ्नुपर्छ।” (अप्रत्यक्ष कथन)",
-            "questionEnglish": "The teacher said, “One should always study hard.” (Indirect Speech)",
-            "correctAnswerNepali": "शिक्षकले सधैँ मिहिनेत गरेर पढ्नुपर्छ भनी भन्नुभयो।",
-            "correctAnswerEnglish": "The teacher said that one should always study hard.",
+            "questionNepali": "बुबाले भन्नुभयो, \"भोलि हामी काठमाडौं जान्छौं।\" (अप्रत्यक्ष कथन)",
+            "questionEnglish": "Father said, \"Tomorrow we will go to Kathmandu.\" (Indirect Speech)",
+            "correctAnswerNepali": "बुबाले भोलि हामी काठमाडौं जान्छौं भनी भन्नुभयो।",
+            "correctAnswerEnglish": "Father said that we would go to Kathmandu tomorrow.",
             "explanationNepali": "अप्रत्यक्ष कथनमा उद्धरण चिह्न हटाएर 'भनी' संयोजकले जोडिन्छ।\nउद्धरण: पाठ १२।",
             "explanationEnglish": "In indirect speech, quotation marks are removed and connected with the conjunction 'bhani'.\nCitation: Chapter 12"
           }

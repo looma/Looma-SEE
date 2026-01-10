@@ -172,8 +172,8 @@ export function SocialStudiesGroupRenderer({
         return result
     }
 
-    const marksSchemaRaw = group.marksSchema || ''
-    const marksSchema = language === 'english' ? nepaliToEnglishNumerals(marksSchemaRaw) : marksSchemaRaw
+
+
 
     if (group.questions.length === 0) {
         return (
@@ -194,11 +194,7 @@ export function SocialStudiesGroupRenderer({
                         <div>
                             <CardTitle className="text-xl font-bold">{groupInfo.title}</CardTitle>
                             <p className="text-white/90 mt-1">{groupInfo.description}</p>
-                            {marksSchema && (
-                                <Badge variant="secondary" className="mt-2 bg-white/20 text-white border-white/30">
-                                    {marksSchema}
-                                </Badge>
-                            )}
+
                         </div>
                         <div className="flex items-center gap-3">
                             <Button

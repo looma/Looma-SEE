@@ -118,24 +118,43 @@ export function EnglishQuestionRenderer({
   const renderExplanation = (subQ?: any) => {
     if (!subQ || !showExplanations) return null
 
-    let displayText = ""
+    let explanationText = ""
+    let sampleAnswerText = ""
 
     // Handle both old format (string) and new format (object with explanationEnglish/explanationNepali)
     if (typeof subQ === "string") {
       const parsed = parseExplanation(subQ)
-      displayText = language === 'nepali' ? (parsed.nepali || parsed.english) : parsed.english
+      explanationText = language === 'nepali' ? (parsed.nepali || parsed.english) : parsed.english
     } else if (typeof subQ === "object") {
-      displayText = getText(subQ.explanationEnglish, subQ.explanationNepali)
+      explanationText = getText(subQ.explanationEnglish, subQ.explanationNepali)
+      // Also get sample answer if available
+      sampleAnswerText = getText(
+        subQ.sampleAnswerEnglish || subQ.answerEnglish || subQ.correctAnswerEnglish,
+        subQ.sampleAnswerNepali || subQ.answerNepali || subQ.correctAnswerNepali
+      ) || subQ.sampleAnswer || subQ.answer || subQ.correctAnswer || ""
     }
 
-    // Don't render if empty
-    if (!displayText) return null
+    const hasExplanation = explanationText && explanationText.trim()
+    const hasSampleAnswer = sampleAnswerText && sampleAnswerText.trim()
+
+    // Don't render if both are empty
+    if (!hasExplanation && !hasSampleAnswer) return null
 
     return (
       <div className="mt-3 bg-amber-50 border-l-4 border-amber-500 p-3 rounded-r-lg">
-        <div className="text-sm">
-          <span className="font-medium text-amber-800">{uiText.explanation}</span>
-          <p className="text-amber-700 mt-1 whitespace-pre-line">{displayText}</p>
+        <div className="text-sm space-y-3">
+          {hasSampleAnswer && (
+            <div>
+              <span className="font-medium text-amber-800">{uiText.sampleAnswer}</span>
+              <p className="text-amber-700 mt-1 whitespace-pre-line">{sampleAnswerText}</p>
+            </div>
+          )}
+          {hasExplanation && (
+            <div>
+              <span className="font-medium text-amber-800">{uiText.explanation}</span>
+              <p className="text-amber-700 mt-1 whitespace-pre-line">{explanationText}</p>
+            </div>
+          )}
         </div>
       </div>
     )

@@ -42,49 +42,44 @@ export function FreeResponseGroup({
     const hasExplanation = explanation && explanation.trim()
     const hasSampleAnswer = sampleAnswer && sampleAnswer.trim()
 
-    // If we have an explanation, show that and ignore sample answer
-    if (hasExplanation) {
-      return (
-        <div className="mt-3">
-          <div className="bg-amber-50 border-l-4 border-amber-500 p-3 rounded-r-lg">
-            <div className="text-sm">
-              <div className="flex items-start gap-2 mb-2">
-                <Lightbulb className="h-4 w-4 text-amber-600 mt-0.5 flex-shrink-0" />
-                <span className="font-medium text-amber-800">
-                  {language === "english" ? "Explanation" : "व्याख्या"}:
-                </span>
+    // Don't render if neither exists
+    if (!hasExplanation && !hasSampleAnswer) return null
+
+    // Show both sample answer and explanation together (like Math tests)
+    return (
+      <div className="mt-3">
+        <div className="bg-amber-50 border-l-4 border-amber-500 p-3 rounded-r-lg">
+          <div className="text-sm space-y-3">
+            {hasSampleAnswer && (
+              <div>
+                <div className="flex items-start gap-2 mb-2">
+                  <Lightbulb className="h-4 w-4 text-amber-600 mt-0.5 flex-shrink-0" />
+                  <span className="font-medium text-amber-800">
+                    {language === "english" ? "Sample Answer" : "नमूना उत्तर"}:
+                  </span>
+                </div>
+                <div className="ml-6">
+                  <MathText text={sampleAnswer || ""} className="text-amber-700 whitespace-pre-line leading-relaxed" />
+                </div>
               </div>
-              <div className="ml-6">
-                <MathText text={explanation} className="text-amber-700 whitespace-pre-line leading-relaxed" />
+            )}
+            {hasExplanation && (
+              <div>
+                <div className="flex items-start gap-2 mb-2">
+                  <Lightbulb className="h-4 w-4 text-amber-600 mt-0.5 flex-shrink-0" />
+                  <span className="font-medium text-amber-800">
+                    {language === "english" ? "Explanation" : "व्याख्या"}:
+                  </span>
+                </div>
+                <div className="ml-6">
+                  <MathText text={explanation} className="text-amber-700 whitespace-pre-line leading-relaxed" />
+                </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
-      )
-    }
-
-    // If no explanation but has sample answer, show sample answer with same amber styling
-    if (hasSampleAnswer) {
-      return (
-        <div className="mt-3">
-          <div className="bg-amber-50 border-l-4 border-amber-500 p-3 rounded-r-lg">
-            <div className="text-sm">
-              <div className="flex items-start gap-2 mb-2">
-                <Lightbulb className="h-4 w-4 text-amber-600 mt-0.5 flex-shrink-0" />
-                <span className="font-medium text-amber-800">
-                  {language === "english" ? "Sample Answer" : "नमूना उत्तर"}:
-                </span>
-              </div>
-              <div className="ml-6">
-                <MathText text={sampleAnswer || ""} className="text-amber-700 whitespace-pre-line leading-relaxed" />
-              </div>
-            </div>
-          </div>
-        </div>
-      )
-    }
-
-    return null
+      </div>
+    )
   }
 
   const getGroupInfo = (group: string) => {

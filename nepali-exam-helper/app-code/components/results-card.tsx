@@ -951,8 +951,8 @@ export function ResultsCard({
                                 </div>
                               )}
 
-                              {/* Sample answer if available */}
-                              {(fb.sampleAnswer || (language === 'english' ? (originalQuestion?.sampleAnswerEnglish || originalQuestion?.sampleAnswer) : (originalQuestion?.sampleAnswerNepali || originalQuestion?.sampleAnswer)) || (language === 'english' ? (originalQuestion?.correctAnswerEnglish || originalQuestion?.correctAnswer) : (originalQuestion?.correctAnswerNepali || originalQuestion?.correctAnswer))) && (
+                              {/* Sample answer if available - hide for choice-based question types where student picks from multiple topics */}
+                              {!['essay', 'free_writing_choice', 'functional_writing_choice', 'literature_critical_analysis_choice'].includes(fb.type) && (fb.sampleAnswer || (language === 'english' ? (originalQuestion?.sampleAnswerEnglish || originalQuestion?.sampleAnswer) : (originalQuestion?.sampleAnswerNepali || originalQuestion?.sampleAnswer)) || (language === 'english' ? (originalQuestion?.correctAnswerEnglish || originalQuestion?.correctAnswer) : (originalQuestion?.correctAnswerNepali || originalQuestion?.correctAnswer))) && (
                                 <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg">
                                   <p className="font-semibold text-amber-800 mb-1">
                                     {language === 'nepali' ? 'नमुना उत्तर:' : 'Sample Answer:'}
@@ -1680,8 +1680,8 @@ export function ResultsCard({
                                       </div>
                                     </div>
                                   )}
-                                  {/* Show sample answer for free writing questions if available */}
-                                  {(language === 'english' ? ((question as any).sampleAnswerEnglish || (question as any).sampleAnswer) : ((question as any).sampleAnswerNepali || (question as any).sampleAnswer)) && (
+                                  {/* Show sample answer for free writing questions if available - hide for choice-based types */}
+                                  {!['essay', 'free_writing_choice', 'functional_writing_choice', 'literature_critical_analysis_choice'].includes(question.type) && (language === 'english' ? ((question as any).sampleAnswerEnglish || (question as any).sampleAnswer) : ((question as any).sampleAnswerNepali || (question as any).sampleAnswer)) && (
                                     <div className="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded-r-lg">
                                       <p className="font-semibold text-indigo-800 mb-2">Sample Answer / नमूना उत्तर:</p>
                                       {((language === 'english' ? ((question as any).sampleAnswerEnglish || (question as any).sampleAnswer) : ((question as any).sampleAnswerNepali || (question as any).sampleAnswer))?.title) && (
