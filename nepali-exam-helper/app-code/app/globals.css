@@ -228,7 +228,6 @@
 
 .from-yellow-500 {
   --tw-gradient-from: #eab308 !important;
-  --tw-gradient-to: rgb(234 179 8 / 0) !important;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
 }
 
@@ -240,8 +239,6 @@
 /* Science - Green gradients (darker for better contrast) */
 .from-emerald-500 {
   --tw-gradient-from: #059669 !important;
-  /* Darker emerald */
-  --tw-gradient-to: rgb(5 150 105 / 0) !important;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
 }
 
@@ -253,8 +250,6 @@
 /* English - Purple gradients (darker for better contrast) */
 .from-purple-500 {
   --tw-gradient-from: #7c3aed !important;
-  /* Darker purple */
-  --tw-gradient-to: rgb(124 58 237 / 0) !important;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
 }
 
@@ -266,8 +261,6 @@
 /* Mathematics - Blue gradients (darker for better contrast) */
 .from-blue-500 {
   --tw-gradient-from: #2563eb !important;
-  /* Darker blue */
-  --tw-gradient-to: rgb(37 99 235 / 0) !important;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
 }
 
@@ -279,16 +272,12 @@
 /* Mathematics - Cyan to Blue gradients */
 .from-cyan-500 {
   --tw-gradient-from: #06b6d4 !important;
-  /* Cyan */
-  --tw-gradient-to: rgb(6 182 212 / 0) !important;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
 }
 
 /* Nepali - Orange gradients (darker for better contrast) */
 .from-orange-500 {
   --tw-gradient-from: #ea580c !important;
-  /* Darker orange */
-  --tw-gradient-to: rgb(234 88 12 / 0) !important;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
 }
 
@@ -297,11 +286,15 @@
   /* Darker red */
 }
 
+/* Nepali Question Headers - Red gradients */
+.from-red-500 {
+  --tw-gradient-from: #ef4444 !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
 /* Social - Amber gradients (darker for better contrast) */
 .from-amber-500 {
   --tw-gradient-from: #d97706 !important;
-  /* Darker amber */
-  --tw-gradient-to: rgb(217 119 6 / 0) !important;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
 }
 
@@ -313,7 +306,6 @@
 /* Default - Slate gradients */
 .from-slate-500 {
   --tw-gradient-from: #64748b !important;
-  --tw-gradient-to: rgb(100 116 139 / 0) !important;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
 }
 
@@ -325,8 +317,6 @@
 /* Reading Comprehension - Blue gradients */
 .from-blue-500 {
   --tw-gradient-from: #2563eb !important;
-  /* Darker blue */
-  --tw-gradient-to: rgb(37 99 235 / 0) !important;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
 }
 
@@ -338,8 +328,6 @@
 /* Free Writing - Green gradients */
 .from-green-500 {
   --tw-gradient-from: #059669 !important;
-  /* Darker green */
-  --tw-gradient-to: rgb(5 150 105 / 0) !important;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
 }
 
@@ -358,6 +346,85 @@
 .to-orange-600 {
   --tw-gradient-to: #ea580c !important;
   /* Darker orange */
+}
+
+/* Additional missing gradient classes */
+/* Indigo gradients */
+.from-indigo-500 {
+  --tw-gradient-from: #6366f1 !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.to-indigo-500 {
+  --tw-gradient-to: #6366f1 !important;
+}
+
+.to-indigo-700 {
+  --tw-gradient-to: #4338ca !important;
+}
+
+/* Blue 600 from */
+.from-blue-600 {
+  --tw-gradient-from: #2563eb !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.from-blue-700 {
+  --tw-gradient-from: #1d4ed8 !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+/* Yellow 600/700 from */
+.from-yellow-600 {
+  --tw-gradient-from: #ca8a04 !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.from-yellow-700 {
+  --tw-gradient-from: #a16207 !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.to-amber-600 {
+  --tw-gradient-to: #d97706 !important;
+}
+
+.to-amber-700 {
+  --tw-gradient-to: #b45309 !important;
+}
+
+/* Light backgrounds for subtle gradients */
+.from-blue-50 {
+  --tw-gradient-from: #eff6ff !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.to-indigo-50 {
+  --tw-gradient-to: #eef2ff !important;
+}
+
+.from-amber-50 {
+  --tw-gradient-from: #fffbeb !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.to-yellow-50 {
+  --tw-gradient-to: #fefce8 !important;
+}
+
+/* Slate gradients */
+.from-slate-300 {
+  --tw-gradient-from: #cbd5e1 !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.to-slate-600 {
+  --tw-gradient-to: #475569 !important;
+}
+
+/* Orange to red error state gradients */
+.to-orange-500 {
+  --tw-gradient-to: #f97316 !important;
 }
 
 /* Fix yellow text colors */
@@ -558,7 +625,6 @@
 
 .from-yellow-50 {
   --tw-gradient-from: #fefce8 !important;
-  --tw-gradient-to: rgb(254 252 232 / 0) !important;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
 }
 
@@ -628,4 +694,25 @@ html {
 .version-indicator,
 .version-indicator * {
   color: #ffffff !important;
+}
+
+/* Admin page - override dark text for dark theme */
+.admin-page,
+.admin-page * {
+  color: inherit;
+}
+
+.admin-page h1,
+.admin-page h2,
+.admin-page h3,
+.admin-page h4,
+.admin-page h5,
+.admin-page h6,
+.admin-page p,
+.admin-page span,
+.admin-page div,
+.admin-page td,
+.admin-page th,
+.admin-page label {
+  color: inherit !important;
 }

@@ -132,6 +132,7 @@ async function processTestFile(filePath) {
         console.log(`    [BILINGUAL] Found bilingual metadata format, normalizing...`)
         practiceDoc.title = practiceDoc.titleEnglish || practiceDoc.titleNepali
         practiceDoc.titleNepali = practiceDoc.titleNepali || practiceDoc.titleEnglish
+        practiceDoc.titleEnglish = practiceDoc.titleEnglish || practiceDoc.titleNepali
         practiceDoc.subject = practiceDoc.subjectEnglish?.toLowerCase().includes('math') ? 'mathematics' :
           practiceDoc.subjectEnglish?.toLowerCase() || 'mathematics'
         practiceDoc.totalMarks = practiceDoc.totalMarksEnglish || practiceDoc.totalMarks || 75

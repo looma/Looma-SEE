@@ -1,4 +1,4 @@
-// Nepali Test Type Definitions
+// Nepali Test Type Definitions (Bilingual Support)
 
 export type NepaliQuestionType =
     | "matching"
@@ -22,85 +22,142 @@ export type NepaliQuestionType =
     | "literature_critical_analysis_choice"
     | "essay"
 
-// Matching question types
+// Matching question column item (bilingual)
 export interface MatchingColumn {
-    id: string
-    text: string
+    id?: string
+    idNepali?: string
+    idEnglish?: string
+    text?: string
+    textNepali?: string
+    textEnglish?: string
 }
 
+// Matching answer pair
 export interface MatchingAnswer {
     A: string
     B: string
 }
 
-// Sub-question types
-export interface NepaliSubQuestion {
-    id: string
-    type?: string
-    title?: string
-    questionNepali?: string
-    correctAnswer?: string | Record<string, string>
-    explanation?: string
-    marks?: number
-    passage?: string
-    choices?: Array<{
-        id: string
-        options: string[]
-        correctAnswer: string
-    }>
+// Spelling correction choice
+export interface SpellingChoice {
+    id?: string
+    idNepali?: string
+    idEnglish?: string
+    options?: string[]
+    optionsNepali?: string[]
+    optionsEnglish?: string[]
+    correctAnswer?: string
+    correctAnswerNepali?: string
+    correctAnswerEnglish?: string
 }
 
-// Literature section types
-export interface LiteratureSubSection {
-    id: string
-    marks: number
+// Sub-question types (bilingual)
+export interface NepaliSubQuestion {
+    id?: string
+    idNepali?: string
+    idEnglish?: string
+    type?: string
+    title?: string
+    titleNepali?: string
+    titleEnglish?: string
+    questionNepali?: string
+    questionEnglish?: string
+    correctAnswer?: string | Record<string, any> | any[]
+    correctAnswerNepali?: string | Record<string, any> | any[]
+    correctAnswerEnglish?: string | Record<string, any> | any[]
+    explanation?: string
+    explanationNepali?: string
+    explanationEnglish?: string
+    marks?: number
+    marksNepali?: string
+    marksEnglish?: number
     passage?: string
+    passageNepali?: string
+    passageEnglish?: string
+    choices?: SpellingChoice[]
+}
+
+// Literature section types (bilingual)
+export interface LiteratureSubSection {
+    id?: string
+    idNepali?: string
+    idEnglish?: string
+    marks?: number
+    marksNepali?: string
+    marksEnglish?: number
+    passage?: string
+    passageNepali?: string
+    passageEnglish?: string
     subQuestions?: NepaliSubQuestion[]
 }
 
-// Choice option types
+// Choice option types (bilingual)
 export interface WritingOption {
-    id: string
-    title: string
+    id?: string
+    idNepali?: string
+    idEnglish?: string
+    title?: string
+    titleNepali?: string
+    titleEnglish?: string
     clues?: string[]
+    cluesNepali?: string[]
+    cluesEnglish?: string[]
     passage?: string
+    passageNepali?: string
+    passageEnglish?: string
     questionNepali?: string
+    questionEnglish?: string
 }
 
-// Word/POS pair for parts of speech
+// Word/POS pair for parts of speech (bilingual)
 export interface WordPosPair {
     word: string
     pos: string
 }
 
-// Base Nepali Question
+// Base Nepali Question (bilingual)
 export interface NepaliQuestion {
-    questionNumber: number
+    questionNumber?: number
+    questionNumberNepali?: string
+    questionNumberEnglish?: number
     type: NepaliQuestionType
-    title: string
-    marks: number
-    questionNepali?: string  // The actual question text in Nepali
-    questionEnglish?: string // The question text in English (if available)
+    title?: string
+    titleNepali?: string
+    titleEnglish?: string
+    marks?: number
+    marksNepali?: string
+    marksEnglish?: number
+    questionNepali?: string
+    questionEnglish?: string
     explanation?: string
+    explanationNepali?: string
+    explanationEnglish?: string
 
-    // For matching
+    // For matching (bilingual headers and columns)
     columns?: {
         A_header?: string
+        A_headerNepali?: string
+        A_headerEnglish?: string
         B_header?: string
+        B_headerNepali?: string
+        B_headerEnglish?: string
         A?: MatchingColumn[]
         B?: MatchingColumn[]
     }
-    correctAnswer?: MatchingAnswer[] | WordPosPair[] | string | string[]
+    correctAnswer?: MatchingAnswer[] | WordPosPair[] | string | string[] | any
+    correctAnswerNepali?: MatchingAnswer[] | WordPosPair[] | string | string[] | any
+    correctAnswerEnglish?: MatchingAnswer[] | WordPosPair[] | string | string[] | any
 
-    // For fill_in_the_blanks, reading comprehension, etc.
+    // For fill_in_the_blanks, reading comprehension, etc. (bilingual)
     passage?: string
+    passageNepali?: string
+    passageEnglish?: string
     subQuestions?: NepaliSubQuestion[]
 
-    // For short_answer
+    // For short_answer (bilingual)
     sampleAnswer?: any
-
-    // For spelling_correction, word_formation, grammar_choice, sentence_transformation
-    // Uses subQuestions[]
+    sampleAnswerNepali?: any
+    sampleAnswerEnglish?: any
 
     // For literature
     subSections?: LiteratureSubSection[]
@@ -108,12 +165,14 @@ export interface NepaliQuestion {
     // For choice-based questions
     options?: WritingOption[]
 
-    // For essay
+    // For essay (bilingual topics)
     topics?: string[]
+    topicsNepali?: string[]
+    topicsEnglish?: string[]
 
-    // For literature explanation sample
+    // For literature explanation
     sampleAnswerId?: string
-
-    // For literature explanation quote
     quote?: string
+    quoteNepali?: string
+    quoteEnglish?: string
 }

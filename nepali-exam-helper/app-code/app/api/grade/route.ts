@@ -207,8 +207,9 @@ Respond with JSON only: {"score": <0-${marks}>, "feedback": "<brief feedback in 
           headers: { "Content-Type": "application/json" },
         })
       } catch (error) {
-        console.error(`❌ Attempt ${attempts} failed:`, error.message)
-        lastError = error.message
+        const errorMessage = error instanceof Error ? error.message : 'Unknown error'
+        console.error(`❌ Attempt ${attempts} failed:`, errorMessage)
+        lastError = errorMessage
 
         if (attempts < maxAttempts) {
           console.log("🔄 Retrying...")
@@ -232,17 +233,18 @@ Respond with JSON only: {"score": <0-${marks}>, "feedback": "<brief feedback in 
       },
     )
   } catch (error) {
+    const err = error instanceof Error ? error : new Error('Unknown error')
     console.error("❌ AI grading error details:", {
-      message: error.message,
-      name: error.name,
-      stack: error.stack?.slice(0, 500),
+      message: err.message,
+      name: err.name,
+      stack: err.stack?.slice(0, 500),
     })
 
     return new Response(
       JSON.stringify({
-        error: `AI grading failed: ${error.message}`,
+        error: `AI grading failed: ${err.message}`,
         code: "AI_ERROR",
-        details: error.message,
+        details: err.message,
       }),
       {
         status: 502,

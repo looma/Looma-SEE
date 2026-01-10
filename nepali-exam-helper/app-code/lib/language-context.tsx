@@ -11,6 +11,8 @@ interface LanguageContextType {
     setLanguageSwitchEnabled: (enabled: boolean) => void
     disabledReason: string | null
     setDisabledReason: (reason: string | null) => void
+    currentTestId: string | null
+    setCurrentTestId: (testId: string | null) => void
 }
 
 const LanguageContext = createContext<LanguageContextType>({
@@ -20,6 +22,8 @@ const LanguageContext = createContext<LanguageContextType>({
     setLanguageSwitchEnabled: () => { },
     disabledReason: null,
     setDisabledReason: () => { },
+    currentTestId: null,
+    setCurrentTestId: () => { },
 })
 
 const LANGUAGE_STORAGE_KEY = "see_app_language"
@@ -28,6 +32,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     const [language, setLanguageState] = useState<AppLanguage>("english")
     const [isLanguageSwitchEnabled, setLanguageSwitchEnabled] = useState(true)
     const [disabledReason, setDisabledReason] = useState<string | null>(null)
+    const [currentTestId, setCurrentTestId] = useState<string | null>(null)
     const [isHydrated, setIsHydrated] = useState(false)
 
     // Load saved language preference on mount
@@ -61,6 +66,8 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
         setLanguageSwitchEnabled,
         disabledReason,
         setDisabledReason,
+        currentTestId,
+        setCurrentTestId,
     }
 
     return (
@@ -79,24 +86,11 @@ export function useLanguage() {
 }
 
 /**
- * Determine if language switching should be enabled based on test ID
- * Only Math and Science tests are language-neutral and support switching
+ * Language switching is always enabled since all test types now support bilingual content.
+ * This function is kept for API compatibility but always returns true.
  */
-export function getLanguageSwitchEnabled(testId: string | null): boolean {
-    if (!testId) return true // Enable for non-test UI (login, test selection)
-
-    // Parse test ID format: see_2081_<subject>_practice_N
-    if (testId.includes("_math_")) return true
-    if (testId.includes("_science_")) return true
-
-    // Disable for language-specific tests
-    // English, Nepali, and Social Studies tests are in their respective languages
-    if (testId.includes("_english_")) return false
-    if (testId.includes("_nepali_")) return false
-    if (testId.includes("_social_")) return false
-
-    // Default: enable (for unknown test types, allow switching)
-    return true
+export function getLanguageSwitchEnabled(_testId: string | null): boolean {
+    return true // All test types now support bilingual switching
 }
 
 /**
@@ -106,21 +100,49 @@ export function getLanguageSwitchEnabled(testId: string | null): boolean {
 export function getDisabledReason(testId: string | null, language: AppLanguage): string | null {
     if (!testId) return null
 
-    if (testId.includes("_english_")) {
-        return language === "english"
-            ? "This test is only available in English (as it appears on the actual exam)"
-            : "यो परीक्षा अंग्रेजीमा मात्र उपलब्ध छ (वास्तविक परीक्षामा जस्तो देखिन्छ)"
+    // All test types now support bilingual content
+    return null
+}
+
+/**
+ * Get the recommended language for a test based on how the actual SEE exam is administered.
+ * - Nepali and Social Studies tests are administered in Nepali
+ * - English tests are administered in English
+ * - Math and Science have no specific recommendation
+ * Returns null if no specific recommendation.
+ */
+export function getRecommendedLanguage(testId: string | null): AppLanguage | null {
+    if (!testId) return null
+
+    const testLower = testId.toLowerCase()
+
+    // Nepali and Social Studies tests should be done in Nepali
+    if (testLower.includes("nepali") || testLower.includes("social")) {
+        return "nepali"
     }
-    if (testId.includes("_nepali_")) {
-        return language === "english"
-            ? "This test is only available in Nepali (as it appears on the actual exam)"
-            : "यो परीक्षा नेपालीमा मात्र उपलब्ध छ (वास्तविक परीक्षामा जस्तो देखिन्छ)"
+
+    // English tests should be done in English
+    if (testLower.includes("english")) {
+        return "english"
     }
-    if (testId.includes("_social_")) {
-        return language === "english"
-            ? "This test is only available in Nepali (as it appears on the actual exam)"
-            : "यो परीक्षा नेपालीमा मात्र उपलब्ध छ (वास्तविक परीक्षामा जस्तो देखिन्छ)"
-    }
+
+    // No specific recommendation for Math, Science, etc.
+    return null
+}
+
+/**
+ * Get the subject name for display purposes
+ */
+export function getSubjectFromTestId(testId: string | null): string | null {
+    if (!testId) return null
+
+    const testLower = testId.toLowerCase()
+
+    if (testLower.includes("nepali")) return "Nepali"
+    if (testLower.includes("social")) return "Social Studies"
+    if (testLower.includes("english")) return "English"
+    if (testLower.includes("math")) return "Math"
+    if (testLower.includes("science")) return "Science"
 
     return null
 }

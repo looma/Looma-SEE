@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { BookOpen, AlertTriangle, RotateCcw } from "lucide-react"
 import { loadStudentProgress } from "@/lib/storage"
+import { useLanguage } from "@/lib/language-context"
 
 type TestMeta = {
   id: string
@@ -27,6 +28,7 @@ interface TestSelectorProps {
 }
 
 export function TestSelector({ currentTestId, onTestChange, onBackToSelection, studentId }: TestSelectorProps) {
+  const { language } = useLanguage()
   const [tests, setTests] = useState<TestMeta[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
@@ -41,24 +43,25 @@ export function TestSelector({ currentTestId, onTestChange, onBackToSelection, s
     let totalAnswered = 0
 
     // Count Group A answers (multiple choice)
-    const groupAAnswers = Object.keys(progress.answersA || {}).filter(
-      (key) => progress.answersA[key] && progress.answersA[key].trim(),
+    const groupAAnswers = Object.keys(progress.answers?.groupA || {}).filter(
+      (key) => (progress.answers?.groupA as Record<string, string>)?.[key]?.trim?.(),
     ).length
 
     // Count Group B answers (free response)
-    const groupBAnswers = Object.keys(progress.answersB || {}).filter(
-      (key) => progress.answersB[key] && progress.answersB[key].trim(),
+    const groupBAnswers = Object.keys(progress.answers?.groupB || {}).filter(
+      (key) => (progress.answers?.groupB as Record<string, string>)?.[key]?.trim?.(),
     ).length
 
     // Count Group C answers (free response)
-    const groupCAnswers = Object.keys(progress.answersC || {}).filter(
-      (key) => progress.answersC[key] && progress.answersC[key].trim(),
+    const groupCAnswers = Object.keys(progress.answers?.groupC || {}).filter(
+      (key) => (progress.answers?.groupC as Record<string, string>)?.[key]?.trim?.(),
     ).length
 
     // Count Group D answers (free response)
-    const groupDAnswers = Object.keys(progress.answersD || {}).filter(
-      (key) => progress.answersD[key] && progress.answersD[key].trim(),
+    const groupDAnswers = Object.keys(progress.answers?.groupD || {}).filter(
+      (key) => (progress.answers?.groupD as Record<string, string>)?.[key]?.trim?.(),
     ).length
+
 
     // Check for English test answers (stored differently)
     let englishAnswers = 0
@@ -67,7 +70,7 @@ export function TestSelector({ currentTestId, onTestChange, onBackToSelection, s
       englishAnswers = Object.keys(progress.answers).filter((key) => {
         const answer = progress.answers[key]
         if (!answer) return false
-        
+
         // Handle different answer structures based on question type
         if (typeof answer === 'string') {
           return answer.trim().length > 0
@@ -82,7 +85,7 @@ export function TestSelector({ currentTestId, onTestChange, onBackToSelection, s
               return val.trim().length > 0
             } else if (typeof val === 'object' && val !== null) {
               // Handle nested objects (like reading comprehension sub-sections)
-              return Object.values(val).some((nestedVal) => 
+              return Object.values(val).some((nestedVal) =>
                 typeof nestedVal === 'string' && nestedVal.trim().length > 0
               )
             }
@@ -98,8 +101,10 @@ export function TestSelector({ currentTestId, onTestChange, onBackToSelection, s
 
     const hasAttempts = (progress.attempts || []).length > 0
     const hasProgress = totalAnswered > 0
-    const estimatedTotal = 25
-    const percentage = Math.round((totalAnswered / estimatedTotal) * 100)
+    // Estimate total questions based on detected answer format
+    // Use actual answered count * 1.5 or a minimum of 10 to estimate progress reasonably
+    const estimatedTotal = Math.max(10, Math.ceil(totalAnswered * 1.5))
+    const percentage = totalAnswered > 0 ? Math.round((totalAnswered / estimatedTotal) * 100) : 0
 
     return {
       completed: hasAttempts,
@@ -145,8 +150,9 @@ export function TestSelector({ currentTestId, onTestChange, onBackToSelection, s
         <div className="flex items-center gap-3">
           <BookOpen className="h-5 w-5 text-amber-600" />
           <div>
-            <p className="font-semibold text-slate-800">No Practice Tests Available</p>
-            <p className="text-sm text-slate-600">कुनै अभ्यास परीक्षा उपलब्ध छैन</p>
+            <p className="font-semibold text-slate-800">
+              {language === "english" ? "No Practice Tests Available" : "कुनै अभ्यास परीक्षा उपलब्ध छैन"}
+            </p>
           </div>
         </div>
         <div className="mt-3 p-3 bg-amber-50 rounded-lg border border-amber-200">
@@ -167,8 +173,9 @@ export function TestSelector({ currentTestId, onTestChange, onBackToSelection, s
         <div className="flex items-center gap-3">
           <BookOpen className="h-5 w-5 text-amber-600" />
           <div>
-            <p className="font-semibold text-slate-800">Current Practice Test</p>
-            <p className="text-sm text-slate-600">हालको अभ्यास परीक्षा</p>
+            <p className="font-semibold text-slate-800">
+              {language === "english" ? "Current Practice Test" : "हालको अभ्यास परीक्षा"}
+            </p>
           </div>
         </div>
 

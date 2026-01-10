@@ -55,9 +55,8 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
 
     // Count actual answered questions from their progress
     let totalAnswered = 0
-    const estimatedTotal = 25 // Default estimate
 
-    // Count Group A answers (multiple choice)
+    // Count Group A answers (multiple choice) - Science format
     const groupAAnswers = Object.keys(progress.answers?.groupA || {}).filter(
       (key) => progress.answers?.groupA?.[key] && progress.answers.groupA[key].trim(),
     ).length
@@ -76,6 +75,45 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
     const groupDAnswers = Object.keys(progress.answers?.groupD || {}).filter(
       (key) => progress.answers?.groupD?.[key] && progress.answers.groupD[key].trim(),
     ).length
+
+    // Count Math answers (stored as answers.math.questionNumber.label)
+    let mathAnswers = 0
+    if (progress.answers?.math) {
+      Object.values(progress.answers.math).forEach((questionAnswers: any) => {
+        if (typeof questionAnswers === 'object' && questionAnswers !== null) {
+          mathAnswers += Object.values(questionAnswers).filter(
+            (val: any) => typeof val === 'string' && val.trim().length > 0
+          ).length
+        }
+      })
+    }
+
+    // Count Nepali answers (stored as answers.nepali.q1, q2, etc.)
+    let nepaliAnswers = 0
+    if (progress.answers?.nepali) {
+      Object.values(progress.answers.nepali).forEach((answer: any) => {
+        if (typeof answer === 'string' && answer.trim().length > 0) {
+          nepaliAnswers++
+        } else if (typeof answer === 'object' && answer !== null) {
+          // Handle structured answers (matching, fill_in_blanks, etc.)
+          const hasContent = Object.values(answer).some((val: any) => {
+            if (typeof val === 'string') return val.trim().length > 0
+            return val !== undefined && val !== null && val !== ''
+          })
+          if (hasContent) nepaliAnswers++
+        }
+      })
+    }
+
+    // Count Social Studies answers (stored as answers.socialStudies)
+    let socialStudiesAnswers = 0
+    if (progress.answers?.socialStudies) {
+      Object.values(progress.answers.socialStudies).forEach((answer: any) => {
+        if (typeof answer === 'string' && answer.trim().length > 0) {
+          socialStudiesAnswers++
+        }
+      })
+    }
 
     // Check for English test answers (stored differently)
     let englishAnswers = 0
@@ -110,11 +148,20 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
       }).length
     }
 
-    // Use the higher count (either science format or English format)
-    totalAnswered = Math.max(groupAAnswers + groupBAnswers + groupCAnswers + groupDAnswers, englishAnswers)
+    // Use the maximum of all subject counts
+    const scienceFormatCount = groupAAnswers + groupBAnswers + groupCAnswers + groupDAnswers
+    totalAnswered = Math.max(
+      scienceFormatCount,
+      mathAnswers,
+      nepaliAnswers,
+      socialStudiesAnswers,
+      englishAnswers
+    )
 
     const hasProgress = totalAnswered > 0
-    const percentage = Math.round((totalAnswered / estimatedTotal) * 100)
+    // Estimate total questions dynamically based on answered count
+    const estimatedTotal = Math.max(10, Math.ceil(totalAnswered * 1.5))
+    const percentage = totalAnswered > 0 ? Math.round((totalAnswered / estimatedTotal) * 100) : 0
 
     return {
       completed: hasAttempts,
@@ -394,12 +441,12 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
           .sort(([a], [b]) => {
             // Define a preferred order for subjects
             const subjectOrder: Record<string, number> = {
-              nepali: 1,
-              english: 2,
-              science: 3,
-              social: 4,
-              social_studies: 4,
-              mathematics: 5,
+              english: 1,
+              nepali: 2,
+              mathematics: 3,
+              science: 4,
+              social: 5,
+              social_studies: 5,
               general: 99,
             }
             return (subjectOrder[a] || 50) - (subjectOrder[b] || 50)
@@ -432,7 +479,7 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
                         className={`bg-gradient-to-r ${getSubjectColor(test.subject || "")} text-white relative overflow-hidden p-4 sm:p-6`}
                       >
                         <div className="absolute top-0 right-0 w-24 h-24 sm:w-32 sm:h-32 opacity-10">
-                          <div className="text-4xl sm:text-6xl transform rotate-12 translate-x-4 sm:translate-x-6 translate-y-2 sm:translate-y-4">
+                          <div className="text-4xl sm:text-6xl transform rotate-12 translate-x-4 sm:translate-x-6 translate-y-6 sm:translate-y-8">
                             {getSubjectIcon(test.subject || "")}
                           </div>
                         </div>

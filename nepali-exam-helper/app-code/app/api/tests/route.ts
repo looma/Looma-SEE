@@ -27,6 +27,7 @@ export async function GET() {
       id: t._id,
       title: t.title,
       titleNepali: t.titleNepali,
+      titleEnglish: t.titleEnglish || t.title,
       subject: t.subject,
       year: t.year,
       totalMarks: t.totalMarks,

@@ -1,15 +1,14 @@
 [
   {
     "_id": "see_2081_math_practice_4_final_revised",
-    "titleNepali": "SEE २०८१ अनिवार्य गणित अभ्यास परीक्षा ४ (७५ पूर्णाङ्क)",
-    "titleEnglish": "SEE 2081 Math Practice Test 4 (75 Marks)",
+    "titleNepali": "SEE २०८१ अनिवार्य गणित अभ्यास परीक्षा ४",
+    "titleEnglish": "SEE 2081 Math Practice Test 4",
     "subjectNepali": "अनिवार्य गणित",
     "subjectEnglish": "Compulsory Mathematics",
     "totalMarksNepali": "७५",
     "totalMarksEnglish": 75,
     "durationNepali": "१८०",
-    "durationEnglish": 180,
-    "questions": []
+    "durationEnglish": 180
   },
   {
     "testId": "see_2081_math_practice_4_final_revised",

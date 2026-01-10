@@ -1,257 +1,353 @@
 [
- {
-  "_id": "see_2081_social_practice_3_generated",
-  "title": "SEE 2081 Social Practice Test 3",
-  "titleNepali": "SEE २०८१ सामाजिक अध्ययन अभ्यास परीक्षा ३",
-  "subject": "social_studies",
-  "year": 2081,
-  "totalMarks": 75,
-  "duration": 180,
-  "instructionsEnglish": "Candidates are required to give creative answers in their own style based on the given instructions.",
-  "instructionsNepali": "दिइएका निर्देशनका आधारमा आफ्नै शैलीमा सिर्जनात्मक उत्तर दिनुहोस् :",
-  "isActive": true,
-  "createdAt": {
-   "$date": "2025-08-31T20:00:00.000Z"
+  {
+    "_id": "see_2081_social_practice_3_generated",
+    "titleNepali": "SEE २०८१ सामाजिक अध्ययन अभ्यास परीक्षा ३",
+    "titleEnglish": "SEE 2081 Social Practice Test 3",
+    "subjectNepali": "सामाजिक अध्ययन",
+    "subjectEnglish": "social_studies",
+    "totalMarksNepali": "७५",
+    "totalMarksEnglish": 75,
+    "durationNepali": "१८०",
+    "durationEnglish": 180,
+    "instructionsNepali": "दिइएका निर्देशनका आधारमा आफ्नै शैलीमा सिर्जनात्मक उत्तर दिनुहोस् :",
+    "instructionsEnglish": "Candidates are required to give creative answers in their own style based on the given instructions."
   },
-  "updatedAt": {
-   "$date": "2025-08-31T20:00:00.000Z"
+  {
+    "testId": "see_2081_social_practice_3_generated",
+    "groups": [
+      {
+        "groupName": "समूह 'क'",
+        "groupInstruction": "तलका प्रश्नहरूको अति छोटो उत्तर दिनुहोस् :",
+        "marksSchema": "(११×१=११)",
+        "questions": [
+          {
+            "type": "very_short_answer",
+            "questionNepali": "सामाजिकीकरणको एक तत्त्वको रूपमा 'भाषा' को भूमिका के हो?",
+            "questionEnglish": "What is the role of 'language' as an element of socialization?",
+            "answerNepali": "भाषा विचार आदानप्रदान गर्ने सशक्त माध्यम हो, जसले मानिसहरूलाई एकआपसमा घुलमिल हुन र भावना बुझ्न मद्दत गर्छ ।",
+            "answerEnglish": "Language is a powerful medium of exchanging ideas, which helps people to mingle with each other and understand feelings.",
+            "explanationNepali": "भाषाको माध्यमबाट मानिसहरूले आफ्ना विचार, अनुभव र सोचाइहरू साटासाट गर्छन्, जसले सामाजिक सम्बन्धलाई बलियो बनाउँछ र सामाजिकीकरण प्रक्रियालाई सहज बनाउँछ ।\nउद्धरण: एकाइ १, पाठ १।",
+            "explanationEnglish": "Through language, people exchange their thoughts, experiences, and ideas, which strengthens social relations and facilitates the socialization process.\nCitation: Unit 1, Lesson 1",
+            "questionNumberNepali": "१",
+            "questionNumberEnglish": "1",
+            "marksNepali": "१",
+            "marksEnglish": 1
+          },
+          {
+            "type": "very_short_answer",
+            "questionNepali": "दिगो विकासको कुनै एक उद्देश्य लेख्नुहोस् ।",
+            "questionEnglish": "Write any one objective of sustainable development.",
+            "answerNepali": "दिगो विकासको एक उद्देश्य प्राकृतिक स्रोत र साधनको विवेक सङ्गत एवम् सावधानीपूर्ण उपयोग गर्नु हो ।",
+            "answerEnglish": "One objective of sustainable development is to make rational and careful use of natural resources and means.",
+            "explanationNepali": "दिगो विकासले वर्तमानको आवश्यकता पूरा गर्दा भावी पुस्ताको आवश्यकतामा असर नपर्ने गरी स्रोतहरूको उपयोग गर्नुपर्छ भन्ने मान्यता राख्छ, जसले गर्दा स्रोतको दिगोपना सुनिश्चित हुन्छ ।\nउद्धरण: एकाइ २, पाठ २।",
+            "explanationEnglish": "Sustainable development holds the belief that resources should be utilized in such a way that meeting current needs does not affect the needs of future generations, ensuring the sustainability of resources.\nCitation: Unit 2, Lesson 2",
+            "questionNumberNepali": "२",
+            "questionNumberEnglish": "2",
+            "marksNepali": "१",
+            "marksEnglish": 1
+          },
+          {
+            "type": "very_short_answer",
+            "questionNepali": "घरेलु हिंसा विरुद्ध एउटा प्लेकार्डमा लेख्न उपयुक्त हुने नारा बनाउनुहोस् ।",
+            "questionEnglish": "Create a slogan suitable for writing on a placard against domestic violence.",
+            "answerNepali": "नारा: “घरलाई शान्तिको केन्द्र बनाऔँ, घरेलु हिंसा आजैबाट हटाऔँ ।”",
+            "answerEnglish": "Slogan: \"Let's make home a center of peace, let's remove domestic violence from today.\"",
+            "explanationNepali": "यो नाराले घरपरिवारमा हुने कुनै पनि प्रकारको हिंसा अन्त्य गरी शान्तिपूर्ण र सम्मानजनक वातावरण सिर्जना गर्नुपर्छ भन्ने सन्देश दिन्छ ।\nउद्धरण: एकाइ ४, पाठ ३।",
+            "explanationEnglish": "This slogan gives the message that any kind of violence in the family should be ended and a peaceful and respectful environment should be created.\nCitation: Unit 4, Lesson 3",
+            "questionNumberNepali": "३",
+            "questionNumberEnglish": "3",
+            "marksNepali": "१",
+            "marksEnglish": 1
+          },
+          {
+            "type": "very_short_answer",
+            "questionNepali": "अमूर्त सांस्कृतिक सम्पदा भनेको के हो?",
+            "questionEnglish": "What is intangible cultural heritage?",
+            "answerNepali": "भौतिक रूपमा छुन नसकिने तर अनुभव गर्न सकिने परम्परा, ज्ञान, सीप र संस्कारहरूलाई अमूर्त सांस्कृतिक सम्पदा भनिन्छ ।",
+            "answerEnglish": "Traditions, knowledge, skills, and rituals that cannot be physically touched but can be experienced are called Intangible Cultural Heritage.",
+            "explanationNepali": "उदाहरणका लागि, चाडपर्व मनाउने विधि, लोकनृत्य, पूजा गर्ने तरिका आदि अमूर्त सम्पदा हुन् जसले हाम्रो संस्कृतिलाई जीवन्त राखेका छन् ।\nउद्धरण: एकाइ ३, पाठ १।",
+            "explanationEnglish": "For example, methods of celebrating festivals, folk dances, ways of worshipping, etc., are intangible heritage that have kept our culture alive.\nCitation: Unit 3, Lesson 1",
+            "questionNumberNepali": "४",
+            "questionNumberEnglish": "4",
+            "marksNepali": "१",
+            "marksEnglish": 1
+          },
+          {
+            "type": "very_short_answer",
+            "questionNepali": "नेपालमा संविधान दिवस किन मनाइन्छ?",
+            "questionEnglish": "Why is Constitution Day celebrated in Nepal?",
+            "answerNepali": "नेपालको वर्तमान संविधान २०७२ असोज ३ गते जारी भएको दिनको स्मरणमा हरेक वर्ष असोज ३ गते संविधान दिवस मनाइन्छ ।",
+            "answerEnglish": "Constitution Day is celebrated every year on Ashoj 3 in memory of the day the current Constitution of Nepal was promulgated on Ashoj 3, 2072.",
+            "explanationNepali": "यो दिवसले संविधानको महत्त्व, यसको रक्षा र पालना गर्नुपर्ने नागरिक दायित्वको बोध गराउँछ ।\nउद्धरण: एकाइ ३, पाठ ५।",
+            "explanationEnglish": "This day makes us realize the importance of the constitution and the civic duty to protect and follow it.\nCitation: Unit 3, Lesson 5",
+            "questionNumberNepali": "५",
+            "questionNumberEnglish": "5",
+            "marksNepali": "१",
+            "marksEnglish": 1
+          },
+          {
+            "type": "very_short_answer",
+            "questionNepali": "नेपालको सन्दर्भमा 'विश्वग्राम' को अवधारणालाई एक वाक्यमा परिभाषित गर्नुहोस् ।",
+            "questionEnglish": "Define the concept of 'Global Village' in the context of Nepal in one sentence.",
+            "answerNepali": "सूचना प्रविधिको विकासले गर्दा संसारका मानिसहरू एउटै गाउँ वा परिवारका सदस्य जस्तै गरी नजिकिएको अवस्थालाई 'विश्वग्राम' भनिन्छ ।",
+            "answerEnglish": "The concept of 'Global Village' refers to the state where people of the world have come closer like members of the same village or family due to the development of information technology.",
+            "explanationNepali": "इन्टरनेट र सञ्चारका साधनले भौगोलिक दूरीलाई हटाइदिएको छ, जसले गर्दा मानिसहरूबीच तत्कालै सूचना र भावना साटासाट गर्न सम्भव भएको छ ।\nउद्धरण: एकाइ ३, पाठ ७।",
+            "explanationEnglish": "Internet and means of communication have removed geographical distance, making it possible to exchange information and feelings among people instantly.\nCitation: Unit 3, Lesson 7",
+            "questionNumberNepali": "६",
+            "questionNumberEnglish": "6",
+            "marksNepali": "१",
+            "marksEnglish": 1
+          },
+          {
+            "type": "very_short_answer",
+            "questionNepali": "नेपालको राष्ट्रिय सभाका सदस्यको पदावधि कति वर्षको हुन्छ?",
+            "questionEnglish": "How many years is the tenure of the members of the National Assembly of Nepal?",
+            "answerNepali": "नेपालको राष्ट्रिय सभाका सदस्यको पदावधि छ वर्षको हुन्छ ।",
+            "answerEnglish": "The tenure of the members of the National Assembly of Nepal is six years.",
+            "explanationNepali": "राष्ट्रिय सभा एक स्थायी सदन हो र यसका एक तिहाइ सदस्यको पदावधि प्रत्येक दुई वर्षमा समाप्त हुन्छ, जसले गर्दा सदन कहिल्यै विघटन हुँदैन ।\nउद्धरण: एकाइ ५, पाठ १।",
+            "explanationEnglish": "The National Assembly is a permanent house and the term of one-third of its members expires every two years, so the house is never dissolved.\nCitation: Unit 5, Lesson 1",
+            "questionNumberNepali": "७",
+            "questionNumberEnglish": "7",
+            "marksNepali": "१",
+            "marksEnglish": 1
+          },
+          {
+            "type": "very_short_answer",
+            "questionNepali": "उपभोक्ता संरक्षण ऐन, २०७५ अनुसार उपभोक्तालाई प्राप्त हुने कुनै एक अधिकार उल्लेख गर्नुहोस् ।",
+            "questionEnglish": "Mention any one right available to consumers according to the Consumer Protection Act, 2075.",
+            "answerNepali": "उपभोक्ता संरक्षण ऐन, २०७५ अनुसार उपभोक्तालाई वस्तु वा सेवाबारे सुसूचित हुन पाउने अधिकार छ ।",
+            "answerEnglish": "According to the Consumer Protection Act, 2075, consumers have the right to be informed about goods or services.",
+            "explanationNepali": "यो अधिकारले उपभोक्तालाई कुनै पनि वस्तुको गुण, परिमाण, मूल्य, र त्यसका तत्त्वहरूबारे सही जानकारी पाउने हक सुनिश्चित गर्छ, जसले गर्दा उनीहरूले सही निर्णय लिन सक्छन् ।\nउद्धरण: एकाइ ५, पाठ ८।",
+            "explanationEnglish": "This right ensures the consumer's right to proper information about the quality, quantity, price, and ingredients of any product, enabling them to make the right decision.\nCitation: Unit 5, Lesson 8",
+            "questionNumberNepali": "८",
+            "questionNumberEnglish": "8",
+            "marksNepali": "१",
+            "marksEnglish": 1
+          },
+          {
+            "type": "very_short_answer",
+            "questionNepali": "अफ्रिका महादेशमा पाइने घाँसे मैदानलाई के भनिन्छ?",
+            "questionEnglish": "What are the grasslands found in the African continent called?",
+            "answerNepali": "अफ्रिका महादेशमा पाइने घाँसे मैदानलाई 'सभाना' र 'भेल्ड' भनिन्छ ।",
+            "answerEnglish": "The grasslands found in the African continent are called 'Savanna' and 'Veld'.",
+            "explanationNepali": "उष्ण तृणभूमिको घाँसे मैदानलाई 'सभाना' भनिन्छ भने समशीतोष्ण तृणभूमिको घाँसे मैदानलाई दक्षिण अफ्रिकामा 'भेल्ड' भनिन्छ ।\nउद्धरण: एकाइ ६, पाठ ४।",
+            "explanationEnglish": "The grassland of tropical grassland is called 'Savanna' while the grassland of temperate grassland is called 'Veld' in South Africa.\nCitation: Unit 6, Lesson 4",
+            "questionNumberNepali": "९",
+            "questionNumberEnglish": "9",
+            "marksNepali": "१",
+            "marksEnglish": 1
+          },
+          {
+            "type": "very_short_answer",
+            "questionNepali": "भूकम्पको केन्द्रविन्दु (Epicenter) भनेको के हो?",
+            "questionEnglish": "What is the Epicenter of an earthquake?",
+            "answerNepali": "पृथ्वीको सतहभन्दा भित्र भूकम्पको उत्पत्ति हुने उद्गमविन्दुबाट ठीक माथि पृथ्वीको सतहमा जहाँ पहिलो धक्का महसुस गरिन्छ, त्यस भागलाई केन्द्रविन्दु (Epicenter) भनिन्छ ।",
+            "answerEnglish": "The part on the earth's surface exactly above the hypocenter where the earthquake originates inside the earth's surface, where the first shock is felt, is called the Epicenter.",
+            "explanationNepali": "केन्द्रविन्दुमा भूकम्पको कम्पन सबैभन्दा शक्तिशाली महसुस हुन्छ र त्यहाँ सबैभन्दा बढी क्षति हुने सम्भावना हुन्छ ।\nउद्धरण: एकाइ ६, पाठ ७।",
+            "explanationEnglish": "The earthquake tremor is felt most powerfully at the epicenter and there is a possibility of maximum damage there.\nCitation: Unit 6, Lesson 7",
+            "questionNumberNepali": "१०",
+            "questionNumberEnglish": "10",
+            "marksNepali": "१",
+            "marksEnglish": 1
+          },
+          {
+            "type": "very_short_answer",
+            "questionNepali": "तपाईंको समुदायमा प्रचलित कुनै एक लोकबाजाको नाम लेख्नुहोस् ।",
+            "questionEnglish": "Write the name of any one folk instrument prevalent in your community.",
+            "answerNepali": "मेरो समुदायमा प्रचलित एक लोकबाजा मादल हो ।",
+            "answerEnglish": "One folk instrument prevalent in my community is Madal.",
+            "explanationNepali": "यो एक व्यक्तिगत प्रश्न हो । विद्यार्थीले आफ्नो समुदायमा बजाइने कुनै पनि लोकबाजा जस्तै मादल, सारङ्गी, बाँसुरी, पञ्चेबाजा आदिको नाम लेख्न सक्छन् ।\nउद्धरण: एकाइ ३, पाठ ३।",
+            "explanationEnglish": "This is a personal question. Students can write the name of any folk instrument played in their community such as Madal, Sarangi, Flute, Panchebaja etc.\nCitation: Unit 3, Lesson 3",
+            "questionNumberNepali": "११",
+            "questionNumberEnglish": "11",
+            "marksNepali": "१",
+            "marksEnglish": 1
+          }
+        ]
+      },
+      {
+        "groupName": "समूह 'ख'",
+        "groupInstruction": "तलका प्रश्नहरूको छोटो उत्तर दिनुहोस् :",
+        "marksSchema": "(९×४=३६)",
+        "questions": [
+          {
+            "type": "short_answer",
+            "questionNepali": "सामाजिकीकरणमा घर-परिवारको भूमिकालाई 'पहिलो पाठशाला' किन भनिन्छ? चार कारण दिनुहोस् ।",
+            "questionEnglish": "Why is the role of home and family in socialization called the 'first school'? Give four reasons.",
+            "answerNepali": "सामाजिकीकरणमा घर-परिवारलाई 'पहिलो पाठशाला' भनिनुका कारणहरू निम्न छन्:\n• आधारभूत ज्ञानको सुरुवात: बालबालिकाले बोल्न, हिँड्न, खान र व्यवहार गर्न जस्ता आधारभूत कुराहरू परिवारबाटै सिक्छन् ।\n• भाषा र संस्कारको सिकाइ: बालबालिकाले आफ्नो मातृभाषा, रीतिरिवाज, चाडपर्व र सांस्कृतिक मूल्यमान्यताहरू सबैभन्दा पहिले परिवारबाटै सिक्दछन् ।\n• नाता सम्बन्धको ज्ञान: बालबालिकाले आमा, बुबा, दाजु, भाइ जस्ता नाता सम्बन्ध र उनीहरूप्रति गर्नुपर्ने सम्मान र व्यवहार परिवारबाटै सिक्छन् ।\n• प्रेम र सुरक्षाको अनुभूति: परिवारले प्रदान गर्ने प्रेम, स्नेह र सुरक्षाले बालबालिकाको भावनात्मक विकासमा महत्त्वपूर्ण भूमिका खेल्छ, जसले उनीहरूलाई समाजमा घुलमिल हुन आत्मविश्वास प्रदान गर्छ ।",
+            "answerEnglish": "The reasons why home and family are called the 'first school' in socialization are:\n• Start of basic knowledge: Children learn basic things like speaking, walking, eating, and behaving from the family itself.\n• Learning of language and culture: Children learn their mother tongue, customs, festivals, and cultural values first from the family.\n• Knowledge of relationships: Children learn about relationships like mother, father, brother, and the respect and behavior towards them from the family.\n• Feeling of love and security: The love, affection, and security provided by the family play an important role in the emotional development of children, which gives them \nthe confidence to mingle in society.",
+            "explanationNepali": "बालबालिकाको जीवनमा सबैभन्दा पहिलो र गहिरो प्रभाव परिवारको पर्ने भएकाले यसलाई पहिलो पाठशाला भनिएको हो । यहाँ सिकेका कुराहरूले उसको जीवनभरिको व्यक्तित्व निर्माणमा आधारको काम गर्छ ।\nउद्धरण: एकाइ १, पाठ १।",
+            "explanationEnglish": "Family is called the first school because it has the first and deepest influence on a child's life. What is learned here serves as the foundation for personality development throughout their life.\nCitation: Unit 1, Lesson 1",
+            "questionNumberNepali": "१२",
+            "questionNumberEnglish": "12",
+            "marksNepali": "४",
+            "marksEnglish": 4
+          },
+          {
+            "type": "short_answer",
+            "questionNepali": "पुष्पलाल (मध्यपहाडी) लोकमार्गको परिचय दिँदै यसका दुईवटा महत्त्व उल्लेख गर्नुहोस् ।",
+            "questionEnglish": "Introducing the Pushpalal (Mid-Hill) Highway, mention two of its importances.",
+            "answerNepali": "परिचय: पुष्पलाल (मध्यपहाडी) लोकमार्ग नेपालको पूर्वमा पाँचथरको चियोभञ्ज्याङदेखि पश्चिममा बैतडीको झुलाघाटसम्म मध्यपहाडी क्षेत्रका जिल्लाहरूलाई जोड्ने गरी निर्माणाधीन राष्ट्रिय गौरवको आयोजना हो । यसको कुल लम्बाइ १८७९ कि.मि. रहेको छ ।\n\nमहत्त्व:\n• आर्थिक विकासमा योगदान: यस लोकमार्गले मध्यपहाडका बस्तीहरूमा यातायातको सहज पहुँच विस्तार गरी त्यहाँ उत्पादित कृषि उपजलाई बजारसम्म पुऱ्याउन मद्दत गर्छ, जसले स्थानीय जनताको आर्थिक अवस्था सुधार गर्छ ।\n• बसाइँसराइ न्यूनीकरण: पहाडी क्षेत्रमा विकासका पूर्वाधार र रोजगारीका अवसरहरू सिर्जना हुने भएकाले मानिसहरूलाई तराई वा सहरमा बसाइँ सर्नबाट रोक्न यसले महत्त्वपूर्ण भूमिका खेल्छ ।",
+            "answerEnglish": "Introduction: Pushpalal (Mid-Hill) Highway is a National Pride Project under construction that connects the districts of the mid-hill region from Chiyobhanjyang in Panchthar in the east to Jhulaghat in Baitadi in the west of Nepal. Its total length is 1879 km.\n\nImportance:\n• Contribution to Economic Development: This highway helps in transporting agricultural produce to the market by expanding easy access to transportation in the settlements of the mid-hills, which improves the economic condition of the local people.\n• Reduction in Migration: As development infrastructure and employment opportunities will be created in the hilly region, it plays an important role in stopping \npeople from migrating to the Terai or cities.",
+            "explanationNepali": "यो प्रश्नले विद्यार्थीलाई राष्ट्रिय गौरवका आयोजनाहरूको महत्त्व र त्यसले देशको विकासमा पार्ने प्रभावबारे बुझ्न मद्दत गर्छ ।\nउद्धरण: एकाइ २, पाठ ४।",
+            "explanationEnglish": "This question helps students to understand the importance of national pride projects and their impact on the country's development.\nCitation: Unit 2, Lesson 4",
+            "questionNumberNepali": "१३",
+            "questionNumberEnglish": "13",
+            "marksNepali": "४",
+            "marksEnglish": 4
+          },
+          {
+            "type": "creative_writing_news_report",
+            "questionNepali": "'लोप हुँदै हाम्रा मौलिक लोकबाजाहरू' शीर्षकमा एक समाचारको नमुना तयार गर्नुहोस् ।",
+            "questionEnglish": "Prepare a sample news report on the title 'Our Disappearing Traditional Folk Instruments'.",
+            "answerNepali": "लोप हुँदै हाम्रा मौलिक लोकबाजाहरू\n\nजेठ १७, काठमाडौँ (सञ्चारकर्मी) - आधुनिकताको प्रभाव र विदेशी बाजाको बढ्दो प्रयोगले गर्दा नेपालका कैयौँ मौलिक लोकबाजाहरू लोप हुने अवस्थामा पुगेका छन् । कुनै समय हरेक गाउँघरमा गुञ्जिने सारङ्गी, बिनायो, आरबाजो जस्ता बाजाहरू आजभोलि मुस्किलले सुन्न पाइन्छ ।\n\nविशेषगरी युवा पुस्तामाझ विदेशी गीत-सङ्गीतप्रतिको आकर्षण बढ्नु र पुराना पुस्ताले नयाँ पुस्तालाई यी बाजाहरू बजाउने सीप हस्तान्तरण गर्न नसक्नु यसको मुख्य कारण रहेको संस्कृतिविद्हरू बताउँछन् । गन्धर्व जातिले रेट्ने सारङ्गी होस् वा किराँतीहरूले बजाउने बिनायो, यी बाजाहरू बजाउने कलाकारहरूले आफ्नो पेसाबाट जीवन धान्न नसक्दा पलायन हुनुपर्ने बाध्यता छ ।\n\nयी मौलिक बाजाहरू हाम्रो पहिचान र संस्कृतिसँग जोडिएका छन् । \nयिनीहरूको संरक्षणका लागि सरकार, स्थानीय तह र समुदायले तत्काल विशेष कार्यक्रमहरू सञ्चालन गरी कलाकारहरूलाई प्रोत्साहन गर्न र नयाँ पुस्तालाई तालिमको व्यवस्था गर्न आवश्यक देखिन्छ । अन्यथा, हाम्रा यी अमूल्य सम्पदाहरू इतिहासका पानामा मात्र सीमित नहोलान् भन्न सकिन्न ।",
+            "answerEnglish": "Our Disappearing Traditional Folk Instruments\n\nJestha 17, Kathmandu (Reporter) - Due to the influence of modernity and the increasing use of foreign instruments, many of Nepal's traditional folk instruments have reached the verge of extinction. Instruments like Sarangi, Binayo, Arbajo, which used to resonate in every village at one time, are hardly heard nowadays.\n\nCulture experts say that the main reason for this is the increasing attraction towards foreign music among the young generation and the failure of the old generation to transfer the skills of playing these instruments to the new generation. Whether it is the Sarangi played by the \nGandharva caste or the Binayo played by the Kiratis, the artists playing these instruments are forced to migrate as they cannot sustain their lives from their profession.\n\nThese traditional instruments are linked with our identity and culture. For their preservation, it seems necessary for the government, local levels, and the community to immediately conduct special programs to encourage artists and arrange training for the new generation.\nOtherwise, it cannot be said that these invaluable heritages of ours will not be limited to the pages of history only.",
+            "explanationNepali": "यो प्रश्नले विद्यार्थीलाई समाजको सांस्कृतिक समस्याप्रति संवेदनशील बनाउँदै रचनात्मक लेखन (समाचार लेखन) को अभ्यास गराउँछ ।\nउद्धरण: एकाइ ३, पाठ ३।",
+            "explanationEnglish": "This question allows students to practice creative writing (news writing) while making them sensitive to the cultural problems of society.\nCitation: Unit 3, Lesson 3",
+            "questionNumberNepali": "१४",
+            "questionNumberEnglish": "14",
+            "marksNepali": "४",
+            "marksEnglish": 4
+          },
+          {
+            "type": "short_answer",
+            "questionNepali": "लोकनृत्य र शास्त्रीय नृत्यबिच पाइने चारवटा भिन्नताहरू लेख्नुहोस् ।",
+            "questionEnglish": "Write down four differences between folk dance and classical dance.",
+            "answerNepali": "लोकनृत्य र शास्त्रीय नृत्यबिचका भिन्नताहरू निम्न छन्:\n• लोकनृत्य: यो समुदायको दैनिक जीवन, सुखदुःख र संस्कृतिसँग सम्बन्धित हुन्छ । शास्त्रीय नृत्य: यो धर्म, शास्त्र र देवीदेवताको चरित्रमा आधारित हुन्छ ।\n• लोकनृत्य: यसका नियमहरू सरल र लचिला हुन्छन् । शास्त्रीय नृत्य: यसका नियम, मुद्रा र अभिनय कठोर र शास्त्रीय व्याकरणमा बाँधिएका हुन्छन् ।\n• लोकनृत्य: यो सामूहिक रूपमा रमाइलोका लागि नाचिने गरिन्छ । शास्त्रीय नृत्य: यो विशेष तालिम प्राप्त कलाकारद्वारा मञ्चमा प्रदर्शन गरिन्छ ।\n• लोकनृत्य: उदाहरण: देउडा नाच, धान नाच, मारुनी नाच । शास्त्रीय नृत्य: उदाहरण: कार्तिक नाच, चर्या नृत्य, पञ्चबुद्ध नृत्य ।",
+            "answerEnglish": "The differences between folk dance and classical dance are as follows:\n• Folk Dance: It is related to the daily life, joys, sorrows, and culture of the community. Classical Dance: It is based on religion, scriptures, and the characters of deities.\n• Folk Dance: Its rules are simple and flexible. Classical Dance: Its rules, postures, and expressions are rigid and bound by classical grammar.\n• Folk Dance: It is performed collectively for entertainment. Classical Dance: It is performed on stage by specially trained artists.\n• Folk Dance: Examples: Deuda dance, Dhan dance, Maruni dance. Classical Dance: Examples: Kartik dance, Charya dance, Panchabuddha dance.",
+            "explanationNepali": "यो उत्तरले दुई प्रकारका नृत्यहरूको आधारभूत भिन्नतालाई स्पष्ट पार्छ । यसले विद्यार्थीलाई नेपाली नृत्यकलाको विविधता र विशेषता बुझ्न मद्दत गर्दछ ।\nउद्धरण: एकाइ ३, पाठ ४।",
+            "explanationEnglish": "This answer clarifies the basic differences between the two types of dances. It helps students understand the diversity and characteristics of Nepali dance forms.\nCitation: Unit 3, Lesson 4",
+            "questionNumberNepali": "१५",
+            "questionNumberEnglish": "15",
+            "marksNepali": "४",
+            "marksEnglish": 4
+          },
+          {
+            "type": "short_answer",
+            "questionNepali": "न्यायपालिकाका कुनै चारवटा प्रमुख कार्यहरूको सूची बनाउनुहोस् ।",
+            "questionEnglish": "Make a list of any four major functions of the judiciary.",
+            "answerNepali": "न्यायपालिकाका प्रमुख चार कार्यहरू निम्न छन्:\n• न्याय प्रदान गर्ने: देवानी र फौजदारी मुद्दाहरूको फैसला गरी पीडितलाई न्याय र दोषीलाई सजाय दिने ।\n• संविधान र कानुनको व्याख्या गर्ने: संविधान र कानुनका प्रावधानहरू अस्पष्ट भएमा त्यसको अन्तिम व्याख्या गर्ने ।\n• मौलिक हकको संरक्षण गर्ने: नागरिकको संविधान प्रदत्त मौलिक हक हनन भएमा त्यसको संरक्षण गरी आवश्यक कानुनी उपचार प्रदान गर्ने ।\n• न्यायिक पुनरावलोकन गर्ने: व्यवस्थापिकाले बनाएको कानुन वा कार्यपालिकाले गरेको निर्णय संविधानसँग बाझिएमा त्यसलाई बदर घोषित गर्ने ।",
+            "answerEnglish": "The four major functions of the Judiciary are as follows:\n• Delivering Justice: Deciding civil and criminal cases to provide justice to the victim and punishment to the guilty.\n• Interpreting Constitution and Law: Making the final interpretation of provisions of the constitution and law if they are unclear.\n• Protecting Fundamental Rights: Protecting the fundamental rights of citizens granted by the constitution if they are violated and providing necessary legal remedies.\n• Judicial Review: Declaring any law made by the legislature or decision made by the executive void if it conflicts with the constitution.",
+            "explanationNepali": "यो प्रश्नले विद्यार्थीलाई राज्यको तेस्रो अङ्ग न्यायपालिकाको भूमिका र शक्तिबारे जानकारी दिन्छ, जसले कानुनी शासन र नागरिक अधिकारको महत्त्व बुझ्न मद्दत गर्छ ।\nउद्धरण: एकाइ ५, पाठ ३।",
+            "explanationEnglish": "This question informs students about the role and power of the judiciary, the third organ of the state, which helps to understand the importance of the rule of law and civil rights.\nCitation: Unit 5, Lesson 3",
+            "questionNumberNepali": "१६",
+            "questionNumberEnglish": "16",
+            "marksNepali": "४",
+            "marksEnglish": 4
+          },
+          {
+            "type": "short_answer",
+            "questionNepali": "निर्वाचन प्रक्रियामा नागरिकले खेल्नुपर्ने चारवटा महत्त्वपूर्ण भूमिकाहरू उल्लेख गर्नुहोस् ।",
+            "questionEnglish": "Mention four important roles that citizens should play in the election process.",
+            "answerNepali": "निर्वाचन प्रक्रियामा नागरिकले खेल्नुपर्ने महत्त्वपूर्ण भूमिकाहरू निम्न छन्:\n• मतदाता नामावलीमा नाम दर्ता: १८ वर्ष उमेर पुगेका हरेक नागरिकले आफ्नो नाम मतदाता नामावलीमा दर्ता गराएर आफ्नो मताधिकार सुनिश्चित गर्नुपर्छ ।\n• विवेकपूर्ण मतदान: कुनै पनि किसिमको डर, त्रास वा प्रलोभनमा नपरी आफ्नो विवेक प्रयोग गरेर योग्य, इमानदार र सक्षम उम्मेदवारलाई मात्र मत दिनुपर्छ ।\n• निर्वाचनको पर्यवेक्षण: आफ्नो समुदायमा निर्वाचन स्वच्छ र निष्पक्ष भए/नभएको निगरानी गर्ने र कुनै धाँधली वा गलत गतिविधि भएमा सम्बन्धित निकायमा तुरुन्त जानकारी गराउने ।\n• जनमतको सम्मान: निर्वाचनको परिणामलाई स्वीकार गर्ने र विजयी उम्मेदवारलाई जनहितमा काम गर्न निरन्तर खबरदारी गर्ने ।",
+            "answerEnglish": "The important roles that citizens should play in the election process are as follows:\n• Voter Registration: Every citizen who has reached the age of 18 must ensure their right to vote by registering their name in the voter list.\n• Conscientious Voting: Without falling into any kind of fear, intimidation, or temptation, one should vote only for eligible, honest, and capable candidates by using their conscience.\n• Observation of Election: Monitoring whether the election in one's community is free and fair and immediately informing the concerned authority if there is any rigging or wrong activity.\n• Respect for Public Mandate: Accepting the \nresult of the election and continuously warning the winning candidate to work in the public interest.",
+            "explanationNepali": "यो प्रश्नले लोकतन्त्रमा नागरिकको भूमिका केवल मत हाल्ने मात्र नभई सम्पूर्ण निर्वाचन प्रक्रियालाई स्वच्छ र निष्पक्ष बनाउन महत्त्वपूर्ण हुन्छ भन्ने कुरामा जोड दिन्छ ।\nउद्धरण: एकाइ ५, पाठ ५।",
+            "explanationEnglish": "This question emphasizes that the role of citizens in a democracy is not just to cast votes but is important to make the entire election process clean and fair.\nCitation: Unit 5, Lesson 5",
+            "questionNumberNepali": "१७",
+            "questionNumberEnglish": "17",
+            "marksNepali": "४",
+            "marksEnglish": 4
+          },
+          {
+            "type": "short_answer",
+            "questionNepali": "भूमध्यरेखीय र उष्ण मौसमी हावापानीमा पाइने चार भिन्नताहरू प्रस्तुत गर्नुहोस् ।",
+            "questionEnglish": "Present four differences found in equatorial and tropical monsoon climates.",
+            "answerNepali": "भूमध्यरेखीय र उष्ण मौसमी हावापानीबिचका भिन्नताहरू:\n• भूमध्यरेखीय हावापानी: वर्षैभरि उच्च तापक्रम र वर्षा हुन्छ, ऋतु परिवर्तन हुँदैन । उष्ण मौसमी हावापानी: गृष्ममा गर्मी र वर्षा तथा हिउँदमा सुख्खा र ठण्डा हुन्छ, स्पष्ट ऋतु परिवर्तन हुन्छ ।\n• भूमध्यरेखीय हावापानी: दैनिक दिउँसोपछि संवाहनिक वर्षा हुन्छ । उष्ण मौसमी हावापानी: गृष्ममा मनसुनी वायुका कारण अधिकांश वर्षा हुन्छ ।\n• भूमध्यरेखीय हावापानी: बाक्लो, सदाबहार उष्ण प्रदेशीय वर्षा वन (Rainforest) पाइन्छ । उष्ण मौसमी हावापानी: पतझर प्रकृतिका वनस्पति पाइन्छन् ।\n• भूमध्यरेखीय हावापानी: यो क्षेत्र भूमध्यरेखाको ५° उत्तर र दक्षिण अक्षांशमा पाइन्छ । उष्ण मौसमी हावापानी: यो क्षेत्र ५° देखि ३०° अक्षांशमा महादेशको पूर्वी भागमा पाइन्छ \n।",
+            "answerEnglish": "The differences between equatorial and tropical monsoon climates are:\n• Equatorial Climate: There is high temperature and rainfall throughout the year, with no change in seasons. Tropical Monsoon Climate: Summer is hot and rainy, and winter is dry and cool, with clear seasonal changes.\n• Equatorial Climate: Convectional rain occurs daily in the afternoon. Tropical Monsoon Climate: Most of the rain is caused by monsoon winds in summer.\n• Equatorial Climate: Dense, evergreen tropical rainforest is found. Tropical Monsoon Climate: Deciduous type of vegetation is found.\n• Equatorial Climate: This region is found between 5° north and south latitudes of the equator. Tropical \nMonsoon Climate: This region is found in the eastern part of the continent between 5° and 30° latitudes.",
+            "explanationNepali": "यो उत्तरले हावापानीका दुई प्रमुख प्रकारहरूको तुलनात्मक अध्ययन गर्न मद्दत गर्छ । यसले हावापानीले वनस्पति र मौसममा पार्ने प्रभावलाई स्पष्ट पार्दछ ।\nउद्धरण: एकाइ ६, पाठ ३।",
+            "explanationEnglish": "This answer helps in a comparative study of the two major types of climates. It clarifies the effect of climate on vegetation and weather.\nCitation: Unit 6, Lesson 3",
+            "questionNumberNepali": "१८",
+            "questionNumberEnglish": "18",
+            "marksNepali": "४",
+            "marksEnglish": 4
+          },
+          {
+            "type": "short_answer",
+            "questionNepali": "दक्षिण अमेरिका महादेशमा कृषि र पशुपालनको अवस्थाबारे छोटकरीमा लेख्नुहोस् ।",
+            "questionEnglish": "Write briefly about the state of agriculture and animal husbandry in the South American continent.",
+            "answerNepali": "दक्षिण अमेरिका महादेशमा कृषि र पशुपालनको अवस्था भौगोलिक विविधताअनुसार फरक-फरक छ । ब्राजिल जस्ता देशहरू कफी, कोका र उखु उत्पादनमा विश्वमै अग्रणी मानिन्छन् । अर्जेन्टिनाको पम्पास घाँसे मैदान गहुँ खेती र व्यावसायिक पशुपालनका लागि प्रसिद्ध छ । यहाँ ठूलो सङ्ख्यामा गाई र भेडा पालिन्छ र मासु तथा ऊन निर्यात गरिन्छ । एन्डिज पर्वतमालाको उच्च भूभागमा स्थानीय आदिवासीहरूले भारी बोकाउन र मासु-ऊनका लागि लामा (Llama) पाल्ने गर्छन् । अमेजन बेसिनको घना जङ्गल क्षेत्रमा भने अझै पनि परम्परागत र निर्वाहमुखी खेती गर्ने गरिन्छ ।",
+            "answerEnglish": "The state of agriculture and animal husbandry in the South American continent varies according to geographical diversity. Countries like Brazil are considered leaders in the world in the production of coffee, cocoa, and sugarcane. The Pampas grasslands of Argentina are famous for wheat farming and commercial animal husbandry. A large number of cattle and sheep are reared here, and meat and wool are exported. In the high altitudes of the Andes mountain range, local indigenous people rear Llamas for carrying loads and for meat and wool. However, traditional and subsistence farming is still practiced in the dense forest area \nof the Amazon Basin.",
+            "explanationNepali": "यो प्रश्नले विद्यार्थीलाई दक्षिण अमेरिका महादेशको आर्थिक क्रियाकलाप, विशेषगरी त्यहाँको कृषि र पशुपालनको विशेषता र विविधता बुझ्न मद्दत गर्दछ ।\nउद्धरण: एकाइ ६, पाठ ६।",
+            "explanationEnglish": "This question helps students to understand the economic activities of the South American continent, especially the characteristics and diversity of agriculture and animal husbandry there.\nCitation: Unit 6, Lesson 6",
+            "questionNumberNepali": "१९",
+            "questionNumberEnglish": "19",
+            "marksNepali": "४",
+            "marksEnglish": 4
+          },
+          {
+            "type": "short_answer",
+            "questionNepali": "नेपालमा राष्ट्रिय दिवसहरू मनाउनुको कुनै चारवटा महत्त्व उल्लेख गर्नुहोस् ।",
+            "questionEnglish": "Mention any four importance of celebrating national days in Nepal.",
+            "answerNepali": "नेपालमा राष्ट्रिय दिवसहरू मनाउनुको महत्त्व निम्न छन्:\n• ऐतिहासिक घटनाको स्मरण: प्रजातन्त्र दिवस, गणतन्त्र दिवस जस्ता दिनहरूले देशमा महत्त्वपूर्ण राजनीतिक परिवर्तन ल्याउनका लागि भएका सङ्घर्ष र बलिदानको स्मरण गराउँछन् ।\n• राष्ट्रिय एकता र गौरवको प्रवर्धन: यी दिवसहरूले सबै नेपालीलाई एकै ठाउँमा ल्याएर राष्ट्रिय एकताको भावना बलियो बनाउँछन् र आफ्नो देशको इतिहासप्रति गौरव गर्न प्रेरित गर्छन् ।\n• भावी पुस्तालाई प्रेरणा: सहिद दिवस जस्ता दिनले भावी पुस्तालाई पुर्खाहरूले देश र जनताका लागि गरेको योगदानको बोध गराउँछ र उनीहरूलाई राष्ट्रप्रति जिम्मेवार बन्न प्रेरित गर्छ ।\n• अधिकार र कर्तव्यको बोध: संविधान दिवस, बाल दिवस, नारी दिवस जस्ता दिनहरूले नागरिकलाई आफ्नो अधिकारप्रति सचेत गराउनुका साथै \nराष्ट्रप्रतिको कर्तव्य पूरा गर्न अभिप्रेरित गर्छन् ।",
+            "answerEnglish": "The importance of celebrating National Days in Nepal are as follows:\n• Remembrance of Historical Events: Days like Democracy Day, Republic Day remind us of the struggles and sacrifices made to bring about important political changes in the country.\n• Promotion of National Unity and Pride: These days bring all Nepalis together, strengthen the feeling of national unity, and inspire them to be proud of their country's history.\n• Inspiration for Future Generation: Days like Martyrs' Day make the future generation realize the contribution made by ancestors for the country and people and inspire them to be responsible towards the nation.\n• Realization \nof Rights and Duties: Days like Constitution Day, Children's Day, Women's Day make citizens aware of their rights and also motivate them to fulfill their duties towards the nation.",
+            "explanationNepali": "यो प्रश्नले विद्यार्थीलाई राष्ट्रिय दिवसहरूको महत्त्व बुझ्न र ती दिवसहरूलाई केवल बिदाको रूपमा मात्र नभई देशको इतिहास र पहिचानसँग जोडेर हेर्न सिकाउँछ ।\nउद्धरण: एकाइ ३, पाठ ५।",
+            "explanationEnglish": "This question teaches students to understand the importance of national days and view them not just as holidays but as connected to the country's history and identity.\nCitation: Unit 3, Lesson 5",
+            "questionNumberNepali": "२०",
+            "questionNumberEnglish": "20",
+            "marksNepali": "४",
+            "marksEnglish": 4
+          }
+        ]
+      },
+      {
+        "groupName": "समूह 'ग'",
+        "groupInstruction": "तलका प्रश्नहरूको लामो उत्तर दिनुहोस् :",
+        "marksSchema": "(४×७=२८)",
+        "questions": [
+          {
+            "type": "long_answer",
+            "questionNepali": "'नेपाल विविधतामा एकता भएको देश हो ।' यस भनाइलाई जातीय, भाषिक, धार्मिक र भौगोलिक विविधताको उदाहरण दिँदै पुष्टि गर्नुहोस् ।",
+            "questionEnglish": "'Nepal is a country of unity in diversity.' Justify this statement by giving examples of ethnic, linguistic, religious, and geographical diversity.",
+            "answerNepali": "नेपाललाई 'चार जात छत्तीस वर्णको साझा फूलबारी' भनेर चिनिन्छ, जसले यहाँको अपार विविधता र त्यसमा लुकेको अनुपम एकतालाई सङ्केत गर्दछ । 'नेपाल विविधतामा एकता भएको देश हो' भन्ने भनाइलाई निम्न आधारमा पुष्टि गर्न सकिन्छ:\n\n• जातीय विविधता: नेपाल एक बहुजातीय देश हो । यहाँ जनगणना २०६८ अनुसार १२५ भन्दा बढी जातजातिका मानिसहरूको बसोबास छ । पहाडमा ब्राह्मण, क्षेत्री, गुरुङ, मगर; हिमालमा शेर्पा, थकाली; र तराईमा थारू, यादव, राजवंशी जस्ता विभिन्न जातिका मानिसहरू बसोबास गर्छन् । उनीहरूका आ-आफ्नै मौलिक रीतिरिवाज, पोसाक र संस्कृति भए तापनि सबै नेपाली भनेर एउटै राष्ट्रिय पहिचानमा बाँधिएका छन् र एकअर्काको संस्कृतिलाई सम्मान गर्छन् ।\n\n• भाषिक विविधता: \nनेपाल एक बहुभाषिक देश पनि हो । यहाँ १२३ भन्दा बढी भाषाहरू बोलिन्छन् । नेपाली भाषा सरकारी कामकाजको भाषा भए तापनि संविधानले सबै मातृभाषालाई राष्ट्रभाषाको मान्यता दिएको छ । मैथिली, भोजपुरी, तामाङ, नेवारी, गुरुङ जस्ता भाषाहरू आ-आफ्नो समुदायमा बोलिन्छन् । भाषिक भिन्नताका बाबजुद सबैले एकअर्काको भाषालाई सम्मान गर्छन् र नेपाली भाषाले सबैलाई सञ्चारको माध्यमबाट जोडेको छ ।\n\n• धार्मिक विविधता: नेपाल एक धर्मनिरपेक्ष राष्ट्र हो जहाँ विभिन्न धर्म मान्ने मानिसहरू बसोबास गर्छन् ।\nयहाँ हिन्दु, बौद्ध, इस्लाम, किराँत, क्रिस्चियन लगायतका १० भन्दा बढी धर्म मान्ने मानिसहरू छन् ।\nपशुपतिनाथ र लुम्बिनी जस्ता विश्व प्रसिद्ध तीर्थस्थलहरूले नेपाललाई धार्मिक पर्यटनको केन्द्र बनाएका छन् ।\nविभिन्न धर्म मान्ने भए तापनि नेपाली समाजमा धार्मिक सहिष्णुताको अनुपम उदाहरण पाइन्छ ।\nएउटा धर्मको चाडपर्वमा अर्को धर्म मान्नेहरू पनि खुसीसाथ सहभागी हुन्छन्, जुन सामाजिक सद्भावको उत्कृष्ट नमुना हो ।\n\n• भौगोलिक विविधता: नेपालको क्षेत्रफल सानो भए तापनि यहाँ हिमाल, पहाड र तराई गरी तीन भिन्न भौगोलिक क्षेत्रहरू छन् ।\nहिमालको चिसोदेखि तराईको गर्मीसम्म, यहाँ विश्वका प्रायः सबै प्रकारका हावापानी पाइन्छन् ।\nयो भौगोलिक विविधताले गर्दा यहाँको जीवनशैली, खेतीपाती र आर्थिक क्रियाकलापमा पनि भिन्नता पाइन्छ ।\nतर, हिमाल, पहाड र तराईका नेपालीहरूबीच आर्थिक र सामाजिक रूपमा गहिरो अन्तरसम्बन्ध रहेको छ, जसले राष्ट्रिय एकतालाई बलियो बनाएको छ ।\n\nनिष्कर्षमा, नेपालको जातीय, भाषिक, धार्मिक र भौगोलिक विविधता नै हाम्रो वास्तविक पहिचान र शक्ति हो ।\nयही विविधतामा रहेको एकताले नेपाललाई विश्वमाझ एक अद्वितीय राष्ट्रको रूपमा चिनाएको छ ।",
+            "answerEnglish": "Nepal is known as a 'common garden of four castes and thirty-six sub-castes', which indicates the immense diversity and unique unity hidden in it. The statement 'Nepal is a country of unity in diversity' can be confirmed on the following grounds:\n\n• Ethnic Diversity: Nepal is a multi-ethnic country. According to the Census of 2068, there are more than 125 castes/ethnic groups living here. Brahmins, Chhetris, Gurungs, Magars live in the Hills; Sherpas, Thakalis in the Mountains; and Tharus, Yadavs, Rajbanshis in the Terai. Although they have their own original customs, costumes, and culture, all are bound by the same \nnational identity as Nepalis and respect each other's culture.\n\n• Linguistic Diversity: Nepal is also a multi-lingual country. More than 123 languages are spoken here. Although Nepali is the language of official business, the constitution has recognized all mother tongues as national languages. Languages like Maithili, Bhojpuri, Tamang, Newari, Gurung are spoken in their respective communities.\nDespite linguistic differences, everyone respects each other's language and the Nepali language has connected everyone through communication.\n\n• Religious Diversity: Nepal is a secular nation where people of different religions live.\nThere are people following more than 10 religions including Hindu, Buddhist, Islam, Kirat, Christian, etc. World-famous pilgrimage sites like Pashupatinath and Lumbini have made Nepal a center of religious tourism.\nDespite following different religions, a unique example of religious tolerance is found in Nepali society.\nPeople of one religion happily participate in the festivals of another religion, which is an excellent example of social harmony.\n\n• Geographical Diversity: Although the area of Nepal is small, there are three distinct geographical regions: Mountains, Hills, and Terai.\nFrom the cold of the Mountains to the heat of the Terai, almost all types of climates in the world are found here.\nDue to this geographical diversity, differences are also found in lifestyle, farming, and economic activities.\nBut, there is a deep economic and social interrelationship between the Nepalis of the Mountains, Hills, and Terai, which has strengthened national unity.\n\nIn conclusion, Nepal's ethnic, linguistic, religious, and geographical diversity is our real identity and strength.\nThe unity in this diversity has introduced Nepal as a unique nation to the world.",
+            "explanationNepali": "यो प्रश्नले विद्यार्थीलाई नेपालको सामाजिक संरचना, संस्कृति र पहिचानको गहिरो विश्लेषण गर्न लगाउँछ । यसले उनीहरूको विश्लेषणात्मक र लेखन सीपलाई निखार्दै राष्ट्रिय एकताको महत्त्व बुझाउँछ ।\nउद्धरण: एकाइ १, पाठ ३।",
+            "explanationEnglish": "This question asks students to deeply analyze Nepal's social structure, culture, and identity. It refines their analytical and writing skills while explaining the importance of national unity.\nCitation: Unit 1, Lesson 3",
+            "questionNumberNepali": "२१",
+            "questionNumberEnglish": "21",
+            "marksNepali": "७",
+            "marksEnglish": 7
+          },
+          {
+            "type": "long_answer",
+            "questionNepali": "निम्न भौगोलिक तथा साँस्कृतिक सम्पदाहरूको अवस्थिति (प्रदेश वा स्थान) र एक-एकवटा विशेषता लेख्नुहोस् :\n1. अन्नपूर्ण हिमाल\n2. कोशी नदी\n3. लुम्बिनी प्रदेश\n4. पूर्व-पश्चिम राजमार्ग",
+            "questionEnglish": "Write the location (Province or Place) and one characteristic for each of the following geographical and cultural facts:\n1. Mt. Annapurna\n2. Koshi River\n3. Lumbini Province\n4. East-West Highway",
+            "answerNepali": "१. अन्नपूर्ण हिमाल: गण्डकी प्रदेश । विश्वको १०औँ अग्लो हिमाल (८,०९१ मि.) ।\n२. कोशी नदी: कोशी प्रदेश । जलराशिका आधारमा नेपालको सबैभन्दा ठुलो नदी ।\n३. लुम्बिनी प्रदेश: पश्चिमी नेपाल । कृषि र उद्योगको सम्भावना बोकेको तथा बुद्धको जन्मस्थल रहेको प्रदेश ।\n४. पूर्व-पश्चिम राजमार्ग: नेपालको तराई क्षेत्र हुँदै पूर्व मेचीदेखि पश्चिम महाकाली जोड्ने मुख्य राजमार्ग ।",
+            "answerEnglish": "1. Mt. Annapurna: Gandaki Province. The 10th highest peak in the world (8,091m).\n2. Koshi River: Koshi Province. The largest river of Nepal in terms of water volume.\n3. Lumbini Province: Western Nepal. A province with high potential for agriculture and industry, birthplace of Buddha.\n4. East-West Highway: The main highway connecting the eastern and western borders of Nepal through the Terai region.",
+            "explanationNepali": "यो प्रश्नले विद्यार्थीको नेपालका महत्त्वपूर्ण स्थानहरूको अवस्थिति र विशेषतासम्बन्धी भौगोलिक ज्ञानको परीक्षण गर्दछ ।\nउद्धरण: एकाइ ६, पाठ ८।",
+            "explanationEnglish": "This question tests the student's geographical knowledge about the location and characteristics of important places in Nepal.\nCitation: Unit 6, Lesson 8",
+            "questionNumberNepali": "२२",
+            "questionNumberEnglish": "22",
+            "marksNepali": "७",
+            "marksEnglish": 7
+          },
+          {
+            "type": "long_answer",
+            "questionNepali": "दोस्रो विश्वयुद्धका कारण र परिणामहरू उल्लेख गर्नुहोस् ।",
+            "questionEnglish": "Mention the causes and consequences of the Second World War.",
+            "answerNepali": "दोस्रो विश्वयुद्धका कारणहरू (सन् १९३९-१९४५):\n\nदोस्रो विश्वयुद्ध प्रथम विश्वयुद्धभन्दा पनि विनाशकारी थियो, जसका प्रमुख कारणहरू निम्न थिए:\n\n• भर्सेलिजको अपमानजनक सन्धि: प्रथम विश्वयुद्धपछि जर्मनीमाथि लादिएको भर्सेलिजको सन्धि अत्यन्तै कठोर र अपमानजनक थियो । यसले जर्मनीको आर्थिक र सैनिक शक्तिलाई कमजोर बनायो, जसले गर्दा जर्मन जनतामा बदलाको भावना जागृत भयो ।\n• हिटलरको उदय र नाजीवाद: जर्मनीमा एडोल्फ हिटलर र उनको नाजी पार्टीको उदय भयो । हिटलरले भर्सेलिजको सन्धि तोडेर जर्मनीको सैनिक शक्ति बढाउन थाले र अन्य राष्ट्रहरूमाथि आक्रमण गर्ने नीति लिए ।\n• राष्ट्रसङ्घको असफलता: विश्वमा शान्ति कायम गर्न स्थापित राष्ट्रसङ्घ शक्तिशाली देशहरू (जस्तै: जर्मनी, जापान, इटाली) को आक्रमणकारी गतिविधिलाई रोक्न असफल भयो \n।\n• विश्वव्यापी आर्थिक मन्दी: सन् १९२९ को विश्वव्यापी आर्थिक मन्दीले गर्दा धेरै देशहरूमा बेरोजगारी र गरिबी बढ्यो, जसले गर्दा जर्मनी र इटाली जस्ता देशहरूमा तानाशाही शासनको उदय हुन मद्दत पुग्यो ।\n• गुटबन्दी: विश्व फेरि दुई गुटमा विभाजित भयो: एकातिर जर्मनी, इटाली र जापानको 'धुरी राष्ट्र' (Axis Powers) र अर्कोतिर बेलायत, फ्रान्स, सोभियत सङ्घ र पछि अमेरिका सम्मिलित 'मित्र राष्ट्र' (Allied Powers) ।\n• तत्कालीन कारण: १ सेप्टेम्बर १९३९ मा जर्मनीले पोल्यान्डमाथि आक्रमण गरेपछि बेलायत र फ्रान्सले जर्मनीविरुद्ध युद्धको घोषणा गरे र दोस्रो विश्वयुद्ध सुरु भयो ।\n\nदोस्रो विश्वयुद्धका परिणामहरू:\n\nयस युद्धले विश्वमा दूरगामी र विनाशकारी प्रभावहरू पाऱ्यो, जसमध्ये प्रमुख परिणामहरू निम्न थिए:\n\n• अकल्पनीय \nधनजनको क्षति: यस युद्धमा करिब ६ करोड मानिसले ज्यान गुमाए ।\nआणविक हतियारको प्रयोगले जापानको हिरोसिमा र नागासाकी सहर ध्वस्त भए ।\n• संयुक्त राष्ट्रसङ्घको स्थापना: भविष्यमा यस्ता युद्धहरू रोक्न र विश्व शान्ति स्थापना गर्न सन् १९४५ मा संयुक्त राष्ट्रसङ्घ (United Nations) को स्थापना भयो ।\n• उपनिवेशवादको अन्त्य: युद्धपछि बेलायत र फ्रान्स जस्ता साम्राज्यवादी शक्तिहरू कमजोर भए र एसिया तथा अफ्रिकाका धेरै देशहरूले स्वतन्त्रता प्राप्त गरे ।\n• विश्व दुई ध्रुवमा विभाजन (शीतयुद्ध): युद्धपछि विश्व पुँजीवादी विचारधाराको नेतृत्व गर्ने संयुक्त राज्य अमेरिका र साम्यवादी विचारधाराको नेतृत्व गर्ने सोभियत सङ्घ गरी दुई शक्तिशाली गुटमा विभाजित भयो, जसले शीतयुद्धको सुरुवात गऱ्यो ।\n• मानव अधिकारको चेतना: युद्धको कहालीलाग्दो विनाशले गर्दा विश्वव्यापी रूपमा मानव अधिकारको संरक्षण गर्नुपर्छ \nभन्ने चेतना बढ्यो र सन् १९४८ मा मानव अधिकारको विश्वव्यापी घोषणापत्र जारी भयो ।",
+            "answerEnglish": "Causes of the Second World War (1939-1945 AD):\n\nThe Second World War was even more destructive than the First World War, whose major causes were as follows:\n\n• Humiliating Treaty of Versailles: The Treaty of Versailles imposed on Germany after the First World War was extremely harsh and humiliating. It weakened Germany's economic and military power, which awakened a feeling of revenge in the German people.\n• Rise of Hitler and Nazism: Adolf Hitler and his Nazi Party rose in Germany. Hitler broke the Treaty of Versailles, started increasing Germany's military power, and adopted a policy of attacking other nations.\n• Failure of \nthe League of Nations: The League of Nations, established to maintain peace in the world, failed to stop the aggressive activities of powerful countries (e.g., Germany, Japan, Italy).\n• Global Economic Depression: The Global Economic Depression of 1929 AD increased unemployment and poverty in many countries, which helped in the rise of dictatorial regimes in countries like Germany and Italy.\n• Alliances: The world was again divided into two blocs: on one side were the 'Axis Powers' of Germany, Italy, and Japan, and on the other side were the 'Allied Powers' including Britain, France, the Soviet Union, and later the USA.\n• Immediate \nCause: After Germany attacked Poland on September 1, 1939, Britain and France declared war against Germany, and the Second World War began.\n\nConsequences of the Second World War:\n\nThis war had far-reaching and destructive effects on the world, among which the major consequences were as follows:\n\n• Unimaginable Loss of Life and Property: About 60 million people lost their lives in this war.\nThe cities of Hiroshima and Nagasaki in Japan were destroyed by the use of nuclear weapons.\n• Establishment of the United Nations: The United Nations was established in 1945 AD to stop future wars and establish world peace.\n• End of Colonialism: After the war, imperialist powers like Britain and France weakened, and many countries in Asia and Africa gained independence.\n• Division of the World into Two Poles (Cold War): After the war, the world was divided into two powerful blocs: the United States leading the capitalist ideology and the Soviet Union leading the communist ideology, which started the Cold War.\n• Awareness \nof Human Rights: Due to the horrific destruction of the war, the awareness that human rights should be protected globally increased, and the Universal Declaration of Human Rights was issued in 1948 AD.",
+            "explanationNepali": "यो प्रश्नले विश्व इतिहासको सबैभन्दा विनाशकारी घटनाको कारण र परिणामबारे विद्यार्थीको ज्ञानको परीक्षण गर्छ । यसले उनीहरूलाई ऐतिहासिक घटनाहरूको विश्लेषण गर्न र त्यसले वर्तमान विश्वमा पारेको प्रभावबारे बुझ्न मद्दत गर्दछ ।\nउद्धरण: एकाइ ७।",
+            "explanationEnglish": "This question tests the student's knowledge regarding the causes and consequences of the most destructive event in world history. It helps them to analyze historical events and understand their impact on the present world.\nCitation: Unit 7",
+            "questionNumberNepali": "२३",
+            "questionNumberEnglish": "23",
+            "marksNepali": "७",
+            "marksEnglish": 7
+          },
+          {
+            "type": "long_answer",
+            "questionNepali": "'नेपालमा सङ्घीयताको सफल कार्यान्वयन: अवसर र चुनौती' शीर्षकमा एक लेख तयार पार्नुहोस् ।",
+            "questionEnglish": "Prepare an article on the title 'Successful Implementation of Federalism in Nepal: Opportunities and Challenges'.",
+            "answerNepali": "लेख\n\nनेपालमा सङ्घीयताको सफल कार्यान्वयन: अवसर र चुनौती\n\nलामो राजनीतिक सङ्घर्ष र आन्दोलनपछि नेपालको संविधान, २०७२ ले देशलाई सङ्घीय लोकतान्त्रिक गणतन्त्रात्मक राज्यको रूपमा स्थापित गरेको छ । सङ्घ, प्रदेश र स्थानीय गरी तीन तहको सरकारसहितको सङ्घीय शासन प्रणाली नेपालका लागि एक नयाँ र महत्त्वपूर्ण अभ्यास हो । यसको सफल कार्यान्वयनमा अनेकौँ अवसर र चुनौतीहरू विद्यमान छन् ।\n\nअवसरहरू:\nसङ्घीयताले नेपालको विकास र सुशासनमा थुप्रै अवसरहरू सिर्जना गरेको छ । पहिलो, यसले शासन सत्तालाई जनताको घरदैलोमा पुऱ्याएको छ । स्थानीय तह र प्रदेश सरकारहरूले आफ्नो क्षेत्रको आवश्यकता र सम्भावनाअनुसार विकास योजनाहरू बनाउन र कार्यान्वयन गर्न पाएका छन्, जसले स्थानीय विकासलाई गति दिएको छ । \nदोस्रो, सङ्घीयताले स्थानीय स्रोतसाधनको पहिचान र परिचालनलाई बढावा दिएको छ । स्थानीय सरकारहरूले आफ्नो क्षेत्रमा उपलब्ध स्रोतहरूको उपयोग गरी आत्मनिर्भर बन्ने अवसर पाएका छन् । तेस्रो, यसले समावेशी लोकतन्त्रलाई बलियो बनाएको छ । राज्यका विभिन्न तहमा महिला, दलित, जनजाति र सीमान्तकृत समुदायको प्रतिनिधित्व सुनिश्चित भएको छ, जसले गर्दा राज्य प्रणालीमा सबै वर्गको स्वामित्व बढेको छ ।\nचौथो, प्रदेशहरूबीच विकास र प्रगतिमा स्वस्थ प्रतिस्पर्धाको वातावरण सिर्जना भएको छ, जसले समग्र राष्ट्रिय विकासमा सघाउ पुऱ्याउँछ ।\n\nचुनौतीहरू:\nअवसरहरूसँगै सङ्घीयताको कार्यान्वयनमा गम्भीर चुनौतीहरू पनि छन् ।\nपहिलो, तीन तहका सरकारहरूबीच अधिकार र स्रोतसाधनको बाँडफाँटमा अझै पनि स्पष्टताको कमी र विवाद देखिन्छ ।\nदोस्रो, प्रदेश र स्थानीय तहहरूमा आवश्यक कर्मचारी र वित्तीय स्रोतको अभाव छ, जसले गर्दा उनीहरूले प्रभावकारी रूपमा सेवा प्रवाह गर्न सकेका छैनन् ।\nतेस्रो, जनप्रतिनिधिहरूमा अनुभव र क्षमताको कमी तथा बढ्दो भ्रष्टाचारले गर्दा जनतामा सङ्घीयताप्रतिको विश्वास घट्दै गएको छ ।\nचौथो, सङ्घीयता सञ्चालनको खर्चिलो प्रणालीले देशको अर्थतन्त्रमा थप भार पारेको छ ।\n\nनिष्कर्ष:\nनिष्कर्षमा, सङ्घीयता नेपालको विविधतालाई सम्बोधन गर्ने र सन्तुलित विकास हासिल गर्ने सबैभन्दा उत्तम शासन प्रणाली हो ।\nयसका चुनौतीहरूलाई सम्बोधन गर्न तीनै तहका सरकारहरूबीच समन्वय, सहकार्य र सहअस्तित्वको भावना आवश्यक छ ।\nराजनीतिक दलहरूले दलीय स्वार्थभन्दा माथि उठेर राष्ट्रिय हितमा काम गर्ने, जनप्रतिनिधिहरूलाई जवाफदेही बनाउने र भ्रष्टाचार नियन्त्रण गर्ने हो भने नेपालमा सङ्घीयता सफल हुने निश्चित छ ।",
+            "answerEnglish": "Article\n\nSuccessful Implementation of Federalism in Nepal: Opportunities and Challenges\n\nAfter a long political struggle and movement, the Constitution of Nepal, 2072 has established the country as a Federal Democratic Republic state. The federal system of governance with three levels of government - federal, provincial, and local - is a new and significant practice for Nepal. There are many opportunities and challenges in its successful implementation.\n\nOpportunities:\nFederalism has created many opportunities for Nepal's development and good governance. First, it has brought governance to the people's doorstep. Local levels and provincial governments have been able to formulate and implement development plans according to \nthe needs and potential of their areas, which has accelerated local development. Second, federalism has promoted the identification and mobilization of local resources. Local governments have got the opportunity to become self-reliant by utilizing the resources available in their area.\nThird, it has strengthened inclusive democracy. Representation of women, Dalits, Janajatis, and marginalized communities has been ensured at different levels of the state, which has increased the ownership of all classes in the state system.\nFourth, an environment of healthy competition in development and progress has been created between provinces, which helps in overall national development.\n\nChallenges:\nAlong with opportunities, there are serious challenges in the implementation of federalism.\nFirst, there is still a lack of clarity and dispute regarding the distribution of rights and resources among the three levels of government.\nSecond, there is a shortage of necessary staff and financial resources at provincial and local levels, due to which they have not been able to deliver services effectively.\nThird, due to the lack of experience and capacity in people's representatives and increasing corruption, public trust in federalism is declining.\nFourth, the expensive system of operating federalism has put an additional burden on the country's economy.\n\nConclusion:\nIn conclusion, federalism is the best governance system to address Nepal's diversity and achieve balanced development.\nTo address its challenges, a spirit of coordination, cooperation, and coexistence is needed among the three levels of government.\nIf political parties work for the national interest rising above party interests, make people's representatives accountable, and control corruption, federalism is certain to be successful in Nepal.",
+            "explanationNepali": "यो प्रश्नले विद्यार्थीलाई नेपालको वर्तमान शासन प्रणाली, यसका सकारात्मक पक्षहरू र चुनौतीहरूबारे विश्लेषण गर्न लगाउँछ । यसले उनीहरूको समसामयिक विषयमा तार्किक र विश्लेषणात्मक लेख लेख्ने क्षमताको विकास गर्दछ ।\nउद्धरण: एकाइ २, पाठ ३।",
+            "explanationEnglish": "This question asks students to analyze Nepal's current governance system, its positive aspects, and challenges. It develops their ability to write logical and analytical articles on contemporary issues.\nCitation: Unit 2, Lesson 3",
+            "questionNumberNepali": "२४",
+            "questionNumberEnglish": "24",
+            "marksNepali": "७",
+            "marksEnglish": 7
+          }
+        ]
+      }
+    ]
   }
- },
- {
-  "_id": {
-   "$oid": "688b809a2f3df9d071c52113"
-  },
-  "testId": "see_2081_social_practice_3_generated",
-  "groups": [
-   {
-    "groupName": "समूह 'क'",
-    "groupInstruction": "तलका प्रश्नहरूको अति छोटो उत्तर दिनुहोस् :",
-    "marksSchema": "(११×१=११)",
-    "questions": [
-     {
-      "questionNumber": "१",
-      "type": "very_short_answer",
-      "marks": 1,
-      "questionNepali": "सामाजिकीकरणको एक तत्त्वको रूपमा 'भाषा' को भूमिका के हो?",
-      "answerNepali": "भाषा विचार आदानप्रदान गर्ने सशक्त माध्यम हो, जसले मानिसहरूलाई एकआपसमा घुलमिल हुन र भावना बुझ्न मद्दत गर्छ ।",
-      "explanationNepali": "भाषाको माध्यमबाट मानिसहरूले आफ्ना विचार, अनुभव र सोचाइहरू साटासाट गर्छन्, जसले सामाजिक सम्बन्धलाई बलियो बनाउँछ र सामाजिकीकरण प्रक्रियालाई सहज बनाउँछ । उद्धरणहरू: एकाइ १, पाठ १, पृष्ठ ४।"
-     },
-     {
-      "questionNumber": "२",
-      "type": "very_short_answer",
-      "marks": 1,
-      "questionNepali": "दिगो विकासको कुनै एक उद्देश्य लेख्नुहोस् ।",
-      "answerNepali": "दिगो विकासको एक उद्देश्य प्राकृतिक स्रोत र साधनको विवेक सङ्गत एवम् सावधानीपूर्ण उपयोग गर्नु हो ।",
-      "explanationNepali": "दिगो विकासले वर्तमानको आवश्यकता पूरा गर्दा भावी पुस्ताको आवश्यकतामा असर नपर्ने गरी स्रोतहरूको उपयोग गर्नुपर्छ भन्ने मान्यता राख्छ, जसले गर्दा स्रोतको दिगोपना सुनिश्चित हुन्छ । उद्धरणहरू: एकाइ २, पाठ २, पृष्ठ २६-२७।"
-     },
-     {
-      "questionNumber": "३",
-      "type": "very_short_answer",
-      "marks": 1,
-      "questionNepali": "घरेलु हिंसा विरुद्ध एउटा प्लेकार्डमा लेख्न उपयुक्त हुने नारा बनाउनुहोस् ।",
-      "answerNepali": "नारा: “घरलाई शान्तिको केन्द्र बनाऔँ, घरेलु हिंसा आजैबाट हटाऔँ ।”",
-      "explanationNepali": "यो नाराले घरपरिवारमा हुने कुनै पनि प्रकारको हिंसा अन्त्य गरी शान्तिपूर्ण र सम्मानजनक वातावरण सिर्जना गर्नुपर्छ भन्ने सन्देश दिन्छ । उद्धरणहरू: एकाइ ४, पाठ ३, पृष्ठ ८१-८२।"
-     },
-     {
-      "questionNumber": "४",
-      "type": "very_short_answer",
-      "marks": 1,
-      "questionNepali": "अमूर्त सांस्कृतिक सम्पदा भनेको के हो?",
-      "answerNepali": "भौतिक रूपमा छुन नसकिने तर अनुभव गर्न सकिने परम्परा, ज्ञान, सीप र संस्कारहरूलाई अमूर्त सांस्कृतिक सम्पदा भनिन्छ ।",
-      "explanationNepali": "उदाहरणका लागि, चाडपर्व मनाउने विधि, लोकनृत्य, पूजा गर्ने तरिका आदि अमूर्त सम्पदा हुन् जसले हाम्रो संस्कृतिलाई जीवन्त राखेका छन् । उद्धरणहरू: एकाइ ३, पाठ १, पृष्ठ ४०।"
-     },
-     {
-      "questionNumber": "५",
-      "type": "very_short_answer",
-      "marks": 1,
-      "questionNepali": "नेपालमा संविधान दिवस किन मनाइन्छ?",
-      "answerNepali": "नेपालको वर्तमान संविधान २०७२ असोज ३ गते जारी भएको दिनको स्मरणमा हरेक वर्ष असोज ३ गते संविधान दिवस मनाइन्छ ।",
-      "explanationNepali": "यो दिवसले संविधानको महत्त्व, यसको रक्षा र पालना गर्नुपर्ने नागरिक दायित्वको बोध गराउँछ । उद्धरणहरू: एकाइ ३, पाठ ५, पृष्ठ ५९।"
-     },
-     {
-      "questionNumber": "६",
-      "type": "very_short_answer",
-      "marks": 1,
-      "questionNepali": "नेपालको सन्दर्भमा 'विश्वग्राम' को अवधारणालाई एक वाक्यमा परिभाषित गर्नुहोस् ।",
-      "answerNepali": "सूचना प्रविधिको विकासले गर्दा संसारका मानिसहरू एउटै गाउँ वा परिवारका सदस्य जस्तै गरी नजिकिएको अवस्थालाई 'विश्वग्राम' भनिन्छ ।",
-      "explanationNepali": "इन्टरनेट र सञ्चारका साधनले भौगोलिक दूरीलाई हटाइदिएको छ, जसले गर्दा मानिसहरूबीच तत्कालै सूचना र भावना साटासाट गर्न सम्भव भएको छ । उद्धरणहरू: एकाइ ३, पाठ ७, पृष्ठ ६६।"
-     },
-     {
-      "questionNumber": "७",
-      "type": "very_short_answer",
-      "marks": 1,
-      "questionNepali": "नेपालको राष्ट्रिय सभाका सदस्यको पदावधि कति वर्षको हुन्छ?",
-      "answerNepali": "नेपालको राष्ट्रिय सभाका सदस्यको पदावधि छ वर्षको हुन्छ ।",
-      "explanationNepali": "राष्ट्रिय सभा एक स्थायी सदन हो र यसका एक तिहाइ सदस्यको पदावधि प्रत्येक दुई वर्षमा समाप्त हुन्छ, जसले गर्दा सदन कहिल्यै विघटन हुँदैन । उद्धरणहरू: एकाइ ५, पाठ १, पृष्ठ ९७।"
-     },
-     {
-      "questionNumber": "८",
-      "type": "very_short_answer",
-      "marks": 1,
-      "questionNepali": "उपभोक्ता संरक्षण ऐन, २०७५ अनुसार उपभोक्तालाई प्राप्त हुने कुनै एक अधिकार उल्लेख गर्नुहोस् ।",
-      "answerNepali": "उपभोक्ता संरक्षण ऐन, २०७५ अनुसार उपभोक्तालाई वस्तु वा सेवाबारे सुसूचित हुन पाउने अधिकार छ ।",
-      "explanationNepali": "यो अधिकारले उपभोक्तालाई कुनै पनि वस्तुको गुण, परिमाण, मूल्य, र त्यसका तत्त्वहरूबारे सही जानकारी पाउने हक सुनिश्चित गर्छ, जसले गर्दा उनीहरूले सही निर्णय लिन सक्छन् । उद्धरणहरू: एकाइ ५, पाठ ८, पृष्ठ १२३-१२४।"
-     },
-     {
-      "questionNumber": "९",
-      "type": "very_short_answer",
-      "marks": 1,
-      "questionNepali": "अफ्रिका महादेशमा पाइने घाँसे मैदानलाई के भनिन्छ?",
-      "answerNepali": "अफ्रिका महादेशमा पाइने घाँसे मैदानलाई 'सभाना' र 'भेल्ड' भनिन्छ ।",
-      "explanationNepali": "उष्ण तृणभूमिको घाँसे मैदानलाई 'सभाना' भनिन्छ भने समशीतोष्ण तृणभूमिको घाँसे मैदानलाई दक्षिण अफ्रिकामा 'भेल्ड' भनिन्छ । उद्धरणहरू: एकाइ ६, पाठ ४, पृष्ठ १४२।"
-     },
-     {
-      "questionNumber": "१०",
-      "type": "very_short_answer",
-      "marks": 1,
-      "questionNepali": "भूकम्पको केन्द्रविन्दु (Epicenter) भनेको के हो?",
-      "answerNepali": "पृथ्वीको सतहभन्दा भित्र भूकम्पको उत्पत्ति हुने उद्गमविन्दुबाट ठीक माथि पृथ्वीको सतहमा जहाँ पहिलो धक्का महसुस गरिन्छ, त्यस भागलाई केन्द्रविन्दु (Epicenter) भनिन्छ ।",
-      "explanationNepali": "केन्द्रविन्दुमा भूकम्पको कम्पन सबैभन्दा शक्तिशाली महसुस हुन्छ र त्यहाँ सबैभन्दा बढी क्षति हुने सम्भावना हुन्छ । उद्धरणहरू: एकाइ ६, पाठ ७, पृष्ठ १६४।"
-     },
-     {
-      "questionNumber": "११",
-      "type": "very_short_answer",
-      "marks": 1,
-      "questionNepali": "तपाईंको समुदायमा प्रचलित कुनै एक लोकबाजाको नाम लेख्नुहोस् ।",
-      "answerNepali": "मेरो समुदायमा प्रचलित एक लोकबाजा मादल हो ।",
-      "explanationNepali": "यो एक व्यक्तिगत प्रश्न हो । विद्यार्थीले आफ्नो समुदायमा बजाइने कुनै पनि लोकबाजा जस्तै मादल, सारङ्गी, बाँसुरी, पञ्चेबाजा आदिको नाम लेख्न सक्छन् । उद्धरणहरू: एकाइ ३, पाठ ३, पृष्ठ ५२।"
-     }
-    ]
-   },
-   {
-    "groupName": "समूह 'ख'",
-    "groupInstruction": "तलका प्रश्नहरूको छोटो उत्तर दिनुहोस् :",
-    "marksSchema": "(९×४=३६)",
-    "questions": [
-     {
-      "questionNumber": "१२",
-      "type": "short_answer",
-      "marks": 4,
-      "questionNepali": "सामाजिकीकरणमा घर-परिवारको भूमिकालाई 'पहिलो पाठशाला' किन भनिन्छ? चार कारण दिनुहोस् ।",
-      "answerNepali": "सामाजिकीकरणमा घर-परिवारलाई 'पहिलो पाठशाला' भनिनुका कारणहरू निम्न छन्:\n• आधारभूत ज्ञानको सुरुवात: बालबालिकाले बोल्न, हिँड्न, खान र व्यवहार गर्न जस्ता आधारभूत कुराहरू परिवारबाटै सिक्छन् ।\n• भाषा र संस्कारको सिकाइ: बालबालिकाले आफ्नो मातृभाषा, रीतिरिवाज, चाडपर्व र सांस्कृतिक मूल्यमान्यताहरू सबैभन्दा पहिले परिवारबाटै सिक्दछन् ।\n• नाता सम्बन्धको ज्ञान: बालबालिकाले आमा, बुबा, दाजु, भाइ जस्ता नाता सम्बन्ध र उनीहरूप्रति गर्नुपर्ने सम्मान र व्यवहार परिवारबाटै सिक्छन् ।\n• प्रेम र सुरक्षाको अनुभूति: परिवारले प्रदान गर्ने प्रेम, स्नेह र सुरक्षाले बालबालिकाको भावनात्मक विकासमा महत्त्वपूर्ण भूमिका खेल्छ, जसले उनीहरूलाई समाजमा घुलमिल हुन आत्मविश्वास प्रदान गर्छ ।",
-      "explanationNepali": "बालबालिकाको जीवनमा सबैभन्दा पहिलो र गहिरो प्रभाव परिवारको पर्ने भएकाले यसलाई पहिलो पाठशाला भनिएको हो । यहाँ सिकेका कुराहरूले उसको जीवनभरिको व्यक्तित्व निर्माणमा आधारको काम गर्छ । उद्धरणहरू: एकाइ १, पाठ १, पृष्ठ ५।"
-     },
-     {
-      "questionNumber": "१३",
-      "type": "short_answer",
-      "marks": 4,
-      "questionNepali": "पुष्पलाल (मध्यपहाडी) लोकमार्गको परिचय दिँदै यसका दुईवटा महत्त्व उल्लेख गर्नुहोस् ।",
-      "answerNepali": "**परिचय:** पुष्पलाल (मध्यपहाडी) लोकमार्ग नेपालको पूर्वमा पाँचथरको चियोभञ्ज्याङदेखि पश्चिममा बैतडीको झुलाघाटसम्म मध्यपहाडी क्षेत्रका जिल्लाहरूलाई जोड्ने गरी निर्माणाधीन राष्ट्रिय गौरवको आयोजना हो । यसको कुल लम्बाइ १८७९ कि.मि. रहेको छ ।\n\n**महत्त्व:**\n• **आर्थिक विकासमा योगदान:** यस लोकमार्गले मध्यपहाडका बस्तीहरूमा यातायातको सहज पहुँच विस्तार गरी त्यहाँ उत्पादित कृषि उपजलाई बजारसम्म पुऱ्याउन मद्दत गर्छ, जसले स्थानीय जनताको आर्थिक अवस्था सुधार गर्छ ।\n• **बसाइँसराइ न्यूनीकरण:** पहाडी क्षेत्रमा विकासका पूर्वाधार र रोजगारीका अवसरहरू सिर्जना हुने भएकाले मानिसहरूलाई तराई वा सहरमा बसाइँ सर्नबाट रोक्न यसले महत्त्वपूर्ण भूमिका खेल्छ ।",
-      "explanationNepali": "यो प्रश्नले विद्यार्थीलाई राष्ट्रिय गौरवका आयोजनाहरूको महत्त्व र त्यसले देशको विकासमा पार्ने प्रभावबारे बुझ्न मद्दत गर्छ । उद्धरणहरू: एकाइ २, पाठ ४, पृष्ठ ३५।"
-     },
-     {
-      "questionNumber": "१४",
-      "type": "creative_writing_news_report",
-      "marks": 4,
-      "questionNepali": "'लोप हुँदै हाम्रा मौलिक लोकबाजाहरू' शीर्षकमा एक समाचारको नमुना तयार गर्नुहोस् ।",
-      "answerNepali": "**लोप हुँदै हाम्रा मौलिक लोकबाजाहरू**\n\nजेठ १७, काठमाडौँ (सञ्चारकर्मी) - आधुनिकताको प्रभाव र विदेशी बाजाको बढ्दो प्रयोगले गर्दा नेपालका कैयौँ मौलिक लोकबाजाहरू लोप हुने अवस्थामा पुगेका छन् । कुनै समय हरेक गाउँघरमा गुञ्जिने सारङ्गी, बिनायो, आरबाजो जस्ता बाजाहरू आजभोलि मुस्किलले सुन्न पाइन्छ ।\n\nविशेषगरी युवा पुस्तामाझ विदेशी गीत-सङ्गीतप्रतिको आकर्षण बढ्नु र पुराना पुस्ताले नयाँ पुस्तालाई यी बाजाहरू बजाउने सीप हस्तान्तरण गर्न नसक्नु यसको मुख्य कारण रहेको संस्कृतिविद्हरू बताउँछन् । गन्धर्व जातिले रेट्ने सारङ्गी होस् वा किराँतीहरूले बजाउने बिनायो, यी बाजाहरू बजाउने कलाकारहरूले आफ्नो पेसाबाट जीवन धान्न नसक्दा पलायन हुनुपर्ने बाध्यता छ ।\n\nयी मौलिक बाजाहरू हाम्रो पहिचान र संस्कृतिसँग जोडिएका छन् । यिनीहरूको संरक्षणका लागि सरकार, स्थानीय तह र समुदायले तत्काल विशेष कार्यक्रमहरू सञ्चालन गरी कलाकारहरूलाई प्रोत्साहन गर्न र नयाँ पुस्तालाई तालिमको व्यवस्था गर्न आवश्यक देखिन्छ । अन्यथा, हाम्रा यी अमूल्य सम्पदाहरू इतिहासका पानामा मात्र सीमित नहोलान् भन्न सकिन्न ।",
-      "explanationNepali": "यो प्रश्नले विद्यार्थीलाई समाजको सांस्कृतिक समस्याप्रति संवेदनशील बनाउँदै रचनात्मक लेखन (समाचार लेखन) को अभ्यास गराउँछ । उद्धरणहरू: एकाइ ३, पाठ ३, पृष्ठ ५२-५४।"
-     },
-     {
-      "questionNumber": "१५",
-      "type": "short_answer",
-      "marks": 4,
-      "questionNepali": "समाजमा अन्धविश्वासले पार्ने कुनै चारवटा नकारात्मक असरहरू लेख्नुहोस् ।",
-      "answerNepali": "समाजमा अन्धविश्वासले पार्ने नकारात्मक असरहरू निम्न छन्:\n• **सामाजिक हिंसा र अपराध:** बोक्सी, छाउपडी जस्ता अन्धविश्वासका कारण महिलाहरूमाथि शारीरिक र मानसिक हिंसा हुने गर्दछ, जुन एक गम्भीर सामाजिक अपराध हो ।\n• **स्वास्थ्यमा असर:** बिरामी हुँदा अस्पताल जानुको सट्टा धामीझाँक्रीमा विश्वास गर्दा मानिसहरूको स्वास्थ्य अवस्था झन् जटिल बन्ने र अकालमै ज्यान जाने खतरा हुन्छ ।\n• **आर्थिक शोषण:** अन्धविश्वासका कारण मानिसहरू विभिन्न पूजापाठ र अन्धभक्तिका नाममा आर्थिक रूपमा शोषित हुने गर्दछन् ।\n• **विकासमा बाधा:** अन्धविश्वासले मानिसलाई वैज्ञानिक तथ्य र आधुनिक प्रविधिमा भन्दा अलौकिक शक्तिमा विश्वास गर्न सिकाउँछ, जसले गर्दा समाजको आधुनिकीकरण र विकासमा बाधा पुग्छ ।",
-      "explanationNepali": "यो प्रश्नले विद्यार्थीलाई अन्धविश्वास जस्ता सामाजिक कुरीतिहरूले व्यक्ति र समाजमा पार्ने बहुआयामिक नकारात्मक असरहरूबारे विश्लेषण गर्न सक्षम बनाउँछ । उद्धरणहरू: एकाइ ४, पाठ ५, पृष्ठ ८६-८७।"
-     },
-     {
-      "questionNumber": "१६",
-      "type": "short_answer",
-      "marks": 4,
-      "questionNepali": "न्यायपालिकाका कुनै चारवटा प्रमुख कार्यहरूको सूची बनाउनुहोस् ।",
-      "answerNepali": "न्यायपालिकाका प्रमुख चार कार्यहरू निम्न छन्:\n• **न्याय प्रदान गर्ने:** देवानी र फौजदारी मुद्दाहरूको फैसला गरी पीडितलाई न्याय र दोषीलाई सजाय दिने ।\n• **संविधान र कानुनको व्याख्या गर्ने:** संविधान र कानुनका प्रावधानहरू अस्पष्ट भएमा त्यसको अन्तिम व्याख्या गर्ने ।\n• **मौलिक हकको संरक्षण गर्ने:** नागरिकको संविधान प्रदत्त मौलिक हक हनन भएमा त्यसको संरक्षण गरी आवश्यक कानुनी उपचार प्रदान गर्ने ।\n• **न्यायिक पुनरावलोकन गर्ने:** व्यवस्थापिकाले बनाएको कानुन वा कार्यपालिकाले गरेको निर्णय संविधानसँग बाझिएमा त्यसलाई बदर घोषित गर्ने ।",
-      "explanationNepali": "यो प्रश्नले विद्यार्थीलाई राज्यको तेस्रो अङ्ग न्यायपालिकाको भूमिका र शक्तिबारे जानकारी दिन्छ, जसले कानुनी शासन र नागरिक अधिकारको महत्त्व बुझ्न मद्दत गर्छ । उद्धरणहरू: एकाइ ५, पाठ ३, पृष्ठ १०५।"
-     },
-     {
-      "questionNumber": "१७",
-      "type": "short_answer",
-      "marks": 4,
-      "questionNepali": "निर्वाचन प्रक्रियामा नागरिकले खेल्नुपर्ने चारवटा महत्त्वपूर्ण भूमिकाहरू उल्लेख गर्नुहोस् ।",
-      "answerNepali": "निर्वाचन प्रक्रियामा नागरिकले खेल्नुपर्ने महत्त्वपूर्ण भूमिकाहरू निम्न छन्:\n• **मतदाता नामावलीमा नाम दर्ता:** १८ वर्ष उमेर पुगेका हरेक नागरिकले आफ्नो नाम मतदाता नामावलीमा दर्ता गराएर आफ्नो मताधिकार सुनिश्चित गर्नुपर्छ ।\n• **विवेकपूर्ण मतदान:** कुनै पनि किसिमको डर, त्रास वा प्रलोभनमा नपरी आफ्नो विवेक प्रयोग गरेर योग्य, इमानदार र सक्षम उम्मेदवारलाई मात्र मत दिनुपर्छ ।\n• **निर्वाचनको पर्यवेक्षण:** आफ्नो समुदायमा निर्वाचन स्वच्छ र निष्पक्ष भए/नभएको निगरानी गर्ने र कुनै धाँधली वा गलत गतिविधि भएमा सम्बन्धित निकायमा तुरुन्त जानकारी गराउने ।\n• **जनमतको सम्मान:** निर्वाचनको परिणामलाई स्वीकार गर्ने र विजयी उम्मेदवारलाई जनहितमा काम गर्न निरन्तर खबरदारी गर्ने ।",
-      "explanationNepali": "यो प्रश्नले लोकतन्त्रमा नागरिकको भूमिका केवल मत हाल्ने मात्र नभई सम्पूर्ण निर्वाचन प्रक्रियालाई स्वच्छ र निष्पक्ष बनाउन महत्त्वपूर्ण हुन्छ भन्ने कुरामा जोड दिन्छ । उद्धरणहरू: एकाइ ५, पाठ ५, पृष्ठ ११५।"
-     },
-     {
-      "questionNumber": "१८",
-      "type": "short_answer",
-      "marks": 4,
-      "questionNepali": "भूमध्यसागरीय हावापानीका मुख्य विशेषताहरू के-के हुन्?",
-      "answerNepali": "भूमध्यसागरीय हावापानीका मुख्य विशेषताहरू निम्न छन्:\n• **अवस्थिति:** यो हावापानी महादेशहरूको पश्चिमी भागमा ३०° देखि ४५° अक्षांशको बिचमा पाइन्छ ।\n• **वर्षाको प्रकृति:** यहाँ हिउँदमा वर्षा हुन्छ तर गृष्म ऋतु सुख्खा रहन्छ ।\n• **वनस्पति:** यहाँका वनस्पतिहरू (जस्तै: जैतुन, सुन्तला, अङ्गुर) का जरा लामा, बोक्रा बाक्ला र पात चिल्ला हुन्छन् ताकि गृष्मको सुख्खा सहन सकून् ।\n• **आर्थिक क्रियाकलाप:** यो क्षेत्र अमिलो जातका फलफूल (रसिला फल) को उत्पादनका लागि विश्वभर प्रसिद्ध छ, त्यसैले यसलाई 'विश्वको बगैँचा' पनि भनिन्छ ।",
-      "explanationNepali": "यो प्रश्नले विश्वको एक प्रमुख हावापानीको प्रकार र त्यसले त्यहाँको वनस्पति र जनजीवनमा पारेको प्रभावबारे विद्यार्थीको ज्ञान परीक्षण गर्दछ । उद्धरणहरू: एकाइ ६, पाठ ४, पृष्ठ १४०-१४१।"
-     },
-     {
-      "questionNumber": "१९",
-      "type": "short_answer",
-      "marks": 4,
-      "questionNepali": "दक्षिण अमेरिका महादेशमा कृषि र पशुपालनको अवस्थाबारे छोटकरीमा लेख्नुहोस् ।",
-      "answerNepali": "दक्षिण अमेरिका महादेशमा कृषि र पशुपालनको अवस्था भौगोलिक विविधताअनुसार फरक-फरक छ । ब्राजिल जस्ता देशहरू कफी, कोका र उखु उत्पादनमा विश्वमै अग्रणी मानिन्छन् । अर्जेन्टिनाको पम्पास घाँसे मैदान गहुँ खेती र व्यावसायिक पशुपालनका लागि प्रसिद्ध छ । यहाँ ठूलो सङ्ख्यामा गाई र भेडा पालिन्छ र मासु तथा ऊन निर्यात गरिन्छ । एन्डिज पर्वतमालाको उच्च भूभागमा स्थानीय आदिवासीहरूले भारी बोकाउन र मासु-ऊनका लागि लामा (Llama) पाल्ने गर्छन् । अमेजन बेसिनको घना जङ्गल क्षेत्रमा भने अझै पनि परम्परागत र निर्वाहमुखी खेती गर्ने गरिन्छ ।",
-      "explanationNepali": "यो प्रश्नले विद्यार्थीलाई दक्षिण अमेरिका महादेशको आर्थिक क्रियाकलाप, विशेषगरी त्यहाँको कृषि र पशुपालनको विशेषता र विविधता बुझ्न मद्दत गर्दछ । उद्धरणहरू: एकाइ ६, पाठ ६, पृष्ठ १५७।"
-     },
-     {
-      "questionNumber": "२०",
-      "type": "short_answer",
-      "marks": 4,
-      "questionNepali": "नेपालमा राष्ट्रिय दिवसहरू मनाउनुको कुनै चारवटा महत्त्व उल्लेख गर्नुहोस् ।",
-      "answerNepali": "नेपालमा राष्ट्रिय दिवसहरू मनाउनुको महत्त्व निम्न छन्:\n• **ऐतिहासिक घटनाको स्मरण:** प्रजातन्त्र दिवस, गणतन्त्र दिवस जस्ता दिनहरूले देशमा महत्त्वपूर्ण राजनीतिक परिवर्तन ल्याउनका लागि भएका सङ्घर्ष र बलिदानको स्मरण गराउँछन् ।\n• **राष्ट्रिय एकता र गौरवको प्रवर्धन:** यी दिवसहरूले सबै नेपालीलाई एकै ठाउँमा ल्याएर राष्ट्रिय एकताको भावना बलियो बनाउँछन् र आफ्नो देशको इतिहासप्रति गौरव गर्न प्रेरित गर्छन् ।\n• **भावी पुस्तालाई प्रेरणा:** सहिद दिवस जस्ता दिनले भावी पुस्तालाई पुर्खाहरूले देश र जनताका लागि गरेको योगदानको बोध गराउँछ र उनीहरूलाई राष्ट्रप्रति जिम्मेवार बन्न प्रेरित गर्छ ।\n• **अधिकार र कर्तव्यको बोध:** संविधान दिवस, बाल दिवस, नारी दिवस जस्ता दिनहरूले नागरिकलाई आफ्नो अधिकारप्रति सचेत गराउनुका साथै राष्ट्रप्रतिको कर्तव्य पूरा गर्न अभिप्रेरित गर्छन् ।",
-      "explanationNepali": "यो प्रश्नले विद्यार्थीलाई राष्ट्रिय दिवसहरूको महत्त्व बुझ्न र ती दिनहरूलाई केवल बिदाको रूपमा मात्र नभई देशको इतिहास र पहिचानसँग जोडेर हेर्न सिकाउँछ । उद्धरणहरू: एकाइ ३, पाठ ५, पृष्ठ ५९।"
-     }
-    ]
-   },
-   {
-    "groupName": "समूह 'ग'",
-    "groupInstruction": "तलका प्रश्नहरूको लामो उत्तर दिनुहोस् :",
-    "marksSchema": "(४×७=२८)",
-    "questions": [
-     {
-      "questionNumber": "२१",
-      "type": "long_answer",
-      "marks": 7,
-      "questionNepali": "'नेपाल विविधतामा एकता भएको देश हो ।' यस भनाइलाई जातीय, भाषिक, धार्मिक र भौगोलिक विविधताको उदाहरण दिँदै पुष्टि गर्नुहोस् ।",
-      "answerNepali": "नेपाललाई 'चार जात छत्तीस वर्णको साझा फूलबारी' भनेर चिनिन्छ, जसले यहाँको अपार विविधता र त्यसमा लुकेको अनुपम एकतालाई सङ्केत गर्दछ । 'नेपाल विविधतामा एकता भएको देश हो' भन्ने भनाइलाई निम्न आधारमा पुष्टि गर्न सकिन्छ:\n\n• **जातीय विविधता:** नेपाल एक बहुजातीय देश हो । यहाँ जनगणना २०६८ अनुसार १२५ भन्दा बढी जातजातिका मानिसहरूको बसोबास छ । पहाडमा ब्राह्मण, क्षेत्री, गुरुङ, मगर; हिमालमा शेर्पा, थकाली; र तराईमा थारू, यादव, राजवंशी जस्ता विभिन्न जातिका मानिसहरू बसोबास गर्छन् । उनीहरूका आ-आफ्नै मौलिक रीतिरिवाज, पोसाक र संस्कृति भए तापनि सबै नेपाली भनेर एउटै राष्ट्रिय पहिचानमा बाँधिएका छन् र एकअर्काको संस्कृतिलाई सम्मान गर्छन् ।\n\n• **भाषिक विविधता:** नेपाल एक बहुभाषिक देश पनि हो । यहाँ १२३ भन्दा बढी भाषाहरू बोलिन्छन् । नेपाली भाषा सरकारी कामकाजको भाषा भए तापनि संविधानले सबै मातृभाषालाई राष्ट्रभाषाको मान्यता दिएको छ । मैथिली, भोजपुरी, तामाङ, नेवारी, गुरुङ जस्ता भाषाहरू आ-आफ्नो समुदायमा बोलिन्छन् । भाषिक भिन्नताका बाबजुद सबैले एकअर्काको भाषालाई सम्मान गर्छन् र नेपाली भाषाले सबैलाई सञ्चारको माध्यमबाट जोडेको छ ।\n\n• **धार्मिक विविधता:** नेपाल एक धर्मनिरपेक्ष राष्ट्र हो जहाँ विभिन्न धर्म मान्ने मानिसहरू बसोबास गर्छन् । यहाँ हिन्दु, बौद्ध, इस्लाम, किराँत, क्रिस्चियन लगायतका १० भन्दा बढी धर्म मान्ने मानिसहरू छन् । पशुपतिनाथ र लुम्बिनी जस्ता विश्व प्रसिद्ध तीर्थस्थलहरूले नेपाललाई धार्मिक पर्यटनको केन्द्र बनाएका छन् । विभिन्न धर्म मान्ने भए तापनि नेपाली समाजमा धार्मिक सहिष्णुताको अनुपम उदाहरण पाइन्छ । एउटा धर्मको चाडपर्वमा अर्को धर्म मान्नेहरू पनि खुसीसाथ सहभागी हुन्छन्, जुन सामाजिक सद्भावको उत्कृष्ट नमुना हो ।\n\n• **भौगोलिक विविधता:** नेपालको क्षेत्रफल सानो भए तापनि यहाँ हिमाल, पहाड र तराई गरी तीन भिन्न भौगोलिक क्षेत्रहरू छन् । हिमालको चिसोदेखि तराईको गर्मीसम्म, यहाँ विश्वका प्रायः सबै प्रकारका हावापानी पाइन्छन् । यो भौगोलिक विविधताले गर्दा यहाँको जीवनशैली, खेतीपाती र आर्थिक क्रियाकलापमा पनि भिन्नता पाइन्छ । तर, हिमाल, पहाड र तराईका नेपालीहरूबीच आर्थिक र सामाजिक रूपमा गहिरो अन्तरसम्बन्ध रहेको छ, जसले राष्ट्रिय एकतालाई बलियो बनाएको छ ।\n\nनिष्कर्षमा, नेपालको जातीय, भाषिक, धार्मिक र भौगोलिक विविधता नै हाम्रो वास्तविक पहिचान र शक्ति हो । यही विविधतामा रहेको एकताले नेपाललाई विश्वमाझ एक अद्वितीय राष्ट्रको रूपमा चिनाएको छ ।",
-      "explanationNepali": "यो प्रश्नले विद्यार्थीलाई नेपालको सामाजिक संरचना, संस्कृति र पहिचानको गहिरो विश्लेषण गर्न लगाउँछ । यसले उनीहरूको विश्लेषणात्मक र लेखन सीपलाई निखार्दै राष्ट्रिय एकताको महत्त्व बुझाउँछ । उद्धरणहरू: एकाइ १, पाठ ३, पृष्ठ ११-१४।"
-     },
-     {
-      "questionNumber": "२२",
-      "type": "map_drawing",
-      "marks": 7,
-      "alternatives": [
-       {
-        "type": "main",
-        "questionNepali": "पृष्ठ भरिने गरी नेपालको नक्सा बनाएर निम्न तथ्यलाई उपयुक्त सङ्केत प्रयोग गरी भर्नुहोस् :\nअन्नपूर्ण हिमाल, कोशी नदी, लुम्बिनी प्रदेश, पूर्व-पश्चिम राजमार्ग"
-       },
-       {
-        "type": "alternative",
-        "questionNepali": "पृष्ठ भरिने गरी एसिया महादेशको नक्सा बनाएर निम्न तथ्यलाई उपयुक्त सङ्केतमा देखाउनुहोस् :\nहिमालय पर्वतमाला, गोबी मरुभूमि, जापान, सिन्धु नदी"
-       },
-       {
-        "type": "for_visually_impaired",
-        "questionNepali": "(दृष्टिविहीनहरूका लागि मात्र)\nनेपालको धरातलीय स्वरूपलाई हिमाल, पहाड र तराई गरी तीन भागमा विभाजन गरी प्रत्येकको विशेषता र जनजीवनको वर्णन गर्नुहोस् ।"
-       }
-      ],
-      "answerNepali": "(विद्यार्थीले उपयुक्त सङ्केत प्रयोग गरी सफा र स्पष्ट नक्सा बनाउनुपर्छ ।)\n• नेपालको नक्साका लागि: अन्नपूर्ण हिमाललाई हिमालको चिह्न (▲), कोशी नदीलाई नदीको चिह्न, लुम्बिनी प्रदेशको सिमाना र पूर्व-पश्चिम राजमार्गलाई राष्ट्रिय राजमार्गको चिह्नले देखाउनुपर्छ ।\n• एसियाको नक्साका लागि: हिमालय पर्वतमालालाई पर्वत श्रेणीको चिह्न, गोबी मरुभूमिलाई मरुभूमिको चिह्न, जापान देशलाई घेरा लगाएर र सिन्धु नदीलाई नदीको चिह्नले सही स्थानमा देखाउनुपर्छ ।",
-      "explanationNepali": "यो प्रश्नले विद्यार्थीको नक्सा बनाउने सीप र नेपाल तथा विश्वको भूगोलसम्बन्धी ज्ञानको परीक्षण गर्दछ । उद्धरणहरू: एकाइ ६, पाठ ८, पृष्ठ १६७-१७०।"
-     },
-     {
-      "questionNumber": "२३",
-      "type": "long_answer",
-      "marks": 7,
-      "questionNepali": "दोस्रो विश्वयुद्धका कारण र परिणामहरू उल्लेख गर्नुहोस् ।",
-      "answerNepali": "**दोस्रो विश्वयुद्धका कारणहरू (सन् १९३९-१९४५):**\n\nदोस्रो विश्वयुद्ध प्रथम विश्वयुद्धभन्दा पनि विनाशकारी थियो, जसका प्रमुख कारणहरू निम्न थिए:\n\n• **भर्सेलिजको अपमानजनक सन्धि:** प्रथम विश्वयुद्धपछि जर्मनीमाथि लादिएको भर्सेलिजको सन्धि अत्यन्तै कठोर र अपमानजनक थियो । यसले जर्मनीको आर्थिक र सैनिक शक्तिलाई कमजोर बनायो, जसले गर्दा जर्मन जनतामा बदलाको भावना जागृत भयो ।\n• **हिटलरको उदय र नाजीवाद:** जर्मनीमा एडोल्फ हिटलर र उनको नाजी पार्टीको उदय भयो । हिटलरले भर्सेलिजको सन्धि तोडेर जर्मनीको सैनिक शक्ति बढाउन थाले र अन्य राष्ट्रहरूमाथि आक्रमण गर्ने नीति लिए ।\n• **राष्ट्रसङ्घको असफलता:** विश्वमा शान्ति कायम गर्न स्थापित राष्ट्रसङ्घ शक्तिशाली देशहरू (जस्तै: जर्मनी, जापान, इटाली) को आक्रमणकारी गतिविधिलाई रोक्न असफल भयो ।\n• **विश्वव्यापी आर्थिक मन्दी:** सन् १९२९ को विश्वव्यापी आर्थिक मन्दीले गर्दा धेरै देशहरूमा बेरोजगारी र गरिबी बढ्यो, जसले गर्दा जर्मनी र इटाली जस्ता देशहरूमा तानाशाही शासनको उदय हुन मद्दत पुग्यो ।\n• **गुटबन्दी:** विश्व फेरि दुई गुटमा विभाजित भयो: एकातिर जर्मनी, इटाली र जापानको 'धुरी राष्ट्र' (Axis Powers) र अर्कोतिर बेलायत, फ्रान्स, सोभियत सङ्घ र पछि अमेरिका सम्मिलित 'मित्र राष्ट्र' (Allied Powers) ।\n• **तत्कालीन कारण:** १ सेप्टेम्बर १९३९ मा जर्मनीले पोल्यान्डमाथि आक्रमण गरेपछि बेलायत र फ्रान्सले जर्मनीविरुद्ध युद्धको घोषणा गरे र दोस्रो विश्वयुद्ध सुरु भयो ।\n\n**दोस्रो विश्वयुद्धका परिणामहरू:**\n\nयस युद्धले विश्वमा दूरगामी र विनाशकारी प्रभावहरू पाऱ्यो, जसमध्ये प्रमुख परिणामहरू निम्न थिए:\n\n• **अकल्पनीय धनजनको क्षति:** यस युद्धमा करिब ६ करोड मानिसले ज्यान गुमाए । आणविक हतियारको प्रयोगले जापानको हिरोसिमा र नागासाकी सहर ध्वस्त भए ।\n• **संयुक्त राष्ट्रसङ्घको स्थापना:** भविष्यमा यस्ता युद्धहरू रोक्न र विश्व शान्ति स्थापना गर्न सन् १९४५ मा संयुक्त राष्ट्रसङ्घ (United Nations) को स्थापना भयो ।\n• **उपनिवेशवादको अन्त्य:** युद्धपछि बेलायत र फ्रान्स जस्ता साम्राज्यवादी शक्तिहरू कमजोर भए र एसिया तथा अफ्रिकाका धेरै देशहरूले स्वतन्त्रता प्राप्त गरे ।\n• **विश्व दुई ध्रुवमा विभाजन (शीतयुद्ध):** युद्धपछि विश्व पुँजीवादी विचारधाराको नेतृत्व गर्ने संयुक्त राज्य अमेरिका र साम्यवादी विचारधाराको नेतृत्व गर्ने सोभियत सङ्घ गरी दुई शक्तिशाली गुटमा विभाजित भयो, जसले शीतयुद्धको सुरुवात गऱ्यो ।\n• **मानव अधिकारको चेतना:** युद्धको कहालीलाग्दो विनाशले गर्दा विश्वव्यापी रूपमा मानव अधिकारको संरक्षण गर्नुपर्छ भन्ने चेतना बढ्यो र सन् १९४८ मा मानव अधिकारको विश्वव्यापी घोषणापत्र जारी भयो ।",
-      "explanationNepali": "यो प्रश्नले विश्व इतिहासको सबैभन्दा विनाशकारी घटनाको कारण र परिणामबारे विद्यार्थीको ज्ञानको परीक्षण गर्छ । यसले उनीहरूलाई ऐतिहासिक घटनाहरूको विश्लेषण गर्न र त्यसले वर्तमान विश्वमा पारेको प्रभावबारे बुझ्न मद्दत गर्दछ । उद्धरणहरू: एकाइ ७, पृष्ठ १७३।"
-     },
-     {
-      "questionNumber": "२४",
-      "type": "long_answer",
-      "marks": 7,
-      "questionNepali": "'नेपालमा सङ्घीयताको सफल कार्यान्वयन: अवसर र चुनौती' शीर्षकमा एक लेख तयार पार्नुहोस् ।",
-      "answerNepali": "लेख\n\n**नेपालमा सङ्घीयताको सफल कार्यान्वयन: अवसर र चुनौती**\n\nलामो राजनीतिक सङ्घर्ष र आन्दोलनपछि नेपालको संविधान, २०७२ ले देशलाई सङ्घीय लोकतान्त्रिक गणतन्त्रात्मक राज्यको रूपमा स्थापित गरेको छ । सङ्घ, प्रदेश र स्थानीय गरी तीन तहको सरकारसहितको सङ्घीय शासन प्रणाली नेपालका लागि एक नयाँ र महत्त्वपूर्ण अभ्यास हो । यसको सफल कार्यान्वयनमा अनेकौँ अवसर र चुनौतीहरू विद्यमान छन् ।\n\n**अवसरहरू:**\nसङ्घीयताले नेपालको विकास र सुशासनमा थुप्रै अवसरहरू सिर्जना गरेको छ । पहिलो, यसले शासन सत्तालाई जनताको घरदैलोमा पुऱ्याएको छ । स्थानीय तह र प्रदेश सरकारहरूले आफ्नो क्षेत्रको आवश्यकता र सम्भावनाअनुसार विकास योजनाहरू बनाउन र कार्यान्वयन गर्न पाएका छन्, जसले स्थानीय विकासलाई गति दिएको छ । दोस्रो, सङ्घीयताले स्थानीय स्रोतसाधनको पहिचान र परिचालनलाई बढावा दिएको छ । स्थानीय सरकारहरूले आफ्नो क्षेत्रमा उपलब्ध स्रोतहरूको उपयोग गरी आत्मनिर्भर बन्ने अवसर पाएका छन् । तेस्रो, यसले समावेशी लोकतन्त्रलाई बलियो बनाएको छ । राज्यका विभिन्न तहमा महिला, दलित, जनजाति र सीमान्तकृत समुदायको प्रतिनिधित्व सुनिश्चित भएको छ, जसले गर्दा राज्य प्रणालीमा सबै वर्गको स्वामित्व बढेको छ । चौथो, प्रदेशहरूबीच विकास र प्रगतिमा स्वस्थ प्रतिस्पर्धाको वातावरण सिर्जना भएको छ, जसले समग्र राष्ट्रिय विकासमा सघाउ पुऱ्याउँछ ।\n\n**चुनौतीहरू:**\nअवसरहरूसँगै सङ्घीयताको कार्यान्वयनमा गम्भीर चुनौतीहरू पनि छन् । पहिलो, तीन तहका सरकारहरूबीच अधिकार र स्रोतसाधनको बाँडफाँटमा अझै पनि स्पष्टताको कमी र विवाद देखिन्छ । दोस्रो, प्रदेश र स्थानीय तहहरूमा आवश्यक कर्मचारी र वित्तीय स्रोतको अभाव छ, जसले गर्दा उनीहरूले प्रभावकारी रूपमा सेवा प्रवाह गर्न सकेका छैनन् । तेस्रो, जनप्रतिनिधिहरूमा अनुभव र क्षमताको कमी तथा बढ्दो भ्रष्टाचारले गर्दा जनतामा सङ्घीयताप्रतिको विश्वास घट्दै गएको छ । चौथो, सङ्घीयता सञ्चालनको खर्चिलो प्रणालीले देशको अर्थतन्त्रमा थप भार पारेको छ ।\n\n**निष्कर्ष:**\nनिष्कर्षमा, सङ्घीयता नेपालको विविधतालाई सम्बोधन गर्ने र सन्तुलित विकास हासिल गर्ने सबैभन्दा उत्तम शासन प्रणाली हो । यसका चुनौतीहरूलाई सम्बोधन गर्न तीनै तहका सरकारहरूबीच समन्वय, सहकार्य र सहअस्तित्वको भावना आवश्यक छ । राजनीतिक दलहरूले दलीय स्वार्थभन्दा माथि उठेर राष्ट्रिय हितमा काम गर्ने, जनप्रतिनिधिहरूलाई जवाफदेही बनाउने र भ्रष्टाचार नियन्त्रण गर्ने हो भने नेपालमा सङ्घीयता सफल हुने निश्चित छ ।",
-      "explanationNepali": "यो प्रश्नले विद्यार्थीलाई नेपालको वर्तमान शासन प्रणाली, यसका सकारात्मक पक्षहरू र चुनौतीहरूबारे विश्लेषण गर्न लगाउँछ । यसले उनीहरूको समसामयिक विषयमा तार्किक र विश्लेषणात्मक लेख लेख्ने क्षमताको विकास गर्दछ । उद्धरणहरू: एकाइ २, पाठ ३, पृष्ठ ३०-३३।"
-     }
-    ]
-   }
-  ]
- }
 ]
-
-
-

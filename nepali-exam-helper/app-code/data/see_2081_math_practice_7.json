@@ -1,15 +1,14 @@
 [
   {
     "_id": "see_2081_math_practice_7_generated_verified",
-    "titleNepali": "SEE २०८१ अनिवार्य गणित अभ्यास परीक्षा ७",
-    "titleEnglish": "SEE 2081 Math Practice Test 7",
+    "titleNepali": "SEE २०८१ अनिवार्य गणित अभ्यास परीक्षा ७ (कठिन)",
+    "titleEnglish": "SEE 2081 Math Practice Test 7 (Harder)",
     "subjectNepali": "अनिवार्य गणित",
     "subjectEnglish": "Compulsory Mathematics",
     "totalMarksNepali": "७५",
     "totalMarksEnglish": 75,
     "durationNepali": "१८०",
-    "durationEnglish": 180,
-    "questions": []
+    "durationEnglish": 180
   },
   {
     "testId": "see_2081_math_practice_7_generated_verified",

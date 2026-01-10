@@ -6,7 +6,7 @@ import { StudentLogin } from "@/components/student-login"
 import { StudentHeader } from "@/components/student-header"
 import { TestSelectionScreen } from "@/components/test-selection-screen"
 import { ResultsCard } from "@/components/results-card"
-import { useLanguage, getLanguageSwitchEnabled, getDisabledReason } from "@/lib/language-context"
+import { useLanguage, getLanguageSwitchEnabled, getDisabledReason, getRecommendedLanguage, type AppLanguage } from "@/lib/language-context"
 import {
   loadStudentProgress,
   saveStudentProgress,
@@ -28,11 +28,12 @@ export default function SeePrepPage() {
   const [isHydrated, setIsHydrated] = useState(false)
   const [isAuthenticated, setIsAuthenticated] = useState(false)
   const [userEmail, setUserEmail] = useState<string | null>(null)
+  const [preTestLanguage, setPreTestLanguage] = useState<AppLanguage | null>(null)
 
-  // Get language context to control switch enabled state
-  const { language, setLanguageSwitchEnabled, setDisabledReason } = useLanguage()
+  // Get language context to control switch enabled state and auto-switch
+  const { language, setLanguage, setLanguageSwitchEnabled, setDisabledReason, setCurrentTestId: setContextTestId } = useLanguage()
 
-  // Update language switch enabled state based on current test
+  // Update language switch enabled state and set test ID in context
   useEffect(() => {
     const enabled = getLanguageSwitchEnabled(currentTestId)
     setLanguageSwitchEnabled(enabled)
@@ -40,7 +41,10 @@ export default function SeePrepPage() {
     // Set the reason message if disabled
     const reason = getDisabledReason(currentTestId, language)
     setDisabledReason(reason)
-  }, [currentTestId, language, setLanguageSwitchEnabled, setDisabledReason])
+
+    // Update context with current test ID for LanguageSwitch component
+    setContextTestId(currentTestId)
+  }, [currentTestId, language, setLanguageSwitchEnabled, setDisabledReason, setContextTestId])
 
   // Fetch test title when test ID changes
   useEffect(() => {
@@ -49,13 +53,17 @@ export default function SeePrepPage() {
         .then((res) => res.json())
         .then((data) => {
           const test = data.tests?.find((t: any) => t.id === currentTestId)
-          setCurrentTestTitle(test?.title || currentTestId)
+          // Use bilingual title based on current language
+          const title = language === 'english'
+            ? (test?.titleEnglish || test?.title)
+            : (test?.titleNepali || test?.title)
+          setCurrentTestTitle(title || currentTestId)
         })
         .catch(() => setCurrentTestTitle(currentTestId))
     } else {
       setCurrentTestTitle(null)
     }
-  }, [currentTestId])
+  }, [currentTestId, language])
 
   // Mark as hydrated and load saved state
   useEffect(() => {
@@ -139,6 +147,16 @@ export default function SeePrepPage() {
     setShowTestSelection(false)
     setShowResults(false)
 
+    // Auto-switch language based on test type (Nepali/Social -> Nepali, English -> English)
+    // Save the user's current language so we can restore it when they exit
+    const recommendedLang = getRecommendedLanguage(testId)
+    if (recommendedLang && recommendedLang !== language) {
+      setPreTestLanguage(language) // Remember what language they were in
+      setLanguage(recommendedLang)
+    } else {
+      setPreTestLanguage(null) // No auto-switch happened, nothing to restore
+    }
+
     if (currentStudentId) {
       const existingProgress = loadStudentProgress(`${currentStudentId}_${testId}`)
 
@@ -181,6 +199,12 @@ export default function SeePrepPage() {
     setShowResults(false)
     setCurrentTestId(null)
     setCurrentTestTitle(null)
+
+    // Restore user's language to what it was before auto-switch
+    if (preTestLanguage) {
+      setLanguage(preTestLanguage)
+      setPreTestLanguage(null)
+    }
   }
 
   const handleLogout = () => {

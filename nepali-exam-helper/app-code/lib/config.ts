@@ -4,7 +4,7 @@ export const config = {
   openaiApiKey: process.env.OPENAI_API_KEY, // No fallback - must be in .env.local
   // Email configuration (Resend)
   resendApiKey: process.env.RESEND_API_KEY,
-  emailFromAddress: process.env.EMAIL_FROM_ADDRESS || "SEE Practice <noreply@resend.dev>",
+  emailFromAddress: process.env.EMAIL_FROM_ADDRESS || "SEE Practice <donotreply@testprep.looma.website>",
 }
 
 // Debug function to check environment loading

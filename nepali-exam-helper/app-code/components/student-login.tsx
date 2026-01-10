@@ -27,6 +27,7 @@ export function StudentLogin({ onLogin }: StudentLoginProps) {
   const [canResend, setCanResend] = useState(false)
   const [resendTimer, setResendTimer] = useState(60)
   const otpInputRef = useRef<HTMLInputElement>(null)
+  const emailInputRef = useRef<HTMLInputElement>(null)
 
   // Handle resend timer
   useEffect(() => {
@@ -38,6 +39,13 @@ export function StudentLogin({ onLogin }: StudentLoginProps) {
     }
   }, [step, resendTimer])
 
+  // Focus email input when entering email step
+  useEffect(() => {
+    if (step === "email" && emailInputRef.current) {
+      emailInputRef.current.focus()
+    }
+  }, [step])
+
   // Focus OTP input when entering OTP step
   useEffect(() => {
     if (step === "otp" && otpInputRef.current) {
@@ -48,6 +56,10 @@ export function StudentLogin({ onLogin }: StudentLoginProps) {
   const handleContinueAsGuest = () => {
     const guestId = `guest_${Date.now()}_${Math.random().toString(36).substring(2, 8)}`
     setAuthState({ isAuthenticated: false, email: null })
+
+    // Track guest session for analytics
+    fetch("/api/admin/track-guest", { method: "POST" }).catch(() => { })
+
     onLogin(guestId, false)
   }
 
@@ -253,6 +265,7 @@ export function StudentLogin({ onLogin }: StudentLoginProps) {
                   {language === "english" ? "Email Address" : "इमेल ठेगाना"}
                 </Label>
                 <Input
+                  ref={emailInputRef}
                   id="email"
                   type="email"
                   placeholder={language === "english" ? "Enter your email" : "आफ्नो इमेल प्रविष्ट गर्नुहोस्"}

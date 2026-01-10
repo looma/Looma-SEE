@@ -33,9 +33,11 @@ export function FreeResponseGroup({
     if (!showExplanations) return null
 
     const explanation = language === "english"
-      ? question.explanation
-      : (question.explanationNepali || question.explanation)
-    const sampleAnswer = question.sampleAnswer
+      ? ((question as any).explanationEnglish || (question as any).explanation)
+      : ((question as any).explanationNepali || (question as any).explanation)
+    const sampleAnswer = language === "english"
+      ? ((question as any).sampleAnswerEnglish || question.sampleAnswer)
+      : ((question as any).sampleAnswerNepali || question.sampleAnswer)
 
     const hasExplanation = explanation && explanation.trim()
     const hasSampleAnswer = sampleAnswer && sampleAnswer.trim()
@@ -144,7 +146,7 @@ export function FreeResponseGroup({
     }
   }
 
-  const answeredCount = Object.values(answers).filter((answer) => answer && answer.trim().length > 0).length
+  const answeredCount = Object.values(answers).filter((answer) => answer && typeof answer === 'string' && answer.trim().length > 0).length
   const progressPercentage = questions.length > 0 ? (answeredCount / questions.length) * 100 : 0
   const groupInfo = getGroupInfo(group)
 
@@ -228,8 +230,8 @@ export function FreeResponseGroup({
                       </div>
                     </div>
                   </div>
-                  <Badge variant="outline" className="ml-3">
-                    {question.marks} {language === "english" ? "mark" : "अंक"}{question.marks !== 1 ? (language === "english" ? "s" : "") : ""}
+                  <Badge variant="outline" className="ml-3 whitespace-nowrap flex-shrink-0">
+                    {language === "english" ? ((question as any).marksEnglish || question.marks) : ((question as any).marksNepali || question.marks)} {language === "english" ? "mark" : "अंक"}{(language === "english" ? ((question as any).marksEnglish || question.marks) : ((question as any).marksNepali || question.marks)) !== 1 ? (language === "english" ? "s" : "") : ""}
                   </Badge>
                 </div>
               </CardHeader>
@@ -260,9 +262,6 @@ export function FreeResponseGroup({
                         {group === "D" && "आफ्नो कार्यविधि र तर्क देखाउनुहोस्"}
                       </>
                     )}
-                  </span>
-                  <span className={currentAnswer.length > 20 ? "text-green-600" : "text-slate-400"}>
-                    {currentAnswer.length} {language === "english" ? "characters" : "अक्षरहरू"}
                   </span>
                 </div>
 

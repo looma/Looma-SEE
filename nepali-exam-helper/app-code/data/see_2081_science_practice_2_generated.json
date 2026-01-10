@@ -437,8 +437,8 @@
           "questionEnglish": "Give one characteristic of Gymnosperms.",
           "marksNepali": "१",
           "marksEnglish": 1,
-          "sampleAnswerNepali": "उत्तर: \n* यिनीहरूले फूलको सट्टा कोन (cones) धारण गर्छन् ।\n* यिनीहरूको बीउ नाङ्गो हुन्छ, फलभित्र हुँदैन ।\n* यिनीहरूका पातहरू लामा र सियोजस्ता हुन्छन् ।\nउद्धरण: पाठ २",
-          "sampleAnswerEnglish": "Answer: \n* They bear cones instead of flowers.\n* Their seed is naked, without fruit.\n* Their leaves are elongated and needle-like.\nCitation: Lesson 2"
+          "sampleAnswerNepali": "उत्तर: \n* यिनीहरूले फूलको सट्टा कोन (cones) धारण गर्छन् र तिनीहरू एकलिङ्गी (unisexual) हुन्छन् ।\n* यिनीहरूको बीउ नाङ्गो हुन्छ, फलभित्र हुँदैन ।\n* यिनीहरूको पात लामा र सियोजस्ता हुन्छन् र जरा जमिनमा गहिरोसम्म फैलिएको हुन्छ ।\nउद्धरण: पाठ २",
+          "sampleAnswerEnglish": "Answer: \n* They bear cones instead of flowers and are unisexual.\n* Their seed is naked, without fruit.\n* Their leaves are elongated and needle-like, and their roots spread far into the ground.\nCitation: Lesson 2"
         },
         {
           "idNepali": "ग",
@@ -492,8 +492,8 @@
           "questionEnglish": "Give an example of a source of Direct Current (DC).",
           "marksNepali": "१",
           "marksEnglish": 1,
-          "sampleAnswerNepali": "उत्तर: ड्राइ सेल, सोलार प्यानल, ब्याट्रीहरू ।\nउद्धरण: पाठ ११",
-          "sampleAnswerEnglish": "Answer: Dry Cells, solar panels, batteries.\nCitation: Lesson 11"
+          "sampleAnswerNepali": "उत्तर: ड्राइ सेल (Dry cells), फोटोसेल वा सोलार प्यानल (photocells/solar panels), ब्याट्रीहरू (batteries) ।\nउद्धरण: पाठ ११",
+          "sampleAnswerEnglish": "Answer: Dry Cells, photocells (Solar panels), batteries.\nCitation: Lesson 11"
         },
         {
           "idNepali": "ज",
@@ -514,7 +514,7 @@
           "questionEnglish": "Name one chemical substance used for ripening fruits.",
           "marksNepali": "१",
           "marksEnglish": 1,
-          "sampleAnswerNepali": "उत्तर: क्याल्सियम कार्बाइड, इथिलिन ग्यास, इथेफोन ।\nउद्धरण: पाठ १९",
+          "sampleAnswerNepali": "उत्तर: क्याल्सियम कार्बाइड (Calcium carbide), इथिलिन ग्यास (ethylene gas), इथेफोन (ethephon) ।\nउद्धरण: पाठ १९",
           "sampleAnswerEnglish": "Answer: Calcium carbide, ethylene gas, ethephon.\nCitation: Lesson 19"
         }
       ],
@@ -538,8 +538,8 @@
           "questionEnglish": "Write two differences between Phylum Porifera and Phylum Coelenterata.",
           "marksNepali": "२",
           "marksEnglish": 2,
-          "sampleAnswerNepali": "उत्तर: पोरिफेरा र सिलेन्टरेटा बिचका भिन्नताहरू:\n* पोरिफेरामा तन्तु (tissue) विकसित भएको हुँदैन, जबकि सिलेन्टरेटा पहिलो तन्तु-स्तरको जनावर हो ।\n* पोरिफेराको शरीरमा छिद्रहरू (pores) हुन्छन्, जबकि सिलेन्टरेटाको शरीरमा खोक्रो गुहा (coelenteron) र टेन्टाकल्स (tentacles) हुन्छन् ।\nउद्धरण: पाठ २",
-          "sampleAnswerEnglish": "Answer: Differences between Porifera and Coelenterata:\n* Tissue is not developed in Porifera, whereas Coelenterata are the first tissue-graded animals.\n* The body of Porifera has pores, whereas the body of Coelenterata has a hollow cavity (coelenteron) and tentacles.\nCitation: Lesson 2"
+          "sampleAnswerNepali": "उत्तर: पोरिफेरा र सिलेन्टरेटा बिचका भिन्नताहरू:\n1. **शारीरिक संगठन:** पोरिफेरामा तन्तु (tissue) विकसित भएको हुँदैन (कोषीय तह), जबकि सिलेन्टरेटा पहिलो तन्तु-स्तरको (tissue-graded) जनावर हो ।\n2. **शरीरको विशेषता:** पोरिफेराको शरीरमा धेरै छिद्रहरू (ostia र osculum) र वाटर क्यानल सिस्टम हुन्छ, जबकि सिलेन्टरेटाको शरीरमा खोक्रो गुहा (coelenteron) र मुखको वरिपरि टेन्टाकल्स (tentacles) हुन्छन् ।\n3. **सममिति:** पोरिफेराका जनावरहरू प्राय: असममित (asymmetrical) हुन्छन्, जबकि सिलेन्टरेटाका जनावरहरू रेडियल्ली सिमेट्रिकल (radially symmetrical) हुन्छन् ।\n4. **विशेष कोशिकाहरू:** सिलेन्टरेटाका टेन्टाकल्समा टोक्ने कोषहरू (nematocysts) हुन्छन् जसले शिकार गर्न मद्दत गर्छन्, जुन पोरिफेरामा हुँदैनन् ।\nउद्धरण: पाठ २",
+          "sampleAnswerEnglish": "Answer: Differences between Porifera and Coelenterata:\n1. **Body Organization:** Tissue is not developed in Porifera (cellular level), whereas Coelenterata are the first tissue-graded animals.\n2. **Body Features:** The body of Porifera has pores (ostia and osculum) and a water canal system, whereas the body of Coelenterata has a hollow cavity called coelenteron and tentacles surrounding the mouth.\n3. **Symmetry:** Porifera are mostly asymmetrical, whereas Coelenterata are radially symmetrical.\n4. **Special Cells:** Coelenterata possess stinging cells (nematocysts) on their tentacles for stinging and capturing prey, which Porifera lack.\nCitation: Lesson 2"
         },
         {
           "idNepali": "५",
@@ -549,8 +549,8 @@
           "questionEnglish": "Write any two advantages of cross-breeding between a local she-buffalo and a high-quality he-buffalo.",
           "marksNepali": "२",
           "marksEnglish": 2,
-          "sampleAnswerNepali": "उत्तर: क्रस ब्रिडिङका फाइदाहरू:\n* यस विधिले दुई फरक जात, प्रजाति वा वंशका जीवहरूको वांछित गुणहरूलाई संयोजन गर्छ ।\n* रोग प्रतिरोधात्मक क्षमता, बल, आयु, र शक्ति जस्ता गुणहरू सुधार गर्न सकिन्छ ।\nउद्धरण: पाठ ४",
-          "sampleAnswerEnglish": "Answer: Advantages of cross-breeding:\n* This method combines the desirable qualities of two organisms from different breeds, varieties, or species.\n* Immunity, strength, age, vigor, etc. of an organism can be improved by this method.\nCitation: Lesson 4"
+          "sampleAnswerNepali": "उत्तर: क्रस ब्रिडिङका फाइदाहरू:\n1. **वांछित गुणहरूको संयोजन:** यस विधिले दुई फरक जात, प्रजाति वा वंशका जीवहरूको वांछित गुणहरूलाई संयोजन गर्छ ।\n2. **गुणस्तरमा सुधार:** यस विधिबाट अभिभावकभन्दा राम्रो गुणस्तर (रोग प्रतिरोधात्मक क्षमता, बल, आयु, र जाँगर) भएका सन्तानहरू विकास गर्न सकिन्छ ।\n3. **आनुवंशिक सामग्रीको प्रयोग:** यसले आनुवंशिक सामग्रीको फराकिलो दायराको पूर्ण उपयोग गर्ने अवसर प्रदान गर्छ ।\n4. **उत्पादन वृद्धि:** यस विधिबाट उत्पादित बिरुवा तथा जनावरहरूबाट उत्पादन बढाउन सकिन्छ ।\nउद्धरण: पाठ ४",
+          "sampleAnswerEnglish": "Answer: Advantages of cross-breeding:\n1. **Combination of Desirable Traits:** This method combines the desirable qualities of two organisms from different breeds, varieties, or species.\n2. **Improved Quality:** Animals that exhibit better quality (immunity, strength, age, and vigor) than the parent animals can be developed.\n3. **Use of Genetic Material:** Cross-breeding provides the opportunity to make full use of a wide range of genetic material.\n4. **Increased Production:** Production can be increased from plants and animals produced through this method.\nCitation: Lesson 4"
         },
         {
           "idNepali": "६",
@@ -637,8 +637,8 @@
           "questionEnglish": "What change occurs in atomic size when moving from left to right in a period, and why?",
           "marksNepali": "२",
           "marksEnglish": 2,
-          "sampleAnswerNepali": "उत्तर: पिरियडमा बायाँबाट दायाँ जाँदा पारमाणविक आकार घट्दै जान्छ । किनभने, सेलहरूको सङ्ख्या उही रहन्छ तर न्युक्लियसमा प्रोटोनको सङ्ख्या बढ्छ, जसले गर्दा न्युक्लियसको आकर्षण बल बढ्छ र परमाणु खुम्चिन्छ ।\nउद्धरण: पाठ १४",
-          "sampleAnswerEnglish": "Answer: The atomic size of elements decreases from left to right in a period. This is because, while the number of shells remains the same, the number of protons in the nucleus increases. This leads to a stronger nuclear attraction force, which contracts the atom.\nCitation: Lesson 14"
+          "sampleAnswerNepali": "उत्तर: पिरियडमा बायाँबाट दायाँ जाँदा पारमाणविक आकार घट्दै जान्छ । किनभने, सेलहरूको सङ्ख्या उही रहन्छ, नयाँ इलेक्ट्रोनहरू उही सेलमा थपिन्छन्, तर न्युक्लियसमा प्रोटोनको सङ्ख्या बढ्छ । यसले गर्दा न्युक्लियसको धनात्मक चार्ज बढ्छ र बाहिरी सेलका इलेक्ट्रोनहरूलाई बढी बलले तान्छ, जसले गर्दा परमाणु खुम्चिन्छ ।\nउद्धरण: पाठ १४",
+          "sampleAnswerEnglish": "Answer: The atomic size of elements decreases from left to right in a period. This is because, while the number of shells remains the same and new electrons are added to the same shell, the number of protons in the nucleus increases. This leads to a stronger positive nuclear charge, which attracts the valence electrons with more force, contracting the atom.\nCitation: Lesson 14"
         },
         {
           "idNepali": "१४",
@@ -648,8 +648,8 @@
           "questionEnglish": "Why are ores obtained from mines first crushed into powder? What is this process called?",
           "marksNepali": "२",
           "marksEnglish": 2,
-          "sampleAnswerNepali": "उत्तर: खानीबाट निकालिने धाउका ठूला टुक्राहरूलाई धुलो बनाइन्छ ताकि यसमा रहेका धातु र अशुद्धताहरूलाई छुट्याउन सजिलो होस् । यस प्रक्रियालाई ग्राइन्डिङ (Grinding) भनिन्छ ।\nउद्धरण: पाठ १७",
-          "sampleAnswerEnglish": "Answer: Ores are crushed into small particles to make it easier to separate the metal from the impurities. This process is called grinding.\nCitation: Lesson 17"
+          "sampleAnswerNepali": "उत्तर: खानीबाट निकालिने धाउका ठूला टुक्राहरूलाई मेशिनका रोलरहरू प्रयोग गरेर धुलो बनाइन्छ ताकि यसमा रहेका अशुद्धताहरू (ग्याङ्ग) हटाउन र धातुलाई अलग (concentration) गर्न सजिलो होस् । यस प्रक्रियालाई ग्राइन्डिङ (Grinding) भनिन्छ ।\nउद्धरण: पाठ १७",
+          "sampleAnswerEnglish": "Answer: Ores obtained from mines are crushed into small particles using rollers to make it easier to separate impurities (gangue) and facilitate the concentration of the ore. This process is called grinding.\nCitation: Lesson 17"
         },
         {
           "idNepali": "१५",
@@ -716,8 +716,8 @@
           "questionEnglish": "What is the working principle of a hydraulic machine? Write any two of its applications.",
           "marksNepali": "४",
           "marksEnglish": 4,
-          "sampleAnswerNepali": "उत्तर: **काम गर्ने सिद्धान्त:** हाइड्रोलिक मेसिन पास्कलको नियममा आधारित बल-बढाउने (force-multiplying) यन्त्र हो । यस नियम अनुसार, बन्द भाँडोमा रहेको तरल पदार्थमा लगाइएको चाप सबैतिर समान रूपले प्रसारण हुन्छ । हाइड्रोलिक मेसिनमा, सानो पिस्टनमा थोरै बल लगाएर उत्पन्न भएको चाप ठूलो पिस्टनमा प्रसारण हुन्छ । ठूलो पिस्टनको क्षेत्रफल बढी भएकोले, त्यहाँ ठूलो बल उत्पन्न हुन्छ ($F_2 = F_1 \\times \\frac{A_2}{A_1}$) ।\n\n**उपयोगिताहरू:**\n* **हाइड्रोलिक लिफ्ट:** डेन्टिस्टको कुर्सी र गाडीहरू उठाउन प्रयोग गरिन्छ ।\n* **हाइड्रोलिक ब्रेक:** गाडीहरूलाई रोक्न प्रयोग गरिन्छ ।\n* **हाइड्रोलिक ज्याक:** ट्रक, बस जस्ता गह्रौं सवारीसाधन उठाउन प्रयोग गरिन्छ ।\n* **हाइड्रोलिक प्रेस:** कागज, कपास जस्ता वस्तुहरूलाई थिचेर प्याक गर्न प्रयोग गरिन्छ ।\nउद्धरण: पाठ ८",
-          "sampleAnswerEnglish": "Answer: **Working Principle:** A hydraulic machine is a force-multiplying device based on Pascal's law. According to this law, the pressure generated at a point in an enclosed liquid is transmitted equally in all directions. In a hydraulic machine, the pressure generated by applying a small force on the small piston is transmitted to the large piston. Since the area of the large piston is greater, a larger force is produced on it ($F_2 = F_1 \\times \\frac{A_2}{A_1}$). \n\n**Applications:**\n* **Hydraulic Lift:** Used to lift dentist chairs and cars.\n* **Hydraulic Brake:** Used to stop vehicles.\n* **Hydraulic Jack:** Used to lift heavy vehicles like trucks and buses.\n* **Hydraulic Press:** Used to compress and pack materials like paper and cotton.\nCitation: Lesson 8"
+          "sampleAnswerNepali": "उत्तर: **काम गर्ने सिद्धान्त:** हाइड्रोलिक मेसिन पास्कलको नियममा आधारित बल-बढाउने (force-multiplying) यन्त्र हो । यस नियम अनुसार, बन्द भाँडोमा रहेको तरल पदार्थमा लगाइएको चाप सबैतिर समान रूपले प्रसारण हुन्छ । हाइड्रोलिक मेसिनमा, सानो पिस्टनमा थोरै बल लगाएर उत्पन्न भएको चाप ठूलो पिस्टनमा प्रसारण हुन्छ । ठूलो पिस्टनको क्षेत्रफल बढी भएकोले, त्यहाँ ठूलो बल उत्पन्न हुन्छ ($F_2 = F_1 \\times \\frac{A_2}{A_1}$) ।\n\n**उपयोगिताहरू:**\n* **हाइड्रोलिक लिफ्ट:** डेन्टिस्टको कुर्सी र गाडीहरू उठाउन प्रयोग गरिन्छ ।\n* **हाइड्रोलिक ब्रेक:** गाडीहरूलाई रोक्न प्रयोग गरिन्छ ।\n* **हाइड्रोलिक ज्याक:** ट्रक, बस जस्ता गह्रौं सवारीसाधन उठाउन प्रयोग गरिन्छ ।\n* **हाइड्रोलिक प्रेस:** कागज, कपास जस्ता वस्तुहरूलाई थिचेर प्याक गर्न प्रयोग \nगरिन्छ ।\nउद्धरण: पाठ ८",
+          "sampleAnswerEnglish": "Answer: **Working Principle:** A hydraulic machine is a force-multiplying device based on Pascal's law. According to this law, the pressure generated at a point in an enclosed liquid is transmitted equally in all directions. In a hydraulic machine, the pressure generated by applying a small force on the small piston is transmitted to the large piston. Since the area of the large piston is greater, a larger force is produced on it ($F_2 = F_1 \\times \\frac{A_2}{A_1}$). \n\n**Applications:**\n* **Hydraulic Lift:** Used to lift dentist chairs and cars.\n* **Hydraulic Brake:** Used to stop vehicles.\n* **Hydraulic Jack:** Used to lift heavy \nvehicles like trucks and buses.\n* **Hydraulic Press:** Used to compress and pack materials like paper and cotton.\nCitation: Lesson 8"
         },
         {
           "idNepali": "२१",
@@ -738,8 +738,8 @@
           "questionEnglish": "Write four differences between AC and DC, and describe the difference in their current-time relationship.",
           "marksNepali": "४",
           "marksEnglish": 4,
-          "sampleAnswerNepali": "उत्तर: **भिन्नताहरू:**\n* AC को दिशा र परिमाण निरन्तर परिवर्तन हुन्छ, जबकि DC को दिशा र परिमाण स्थिर रहन्छ ।\n* AC को फ्रिक्वेन्सी हुन्छ (नेपालमा ५० Hz), जबकि DC को फ्रिक्वेन्सी शून्य हुन्छ ।\n* AC लाई ट्रान्सफर्मर प्रयोग गरेर सजिलै बढाउन वा घटाउन सकिन्छ, जबकि DC लाई सकिँदैन ।\n* AC का स्रोतहरू डाइनामो र जेनेरेटर हुन्, जबकि DC का स्रोतहरू सेल, ब्याट्री र सोलार प्यानल हुन् ।\n\n**करेन्ट-समय सम्बन्ध:**\nAC को ग्राफ साइन वेभ (sine wave) जस्तो हुन्छ जसले समयसँगै करेन्टको दिशा र परिमाण परिवर्तन भइरहेको देखाउँछ । DC को ग्राफ सीधा तेर्सो रेखा हुन्छ जसले समयसँगै करेन्ट स्थिर रहेको देखाउँछ ।\nउद्धरण: पाठ ११",
-          "sampleAnswerEnglish": "Answer: **Differences:**\n* The direction and magnitude of AC change continuously, while the direction and magnitude of DC remain constant.\n* AC has a frequency (50 Hz in Nepal), whereas DC has a frequency of zero.\n* AC can be easily stepped up or down using a transformer, while DC cannot.\n* Sources of AC are dynamos and generators, whereas sources of DC are cells, batteries, and solar panels. \n\n**Current-Time Relationship:**\nThe graph for AC is a sine wave showing that its magnitude and direction change with time. The graph for DC is a straight horizontal line, indicating that the current remains constant with time.\nCitation: Lesson 11"
+          "sampleAnswerNepali": "उत्तर: **भिन्नताहरू:**\n* AC को दिशा र परिमाण निरन्तर परिवर्तन हुन्छ, जबकि DC को दिशा र परिमाण स्थिर रहन्छ ।\n* AC को फ्रिक्वेन्सी हुन्छ (नेपालमा ५० Hz), जबकि DC को फ्रिक्वेन्सी शून्य हुन्छ ।\n* AC लाई ट्रान्सफर्मर प्रयोग गरेर सजिलै बढाउन वा घटाउन सकिन्छ, जबकि DC लाई सकिँदैन ।\n* AC का स्रोतहरू डाइनामो र जेनेरेटर हुन्, जबकि DC का स्रोतहरू सेल, ब्याट्री र सोलार प्यानल हुन् ।\n\n**करेन्ट-समय सम्बन्ध:**\nAC को ग्राफ साइन वेभ (sine wave) जस्तो हुन्छ जसले समयसँगै करेन्टको दिशा र परिमाण परिवर्तन भइरहेको देखाउँछ । DC को ग्राफ सीधा तेर्सो रेखा हुन्छ जसले समयसँगै करेन्ट स्थिर रहेको देखाउँछ ।\nउद्धरण: \nपाठ ११",
+          "sampleAnswerEnglish": "Answer: **Differences:**\n* The direction and magnitude of AC change continuously, while the direction and magnitude of DC remain constant.\n* AC has a frequency (50 Hz in Nepal), whereas DC has a frequency of zero.\n* AC can be easily stepped up or down using a transformer, while DC cannot.\n* Sources of AC are dynamos and generators, whereas sources of DC are cells, batteries, and solar panels. \n\n**Current-Time Relationship:**\nThe graph for AC is a sine wave showing that its magnitude and direction change with time. The graph for DC is a straight horizontal line, indicating that the current remains constant with \ntime.\nCitation: Lesson 11"
         },
         {
           "idNepali": "२३",

@@ -1,5 +1,5 @@
 // Type definitions for Social Studies test questions
-// Social studies questions are Nepali-only and have unique question types
+// Social studies questions now support bilingual (English/Nepali) display
 
 export type SocialStudiesQuestionType =
     | "very_short_answer"
@@ -8,28 +8,41 @@ export type SocialStudiesQuestionType =
     | "creative_writing_editorial"
     | "creative_writing_dialogue"
     | "creative_writing_speech"
-    | "map_drawing"
 
-export interface MapDrawingAlternative {
-    type: "main" | "alternative" | "for_visually_impaired"
-    questionNepali: string
-}
+// Note: map_drawing questions were removed as they require manual grading
 
 export interface SocialStudiesQuestion {
     id: string
-    questionNumber: string
+    // Question number in both formats
+    questionNumber?: string // Legacy
+    questionNumberNepali?: string
+    questionNumberEnglish?: string
     type: SocialStudiesQuestionType
-    marks: number
+    // Marks in both formats
+    marks?: number // Legacy
+    marksNepali?: string
+    marksEnglish?: number
+    // Question text
     questionNepali: string
+    questionEnglish?: string
+    // Answer/sample answer
     answerNepali?: string
+    answerEnglish?: string
+    // Explanation
     explanationNepali?: string
-    // For map_drawing questions with alternatives
-    alternatives?: MapDrawingAlternative[]
+    explanationEnglish?: string
+
 }
 
 export interface SocialStudiesGroup {
+    // Group name (e.g., "समूह 'क'")
     groupName: string
+    groupNameEnglish?: string
+    // Group instruction
     groupInstruction: string
+    groupInstructionEnglish?: string
+    // Marks schema (e.g., "(११×१=११)")
     marksSchema: string
+    marksSchemaEnglish?: string
     questions: SocialStudiesQuestion[]
 }
