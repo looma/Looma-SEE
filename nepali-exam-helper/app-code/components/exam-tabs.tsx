@@ -636,15 +636,26 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                           console.log(`🎯 Auto-grading multiple_choice question: ${subQ.questionEnglish}`)
                           // Use bilingual fallback for correct answer
                           const correctAnswer = subQ.correctAnswerEnglish || subQ.correctAnswer || subQ.correctAnswerNepali || ''
-                          // Compare answers case-insensitively and trim whitespace
-                          const isCorrect = correctAnswer && typeof correctAnswer === 'string' &&
-                            userSubAnswer.trim().toLowerCase() === correctAnswer.trim().toLowerCase()
+
+                          // Normalize: lowercase, remove hyphens, collapse spaces (same as fill_in_the_blanks)
+                          const normalize = (s: string) => s.trim().toLowerCase().replace(/-/g, ' ').replace(/\s+/g, ' ')
+                          const normalizedUser = normalize(userSubAnswer)
+                          const normalizedCorrect = typeof correctAnswer === 'string' ? normalize(correctAnswer) : ''
+
+                          // Check exact match OR contains-based match (for cases like "non-profit organization" matching "non-profit")
+                          const exactMatch = normalizedUser === normalizedCorrect
+                          const containsMatch = normalizedCorrect && (
+                            normalizedUser.includes(normalizedCorrect) ||
+                            normalizedCorrect.includes(normalizedUser)
+                          ) && normalizedUser.length >= normalizedCorrect.length * 0.5
+
+                          const isCorrect = correctAnswer && typeof correctAnswer === 'string' && (exactMatch || containsMatch)
                           const score = isCorrect ? subQuestionMarks : 0
                           const feedback = isCorrect
                             ? "Correct! Well done."
                             : `Incorrect. The correct answer is ${correctAnswer}.`
 
-                          console.log(`✅ Auto-graded MCQ result: ${isCorrect ? 'CORRECT' : 'INCORRECT'} - "${userSubAnswer}" vs "${correctAnswer}"`)
+                          console.log(`✅ Auto-graded MCQ result: ${isCorrect ? 'CORRECT' : 'INCORRECT'} - "${userSubAnswer}" vs "${correctAnswer}"${containsMatch && !exactMatch ? ' (contains match)' : ''}`)
 
                           gradingPromises.push(Promise.resolve({
                             id: `${(question as any).id}_${sectionId}_${subQ.idEnglish || subQ.id}`,

@@ -518,6 +518,98 @@ export function EnglishQuestionRenderer({
     )
   }
 
+  const renderMultipleChoiceQuestions = (subQuestions: any[], parentId?: string, sectionMarks?: number) => {
+    return (
+      <div className="space-y-4">
+        {subQuestions.map((subQ, index) => {
+          // Use bilingual ID - prefer idEnglish for consistent storage
+          const subQId = subQ.idEnglish || subQ.id || String(index + 1)
+          const displaySubQId = getText(subQ.idEnglish || subQ.id, subQ.idNepali)
+          const questionId = parentId ? `${(question as any).id}_${parentId}_${subQId}` : `${(question as any).id}_${subQId}`
+          const currentAnswer = parentId ? answers[(question as any).id]?.[parentId]?.[subQId] : answers[(question as any).id]?.[subQId]
+
+          // Calculate marks for sub-question
+          const subQuestionMarks = subQ.marksEnglish || subQ.marks || (sectionMarks ? Math.round((sectionMarks / subQuestions.length) * 10) / 10 : 1)
+
+          // Get options with bilingual support
+          const options = language === 'nepali'
+            ? (subQ.optionsNepali || subQ.optionsEnglish || subQ.options || [])
+            : (subQ.optionsEnglish || subQ.optionsNepali || subQ.options || [])
+
+          return (
+            <Card key={subQId} className="border-slate-200">
+              <CardContent className="p-4">
+                <div className="flex items-start gap-3">
+                  <div className="flex-shrink-0 mt-1">
+                    {currentAnswer ? (
+                      <CheckCircle2 className="h-5 w-5 text-slate-600" />
+                    ) : (
+                      <Circle className="h-5 w-5 text-slate-400" />
+                    )}
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex justify-between items-start mb-3">
+                      <p className="font-medium text-slate-800">
+                        ({displaySubQId}) {getText(subQ.questionEnglish, subQ.questionNepali)}
+                      </p>
+                      <Badge variant="secondary" className="ml-2 bg-blue-100 text-blue-800 whitespace-nowrap">
+                        {subQuestionMarks} {subQuestionMarks !== 1 ? uiText.marks : uiText.mark}
+                      </Badge>
+                    </div>
+
+                    <RadioGroup
+                      value={currentAnswer || ""}
+                      onValueChange={(value: string) => {
+                        if (parentId) {
+                          const currentSection = answers[(question as any).id]?.[parentId] || {}
+                          onAnswerChange((question as any).id, parentId, {
+                            ...currentSection,
+                            [subQId]: value,
+                          })
+                        } else {
+                          onAnswerChange((question as any).id, subQId, value)
+                        }
+                      }}
+                      className="grid grid-cols-1 sm:grid-cols-2 gap-2"
+                    >
+                      {options.map((option: string, optIdx: number) => (
+                        <div
+                          key={optIdx}
+                          className={`flex items-center space-x-2 cursor-pointer p-3 rounded-lg border transition-colors ${currentAnswer === option
+                            ? "bg-blue-50 border-blue-300"
+                            : "bg-slate-50 border-slate-200 hover:bg-slate-100"
+                            }`}
+                          onClick={() => {
+                            if (parentId) {
+                              const currentSection = answers[(question as any).id]?.[parentId] || {}
+                              onAnswerChange((question as any).id, parentId, {
+                                ...currentSection,
+                                [subQId]: option,
+                              })
+                            } else {
+                              onAnswerChange((question as any).id, subQId, option)
+                            }
+                          }}
+                        >
+                          <RadioGroupItem value={option} id={`${questionId}_opt_${optIdx}`} />
+                          <Label htmlFor={`${questionId}_opt_${optIdx}`} className="cursor-pointer flex-1 font-medium text-slate-700">
+                            {option}
+                          </Label>
+                        </div>
+                      ))}
+                    </RadioGroup>
+
+                    {renderExplanation(subQ)}
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          )
+        })}
+      </div>
+    )
+  }
+
   const renderMatchingQuestion = (section: any) => {
     // CRITICAL: Use idEnglish or idNepali for consistent storage keys
     const sectionId = section.idEnglish || section.idNepali || section.id || ''
@@ -752,10 +844,13 @@ export function EnglishQuestionRenderer({
               {section.type === "fill_in_the_blanks" &&
                 section.subQuestions &&
                 renderFillInTheBlanksQuestions(section.subQuestions, sectionId, section.marksEnglish || section.marks)}
+              {section.type === "multiple_choice" &&
+                section.subQuestions &&
+                renderMultipleChoiceQuestions(section.subQuestions, sectionId, section.marksEnglish || section.marks)}
               {section.type === "matching" && renderMatchingQuestion(section)}
               {section.type === "ordering" && renderOrderingQuestion(section)}
               {/* Fallback: render any unrecognized section type with subQuestions as short answer */}
-              {!["true_false", "true_false_not_given", "short_answer", "fill_in_the_blanks", "matching", "ordering"].includes(section.type) &&
+              {!["true_false", "true_false_not_given", "short_answer", "fill_in_the_blanks", "multiple_choice", "matching", "ordering"].includes(section.type) &&
                 section.subQuestions &&
                 renderShortAnswerQuestions(section.subQuestions, sectionId, section.marksEnglish || section.marks)}
             </div>
