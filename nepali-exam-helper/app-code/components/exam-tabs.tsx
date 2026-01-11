@@ -658,57 +658,86 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                             subQuestionId: subQ.idEnglish || subQ.id,
                           }))
                         } else if (section.type === 'short_answer' || section.type === 'fill_in_the_blanks') {
-                          // Grade open-ended questions with AI
-                          console.log(`🤖 AI-grading ${section.type} question: ${subQ.questionEnglish}`)
+                          // Get the correct answer for pre-check
+                          const correctAnswer = subQ.correctAnswerEnglish || subQ.correctAnswer || subQ.correctAnswerNepali || ''
 
-                          // Build comprehensive context with passage and correct answer
-                          let aiContext = subQ.correctAnswerEnglish || subQ.correctAnswer || subQ.correctAnswerNepali || ''
-                          const passageContent = (question as any).passageEnglish || (question as any).passage || (question as any).passageNepali
-                          if (passageContent && typeof aiContext === 'string' && !aiContext.includes(passageContent)) {
-                            aiContext = aiContext ? `${aiContext}\n\nReference passage:\n${passageContent}` : `Reference passage:\n${passageContent}`
-                          }
+                          // PRE-CHECK: If student answer contains the expected answer, auto-grade as correct
+                          // Normalize: lowercase, remove hyphens, collapse spaces
+                          const normalize = (s: string) => s.trim().toLowerCase().replace(/-/g, ' ').replace(/\s+/g, ' ')
+                          const normalizedUser = normalize(userSubAnswer)
+                          const normalizedCorrect = typeof correctAnswer === 'string' ? normalize(correctAnswer) : ''
 
-                          gradingPromises.push(
-                            fetch("/api/grade", {
-                              method: "POST",
-                              headers: { "Content-Type": "application/json" },
-                              body: JSON.stringify({
-                                question: subQ.questionEnglish || subQ.question || subQ.questionNepali,
-                                answer: userSubAnswer,
-                                marks: subQuestionMarks,
-                                sampleAnswer: aiContext,
-                              }),
-                            })
-                              .then(async (res) => {
-                                const result = await res.json()
-                                if (!res.ok) {
-                                  throw new Error(result.error || `HTTP ${res.status}`)
-                                }
-                                return result
-                              })
-                              .then((result) => ({
-                                id: `${question.id}_${sectionId}_${subQ.idEnglish || subQ.id}`,
-                                score: result.score || 0,
-                                feedback: result.feedback || "No feedback available",
-                                question: subQ.questionEnglish,
-                                studentAnswer: userSubAnswer,
-                                group: "English",
-                                questionId: question.id,
-                                sectionId: sectionId,
-                                subQuestionId: subQ.idEnglish || subQ.id,
-                              }))
-                              .catch((error) => ({
-                                id: `${question.id}_${sectionId}_${subQ.idEnglish || subQ.id}`,
-                                score: 0,
-                                feedback: `AI grading failed: ${error.message || 'Unknown error'}`,
-                                question: subQ.questionEnglish,
-                                studentAnswer: userSubAnswer,
-                                group: "English",
-                                questionId: question.id,
-                                sectionId: sectionId,
-                                subQuestionId: subQ.idEnglish || subQ.id,
-                              }))
+                          const containsAnswer = normalizedCorrect && (
+                            normalizedUser.includes(normalizedCorrect) ||
+                            normalizedCorrect.includes(normalizedUser)
                           )
+
+                          if (containsAnswer && normalizedUser.length >= normalizedCorrect.length * 0.5) {
+                            // Auto-grade as correct
+                            console.log(`🎯 Auto-grading: "${userSubAnswer}" contains "${correctAnswer}" → CORRECT`)
+                            gradingPromises.push(Promise.resolve({
+                              id: `${question.id}_${sectionId}_${subQ.idEnglish || subQ.id}`,
+                              score: subQuestionMarks,
+                              feedback: "Correct! Well done.",
+                              question: subQ.questionEnglish,
+                              studentAnswer: userSubAnswer,
+                              group: "English",
+                              questionId: question.id,
+                              sectionId: sectionId,
+                              subQuestionId: subQ.idEnglish || subQ.id,
+                            }))
+                          } else {
+                            // Fall back to AI grading
+                            console.log(`🤖 AI-grading ${section.type} question: ${subQ.questionEnglish}`)
+
+                            let aiContext = correctAnswer
+                            const passageContent = (question as any).passageEnglish || (question as any).passage || (question as any).passageNepali
+                            if (passageContent && typeof aiContext === 'string' && !aiContext.includes(passageContent)) {
+                              aiContext = aiContext ? `${aiContext}\n\nReference passage:\n${passageContent}` : `Reference passage:\n${passageContent}`
+                            }
+
+                            gradingPromises.push(
+                              fetch("/api/grade", {
+                                method: "POST",
+                                headers: { "Content-Type": "application/json" },
+                                body: JSON.stringify({
+                                  question: subQ.questionEnglish || subQ.question || subQ.questionNepali,
+                                  answer: userSubAnswer,
+                                  marks: subQuestionMarks,
+                                  sampleAnswer: aiContext,
+                                }),
+                              })
+                                .then(async (res) => {
+                                  const result = await res.json()
+                                  if (!res.ok) {
+                                    throw new Error(result.error || `HTTP ${res.status}`)
+                                  }
+                                  return result
+                                })
+                                .then((result) => ({
+                                  id: `${question.id}_${sectionId}_${subQ.idEnglish || subQ.id}`,
+                                  score: result.score || 0,
+                                  feedback: result.feedback || "No feedback available",
+                                  question: subQ.questionEnglish,
+                                  studentAnswer: userSubAnswer,
+                                  group: "English",
+                                  questionId: question.id,
+                                  sectionId: sectionId,
+                                  subQuestionId: subQ.idEnglish || subQ.id,
+                                }))
+                                .catch((error) => ({
+                                  id: `${question.id}_${sectionId}_${subQ.idEnglish || subQ.id}`,
+                                  score: 0,
+                                  feedback: `AI grading failed: ${error.message || 'Unknown error'}`,
+                                  question: subQ.questionEnglish,
+                                  studentAnswer: userSubAnswer,
+                                  group: "English",
+                                  questionId: question.id,
+                                  sectionId: sectionId,
+                                  subQuestionId: subQ.idEnglish || subQ.id,
+                                }))
+                            )
+                          }
                         }
                       }
                     }
