@@ -716,3 +716,16 @@ html {
 .admin-page label {
   color: inherit !important;
 }
+
+/* Grade badge - ensure dark text on white background even inside gradients */
+/* High specificity to override .bg-gradient-to-r div { color: white !important } */
+.grade-badge,
+.grade-badge *,
+div.grade-badge,
+.bg-gradient-to-r .grade-badge,
+.bg-gradient-to-r div.grade-badge,
+.bg-gradient-to-r.text-white .grade-badge,
+.bg-gradient-to-r.text-white div.grade-badge {
+  color: #1e293b !important;
+  background-color: white !important;
+}
