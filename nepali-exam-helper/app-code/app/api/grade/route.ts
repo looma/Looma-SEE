@@ -78,16 +78,19 @@ Question: ${question}
 ${sampleAnswer ? `Sample/expected answer: ${sampleAnswer}` : ""}
 Student answer: ${answer}
 
-IMPORTANT GRADING GUIDELINES:
-- Accept equivalent phrasings that convey the same meaning as the sample answer
-- Accept both American and British English variants (e.g., "gotten" and "got" are both acceptable)
-- Do NOT penalize for being shorter than suggested word counts if the answer is complete and accurate
-- Award full marks if the answer demonstrates complete understanding, even if worded differently
-- Award partial marks for partially correct answers that show some understanding
-- Focus on whether key concepts are addressed, not exact word matching
-- IMPORTANT: Provide feedback in ${answerLanguage === 'nepali' ? 'Nepali (नेपाली)' : 'English'} since the student answered in that language
+CRITICAL GRADING RULES (BE LENIENT):
+1. **CONTAINS = CORRECT**: If student answer CONTAINS the expected answer (even with extra words), award FULL marks
+   - "non-profit organizations" contains "non-profit" → FULL MARKS
+   - "drawing pictures" contains "drawing" → FULL MARKS
+   - "the smokeless air" contains "smokeless air" → FULL MARKS
+2. **DON'T penalize elaboration**: Students who add more detail should NOT lose points
+3. Accept equivalent phrasings and synonyms
+4. Accept American and British English
+5. Be generous - if the answer captures the key concept, give full marks
+6. Only deduct points for genuinely wrong or missing information
+7. Provide feedback in ${answerLanguage === 'nepali' ? 'Nepali' : 'English'}
 
-Respond with JSON only: {"score": <0-${marks}>, "feedback": "<brief feedback in ${answerLanguage === 'nepali' ? 'Nepali' : 'English'}>"}`
+Respond with JSON only: {"score": <0-${marks}>, "feedback": "<brief feedback>"}`
 
     console.log("🤖 Making OpenAI API call with improved settings...")
 

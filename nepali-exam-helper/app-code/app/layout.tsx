@@ -13,6 +13,10 @@ export const metadata: Metadata = {
   title: "SEE Exam Practice - Nepali Helper",
   description: "Practice tests for SEE examinations in Nepal",
   generator: "v0.app",
+  icons: {
+    icon: "/looma-logo.png",
+    apple: "/looma-logo.png",
+  },
 }
 
 export default function RootLayout({

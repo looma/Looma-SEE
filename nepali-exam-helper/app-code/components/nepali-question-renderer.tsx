@@ -876,6 +876,11 @@ export function NepaliQuestionRenderer(props: NepaliQuestionRendererProps) {
     const { question } = props
     const [showExplanation, setShowExplanation] = useState(false)
 
+    // Guard against null/undefined question data
+    if (!question) {
+        return null
+    }
+
     // Question type renderer mapping
     const renderers: Record<string, React.ComponentType<NepaliQuestionRendererProps>> = {
         matching: MatchingQuestion,
