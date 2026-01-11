@@ -11,6 +11,7 @@ import { Badge } from "@/components/ui/badge"
 import { Eye, EyeOff } from "lucide-react"
 import type { NepaliQuestion, NepaliSubQuestion } from "@/lib/nepali-types"
 import type { AppLanguage } from "@/lib/language-context"
+import { CitationText } from "./citation-text"
 
 // UI text translations for bilingual support
 const uiText = {
@@ -140,7 +141,7 @@ function SubQuestionExplanation({ subQuestion, show, language }: { subQuestion: 
                 {hasExplanation && (
                     <div>
                         <span className="font-medium text-amber-800">{labels.explanation} </span>
-                        <span className="text-amber-700">{explanation}</span>
+                        <CitationText text={explanation} subject="nepali" pageLanguage={language === 'english' ? 'en' : 'np'} className="text-amber-700" />
                     </div>
                 )}
             </div>

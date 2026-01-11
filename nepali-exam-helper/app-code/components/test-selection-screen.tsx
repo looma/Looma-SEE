@@ -535,8 +535,12 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
                                     {progress.lastAttempt.percentage}%
                                   </div>
                                   <Badge
-                                    variant={progress.lastAttempt.grade === "E" ? "destructive" : "default"}
-                                    className="text-xs"
+                                    className={`text-xs text-white ${progress.lastAttempt.grade === "E" ? "bg-red-500" :
+                                        progress.lastAttempt.grade === "D" ? "bg-yellow-500" :
+                                          progress.lastAttempt.grade === "C" ? "bg-yellow-500" :
+                                            progress.lastAttempt.grade === "C+" ? "bg-yellow-500" :
+                                              "bg-green-500"
+                                      }`}
                                   >
                                     {language === "english" ? "Grade" : "ग्रेड"} {progress.lastAttempt.grade}
                                   </Badge>

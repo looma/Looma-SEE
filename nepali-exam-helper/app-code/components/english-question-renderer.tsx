@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button"
 import { CheckCircle2, Circle, FileText, BookOpen, PenTool, MessageSquare, Eye, EyeOff } from "lucide-react"
 import { useState } from "react"
 import type { EnglishQuestion } from "@/lib/english-question-types"
+import { CitationText } from "./citation-text"
 
 interface EnglishQuestionRendererProps {
   question: EnglishQuestion
@@ -152,7 +153,7 @@ export function EnglishQuestionRenderer({
           {hasExplanation && (
             <div>
               <span className="font-medium text-amber-800">{uiText.explanation}</span>
-              <p className="text-amber-700 mt-1 whitespace-pre-line">{explanationText}</p>
+              <div className="text-amber-700 mt-1 whitespace-pre-line"><CitationText text={explanationText} subject="english" pageLanguage={language === "nepali" ? "np" : "en"} /></div>
             </div>
           )}
         </div>

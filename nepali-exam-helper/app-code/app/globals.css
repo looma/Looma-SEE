@@ -729,3 +729,11 @@ div.grade-badge,
   color: #1e293b !important;
   background-color: white !important;
 }
+
+/* CRITICAL: Allow text-white to override forced dark text on badges */
+/* This fixes the grade badge being unreadable on dark backgrounds */
+div.text-white,
+span.text-white,
+.text-white {
+  color: white !important;
+}

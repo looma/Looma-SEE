@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Eye, EyeOff, Lightbulb } from "lucide-react"
 import { MathText } from "./math-text"
+import { CitationText } from "./citation-text"
 import { useLanguage } from "@/lib/language-context"
 import type { MathQuestion, MathSubQuestion } from "@/lib/math-types"
 
@@ -144,7 +145,7 @@ export function MathQuestionRenderer({
                                                                 {language === "english" ? "Answer" : "उत्तर"}: <MathText text={language === "english" ? subQ.answerEnglish : subQ.answerNepali} />
                                                             </p>
                                                             <div className="text-amber-700 text-sm leading-relaxed whitespace-pre-line">
-                                                                <MathText text={language === "english" ? subQ.explanationEnglish : subQ.explanationNepali} />
+                                                                <CitationText text={language === "english" ? subQ.explanationEnglish : subQ.explanationNepali} subject="math" pageLanguage={language === "nepali" ? "np" : "en"} />
                                                             </div>
                                                         </div>
                                                     </div>

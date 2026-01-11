@@ -9,6 +9,7 @@ import { Progress } from "@/components/ui/progress"
 import { CheckCircle2, Circle, Eye, EyeOff, Lightbulb, PenLine } from "lucide-react"
 import type { SocialStudiesGroup, SocialStudiesQuestion } from "@/lib/social-studies-types"
 import { useLanguage } from "@/lib/language-context"
+import { CitationText } from "./citation-text"
 
 interface SocialStudiesGroupProps {
     group: SocialStudiesGroup
@@ -138,7 +139,7 @@ export function SocialStudiesGroupRenderer({
                                 <span className="font-medium text-amber-800">{uiText.explanation[lang]}</span>
                             </div>
                             <div className="ml-6">
-                                <p className="text-amber-700 whitespace-pre-line leading-relaxed">{explanation}</p>
+                                <CitationText text={explanation} subject="social" pageLanguage={lang === 'np' ? 'np' : 'en'} className="text-amber-700 whitespace-pre-line leading-relaxed" />
                             </div>
                         </div>
                     )}
