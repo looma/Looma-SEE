@@ -25,6 +25,7 @@ import { MathText } from "./math-text"
 import { useLanguage } from "@/lib/language-context"
 import { formatAnswerForDisplay } from "@/lib/format-answer"
 import type { GroupAQuestion } from "@/lib/use-questions"
+import { CitationText, getSubjectFromTestId } from "@/components/citation-text"
 
 interface GradedFeedback {
   id: string
@@ -88,6 +89,14 @@ export function ResultsCard({
 
   // Check if this is a Math test
   const isMathTest = questions.mathQuestions && questions.mathQuestions.length > 0
+
+  // Determine subject for citation links
+  const currentSubject = isSocialStudiesTest ? 'social'
+    : isNepaliTest ? 'nepali'
+      : isEnglishTest ? 'english'
+        : isMathTest ? 'math'
+          : getSubjectFromTestId(testId) || 'science'
+  const citationLang = language === 'nepali' ? 'np' : 'en'
 
   let scoreB, scoreC, scoreD, totalScore, maxScoreA, maxScoreB, maxScoreC, maxScoreD, maxTotalScore
 
@@ -286,7 +295,7 @@ export function ResultsCard({
                           <Lightbulb className="h-5 w-5 text-amber-600 mt-1 flex-shrink-0" />
                           <div className="flex-1">
                             <p className="font-semibold text-amber-800 mb-2">{language === 'english' ? 'Explanation:' : 'व्याख्या:'}</p>
-                            <div className="text-amber-700 leading-relaxed whitespace-pre-line"><MathText text={(language === 'english' ? ((question as any).explanationEnglish || question.explanation) : ((question as any).explanationNepali || question.explanation)) || ""} /></div>
+                            <div className="text-amber-700 leading-relaxed"><CitationText text={(language === 'english' ? ((question as any).explanationEnglish || question.explanation) : ((question as any).explanationNepali || question.explanation)) || ""} subject={currentSubject} pageLanguage={citationLang} /></div>
                           </div>
                         </div>
                       </div>
@@ -737,10 +746,14 @@ export function ResultsCard({
                                             <p className="font-semibold text-indigo-800 mb-1">
                                               {language === 'nepali' ? 'व्याख्या:' : 'Explanation:'}
                                             </p>
-                                            <p className="text-indigo-700 leading-relaxed text-sm whitespace-pre-wrap">
-                                              {language === 'nepali'
-                                                ? (question.explanationNepali || question.explanationEnglish)
-                                                : (question.explanationEnglish || question.explanationNepali)}
+                                            <p className="text-indigo-700 leading-relaxed text-sm">
+                                              <CitationText
+                                                text={language === 'nepali'
+                                                  ? (question.explanationNepali || question.explanationEnglish)
+                                                  : (question.explanationEnglish || question.explanationNepali)}
+                                                subject={currentSubject}
+                                                pageLanguage={citationLang}
+                                              />
                                             </p>
                                           </div>
                                         </div>
@@ -972,8 +985,12 @@ export function ResultsCard({
                                       <p className="font-semibold text-indigo-800 mb-1">
                                         {language === 'nepali' ? 'व्याख्या:' : 'Explanation:'}
                                       </p>
-                                      <p className="text-indigo-700 leading-relaxed text-sm whitespace-pre-wrap">
-                                        {fb.explanation || (language === 'english' ? (originalQuestion?.explanationEnglish || originalQuestion?.explanation) : (originalQuestion?.explanationNepali || originalQuestion?.explanation))}
+                                      <p className="text-indigo-700 leading-relaxed text-sm">
+                                        <CitationText
+                                          text={fb.explanation || (language === 'english' ? (originalQuestion?.explanationEnglish || originalQuestion?.explanation) : (originalQuestion?.explanationNepali || originalQuestion?.explanation))}
+                                          subject={currentSubject}
+                                          pageLanguage={citationLang}
+                                        />
                                       </p>
                                     </div>
                                   </div>
@@ -1167,7 +1184,7 @@ export function ResultsCard({
                                         {language === "english" ? "Explanation" : "व्याख्या"}:
                                       </p>
                                       <div className="text-indigo-700 leading-relaxed text-sm">
-                                        <MathText text={language === "english" ? fb.explanation : (fb.explanationNepali || fb.explanation)} />
+                                        <CitationText text={language === "english" ? fb.explanation : (fb.explanationNepali || fb.explanation)} subject={currentSubject} pageLanguage={citationLang} />
                                       </div>
                                     </div>
                                   </div>
@@ -1412,8 +1429,8 @@ export function ResultsCard({
                                           {(section.explanationEnglish || section.explanationNepali) && (
                                             <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded-r-lg mt-3">
                                               <p className="font-semibold text-blue-800 mb-1">{language === 'nepali' ? 'व्याख्या:' : 'Explanation:'}</p>
-                                              <p className="text-blue-700 text-sm whitespace-pre-line">
-                                                {language === 'nepali' ? (section.explanationNepali || section.explanationEnglish) : (section.explanationEnglish || section.explanationNepali)}
+                                              <p className="text-blue-700 text-sm">
+                                                <CitationText text={language === 'nepali' ? (section.explanationNepali || section.explanationEnglish) : (section.explanationEnglish || section.explanationNepali)} subject={currentSubject} pageLanguage={citationLang} />
                                               </p>
                                             </div>
                                           )}
@@ -1533,7 +1550,7 @@ export function ResultsCard({
                                                 <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded-r-lg">
                                                   <p className="font-semibold text-blue-800 mb-1">{language === 'nepali' ? 'व्याख्या:' : 'Explanation:'}</p>
                                                   <p className="text-blue-700 text-sm">
-                                                    {language === 'nepali' ? (section.explanationNepali || section.explanationEnglish) : (section.explanationEnglish || section.explanationNepali)}
+                                                    <CitationText text={language === 'nepali' ? (section.explanationNepali || section.explanationEnglish) : (section.explanationEnglish || section.explanationNepali)} subject={currentSubject} pageLanguage={citationLang} />
                                                   </p>
                                                 </div>
                                               )}
