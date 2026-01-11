@@ -127,16 +127,17 @@ export function EnglishQuestionRenderer({
       const parsed = parseExplanation(subQ)
       explanationText = language === 'nepali' ? (parsed.nepali || parsed.english) : parsed.english
     } else if (typeof subQ === "object") {
-      explanationText = getText(subQ.explanationEnglish, subQ.explanationNepali)
-      // Also get sample answer if available
-      sampleAnswerText = getText(
+      explanationText = getText(subQ.explanationEnglish, subQ.explanationNepali) || ""
+      // Also get sample answer if available - ensure it's a string
+      const rawSampleAnswer = getText(
         subQ.sampleAnswerEnglish || subQ.answerEnglish || subQ.correctAnswerEnglish,
         subQ.sampleAnswerNepali || subQ.answerNepali || subQ.correctAnswerNepali
       ) || subQ.sampleAnswer || subQ.answer || subQ.correctAnswer || ""
+      sampleAnswerText = typeof rawSampleAnswer === 'string' ? rawSampleAnswer : ""
     }
 
-    const hasExplanation = explanationText && explanationText.trim()
-    const hasSampleAnswer = sampleAnswerText && sampleAnswerText.trim()
+    const hasExplanation = typeof explanationText === 'string' && explanationText.trim()
+    const hasSampleAnswer = typeof sampleAnswerText === 'string' && sampleAnswerText.trim()
 
     // Don't render if both are empty
     if (!hasExplanation && !hasSampleAnswer) return null

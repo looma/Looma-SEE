@@ -40,8 +40,8 @@ export function FreeResponseGroup({
       ? ((question as any).sampleAnswerEnglish || question.sampleAnswer)
       : ((question as any).sampleAnswerNepali || question.sampleAnswer)
 
-    const hasExplanation = explanation && explanation.trim()
-    const hasSampleAnswer = sampleAnswer && sampleAnswer.trim()
+    const hasExplanation = explanation && typeof explanation === 'string' && explanation.trim()
+    const hasSampleAnswer = sampleAnswer && typeof sampleAnswer === 'string' && sampleAnswer.trim()
 
     // Don't render if neither exists
     if (!hasExplanation && !hasSampleAnswer) return null
@@ -60,7 +60,7 @@ export function FreeResponseGroup({
                   </span>
                 </div>
                 <div className="ml-6">
-                  <MathText text={sampleAnswer || ""} className="text-amber-700 whitespace-pre-line leading-relaxed" />
+                  <CitationText text={sampleAnswer || ""} subject="science" pageLanguage={language === "nepali" ? "np" : "en"} className="text-amber-700 whitespace-pre-line leading-relaxed" />
                 </div>
               </div>
             )}

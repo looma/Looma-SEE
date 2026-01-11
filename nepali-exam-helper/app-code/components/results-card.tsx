@@ -274,7 +274,7 @@ export function ResultsCard({
                     {/* Correct Answer Section - only show if incorrect */}
                     {!isCorrect && (
                       <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded-r-lg">
-                        <p className="font-semibold text-blue-800 mb-2">Correct Answer / सही उत्तर:</p>
+                        <p className="font-semibold text-blue-800 mb-2">{language === 'english' ? 'Correct Answer:' : 'सही उत्तर:'}</p>
                         <div className="space-y-1">
                           <p className="text-blue-700 font-medium">
                             ({question.correctAnswer}) <MathText text={correctOption?.english || ""} />
@@ -493,7 +493,7 @@ export function ResultsCard({
                         <div className="flex items-start gap-3">
                           <Lightbulb className="h-5 w-5 text-indigo-600 mt-1 flex-shrink-0" />
                           <div className="flex-1 min-w-0">
-                            <p className="font-semibold text-indigo-800">Sample Answer / नमूना उत्तर:</p>
+                            <p className="font-semibold text-indigo-800">{language === 'english' ? 'Sample Answer:' : 'नमूना उत्तर:'}</p>
                             <div className="text-indigo-700 mt-1 text-sm leading-relaxed whitespace-pre-wrap break-words">
                               <MathText text={(language === 'english' ? ((question as any).sampleAnswerEnglish || question.sampleAnswer) : ((question as any).sampleAnswerNepali || question.sampleAnswer))} />
                             </div>
@@ -1260,7 +1260,7 @@ export function ResultsCard({
                               {/* SubSections (for literature_short_answer) with nested subQuestions */}
                               {originalQuestion?.subSections && originalQuestion.subSections.length > 0 && (
                                 <div className="bg-purple-50 border-l-4 border-purple-500 p-4 rounded-r-lg">
-                                  <p className="font-semibold text-purple-800 mb-2">खण्ड उत्तरहरू / Section Answers:</p>
+                                  <p className="font-semibold text-purple-800 mb-2">{language === 'english' ? 'Section Answers:' : 'खण्ड उत्तरहरू:'}</p>
                                   <div className="space-y-3">
                                     {originalQuestion.subSections.map((section: any) => (
                                       <div key={section.idEnglish || section.id} className="text-sm">

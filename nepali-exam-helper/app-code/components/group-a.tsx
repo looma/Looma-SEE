@@ -38,8 +38,8 @@ export function GroupA({ questions, answers, onAnswerChange, progress }: GroupAP
       ? (language === "english" ? correctOption.english : correctOption.nepali)
       : correctAnswerId
 
-    const hasExplanation = explanation && explanation.trim()
-    const hasCorrectAnswer = correctAnswerId && correctAnswerId.trim()
+    const hasExplanation = explanation && typeof explanation === 'string' && explanation.trim()
+    const hasCorrectAnswer = correctAnswerId && typeof correctAnswerId === 'string' && correctAnswerId.trim()
 
     if (!hasExplanation && !hasCorrectAnswer) return null
 

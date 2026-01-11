@@ -5,8 +5,8 @@ export async function GET() {
     try {
         const { db } = await connectToDatabase()
 
-        // Get all student progress records
-        const progressCollection = db.collection("student_progress")
+        // Get all user progress records (registered users)
+        const progressCollection = db.collection("user_progress")
         const allProgress = await progressCollection.find({}).toArray()
 
         // Group by email to get unique users

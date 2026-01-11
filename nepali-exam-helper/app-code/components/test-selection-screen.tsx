@@ -58,22 +58,34 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
 
     // Count Group A answers (multiple choice) - Science format
     const groupAAnswers = Object.keys(progress.answers?.groupA || {}).filter(
-      (key) => progress.answers?.groupA?.[key] && progress.answers.groupA[key].trim(),
+      (key) => {
+        const val = progress.answers?.groupA?.[key]
+        return val && typeof val === 'string' && val.trim()
+      },
     ).length
 
     // Count Group B answers (free response)
     const groupBAnswers = Object.keys(progress.answers?.groupB || {}).filter(
-      (key) => progress.answers?.groupB?.[key] && progress.answers.groupB[key].trim(),
+      (key) => {
+        const val = progress.answers?.groupB?.[key]
+        return val && typeof val === 'string' && val.trim()
+      },
     ).length
 
     // Count Group C answers (free response)
     const groupCAnswers = Object.keys(progress.answers?.groupC || {}).filter(
-      (key) => progress.answers?.groupC?.[key] && progress.answers.groupC[key].trim(),
+      (key) => {
+        const val = progress.answers?.groupC?.[key]
+        return val && typeof val === 'string' && val.trim()
+      },
     ).length
 
     // Count Group D answers (free response)
     const groupDAnswers = Object.keys(progress.answers?.groupD || {}).filter(
-      (key) => progress.answers?.groupD?.[key] && progress.answers.groupD[key].trim(),
+      (key) => {
+        const val = progress.answers?.groupD?.[key]
+        return val && typeof val === 'string' && val.trim()
+      },
     ).length
 
     // Count Math answers (stored as answers.math.questionNumber.label)
@@ -536,10 +548,10 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
                                   </div>
                                   <Badge
                                     className={`text-xs text-white ${progress.lastAttempt.grade === "E" ? "bg-red-500" :
-                                        progress.lastAttempt.grade === "D" ? "bg-yellow-500" :
-                                          progress.lastAttempt.grade === "C" ? "bg-yellow-500" :
-                                            progress.lastAttempt.grade === "C+" ? "bg-yellow-500" :
-                                              "bg-green-500"
+                                      progress.lastAttempt.grade === "D" ? "bg-yellow-500" :
+                                        progress.lastAttempt.grade === "C" ? "bg-yellow-500" :
+                                          progress.lastAttempt.grade === "C+" ? "bg-yellow-500" :
+                                            "bg-green-500"
                                       }`}
                                   >
                                     {language === "english" ? "Grade" : "ग्रेड"} {progress.lastAttempt.grade}
