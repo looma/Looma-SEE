@@ -631,6 +631,32 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                             sectionId: sectionId,
                             subQuestionId: subQ.idEnglish || subQ.id,
                           }))
+                        } else if (section.type === 'multiple_choice') {
+                          // Grade multiple choice questions automatically
+                          console.log(`🎯 Auto-grading multiple_choice question: ${subQ.questionEnglish}`)
+                          // Use bilingual fallback for correct answer
+                          const correctAnswer = subQ.correctAnswerEnglish || subQ.correctAnswer || subQ.correctAnswerNepali || ''
+                          // Compare answers case-insensitively and trim whitespace
+                          const isCorrect = correctAnswer && typeof correctAnswer === 'string' &&
+                            userSubAnswer.trim().toLowerCase() === correctAnswer.trim().toLowerCase()
+                          const score = isCorrect ? subQuestionMarks : 0
+                          const feedback = isCorrect
+                            ? "Correct! Well done."
+                            : `Incorrect. The correct answer is ${correctAnswer}.`
+
+                          console.log(`✅ Auto-graded MCQ result: ${isCorrect ? 'CORRECT' : 'INCORRECT'} - "${userSubAnswer}" vs "${correctAnswer}"`)
+
+                          gradingPromises.push(Promise.resolve({
+                            id: `${(question as any).id}_${sectionId}_${subQ.idEnglish || subQ.id}`,
+                            score: score,
+                            feedback: feedback,
+                            question: subQ.questionEnglish,
+                            studentAnswer: userSubAnswer,
+                            group: "English",
+                            questionId: (question as any).id,
+                            sectionId: sectionId,
+                            subQuestionId: subQ.idEnglish || subQ.id,
+                          }))
                         } else if (section.type === 'short_answer' || section.type === 'fill_in_the_blanks') {
                           // Grade open-ended questions with AI
                           console.log(`🤖 AI-grading ${section.type} question: ${subQ.questionEnglish}`)
@@ -1208,6 +1234,65 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                   maxScore: maxScore,
                   feedback: score >= maxScore ? "सबै सही! (All correct!)" :
                     score > 0 ? `${Math.round(score)}/${maxScore} सही (correct)` : "केही सही छैन (None correct)",
+                  question: questionTitle,
+                  questionEnglish: questionTitleEnglish,
+                  questionNepali: questionTitleNepali,
+                  studentAnswer: userAnswer,
+                })
+              } else if (question.type === "spelling_correction" && subQuestions.length > 0 && userAnswer && typeof userAnswer === 'object') {
+                // Handle spelling_correction with nested multiple_choice subQuestions
+                let totalScore = 0
+                const maxScore = question.marksEnglish || question.marks || 3
+                let totalItems = 0
+
+                subQuestions.forEach((subQ: any) => {
+                  const subQId = subQ.idNepali || subQ.idEnglish || subQ.id
+                  const subQType = subQ.type
+
+                  if (subQType === "multiple_choice" && subQ.choices && Array.isArray(subQ.choices)) {
+                    // Multiple choice with choices array - each choice has its own correctAnswer
+                    subQ.choices.forEach((choice: any) => {
+                      const choiceId = choice.idNepali || choice.idEnglish || choice.id
+                      const userVal = userAnswer[`${subQId}_${choiceId}`] || userAnswer[choiceId]
+                      const correctAnswer = language === 'nepali'
+                        ? (choice.correctAnswerNepali || choice.correctAnswer || choice.correctAnswerEnglish)
+                        : (choice.correctAnswerEnglish || choice.correctAnswer || choice.correctAnswerNepali)
+
+                      if (correctAnswer && userVal && typeof userVal === 'string' && typeof correctAnswer === 'string') {
+                        totalItems++
+                        if (userVal.trim().toLowerCase() === correctAnswer.trim().toLowerCase()) {
+                          totalScore++
+                        }
+                      }
+                    })
+                  } else if (subQType === "sentence_correction") {
+                    // Sentence correction - compare with correctAnswer (AI grading would be better, but for now simple comparison)
+                    const correctAnswer = language === 'nepali'
+                      ? (subQ.correctAnswerNepali || subQ.correctAnswer || subQ.correctAnswerEnglish)
+                      : (subQ.correctAnswerEnglish || subQ.correctAnswer || subQ.correctAnswerNepali)
+                    const userVal = userAnswer[subQId]
+
+                    if (correctAnswer && userVal && typeof userVal === 'string' && typeof correctAnswer === 'string') {
+                      totalItems++
+                      // For sentence correction, be more lenient - check if key words match
+                      const normalizedUser = userVal.trim().toLowerCase().replace(/\s+/g, ' ')
+                      const normalizedCorrect = correctAnswer.trim().toLowerCase().replace(/\s+/g, ' ')
+                      if (normalizedUser === normalizedCorrect) {
+                        totalScore++
+                      }
+                    }
+                  }
+                })
+
+                const calculatedScore = totalItems > 0 ? Math.round((totalScore / totalItems) * maxScore * 10) / 10 : 0
+
+                nepaliFeedback.push({
+                  id: questionKey,
+                  type: question.type,
+                  score: calculatedScore,
+                  maxScore: maxScore,
+                  feedback: totalScore >= totalItems ? "सबै सही! (All correct!)" :
+                    totalScore > 0 ? `${totalScore}/${totalItems} सही (correct)` : "केही सही छैन (None correct)",
                   question: questionTitle,
                   questionEnglish: questionTitleEnglish,
                   questionNepali: questionTitleNepali,
