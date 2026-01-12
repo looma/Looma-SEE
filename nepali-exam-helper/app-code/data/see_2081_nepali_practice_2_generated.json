@@ -83,8 +83,8 @@
             }
           ]
         },
-        "explanationNepali": "यी शब्दहरू पाठ्यपुस्तकको पाठ २ (चिकित्सा विज्ञान), पाठ ३ (घरझगडा) र पाठ ५ (लक्ष्मीप्रसाद देवकोटा) बाट लिइएका हुन्। विद्यार्थीको शब्द ज्ञान परीक्षण गर्न यो प्रश्न महत्त्वपूर्ण छ।\nउद्धरण: पाठ २; पाठ ३; पाठ ५।",
-        "explanationEnglish": "These words are taken from Lesson 2 (Medical Science), Lesson 3 (Gharjhagda), and Lesson 5 (Laxmi Prasad Devkota) of the textbook. This question is important for testing the student's word knowledge.\nCitation: Chapter 2; Chapter 3; Chapter 5",
+        "explanationNepali": "यी शब्दहरू पाठ्यपुस्तकको पाठ २ (चिकित्सा विज्ञान), पाठ ३ (घरझगडा) र पाठ ५ (लक्ष्मीप्रसाद देवकोटा) बाट लिइएका हुन्। विद्यार्थीको शब्द ज्ञान परीक्षण गर्न यो प्रश्न महत्त्वपूर्ण छ।\nउद्धरण: पाठ २।",
+        "explanationEnglish": "These words are taken from Lesson 2 (Medical Science), Lesson 3 (Gharjhagda), and Lesson 5 (Laxmi Prasad Devkota) of the textbook. This question is important for testing the student's word knowledge.\nCitation: Chapter 2",
         "correctAnswerNepali": [
           {
             "A": "अ",
@@ -207,8 +207,8 @@
             "sentence": "In the current time, everyone should be aware to avoid 'Cyber Crime' through social media."
           }
         ],
-        "explanationNepali": "'लोभले लाभ, लाभले विलाप' एक प्रसिद्ध नेपाली उखान हो। 'साइबर अपराध' सूचना प्रविधिसँग सम्बन्धित एक प्राविधिक शब्द हो।\nउद्धरण: पाठ ४; पाठ ३।",
-        "explanationEnglish": "'Lobhale Labh, Labhale Vilap' is a famous Nepali proverb. 'Cyber Apradh' (Cyber Crime) is a technical term related to information technology.\nCitation: Chapter 4; Chapter 3",
+        "explanationNepali": "'लोभले लाभ, लाभले विलाप' एक प्रसिद्ध नेपाली उखान हो। 'साइबर अपराध' सूचना प्रविधिसँग सम्बन्धित एक प्राविधिक शब्द हो।\nउद्धरण: पाठ ४।",
+        "explanationEnglish": "'Lobhale Labh, Labhale Vilap' is a famous Nepali proverb. 'Cyber Apradh' (Cyber Crime) is a technical term related to information technology.\nCitation: Chapter 4",
         "questionNumberNepali": "३",
         "questionNumberEnglish": 3,
         "marksNepali": "२",
@@ -263,8 +263,8 @@
                 ]
               }
             ],
-            "explanationNepali": "सही वर्णविन्यास क्रमशः 'व्यक्तित्व' र 'षड्यन्त्र' हुन्।\nउद्धरण: पाठ २; पाठ ५।",
-            "explanationEnglish": "The correct spellings are 'Vyaktitva' (Personality) and 'Shadyantra' (Conspiracy) respectively.\nCitation: Chapter 2; Chapter 5",
+            "explanationNepali": "सही वर्णविन्यास क्रमशः 'व्यक्तित्व' र 'षड्यन्त्र' हुन्।\nउद्धरण: पाठ २।",
+            "explanationEnglish": "The correct spellings are 'Vyaktitva' (Personality) and 'Shadyantra' (Conspiracy) respectively.\nCitation: Chapter 2",
             "marksNepali": "१",
             "marksEnglish": 1
           },
@@ -278,8 +278,8 @@
             "questionEnglish": "Laxmi Prasad Devkota is a towering figure of Nepali literature.",
             "correctAnswerNepali": "लक्ष्मीप्रसाद देवकोटा नेपाली साहित्यका शिखर पुरुष हुन्।",
             "correctAnswerEnglish": "Laxmi Prasad Devkota is a towering figure of Nepali literature.",
-            "explanationNepali": "'लक्ष्मी प्रसाध' लाई 'लक्ष्मीप्रसाद' लेख्नुपर्छ र 'हुन' को अन्त्यमा पूर्णविराम (।) आवश्यक छ।\nउद्धरण: पाठ ५; पाठ ६।",
-            "explanationEnglish": "'Laxmi Prasadh' should be written as 'Laxmi Prasad' and a full stop is required at the end of 'hun'.\nCitation: Chapter 5; Chapter 6",
+            "explanationNepali": "'लक्ष्मी प्रसाध' लाई 'लक्ष्मीप्रसाद' लेख्नुपर्छ र 'हुन' को अन्त्यमा पूर्णविराम (।) आवश्यक छ।\nउद्धरण: पाठ ५।",
+            "explanationEnglish": "'Laxmi Prasadh' should be written as 'Laxmi Prasad' and a full stop is required at the end of 'hun'.\nCitation: Chapter 5",
             "marksNepali": "२",
             "marksEnglish": 2
           }

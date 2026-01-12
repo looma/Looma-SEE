@@ -83,8 +83,8 @@
             }
           ]
         },
-        "explanationNepali": "यी शब्दहरू पाठ्यपुस्तकको पाठ ९ ('मेरो देशको शिक्षा') र पाठ १२ ('पाब्लो पिकासो') बाट लिइएका हुन्। विद्यार्थीको शब्दभण्डारको परीक्षण गर्नु यसको उद्देश्य हो।\nउद्धरण: पाठ ९; पाठ १२।",
-        "explanationEnglish": "These words are taken from Lesson 9 ('Mero Deshko Shiksha') and Lesson 12 ('Pablo Picasso') of the textbook. The purpose is to test the student's vocabulary.\nCitation: Chapter 9; Chapter 12",
+        "explanationNepali": "यी शब्दहरू पाठ्यपुस्तकको पाठ ९ ('मेरो देशको शिक्षा') र पाठ १२ ('पाब्लो पिकासो') बाट लिइएका हुन्। विद्यार्थीको शब्दभण्डारको परीक्षण गर्नु यसको उद्देश्य हो।\nउद्धरण: पाठ ९।",
+        "explanationEnglish": "These words are taken from Lesson 9 ('Mero Deshko Shiksha') and Lesson 12 ('Pablo Picasso') of the textbook. The purpose is to test the student's vocabulary.\nCitation: Chapter 9",
         "correctAnswerNepali": [
           {
             "A": "अ",
@@ -207,8 +207,8 @@
             "sentence": "He had worked very hard for the exam but failed due to illness; truly, 'what is destined cannot be avoided'."
           }
         ],
-        "explanationNepali": "'आँखामा राखे पनि नबिझाउने' एक टुक्का हो जसको अर्थ 'सबैको प्रिय हुनु' हो। 'हुने हार दैव नटार' एक प्रसिद्ध उखान हो जसको अर्थ 'भाग्यमा लेखेको कुरा टार्न सकिँदैन' भन्ने हो।\nउद्धरण: पाठ २; पाठ ४।",
-        "explanationEnglish": "'Aankhama Rakhe Pani Nabijhaune' (Not irritating even if kept in the eye) is an idiom meaning 'to be everyone's favorite'. 'Hune Har Daiva Natar' is a famous proverb meaning 'what is destined cannot be avoided'.\nCitation: Chapter 2; Chapter 4",
+        "explanationNepali": "'आँखामा राखे पनि नबिझाउने' एक टुक्का हो जसको अर्थ 'सबैको प्रिय हुनु' हो। 'हुने हार दैव नटार' एक प्रसिद्ध उखान हो जसको अर्थ 'भाग्यमा लेखेको कुरा टार्न सकिँदैन' भन्ने हो।\nउद्धरण: पाठ २।",
+        "explanationEnglish": "'Aankhama Rakhe Pani Nabijhaune' (Not irritating even if kept in the eye) is an idiom meaning 'to be everyone's favorite'. 'Hune Har Daiva Natar' is a famous proverb meaning 'what is destined cannot be avoided'.\nCitation: Chapter 2",
         "questionNumberNepali": "३",
         "questionNumberEnglish": 3,
         "marksNepali": "२",

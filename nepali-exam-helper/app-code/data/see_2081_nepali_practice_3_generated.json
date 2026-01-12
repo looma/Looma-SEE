@@ -83,8 +83,8 @@
             }
           ]
         },
-        "explanationNepali": "यी शब्दहरू पाठ्यपुस्तकको पाठ ११ ('कर्तव्य') र पाठ १४ ('घरको माया') जस्ता पाठहरूबाट लिइएका हुन्, जसले विद्यार्थीहरूको शब्दभण्डारको गहिराइ जाँच्दछ।\nउद्धरण: पाठ ११; पाठ १४।",
-        "explanationEnglish": "These words are taken from lessons like Lesson 11 ('Kartavya') and Lesson 14 ('Ghar Ko Maya') of the textbook, which test the depth of students' vocabulary.\nCitation: Chapter 11; Chapter 14",
+        "explanationNepali": "यी शब्दहरू पाठ्यपुस्तकको पाठ ११ ('कर्तव्य') र पाठ १४ ('घरको माया') जस्ता पाठहरूबाट लिइएका हुन्, जसले विद्यार्थीहरूको शब्दभण्डारको गहिराइ जाँच्दछ।\nउद्धरण: पाठ ११।",
+        "explanationEnglish": "These words are taken from lessons like Lesson 11 ('Kartavya') and Lesson 14 ('Ghar Ko Maya') of the textbook, which test the depth of students' vocabulary.\nCitation: Chapter 11",
         "correctAnswerNepali": [
           {
             "A": "अ",
@@ -263,8 +263,8 @@
                 ]
               }
             ],
-            "explanationNepali": "सही वर्णविन्यास क्रमशः 'अनुशासन' र 'पञ्चतत्त्व' हुन्।\nउद्धरण: पाठ ७; पाठ १२।",
-            "explanationEnglish": "The correct spellings are 'Anushasan' (Discipline) and 'Panchatatva' (Five Elements) respectively.\nCitation: Chapter 7; Chapter 12",
+            "explanationNepali": "सही वर्णविन्यास क्रमशः 'अनुशासन' र 'पञ्चतत्त्व' हुन्।\nउद्धरण: पाठ ७।",
+            "explanationEnglish": "The correct spellings are 'Anushasan' (Discipline) and 'Panchatatva' (Five Elements) respectively.\nCitation: Chapter 7",
             "marksNepali": "१",
             "marksEnglish": 1
           },
@@ -979,8 +979,8 @@
         "marksEnglish": 7,
         "sampleAnswerNepali": "देशप्रति मेरो कर्तव्य\n\nदेश त्यो भूमि हो जहाँ हामी जन्मन्छौँ, हुर्कन्छौँ र आफ्नो पहिचान बनाउँछौँ। 'जननी जन्मभूमिश्च स्वर्गादपि गरीयसी' अर्थात् आमा र जन्मभूमि स्वर्गभन्दा पनि प्यारा हुन्छन्। एउटा असल नागरिक भएको नाताले देशप्रति हाम्रा धेरै कर्तव्यहरू हुन्छन्।\n\nमेरो पहिलो कर्तव्य एक असल, अनुशासित र शिक्षित नागरिक बन्नु हो। विद्यार्थी भएको नाताले मैले राम्रोसँग पढेर ज्ञान र सिप हासिल गर्नुपर्छ, ताकि भविष्यमा देशको विकासमा योगदान दिन सकूँ। देशको नियम र कानुनको पालना गर्नु मेरो अर्को महत्त्वपूर्ण कर्तव्य हो। सार्वजनिक सम्पत्तिको रक्षा गर्नु, वातावरण जोगाउनु र सामाजिक सद्भाव कायम राख्नु पनि मेरो जिम्मेवारी हो।\n\nहाम्रो देश नेपाल प्राकृतिक र सांस्कृतिक रूपमा धनी छ। यी सम्पदाहरूको संरक्षण र संवर्धन गर्नु मेरो कर्तव्य हो। देशलाई आवश्यक पर्दा जस्तोसुकै त्याग गर्न पनि तयार हुनुपर्छ। भ्रष्टाचार, अन्याय र विकृति विरुद्ध आवाज उठाउनु सचेत नागरिकको धर्म हो। स्वदेशी उत्पादनको प्रयोग गरेर देशको अर्थतन्त्रलाई बलियो बनाउनमा पनि म मद्दत गर्न सक्छु।\n\nनिष्कर्षमा, अधिकार मात्र खोज्ने होइन, कर्तव्य पनि पूरा गर्ने नागरिकले नै देशलाई समृद्ध बनाउन सक्छन्। म प्रण गर्छु कि म सधैँ राष्ट्रहितलाई सर्वोपरि ठान्नेछु र आफ्नो कर्मद्वारा देशको शिर उच्च राख्ने प्रयास गर्नेछु।",
         "sampleAnswerEnglish": "My Duty Towards the Country\n\nCountry is the land where we are born, grow up, and create our identity. 'Janani Janmabhumishcha Swargadapi Gariyasi' meaning mother and motherland are dearer than even heaven. As a good citizen, we have many duties towards the country.\n\nMy first duty is to become a good, disciplined, and educated citizen. As a student, I must study well and acquire knowledge and skills so that I can contribute to the country's development in the future. Following the country's rules and laws is my other important duty. Protecting public property, saving the environment, and maintaining social harmony are also my responsibilities.\n\nOur country Nepal is rich naturally and culturally. It is my duty to preserve and promote these heritages. One should be ready to make any sacrifice when the country needs it. Raising a voice against corruption, injustice, and anomalies is the duty of a conscious citizen. I can also help in strengthening the country's economy by using domestic products.\n\nIn conclusion, citizens who not only seek rights but also fulfill duties can make the country prosperous. I pledge that I will always consider national interest supreme and try to keep the country's head high through my deeds.",
-        "explanationNepali": "निबन्ध लेखनले विद्यार्थीको विचारको तार्किक प्रस्तुति र भाषा शैलीको परीक्षण गर्छ। दिइएका शीर्षकहरू पाठ्यपुस्तकका विभिन्न पाठहरू ('कर्तव्य', 'नेपाली हाम्रो श्रम र सिप') सँग सम्बन्धित छन्।\nउद्धरण: पाठ ११; पाठ ८।",
-        "explanationEnglish": "Essay writing tests the logical presentation of the student's ideas and language style. The given topics are related to various lessons of the textbook ('Kartavya', 'Nepali Hamro Shram Ra Sip').\nCitation: Chapter 11; Chapter 8"
+        "explanationNepali": "निबन्ध लेखनले विद्यार्थीको विचारको तार्किक प्रस्तुति र भाषा शैलीको परीक्षण गर्छ। दिइएका शीर्षकहरू पाठ्यपुस्तकका विभिन्न पाठहरू ('कर्तव्य', 'नेपाली हाम्रो श्रम र सिप') सँग सम्बन्धित छन्।\nउद्धरण: पाठ ११।",
+        "explanationEnglish": "Essay writing tests the logical presentation of the student's ideas and language style. The given topics are related to various lessons of the textbook ('Kartavya', 'Nepali Hamro Shram Ra Sip').\nCitation: Chapter 11"
       }
     ]
   }
