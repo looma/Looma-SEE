@@ -23,14 +23,18 @@ export async function GET() {
 
             const existing = userMap.get(email)
             const testId = record.testId || "unknown"
-            const lastUpdated = record.lastUpdated || record.updatedAt || ""
+            // Handle Date objects and strings for lastUpdated
+            const rawDate = record.lastUpdated || record.updatedAt
+            const lastUpdated = rawDate instanceof Date
+                ? rawDate.toISOString()
+                : (typeof rawDate === 'string' ? rawDate : "")
 
             if (existing) {
                 if (!existing.testsAttempted.includes(testId)) {
                     existing.testsAttempted.push(testId)
                 }
                 existing.totalAttempts += (record.attempts?.length || 1)
-                if (lastUpdated > existing.lastActive) {
+                if (lastUpdated && lastUpdated > existing.lastActive) {
                     existing.lastActive = lastUpdated
                 }
             } else {
@@ -45,7 +49,7 @@ export async function GET() {
 
         // Convert to array and sort by last active
         const registeredUsers = Array.from(userMap.values())
-            .sort((a, b) => b.lastActive.localeCompare(a.lastActive))
+            .sort((a, b) => (b.lastActive || "").localeCompare(a.lastActive || ""))
 
         // Get guest session count from analytics collection
         const analyticsCollection = db.collection("analytics")
