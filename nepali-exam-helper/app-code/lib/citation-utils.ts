@@ -95,8 +95,8 @@ export function buildChapterUrl(
             if (!lesson) {
                 return { error: `Missing lesson number for Social Studies Chapter ${chapter}` }
             }
-            chapterID = `10SS${chapterStr}.${lessonStr}-nepal`
-            urlSubject = 'Social Studies'
+            chapterID = `10SS${chapterStr}.${lessonStr}-nepali`
+            urlSubject = 'SocialStudies'
             lang = 'np'
             break
 
