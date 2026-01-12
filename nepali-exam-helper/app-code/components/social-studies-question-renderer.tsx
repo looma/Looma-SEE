@@ -9,6 +9,7 @@ import { Progress } from "@/components/ui/progress"
 import { CheckCircle2, Circle, Eye, EyeOff, Lightbulb, PenLine } from "lucide-react"
 import type { SocialStudiesGroup, SocialStudiesQuestion } from "@/lib/social-studies-types"
 import { useLanguage } from "@/lib/language-context"
+import { CitationText } from "./citation-text"
 
 interface SocialStudiesGroupProps {
     group: SocialStudiesGroup
@@ -36,6 +37,9 @@ const getQuestionTypeInfo = (type: string, lang: 'en' | 'np') => {
         creative_writing_editorial: { np: "सम्पादकीय", en: "Editorial" },
         creative_writing_dialogue: { np: "संवाद", en: "Dialogue" },
         creative_writing_speech: { np: "वक्तृता", en: "Speech" },
+        creative_writing_letter: { np: "पत्र", en: "Letter" },
+        creative_writing_news_report: { np: "समाचार", en: "News Report" },
+        creative_writing_article: { np: "लेख", en: "Article" },
     }
     const rows = {
         very_short_answer: 2,
@@ -44,6 +48,9 @@ const getQuestionTypeInfo = (type: string, lang: 'en' | 'np') => {
         creative_writing_editorial: 10,
         creative_writing_dialogue: 8,
         creative_writing_speech: 10,
+        creative_writing_letter: 8,
+        creative_writing_news_report: 8,
+        creative_writing_article: 8,
     }
     const info = labels[type as keyof typeof labels] || { np: "उत्तर", en: "Answer" }
     return {
@@ -132,7 +139,7 @@ export function SocialStudiesGroupRenderer({
                                 <span className="font-medium text-amber-800">{uiText.explanation[lang]}</span>
                             </div>
                             <div className="ml-6">
-                                <p className="text-amber-700 whitespace-pre-line leading-relaxed">{explanation}</p>
+                                <CitationText text={explanation} subject="social" pageLanguage={lang === 'np' ? 'np' : 'en'} className="text-amber-700 whitespace-pre-line leading-relaxed" />
                             </div>
                         </div>
                     )}

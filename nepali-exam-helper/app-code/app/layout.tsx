@@ -14,8 +14,8 @@ export const metadata: Metadata = {
   description: "Practice tests for SEE examinations in Nepal",
   generator: "v0.app",
   icons: {
-    icon: "/looma-logo.png",
-    apple: "/looma-logo.png",
+    icon: "/Looma Logo Square.png",
+    apple: "/Looma Logo Square.png",
   },
 }
 

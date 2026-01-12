@@ -8,6 +8,9 @@ export type SocialStudiesQuestionType =
     | "creative_writing_editorial"
     | "creative_writing_dialogue"
     | "creative_writing_speech"
+    | "creative_writing_letter"
+    | "creative_writing_news_report"
+    | "creative_writing_article"
 
 // Note: map_drawing questions were removed as they require manual grading
 

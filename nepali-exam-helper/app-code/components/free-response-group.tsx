@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Progress } from "@/components/ui/progress"
 import { CheckCircle2, Circle, Eye, EyeOff, Lightbulb } from "lucide-react"
 import { MathText } from "./math-text"
+import { CitationText } from "./citation-text"
 import { useLanguage } from "@/lib/language-context"
 import type { FreeResponseQuestion } from "@/lib/use-questions"
 
@@ -39,8 +40,8 @@ export function FreeResponseGroup({
       ? ((question as any).sampleAnswerEnglish || question.sampleAnswer)
       : ((question as any).sampleAnswerNepali || question.sampleAnswer)
 
-    const hasExplanation = explanation && explanation.trim()
-    const hasSampleAnswer = sampleAnswer && sampleAnswer.trim()
+    const hasExplanation = explanation && typeof explanation === 'string' && explanation.trim()
+    const hasSampleAnswer = sampleAnswer && typeof sampleAnswer === 'string' && sampleAnswer.trim()
 
     // Don't render if neither exists
     if (!hasExplanation && !hasSampleAnswer) return null
@@ -59,7 +60,7 @@ export function FreeResponseGroup({
                   </span>
                 </div>
                 <div className="ml-6">
-                  <MathText text={sampleAnswer || ""} className="text-amber-700 whitespace-pre-line leading-relaxed" />
+                  <CitationText text={sampleAnswer || ""} subject="science" pageLanguage={language === "nepali" ? "np" : "en"} className="text-amber-700 whitespace-pre-line leading-relaxed" />
                 </div>
               </div>
             )}
@@ -72,7 +73,7 @@ export function FreeResponseGroup({
                   </span>
                 </div>
                 <div className="ml-6">
-                  <MathText text={explanation} className="text-amber-700 whitespace-pre-line leading-relaxed" />
+                  <CitationText text={explanation} subject="science" pageLanguage={language === "nepali" ? "np" : "en"} className="text-amber-700 whitespace-pre-line leading-relaxed" />
                 </div>
               </div>
             )}
@@ -241,24 +242,6 @@ export function FreeResponseGroup({
                   className="min-h-[120px] resize-none"
                   rows={group === "B" ? 4 : group === "C" ? 6 : 5}
                 />
-
-                <div className="flex justify-between items-center mt-2 text-xs text-slate-500">
-                  <span>
-                    {language === "english" ? (
-                      <>
-                        {group === "B" && "Keep it concise but complete"}
-                        {group === "C" && "Provide detailed explanations with examples"}
-                        {group === "D" && "Show your working and reasoning"}
-                      </>
-                    ) : (
-                      <>
-                        {group === "B" && "संक्षिप्त तर पूर्ण राख्नुहोस्"}
-                        {group === "C" && "उदाहरणसहित विस्तृत व्याख्या दिनुहोस्"}
-                        {group === "D" && "आफ्नो कार्यविधि र तर्क देखाउनुहोस्"}
-                      </>
-                    )}
-                  </span>
-                </div>
 
                 {renderExplanation(question)}
               </CardContent>

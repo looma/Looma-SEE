@@ -186,14 +186,14 @@ export function TestSelector({ currentTestId, onTestChange, onBackToSelection, s
           className="text-amber-700 hover:text-amber-800 bg-amber-50 border-amber-300 hover:bg-amber-100 transition-all duration-200 shadow-sm hover:shadow-md font-medium"
         >
           <RotateCcw className="h-4 w-4 mr-2" />
-          Change Test
+          {language === "english" ? "Change Test" : "परीक्षा बदल्नुहोस्"}
         </Button>
       </div>
 
       <div className="flex items-center gap-4">
         <Select value={currentTestId} onValueChange={onTestChange}>
           <SelectTrigger className="flex-1 bg-white border-2 border-amber-200 focus:border-amber-400 min-h-[60px]">
-            <SelectValue placeholder={loading ? "Loading tests..." : "Select a practice test"}>
+            <SelectValue placeholder={loading ? (language === "english" ? "Loading tests..." : "परीक्षाहरू लोड हुँदै...") : (language === "english" ? "Select a practice test" : "अभ्यास परीक्षा छान्नुहोस्")}>
               {currentTest ? (
                 <div className="text-left py-1">
                   <div className="font-medium text-slate-800">{currentTest.title}</div>
@@ -202,9 +202,9 @@ export function TestSelector({ currentTestId, onTestChange, onBackToSelection, s
                   )}
                 </div>
               ) : loading ? (
-                "Loading tests..."
+                language === "english" ? "Loading tests..." : "परीक्षाहरू लोड हुँदै..."
               ) : tests.length === 0 ? (
-                "No tests found"
+                language === "english" ? "No tests found" : "कुनै परीक्षा भेटिएन"
               ) : (
                 currentTestId
               )}

@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button"
 import { Progress } from "@/components/ui/progress"
 import { CheckCircle2, Circle, Eye, EyeOff, Lightbulb } from "lucide-react"
 import { MathText } from "./math-text"
+import { CitationText } from "./citation-text"
 import { useLanguage } from "@/lib/language-context"
 import type { GroupAQuestion } from "@/lib/use-questions"
 
@@ -30,20 +31,47 @@ export function GroupA({ questions, answers, onAnswerChange, progress }: GroupAP
       ? ((question as any).explanationEnglish || question.explanation)
       : ((question as any).explanationNepali || question.explanation)
 
-    if (!explanation) return null
+    // Get the correct answer option text
+    const correctAnswerId = (question as any).correctAnswerEnglish || (question as any).correctAnswer || (question as any).correctAnswerNepali
+    const correctOption = question.options.find(opt => opt.id === correctAnswerId)
+    const correctAnswerText = correctOption
+      ? (language === "english" ? correctOption.english : correctOption.nepali)
+      : correctAnswerId
+
+    const hasExplanation = explanation && typeof explanation === 'string' && explanation.trim()
+    const hasCorrectAnswer = correctAnswerId && typeof correctAnswerId === 'string' && correctAnswerId.trim()
+
+    if (!hasExplanation && !hasCorrectAnswer) return null
 
     return (
       <div className="mt-3 bg-amber-50 border-l-4 border-amber-500 p-3 rounded-r-lg">
-        <div className="text-sm">
-          <div className="flex items-start gap-2 mb-2">
-            <Lightbulb className="h-4 w-4 text-amber-600 mt-0.5 flex-shrink-0" />
-            <span className="font-medium text-amber-800">
-              {language === "english" ? "Explanation" : "व्याख्या"}:
-            </span>
-          </div>
-          <div className="ml-6">
-            <MathText text={explanation} className="text-amber-700 whitespace-pre-line leading-relaxed" />
-          </div>
+        <div className="text-sm space-y-3">
+          {hasCorrectAnswer && (
+            <div>
+              <div className="flex items-start gap-2 mb-2">
+                <Lightbulb className="h-4 w-4 text-amber-600 mt-0.5 flex-shrink-0" />
+                <span className="font-medium text-amber-800">
+                  {language === "english" ? "Correct Answer" : "सही उत्तर"}:
+                </span>
+              </div>
+              <div className="ml-6">
+                <span className="text-amber-700"><strong>({correctAnswerId})</strong> <MathText text={correctAnswerText || ""} /></span>
+              </div>
+            </div>
+          )}
+          {hasExplanation && (
+            <div>
+              <div className="flex items-start gap-2 mb-2">
+                <Lightbulb className="h-4 w-4 text-amber-600 mt-0.5 flex-shrink-0" />
+                <span className="font-medium text-amber-800">
+                  {language === "english" ? "Explanation" : "व्याख्या"}:
+                </span>
+              </div>
+              <div className="ml-6">
+                <CitationText text={explanation} subject="science" pageLanguage={language === "nepali" ? "np" : "en"} className="text-amber-700 whitespace-pre-line leading-relaxed" />
+              </div>
+            </div>
+          )}
         </div>
       </div>
     )

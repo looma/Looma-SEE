@@ -90,6 +90,16 @@ CRITICAL GRADING RULES (BE LENIENT):
 6. Only deduct points for genuinely wrong or missing information
 7. Provide feedback in ${answerLanguage === 'nepali' ? 'Nepali' : 'English'}
 
+**MATH-SPECIFIC LENIENCY** (very important for math questions):
+- Accept ALL equivalent notation formats: x^2 = x² = x**2, sqrt(x) = √x = root(x)
+- Accept spaces or no spaces: 2x = 2*x = 2 * x, a+b = a + b
+- Accept fraction formats: 1/2 = 0.5 = ½, 3/4 = 0.75
+- Accept equivalent expressions: 2(x+1) = 2x+2, x^2-1 = (x+1)(x-1)
+- If the MATHEMATICAL RESULT is correct, give FULL marks regardless of notation style
+- Don't penalize missing units if the numerical answer is correct
+- Accept answers in any order for sets, coordinates written differently, etc.
+- For geometry: accept different valid methods that lead to correct answer
+
 Respond with JSON only: {"score": <0-${marks}>, "feedback": "<brief feedback>"}`
 
     console.log("🤖 Making OpenAI API call with improved settings...")
