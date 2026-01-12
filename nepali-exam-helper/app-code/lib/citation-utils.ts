@@ -110,7 +110,7 @@ export function buildChapterUrl(
             return { error: `Unknown subject: ${subject}` }
     }
 
-    return `https://looma.website/pdf?fn=${chapterID}.pdf&fp=../content/chapters/Class10/${encodeURIComponent(urlSubject)}/${lang}/&lang=${lang}&zoom=2.1&len=100&page=1`
+    return `https://looma.website/pdf?fn=${chapterID}.pdf&fp=../content/chapters/Class10/${urlSubject}/${lang}/&lang=${lang}&zoom=2.1&len=100&page=1`
 }
 
 /**

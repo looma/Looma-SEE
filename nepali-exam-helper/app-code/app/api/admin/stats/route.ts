@@ -58,7 +58,7 @@ export async function GET() {
         const guestLastSeen = guestStats?.lastSeen || null
 
         // Get total test count
-        const testsCollection = db.collection("tests")
+        const testsCollection = db.collection("practice_tests")
         const totalTests = await testsCollection.countDocuments()
 
         return NextResponse.json({
