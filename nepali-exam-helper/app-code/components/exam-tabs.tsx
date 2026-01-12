@@ -1173,8 +1173,8 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
               const pointsPerMatch = columns.length > 0 ? maxScore / columns.length : maxScore
 
               if (userAnswer && typeof userAnswer === 'object' && columns.length > 0) {
-                // Get correct answers - could be array of {A, B} pairs or on items
-                const correctAnswers = question.correctAnswer || question.correctAnswerNepali || question.correctAnswerEnglish || []
+                // Get correct answers - prioritize English since student answers use English IDs (i, ii, etc.)
+                const correctAnswers = question.correctAnswerEnglish || question.correctAnswer || question.correctAnswerNepali || []
 
                 columns.forEach((item: any) => {
                   // Use same ID pattern as renderer: idEnglish || idNepali || id
@@ -1220,7 +1220,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                   // Use same ID pattern as renderer: idEnglish || idNepali || id
                   const subId = sub.idEnglish || sub.idNepali || sub.id
                   const userVal = userAnswer[subId]
-                  const correctAnswer = sub.correctAnswer || sub.correctAnswerNepali || sub.correctAnswerEnglish
+                  const correctAnswer = sub.correctAnswerEnglish || sub.correctAnswer || sub.correctAnswerNepali
                   if (userVal && correctAnswer && typeof userVal === 'string' && typeof correctAnswer === 'string') {
                     if (userVal.toLowerCase().trim() === correctAnswer.toLowerCase().trim()) {
                       score += pointsPerBlank
@@ -1249,7 +1249,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
             case "parts_of_speech": {
               // These are mostly free-response, but if they have subQuestions with correctAnswer, we can auto-grade
               const subQuestions = question.subQuestions || []
-              const correctAnswerData = question.correctAnswer || question.correctAnswerNepali || question.correctAnswerEnglish
+              const correctAnswerData = question.correctAnswerEnglish || question.correctAnswer || question.correctAnswerNepali
               const correctWords = Array.isArray(correctAnswerData) ? correctAnswerData : []
 
               // For parts_of_speech with correctAnswer array like [{word: "जो", pos: "सर्वनाम"}, ...]
@@ -1331,8 +1331,9 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                   type: question.type,
                   score: calculatedScore,
                   maxScore: maxScore,
-                  feedback: totalScore >= totalItems ? "सबै सही! (All correct!)" :
-                    totalScore > 0 ? `${totalScore}/${totalItems} सही (correct)` : "केही सही छैन (None correct)",
+                  feedback: totalItems === 0 ? "केही सही छैन (None correct)" :
+                    totalScore >= totalItems ? "सबै सही! (All correct!)" :
+                      totalScore > 0 ? `${totalScore}/${totalItems} सही (correct)` : "केही सही छैन (None correct)",
                   question: questionTitle,
                   questionEnglish: questionTitleEnglish,
                   questionNepali: questionTitleNepali,

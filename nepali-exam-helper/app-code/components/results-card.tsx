@@ -911,7 +911,7 @@ export function ResultsCard({
                                   <XCircle className="h-5 w-5 text-red-500" />
                                 )}
                                 <Badge
-                                  className={`min-w-[60px] text-center ${isNoAnswer
+                                  className={`${isNoAnswer
                                     ? "bg-slate-400 text-white hover:bg-slate-500"
                                     : isFullScore
                                       ? "bg-green-500 text-white hover:bg-green-600"
@@ -937,60 +937,140 @@ export function ResultsCard({
                                     ? (originalQuestion?.titleEnglish || originalQuestion?.questionEnglish || fb.questionEnglish || originalQuestion?.title || fb.question || 'Question')
                                     : (originalQuestion?.titleNepali || originalQuestion?.questionNepali || fb.questionNepali || originalQuestion?.title || fb.question || 'प्रश्न')}
                                 </p>
+                                {/* Show passage for comprehension questions */}
+                                {(originalQuestion?.passageNepali || originalQuestion?.passageEnglish) && (
+                                  <div className="mt-3 p-3 bg-slate-100 rounded border-l-4 border-slate-400">
+                                    <p className="text-sm italic text-slate-600 whitespace-pre-wrap">
+                                      {language === 'english'
+                                        ? (originalQuestion?.passageEnglish || originalQuestion?.passageNepali)
+                                        : (originalQuestion?.passageNepali || originalQuestion?.passageEnglish)}
+                                    </p>
+                                  </div>
+                                )}
                               </div>
+
+                              {/* Show options for choice-based questions */}
+                              {originalQuestion?.options && originalQuestion.options.length > 0 && (
+                                <div className="bg-slate-50 p-4 rounded-lg mt-2">
+                                  <p className="font-semibold text-slate-700 mb-2">
+                                    {language === 'nepali' ? 'विकल्पहरू:' : 'Options:'}
+                                  </p>
+                                  <div className="space-y-2">
+                                    {originalQuestion.options.map((opt: any, idx: number) => {
+                                      const optId = language === 'nepali' ? (opt.idNepali || opt.id) : (opt.idEnglish || opt.id)
+                                      const optTitle = language === 'nepali'
+                                        ? (opt.titleNepali || opt.questionNepali || opt.title)
+                                        : (opt.titleEnglish || opt.questionEnglish || opt.title)
+                                      // For literature explanation, show quote
+                                      const quote = language === 'nepali'
+                                        ? (opt.quoteNepali || opt.quote)
+                                        : (opt.quoteEnglish || opt.quote)
+                                      // For critical analysis, show passage
+                                      const passage = language === 'nepali'
+                                        ? (opt.passageNepali || opt.passage)
+                                        : (opt.passageEnglish || opt.passage)
+
+                                      return (
+                                        <div key={idx} className="p-2 bg-white rounded border border-slate-200">
+                                          <div className="flex items-start">
+                                            <span className="font-medium text-slate-600 flex-shrink-0">({optId})</span>
+                                            <div className="ml-2">
+                                              {quote && (
+                                                <p className="text-slate-700 italic mb-1">"{quote}"</p>
+                                              )}
+                                              {optTitle && (
+                                                <p className="text-slate-700 whitespace-pre-wrap">{optTitle}</p>
+                                              )}
+                                              {passage && !optTitle && (
+                                                <p className="text-slate-600 text-sm whitespace-pre-wrap">{passage.substring(0, 150)}...</p>
+                                              )}
+                                            </div>
+                                          </div>
+                                        </div>
+                                      )
+                                    })}
+                                  </div>
+                                </div>
+                              )}
+
+                              {/* Show topics for essay questions */}
+                              {(originalQuestion?.topicsEnglish || originalQuestion?.topicsNepali) && (
+                                <div className="bg-slate-50 p-4 rounded-lg mt-2">
+                                  <p className="font-semibold text-slate-700 mb-2">
+                                    {language === 'nepali' ? 'शीर्षकहरू:' : 'Topics:'}
+                                  </p>
+                                  <div className="space-y-1">
+                                    {(language === 'nepali' ? (originalQuestion.topicsNepali || originalQuestion.topicsEnglish) : (originalQuestion.topicsEnglish || originalQuestion.topicsNepali))?.map((topic: string, idx: number) => (
+                                      <div key={idx} className="p-2 bg-white rounded border border-slate-200">
+                                        <span className="font-medium text-slate-600">({idx + 1})</span>
+                                        <span className="ml-2 text-slate-700">{topic}</span>
+                                      </div>
+                                    ))}
+                                  </div>
+                                </div>
+                              )}
 
                               {/* Type-specific answer display for Nepali questions */}
                               {fb.type === 'matching' && originalQuestion?.columns ? (
                                 /* Matching question - show per-match answers */
-                                <div className="space-y-3">
-                                  <p className="font-semibold text-slate-700 mb-2">
-                                    {language === 'nepali' ? 'तपाईंको मिलान:' : 'Your Matches:'}
-                                  </p>
-                                  {originalQuestion.columns.A?.map((itemA: any) => {
-                                    const itemAId = itemA.idEnglish || itemA.idNepali || itemA.id
-                                    const userMatch = fb.studentAnswer?.[itemAId]
-                                    const hasUserAnswer = !!userMatch && userMatch !== undefined && userMatch !== null
-                                    const correctAnswerArray = originalQuestion.correctAnswerEnglish || originalQuestion.correctAnswerNepali || originalQuestion.correctAnswer || []
-                                    const correctPair = Array.isArray(correctAnswerArray)
-                                      ? correctAnswerArray.find((ca: any) => ca.A === itemAId || ca.A === itemA.id)
-                                      : null
-                                    const correctMatch = correctPair?.B
-                                    const matchedB = hasUserAnswer
-                                      ? originalQuestion.columns?.B?.find((b: any) => (b.idEnglish || b.idNepali || b.id) === userMatch || b.id === userMatch)
-                                      : null
-                                    const correctB = originalQuestion.columns?.B?.find((b: any) => (b.idEnglish || b.idNepali || b.id) === correctMatch || b.id === correctMatch)
-                                    const isCorrect = hasUserAnswer && userMatch === correctMatch
+                                (() => {
+                                  // Calculate points per match for accurate badge display
+                                  const totalItems = originalQuestion.columns.A?.length || 1
+                                  const totalMarks = originalQuestion.marksEnglish || originalQuestion.marks || totalItems
+                                  const pointsPerMatch = Math.round((totalMarks / totalItems) * 10) / 10
 
-                                    return (
-                                      <div key={itemAId} className={`p-3 rounded-lg ${!hasUserAnswer ? 'bg-slate-50 border-l-4 border-slate-400' : isCorrect ? 'bg-green-50 border-l-4 border-green-500' : 'bg-red-50 border-l-4 border-red-500'}`}>
-                                        <div className="flex justify-between items-start">
-                                          <div className="flex-1">
-                                            <p className="font-medium text-slate-800">
-                                              ({language === 'nepali' ? (itemA.idNepali || itemA.id) : (itemA.idEnglish || itemA.id)}) {language === 'nepali' ? (itemA.textNepali || itemA.text) : (itemA.textEnglish || itemA.text)}
-                                            </p>
-                                            <p className="text-sm mt-1">
-                                              <span className="text-slate-600">{language === 'nepali' ? 'तपाईंको उत्तर:' : 'Your answer:'} </span>
-                                              <span className={!hasUserAnswer ? 'text-slate-500 italic' : isCorrect ? 'text-green-700 font-medium' : 'text-red-700 font-medium'}>
-                                                {matchedB ? `(${language === 'nepali' ? (matchedB.idNepali || userMatch) : userMatch}) ${language === 'nepali' ? (matchedB.textNepali || matchedB.text) : (matchedB.textEnglish || matchedB.text)}` : (language === 'nepali' ? 'उत्तर दिइएको छैन' : 'No answer')}
-                                              </span>
-                                            </p>
-                                            {(!hasUserAnswer || !isCorrect) && correctB && (
-                                              <p className="text-sm mt-1">
-                                                <span className="text-slate-600">{language === 'nepali' ? 'सही उत्तर:' : 'Correct answer:'} </span>
-                                                <span className="text-blue-700 font-medium">
-                                                  ({language === 'nepali' ? (correctB.idNepali || correctMatch) : correctMatch}) {language === 'nepali' ? (correctB.textNepali || correctB.text) : (correctB.textEnglish || correctB.text)}
-                                                </span>
-                                              </p>
-                                            )}
+                                  return (
+                                    <div className="space-y-3">
+                                      <p className="font-semibold text-slate-700 mb-2">
+                                        {language === 'nepali' ? 'तपाईंको मिलान:' : 'Your Matches:'}
+                                      </p>
+                                      {originalQuestion.columns.A?.map((itemA: any) => {
+                                        const itemAId = itemA.idEnglish || itemA.idNepali || itemA.id
+                                        const userMatch = fb.studentAnswer?.[itemAId]
+                                        const hasUserAnswer = !!userMatch && userMatch !== undefined && userMatch !== null
+                                        const correctAnswerArray = originalQuestion.correctAnswerEnglish || originalQuestion.correctAnswerNepali || originalQuestion.correctAnswer || []
+                                        const correctPair = Array.isArray(correctAnswerArray)
+                                          ? correctAnswerArray.find((ca: any) => ca.A === itemAId || ca.A === itemA.id)
+                                          : null
+                                        const correctMatch = correctPair?.B
+                                        const matchedB = hasUserAnswer
+                                          ? originalQuestion.columns?.B?.find((b: any) => (b.idEnglish || b.idNepali || b.id) === userMatch || b.id === userMatch)
+                                          : null
+                                        const correctB = originalQuestion.columns?.B?.find((b: any) => (b.idEnglish || b.idNepali || b.id) === correctMatch || b.id === correctMatch)
+                                        const isCorrect = hasUserAnswer && userMatch === correctMatch
+
+                                        return (
+                                          <div key={itemAId} className={`p-3 rounded-lg ${!hasUserAnswer ? 'bg-slate-50 border-l-4 border-slate-400' : isCorrect ? 'bg-green-50 border-l-4 border-green-500' : 'bg-red-50 border-l-4 border-red-500'}`}>
+                                            <div className="flex justify-between items-start">
+                                              <div className="flex-1">
+                                                <p className="font-medium text-slate-800">
+                                                  ({language === 'nepali' ? (itemA.idNepali || itemA.id) : (itemA.idEnglish || itemA.id)}) {language === 'nepali' ? (itemA.textNepali || itemA.text) : (itemA.textEnglish || itemA.text)}
+                                                </p>
+                                                <p className="text-sm mt-1">
+                                                  <span className="text-slate-600">{language === 'nepali' ? 'तपाईंको उत्तर:' : 'Your answer:'} </span>
+                                                  <span className={!hasUserAnswer ? 'text-slate-500 italic' : isCorrect ? 'text-green-700 font-medium' : 'text-red-700 font-medium'}>
+                                                    {matchedB ? `(${language === 'nepali' ? (matchedB.idNepali || userMatch) : userMatch}) ${language === 'nepali' ? (matchedB.textNepali || matchedB.text) : (matchedB.textEnglish || matchedB.text)}` : (language === 'nepali' ? 'उत्तर दिइएको छैन' : 'No answer')}
+                                                  </span>
+                                                </p>
+                                                {(!hasUserAnswer || !isCorrect) && correctB && (
+                                                  <p className="text-sm mt-1">
+                                                    <span className="text-slate-600">{language === 'nepali' ? 'सही उत्तर:' : 'Correct answer:'} </span>
+                                                    <span className="text-blue-700 font-medium">
+                                                      ({language === 'nepali' ? (correctB.idNepali || correctMatch) : correctMatch}) {language === 'nepali' ? (correctB.textNepali || correctB.text) : (correctB.textEnglish || correctB.text)}
+                                                    </span>
+                                                  </p>
+                                                )}
+                                              </div>
+                                              <Badge className={`ml-2 flex-shrink-0 ${!hasUserAnswer ? 'bg-slate-400 text-white' : isCorrect ? 'bg-green-500 text-white' : 'bg-red-500 text-white'}`}>
+                                                {isCorrect ? pointsPerMatch : 0}/{pointsPerMatch}
+                                              </Badge>
+                                            </div>
                                           </div>
-                                          <Badge className={`ml-2 flex-shrink-0 ${!hasUserAnswer ? 'bg-slate-400 text-white' : isCorrect ? 'bg-green-500 text-white' : 'bg-red-500 text-white'}`}>
-                                            {isCorrect ? '1/1' : '0/1'}
-                                          </Badge>
-                                        </div>
-                                      </div>
-                                    )
-                                  })}
-                                </div>
+                                        )
+                                      })}
+                                    </div>
+                                  )
+                                })()
                               ) : (fb.type === 'fill_in_the_blanks' || fb.type === 'fill_in_the_blanks_choices') && originalQuestion?.subQuestions ? (
                                 /* Fill in the blanks - show per-blank answers */
                                 <div className="space-y-3">
@@ -1107,12 +1187,19 @@ export function ResultsCard({
                                     {language === 'nepali' ? 'तपाईंको उत्तरहरू:' : 'Your Answers:'}
                                   </p>
                                   {(() => {
-                                    const correctData = originalQuestion?.correctAnswerNepali || originalQuestion?.correctAnswerEnglish || originalQuestion?.correctAnswer || []
+                                    // Use language-appropriate correctAnswer data
+                                    const correctData = language === 'english'
+                                      ? (originalQuestion?.correctAnswerEnglish || originalQuestion?.correctAnswer || originalQuestion?.correctAnswerNepali || [])
+                                      : (originalQuestion?.correctAnswerNepali || originalQuestion?.correctAnswer || originalQuestion?.correctAnswerEnglish || [])
                                     const correctWords = Array.isArray(correctData) ? correctData : []
                                     return correctWords.map((pair: any, idx: number) => {
-                                      const word = pair.word || pair.wordNepali || pair.wordEnglish
-                                      const correctPos = pair.pos || pair.posNepali || pair.posEnglish
-                                      const userAnswer = fb.studentAnswer?.[word]
+                                      const word = pair.word
+                                      const correctPos = pair.pos
+                                      // For user answer lookup, use the English word key since that's how answers are stored
+                                      const englishCorrectData = originalQuestion?.correctAnswerEnglish || originalQuestion?.correctAnswer || []
+                                      const englishWords = Array.isArray(englishCorrectData) ? englishCorrectData : []
+                                      const englishWord = englishWords[idx]?.word || word
+                                      const userAnswer = fb.studentAnswer?.[englishWord] || fb.studentAnswer?.[word]
                                       const hasUserAnswer = !!userAnswer && typeof userAnswer === 'string' && userAnswer.trim().length > 0
                                       const isCorrect = hasUserAnswer && correctPos && userAnswer.toLowerCase().trim() === String(correctPos).toLowerCase().trim()
 
@@ -1200,20 +1287,27 @@ export function ResultsCard({
                               )}
 
                               {/* Sample answer if available - hide for choice-based question types where student picks from multiple topics */}
-                              {!['essay', 'free_writing_choice', 'functional_writing_choice', 'literature_critical_analysis_choice'].includes(fb.type) && (fb.sampleAnswer || (language === 'english' ? (originalQuestion?.sampleAnswerEnglish || originalQuestion?.sampleAnswer) : (originalQuestion?.sampleAnswerNepali || originalQuestion?.sampleAnswer)) || (language === 'english' ? (originalQuestion?.correctAnswerEnglish || originalQuestion?.correctAnswer) : (originalQuestion?.correctAnswerNepali || originalQuestion?.correctAnswer))) && (
-                                <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg">
-                                  <p className="font-semibold text-amber-800 mb-1">
-                                    {language === 'nepali' ? 'नमुना उत्तर:' : 'Sample Answer:'}
-                                  </p>
-                                  <div className="text-amber-700 leading-relaxed whitespace-pre-wrap">
-                                    <CitationText
-                                      text={String(formatAnswerForDisplay(fb.sampleAnswer || (language === 'english' ? (originalQuestion?.sampleAnswerEnglish || originalQuestion?.sampleAnswer) : (originalQuestion?.sampleAnswerNepali || originalQuestion?.sampleAnswer)) || (language === 'english' ? (originalQuestion?.correctAnswerEnglish || originalQuestion?.correctAnswer) : (originalQuestion?.correctAnswerNepali || originalQuestion?.correctAnswer))) || '')}
-                                      subject={currentSubject}
-                                      pageLanguage={citationLang}
-                                    />
+                              {!['essay', 'free_writing_choice', 'functional_writing_choice', 'literature_critical_analysis_choice'].includes(fb.type) && (() => {
+                                // Get language-specific sample/correct answer
+                                const sampleAnswer = language === 'english'
+                                  ? (originalQuestion?.sampleAnswerEnglish || originalQuestion?.sampleAnswer || originalQuestion?.correctAnswerEnglish || originalQuestion?.correctAnswer)
+                                  : (originalQuestion?.sampleAnswerNepali || originalQuestion?.sampleAnswer || originalQuestion?.correctAnswerNepali || originalQuestion?.correctAnswer)
+                                if (!sampleAnswer) return null
+                                return (
+                                  <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg">
+                                    <p className="font-semibold text-amber-800 mb-1">
+                                      {language === 'nepali' ? 'नमुना उत्तर:' : 'Sample Answer:'}
+                                    </p>
+                                    <div className="text-amber-700 leading-relaxed whitespace-pre-wrap">
+                                      <CitationText
+                                        text={String(formatAnswerForDisplay(sampleAnswer) || '')}
+                                        subject={currentSubject}
+                                        pageLanguage={citationLang}
+                                      />
+                                    </div>
                                   </div>
-                                </div>
-                              )}
+                                )
+                              })()}
 
                               {/* Explanation if available */}
                               {(fb.explanation || (language === 'english' ? (originalQuestion?.explanationEnglish || originalQuestion?.explanation) : (originalQuestion?.explanationNepali || originalQuestion?.explanation))) && (
@@ -1243,20 +1337,40 @@ export function ResultsCard({
                                     {language === 'nepali' ? 'उप-प्रश्न उत्तरहरू:' : 'Sub-Question Answers:'}
                                   </p>
                                   <div className="space-y-2">
-                                    {originalQuestion.subQuestions.map((sub: any) => (
-                                      <div key={sub.idEnglish || sub.id} className="text-sm">
-                                        <span className="font-medium text-teal-700">
-                                          ({language === 'nepali' ? (sub.idNepali || sub.id) : (sub.idEnglish || sub.id)}) {language === 'nepali' ? (sub.questionNepali || sub.title || "") : (sub.questionEnglish || sub.title || "")}:
-                                        </span>
-                                        <span className="text-teal-600 whitespace-pre-wrap">
-                                          {sub.choices && sub.choices.length > 0
-                                            ? sub.choices.map((c: any) => `${c.idEnglish || c.id}: ${language === 'english' ? (c.correctAnswerEnglish || c.correctAnswer) : (c.correctAnswerNepali || c.correctAnswer)}`).join(", ")
-                                            : typeof (language === 'english' ? (sub.correctAnswerEnglish || sub.correctAnswer) : (sub.correctAnswerNepali || sub.correctAnswer)) === 'string'
-                                              ? (language === 'english' ? (sub.correctAnswerEnglish || sub.correctAnswer) : (sub.correctAnswerNepali || sub.correctAnswer))
-                                              : formatAnswerForDisplay(language === 'english' ? (sub.correctAnswerEnglish || sub.correctAnswer) : (sub.correctAnswerNepali || sub.correctAnswer)) || (language === 'english' ? (sub.explanationEnglish || sub.explanation) : (sub.explanationNepali || sub.explanation)) || ""}
-                                        </span>
-                                      </div>
-                                    ))}
+                                    {originalQuestion.subQuestions.map((sub: any) => {
+                                      const subId = language === 'nepali' ? (sub.idNepali || sub.id) : (sub.idEnglish || sub.id)
+                                      const subTitle = language === 'nepali' ? (sub.titleNepali || sub.questionNepali || sub.title || '') : (sub.titleEnglish || sub.questionEnglish || sub.title || '')
+
+                                      // Format the correct answer differently based on structure
+                                      let correctAnswerDisplay = ''
+                                      if (sub.choices && sub.choices.length > 0) {
+                                        // For multiple choice with choices, show each choice's correct answer
+                                        correctAnswerDisplay = sub.choices.map((c: any) => {
+                                          const choiceId = language === 'nepali' ? (c.idNepali || c.id) : (c.idEnglish || c.id)
+                                          const correctAns = language === 'english' ? (c.correctAnswerEnglish || c.correctAnswer) : (c.correctAnswerNepali || c.correctAnswer)
+                                          return `(${choiceId}) ${correctAns || ''}`
+                                        }).filter((s: string) => s.length > 4).join(', ')
+                                      } else {
+                                        // Simple correct answer
+                                        const answer = language === 'english' ? (sub.correctAnswerEnglish || sub.correctAnswer) : (sub.correctAnswerNepali || sub.correctAnswer)
+                                        correctAnswerDisplay = typeof answer === 'string' ? answer : (formatAnswerForDisplay(answer) || '')
+                                      }
+
+                                      if (!correctAnswerDisplay && !subTitle) return null
+
+                                      return (
+                                        <div key={sub.idEnglish || sub.id} className="text-sm">
+                                          <span className="font-medium text-teal-700">
+                                            ({subId}) {subTitle}:
+                                          </span>
+                                          {correctAnswerDisplay && (
+                                            <span className="text-teal-600 whitespace-pre-wrap ml-1">
+                                              {correctAnswerDisplay}
+                                            </span>
+                                          )}
+                                        </div>
+                                      )
+                                    })}
                                   </div>
                                 </div>
                               )}
@@ -1268,7 +1382,7 @@ export function ResultsCard({
                                   <div className="space-y-3">
                                     {originalQuestion.subSections.map((section: any) => (
                                       <div key={section.idEnglish || section.id} className="text-sm">
-                                        <p className="font-medium text-purple-700 mb-1">खण्ड {section.idEnglish || section.id}:</p>
+                                        <p className="font-medium text-purple-700 mb-1">{language === 'english' ? 'Section' : 'खण्ड'} {language === 'english' ? (section.idEnglish || section.id) : (section.idNepali || section.id)}:</p>
                                         {section.subQuestions?.map((sub: any) => (
                                           <div key={sub.idEnglish || sub.id} className="ml-4 mb-1">
                                             <span className="font-medium text-purple-600">({language === 'nepali' ? (sub.idNepali || sub.id) : (sub.idEnglish || sub.id)}) {language === 'nepali' ? (sub.questionNepali || sub.questionEnglish || sub.title) : (sub.questionEnglish || sub.questionNepali || sub.title)}: </span>
