@@ -1205,9 +1205,13 @@ export function ResultsCard({
                                   <p className="font-semibold text-amber-800 mb-1">
                                     {language === 'nepali' ? 'नमुना उत्तर:' : 'Sample Answer:'}
                                   </p>
-                                  <p className="text-amber-700 leading-relaxed whitespace-pre-wrap">
-                                    {formatAnswerForDisplay(fb.sampleAnswer || (language === 'english' ? (originalQuestion?.sampleAnswerEnglish || originalQuestion?.sampleAnswer) : (originalQuestion?.sampleAnswerNepali || originalQuestion?.sampleAnswer)) || (language === 'english' ? (originalQuestion?.correctAnswerEnglish || originalQuestion?.correctAnswer) : (originalQuestion?.correctAnswerNepali || originalQuestion?.correctAnswer)))}
-                                  </p>
+                                  <div className="text-amber-700 leading-relaxed whitespace-pre-wrap">
+                                    <CitationText
+                                      text={String(formatAnswerForDisplay(fb.sampleAnswer || (language === 'english' ? (originalQuestion?.sampleAnswerEnglish || originalQuestion?.sampleAnswer) : (originalQuestion?.sampleAnswerNepali || originalQuestion?.sampleAnswer)) || (language === 'english' ? (originalQuestion?.correctAnswerEnglish || originalQuestion?.correctAnswer) : (originalQuestion?.correctAnswerNepali || originalQuestion?.correctAnswer))) || '')}
+                                      subject={currentSubject}
+                                      pageLanguage={citationLang}
+                                    />
+                                  </div>
                                 </div>
                               )}
 

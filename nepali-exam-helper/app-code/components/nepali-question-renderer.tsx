@@ -1010,24 +1010,24 @@ export function NepaliQuestionRenderer(props: NepaliQuestionRendererProps) {
                                     <div>
                                         <span className="font-medium text-amber-800">{getUIText(props.language, 'sampleAnswer')}</span>
                                         <div className="text-amber-700 mt-1 whitespace-pre-line">
-                                            {formatAnswerForDisplay(displayedSampleAnswer)}
+                                            <CitationText text={String(formatAnswerForDisplay(displayedSampleAnswer) || '')} subject="nepali" pageLanguage={props.language === 'english' ? 'en' : 'np'} />
                                         </div>
                                     </div>
                                 )}
                                 {showCorrectAnswer && (
                                     <div>
                                         <span className="font-medium text-amber-800">{props.language === 'english' ? 'Correct Answer:' : 'सही उत्तर:'}</span>
-                                        <p className="text-amber-700 mt-1 whitespace-pre-line">
-                                            {formatAnswerForDisplay(displayedCorrectAnswer)}
-                                        </p>
+                                        <div className="text-amber-700 mt-1 whitespace-pre-line">
+                                            <CitationText text={String(formatAnswerForDisplay(displayedCorrectAnswer) || '')} subject="nepali" pageLanguage={props.language === 'english' ? 'en' : 'np'} />
+                                        </div>
                                     </div>
                                 )}
                                 {showExplanationSection && (
                                     <div>
                                         <span className="font-medium text-amber-800">{getUIText(props.language, 'explanation')}</span>
-                                        <p className="text-amber-700 mt-1 whitespace-pre-line">
-                                            {displayedExplanation}
-                                        </p>
+                                        <div className="text-amber-700 mt-1 whitespace-pre-line">
+                                            <CitationText text={String(displayedExplanation || '')} subject="nepali" pageLanguage={props.language === 'english' ? 'en' : 'np'} />
+                                        </div>
                                     </div>
                                 )}
                             </div>
