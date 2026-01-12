@@ -223,7 +223,7 @@ export function ResultsCard({
                   <div className="flex justify-between w-full items-center min-h-[48px] pr-4">
                     <span className="text-left font-medium pr-4 flex-1 leading-tight">
                       {index + 1}.{" "}
-                      {question.english.length > 80 ? `${question.english.substring(0, 80)}...` : question.english}
+                      {(() => { const qText = language === 'english' ? (question.english || question.nepali) : (question.nepali || question.english); return qText.length > 80 ? `${qText.substring(0, 80)}...` : qText; })()}
                     </span>
                     <div className="flex items-center gap-2 flex-shrink-0 ml-4">
                       {isCorrect ? (
@@ -243,7 +243,7 @@ export function ResultsCard({
                 <AccordionContent className="px-4 pb-4">
                   <div className="space-y-4">
                     {/* Question in Nepali with proper spacing */}
-                    <div className="text-slate-600 mb-3 leading-relaxed"><MathText text={cleanNepaliText(question.nepali)} /></div>
+                    <div className="text-slate-600 mb-3 leading-relaxed"><MathText text={language === 'english' ? (question.english || question.nepali) : (question.nepali || question.english)} /></div>
 
                     {/* User's Answer Section with better formatting */}
                     <div
@@ -426,7 +426,7 @@ export function ResultsCard({
                   <div className="flex justify-between w-full items-center min-h-[48px] pr-4">
                     <span className="text-left font-medium pr-4 flex-1 leading-tight">
                       {index + 1}.{" "}
-                      {question.english.length > 80 ? `${question.english.substring(0, 80)}...` : question.english}
+                      {(() => { const qText = language === 'english' ? (question.english || question.nepali) : (question.nepali || question.english); return qText.length > 80 ? `${qText.substring(0, 80)}...` : qText; })()}
                     </span>
                     <div className="flex items-center gap-2 flex-shrink-0 ml-4">
                       {isNoAnswer ? (
@@ -459,7 +459,7 @@ export function ResultsCard({
                 </AccordionTrigger>
                 <AccordionContent className="px-4 pb-4">
                   <div className="space-y-4">
-                    <div className="text-slate-600 mb-3"><MathText text={cleanNepaliText(question.nepali)} /></div>
+                    <div className="text-slate-600 mb-3"><MathText text={language === 'english' ? (question.english || question.nepali) : (question.nepali || question.english)} /></div>
                     <div className={`p-3 rounded-lg ${isNoAnswer
                       ? "bg-slate-50 border-l-4 border-slate-400"
                       : isFullScore
@@ -495,7 +495,7 @@ export function ResultsCard({
                           <div className="flex-1 min-w-0">
                             <p className="font-semibold text-indigo-800">{language === 'english' ? 'Sample Answer:' : 'नमूना उत्तर:'}</p>
                             <div className="text-indigo-700 mt-1 text-sm leading-relaxed whitespace-pre-wrap break-words">
-                              <MathText text={(language === 'english' ? ((question as any).sampleAnswerEnglish || question.sampleAnswer) : ((question as any).sampleAnswerNepali || question.sampleAnswer))} />
+                              <CitationText text={(language === 'english' ? ((question as any).sampleAnswerEnglish || question.sampleAnswer) : ((question as any).sampleAnswerNepali || question.sampleAnswer))} subject="science" pageLanguage={language === 'nepali' ? 'np' : 'en'} />
                             </div>
                           </div>
                         </div>
