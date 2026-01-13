@@ -9,12 +9,18 @@ export async function GET() {
         const progressCollection = db.collection("user_progress")
         const allProgress = await progressCollection.find({}).toArray()
 
+        // Grade ranking for comparison (higher is better)
+        const gradeRank: Record<string, number> = {
+            'A+': 6, 'A': 5, 'B+': 4, 'B': 3, 'C+': 2, 'C': 1, 'D': 0, 'E': -1
+        }
+
         // Group by email to get unique users
         const userMap = new Map<string, {
             email: string
             testsAttempted: string[]
             totalAttempts: number
             lastActive: string
+            bestGrades: Map<string, string> // testId -> best grade
         }>()
 
         for (const record of allProgress) {
@@ -29,6 +35,17 @@ export async function GET() {
                 ? rawDate.toISOString()
                 : (typeof rawDate === 'string' ? rawDate : "")
 
+            // Get best grade from attempts array
+            let bestGrade = ''
+            if (record.attempts && Array.isArray(record.attempts)) {
+                for (const attempt of record.attempts) {
+                    const grade = attempt.grade || ''
+                    if (!bestGrade || (gradeRank[grade] ?? -2) > (gradeRank[bestGrade] ?? -2)) {
+                        bestGrade = grade
+                    }
+                }
+            }
+
             if (existing) {
                 if (!existing.testsAttempted.includes(testId)) {
                     existing.testsAttempted.push(testId)
@@ -37,18 +54,42 @@ export async function GET() {
                 if (lastUpdated && lastUpdated > existing.lastActive) {
                     existing.lastActive = lastUpdated
                 }
+                // Update best grade for this test if better
+                const currentBest = existing.bestGrades.get(testId) || ''
+                if ((gradeRank[bestGrade] ?? -2) > (gradeRank[currentBest] ?? -2)) {
+                    existing.bestGrades.set(testId, bestGrade)
+                }
             } else {
+                const bestGrades = new Map<string, string>()
+                if (bestGrade) bestGrades.set(testId, bestGrade)
                 userMap.set(email, {
                     email,
                     testsAttempted: [testId],
                     totalAttempts: record.attempts?.length || 1,
-                    lastActive: lastUpdated
+                    lastActive: lastUpdated,
+                    bestGrades
                 })
             }
         }
 
-        // Convert to array and sort by last active
+        // Convert to array and sort by last active, counting A/A+ grades
         const registeredUsers = Array.from(userMap.values())
+            .map(user => {
+                // Count unique tests with A or A+ as best grade
+                let aGrades = 0
+                user.bestGrades.forEach((grade) => {
+                    if (grade === 'A' || grade === 'A+') {
+                        aGrades++
+                    }
+                })
+                return {
+                    email: user.email,
+                    testsAttempted: user.testsAttempted,
+                    totalAttempts: user.totalAttempts,
+                    lastActive: user.lastActive,
+                    aGrades
+                }
+            })
             .sort((a, b) => (b.lastActive || "").localeCompare(a.lastActive || ""))
 
         // Get guest session count from analytics collection

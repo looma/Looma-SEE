@@ -7,6 +7,7 @@ interface UserData {
     testsAttempted: string[]
     totalAttempts: number
     lastActive: string
+    aGrades: number
 }
 
 interface AdminStats {
@@ -285,6 +286,7 @@ export default function AdminPage() {
                                         <th style={{ ...grayText, textAlign: "left", padding: "0.75rem" }}>Email</th>
                                         <th style={{ ...grayText, textAlign: "left", padding: "0.75rem" }}>Tests Attempted</th>
                                         <th style={{ ...grayText, textAlign: "center", padding: "0.75rem" }}>Total Attempts</th>
+                                        <th style={{ ...grayText, textAlign: "center", padding: "0.75rem" }}>A/A+ Grades</th>
                                         <th style={{ ...grayText, textAlign: "right", padding: "0.75rem" }}>Last Active</th>
                                     </tr>
                                 </thead>
@@ -333,6 +335,22 @@ export default function AdminPage() {
                                                 }}>
                                                     {user.totalAttempts}
                                                 </span>
+                                            </td>
+                                            <td style={{ padding: "0.75rem", textAlign: "center" }}>
+                                                {user.aGrades > 0 ? (
+                                                    <span style={{
+                                                        background: "rgba(251, 191, 36, 0.2)",
+                                                        color: "#fbbf24",
+                                                        padding: "0.25rem 0.75rem",
+                                                        borderRadius: "9999px",
+                                                        fontSize: "0.875rem",
+                                                        fontWeight: "600"
+                                                    }}>
+                                                        🏆 {user.aGrades}
+                                                    </span>
+                                                ) : (
+                                                    <span style={{ ...mutedText, fontSize: "0.875rem" }}>—</span>
+                                                )}
                                             </td>
                                             <td style={{ ...grayText, padding: "0.75rem", textAlign: "right" }}>
                                                 {formatDate(user.lastActive)}
