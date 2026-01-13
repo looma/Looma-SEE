@@ -57,9 +57,8 @@ export async function GET() {
         const guestCount = guestStats?.count || 0
         const guestLastSeen = guestStats?.lastSeen || null
 
-        // Get total test count
-        const testsCollection = db.collection("practice_tests")
-        const totalTests = await testsCollection.countDocuments()
+        // Calculate total test attempts (sum of all user attempts)
+        const totalTests = registeredUsers.reduce((sum, user) => sum + user.totalAttempts, 0)
 
         return NextResponse.json({
             success: true,
