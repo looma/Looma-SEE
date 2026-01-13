@@ -8,6 +8,18 @@ export function formatAnswerForDisplay(answer: any): string {
 
     // Handle matching question arrays: [{ A: "i", B: "c" }, ...] or word formation arrays
     if (Array.isArray(answer)) {
+        // Check if this is a simple string array (like note_taking points)
+        const isSimpleStringArray = answer.every(item => typeof item === 'string' || item === null || item === undefined)
+
+        if (isSimpleStringArray) {
+            // For simple arrays, show as numbered list with empty indicators
+            const nonEmptyItems = answer.filter(item => typeof item === 'string' && item.trim().length > 0)
+            if (nonEmptyItems.length === 0) {
+                return '' // All empty
+            }
+            return nonEmptyItems.map((item, idx) => `${idx + 1}. ${item}`).join('\n')
+        }
+
         return answer.map((item, idx) => {
             if (item && typeof item === 'object') {
                 // Matching format: { A: "i", B: "c" }
@@ -39,8 +51,10 @@ export function formatAnswerForDisplay(answer: any): string {
                     return `${k}: ${formattedV}`
                 }).join(', ')
             }
+            // Skip empty strings in complex arrays
+            if (typeof item === 'string' && item.trim().length === 0) return null
             return String(item)
-        }).join('; ')
+        }).filter(Boolean).join('; ')
     }
 
     // Handle objects

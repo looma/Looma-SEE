@@ -76,6 +76,28 @@ export function ResultsCard({
     return text.replace(/\s*\([0-9A-Za-z][^)]*\)\s*$/g, '').trim()
   }
 
+  // Clean bilingual feedback to show only the appropriate language
+  // e.g., "No feedback available (प्रतिक्रिया उपलब्ध छैन)" -> "No feedback available" in English mode
+  const cleanBilingualFeedback = (feedback: string) => {
+    if (!feedback) return feedback
+    if (language === 'english') {
+      // Remove Nepali text in parentheses
+      return feedback
+        .replace(/\s*\(प्रतिक्रिया[^)]*\)\s*/g, '')
+        .replace(/\s*\(कुनै[^)]*\)\s*/g, '')
+        .replace(/\s*\(AI[^)]*छैन\)\s*/g, '')
+        .trim()
+    } else {
+      // Remove English text in parentheses for Nepali mode
+      return feedback
+        .replace(/No feedback available\s*\(?/g, '')
+        .replace(/\(?No feedback available\)?/g, '')
+        .replace(/AI grading failed[^(]*/g, '')
+        .replace(/\s*\([^)]*available\)\s*/g, '')
+        .trim() || feedback
+    }
+  }
+
   if (!questions) return <div>{language === 'english' ? 'Loading...' : 'लोड हुँदैछ...'}</div>
 
   // Check if this is an English test
@@ -947,6 +969,24 @@ export function ResultsCard({
                                     </p>
                                   </div>
                                 )}
+                                {/* Show subSections questions for literature_short_answer so users know what was asked */}
+                                {fb.type === 'literature_short_answer' && originalQuestion?.subSections && originalQuestion.subSections.length > 0 && (
+                                  <div className="mt-3 space-y-3">
+                                    {originalQuestion.subSections.map((section: any) => (
+                                      <div key={section.idEnglish || section.id} className="p-3 bg-slate-100 rounded border-l-4 border-indigo-300">
+                                        <p className="font-medium text-indigo-700 mb-2">
+                                          {language === 'english' ? 'Section' : 'खण्ड'} {language === 'english' ? (section.idEnglish || section.id) : (section.idNepali || section.id)}
+                                          {section.titleEnglish || section.titleNepali ? `: ${language === 'english' ? (section.titleEnglish || section.titleNepali) : (section.titleNepali || section.titleEnglish)}` : ''}
+                                        </p>
+                                        {section.subQuestions?.map((sub: any) => (
+                                          <p key={sub.idEnglish || sub.id} className="text-sm text-slate-700 ml-2">
+                                            ({language === 'nepali' ? (sub.idNepali || sub.id) : (sub.idEnglish || sub.id)}) {language === 'nepali' ? (sub.questionNepali || sub.questionEnglish || sub.title) : (sub.questionEnglish || sub.questionNepali || sub.title)}
+                                          </p>
+                                        ))}
+                                      </div>
+                                    ))}
+                                  </div>
+                                )}
                               </div>
 
                               {/* Show options for choice-based questions */}
@@ -1238,11 +1278,20 @@ export function ResultsCard({
                                       const subQ = originalQuestion?.subQuestions?.find((s: any) => (s.idEnglish || s.idNepali || s.id) === key)
                                       const correctAnswer = subQ ? (language === 'english' ? (subQ.correctAnswerEnglish || subQ.correctAnswer) : (subQ.correctAnswerNepali || subQ.correctAnswer)) : null
 
+                                      // Get display text - for grammar_choice, show title AND question if both exist
+                                      const subTitle = subQ ? (language === 'nepali' ? (subQ.titleNepali || subQ.title || '') : (subQ.titleEnglish || subQ.title || '')) : ''
+                                      const subQuestion = subQ ? (language === 'nepali' ? (subQ.questionNepali || '') : (subQ.questionEnglish || '')) : ''
+
                                       return (
                                         <div key={key} className={`p-3 rounded-lg ${!hasAnswer ? 'bg-slate-50 border-l-4 border-slate-400' : 'bg-slate-50 border-l-4 border-blue-400'}`}>
                                           <p className="font-medium text-slate-800">
-                                            ({key}) {subQ ? (language === 'nepali' ? (subQ.titleNepali || subQ.title || '') : (subQ.titleEnglish || subQ.title || '')) : ''}
+                                            ({key}) {subTitle}
                                           </p>
+                                          {subQuestion && (
+                                            <p className="text-sm text-slate-600 mt-1 italic">
+                                              {subQuestion}
+                                            </p>
+                                          )}
                                           <p className="text-sm mt-1">
                                             <span className="text-slate-600">{language === 'nepali' ? 'तपाईंको उत्तर:' : 'Your answer:'} </span>
                                             <span className={!hasAnswer ? 'text-slate-500 italic' : 'text-slate-700'}>
@@ -1261,14 +1310,29 @@ export function ResultsCard({
                                 </div>
                               ) : (
                                 /* Default: show formatted answer */
-                                <div className="bg-slate-50 p-4 rounded-lg">
-                                  <p className="font-semibold text-slate-700 mb-2">
-                                    {language === 'nepali' ? 'तपाईंको उत्तर:' : 'Your Answer:'}
-                                  </p>
-                                  <p className="text-slate-700 whitespace-pre-wrap">
-                                    {formatAnswerForDisplay(fb.studentAnswer) || (language === 'nepali' ? 'कुनै उत्तर प्रदान गरिएको छैन' : 'No answer provided')}
-                                  </p>
-                                </div>
+                                (() => {
+                                  const formattedAnswer = formatAnswerForDisplay(fb.studentAnswer)
+                                  const isLongFormType = ['essay', 'free_writing', 'free_writing_choice', 'functional_writing', 'functional_writing_choice', 'literature_argumentative', 'literature_explanation', 'literature_critical_analysis_choice', 'summarization', 'note_taking'].includes(fb.type)
+                                  const wordCount = typeof fb.studentAnswer === 'string' ? fb.studentAnswer.trim().split(/\s+/).filter((w: string) => w.length > 0).length : 0
+
+                                  return (
+                                    <div className="bg-slate-50 p-4 rounded-lg">
+                                      <div className="flex justify-between items-center mb-2">
+                                        <p className="font-semibold text-slate-700">
+                                          {language === 'nepali' ? 'तपाईंको उत्तर:' : 'Your Answer:'}
+                                        </p>
+                                        {isLongFormType && wordCount > 0 && (
+                                          <span className="text-sm text-slate-500">
+                                            {language === 'nepali' ? `${wordCount} शब्द` : `${wordCount} words`}
+                                          </span>
+                                        )}
+                                      </div>
+                                      <p className="text-slate-700 whitespace-pre-wrap">
+                                        {formattedAnswer || (language === 'nepali' ? 'कुנै उत्तर प्रदान गरिएको छैन' : 'No answer provided')}
+                                      </p>
+                                    </div>
+                                  )
+                                })()
                               )}
 
                               {/* Feedback - only show if student provided an answer */}
@@ -1280,14 +1344,14 @@ export function ResultsCard({
                                       <p className="font-semibold text-blue-800 mb-1">
                                         {language === 'nepali' ? 'प्रतिक्रिया:' : 'Feedback:'}
                                       </p>
-                                      <p className="text-blue-700 leading-relaxed whitespace-pre-wrap break-words">{fb.feedback}</p>
+                                      <p className="text-blue-700 leading-relaxed whitespace-pre-wrap break-words">{cleanBilingualFeedback(fb.feedback)}</p>
                                     </div>
                                   </div>
                                 </div>
                               )}
 
-                              {/* Sample answer if available - hide for choice-based question types where student picks from multiple topics */}
-                              {!['essay', 'free_writing_choice', 'functional_writing_choice', 'literature_critical_analysis_choice'].includes(fb.type) && (() => {
+                              {/* Sample answer if available - hide for matching (already shows per-item) and choice-based question types where student picks from multiple options */}
+                              {!['matching', 'essay', 'free_writing_choice', 'functional_writing_choice', 'literature_critical_analysis_choice'].includes(fb.type) && (() => {
                                 // Get language-specific sample/correct answer
                                 const sampleAnswer = language === 'english'
                                   ? (originalQuestion?.sampleAnswerEnglish || originalQuestion?.sampleAnswer || originalQuestion?.correctAnswerEnglish || originalQuestion?.correctAnswer)
@@ -1963,18 +2027,27 @@ export function ResultsCard({
                                               </p>
                                             </div>
 
-                                            {/* Feedback - show if provided answer and got feedback */}
-                                            {hasAnswer && feedback?.feedback && (
-                                              <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded-r-lg">
-                                                <div className="flex items-start gap-2">
-                                                  <Lightbulb className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
-                                                  <div className="flex-1">
-                                                    <p className="font-semibold text-blue-800 mb-1">{language === 'nepali' ? 'प्रतिक्रिया:' : 'Feedback:'}</p>
-                                                    <p className="text-blue-700 whitespace-pre-wrap break-words">{feedback.feedback}</p>
+                                            {/* Feedback - show if provided answer and got feedback, but suppress redundant auto-grading feedback */}
+                                            {hasAnswer && feedback?.feedback && (() => {
+                                              // Suppress redundant feedback that just says correct/incorrect since we show Correct Answer below
+                                              const feedbackText = feedback.feedback.trim().toLowerCase()
+                                              const isRedundant = feedbackText === 'correct! well done.' ||
+                                                feedbackText.startsWith('incorrect. the correct answer is') ||
+                                                feedbackText === 'correct' ||
+                                                feedbackText === 'incorrect'
+                                              if (isRedundant) return null
+                                              return (
+                                                <div className="bg-blue-50 border-l-4 border-blue-500 p-3 rounded-r-lg">
+                                                  <div className="flex items-start gap-2">
+                                                    <Lightbulb className="h-4 w-4 text-blue-600 mt-0.5 flex-shrink-0" />
+                                                    <div className="flex-1">
+                                                      <p className="font-semibold text-blue-800 mb-1">{language === 'nepali' ? 'प्रतिक्रिया:' : 'Feedback:'}</p>
+                                                      <p className="text-blue-700 whitespace-pre-wrap break-words">{feedback.feedback}</p>
+                                                    </div>
                                                   </div>
                                                 </div>
-                                              </div>
-                                            )}
+                                              )
+                                            })()}
 
                                             {/* Always show correct answer if user didn't answer or got it wrong */}
                                             {(subQ.correctAnswerEnglish || subQ.correctAnswerNepali || subQ.correctAnswer) && (!hasAnswer || !isCorrect) && (

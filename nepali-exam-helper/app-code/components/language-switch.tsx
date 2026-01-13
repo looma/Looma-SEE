@@ -32,8 +32,8 @@ export function LanguageSwitch() {
             aria-checked={language === "nepali"}
             aria-label={`Language: ${language === "english" ? "English" : "Nepali"}. Click to switch.`}
             className={`
-        flex items-center gap-2
-        px-3 py-2
+        flex items-center gap-1 sm:gap-2
+        px-2 py-1.5 sm:px-3 sm:py-2
         rounded-full
         shadow-lg
         border-2
@@ -46,8 +46,8 @@ export function LanguageSwitch() {
       `}
             disabled={!isLanguageSwitchEnabled}
         >
-            <Globe className={`h-4 w-4 pointer-events-none ${isLanguageSwitchEnabled ? "text-blue-600" : "text-slate-400"}`} />
-            <span className={`text-sm font-medium pointer-events-none ${isLanguageSwitchEnabled ? "text-slate-700" : "text-slate-400"}`}>
+            <Globe className={`h-3.5 w-3.5 sm:h-4 sm:w-4 pointer-events-none ${isLanguageSwitchEnabled ? "text-blue-600" : "text-slate-400"}`} />
+            <span className={`text-xs sm:text-sm font-medium pointer-events-none ${isLanguageSwitchEnabled ? "text-slate-700" : "text-slate-400"}`}>
                 {language === "english" ? (
                     <>
                         <span className="text-blue-600 font-black underline underline-offset-2 pointer-events-none">EN</span>

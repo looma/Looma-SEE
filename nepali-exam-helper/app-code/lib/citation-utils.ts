@@ -92,10 +92,10 @@ export function buildChapterUrl(
             break
 
         case 'social':
-            if (!lesson) {
-                return { error: `Missing lesson number for Social Studies Chapter ${chapter}` }
-            }
-            chapterID = `10SS${chapterStr}.${lessonStr}-nepali`
+            // Default to lesson 1 if lesson number not specified
+            const actualLesson = lesson || 1
+            const actualLessonStr = actualLesson.toString().padStart(2, '0')
+            chapterID = `10SS${chapterStr}.${actualLessonStr}-nepali`
             urlSubject = 'SocialStudies'
             lang = 'np'
             break
