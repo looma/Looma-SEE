@@ -52,7 +52,7 @@ export async function POST(req: Request) {
       ? 'The student answered in Nepali. Provide your feedback in Nepali (नेपाली भाषामा प्रतिक्रिया दिनुहोस्).'
       : 'The student answered in English. Provide your feedback in English.'
 
-    const systemPrompt = `You are a SEE examiner. Grade the student's answer and provide brief feedback.
+    const systemPrompt = `You are a SEE examiner. Grade the student's answer and provide detailed, constructive feedback.
 
 ${languageInstruction}
 
@@ -62,15 +62,24 @@ IMPORTANT: You must respond with ONLY valid JSON in this exact format:
 Rules:
 - Score must be integer between 0 and ${marks}
 - Award partial credit when appropriate
-- Keep feedback to 1-2 sentences maximum
-- Be constructive and specific
+- **If NOT awarding full marks, you MUST explain specifically what was missing, incorrect, or could be improved**
+- Be constructive and specific in your feedback
 - Respond in the SAME LANGUAGE as the student's answer
 - For English questions, focus on content understanding rather than exact wording
 - Recognize equivalent answers that convey the same meaning
-- Accept both American English (e.g., "gotten", "gotten") and British English (e.g., "got", "got") as correct
-- Do NOT penalize answers that are shorter than suggested word counts if they adequately address the question
-- If a student's answer fully meets the requirements in fewer words, award full marks
-- When grading, prioritize whether the answer demonstrates understanding of the key concepts over strict word-for-word matches`
+- Accept both American and British English spellings as correct
+
+**FORMAT REQUIREMENTS (IMPORTANT):**
+- If the question specifies a word count (e.g., "Write 150 words"), check if the answer meets it. Deduct marks proportionally if significantly short (e.g., 50% of required words = lose up to 50% of marks)
+- If the question specifies paragraph count or specific structure, verify compliance
+
+**GRAMMAR & WRITING QUALITY (For English answers):**
+- Note any capitalization, grammar, or spelling errors in your feedback
+- For EGREGIOUS errors (multiple basic mistakes, wrong verb tenses, missing capitals on proper nouns), deduct 1 mark
+- For minor errors, mention them in feedback but don't deduct marks
+- Be more lenient on grammar for content-focused questions vs. writing-focused questions
+
+- When grading, prioritize whether the answer demonstrates understanding of the key concepts`
 
     const userPrompt = `Grade this answer (${marks} marks total):
 
@@ -78,29 +87,37 @@ Question: ${question}
 ${sampleAnswer ? `Sample/expected answer: ${sampleAnswer}` : ""}
 Student answer: ${answer}
 
-CRITICAL GRADING RULES (BE LENIENT):
+GRADING GUIDELINES:
 1. **CONTAINS = CORRECT**: If student answer CONTAINS the expected answer (even with extra words), award FULL marks
    - "non-profit organizations" contains "non-profit" → FULL MARKS
    - "drawing pictures" contains "drawing" → FULL MARKS
-   - "the smokeless air" contains "smokeless air" → FULL MARKS
 2. **DON'T penalize elaboration**: Students who add more detail should NOT lose points
 3. Accept equivalent phrasings and synonyms
 4. Accept American and British English
-5. Be generous - if the answer captures the key concept, give full marks
-6. Only deduct points for genuinely wrong or missing information
-7. Provide feedback in ${answerLanguage === 'nepali' ? 'Nepali' : 'English'}
+5. If the answer captures the key concept, give full marks
+6. Provide feedback in ${answerLanguage === 'nepali' ? 'Nepali' : 'English'}
 
-**MATH-SPECIFIC LENIENCY** (very important for math questions):
+**FORMAT ENFORCEMENT:**
+- If question asks for specific word count and answer is significantly short, deduct marks proportionally
+- If question asks for paragraphs/structure and answer doesn't comply, note this and deduct appropriately
+
+**GRAMMAR CHECK (English only):**
+- Mention any grammar, spelling, or capitalization errors in feedback
+- Only deduct marks (max 1) for egregious/repeated errors
+
+**FEEDBACK REQUIREMENT:**
+- If giving less than full marks, clearly explain WHY marks were deducted
+- Be specific: "Missing X", "Incorrect Y", "Needs more detail on Z", "Word count too short (X words vs Y required)"
+
+**MATH-SPECIFIC LENIENCY** (for math questions):
 - Accept ALL equivalent notation formats: x^2 = x² = x**2, sqrt(x) = √x = root(x)
 - Accept spaces or no spaces: 2x = 2*x = 2 * x, a+b = a + b
 - Accept fraction formats: 1/2 = 0.5 = ½, 3/4 = 0.75
 - Accept equivalent expressions: 2(x+1) = 2x+2, x^2-1 = (x+1)(x-1)
 - If the MATHEMATICAL RESULT is correct, give FULL marks regardless of notation style
 - Don't penalize missing units if the numerical answer is correct
-- Accept answers in any order for sets, coordinates written differently, etc.
-- For geometry: accept different valid methods that lead to correct answer
 
-Respond with JSON only: {"score": <0-${marks}>, "feedback": "<brief feedback>"}`
+Respond with JSON only: {"score": <0-${marks}>, "feedback": "<detailed feedback explaining score>"}`
 
     console.log("🤖 Making OpenAI API call with improved settings...")
 
