@@ -62,7 +62,7 @@ export function EnglishQuestionRenderer({
       ? 'नोट: तलका प्रश्नहरूको उत्तर दिँदा तपाईं माथिको परिच्छेद हेर्न सक्नुहुन्छ। ग्रेडिङ्ले शब्दभन्दा साम्ग्रीको बुझाइमा ध्यान दिन्छ।'
       : 'Note: You may refer back to the passage above while answering the questions below. The grading focuses on understanding the content rather than exact wording.',
     chooseMatch: language === 'nepali' ? 'सही मिलान छान्नुहोस्:' : 'Choose the correct match:',
-    matchInstruction: language === 'nepali' ? 'तल दिइएको उपयुक्त विकल्प छानेर प्रत्येक वस्तुलाई मिलाउनुहोस्।' : 'Match each item with the correct option by selecting the appropriate choice below.',
+    matchInstruction: language === 'nepali' ? 'प्रत्येक शब्दको लागि सही अर्थ वा पर्यायवाची छान्नुहोस्।' : 'For each word, select its correct meaning or synonym from the options.',
     // Ordering labels
     orderInstruction: language === 'nepali' ? 'तलका वस्तुहरूलाई सही क्रममा मिलाउनुहोस् (१, २, ३, आदि)।' : 'Arrange the following items in the correct order by selecting a number (1, 2, 3, etc.) for each item.',
     // Cloze test labels
