@@ -2357,7 +2357,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
   // English test interface
   if (isEnglishTest) {
     return (
-      <div className="px-3 sm:px-0">
+      <div className="px-1 sm:px-0">
         {/* Progress Header */}
         <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4 sm:p-6 shadow-lg border border-white/20 mb-4 sm:mb-6">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-3 sm:gap-0">
@@ -2799,7 +2799,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
 
   // Traditional science test interface with tabs
   return (
-    <div className="px-3 sm:px-0">
+    <div className="px-1 sm:px-0">
       {/* Progress Header */}
       <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4 sm:p-6 shadow-lg border border-white/20 mb-4 sm:mb-6">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-3 sm:gap-0">
@@ -2923,8 +2923,8 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
       {userEmail && syncStatus && (
         <div className="mt-4 flex justify-center">
           <div className={`text-xs px-3 py-1.5 rounded-full flex items-center gap-1.5 ${syncStatus === 'synced' ? 'bg-green-100 text-green-700' :
-              syncStatus === 'pending' ? 'bg-yellow-100 text-yellow-700' :
-                'bg-red-100 text-red-700'
+            syncStatus === 'pending' ? 'bg-yellow-100 text-yellow-700' :
+              'bg-red-100 text-red-700'
             }`}>
             {syncStatus === 'synced' && (
               <>
