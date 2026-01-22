@@ -381,6 +381,13 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
         <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8 py-4 sm:py-6">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div className="flex items-center gap-3 sm:gap-4">
+              <a href="https://looma.website" target="_blank" rel="noopener noreferrer" className="flex-shrink-0 sm:hidden">
+                <img
+                  src="/Looma Logo Square.png"
+                  alt="Looma"
+                  className="h-10 w-10 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+                />
+              </a>
               <div>
                 <h1 className="text-2xl sm:text-3xl font-bold text-slate-800">
                   {language === "english" ? "Choose Your Practice Test" : "आफ्नो अभ्यास परीक्षा छान्नुहोस्"}
@@ -469,8 +476,7 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
               <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
                 <div className="text-2xl sm:text-3xl">{getSubjectIcon(subject)}</div>
                 <div className="flex-1">
-                  <h2 className="text-xl sm:text-2xl font-bold text-slate-800 capitalize flex items-center gap-2">
-                    <GraduationCap className="h-5 w-5 sm:h-6 sm:w-6" />
+                  <h2 className="text-xl sm:text-2xl font-bold text-slate-800 capitalize">
                     {getSubjectDisplayName(subject)} {language === "english" ? "Tests" : "परीक्षाहरू"}
                   </h2>
                 </div>

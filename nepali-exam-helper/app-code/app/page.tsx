@@ -235,17 +235,23 @@ export default function SeePrepPage() {
     setShowResults(false)
     setTestResults(null)
     window.scrollTo(0, 0) // Scroll to top of page
-    // Clear answers but keep the same test
+    // Clear ALL answers (including subject-specific storage) but keep the same test
     if (currentStudentId && currentTestId) {
       const existingProgress = loadStudentProgress(`${currentStudentId}_${currentTestId}`)
       const newProgress = {
         studentId: currentStudentId,
         testId: currentTestId,
         answers: {
+          // Science/English group format
           groupA: {},
           groupB: {},
           groupC: {},
           groupD: {},
+          // Subject-specific formats
+          math: {},
+          nepali: {},
+          socialStudies: {},
+          english: {},
         },
         currentTab: "groupA",
         attempts: existingProgress?.attempts || [],

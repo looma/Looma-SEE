@@ -29,6 +29,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
   const [answers, setAnswers] = useState<Record<string, any>>({})
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [lastSaved, setLastSaved] = useState<Date | null>(null)
+  const [syncStatus, setSyncStatus] = useState<'synced' | 'pending' | 'failed' | null>(null)
   const [showSubmitWarning, setShowSubmitWarning] = useState(false)
   const [currentTab, setCurrentTab] = useState("")
 
@@ -143,9 +144,12 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
     setLastSaved(new Date())
     onProgressUpdate()
 
-    // Also sync to server for authenticated users (debounced)
+    // Also sync to server for authenticated users
     if (userEmail) {
-      syncProgressToServer(userEmail, progressData)
+      setSyncStatus('pending')
+      syncProgressToServer(userEmail, progressData).then((success) => {
+        setSyncStatus(success ? 'synced' : 'failed')
+      })
     }
   }, [answers, studentId, testId, onProgressUpdate, currentTab, userEmail])
 
@@ -2914,6 +2918,35 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
           </TabsContent>
         )}
       </Tabs>
+
+      {/* Sync Status Indicator - only show for authenticated users */}
+      {userEmail && syncStatus && (
+        <div className="mt-4 flex justify-center">
+          <div className={`text-xs px-3 py-1.5 rounded-full flex items-center gap-1.5 ${syncStatus === 'synced' ? 'bg-green-100 text-green-700' :
+              syncStatus === 'pending' ? 'bg-yellow-100 text-yellow-700' :
+                'bg-red-100 text-red-700'
+            }`}>
+            {syncStatus === 'synced' && (
+              <>
+                <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+                {language === 'english' ? 'Synced to cloud' : 'क्लाउडमा सिंक भयो'}
+              </>
+            )}
+            {syncStatus === 'pending' && (
+              <>
+                <Loader2 className="h-3 w-3 animate-spin" />
+                {language === 'english' ? 'Syncing...' : 'सिंक हुँदैछ...'}
+              </>
+            )}
+            {syncStatus === 'failed' && (
+              <>
+                <span className="w-2 h-2 bg-red-500 rounded-full"></span>
+                {language === 'english' ? 'Sync failed - saved locally' : 'सिंक असफल - स्थानीय रूपमा सुरक्षित'}
+              </>
+            )}
+          </div>
+        </div>
+      )}
 
       {/* Submit/Next Section Button */}
       <div className="mt-6 sm:mt-8 flex justify-center gap-3 px-3 sm:px-0">

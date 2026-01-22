@@ -47,15 +47,17 @@ export function saveStudentProgress(studentId: string, progress: Omit<StudentPro
   }
 
   try {
+    // Normalize studentId (email) to ensure consistency with server
+    const normalizedStudentId = studentId.toLowerCase().trim()
     const progressWithTimestamp = {
       ...progress,
       lastUpdated: new Date().toISOString(),
     }
-    const storageKey = `${STORAGE_KEY_PREFIX}${studentId}_${progress.testId}`
+    const storageKey = `${STORAGE_KEY_PREFIX}${normalizedStudentId}_${progress.testId}`
 
     console.log(`💾 Saving to localStorage key: ${storageKey}`)
     localStorage.setItem(storageKey, JSON.stringify(progressWithTimestamp))
-    console.log(`✅ Successfully saved progress for ${studentId}_${progress.testId}`)
+    console.log(`✅ Successfully saved progress for ${normalizedStudentId}_${progress.testId}`)
   } catch (error) {
     console.error("❌ Failed to save progress:", error)
   }
@@ -68,7 +70,9 @@ export function loadStudentProgress(studentIdWithTest: string): StudentProgress 
   }
 
   try {
-    const storageKey = `${STORAGE_KEY_PREFIX}${studentIdWithTest}`
+    // Normalize the studentId part (email) to ensure consistency with server
+    const normalizedKey = studentIdWithTest.toLowerCase().trim()
+    const storageKey = `${STORAGE_KEY_PREFIX}${normalizedKey}`
     console.log(`📖 Loading from localStorage key: ${storageKey}`)
 
     const stored = localStorage.getItem(storageKey)

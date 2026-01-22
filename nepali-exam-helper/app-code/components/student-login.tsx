@@ -90,7 +90,10 @@ export function StudentLogin({ onLogin }: StudentLoginProps) {
       setResendTimer(60)
       setCanResend(false)
     } catch {
-      setError("Network error. Please try again.")
+      const isOffline = typeof navigator !== 'undefined' && !navigator.onLine
+      setError(language === "english"
+        ? (isOffline ? "You appear to be offline. Please check your internet connection." : "Connection failed. Please check your internet and try again.")
+        : (isOffline ? "तपाईं अफलाइन हुनुहुन्छ। कृपया इन्टरनेट जडान जाँच गर्नुहोस्।" : "जडान असफल। कृपया इन्टरनेट जाँच गरेर पुन: प्रयास गर्नुहोस्।"))
     } finally {
       setIsLoading(false)
     }
@@ -129,7 +132,10 @@ export function StudentLogin({ onLogin }: StudentLoginProps) {
         onLogin(data.email, true, data.email)
       }, 500)
     } catch {
-      setError("Network error. Please try again.")
+      const isOffline = typeof navigator !== 'undefined' && !navigator.onLine
+      setError(language === "english"
+        ? (isOffline ? "You appear to be offline. Please check your internet connection." : "Connection failed. Please check your internet and try again.")
+        : (isOffline ? "तपाईं अफलाइन हुनुहुन्छ। कृपया इन्टरनेट जडान जाँच गर्नुहोस्।" : "जडान असफल। कृपया इन्टरनेट जाँच गरेर पुन: प्रयास गर्नुहोस्।"))
       setStep("otp")
     } finally {
       setIsLoading(false)
@@ -190,6 +196,13 @@ export function StudentLogin({ onLogin }: StudentLoginProps) {
       <Card className="w-full max-w-sm sm:max-w-md bg-white/90 backdrop-blur-sm shadow-2xl border border-white/20 relative z-10">
         <CardHeader className="text-center bg-gradient-to-r from-yellow-500 to-amber-500 text-white rounded-t-lg p-4 sm:p-6">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 mb-2">
+            <a href="https://looma.website" target="_blank" rel="noopener noreferrer" className="flex-shrink-0 sm:hidden">
+              <img
+                src="/Looma Logo Square.png"
+                alt="Looma"
+                className="h-10 w-10 rounded-lg shadow-md hover:shadow-lg transition-shadow bg-white/10"
+              />
+            </a>
             <CardTitle className="text-xl sm:text-2xl font-bold">
               {language === "english" ? "SEE Exam Practice" : "SEE परीक्षा अभ्यास"}
             </CardTitle>
@@ -240,7 +253,7 @@ export function StudentLogin({ onLogin }: StudentLoginProps) {
                 {language === "english" ? "Continue without signing in" : "साइन इन नगरी जारी राख्नुहोस्"}
               </Button>
               <p className="text-xs text-center text-slate-400 -mt-1">
-                {language === "english" ? "Progress saved only in this browser" : "प्रगति यस ब्राउजरमा मात्र सुरक्षित"}
+                {language === "english" ? "Sign in above to sync across devices" : "सबै डिभाइसहरूमा सिंक गर्न माथि साइन इन गर्नुहोस्"}
               </p>
             </div>
           )}

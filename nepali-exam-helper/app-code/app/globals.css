@@ -660,6 +660,22 @@
   animation: blob 7s infinite;
 }
 
+/* Disable blob animations on mobile for performance */
+@media (max-width: 768px) {
+  .animate-blob {
+    animation: none !important;
+    opacity: 0.3 !important;
+    /* Reduce opacity for lighter rendering */
+  }
+}
+
+/* Respect user's preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-blob {
+    animation: none !important;
+  }
+}
+
 .animation-delay-2000 {
   animation-delay: 2s;
 }
@@ -736,4 +752,25 @@ div.text-white,
 span.text-white,
 .text-white {
   color: white !important;
+}
+
+/* Mobile scroll performance optimizations */
+/* CSS containment limits reflow/repaint scope */
+@media (max-width: 768px) {
+
+  /* Contain layout for question cards to prevent full-page reflows */
+  .rounded-lg.border {
+    contain: layout style;
+  }
+
+  /* Reduce transition duration on mobile for snappier feel */
+  .transition-all,
+  .transition-transform {
+    transition-duration: 100ms !important;
+  }
+
+  /* Disable hover scale effects on mobile (touch doesn't trigger hover well anyway) */
+  .hover\:scale-\[1\.02\]:hover {
+    transform: none !important;
+  }
 }

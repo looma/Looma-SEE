@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { LanguageProvider } from "@/lib/language-context"
 import { VersionIndicator } from "@/components/version-indicator"
 import { LanguageSwitch } from "@/components/language-switch"
+import { OfflineBanner } from "@/components/offline-banner"
 import Image from "next/image"
 import "./globals.css"
 
@@ -34,6 +35,8 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <LanguageProvider>
+            {/* Offline Warning Banner */}
+            <OfflineBanner />
             {/* Looma Logo - Fixed top left */}
             <a
               href="https://looma.website"
