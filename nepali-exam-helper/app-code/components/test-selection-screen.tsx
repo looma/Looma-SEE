@@ -341,13 +341,19 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
           <CardContent className="text-center p-4 sm:p-8">
             <p className="text-slate-700 mb-4 text-sm sm:text-base">
               {error
-                ? (language === "english" ? `Error: ${error}` : `त्रुटि: ${error}`)
-                : (language === "english" ? "No practice tests found in the database." : "डाटाबेसमा कुनै अभ्यास परीक्षा फेला परेन।")}
+                ? (language === "english"
+                  ? "Unable to load tests. Please check your internet connection and try again."
+                  : "परीक्षाहरू लोड गर्न असमर्थ। कृपया आफ्नो इन्टरनेट जडान जाँच गर्नुहोस् र पुन: प्रयास गर्नुहोस्।")
+                : (language === "english" ? "No practice tests found. Please try again later." : "कुनै अभ्यास परीक्षा फेला परेन। कृपया पछि पुन: प्रयास गर्नुहोस्।")}
             </p>
-            <p className="text-xs sm:text-sm text-slate-600 bg-slate-100 p-3 rounded-lg">
-              {language === "english" ? "Add test data using:" : "परीक्षा डाटा थप्नुहोस्:"}{" "}
-              <code className="bg-slate-200 px-2 py-1 rounded text-xs">node scripts/import-all-tests.mjs</code>
-            </p>
+            <Button
+              onClick={() => window.location.reload()}
+              variant="outline"
+              size="sm"
+              className="text-blue-700 hover:text-blue-800 bg-blue-50 border-blue-300 hover:bg-blue-100 transition-all duration-200 shadow-sm hover:shadow-md font-medium min-h-[44px]"
+            >
+              {language === "english" ? "Retry" : "पुन: प्रयास गर्नुहोस्"}
+            </Button>
             {onSwitchUser && (
               <div className="mt-4 pt-4 border-t border-slate-200">
                 <Button

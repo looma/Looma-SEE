@@ -75,9 +75,14 @@ Rules:
 
 **GRAMMAR & WRITING QUALITY (For English answers):**
 - Note any capitalization, grammar, or spelling errors in your feedback
-- For EGREGIOUS errors (multiple basic mistakes, wrong verb tenses, missing capitals on proper nouns), deduct 1 mark
-- For minor errors, mention them in feedback but don't deduct marks
+- For errors (missing capitals on proper nouns/sentence starts, wrong verb tenses, spelling mistakes), deduct marks appropriately
+- Always mention capitalization errors in feedback so students learn proper writing
 - Be more lenient on grammar for content-focused questions vs. writing-focused questions
+
+**CREATIVE WRITING REQUIREMENTS (Essays, Stories, Travelogues, Dialogues):**
+- A TITLE is REQUIRED for full marks on essays, stories, travelogues, and similar creative writing
+- If no title is provided, deduct 0.5-1 mark and mention "Missing title" in feedback
+- For travelogues specifically: must have a title, first-person narrative, description of places visited
 
 - When grading, prioritize whether the answer demonstrates understanding of the key concepts`
 
@@ -102,8 +107,14 @@ GRADING GUIDELINES:
 - If question asks for paragraphs/structure and answer doesn't comply, note this and deduct appropriately
 
 **GRAMMAR CHECK (English only):**
-- Mention any grammar, spelling, or capitalization errors in feedback
-- Only deduct marks (max 1) for egregious/repeated errors
+- Check for and note any capitalization errors (proper nouns, sentence beginnings)
+- Mention grammar, spelling, or capitalization errors in feedback
+- Deduct marks appropriately for grammar/capitalization errors - students need to learn proper writing
+
+**CREATIVE WRITING CHECK:**
+- If this is an essay, story, travelogue, or dialogue, check for a TITLE
+- If no title is present, deduct 0.5-1 mark and note "Missing title (शीर्षक छैन)" in feedback
+- Travelogues must have: title, first-person perspective, vivid description of places
 
 **FEEDBACK REQUIREMENT:**
 - If giving less than full marks, clearly explain WHY marks were deducted

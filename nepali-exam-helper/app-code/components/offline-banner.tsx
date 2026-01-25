@@ -27,13 +27,15 @@ export function OfflineBanner() {
     if (!isOffline) return null
 
     return (
-        <div className="fixed top-0 left-0 right-0 z-[100] bg-amber-500 text-white px-4 py-2 text-center text-sm font-medium flex items-center justify-center gap-2 shadow-md">
-            <WifiOff className="h-4 w-4" />
-            <span>
-                {language === "english"
-                    ? "You appear to be offline — your progress is being saved locally only"
-                    : "तपाईं अफलाइन हुनुहुन्छ — तपाईंको प्रगति स्थानीय रूपमा मात्र सुरक्षित हुँदैछ"}
-            </span>
+        <div className="fixed top-0 left-0 right-0 z-[100] bg-red-600 text-white px-4 py-3 text-center shadow-lg animate-pulse">
+            <div className="flex items-center justify-center gap-2 text-sm sm:text-base font-medium">
+                <WifiOff className="h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
+                <span>
+                    {language === "english"
+                        ? "You are offline — some features may not work. Please check your internet connection."
+                        : "तपाईं अफलाइन हुनुहुन्छ — केही सुविधाहरू काम नगर्न सक्छ। कृपया आफ्नो इन्टरनेट जडान जाँच गर्नुहोस्।"}
+                </span>
+            </div>
         </div>
     )
 }

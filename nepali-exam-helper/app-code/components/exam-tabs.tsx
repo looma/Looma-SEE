@@ -33,6 +33,11 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
   const [showSubmitWarning, setShowSubmitWarning] = useState(false)
   const [currentTab, setCurrentTab] = useState("")
 
+  // Localized error message for grading failures
+  const getGradingErrorMessage = () => language === 'english'
+    ? 'Could not grade this answer. Please check your internet connection.'
+    : 'उत्तर ग्रेड गर्न सकिएन। कृपया आफ्नो इन्टरनेट जडान जाँच गर्नुहोस्।'
+
 
   const getFirstAvailableSection = () => {
     if (!questions) return "groupA"
@@ -743,7 +748,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                                 .catch((error) => ({
                                   id: `${question.id}_${sectionId}_${subQ.idEnglish || subQ.id}`,
                                   score: 0,
-                                  feedback: `AI grading failed: ${error.message || 'Unknown error'}`,
+                                  feedback: getGradingErrorMessage(),
                                   question: subQ.questionEnglish,
                                   studentAnswer: userSubAnswer,
                                   group: "English",
@@ -808,7 +813,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                         .catch((error) => ({
                           id: `${question.id}_${subQ.idEnglish || subQ.id}`,
                           score: 0,
-                          feedback: `AI grading failed: ${error.message || 'Unknown error'}`,
+                          feedback: getGradingErrorMessage(),
                           question: subQ.questionEnglish,
                           studentAnswer: userSubAnswer,
                           group: "English",
@@ -857,7 +862,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                     .catch((error) => ({
                       id: (question as any).id,
                       score: 0,
-                      feedback: `AI grading failed: ${error.message || 'Unknown error'}`,
+                      feedback: getGradingErrorMessage(),
                       question: (question as any).titleEnglish || (question as any).title,
                       studentAnswer: userWritingAnswer,
                       group: "English",
@@ -958,7 +963,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                             .catch((error) => ({
                               id: `${(question as any).id}_${gapId}`,
                               score: 0,
-                              feedback: `AI grading failed: ${error.message || 'Unknown error'}`,
+                              feedback: getGradingErrorMessage(),
                               question: `Fill in the blank (${gapId})`,
                               studentAnswer: gapAnswer,
                               group: "English",
@@ -1076,7 +1081,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                   .catch((error) => ({
                     id: question.id,
                     score: 0,
-                    feedback: `AI grading failed (AI ग्रेडिङ असफल भयो): ${error.message || 'Unknown error'}`,
+                    feedback: getGradingErrorMessage(),
                     question: question.questionNepali || question.questionEnglish,
                     questionEnglish: question.questionEnglish || question.questionNepali,
                     questionNepali: question.questionNepali || question.questionEnglish,
@@ -1390,7 +1395,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                         type: question.type,
                         score: 0,
                         maxScore: marks,
-                        feedback: "AI grading failed (AI ग्रेडिङ असफल भयो)",
+                        feedback: getGradingErrorMessage(),
                         question: questionTitle,
                         questionEnglish: questionTitleEnglish,
                         questionNepali: questionTitleNepali,
@@ -1483,7 +1488,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                       type: question.type,
                       score: 0,
                       maxScore: marks,
-                      feedback: "AI grading failed (AI ग्रेडिङ असफल भयो)",
+                      feedback: getGradingErrorMessage(),
                       question: selectedOptionTitle,
                       studentAnswer: response,
                     }))
@@ -1542,7 +1547,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                       type: question.type,
                       score: 0,
                       maxScore: marks,
-                      feedback: "AI grading failed (AI ग्रेडिङ असफल भयो)",
+                      feedback: getGradingErrorMessage(),
                       question: `${selectedTopic} (${language === 'nepali' ? 'निबन्ध' : 'Essay'})`,
                       studentAnswer: response,
                     }))
@@ -1637,7 +1642,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                       type: question.type,
                       score: 0,
                       maxScore: marks,
-                      feedback: "AI ग्रेडिङ असफल भयो (AI grading failed)",
+                      feedback: getGradingErrorMessage(),
                       question: questionTitle,
                       questionEnglish: questionTitleEnglish,
                       questionNepali: questionTitleNepali,
