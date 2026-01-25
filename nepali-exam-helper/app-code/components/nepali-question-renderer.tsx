@@ -484,13 +484,20 @@ function GrammarChoiceQuestion({ question, answer, onAnswerChange, questionIndex
             >
                 {question.subQuestions?.map((sub) => {
                     const subId = sub.idEnglish || sub.idNepali || sub.id || ''
-                    const subText = getText(language, sub.titleNepali, sub.titleEnglish) || getText(language, sub.questionNepali, sub.questionEnglish) || sub.title || ''
+                    const subTitle = getText(language, sub.titleNepali, sub.titleEnglish) || sub.title || ''
+                    const subSentence = getText(language, sub.questionNepali, sub.questionEnglish) || ''
                     return (
                         <div key={subId} className={`p-4 rounded-lg border ${currentAnswer.selectedOption === subId ? 'bg-amber-50 border-amber-300' : 'bg-slate-50 border-slate-200'}`}>
                             <div className="flex items-start gap-3">
                                 <RadioGroupItem value={subId} id={`q${qNum}-choice-${subId}`} className="mt-1" />
                                 <Label htmlFor={`q${qNum}-choice-${subId}`} className="cursor-pointer flex-1">
-                                    <span className="font-medium">({getText(language, sub.idNepali, sub.idEnglish) || sub.id})</span> {subText}
+                                    <span className="font-medium">({getText(language, sub.idNepali, sub.idEnglish) || sub.id})</span> {subTitle}
+                                    {/* Show the sentence to transform if it exists */}
+                                    {subSentence && (
+                                        <div className="mt-2 p-3 bg-white rounded border border-slate-200 text-slate-700">
+                                            {subSentence}
+                                        </div>
+                                    )}
                                 </Label>
                             </div>
                         </div>
