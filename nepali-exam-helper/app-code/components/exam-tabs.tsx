@@ -28,6 +28,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
   const { language } = useLanguage()
   const [answers, setAnswers] = useState<Record<string, any>>({})
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submissionError, setSubmissionError] = useState<string | null>(null)
   const [lastSaved, setLastSaved] = useState<Date | null>(null)
   const [syncStatus, setSyncStatus] = useState<'synced' | 'pending' | 'failed' | null>(null)
   const [showSubmitWarning, setShowSubmitWarning] = useState(false)
@@ -450,6 +451,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
 
   const submitTest = async () => {
     setIsSubmitting(true)
+    setSubmissionError(null)
     try {
       console.log("🚀 Starting test submission with AI grading...")
 
@@ -525,18 +527,18 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                       : 1
                     const score = correctCount * marksPerMatch
                     const feedback = correctCount === totalMatches
-                      ? `Perfect! All ${totalMatches} matches are correct.`
+                      ? (language === 'english' ? `Perfect! All ${totalMatches} matches are correct.` : `उत्कृष्ट! सबै ${totalMatches} मिलान सही छन्।`)
                       : correctCount > 0
-                        ? `Partially correct. ${correctCount} out of ${totalMatches} matches are correct.`
-                        : `Incorrect. None of the matches are correct.`
+                        ? (language === 'english' ? `Partially correct. ${correctCount} out of ${totalMatches} matches are correct.` : `आंशिक रूपमा सही। ${totalMatches} मध्ये ${correctCount} मिलान सही छन्।`)
+                        : (language === 'english' ? `Incorrect. None of the matches are correct.` : `गलत। कुनै पनि मिलान सही छैन।`)
 
-                    console.log(`🎯 Auto-grading matching question: ${correctCount}/${totalMatches} correct`)
+                    console.log(`Auto-grading matching question: ${correctCount}/${totalMatches} correct`)
 
                     gradingPromises.push(Promise.resolve({
                       id: `${(question as any).id}_${sectionId}`,
                       score: score,
                       feedback: feedback,
-                      question: section.title || 'Matching question',
+                      question: section.title || (language === 'english' ? 'Matching question' : 'मिलान प्रश्न'),
                       studentAnswer: JSON.stringify(userMatches),
                       group: "English",
                       questionId: (question as any).id,
@@ -582,10 +584,10 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                       : 1
                     const score = correctCount * marksPerItem
                     const feedback = correctCount === totalItems
-                      ? `Perfect! All ${totalItems} items are in the correct order.`
+                      ? (language === 'english' ? `Perfect! All ${totalItems} items are in the correct order.` : `उत्कृष्ट! सबै ${totalItems} वस्तुहरू सही क्रममा छन्।`)
                       : correctCount > 0
-                        ? `Partially correct. ${correctCount} out of ${totalItems} items are in the correct position.`
-                        : `Incorrect. None of the items are in the correct position.`
+                        ? (language === 'english' ? `Partially correct. ${correctCount} out of ${totalItems} items are in the correct position.` : `आंशिक रूपमा सही। ${totalItems} मध्ये ${correctCount} वस्तुहरू सही स्थानमा छन्।`)
+                        : (language === 'english' ? `Incorrect. None of the items are in the correct position.` : `गलत। कुनै पनि वस्तु सही स्थानमा छैन।`)
 
                     // Format user answer for display
                     const userAnswerDisplay = userOrder.map((id, idx) => {
@@ -597,7 +599,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                       id: `${(question as any).id}_${sectionId}`,
                       score: score,
                       feedback: feedback,
-                      question: section.title || 'Ordering question',
+                      question: section.title || (language === 'english' ? 'Ordering question' : 'क्रम मिलाउने प्रश्न'),
                       studentAnswer: userAnswerDisplay || (language === 'english' ? 'No answer provided' : 'कुनै उत्तर प्रदान गरिएको छैन'),
                       group: "English",
                       questionId: (question as any).id,
@@ -624,8 +626,8 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                           const isCorrect = correctAnswer && typeof correctAnswer === 'string' && userSubAnswer.toUpperCase() === correctAnswer.toUpperCase()
                           const score = isCorrect ? subQuestionMarks : 0
                           const feedback = isCorrect
-                            ? "Correct! Well done."
-                            : `Incorrect. The correct answer is ${correctAnswer}.`
+                            ? (language === 'english' ? "Correct! Well done." : "सही! राम्रो भयो।")
+                            : (language === 'english' ? `Incorrect. The correct answer is ${correctAnswer}.` : `गलत। सही उत्तर ${correctAnswer} हो।`)
 
                           console.log(`✅ Auto-graded result: ${isCorrect ? 'CORRECT' : 'INCORRECT'} - ${feedback}`)
 
@@ -661,8 +663,8 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                           const isCorrect = correctAnswer && typeof correctAnswer === 'string' && (exactMatch || containsMatch)
                           const score = isCorrect ? subQuestionMarks : 0
                           const feedback = isCorrect
-                            ? "Correct! Well done."
-                            : `Incorrect. The correct answer is ${correctAnswer}.`
+                            ? (language === 'english' ? "Correct! Well done." : "सही! राम्रो भयो।")
+                            : (language === 'english' ? `Incorrect. The correct answer is ${correctAnswer}.` : `गलत। सही उत्तर ${correctAnswer} हो।`)
 
                           console.log(`✅ Auto-graded MCQ result: ${isCorrect ? 'CORRECT' : 'INCORRECT'} - "${userSubAnswer}" vs "${correctAnswer}"${containsMatch && !exactMatch ? ' (contains match)' : ''}`)
 
@@ -698,7 +700,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                             gradingPromises.push(Promise.resolve({
                               id: `${question.id}_${sectionId}_${subQ.idEnglish || subQ.id}`,
                               score: subQuestionMarks,
-                              feedback: "Correct! Well done.",
+                              feedback: language === 'english' ? "Correct! Well done." : "सही! राम्रो भयो।",
                               question: subQ.questionEnglish,
                               studentAnswer: userSubAnswer,
                               group: "English",
@@ -737,7 +739,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                                 .then((result) => ({
                                   id: `${question.id}_${sectionId}_${subQ.idEnglish || subQ.id}`,
                                   score: result.score || 0,
-                                  feedback: result.feedback || "No feedback available",
+                                  feedback: result.feedback || (language === 'english' ? "No feedback available" : "प्रतिक्रिया उपलब्ध छैन"),
                                   question: subQ.questionEnglish,
                                   studentAnswer: userSubAnswer,
                                   group: "English",
@@ -803,7 +805,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                         .then((result) => ({
                           id: `${question.id}_${subQ.idEnglish || subQ.id}`,
                           score: result.score || 0,
-                          feedback: result.feedback || "No feedback available",
+                          feedback: result.feedback || (language === 'english' ? "No feedback available" : "प्रतिक्रिया उपलब्ध छैन"),
                           question: subQ.questionEnglish,
                           studentAnswer: userSubAnswer,
                           group: "English",
@@ -853,7 +855,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                     .then((result) => ({
                       id: (question as any).id,
                       score: result.score || 0,
-                      feedback: result.feedback || "No feedback available",
+                      feedback: result.feedback || (language === 'english' ? "No feedback available" : "प्रतिक्रिया उपलब्ध छैन"),
                       question: (question as any).titleEnglish || (question as any).title,
                       studentAnswer: userWritingAnswer,
                       group: "English",
@@ -915,8 +917,8 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                         // Auto-grade exact matches
                         const score = gapMarks
                         const feedback = isVariantMatch
-                          ? "Correct! (British/American English variant accepted)"
-                          : "Correct! Well done."
+                          ? (language === 'english' ? "Correct! (British/American English variant accepted)" : "सही! (ब्रिटिश/अमेरिकी अंग्रेजी भिन्नता स्वीकृत)")
+                          : (language === 'english' ? "Correct! Well done." : "सही! राम्रो भयो।")
 
                         console.log(`🎯 Auto-grading cloze test gap ${gapId}: ${isVariantMatch ? 'VARIANT' : 'EXACT'} match`)
 
@@ -953,7 +955,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                             .then((result) => ({
                               id: `${(question as any).id}_${gapId}`,
                               score: result.score || 0,
-                              feedback: result.feedback || "No feedback available",
+                              feedback: result.feedback || (language === 'english' ? "No feedback available" : "प्रतिक्रिया उपलब्ध छैन"),
                               question: `Fill in the blank (${gapId})`,
                               studentAnswer: gapAnswer,
                               group: "English",
@@ -1070,7 +1072,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                   .then((result) => ({
                     id: question.id,
                     score: result.score || 0,
-                    feedback: result.feedback || "No feedback available (प्रतिक्रिया उपलब्ध छैन)",
+                    feedback: result.feedback || (language === 'english' ? "No feedback available" : "प्रतिक्रिया उपलब्ध छैन"),
                     question: question.questionNepali || question.questionEnglish,
                     questionEnglish: question.questionEnglish || question.questionNepali,
                     questionNepali: question.questionNepali || question.questionEnglish,
@@ -1201,13 +1203,20 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                 })
               }
 
+              // Count how many are correct (for display purposes)
+              const totalItems = columns.length
+              const correctCount = Math.round(score / pointsPerMatch)
+
               nepaliFeedback.push({
                 id: questionKey,
                 type: question.type,
                 score: Math.round(score * 10) / 10,
                 maxScore: maxScore,
-                feedback: score >= maxScore ? "सबै मिल्यो! (All correct!)" :
-                  score > 0 ? `${Math.round(score)}/${maxScore} सही (correct)` : "केही मिलेन (None correct)",
+                feedback: correctCount >= totalItems
+                  ? (language === 'english' ? `Perfect! All ${totalItems} matches are correct.` : `उत्कृष्ट! सबै ${totalItems} मिलान सही छन्।`)
+                  : correctCount > 0
+                    ? (language === 'english' ? `Partially correct. ${correctCount} out of ${totalItems} matches are correct.` : `आंशिक रूपमा सही। ${totalItems} मध्ये ${correctCount} मिलान सही छन्।`)
+                    : (language === 'english' ? `Incorrect. None of the matches are correct.` : `गलत। कुनै पनि मिलान सही छैन।`),
                 question: questionTitle,
                 questionEnglish: questionTitleEnglish,
                 questionNepali: questionTitleNepali,
@@ -1243,8 +1252,11 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                 type: question.type,
                 score: Math.round(score * 10) / 10,
                 maxScore: maxScore,
-                feedback: score >= maxScore ? "सबै सही! (All correct!)" :
-                  score > 0 ? `${Math.round(score)}/${maxScore} सही (correct)` : "केही सही छैन (None correct)",
+                feedback: score >= maxScore
+                  ? (language === 'english' ? "All correct!" : "सबै सही!")
+                  : score > 0
+                    ? (language === 'english' ? `${Math.round(score)}/${maxScore} correct` : `${Math.round(score)}/${maxScore} सही`)
+                    : (language === 'english' ? "None correct" : "केही सही छैन"),
                 question: questionTitle,
                 questionEnglish: questionTitleEnglish,
                 questionNepali: questionTitleNepali,
@@ -1281,8 +1293,11 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                   type: question.type,
                   score: Math.round(score * 10) / 10,
                   maxScore: maxScore,
-                  feedback: score >= maxScore ? "सबै सही! (All correct!)" :
-                    score > 0 ? `${Math.round(score)}/${maxScore} सही (correct)` : "केही सही छैन (None correct)",
+                  feedback: score >= maxScore
+                    ? (language === 'english' ? "All correct!" : "सबै सही!")
+                    : score > 0
+                      ? (language === 'english' ? `${Math.round(score)}/${maxScore} correct` : `${Math.round(score)}/${maxScore} सही`)
+                      : (language === 'english' ? "None correct" : "केही सही छैन"),
                   question: questionTitle,
                   questionEnglish: questionTitleEnglish,
                   questionNepali: questionTitleNepali,
@@ -1340,9 +1355,13 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                   type: question.type,
                   score: calculatedScore,
                   maxScore: maxScore,
-                  feedback: totalItems === 0 ? "केही सही छैन (None correct)" :
-                    totalScore >= totalItems ? "सबै सही! (All correct!)" :
-                      totalScore > 0 ? `${totalScore}/${totalItems} सही (correct)` : "केही सही छैन (None correct)",
+                  feedback: totalItems === 0
+                    ? (language === 'english' ? "None correct" : "केही सही छैन")
+                    : totalScore >= totalItems
+                      ? (language === 'english' ? "All correct!" : "सबै सही!")
+                      : totalScore > 0
+                        ? (language === 'english' ? `${totalScore}/${totalItems} correct` : `${totalScore}/${totalItems} सही`)
+                        : (language === 'english' ? "None correct" : "केही सही छैन"),
                   question: questionTitle,
                   questionEnglish: questionTitleEnglish,
                   questionNepali: questionTitleNepali,
@@ -1384,7 +1403,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                         type: question.type,
                         score: result.score || 0,
                         maxScore: marks,
-                        feedback: result.feedback || "No feedback available (प्रतिक्रिया उपलब्ध छैन)",
+                        feedback: result.feedback || (language === 'english' ? "No feedback available" : "प्रतिक्रिया उपलब्ध छैन"),
                         question: questionTitle,
                         questionEnglish: questionTitleEnglish,
                         questionNepali: questionTitleNepali,
@@ -1408,7 +1427,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                     type: question.type,
                     score: 0,
                     maxScore: marks,
-                    feedback: "No answer provided (कुनै उत्तर प्रदान गरिएको छैन)",
+                    feedback: language === 'english' ? "No answer provided" : "कुनै उत्तर प्रदान गरिएको छैन",
                     question: questionTitle,
                     questionEnglish: questionTitleEnglish,
                     questionNepali: questionTitleNepali,
@@ -1479,7 +1498,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                       type: question.type,
                       score: result.score || 0,
                       maxScore: marks,
-                      feedback: result.feedback || "No feedback available (प्रतिक्रिया उपलब्ध छैन)",
+                      feedback: result.feedback || (language === 'english' ? "No feedback available" : "प्रतिक्रिया उपलब्ध छैन"),
                       question: selectedOptionTitle,
                       studentAnswer: response,
                     }))
@@ -1538,7 +1557,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                       type: question.type,
                       score: result.score || 0,
                       maxScore: marks,
-                      feedback: result.feedback || "No feedback available (प्रतिक्रिया उपलब्ध छैन)",
+                      feedback: result.feedback || (language === 'english' ? "No feedback available" : "प्रतिक्रिया उपलब्ध छैन"),
                       question: `${selectedTopic} (${language === 'nepali' ? 'निबन्ध' : 'Essay'})`,
                       studentAnswer: response,
                     }))
@@ -1630,7 +1649,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                       type: question.type,
                       score: result.score || 0,
                       maxScore: marks,
-                      feedback: result.feedback || "प्रतिक्रिया उपलब्ध छैन (No feedback available)",
+                      feedback: result.feedback || (language === 'english' ? "No feedback available" : "प्रतिक्रिया उपलब्ध छैन"),
                       question: questionTitle,
                       questionEnglish: questionTitleEnglish,
                       questionNepali: questionTitleNepali,
@@ -1923,7 +1942,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                 .then((result) => ({
                   id: question.id,
                   score: result.score || 0,
-                  feedback: result.feedback || "No feedback available",
+                  feedback: result.feedback || (language === 'english' ? "No feedback available" : "प्रतिक्रिया उपलब्ध छैन"),
                   question: question.english || question.nepali,
                   studentAnswer: userAnswer,
                   group: "B",
@@ -1931,7 +1950,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                 .catch(() => ({
                   id: question.id,
                   score: 0,
-                  feedback: "AI grading failed",
+                  feedback: getGradingErrorMessage(),
                   question: question.english || question.nepali,
                   studentAnswer: userAnswer,
                   group: "B",
@@ -1969,7 +1988,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                 .then((result) => ({
                   id: question.id,
                   score: result.score || 0,
-                  feedback: result.feedback || "No feedback available",
+                  feedback: result.feedback || (language === 'english' ? "No feedback available" : "प्रतिक्रिया उपलब्ध छैन"),
                   question: question.english || question.nepali,
                   studentAnswer: userAnswer,
                   group: "C",
@@ -1977,7 +1996,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                 .catch(() => ({
                   id: question.id,
                   score: 0,
-                  feedback: "AI grading failed",
+                  feedback: getGradingErrorMessage(),
                   question: question.english || question.nepali,
                   studentAnswer: userAnswer,
                   group: "C",
@@ -2015,7 +2034,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                 .then((result) => ({
                   id: question.id,
                   score: result.score || 0,
-                  feedback: result.feedback || "No feedback available",
+                  feedback: result.feedback || (language === 'english' ? "No feedback available" : "प्रतिक्रिया उपलब्ध छैन"),
                   question: question.english || question.nepali,
                   studentAnswer: userAnswer,
                   group: "D",
@@ -2023,7 +2042,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                 .catch(() => ({
                   id: question.id,
                   score: 0,
-                  feedback: "AI grading failed",
+                  feedback: getGradingErrorMessage(),
                   question: question.english || question.nepali,
                   studentAnswer: userAnswer,
                   group: "D",
@@ -2107,7 +2126,16 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
       onShowResults(results)
     } catch (error) {
       console.error("❌ Submission failed:", error)
-      alert(`Failed to submit test: ${error instanceof Error ? error.message : 'Unknown error'}. Please try again.`)
+      const errorMessage = error instanceof Error ? error.message : 'Unknown error'
+      // Check if it's a network error
+      const isNetworkError = errorMessage.includes('fetch') || errorMessage.includes('network') || errorMessage.includes('Failed to fetch') || !navigator.onLine
+      setSubmissionError(isNetworkError
+        ? (language === 'english'
+          ? 'No internet connection. Please check your connection and try again.'
+          : 'इन्टरनेट जडान छैन। कृपया आफ्नो जडान जाँच गर्नुहोस् र पुन: प्रयास गर्नुहोस्।')
+        : (language === 'english'
+          ? `Submission failed: ${errorMessage}. Please try again.`
+          : `पेश गर्न असफल: ${errorMessage}। कृपया पुन: प्रयास गर्नुहोस्।`))
     } finally {
       setIsSubmitting(false)
       setShowSubmitWarning(false)
@@ -2185,6 +2213,44 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
           </p>
           <div className="mt-4 text-xs text-slate-500">
             {language === "english" ? "This may take a few moments" : "यसमा केही क्षण लाग्न सक्छ"}
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  // Show submission error screen
+  if (submissionError) {
+    return (
+      <div className="fixed inset-0 bg-white/90 backdrop-blur-sm z-50 flex items-center justify-center">
+        <div className="bg-white rounded-xl p-8 shadow-lg border border-red-200 text-center max-w-md mx-4">
+          <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg className="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+            </svg>
+          </div>
+          <h3 className="text-lg font-semibold text-slate-800 mb-2">
+            {language === "english" ? "Submission Failed" : "पेश गर्न असफल"}
+          </h3>
+          <p className="text-slate-600 text-sm mb-6">
+            {submissionError}
+          </p>
+          <div className="flex gap-3">
+            <button
+              onClick={() => setSubmissionError(null)}
+              className="flex-1 px-4 py-2 border border-slate-300 rounded-lg text-slate-700 hover:bg-slate-50 transition-colors"
+            >
+              {language === "english" ? "Go Back" : "पछाडि जानुहोस्"}
+            </button>
+            <button
+              onClick={() => {
+                setSubmissionError(null)
+                submitTest()
+              }}
+              className="flex-1 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+            >
+              {language === "english" ? "Try Again" : "पुन: प्रयास गर्नुहोस्"}
+            </button>
           </div>
         </div>
       </div>

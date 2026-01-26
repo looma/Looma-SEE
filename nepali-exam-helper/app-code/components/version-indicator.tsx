@@ -15,7 +15,7 @@ export function VersionIndicator() {
           color: '#ffffff !important'
         } as React.CSSProperties}
       >
-        <span style={{ color: '#ffffff' }}>v1.5.2</span>
+        <span style={{ color: '#ffffff' }}>v1.5.3</span>
       </div>
       <a
         href="https://forms.gle/fCkdAsDsoDCfcptx7"
