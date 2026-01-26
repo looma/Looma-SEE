@@ -280,13 +280,8 @@ export function ResultsCard({
                       {userAnswer ? (
                         <div className="space-y-1">
                           <p className="text-slate-700 font-medium">
-                            ({userAnswer}) <MathText text={userOption?.english || ""} />
+                            ({userAnswer}) <MathText text={language === 'english' ? (userOption?.english || "") : (userOption?.nepali || userOption?.english || "")} />
                           </p>
-                          {userOption?.nepali && userOption.nepali !== userOption.english && (
-                            <p className="text-slate-700">
-                              <MathText text={cleanNepaliText(userOption.nepali)} />
-                            </p>
-                          )}
                         </div>
                       ) : (
                         <p className="text-slate-500 italic">{language === 'english' ? 'No answer provided' : 'कुनै उत्तर प्रदान गरिएको छैन'}</p>
@@ -299,13 +294,8 @@ export function ResultsCard({
                         <p className="font-semibold text-blue-800 mb-2">{language === 'english' ? 'Correct Answer:' : 'सही उत्तर:'}</p>
                         <div className="space-y-1">
                           <p className="text-blue-700 font-medium">
-                            ({question.correctAnswer}) <MathText text={correctOption?.english || ""} />
+                            ({question.correctAnswer}) <MathText text={language === 'english' ? (correctOption?.english || "") : (correctOption?.nepali || correctOption?.english || "")} />
                           </p>
-                          {correctOption?.nepali && correctOption.nepali !== correctOption.english && (
-                            <p className="text-blue-700">
-                              <MathText text={cleanNepaliText(correctOption.nepali)} />
-                            </p>
-                          )}
                         </div>
                       </div>
                     )}
