@@ -204,15 +204,6 @@ export function SocialStudiesGroupRenderer({
 
                         </div>
                         <div className="flex items-center gap-3">
-                            <Button
-                                variant="secondary"
-                                size="sm"
-                                onClick={() => setShowExplanations(!showExplanations)}
-                                className="bg-white/20 text-white border-white/30 hover:bg-white/30"
-                            >
-                                {showExplanations ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
-                                <span className="ml-1 hidden sm:inline">{showExplanations ? uiText.hide[lang] : uiText.help[lang]}</span>
-                            </Button>
                             <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
                                 {answeredCount}/{group.questions.length}
                             </Badge>
@@ -294,9 +285,7 @@ export function SocialStudiesGroupRenderer({
                                     rows={typeInfo.rows}
                                 />
 
-                                <div className="flex justify-between items-center mt-2 text-xs text-slate-500">
-                                    <span>{getHintText()}</span>
-                                </div>
+
 
                                 {renderExplanation(question)}
                             </CardContent>

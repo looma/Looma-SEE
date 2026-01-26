@@ -109,19 +109,6 @@ export function GroupA({ questions, answers, onAnswerChange, progress }: GroupAP
               </p>
             </div>
             <div className="flex items-center gap-3">
-              <Button
-                variant="secondary"
-                size="sm"
-                onClick={() => setShowExplanations(!showExplanations)}
-                className="bg-white/20 text-white border-white/30 hover:bg-white/30"
-              >
-                {showExplanations ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
-                <span className="ml-1 hidden sm:inline">
-                  {showExplanations
-                    ? (language === "english" ? "Hide" : "लुकाउनुहोस्")
-                    : (language === "english" ? "Show" : "देखाउनुहोस्")} {language === "english" ? "Help" : "सहायता"}
-                </span>
-              </Button>
               <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
                 {answeredCount}/{questions.length}
               </Badge>

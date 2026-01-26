@@ -967,15 +967,6 @@ export function NepaliQuestionRenderer(props: NepaliQuestionRendererProps) {
                         </div>
                     </div>
                     <div className="flex items-center gap-2 ml-3 shrink-0">
-                        {hasHelp && (
-                            <button
-                                onClick={() => setShowExplanation(!showExplanation)}
-                                className="flex items-center gap-1 text-xs px-2 py-1 rounded bg-white/20 text-white hover:bg-white/30 transition-colors"
-                            >
-                                {showExplanation ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
-                                <span className="hidden sm:inline">{showExplanation ? getUIText(props.language, 'hide') : getUIText(props.language, 'help')}</span>
-                            </button>
-                        )}
                         <Badge variant="secondary" className="bg-white/20 text-white">
                             {(question.marksEnglish || question.marks)} {(question.marksEnglish || question.marks) === 1 ? getUIText(props.language, 'mark') : getUIText(props.language, 'marks')}
                         </Badge>

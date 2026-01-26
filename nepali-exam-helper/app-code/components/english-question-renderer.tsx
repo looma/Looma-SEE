@@ -1056,15 +1056,6 @@ export function EnglishQuestionRenderer({
             </div>
           </div>
           <div className="flex items-center gap-2">
-            <Button
-              variant="secondary"
-              size="sm"
-              onClick={() => setShowExplanations(!showExplanations)}
-              className="bg-white/20 text-white border-white/30 hover:bg-white/30"
-            >
-              {showExplanations ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
-              <span className="ml-1 hidden sm:inline">{showExplanations ? uiText.hideHelp : uiText.showHelp}</span>
-            </Button>
             <Badge variant="secondary" className="bg-white/20 text-white border-white/30 whitespace-nowrap">
               {getQuestionMarks(question)} {uiText.marks}
             </Badge>

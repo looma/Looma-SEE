@@ -53,21 +53,7 @@ export function MathQuestionRenderer({
                                     {language === "english" ? "Question" : "प्रश्न"} {displayQNum}
                                 </CardTitle>
                                 <div className="flex items-center gap-2">
-                                    {showExplanations && (
-                                        <Button
-                                            variant="secondary"
-                                            size="sm"
-                                            onClick={() => toggleQuestionHelp(qNum)}
-                                            className="bg-white/20 text-white border-white/30 hover:bg-white/30"
-                                        >
-                                            {showHelpForQuestion[qNum] ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
-                                            <span className="ml-1 hidden sm:inline">
-                                                {showHelpForQuestion[qNum]
-                                                    ? (language === "english" ? "Hide" : "लुकाउनुहोस्")
-                                                    : (language === "english" ? "Show" : "देखाउनुहोस्")} {language === "english" ? "Help" : "सहायता"}
-                                            </span>
-                                        </Button>
-                                    )}
+
                                     <Badge variant="secondary" className="bg-white/20 text-white">
                                         {question.sub_questions.length} {language === "english" ? "part" : "भाग"}{question.sub_questions.length > 1 ? (language === "english" ? "s" : "हरू") : ""}
                                     </Badge>
@@ -135,22 +121,6 @@ export function MathQuestionRenderer({
                                                 className="min-h-[80px] mt-2"
                                             />
 
-                                            {/* Explanation content (shows when help is toggled on) */}
-                                            {isHelpVisible && (
-                                                <div className="mt-2 bg-amber-50 border-l-4 border-amber-500 p-3 rounded-r-lg">
-                                                    <div className="flex items-start gap-2">
-                                                        <Lightbulb className="h-5 w-5 text-amber-600 mt-0.5 flex-shrink-0" />
-                                                        <div>
-                                                            <p className="font-semibold text-amber-800 mb-1">
-                                                                {language === "english" ? "Answer" : "उत्तर"}: <MathText text={language === "english" ? subQ.answerEnglish : subQ.answerNepali} />
-                                                            </p>
-                                                            <div className="text-amber-700 text-sm leading-relaxed whitespace-pre-line">
-                                                                <CitationText text={language === "english" ? subQ.explanationEnglish : subQ.explanationNepali} subject="math" pageLanguage={language === "nepali" ? "np" : "en"} />
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            )}
                                         </div>
                                     )
                                 })}

@@ -74,15 +74,30 @@ Rules:
 - If the question specifies paragraph count or specific structure, verify compliance
 
 **GRAMMAR & WRITING QUALITY (For English answers):**
-- Note any capitalization, grammar, or spelling errors in your feedback
-- For errors (missing capitals on proper nouns/sentence starts, wrong verb tenses, spelling mistakes), deduct marks appropriately
-- Always mention capitalization errors in feedback so students learn proper writing
-- Be more lenient on grammar for content-focused questions vs. writing-focused questions
+- Check for ALL grammar issues: capitalization, verb tenses, subject-verb agreement, punctuation, spelling
+- For EVERY grammar error found, you MUST:
+  1. Identify the specific error
+  2. Explain what is wrong
+  3. Show how to fix it (e.g., "'i went' should be 'I went' - capitalize 'I'")
+- Deduct marks appropriately for grammar errors (0.5-1 mark depending on severity/frequency)
+- Students need to learn proper writing - always give specific corrections
 
 **CREATIVE WRITING REQUIREMENTS (Essays, Stories, Travelogues, Dialogues):**
 - A TITLE is REQUIRED for full marks on essays, stories, travelogues, and similar creative writing
 - If no title is provided, deduct 0.5-1 mark and mention "Missing title" in feedback
 - For travelogues specifically: must have a title, first-person narrative, description of places visited
+
+**ANSWER LENGTH REQUIREMENTS:**
+- Check if the answer meets the expected length for the question type
+- Very short answer questions: 1-2 sentences expected
+- Short answer questions: 3-5 sentences expected  
+- Long answer questions: Full paragraphs expected
+- If answer is significantly shorter than expected, deduct marks and explain: "Answer too short - expected X sentences/paragraphs"
+
+**SCIENCE & MATH REQUIREMENTS:**
+- For numerical answers, CHECK FOR UNITS - if units are expected and missing, deduct 0.5 mark
+- Always mention: "Missing units - answer should include [appropriate unit]"
+- For calculations, show working is often expected - mention if missing
 
 - When grading, prioritize whether the answer demonstrates understanding of the key concepts`
 
@@ -107,26 +122,35 @@ GRADING GUIDELINES:
 - If question asks for paragraphs/structure and answer doesn't comply, note this and deduct appropriately
 
 **GRAMMAR CHECK (English only):**
-- Check for and note any capitalization errors (proper nouns, sentence beginnings)
-- Mention grammar, spelling, or capitalization errors in feedback
-- Deduct marks appropriately for grammar/capitalization errors - students need to learn proper writing
+- Check for and note ALL grammar errors (capitalization, punctuation, verb tenses, spelling)
+- For EACH error, explain: what is wrong, why it's wrong, and how to fix it
+- Example: "'the boy go to school' → 'The boy goes to school' (capitalize first word, use 'goes' for third person singular)"
+- Deduct marks for grammar errors and ALWAYS explain each deduction
 
 **CREATIVE WRITING CHECK:**
 - If this is an essay, story, travelogue, or dialogue, check for a TITLE
 - If no title is present, deduct 0.5-1 mark and note "Missing title (शीर्षक छैन)" in feedback
 - Travelogues must have: title, first-person perspective, vivid description of places
 
-**FEEDBACK REQUIREMENT:**
-- If giving less than full marks, clearly explain WHY marks were deducted
-- Be specific: "Missing X", "Incorrect Y", "Needs more detail on Z", "Word count too short (X words vs Y required)"
+**ANSWER LENGTH CHECK:**
+- Evaluate if the answer length matches the question requirements
+- If too short, deduct marks and specify: "Answer is too short. Expected [X sentences/paragraphs] but received [Y]."
+- For word count requirements, calculate approximate word count and compare
 
-**MATH-SPECIFIC LENIENCY** (for math questions):
+**FEEDBACK REQUIREMENT (CRITICAL):**
+- NEVER deduct points without explaining exactly WHY in the feedback
+- For every mark deducted, provide: what was wrong, why it's wrong, how to improve
+- Be specific: "Missing X", "Incorrect Y", "Grammar error: Z should be W", "Too short: expected X, got Y"
+- Students should be able to learn from every piece of feedback
+
+**SCIENCE & MATH REQUIREMENTS:**
+- For numerical answers, REQUIRE appropriate units (meters, kg, °C, etc.)
+- If units are missing, deduct 0.5 mark and note: "Missing units - should include [unit]"
 - Accept ALL equivalent notation formats: x^2 = x² = x**2, sqrt(x) = √x = root(x)
 - Accept spaces or no spaces: 2x = 2*x = 2 * x, a+b = a + b
 - Accept fraction formats: 1/2 = 0.5 = ½, 3/4 = 0.75
 - Accept equivalent expressions: 2(x+1) = 2x+2, x^2-1 = (x+1)(x-1)
 - If the MATHEMATICAL RESULT is correct, give FULL marks regardless of notation style
-- Don't penalize missing units if the numerical answer is correct
 
 Respond with JSON only: {"score": <0-${marks}>, "feedback": "<detailed feedback explaining score>"}`
 
