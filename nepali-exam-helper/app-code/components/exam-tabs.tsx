@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Button } from "@/components/ui/button"
 import { Loader2, Trophy, Save } from "lucide-react"
@@ -33,6 +33,9 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
   const [syncStatus, setSyncStatus] = useState<'synced' | 'pending' | 'failed' | null>(null)
   const [showSubmitWarning, setShowSubmitWarning] = useState(false)
   const [currentTab, setCurrentTab] = useState("")
+
+  // Ref for debounced server sync
+  const syncTimeoutRef = useRef<NodeJS.Timeout | null>(null)
 
   // Localized error message for grading failures
   const getGradingErrorMessage = () => language === 'english'
@@ -150,12 +153,21 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
     setLastSaved(new Date())
     onProgressUpdate()
 
-    // Also sync to server for authenticated users
+    // Debounced sync to server for authenticated users (wait 2s after last change)
     if (userEmail) {
       setSyncStatus('pending')
-      syncProgressToServer(userEmail, progressData).then((success) => {
-        setSyncStatus(success ? 'synced' : 'failed')
-      })
+
+      // Clear any existing timeout
+      if (syncTimeoutRef.current) {
+        clearTimeout(syncTimeoutRef.current)
+      }
+
+      // Set a new timeout to sync after 2 seconds of inactivity
+      syncTimeoutRef.current = setTimeout(() => {
+        syncProgressToServer(userEmail, progressData).then((success) => {
+          setSyncStatus(success ? 'synced' : 'failed')
+        })
+      }, 2000)
     }
   }, [answers, studentId, testId, onProgressUpdate, currentTab, userEmail])
 

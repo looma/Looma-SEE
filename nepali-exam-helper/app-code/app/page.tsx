@@ -85,6 +85,18 @@ export default function SeePrepPage() {
           if (localProgress) {
             setCurrentTestId(lastTestId)
             setShowTestSelection(false)
+
+            // Check if we should restore results view for authenticated users
+            const savedResults = localStorage.getItem("see_current_results")
+            const showResultsFlag = localStorage.getItem("see_show_results")
+            if (showResultsFlag === "true" && savedResults) {
+              try {
+                setTestResults(JSON.parse(savedResults))
+                setShowResults(true)
+              } catch (e) {
+                console.error("Error parsing saved results:", e)
+              }
+            }
           } else {
             // Try to load from server
             loadProgressFromServer(authState.email, lastTestId).then((serverProgress) => {
@@ -114,6 +126,18 @@ export default function SeePrepPage() {
           setCurrentStudentId(lastStudentId)
           setCurrentTestId(lastTestId)
           setShowTestSelection(false)
+
+          // Check if we should restore results view
+          const savedResults = localStorage.getItem("see_current_results")
+          const showResultsFlag = localStorage.getItem("see_show_results")
+          if (showResultsFlag === "true" && savedResults) {
+            try {
+              setTestResults(JSON.parse(savedResults))
+              setShowResults(true)
+            } catch (e) {
+              console.error("Error parsing saved results:", e)
+            }
+          }
         } else if (lastStudentId) {
           setCurrentStudentId(lastStudentId)
           setShowTestSelection(true)
@@ -200,6 +224,14 @@ export default function SeePrepPage() {
     setCurrentTestId(null)
     setCurrentTestTitle(null)
 
+    // Clear saved results state
+    try {
+      localStorage.removeItem("see_current_results")
+      localStorage.removeItem("see_show_results")
+    } catch (e) {
+      console.error("Error clearing results state:", e)
+    }
+
     // Restore user's language to what it was before auto-switch
     if (preTestLanguage) {
       setLanguage(preTestLanguage)
@@ -220,6 +252,8 @@ export default function SeePrepPage() {
     try {
       localStorage.removeItem("see_last_student_id")
       localStorage.removeItem("see_last_test_id")
+      localStorage.removeItem("see_current_results")
+      localStorage.removeItem("see_show_results")
       clearAuthState()
     } catch (error) {
       console.error("Error clearing localStorage:", error)
@@ -229,12 +263,29 @@ export default function SeePrepPage() {
   const handleShowResults = (results: any) => {
     setTestResults(results)
     setShowResults(true)
+
+    // Persist results state so refresh keeps us on results page
+    try {
+      localStorage.setItem("see_current_results", JSON.stringify(results))
+      localStorage.setItem("see_show_results", "true")
+    } catch (e) {
+      console.error("Error saving results state:", e)
+    }
   }
 
   const handleRetakeTest = () => {
     setShowResults(false)
     setTestResults(null)
     window.scrollTo(0, 0) // Scroll to top of page
+
+    // Clear saved results state
+    try {
+      localStorage.removeItem("see_current_results")
+      localStorage.removeItem("see_show_results")
+    } catch (e) {
+      console.error("Error clearing results state:", e)
+    }
+
     // Clear ALL answers (including subject-specific storage) but keep the same test
     if (currentStudentId && currentTestId) {
       const existingProgress = loadStudentProgress(`${currentStudentId}_${currentTestId}`)
