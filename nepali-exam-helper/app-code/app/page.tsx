@@ -148,6 +148,45 @@ export default function SeePrepPage() {
     }
   }, [])
 
+  // Browser history navigation - handle back/forward buttons
+  useEffect(() => {
+    const handlePopState = (event: PopStateEvent) => {
+      const state = event.state
+      if (!state) return
+
+      // Restore app state based on history state
+      if (state.view === 'login') {
+        setCurrentStudentId(null)
+        setShowTestSelection(false)
+        setShowResults(false)
+      } else if (state.view === 'select') {
+        setShowTestSelection(true)
+        setShowResults(false)
+        setCurrentTestId(null)
+      } else if (state.view === 'test') {
+        setShowTestSelection(false)
+        setShowResults(false)
+        if (state.testId) {
+          setCurrentTestId(state.testId)
+        }
+      } else if (state.view === 'results') {
+        // Results view - restore from localStorage
+        const savedResults = localStorage.getItem("see_current_results")
+        if (savedResults) {
+          try {
+            setTestResults(JSON.parse(savedResults))
+            setShowResults(true)
+          } catch (e) {
+            console.error("Error parsing saved results:", e)
+          }
+        }
+      }
+    }
+
+    window.addEventListener('popstate', handlePopState)
+    return () => window.removeEventListener('popstate', handlePopState)
+  }, [])
+
   const handleLogin = (studentId: string, authenticated: boolean, email?: string) => {
     setCurrentStudentId(studentId)
     setIsAuthenticated(authenticated)
@@ -159,6 +198,9 @@ export default function SeePrepPage() {
       console.error("Error saving student ID:", error)
     }
     setShowTestSelection(true)
+
+    // Push history state for test selection
+    window.history.pushState({ view: 'select' }, '')
   }
 
   const handleTestSelect = async (testId: string) => {
@@ -170,6 +212,9 @@ export default function SeePrepPage() {
     }
     setShowTestSelection(false)
     setShowResults(false)
+
+    // Push history state for test view
+    window.history.pushState({ view: 'test', testId }, '')
 
     // Auto-switch language based on test type (Nepali/Social -> Nepali, English -> English)
     // Save the user's current language so we can restore it when they exit
@@ -237,6 +282,9 @@ export default function SeePrepPage() {
       setLanguage(preTestLanguage)
       setPreTestLanguage(null)
     }
+
+    // Push history state for test selection
+    window.history.pushState({ view: 'select' }, '')
   }
 
   const handleLogout = () => {
@@ -258,6 +306,9 @@ export default function SeePrepPage() {
     } catch (error) {
       console.error("Error clearing localStorage:", error)
     }
+
+    // Replace history state for login (don't allow going back to authenticated state)
+    window.history.replaceState({ view: 'login' }, '')
   }
 
   const handleShowResults = (results: any) => {
@@ -271,6 +322,9 @@ export default function SeePrepPage() {
     } catch (e) {
       console.error("Error saving results state:", e)
     }
+
+    // Push history state for results view
+    window.history.pushState({ view: 'results' }, '')
   }
 
   const handleRetakeTest = () => {
@@ -314,12 +368,18 @@ export default function SeePrepPage() {
         syncProgressToServer(userEmail, newProgress)
       }
     }
+
+    // Push history state for test view (retaking)
+    window.history.pushState({ view: 'test', testId: currentTestId }, '')
   }
 
   const handleEditAnswers = () => {
     setShowResults(false)
     setTestResults(null)
     // Keep existing answers and go back to test
+
+    // Push history state for test view (editing)
+    window.history.pushState({ view: 'test', testId: currentTestId }, '')
   }
 
   const updateLastSaved = useCallback(() => {
