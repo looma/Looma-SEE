@@ -273,11 +273,6 @@ export function SocialStudiesGroupRenderer({
                                         {marksValue} {marksValue === 1 ? uiText.mark[lang] : uiText.marks[lang]}
                                     </Badge>
                                 </div>
-                                {marksValue === 1 && (
-                                    <p className="text-xs text-slate-500 italic mt-2 ml-8">
-                                        {lang === 'en' ? 'Answer in full sentences' : 'पूर्ण वाक्यमा उत्तर दिनुहोस्'}
-                                    </p>
-                                )}
                             </CardHeader>
 
                             <CardContent className="pt-0">

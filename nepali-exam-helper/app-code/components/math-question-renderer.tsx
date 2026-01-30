@@ -43,8 +43,8 @@ export function MathQuestionRenderer({
                     <div className="text-sm text-amber-800">
                         <p className="font-semibold mb-2">
                             {language === "english"
-                                ? "⚠️ Practice Mode Limitations"
-                                : "⚠️ अभ्यास मोडका सीमितताहरू"}
+                                ? "Practice Mode Limitations"
+                                : "अभ्यास मोडका सीमितताहरू"}
                         </p>
                         <ul className="list-disc list-inside space-y-1 text-amber-700">
                             <li>
@@ -140,11 +140,6 @@ export function MathQuestionRenderer({
                                                     {displayMarks} {language === "english" ? "mark" : "अंक"}{marks > 1 ? (language === "english" ? "s" : "") : ""}
                                                 </Badge>
                                             </div>
-                                            {marks === 1 && (
-                                                <p className="text-xs text-slate-500 italic mt-1">
-                                                    {language === "english" ? "Answer in full sentences" : "पूर्ण वाक्यमा उत्तर दिनुहोस्"}
-                                                </p>
-                                            )}
 
                                             {/* Answer textarea */}
                                             <Textarea
