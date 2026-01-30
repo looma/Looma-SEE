@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Textarea } from "@/components/ui/textarea"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Eye, EyeOff, Lightbulb } from "lucide-react"
+import { Eye, EyeOff, Lightbulb, AlertTriangle } from "lucide-react"
 import { MathText } from "./math-text"
 import { CitationText } from "./citation-text"
 import { useLanguage } from "@/lib/language-context"
@@ -36,6 +36,37 @@ export function MathQuestionRenderer({
 
     return (
         <div className="space-y-6">
+            {/* Math Test Disclaimer */}
+            <div className="bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r-lg">
+                <div className="flex items-start gap-3">
+                    <AlertTriangle className="h-5 w-5 text-amber-600 mt-0.5 flex-shrink-0" />
+                    <div className="text-sm text-amber-800">
+                        <p className="font-semibold mb-2">
+                            {language === "english"
+                                ? "⚠️ Practice Mode Limitations"
+                                : "⚠️ अभ्यास मोडका सीमितताहरू"}
+                        </p>
+                        <ul className="list-disc list-inside space-y-1 text-amber-700">
+                            <li>
+                                {language === "english"
+                                    ? "No diagrams, graphs, or Venn diagrams (Sets, Statistics, Probability)"
+                                    : "कुनै आकृति, ग्राफ, वा भेन चित्र छैन (सेट, तथ्याङ्क, सम्भाव्यता)"}
+                            </li>
+                            <li>
+                                {language === "english"
+                                    ? "No geometry constructions (compass/ruler work)"
+                                    : "ज्यामिति निर्माण छैन (कम्पास/रुलर कार्य)"}
+                            </li>
+                            <li>
+                                {language === "english"
+                                    ? "SEE awards marks for Formula + Process + Answer; AI only checks final answer"
+                                    : "SEE ले सूत्र + प्रक्रिया + उत्तरमा अंक दिन्छ; AI ले अन्तिम उत्तर मात्र जाँच्छ"}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
             {questions.map((question) => {
                 const qNum = question.question_numberEnglish
                 const displayQNum = language === "english"
@@ -72,9 +103,10 @@ export function MathQuestionRenderer({
                             <div className="space-y-4">
                                 {question.sub_questions.map((subQ: MathSubQuestion) => {
                                     const labelKey = subQ.labelEnglish // Always use English for storage keys
-                                    const displayLabel = language === "english" ? subQ.labelEnglish : subQ.labelNepali
+                                    const displayLabel = language === "english" ? subQ.labelEnglish : (subQ.labelNepali || subQ.labelEnglish)
                                     const subQuestionText = language === "english" ? subQ.questionEnglish : subQ.questionNepali
                                     const marks = subQ.marksEnglish
+                                    const displayMarks = language === "english" ? marks : (subQ.marksNepali || marks)
 
                                     const questionKey = `${qNum}`
                                     const currentAnswer = answers[questionKey]?.[labelKey] || ""
@@ -105,9 +137,14 @@ export function MathQuestionRenderer({
                                                     )}
                                                 </div>
                                                 <Badge variant="outline" className="text-xs bg-blue-50 text-blue-700 border-blue-200">
-                                                    {language === "english" ? marks : (language === "nepali" ? subQ.marksNepali : marks)} {language === "english" ? "mark" : "अंक"}{marks > 1 ? (language === "english" ? "s" : "") : ""}
+                                                    {displayMarks} {language === "english" ? "mark" : "अंक"}{marks > 1 ? (language === "english" ? "s" : "") : ""}
                                                 </Badge>
                                             </div>
+                                            {marks === 1 && (
+                                                <p className="text-xs text-slate-500 italic mt-1">
+                                                    {language === "english" ? "Answer in full sentences" : "पूर्ण वाक्यमा उत्तर दिनुहोस्"}
+                                                </p>
+                                            )}
 
                                             {/* Answer textarea */}
                                             <Textarea

@@ -351,31 +351,64 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
     let incompleteQuestions = 0
 
     if (questions.englishQuestions && questions.englishQuestions.length > 0) {
-      totalQuestions = questions.englishQuestions.length
-      incompleteQuestions = questions.englishQuestions.filter((q: any) => {
-        const answer = answers[q.id]
-        if (!answer) return true
-
-        // Handle different answer structures based on question type
+      // English test format - count individual subQuestions like Math
+      questions.englishQuestions.forEach((q: any) => {
         if (q.type === 'free_writing') {
-          // Free writing questions store answer as answers[questionId].content = "text"
-          return !answer.content || typeof answer.content !== 'string' || answer.content.trim().length === 0
-        } else if (typeof answer === "object" && !Array.isArray(answer)) {
-          // Other question types with object answers (like reading comprehension with sub-sections)
-          return !Object.values(answer).some((val) => {
-            if (typeof val === 'string') {
-              return val.trim().length > 0
-            } else if (typeof val === 'object' && val !== null) {
-              // Handle nested objects (like sub-sections)
-              return Object.values(val).some((nestedVal) =>
-                typeof nestedVal === 'string' && nestedVal.trim().length > 0
-              )
+          // Free writing is a single question
+          totalQuestions++
+          const answer = answers[q.id]
+          if (!answer?.content || typeof answer.content !== 'string' || answer.content.trim().length === 0) {
+            incompleteQuestions++
+          }
+        } else if (q.type === 'grammar') {
+          // Grammar questions have direct subQuestions array
+          const subQs = q.subQuestions || []
+          totalQuestions += subQs.length
+          subQs.forEach((subQ: any) => {
+            const subQId = subQ.idEnglish || subQ.idNepali
+            const answer = answers[q.questionNumberEnglish]?.[subQId]
+            if (!answer || (typeof answer === 'string' && answer.trim().length === 0)) {
+              incompleteQuestions++
             }
-            return val !== undefined && val !== null && val !== ""
+          })
+        } else if (q.subSections) {
+          // Reading comprehension, etc. have subSections with subQuestions
+          q.subSections.forEach((section: any) => {
+            if (section.type === 'matching' || section.type === 'ordering') {
+              // Matching/ordering is counted as one question per item
+              const items = section.columns?.A?.length || section.sentences?.length || 0
+              totalQuestions += items
+              const sectionId = section.idEnglish || section.idNepali
+              if (section.type === 'matching') {
+                // Check each matching answer
+                for (let i = 0; i < items; i++) {
+                  const itemId = section.columns?.A?.[i]?.idEnglish || section.columns?.A?.[i]?.idNepali || String(i + 1)
+                  const answer = answers[q.questionNumberEnglish]?.[sectionId]?.[itemId]
+                  if (!answer || (typeof answer === 'string' && answer.trim().length === 0)) {
+                    incompleteQuestions++
+                  }
+                }
+              } else {
+                // Ordering - check if answer array exists and has content
+                const answer = answers[q.questionNumberEnglish]?.[sectionId]
+                if (!answer || !Array.isArray(answer) || answer.length === 0) {
+                  incompleteQuestions += items
+                }
+              }
+            } else if (section.subQuestions) {
+              totalQuestions += section.subQuestions.length
+              section.subQuestions.forEach((subQ: any) => {
+                const sectionId = section.idEnglish || section.idNepali
+                const subQId = subQ.idEnglish || subQ.idNepali
+                const answer = answers[q.questionNumberEnglish]?.[sectionId]?.[subQId]
+                if (!answer || (typeof answer === 'string' && answer.trim().length === 0)) {
+                  incompleteQuestions++
+                }
+              })
+            }
           })
         }
-        return answer === undefined || answer === null || answer === ""
-      }).length
+      })
     } else if (questions.socialStudiesGroups && questions.socialStudiesGroups.length > 0) {
       // Social Studies test format
       questions.socialStudiesGroups.forEach((group: any) => {

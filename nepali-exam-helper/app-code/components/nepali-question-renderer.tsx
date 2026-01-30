@@ -972,6 +972,11 @@ export function NepaliQuestionRenderer(props: NepaliQuestionRendererProps) {
                         </Badge>
                     </div>
                 </div>
+                {(question.marksEnglish || question.marks) === 1 && (
+                    <p className="text-xs text-white/70 italic mt-2 ml-8">
+                        {props.language === 'english' ? 'Answer in full sentences' : 'पूर्ण वाक्यमा उत्तर दिनुहोस्'}
+                    </p>
+                )}
             </CardHeader>
             <CardContent className="p-4">
                 <Renderer {...props} showExplanation={showExplanation} />

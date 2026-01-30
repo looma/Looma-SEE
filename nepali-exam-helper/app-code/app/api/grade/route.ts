@@ -69,6 +69,13 @@ Rules:
 - Recognize equivalent answers that convey the same meaning
 - Accept both American and British English spellings as correct
 
+**CRITICAL - FEEDBACK/SCORE CONSISTENCY:**
+- If your feedback says "full marks", "correct", or "well done", the score MUST equal ${marks}
+- If the score is less than ${marks}, your feedback MUST explain exactly what was wrong or missing
+- NEVER say an answer is correct but give partial marks
+- NEVER say an answer deserves full marks but give 0 or partial marks
+- The score and feedback must ALWAYS be logically consistent
+
 **FORMAT REQUIREMENTS (IMPORTANT):**
 - If the question specifies a word count (e.g., "Write 150 words"), check if the answer meets it. Deduct marks proportionally if significantly short (e.g., 50% of required words = lose up to 50% of marks)
 - If the question specifies paragraph count or specific structure, verify compliance
