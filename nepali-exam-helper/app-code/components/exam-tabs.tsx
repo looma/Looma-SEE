@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect, useRef, useCallback } from "react"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Button } from "@/components/ui/button"
 import { Loader2, Trophy, Save } from "lucide-react"
@@ -10,6 +10,7 @@ import { EnglishQuestionRenderer } from "./english-question-renderer"
 import { SocialStudiesGroupRenderer } from "./social-studies-question-renderer"
 import { NepaliQuestionRenderer } from "./nepali-question-renderer"
 import { MathQuestionRenderer } from "./math-question-renderer"
+import { ExamTimer } from "./exam-timer"
 import { useQuestions } from "@/lib/use-questions"
 import { loadStudentProgress, saveStudentProgress, saveAttemptHistory, syncProgressToServer, loadProgressFromServer } from "@/lib/storage"
 import { useLanguage } from "@/lib/language-context"
@@ -24,7 +25,7 @@ interface ExamTabsProps {
 }
 
 export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onShowResults, onBackToTestSelection }: ExamTabsProps) {
-  const { questions, loading, error } = useQuestions(testId)
+  const { questions, metadata, loading, error } = useQuestions(testId)
   const { language } = useLanguage()
   const [answers, setAnswers] = useState<Record<string, any>>({})
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -33,6 +34,13 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
   const [syncStatus, setSyncStatus] = useState<'synced' | 'pending' | 'failed' | null>(null)
   const [showSubmitWarning, setShowSubmitWarning] = useState(false)
   const [currentTab, setCurrentTab] = useState("")
+
+  // Timer state
+  const [elapsedSeconds, setElapsedSeconds] = useState(0)
+  const [isTimerPaused, setIsTimerPaused] = useState(false)
+  const [isManuallyPaused, setIsManuallyPaused] = useState(false)
+  const timerRef = useRef<NodeJS.Timeout | null>(null)
+  const timerInitializedRef = useRef(false)
 
   // Ref for debounced server sync
   const syncTimeoutRef = useRef<NodeJS.Timeout | null>(null)
@@ -100,6 +108,12 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
       if (progress && progress.answers) {
         setAnswers(progress.answers)
         setLastSaved(progress.lastUpdated ? new Date(progress.lastUpdated) : new Date())
+        // Restore timer state - always load from storage
+        // For retake: elapsedTimeSeconds will be 0
+        // For edit answers: elapsedTimeSeconds will be the saved value
+        const savedTime = progress.elapsedTimeSeconds ?? 0
+        setElapsedSeconds(savedTime)
+        timerInitializedRef.current = true
       }
 
       // Always scroll to top when loading/resuming a test
@@ -133,8 +147,71 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
     }
   }, [questions, currentTab])
 
+  // Timer tick logic - runs every second when not paused
+  useEffect(() => {
+    if (isTimerPaused || isSubmitting) {
+      if (timerRef.current) {
+        clearInterval(timerRef.current)
+        timerRef.current = null
+      }
+      return
+    }
 
-  // Save progress when answers change
+    timerRef.current = setInterval(() => {
+      setElapsedSeconds(prev => prev + 1)
+    }, 1000)
+
+    return () => {
+      if (timerRef.current) {
+        clearInterval(timerRef.current)
+        timerRef.current = null
+      }
+    }
+  }, [isTimerPaused, isSubmitting])
+
+  // Page Visibility API - pause timer when tab is hidden (unless manually paused)
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        // Tab is hidden - pause timer and save current time
+        setIsTimerPaused(true)
+        // Save timer state immediately when tab is hidden
+        const storageKey = `${studentId}_${testId}`
+        const existingProgress = loadStudentProgress(storageKey)
+        if (existingProgress) {
+          const progressData = {
+            ...existingProgress,
+            elapsedTimeSeconds: elapsedSeconds,
+          }
+          saveStudentProgress(studentId, progressData)
+        }
+      } else {
+        // Tab is visible again - only resume if NOT manually paused
+        if (!isManuallyPaused) {
+          setIsTimerPaused(false)
+        }
+      }
+    }
+
+    document.addEventListener('visibilitychange', handleVisibilityChange)
+    return () => document.removeEventListener('visibilitychange', handleVisibilityChange)
+  }, [isManuallyPaused, studentId, testId, elapsedSeconds])
+
+  // Toggle pause function
+  const handleTogglePause = useCallback(() => {
+    if (isTimerPaused) {
+      // Resuming - clear manual pause flag
+      setIsManuallyPaused(false)
+      setIsTimerPaused(false)
+    } else {
+      // Pausing - set manual pause flag
+      setIsManuallyPaused(true)
+      setIsTimerPaused(true)
+    }
+  }, [isTimerPaused])
+
+
+  // Save progress when answers change (NOT timer - timer saves separately)
   useEffect(() => {
     if (!studentId || !testId) return
 
@@ -147,6 +224,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
       answers,
       currentTab,
       attempts: existingProgress?.attempts || [],
+      elapsedTimeSeconds: existingProgress?.elapsedTimeSeconds || 0,  // Preserve existing timer
     }
 
     saveStudentProgress(studentId, progressData)
@@ -170,6 +248,28 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
       }, 2000)
     }
   }, [answers, studentId, testId, onProgressUpdate, currentTab, userEmail])
+
+  // Periodic timer save (every 30 seconds) - much more efficient than saving every second
+  useEffect(() => {
+    if (!studentId || !testId || isTimerPaused) return
+
+    const saveTimer = () => {
+      const storageKey = `${studentId}_${testId}`
+      const existingProgress = loadStudentProgress(storageKey)
+      if (existingProgress) {
+        const progressData = {
+          ...existingProgress,
+          elapsedTimeSeconds: elapsedSeconds,
+        }
+        saveStudentProgress(studentId, progressData)
+      }
+    }
+
+    // Save every 30 seconds
+    const timerSaveInterval = setInterval(saveTimer, 30000)
+
+    return () => clearInterval(timerSaveInterval)
+  }, [studentId, testId, elapsedSeconds, isTimerPaused])
 
   const handleAnswerChange = (questionId: string, subQuestionId: string, answer: any) => {
     setAnswers((prev: Record<string, any>) => ({
@@ -514,6 +614,8 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
         feedbackC: [],
         feedbackD: [],
         answersA: answers.groupA || {},
+        timeTakenSeconds: elapsedSeconds,
+        allocatedMinutes: metadata?.durationEnglish || 180,
       }
 
       if (isEnglishTest) {
@@ -1058,6 +1160,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
             maxScore,
             percentage,
             grade,
+            timeTakenSeconds: elapsedSeconds,
           })
         } catch (error) {
           console.error("Error saving attempt history:", error)
@@ -1186,6 +1289,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
             maxScore,
             percentage,
             grade,
+            timeTakenSeconds: elapsedSeconds,
           })
         } catch (error) {
           console.error("Error saving attempt history:", error)
@@ -1768,6 +1872,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
             maxScore,
             percentage,
             grade,
+            timeTakenSeconds: elapsedSeconds,
           })
         } catch (error) {
           console.error("Error saving attempt history:", error)
@@ -1945,6 +2050,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
             maxScore,
             percentage,
             grade,
+            timeTakenSeconds: elapsedSeconds,
           })
         } catch (error) {
           console.error("Error saving attempt history:", error)
@@ -2162,6 +2268,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
           maxScore,
           percentage,
           grade,
+          timeTakenSeconds: elapsedSeconds,
         })
       } catch (error) {
         console.error("Error saving attempt history:", error)
@@ -2363,6 +2470,13 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
               </span>
             </div>
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
+              <ExamTimer
+                elapsedSeconds={elapsedSeconds}
+                allocatedMinutes={metadata?.durationEnglish || 180}
+                isPaused={isTimerPaused}
+                onTogglePause={handleTogglePause}
+                language={language}
+              />
               {lastSaved && (
                 <div className="flex items-center gap-1 text-xs text-green-600">
                   <Save className="h-3 w-3" />
@@ -2482,6 +2596,13 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
               <span className="text-xs text-slate-600">{calculateOverallProgress()}% {language === "english" ? "Complete" : "पूर्ण"}</span>
             </div>
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
+              <ExamTimer
+                elapsedSeconds={elapsedSeconds}
+                allocatedMinutes={metadata?.durationEnglish || 180}
+                isPaused={isTimerPaused}
+                onTogglePause={handleTogglePause}
+                language={language}
+              />
               {lastSaved && (
                 <div className="flex items-center gap-1 text-xs text-green-600">
                   <Save className="h-3 w-3" />
@@ -2663,6 +2784,13 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
               <span className="text-xs text-slate-600">{calculateOverallProgress()}% {language === "english" ? "Complete" : "पूर्ण"}</span>
             </div>
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
+              <ExamTimer
+                elapsedSeconds={elapsedSeconds}
+                allocatedMinutes={metadata?.durationEnglish || 180}
+                isPaused={isTimerPaused}
+                onTogglePause={handleTogglePause}
+                language={language}
+              />
               {lastSaved && (
                 <div className="flex items-center gap-1 text-xs text-green-600">
                   <Save className="h-3 w-3" />
@@ -2784,6 +2912,13 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
               <span className="text-xs text-slate-600">{calculateOverallProgress()}% {language === "english" ? "Complete" : "पूरा भयो"}</span>
             </div>
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
+              <ExamTimer
+                elapsedSeconds={elapsedSeconds}
+                allocatedMinutes={metadata?.durationEnglish || 180}
+                isPaused={isTimerPaused}
+                onTogglePause={handleTogglePause}
+                language={language}
+              />
               {lastSaved && (
                 <div className="flex items-center gap-1 text-xs text-green-600">
                   <Save className="h-3 w-3" />
@@ -2928,6 +3063,13 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
             </span>
           </div>
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
+            <ExamTimer
+              elapsedSeconds={elapsedSeconds}
+              allocatedMinutes={metadata?.durationEnglish || 180}
+              isPaused={isTimerPaused}
+              onTogglePause={handleTogglePause}
+              language={language}
+            />
             {lastSaved && (
               <div className="flex items-center gap-1 text-xs text-green-600">
                 <Save className="h-3 w-3" />

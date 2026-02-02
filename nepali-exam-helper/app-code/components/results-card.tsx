@@ -18,6 +18,7 @@ import {
   RotateCcw,
   Edit3,
   BookOpen,
+  Clock,
 } from "lucide-react"
 import { useQuestions } from "@/lib/use-questions"
 import { loadStudentProgress } from "@/lib/storage"
@@ -45,6 +46,8 @@ export interface Result {
   socialStudiesFeedback?: any[]
   nepaliFeedback?: any[]
   mathFeedback?: GradedFeedback[]
+  timeTakenSeconds?: number
+  allocatedMinutes?: number
 }
 
 interface ResultsCardProps {
@@ -212,6 +215,24 @@ export function ResultsCard({
 
   const attempts = progress?.attempts || []
 
+  // Format time for display
+  const formatTime = (seconds: number): string => {
+    const hrs = Math.floor(seconds / 3600)
+    const mins = Math.floor((seconds % 3600) / 60)
+    const secs = seconds % 60
+
+    if (hrs > 0) {
+      return `${hrs}:${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`
+    }
+    return `${mins}:${secs.toString().padStart(2, '0')}`
+  }
+
+  // Timer data
+  const timeTaken = results.timeTakenSeconds
+  const allocatedMinutes = results.allocatedMinutes || 180
+  const allocatedSeconds = allocatedMinutes * 60
+  const isOverTime = timeTaken !== undefined && timeTaken > allocatedSeconds
+
   const renderMultipleChoiceSection = () => {
     return (
       <div className="mb-8">
@@ -369,6 +390,12 @@ export function ResultsCard({
                       {attempt.totalScore}/{attempt.maxScore}
                     </div>
                     <div className="text-sm text-slate-600">{attempt.percentage}%</div>
+                    {attempt.timeTakenSeconds !== undefined && (
+                      <div className="text-xs text-slate-500 flex items-center justify-end gap-1">
+                        <Clock className="h-3 w-3" />
+                        {formatTime(attempt.timeTakenSeconds)}
+                      </div>
+                    )}
                   </div>
                   <Badge
                     variant="secondary"
@@ -559,6 +586,16 @@ export function ResultsCard({
                   <div className="grade-badge px-4 py-2 rounded-full bg-white font-bold text-2xl" style={{ color: '#1e293b' }}>{grade}</div>
                 </div>
                 <p className="text-xl text-blue-100 mb-2">{percentage}% {language === "english" ? "Score" : "अंक"}</p>
+                {timeTaken !== undefined && (
+                  <div className={`flex items-center justify-center gap-2 text-sm mb-2 px-4 py-1.5 rounded-full ${isOverTime ? 'bg-red-500/20 text-red-100' : 'bg-green-500/20 text-green-100'}`}>
+                    <Clock className="h-4 w-4" />
+                    <span>
+                      {language === "english" ? "Time: " : "समय: "}
+                      {formatTime(timeTaken)}
+                      <span className="opacity-75"> / {allocatedMinutes} {language === "english" ? "min" : "मिनेट"}</span>
+                    </span>
+                  </div>
+                )}
                 <p className="text-lg text-blue-100">
                   {language === "english"
                     ? "Great effort! Here's your detailed breakdown."

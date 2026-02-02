@@ -360,6 +360,7 @@ export default function SeePrepPage() {
         },
         currentTab: "groupA",
         attempts: existingProgress?.attempts || [],
+        elapsedTimeSeconds: 0,  // Reset timer for retake
       }
       saveStudentProgress(currentStudentId, newProgress)
 

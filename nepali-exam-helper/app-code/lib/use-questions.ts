@@ -24,6 +24,13 @@ export interface FreeResponseQuestion {
   sampleAnswer?: string
 }
 
+export interface TestMetadata {
+  durationEnglish: number  // in minutes
+  durationNepali: string
+  titleEnglish: string
+  titleNepali: string
+  fullMarksEnglish: number
+}
 
 interface QuestionsData {
   groupA: GroupAQuestion[]
@@ -38,6 +45,7 @@ interface QuestionsData {
 
 export function useQuestions(testId = "see_2080_science") {
   const [questions, setQuestions] = useState<QuestionsData | null>(null)
+  const [metadata, setMetadata] = useState<TestMetadata | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
 
@@ -52,6 +60,7 @@ export function useQuestions(testId = "see_2080_science") {
         }
         const data = await response.json()
         setQuestions(data.questions)
+        setMetadata(data.metadata || { durationEnglish: 180, durationNepali: '१८०', titleEnglish: testId, titleNepali: testId, fullMarksEnglish: 75 })
       } catch (err) {
         setError(err instanceof Error ? err.message : "Unknown error")
         console.error("Error fetching questions:", err)
@@ -63,5 +72,6 @@ export function useQuestions(testId = "see_2080_science") {
     fetchQuestions()
   }, [testId])
 
-  return { questions, loading, error }
+  return { questions, metadata, loading, error }
 }
+

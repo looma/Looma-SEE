@@ -26,12 +26,23 @@ export async function GET(request: NextRequest, { params }: { params: { testId: 
     // Adapt the questions to the expected format
     const adaptedQuestions = adaptDatabaseQuestions(questionsDoc.questions || {})
 
+    // Extract metadata for timer and display
+    const metadata = {
+      durationEnglish: questionsDoc.durationEnglish || questionsDoc.duration || 180,
+      durationNepali: questionsDoc.durationNepali || '१८०',
+      titleEnglish: questionsDoc.titleEnglish || testId,
+      titleNepali: questionsDoc.titleNepali || testId,
+      fullMarksEnglish: questionsDoc.fullMarksEnglish || 75,
+    }
+
     return NextResponse.json({
       success: true,
       questions: adaptedQuestions,
+      metadata,
     })
   } catch (error) {
     console.error("Error fetching questions:", error)
     return NextResponse.json({ error: "Failed to fetch questions" }, { status: 500 })
   }
 }
+

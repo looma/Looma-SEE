@@ -16,6 +16,7 @@ export interface StudentProgress {
   currentTab: string
   lastUpdated?: string  // Optional since it's added by saveStudentProgress
   attempts: AttemptHistory[]
+  elapsedTimeSeconds?: number  // Timer state in seconds
 }
 
 
@@ -31,6 +32,7 @@ export interface AttemptHistory {
   maxScore: number
   percentage: number
   grade: string
+  timeTakenSeconds?: number  // Time spent on this attempt
 }
 
 const STORAGE_KEY_PREFIX = "see_practice_"
