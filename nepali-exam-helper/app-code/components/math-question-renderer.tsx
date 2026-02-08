@@ -69,9 +69,7 @@ export function MathQuestionRenderer({
 
             {questions.map((question) => {
                 const qNum = question.question_numberEnglish
-                const displayQNum = language === "english"
-                    ? question.question_numberEnglish
-                    : question.question_numberNepali
+                const displayQNum = question.question_numberEnglish
                 const contextText = language === "english"
                     ? question.context.English
                     : question.context.Nepali
@@ -106,7 +104,7 @@ export function MathQuestionRenderer({
                                     const displayLabel = language === "english" ? subQ.labelEnglish : (subQ.labelNepali || subQ.labelEnglish)
                                     const subQuestionText = language === "english" ? subQ.questionEnglish : subQ.questionNepali
                                     const marks = subQ.marksEnglish
-                                    const displayMarks = language === "english" ? marks : (subQ.marksNepali || marks)
+                                    const displayMarks = marks
 
                                     const questionKey = `${qNum}`
                                     const currentAnswer = answers[questionKey]?.[labelKey] || ""

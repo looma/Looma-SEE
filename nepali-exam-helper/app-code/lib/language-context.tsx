@@ -86,11 +86,16 @@ export function useLanguage() {
 }
 
 /**
- * Language switching is always enabled since all test types now support bilingual content.
- * This function is kept for API compatibility but always returns true.
+ * Language switching is disabled for Nepali and Social Studies (Samajik) tests,
+ * since those tests are administered in Nepali on the actual SEE exam.
  */
-export function getLanguageSwitchEnabled(_testId: string | null): boolean {
-    return true // All test types now support bilingual switching
+export function getLanguageSwitchEnabled(testId: string | null): boolean {
+    if (!testId) return true
+    const testLower = testId.toLowerCase()
+    if (testLower.includes("nepali") || testLower.includes("social")) {
+        return false
+    }
+    return true
 }
 
 /**
@@ -99,8 +104,12 @@ export function getLanguageSwitchEnabled(_testId: string | null): boolean {
  */
 export function getDisabledReason(testId: string | null, language: AppLanguage): string | null {
     if (!testId) return null
-
-    // All test types now support bilingual content
+    const testLower = testId.toLowerCase()
+    if (testLower.includes("nepali") || testLower.includes("social")) {
+        return language === "english"
+            ? "This test is administered in Nepali on the actual SEE exam."
+            : "यो परीक्षा वास्तविक SEE मा नेपालीमा दिइन्छ।"
+    }
     return null
 }
 
@@ -139,7 +148,7 @@ export function getSubjectFromTestId(testId: string | null): string | null {
     const testLower = testId.toLowerCase()
 
     if (testLower.includes("nepali")) return "Nepali"
-    if (testLower.includes("social")) return "Social Studies"
+    if (testLower.includes("social")) return "Samajik"
     if (testLower.includes("english")) return "English"
     if (testLower.includes("math")) return "Math"
     if (testLower.includes("science")) return "Science"

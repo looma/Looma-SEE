@@ -232,7 +232,7 @@ export function TestSelectionScreen({ studentId, onTestSelect, onSwitchUser, isA
         return language === "english" ? "Nepali" : "नेपाली"
       case "social":
       case "social_studies":
-        return language === "english" ? "Social Studies" : "सामाजिक अध्ययन"
+        return language === "english" ? "Samajik" : "सामाजिक"
       default:
         return subject?.charAt(0).toUpperCase() + subject?.slice(1).replace(/_/g, ' ') || (language === "english" ? "General" : "सामान्य")
     }

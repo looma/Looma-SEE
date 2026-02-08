@@ -1,6 +1,7 @@
 "use client"
 
-import { Globe } from "lucide-react"
+import { useState } from "react"
+import { Globe, Lock } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useLanguage, getRecommendedLanguage, getSubjectFromTestId } from "@/lib/language-context"
 import {
@@ -12,9 +13,15 @@ import {
 
 export function LanguageSwitch() {
     const { language, setLanguage, isLanguageSwitchEnabled, disabledReason, currentTestId } = useLanguage()
+    const [showDisabledMessage, setShowDisabledMessage] = useState(false)
 
     const handleToggle = () => {
-        if (!isLanguageSwitchEnabled) return
+        if (!isLanguageSwitchEnabled) {
+            // Show the disabled message briefly when user taps on mobile
+            setShowDisabledMessage(true)
+            setTimeout(() => setShowDisabledMessage(false), 3000)
+            return
+        }
         setLanguage(language === "english" ? "nepali" : "english")
     }
 
@@ -41,12 +48,15 @@ export function LanguageSwitch() {
         select-none
         ${isLanguageSwitchEnabled
                     ? "bg-white/95 backdrop-blur-sm hover:bg-slate-50 border-slate-300 hover:border-slate-400 hover:shadow-xl cursor-pointer"
-                    : "bg-slate-100 border-slate-200 cursor-not-allowed opacity-60"
+                    : "bg-slate-100 border-slate-200 cursor-not-allowed opacity-70"
                 }
       `}
-            disabled={!isLanguageSwitchEnabled}
         >
-            <Globe className={`h-3.5 w-3.5 sm:h-4 sm:w-4 pointer-events-none ${isLanguageSwitchEnabled ? "text-blue-600" : "text-slate-400"}`} />
+            {isLanguageSwitchEnabled ? (
+                <Globe className="h-3.5 w-3.5 sm:h-4 sm:w-4 pointer-events-none text-blue-600" />
+            ) : (
+                <Lock className="h-3.5 w-3.5 sm:h-4 sm:w-4 pointer-events-none text-slate-400" />
+            )}
             <span className={`text-xs sm:text-sm font-medium pointer-events-none ${isLanguageSwitchEnabled ? "text-slate-700" : "text-slate-400"}`}>
                 {language === "english" ? (
                     <>
@@ -86,6 +96,12 @@ export function LanguageSwitch() {
                 <Tooltip delayDuration={0}>
                     <TooltipTrigger asChild>
                         <div className="fixed bottom-4 left-4 z-50 flex flex-col items-start gap-1">
+                            {/* Show persistent disabled message for mobile (no hover) */}
+                            {!isLanguageSwitchEnabled && showDisabledMessage && disabledReason && (
+                                <div className="bg-slate-700 text-white text-xs px-3 py-1.5 rounded-lg shadow-lg max-w-[220px] animate-in fade-in slide-in-from-bottom-1">
+                                    {disabledReason}
+                                </div>
+                            )}
                             {showRecommendation && (
                                 <div className="bg-amber-100 text-amber-800 text-xs px-2 py-1 rounded-full border border-amber-300 shadow-sm">
                                     {recommendedLang === "nepali"

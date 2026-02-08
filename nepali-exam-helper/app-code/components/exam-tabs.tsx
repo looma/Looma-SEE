@@ -2908,7 +2908,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
         <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4 sm:p-6 shadow-lg border border-white/20 mb-4 sm:mb-6">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-3 sm:gap-0">
             <div className="flex items-center gap-2">
-              <h3 className="font-semibold text-slate-800 text-sm sm:text-base">{language === "english" ? "Social Studies Test" : "सामाजिक अध्ययन परीक्षा"}</h3>
+              <h3 className="font-semibold text-slate-800 text-sm sm:text-base">{language === "english" ? "Samajik Test" : "सामाजिक परीक्षा"}</h3>
               <span className="text-xs text-slate-600">{calculateOverallProgress()}% {language === "english" ? "Complete" : "पूरा भयो"}</span>
             </div>
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">

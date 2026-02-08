@@ -626,7 +626,7 @@ export function ResultsCard({
                   <div className="flex items-center justify-between p-4 rounded-lg bg-amber-50 mb-4">
                     <h3 className="text-xl font-semibold text-amber-700 flex items-center gap-2">
                       <BookOpen className="h-5 w-5" />
-                      {language === 'nepali' ? 'सामाजिक अध्ययन प्रश्नहरू' : 'Social Studies Questions'}
+                      {language === 'nepali' ? 'सामाजिक प्रश्नहरू' : 'Samajik Questions'}
                     </h3>
                     <Badge variant="secondary">{results.socialStudiesFeedback?.length || 0} {language === 'nepali' ? 'प्रश्नहरू' : 'questions'}</Badge>
                   </div>

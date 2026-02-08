@@ -169,17 +169,6 @@ export function SocialStudiesGroupRenderer({
 
     const groupInfo = getGroupInfo()
 
-    // Convert Nepali numerals to English numerals
-    const nepaliToEnglishNumerals = (text: string) => {
-        const nepaliDigits = ['०', '१', '२', '३', '४', '५', '६', '७', '८', '९']
-        let result = text
-        nepaliDigits.forEach((nepali, index) => {
-            result = result.replace(new RegExp(nepali, 'g'), index.toString())
-        })
-        return result
-    }
-
-
 
 
     if (group.questions.length === 0) {
@@ -226,12 +215,8 @@ export function SocialStudiesGroupRenderer({
 
                     // Get question text
                     const questionText = getText(question.questionNepali, question.questionEnglish)
-                    const questionNumber = lang === 'en'
-                        ? (question.questionNumberEnglish || question.questionNumber || '')
-                        : (question.questionNumberNepali || question.questionNumber || '')
-                    const marksValue = lang === 'en'
-                        ? (question.marksEnglish || question.marks || 0)
-                        : (question.marksNepali || question.marks || 0)
+                    const questionNumber = question.questionNumberEnglish || question.questionNumber || ''
+                    const marksValue = question.marksEnglish || question.marks || 0
 
                     // Get hint text based on question type
                     const getHintText = () => {

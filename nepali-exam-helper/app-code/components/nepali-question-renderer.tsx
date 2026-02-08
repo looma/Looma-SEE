@@ -383,7 +383,7 @@ function PartsOfSpeechQuestion({ question, answer, onAnswerChange, questionIndex
     const qNum = question.questionNumberEnglish || question.questionNumber || 0
     const passage = getText(language, question.passageNepali, question.passageEnglish) || question.passage || ''
     const correctWords = Array.isArray(question.correctAnswerNepali || question.correctAnswer)
-        ? ((language === 'english' ? question.correctAnswerEnglish : question.correctAnswerNepali) || question.correctAnswer as any[]).map((p: any) => p.word)
+        ? ((language === 'english' ? question.correctAnswerEnglish : question.correctAnswerNepali) || question.correctAnswer as any[]).map((p: any) => p.word || p['शब्द'] || '')
         : []
 
     return (
@@ -952,9 +952,7 @@ export function NepaliQuestionRenderer(props: NepaliQuestionRendererProps) {
                         <div className="flex-1">
                             <CardTitle className="text-lg font-semibold text-white flex items-center gap-2">
                                 <Badge variant="secondary" className="bg-white/20 text-white">
-                                    {props.language === 'english'
-                                        ? (question.questionNumberEnglish ?? question.questionNumber)
-                                        : (question.questionNumberNepali ?? question.questionNumber)}
+                                    {question.questionNumberEnglish ?? question.questionNumber}
                                 </Badge>
                                 {getText(props.language, question.titleNepali, question.titleEnglish) || question.title}
                             </CardTitle>
