@@ -4,7 +4,6 @@ import { useState } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Progress } from "@/components/ui/progress"
 import { CheckCircle2, Circle, Eye, EyeOff, Lightbulb, PenLine } from "lucide-react"
 import type { SocialStudiesGroup, SocialStudiesQuestion } from "@/lib/social-studies-types"
 import { useLanguage } from "@/lib/language-context"
@@ -102,11 +101,7 @@ export function SocialStudiesGroupRenderer({
         return nepali || english || ''
     }
 
-    // All questions are paper-based — count all as answered
-    const answeredCount = group.questions.length
-    const progressPercentage = group.questions.length > 0
-        ? (answeredCount / group.questions.length) * 100
-        : 0
+
 
     const renderExplanation = (question: SocialStudiesQuestion) => {
         if (!showExplanations) return null
@@ -185,22 +180,10 @@ export function SocialStudiesGroupRenderer({
         <div className="space-y-6">
             {/* Header */}
             <Card className={`bg-gradient-to-r ${getGroupColor(groupIndex)} text-white shadow-lg border border-white/20`}>
-                <CardHeader className="pb-4">
-                    <div className="flex items-center justify-between">
-                        <div>
-                            <CardTitle className="text-xl font-bold">{groupInfo.title}</CardTitle>
-                            <p className="text-white/90 mt-1">{groupInfo.description}</p>
-
-                        </div>
-                        <div className="flex items-center gap-3">
-                            <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
-                                {answeredCount}/{group.questions.length}
-                            </Badge>
-                        </div>
-                    </div>
-                    <div className="mt-4">
-                        <Progress value={progressPercentage} className="h-2 bg-white/30" />
-                        <p className="text-xs text-white/90 mt-1">{Math.round(progressPercentage)}% {uiText.completed[lang]}</p>
+                <CardHeader className="pb-3 pt-4">
+                    <div>
+                        <CardTitle className="text-xl font-bold">{groupInfo.title}</CardTitle>
+                        <p className="text-white/90 mt-1">{groupInfo.description}</p>
                     </div>
                 </CardHeader>
             </Card>
