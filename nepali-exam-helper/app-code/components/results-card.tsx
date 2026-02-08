@@ -101,6 +101,14 @@ export function ResultsCard({
     }
   }
 
+  // Check if feedback is the generic paper-based message (redundant with the banner + sample answer)
+  const isGenericPaperFeedback = (feedback: string | undefined) => {
+    if (!feedback) return false
+    return feedback.includes('Answer on paper') || feedback.includes('कागजमा उत्तर') ||
+      feedback.includes('Paper-based test') || feedback.includes('कागजमा आधारित') ||
+      feedback.includes('compare your answer') || feedback.includes('तुलना गर्नुहोस्')
+  }
+
   if (!questions) return <div>{language === 'english' ? 'Loading...' : 'लोड हुँदैछ...'}</div>
 
   // Check if this is an English test
@@ -515,7 +523,7 @@ export function ResultsCard({
                       </p>
                     </div>
                     {/* Feedback - only show if student provided an answer */}
-                    {formatAnswerForDisplay(fb.studentAnswer) && fb.feedback && !fb.feedback.includes('No answer provided') && !fb.feedback.includes('कुनै उत्तर') && (
+                    {formatAnswerForDisplay(fb.studentAnswer) && fb.feedback && !fb.feedback.includes('No answer provided') && !fb.feedback.includes('कुनै उत्तर') && !isGenericPaperFeedback(fb.feedback) && (
                       <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
                         <div className="flex items-start gap-3">
                           <MessageSquareQuote className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
@@ -639,8 +647,8 @@ export function ResultsCard({
                     </div>
                     <div className="text-sm text-amber-600">
                       {language === 'nepali'
-                        ? 'सबै प्रश्नहरू AI द्वारा ग्रेड गरिएको छ। नक्सा प्रश्नहरूलाई म्यानुअल ग्रेडिङ आवश्यक छ।'
-                        : 'All questions are graded by AI. Map questions require manual grading.'}
+                        ? '📝 कागजमा आधारित परीक्षा — नमूना उत्तरसँग आफ्नो काम जाँच गर्नुहोस्।'
+                        : '📝 Paper-based test — compare your answers with the sample answers below.'}
                     </div>
                   </div>
 
@@ -683,9 +691,10 @@ export function ResultsCard({
                             const hasAnswer = typeof storedAnswer === 'string' ? storedAnswer.trim().length > 0 : !!storedAnswer
                             const questionMarks = Number(question.marksEnglish) || Number(question.marks) || 1
 
-                            const isFullScore = fb && fb.score === fb.marks
-                            const isPartialScore = fb && fb.score > 0 && fb.score < fb.marks
-                            const isNoAnswer = !hasAnswer
+                            const isPaperBased = fb?.paperBased === true
+                            const isFullScore = !isPaperBased && fb && fb.score === fb.marks
+                            const isPartialScore = !isPaperBased && fb && fb.score > 0 && fb.score < fb.marks
+                            const isNoAnswer = !isPaperBased && !hasAnswer
 
                             return (
                               <AccordionItem
@@ -701,7 +710,11 @@ export function ResultsCard({
                                         : (question.questionEnglish || question.questionNepali))?.substring(0, 80) || (language === 'nepali' ? 'प्रश्न' : 'Question')}...
                                     </span>
                                     <div className="flex items-center gap-2 flex-shrink-0 ml-4">
-                                      {isNoAnswer ? (
+                                      {isPaperBased ? (
+                                        <div className="h-5 w-5 rounded-full border-2 border-blue-500 bg-blue-100 flex items-center justify-center">
+                                          <span className="text-xs font-bold text-blue-700">📝</span>
+                                        </div>
+                                      ) : isNoAnswer ? (
                                         <div className="h-5 w-5 rounded-full border-2 border-slate-400 bg-slate-100 flex items-center justify-center">
                                           <span className="text-xs font-bold text-slate-500">-</span>
                                         </div>
@@ -715,16 +728,18 @@ export function ResultsCard({
                                         <XCircle className="h-5 w-5 text-red-500" />
                                       )}
                                       <Badge
-                                        className={`${isNoAnswer
-                                          ? "bg-slate-400 text-white"
-                                          : isFullScore
-                                            ? "bg-green-500 text-white"
-                                            : isPartialScore
-                                              ? "bg-yellow-500 text-white"
-                                              : "bg-red-500 text-white"
+                                        className={`${isPaperBased
+                                          ? "bg-blue-500 text-white hover:bg-blue-600"
+                                          : isNoAnswer
+                                            ? "bg-slate-400 text-white"
+                                            : isFullScore
+                                              ? "bg-green-500 text-white"
+                                              : isPartialScore
+                                                ? "bg-yellow-500 text-white"
+                                                : "bg-red-500 text-white"
                                           }`}
                                       >
-                                        {fb?.score ?? 0}/{questionMarks}
+                                        {isPaperBased ? (language === 'nepali' ? '📝' : '📝') : `${fb?.score ?? 0}/${questionMarks}`}
                                       </Badge>
                                     </div>
                                   </div>
@@ -740,25 +755,29 @@ export function ResultsCard({
 
                                     {/* Your Answer */}
                                     <div
-                                      className={`p-3 rounded-lg ${isNoAnswer
-                                        ? "bg-slate-50 border-l-4 border-slate-400"
-                                        : isFullScore
-                                          ? "bg-green-50 border-l-4 border-green-500"
-                                          : isPartialScore
-                                            ? "bg-yellow-50 border-l-4 border-yellow-500"
-                                            : "bg-red-50 border-l-4 border-red-500"
+                                      className={`p-3 rounded-lg ${isPaperBased
+                                        ? "bg-blue-50 border-l-4 border-blue-400"
+                                        : isNoAnswer
+                                          ? "bg-slate-50 border-l-4 border-slate-400"
+                                          : isFullScore
+                                            ? "bg-green-50 border-l-4 border-green-500"
+                                            : isPartialScore
+                                              ? "bg-yellow-50 border-l-4 border-yellow-500"
+                                              : "bg-red-50 border-l-4 border-red-500"
                                         }`}
                                     >
                                       <p className="font-semibold text-slate-800 mb-1">
                                         {language === 'nepali' ? 'तपाईंको उत्तर:' : 'Your Answer:'}
                                       </p>
                                       <p className="text-slate-700 whitespace-pre-wrap">
-                                        {hasAnswer ? formatAnswerForDisplay(storedAnswer) : (language === 'nepali' ? 'कुनै उत्तर प्रदान गरिएको छैन' : 'No answer provided')}
+                                        {isPaperBased
+                                          ? (language === 'nepali' ? '(कागजमा)' : '(On Paper)')
+                                          : hasAnswer ? formatAnswerForDisplay(storedAnswer) : (language === 'nepali' ? 'कुनै उत्तर प्रदान गरिएको छैन' : 'No answer provided')}
                                       </p>
                                     </div>
 
                                     {/* Feedback - only show if student provided an answer and got feedback */}
-                                    {hasAnswer && fb?.feedback && !fb.feedback.includes('No answer provided') && !fb.feedback.includes('कुनै उत्तर') && (
+                                    {hasAnswer && fb?.feedback && !fb.feedback.includes('No answer provided') && !fb.feedback.includes('कुनै उत्तर') && !isGenericPaperFeedback(fb.feedback) && (
                                       <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
                                         <div className="flex items-start gap-3">
                                           <Lightbulb className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
@@ -772,8 +791,8 @@ export function ResultsCard({
                                       </div>
                                     )}
 
-                                    {/* Sample answer if available */}
-                                    {(question.answerNepali || question.answerEnglish) && (
+                                    {/* Sample answer if available, or suggest teacher evaluation for paper-based */}
+                                    {(question.answerNepali || question.answerEnglish) ? (
                                       <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg">
                                         <p className="font-semibold text-amber-800 mb-1">
                                           {language === 'nepali' ? 'नमुना उत्तर:' : 'Sample Answer:'}
@@ -784,7 +803,18 @@ export function ResultsCard({
                                             : (question.answerEnglish || question.answerNepali)}
                                         </p>
                                       </div>
-                                    )}
+                                    ) : isPaperBased ? (
+                                      <div className="bg-purple-50 border-l-4 border-purple-400 p-4 rounded-r-lg">
+                                        <div className="flex items-start gap-3">
+                                          <Lightbulb className="h-5 w-5 text-purple-600 mt-0.5 flex-shrink-0" />
+                                          <p className="text-purple-700 text-sm leading-relaxed">
+                                            {language === 'english'
+                                              ? 'This question requires manual evaluation. Ask a teacher, tutor, or knowledgeable person to review and grade your answer.'
+                                              : 'यो प्रश्नको मूल्याङ्कन म्यानुअल रूपमा गर्नु पर्छ। तपाईंको उत्तर समीक्षा र ग्रेड गर्न शिक्षक, ट्युटर, वा जानकार व्यक्तिसँग सोध्नुहोस्।'}
+                                          </p>
+                                        </div>
+                                      </div>
+                                    ) : null}
 
                                     {/* Explanation if available */}
                                     {(question.explanationNepali || question.explanationEnglish) && (
@@ -839,18 +869,19 @@ export function ResultsCard({
                     </div>
                     <div className="text-sm text-orange-600">
                       {language === 'nepali'
-                        ? 'सबै प्रश्नहरू AI द्वारा ग्रेड गरिएको छ। केही प्रश्नहरू स्वत: ग्रेड गरिएको छ।'
-                        : 'All questions are graded by AI. Some questions may be auto-graded.'}
+                        ? '📝 मिलान/रिक्त-स्थान स्वत: ग्रेड गरिएको छ। अरू प्रश्नहरू कागजमा आधारित छन् — नमूना उत्तरसँग जाँच गर्नुहोस्।'
+                        : '📝 Matching/fill-in-the-blanks are auto-graded. Other questions are paper-based — compare with sample answers below.'}
                     </div>
                   </div>
 
                   {/* Nepali question feedback */}
                   <Accordion type="single" collapsible className="w-full">
                     {(results.nepaliFeedback || []).map((fb: any, idx: number) => {
-                      const hasAnswer = fb.studentAnswer && (typeof fb.studentAnswer === 'string' ? fb.studentAnswer.trim().length > 0 : Object.keys(fb.studentAnswer).length > 0)
-                      const isNoAnswer = !hasAnswer
-                      const isFullScore = hasAnswer && fb.score >= fb.maxScore
-                      const isPartialScore = hasAnswer && fb.score > 0 && fb.score < fb.maxScore
+                      const isPaperBased = fb.paperBased === true
+                      const hasAnswer = !isPaperBased && fb.studentAnswer && (typeof fb.studentAnswer === 'string' ? fb.studentAnswer.trim().length > 0 : Object.keys(fb.studentAnswer).length > 0)
+                      const isNoAnswer = !isPaperBased && !hasAnswer
+                      const isFullScore = !isPaperBased && hasAnswer && fb.score >= fb.maxScore
+                      const isPartialScore = !isPaperBased && hasAnswer && fb.score > 0 && fb.score < fb.maxScore
 
                       // Find the original question for context - try multiple ID patterns
                       const originalQuestion = questions.nepaliQuestions.find(
@@ -946,7 +977,11 @@ export function ResultsCard({
                                 <Badge variant="outline" className="ml-2 text-xs">{getTypeDisplayName(fb.type)}</Badge>
                               </span>
                               <div className="flex items-center gap-2 flex-shrink-0 ml-4">
-                                {isNoAnswer ? (
+                                {isPaperBased ? (
+                                  <div className="h-5 w-5 rounded-full border-2 border-blue-500 bg-blue-100 flex items-center justify-center">
+                                    <span className="text-xs font-bold text-blue-700">📝</span>
+                                  </div>
+                                ) : isNoAnswer ? (
                                   <div className="h-5 w-5 rounded-full border-2 border-slate-400 bg-slate-100 flex items-center justify-center">
                                     <span className="text-xs font-bold text-slate-500">-</span>
                                   </div>
@@ -960,16 +995,18 @@ export function ResultsCard({
                                   <XCircle className="h-5 w-5 text-red-500" />
                                 )}
                                 <Badge
-                                  className={`${isNoAnswer
-                                    ? "bg-slate-400 text-white hover:bg-slate-500"
-                                    : isFullScore
-                                      ? "bg-green-500 text-white hover:bg-green-600"
-                                      : isPartialScore
-                                        ? "bg-yellow-500 text-yellow-900 hover:bg-yellow-600"
-                                        : "bg-red-500 text-white hover:bg-red-600"
+                                  className={`${isPaperBased
+                                    ? "bg-blue-500 text-white hover:bg-blue-600"
+                                    : isNoAnswer
+                                      ? "bg-slate-400 text-white hover:bg-slate-500"
+                                      : isFullScore
+                                        ? "bg-green-500 text-white hover:bg-green-600"
+                                        : isPartialScore
+                                          ? "bg-yellow-500 text-yellow-900 hover:bg-yellow-600"
+                                          : "bg-red-500 text-white hover:bg-red-600"
                                     }`}
                                 >
-                                  {fb.score}/{fb.maxScore}
+                                  {isPaperBased ? (language === 'nepali' ? '📝' : '📝') : `${fb.score}/${fb.maxScore}`}
                                 </Badge>
                               </div>
                             </div>
@@ -1335,6 +1372,16 @@ export function ResultsCard({
                                       )
                                     })}
                                 </div>
+                              ) : isPaperBased ? (
+                                /* Paper-based: show "(On Paper)" answer */
+                                <div className="bg-blue-50 p-4 rounded-lg border-l-4 border-blue-400">
+                                  <p className="font-semibold text-slate-700 mb-2">
+                                    {language === 'nepali' ? 'तपाईंको उत्तर:' : 'Your Answer:'}
+                                  </p>
+                                  <p className="text-blue-700 italic">
+                                    {language === 'nepali' ? '(कागजमा)' : '(On Paper)'}
+                                  </p>
+                                </div>
                               ) : (
                                 /* Default: show formatted answer */
                                 (() => {
@@ -1363,7 +1410,7 @@ export function ResultsCard({
                               )}
 
                               {/* Feedback - only show if student provided an answer */}
-                              {formatAnswerForDisplay(fb.studentAnswer) && fb.feedback && !fb.feedback.includes('No answer provided') && !fb.feedback.includes('कुनै उत्तर') && (
+                              {formatAnswerForDisplay(fb.studentAnswer) && fb.feedback && !fb.feedback.includes('No answer provided') && !fb.feedback.includes('कुनै उत्तर') && !isGenericPaperFeedback(fb.feedback) && (
                                 <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
                                   <div className="flex items-start gap-3">
                                     <Lightbulb className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
@@ -1378,12 +1425,29 @@ export function ResultsCard({
                               )}
 
                               {/* Sample answer if available - hide for matching (already shows per-item) and choice-based question types where student picks from multiple options */}
-                              {!['matching', 'essay', 'free_writing_choice', 'functional_writing_choice', 'literature_critical_analysis_choice'].includes(fb.type) && (() => {
+                              {!['matching', 'essay', 'free_writing_choice', 'functional_writing_choice', 'literature_critical_analysis_choice'].includes(fb.type) ? (() => {
                                 // Get language-specific sample/correct answer
                                 const sampleAnswer = language === 'english'
                                   ? (originalQuestion?.sampleAnswerEnglish || originalQuestion?.sampleAnswer || originalQuestion?.correctAnswerEnglish || originalQuestion?.correctAnswer)
                                   : (originalQuestion?.sampleAnswerNepali || originalQuestion?.sampleAnswer || originalQuestion?.correctAnswerNepali || originalQuestion?.correctAnswer)
-                                if (!sampleAnswer) return null
+                                if (!sampleAnswer) {
+                                  // No sample answer - if paper-based, suggest teacher evaluation
+                                  if (isPaperBased) {
+                                    return (
+                                      <div className="bg-purple-50 border-l-4 border-purple-400 p-4 rounded-r-lg">
+                                        <div className="flex items-start gap-3">
+                                          <Lightbulb className="h-5 w-5 text-purple-600 mt-0.5 flex-shrink-0" />
+                                          <p className="text-purple-700 text-sm leading-relaxed">
+                                            {language === 'english'
+                                              ? 'This question requires manual evaluation. Ask a teacher, tutor, or knowledgeable person to review and grade your answer.'
+                                              : 'यो प्रश्नको मूल्याङ्कन म्यानुअल रूपमा गर्नु पर्छ। तपाईंको उत्तर समीक्षा र ग्रेड गर्न शिक्षक, ट्युटर, वा जानकार व्यक्तिसँग सोध्नुहोस्।'}
+                                          </p>
+                                        </div>
+                                      </div>
+                                    )
+                                  }
+                                  return null
+                                }
                                 return (
                                   <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded-r-lg">
                                     <p className="font-semibold text-amber-800 mb-1">
@@ -1398,7 +1462,19 @@ export function ResultsCard({
                                     </div>
                                   </div>
                                 )
-                              })()}
+                              })() : isPaperBased ? (
+                                // Choice-based paper types (essay, functional_writing_choice, etc.) - suggest teacher evaluation
+                                <div className="bg-purple-50 border-l-4 border-purple-400 p-4 rounded-r-lg">
+                                  <div className="flex items-start gap-3">
+                                    <Lightbulb className="h-5 w-5 text-purple-600 mt-0.5 flex-shrink-0" />
+                                    <p className="text-purple-700 text-sm leading-relaxed">
+                                      {language === 'english'
+                                        ? 'This question requires manual evaluation. Ask a teacher, tutor, or knowledgeable person to review and grade your answer.'
+                                        : 'यो प्रश्नको मूल्याङ्कन म्यानुअल रूपमा गर्नु पर्छ। तपाईंको उत्तर समीक्षा र ग्रेड गर्न शिक्षक, ट्युटर, वा जानकार व्यक्तिसँग सोध्नुहोस्।'}
+                                    </p>
+                                  </div>
+                                </div>
+                              ) : null}
 
                               {/* Explanation if available */}
                               {(fb.explanation || (language === 'english' ? (originalQuestion?.explanationEnglish || originalQuestion?.explanation) : (originalQuestion?.explanationNepali || originalQuestion?.explanation))) && (
@@ -1590,7 +1666,7 @@ export function ResultsCard({
                               </div>
 
                               {/* Feedback - only show if there's actual feedback and student answered */}
-                              {fb.studentAnswer && fb.feedback && !fb.feedback.includes('No answer provided') && !fb.feedback.includes('कुनै उत्तर') && (
+                              {fb.studentAnswer && fb.feedback && !fb.feedback.includes('No answer provided') && !fb.feedback.includes('कुनै उत्तर') && !isGenericPaperFeedback(fb.feedback) && (
                                 <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
                                   <div className="flex items-start gap-3">
                                     <Lightbulb className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />

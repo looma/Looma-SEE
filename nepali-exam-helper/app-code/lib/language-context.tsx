@@ -92,6 +92,7 @@ export function useLanguage() {
 export function getLanguageSwitchEnabled(testId: string | null): boolean {
     if (!testId) return true
     const testLower = testId.toLowerCase()
+    // Disable switching for Nepali and Social Studies tests
     if (testLower.includes("nepali") || testLower.includes("social")) {
         return false
     }

@@ -8,7 +8,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Eye, EyeOff } from "lucide-react"
+import { Eye, EyeOff, PenLine } from "lucide-react"
 import type { NepaliQuestion, NepaliSubQuestion } from "@/lib/nepali-types"
 import type { AppLanguage } from "@/lib/language-context"
 import { CitationText } from "./citation-text"
@@ -35,6 +35,25 @@ const uiText = {
     help: { np: "सहायता", en: "Help" },
     groupA: { np: "समूह 'क'", en: "Group 'A'" },
     groupB: { np: "समूह 'ख'", en: "Group 'B'" },
+    writeOnPaper: { np: "✏️ कागजमा उत्तर लेख्नुहोस्", en: "✏️ Write your answer on paper" },
+    writeOnPaperHint: { np: "यो प्रश्नको उत्तर कागजमा लेख्नुहोस् र पछि नमूना उत्तरसँग तुलना गर्नुहोस्।", en: "Write your answer for this question on paper, then compare with the sample answer after submitting." },
+}
+
+// Reusable "Write on paper" notice for question types that require Nepali typing
+function PaperAnswerNotice({ language }: { language?: AppLanguage }) {
+    return (
+        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 flex items-start gap-3">
+            <PenLine className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+            <div>
+                <p className="font-medium text-blue-800">
+                    {getUIText(language, 'writeOnPaper')}
+                </p>
+                <p className="text-sm text-blue-600 mt-1">
+                    {getUIText(language, 'writeOnPaperHint')}
+                </p>
+            </div>
+        </div>
+    )
 }
 
 // Helper function to format answers for display (avoid raw JSON)
@@ -253,12 +272,7 @@ function ShortAnswerQuestion({ question, answer, onAnswerChange, questionIndex, 
                     {passage}
                 </div>
             )}
-            <Textarea
-                value={answer || ""}
-                onChange={(e) => onAnswerChange(`q${qNum}`, e.target.value)}
-                placeholder={getUIText(language, 'writeAnswer')}
-                className="min-h-[120px] border-slate-300"
-            />
+            <PaperAnswerNotice language={language} />
         </div>
     )
 }
@@ -361,12 +375,7 @@ function SpellingCorrectionQuestion({ question, answer, onAnswerChange, question
                                 <div className="p-3 bg-slate-100 rounded border border-slate-300 text-slate-700">
                                     {getText(language, sub.questionNepali, sub.questionEnglish)}
                                 </div>
-                                <Textarea
-                                    value={currentAnswer[subId] || ""}
-                                    onChange={(e) => onAnswerChange(`q${qNum}`, { ...currentAnswer, [subId]: e.target.value })}
-                                    placeholder={getUIText(language, 'writeCorrectSentence')}
-                                    className="min-h-[80px]"
-                                />
+                                <PaperAnswerNotice language={language} />
                             </div>
                         )}
                         <SubQuestionExplanation subQuestion={sub} show={showExplanation} language={language} />
@@ -395,18 +404,18 @@ function PartsOfSpeechQuestion({ question, answer, onAnswerChange, questionIndex
                 />
             )}
             <div className="space-y-3">
-                {correctWords.map((word: string, idx: number) => (
-                    <div key={idx} className="flex items-center gap-4">
-                        <div className="w-32 font-medium text-slate-700">'{word}'</div>
-                        <Input
-                            value={currentAnswer[word] || ""}
-                            onChange={(e) => onAnswerChange(`q${qNum}`, { ...currentAnswer, [word]: e.target.value })}
-                            placeholder={getUIText(language, 'writePOS')}
-                            className="flex-1"
-                        />
-                    </div>
-                ))}
+                <p className="font-medium text-slate-600 text-sm">
+                    {language === 'english' ? 'Identify the part of speech for each word:' : 'प्रत्येक शब्दको शब्दभेद पहिचान गर्नुहोस्:'}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                    {correctWords.map((word: string, idx: number) => (
+                        <Badge key={idx} variant="outline" className="text-base px-3 py-1 bg-white border-slate-300">
+                            {word}
+                        </Badge>
+                    ))}
+                </div>
             </div>
+            <PaperAnswerNotice language={language} />
         </div>
     )
 }
@@ -430,16 +439,11 @@ function WordFormationQuestion({ question, answer, onAnswerChange, questionIndex
                                 {subPassage}
                             </div>
                         )}
-                        <Textarea
-                            value={currentAnswer[subId] || ""}
-                            onChange={(e) => onAnswerChange(`q${qNum}`, { ...currentAnswer, [subId]: e.target.value })}
-                            placeholder={getUIText(language, 'writeAnswer')}
-                            className="min-h-[100px]"
-                        />
                         <SubQuestionExplanation subQuestion={sub} show={showExplanation} language={language} />
                     </div>
                 )
             })}
+            <PaperAnswerNotice language={language} />
         </div>
     )
 }
@@ -456,12 +460,7 @@ function TenseChangeQuestion({ question, answer, onAnswerChange, questionIndex, 
                     {passage}
                 </div>
             )}
-            <Textarea
-                value={answer || ""}
-                onChange={(e) => onAnswerChange(`q${qNum}`, e.target.value)}
-                placeholder={getUIText(language, 'writeTransformed')}
-                className="min-h-[150px]"
-            />
+            <PaperAnswerNotice language={language} />
         </div>
     )
 }
@@ -507,12 +506,7 @@ function GrammarChoiceQuestion({ question, answer, onAnswerChange, questionIndex
 
             {currentAnswer.selectedOption && (
                 <>
-                    <Textarea
-                        value={currentAnswer.response}
-                        onChange={(e) => onAnswerChange(`q${qNum}`, { ...currentAnswer, response: e.target.value })}
-                        placeholder={getUIText(language, 'writeAnswer')}
-                        className="min-h-[120px]"
-                    />
+                    <PaperAnswerNotice language={language} />
                     {selectedSub && <SubQuestionExplanation subQuestion={selectedSub} show={showExplanation} language={language} />}
                 </>
             )}
@@ -536,16 +530,11 @@ function SentenceTransformationQuestion({ question, answer, onAnswerChange, ques
                             <Badge variant="outline">({getText(language, sub.idNepali, sub.idEnglish) || sub.id})</Badge>
                             <div className="flex-1 text-slate-700">{subQuestion}</div>
                         </div>
-                        <Textarea
-                            value={currentAnswer[subId] || ""}
-                            onChange={(e) => onAnswerChange(`q${qNum}`, { ...currentAnswer, [subId]: e.target.value })}
-                            placeholder={getUIText(language, 'writeTransformedSentence')}
-                            className="min-h-[80px]"
-                        />
                         <SubQuestionExplanation subQuestion={sub} show={showExplanation} language={language} />
                     </div>
                 )
             })}
+            <PaperAnswerNotice language={language} />
         </div>
     )
 }
@@ -573,16 +562,11 @@ function ReadingComprehensionQuestion({ question, answer, onAnswerChange, questi
                                 <Badge variant="outline">({getText(language, sub.idNepali, sub.idEnglish) || sub.id})</Badge>
                                 <div className="flex-1 text-slate-700">{subQuestion}</div>
                             </div>
-                            <Textarea
-                                value={currentAnswer[subId] || ""}
-                                onChange={(e) => onAnswerChange(`q${qNum}`, { ...currentAnswer, [subId]: e.target.value })}
-                                placeholder={getUIText(language, 'writeAnswer')}
-                                className="min-h-[80px]"
-                            />
                             <SubQuestionExplanation subQuestion={sub} show={showExplanation} language={language} />
                         </div>
                     )
                 })}
+                <PaperAnswerNotice language={language} />
             </div>
         </div>
     )
@@ -624,12 +608,7 @@ function FreeWritingChoiceQuestion({ question, answer, onAnswerChange, questionI
             </RadioGroup>
 
             {currentAnswer.selectedOption && (
-                <Textarea
-                    value={currentAnswer.response}
-                    onChange={(e) => onAnswerChange(`q${qNum}`, { ...currentAnswer, response: e.target.value })}
-                    placeholder={getUIText(language, 'writeAnswer')}
-                    className="min-h-[200px]"
-                />
+                <PaperAnswerNotice language={language} />
             )}
         </div>
     )
@@ -650,23 +629,8 @@ function NoteTakingQuestion({ question, answer, onAnswerChange, questionIndex, l
                     {passage}
                 </div>
             )}
-            <div className="space-y-3">
-                {[...Array(numPoints)].map((_, idx) => (
-                    <div key={idx} className="flex items-start gap-3">
-                        <Badge variant="outline" className="shrink-0">{idx + 1}</Badge>
-                        <Input
-                            value={currentAnswer.points?.[idx] || ""}
-                            onChange={(e) => {
-                                const newPoints = [...(currentAnswer.points || [])]
-                                newPoints[idx] = e.target.value
-                                onAnswerChange(`q${qNum}`, { points: newPoints })
-                            }}
-                            placeholder={`${getUIText(language, 'point')} ${idx + 1}`}
-                            className="flex-1"
-                        />
-                    </div>
-                ))}
-            </div>
+
+            <PaperAnswerNotice language={language} />
         </div>
     )
 }
@@ -683,12 +647,7 @@ function SummarizationQuestion({ question, answer, onAnswerChange, questionIndex
                     {passage}
                 </div>
             )}
-            <Textarea
-                value={answer || ""}
-                onChange={(e) => onAnswerChange(`q${qNum}`, e.target.value)}
-                placeholder={getUIText(language, 'writeSummary')}
-                className="min-h-[150px]"
-            />
+            <PaperAnswerNotice language={language} />
         </div>
     )
 }
@@ -724,12 +683,6 @@ function LiteratureShortAnswerQuestion({ question, answer, onAnswerChange, quest
                                         <Label className="text-slate-700 mb-2 block">
                                             ({getText(language, sub.idNepali, sub.idEnglish) || sub.id}) {subQuestion}
                                         </Label>
-                                        <Textarea
-                                            value={currentAnswer[answerKey] || ""}
-                                            onChange={(e) => onAnswerChange(`q${qNum}`, { ...currentAnswer, [answerKey]: e.target.value })}
-                                            placeholder={getUIText(language, 'writeAnswer')}
-                                            className="min-h-[80px]"
-                                        />
                                         <SubQuestionExplanation subQuestion={sub} show={showExplanation} language={language} />
                                     </div>
                                 )
@@ -738,6 +691,7 @@ function LiteratureShortAnswerQuestion({ question, answer, onAnswerChange, quest
                     </div>
                 )
             })}
+            <PaperAnswerNotice language={language} />
         </div>
     )
 }
@@ -746,12 +700,7 @@ function LiteratureShortAnswerQuestion({ question, answer, onAnswerChange, quest
 function LiteratureArgumentativeQuestion({ question, answer, onAnswerChange, questionIndex, language }: NepaliQuestionRendererProps) {
     const qNum = question.questionNumberEnglish || question.questionNumber || 0
     return (
-        <Textarea
-            value={answer || ""}
-            onChange={(e) => onAnswerChange(`q${qNum}`, e.target.value)}
-            placeholder={getUIText(language, 'writeWithArgument')}
-            className="min-h-[200px]"
-        />
+        <PaperAnswerNotice language={language} />
     )
 }
 
@@ -785,12 +734,7 @@ function LiteratureExplanationQuestion({ question, answer, onAnswerChange, quest
             </RadioGroup>
 
             {currentAnswer.selectedOption && (
-                <Textarea
-                    value={currentAnswer.response}
-                    onChange={(e) => onAnswerChange(`q${qNum}`, { ...currentAnswer, response: e.target.value })}
-                    placeholder={getUIText(language, 'writeExplanation')}
-                    className="min-h-[200px]"
-                />
+                <PaperAnswerNotice language={language} />
             )}
         </div>
     )
@@ -833,12 +777,7 @@ function LiteratureCriticalAnalysisQuestion({ question, answer, onAnswerChange, 
             </RadioGroup>
 
             {currentAnswer.selectedOption && (
-                <Textarea
-                    value={currentAnswer.response}
-                    onChange={(e) => onAnswerChange(`q${qNum}`, { ...currentAnswer, response: e.target.value })}
-                    placeholder={getUIText(language, 'writeCriticalAnalysis')}
-                    className="min-h-[250px]"
-                />
+                <PaperAnswerNotice language={language} />
             )}
         </div>
     )
@@ -868,12 +807,7 @@ function EssayQuestion({ question, answer, onAnswerChange, questionIndex, langua
             </RadioGroup>
 
             {currentAnswer.selectedTopic && (
-                <Textarea
-                    value={currentAnswer.response}
-                    onChange={(e) => onAnswerChange(`q${qNum}`, { ...currentAnswer, response: e.target.value })}
-                    placeholder={getUIText(language, 'writeEssay')}
-                    className="min-h-[300px]"
-                />
+                <PaperAnswerNotice language={language} />
             )}
         </div>
     )
@@ -893,6 +827,7 @@ export function NepaliQuestionRenderer(props: NepaliQuestionRendererProps) {
     const renderers: Record<string, React.ComponentType<NepaliQuestionRendererProps>> = {
         matching: MatchingQuestion,
         fill_in_the_blanks: FillInTheBlanksQuestion,
+        fill_in_the_blanks_choices: FillInTheBlanksQuestion,
         short_answer: ShortAnswerQuestion,
         multiple_choice: MultipleChoiceQuestion,
         spelling_correction: SpellingCorrectionQuestion,

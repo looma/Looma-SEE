@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef, useCallback } from "react"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Button } from "@/components/ui/button"
-import { Loader2, Trophy, Save } from "lucide-react"
+import { Loader2, Trophy, Save, AlertTriangle } from "lucide-react"
 import { GroupA } from "./group-a"
 import { FreeResponseGroup } from "./free-response-group"
 import { EnglishQuestionRenderer } from "./english-question-renderer"
@@ -371,25 +371,22 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
         return answer !== undefined && answer !== null && answer !== ""
       }).length
     } else if (questions.socialStudiesGroups && questions.socialStudiesGroups.length > 0) {
-      // Social Studies test format
+      // Social Studies test format — all questions are paper-based, always complete
       questions.socialStudiesGroups.forEach((group: any) => {
         totalQuestions += group.questions?.length || 0
-        group.questions?.forEach((q: any) => {
-          const answer = answers.socialStudies?.[q.id]
-          if (answer && (typeof answer === 'string' ? answer.trim().length > 0 : true)) {
-            answeredQuestions++
-          }
-        })
+        answeredQuestions += group.questions?.length || 0 // All paper-based = always answered
       })
     } else if (questions.nepaliQuestions && questions.nepaliQuestions.length > 0) {
-      // Nepali test format
+      // Nepali test format — only auto-gradeable types need digital answers
+      const autoGradeableTypes = ['matching', 'fill_in_the_blanks', 'fill_in_the_blanks_choices']
       totalQuestions = questions.nepaliQuestions.length
       answeredQuestions = questions.nepaliQuestions.filter((q: any) => {
+        // Paper-based types are always "answered"
+        if (!autoGradeableTypes.includes(q.type)) return true
         const answer = answers.nepali?.[`q${q.questionNumberEnglish || q.questionNumber}`]
         if (!answer) return false
         if (typeof answer === 'string') return answer.trim().length > 0
         if (typeof answer === 'object') {
-          // Check if any nested value has content
           return Object.values(answer).some((val: any) => {
             if (typeof val === 'string') return val.trim().length > 0
             if (typeof val === 'object' && val !== null) {
@@ -510,25 +507,22 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
         }
       })
     } else if (questions.socialStudiesGroups && questions.socialStudiesGroups.length > 0) {
-      // Social Studies test format
+      // Social Studies test format — all paper-based, always complete
       questions.socialStudiesGroups.forEach((group: any) => {
         totalQuestions += group.questions?.length || 0
-        group.questions?.forEach((q: any) => {
-          const answer = answers.socialStudies?.[q.id]
-          if (!answer || (typeof answer === 'string' && answer.trim().length === 0)) {
-            incompleteQuestions++
-          }
-        })
+        // No incomplete questions since all are paper-based
       })
     } else if (questions.nepaliQuestions && questions.nepaliQuestions.length > 0) {
-      // Nepali test format
+      // Nepali test format — only auto-gradeable types need digital answers
+      const autoGradeableTypes = ['matching', 'fill_in_the_blanks', 'fill_in_the_blanks_choices']
       totalQuestions = questions.nepaliQuestions.length
       incompleteQuestions = questions.nepaliQuestions.filter((q: any) => {
+        // Paper-based types are always "complete"
+        if (!autoGradeableTypes.includes(q.type)) return false
         const answer = answers.nepali?.[`q${q.questionNumberEnglish || q.questionNumber}`]
         if (!answer) return true
         if (typeof answer === 'string') return answer.trim().length === 0
         if (typeof answer === 'object') {
-          // Check if any nested value has content
           return !Object.values(answer).some((val: any) => {
             if (typeof val === 'string') return val.trim().length > 0
             if (typeof val === 'object' && val !== null) {
@@ -1175,93 +1169,33 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
       const isSocialStudiesTest = questions.socialStudiesGroups && questions.socialStudiesGroups.length > 0
 
       if (isSocialStudiesTest) {
-        // Social Studies test grading
-        console.log("🏛️ Starting Social Studies test grading...")
+        // Social Studies test — paper-based answers (no AI grading)
+        console.log("🏛️ Processing Social Studies test (paper-based)...")
 
-        const gradingPromises: Promise<any>[] = []
         const socialStudiesFeedback: any[] = []
 
-
-        // Grade each group's questions
+        // Create paper-based feedback for each question (no AI grading needed)
         questions.socialStudiesGroups.forEach((group: any, groupIndex: number) => {
-          console.log(`📋 Processing Group ${groupIndex}: ${group.groupName || 'Unknown'}, ${group.questions?.length || 0} questions`)
-          group.questions?.forEach((question: any, qIdx: number) => {
-            const userAnswer = answers.socialStudies?.[question.id] || ""
-            console.log(`  📝 Q${qIdx + 1} (ID: ${question.id}, Type: ${question.type}): Answer length = ${typeof userAnswer === 'string' ? userAnswer.length : 0}, Has answer = ${typeof userAnswer === 'string' ? userAnswer.trim().length > 0 : !!userAnswer}`)
-
-            // Calculate marks early so we can use it in all cases
+          group.questions?.forEach((question: any) => {
             const questionMarks = question.marksEnglish || question.marks || (question.marksNepali ? parseInt(question.marksNepali, 10) : 0) || 4
 
-            if (userAnswer && (typeof userAnswer === 'string' ? userAnswer.trim().length > 0 : true)) {
-              // Build comprehensive context with answer and explanation
-              const answerText = question.answerNepali || question.answerEnglish || ''
-              const explanation = question.explanationNepali || question.explanationEnglish || ''
-              const aiContext = explanation ? `${answerText}\n\nContext/Citation: ${explanation}` : answerText
-
-              // questionMarks is calculated earlier
-              gradingPromises.push(
-                fetch("/api/grade", {
-                  method: "POST",
-                  headers: { "Content-Type": "application/json" },
-                  body: JSON.stringify({
-                    question: question.questionNepali || question.questionEnglish,
-                    answer: userAnswer,
-                    marks: questionMarks,
-                    sampleAnswer: aiContext,
-                  }),
-                })
-                  .then(async (res) => {
-                    const result = await res.json()
-                    if (!res.ok) {
-                      throw new Error(result.error || `HTTP ${res.status}`)
-                    }
-                    return result
-                  })
-                  .then((result) => ({
-                    id: question.id,
-                    score: result.score || 0,
-                    feedback: result.feedback || (language === 'english' ? "No feedback available" : "प्रतिक्रिया उपलब्ध छैन"),
-                    question: question.questionNepali || question.questionEnglish,
-                    questionEnglish: question.questionEnglish || question.questionNepali,
-                    questionNepali: question.questionNepali || question.questionEnglish,
-                    studentAnswer: userAnswer,
-                    group: groupIndex,
-                    marks: questionMarks,
-                  }))
-                  .catch((error) => ({
-                    id: question.id,
-                    score: 0,
-                    feedback: getGradingErrorMessage(),
-                    question: question.questionNepali || question.questionEnglish,
-                    questionEnglish: question.questionEnglish || question.questionNepali,
-                    questionNepali: question.questionNepali || question.questionEnglish,
-                    studentAnswer: userAnswer,
-                    group: groupIndex,
-                    marks: questionMarks,
-                  }))
-              )
-            } else {
-              socialStudiesFeedback.push({
-                id: question.id,
-                score: 0,
-                feedback: "",
-                question: question.questionNepali || question.questionEnglish,
-                questionEnglish: question.questionEnglish || question.questionNepali,
-                questionNepali: question.questionNepali || question.questionEnglish,
-                studentAnswer: "",
-                group: groupIndex,
-                marks: questionMarks,
-              })
-            }
+            socialStudiesFeedback.push({
+              id: question.id,
+              score: 0,
+              maxScore: questionMarks,
+              feedback: language === 'english'
+                ? "📝 Answer on paper — compare your answer with the sample answer below."
+                : "📝 कागजमा उत्तर दिनुहोस् — तलको नमूना उत्तरसँग आफ्नो उत्तर तुलना गर्नुहोस्।",
+              question: question.questionNepali || question.questionEnglish,
+              questionEnglish: question.questionEnglish || question.questionNepali,
+              questionNepali: question.questionNepali || question.questionEnglish,
+              studentAnswer: language === 'english' ? "(On Paper)" : "(कागजमा)",
+              group: groupIndex,
+              marks: questionMarks,
+              paperBased: true,
+            })
           })
         })
-
-        // Wait for AI grading
-        if (gradingPromises.length > 0) {
-          console.log(`⏳ Waiting for ${gradingPromises.length} Social Studies AI grading requests...`)
-          const gradingResults = await Promise.all(gradingPromises)
-          socialStudiesFeedback.push(...gradingResults)
-        }
 
         // Sort feedback by question ID to maintain order
         socialStudiesFeedback.sort((a, b) => a.id.localeCompare(b.id))
@@ -1479,13 +1413,16 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                       }
                     })
                   } else if (subQType === "sentence_correction") {
-                    // Sentence correction - compare with correctAnswer (AI grading would be better, but for now simple comparison)
+                    // Sentence correction - compare with correctAnswer
+                    // If no user input (paper-based), skip this sub-question entirely
                     const correctAnswer = language === 'nepali'
                       ? (subQ.correctAnswerNepali || subQ.correctAnswer || subQ.correctAnswerEnglish)
                       : (subQ.correctAnswerEnglish || subQ.correctAnswer || subQ.correctAnswerNepali)
                     const userVal = userAnswer[subQId]
 
-                    if (correctAnswer && userVal && typeof userVal === 'string' && typeof correctAnswer === 'string') {
+                    if (!userVal || (typeof userVal === 'string' && userVal.trim().length === 0)) {
+                      // No user input - this is paper-based, don't count as wrong
+                    } else if (correctAnswer && typeof userVal === 'string' && typeof correctAnswer === 'string') {
                       totalItems++
                       // For sentence correction, be more lenient - check if key words match
                       const normalizedUser = userVal.trim().toLowerCase().replace(/\s+/g, ' ')
@@ -1517,321 +1454,66 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                   studentAnswer: userAnswer,
                 })
               } else {
-                // Fall back to AI grading for complex grammar questions
+                // Paper-based — these questions require Nepali typing that students do on paper
                 const marks = question.marksEnglish || question.marks || 5
-                const sampleAnswer = question.sampleAnswer || question.sampleAnswerNepali || question.sampleAnswerEnglish || ""
-
-                let combinedAnswer = ""
-                if (typeof userAnswer === "string") {
-                  combinedAnswer = userAnswer
-                } else if (typeof userAnswer === "object" && userAnswer) {
-                  combinedAnswer = Object.entries(userAnswer)
-                    .filter(([key]) => !key.includes("selected"))
-                    .map(([key, val]) => typeof val === "string" ? `${key}: ${val}` : "")
-                    .filter(val => typeof val === 'string' && val.trim())
-                    .join("\n")
-                }
-
-                if (combinedAnswer.trim()) {
-                  gradingPromises.push(
-                    fetch("/api/grade", {
-                      method: "POST",
-                      headers: { "Content-Type": "application/json" },
-                      body: JSON.stringify({
-                        question: questionTitle,
-                        questionEnglish: questionTitleEnglish,
-                        questionNepali: questionTitleNepali,
-                        answer: combinedAnswer,
-                        marks: marks,
-                        sampleAnswer: sampleAnswer,
-                      }),
-                    })
-                      .then((res) => res.json())
-                      .then((result) => ({
-                        id: questionKey,
-                        type: question.type,
-                        score: result.score || 0,
-                        maxScore: marks,
-                        feedback: result.feedback || (language === 'english' ? "No feedback available" : "प्रतिक्रिया उपलब्ध छैन"),
-                        question: questionTitle,
-                        questionEnglish: questionTitleEnglish,
-                        questionNepali: questionTitleNepali,
-                        studentAnswer: combinedAnswer,
-                      }))
-                      .catch(() => ({
-                        id: questionKey,
-                        type: question.type,
-                        score: 0,
-                        maxScore: marks,
-                        feedback: getGradingErrorMessage(),
-                        question: questionTitle,
-                        questionEnglish: questionTitleEnglish,
-                        questionNepali: questionTitleNepali,
-                        studentAnswer: combinedAnswer,
-                      }))
-                  )
-                } else {
-                  nepaliFeedback.push({
-                    id: questionKey,
-                    type: question.type,
-                    score: 0,
-                    maxScore: marks,
-                    feedback: language === 'english' ? "No answer provided" : "कुनै उत्तर प्रदान गरिएको छैन",
-                    question: questionTitle,
-                    questionEnglish: questionTitleEnglish,
-                    questionNepali: questionTitleNepali,
-                    studentAnswer: "",
-                  })
-                }
+                nepaliFeedback.push({
+                  id: questionKey,
+                  type: question.type,
+                  score: 0,
+                  maxScore: marks,
+                  feedback: language === 'english'
+                    ? "📝 Answer on paper — compare your answer with the sample answer below."
+                    : "📝 कागजमा उत्तर दिनुहोस् — तलको नमूना उत्तरसँग आफ्नो उत्तर तुलना गर्नुहोस्।",
+                  question: questionTitle,
+                  questionEnglish: questionTitleEnglish,
+                  questionNepali: questionTitleNepali,
+                  studentAnswer: language === 'english' ? "(On Paper)" : "(कागजमा)",
+                  paperBased: true,
+                })
               }
               break
             }
 
             case "free_writing_choice":
             case "functional_writing_choice":
-            case "literature_critical_analysis_choice": {
-              // Choice-based questions - need to find the selected option to get proper context
-              const marks = question.marksEnglish || question.marks || 4
-              let selectedOptionTitle = questionTitle
-              let sampleAnswer = ""
-
-              if (typeof userAnswer === "object" && userAnswer?.selectedOption) {
-                // Find the selected option in options or subQuestions
-                const options = question.options || question.subQuestions || []
-                const selectedOption = options.find((opt: any) =>
-                  (opt.idEnglish || opt.idNepali || opt.id) === userAnswer.selectedOption
-                )
-                if (selectedOption) {
-                  selectedOptionTitle = selectedOption.titleNepali || selectedOption.titleEnglish ||
-                    selectedOption.questionNepali || selectedOption.questionEnglish || questionTitle
-
-                  // Build context from clues (for biography/dialogue questions)
-                  const clues = selectedOption.cluesNepali || selectedOption.cluesEnglish || []
-                  if (Array.isArray(clues) && clues.length > 0) {
-                    sampleAnswer = `Context/Clues to include:\n${clues.join('\n')}`
-                  }
-
-                  // Build context from passage (for literature analysis questions)
-                  const passage = selectedOption.passageNepali || selectedOption.passageEnglish
-                  if (passage) {
-                    const passageContext = `Reference passage:\n${passage}`
-                    sampleAnswer = sampleAnswer ? `${sampleAnswer}\n\n${passageContext}` : passageContext
-                  }
-
-                  // Fallback to explicit sampleAnswer/correctAnswer if no clues or passage
-                  if (!sampleAnswer) {
-                    sampleAnswer = selectedOption.sampleAnswerNepali || selectedOption.sampleAnswerEnglish ||
-                      selectedOption.sampleAnswer || selectedOption.correctAnswerNepali ||
-                      selectedOption.correctAnswerEnglish || selectedOption.correctAnswer || ""
-                  }
-                }
-              }
-
-              const response = typeof userAnswer === "object" ? userAnswer.response : userAnswer
-
-              if (response && typeof response === 'string' && response.trim()) {
-                gradingPromises.push(
-                  fetch("/api/grade", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({
-                      question: selectedOptionTitle,
-                      answer: response,
-                      marks: marks,
-                      sampleAnswer: sampleAnswer,
-                    }),
-                  })
-                    .then((res) => res.json())
-                    .then((result) => ({
-                      id: questionKey,
-                      type: question.type,
-                      score: result.score || 0,
-                      maxScore: marks,
-                      feedback: result.feedback || (language === 'english' ? "No feedback available" : "प्रतिक्रिया उपलब्ध छैन"),
-                      question: selectedOptionTitle,
-                      studentAnswer: response,
-                    }))
-                    .catch(() => ({
-                      id: questionKey,
-                      type: question.type,
-                      score: 0,
-                      maxScore: marks,
-                      feedback: getGradingErrorMessage(),
-                      question: selectedOptionTitle,
-                      studentAnswer: response,
-                    }))
-                )
-              } else {
-                nepaliFeedback.push({
-                  id: questionKey,
-                  type: question.type,
-                  score: 0,
-                  maxScore: marks,
-                  feedback: "",
-                  question: questionTitle,
-                  questionEnglish: questionTitleEnglish,
-                  questionNepali: questionTitleNepali,
-                  studentAnswer: "",
-                })
-              }
-              break
-            }
-
+            case "literature_critical_analysis_choice":
             case "essay": {
-              // Essay with topic selection
-              const marks = question.marksEnglish || question.marks || 8
-              let selectedTopic = questionTitle
-
-              if (typeof userAnswer === "object" && userAnswer?.selectedTopic) {
-                selectedTopic = userAnswer.selectedTopic
-              }
-
-              const response = typeof userAnswer === "object" ? userAnswer.response : userAnswer
-
-              if (response && typeof response === 'string' && response.trim()) {
-                gradingPromises.push(
-                  fetch("/api/grade", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({
-                      question: `${language === 'nepali' ? 'निबन्ध विषय:' : 'Essay topic:'} ${selectedTopic}`,
-                      answer: response,
-                      marks: marks,
-                      sampleAnswer: "",  // Essays don't have sample answers
-                    }),
-                  })
-                    .then((res) => res.json())
-                    .then((result) => ({
-                      id: questionKey,
-                      type: question.type,
-                      score: result.score || 0,
-                      maxScore: marks,
-                      feedback: result.feedback || (language === 'english' ? "No feedback available" : "प्रतिक्रिया उपलब्ध छैन"),
-                      question: `${selectedTopic} (${language === 'nepali' ? 'निबन्ध' : 'Essay'})`,
-                      studentAnswer: response,
-                    }))
-                    .catch(() => ({
-                      id: questionKey,
-                      type: question.type,
-                      score: 0,
-                      maxScore: marks,
-                      feedback: getGradingErrorMessage(),
-                      question: `${selectedTopic} (${language === 'nepali' ? 'निबन्ध' : 'Essay'})`,
-                      studentAnswer: response,
-                    }))
-                )
-              } else {
-                nepaliFeedback.push({
-                  id: questionKey,
-                  type: question.type,
-                  score: 0,
-                  maxScore: marks,
-                  feedback: "",
-                  question: questionTitle,
-                  questionEnglish: questionTitleEnglish,
-                  questionNepali: questionTitleNepali,
-                  studentAnswer: "",
-                })
-              }
+              // Paper-based — these questions require Nepali typing that students do on paper
+              const marks = question.marksEnglish || question.marks || 4
+              nepaliFeedback.push({
+                id: questionKey,
+                type: question.type,
+                score: 0,
+                maxScore: marks,
+                feedback: language === 'english'
+                  ? "📝 Answer on paper — compare your answer with the sample answer below."
+                  : "📝 कागजमा उत्तर दिनुहोस् — तलको नमूना उत्तरसँग आफ्नो उत्तर तुलना गर्नुहोस्।",
+                question: questionTitle,
+                questionEnglish: questionTitleEnglish,
+                questionNepali: questionTitleNepali,
+                studentAnswer: language === 'english' ? "(On Paper)" : "(कागजमा)",
+                paperBased: true,
+              })
               break
             }
 
             default: {
-              // AI grade all other question types (free response, essay, etc.)
+              // Paper-based — all other question types (reading comprehension, note taking, summarization, literature, etc.)
               const marks = question.marksEnglish || question.marks || 5
-
-              // Build comprehensive context for AI grading
-              let sampleAnswer = question.sampleAnswer || question.sampleAnswerNepali || question.sampleAnswerEnglish || question.modelAnswer || ""
-
-              // Include passage context for reading comprehension, note taking, etc.
-              const passage = question.passageNepali || question.passageEnglish
-              if (passage && typeof sampleAnswer === 'string' && !sampleAnswer.includes(passage)) {
-                const passageContext = `Reference passage:\n${passage}`
-                sampleAnswer = sampleAnswer ? `${sampleAnswer}\n\n${passageContext}` : passageContext
-              }
-
-              // Include correctAnswer for subQuestions if available
-              if (question.subQuestions && Array.isArray(question.subQuestions)) {
-                const correctAnswers = question.subQuestions
-                  .filter((sub: any) => sub.correctAnswerNepali || sub.correctAnswerEnglish || sub.correctAnswer)
-                  .map((sub: any) => {
-                    const subId = sub.idNepali || sub.idEnglish || sub.id || ''
-                    const answer = sub.correctAnswerNepali || sub.correctAnswerEnglish || sub.correctAnswer
-                    return `${subId}: ${answer}`
-                  })
-                  .join('\n')
-                if (correctAnswers) {
-                  sampleAnswer = sampleAnswer ? `${sampleAnswer}\n\nExpected answers:\n${correctAnswers}` : `Expected answers:\n${correctAnswers}`
-                }
-              }
-
-              // Collect all sub-answers into a single response string for AI grading
-              let combinedAnswer = ""
-              if (typeof userAnswer === "string") {
-                combinedAnswer = userAnswer
-              } else if (typeof userAnswer === "object" && userAnswer) {
-                // Filter out selection keys and format answer values
-                combinedAnswer = Object.entries(userAnswer)
-                  .filter(([key]) => !key.includes("selected"))
-                  .map(([key, val]) => typeof val === "string" ? val : JSON.stringify(val))
-                  .filter(val => typeof val === 'string' && val.trim())
-                  .join("\n")
-              }
-
-              if (combinedAnswer.trim()) {
-                gradingPromises.push(
-                  fetch("/api/grade", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({
-                      question: questionTitle,
-                      questionEnglish: questionTitleEnglish,
-                      questionNepali: questionTitleNepali,
-                      answer: combinedAnswer,
-                      marks: marks,
-                      sampleAnswer: sampleAnswer,
-                    }),
-                  })
-                    .then((res) => res.json())
-                    .then((result) => ({
-                      id: questionKey,
-                      type: question.type,
-                      score: result.score || 0,
-                      maxScore: marks,
-                      feedback: result.feedback || (language === 'english' ? "No feedback available" : "प्रतिक्रिया उपलब्ध छैन"),
-                      question: questionTitle,
-                      questionEnglish: questionTitleEnglish,
-                      questionNepali: questionTitleNepali,
-                      studentAnswer: combinedAnswer,
-                      sampleAnswer: sampleAnswer,
-                    }))
-                    .catch(() => ({
-                      id: questionKey,
-                      type: question.type,
-                      score: 0,
-                      maxScore: marks,
-                      feedback: getGradingErrorMessage(),
-                      question: questionTitle,
-                      questionEnglish: questionTitleEnglish,
-                      questionNepali: questionTitleNepali,
-                      studentAnswer: combinedAnswer,
-                      sampleAnswer: sampleAnswer,
-                    }))
-                )
-              } else {
-                nepaliFeedback.push({
-                  id: questionKey,
-                  type: question.type,
-                  score: 0,
-                  maxScore: marks,
-                  feedback: "",
-                  question: questionTitle,
-                  questionEnglish: questionTitleEnglish,
-                  questionNepali: questionTitleNepali,
-                  studentAnswer: "",
-                  sampleAnswer: sampleAnswer,
-                })
-              }
+              nepaliFeedback.push({
+                id: questionKey,
+                type: question.type,
+                score: 0,
+                maxScore: marks,
+                feedback: language === 'english'
+                  ? "📝 Answer on paper — compare your answer with the sample answer below."
+                  : "📝 कागजमा उत्तर दिनुहोस् — तलको नमूना उत्तरसँग आफ्नो उत्तर तुलना गर्नुहोस्।",
+                question: questionTitle,
+                questionEnglish: questionTitleEnglish,
+                questionNepali: questionTitleNepali,
+                studentAnswer: language === 'english' ? "(On Paper)" : "(कागजमा)",
+                paperBased: true,
+              })
               break
             }
           }
@@ -2757,8 +2439,11 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
 
   // Nepali test interface
   if (isNepaliTest) {
+    const autoGradeableTypes = ['matching', 'fill_in_the_blanks', 'fill_in_the_blanks_choices']
     const totalQuestions = questions.nepaliQuestions.length
     const answeredQuestions = questions.nepaliQuestions.filter((q: any) => {
+      // Paper-based types are always "answered"
+      if (!autoGradeableTypes.includes(q.type)) return true
       const answer = answers.nepali?.[`q${q.questionNumberEnglish || q.questionNumber}`]
       if (!answer) return false
       if (typeof answer === 'string') return answer.trim().length > 0
@@ -2778,10 +2463,9 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
       <div className="px-3 sm:px-0">
         {/* Progress Header */}
         <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4 sm:p-6 shadow-lg border border-white/20 mb-4 sm:mb-6">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-3 sm:gap-0">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-0">
             <div className="flex items-center gap-2">
-              <h3 className="font-semibold text-slate-800 text-sm sm:text-base">{language === "english" ? "Nepali Test Progress" : "नेपाली परीक्षा प्रगति"}</h3>
-              <span className="text-xs text-slate-600">{calculateOverallProgress()}% {language === "english" ? "Complete" : "पूर्ण"}</span>
+              <h3 className="font-semibold text-slate-800 text-sm sm:text-base">{language === "english" ? "Nepali Test" : "नेपाली परीक्षा"}</h3>
             </div>
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
               <ExamTimer
@@ -2799,17 +2483,24 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
               )}
             </div>
           </div>
+        </div>
 
-          {/* Overall Progress Bar */}
-          <div className="w-full bg-slate-200 rounded-full h-3 overflow-hidden">
-            <div
-              className="h-full bg-amber-500 transition-all duration-500 ease-out"
-              style={{ width: `${calculateOverallProgress()}%` }}
-            />
-          </div>
-          <div className="flex justify-between items-center mt-2 text-xs text-slate-600">
-            <span>{language === "english" ? `${answeredQuestions} of ${totalQuestions} questions answered` : `${answeredQuestions} / ${totalQuestions} प्रश्नहरू उत्तर दिइएको`}</span>
-            <span className="font-medium">{calculateOverallProgress()}%</span>
+        {/* Paper-Based Disclaimer Banner */}
+        <div className="bg-white border border-red-200 rounded-xl p-4 sm:p-5 mb-4 sm:mb-6 shadow-sm">
+          <div className="flex items-start gap-3">
+            <AlertTriangle className="h-5 w-5 text-red-500 mt-0.5 flex-shrink-0" />
+            <div>
+              <p className="font-semibold text-red-700 text-sm">
+                {language === 'english'
+                  ? '📝 Paper-Based Test'
+                  : '📝 कागजमा आधारित परीक्षा'}
+              </p>
+              <p className="text-xs text-slate-600 mt-1">
+                {language === 'english'
+                  ? 'Most questions should be answered on paper, just like in the real SEE exam. Only matching and fill-in-the-blanks can be answered digitally. After submitting, sample answers will be shown so you can self-check your work.'
+                  : 'धेरै प्रश्नहरूको उत्तर कागजमा लेख्नुहोस्। मिलान र रिक्त-स्थान भर्ने प्रश्नहरू मात्र डिजिटल रूपमा उत्तर दिन सकिन्छ। पेश गरेपछि, नमूना उत्तरहरू देखाइनेछ।'}
+              </p>
+            </div>
           </div>
         </div>
 
@@ -2841,7 +2532,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
               </>
             ) : (
               <>
-                <Trophy className="mr-2 h-4 w-4 sm:h-5 sm:w-5" /> {language === "english" ? "Submit Test" : "परीक्षा पेश गर्नुहोस्"} ({answeredQuestions}/{totalQuestions})
+                <Trophy className="mr-2 h-4 w-4 sm:h-5 sm:w-5" /> {language === "english" ? "Submit Test" : "परीक्षा पेश गर्नुहोस्"}
               </>
             )}
           </Button>
@@ -2895,21 +2586,15 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
     const totalQuestions = questions.socialStudiesGroups.reduce(
       (sum: number, g: any) => sum + (g.questions?.length || 0), 0
     )
-    const answeredQuestions = questions.socialStudiesGroups.reduce((sum: number, g: any) => {
-      return sum + (g.questions?.filter((q: any) => {
-        const answer = answers.socialStudies?.[q.id]
-        return answer && answer.trim().length > 0
-      }).length || 0)
-    }, 0)
+    const answeredQuestions = totalQuestions // All paper-based = always complete
 
     return (
       <div className="px-3 sm:px-0">
         {/* Progress Header */}
         <div className="bg-white/90 backdrop-blur-sm rounded-xl p-4 sm:p-6 shadow-lg border border-white/20 mb-4 sm:mb-6">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-3 sm:gap-0">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-0">
             <div className="flex items-center gap-2">
               <h3 className="font-semibold text-slate-800 text-sm sm:text-base">{language === "english" ? "Samajik Test" : "सामाजिक परीक्षा"}</h3>
-              <span className="text-xs text-slate-600">{calculateOverallProgress()}% {language === "english" ? "Complete" : "पूरा भयो"}</span>
             </div>
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
               <ExamTimer
@@ -2927,17 +2612,24 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
               )}
             </div>
           </div>
+        </div>
 
-          {/* Overall Progress Bar */}
-          <div className="w-full bg-slate-200 rounded-full h-3 overflow-hidden">
-            <div
-              className="h-full bg-gradient-to-r from-blue-500 to-blue-600 transition-all duration-500 ease-out"
-              style={{ width: `${calculateOverallProgress()}%` }}
-            />
-          </div>
-          <div className="flex justify-between items-center mt-2 text-xs text-slate-600">
-            <span>{language === "english" ? `${answeredQuestions} of ${totalQuestions} questions answered` : `${answeredQuestions} मध्ये ${totalQuestions} प्रश्नहरूको उत्तर दिइयो`}</span>
-            <span className="font-medium">{calculateOverallProgress()}%</span>
+        {/* Paper-Based Disclaimer Banner */}
+        <div className="bg-white border border-blue-200 rounded-xl p-4 sm:p-5 mb-4 sm:mb-6 shadow-sm">
+          <div className="flex items-start gap-3">
+            <AlertTriangle className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+            <div>
+              <p className="font-semibold text-blue-800 text-sm">
+                {language === 'english'
+                  ? '📝 Paper-Based Test'
+                  : '📝 कागजमा आधारित परीक्षा'}
+              </p>
+              <p className="text-xs text-slate-600 mt-1">
+                {language === 'english'
+                  ? 'Write your answers on paper, just like in the real SEE exam. After submitting, sample answers will be shown so you can self-check your work.'
+                  : 'वास्तविक SEE परीक्षामा जस्तै कागजमा आफ्ना उत्तरहरू लेख्नुहोस्। पेश गरेपछि, नमूना उत्तरहरू देखाइनेछ ताकि तपाईं आफ्नो काम जाँच गर्न सक्नुहुन्छ।'}
+              </p>
+            </div>
           </div>
         </div>
 
@@ -3003,7 +2695,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
               </>
             ) : (
               <>
-                <Trophy className="mr-2 h-4 w-4 sm:h-5 sm:w-5" /> {language === "english" ? "Submit Test" : "परीक्षा पठाउनुहोस्"} ({answeredQuestions}/{totalQuestions})
+                <Trophy className="mr-2 h-4 w-4 sm:h-5 sm:w-5" /> {language === "english" ? "Submit Test" : "परीक्षा पठाउनुहोस्"}
               </>
             )}
           </Button>

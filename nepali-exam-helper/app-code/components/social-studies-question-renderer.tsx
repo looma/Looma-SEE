@@ -2,7 +2,6 @@
 
 import { useState } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Textarea } from "@/components/ui/textarea"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Progress } from "@/components/ui/progress"
@@ -81,6 +80,8 @@ const uiText = {
     shortHint: { np: "स्पष्ट र संक्षिप्त उत्तर दिनुहोस्", en: "Give a clear and concise answer" },
     longHint: { np: "विस्तृत उत्तर दिनुहोस्", en: "Give a detailed answer" },
     creativeHint: { np: "रचनात्मक र मौलिक लेखन गर्नुहोस्", en: "Be creative and original in your writing" },
+    writeOnPaper: { np: "✏️ कागजमा उत्तर लेख्नुहोस्", en: "✏️ Write your answer on paper" },
+    writeOnPaperHint: { np: "यो प्रश्नको उत्तर कागजमा लेख्नुहोस् र पछि नमूना उत्तरसँग तुलना गर्नुहोस्।", en: "Write your answer for this question on paper, then compare with the sample answer after submitting." },
 }
 
 export function SocialStudiesGroupRenderer({
@@ -101,9 +102,8 @@ export function SocialStudiesGroupRenderer({
         return nepali || english || ''
     }
 
-    const answeredCount = group.questions.filter(
-        (q) => answers[q.id] && typeof answers[q.id] === 'string' && answers[q.id].trim().length > 0
-    ).length
+    // All questions are paper-based — count all as answered
+    const answeredCount = group.questions.length
     const progressPercentage = group.questions.length > 0
         ? (answeredCount / group.questions.length) * 100
         : 0
@@ -262,13 +262,17 @@ export function SocialStudiesGroupRenderer({
 
                             <CardContent className="pt-0">
 
-                                <Textarea
-                                    value={currentAnswer}
-                                    onChange={(e) => onAnswerChange(question.id, e.target.value)}
-                                    placeholder={uiText.writeAnswerHere[lang]}
-                                    className="min-h-[80px] resize-none mt-3 text-lg"
-                                    rows={typeInfo.rows}
-                                />
+                                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 flex items-start gap-3 mt-3">
+                                    <PenLine className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+                                    <div>
+                                        <p className="font-medium text-blue-800">
+                                            {uiText.writeOnPaper[lang]}
+                                        </p>
+                                        <p className="text-sm text-blue-600 mt-1">
+                                            {uiText.writeOnPaperHint[lang]}
+                                        </p>
+                                    </div>
+                                </div>
 
 
 
