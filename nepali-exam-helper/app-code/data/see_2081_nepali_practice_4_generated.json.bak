@@ -187,12 +187,12 @@
         "passageEnglish": "Krishna Raya was the apple of everyone's eye in the village. He did good for everyone. But when he was attacked, he thought 'what is destined cannot be avoided', what was to happen has happened. Now the attacker must be searched for.",
         "sampleAnswerNepali": {
           "टुक्का": {
-            "शब्द": "आँखामा राखे पनि नबिझाउने",
-            "वाक्य": "मेरी नातिनी यति ज्ञानी छे कि सबैका लागि आँखामा राखे पनि नबिझाउने छे।"
+            "term": "आँखामा राखे पनि नबिझाउने",
+            "sentence": "मेरी नातिनी यति ज्ञानी छे कि सबैका लागि आँखामा राखे पनि नबिझाउने छे।"
           },
           "उखान": {
-            "शब्द": "हुने हार दैव नटार",
-            "वाक्य": "उसले परीक्षामा धेरै मिहिनेत गरेको थियो तर बिरामी परेर फेल भयो, साँच्चै हुने हार दैव नटार रहेछ।"
+            "term": "हुने हार दैव नटार",
+            "sentence": "उसले परीक्षामा धेरै मिहिनेत गरेको थियो तर बिरामी परेर फेल भयो, साँच्चै हुने हार दैव नटार रहेछ।"
           }
         },
         "sampleAnswerEnglish": [
@@ -297,24 +297,24 @@
         "passageEnglish": "Walk slowly otherwise you will fall. Well done! You did a very good job, I indeed became happy.",
         "correctAnswerNepali": [
           {
-            "शब्द": "बिस्तारै",
-            "पदवर्ग": "क्रियायोगी"
+            "word": "बिस्तारै",
+            "pos": "क्रियायोगी"
           },
           {
-            "शब्द": "नत्र",
-            "पदवर्ग": "संयोजक"
+            "word": "नत्र",
+            "pos": "संयोजक"
           },
           {
-            "शब्द": "स्याबास",
-            "पदवर्ग": "विस्मयादिबोधक"
+            "word": "स्याबास",
+            "pos": "विस्मयादिबोधक"
           },
           {
-            "शब्द": "धेरै",
-            "पदवर्ग": "विशेषण"
+            "word": "धेरै",
+            "pos": "विशेषण"
           },
           {
-            "शब्द": "त",
-            "पदवर्ग": "निपात"
+            "word": "त",
+            "pos": "निपात"
           }
         ],
         "correctAnswerEnglish": [
@@ -361,22 +361,22 @@
             "correctAnswerNepali": {
               "उपसर्ग": [
                 {
-                  "शब्द": "अभाव",
-                  "निर्माण_प्रक्रिया": "अ + भाव"
+                  "word": "अभाव",
+                  "formation": "अ + भाव"
                 },
                 {
-                  "शब्द": "प्रस्तुत",
-                  "निर्माण_प्रक्रिया": "प्र + स्तुत"
+                  "word": "प्रस्तुत",
+                  "formation": "प्र + स्तुत"
                 }
               ],
               "प्रत्यय": [
                 {
-                  "शब्द": "पारिवारिक",
-                  "निर्माण_प्रक्रिया": "परिवार + इक"
+                  "word": "पारिवारिक",
+                  "formation": "परिवार + इक"
                 },
                 {
-                  "शब्द": "मानवतावादी",
-                  "निर्माण_प्रक्रिया": "मानवता + वादी"
+                  "word": "मानवतावादी",
+                  "formation": "मानवता + वादी"
                 }
               ]
             },
@@ -422,12 +422,12 @@
             "passageEnglish": "Shridhar used to walk from village to village and give advice to people. He had given a great contribution to the development of the village. He used to meet everyone one by one and say, 'Let's do our own work, let's keep the village clean.'",
             "correctAnswerNepali": {
               "समस्त": {
-                "शब्द": "गाउँघर",
-                "विग्रह": "गाउँ र घर"
+                "word": "गाउँघर",
+                "split": "गाउँ र घर"
               },
               "विग्रह": {
-                "विग्रह": "सर र सल्लाह",
-                "समस्त_शब्द": "सरसल्लाह"
+                "phrase": "सर र सल्लाह",
+                "compound": "सरसल्लाह"
               },
               "द्वित्व": [
                 "गाउँ-गाउँ",

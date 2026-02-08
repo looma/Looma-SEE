@@ -187,12 +187,12 @@
         "passageEnglish": "Rajendralakshmi accused Bahadur Shah of trying to deceive the simple sister-in-law by drooling over the regency. She said, 'Is it wise to step on the head of a sleeping lion?'\nBahadur Shah said, 'I am not a vulture dying for the carcass of regency. The future of the motherland looks dark due to our mutual counter-attacks.'",
         "sampleAnswerNepali": {
           "टुक्का": {
-            "शब्द": "राल चुहाउनु",
-            "वाक्य": "रामले साथीको नयाँ खेलौनामा राल चुहायो।"
+            "term": "राल चुहाउनु",
+            "sentence": "रामले साथीको नयाँ खेलौनामा राल चुहायो।"
           },
           "पारिभाषिक शब्द": {
-            "शब्द": "नायबी",
-            "वाक्य": "राजा नाबालक हुँदा देशको शासन व्यवस्था नायबी परिषद्ले चलाएको थियो।"
+            "term": "नायबी",
+            "sentence": "राजा नाबालक हुँदा देशको शासन व्यवस्था नायबी परिषद्ले चलाएको थियो।"
           }
         },
         "sampleAnswerEnglish": [
@@ -297,24 +297,24 @@
         "passageEnglish": "He who is always ready for sacrifice, he never falls into greed. Wow! What a great thought. But such people are rare in society.",
         "correctAnswerNepali": [
           {
-            "शब्द": "जो",
-            "पदवर्ग": "सर्वनाम (सम्बन्धवाचक)"
+            "word": "जो",
+            "pos": "सर्वनाम (सम्बन्धवाचक)"
           },
           {
-            "शब्द": "ऊ",
-            "पदवर्ग": "सर्वनाम (पुरुषवाचक)"
+            "word": "ऊ",
+            "pos": "सर्वनाम (पुरुषवाचक)"
           },
           {
-            "शब्द": "आहा",
-            "पदवर्ग": "विस्मयादिबोधक"
+            "word": "आहा",
+            "pos": "विस्मयादिबोधक"
           },
           {
-            "शब्द": "कस्तो",
-            "पदवर्ग": "विशेषण (प्रश्नवाचक)"
+            "word": "कस्तो",
+            "pos": "विशेषण (प्रश्नवाचक)"
           },
           {
-            "शब्द": "तर",
-            "पदवर्ग": "संयोजक"
+            "word": "तर",
+            "pos": "संयोजक"
           }
         ],
         "correctAnswerEnglish": [
@@ -361,22 +361,22 @@
             "correctAnswerNepali": {
               "उपसर्ग": [
                 {
-                  "शब्द": "समर्पित",
-                  "निर्माण_प्रक्रिया": "सम् + अर्पित"
+                  "word": "समर्पित",
+                  "formation": "सम् + अर्पित"
                 },
                 {
-                  "शब्द": "विजयी",
-                  "निर्माण_प्रक्रिया": "वि + जयी"
+                  "word": "विजयी",
+                  "formation": "वि + जयी"
                 }
               ],
               "प्रत्यय": [
                 {
-                  "शब्द": "न्यायखातिर",
-                  "निर्माण_प्रक्रिया": "न्याय + खातिर"
+                  "word": "न्यायखातिर",
+                  "formation": "न्याय + खातिर"
                 },
                 {
-                  "शब्द": "लालच",
-                  "निर्माण_प्रक्रिया": "लाल् + अच्"
+                  "word": "लालच",
+                  "formation": "लाल् + अच्"
                 }
               ]
             },
@@ -422,12 +422,12 @@
             "passageEnglish": "Those who always travel the journey of noble deeds, become ideal model humans in the world. When shall I walk on such an ideal journey? When shall I sit becoming the moon and sun myself?",
             "correctAnswerNepali": {
               "समस्त": {
-                "शब्द": "चन्द्रसूर्य",
-                "विग्रह": "चन्द्र र सूर्य"
+                "word": "चन्द्रसूर्य",
+                "split": "चन्द्र र सूर्य"
               },
               "विग्रह": {
-                "विग्रह": "आदर्श नमुना",
-                "समस्त_शब्द": "आदर्शनमुना"
+                "phrase": "आदर्श नमुना",
+                "compound": "आदर्शनमुना"
               },
               "द्वित्व": [
                 "सधैँ सधैँ"

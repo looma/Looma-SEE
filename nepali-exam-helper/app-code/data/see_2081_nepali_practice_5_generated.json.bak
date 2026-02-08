@@ -187,12 +187,12 @@
         "passageEnglish": "During elections, leaders deceive the people and show various temptations. For them, people are just followers in good times and mourners in bad times, but after winning the election, they don't care. The people should also understand such things.",
         "sampleAnswerNepali": {
           "टुक्का": {
-            "शब्द": "आँखा छल्नु",
-            "वाक्य": "चोरले प्रहरीको आँखा छलेर भाग्यो।"
+            "term": "आँखा छल्नु",
+            "sentence": "चोरले प्रहरीको आँखा छलेर भाग्यो।"
           },
           "उखान": {
-            "शब्द": "जिउँदाको जन्ती, मर्दाको मलामी",
-            "वाक्य": "छिमेकी भनेका जिउँदाको जन्ती, मर्दाको मलामी हुन्, त्यसैले सबैसँग मिलेर बस्नुपर्छ।"
+            "term": "जिउँदाको जन्ती, मर्दाको मलामी",
+            "sentence": "छिमेकी भनेका जिउँदाको जन्ती, मर्दाको मलामी हुन्, त्यसैले सबैसँग मिलेर बस्नुपर्छ।"
           }
         },
         "sampleAnswerEnglish": [
@@ -297,24 +297,24 @@
         "passageEnglish": "Oh! A good person always does good work and he earns prestige in society.",
         "correctAnswerNepali": [
           {
-            "शब्द": "अहो",
-            "पदवर्ग": "विस्मयादिबोधक"
+            "word": "अहो",
+            "pos": "विस्मयादिबोधक"
           },
           {
-            "शब्द": "असल",
-            "पदवर्ग": "विशेषण"
+            "word": "असल",
+            "pos": "विशेषण"
           },
           {
-            "शब्द": "सधैँ",
-            "पदवर्ग": "क्रियायोगी"
+            "word": "सधैँ",
+            "pos": "क्रियायोगी"
           },
           {
-            "शब्द": "र",
-            "पदवर्ग": "संयोजक"
+            "word": "र",
+            "pos": "संयोजक"
           },
           {
-            "शब्द": "उसले",
-            "पदवर्ग": "सर्वनाम"
+            "word": "उसले",
+            "pos": "सर्वनाम"
           }
         ],
         "correctAnswerEnglish": [
@@ -361,22 +361,22 @@
             "correctAnswerNepali": {
               "उपसर्ग": [
                 {
-                  "शब्द": "अपरिचित",
-                  "निर्माण_प्रक्रिया": "अ + परिचित"
+                  "word": "अपरिचित",
+                  "formation": "अ + परिचित"
                 },
                 {
-                  "शब्द": "अधर्म",
-                  "निर्माण_प्रक्रिया": "अ + धर्म"
+                  "word": "अधर्म",
+                  "formation": "अ + धर्म"
                 }
               ],
               "प्रत्यय": [
                 {
-                  "शब्द": "व्यक्तिगत",
-                  "निर्माण_प्रक्रिया": "व्यक्ति + गत"
+                  "word": "व्यक्तिगत",
+                  "formation": "व्यक्ति + गत"
                 },
                 {
-                  "शब्द": "सामाजिक",
-                  "निर्माण_प्रक्रिया": "समाज + इक"
+                  "word": "सामाजिक",
+                  "formation": "समाज + इक"
                 }
               ]
             },
@@ -422,12 +422,12 @@
             "passageEnglish": "Krishna Raya, who worked day and night, kept his house and courtyard clean. He used to go door to door and help everyone. Sometimes he used to sit in solitude and think.",
             "correctAnswerNepali": {
               "समस्त": {
-                "शब्द": "दिनरात",
-                "विग्रह": "दिन र रात"
+                "word": "दिनरात",
+                "split": "दिन र रात"
               },
               "विग्रह": {
-                "विग्रह": "घर र आँगन",
-                "समस्त_शब्द": "घरआँगन"
+                "phrase": "घर र आँगन",
+                "compound": "घरआँगन"
               },
               "द्वित्व": [
                 "घर-घर",

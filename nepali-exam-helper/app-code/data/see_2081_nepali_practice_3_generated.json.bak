@@ -187,12 +187,12 @@
         "passageEnglish": "The news of Gangadhar's demise spread throughout the village like 'one ear two ears field' (wildfire). Since he was dedicated to justice, as soon as the villagers heard about him, they started crying 'dhurudhuru' (bitterly). Like 'what is destined cannot be avoided', no one could stop his death.",
         "sampleAnswerNepali": {
           "उखान": {
-            "शब्द": "हुने हार दैव नटार",
-            "वाक्य": "राम्रो उपचार गर्दागर्दै पनि बिरामीको मृत्यु भयो, आखिर हुने हार दैव नटार।"
+            "term": "हुने हार दैव नटार",
+            "sentence": "राम्रो उपचार गर्दागर्दै पनि बिरामीको मृत्यु भयो, आखिर हुने हार दैव नटार।"
           },
           "अनुकरणात्मक शब्द": {
-            "शब्द": "धुरुधुरु",
-            "वाक्य": "आफ्नो हराएको छोरो भेटिँदा आमा धुरुधुरु रोइन्।"
+            "term": "धुरुधुरु",
+            "sentence": "आफ्नो हराएको छोरो भेटिँदा आमा धुरुधुरु रोइन्।"
           }
         },
         "sampleAnswerEnglish": [
@@ -297,20 +297,20 @@
         "passageEnglish": "He/Who is an honest man, everyone respects him in society, therefore let us also continuously become good.",
         "correctAnswerNepali": [
           {
-            "शब्द": "जो",
-            "पदवर्ग": "सर्वनाम (सम्बन्धवाचक)"
+            "word": "जो",
+            "pos": "सर्वनाम (सम्बन्धवाचक)"
           },
           {
-            "शब्द": "त्यसलाई",
-            "पदवर्ग": "सर्वनाम"
+            "word": "त्यसलाई",
+            "pos": "सर्वनाम"
           },
           {
-            "शब्द": "त्यसैले",
-            "पदवर्ग": "संयोजक"
+            "word": "त्यसैले",
+            "pos": "संयोजक"
           },
           {
-            "शब्द": "निरन्तर",
-            "पदवर्ग": "क्रियायोगी"
+            "word": "निरन्तर",
+            "pos": "क्रियायोगी"
           }
         ],
         "correctAnswerEnglish": [
@@ -353,22 +353,22 @@
             "correctAnswerNepali": {
               "उपसर्ग": [
                 {
-                  "शब्द": "वियोग",
-                  "निर्माण_प्रक्रिया": "वि + योग"
+                  "word": "वियोग",
+                  "formation": "वि + योग"
                 },
                 {
-                  "शब्द": "असह्य",
-                  "निर्माण_प्रक्रिया": "अ + सह्य"
+                  "word": "असह्य",
+                  "formation": "अ + सह्य"
                 }
               ],
               "प्रत्यय": [
                 {
-                  "शब्द": "प्राकृतिक",
-                  "निर्माण_प्रक्रिया": "प्रकृति + इक"
+                  "word": "प्राकृतिक",
+                  "formation": "प्रकृति + इक"
                 },
                 {
-                  "शब्द": "भावमय",
-                  "निर्माण_प्रक्रिया": "भाव + मय"
+                  "word": "भावमय",
+                  "formation": "भाव + मय"
                 }
               ]
             },
@@ -414,12 +414,12 @@
             "passageEnglish": "Uncle and Aunt are busy having fun and smiling softly taking photos abroad these days. Their children are sitting abroad quitting their jobs. Instead of showing valor and earning a living, it is cowardice to live in dependence on others by tolerating insults.",
             "correctAnswerNepali": {
               "समस्त": {
-                "शब्द": "आजभोलि",
-                "विग्रह": "आज र भोलि"
+                "word": "आजभोलि",
+                "split": "आज र भोलि"
               },
               "विग्रह": {
-                "विग्रह": "मामा र माइजू",
-                "समस्त_शब्द": "मामामाइजू"
+                "phrase": "मामा र माइजू",
+                "compound": "मामामाइजू"
               },
               "द्वित्व": [
                 "मुसुमुसु",

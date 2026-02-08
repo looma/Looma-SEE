@@ -1,0 +1,50 @@
+--- see_2081_nepali_practice_1_generated.json ---
+Q1: correctAnswerNepali[0] -> Key 'A' is English
+Q1: correctAnswerNepali[0] -> Key 'B' is English
+Q1: correctAnswerNepali[1] -> Key 'A' is English
+Q1: correctAnswerNepali[1] -> Key 'B' is English
+Q1: correctAnswerNepali[2] -> Key 'A' is English
+Q1: correctAnswerNepali[2] -> Key 'B' is English
+Q1: correctAnswerNepali[3] -> Key 'A' is English
+Q1: correctAnswerNepali[3] -> Key 'B' is English
+
+--- see_2081_nepali_practice_2_generated.json ---
+Q1: correctAnswerNepali[0] -> Key 'A' is English
+Q1: correctAnswerNepali[0] -> Key 'B' is English
+Q1: correctAnswerNepali[1] -> Key 'A' is English
+Q1: correctAnswerNepali[1] -> Key 'B' is English
+Q1: correctAnswerNepali[2] -> Key 'A' is English
+Q1: correctAnswerNepali[2] -> Key 'B' is English
+Q1: correctAnswerNepali[3] -> Key 'A' is English
+Q1: correctAnswerNepali[3] -> Key 'B' is English
+
+--- see_2081_nepali_practice_3_generated.json ---
+Q1: correctAnswerNepali[0] -> Key 'A' is English
+Q1: correctAnswerNepali[0] -> Key 'B' is English
+Q1: correctAnswerNepali[1] -> Key 'A' is English
+Q1: correctAnswerNepali[1] -> Key 'B' is English
+Q1: correctAnswerNepali[2] -> Key 'A' is English
+Q1: correctAnswerNepali[2] -> Key 'B' is English
+Q1: correctAnswerNepali[3] -> Key 'A' is English
+Q1: correctAnswerNepali[3] -> Key 'B' is English
+
+--- see_2081_nepali_practice_4_generated.json ---
+Q1: correctAnswerNepali[0] -> Key 'A' is English
+Q1: correctAnswerNepali[0] -> Key 'B' is English
+Q1: correctAnswerNepali[1] -> Key 'A' is English
+Q1: correctAnswerNepali[1] -> Key 'B' is English
+Q1: correctAnswerNepali[2] -> Key 'A' is English
+Q1: correctAnswerNepali[2] -> Key 'B' is English
+Q1: correctAnswerNepali[3] -> Key 'A' is English
+Q1: correctAnswerNepali[3] -> Key 'B' is English
+
+--- see_2081_nepali_practice_5_generated.json ---
+Q1: correctAnswerNepali[0] -> Key 'A' is English
+Q1: correctAnswerNepali[0] -> Key 'B' is English
+Q1: correctAnswerNepali[1] -> Key 'A' is English
+Q1: correctAnswerNepali[1] -> Key 'B' is English
+Q1: correctAnswerNepali[2] -> Key 'A' is English
+Q1: correctAnswerNepali[2] -> Key 'B' is English
+Q1: correctAnswerNepali[3] -> Key 'A' is English
+Q1: correctAnswerNepali[3] -> Key 'B' is English
+

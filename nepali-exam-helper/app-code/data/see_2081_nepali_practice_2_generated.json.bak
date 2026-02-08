@@ -187,12 +187,12 @@
         "passageEnglish": "When Shukaman saw the message of winning a lottery of 25 lakhs, like 'Greed leads to gain, gain leads to grief', he lost all the money in his account. If he had informed the Cyber Crime Branch in time, his money could have been saved. One should never fall for the illusion of such emails or messages.",
         "sampleAnswerNepali": {
           "उखान": {
-            "शब्द": "लोभले लाभ, लाभले विलाप",
-            "वाक्य": "जुवामा एकपटक जितेको पैसाले घर किन्ने सोच्नु 'लोभले लाभ, लाभले विलाप' हुनु हो।"
+            "term": "लोभले लाभ, लाभले विलाप",
+            "sentence": "जुवामा एकपटक जितेको पैसाले घर किन्ने सोच्नु 'लोभले लाभ, लाभले विलाप' हुनु हो।"
           },
           "प्राविधिक शब्द": {
-            "शब्द": "साइबर अपराध",
-            "वाक्य": "अहिलेको समयमा सामाजिक सञ्जालबाट हुने 'साइबर अपराध' बाट बच्न सबै सचेत हुनुपर्छ।"
+            "term": "साइबर अपराध",
+            "sentence": "अहिलेको समयमा सामाजिक सञ्जालबाट हुने 'साइबर अपराध' बाट बच्न सबै सचेत हुनुपर्छ।"
           }
         },
         "sampleAnswerEnglish": [
@@ -297,24 +297,24 @@
         "passageEnglish": "Due to domestic conflict, crisis arose within the country and many people became sad, oh!",
         "correctAnswerNepali": [
           {
-            "शब्द": "घरझगडाले",
-            "पदवर्ग": "नाम"
+            "word": "घरझगडाले",
+            "pos": "नाम"
           },
           {
-            "शब्द": "भित्र",
-            "पदवर्ग": "नामयोगी"
+            "word": "भित्र",
+            "pos": "नामयोगी"
           },
           {
-            "शब्द": "र",
-            "पदवर्ग": "संयोजक"
+            "word": "र",
+            "pos": "संयोजक"
           },
           {
-            "शब्द": "दुःखी",
-            "पदवर्ग": "विशेषण"
+            "word": "दुःखी",
+            "pos": "विशेषण"
           },
           {
-            "शब्द": "अहो",
-            "पदवर्ग": "विस्मयादिबोधक"
+            "word": "अहो",
+            "pos": "विस्मयादिबोधक"
           }
         ],
         "correctAnswerEnglish": [
@@ -361,22 +361,22 @@
             "correctAnswerNepali": {
               "उपसर्ग": [
                 {
-                  "शब्द": "प्रतिकूल",
-                  "निर्माण_प्रक्रिया": "प्रति + कूल"
+                  "word": "प्रतिकूल",
+                  "formation": "प्रति + कूल"
                 },
                 {
-                  "शब्द": "प्रभाव",
-                  "निर्माण_प्रक्रिया": "प्र + भाव"
+                  "word": "प्रभाव",
+                  "formation": "प्र + भाव"
                 }
               ],
               "प्रत्यय": [
                 {
-                  "शब्द": "आयुर्वेदिक",
-                  "निर्माण_प्रक्रिया": "आयुर्वेद + इक"
+                  "word": "आयुर्वेदिक",
+                  "formation": "आयुर्वेद + इक"
                 },
                 {
-                  "शब्द": "शारीरिक",
-                  "निर्माण_प्रक्रिया": "शरीर + इक"
+                  "word": "शारीरिक",
+                  "formation": "शरीर + इक"
                 }
               ]
             },
@@ -422,12 +422,12 @@
             "passageEnglish": "Krishna Raya rarely went out of the house. He kept his house and courtyard clean. He served the village day and night. But one night he was hit with a stick and he started writhing in pain.",
             "correctAnswerNepali": {
               "समस्त": {
-                "शब्द": "दिन-रात",
-                "विग्रह": "दिन र रात"
+                "word": "दिन-रात",
+                "split": "दिन र रात"
               },
               "विग्रह": {
-                "विग्रह": "घर र आँगन",
-                "समस्त_शब्द": "घरआँगन"
+                "phrase": "घर र आँगन",
+                "compound": "घरआँगन"
               },
               "द्वित्व": [
                 "घर-घर",
