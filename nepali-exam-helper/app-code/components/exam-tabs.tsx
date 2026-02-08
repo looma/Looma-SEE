@@ -2500,6 +2500,12 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                   ? 'Most questions should be answered on paper, just like in the real SEE exam. Only matching and fill-in-the-blanks can be answered digitally. After submitting, sample answers will be shown so you can self-check your work.'
                   : 'धेरै प्रश्नहरूको उत्तर कागजमा लेख्नुहोस्। मिलान र रिक्त-स्थान भर्ने प्रश्नहरू मात्र डिजिटल रूपमा उत्तर दिन सकिन्छ। पेश गरेपछि, नमूना उत्तरहरू देखाइनेछ।'}
               </p>
+              <ul className="text-xs text-slate-500 mt-2 space-y-0.5 list-disc list-inside">
+                <li>{language === 'english' ? 'Write the required number of pages when asked' : 'सोधिएमा आवश्यक पृष्ठ संख्या लेख्नुहोस्'}</li>
+                <li>{language === 'english' ? 'Use clear headings and proper structure' : 'स्पष्ट शीर्षक र उचित संरचना प्रयोग गर्नुहोस्'}</li>
+                <li>{language === 'english' ? 'Include a statement of the problem and concluding summary' : 'समस्याको कथन र निष्कर्ष सारांश समावेश गर्नुहोस्'}</li>
+                <li>{language === 'english' ? 'Good handwriting is very important for scoring' : 'राम्रो हस्तलेखन अंक प्राप्तिमा धेरै महत्त्वपूर्ण छ'}</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -2629,6 +2635,12 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
                   ? 'Write your answers on paper, just like in the real SEE exam. After submitting, sample answers will be shown so you can self-check your work.'
                   : 'वास्तविक SEE परीक्षामा जस्तै कागजमा आफ्ना उत्तरहरू लेख्नुहोस्। पेश गरेपछि, नमूना उत्तरहरू देखाइनेछ ताकि तपाईं आफ्नो काम जाँच गर्न सक्नुहुन्छ।'}
               </p>
+              <ul className="text-xs text-slate-500 mt-2 space-y-0.5 list-disc list-inside">
+                <li>{language === 'english' ? 'Write the required number of pages when asked' : 'सोधिएमा आवश्यक पृष्ठ संख्या लेख्नुहोस्'}</li>
+                <li>{language === 'english' ? 'Use clear headings and proper structure' : 'स्पष्ट शीर्षक र उचित संरचना प्रयोग गर्नुहोस्'}</li>
+                <li>{language === 'english' ? 'Include a statement of the problem and concluding summary' : 'समस्याको कथन र निष्कर्ष सारांश समावेश गर्नुहोस्'}</li>
+                <li>{language === 'english' ? 'Good handwriting is very important for scoring' : 'राम्रो हस्तलेखन अंक प्राप्तिमा धेरै महत्त्वपूर्ण छ'}</li>
+              </ul>
             </div>
           </div>
         </div>
