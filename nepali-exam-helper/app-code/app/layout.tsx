@@ -12,11 +12,35 @@ import "./globals.css"
 
 export const metadata: Metadata = {
   title: "SEE Exam Practice - Nepali Helper",
-  description: "Practice tests for SEE examinations in Nepal",
+  description: "Practice tests for SEE examinations in Nepal. Free practice exams for Nepali, Math, Science, English, and Social Studies.",
   generator: "v0.app",
+  metadataBase: new URL("https://testprep.looma.website"),
   icons: {
     icon: "/Looma Logo Square.png",
     apple: "/Looma Logo Square.png",
+  },
+  openGraph: {
+    title: "SEE Exam Practice - Looma",
+    description: "Free practice tests for SEE examinations in Nepal. Practice Nepali, Math, Science, English, and Social Studies.",
+    url: "https://testprep.looma.website",
+    siteName: "Looma SEE Practice",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Looma - SEE Exam Practice",
+        type: "image/png",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SEE Exam Practice - Looma",
+    description: "Free practice tests for SEE examinations in Nepal.",
+    images: ["/og-image.png"],
   },
 }
 
