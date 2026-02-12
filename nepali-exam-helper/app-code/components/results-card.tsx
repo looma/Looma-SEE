@@ -393,33 +393,37 @@ export function ResultsCard({
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
-                  <div className="text-right">
-                    <div className="font-semibold">
-                      {attempt.totalScore}/{attempt.maxScore}
-                    </div>
-                    <div className="text-sm text-slate-600">{attempt.percentage}%</div>
-                    {attempt.timeTakenSeconds !== undefined && (
-                      <div className="text-xs text-slate-500 flex items-center justify-end gap-1">
-                        <Clock className="h-3 w-3" />
-                        {formatTime(attempt.timeTakenSeconds)}
+                  {!(isNepaliTest || isSocialStudiesTest) && (
+                    <div className="text-right">
+                      <div className="font-semibold">
+                        {attempt.totalScore}/{attempt.maxScore}
                       </div>
-                    )}
-                  </div>
-                  <Badge
-                    variant="secondary"
-                    className={
-                      attempt.grade === "A+" ? "bg-green-100 text-green-800 border-green-200" :
-                        attempt.grade === "A" ? "bg-green-100 text-green-800 border-green-200" :
-                          attempt.grade === "B+" ? "bg-blue-100 text-blue-800 border-blue-200" :
-                            attempt.grade === "B" ? "bg-blue-100 text-blue-800 border-blue-200" :
-                              attempt.grade === "C+" ? "bg-yellow-100 text-yellow-800 border-yellow-200" :
-                                attempt.grade === "C" ? "bg-yellow-100 text-yellow-800 border-yellow-200" :
-                                  attempt.grade === "D" ? "bg-orange-100 text-orange-800 border-orange-200" :
-                                    "bg-red-100 text-red-800 border-red-200"
-                    }
-                  >
-                    {attempt.grade}
-                  </Badge>
+                      <div className="text-sm text-slate-600">{attempt.percentage}%</div>
+                    </div>
+                  )}
+                  {attempt.timeTakenSeconds !== undefined && (
+                    <div className="text-xs text-slate-500 flex items-center gap-1">
+                      <Clock className="h-3 w-3" />
+                      {formatTime(attempt.timeTakenSeconds)}
+                    </div>
+                  )}
+                  {!(isNepaliTest || isSocialStudiesTest) && (
+                    <Badge
+                      variant="secondary"
+                      className={
+                        attempt.grade === "A+" ? "bg-green-100 text-green-800 border-green-200" :
+                          attempt.grade === "A" ? "bg-green-100 text-green-800 border-green-200" :
+                            attempt.grade === "B+" ? "bg-blue-100 text-blue-800 border-blue-200" :
+                              attempt.grade === "B" ? "bg-blue-100 text-blue-800 border-blue-200" :
+                                attempt.grade === "C+" ? "bg-yellow-100 text-yellow-800 border-yellow-200" :
+                                  attempt.grade === "C" ? "bg-yellow-100 text-yellow-800 border-yellow-200" :
+                                    attempt.grade === "D" ? "bg-orange-100 text-orange-800 border-orange-200" :
+                                      "bg-red-100 text-red-800 border-red-200"
+                      }
+                    >
+                      {attempt.grade}
+                    </Badge>
+                  )}
                 </div>
               </div>
             ))}
@@ -587,13 +591,30 @@ export function ResultsCard({
                 <CardTitle className="text-4xl font-bold mb-2">
                   {language === "english" ? "Your Results" : "तपाईंको परिणाम"}
                 </CardTitle>
-                <div className="flex items-center justify-center gap-4 mb-4">
-                  <CardDescription className="text-6xl font-bold text-white">
-                    {totalScore} / {maxTotalScore}
-                  </CardDescription>
-                  <div className="grade-badge px-4 py-2 rounded-full bg-white font-bold text-2xl" style={{ color: '#1e293b' }}>{grade}</div>
-                </div>
-                <p className="text-xl text-blue-100 mb-2">{percentage}% {language === "english" ? "Score" : "अंक"}</p>
+                {(isNepaliTest || isSocialStudiesTest) ? (
+                  <div className="mb-4">
+                    <p className="text-xl text-blue-100 mb-1">
+                      {language === "english"
+                        ? "📝 Paper-based test — review your answers below"
+                        : "📝 कागजमा आधारित परीक्षा — तल आफ्ना उत्तरहरू समीक्षा गर्नुहोस्"}
+                    </p>
+                    <p className="text-sm text-blue-200">
+                      {language === "english"
+                        ? "Compare your paper answers with the sample answers and correct answers shown below."
+                        : "तपाईंको कागजमा लेखिएका उत्तरहरू तल देखाइएका नमूना उत्तर र सही उत्तरहरूसँग तुलना गर्नुहोस्।"}
+                    </p>
+                  </div>
+                ) : (
+                  <>
+                    <div className="flex items-center justify-center gap-4 mb-4">
+                      <CardDescription className="text-6xl font-bold text-white">
+                        {totalScore} / {maxTotalScore}
+                      </CardDescription>
+                      <div className="grade-badge px-4 py-2 rounded-full bg-white font-bold text-2xl" style={{ color: '#1e293b' }}>{grade}</div>
+                    </div>
+                    <p className="text-xl text-blue-100 mb-2">{percentage}% {language === "english" ? "Score" : "अंक"}</p>
+                  </>
+                )}
                 {timeTaken !== undefined && (
                   <div className={`flex items-center justify-center gap-2 text-sm mb-2 px-4 py-1.5 rounded-full ${isOverTime ? 'bg-red-500/20 text-red-100' : 'bg-green-500/20 text-green-100'}`}>
                     <Clock className="h-4 w-4" />
@@ -606,8 +627,8 @@ export function ResultsCard({
                 )}
                 <p className="text-lg text-blue-100">
                   {language === "english"
-                    ? "Great effort! Here's your detailed breakdown."
-                    : "राम्रो प्रयास! यहाँ तपाईंको विस्तृत विवरण छ।"}
+                    ? (isNepaliTest || isSocialStudiesTest) ? "Check your work against the answers provided." : "Great effort! Here's your detailed breakdown."
+                    : (isNepaliTest || isSocialStudiesTest) ? "दिइएका उत्तरहरूसँग आफ्नो काम जाँच गर्नुहोस्।" : "राम्रो प्रयास! यहाँ तपाईंको विस्तृत विवरण छ।"}
                 </p>
               </div>
             </CardHeader>
@@ -639,12 +660,6 @@ export function ResultsCard({
                     <Badge variant="secondary">{results.socialStudiesFeedback?.length || 0} {language === 'nepali' ? 'प्रश्नहरू' : 'questions'}</Badge>
                   </div>
                   <div className="bg-white p-4 rounded-lg border border-amber-200 mb-4">
-                    <div className="flex items-center justify-between mb-4">
-                      <div className="text-lg font-semibold text-amber-800">
-                        {language === 'nepali' ? 'कुल अंक:' : 'Total Score:'} {totalScore}/{maxTotalScore}
-                      </div>
-                      <div className="text-2xl font-bold text-amber-600">{percentage}%</div>
-                    </div>
                     <div className="text-sm text-amber-600">
                       {language === 'nepali'
                         ? '📝 कागजमा आधारित परीक्षा — नमूना उत्तरसँग आफ्नो काम जाँच गर्नुहोस्।'
@@ -861,16 +876,10 @@ export function ResultsCard({
                     </Badge>
                   </div>
                   <div className="bg-white p-4 rounded-lg border border-orange-200 mb-4">
-                    <div className="flex items-center justify-between mb-4">
-                      <div className="text-lg font-semibold text-orange-800">
-                        {language === 'nepali' ? 'कुल अंक:' : 'Total Score:'} {totalScore}/{maxTotalScore}
-                      </div>
-                      <div className="text-2xl font-bold text-orange-600">{percentage}%</div>
-                    </div>
                     <div className="text-sm text-orange-600">
                       {language === 'nepali'
-                        ? '📝 मिलान/रिक्त-स्थान स्वत: ग्रेड गरिएको छ। अरू प्रश्नहरू कागजमा आधारित छन् — नमूना उत्तरसँग जाँच गर्नुहोस्।'
-                        : '📝 Matching/fill-in-the-blanks are auto-graded. Other questions are paper-based — compare with sample answers below.'}
+                        ? '📝 मिलान स्वत: ग्रेड गरिएको छ। अरू प्रश्नहरू कागजमा आधारित छन् — नमूना उत्तरसँग जाँच गर्नुहोस्।'
+                        : '📝 Matching is auto-graded. Other questions are paper-based — compare with sample answers below.'}
                     </div>
                   </div>
 

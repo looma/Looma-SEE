@@ -378,7 +378,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
       })
     } else if (questions.nepaliQuestions && questions.nepaliQuestions.length > 0) {
       // Nepali test format — only auto-gradeable types need digital answers
-      const autoGradeableTypes = ['matching', 'fill_in_the_blanks', 'fill_in_the_blanks_choices']
+      const autoGradeableTypes = ['matching']
       totalQuestions = questions.nepaliQuestions.length
       answeredQuestions = questions.nepaliQuestions.filter((q: any) => {
         // Paper-based types are always "answered"
@@ -514,7 +514,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
       })
     } else if (questions.nepaliQuestions && questions.nepaliQuestions.length > 0) {
       // Nepali test format — only auto-gradeable types need digital answers
-      const autoGradeableTypes = ['matching', 'fill_in_the_blanks', 'fill_in_the_blanks_choices']
+      const autoGradeableTypes = ['matching']
       totalQuestions = questions.nepaliQuestions.length
       incompleteQuestions = questions.nepaliQuestions.filter((q: any) => {
         // Paper-based types are always "complete"
@@ -1310,40 +1310,23 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
 
             case "fill_in_the_blanks":
             case "fill_in_the_blanks_choices": {
-              // Auto-grade fill in the blanks - UI stores as { "subId": "answer", ... }
-              let score = 0
+              // Paper-based — no auto-grading, just show sample answers
               const subQuestions = question.subQuestions || []
               const maxScore = question.marksEnglish || question.marks || subQuestions.length || 5
-              const pointsPerBlank = subQuestions.length > 0 ? maxScore / subQuestions.length : maxScore
-
-              if (userAnswer && typeof userAnswer === 'object' && subQuestions.length > 0) {
-                subQuestions.forEach((sub: any) => {
-                  // Use same ID pattern as renderer: idEnglish || idNepali || id
-                  const subId = sub.idEnglish || sub.idNepali || sub.id
-                  const userVal = userAnswer[subId]
-                  const correctAnswer = sub.correctAnswerEnglish || sub.correctAnswer || sub.correctAnswerNepali
-                  if (userVal && correctAnswer && typeof userVal === 'string' && typeof correctAnswer === 'string') {
-                    if (userVal.toLowerCase().trim() === correctAnswer.toLowerCase().trim()) {
-                      score += pointsPerBlank
-                    }
-                  }
-                })
-              }
 
               nepaliFeedback.push({
                 id: questionKey,
                 type: question.type,
-                score: Math.round(score * 10) / 10,
+                score: 0,
                 maxScore: maxScore,
-                feedback: score >= maxScore
-                  ? (language === 'english' ? "All correct!" : "सबै सही!")
-                  : score > 0
-                    ? (language === 'english' ? `${Math.round(score)}/${maxScore} correct` : `${Math.round(score)}/${maxScore} सही`)
-                    : (language === 'english' ? "None correct" : "केही सही छैन"),
+                feedback: language === 'english'
+                  ? 'Paper-based question — compare with sample answers below.'
+                  : 'कागजमा आधारित प्रश्न — तलका नमूना उत्तरहरूसँग तुलना गर्नुहोस्।',
                 question: questionTitle,
                 questionEnglish: questionTitleEnglish,
                 questionNepali: questionTitleNepali,
-                studentAnswer: userAnswer,
+                studentAnswer: language === 'english' ? '(On Paper)' : '(कागजमा)',
+                paperBased: true,
               })
               break
             }
@@ -2439,7 +2422,7 @@ export function ExamTabs({ studentId, testId, userEmail, onProgressUpdate, onSho
 
   // Nepali test interface
   if (isNepaliTest) {
-    const autoGradeableTypes = ['matching', 'fill_in_the_blanks', 'fill_in_the_blanks_choices']
+    const autoGradeableTypes = ['matching']
     const totalQuestions = questions.nepaliQuestions.length
     const answeredQuestions = questions.nepaliQuestions.filter((q: any) => {
       // Paper-based types are always "answered"

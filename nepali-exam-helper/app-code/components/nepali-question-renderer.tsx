@@ -220,7 +220,7 @@ function MatchingQuestion({ question, answer, onAnswerChange, questionIndex, lan
     )
 }
 
-// Fill in the Blanks - passage with text inputs
+// Fill in the Blanks - paper-based
 function FillInTheBlanksQuestion({ question, answer, onAnswerChange, questionIndex, showExplanation, language }: NepaliQuestionRendererProps) {
     const currentAnswer = answer || {}
     const qNum = question.questionNumberEnglish || question.questionNumber || 0
@@ -243,12 +243,6 @@ function FillInTheBlanksQuestion({ question, answer, onAnswerChange, questionInd
                                 <Badge variant="outline" className="shrink-0 mt-2">({getText(language, sub.idNepali, sub.idEnglish) || sub.id})</Badge>
                                 <div className="flex-1">
                                     <Label className="text-slate-700 mb-2 block">{subQuestion}</Label>
-                                    <Input
-                                        value={currentAnswer[subId] || ""}
-                                        onChange={(e) => onAnswerChange(`q${qNum}`, { ...currentAnswer, [subId]: e.target.value })}
-                                        placeholder={getUIText(language, 'writeAnswer')}
-                                        className="border-slate-300"
-                                    />
                                 </div>
                             </div>
                             <SubQuestionExplanation subQuestion={sub} show={showExplanation} language={language} />
@@ -256,6 +250,7 @@ function FillInTheBlanksQuestion({ question, answer, onAnswerChange, questionInd
                     )
                 })}
             </div>
+            <PaperAnswerNotice language={language} />
         </div>
     )
 }
